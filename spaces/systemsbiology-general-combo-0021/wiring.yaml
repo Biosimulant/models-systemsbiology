@@ -1,0 +1,28 @@
+modules:
+  band2012_dii_1:
+    class: src.band2012_dii_venus_reducedmodel_biomd0000000414_model:Band2012DiiVenusReducedmodelBiomd0000000414Model
+    args:
+      model_path: data/BIOMD0000000414.xml
+  banerjee2018_inf_2:
+    class: src.banerjee2018_influence_of_intracellular_delay_on_model2001300001_model:Banerjee2018InfluenceOfIntracellularDelayOnModel2001300001Model
+    args:
+      model_path: data/MODEL2001300001.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: band2012_dii_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: banerjee2018_inf_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

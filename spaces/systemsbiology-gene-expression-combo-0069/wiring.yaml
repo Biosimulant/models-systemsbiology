@@ -1,0 +1,44 @@
+modules:
+  flis2015_plant_1:
+    class: src.flis2015_plant_clock_gene_circuit_p2011_2_1_plm_biomd0000000598_model:Flis2015PlantClockGeneCircuitP201121PlmBiomd0000000598Model
+    args:
+      model_path: data/BIOMD0000000598.xml
+  flis2015_plant_2:
+    class: src.flis2015_plant_clock_gene_circuit_p2011_3_1_plm_model1510190002_model:Flis2015PlantClockGeneCircuitP201131PlmModel1510190002Model
+    args:
+      model_path: data/MODEL1510190002.xml
+  flis2015_plant_3:
+    class: src.flis2015_plant_clock_gene_circuit_p2011_4_1_plm_model1510190003_model:Flis2015PlantClockGeneCircuitP201141PlmModel1510190003Model
+    args:
+      model_path: data/MODEL1510190003.xml
+  flis2015_plant_4:
+    class: src.flis2015_plant_clock_gene_circuit_p2011_5_1_plm_model1510190004_model:Flis2015PlantClockGeneCircuitP201151PlmModel1510190004Model
+    args:
+      model_path: data/MODEL1510190004.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: flis2015_plant_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: flis2015_plant_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: flis2015_plant_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: flis2015_plant_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

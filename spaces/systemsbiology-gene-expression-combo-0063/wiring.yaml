@@ -1,0 +1,44 @@
+modules:
+  cao2013_applicat_1:
+    class: src.cao2013_application_of_absis_method_in_birth_dea_biomd0000000484_model:Cao2013ApplicationOfAbsisMethodInBirthDeaBiomd0000000484Model
+    args:
+      model_path: data/BIOMD0000000484.xml
+  cao2013_applicat_2:
+    class: src.cao2013_application_of_absis_method_in_the_rever_biomd0000000486_model:Cao2013ApplicationOfAbsisMethodInTheReverBiomd0000000486Model
+    args:
+      model_path: data/BIOMD0000000486.xml
+  chassagnole2001__3:
+    class: src.chassagnole2001_threonine_synthesis_biomd0000000066_model:Chassagnole2001ThreonineSynthesisBiomd0000000066Model
+    args:
+      model_path: data/BIOMD0000000066.xml
+  chen2015_genetic_4:
+    class: src.chen2015_genetic_oscillation_model1505050000_model:Chen2015GeneticOscillationModel1505050000Model
+    args:
+      model_path: data/MODEL1505050000.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: cao2013_applicat_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: cao2013_applicat_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: chassagnole2001__3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: chen2015_genetic_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

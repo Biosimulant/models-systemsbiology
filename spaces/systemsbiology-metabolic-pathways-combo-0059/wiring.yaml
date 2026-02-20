@@ -1,0 +1,44 @@
+modules:
+  vinnakota2006_mu_1:
+    class: src.vinnakota2006_muscleglycogenolysis_modelb_model1006230053_model:Vinnakota2006MuscleglycogenolysisModelbModel1006230053Model
+    args:
+      model_path: data/MODEL1006230053.xml
+  vinnakota2006_mu_2:
+    class: src.vinnakota2006_muscleglycogenolysis_modelc_model1006230049_model:Vinnakota2006MuscleglycogenolysisModelcModel1006230049Model
+    args:
+      model_path: data/MODEL1006230049.xml
+  vinnakota2010_tr_3:
+    class: src.vinnakota2010_transcientanoia_edlmuscle_model1006230100_model:Vinnakota2010TranscientanoiaEdlmuscleModel1006230100Model
+    args:
+      model_path: data/MODEL1006230100.xml
+  vinnakotta2010_t_4:
+    class: src.vinnakotta2010_transcientanoxia_solmuscle_model1006230112_model:Vinnakotta2010TranscientanoxiaSolmuscleModel1006230112Model
+    args:
+      model_path: data/MODEL1006230112.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: vinnakota2006_mu_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: vinnakota2006_mu_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: vinnakota2010_tr_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: vinnakotta2010_t_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

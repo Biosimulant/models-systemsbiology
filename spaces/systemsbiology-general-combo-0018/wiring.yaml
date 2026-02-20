@@ -1,0 +1,28 @@
+modules:
+  bagci2008_no_1:
+    class: src.bagci2008_no_apoptosis_modela_model1006230064_model:Bagci2008NoApoptosisModelaModel1006230064Model
+    args:
+      model_path: data/MODEL1006230064.xml
+  bagci2008_no_2:
+    class: src.bagci2008_no_apoptosis_modelb_model1006230026_model:Bagci2008NoApoptosisModelbModel1006230026Model
+    args:
+      model_path: data/MODEL1006230026.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: bagci2008_no_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: bagci2008_no_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

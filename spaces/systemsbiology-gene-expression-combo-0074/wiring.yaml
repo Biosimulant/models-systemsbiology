@@ -1,0 +1,44 @@
+modules:
+  kim2011_oscillat_1:
+    class: src.kim2011_oscillator_simplei_biomd0000000322_model:Kim2011OscillatorSimpleiBiomd0000000322Model
+    args:
+      model_path: data/BIOMD0000000322.xml
+  kim2011_oscillat_2:
+    class: src.kim2011_oscillator_simpleiii_biomd0000000323_model:Kim2011OscillatorSimpleiiiBiomd0000000323Model
+    args:
+      model_path: data/BIOMD0000000323.xml
+  koch2019_a_3:
+    class: src.koch2019_a_simple_algorithm_for_saddle_node_bifu_model1910220002_model:Koch2019ASimpleAlgorithmForSaddleNodeBifuModel1910220002Model
+    args:
+      model_path: data/MODEL1910220002.xml
+  kumbale_dioxin_4:
+    class: src.kumbale_2024_dioxin_impact_on_hepatic_cholestero_model2409160001_model:Kumbale2024DioxinImpactOnHepaticCholesteroModel2409160001Model
+    args:
+      model_path: data/MODEL2409160001.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: kim2011_oscillat_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: kim2011_oscillat_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: koch2019_a_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: kumbale_dioxin_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

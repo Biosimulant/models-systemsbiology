@@ -1,0 +1,36 @@
+modules:
+  burghaus2011_sim_1:
+    class: src.burghaus2011_simulating_rivaroxaban_effects_on_b_model1805140001_model:Burghaus2011SimulatingRivaroxabanEffectsOnBModel1805140001Model
+    args:
+      model_path: data/MODEL1805140001.xml
+  burghaus2014_sim_2:
+    class: src.burghaus2014_simulating_blood_coagulation_factor_model1807180005_model:Burghaus2014SimulatingBloodCoagulationFactorModel1807180005Model
+    args:
+      model_path: data/MODEL1807180005.xml
+  butenas2004_bloo_3:
+    class: src.butenas2004_bloodcoagulation_biomd0000000362_model:Butenas2004BloodcoagulationBiomd0000000362Model
+    args:
+      model_path: data/BIOMD0000000362.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: burghaus2011_sim_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: burghaus2014_sim_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: butenas2004_bloo_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

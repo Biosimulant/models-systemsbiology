@@ -1,0 +1,36 @@
+modules:
+  cardiomyocyte_te_1:
+    class: src.cardiomyocyte_telomere_damage_model1608250000_model:CardiomyocyteTelomereDamageModel1608250000Model
+    args:
+      model_path: data/MODEL1608250000.xml
+  carey2017_p_2:
+    class: src.carey2017_p_falcuparum_ipfal17_model2408040005_model:Carey2017PFalcuparumIpfal17Model2408040005Model
+    args:
+      model_path: data/MODEL2408040005.xml
+  caron2010_mtor_3:
+    class: src.caron2010_mtor_signalingnetwork_model1012220002_model:Caron2010MtorSignalingnetworkModel1012220002Model
+    args:
+      model_path: data/MODEL1012220002.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: cardiomyocyte_te_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: carey2017_p_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: caron2010_mtor_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

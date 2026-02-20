@@ -1,0 +1,44 @@
+modules:
+  deshpande2019_ra_1:
+    class: src.deshpande2019_random_forest_model_to_predict_lon_biomd0000001067_model:Deshpande2019RandomForestModelToPredictLonBiomd0000001067Model
+    args:
+      model_path: data/BIOMD0000001067.xml
+  dunster2016_nond_2:
+    class: src.dunster2016_nondimensional_coagulation_model_biomd0000000925_model:Dunster2016NondimensionalCoagulationModelBiomd0000000925Model
+    args:
+      model_path: data/BIOMD0000000925.xml
+  elowitz2000_repr_3:
+    class: src.elowitz2000_repressilator_biomd0000000012_model:Elowitz2000RepressilatorBiomd0000000012Model
+    args:
+      model_path: data/BIOMD0000000012.xml
+  feist2006_methan_4:
+    class: src.feist2006_methanogenesis_optiacetate_model5662377562_model:Feist2006MethanogenesisOptiacetateModel5662377562Model
+    args:
+      model_path: data/MODEL5662377562.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: deshpande2019_ra_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: dunster2016_nond_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: elowitz2000_repr_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: feist2006_methan_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

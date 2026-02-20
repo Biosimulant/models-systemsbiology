@@ -1,0 +1,28 @@
+modules:
+  akman2008_circad_1:
+    class: src.akman2008_circadian_clock_model2_biomd0000000214_model:Akman2008CircadianClockModel2Biomd0000000214Model
+    args:
+      model_path: data/BIOMD0000000214.xml
+  amstein2022_tnfr_2:
+    class: src.amstein2022_tnfr1_signal_transduction_petri_net_model2210170001_model:Amstein2022Tnfr1SignalTransductionPetriNetModel2210170001Model
+    args:
+      model_path: data/MODEL2210170001.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: akman2008_circad_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: amstein2022_tnfr_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

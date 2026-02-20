@@ -1,0 +1,36 @@
+modules:
+  hornberg2005_erk_1:
+    class: src.hornberg2005_erkcascade_biomd0000000084_model:Hornberg2005ErkcascadeBiomd0000000084Model
+    args:
+      model_path: data/BIOMD0000000084.xml
+  jenkinson2011_eg_2:
+    class: src.jenkinson2011_egf_mapk_biomd0000000399_model:Jenkinson2011EgfMapkBiomd0000000399Model
+    args:
+      model_path: data/BIOMD0000000399.xml
+  kowald2006_sod_3:
+    class: src.kowald2006_sod_biomd0000000108_model:Kowald2006SodBiomd0000000108Model
+    args:
+      model_path: data/BIOMD0000000108.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: hornberg2005_erk_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: jenkinson2011_eg_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: kowald2006_sod_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

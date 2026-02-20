@@ -1,0 +1,44 @@
+modules:
+  astaburuaga2019__1:
+    class: src.astaburuaga2019_ode_model_of_lysosomal_ion_homeo_model1910220001_model:Astaburuaga2019OdeModelOfLysosomalIonHomeoModel1910220001Model
+    args:
+      model_path: data/MODEL1910220001.xml
+  ataullahkhanov19_2:
+    class: src.ataullahkhanov1996_adenylate_biomd0000000054_model:Ataullahkhanov1996AdenylateBiomd0000000054Model
+    args:
+      model_path: data/BIOMD0000000054.xml
+  bakker2001_glyco_3:
+    class: src.bakker2001_glycolysis_biomd0000000071_model:Bakker2001GlycolysisBiomd0000000071Model
+    args:
+      model_path: data/BIOMD0000000071.xml
+  beltrami1995_thr_4:
+    class: src.beltrami1995_thrombingeneration_c_biomd0000000368_model:Beltrami1995ThrombingenerationCBiomd0000000368Model
+    args:
+      model_path: data/BIOMD0000000368.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: astaburuaga2019__1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: ataullahkhanov19_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: bakker2001_glyco_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: beltrami1995_thr_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

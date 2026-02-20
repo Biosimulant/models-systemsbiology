@@ -1,0 +1,36 @@
+modules:
+  proctor2013_effe_1:
+    class: src.proctor2013_effect_of_a_immunisation_in_alzheime_biomd0000000634_model:Proctor2013EffectOfAImmunisationInAlzheimeBiomd0000000634Model
+    args:
+      model_path: data/BIOMD0000000634.xml
+  qiao2007_mapk_2:
+    class: src.qiao2007_mapk_signaling_bistable_model6185511733_model:Qiao2007MapkSignalingBistableModel6185511733Model
+    args:
+      model_path: data/MODEL6185511733.xml
+  qiao2007_mapk_3:
+    class: src.qiao2007_mapk_signaling_oscillatory_model6185746832_model:Qiao2007MapkSignalingOscillatoryModel6185746832Model
+    args:
+      model_path: data/MODEL6185746832.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: proctor2013_effe_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: qiao2007_mapk_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: qiao2007_mapk_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

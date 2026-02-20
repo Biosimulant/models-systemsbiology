@@ -1,0 +1,28 @@
+modules:
+  baker2017_the_1:
+    class: src.baker2017_the_role_of_cytokines_mmps_and_fibrone_biomd0000000928_model:Baker2017TheRoleOfCytokinesMmpsAndFibroneBiomd0000000928Model
+    args:
+      model_path: data/BIOMD0000000928.xml
+  baldwin1994_nond_2:
+    class: src.baldwin1994_nondimensionalized_model_of_thrombin_model1806010001_model:Baldwin1994NondimensionalizedModelOfThrombinModel1806010001Model
+    args:
+      model_path: data/MODEL1806010001.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: baker2017_the_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: baldwin1994_nond_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

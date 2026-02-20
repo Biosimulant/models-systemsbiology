@@ -1,0 +1,28 @@
+modules:
+  bialik2010_apopt_1:
+    class: src.bialik2010_apoptosis_spikemodel_model1107050000_model:Bialik2010ApoptosisSpikemodelModel1107050000Model
+    args:
+      model_path: data/MODEL1107050000.xml
+  birtwistle2007_e_2:
+    class: src.birtwistle2007_erbb_signalling_biomd0000000175_model:Birtwistle2007ErbbSignallingBiomd0000000175Model
+    args:
+      model_path: data/BIOMD0000000175.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: bialik2010_apopt_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: birtwistle2007_e_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

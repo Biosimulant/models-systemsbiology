@@ -1,0 +1,36 @@
+modules:
+  lever2014_phenot_1:
+    class: src.lever2014_phenotypic_models_of_t_cell_activation_model1907260003_model:Lever2014PhenotypicModelsOfTCellActivationModel1907260003Model
+    args:
+      model_path: data/MODEL1907260003.xml
+  markevich2004_ma_2:
+    class: src.markevich2004_mapk_allrandomelementary_biomd0000000030_model:Markevich2004MapkAllrandomelementaryBiomd0000000030Model
+    args:
+      model_path: data/BIOMD0000000030.xml
+  martins2003_amad_3:
+    class: src.martins2003_amadoridegradation_biomd0000000050_model:Martins2003AmadoridegradationBiomd0000000050Model
+    args:
+      model_path: data/BIOMD0000000050.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: lever2014_phenot_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: markevich2004_ma_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: martins2003_amad_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

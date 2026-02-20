@@ -1,0 +1,75 @@
+schema_version: '2.0'
+title: 'Systemsbiology: General (COMBO_0036)'
+description: Systemsbiology general comparative space with 3 models, configured as
+  non-causal co-simulation.
+models:
+- repo: Biosimulant/models-systemsbiology
+  alias: cardiomyocyte_te_1
+  manifest_path: models/systemsbiology-sbml-cardiomyocyte-telomere-damage-model1608250000-model/model.yaml
+  parameters:
+    model_path: data/MODEL1608250000.xml
+- repo: Biosimulant/models-systemsbiology
+  alias: carey2017_p_2
+  manifest_path: models/systemsbiology-sbml-carey2017-p-falcuparum-ipfal17-model2408040005-model/model.yaml
+  parameters:
+    model_path: data/MODEL2408040005.xml
+- repo: Biosimulant/models-systemsbiology
+  alias: caron2010_mtor_3
+  manifest_path: models/systemsbiology-sbml-caron2010-mtor-signalingnetwork-model1012220002-model/model.yaml
+  parameters:
+    model_path: data/MODEL1012220002.xml
+- repo: Biosimulant/models-observability
+  alias: state_compare_mon
+  manifest_path: models/observability-state-comparison-monitor/model.yaml
+  parameters:
+    max_points: 2000
+    min_dt: 1.0
+- repo: Biosimulant/models-observability
+  alias: state_metrics_mon
+  manifest_path: models/observability-state-metrics-monitor/model.yaml
+  parameters:
+    max_points: 2000
+    min_dt: 1.0
+runtime:
+  duration: 60.0
+  tick_dt: 0.01
+  initial_inputs: {}
+wiring:
+- from: cardiomyocyte_te_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: carey2017_p_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: caron2010_mtor_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+scientific_context:
+  question: How do general mechanisms compare across these models?
+  mode: comparative
+  assumptions:
+  - Model implementations are used as published in their curated manifests without
+    biological reinterpretation.
+  - Time integration uses a shared global tick compatible with model min_dt constraints.
+  - Comparative (non-causal) mode is used because full deterministic IO coverage for
+    causal coupling was not satisfied.
+  expected_observables:
+  - Model output trajectories under shared runtime settings.
+  - Cross-model agreement/divergence in key state or metric signals.
+  - Relative behavior comparison without causal linkage claims.
+  limitations:
+  - No new biology is introduced beyond what upstream models encode.
+  - Cross-model semantic matching is rule-based and may under-connect uncertain routes.
+  provenance:
+  - 'systemsbiology-sbml-cardiomyocyte-telomere-damage-model1608250000-model :: biomodels_ebi:MODEL1608250000
+    :: https://www.ebi.ac.uk/biomodels/MODEL1608250000'
+  - 'systemsbiology-sbml-carey2017-p-falcuparum-ipfal17-model2408040005-model :: biomodels_ebi:MODEL2408040005
+    :: https://www.ebi.ac.uk/biomodels/MODEL2408040005'
+  - 'systemsbiology-sbml-caron2010-mtor-signalingnetwork-model1012220002-model ::
+    biomodels_ebi:MODEL1012220002 :: https://www.ebi.ac.uk/biomodels/MODEL1012220002'
+  visualization_rationale: A dedicated monitor model receives all participating model
+    state streams (`state_a..state_d`) so trajectories can be compared in one place
+    without claiming causal coupling when IO semantics are incomplete.

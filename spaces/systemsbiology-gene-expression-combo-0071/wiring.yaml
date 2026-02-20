@@ -1,0 +1,44 @@
+modules:
+  g_rlich2003_1:
+    class: src.g_rlich2003_rangtp_gradient_biomd0000000192_model:GRlich2003RangtpGradientBiomd0000000192Model
+    args:
+      model_path: data/BIOMD0000000192.xml
+  gilbert2008_elec_2:
+    class: src.gilbert2008_electrochemicalbiosensor_model1173105855_model:Gilbert2008ElectrochemicalbiosensorModel1173105855Model
+    args:
+      model_path: data/MODEL1173105855.xml
+  goldbeter1990_ca_3:
+    class: src.goldbeter1990_calciumspike_cicr_biomd0000000098_model:Goldbeter1990CalciumspikeCicrBiomd0000000098Model
+    args:
+      model_path: data/BIOMD0000000098.xml
+  gomez_cabrero201_4:
+    class: src.gomez_cabrero2011_atherogenesis_model1002160000_model:GomezCabrero2011AtherogenesisModel1002160000Model
+    args:
+      model_path: data/MODEL1002160000.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: g_rlich2003_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: gilbert2008_elec_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: goldbeter1990_ca_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: gomez_cabrero201_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

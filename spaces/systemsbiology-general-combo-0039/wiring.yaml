@@ -1,0 +1,36 @@
+modules:
+  chance1943_perox_1:
+    class: src.chance1943_peroxidase_es_kinetics_biomd0000000283_model:Chance1943PeroxidaseEsKineticsBiomd0000000283Model
+    args:
+      model_path: data/BIOMD0000000283.xml
+  chance1952_catal_2:
+    class: src.chance1952_catalase_mechanism_biomd0000000282_model:Chance1952CatalaseMechanismBiomd0000000282Model
+    args:
+      model_path: data/BIOMD0000000282.xml
+  chatterjee2010_b_3:
+    class: src.chatterjee2010_bloodcoagulation_model1108260014_model:Chatterjee2010BloodcoagulationModel1108260014Model
+    args:
+      model_path: data/MODEL1108260014.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: chance1943_perox_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: chance1952_catal_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: chatterjee2010_b_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

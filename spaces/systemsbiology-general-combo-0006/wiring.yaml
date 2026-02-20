@@ -1,0 +1,28 @@
+modules:
+  ajay_bhalla_1:
+    class: src.ajay_bhalla_2004_feedback_tuning_model9089914876_model:AjayBhalla2004FeedbackTuningModel9089914876Model
+    args:
+      model_path: data/MODEL9089914876.xml
+  ajay_bhalla_2:
+    class: src.ajay_bhalla_2004_pkm_mkp3_tuning_model9089538076_model:AjayBhalla2004PkmMkp3TuningModel9089538076Model
+    args:
+      model_path: data/MODEL9089538076.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: ajay_bhalla_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: ajay_bhalla_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

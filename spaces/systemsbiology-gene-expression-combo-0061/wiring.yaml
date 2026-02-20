@@ -1,0 +1,44 @@
+modules:
+  beltrami1995_thr_1:
+    class: src.beltrami1995_thrombingeneration_d_biomd0000000369_model:Beltrami1995ThrombingenerationDBiomd0000000369Model
+    args:
+      model_path: data/BIOMD0000000369.xml
+  bhartiya2003_try_2:
+    class: src.bhartiya2003_tryptophan_operon_biomd0000000062_model:Bhartiya2003TryptophanOperonBiomd0000000062Model
+    args:
+      model_path: data/BIOMD0000000062.xml
+  bianchi2015_mode_3:
+    class: src.bianchi2015_model_for_lymphangiogenesis_in_norma_biomd0000000722_model:Bianchi2015ModelForLymphangiogenesisInNormaBiomd0000000722Model
+    args:
+      model_path: data/BIOMD0000000722.xml
+  bindschadler2001_4:
+    class: src.bindschadler2001_coupled_ca_oscillators_biomd0000000058_model:Bindschadler2001CoupledCaOscillatorsBiomd0000000058Model
+    args:
+      model_path: data/BIOMD0000000058.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: beltrami1995_thr_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: bhartiya2003_try_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: bianchi2015_mode_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: bindschadler2001_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

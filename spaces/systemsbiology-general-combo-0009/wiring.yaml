@@ -1,0 +1,28 @@
+modules:
+  arnold2011_damou_1:
+    class: src.arnold2011_damour2007_rubisco_calvincycle_biomd0000000387_model:Arnold2011Damour2007RubiscoCalvincycleBiomd0000000387Model
+    args:
+      model_path: data/BIOMD0000000387.xml
+  arnold2011_farqu_2:
+    class: src.arnold2011_farquhar1980_rubisco_calvincycle_biomd0000000383_model:Arnold2011Farquhar1980RubiscoCalvincycleBiomd0000000383Model
+    args:
+      model_path: data/BIOMD0000000383.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: arnold2011_damou_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: arnold2011_farqu_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

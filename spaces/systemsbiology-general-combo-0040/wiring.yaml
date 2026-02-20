@@ -1,0 +1,36 @@
+modules:
+  chenxf2008_cicr_1:
+    class: src.chenxf2008_cicr_biomd0000000202_model:Chenxf2008CicrBiomd0000000202Model
+    args:
+      model_path: data/BIOMD0000000202.xml
+  chi2019_in_2:
+    class: src.chi2019_in_silico_prediction_of_pampa_effective_model2406030003_model:Chi2019InSilicoPredictionOfPampaEffectiveModel2406030003Model
+    args:
+      model_path: data/MODEL2406030003.xml
+  chickarmane2008__3:
+    class: src.chickarmane2008_stem_cell_lineage_determination_biomd0000000209_model:Chickarmane2008StemCellLineageDeterminationBiomd0000000209Model
+    args:
+      model_path: data/BIOMD0000000209.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: chenxf2008_cicr_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: chi2019_in_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: chickarmane2008__3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

@@ -1,0 +1,28 @@
+modules:
+  ajay_bhalla_1:
+    class: src.ajay_bhalla_2004_pkm_tuning_model9089491423_model:AjayBhalla2004PkmTuningModel9089491423Model
+    args:
+      model_path: data/MODEL9089491423.xml
+  akhtar2025_pancr_2:
+    class: src.akhtar2025_pancreatic_beta_cell_turnover_model2503030004_model:Akhtar2025PancreaticBetaCellTurnoverModel2503030004Model
+    args:
+      model_path: data/MODEL2503030004.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: ajay_bhalla_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: akhtar2025_pancr_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

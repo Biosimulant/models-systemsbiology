@@ -1,0 +1,36 @@
+modules:
+  casini2022_metha_1:
+    class: src.casini2022_methanothermobacter_thermautotrophicu_model2211290002_model:Casini2022MethanothermobacterThermautotrophicuModel2211290002Model
+    args:
+      model_path: data/MODEL2211290002.xml
+  cazzaniga2014_bl_2:
+    class: src.cazzaniga2014_blood_coagulation_with_platelet_ac_model1807180003_model:Cazzaniga2014BloodCoagulationWithPlateletAcModel1807180003Model
+    args:
+      model_path: data/MODEL1807180003.xml
+  chac_n_3:
+    class: src.chac_n_mart_nez2016_self_organizing_plasticity_o_model1612120000_model:ChacNMartNez2016SelfOrganizingPlasticityOModel1612120000Model
+    args:
+      model_path: data/MODEL1612120000.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: casini2022_metha_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: cazzaniga2014_bl_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: chac_n_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

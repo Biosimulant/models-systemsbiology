@@ -1,0 +1,44 @@
+modules:
+  bingzheng1990_gl_1:
+    class: src.bingzheng1990_glucocorticoidssecretion_model1172200168_model:Bingzheng1990GlucocorticoidssecretionModel1172200168Model
+    args:
+      model_path: data/MODEL1172200168.xml
+  bungay2003_throm_2:
+    class: src.bungay2003_thrombin_generation_biomd0000000334_model:Bungay2003ThrombinGenerationBiomd0000000334Model
+    args:
+      model_path: data/BIOMD0000000334.xml
+  bungay2006_folli_3:
+    class: src.bungay2006_follicularfluid_biomd0000000333_model:Bungay2006FollicularfluidBiomd0000000333Model
+    args:
+      model_path: data/BIOMD0000000333.xml
+  bungay2006_plasm_4:
+    class: src.bungay2006_plasma_biomd0000000332_model:Bungay2006PlasmaBiomd0000000332Model
+    args:
+      model_path: data/BIOMD0000000332.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: bingzheng1990_gl_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: bungay2003_throm_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: bungay2006_folli_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: bungay2006_plasm_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

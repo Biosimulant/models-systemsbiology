@@ -1,0 +1,28 @@
+modules:
+  borghans1997_cal_1:
+    class: src.borghans1997_calcium_oscillation_model_2_biomd0000000044_model:Borghans1997CalciumOscillationModel2Biomd0000000044Model
+    args:
+      model_path: data/BIOMD0000000044.xml
+  borghans1997_cal_2:
+    class: src.borghans1997_calcium_oscillation_model_3_biomd0000000045_model:Borghans1997CalciumOscillationModel3Biomd0000000045Model
+    args:
+      model_path: data/BIOMD0000000045.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: borghans1997_cal_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: borghans1997_cal_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

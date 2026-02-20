@@ -1,0 +1,36 @@
+modules:
+  mellor2012_lipoo_1:
+    class: src.mellor2012_lipooxygenasepathway_biomd0000000415_model:Mellor2012LipooxygenasepathwayBiomd0000000415Model
+    args:
+      model_path: data/BIOMD0000000415.xml
+  mizuno2012_alzpa_2:
+    class: src.mizuno2012_alzpathway_a_comprehensive_map_of_alz_model1504290001_model:Mizuno2012AlzpathwayAComprehensiveMapOfAlzModel1504290001Model
+    args:
+      model_path: data/MODEL1504290001.xml
+  mothes2020_nfkb_3:
+    class: src.mothes2020_nfkb_a20_signaling_model2307110001_model:Mothes2020NfkbA20SignalingModel2307110001Model
+    args:
+      model_path: data/MODEL2307110001.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: mellor2012_lipoo_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: mizuno2012_alzpa_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: mothes2020_nfkb_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

@@ -1,0 +1,86 @@
+schema_version: '2.0'
+title: 'Systemsbiology: Metabolic Pathways (COMBO_0056)'
+description: Systemsbiology metabolic pathways comparative space with 4 models, configured
+  as non-causal co-simulation.
+models:
+- repo: Biosimulant/models-systemsbiology
+  alias: dan_glycolysis_1
+  manifest_path: models/systemsbiology-sbml-dan-2006-glycolysis-reduction-model5952308332-model/model.yaml
+  parameters:
+    model_path: data/MODEL5952308332.xml
+- repo: Biosimulant/models-systemsbiology
+  alias: goodwin1965_enzy_2
+  manifest_path: models/systemsbiology-sbml-goodwin1965-enzymecontrolprocess-model0911532520-model/model.yaml
+  parameters:
+    model_path: data/MODEL0911532520.xml
+- repo: Biosimulant/models-systemsbiology
+  alias: heiland2019_two_3
+  manifest_path: models/systemsbiology-sbml-heiland2019-two-compartment-model-of-nad-biosynt-model1905220002-model/model.yaml
+  parameters:
+    model_path: data/MODEL1905220002.xml
+- repo: Biosimulant/models-systemsbiology
+  alias: koivumaki2009_se_4
+  manifest_path: models/systemsbiology-sbml-koivumaki2009-sercaatpase-long-model1006230105-model/model.yaml
+  parameters:
+    model_path: data/MODEL1006230105.xml
+- repo: Biosimulant/models-observability
+  alias: state_compare_mon
+  manifest_path: models/observability-state-comparison-monitor/model.yaml
+  parameters:
+    max_points: 2000
+    min_dt: 1.0
+- repo: Biosimulant/models-observability
+  alias: state_metrics_mon
+  manifest_path: models/observability-state-metrics-monitor/model.yaml
+  parameters:
+    max_points: 2000
+    min_dt: 1.0
+runtime:
+  duration: 60.0
+  tick_dt: 0.01
+  initial_inputs: {}
+wiring:
+- from: dan_glycolysis_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: goodwin1965_enzy_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: heiland2019_two_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: koivumaki2009_se_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d
+scientific_context:
+  question: How do metabolic pathways mechanisms compare across these models?
+  mode: comparative
+  assumptions:
+  - Model implementations are used as published in their curated manifests without
+    biological reinterpretation.
+  - Time integration uses a shared global tick compatible with model min_dt constraints.
+  - Comparative (non-causal) mode is used because full deterministic IO coverage for
+    causal coupling was not satisfied.
+  expected_observables:
+  - Model output trajectories under shared runtime settings.
+  - Cross-model agreement/divergence in key state or metric signals.
+  - Relative behavior comparison without causal linkage claims.
+  limitations:
+  - No new biology is introduced beyond what upstream models encode.
+  - Cross-model semantic matching is rule-based and may under-connect uncertain routes.
+  provenance:
+  - 'systemsbiology-sbml-dan-2006-glycolysis-reduction-model5952308332-model :: biomodels_ebi:MODEL5952308332
+    :: https://www.ebi.ac.uk/biomodels/MODEL5952308332'
+  - 'systemsbiology-sbml-goodwin1965-enzymecontrolprocess-model0911532520-model ::
+    biomodels_ebi:MODEL0911532520 :: https://www.ebi.ac.uk/biomodels/MODEL0911532520'
+  - 'systemsbiology-sbml-heiland2019-two-compartment-model-of-nad-biosynt-model1905220002-model
+    :: biomodels_ebi:MODEL1905220002 :: https://www.ebi.ac.uk/biomodels/MODEL1905220002'
+  - 'systemsbiology-sbml-koivumaki2009-sercaatpase-long-model1006230105-model :: biomodels_ebi:MODEL1006230105
+    :: https://www.ebi.ac.uk/biomodels/MODEL1006230105'
+  visualization_rationale: A dedicated monitor model receives all participating model
+    state streams (`state_a..state_d`) so trajectories can be compared in one place
+    without claiming causal coupling when IO semantics are incomplete.

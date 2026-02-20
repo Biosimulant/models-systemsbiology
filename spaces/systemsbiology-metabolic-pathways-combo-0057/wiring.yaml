@@ -1,0 +1,44 @@
+modules:
+  koivumaki2009_se_1:
+    class: src.koivumaki2009_sercaatpase_short_model1006230029_model:Koivumaki2009SercaatpaseShortModel1006230029Model
+    args:
+      model_path: data/MODEL1006230029.xml
+  koivumaki2009_se_2:
+    class: src.koivumaki2009_sercaatpase_standalone_model1006230023_model:Koivumaki2009SercaatpaseStandaloneModel1006230023Model
+    args:
+      model_path: data/MODEL1006230023.xml
+  larsen2004_calci_3:
+    class: src.larsen2004_calciumspiking_enzymebinding_biomd0000000331_model:Larsen2004CalciumspikingEnzymebindingBiomd0000000331Model
+    args:
+      model_path: data/BIOMD0000000331.xml
+  li2010_yeastglyc_4:
+    class: src.li2010_yeastglycolysis_model1012110001_model:Li2010YeastglycolysisModel1012110001Model
+    args:
+      model_path: data/MODEL1012110001.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: koivumaki2009_se_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: koivumaki2009_se_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: larsen2004_calci_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: li2010_yeastglyc_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

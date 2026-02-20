@@ -1,0 +1,36 @@
+modules:
+  bertram2006_atpp_1:
+    class: src.bertram2006_atpproduction_mitochondrial_model1006230114_model:Bertram2006AtpproductionMitochondrialModel1006230114Model
+    args:
+      model_path: data/MODEL1006230114.xml
+  bhattacharya2011_2:
+    class: src.bhattacharya2011_ureacycle_model0318212660_model:Bhattacharya2011UreacycleModel0318212660Model
+    args:
+      model_path: data/MODEL0318212660.xml
+  chassagnole2002__3:
+    class: src.chassagnole2002_carbon_metabolism_biomd0000000051_model:Chassagnole2002CarbonMetabolismBiomd0000000051Model
+    args:
+      model_path: data/BIOMD0000000051.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: bertram2006_atpp_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: bhattacharya2011_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: chassagnole2002__3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

@@ -1,0 +1,28 @@
+modules:
+  best2009_homeost_1:
+    class: src.best2009_homeostatic_mechanisms_in_dopamine_synt_model1502230000_model:Best2009HomeostaticMechanismsInDopamineSyntModel1502230000Model
+    args:
+      model_path: data/MODEL1502230000.xml
+  bhalla1999_3d_2:
+    class: src.bhalla1999_3d_fold_model_model9071122126_model:Bhalla19993dFoldModelModel9071122126Model
+    args:
+      model_path: data/MODEL9071122126.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: best2009_homeost_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: bhalla1999_3d_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

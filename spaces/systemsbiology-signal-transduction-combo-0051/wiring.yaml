@@ -1,0 +1,36 @@
+modules:
+  musante2017_swit_1:
+    class: src.musante2017_switching_behaviour_of_pp2a_inhibiti_biomd0000000643_model:Musante2017SwitchingBehaviourOfPp2aInhibitiBiomd0000000643Model
+    args:
+      model_path: data/BIOMD0000000643.xml
+  proctor2013_cart_2:
+    class: src.proctor2013_cartilage_breakdown_interventions_to_biomd0000000504_model:Proctor2013CartilageBreakdownInterventionsToBiomd0000000504Model
+    args:
+      model_path: data/BIOMD0000000504.xml
+  proctor2013_effe_3:
+    class: src.proctor2013_effect_of_a_immunisation_in_alzheime_biomd0000000488_model:Proctor2013EffectOfAImmunisationInAlzheimeBiomd0000000488Model
+    args:
+      model_path: data/BIOMD0000000488.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: musante2017_swit_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: proctor2013_cart_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: proctor2013_effe_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

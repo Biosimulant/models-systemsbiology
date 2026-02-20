@@ -1,0 +1,44 @@
+modules:
+  dan_glycolysis_1:
+    class: src.dan_2006_glycolysis_reduction_model5952308332_model:Dan2006GlycolysisReductionModel5952308332Model
+    args:
+      model_path: data/MODEL5952308332.xml
+  goodwin1965_enzy_2:
+    class: src.goodwin1965_enzymecontrolprocess_model0911532520_model:Goodwin1965EnzymecontrolprocessModel0911532520Model
+    args:
+      model_path: data/MODEL0911532520.xml
+  heiland2019_two_3:
+    class: src.heiland2019_two_compartment_model_of_nad_biosynt_model1905220002_model:Heiland2019TwoCompartmentModelOfNadBiosyntModel1905220002Model
+    args:
+      model_path: data/MODEL1905220002.xml
+  koivumaki2009_se_4:
+    class: src.koivumaki2009_sercaatpase_long_model1006230105_model:Koivumaki2009SercaatpaseLongModel1006230105Model
+    args:
+      model_path: data/MODEL1006230105.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: dan_glycolysis_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: goodwin1965_enzy_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: heiland2019_two_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: koivumaki2009_se_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

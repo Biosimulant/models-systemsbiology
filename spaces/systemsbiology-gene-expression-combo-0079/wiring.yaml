@@ -1,0 +1,44 @@
+modules:
+  lahtvee2016_auto_1:
+    class: src.lahtvee2016_automatically_generated_model_for_s_model1511100015_model:Lahtvee2016AutomaticallyGeneratedModelForSModel1511100015Model
+    args:
+      model_path: data/MODEL1511100015.xml
+  lahtvee2016_auto_2:
+    class: src.lahtvee2016_automatically_generated_model_for_s_model1511100016_model:Lahtvee2016AutomaticallyGeneratedModelForSModel1511100016Model
+    args:
+      model_path: data/MODEL1511100016.xml
+  lahtvee2016_auto_3:
+    class: src.lahtvee2016_automatically_generated_model_for_s_model1511100017_model:Lahtvee2016AutomaticallyGeneratedModelForSModel1511100017Model
+    args:
+      model_path: data/MODEL1511100017.xml
+  lahtvee2016_auto_4:
+    class: src.lahtvee2016_automatically_generated_model_for_s_model1511100018_model:Lahtvee2016AutomaticallyGeneratedModelForSModel1511100018Model
+    args:
+      model_path: data/MODEL1511100018.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: lahtvee2016_auto_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: lahtvee2016_auto_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: lahtvee2016_auto_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: lahtvee2016_auto_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

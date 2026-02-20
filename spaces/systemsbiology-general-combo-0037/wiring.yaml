@@ -1,0 +1,36 @@
+modules:
+  caron2010_mtorc1_1:
+    class: src.caron2010_mtorc1_upstreamregulators_model1012220003_model:Caron2010Mtorc1UpstreamregulatorsModel1012220003Model
+    args:
+      model_path: data/MODEL1012220003.xml
+  caron2010_mtorsi_2:
+    class: src.caron2010_mtorsignalingnetwork_activityflow_model1012220004_model:Caron2010MtorsignalingnetworkActivityflowModel1012220004Model
+    args:
+      model_path: data/MODEL1012220004.xml
+  casini2022_metha_3:
+    class: src.casini2022_methanothermobacter_marburgensis_marb_model2211290003_model:Casini2022MethanothermobacterMarburgensisMarbModel2211290003Model
+    args:
+      model_path: data/MODEL2211290003.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: caron2010_mtorc1_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: caron2010_mtorsi_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: casini2022_metha_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

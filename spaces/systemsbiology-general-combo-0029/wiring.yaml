@@ -1,0 +1,28 @@
+modules:
+  boehm2014_isofor_1:
+    class: src.boehm2014_isoform_specific_dimerization_of_pstat_biomd0000000591_model:Boehm2014IsoformSpecificDimerizationOfPstatBiomd0000000591Model
+    args:
+      model_path: data/BIOMD0000000591.xml
+  borghans1997_cal_2:
+    class: src.borghans1997_calcium_oscillation_model_1_biomd0000000043_model:Borghans1997CalciumOscillationModel1Biomd0000000043Model
+    args:
+      model_path: data/BIOMD0000000043.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: boehm2014_isofor_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: borghans1997_cal_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

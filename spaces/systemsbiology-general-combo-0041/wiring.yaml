@@ -1,0 +1,36 @@
+modules:
+  chickarmane2008__1:
+    class: src.chickarmane2008_stem_cell_lineage_nanog_gata_6_s_biomd0000000210_model:Chickarmane2008StemCellLineageNanogGata6SBiomd0000000210Model
+    args:
+      model_path: data/BIOMD0000000210.xml
+  chowhall2008_dyn_2:
+    class: src.chowhall2008_dynamics_of_human_weight_change_ode_biomd0000000901_model:Chowhall2008DynamicsOfHumanWeightChangeOdeBiomd0000000901Model
+    args:
+      model_path: data/BIOMD0000000901.xml
+  ciliberto2005_st_3:
+    class: src.ciliberto2005_steady_states_and_oscillations_in_biomd0000001006_model:Ciliberto2005SteadyStatesAndOscillationsInBiomd0000001006Model
+    args:
+      model_path: data/BIOMD0000001006.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: chickarmane2008__1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: chowhall2008_dyn_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: ciliberto2005_st_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

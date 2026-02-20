@@ -1,0 +1,36 @@
+modules:
+  albert2005_glyco_1:
+    class: src.albert2005_glycolysis_biomd0000000211_model:Albert2005GlycolysisBiomd0000000211Model
+    args:
+      model_path: data/BIOMD0000000211.xml
+  bagci2006_apopto_2:
+    class: src.bagci2006_apoptoticstimuli_model1006230056_model:Bagci2006ApoptoticstimuliModel1006230056Model
+    args:
+      model_path: data/MODEL1006230056.xml
+  bakker1997_glyco_3:
+    class: src.bakker1997_glycolysis_model1101100000_model:Bakker1997GlycolysisModel1101100000Model
+    args:
+      model_path: data/MODEL1101100000.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: albert2005_glyco_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: bagci2006_apopto_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: bakker1997_glyco_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

@@ -1,0 +1,36 @@
+modules:
+  albeck2008_extri_1:
+    class: src.albeck2008_extrinsic_apoptosis_biomd0000000220_model:Albeck2008ExtrinsicApoptosisBiomd0000000220Model
+    args:
+      model_path: data/BIOMD0000000220.xml
+  bekkar2018_mapk1_2:
+    class: src.bekkar2018_mapk1_3_regulation_in_atherosclerosis_model1712240003_model:Bekkar2018Mapk13RegulationInAtherosclerosisModel1712240003Model
+    args:
+      model_path: data/MODEL1712240003.sbml
+  bekkar2018_ppara_3:
+    class: src.bekkar2018_ppara_regulation_in_atherosclerosis_model1712240001_model:Bekkar2018PparaRegulationInAtherosclerosisModel1712240001Model
+    args:
+      model_path: data/MODEL1712240001.sbml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: albeck2008_extri_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: bekkar2018_mapk1_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: bekkar2018_ppara_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

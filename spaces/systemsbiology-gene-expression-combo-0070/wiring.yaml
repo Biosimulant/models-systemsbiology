@@ -1,0 +1,44 @@
+modules:
+  flis2015_plant_1:
+    class: src.flis2015_plant_clock_gene_circuit_p2011_6_1_plm_model1510190005_model:Flis2015PlantClockGeneCircuitP201161PlmModel1510190005Model
+    args:
+      model_path: data/MODEL1510190005.xml
+  fran_ois2005_2:
+    class: src.fran_ois2005_mixed_feedback_loop_two_gene_networ_biomd0000000539_model:FranOis2005MixedFeedbackLoopTwoGeneNetworBiomd0000000539Model
+    args:
+      model_path: data/BIOMD0000000539.xml
+  friedland2009_ar_3:
+    class: src.friedland2009_ara_rtc3_counter_biomd0000000301_model:Friedland2009AraRtc3CounterBiomd0000000301Model
+    args:
+      model_path: data/BIOMD0000000301.xml
+  fuentes2005_zymo_4:
+    class: src.fuentes2005_zymogenactivation_biomd0000000092_model:Fuentes2005ZymogenactivationBiomd0000000092Model
+    args:
+      model_path: data/BIOMD0000000092.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: flis2015_plant_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: fran_ois2005_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: friedland2009_ar_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: fuentes2005_zymo_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

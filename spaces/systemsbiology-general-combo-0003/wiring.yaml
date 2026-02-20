@@ -1,0 +1,28 @@
+modules:
+  abu_soud1999_1:
+    class: src.abu_soud1999_nmarginine_model9088169066_model:AbuSoud1999NmarginineModel9088169066Model
+    args:
+      model_path: data/MODEL9088169066.xml
+  abu_soud1999_2:
+    class: src.abu_soud1999_noharginine_model9088294310_model:AbuSoud1999NoharginineModel9088294310Model
+    args:
+      model_path: data/MODEL9088294310.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: abu_soud1999_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: abu_soud1999_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

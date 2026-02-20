@@ -1,0 +1,28 @@
+modules:
+  arnold2011_giers_1:
+    class: src.arnold2011_giersch1990_calvincycle_biomd0000000390_model:Arnold2011Giersch1990CalvincycleBiomd0000000390Model
+    args:
+      model_path: data/BIOMD0000000390.xml
+  arnold2011_hahn1_2:
+    class: src.arnold2011_hahn1986_calvincycle_starch_sucrose_biomd0000000389_model:Arnold2011Hahn1986CalvincycleStarchSucroseBiomd0000000389Model
+    args:
+      model_path: data/BIOMD0000000389.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: arnold2011_giers_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: arnold2011_hahn1_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

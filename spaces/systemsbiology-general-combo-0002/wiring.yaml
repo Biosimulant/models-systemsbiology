@@ -1,0 +1,28 @@
+modules:
+  abu_soud1999_1:
+    class: src.abu_soud1999_homoarginine_model9087988095_model:AbuSoud1999HomoarginineModel9087988095Model
+    args:
+      model_path: data/MODEL9087988095.xml
+  abu_soud1999_2:
+    class: src.abu_soud1999_l_arginine_model9087766308_model:AbuSoud1999LArginineModel9087766308Model
+    args:
+      model_path: data/MODEL9087766308.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: abu_soud1999_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: abu_soud1999_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

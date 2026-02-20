@@ -1,0 +1,28 @@
+modules:
+  b_chel2013_1:
+    class: src.b_chel2013_dopaminergic_nerve_cell_model_model1302200000_model:BChel2013DopaminergicNerveCellModelModel1302200000Model
+    args:
+      model_path: data/MODEL1302200000.xml
+  back2018_mechani_2:
+    class: src.back2018_mechanistic_pk_model_of_fenofibrate_model2003030002_model:Back2018MechanisticPkModelOfFenofibrateModel2003030002Model
+    args:
+      model_path: data/MODEL2003030002.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: b_chel2013_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: back2018_mechani_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

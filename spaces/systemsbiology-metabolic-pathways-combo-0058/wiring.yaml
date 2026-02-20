@@ -1,0 +1,44 @@
+modules:
+  magnus1997_mitoc_1:
+    class: src.magnus1997_mitoca_betacellminimalmodel_model1201140004_model:Magnus1997MitocaBetacellminimalmodelModel1201140004Model
+    args:
+      model_path: data/MODEL1201140004.xml
+  martins2004_yeas_2:
+    class: src.martins2004_yeast_glycolysis_glycerolsynthesis_model1009220000_model:Martins2004YeastGlycolysisGlycerolsynthesisModel1009220000Model
+    args:
+      model_path: data/MODEL1009220000.xml
+  saeidi2012_quoru_3:
+    class: src.saeidi2012_quorum_sensing_device_that_produces_g_biomd0000000438_model:Saeidi2012QuorumSensingDeviceThatProducesGBiomd0000000438Model
+    args:
+      model_path: data/BIOMD0000000438.xml
+  vinnakota2006_mu_4:
+    class: src.vinnakota2006_muscleglycogenolysis_modela_model1006230077_model:Vinnakota2006MuscleglycogenolysisModelaModel1006230077Model
+    args:
+      model_path: data/MODEL1006230077.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: magnus1997_mitoc_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: martins2004_yeas_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: saeidi2012_quoru_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: vinnakota2006_mu_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

@@ -1,0 +1,44 @@
+modules:
+  kumbale_tanda_1:
+    class: src.kumbale_2025_tanda_model_to_assess_the_impact_of_model2502110001_model:Kumbale2025TandaModelToAssessTheImpactOfModel2502110001Model
+    args:
+      model_path: data/MODEL2502110001.xml
+  lahtvee2016_auto_2:
+    class: src.lahtvee2016_automatically_generated_model_for_s_model1511100000_model:Lahtvee2016AutomaticallyGeneratedModelForSModel1511100000Model
+    args:
+      model_path: data/MODEL1511100000.xml
+  lahtvee2016_auto_3:
+    class: src.lahtvee2016_automatically_generated_model_for_s_model1511100001_model:Lahtvee2016AutomaticallyGeneratedModelForSModel1511100001Model
+    args:
+      model_path: data/MODEL1511100001.xml
+  lahtvee2016_auto_4:
+    class: src.lahtvee2016_automatically_generated_model_for_s_model1511100002_model:Lahtvee2016AutomaticallyGeneratedModelForSModel1511100002Model
+    args:
+      model_path: data/MODEL1511100002.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: kumbale_tanda_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: lahtvee2016_auto_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: lahtvee2016_auto_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: lahtvee2016_auto_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

@@ -1,0 +1,44 @@
+modules:
+  fernandez2006_mo_1:
+    class: src.fernandez2006_modelb_biomd0000000153_model:Fernandez2006ModelbBiomd0000000153Model
+    args:
+      model_path: data/BIOMD0000000153.xml
+  ferreira2003_cml_2:
+    class: src.ferreira2003_cml_generation2_biomd0000000053_model:Ferreira2003CmlGeneration2Biomd0000000053Model
+    args:
+      model_path: data/BIOMD0000000053.xml
+  fisher2006_nfat_3:
+    class: src.fisher2006_nfat_activation_biomd0000000123_model:Fisher2006NfatActivationBiomd0000000123Model
+    args:
+      model_path: data/BIOMD0000000123.xml
+  flis2015_plant_4:
+    class: src.flis2015_plant_clock_gene_circuit_p2011_1_2_plm_biomd0000000597_model:Flis2015PlantClockGeneCircuitP201112PlmBiomd0000000597Model
+    args:
+      model_path: data/BIOMD0000000597.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: fernandez2006_mo_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: ferreira2003_cml_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: fisher2006_nfat_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: flis2015_plant_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

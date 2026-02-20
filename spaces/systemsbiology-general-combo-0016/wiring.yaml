@@ -1,0 +1,28 @@
+modules:
+  ayati2010_bonere_1:
+    class: src.ayati2010_boneremodelingdynamics_withtumour_biomd0000000402_model:Ayati2010BoneremodelingdynamicsWithtumourBiomd0000000402Model
+    args:
+      model_path: data/BIOMD0000000402.xml
+  ayati2010_bonere_2:
+    class: src.ayati2010_boneremodelingdynamics_withtumour_drug_biomd0000000403_model:Ayati2010BoneremodelingdynamicsWithtumourDrugBiomd0000000403Model
+    args:
+      model_path: data/BIOMD0000000403.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: ayati2010_bonere_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: ayati2010_bonere_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

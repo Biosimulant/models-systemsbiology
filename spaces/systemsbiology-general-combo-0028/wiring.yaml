@@ -1,0 +1,28 @@
+modules:
+  blum2000_lhsecre_1:
+    class: src.blum2000_lhsecretion_1_biomd0000000077_model:Blum2000Lhsecretion1Biomd0000000077Model
+    args:
+      model_path: data/BIOMD0000000077.xml
+  boada2016_incohe_2:
+    class: src.boada2016_incoherent_type_1_feed_forward_loop_i1_biomd0000000696_model:Boada2016IncoherentType1FeedForwardLoopI1Biomd0000000696Model
+    args:
+      model_path: data/BIOMD0000000696.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: blum2000_lhsecre_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: boada2016_incohe_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

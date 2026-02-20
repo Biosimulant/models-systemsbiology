@@ -1,0 +1,75 @@
+schema_version: '2.0'
+title: 'Systemsbiology: General (COMBO_0040)'
+description: Systemsbiology general comparative space with 3 models, configured as
+  non-causal co-simulation.
+models:
+- repo: Biosimulant/models-systemsbiology
+  alias: chenxf2008_cicr_1
+  manifest_path: models/systemsbiology-sbml-chenxf2008-cicr-biomd0000000202-model/model.yaml
+  parameters:
+    model_path: data/BIOMD0000000202.xml
+- repo: Biosimulant/models-systemsbiology
+  alias: chi2019_in_2
+  manifest_path: models/systemsbiology-sbml-chi2019-in-silico-prediction-of-pampa-effective-model2406030003-model/model.yaml
+  parameters:
+    model_path: data/MODEL2406030003.xml
+- repo: Biosimulant/models-systemsbiology
+  alias: chickarmane2008__3
+  manifest_path: models/systemsbiology-sbml-chickarmane2008-stem-cell-lineage-determination-biomd0000000209-model/model.yaml
+  parameters:
+    model_path: data/BIOMD0000000209.xml
+- repo: Biosimulant/models-observability
+  alias: state_compare_mon
+  manifest_path: models/observability-state-comparison-monitor/model.yaml
+  parameters:
+    max_points: 2000
+    min_dt: 1.0
+- repo: Biosimulant/models-observability
+  alias: state_metrics_mon
+  manifest_path: models/observability-state-metrics-monitor/model.yaml
+  parameters:
+    max_points: 2000
+    min_dt: 1.0
+runtime:
+  duration: 60.0
+  tick_dt: 0.01
+  initial_inputs: {}
+wiring:
+- from: chenxf2008_cicr_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: chi2019_in_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: chickarmane2008__3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+scientific_context:
+  question: How do general mechanisms compare across these models?
+  mode: comparative
+  assumptions:
+  - Model implementations are used as published in their curated manifests without
+    biological reinterpretation.
+  - Time integration uses a shared global tick compatible with model min_dt constraints.
+  - Comparative (non-causal) mode is used because full deterministic IO coverage for
+    causal coupling was not satisfied.
+  expected_observables:
+  - Model output trajectories under shared runtime settings.
+  - Cross-model agreement/divergence in key state or metric signals.
+  - Relative behavior comparison without causal linkage claims.
+  limitations:
+  - No new biology is introduced beyond what upstream models encode.
+  - Cross-model semantic matching is rule-based and may under-connect uncertain routes.
+  provenance:
+  - 'systemsbiology-sbml-chenxf2008-cicr-biomd0000000202-model :: biomodels_ebi:BIOMD0000000202
+    :: https://www.ebi.ac.uk/biomodels/BIOMD0000000202'
+  - 'systemsbiology-sbml-chi2019-in-silico-prediction-of-pampa-effective-model2406030003-model
+    :: biomodels_ebi:MODEL2406030003 :: https://www.ebi.ac.uk/biomodels/MODEL2406030003'
+  - 'systemsbiology-sbml-chickarmane2008-stem-cell-lineage-determination-biomd0000000209-model
+    :: biomodels_ebi:BIOMD0000000209 :: https://www.ebi.ac.uk/biomodels/BIOMD0000000209'
+  visualization_rationale: A dedicated monitor model receives all participating model
+    state streams (`state_a..state_d`) so trajectories can be compared in one place
+    without claiming causal coupling when IO semantics are incomplete.

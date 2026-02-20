@@ -1,0 +1,36 @@
+modules:
+  cunha2022_diel_1:
+    class: src.cunha2022_diel_multi_tissue_model_of_quercus_sub_model2205040006_model:Cunha2022DielMultiTissueModelOfQuercusSubModel2205040006Model
+    args:
+      model_path: data/MODEL2205040006.xml
+  cunha2022_inner_2:
+    class: src.cunha2022_inner_bark_model_for_quercus_suber_model2205040002_model:Cunha2022InnerBarkModelForQuercusSuberModel2205040002Model
+    args:
+      model_path: data/MODEL2205040002.xml
+  cunha2022_reprod_3:
+    class: src.cunha2022_reproduction_phellogen_model_for_querc_model2205040003_model:Cunha2022ReproductionPhellogenModelForQuercModel2205040003Model
+    args:
+      model_path: data/MODEL2205040003.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: cunha2022_diel_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: cunha2022_inner_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: cunha2022_reprod_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

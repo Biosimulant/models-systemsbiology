@@ -1,0 +1,28 @@
+modules:
+  banaji2005_brain_1:
+    class: src.banaji2005_brain_cell_metabolism_model4992089662_model:Banaji2005BrainCellMetabolismModel4992089662Model
+    args:
+      model_path: data/MODEL4992089662.xml
+  band2012_dii_2:
+    class: src.band2012_dii_venus_fullmodel_biomd0000000413_model:Band2012DiiVenusFullmodelBiomd0000000413Model
+    args:
+      model_path: data/BIOMD0000000413.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: banaji2005_brain_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: band2012_dii_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

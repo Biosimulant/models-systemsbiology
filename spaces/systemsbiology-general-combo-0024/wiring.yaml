@@ -1,0 +1,28 @@
+modules:
+  benson2014_faah_1:
+    class: src.benson2014_faah_inhibitors_for_the_treatment_of_biomd0000000512_model:Benson2014FaahInhibitorsForTheTreatmentOfBiomd0000000512Model
+    args:
+      model_path: data/BIOMD0000000512.xml
+  bertram1995_panc_2:
+    class: src.bertram1995_pancreaticbetacell_crac_biomd0000000374_model:Bertram1995PancreaticbetacellCracBiomd0000000374Model
+    args:
+      model_path: data/BIOMD0000000374.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: benson2014_faah_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: bertram1995_panc_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

@@ -1,0 +1,36 @@
+modules:
+  brands2002_monos_1:
+    class: src.brands2002_monosaccharide_casein_systems_biomd0000000052_model:Brands2002MonosaccharideCaseinSystemsBiomd0000000052Model
+    args:
+      model_path: data/BIOMD0000000052.xml
+  bravo2012_modell_2:
+    class: src.bravo2012_modelling_blood_coagulation_factor_va_biomd0000000739_model:Bravo2012ModellingBloodCoagulationFactorVaBiomd0000000739Model
+    args:
+      model_path: data/BIOMD0000000739.xml
+  brown1997_plasma_3:
+    class: src.brown1997_plasma_melatonin_levels_biomd0000000672_model:Brown1997PlasmaMelatoninLevelsBiomd0000000672Model
+    args:
+      model_path: data/BIOMD0000000672.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: brands2002_monos_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: bravo2012_modell_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: brown1997_plasma_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

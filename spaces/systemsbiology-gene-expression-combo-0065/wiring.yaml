@@ -1,0 +1,44 @@
+modules:
+  cronwright2002_g_1:
+    class: src.cronwright2002_glycerol_synthesis_biomd0000000076_model:Cronwright2002GlycerolSynthesisBiomd0000000076Model
+    args:
+      model_path: data/BIOMD0000000076.xml
+  cucuianu2010_a_2:
+    class: src.cucuianu2010_a_hypothetical_mathematical_model_o_biomd0000000799_model:Cucuianu2010AHypotheticalMathematicalModelOBiomd0000000799Model
+    args:
+      model_path: data/BIOMD0000000799.xml
+  cunha2022_iec787_3:
+    class: src.cunha2022_iec7871_gsm_model_of_quercus_suber_model2205040005_model:Cunha2022Iec7871GsmModelOfQuercusSuberModel2205040005Model
+    args:
+      model_path: data/MODEL2205040005.xml
+  depaor1986_circu_4:
+    class: src.depaor1986_circulatoryautoregulation_model1172940336_model:Depaor1986CirculatoryautoregulationModel1172940336Model
+    args:
+      model_path: data/MODEL1172940336.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: cronwright2002_g_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: cucuianu2010_a_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: cunha2022_iec787_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: depaor1986_circu_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

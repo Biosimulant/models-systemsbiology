@@ -1,0 +1,36 @@
+modules:
+  cao2013_applicat_1:
+    class: src.cao2013_application_of_absis_method_in_the_bista_biomd0000000485_model:Cao2013ApplicationOfAbsisMethodInTheBistaBiomd0000000485Model
+    args:
+      model_path: data/BIOMD0000000485.xml
+  capuani2015_bind_2:
+    class: src.capuani2015_binding_of_cbl_and_grb2_to_egfr_earl_biomd0000000595_model:Capuani2015BindingOfCblAndGrb2ToEgfrEarlBiomd0000000595Model
+    args:
+      model_path: data/BIOMD0000000595.xml
+  cardiomyocyte_te_3:
+    class: src.cardiomyocyte_telomere_damage_by_ros_without_cel_model1608250001_model:CardiomyocyteTelomereDamageByRosWithoutCelModel1608250001Model
+    args:
+      model_path: data/MODEL1608250001.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: cao2013_applicat_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: capuani2015_bind_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: cardiomyocyte_te_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

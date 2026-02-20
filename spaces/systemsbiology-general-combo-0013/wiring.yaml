@@ -1,0 +1,28 @@
+modules:
+  arnold2011_shark_1:
+    class: src.arnold2011_sharkey2007_rubisco_calvincycle_biomd0000000386_model:Arnold2011Sharkey2007RubiscoCalvincycleBiomd0000000386Model
+    args:
+      model_path: data/BIOMD0000000386.xml
+  arnold2011_zhu20_2:
+    class: src.arnold2011_zhu2007_calvincycle_starch_sucrose_ph_biomd0000000393_model:Arnold2011Zhu2007CalvincycleStarchSucrosePhBiomd0000000393Model
+    args:
+      model_path: data/BIOMD0000000393.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: arnold2011_shark_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: arnold2011_zhu20_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

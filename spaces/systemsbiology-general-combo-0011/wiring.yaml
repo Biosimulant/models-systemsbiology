@@ -1,0 +1,28 @@
+modules:
+  arnold2011_laisk_1:
+    class: src.arnold2011_laisk2006_calvincycle_starch_sucrose_biomd0000000392_model:Arnold2011Laisk2006CalvincycleStarchSucroseBiomd0000000392Model
+    args:
+      model_path: data/BIOMD0000000392.xml
+  arnold2011_medly_2:
+    class: src.arnold2011_medlyn2002_rubisco_calvincycle_biomd0000000384_model:Arnold2011Medlyn2002RubiscoCalvincycleBiomd0000000384Model
+    args:
+      model_path: data/BIOMD0000000384.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: arnold2011_laisk_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: arnold2011_medly_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

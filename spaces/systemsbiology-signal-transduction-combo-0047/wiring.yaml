@@ -1,0 +1,36 @@
+modules:
+  curien2003_metth_1:
+    class: src.curien2003_metthr_synthesis_biomd0000000068_model:Curien2003MetthrSynthesisBiomd0000000068Model
+    args:
+      model_path: data/BIOMD0000000068.xml
+  dallepezze2014_c_2:
+    class: src.dallepezze2014_cellular_senescene_induced_mitoch_biomd0000000582_model:Dallepezze2014CellularSenesceneInducedMitochBiomd0000000582Model
+    args:
+      model_path: data/BIOMD0000000582.xml
+  hatakeyama2003_m_3:
+    class: src.hatakeyama2003_mapk_biomd0000000146_model:Hatakeyama2003MapkBiomd0000000146Model
+    args:
+      model_path: data/BIOMD0000000146.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: curien2003_metth_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: dallepezze2014_c_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: hatakeyama2003_m_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

@@ -1,0 +1,36 @@
+modules:
+  cooper2015_model_1:
+    class: src.cooper2015_modeling_the_effects_of_systemic_medi_biomd0000000855_model:Cooper2015ModelingTheEffectsOfSystemicMediBiomd0000000855Model
+    args:
+      model_path: data/BIOMD0000000855.xml
+  corrias2007_gast_2:
+    class: src.corrias2007_gastricsmcellularactivation_model0913145131_model:Corrias2007GastricsmcellularactivationModel0913145131Model
+    args:
+      model_path: data/MODEL0913145131.xml
+  cortes2019_optim_3:
+    class: src.cortes2019_optimality_of_the_spontaneous_prophag_biomd0000000884_model:Cortes2019OptimalityOfTheSpontaneousProphagBiomd0000000884Model
+    args:
+      model_path: data/BIOMD0000000884.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: cooper2015_model_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: corrias2007_gast_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: cortes2019_optim_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

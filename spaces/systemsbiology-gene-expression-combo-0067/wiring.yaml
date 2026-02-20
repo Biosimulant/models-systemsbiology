@@ -1,0 +1,44 @@
+modules:
+  feist2006_methan_1:
+    class: src.feist2006_methanogenesis_optih2_co2_model5662398146_model:Feist2006MethanogenesisOptih2Co2Model5662398146Model
+    args:
+      model_path: data/MODEL5662398146.xml
+  feist2006_methan_2:
+    class: src.feist2006_methanogenesis_optimethanol_biomd0000001098_model:Feist2006MethanogenesisOptimethanolBiomd0000001098Model
+    args:
+      model_path: data/BIOMD0000001098.xml
+  feist2006_methan_3:
+    class: src.feist2006_methanogenesis_optipyruvate_model5662425708_model:Feist2006MethanogenesisOptipyruvateModel5662425708Model
+    args:
+      model_path: data/MODEL5662425708.xml
+  fernandez2006_mo_4:
+    class: src.fernandez2006_modela_biomd0000000152_model:Fernandez2006ModelaBiomd0000000152Model
+    args:
+      model_path: data/BIOMD0000000152.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: feist2006_methan_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: feist2006_methan_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: feist2006_methan_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: fernandez2006_mo_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

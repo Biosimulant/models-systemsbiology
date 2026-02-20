@@ -1,0 +1,44 @@
+modules:
+  gpcr_cubic_1:
+    class: src.gpcr_cubic_ternary_complex_with_g_protein_cycle_model2306220001_model:GpcrCubicTernaryComplexWithGProteinCycleModel2306220001Model
+    args:
+      model_path: data/MODEL2306220001.xml
+  guisoni2016_cis_2:
+    class: src.guisoni2016_cis_regulatory_system_crs_can_drive_model1611030000_model:Guisoni2016CisRegulatorySystemCrsCanDriveModel1611030000Model
+    args:
+      model_path: data/MODEL1611030000.xml
+  halloy2002_folli_3:
+    class: src.halloy2002_follicularautomaton_model1006230014_model:Halloy2002FollicularautomatonModel1006230014Model
+    args:
+      model_path: data/MODEL1006230014.xml
+  hockin2002_blood_4:
+    class: src.hockin2002_bloodcoagulation_biomd0000000335_model:Hockin2002BloodcoagulationBiomd0000000335Model
+    args:
+      model_path: data/BIOMD0000000335.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: gpcr_cubic_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: guisoni2016_cis_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: halloy2002_folli_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: hockin2002_blood_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

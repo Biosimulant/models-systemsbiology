@@ -1,0 +1,36 @@
+modules:
+  rong2020_grover_1:
+    class: src.rong2020_grover_tox21_predicts_activity_of_compo_model2406050005_model:Rong2020GroverTox21PredictsActivityOfCompoModel2406050005Model
+    args:
+      model_path: data/MODEL2406050005.xml
+  sen2013_phosphol_2:
+    class: src.sen2013_phospholipid_synthesis_in_p_knowlesi_biomd0000000495_model:Sen2013PhospholipidSynthesisInPKnowlesiBiomd0000000495Model
+    args:
+      model_path: data/BIOMD0000000495.xml
+  westermark2003_p_3:
+    class: src.westermark2003_pancreatic_glycosc_basic_biomd0000000225_model:Westermark2003PancreaticGlycoscBasicBiomd0000000225Model
+    args:
+      model_path: data/BIOMD0000000225.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: rong2020_grover_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: sen2013_phosphol_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: westermark2003_p_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

@@ -1,0 +1,36 @@
+modules:
+  calzone2008_rb_1:
+    class: src.calzone2008_rb_model4132046015_model:Calzone2008RbModel4132046015Model
+    args:
+      model_path: data/MODEL4132046015.xml
+  calzone2010_cell_2:
+    class: src.calzone2010_cellfate_master_model_model0912180000_model:Calzone2010CellfateMasterModelModel0912180000Model
+    args:
+      model_path: data/MODEL0912180000.xml
+  cao2008_network_3:
+    class: src.cao2008_network_of_a_toggle_switch_biomd0000000483_model:Cao2008NetworkOfAToggleSwitchBiomd0000000483Model
+    args:
+      model_path: data/BIOMD0000000483.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: calzone2008_rb_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: calzone2010_cell_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: cao2008_network_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

@@ -1,0 +1,44 @@
+modules:
+  vinnakotta2010_t_1:
+    class: src.vinnakotta2010_transcientanoxia_solmuscle_model1006230112_model:Vinnakotta2010TranscientanoxiaSolmuscleModel1006230112Model
+    args:
+      model_path: data/MODEL1006230112.xml
+  wang2007_atp_2:
+    class: src.wang2007_atp_induced_intracellular_calcium_oscil_biomd0000000145_model:Wang2007AtpInducedIntracellularCalciumOscilBiomd0000000145Model
+    args:
+      model_path: data/BIOMD0000000145.xml
+  wu2006_atpsynthe_3:
+    class: src.wu2006_atpsynthesis_skeletalmuscle_model1006230034_model:Wu2006AtpsynthesisSkeletalmuscleModel1006230034Model
+    args:
+      model_path: data/MODEL1006230034.xml
+  wu2006_k_4:
+    class: src.wu2006_k_channel_biomd0000000124_model:Wu2006KChannelBiomd0000000124Model
+    args:
+      model_path: data/BIOMD0000000124.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: vinnakotta2010_t_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: wang2007_atp_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: wu2006_atpsynthe_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: wu2006_k_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

@@ -1,0 +1,44 @@
+modules:
+  holzhutter2004_e_1:
+    class: src.holzhutter2004_erythrocyte_metabolism_biomd0000000070_model:Holzhutter2004ErythrocyteMetabolismBiomd0000000070Model
+    args:
+      model_path: data/BIOMD0000000070.xml
+  j_nsson2005_2:
+    class: src.j_nsson2005_wuschelexpression_shootapicalmeriste_model1112100000_model:JNsson2005WuschelexpressionShootapicalmeristeModel1112100000Model
+    args:
+      model_path: data/MODEL1112100000.xml
+  karapetyan2016_g_3:
+    class: src.karapetyan2016_genetic_oscillatory_network_activ_biomd0000000586_model:Karapetyan2016GeneticOscillatoryNetworkActivBiomd0000000586Model
+    args:
+      model_path: data/BIOMD0000000586.xml
+  karapetyan2016_g_4:
+    class: src.karapetyan2016_genetic_oscillatory_network_repre_biomd0000000587_model:Karapetyan2016GeneticOscillatoryNetworkRepreBiomd0000000587Model
+    args:
+      model_path: data/BIOMD0000000587.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: holzhutter2004_e_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: j_nsson2005_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: karapetyan2016_g_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: karapetyan2016_g_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d
