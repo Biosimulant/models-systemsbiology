@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000438
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000438?filename=BIOMD0000000438_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.saeidi2012_quorum_sensing_device_that_produces_g_biomd0000000438_model:Saeidi2012QuorumSensingDeviceThatProducesGBiomd0000000438Model
   init_kwargs:
     model_path: data/BIOMD0000000438.xml

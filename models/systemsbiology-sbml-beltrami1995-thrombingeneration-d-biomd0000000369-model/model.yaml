@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000369
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000369?filename=BIOMD0000000369_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.beltrami1995_thrombingeneration_d_biomd0000000369_model:Beltrami1995ThrombingenerationDBiomd0000000369Model
   init_kwargs:
     model_path: data/BIOMD0000000369.xml

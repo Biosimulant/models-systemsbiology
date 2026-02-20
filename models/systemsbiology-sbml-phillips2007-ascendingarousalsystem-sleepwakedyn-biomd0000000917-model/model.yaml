@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000917
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000917?filename=Phillips2007_Curated.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.phillips2007_ascendingarousalsystem_sleepwakedyn_biomd0000000917_model:Phillips2007AscendingarousalsystemSleepwakedynBiomd0000000917Model
   init_kwargs:
     model_path: data/BIOMD0000000917.xml

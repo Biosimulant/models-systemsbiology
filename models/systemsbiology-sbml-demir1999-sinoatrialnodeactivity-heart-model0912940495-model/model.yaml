@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL0912940495
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0912940495?filename=MODEL0912940495_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.demir1999_sinoatrialnodeactivity_heart_model0912940495_model:Demir1999SinoatrialnodeactivityHeartModel0912940495Model
   init_kwargs:
     model_path: data/MODEL0912940495.xml

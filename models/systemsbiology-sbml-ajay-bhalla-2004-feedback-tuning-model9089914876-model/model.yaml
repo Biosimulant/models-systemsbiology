@@ -19,7 +19,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL9089914876
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL9089914876?filename=MODEL9089914876_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ajay_bhalla_2004_feedback_tuning_model9089914876_model:AjayBhalla2004FeedbackTuningModel9089914876Model
   init_kwargs:
     model_path: data/MODEL9089914876.xml

@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000322
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000322?filename=BIOMD0000000322_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kim2011_oscillator_simplei_biomd0000000322_model:Kim2011OscillatorSimpleiBiomd0000000322Model
   init_kwargs:
     model_path: data/BIOMD0000000322.xml

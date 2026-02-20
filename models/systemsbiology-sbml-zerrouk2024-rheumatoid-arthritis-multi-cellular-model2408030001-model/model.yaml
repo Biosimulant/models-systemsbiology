@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2408030001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2408030001?filename=RA_multicellular_model.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.zerrouk2024_rheumatoid_arthritis_multi_cellular_model2408030001_model:Zerrouk2024RheumatoidArthritisMultiCellularModel2408030001Model
   init_kwargs:
     model_path: data/MODEL2408030001.xml

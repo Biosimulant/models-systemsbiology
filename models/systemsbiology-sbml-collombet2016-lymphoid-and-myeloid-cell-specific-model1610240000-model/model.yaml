@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1610240000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1610240000?filename=MODEL1610240000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.collombet2016_lymphoid_and_myeloid_cell_specific_model1610240000_model:Collombet2016LymphoidAndMyeloidCellSpecificModel1610240000Model
   init_kwargs:
     model_path: data/MODEL1610240000.xml

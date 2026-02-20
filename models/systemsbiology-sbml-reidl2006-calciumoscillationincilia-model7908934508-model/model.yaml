@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL7908934508
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL7908934508?filename=MODEL7908934508_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.reidl2006_calciumoscillationincilia_model7908934508_model:Reidl2006CalciumoscillationinciliaModel7908934508Model
   init_kwargs:
     model_path: data/MODEL7908934508.xml

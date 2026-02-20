@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL0912044015
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0912044015?filename=MODEL0912044015_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.faville2008_updepolarization_model0912044015_model:Faville2008UpdepolarizationModel0912044015Model
   init_kwargs:
     model_path: data/MODEL0912044015.xml

@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000035
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000035?filename=BIOMD0000000035_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.vilar2002_oscillator_biomd0000000035_model:Vilar2002OscillatorBiomd0000000035Model
   init_kwargs:
     model_path: data/BIOMD0000000035.xml

@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000039
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000039?filename=BIOMD0000000039_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.marhl2000_caoscillations_biomd0000000039_model:Marhl2000CaoscillationsBiomd0000000039Model
   init_kwargs:
     model_path: data/BIOMD0000000039.xml

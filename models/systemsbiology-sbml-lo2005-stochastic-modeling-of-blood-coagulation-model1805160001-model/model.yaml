@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1805160001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1805160001?filename=Lo2005.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.lo2005_stochastic_modeling_of_blood_coagulation_model1805160001_model:Lo2005StochasticModelingOfBloodCoagulationModel1805160001Model
   init_kwargs:
     model_path: data/MODEL1805160001.xml

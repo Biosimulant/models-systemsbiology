@@ -23,7 +23,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2404250003?filename=data
     sharing.xlsx
   license: CC0
-bsim:
+biosim:
   entrypoint: src.lee2020ajp_sgk_in_brain_function_model2404250003_model:Lee2020ajpSgkInBrainFunctionModel2404250003Model
   init_kwargs:
     model_path: data/MODEL2404250003.xml

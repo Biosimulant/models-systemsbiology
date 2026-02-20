@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000287
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000287?filename=BIOMD0000000287_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.passos2010_dnadamage_cellularsenescence_biomd0000000287_model:Passos2010DnadamageCellularsenescenceBiomd0000000287Model
   init_kwargs:
     model_path: data/BIOMD0000000287.xml

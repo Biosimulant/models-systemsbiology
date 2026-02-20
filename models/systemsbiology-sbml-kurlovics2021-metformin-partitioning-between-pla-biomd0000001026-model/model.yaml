@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001026
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001026?filename=Kurlovics2021.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kurlovics2021_metformin_partitioning_between_pla_biomd0000001026_model:Kurlovics2021MetforminPartitioningBetweenPlaBiomd0000001026Model
   init_kwargs:
     model_path: data/BIOMD0000001026.xml

@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2209060002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2209060002?filename=SA_DP_community.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mostolizadeh2022_d_pigrum_and_s_aureus_model2209060002_model:Mostolizadeh2022DPigrumAndSAureusModel2209060002Model
   init_kwargs:
     model_path: data/MODEL2209060002.xml

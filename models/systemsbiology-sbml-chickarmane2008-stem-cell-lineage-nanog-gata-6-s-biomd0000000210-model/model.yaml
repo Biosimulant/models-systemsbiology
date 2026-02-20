@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000210
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000210?filename=BIOMD0000000210_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.chickarmane2008_stem_cell_lineage_nanog_gata_6_s_biomd0000000210_model:Chickarmane2008StemCellLineageNanogGata6SBiomd0000000210Model
   init_kwargs:
     model_path: data/BIOMD0000000210.xml

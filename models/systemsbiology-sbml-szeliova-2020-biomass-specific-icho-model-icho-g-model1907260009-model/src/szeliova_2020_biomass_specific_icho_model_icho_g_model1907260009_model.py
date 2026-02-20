@@ -12,13 +12,13 @@ from pathlib import Path
 from typing import Any, Dict, Optional, Set, TYPE_CHECKING
 
 if TYPE_CHECKING:  # pragma: no cover - typing only
-    from bsim import BioWorld
+    from biosim import BioWorld
 
-import bsim
-from bsim.signals import BioSignal, SignalMetadata
+import biosim
+from biosim.signals import BioSignal, SignalMetadata
 
 
-class SbmlSzeliova2020BiomassSpecificIchoModelIchoGspar8mmcd(bsim.BioModule):
+class SbmlSzeliova2020BiomassSpecificIchoModelIchoGspar8mmcd(biosim.BioModule):
     """BioModule wrapper for SBML model: Szeliova 2020 - biomass specific iCHO model (iCHO_GSpar-8mMCD)."""
 
     def __init__(self, model_path: str = "data/MODEL1907260009.xml", min_dt: float = 0.01) -> None:

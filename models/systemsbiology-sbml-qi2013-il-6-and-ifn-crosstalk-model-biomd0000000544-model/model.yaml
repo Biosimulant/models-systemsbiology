@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000544
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000544?filename=BIOMD0000000544_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.qi2013_il_6_and_ifn_crosstalk_model_biomd0000000544_model:Qi2013Il6AndIfnCrosstalkModelBiomd0000000544Model
   init_kwargs:
     model_path: data/BIOMD0000000544.xml

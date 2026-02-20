@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000164
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000164?filename=BIOMD0000000164_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.smithae2002_rantransport_biomd0000000164_model:Smithae2002RantransportBiomd0000000164Model
   init_kwargs:
     model_path: data/BIOMD0000000164.xml

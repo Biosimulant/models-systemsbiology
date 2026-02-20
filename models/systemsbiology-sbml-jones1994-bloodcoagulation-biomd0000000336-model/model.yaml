@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000336
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000336?filename=BIOMD0000000336_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.jones1994_bloodcoagulation_biomd0000000336_model:Jones1994BloodcoagulationBiomd0000000336Model
   init_kwargs:
     model_path: data/BIOMD0000000336.xml

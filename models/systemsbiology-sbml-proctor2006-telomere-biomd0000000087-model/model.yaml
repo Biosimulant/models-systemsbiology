@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000087
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000087?filename=BIOMD0000000087_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.proctor2006_telomere_biomd0000000087_model:Proctor2006TelomereBiomd0000000087Model
   init_kwargs:
     model_path: data/BIOMD0000000087.xml

@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL0848444339
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0848444339?filename=MODEL0848444339_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.hilgemann1987_calciumtransients_model0848444339_model:Hilgemann1987CalciumtransientsModel0848444339Model
   init_kwargs:
     model_path: data/MODEL0848444339.xml

@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000965
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000965?filename=LeBeau1999_Phosphorylation_CCK.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.lebeau1999_ip3_dependent_intracellular_calcium_o_biomd0000000965_model:Lebeau1999Ip3DependentIntracellularCalciumOBiomd0000000965Model
   init_kwargs:
     model_path: data/BIOMD0000000965.xml

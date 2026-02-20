@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000622
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000622?filename=BIOMD0000000622_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.nguyenlk2011_ubiquitination_dynamics_in_ring1b_b_biomd0000000622_model:Nguyenlk2011UbiquitinationDynamicsInRing1bBBiomd0000000622Model
   init_kwargs:
     model_path: data/BIOMD0000000622.xml

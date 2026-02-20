@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000481
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000481?filename=BIOMD0000000481_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.st_tzel2012_bovine_estrous_cycle_synchronization_biomd0000000481_model:StTzel2012BovineEstrousCycleSynchronizationBiomd0000000481Model
   init_kwargs:
     model_path: data/BIOMD0000000481.xml

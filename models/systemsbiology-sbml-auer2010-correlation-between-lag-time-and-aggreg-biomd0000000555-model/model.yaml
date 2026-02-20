@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000555
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000555?filename=BIOMD0000000555_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.auer2010_correlation_between_lag_time_and_aggreg_biomd0000000555_model:Auer2010CorrelationBetweenLagTimeAndAggregBiomd0000000555Model
   init_kwargs:
     model_path: data/BIOMD0000000555.xml

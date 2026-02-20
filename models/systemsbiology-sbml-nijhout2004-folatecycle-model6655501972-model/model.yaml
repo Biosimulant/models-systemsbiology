@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL6655501972
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL6655501972?filename=MODEL6655501972_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.nijhout2004_folatecycle_model6655501972_model:Nijhout2004FolatecycleModel6655501972Model
   init_kwargs:
     model_path: data/MODEL6655501972.xml

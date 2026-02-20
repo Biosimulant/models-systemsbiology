@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1006230100
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1006230100?filename=MODEL1006230100_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.vinnakota2010_transcientanoia_edlmuscle_model1006230100_model:Vinnakota2010TranscientanoiaEdlmuscleModel1006230100Model
   init_kwargs:
     model_path: data/MODEL1006230100.xml

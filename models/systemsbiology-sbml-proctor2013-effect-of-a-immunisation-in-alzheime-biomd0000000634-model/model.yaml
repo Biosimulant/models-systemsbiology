@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000634
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000634?filename=BIOMD0000000634_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.proctor2013_effect_of_a_immunisation_in_alzheime_biomd0000000634_model:Proctor2013EffectOfAImmunisationInAlzheimeBiomd0000000634Model
   init_kwargs:
     model_path: data/BIOMD0000000634.xml

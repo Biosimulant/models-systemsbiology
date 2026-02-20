@@ -25,7 +25,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2404080002?filename=BioModelsMetadata
     - eos5xng.csv
   license: CC0
-bsim:
+biosim:
   entrypoint: src.rahman2022_high_throughput_antibacterial_screeni_model2404080002_model:Rahman2022HighThroughputAntibacterialScreeniModel2404080002Model
   init_kwargs:
     model_path: data/MODEL2404080002.xml

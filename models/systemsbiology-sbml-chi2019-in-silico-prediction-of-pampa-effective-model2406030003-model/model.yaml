@@ -24,7 +24,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2406030003?filename=BioModelsMetadata
     - eos97yu.csv
   license: CC0
-bsim:
+biosim:
   entrypoint: src.chi2019_in_silico_prediction_of_pampa_effective_model2406030003_model:Chi2019InSilicoPredictionOfPampaEffectiveModel2406030003Model
   init_kwargs:
     model_path: data/MODEL2406030003.xml

@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL7914759868
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL7914759868?filename=MODEL7914759868_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.sachse2008_fibroblastinteractingmyocytes_model7914759868_model:Sachse2008FibroblastinteractingmyocytesModel7914759868Model
   init_kwargs:
     model_path: data/MODEL7914759868.xml

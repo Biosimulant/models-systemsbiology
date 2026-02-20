@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2110250001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2110250001?filename=CVB3ODEEval.m
   license: CC0
-bsim:
+biosim:
   entrypoint: src.lopacinski2021_coxsackievirus_b3_cvb3_complete_k_model2110250001_model:Lopacinski2021CoxsackievirusB3Cvb3CompleteKModel2110250001Model
   init_kwargs:
     model_path: data/MODEL2110250001.xml

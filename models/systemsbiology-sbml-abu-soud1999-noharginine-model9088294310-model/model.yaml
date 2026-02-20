@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL9088294310
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL9088294310?filename=MODEL9088294310_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.abu_soud1999_noharginine_model9088294310_model:AbuSoud1999NoharginineModel9088294310Model
   init_kwargs:
     model_path: data/MODEL9088294310.xml

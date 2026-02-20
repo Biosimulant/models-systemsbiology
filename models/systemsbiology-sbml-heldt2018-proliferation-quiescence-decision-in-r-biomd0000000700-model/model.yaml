@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000700
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000700?filename=BIOMD0000000700_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.heldt2018_proliferation_quiescence_decision_in_r_biomd0000000700_model:Heldt2018ProliferationQuiescenceDecisionInRBiomd0000000700Model
   init_kwargs:
     model_path: data/BIOMD0000000700.xml

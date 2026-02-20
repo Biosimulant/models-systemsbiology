@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000167
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000167?filename=BIOMD0000000167_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mayya2005_statmodule_biomd0000000167_model:Mayya2005StatmoduleBiomd0000000167Model
   init_kwargs:
     model_path: data/BIOMD0000000167.xml

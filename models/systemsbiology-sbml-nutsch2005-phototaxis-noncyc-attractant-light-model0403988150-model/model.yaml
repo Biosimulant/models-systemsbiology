@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL0403988150
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0403988150?filename=MODEL0403988150_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.nutsch2005_phototaxis_noncyc_attractant_light_model0403988150_model:Nutsch2005PhototaxisNoncycAttractantLightModel0403988150Model
   init_kwargs:
     model_path: data/MODEL0403988150.xml

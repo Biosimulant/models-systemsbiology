@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1712240001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1712240001?filename=Bekkar2017_PPARA_regulation_atherosclerosis.sbml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bekkar2018_ppara_regulation_in_atherosclerosis_model1712240001_model:Bekkar2018PparaRegulationInAtherosclerosisModel1712240001Model
   init_kwargs:
     model_path: data/MODEL1712240001.sbml

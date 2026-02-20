@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1611030000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1611030000?filename=MODEL1611030000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.guisoni2016_cis_regulatory_system_crs_can_drive_model1611030000_model:Guisoni2016CisRegulatorySystemCrsCanDriveModel1611030000Model
   init_kwargs:
     model_path: data/MODEL1611030000.xml

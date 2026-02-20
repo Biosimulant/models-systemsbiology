@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1803120003
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1803120003?filename=Example2.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.watanabe2018_three_state_markov_model_model1803120003_model:Watanabe2018ThreeStateMarkovModelModel1803120003Model
   init_kwargs:
     model_path: data/MODEL1803120003.xml

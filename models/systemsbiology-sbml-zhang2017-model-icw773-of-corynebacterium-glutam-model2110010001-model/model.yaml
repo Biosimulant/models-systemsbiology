@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2110010001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2110010001?filename=iCW773.omex
   license: CC0
-bsim:
+biosim:
   entrypoint: src.zhang2017_model_icw773_of_corynebacterium_glutam_model2110010001_model:Zhang2017ModelIcw773OfCorynebacteriumGlutamModel2110010001Model
   init_kwargs:
     model_path: data/MODEL2110010001.xml

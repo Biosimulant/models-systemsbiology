@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000415
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000415?filename=BIOMD0000000415_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mellor2012_lipooxygenasepathway_biomd0000000415_model:Mellor2012LipooxygenasepathwayBiomd0000000415Model
   init_kwargs:
     model_path: data/BIOMD0000000415.xml

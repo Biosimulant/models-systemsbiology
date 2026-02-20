@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1101170000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1101170000?filename=MODEL1101170000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.nakano2010_synaptic_plasticity_model1101170000_model:Nakano2010SynapticPlasticityModel1101170000Model
   init_kwargs:
     model_path: data/MODEL1101170000.xml

@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL0912096133
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0912096133?filename=MODEL0912096133_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.farhy2007_hghregulation_model0912096133_model:Farhy2007HghregulationModel0912096133Model
   init_kwargs:
     model_path: data/MODEL0912096133.xml

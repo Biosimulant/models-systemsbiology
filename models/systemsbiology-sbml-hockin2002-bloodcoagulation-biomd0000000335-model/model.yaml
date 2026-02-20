@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000335
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000335?filename=BIOMD0000000335_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.hockin2002_bloodcoagulation_biomd0000000335_model:Hockin2002BloodcoagulationBiomd0000000335Model
   init_kwargs:
     model_path: data/BIOMD0000000335.xml

@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000677
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000677?filename=BIOMD0000000677_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.holmes2006_hill_s_model_of_muscle_contraction_biomd0000000677_model:Holmes2006HillSModelOfMuscleContractionBiomd0000000677Model
   init_kwargs:
     model_path: data/BIOMD0000000677.xml

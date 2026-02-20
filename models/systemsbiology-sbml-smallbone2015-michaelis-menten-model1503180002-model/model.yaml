@@ -18,7 +18,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1503180002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1503180002?filename=MODEL1503180002_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.smallbone2015_michaelis_menten_model1503180002_model:Smallbone2015MichaelisMentenModel1503180002Model
   init_kwargs:
     model_path: data/MODEL1503180002.xml

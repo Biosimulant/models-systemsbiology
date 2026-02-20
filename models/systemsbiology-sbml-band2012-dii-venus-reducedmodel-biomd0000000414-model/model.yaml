@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000414
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000414?filename=BIOMD0000000414_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.band2012_dii_venus_reducedmodel_biomd0000000414_model:Band2012DiiVenusReducedmodelBiomd0000000414Model
   init_kwargs:
     model_path: data/BIOMD0000000414.xml

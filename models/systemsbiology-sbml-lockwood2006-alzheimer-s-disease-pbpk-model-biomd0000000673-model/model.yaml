@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000673
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000673?filename=BIOMD0000000673_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.lockwood2006_alzheimer_s_disease_pbpk_model_biomd0000000673_model:Lockwood2006AlzheimerSDiseasePbpkModelBiomd0000000673Model
   init_kwargs:
     model_path: data/BIOMD0000000673.xml

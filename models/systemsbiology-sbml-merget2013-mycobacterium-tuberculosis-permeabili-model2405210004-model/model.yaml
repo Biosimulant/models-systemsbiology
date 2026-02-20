@@ -24,7 +24,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2405210004?filename=BioModelsMetadata
     - eos8d8a.csv
   license: CC0
-bsim:
+biosim:
   entrypoint: src.merget2013_mycobacterium_tuberculosis_permeabili_model2405210004_model:Merget2013MycobacteriumTuberculosisPermeabiliModel2405210004Model
   init_kwargs:
     model_path: data/MODEL2405210004.xml

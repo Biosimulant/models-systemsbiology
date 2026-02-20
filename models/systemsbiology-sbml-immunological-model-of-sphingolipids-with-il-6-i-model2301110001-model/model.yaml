@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2301110001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2301110001?filename=disease_state.sbml.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.immunological_model_of_sphingolipids_with_il_6_i_model2301110001_model:ImmunologicalModelOfSphingolipidsWithIl6IModel2301110001Model
   init_kwargs:
     model_path: data/MODEL2301110001.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1710260004
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1710260004?filename=MODEL1710260004_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.martinez_guimera2017_generic_negative_feedforwar_model1710260004_model:MartinezGuimera2017GenericNegativeFeedforwarModel1710260004Model
   init_kwargs:
     model_path: data/MODEL1710260004.xml

@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000388
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000388?filename=BIOMD0000000388_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.arnold2011_zhu2009_calvincycle_biomd0000000388_model:Arnold2011Zhu2009CalvincycleBiomd0000000388Model
   init_kwargs:
     model_path: data/BIOMD0000000388.xml

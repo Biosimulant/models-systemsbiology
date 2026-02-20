@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2463576061
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2463576061?filename=MODEL2463576061_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.oda2005_egfr_model2463576061_model:Oda2005EgfrModel2463576061Model
   init_kwargs:
     model_path: data/MODEL2463576061.xml

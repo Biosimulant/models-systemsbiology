@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2111260002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2111260002?filename=CiPA-master.zip
   license: CC0
-bsim:
+biosim:
   entrypoint: src.li2019_in_silico_mechanistic_model_for_proarrhyt_model2111260002_model:Li2019InSilicoMechanisticModelForProarrhytModel2111260002Model
   init_kwargs:
     model_path: data/MODEL2111260002.xml

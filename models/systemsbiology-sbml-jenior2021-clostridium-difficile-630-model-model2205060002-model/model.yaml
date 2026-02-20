@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2205060002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2205060002?filename=Jenior2021_iCdG709.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.jenior2021_clostridium_difficile_630_model_model2205060002_model:Jenior2021ClostridiumDifficile630ModelModel2205060002Model
   init_kwargs:
     model_path: data/MODEL2205060002.xml

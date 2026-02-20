@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2210190004
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2210190004?filename=Koduru2022_LbFm.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.koduru2022_lactobacillus_fermentum_atcc_14931_model2210190004_model:Koduru2022LactobacillusFermentumAtcc14931Model2210190004Model
   init_kwargs:
     model_path: data/MODEL2210190004.xml

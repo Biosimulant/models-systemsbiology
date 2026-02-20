@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000613
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000613?filename=BIOMD0000000613_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.peterson2010_integrated_calcium_homeostasis_and_biomd0000000613_model:Peterson2010IntegratedCalciumHomeostasisAndBiomd0000000613Model
   init_kwargs:
     model_path: data/BIOMD0000000613.xml

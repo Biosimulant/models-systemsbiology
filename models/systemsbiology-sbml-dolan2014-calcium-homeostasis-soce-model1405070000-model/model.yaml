@@ -19,7 +19,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1405070000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1405070000?filename=MODEL1405070000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.dolan2014_calcium_homeostasis_soce_model1405070000_model:Dolan2014CalciumHomeostasisSoceModel1405070000Model
   init_kwargs:
     model_path: data/MODEL1405070000.xml

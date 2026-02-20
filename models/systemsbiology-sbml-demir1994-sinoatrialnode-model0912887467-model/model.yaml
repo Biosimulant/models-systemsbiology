@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL0912887467
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0912887467?filename=MODEL0912887467_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.demir1994_sinoatrialnode_model0912887467_model:Demir1994SinoatrialnodeModel0912887467Model
   init_kwargs:
     model_path: data/MODEL0912887467.xml

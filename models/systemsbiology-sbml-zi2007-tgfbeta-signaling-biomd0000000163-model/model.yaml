@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000163
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000163?filename=BIOMD0000000163_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.zi2007_tgfbeta_signaling_biomd0000000163_model:Zi2007TgfbetaSignalingBiomd0000000163Model
   init_kwargs:
     model_path: data/BIOMD0000000163.xml

@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000231
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000231?filename=BIOMD0000000231_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.valero2006_adenine_ternarycycle_biomd0000000231_model:Valero2006AdenineTernarycycleBiomd0000000231Model
   init_kwargs:
     model_path: data/BIOMD0000000231.xml

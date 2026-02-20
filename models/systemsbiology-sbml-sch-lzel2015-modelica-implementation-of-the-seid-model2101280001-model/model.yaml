@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2101280001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2101280001?filename=SHM.zip
   license: CC0
-bsim:
+biosim:
   entrypoint: src.sch_lzel2015_modelica_implementation_of_the_seid_model2101280001_model:SchLzel2015ModelicaImplementationOfTheSeidModel2101280001Model
   init_kwargs:
     model_path: data/MODEL2101280001.xml

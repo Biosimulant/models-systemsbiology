@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1904090001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1904090001?filename=tiny_example_12.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.keating2019_minimal_model_demonstrating_sbml_lev_model1904090001_model:Keating2019MinimalModelDemonstratingSbmlLevModel1904090001Model
   init_kwargs:
     model_path: data/MODEL1904090001.xml

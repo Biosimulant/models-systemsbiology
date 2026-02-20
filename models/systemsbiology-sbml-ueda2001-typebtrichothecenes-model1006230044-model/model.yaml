@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1006230044
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1006230044?filename=MODEL1006230044_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ueda2001_typebtrichothecenes_model1006230044_model:Ueda2001TypebtrichothecenesModel1006230044Model
   init_kwargs:
     model_path: data/MODEL1006230044.xml

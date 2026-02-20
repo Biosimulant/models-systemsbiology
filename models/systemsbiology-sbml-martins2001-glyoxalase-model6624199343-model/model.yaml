@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL6624199343
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL6624199343?filename=MODEL6624199343_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.martins2001_glyoxalase_model6624199343_model:Martins2001GlyoxalaseModel6624199343Model
   init_kwargs:
     model_path: data/MODEL6624199343.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000407
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000407?filename=BIOMD0000000407_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.schliemann2011_tnf_proantiapoptosis_biomd0000000407_model:Schliemann2011TnfProantiapoptosisBiomd0000000407Model
   init_kwargs:
     model_path: data/BIOMD0000000407.xml

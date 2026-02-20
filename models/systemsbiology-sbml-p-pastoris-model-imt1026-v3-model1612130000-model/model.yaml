@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1612130000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1612130000?filename=MODEL1612130000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.p_pastoris_model_imt1026_v3_model1612130000_model:PPastorisModelImt1026V3Model1612130000Model
   init_kwargs:
     model_path: data/MODEL1612130000.xml

@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1805170001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1805170001?filename=Alveolus.m
   license: CC0
-bsim:
+biosim:
   entrypoint: src.santos2018_pneumococcal_infection_in_alveoli_model1805170001_model:Santos2018PneumococcalInfectionInAlveoliModel1805170001Model
   init_kwargs:
     model_path: data/MODEL1805170001.xml

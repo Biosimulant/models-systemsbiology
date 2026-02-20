@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1208030000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1208030000?filename=MODEL1208030000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mandlik2013_synthetic_circuit_of_ipc_synthase_in_model1208030000_model:Mandlik2013SyntheticCircuitOfIpcSynthaseInModel1208030000Model
   init_kwargs:
     model_path: data/MODEL1208030000.xml

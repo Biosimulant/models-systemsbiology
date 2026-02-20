@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1807180004
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1807180004?filename=Hartmann2016.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.hartmann2016_blood_coagulation_model_for_simulat_model1807180004_model:Hartmann2016BloodCoagulationModelForSimulatModel1807180004Model
   init_kwargs:
     model_path: data/MODEL1807180004.xml

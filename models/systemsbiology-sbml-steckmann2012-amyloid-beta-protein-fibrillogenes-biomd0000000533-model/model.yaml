@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000533
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000533?filename=BIOMD0000000533_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.steckmann2012_amyloid_beta_protein_fibrillogenes_biomd0000000533_model:Steckmann2012AmyloidBetaProteinFibrillogenesBiomd0000000533Model
   init_kwargs:
     model_path: data/BIOMD0000000533.xml

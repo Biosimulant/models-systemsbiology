@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000925
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000925?filename=Dunster2016_Nondimensional_Model_Curated.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.dunster2016_nondimensional_coagulation_model_biomd0000000925_model:Dunster2016NondimensionalCoagulationModelBiomd0000000925Model
   init_kwargs:
     model_path: data/BIOMD0000000925.xml

@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000225
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000225?filename=BIOMD0000000225_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.westermark2003_pancreatic_glycosc_basic_biomd0000000225_model:Westermark2003PancreaticGlycoscBasicBiomd0000000225Model
   init_kwargs:
     model_path: data/BIOMD0000000225.xml

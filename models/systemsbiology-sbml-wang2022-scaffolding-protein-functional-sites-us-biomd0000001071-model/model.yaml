@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001071
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001071?filename=Dockerfile.txt
   license: CC0
-bsim:
+biosim:
   entrypoint: src.wang2022_scaffolding_protein_functional_sites_us_biomd0000001071_model:Wang2022ScaffoldingProteinFunctionalSitesUsBiomd0000001071Model
   init_kwargs:
     model_path: data/BIOMD0000001071.xml

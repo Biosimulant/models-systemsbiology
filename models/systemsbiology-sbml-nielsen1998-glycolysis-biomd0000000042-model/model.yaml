@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000042
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000042?filename=BIOMD0000000042_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.nielsen1998_glycolysis_biomd0000000042_model:Nielsen1998GlycolysisBiomd0000000042Model
   init_kwargs:
     model_path: data/BIOMD0000000042.xml

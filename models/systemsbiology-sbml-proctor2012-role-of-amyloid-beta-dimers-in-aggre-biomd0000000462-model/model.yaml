@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000462
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000462?filename=BIOMD0000000462_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.proctor2012_role_of_amyloid_beta_dimers_in_aggre_biomd0000000462_model:Proctor2012RoleOfAmyloidBetaDimersInAggreBiomd0000000462Model
   init_kwargs:
     model_path: data/BIOMD0000000462.xml

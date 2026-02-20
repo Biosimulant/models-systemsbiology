@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000631
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000631?filename=BIOMD0000000631_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.decaluwe2016_circadian_clock_biomd0000000631_model:Decaluwe2016CircadianClockBiomd0000000631Model
   init_kwargs:
     model_path: data/BIOMD0000000631.xml

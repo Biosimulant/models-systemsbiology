@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1806060001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1806060001?filename=Lee2016.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.lee2016_blood_coagulation_model_model1806060001_model:Lee2016BloodCoagulationModelModel1806060001Model
   init_kwargs:
     model_path: data/MODEL1806060001.xml

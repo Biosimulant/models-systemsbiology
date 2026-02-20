@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000158
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000158?filename=BIOMD0000000158_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.zatorsky2006_p53_model2_biomd0000000158_model:Zatorsky2006P53Model2Biomd0000000158Model
   init_kwargs:
     model_path: data/BIOMD0000000158.xml

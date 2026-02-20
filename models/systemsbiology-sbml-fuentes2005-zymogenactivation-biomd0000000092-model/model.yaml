@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000092
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000092?filename=BIOMD0000000092_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.fuentes2005_zymogenactivation_biomd0000000092_model:Fuentes2005ZymogenactivationBiomd0000000092Model
   init_kwargs:
     model_path: data/BIOMD0000000092.xml

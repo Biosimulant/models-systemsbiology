@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000781
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000781?filename=Wang2016_2.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.wang2016_2_oncolytic_efficacy_of_m1_virus_snt_mo_biomd0000000781_model:Wang20162OncolyticEfficacyOfM1VirusSntMoBiomd0000000781Model
   init_kwargs:
     model_path: data/BIOMD0000000781.xml

@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1172200168
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1172200168?filename=MODEL1172200168_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bingzheng1990_glucocorticoidssecretion_model1172200168_model:Bingzheng1990GlucocorticoidssecretionModel1172200168Model
   init_kwargs:
     model_path: data/MODEL1172200168.xml

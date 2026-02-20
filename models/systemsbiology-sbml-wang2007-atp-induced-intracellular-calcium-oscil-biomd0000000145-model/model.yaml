@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000145
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000145?filename=BIOMD0000000145_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.wang2007_atp_induced_intracellular_calcium_oscil_biomd0000000145_model:Wang2007AtpInducedIntracellularCalciumOscilBiomd0000000145Model
   init_kwargs:
     model_path: data/BIOMD0000000145.xml

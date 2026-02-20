@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL0911270007
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0911270007?filename=MODEL0911270007_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.karagiannis2004_collageniproteolysis_model0911270007_model:Karagiannis2004CollageniproteolysisModel0911270007Model
   init_kwargs:
     model_path: data/MODEL0911270007.xml

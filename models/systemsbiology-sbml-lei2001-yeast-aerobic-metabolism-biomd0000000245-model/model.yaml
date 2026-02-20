@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000245
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000245?filename=BIOMD0000000245_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.lei2001_yeast_aerobic_metabolism_biomd0000000245_model:Lei2001YeastAerobicMetabolismBiomd0000000245Model
   init_kwargs:
     model_path: data/BIOMD0000000245.xml

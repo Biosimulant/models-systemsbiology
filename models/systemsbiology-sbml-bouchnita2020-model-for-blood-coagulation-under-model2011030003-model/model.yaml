@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2011030003
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2011030003?filename=Bouchnita2020.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bouchnita2020_model_for_blood_coagulation_under_model2011030003_model:Bouchnita2020ModelForBloodCoagulationUnderModel2011030003Model
   init_kwargs:
     model_path: data/MODEL2011030003.xml

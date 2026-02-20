@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL0911601070
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0911601070?filename=MODEL0911601070_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.garny2003_sinoatrialnode_model0911601070_model:Garny2003SinoatrialnodeModel0911601070Model
   init_kwargs:
     model_path: data/MODEL0911601070.xml

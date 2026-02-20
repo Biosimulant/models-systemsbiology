@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2205040002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2205040002?filename=QuercusSuberInnerBark.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.cunha2022_inner_bark_model_for_quercus_suber_model2205040002_model:Cunha2022InnerBarkModelForQuercusSuberModel2205040002Model
   init_kwargs:
     model_path: data/MODEL2205040002.xml

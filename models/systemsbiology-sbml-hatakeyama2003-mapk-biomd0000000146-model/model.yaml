@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000146
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000146?filename=BIOMD0000000146_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.hatakeyama2003_mapk_biomd0000000146_model:Hatakeyama2003MapkBiomd0000000146Model
   init_kwargs:
     model_path: data/BIOMD0000000146.xml

@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000122
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000122?filename=BIOMD0000000122_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.fisher2006_ca_oscillation_dpdnt_nfat_dynamics_biomd0000000122_model:Fisher2006CaOscillationDpdntNfatDynamicsBiomd0000000122Model
   init_kwargs:
     model_path: data/BIOMD0000000122.xml

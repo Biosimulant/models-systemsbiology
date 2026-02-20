@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000703
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000703?filename=BIOMD0000000703_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.diedrichs2018_a_data_entrained_computational_mod_biomd0000000703_model:Diedrichs2018ADataEntrainedComputationalModBiomd0000000703Model
   init_kwargs:
     model_path: data/BIOMD0000000703.xml

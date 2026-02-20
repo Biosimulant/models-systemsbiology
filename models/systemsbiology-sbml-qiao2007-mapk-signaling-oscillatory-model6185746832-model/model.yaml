@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL6185746832
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL6185746832?filename=MODEL6185746832_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.qiao2007_mapk_signaling_oscillatory_model6185746832_model:Qiao2007MapkSignalingOscillatoryModel6185746832Model
   init_kwargs:
     model_path: data/MODEL6185746832.xml

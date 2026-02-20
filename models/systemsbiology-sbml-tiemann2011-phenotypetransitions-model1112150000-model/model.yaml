@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1112150000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1112150000?filename=MODEL1112150000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.tiemann2011_phenotypetransitions_model1112150000_model:Tiemann2011PhenotypetransitionsModel1112150000Model
   init_kwargs:
     model_path: data/MODEL1112150000.xml

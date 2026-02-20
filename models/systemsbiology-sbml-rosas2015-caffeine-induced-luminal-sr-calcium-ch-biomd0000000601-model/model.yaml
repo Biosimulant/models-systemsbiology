@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000601
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000601?filename=BIOMD0000000601_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.rosas2015_caffeine_induced_luminal_sr_calcium_ch_biomd0000000601_model:Rosas2015CaffeineInducedLuminalSrCalciumChBiomd0000000601Model
   init_kwargs:
     model_path: data/BIOMD0000000601.xml

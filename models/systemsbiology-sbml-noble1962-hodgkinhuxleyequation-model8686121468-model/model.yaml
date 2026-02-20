@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL8686121468
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL8686121468?filename=MODEL8686121468_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.noble1962_hodgkinhuxleyequation_model8686121468_model:Noble1962HodgkinhuxleyequationModel8686121468Model
   init_kwargs:
     model_path: data/MODEL8686121468.xml

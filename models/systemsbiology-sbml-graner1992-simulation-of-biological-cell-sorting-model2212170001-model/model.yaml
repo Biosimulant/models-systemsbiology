@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2212170001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2212170001?filename=cellsort_2D.cc3d
   license: CC0
-bsim:
+biosim:
   entrypoint: src.graner1992_simulation_of_biological_cell_sorting_model2212170001_model:Graner1992SimulationOfBiologicalCellSortingModel2212170001Model
   init_kwargs:
     model_path: data/MODEL2212170001.xml

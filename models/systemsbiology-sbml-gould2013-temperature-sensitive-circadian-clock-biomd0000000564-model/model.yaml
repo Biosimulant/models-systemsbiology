@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000564
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000564?filename=BIOMD0000000564_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.gould2013_temperature_sensitive_circadian_clock_biomd0000000564_model:Gould2013TemperatureSensitiveCircadianClockBiomd0000000564Model
   init_kwargs:
     model_path: data/BIOMD0000000564.xml

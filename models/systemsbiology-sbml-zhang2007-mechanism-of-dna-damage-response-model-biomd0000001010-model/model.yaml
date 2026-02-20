@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001010
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001010?filename=Zhang2007_M3_low_DD.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.zhang2007_mechanism_of_dna_damage_response_model_biomd0000001010_model:Zhang2007MechanismOfDnaDamageResponseModelBiomd0000001010Model
   init_kwargs:
     model_path: data/BIOMD0000001010.xml

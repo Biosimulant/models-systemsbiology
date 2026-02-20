@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1807240001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1807240001?filename=Orfeo2010.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.orfeo2010_simulating_the_effects_of_fondaparinux_model1807240001_model:Orfeo2010SimulatingTheEffectsOfFondaparinuxModel1807240001Model
   init_kwargs:
     model_path: data/MODEL1807240001.xml

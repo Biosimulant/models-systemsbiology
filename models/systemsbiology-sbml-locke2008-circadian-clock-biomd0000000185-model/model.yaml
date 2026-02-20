@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000185
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000185?filename=BIOMD0000000185_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.locke2008_circadian_clock_biomd0000000185_model:Locke2008CircadianClockBiomd0000000185Model
   init_kwargs:
     model_path: data/BIOMD0000000185.xml

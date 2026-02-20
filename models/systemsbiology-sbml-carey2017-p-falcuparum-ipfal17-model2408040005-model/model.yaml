@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2408040005
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2408040005?filename=iPfal17.omex
   license: CC0
-bsim:
+biosim:
   entrypoint: src.carey2017_p_falcuparum_ipfal17_model2408040005_model:Carey2017PFalcuparumIpfal17Model2408040005Model
   init_kwargs:
     model_path: data/MODEL2408040005.xml

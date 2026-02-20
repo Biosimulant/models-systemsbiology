@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1005200000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1005200000?filename=MODEL1005200000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.twycross2010_auxin_transport_model1005200000_model:Twycross2010AuxinTransportModel1005200000Model
   init_kwargs:
     model_path: data/MODEL1005200000.xml

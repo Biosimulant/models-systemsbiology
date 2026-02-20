@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000183
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000183?filename=BIOMD0000000183_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.stefan2008_calmodulin_allostery_biomd0000000183_model:Stefan2008CalmodulinAllosteryBiomd0000000183Model
   init_kwargs:
     model_path: data/BIOMD0000000183.xml

@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2306220001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2306220001?filename=Single_G_protein_Model.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.gpcr_cubic_ternary_complex_with_g_protein_cycle_model2306220001_model:GpcrCubicTernaryComplexWithGProteinCycleModel2306220001Model
   init_kwargs:
     model_path: data/MODEL2306220001.xml

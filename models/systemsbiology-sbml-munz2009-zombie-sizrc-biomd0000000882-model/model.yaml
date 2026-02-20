@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000882
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000882?filename=munz2000.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.munz2009_zombie_sizrc_biomd0000000882_model:Munz2009ZombieSizrcBiomd0000000882Model
   init_kwargs:
     model_path: data/BIOMD0000000882.xml

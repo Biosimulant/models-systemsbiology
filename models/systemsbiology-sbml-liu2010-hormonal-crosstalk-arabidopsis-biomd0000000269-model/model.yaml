@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000269
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000269?filename=BIOMD0000000269_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.liu2010_hormonal_crosstalk_arabidopsis_biomd0000000269_model:Liu2010HormonalCrosstalkArabidopsisBiomd0000000269Model
   init_kwargs:
     model_path: data/BIOMD0000000269.xml

@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000102
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000102?filename=BIOMD0000000102_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.legewie2006_apoptosis_wt_biomd0000000102_model:Legewie2006ApoptosisWtBiomd0000000102Model
   init_kwargs:
     model_path: data/BIOMD0000000102.xml

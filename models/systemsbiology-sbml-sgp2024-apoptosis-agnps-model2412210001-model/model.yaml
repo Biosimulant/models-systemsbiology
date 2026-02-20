@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2412210001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2412210001?filename=COPASI_AgNPs_model.cps
   license: CC0
-bsim:
+biosim:
   entrypoint: src.sgp2024_apoptosis_agnps_model2412210001_model:Sgp2024ApoptosisAgnpsModel2412210001Model
   init_kwargs:
     model_path: data/MODEL2412210001.xml

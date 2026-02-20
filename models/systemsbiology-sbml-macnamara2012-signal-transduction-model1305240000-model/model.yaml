@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1305240000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1305240000?filename=MODEL1305240000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.macnamara2012_signal_transduction_model1305240000_model:Macnamara2012SignalTransductionModel1305240000Model
   init_kwargs:
     model_path: data/MODEL1305240000.xml

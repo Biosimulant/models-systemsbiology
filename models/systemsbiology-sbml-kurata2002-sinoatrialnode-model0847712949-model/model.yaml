@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL0847712949
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0847712949?filename=MODEL0847712949_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kurata2002_sinoatrialnode_model0847712949_model:Kurata2002SinoatrialnodeModel0847712949Model
   init_kwargs:
     model_path: data/MODEL0847712949.xml

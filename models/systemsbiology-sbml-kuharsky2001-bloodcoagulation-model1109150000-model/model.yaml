@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1109150000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1109150000?filename=MODEL1109150000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kuharsky2001_bloodcoagulation_model1109150000_model:Kuharsky2001BloodcoagulationModel1109150000Model
   init_kwargs:
     model_path: data/MODEL1109150000.xml

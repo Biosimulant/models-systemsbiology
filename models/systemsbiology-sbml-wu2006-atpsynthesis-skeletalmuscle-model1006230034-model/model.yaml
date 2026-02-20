@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1006230034
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1006230034?filename=MODEL1006230034_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.wu2006_atpsynthesis_skeletalmuscle_model1006230034_model:Wu2006AtpsynthesisSkeletalmuscleModel1006230034Model
   init_kwargs:
     model_path: data/MODEL1006230034.xml

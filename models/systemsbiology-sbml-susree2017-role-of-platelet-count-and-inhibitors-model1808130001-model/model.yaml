@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1808130001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1808130001?filename=Susree2017.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.susree2017_role_of_platelet_count_and_inhibitors_model1808130001_model:Susree2017RoleOfPlateletCountAndInhibitorsModel1808130001Model
   init_kwargs:
     model_path: data/MODEL1808130001.xml

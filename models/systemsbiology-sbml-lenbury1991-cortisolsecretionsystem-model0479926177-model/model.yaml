@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL0479926177
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0479926177?filename=MODEL0479926177_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.lenbury1991_cortisolsecretionsystem_model0479926177_model:Lenbury1991CortisolsecretionsystemModel0479926177Model
   init_kwargs:
     model_path: data/MODEL0479926177.xml

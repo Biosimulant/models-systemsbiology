@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1808080001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1808080001?filename=Susree2018.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.susree2018_effect_of_coated_platelets_on_thrombi_model1808080001_model:Susree2018EffectOfCoatedPlateletsOnThrombiModel1808080001Model
   init_kwargs:
     model_path: data/MODEL1808080001.xml

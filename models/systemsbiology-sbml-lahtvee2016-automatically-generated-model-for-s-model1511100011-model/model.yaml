@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1511100011
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1511100011?filename=MODEL1511100011_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.lahtvee2016_automatically_generated_model_for_s_model1511100011_model:Lahtvee2016AutomaticallyGeneratedModelForSModel1511100011Model
   init_kwargs:
     model_path: data/MODEL1511100011.xml

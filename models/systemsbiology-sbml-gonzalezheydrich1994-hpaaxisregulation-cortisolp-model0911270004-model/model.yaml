@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL0911270004
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0911270004?filename=MODEL0911270004_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.gonzalezheydrich1994_hpaaxisregulation_cortisolp_model0911270004_model:Gonzalezheydrich1994HpaaxisregulationCortisolpModel0911270004Model
   init_kwargs:
     model_path: data/MODEL0911270004.xml

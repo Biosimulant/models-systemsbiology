@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000682
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000682?filename=BIOMD0000000682_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.wierschem2004_electrical_bursting_activity_in_pa_biomd0000000682_model:Wierschem2004ElectricalBurstingActivityInPaBiomd0000000682Model
   init_kwargs:
     model_path: data/BIOMD0000000682.xml

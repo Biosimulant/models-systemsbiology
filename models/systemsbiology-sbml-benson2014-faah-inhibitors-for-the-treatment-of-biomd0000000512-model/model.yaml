@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000512
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000512?filename=BIOMD0000000512_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.benson2014_faah_inhibitors_for_the_treatment_of_biomd0000000512_model:Benson2014FaahInhibitorsForTheTreatmentOfBiomd0000000512Model
   init_kwargs:
     model_path: data/BIOMD0000000512.xml

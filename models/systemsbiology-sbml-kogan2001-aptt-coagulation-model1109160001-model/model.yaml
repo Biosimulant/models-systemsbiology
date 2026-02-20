@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1109160001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1109160001?filename=MODEL1109160001_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kogan2001_aptt_coagulation_model1109160001_model:Kogan2001ApttCoagulationModel1109160001Model
   init_kwargs:
     model_path: data/MODEL1109160001.xml

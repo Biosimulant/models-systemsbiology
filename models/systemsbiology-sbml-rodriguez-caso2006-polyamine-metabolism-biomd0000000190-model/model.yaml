@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000190
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000190?filename=BIOMD0000000190_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.rodriguez_caso2006_polyamine_metabolism_biomd0000000190_model:RodriguezCaso2006PolyamineMetabolismBiomd0000000190Model
   init_kwargs:
     model_path: data/BIOMD0000000190.xml

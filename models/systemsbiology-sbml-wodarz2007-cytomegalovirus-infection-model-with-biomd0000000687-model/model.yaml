@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000687
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000687?filename=BIOMD0000000687_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.wodarz2007_cytomegalovirus_infection_model_with_biomd0000000687_model:Wodarz2007CytomegalovirusInfectionModelWithBiomd0000000687Model
   init_kwargs:
     model_path: data/BIOMD0000000687.xml

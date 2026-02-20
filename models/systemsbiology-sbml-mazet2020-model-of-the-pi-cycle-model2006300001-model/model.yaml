@@ -24,7 +24,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2006300001?filename=Core
     model2020.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mazet2020_model_of_the_pi_cycle_model2006300001_model:Mazet2020ModelOfThePiCycleModel2006300001Model
   init_kwargs:
     model_path: data/MODEL2006300001.xml

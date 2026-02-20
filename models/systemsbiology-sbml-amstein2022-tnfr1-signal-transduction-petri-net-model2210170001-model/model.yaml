@@ -23,7 +23,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2210170001?filename=Amstein2022
     - TNFR1 Signal Transduction - Petri Net.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.amstein2022_tnfr1_signal_transduction_petri_net_model2210170001_model:Amstein2022Tnfr1SignalTransductionPetriNetModel2210170001Model
   init_kwargs:
     model_path: data/MODEL2210170001.xml

@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1807180005
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1807180005?filename=Burghaus2014.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.burghaus2014_simulating_blood_coagulation_factor_model1807180005_model:Burghaus2014SimulatingBloodCoagulationFactorModel1807180005Model
   init_kwargs:
     model_path: data/MODEL1807180005.xml

@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000707
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000707?filename=MODEL1006230047.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.revilla2003_controlling_hiv_infection_using_reco_biomd0000000707_model:Revilla2003ControllingHivInfectionUsingRecoBiomd0000000707Model
   init_kwargs:
     model_path: data/BIOMD0000000707.xml

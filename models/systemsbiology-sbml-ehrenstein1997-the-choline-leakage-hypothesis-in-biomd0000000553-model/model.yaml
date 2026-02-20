@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000553
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000553?filename=BIOMD0000000553_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ehrenstein1997_the_choline_leakage_hypothesis_in_biomd0000000553_model:Ehrenstein1997TheCholineLeakageHypothesisInBiomd0000000553Model
   init_kwargs:
     model_path: data/BIOMD0000000553.xml

@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000333
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000333?filename=BIOMD0000000333_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bungay2006_follicularfluid_biomd0000000333_model:Bungay2006FollicularfluidBiomd0000000333Model
   init_kwargs:
     model_path: data/BIOMD0000000333.xml

@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000198
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000198?filename=BIOMD0000000198_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.stone1996_activation_of_soluble_guanylate_cyclas_biomd0000000198_model:Stone1996ActivationOfSolubleGuanylateCyclasBiomd0000000198Model
   init_kwargs:
     model_path: data/BIOMD0000000198.xml

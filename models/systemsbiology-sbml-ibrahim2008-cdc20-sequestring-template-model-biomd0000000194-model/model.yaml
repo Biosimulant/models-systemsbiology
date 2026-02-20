@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000194
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000194?filename=BIOMD0000000194_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ibrahim2008_cdc20_sequestring_template_model_biomd0000000194_model:Ibrahim2008Cdc20SequestringTemplateModelBiomd0000000194Model
   init_kwargs:
     model_path: data/BIOMD0000000194.xml

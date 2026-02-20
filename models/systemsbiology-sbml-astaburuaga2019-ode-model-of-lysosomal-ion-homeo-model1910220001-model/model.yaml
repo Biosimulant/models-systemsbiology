@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1910220001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1910220001?filename=modelLIH_RA2019.m
   license: CC0
-bsim:
+biosim:
   entrypoint: src.astaburuaga2019_ode_model_of_lysosomal_ion_homeo_model1910220001_model:Astaburuaga2019OdeModelOfLysosomalIonHomeoModel1910220001Model
   init_kwargs:
     model_path: data/MODEL1910220001.xml

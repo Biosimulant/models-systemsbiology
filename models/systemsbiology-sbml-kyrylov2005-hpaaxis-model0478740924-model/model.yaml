@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL0478740924
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0478740924?filename=MODEL0478740924_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kyrylov2005_hpaaxis_model0478740924_model:Kyrylov2005HpaaxisModel0478740924Model
   init_kwargs:
     model_path: data/MODEL0478740924.xml

@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1201140004
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1201140004?filename=MODEL1201140004_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.magnus1997_mitoca_betacellminimalmodel_model1201140004_model:Magnus1997MitocaBetacellminimalmodelModel1201140004Model
   init_kwargs:
     model_path: data/MODEL1201140004.xml

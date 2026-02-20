@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000211
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000211?filename=BIOMD0000000211_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.albert2005_glycolysis_biomd0000000211_model:Albert2005GlycolysisBiomd0000000211Model
   init_kwargs:
     model_path: data/BIOMD0000000211.xml

@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000100
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000100?filename=BIOMD0000000100_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.rozi2003_glycogenphosphorylase_activation_biomd0000000100_model:Rozi2003GlycogenphosphorylaseActivationBiomd0000000100Model
   init_kwargs:
     model_path: data/BIOMD0000000100.xml

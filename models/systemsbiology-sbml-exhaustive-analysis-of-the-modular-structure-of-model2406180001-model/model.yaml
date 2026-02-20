@@ -24,7 +24,7 @@ upstream:
     Exhaustive analysis of the modular structure of the spliceosomal assembly network_
     a Petri net approach.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.exhaustive_analysis_of_the_modular_structure_of_model2406180001_model:ExhaustiveAnalysisOfTheModularStructureOfModel2406180001Model
   init_kwargs:
     model_path: data/MODEL2406180001.xml

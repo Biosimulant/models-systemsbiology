@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000175
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000175?filename=BIOMD0000000175_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.birtwistle2007_erbb_signalling_biomd0000000175_model:Birtwistle2007ErbbSignallingBiomd0000000175Model
   init_kwargs:
     model_path: data/BIOMD0000000175.xml

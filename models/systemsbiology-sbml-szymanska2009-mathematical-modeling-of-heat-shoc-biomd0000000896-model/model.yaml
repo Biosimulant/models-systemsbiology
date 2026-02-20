@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000896
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000896?filename=Szymanska2009.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.szymanska2009_mathematical_modeling_of_heat_shoc_biomd0000000896_model:Szymanska2009MathematicalModelingOfHeatShocBiomd0000000896Model
   init_kwargs:
     model_path: data/BIOMD0000000896.xml

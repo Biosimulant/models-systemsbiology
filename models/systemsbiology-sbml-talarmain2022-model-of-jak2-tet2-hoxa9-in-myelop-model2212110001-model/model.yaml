@@ -24,7 +24,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2212110001?filename=JAK2
     TET2 MPN network.json
   license: CC0
-bsim:
+biosim:
   entrypoint: src.talarmain2022_model_of_jak2_tet2_hoxa9_in_myelop_model2212110001_model:Talarmain2022ModelOfJak2Tet2Hoxa9InMyelopModel2212110001Model
   init_kwargs:
     model_path: data/MODEL2212110001.xml

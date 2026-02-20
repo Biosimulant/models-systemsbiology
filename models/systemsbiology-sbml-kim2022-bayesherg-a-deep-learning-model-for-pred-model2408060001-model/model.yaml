@@ -24,7 +24,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2408060001?filename=BioModelsMetadata
     - eos4tcc.csv
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kim2022_bayesherg_a_deep_learning_model_for_pred_model2408060001_model:Kim2022BayeshergADeepLearningModelForPredModel2408060001Model
   init_kwargs:
     model_path: data/MODEL2408060001.xml

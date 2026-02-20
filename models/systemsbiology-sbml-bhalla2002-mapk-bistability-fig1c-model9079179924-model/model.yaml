@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL9079179924
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL9079179924?filename=MODEL9079179924_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bhalla2002_mapk_bistability_fig1c_model9079179924_model:Bhalla2002MapkBistabilityFig1cModel9079179924Model
   init_kwargs:
     model_path: data/MODEL9079179924.xml

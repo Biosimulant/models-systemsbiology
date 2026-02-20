@@ -24,7 +24,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2407180002?filename=BioModelsMetadata
     - eos7pw8.csv
   license: CC0
-bsim:
+biosim:
   entrypoint: src.vor_il_k2020_bayesian_estimation_of_synthetic_ac_model2407180002_model:VorIlK2020BayesianEstimationOfSyntheticAcModel2407180002Model
   init_kwargs:
     model_path: data/MODEL2407180002.xml

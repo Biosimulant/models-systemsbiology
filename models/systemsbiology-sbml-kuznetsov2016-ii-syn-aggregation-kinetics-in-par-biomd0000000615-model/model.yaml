@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000615
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000615?filename=BIOMD0000000615_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kuznetsov2016_ii_syn_aggregation_kinetics_in_par_biomd0000000615_model:Kuznetsov2016IiSynAggregationKineticsInParBiomd0000000615Model
   init_kwargs:
     model_path: data/BIOMD0000000615.xml

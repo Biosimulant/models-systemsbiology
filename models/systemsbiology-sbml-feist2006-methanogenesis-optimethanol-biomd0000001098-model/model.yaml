@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001098
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001098?filename=MODEL5662324959_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.feist2006_methanogenesis_optimethanol_biomd0000001098_model:Feist2006MethanogenesisOptimethanolBiomd0000001098Model
   init_kwargs:
     model_path: data/BIOMD0000001098.xml

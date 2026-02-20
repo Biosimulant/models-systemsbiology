@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1107050000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1107050000?filename=MODEL1107050000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bialik2010_apoptosis_spikemodel_model1107050000_model:Bialik2010ApoptosisSpikemodelModel1107050000Model
   init_kwargs:
     model_path: data/MODEL1107050000.xml

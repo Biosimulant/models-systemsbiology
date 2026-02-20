@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000171
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000171?filename=BIOMD0000000171_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.leloup1998_circclock_ld_biomd0000000171_model:Leloup1998CircclockLdBiomd0000000171Model
   init_kwargs:
     model_path: data/BIOMD0000000171.xml

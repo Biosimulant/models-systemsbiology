@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000621
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000621?filename=BIOMD0000000621_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.palmer2014_effect_of_il_1_blocking_therapies_in_biomd0000000621_model:Palmer2014EffectOfIl1BlockingTherapiesInBiomd0000000621Model
   init_kwargs:
     model_path: data/BIOMD0000000621.xml

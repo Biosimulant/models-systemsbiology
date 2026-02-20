@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000881
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000881?filename=Kogan2013.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kogan2013_a_mathematical_model_for_the_immunothe_biomd0000000881_model:Kogan2013AMathematicalModelForTheImmunotheBiomd0000000881Model
   init_kwargs:
     model_path: data/BIOMD0000000881.xml

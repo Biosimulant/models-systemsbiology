@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1008060002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1008060002?filename=MODEL1008060002_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.munz2009_zombie_sizrq_model1008060002_model:Munz2009ZombieSizrqModel1008060002Model
   init_kwargs:
     model_path: data/MODEL1008060002.xml

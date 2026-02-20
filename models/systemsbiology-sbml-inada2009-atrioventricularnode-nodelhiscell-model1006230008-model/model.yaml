@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1006230008
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1006230008?filename=MODEL1006230008_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.inada2009_atrioventricularnode_nodelhiscell_model1006230008_model:Inada2009AtrioventricularnodeNodelhiscellModel1006230008Model
   init_kwargs:
     model_path: data/MODEL1006230008.xml

@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2210190001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2210190001?filename=Koduru2022_LbCs.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.koduru2022_lactobacillus_casei_subsp_casei_atcc_model2210190001_model:Koduru2022LactobacillusCaseiSubspCaseiAtccModel2210190001Model
   init_kwargs:
     model_path: data/MODEL2210190001.xml

@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000740
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000740?filename=Panteleev2010_full_model.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.panteleev2010_blood_coagulation_full_model_biomd0000000740_model:Panteleev2010BloodCoagulationFullModelBiomd0000000740Model
   init_kwargs:
     model_path: data/BIOMD0000000740.xml

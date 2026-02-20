@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1006230053
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1006230053?filename=MODEL1006230053_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.vinnakota2006_muscleglycogenolysis_modelb_model1006230053_model:Vinnakota2006MuscleglycogenolysisModelbModel1006230053Model
   init_kwargs:
     model_path: data/MODEL1006230053.xml

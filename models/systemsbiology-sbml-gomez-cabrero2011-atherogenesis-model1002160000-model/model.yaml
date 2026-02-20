@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1002160000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1002160000?filename=MODEL1002160000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.gomez_cabrero2011_atherogenesis_model1002160000_model:GomezCabrero2011AtherogenesisModel1002160000Model
   init_kwargs:
     model_path: data/MODEL1002160000.xml

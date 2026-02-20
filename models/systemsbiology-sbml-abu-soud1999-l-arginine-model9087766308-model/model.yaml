@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL9087766308
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL9087766308?filename=MODEL9087766308_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.abu_soud1999_l_arginine_model9087766308_model:AbuSoud1999LArginineModel9087766308Model
   init_kwargs:
     model_path: data/MODEL9087766308.xml

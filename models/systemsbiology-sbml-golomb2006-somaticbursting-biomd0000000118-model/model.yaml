@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000118
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000118?filename=BIOMD0000000118_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.golomb2006_somaticbursting_biomd0000000118_model:Golomb2006SomaticburstingBiomd0000000118Model
   init_kwargs:
     model_path: data/BIOMD0000000118.xml

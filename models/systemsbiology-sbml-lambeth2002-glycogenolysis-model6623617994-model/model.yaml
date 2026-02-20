@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL6623617994
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL6623617994?filename=MODEL6623617994_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.lambeth2002_glycogenolysis_model6623617994_model:Lambeth2002GlycogenolysisModel6623617994Model
   init_kwargs:
     model_path: data/MODEL6623617994.xml

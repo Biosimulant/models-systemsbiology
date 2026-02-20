@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000291
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000291?filename=BIOMD0000000291_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.nikolaev2005_albuminbilirubinadsorption_biomd0000000291_model:Nikolaev2005AlbuminbilirubinadsorptionBiomd0000000291Model
   init_kwargs:
     model_path: data/BIOMD0000000291.xml

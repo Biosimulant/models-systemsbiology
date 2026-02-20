@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1805230001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1805230001?filename=Mukandavire2009.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mukandavire2009_model_for_hiv_malaria_co_infecti_model1805230001_model:Mukandavire2009ModelForHivMalariaCoInfectiModel1805230001Model
   init_kwargs:
     model_path: data/MODEL1805230001.xml

@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000193
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000193?filename=BIOMD0000000193_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ibrahim2008_mcc_assembly_model_kdm_biomd0000000193_model:Ibrahim2008MccAssemblyModelKdmBiomd0000000193Model
   init_kwargs:
     model_path: data/BIOMD0000000193.xml

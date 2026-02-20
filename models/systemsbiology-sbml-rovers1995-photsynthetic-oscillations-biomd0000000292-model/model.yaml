@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000292
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000292?filename=BIOMD0000000292_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.rovers1995_photsynthetic_oscillations_biomd0000000292_model:Rovers1995PhotsyntheticOscillationsBiomd0000000292Model
   init_kwargs:
     model_path: data/BIOMD0000000292.xml

@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000387
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000387?filename=BIOMD0000000387_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.arnold2011_damour2007_rubisco_calvincycle_biomd0000000387_model:Arnold2011Damour2007RubiscoCalvincycleBiomd0000000387Model
   init_kwargs:
     model_path: data/BIOMD0000000387.xml

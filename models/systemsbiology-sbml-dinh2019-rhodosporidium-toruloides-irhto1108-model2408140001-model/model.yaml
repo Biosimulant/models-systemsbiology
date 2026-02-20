@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2408140001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2408140001?filename=iRhtoC.omex
   license: CC0
-bsim:
+biosim:
   entrypoint: src.dinh2019_rhodosporidium_toruloides_irhto1108_model2408140001_model:Dinh2019RhodosporidiumToruloidesIrhto1108Model2408140001Model
   init_kwargs:
     model_path: data/MODEL2408140001.xml

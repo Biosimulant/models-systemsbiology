@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1504290001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1504290001?filename=MODEL1504290001_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mizuno2012_alzpathway_a_comprehensive_map_of_alz_model1504290001_model:Mizuno2012AlzpathwayAComprehensiveMapOfAlzModel1504290001Model
   init_kwargs:
     model_path: data/MODEL1504290001.xml

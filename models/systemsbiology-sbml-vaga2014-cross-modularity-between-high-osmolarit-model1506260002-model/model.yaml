@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1506260002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1506260002?filename=MODEL1506260002_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.vaga2014_cross_modularity_between_high_osmolarit_model1506260002_model:Vaga2014CrossModularityBetweenHighOsmolaritModel1506260002Model
   init_kwargs:
     model_path: data/MODEL1506260002.xml

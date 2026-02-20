@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1012090006
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1012090006?filename=MODEL1012090006_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kim2011_oscillator_extendediii_model1012090006_model:Kim2011OscillatorExtendediiiModel1012090006Model
   init_kwargs:
     model_path: data/MODEL1012090006.xml

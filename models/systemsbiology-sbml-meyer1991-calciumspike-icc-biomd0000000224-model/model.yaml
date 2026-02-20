@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000224
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000224?filename=BIOMD0000000224_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.meyer1991_calciumspike_icc_biomd0000000224_model:Meyer1991CalciumspikeIccBiomd0000000224Model
   init_kwargs:
     model_path: data/BIOMD0000000224.xml

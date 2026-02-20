@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1108260015
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1108260015?filename=MODEL1108260015_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.qiao2004_thrombingeneration_model1108260015_model:Qiao2004ThrombingenerationModel1108260015Model
   init_kwargs:
     model_path: data/MODEL1108260015.xml

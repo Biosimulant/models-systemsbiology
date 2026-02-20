@@ -25,7 +25,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2404220004?filename=BioModelsMetadata
     - eos81ew.csv
   license: CC0
-bsim:
+biosim:
   entrypoint: src.williams2022_permeable_compound_selection_using_model2404220004_model:Williams2022PermeableCompoundSelectionUsingModel2404220004Model
   init_kwargs:
     model_path: data/MODEL2404220004.xml

@@ -24,7 +24,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2407180003?filename=BioModelsMetadata
     - eos2ta5.csv
   license: CC0
-bsim:
+biosim:
   entrypoint: src.karim2021_cardiotox_net_ligand_based_prediction_model2407180003_model:Karim2021CardiotoxNetLigandBasedPredictionModel2407180003Model
   init_kwargs:
     model_path: data/MODEL2407180003.xml

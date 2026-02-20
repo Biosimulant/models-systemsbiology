@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000202
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000202?filename=BIOMD0000000202_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.chenxf2008_cicr_biomd0000000202_model:Chenxf2008CicrBiomd0000000202Model
   init_kwargs:
     model_path: data/BIOMD0000000202.xml

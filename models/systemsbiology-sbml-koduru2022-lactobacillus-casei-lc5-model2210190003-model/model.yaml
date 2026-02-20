@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2210190003
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2210190003?filename=LbCs_LC5.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.koduru2022_lactobacillus_casei_lc5_model2210190003_model:Koduru2022LactobacillusCaseiLc5Model2210190003Model
   init_kwargs:
     model_path: data/MODEL2210190003.xml

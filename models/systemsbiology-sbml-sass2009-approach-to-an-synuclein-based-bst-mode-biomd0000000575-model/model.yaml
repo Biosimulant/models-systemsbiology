@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000575
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000575?filename=BIOMD0000000575_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.sass2009_approach_to_an_synuclein_based_bst_mode_biomd0000000575_model:Sass2009ApproachToAnSynucleinBasedBstModeBiomd0000000575Model
   init_kwargs:
     model_path: data/BIOMD0000000575.xml

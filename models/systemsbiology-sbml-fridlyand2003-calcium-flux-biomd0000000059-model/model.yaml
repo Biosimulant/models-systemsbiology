@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000059
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000059?filename=BIOMD0000000059_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.fridlyand2003_calcium_flux_biomd0000000059_model:Fridlyand2003CalciumFluxBiomd0000000059Model
   init_kwargs:
     model_path: data/BIOMD0000000059.xml

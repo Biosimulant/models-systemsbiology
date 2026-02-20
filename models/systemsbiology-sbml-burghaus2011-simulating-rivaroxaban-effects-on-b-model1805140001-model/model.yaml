@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1805140001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1805140001?filename=Burghaus2011.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.burghaus2011_simulating_rivaroxaban_effects_on_b_model1805140001_model:Burghaus2011SimulatingRivaroxabanEffectsOnBModel1805140001Model
   init_kwargs:
     model_path: data/MODEL1805140001.xml

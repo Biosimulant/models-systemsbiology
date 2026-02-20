@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000412
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000412?filename=BIOMD0000000412_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.pokhilko2012_circclock_repressilatorfeedbackloop_biomd0000000412_model:Pokhilko2012CircclockRepressilatorfeedbackloopBiomd0000000412Model
   init_kwargs:
     model_path: data/BIOMD0000000412.xml

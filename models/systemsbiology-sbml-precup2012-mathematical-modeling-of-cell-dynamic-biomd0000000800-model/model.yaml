@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000800
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000800?filename=Precup2012.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.precup2012_mathematical_modeling_of_cell_dynamic_biomd0000000800_model:Precup2012MathematicalModelingOfCellDynamicBiomd0000000800Model
   init_kwargs:
     model_path: data/BIOMD0000000800.xml

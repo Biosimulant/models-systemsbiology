@@ -25,7 +25,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2405080002?filename=BioModelsMetadata
     - eos18ie.csv
   license: CC0
-bsim:
+biosim:
   entrypoint: src.wong2024_discovery_of_a_structural_class_of_anti_model2405080002_model:Wong2024DiscoveryOfAStructuralClassOfAntiModel2405080002Model
   init_kwargs:
     model_path: data/MODEL2405080002.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000417
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000417?filename=BIOMD0000000417_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ratushny2012_nf_biomd0000000417_model:Ratushny2012NfBiomd0000000417Model
   init_kwargs:
     model_path: data/BIOMD0000000417.xml

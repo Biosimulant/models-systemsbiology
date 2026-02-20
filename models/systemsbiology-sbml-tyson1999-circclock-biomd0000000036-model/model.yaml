@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000036
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000036?filename=BIOMD0000000036_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.tyson1999_circclock_biomd0000000036_model:Tyson1999CircclockBiomd0000000036Model
   init_kwargs:
     model_path: data/BIOMD0000000036.xml

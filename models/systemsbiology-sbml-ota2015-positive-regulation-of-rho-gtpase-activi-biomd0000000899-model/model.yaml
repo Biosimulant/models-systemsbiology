@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000899
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000899?filename=Ota2015_GDI-integrated.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ota2015_positive_regulation_of_rho_gtpase_activi_biomd0000000899_model:Ota2015PositiveRegulationOfRhoGtpaseActiviBiomd0000000899Model
   init_kwargs:
     model_path: data/BIOMD0000000899.xml

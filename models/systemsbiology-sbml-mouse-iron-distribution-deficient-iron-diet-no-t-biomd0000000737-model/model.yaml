@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000737
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000737?filename=Parmar2017_Deficient_NoTracer.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mouse_iron_distribution_deficient_iron_diet_no_t_biomd0000000737_model:MouseIronDistributionDeficientIronDietNoTBiomd0000000737Model
   init_kwargs:
     model_path: data/BIOMD0000000737.xml

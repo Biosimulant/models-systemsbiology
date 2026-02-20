@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2102090002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2102090002?filename=inamo-v1.4.3.zip
   license: CC0
-bsim:
+biosim:
   entrypoint: src.sch_lzel2021_modelica_implementation_of_the_one_model2102090002_model:SchLzel2021ModelicaImplementationOfTheOneModel2102090002Model
   init_kwargs:
     model_path: data/MODEL2102090002.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001067
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001067?filename=zmays_trained_model.onnx
   license: CC0
-bsim:
+biosim:
   entrypoint: src.deshpande2019_random_forest_model_to_predict_lon_biomd0000001067_model:Deshpande2019RandomForestModelToPredictLonBiomd0000001067Model
   init_kwargs:
     model_path: data/BIOMD0000001067.xml

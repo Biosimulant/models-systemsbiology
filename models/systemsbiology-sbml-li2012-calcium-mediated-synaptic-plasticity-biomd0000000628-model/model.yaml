@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000628
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000628?filename=BIOMD0000000628_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.li2012_calcium_mediated_synaptic_plasticity_biomd0000000628_model:Li2012CalciumMediatedSynapticPlasticityBiomd0000000628Model
   init_kwargs:
     model_path: data/BIOMD0000000628.xml

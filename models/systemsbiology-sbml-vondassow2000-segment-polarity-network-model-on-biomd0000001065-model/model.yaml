@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001065
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001065?filename=vonDassow2000_1x4.timecourse1.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.vondassow2000_segment_polarity_network_model_on_biomd0000001065_model:Vondassow2000SegmentPolarityNetworkModelOnBiomd0000001065Model
   init_kwargs:
     model_path: data/BIOMD0000001065.xml

@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000191
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000191?filename=BIOMD0000000191_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.monta_ez2008_arginine_catabolism_biomd0000000191_model:MontaEz2008ArginineCatabolismBiomd0000000191Model
   init_kwargs:
     model_path: data/BIOMD0000000191.xml

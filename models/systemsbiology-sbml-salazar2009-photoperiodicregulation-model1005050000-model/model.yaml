@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1005050000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1005050000?filename=MODEL1005050000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.salazar2009_photoperiodicregulation_model1005050000_model:Salazar2009PhotoperiodicregulationModel1005050000Model
   init_kwargs:
     model_path: data/MODEL1005050000.xml

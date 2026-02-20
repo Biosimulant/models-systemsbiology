@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000197
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000197?filename=BIOMD0000000197_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bartholome2007_mdckii_biomd0000000197_model:Bartholome2007MdckiiBiomd0000000197Model
   init_kwargs:
     model_path: data/BIOMD0000000197.xml

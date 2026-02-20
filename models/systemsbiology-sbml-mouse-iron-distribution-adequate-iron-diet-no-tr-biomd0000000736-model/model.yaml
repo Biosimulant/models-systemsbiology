@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000736
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000736?filename=Parmar2017_Adequate_diet_Anemia_NoTracer.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mouse_iron_distribution_adequate_iron_diet_no_tr_biomd0000000736_model:MouseIronDistributionAdequateIronDietNoTrBiomd0000000736Model
   init_kwargs:
     model_path: data/BIOMD0000000736.xml

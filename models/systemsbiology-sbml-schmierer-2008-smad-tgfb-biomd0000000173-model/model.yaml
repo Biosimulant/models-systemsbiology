@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000173
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000173?filename=BIOMD0000000173_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.schmierer_2008_smad_tgfb_biomd0000000173_model:Schmierer2008SmadTgfbBiomd0000000173Model
   init_kwargs:
     model_path: data/BIOMD0000000173.xml

@@ -25,7 +25,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2406040005?filename=BioModelsMetadata
     - eos8451.csv
   license: CC0
-bsim:
+biosim:
   entrypoint: src.rong2020_grover_esol_prediction_of_water_solubil_model2406040005_model:Rong2020GroverEsolPredictionOfWaterSolubilModel2406040005Model
   init_kwargs:
     model_path: data/MODEL2406040005.xml

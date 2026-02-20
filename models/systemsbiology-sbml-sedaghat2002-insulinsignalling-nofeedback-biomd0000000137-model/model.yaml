@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000137
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000137?filename=BIOMD0000000137_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.sedaghat2002_insulinsignalling_nofeedback_biomd0000000137_model:Sedaghat2002InsulinsignallingNofeedbackBiomd0000000137Model
   init_kwargs:
     model_path: data/BIOMD0000000137.xml

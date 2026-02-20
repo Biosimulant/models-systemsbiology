@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000377
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000377?filename=BIOMD0000000377_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bertram2000_pancreaticbetacells_oscillations_biomd0000000377_model:Bertram2000PancreaticbetacellsOscillationsBiomd0000000377Model
   init_kwargs:
     model_path: data/BIOMD0000000377.xml

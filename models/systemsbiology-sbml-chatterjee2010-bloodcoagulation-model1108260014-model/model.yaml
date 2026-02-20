@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1108260014
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1108260014?filename=MODEL1108260014_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.chatterjee2010_bloodcoagulation_model1108260014_model:Chatterjee2010BloodcoagulationModel1108260014Model
   init_kwargs:
     model_path: data/MODEL1108260014.xml

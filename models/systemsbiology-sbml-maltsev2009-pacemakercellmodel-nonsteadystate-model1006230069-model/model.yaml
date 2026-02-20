@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1006230069
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1006230069?filename=MODEL1006230069_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.maltsev2009_pacemakercellmodel_nonsteadystate_model1006230069_model:Maltsev2009PacemakercellmodelNonsteadystateModel1006230069Model
   init_kwargs:
     model_path: data/MODEL1006230069.xml

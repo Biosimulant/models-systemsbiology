@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000618
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000618?filename=BIOMD0000000618_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.krohn2011_cerebral_amyloid_proteostasis_regulate_biomd0000000618_model:Krohn2011CerebralAmyloidProteostasisRegulateBiomd0000000618Model
   init_kwargs:
     model_path: data/BIOMD0000000618.xml

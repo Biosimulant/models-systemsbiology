@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2308300001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2308300001?filename=PsoriaSys.sbml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.tsirvouli2023_psoriasys_model_a_multiscale_psori_model2308300001_model:Tsirvouli2023PsoriasysModelAMultiscalePsoriModel2308300001Model
   init_kwargs:
     model_path: data/MODEL2308300001.sbml

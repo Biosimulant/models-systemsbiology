@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000209
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000209?filename=BIOMD0000000209_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.chickarmane2008_stem_cell_lineage_determination_biomd0000000209_model:Chickarmane2008StemCellLineageDeterminationBiomd0000000209Model
   init_kwargs:
     model_path: data/BIOMD0000000209.xml

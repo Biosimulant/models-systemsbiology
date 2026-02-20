@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1806120001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1806120001?filename=Khanin1998.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.khanin1998_mathematical_model_of_blood_coagulati_model1806120001_model:Khanin1998MathematicalModelOfBloodCoagulatiModel1806120001Model
   init_kwargs:
     model_path: data/MODEL1806120001.xml

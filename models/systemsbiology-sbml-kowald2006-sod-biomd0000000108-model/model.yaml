@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000108
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000108?filename=BIOMD0000000108_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kowald2006_sod_biomd0000000108_model:Kowald2006SodBiomd0000000108Model
   init_kwargs:
     model_path: data/BIOMD0000000108.xml

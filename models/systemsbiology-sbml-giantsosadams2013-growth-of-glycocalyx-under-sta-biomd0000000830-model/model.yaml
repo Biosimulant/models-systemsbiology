@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000830
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000830?filename=Giantsos-Adams2013.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.giantsosadams2013_growth_of_glycocalyx_under_sta_biomd0000000830_model:Giantsosadams2013GrowthOfGlycocalyxUnderStaBiomd0000000830Model
   init_kwargs:
     model_path: data/BIOMD0000000830.xml

@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1805140002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1805140002?filename=IronMousePV3_tracer.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.parmar2019_iron_mouse_pv3_tracer_model1805140002_model:Parmar2019IronMousePv3TracerModel1805140002Model
   init_kwargs:
     model_path: data/MODEL1805140002.xml

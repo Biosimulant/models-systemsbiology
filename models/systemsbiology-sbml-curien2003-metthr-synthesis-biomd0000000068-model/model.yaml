@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000068
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000068?filename=BIOMD0000000068_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.curien2003_metthr_synthesis_biomd0000000068_model:Curien2003MetthrSynthesisBiomd0000000068Model
   init_kwargs:
     model_path: data/BIOMD0000000068.xml

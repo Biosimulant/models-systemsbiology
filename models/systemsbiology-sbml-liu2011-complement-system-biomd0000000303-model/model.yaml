@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000303
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000303?filename=BIOMD0000000303_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.liu2011_complement_system_biomd0000000303_model:Liu2011ComplementSystemBiomd0000000303Model
   init_kwargs:
     model_path: data/BIOMD0000000303.xml

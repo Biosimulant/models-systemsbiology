@@ -12,13 +12,13 @@ from pathlib import Path
 from typing import Any, Dict, Optional, Set, TYPE_CHECKING
 
 if TYPE_CHECKING:  # pragma: no cover - typing only
-    from bsim import BioWorld
+    from biosim import BioWorld
 
-import bsim
-from bsim.signals import BioSignal, SignalMetadata
+import biosim
+from biosim.signals import BioSignal, SignalMetadata
 
 
-class SbmlBoada2016IncoherentType1FeedForwardLoopI1Ffl(bsim.BioModule):
+class SbmlBoada2016IncoherentType1FeedForwardLoopI1Ffl(biosim.BioModule):
     """BioModule wrapper for SBML model: Boada2016 - Incoherent type 1 feed-forward loop (I1-FFL)."""
 
     def __init__(self, model_path: str = "data/BIOMD0000000696.xml", min_dt: float = 0.01) -> None:

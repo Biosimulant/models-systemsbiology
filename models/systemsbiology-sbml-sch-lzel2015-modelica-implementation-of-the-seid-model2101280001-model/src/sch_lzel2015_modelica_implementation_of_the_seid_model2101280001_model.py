@@ -12,13 +12,13 @@ from pathlib import Path
 from typing import Any, Dict, Optional, Set, TYPE_CHECKING
 
 if TYPE_CHECKING:  # pragma: no cover - typing only
-    from bsim import BioWorld
+    from biosim import BioWorld
 
-import bsim
-from bsim.signals import BioSignal, SignalMetadata
+import biosim
+from biosim.signals import BioSignal, SignalMetadata
 
 
-class SbmlScholzel2015ModelicaImplementationOfTheSeidelHerzel(bsim.BioModule):
+class SbmlScholzel2015ModelicaImplementationOfTheSeidelHerzel(biosim.BioModule):
     """BioModule wrapper for SBML model: Schölzel2015 - Modelica implementation of the Seidel-Herzel model of the human baroreflex (v1.6)."""
 
     def __init__(self, model_path: str = "data/MODEL2101280001.xml", min_dt: float = 0.01) -> None:

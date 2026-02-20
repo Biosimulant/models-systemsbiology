@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1006230110
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1006230110?filename=MODEL1006230110_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.phillips2008_ascendingarousalsystem_baseline_model1006230110_model:Phillips2008AscendingarousalsystemBaselineModel1006230110Model
   init_kwargs:
     model_path: data/MODEL1006230110.xml

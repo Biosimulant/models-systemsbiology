@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1006230102
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1006230102?filename=MODEL1006230102_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.waugh2006_woundhealing_diabetic_modeld_model1006230102_model:Waugh2006WoundhealingDiabeticModeldModel1006230102Model
   init_kwargs:
     model_path: data/MODEL1006230102.xml

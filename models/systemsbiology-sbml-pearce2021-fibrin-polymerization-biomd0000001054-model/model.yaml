@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001054
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001054?filename=fibrin_polymerization.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.pearce2021_fibrin_polymerization_biomd0000001054_model:Pearce2021FibrinPolymerizationBiomd0000001054Model
   init_kwargs:
     model_path: data/BIOMD0000001054.xml

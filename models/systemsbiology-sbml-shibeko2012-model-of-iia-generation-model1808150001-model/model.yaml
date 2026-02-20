@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1808150001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1808150001?filename=Shibeko2012_Model_IIa_Generation.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.shibeko2012_model_of_iia_generation_model1808150001_model:Shibeko2012ModelOfIiaGenerationModel1808150001Model
   init_kwargs:
     model_path: data/MODEL1808150001.xml

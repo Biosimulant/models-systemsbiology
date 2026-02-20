@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL5662425708
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL5662425708?filename=MODEL5662425708_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.feist2006_methanogenesis_optipyruvate_model5662425708_model:Feist2006MethanogenesisOptipyruvateModel5662425708Model
   init_kwargs:
     model_path: data/MODEL5662425708.xml

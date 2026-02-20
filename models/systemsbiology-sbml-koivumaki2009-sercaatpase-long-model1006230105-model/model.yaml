@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1006230105
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1006230105?filename=MODEL1006230105_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.koivumaki2009_sercaatpase_long_model1006230105_model:Koivumaki2009SercaatpaseLongModel1006230105Model
   init_kwargs:
     model_path: data/MODEL1006230105.xml

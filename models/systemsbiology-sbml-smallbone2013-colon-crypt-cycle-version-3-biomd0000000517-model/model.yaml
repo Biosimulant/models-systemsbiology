@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000517
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000517?filename=BIOMD0000000517_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.smallbone2013_colon_crypt_cycle_version_3_biomd0000000517_model:Smallbone2013ColonCryptCycleVersion3Biomd0000000517Model
   init_kwargs:
     model_path: data/BIOMD0000000517.xml

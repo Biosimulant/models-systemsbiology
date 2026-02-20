@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1173105855
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1173105855?filename=MODEL1173105855_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.gilbert2008_electrochemicalbiosensor_model1173105855_model:Gilbert2008ElectrochemicalbiosensorModel1173105855Model
   init_kwargs:
     model_path: data/MODEL1173105855.xml

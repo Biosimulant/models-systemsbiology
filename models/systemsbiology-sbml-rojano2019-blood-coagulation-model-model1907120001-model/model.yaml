@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1907120001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1907120001?filename=Rojano2019.cps
   license: CC0
-bsim:
+biosim:
   entrypoint: src.rojano2019_blood_coagulation_model_model1907120001_model:Rojano2019BloodCoagulationModelModel1907120001Model
   init_kwargs:
     model_path: data/MODEL1907120001.xml

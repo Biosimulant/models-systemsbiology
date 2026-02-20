@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1112110002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1112110002?filename=MODEL1112110002_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.farhy2009_glucagoncounterregulationmodel_model1112110002_model:Farhy2009GlucagoncounterregulationmodelModel1112110002Model
   init_kwargs:
     model_path: data/MODEL1112110002.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000678
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000678?filename=BIOMD0000000678_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.tomida2003_calcium_oscillatory_induced_transloca_biomd0000000678_model:Tomida2003CalciumOscillatoryInducedTranslocaBiomd0000000678Model
   init_kwargs:
     model_path: data/BIOMD0000000678.xml

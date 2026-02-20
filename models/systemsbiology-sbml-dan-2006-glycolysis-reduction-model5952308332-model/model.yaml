@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL5952308332
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL5952308332?filename=MODEL5952308332_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.dan_2006_glycolysis_reduction_model5952308332_model:Dan2006GlycolysisReductionModel5952308332Model
   init_kwargs:
     model_path: data/MODEL5952308332.xml

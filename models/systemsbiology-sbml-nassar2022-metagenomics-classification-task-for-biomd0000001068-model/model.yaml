@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001068
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001068?filename=doc2vec-model.onnx
   license: CC0
-bsim:
+biosim:
   entrypoint: src.nassar2022_metagenomics_classification_task_for_biomd0000001068_model:Nassar2022MetagenomicsClassificationTaskForBiomd0000001068Model
   init_kwargs:
     model_path: data/BIOMD0000001068.xml

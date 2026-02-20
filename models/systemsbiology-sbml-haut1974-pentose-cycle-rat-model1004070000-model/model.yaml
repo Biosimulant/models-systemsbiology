@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1004070000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1004070000?filename=MODEL1004070000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.haut1974_pentose_cycle_rat_model1004070000_model:Haut1974PentoseCycleRatModel1004070000Model
   init_kwargs:
     model_path: data/MODEL1004070000.xml

@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1006230060
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1006230060?filename=MODEL1006230060_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.liu1999_pulsatilesecretion_model1006230060_model:Liu1999PulsatilesecretionModel1006230060Model
   init_kwargs:
     model_path: data/MODEL1006230060.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000411
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000411?filename=BIOMD0000000411_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.heiland2012_circadianclock_c_reinhardtii_biomd0000000411_model:Heiland2012CircadianclockCReinhardtiiBiomd0000000411Model
   init_kwargs:
     model_path: data/BIOMD0000000411.xml

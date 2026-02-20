@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1806050001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1806050001?filename=Luan2007.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.luan2007_blood_coagulation_model_combining_previ_model1806050001_model:Luan2007BloodCoagulationModelCombiningPreviModel1806050001Model
   init_kwargs:
     model_path: data/MODEL1806050001.xml

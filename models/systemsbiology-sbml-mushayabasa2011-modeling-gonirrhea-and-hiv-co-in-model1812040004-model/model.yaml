@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1812040004
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1812040004?filename=Model.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mushayabasa2011_modeling_gonirrhea_and_hiv_co_in_model1812040004_model:Mushayabasa2011ModelingGonirrheaAndHivCoInModel1812040004Model
   init_kwargs:
     model_path: data/MODEL1812040004.xml

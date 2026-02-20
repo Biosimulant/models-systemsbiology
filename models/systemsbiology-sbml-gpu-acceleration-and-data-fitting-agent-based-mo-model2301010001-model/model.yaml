@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2301010001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2301010001?filename=Viral_Transmission.cu
   license: CC0
-bsim:
+biosim:
   entrypoint: src.gpu_acceleration_and_data_fitting_agent_based_mo_model2301010001_model:GpuAccelerationAndDataFittingAgentBasedMoModel2301010001Model
   init_kwargs:
     model_path: data/MODEL2301010001.xml

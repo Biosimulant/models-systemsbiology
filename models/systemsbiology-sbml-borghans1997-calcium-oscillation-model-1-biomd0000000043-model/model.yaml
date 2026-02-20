@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000043
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000043?filename=BIOMD0000000043_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.borghans1997_calcium_oscillation_model_1_biomd0000000043_model:Borghans1997CalciumOscillationModel1Biomd0000000043Model
   init_kwargs:
     model_path: data/BIOMD0000000043.xml

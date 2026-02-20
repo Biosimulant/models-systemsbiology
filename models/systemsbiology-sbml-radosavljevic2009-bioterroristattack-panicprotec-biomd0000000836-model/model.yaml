@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000836
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000836?filename=Radosavljevic2009.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.radosavljevic2009_bioterroristattack_panicprotec_biomd0000000836_model:Radosavljevic2009BioterroristattackPanicprotecBiomd0000000836Model
   init_kwargs:
     model_path: data/BIOMD0000000836.xml

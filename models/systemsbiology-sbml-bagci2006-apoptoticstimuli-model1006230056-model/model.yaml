@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1006230056
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1006230056?filename=MODEL1006230056_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bagci2006_apoptoticstimuli_model1006230056_model:Bagci2006ApoptoticstimuliModel1006230056Model
   init_kwargs:
     model_path: data/MODEL1006230056.xml

@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1704110002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1704110002?filename=MODEL1704110002_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.proctor2017_identifying_microrna_for_muscle_rege_model1704110002_model:Proctor2017IdentifyingMicrornaForMuscleRegeModel1704110002Model
   init_kwargs:
     model_path: data/MODEL1704110002.xml

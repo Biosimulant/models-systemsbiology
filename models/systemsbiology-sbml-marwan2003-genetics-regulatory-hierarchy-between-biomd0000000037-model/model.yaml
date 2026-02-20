@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000037
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000037?filename=BIOMD0000000037_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.marwan2003_genetics_regulatory_hierarchy_between_biomd0000000037_model:Marwan2003GeneticsRegulatoryHierarchyBetweenBiomd0000000037Model
   init_kwargs:
     model_path: data/BIOMD0000000037.xml

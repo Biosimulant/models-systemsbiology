@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000304
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000304?filename=BIOMD0000000304_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.plant1981_burstingnervecells_biomd0000000304_model:Plant1981BurstingnervecellsBiomd0000000304Model
   init_kwargs:
     model_path: data/BIOMD0000000304.xml

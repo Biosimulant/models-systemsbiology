@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000030
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000030?filename=BIOMD0000000030_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.markevich2004_mapk_allrandomelementary_biomd0000000030_model:Markevich2004MapkAllrandomelementaryBiomd0000000030Model
   init_kwargs:
     model_path: data/BIOMD0000000030.xml

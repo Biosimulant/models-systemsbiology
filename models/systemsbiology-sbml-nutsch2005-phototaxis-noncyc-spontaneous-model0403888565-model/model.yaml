@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL0403888565
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0403888565?filename=MODEL0403888565_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.nutsch2005_phototaxis_noncyc_spontaneous_model0403888565_model:Nutsch2005PhototaxisNoncycSpontaneousModel0403888565Model
   init_kwargs:
     model_path: data/MODEL0403888565.xml

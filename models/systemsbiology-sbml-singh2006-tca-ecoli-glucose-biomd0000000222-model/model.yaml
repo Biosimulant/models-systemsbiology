@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000222
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000222?filename=BIOMD0000000222_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.singh2006_tca_ecoli_glucose_biomd0000000222_model:Singh2006TcaEcoliGlucoseBiomd0000000222Model
   init_kwargs:
     model_path: data/BIOMD0000000222.xml

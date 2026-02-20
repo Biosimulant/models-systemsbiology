@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1808210001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1808210001?filename=Kremers2015.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kremers2015_thrombin_inhibitor_kinetics_model1808210001_model:Kremers2015ThrombinInhibitorKineticsModel1808210001Model
   init_kwargs:
     model_path: data/MODEL1808210001.xml

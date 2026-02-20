@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1006230107
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1006230107?filename=MODEL1006230107_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.sneyd1995_calciumwave_ip3diffusion_model1006230107_model:Sneyd1995CalciumwaveIp3diffusionModel1006230107Model
   init_kwargs:
     model_path: data/MODEL1006230107.xml

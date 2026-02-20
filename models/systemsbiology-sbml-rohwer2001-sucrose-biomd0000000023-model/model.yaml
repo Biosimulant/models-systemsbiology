@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000023
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000023?filename=BIOMD0000000023_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.rohwer2001_sucrose_biomd0000000023_model:Rohwer2001SucroseBiomd0000000023Model
   init_kwargs:
     model_path: data/BIOMD0000000023.xml

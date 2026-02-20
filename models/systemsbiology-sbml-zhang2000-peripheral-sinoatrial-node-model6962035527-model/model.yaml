@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL6962035527
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL6962035527?filename=MODEL6962035527_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.zhang2000_peripheral_sinoatrial_node_model6962035527_model:Zhang2000PeripheralSinoatrialNodeModel6962035527Model
   init_kwargs:
     model_path: data/MODEL6962035527.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2110050001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2110050001?filename=Planarian_regeneration_doublehead.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.vu2019_planarian_double_head_regeneration_model2110050001_model:Vu2019PlanarianDoubleHeadRegenerationModel2110050001Model
   init_kwargs:
     model_path: data/MODEL2110050001.xml

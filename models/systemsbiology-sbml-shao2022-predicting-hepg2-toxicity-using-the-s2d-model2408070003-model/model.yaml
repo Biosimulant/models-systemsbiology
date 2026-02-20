@@ -25,7 +25,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2408070003?filename=BioModelsMetadata
     - eos2fy6.csv
   license: CC0
-bsim:
+biosim:
   entrypoint: src.shao2022_predicting_hepg2_toxicity_using_the_s2d_model2408070003_model:Shao2022PredictingHepg2ToxicityUsingTheS2dModel2408070003Model
   init_kwargs:
     model_path: data/MODEL2408070003.xml

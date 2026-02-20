@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL6963432821
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL6963432821?filename=MODEL6963432821_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.zager2007_genistein_biliary_excretion_model6963432821_model:Zager2007GenisteinBiliaryExcretionModel6963432821Model
   init_kwargs:
     model_path: data/MODEL6963432821.xml

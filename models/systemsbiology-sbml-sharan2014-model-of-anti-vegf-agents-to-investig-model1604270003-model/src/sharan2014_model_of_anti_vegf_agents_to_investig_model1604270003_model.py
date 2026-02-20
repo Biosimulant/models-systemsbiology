@@ -12,13 +12,13 @@ from pathlib import Path
 from typing import Any, Dict, Optional, Set, TYPE_CHECKING
 
 if TYPE_CHECKING:  # pragma: no cover - typing only
-    from bsim import BioWorld
+    from biosim import BioWorld
 
-import bsim
-from bsim.signals import BioSignal, SignalMetadata
+import biosim
+from biosim.signals import BioSignal, SignalMetadata
 
 
-class SbmlSharan2014ModelOfAntiVegfAgentsToInvestigate(bsim.BioModule):
+class SbmlSharan2014ModelOfAntiVegfAgentsToInvestigate(biosim.BioModule):
     """BioModule wrapper for SBML model: Sharan2014 - model of anti-VEGF agents to investigate circulating angiogenic factor modulation."""
 
     def __init__(self, model_path: str = "data/MODEL1604270003.xml", min_dt: float = 0.01) -> None:

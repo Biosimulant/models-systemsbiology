@@ -19,7 +19,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL9089538076
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL9089538076?filename=MODEL9089538076_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ajay_bhalla_2004_pkm_mkp3_tuning_model9089538076_model:AjayBhalla2004PkmMkp3TuningModel9089538076Model
   init_kwargs:
     model_path: data/MODEL9089538076.xml

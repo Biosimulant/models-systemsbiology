@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1012110001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1012110001?filename=MODEL1012110001_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.li2010_yeastglycolysis_model1012110001_model:Li2010YeastglycolysisModel1012110001Model
   init_kwargs:
     model_path: data/MODEL1012110001.xml

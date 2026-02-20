@@ -18,7 +18,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2210190005
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2210190005?filename=LbPt.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.koduru2022_lactobacillus_plantarum_wcfs1_model2210190005_model:Koduru2022LactobacillusPlantarumWcfs1Model2210190005Model
   init_kwargs:
     model_path: data/MODEL2210190005.xml

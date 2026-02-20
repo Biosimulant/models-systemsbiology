@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001057
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001057?filename=Nikolov2020.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.nikolov2020_p53_mir34_model_biomd0000001057_model:Nikolov2020P53Mir34ModelBiomd0000001057Model
   init_kwargs:
     model_path: data/BIOMD0000001057.xml

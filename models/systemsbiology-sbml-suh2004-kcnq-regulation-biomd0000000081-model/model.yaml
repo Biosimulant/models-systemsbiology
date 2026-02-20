@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000081
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000081?filename=BIOMD0000000081_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.suh2004_kcnq_regulation_biomd0000000081_model:Suh2004KcnqRegulationBiomd0000000081Model
   init_kwargs:
     model_path: data/BIOMD0000000081.xml

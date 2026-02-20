@@ -24,7 +24,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1907260003?filename=lever2014
     v5.0.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.lever2014_phenotypic_models_of_t_cell_activation_model1907260003_model:Lever2014PhenotypicModelsOfTCellActivationModel1907260003Model
   init_kwargs:
     model_path: data/MODEL1907260003.xml

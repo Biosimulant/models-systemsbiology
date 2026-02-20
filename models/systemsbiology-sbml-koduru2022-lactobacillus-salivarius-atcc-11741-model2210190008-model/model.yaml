@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2210190008
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2210190008?filename=Koduru2022_LbSv.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.koduru2022_lactobacillus_salivarius_atcc_11741_model2210190008_model:Koduru2022LactobacillusSalivariusAtcc11741Model2210190008Model
   init_kwargs:
     model_path: data/MODEL2210190008.xml

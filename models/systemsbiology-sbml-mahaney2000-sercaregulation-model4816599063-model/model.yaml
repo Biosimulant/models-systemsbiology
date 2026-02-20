@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL4816599063
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL4816599063?filename=MODEL4816599063_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mahaney2000_sercaregulation_model4816599063_model:Mahaney2000SercaregulationModel4816599063Model
   init_kwargs:
     model_path: data/MODEL4816599063.xml

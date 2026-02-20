@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000582
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000582?filename=BIOMD0000000582_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.dallepezze2014_cellular_senescene_induced_mitoch_biomd0000000582_model:Dallepezze2014CellularSenesceneInducedMitochBiomd0000000582Model
   init_kwargs:
     model_path: data/BIOMD0000000582.xml

@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1006230114
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1006230114?filename=MODEL1006230114_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bertram2006_atpproduction_mitochondrial_model1006230114_model:Bertram2006AtpproductionMitochondrialModel1006230114Model
   init_kwargs:
     model_path: data/MODEL1006230114.xml

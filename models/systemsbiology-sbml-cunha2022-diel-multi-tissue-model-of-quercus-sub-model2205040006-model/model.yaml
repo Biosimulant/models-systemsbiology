@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2205040006
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2205040006?filename=DielMultiTissueModel.zip
   license: CC0
-bsim:
+biosim:
   entrypoint: src.cunha2022_diel_multi_tissue_model_of_quercus_sub_model2205040006_model:Cunha2022DielMultiTissueModelOfQuercusSubModel2205040006Model
   init_kwargs:
     model_path: data/MODEL2205040006.xml

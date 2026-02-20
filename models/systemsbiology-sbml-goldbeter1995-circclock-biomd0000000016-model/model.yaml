@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000016
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000016?filename=BIOMD0000000016_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.goldbeter1995_circclock_biomd0000000016_model:Goldbeter1995CircclockBiomd0000000016Model
   init_kwargs:
     model_path: data/BIOMD0000000016.xml

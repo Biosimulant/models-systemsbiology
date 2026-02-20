@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1006230018
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1006230018?filename=MODEL1006230018_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.warren2009_calciumwavepropagation_model1006230018_model:Warren2009CalciumwavepropagationModel1006230018Model
   init_kwargs:
     model_path: data/MODEL1006230018.xml

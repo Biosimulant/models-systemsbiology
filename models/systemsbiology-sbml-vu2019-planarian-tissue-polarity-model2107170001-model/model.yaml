@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2107170001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2107170001?filename=Planarian_regeneration_wildtype.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.vu2019_planarian_tissue_polarity_model2107170001_model:Vu2019PlanarianTissuePolarityModel2107170001Model
   init_kwargs:
     model_path: data/MODEL2107170001.xml

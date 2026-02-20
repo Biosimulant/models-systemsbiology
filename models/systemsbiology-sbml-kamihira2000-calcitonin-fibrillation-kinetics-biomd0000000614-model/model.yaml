@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000614
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000614?filename=BIOMD0000000614_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kamihira2000_calcitonin_fibrillation_kinetics_biomd0000000614_model:Kamihira2000CalcitoninFibrillationKineticsBiomd0000000614Model
   init_kwargs:
     model_path: data/BIOMD0000000614.xml

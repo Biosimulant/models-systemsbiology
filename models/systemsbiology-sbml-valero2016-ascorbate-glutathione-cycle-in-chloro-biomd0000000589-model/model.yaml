@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000589
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000589?filename=BIOMD0000000589_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.valero2016_ascorbate_glutathione_cycle_in_chloro_biomd0000000589_model:Valero2016AscorbateGlutathioneCycleInChloroBiomd0000000589Model
   init_kwargs:
     model_path: data/BIOMD0000000589.xml

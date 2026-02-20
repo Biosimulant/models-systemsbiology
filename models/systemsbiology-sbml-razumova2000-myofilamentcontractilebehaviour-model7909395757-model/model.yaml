@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL7909395757
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL7909395757?filename=MODEL7909395757_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.razumova2000_myofilamentcontractilebehaviour_model7909395757_model:Razumova2000MyofilamentcontractilebehaviourModel7909395757Model
   init_kwargs:
     model_path: data/MODEL7909395757.xml

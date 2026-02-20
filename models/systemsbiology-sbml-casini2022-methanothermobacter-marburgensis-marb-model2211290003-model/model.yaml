@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2211290003
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2211290003?filename=Casini2022_iMMM22IC_unbound.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.casini2022_methanothermobacter_marburgensis_marb_model2211290003_model:Casini2022MethanothermobacterMarburgensisMarbModel2211290003Model
   init_kwargs:
     model_path: data/MODEL2211290003.xml

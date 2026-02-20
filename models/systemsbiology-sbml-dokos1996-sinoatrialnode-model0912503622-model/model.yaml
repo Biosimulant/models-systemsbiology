@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL0912503622
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0912503622?filename=MODEL0912503622_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.dokos1996_sinoatrialnode_model0912503622_model:Dokos1996SinoatrialnodeModel0912503622Model
   init_kwargs:
     model_path: data/MODEL0912503622.xml

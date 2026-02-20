@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1710030000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1710030000?filename=MODEL1710030000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.tikidji_hamburyan2018_rod_phototransduction_unde_model1710030000_model:TikidjiHamburyan2018RodPhototransductionUndeModel1710030000Model
   init_kwargs:
     model_path: data/MODEL1710030000.xml

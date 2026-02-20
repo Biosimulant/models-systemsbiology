@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1808060001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1808060001?filename=Supplementary3.zip
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mishra2018_enhancing_sorafenib_efficacy_by_co_ta_model1808060001_model:Mishra2018EnhancingSorafenibEfficacyByCoTaModel1808060001Model
   init_kwargs:
     model_path: data/MODEL1808060001.xml

@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000256
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000256?filename=BIOMD0000000256_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.rehm2006_caspase_biomd0000000256_model:Rehm2006CaspaseBiomd0000000256Model
   init_kwargs:
     model_path: data/BIOMD0000000256.xml

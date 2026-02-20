@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1303140000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1303140000?filename=MODEL1303140000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mazemondet2012_beta_catenin_dynamics_in_human_ne_model1303140000_model:Mazemondet2012BetaCateninDynamicsInHumanNeModel1303140000Model
   init_kwargs:
     model_path: data/MODEL1303140000.xml

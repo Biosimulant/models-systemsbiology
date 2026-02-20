@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000318
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000318?filename=BIOMD0000000318_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.yao2008_rb_e2f_switch_biomd0000000318_model:Yao2008RbE2fSwitchBiomd0000000318Model
   init_kwargs:
     model_path: data/BIOMD0000000318.xml

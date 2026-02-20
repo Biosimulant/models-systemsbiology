@@ -25,7 +25,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2404220001?filename=BioModelsMetadata
     - eos9tyg.csv
   license: CC0
-bsim:
+biosim:
   entrypoint: src.sun2017_predictive_and_interpretable_models_for_model2404220001_model:Sun2017PredictiveAndInterpretableModelsForModel2404220001Model
   init_kwargs:
     model_path: data/MODEL2404220001.xml

@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000069
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000069?filename=BIOMD0000000069_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.fuss2006_mitoticactivation_biomd0000000069_model:Fuss2006MitoticactivationBiomd0000000069Model
   init_kwargs:
     model_path: data/BIOMD0000000069.xml

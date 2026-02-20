@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000359
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000359?filename=BIOMD0000000359_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.panteleev2002_tfpimechanism_schmema3_biomd0000000359_model:Panteleev2002TfpimechanismSchmema3Biomd0000000359Model
   init_kwargs:
     model_path: data/BIOMD0000000359.xml

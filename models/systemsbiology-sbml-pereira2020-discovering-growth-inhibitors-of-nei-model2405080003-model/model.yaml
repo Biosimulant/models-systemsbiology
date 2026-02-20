@@ -25,7 +25,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2405080003?filename=BioModelsMetadata
     - eos5cl7.csv
   license: CC0
-bsim:
+biosim:
   entrypoint: src.pereira2020_discovering_growth_inhibitors_of_nei_model2405080003_model:Pereira2020DiscoveringGrowthInhibitorsOfNeiModel2405080003Model
   init_kwargs:
     model_path: data/MODEL2405080003.xml

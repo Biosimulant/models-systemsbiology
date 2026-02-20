@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000975
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000975?filename=Leloup2004_Set1.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.leloup2004_mammalian_circadian_rhythm_models_for_biomd0000000975_model:Leloup2004MammalianCircadianRhythmModelsForBiomd0000000975Model
   init_kwargs:
     model_path: data/BIOMD0000000975.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL6399676120
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL6399676120?filename=MODEL6399676120_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.duarte2007_homo_sapiens_metabol_recon_1_model6399676120_model:Duarte2007HomoSapiensMetabolRecon1Model6399676120Model
   init_kwargs:
     model_path: data/MODEL6399676120.xml

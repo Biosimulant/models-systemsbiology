@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000447
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000447?filename=BIOMD0000000447_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.venkatraman2012_interplay_between_pls_and_tsp1_i_biomd0000000447_model:Venkatraman2012InterplayBetweenPlsAndTsp1IBiomd0000000447Model
   init_kwargs:
     model_path: data/BIOMD0000000447.xml

@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000738
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000738?filename=Parmar2017_Rich_NoTracer.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mouse_iron_distribution_rich_iron_diet_no_tracer_biomd0000000738_model:MouseIronDistributionRichIronDietNoTracerBiomd0000000738Model
   init_kwargs:
     model_path: data/BIOMD0000000738.xml

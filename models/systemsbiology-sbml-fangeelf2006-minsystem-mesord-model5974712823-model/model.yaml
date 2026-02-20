@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL5974712823
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL5974712823?filename=MODEL5974712823_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.fangeelf2006_minsystem_mesord_model5974712823_model:Fangeelf2006MinsystemMesordModel5974712823Model
   init_kwargs:
     model_path: data/MODEL5974712823.xml

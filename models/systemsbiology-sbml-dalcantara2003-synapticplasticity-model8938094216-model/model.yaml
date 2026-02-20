@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL8938094216
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL8938094216?filename=MODEL8938094216_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.dalcantara2003_synapticplasticity_model8938094216_model:Dalcantara2003SynapticplasticityModel8938094216Model
   init_kwargs:
     model_path: data/MODEL8938094216.xml

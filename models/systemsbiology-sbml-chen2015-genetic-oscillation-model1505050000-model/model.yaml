@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1505050000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1505050000?filename=Model_Code_Final.nb
   license: CC0
-bsim:
+biosim:
   entrypoint: src.chen2015_genetic_oscillation_model1505050000_model:Chen2015GeneticOscillationModel1505050000Model
   init_kwargs:
     model_path: data/MODEL1505050000.xml

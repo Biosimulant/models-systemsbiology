@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2205040004
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2205040004?filename=QuercusSuberPhellogenVirgin.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.cunha2022_virgin_phellogen_model_for_quercus_sub_model2205040004_model:Cunha2022VirginPhellogenModelForQuercusSubModel2205040004Model
   init_kwargs:
     model_path: data/MODEL2205040004.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000578
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000578?filename=BIOMD0000000578_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.invergo2014_phototransduction_cascade_in_mouse_r_biomd0000000578_model:Invergo2014PhototransductionCascadeInMouseRBiomd0000000578Model
   init_kwargs:
     model_path: data/BIOMD0000000578.xml

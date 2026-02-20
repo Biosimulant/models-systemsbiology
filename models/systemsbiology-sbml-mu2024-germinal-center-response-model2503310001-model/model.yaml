@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2503310001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2503310001?filename=GCR_50.zip
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mu2024_germinal_center_response_model2503310001_model:Mu2024GerminalCenterResponseModel2503310001Model
   init_kwargs:
     model_path: data/MODEL2503310001.xml

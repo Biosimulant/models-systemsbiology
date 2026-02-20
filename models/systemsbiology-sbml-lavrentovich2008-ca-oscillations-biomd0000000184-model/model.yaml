@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000184
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000184?filename=BIOMD0000000184_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.lavrentovich2008_ca_oscillations_biomd0000000184_model:Lavrentovich2008CaOscillationsBiomd0000000184Model
   init_kwargs:
     model_path: data/BIOMD0000000184.xml

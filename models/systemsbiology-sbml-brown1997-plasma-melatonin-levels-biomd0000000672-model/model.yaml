@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000672
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000672?filename=BIOMD0000000672_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.brown1997_plasma_melatonin_levels_biomd0000000672_model:Brown1997PlasmaMelatoninLevelsBiomd0000000672Model
   init_kwargs:
     model_path: data/BIOMD0000000672.xml

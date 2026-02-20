@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000524
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000524?filename=BIOMD0000000524_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kallenberger2014_cd95l_induced_apoptosis_initiat_biomd0000000524_model:Kallenberger2014Cd95lInducedApoptosisInitiatBiomd0000000524Model
   init_kwargs:
     model_path: data/BIOMD0000000524.xml

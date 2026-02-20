@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL0911532520
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0911532520?filename=MODEL0911532520_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.goodwin1965_enzymecontrolprocess_model0911532520_model:Goodwin1965EnzymecontrolprocessModel0911532520Model
   init_kwargs:
     model_path: data/MODEL0911532520.xml

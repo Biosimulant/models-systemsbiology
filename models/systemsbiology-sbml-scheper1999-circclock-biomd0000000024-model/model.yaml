@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000024
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000024?filename=BIOMD0000000024_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.scheper1999_circclock_biomd0000000024_model:Scheper1999CircclockBiomd0000000024Model
   init_kwargs:
     model_path: data/BIOMD0000000024.xml

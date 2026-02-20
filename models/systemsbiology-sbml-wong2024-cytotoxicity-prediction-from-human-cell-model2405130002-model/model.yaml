@@ -25,7 +25,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2405130002?filename=BioModelsMetadata
     - eos42ez.csv
   license: CC0
-bsim:
+biosim:
   entrypoint: src.wong2024_cytotoxicity_prediction_from_human_cell_model2405130002_model:Wong2024CytotoxicityPredictionFromHumanCellModel2405130002Model
   init_kwargs:
     model_path: data/MODEL2405130002.xml

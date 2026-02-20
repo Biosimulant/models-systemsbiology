@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2408210002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2408210002?filename=iLT1021.omex
   license: CC0
-bsim:
+biosim:
   entrypoint: src.toro2018_streptomyces_clavuligerus_ilt1021_model2408210002_model:Toro2018StreptomycesClavuligerusIlt1021Model2408210002Model
   init_kwargs:
     model_path: data/MODEL2408210002.xml

@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL6185511733
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL6185511733?filename=MODEL6185511733_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.qiao2007_mapk_signaling_bistable_model6185511733_model:Qiao2007MapkSignalingBistableModel6185511733Model
   init_kwargs:
     model_path: data/MODEL6185511733.xml

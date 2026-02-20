@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000161
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000161?filename=BIOMD0000000161_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.eungdamrong2007_ras_activation_biomd0000000161_model:Eungdamrong2007RasActivationBiomd0000000161Model
   init_kwargs:
     model_path: data/BIOMD0000000161.xml

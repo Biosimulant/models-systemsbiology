@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000579
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000579?filename=BIOMD0000000579_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.sengupta2015_knowledge_base_model_of_human_energ_biomd0000000579_model:Sengupta2015KnowledgeBaseModelOfHumanEnergBiomd0000000579Model
   init_kwargs:
     model_path: data/BIOMD0000000579.xml

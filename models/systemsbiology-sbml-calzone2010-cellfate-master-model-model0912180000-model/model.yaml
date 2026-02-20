@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL0912180000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0912180000?filename=MODEL0912180000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.calzone2010_cellfate_master_model_model0912180000_model:Calzone2010CellfateMasterModelModel0912180000Model
   init_kwargs:
     model_path: data/MODEL0912180000.xml

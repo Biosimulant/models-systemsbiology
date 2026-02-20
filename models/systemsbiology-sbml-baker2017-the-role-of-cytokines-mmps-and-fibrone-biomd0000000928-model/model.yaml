@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000928
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000928?filename=Baker2017_Fig14.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.baker2017_the_role_of_cytokines_mmps_and_fibrone_biomd0000000928_model:Baker2017TheRoleOfCytokinesMmpsAndFibroneBiomd0000000928Model
   init_kwargs:
     model_path: data/BIOMD0000000928.xml

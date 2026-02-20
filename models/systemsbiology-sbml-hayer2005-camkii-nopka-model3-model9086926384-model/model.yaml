@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL9086926384
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL9086926384?filename=MODEL9086926384_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.hayer2005_camkii_nopka_model3_model9086926384_model:Hayer2005CamkiiNopkaModel3Model9086926384Model
   init_kwargs:
     model_path: data/MODEL9086926384.xml

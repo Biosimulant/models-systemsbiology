@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000556
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000556?filename=BIOMD0000000556_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ortega2013_interplay_between_secretases_determin_biomd0000000556_model:Ortega2013InterplayBetweenSecretasesDeterminBiomd0000000556Model
   init_kwargs:
     model_path: data/BIOMD0000000556.xml

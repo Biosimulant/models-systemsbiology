@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000801
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000801?filename=Sturrock2015.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.sturrock2015_glioma_growth_biomd0000000801_model:Sturrock2015GliomaGrowthBiomd0000000801Model
   init_kwargs:
     model_path: data/BIOMD0000000801.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000091
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000091?filename=BIOMD0000000091_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.proctor2005_actions_of_chaperones_and_their_role_biomd0000000091_model:Proctor2005ActionsOfChaperonesAndTheirRoleBiomd0000000091Model
   init_kwargs:
     model_path: data/BIOMD0000000091.xml

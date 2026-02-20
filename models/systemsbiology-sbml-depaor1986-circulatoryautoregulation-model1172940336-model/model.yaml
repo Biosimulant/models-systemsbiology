@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1172940336
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1172940336?filename=MODEL1172940336_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.depaor1986_circulatoryautoregulation_model1172940336_model:Depaor1986CirculatoryautoregulationModel1172940336Model
   init_kwargs:
     model_path: data/MODEL1172940336.xml

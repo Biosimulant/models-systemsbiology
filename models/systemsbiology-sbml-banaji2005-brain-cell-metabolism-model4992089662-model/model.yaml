@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL4992089662
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL4992089662?filename=MODEL4992089662_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.banaji2005_brain_cell_metabolism_model4992089662_model:Banaji2005BrainCellMetabolismModel4992089662Model
   init_kwargs:
     model_path: data/MODEL4992089662.xml

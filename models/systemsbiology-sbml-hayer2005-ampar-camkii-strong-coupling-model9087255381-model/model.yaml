@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL9087255381
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL9087255381?filename=MODEL9087255381_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.hayer2005_ampar_camkii_strong_coupling_model9087255381_model:Hayer2005AmparCamkiiStrongCouplingModel9087255381Model
   init_kwargs:
     model_path: data/MODEL9087255381.xml

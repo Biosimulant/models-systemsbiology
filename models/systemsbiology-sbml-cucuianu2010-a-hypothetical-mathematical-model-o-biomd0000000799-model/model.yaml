@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000799
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000799?filename=Cucuianu2010.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.cucuianu2010_a_hypothetical_mathematical_model_o_biomd0000000799_model:Cucuianu2010AHypotheticalMathematicalModelOBiomd0000000799Model
   init_kwargs:
     model_path: data/BIOMD0000000799.xml

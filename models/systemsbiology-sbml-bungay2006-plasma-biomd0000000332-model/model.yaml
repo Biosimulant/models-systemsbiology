@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000332
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000332?filename=BIOMD0000000332_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bungay2006_plasma_biomd0000000332_model:Bungay2006PlasmaBiomd0000000332Model
   init_kwargs:
     model_path: data/BIOMD0000000332.xml

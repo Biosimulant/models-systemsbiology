@@ -22,7 +22,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2406030002?filename=BioModelsMetadata
     - eos6oli.csv
   license: CC0
-bsim:
+biosim:
   entrypoint: src.francoeur2021_soltrannet_a_machine_learning_tool_model2406030002_model:Francoeur2021SoltrannetAMachineLearningToolModel2406030002Model
   init_kwargs:
     model_path: data/MODEL2406030002.xml

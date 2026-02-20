@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000367
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000367?filename=BIOMD0000000367_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mueller2008_thrombingeneration_minimal_biomd0000000367_model:Mueller2008ThrombingenerationMinimalBiomd0000000367Model
   init_kwargs:
     model_path: data/BIOMD0000000367.xml

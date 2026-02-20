@@ -24,7 +24,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2405210006?filename=BioModelsMetadata
     - eos1af5.csv
   license: CC0
-bsim:
+biosim:
   entrypoint: src.jim_nez_luna2021_coloring_molecules_for_caco_2_c_model2405210006_model:JimNezLuna2021ColoringMoleculesForCaco2CModel2405210006Model
   init_kwargs:
     model_path: data/MODEL2405210006.xml

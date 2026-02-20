@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2405170001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2405170001?filename=Masison2024_EnterocyteIronMucosalBlock.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.masison2024_enterocyte_iron_mucosal_block_model2405170001_model:Masison2024EnterocyteIronMucosalBlockModel2405170001Model
   init_kwargs:
     model_path: data/MODEL2405170001.xml

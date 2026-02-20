@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000112
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000112?filename=BIOMD0000000112_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.clarke2006_smad_signalling_biomd0000000112_model:Clarke2006SmadSignallingBiomd0000000112Model
   init_kwargs:
     model_path: data/BIOMD0000000112.xml

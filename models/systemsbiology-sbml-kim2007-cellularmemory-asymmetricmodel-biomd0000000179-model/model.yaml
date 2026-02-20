@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000179
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000179?filename=BIOMD0000000179_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kim2007_cellularmemory_asymmetricmodel_biomd0000000179_model:Kim2007CellularmemoryAsymmetricmodelBiomd0000000179Model
   init_kwargs:
     model_path: data/BIOMD0000000179.xml

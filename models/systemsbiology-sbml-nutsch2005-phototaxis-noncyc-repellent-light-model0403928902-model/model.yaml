@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL0403928902
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0403928902?filename=MODEL0403928902_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.nutsch2005_phototaxis_noncyc_repellent_light_model0403928902_model:Nutsch2005PhototaxisNoncycRepellentLightModel0403928902Model
   init_kwargs:
     model_path: data/MODEL0403928902.xml

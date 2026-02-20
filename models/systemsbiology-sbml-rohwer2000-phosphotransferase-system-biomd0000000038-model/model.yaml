@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000038
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000038?filename=BIOMD0000000038_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.rohwer2000_phosphotransferase_system_biomd0000000038_model:Rohwer2000PhosphotransferaseSystemBiomd0000000038Model
   init_kwargs:
     model_path: data/BIOMD0000000038.xml

@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1510190005
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1510190005?filename=MODEL1510190005_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.flis2015_plant_clock_gene_circuit_p2011_6_1_plm_model1510190005_model:Flis2015PlantClockGeneCircuitP201161PlmModel1510190005Model
   init_kwargs:
     model_path: data/MODEL1510190005.xml

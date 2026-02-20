@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2302140001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2302140001?filename=Wu2010_RAMap_updatedLayoutRef.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.wu2010_rheumatoid_arthritis_map_layout_updated_model2302140001_model:Wu2010RheumatoidArthritisMapLayoutUpdatedModel2302140001Model
   init_kwargs:
     model_path: data/MODEL2302140001.xml

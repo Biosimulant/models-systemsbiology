@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1803120005
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1803120005?filename=Example4.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.watanabe2018_state_transition_model_dependent_on_model1803120005_model:Watanabe2018StateTransitionModelDependentOnModel1803120005Model
   init_kwargs:
     model_path: data/MODEL1803120005.xml

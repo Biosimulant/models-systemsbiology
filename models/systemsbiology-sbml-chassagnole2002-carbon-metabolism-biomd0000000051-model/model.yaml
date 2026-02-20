@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000051
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000051?filename=BIOMD0000000051_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.chassagnole2002_carbon_metabolism_biomd0000000051_model:Chassagnole2002CarbonMetabolismBiomd0000000051Model
   init_kwargs:
     model_path: data/BIOMD0000000051.xml

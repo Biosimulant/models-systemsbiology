@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000012
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000012?filename=BIOMD0000000012_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.elowitz2000_repressilator_biomd0000000012_model:Elowitz2000RepressilatorBiomd0000000012Model
   init_kwargs:
     model_path: data/BIOMD0000000012.xml

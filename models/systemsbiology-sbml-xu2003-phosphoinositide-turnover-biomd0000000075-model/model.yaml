@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000075
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000075?filename=BIOMD0000000075_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.xu2003_phosphoinositide_turnover_biomd0000000075_model:Xu2003PhosphoinositideTurnoverBiomd0000000075Model
   init_kwargs:
     model_path: data/BIOMD0000000075.xml

@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000403
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000403?filename=BIOMD0000000403_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ayati2010_boneremodelingdynamics_withtumour_drug_biomd0000000403_model:Ayati2010BoneremodelingdynamicsWithtumourDrugBiomd0000000403Model
   init_kwargs:
     model_path: data/BIOMD0000000403.xml

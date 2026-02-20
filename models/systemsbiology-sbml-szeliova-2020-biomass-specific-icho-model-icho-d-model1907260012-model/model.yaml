@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1907260012
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1907260012?filename=iCHO_DGpar-8mMCD.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.szeliova_2020_biomass_specific_icho_model_icho_d_model1907260012_model:Szeliova2020BiomassSpecificIchoModelIchoDModel1907260012Model
   init_kwargs:
     model_path: data/MODEL1907260012.xml

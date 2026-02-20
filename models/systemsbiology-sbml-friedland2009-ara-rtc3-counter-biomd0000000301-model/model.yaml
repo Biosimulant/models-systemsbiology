@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000301
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000301?filename=BIOMD0000000301_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.friedland2009_ara_rtc3_counter_biomd0000000301_model:Friedland2009AraRtc3CounterBiomd0000000301Model
   init_kwargs:
     model_path: data/BIOMD0000000301.xml

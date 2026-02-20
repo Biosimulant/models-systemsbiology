@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000080
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000080?filename=BIOMD0000000080_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.thomsen1989_adenylatecyclase_biomd0000000080_model:Thomsen1989AdenylatecyclaseBiomd0000000080Model
   init_kwargs:
     model_path: data/BIOMD0000000080.xml

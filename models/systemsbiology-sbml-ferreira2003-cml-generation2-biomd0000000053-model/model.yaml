@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000053
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000053?filename=BIOMD0000000053_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ferreira2003_cml_generation2_biomd0000000053_model:Ferreira2003CmlGeneration2Biomd0000000053Model
   init_kwargs:
     model_path: data/BIOMD0000000053.xml

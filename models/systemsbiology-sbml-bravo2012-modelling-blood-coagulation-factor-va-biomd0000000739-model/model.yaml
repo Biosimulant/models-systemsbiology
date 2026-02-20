@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000739
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000739?filename=Bravo2012.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bravo2012_modelling_blood_coagulation_factor_va_biomd0000000739_model:Bravo2012ModellingBloodCoagulationFactorVaBiomd0000000739Model
   init_kwargs:
     model_path: data/BIOMD0000000739.xml

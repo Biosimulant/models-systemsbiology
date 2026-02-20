@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1504240000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1504240000?filename=MODEL1504240000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kyrtsos2011_a_systems_biology_model_for_alzheime_model1504240000_model:Kyrtsos2011ASystemsBiologyModelForAlzheimeModel1504240000Model
   init_kwargs:
     model_path: data/MODEL1504240000.xml

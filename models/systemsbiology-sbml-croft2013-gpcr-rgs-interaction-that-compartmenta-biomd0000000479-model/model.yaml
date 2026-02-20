@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000479
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000479?filename=BIOMD0000000479_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.croft2013_gpcr_rgs_interaction_that_compartmenta_biomd0000000479_model:Croft2013GpcrRgsInteractionThatCompartmentaBiomd0000000479Model
   init_kwargs:
     model_path: data/BIOMD0000000479.xml

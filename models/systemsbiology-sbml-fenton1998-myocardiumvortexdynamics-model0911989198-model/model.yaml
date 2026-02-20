@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL0911989198
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0911989198?filename=MODEL0911989198_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.fenton1998_myocardiumvortexdynamics_model0911989198_model:Fenton1998MyocardiumvortexdynamicsModel0911989198Model
   init_kwargs:
     model_path: data/MODEL0911989198.xml

@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000076
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000076?filename=BIOMD0000000076_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.cronwright2002_glycerol_synthesis_biomd0000000076_model:Cronwright2002GlycerolSynthesisBiomd0000000076Model
   init_kwargs:
     model_path: data/BIOMD0000000076.xml

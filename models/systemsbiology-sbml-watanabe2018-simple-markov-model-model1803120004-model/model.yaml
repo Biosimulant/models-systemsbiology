@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1803120004
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1803120004?filename=Example3.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.watanabe2018_simple_markov_model_model1803120004_model:Watanabe2018SimpleMarkovModelModel1803120004Model
   init_kwargs:
     model_path: data/MODEL1803120004.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000174
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000174?filename=BIOMD0000000174_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.del_conte_zerial2008_rab5_rab7_cut_out_switch_biomd0000000174_model:DelConteZerial2008Rab5Rab7CutOutSwitchBiomd0000000174Model
   init_kwargs:
     model_path: data/BIOMD0000000174.xml

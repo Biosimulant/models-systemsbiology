@@ -25,7 +25,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2403270001?filename=BioModelsMetadata
     - eos7kpb.csv
   license: CC0
-bsim:
+biosim:
   entrypoint: src.turon2023_h3d_virtual_screening_models_model2403270001_model:Turon2023H3dVirtualScreeningModelsModel2403270001Model
   init_kwargs:
     model_path: data/MODEL2403270001.xml

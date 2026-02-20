@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL0995500644
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0995500644?filename=MODEL0995500644_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.rodriguez2005_denovo_pyrimidine_biosynthesis_model0995500644_model:Rodriguez2005DenovoPyrimidineBiosynthesisModel0995500644Model
   init_kwargs:
     model_path: data/MODEL0995500644.xml

@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1904020001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1904020001?filename=Heldt2019_ChlamydomonasMultipleFission.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.heldt2019_chlamydomonas_multiple_fission_cycles_model1904020001_model:Heldt2019ChlamydomonasMultipleFissionCyclesModel1904020001Model
   init_kwargs:
     model_path: data/MODEL1904020001.xml

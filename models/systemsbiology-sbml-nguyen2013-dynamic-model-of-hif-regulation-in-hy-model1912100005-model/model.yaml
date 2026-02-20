@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1912100005
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1912100005?filename=Nguyen2013_HIF_reduced.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100005_model:Nguyen2013DynamicModelOfHifRegulationInHyModel1912100005Model
   init_kwargs:
     model_path: data/MODEL1912100005.xml

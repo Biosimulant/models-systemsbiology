@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000875
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000875?filename=Nelson2000.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.nelson2000_hiv_1_general_model_1_biomd0000000875_model:Nelson2000Hiv1GeneralModel1Biomd0000000875Model
   init_kwargs:
     model_path: data/BIOMD0000000875.xml

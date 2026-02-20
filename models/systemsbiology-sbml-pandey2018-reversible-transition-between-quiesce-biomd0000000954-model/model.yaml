@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000954
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000954?filename=Pandey2018_wildtype.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.pandey2018_reversible_transition_between_quiesce_biomd0000000954_model:Pandey2018ReversibleTransitionBetweenQuiesceBiomd0000000954Model
   init_kwargs:
     model_path: data/BIOMD0000000954.xml

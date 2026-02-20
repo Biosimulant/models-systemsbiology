@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000153
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000153?filename=BIOMD0000000153_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.fernandez2006_modelb_biomd0000000153_model:Fernandez2006ModelbBiomd0000000153Model
   init_kwargs:
     model_path: data/BIOMD0000000153.xml

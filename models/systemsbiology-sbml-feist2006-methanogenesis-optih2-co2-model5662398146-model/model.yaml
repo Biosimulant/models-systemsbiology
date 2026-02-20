@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL5662398146
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL5662398146?filename=MODEL5662398146_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.feist2006_methanogenesis_optih2_co2_model5662398146_model:Feist2006MethanogenesisOptih2Co2Model5662398146Model
   init_kwargs:
     model_path: data/MODEL5662398146.xml

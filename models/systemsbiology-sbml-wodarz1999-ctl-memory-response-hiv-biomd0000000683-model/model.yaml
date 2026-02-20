@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000683
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000683?filename=BIOMD0000000683.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.wodarz1999_ctl_memory_response_hiv_biomd0000000683_model:Wodarz1999CtlMemoryResponseHivBiomd0000000683Model
   init_kwargs:
     model_path: data/BIOMD0000000683.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000542
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000542?filename=BIOMD0000000542_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.yuraszeck2010_vulnerabilities_in_the_tau_network_biomd0000000542_model:Yuraszeck2010VulnerabilitiesInTheTauNetworkBiomd0000000542Model
   init_kwargs:
     model_path: data/BIOMD0000000542.xml

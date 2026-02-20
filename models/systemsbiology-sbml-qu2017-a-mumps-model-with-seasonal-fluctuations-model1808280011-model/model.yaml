@@ -23,7 +23,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1808280011?filename=Mumps
     Model with Seasonality in China.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.qu2017_a_mumps_model_with_seasonal_fluctuations_model1808280011_model:Qu2017AMumpsModelWithSeasonalFluctuationsModel1808280011Model
   init_kwargs:
     model_path: data/MODEL1808280011.xml

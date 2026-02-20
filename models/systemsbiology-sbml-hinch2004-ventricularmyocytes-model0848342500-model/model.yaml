@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL0848342500
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0848342500?filename=MODEL0848342500_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.hinch2004_ventricularmyocytes_model0848342500_model:Hinch2004VentricularmyocytesModel0848342500Model
   init_kwargs:
     model_path: data/MODEL0848342500.xml

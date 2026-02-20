@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1807240002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1807240002?filename=Willems1991.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.willems1991_simulating_thrombin_generation_model1807240002_model:Willems1991SimulatingThrombinGenerationModel1807240002Model
   init_kwargs:
     model_path: data/MODEL1807240002.xml

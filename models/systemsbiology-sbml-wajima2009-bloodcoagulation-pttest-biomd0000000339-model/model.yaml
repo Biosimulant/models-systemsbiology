@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000339
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000339?filename=BIOMD0000000339_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.wajima2009_bloodcoagulation_pttest_biomd0000000339_model:Wajima2009BloodcoagulationPttestBiomd0000000339Model
   init_kwargs:
     model_path: data/BIOMD0000000339.xml

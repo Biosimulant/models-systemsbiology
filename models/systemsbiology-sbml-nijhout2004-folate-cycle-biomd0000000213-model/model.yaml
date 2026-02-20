@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000213
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000213?filename=BIOMD0000000213_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.nijhout2004_folate_cycle_biomd0000000213_model:Nijhout2004FolateCycleBiomd0000000213Model
   init_kwargs:
     model_path: data/BIOMD0000000213.xml

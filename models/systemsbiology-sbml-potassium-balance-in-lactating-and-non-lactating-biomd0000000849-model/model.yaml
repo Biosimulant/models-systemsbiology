@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000849
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000849?filename=Berg2017.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.potassium_balance_in_lactating_and_non_lactating_biomd0000000849_model:PotassiumBalanceInLactatingAndNonLactatingBiomd0000000849Model
   init_kwargs:
     model_path: data/BIOMD0000000849.xml

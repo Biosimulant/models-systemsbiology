@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1201230000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1201230000?filename=MODEL1201230000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.jol2012_yeastmetabolism_efmanalysis_model1201230000_model:Jol2012YeastmetabolismEfmanalysisModel1201230000Model
   init_kwargs:
     model_path: data/MODEL1201230000.xml

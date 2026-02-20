@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1610060001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1610060001?filename=MODEL1610060001_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.hamey2017_blood_stem_cell_regulatory_network_lmp_model1610060001_model:Hamey2017BloodStemCellRegulatoryNetworkLmpModel1610060001Model
   init_kwargs:
     model_path: data/MODEL1610060001.xml

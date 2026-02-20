@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000331
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000331?filename=BIOMD0000000331_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.larsen2004_calciumspiking_enzymebinding_biomd0000000331_model:Larsen2004CalciumspikingEnzymebindingBiomd0000000331Model
   init_kwargs:
     model_path: data/BIOMD0000000331.xml

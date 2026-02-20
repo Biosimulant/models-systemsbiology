@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000086
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000086?filename=BIOMD0000000086_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bornheimer2004_gtpasecycle_biomd0000000086_model:Bornheimer2004GtpasecycleBiomd0000000086Model
   init_kwargs:
     model_path: data/BIOMD0000000086.xml

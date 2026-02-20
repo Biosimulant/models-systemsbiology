@@ -24,7 +24,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2405210003?filename=BioModelsMetadata
     - eos96ia.csv
   license: CC0
-bsim:
+biosim:
   entrypoint: src.jim_nez_luna2021_coloring_molecules_for_interact_model2405210003_model:JimNezLuna2021ColoringMoleculesForInteractModel2405210003Model
   init_kwargs:
     model_path: data/MODEL2405210003.xml

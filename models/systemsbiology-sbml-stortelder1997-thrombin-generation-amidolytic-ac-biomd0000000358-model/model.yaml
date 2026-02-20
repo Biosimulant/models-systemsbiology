@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000358
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000358?filename=BIOMD0000000358_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.stortelder1997_thrombin_generation_amidolytic_ac_biomd0000000358_model:Stortelder1997ThrombinGenerationAmidolyticAcBiomd0000000358Model
   init_kwargs:
     model_path: data/BIOMD0000000358.xml

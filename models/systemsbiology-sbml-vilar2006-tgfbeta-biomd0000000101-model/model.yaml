@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000101
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000101?filename=BIOMD0000000101_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.vilar2006_tgfbeta_biomd0000000101_model:Vilar2006TgfbetaBiomd0000000101Model
   init_kwargs:
     model_path: data/BIOMD0000000101.xml

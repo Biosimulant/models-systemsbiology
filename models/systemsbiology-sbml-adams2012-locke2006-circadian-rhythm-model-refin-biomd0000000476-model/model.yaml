@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000476
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000476?filename=BIOMD0000000476_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.adams2012_locke2006_circadian_rhythm_model_refin_biomd0000000476_model:Adams2012Locke2006CircadianRhythmModelRefinBiomd0000000476Model
   init_kwargs:
     model_path: data/BIOMD0000000476.xml

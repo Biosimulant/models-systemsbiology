@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL4821294342
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL4821294342?filename=MODEL4821294342_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kierzek2001_lacz_model4821294342_model:Kierzek2001LaczModel4821294342Model
   init_kwargs:
     model_path: data/MODEL4821294342.xml

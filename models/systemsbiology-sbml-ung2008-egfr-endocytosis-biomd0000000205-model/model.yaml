@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000205
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000205?filename=BIOMD0000000205_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ung2008_egfr_endocytosis_biomd0000000205_model:Ung2008EgfrEndocytosisBiomd0000000205Model
   init_kwargs:
     model_path: data/BIOMD0000000205.xml

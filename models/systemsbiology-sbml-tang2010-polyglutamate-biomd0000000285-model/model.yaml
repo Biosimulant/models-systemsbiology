@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000285
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000285?filename=BIOMD0000000285_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.tang2010_polyglutamate_biomd0000000285_model:Tang2010PolyglutamateBiomd0000000285Model
   init_kwargs:
     model_path: data/BIOMD0000000285.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1511170001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1511170001?filename=MODEL1511170001_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.llor_nsrico2016_effects_of_cis_encoded_antisense_model1511170001_model:LlorNsrico2016EffectsOfCisEncodedAntisenseModel1511170001Model
   init_kwargs:
     model_path: data/MODEL1511170001.xml

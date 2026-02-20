@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000324
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000324?filename=BIOMD0000000324_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.morris1981_musclefibre_voltage_full_biomd0000000324_model:Morris1981MusclefibreVoltageFullBiomd0000000324Model
   init_kwargs:
     model_path: data/BIOMD0000000324.xml

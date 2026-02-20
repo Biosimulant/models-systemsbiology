@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000660
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000660?filename=BIOMD0000000660_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.barr2017_dynamics_of_p21_in_htert_rpe1_cells_biomd0000000660_model:Barr2017DynamicsOfP21InHtertRpe1CellsBiomd0000000660Model
   init_kwargs:
     model_path: data/BIOMD0000000660.xml

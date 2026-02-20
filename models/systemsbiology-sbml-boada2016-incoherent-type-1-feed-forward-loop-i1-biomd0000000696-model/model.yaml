@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000696
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000696?filename=BIOMD0000000696_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.boada2016_incoherent_type_1_feed_forward_loop_i1_biomd0000000696_model:Boada2016IncoherentType1FeedForwardLoopI1Biomd0000000696Model
   init_kwargs:
     model_path: data/BIOMD0000000696.xml

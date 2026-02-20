@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2001300001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2001300001?filename=Banerjee2018.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.banerjee2018_influence_of_intracellular_delay_on_model2001300001_model:Banerjee2018InfluenceOfIntracellularDelayOnModel2001300001Model
   init_kwargs:
     model_path: data/MODEL2001300001.xml

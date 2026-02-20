@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000089
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000089?filename=BIOMD0000000089_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.locke2006_circclock_ll_biomd0000000089_model:Locke2006CircclockLlBiomd0000000089Model
   init_kwargs:
     model_path: data/BIOMD0000000089.xml

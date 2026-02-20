@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2505090001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2505090001?filename=team_2016_final_model_lo2016.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.lo2016_ibd_response_to_anti_tnf_treatment_model2505090001_model:Lo2016IbdResponseToAntiTnfTreatmentModel2505090001Model
   init_kwargs:
     model_path: data/MODEL2505090001.xml

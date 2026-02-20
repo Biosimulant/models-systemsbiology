@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2463683119
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2463683119?filename=MODEL2463683119_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.oda2006_tollliker_model2463683119_model:Oda2006TolllikerModel2463683119Model
   init_kwargs:
     model_path: data/MODEL2463683119.xml

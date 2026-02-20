@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2211030001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2211030001?filename=FerritinIronStorage_sbml_l3v1.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.masison2022_cellular_ferritin_iron_storage_model2211030001_model:Masison2022CellularFerritinIronStorageModel2211030001Model
   init_kwargs:
     model_path: data/MODEL2211030001.xml

@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1806070001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1806070001?filename=Zhou2015.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.zhou2015_blood_coagulation_model_predicting_effe_model1806070001_model:Zhou2015BloodCoagulationModelPredictingEffeModel1806070001Model
   init_kwargs:
     model_path: data/MODEL1806070001.xml

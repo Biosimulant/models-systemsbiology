@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1806040001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1806040001?filename=Mitrophanov2011_edited.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mitrophanov2011_mode_of_action_of_rfviia_on_thro_model1806040001_model:Mitrophanov2011ModeOfActionOfRfviiaOnThroModel1806040001Model
   init_kwargs:
     model_path: data/MODEL1806040001.xml

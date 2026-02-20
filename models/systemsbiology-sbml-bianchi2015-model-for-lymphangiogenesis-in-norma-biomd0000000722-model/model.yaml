@@ -23,7 +23,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000722?filename=Wound
     Healing with Normal health condition.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bianchi2015_model_for_lymphangiogenesis_in_norma_biomd0000000722_model:Bianchi2015ModelForLymphangiogenesisInNormaBiomd0000000722Model
   init_kwargs:
     model_path: data/BIOMD0000000722.xml

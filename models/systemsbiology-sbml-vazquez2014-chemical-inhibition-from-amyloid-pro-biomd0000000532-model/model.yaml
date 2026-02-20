@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000532
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000532?filename=BIOMD0000000532_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.vazquez2014_chemical_inhibition_from_amyloid_pro_biomd0000000532_model:Vazquez2014ChemicalInhibitionFromAmyloidProBiomd0000000532Model
   init_kwargs:
     model_path: data/BIOMD0000000532.xml

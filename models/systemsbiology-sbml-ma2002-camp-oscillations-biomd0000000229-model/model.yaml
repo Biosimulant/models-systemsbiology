@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000229
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000229?filename=BIOMD0000000229_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ma2002_camp_oscillations_biomd0000000229_model:Ma2002CampOscillationsBiomd0000000229Model
   init_kwargs:
     model_path: data/BIOMD0000000229.xml

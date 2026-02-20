@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000561
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000561?filename=BIOMD0000000561_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.martins2013_true_and_apparent_inhibition_of_amyl_biomd0000000561_model:Martins2013TrueAndApparentInhibitionOfAmylBiomd0000000561Model
   init_kwargs:
     model_path: data/BIOMD0000000561.xml

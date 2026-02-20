@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL0913145131
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0913145131?filename=MODEL0913145131_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.corrias2007_gastricsmcellularactivation_model0913145131_model:Corrias2007GastricsmcellularactivationModel0913145131Model
   init_kwargs:
     model_path: data/MODEL0913145131.xml

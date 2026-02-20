@@ -18,7 +18,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2210190011
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2210190011?filename=LcLt_MG1363.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.koduru2022_lactococcus_lactis_subsp_cremoris_mg1_model2210190011_model:Koduru2022LactococcusLactisSubspCremorisMg1Model2210190011Model
   init_kwargs:
     model_path: data/MODEL2210190011.xml

@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000025
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000025?filename=BIOMD0000000025_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.smolen2002_circclock_biomd0000000025_model:Smolen2002CircclockBiomd0000000025Model
   init_kwargs:
     model_path: data/BIOMD0000000025.xml

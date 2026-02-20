@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000066
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000066?filename=BIOMD0000000066_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.chassagnole2001_threonine_synthesis_biomd0000000066_model:Chassagnole2001ThreonineSynthesisBiomd0000000066Model
   init_kwargs:
     model_path: data/BIOMD0000000066.xml

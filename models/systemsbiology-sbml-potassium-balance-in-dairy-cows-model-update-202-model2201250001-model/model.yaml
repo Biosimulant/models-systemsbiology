@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2201250001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2201250001?filename=Ploentzke2021_potassium_cow.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.potassium_balance_in_dairy_cows_model_update_202_model2201250001_model:PotassiumBalanceInDairyCowsModelUpdate202Model2201250001Model
   init_kwargs:
     model_path: data/MODEL2201250001.xml

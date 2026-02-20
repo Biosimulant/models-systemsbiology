@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2003160001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2003160001?filename=HomoOligo_noPTMs.m
   license: CC0
-bsim:
+biosim:
   entrypoint: src.koch2020_homo_oligomerisation_in_signal_transduc_model2003160001_model:Koch2020HomoOligomerisationInSignalTransducModel2003160001Model
   init_kwargs:
     model_path: data/MODEL2003160001.xml

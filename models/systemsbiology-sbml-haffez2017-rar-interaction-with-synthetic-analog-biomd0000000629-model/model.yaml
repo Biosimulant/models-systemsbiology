@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000629
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000629?filename=BIOMD0000000629_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.haffez2017_rar_interaction_with_synthetic_analog_biomd0000000629_model:Haffez2017RarInteractionWithSyntheticAnalogBiomd0000000629Model
   init_kwargs:
     model_path: data/BIOMD0000000629.xml

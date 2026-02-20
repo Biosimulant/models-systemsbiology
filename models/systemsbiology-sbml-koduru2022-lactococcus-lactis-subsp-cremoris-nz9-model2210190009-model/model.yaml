@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2210190009
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2210190009?filename=Koduru2022_LcLt.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.koduru2022_lactococcus_lactis_subsp_cremoris_nz9_model2210190009_model:Koduru2022LactococcusLactisSubspCremorisNz9Model2210190009Model
   init_kwargs:
     model_path: data/MODEL2210190009.xml

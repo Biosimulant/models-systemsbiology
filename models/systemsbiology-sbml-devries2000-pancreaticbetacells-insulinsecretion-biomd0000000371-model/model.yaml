@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000371
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000371?filename=BIOMD0000000371_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.devries2000_pancreaticbetacells_insulinsecretion_biomd0000000371_model:Devries2000PancreaticbetacellsInsulinsecretionBiomd0000000371Model
   init_kwargs:
     model_path: data/BIOMD0000000371.xml

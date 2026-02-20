@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000698
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000698?filename=BIOMD0000000698_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.reed2004_methionine_cycle_biomd0000000698_model:Reed2004MethionineCycleBiomd0000000698Model
   init_kwargs:
     model_path: data/BIOMD0000000698.xml

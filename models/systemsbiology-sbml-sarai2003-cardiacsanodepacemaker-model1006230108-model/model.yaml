@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1006230108
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1006230108?filename=MODEL1006230108_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.sarai2003_cardiacsanodepacemaker_model1006230108_model:Sarai2003CardiacsanodepacemakerModel1006230108Model
   init_kwargs:
     model_path: data/MODEL1006230108.xml

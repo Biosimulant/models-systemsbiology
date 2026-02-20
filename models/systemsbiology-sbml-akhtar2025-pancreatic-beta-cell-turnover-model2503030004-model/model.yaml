@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2503030004
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2503030004?filename=Akhtar2025_MorpheusML.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.akhtar2025_pancreatic_beta_cell_turnover_model2503030004_model:Akhtar2025PancreaticBetaCellTurnoverModel2503030004Model
   init_kwargs:
     model_path: data/MODEL2503030004.xml

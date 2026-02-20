@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1904150001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1904150001?filename=Scheidel2016_InSilico_Knockout_Studies_Xenophagic_Capturing_Salmonella_PetriNets.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.scheidel2016_in_silico_knockout_studies_of_xenop_model1904150001_model:Scheidel2016InSilicoKnockoutStudiesOfXenopModel1904150001Model
   init_kwargs:
     model_path: data/MODEL1904150001.xml

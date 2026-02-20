@@ -12,13 +12,13 @@ from pathlib import Path
 from typing import Any, Dict, Optional, Set, TYPE_CHECKING
 
 if TYPE_CHECKING:  # pragma: no cover - typing only
-    from bsim import BioWorld
+    from biosim import BioWorld
 
-import bsim
-from bsim.signals import BioSignal, SignalMetadata
+import biosim
+from biosim.signals import BioSignal, SignalMetadata
 
 
-class SbmlWatanabe2018StateTransitionModelDependentOnChanging(bsim.BioModule):
+class SbmlWatanabe2018StateTransitionModelDependentOnChanging(biosim.BioModule):
     """BioModule wrapper for SBML model: Watanabe2018_State transition model dependent on changing parameters."""
 
     def __init__(self, model_path: str = "data/MODEL1803120005.xml", min_dt: float = 0.01) -> None:

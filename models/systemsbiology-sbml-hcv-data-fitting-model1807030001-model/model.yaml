@@ -21,7 +21,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1807030001?filename=HCV
     data fitting.zip
   license: CC0
-bsim:
+biosim:
   entrypoint: src.hcv_data_fitting_model1807030001_model:HcvDataFittingModel1807030001Model
   init_kwargs:
     model_path: data/MODEL1807030001.xml

@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000389
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000389?filename=BIOMD0000000389_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.arnold2011_hahn1986_calvincycle_starch_sucrose_biomd0000000389_model:Arnold2011Hahn1986CalvincycleStarchSucroseBiomd0000000389Model
   init_kwargs:
     model_path: data/BIOMD0000000389.xml

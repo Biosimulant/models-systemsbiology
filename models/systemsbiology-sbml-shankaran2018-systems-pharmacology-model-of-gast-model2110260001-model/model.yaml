@@ -25,7 +25,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2110260001?filename=PSP4-7-26-s002
     (2).txt
   license: CC0
-bsim:
+biosim:
   entrypoint: src.shankaran2018_systems_pharmacology_model_of_gast_model2110260001_model:Shankaran2018SystemsPharmacologyModelOfGastModel2110260001Model
   init_kwargs:
     model_path: data/MODEL2110260001.xml

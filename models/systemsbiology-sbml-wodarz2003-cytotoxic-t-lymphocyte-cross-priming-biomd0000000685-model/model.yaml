@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000685
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000685?filename=BIOMD0000000685_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.wodarz2003_cytotoxic_t_lymphocyte_cross_priming_biomd0000000685_model:Wodarz2003CytotoxicTLymphocyteCrossPrimingBiomd0000000685Model
   init_kwargs:
     model_path: data/BIOMD0000000685.xml

@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000319
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000319?filename=BIOMD0000000319_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.decroly1982_enzymatic_oscillator_biomd0000000319_model:Decroly1982EnzymaticOscillatorBiomd0000000319Model
   init_kwargs:
     model_path: data/BIOMD0000000319.xml

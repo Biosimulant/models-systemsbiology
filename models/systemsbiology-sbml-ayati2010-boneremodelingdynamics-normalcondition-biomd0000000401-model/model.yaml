@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000401
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000401?filename=BIOMD0000000401_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ayati2010_boneremodelingdynamics_normalcondition_biomd0000000401_model:Ayati2010BoneremodelingdynamicsNormalconditionBiomd0000000401Model
   init_kwargs:
     model_path: data/BIOMD0000000401.xml

@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000334
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000334?filename=BIOMD0000000334_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bungay2003_thrombin_generation_biomd0000000334_model:Bungay2003ThrombinGenerationBiomd0000000334Model
   init_kwargs:
     model_path: data/BIOMD0000000334.xml

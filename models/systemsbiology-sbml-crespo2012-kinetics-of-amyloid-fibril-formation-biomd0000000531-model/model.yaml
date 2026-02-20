@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000531
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000531?filename=BIOMD0000000531_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.crespo2012_kinetics_of_amyloid_fibril_formation_biomd0000000531_model:Crespo2012KineticsOfAmyloidFibrilFormationBiomd0000000531Model
   init_kwargs:
     model_path: data/BIOMD0000000531.xml

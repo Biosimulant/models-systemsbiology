@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1808210002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1808210002?filename=Naski1991.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.naski1991_alpha_thrombin_catalyzed_conversion_of_model1808210002_model:Naski1991AlphaThrombinCatalyzedConversionOfModel1808210002Model
   init_kwargs:
     model_path: data/MODEL1808210002.xml

@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000483
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000483?filename=BIOMD0000000483_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.cao2008_network_of_a_toggle_switch_biomd0000000483_model:Cao2008NetworkOfAToggleSwitchBiomd0000000483Model
   init_kwargs:
     model_path: data/BIOMD0000000483.xml

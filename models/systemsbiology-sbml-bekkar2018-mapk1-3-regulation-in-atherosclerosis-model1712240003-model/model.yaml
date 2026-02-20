@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1712240003
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1712240003?filename=Bekkar2017_MAPK1-3_regulation_atherosclerosis.sbml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bekkar2018_mapk1_3_regulation_in_atherosclerosis_model1712240003_model:Bekkar2018Mapk13RegulationInAtherosclerosisModel1712240003Model
   init_kwargs:
     model_path: data/MODEL1712240003.sbml

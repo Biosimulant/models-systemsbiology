@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000645
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000645?filename=BIOMD0000000645_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.musante2017_switching_behaviour_of_pp2a_inhibiti_biomd0000000645_model:Musante2017SwitchingBehaviourOfPp2aInhibitiBiomd0000000645Model
   init_kwargs:
     model_path: data/BIOMD0000000645.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000165
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000165?filename=BIOMD0000000165_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.saucerman2006_pka_biomd0000000165_model:Saucerman2006PkaBiomd0000000165Model
   init_kwargs:
     model_path: data/BIOMD0000000165.xml

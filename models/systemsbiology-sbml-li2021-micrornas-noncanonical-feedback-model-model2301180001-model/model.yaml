@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2301180001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2301180001?filename=MMI2_bistability_ocillation_4v.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.li2021_micrornas_noncanonical_feedback_model_model2301180001_model:Li2021MicrornasNoncanonicalFeedbackModelModel2301180001Model
   init_kwargs:
     model_path: data/MODEL2301180001.xml

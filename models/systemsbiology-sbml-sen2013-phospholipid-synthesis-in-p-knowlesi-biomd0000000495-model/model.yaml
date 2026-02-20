@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000495
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000495?filename=BIOMD0000000495_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.sen2013_phospholipid_synthesis_in_p_knowlesi_biomd0000000495_model:Sen2013PhospholipidSynthesisInPKnowlesiBiomd0000000495Model
   init_kwargs:
     model_path: data/BIOMD0000000495.xml

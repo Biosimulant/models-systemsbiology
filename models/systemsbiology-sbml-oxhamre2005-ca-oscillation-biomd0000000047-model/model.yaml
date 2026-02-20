@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000047
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000047?filename=BIOMD0000000047_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.oxhamre2005_ca_oscillation_biomd0000000047_model:Oxhamre2005CaOscillationBiomd0000000047Model
   init_kwargs:
     model_path: data/BIOMD0000000047.xml

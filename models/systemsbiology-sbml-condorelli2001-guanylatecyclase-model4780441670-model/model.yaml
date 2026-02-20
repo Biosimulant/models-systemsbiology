@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL4780441670
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL4780441670?filename=MODEL4780441670_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.condorelli2001_guanylatecyclase_model4780441670_model:Condorelli2001GuanylatecyclaseModel4780441670Model
   init_kwargs:
     model_path: data/MODEL4780441670.xml

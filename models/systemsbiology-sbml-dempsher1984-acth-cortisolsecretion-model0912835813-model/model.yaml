@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL0912835813
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0912835813?filename=MODEL0912835813_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.dempsher1984_acth_cortisolsecretion_model0912835813_model:Dempsher1984ActhCortisolsecretionModel0912835813Model
   init_kwargs:
     model_path: data/MODEL0912835813.xml

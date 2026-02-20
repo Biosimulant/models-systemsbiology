@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1806280001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1806280001?filename=Mitrophanov2016.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mitrophanov2016_extended_mitrophanov2011_blood_c_model1806280001_model:Mitrophanov2016ExtendedMitrophanov2011BloodCModel1806280001Model
   init_kwargs:
     model_path: data/MODEL1806280001.xml

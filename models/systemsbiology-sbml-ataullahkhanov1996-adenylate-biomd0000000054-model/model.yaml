@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000054
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000054?filename=BIOMD0000000054_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ataullahkhanov1996_adenylate_biomd0000000054_model:Ataullahkhanov1996AdenylateBiomd0000000054Model
   init_kwargs:
     model_path: data/BIOMD0000000054.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000366
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000366?filename=BIOMD0000000366_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.orfao2008_thrombingeneration_amidolyticactivity_biomd0000000366_model:Orfao2008ThrombingenerationAmidolyticactivityBiomd0000000366Model
   init_kwargs:
     model_path: data/BIOMD0000000366.xml

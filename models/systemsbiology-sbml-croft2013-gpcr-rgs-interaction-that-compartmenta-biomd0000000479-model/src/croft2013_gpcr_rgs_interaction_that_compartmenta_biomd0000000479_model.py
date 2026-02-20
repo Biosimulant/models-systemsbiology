@@ -12,13 +12,13 @@ from pathlib import Path
 from typing import Any, Dict, Optional, Set, TYPE_CHECKING
 
 if TYPE_CHECKING:  # pragma: no cover - typing only
-    from bsim import BioWorld
+    from biosim import BioWorld
 
-import bsim
-from bsim.signals import BioSignal, SignalMetadata
+import biosim
+from biosim.signals import BioSignal, SignalMetadata
 
 
-class SbmlCroft2013GpcrRgsInteractionThatCompartmentalizesRgs(bsim.BioModule):
+class SbmlCroft2013GpcrRgsInteractionThatCompartmentalizesRgs(biosim.BioModule):
     """BioModule wrapper for SBML model: Croft2013 - GPCR-RGS interaction that compartmentalizes RGS activity."""
 
     def __init__(self, model_path: str = "data/BIOMD0000000479.xml", min_dt: float = 0.01) -> None:

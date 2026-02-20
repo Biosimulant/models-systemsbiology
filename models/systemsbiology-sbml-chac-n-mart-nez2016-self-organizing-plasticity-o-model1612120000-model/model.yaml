@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1612120000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1612120000?filename=MODEL1612120000_Purified_HFSC_Equilibrium___main.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.chac_n_mart_nez2016_self_organizing_plasticity_o_model1612120000_model:ChacNMartNez2016SelfOrganizingPlasticityOModel1612120000Model
   init_kwargs:
     model_path: data/MODEL1612120000.xml

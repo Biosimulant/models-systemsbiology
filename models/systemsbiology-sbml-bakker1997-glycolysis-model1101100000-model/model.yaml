@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1101100000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1101100000?filename=MODEL1101100000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bakker1997_glycolysis_model1101100000_model:Bakker1997GlycolysisModel1101100000Model
   init_kwargs:
     model_path: data/MODEL1101100000.xml

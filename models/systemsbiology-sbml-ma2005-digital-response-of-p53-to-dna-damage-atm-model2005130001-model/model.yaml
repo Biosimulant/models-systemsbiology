@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2005130001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2005130001?filename=Ma2005.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ma2005_digital_response_of_p53_to_dna_damage_atm_model2005130001_model:Ma2005DigitalResponseOfP53ToDnaDamageAtmModel2005130001Model
   init_kwargs:
     model_path: data/MODEL2005130001.xml

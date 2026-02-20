@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1009220000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1009220000?filename=MODEL1009220000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.martins2004_yeast_glycolysis_glycerolsynthesis_model1009220000_model:Martins2004YeastGlycolysisGlycerolsynthesisModel1009220000Model
   init_kwargs:
     model_path: data/MODEL1009220000.xml

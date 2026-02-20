@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000591
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000591?filename=BIOMD0000000591_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.boehm2014_isoform_specific_dimerization_of_pstat_biomd0000000591_model:Boehm2014IsoformSpecificDimerizationOfPstatBiomd0000000591Model
   init_kwargs:
     model_path: data/BIOMD0000000591.xml

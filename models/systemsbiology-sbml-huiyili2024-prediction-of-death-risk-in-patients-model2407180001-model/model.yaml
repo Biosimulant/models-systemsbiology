@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2407180001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2407180001?filename=rf.onnx
   license: CC0
-bsim:
+biosim:
   entrypoint: src.huiyili2024_prediction_of_death_risk_in_patients_model2407180001_model:Huiyili2024PredictionOfDeathRiskInPatientsModel2407180001Model
   init_kwargs:
     model_path: data/MODEL2407180001.xml

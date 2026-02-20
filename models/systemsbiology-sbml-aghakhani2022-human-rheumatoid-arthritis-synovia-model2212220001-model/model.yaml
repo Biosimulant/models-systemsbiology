@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2212220001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2212220001?filename=RASF-Model.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.aghakhani2022_human_rheumatoid_arthritis_synovia_model2212220001_model:Aghakhani2022HumanRheumatoidArthritisSynoviaModel2212220001Model
   init_kwargs:
     model_path: data/MODEL2212220001.xml

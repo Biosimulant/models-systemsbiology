@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000308
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000308?filename=BIOMD0000000308_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.tyson2003_negfb_oscillator_biomd0000000308_model:Tyson2003NegfbOscillatorBiomd0000000308Model
   init_kwargs:
     model_path: data/BIOMD0000000308.xml

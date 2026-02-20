@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000855
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000855?filename=Cooper2015.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.cooper2015_modeling_the_effects_of_systemic_medi_biomd0000000855_model:Cooper2015ModelingTheEffectsOfSystemicMediBiomd0000000855Model
   init_kwargs:
     model_path: data/BIOMD0000000855.xml

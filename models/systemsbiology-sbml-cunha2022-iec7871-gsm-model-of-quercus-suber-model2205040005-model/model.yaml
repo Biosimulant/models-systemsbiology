@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2205040005
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2205040005?filename=QuercusSuberGeneralModel.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.cunha2022_iec7871_gsm_model_of_quercus_suber_model2205040005_model:Cunha2022Iec7871GsmModelOfQuercusSuberModel2205040005Model
   init_kwargs:
     model_path: data/MODEL2205040005.xml

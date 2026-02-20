@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000364
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000364?filename=BIOMD0000000364_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.lee2010_thrombinactivation_oneform_biomd0000000364_model:Lee2010ThrombinactivationOneformBiomd0000000364Model
   init_kwargs:
     model_path: data/BIOMD0000000364.xml

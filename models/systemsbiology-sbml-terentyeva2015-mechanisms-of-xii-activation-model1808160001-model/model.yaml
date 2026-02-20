@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1808160001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1808160001?filename=Terentyeva2015.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.terentyeva2015_mechanisms_of_xii_activation_model1808160001_model:Terentyeva2015MechanismsOfXiiActivationModel1808160001Model
   init_kwargs:
     model_path: data/MODEL1808160001.xml

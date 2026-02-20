@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000945
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000945?filename=Evans2004.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.evans2004_cell_based_mathematical_model_of_topot_biomd0000000945_model:Evans2004CellBasedMathematicalModelOfTopotBiomd0000000945Model
   init_kwargs:
     model_path: data/BIOMD0000000945.xml

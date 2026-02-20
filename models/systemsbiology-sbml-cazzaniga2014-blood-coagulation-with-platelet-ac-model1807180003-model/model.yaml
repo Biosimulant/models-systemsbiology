@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1807180003
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1807180003?filename=Cazzaniga2014.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.cazzaniga2014_blood_coagulation_with_platelet_ac_model1807180003_model:Cazzaniga2014BloodCoagulationWithPlateletAcModel1807180003Model
   init_kwargs:
     model_path: data/MODEL1807180003.xml

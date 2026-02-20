@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1506070001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1506070001?filename=MODEL1506070001_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.romano_nguyen2014_mst2_and_raf1_crosstalk_model1506070001_model:RomanoNguyen2014Mst2AndRaf1CrosstalkModel1506070001Model
   init_kwargs:
     model_path: data/MODEL1506070001.xml

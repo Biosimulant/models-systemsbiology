@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2409160001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2409160001?filename=Mevalonate_Model.m
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kumbale_2024_dioxin_impact_on_hepatic_cholestero_model2409160001_model:Kumbale2024DioxinImpactOnHepaticCholesteroModel2409160001Model
   init_kwargs:
     model_path: data/MODEL2409160001.xml

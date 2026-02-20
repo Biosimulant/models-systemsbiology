@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2412270001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2412270001?filename=12248_2021_623_MOESM3_ESM.r
   license: CC0
-bsim:
+biosim:
   entrypoint: src.abbiati2021_avadomide_induced_neutropenia_model_model2412270001_model:Abbiati2021AvadomideInducedNeutropeniaModelModel2412270001Model
   init_kwargs:
     model_path: data/MODEL2412270001.xml

@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000188
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000188?filename=BIOMD0000000188_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.proctor2008_p53_mdm2_circuit_p53_stabilisation_b_biomd0000000188_model:Proctor2008P53Mdm2CircuitP53StabilisationBBiomd0000000188Model
   init_kwargs:
     model_path: data/BIOMD0000000188.xml

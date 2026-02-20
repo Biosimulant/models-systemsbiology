@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000902
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000902?filename=Wang2019.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.wang2019_a_mathematical_model_of_oncolytic_virot_biomd0000000902_model:Wang2019AMathematicalModelOfOncolyticVirotBiomd0000000902Model
   init_kwargs:
     model_path: data/BIOMD0000000902.xml

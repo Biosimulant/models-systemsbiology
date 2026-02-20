@@ -12,13 +12,13 @@ from pathlib import Path
 from typing import Any, Dict, Optional, Set, TYPE_CHECKING
 
 if TYPE_CHECKING:  # pragma: no cover - typing only
-    from bsim import BioWorld
+    from biosim import BioWorld
 
-import bsim
-from bsim.signals import BioSignal, SignalMetadata
+import biosim
+from biosim.signals import BioSignal, SignalMetadata
 
 
-class SbmlCortes2019OptimalityOfTheSpontaneousProphageInduction(bsim.BioModule):
+class SbmlCortes2019OptimalityOfTheSpontaneousProphageInduction(biosim.BioModule):
     """BioModule wrapper for SBML model: Cortes2019 - Optimality of the spontaneous prophage induction rate.."""
 
     def __init__(self, model_path: str = "data/BIOMD0000000884.xml", min_dt: float = 0.01) -> None:

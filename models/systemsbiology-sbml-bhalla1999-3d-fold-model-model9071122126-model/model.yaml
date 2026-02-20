@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL9071122126
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL9071122126?filename=MODEL9071122126_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bhalla1999_3d_fold_model_model9071122126_model:Bhalla19993dFoldModelModel9071122126Model
   init_kwargs:
     model_path: data/MODEL9071122126.xml

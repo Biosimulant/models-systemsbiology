@@ -25,7 +25,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2405210002?filename=BioModelsMetadata
     - eos4zfy.csv
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bosc2021_maip_a_web_service_for_predicting_blood_model2405210002_model:Bosc2021MaipAWebServiceForPredictingBloodModel2405210002Model
   init_kwargs:
     model_path: data/MODEL2405210002.xml

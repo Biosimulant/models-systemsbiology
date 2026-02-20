@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000315
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000315?filename=BIOMD0000000315_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.montagne2011_oligator_optimised_biomd0000000315_model:Montagne2011OligatorOptimisedBiomd0000000315Model
   init_kwargs:
     model_path: data/BIOMD0000000315.xml

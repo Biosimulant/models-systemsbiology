@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1409240001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1409240001?filename=MODEL1409240001_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.puri2010_mathematical_modeling_for_the_pathogene_model1409240001_model:Puri2010MathematicalModelingForThePathogeneModel1409240001Model
   init_kwargs:
     model_path: data/MODEL1409240001.xml

@@ -23,7 +23,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2310300002?filename=NothaGEM
     iSM1809.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.nothagem_ism1809_model2310300002_model:NothagemIsm1809Model2310300002Model
   init_kwargs:
     model_path: data/MODEL2310300002.xml

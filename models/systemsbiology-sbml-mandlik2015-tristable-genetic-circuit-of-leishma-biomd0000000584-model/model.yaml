@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000584
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000584?filename=BIOMD0000000584_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mandlik2015_tristable_genetic_circuit_of_leishma_biomd0000000584_model:Mandlik2015TristableGeneticCircuitOfLeishmaBiomd0000000584Model
   init_kwargs:
     model_path: data/BIOMD0000000584.xml

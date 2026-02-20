@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1006230033
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1006230033?filename=MODEL1006230033_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.nelson1995_hiv1therapy_divadministraion_modelb_model1006230033_model:Nelson1995Hiv1therapyDivadministraionModelbModel1006230033Model
   init_kwargs:
     model_path: data/MODEL1006230033.xml

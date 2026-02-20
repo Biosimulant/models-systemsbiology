@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1905220002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1905220002?filename=data_S3_competition_model.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.heiland2019_two_compartment_model_of_nad_biosynt_model1905220002_model:Heiland2019TwoCompartmentModelOfNadBiosyntModel1905220002Model
   init_kwargs:
     model_path: data/MODEL1905220002.xml

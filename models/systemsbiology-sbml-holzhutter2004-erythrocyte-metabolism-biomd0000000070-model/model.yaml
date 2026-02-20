@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000070
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000070?filename=BIOMD0000000070_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.holzhutter2004_erythrocyte_metabolism_biomd0000000070_model:Holzhutter2004ErythrocyteMetabolismBiomd0000000070Model
   init_kwargs:
     model_path: data/BIOMD0000000070.xml

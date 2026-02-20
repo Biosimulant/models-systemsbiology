@@ -25,7 +25,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2403270002?filename=BioModelsMetadata
     - eos80ch.csv
   license: CC0
-bsim:
+biosim:
   entrypoint: src.van_heerden2023_chemical_features_identification_model2403270002_model:VanHeerden2023ChemicalFeaturesIdentificationModel2403270002Model
   init_kwargs:
     model_path: data/MODEL2403270002.xml

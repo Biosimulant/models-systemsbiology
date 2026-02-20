@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000300
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000300?filename=BIOMD0000000300_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.schmierer2010_fih_ankyrins_biomd0000000300_model:Schmierer2010FihAnkyrinsBiomd0000000300Model
   init_kwargs:
     model_path: data/BIOMD0000000300.xml

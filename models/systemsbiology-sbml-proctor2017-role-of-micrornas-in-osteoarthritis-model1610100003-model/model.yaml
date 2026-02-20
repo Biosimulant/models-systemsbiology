@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1610100003
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1610100003?filename=MODEL1610100003_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.proctor2017_role_of_micrornas_in_osteoarthritis_model1610100003_model:Proctor2017RoleOfMicrornasInOsteoarthritisModel1610100003Model
   init_kwargs:
     model_path: data/MODEL1610100003.xml

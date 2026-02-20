@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL7888000034
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL7888000034?filename=MODEL7888000034_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.vempati2007_mmp9_regulation_model7888000034_model:Vempati2007Mmp9RegulationModel7888000034Model
   init_kwargs:
     model_path: data/MODEL7888000034.xml

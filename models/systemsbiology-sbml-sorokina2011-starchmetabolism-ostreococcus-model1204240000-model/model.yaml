@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1204240000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1204240000?filename=MODEL1204240000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.sorokina2011_starchmetabolism_ostreococcus_model1204240000_model:Sorokina2011StarchmetabolismOstreococcusModel1204240000Model
   init_kwargs:
     model_path: data/MODEL1204240000.xml

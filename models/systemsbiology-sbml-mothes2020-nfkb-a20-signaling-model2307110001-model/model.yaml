@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2307110001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2307110001?filename=Mothes2020_NFkB_A20_signaling.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mothes2020_nfkb_a20_signaling_model2307110001_model:Mothes2020NfkbA20SignalingModel2307110001Model
   init_kwargs:
     model_path: data/MODEL2307110001.xml

@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000207
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000207?filename=BIOMD0000000207_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.romond1999_cellcycle_biomd0000000207_model:Romond1999CellcycleBiomd0000000207Model
   init_kwargs:
     model_path: data/BIOMD0000000207.xml

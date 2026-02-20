@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL9086628127
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL9086628127?filename=MODEL9086628127_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.hayer2005_simple_ampar_traff_model2_model9086628127_model:Hayer2005SimpleAmparTraffModel2Model9086628127Model
   init_kwargs:
     model_path: data/MODEL9086628127.xml

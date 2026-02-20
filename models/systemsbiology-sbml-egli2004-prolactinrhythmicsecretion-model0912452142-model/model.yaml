@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL0912452142
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0912452142?filename=MODEL0912452142_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.egli2004_prolactinrhythmicsecretion_model0912452142_model:Egli2004ProlactinrhythmicsecretionModel0912452142Model
   init_kwargs:
     model_path: data/MODEL0912452142.xml

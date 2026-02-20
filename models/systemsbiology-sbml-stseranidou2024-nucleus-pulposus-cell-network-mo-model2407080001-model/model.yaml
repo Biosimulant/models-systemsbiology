@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2407080001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2407080001?filename=model.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.stseranidou2024_nucleus_pulposus_cell_network_mo_model2407080001_model:Stseranidou2024NucleusPulposusCellNetworkMoModel2407080001Model
   init_kwargs:
     model_path: data/MODEL2407080001.xml

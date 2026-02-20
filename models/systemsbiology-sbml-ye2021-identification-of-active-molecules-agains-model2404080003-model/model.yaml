@@ -25,7 +25,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2404080003?filename=BioModelsMetadata
     - eos46ev.csv
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ye2021_identification_of_active_molecules_agains_model2404080003_model:Ye2021IdentificationOfActiveMoleculesAgainsModel2404080003Model
   init_kwargs:
     model_path: data/MODEL2404080003.xml

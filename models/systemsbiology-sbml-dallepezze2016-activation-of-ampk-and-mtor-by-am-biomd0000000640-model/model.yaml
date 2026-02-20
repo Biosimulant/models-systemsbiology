@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000640
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000640?filename=BIOMD0000000640_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.dallepezze2016_activation_of_ampk_and_mtor_by_am_biomd0000000640_model:Dallepezze2016ActivationOfAmpkAndMtorByAmBiomd0000000640Model
   init_kwargs:
     model_path: data/BIOMD0000000640.xml
