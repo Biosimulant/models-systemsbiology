@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Bornheimer2004GtpasecycleBiomd0000000086Model'
-description: This model is according to the paper Computational modeling reveals how
-  interplay between components of a GTPase-cycle module regulates signal transduction
-  by Bornheimer et al 2004.The figure 3 is rep
+description: "This model is according to the paper Computational modeling reveals how interplay between components of a GTPase-cycle module regulates signal transduction by Bornheimer et al 2004.The figure 3 is rep. It can be used to explore systemsbiology bornheimer2004 gtpasecycle BioModels0000000086 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

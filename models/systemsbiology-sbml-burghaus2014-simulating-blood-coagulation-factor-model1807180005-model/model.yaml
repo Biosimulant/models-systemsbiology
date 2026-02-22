@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Burghaus2014SimulatingBloodCoagulationFactorModel1807180005Model'
-description: Mathematical model of blood coagulation factors II, VII, IX and X as
-  well as protein C and protein S and the effect of warfarin on kinetic rates.
+description: "Mathematical model of blood coagulation factors II, VII, IX and X as well as protein C and protein S and the effect of warfarin on kinetic rates. It can be used to explore systemsbiology burghaus2014 simulating blood coagulation factor dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

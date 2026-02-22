@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Leloup2004MammalianCircadianRhythmModelsForBiomd0000000975Model'
-description: 'We extend the study of a computational model recently proposed for the
-  mammalian circadian clock (Proc. Natl Acad. Sci. USA 100 (2003) 7051). The model,
-  based on the intertwined positive and negative '
+description: "We extend the study of a computational model recently proposed for the mammalian circadian clock (Proc. It can be used to explore systemsbiology leloup2004 mammalian circadian rhythm for dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Xu2002BloodCoagulationModelOfActivatedFactModel1806130001Model'
-description: System of ODEs to describe the dynamics of several activated factors
-  of blood coagulation. Publication introduces a platelet activation term for synthesis
-  of Xa and IIa.
+description: "System of ODEs to describe the dynamics of several activated factors of blood coagulation. Publication introduces a platelet activation term for synthesis of Xa and IIa."
 standard: other
 tags:
 - systemsbiology

@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: RomanoNguyen2014Mst2AndRaf1CrosstalkModel1506070001Model'
-description: Originally created by libAntimony v1.3 (using libSBML 4.1.0-b2)
+description: "Originally created by libAntimony v1.3 (using libSBML 4.1.0-b2). It can be used to explore systemsbiology romano nguyen2014 mst2 and raf1 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

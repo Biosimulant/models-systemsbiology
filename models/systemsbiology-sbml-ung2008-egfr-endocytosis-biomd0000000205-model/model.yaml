@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Ung2008EgfrEndocytosisBiomd0000000205Model'
-description: Model reproduces the various plots in the publication for 'Control' concentrations.
-  Model successfully tested on MathSBML.
+description: "Model reproduces the various plots in the publication for 'Control' concentrations. It can be used to explore systemsbiology ung2008 egfr endocytosis BioModels0000000205 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

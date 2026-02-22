@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: HcvDataFittingModel1807030001Model'
-description: 'Matlab code for the model of HCV infection published recently in Viruses
-  10, 195, 2018A New Model for the Dynamics of Hepatitis C Infection: Derivation,
-  Analysis and Implications by P.J. Astonhttp://w'
+description: "Matlab code for the model of HCV infection published recently in Viruses 10, 195, 2018A New Model for the Dynamics of Hepatitis C Infection: Derivation, Analysis and Implications by P.J. It can be used to explore systemsbiology hcv data fitting model1807030001 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

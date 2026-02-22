@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Rosas2015CaffeineInducedLuminalSrCalciumChBiomd0000000601Model'
-description: This SBML model reproduced the calcium release from SR by application
-  of 20 mM or 2mM caffeine, described in the paper. * Ca_i_Total and Ca_SR_Total respectively
-  represent the total calcium concentrat
+description: "This SBML model reproduced the calcium release from SR by application of 20 mM or 2mM caffeine, described in the paper. * Ca_i_Total and Ca_SR_Total respectively represent the total calcium concentrat."
 standard: other
 tags:
 - systemsbiology

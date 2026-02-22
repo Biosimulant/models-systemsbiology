@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Ferreira2003CmlGeneration2Biomd0000000053Model'
-description: The model should reproduce the figure 2F of the article. The equation
-  7 has been split into equations 7a-7c, in order to take into account the different
-  flux rates of Lysine and CML formation from Sch
+description: "The model should reproduce the figure 2F of the article. The equation 7 has been split into equations 7a-7c, in order to take into account the different flux rates of Lysine and CML formation from Sch."
 standard: other
 tags:
 - systemsbiology

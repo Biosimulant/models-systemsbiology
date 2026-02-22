@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Nijhout2004FolateCycleBiomd0000000213Model'
-description: 'This is an SBML version of the folate cycle model model from: A mathematical
-  model of the folate cycle: new insights into folate homeostasis. Nijhout HF, Reed
-  MC, Budu P, Ulrich CM J. Biol. Chem.,2004'
+description: "This is an SBML version of the folate cycle model model from: A mathematical model of the folate cycle: new insights into folate homeostasis. Nijhout HF, Reed MC, Budu P, Ulrich CM J."
 standard: other
 tags:
 - systemsbiology

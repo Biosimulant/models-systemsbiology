@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Precup2012MathematicalModelingOfCellDynamicBiomd0000000800Model'
-description: This is a basic mathematical model describing the dynamics of three cell
-  lines (normal host cells, leukemic host cells and donor cells) after allogeneic
-  stem cell transplantation.
+description: "This is a basic mathematical model describing the dynamics of three cell lines (normal host cells, leukemic host cells and donor cells) after allogeneic stem cell transplantation. It can be used to explore systemsbiology precup2012 mathematical modeling of cell dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

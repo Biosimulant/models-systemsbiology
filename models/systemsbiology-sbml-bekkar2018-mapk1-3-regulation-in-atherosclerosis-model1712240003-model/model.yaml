@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Bekkar2018Mapk13RegulationInAtherosclerosisModel1712240003Model'
-description: This network was obtained by combining (with an OR logical operator)
-  the following list of MAPK1_3 activators:PDGFRB - reference in pubmed:19742316 PDGFB
-  AND (NOT glyoxal) - reference in pubmed:175049
+description: "This network was obtained by combining (with an OR logical operator) the following list of MAPK1_3 activators:PDGFRB - reference in pubmed:19742316 PDGFB AND (NOT glyoxal) - reference in pubmed:175049. It can be used to explore systemsbiology bekkar2018 mapk1 3 regulation in dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

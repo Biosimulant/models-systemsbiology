@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Dunster2016NondimensionalCoagulationModelBiomd0000000925Model'
-description: 'We undertake a mathematical investigation of a model for the generation
-  of thrombin, an enzyme central to haemostatic blood coagulation, as well as to thrombotic
-  disorders, that is the end product of '
+description: "We undertake a mathematical investigation of a model for the generation of thrombin, an enzyme central to haemostatic blood coagulation, as well as to thrombotic disorders, that is the end product of. It can be used to explore systemsbiology dunster2016 nondimensional coagulation BioModels0000000925 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

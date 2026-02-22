@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Liu2011ComplementSystemBiomd0000000303Model'
-description: 'Model of the Complement System This is the continuous deterministic
-  (ODE) model of the complement system described in the article: Computational and
-  Experimental Study of the Regulatory Mechanisms of '
+description: "Model of the Complement System This is the continuous deterministic (ODE) model of the complement system described in the article: Computational and Experimental Study of the Regulatory Mechanisms of. It can be used to explore systemsbiology liu2011 complement system BioModels0000000303 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

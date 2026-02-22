@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Systemsbiology: General (COMBO_0040)'
-description: Systemsbiology general comparative space with 3 models, configured as
-  non-causal co-simulation.
+description: "Systemsbiology General (COMBO_0040) organizes chenxf2008_cicr_1, chi2019_in_2, chickarmane2008__3 into a comparative simulation setup to examine how general mechanisms compare across these models. When you run it, you can compare participant trajectories through shared runtime settings and routed output streams."
 models:
 - repo: Biosimulant/models-systemsbiology
   alias: chenxf2008_cicr_1

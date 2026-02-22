@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Legewie2006ApoptosisNcBiomd0000000103Model'
-description: This model represents the non-competitive binding of XIAP to Casapase-3
-  and Caspase-9. In other words, XIAP mediated feedback is abolished in this model.
-  The authors state that this leads to bistable-
+description: "This model represents the non-competitive binding of XIAP to Casapase-3 and Caspase-9. In other words, XIAP mediated feedback is abolished in this model."
 standard: other
 tags:
 - systemsbiology

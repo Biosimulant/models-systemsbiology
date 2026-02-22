@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Sengupta2015KnowledgeBaseModelOfHumanEnergBiomd0000000579Model'
-description: 'Sengupta2015 - Knowledge base model of humanenergy pool network (HEPNet)
-  This model is described in the article: HEPNet: A Knowledge Base Model of Human
-  Energy Pool Network for Predicting the Energy A'
+description: "Sengupta2015 - Knowledge base model of humanenergy pool network (HEPNet) This model is described in the article: HEPNet: A Knowledge Base Model of Human Energy Pool Network for Predicting the Energy A. It can be used to explore systemsbiology sengupta2015 knowledge base of human dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

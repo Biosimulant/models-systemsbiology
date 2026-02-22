@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Systemsbiology: Signal Transduction (COMBO_0050)'
-description: Systemsbiology signal transduction comparative space with 3 models, configured
-  as non-causal co-simulation.
+description: "Systemsbiology Signal Transduction (COMBO_0050) organizes mellor2012_lipoo_1, mizuno2012_alzpa_2, mothes2020_nfkb_3 into a comparative simulation setup to examine how signal transduction mechanisms compare across these m. When you run it, you can compare participant trajectories through shared runtime settings and routed output streams."
 models:
 - repo: Biosimulant/models-systemsbiology
   alias: mellor2012_lipoo_1

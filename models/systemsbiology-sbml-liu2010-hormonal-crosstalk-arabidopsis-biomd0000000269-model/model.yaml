@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Liu2010HormonalCrosstalkArabidopsisBiomd0000000269Model'
-description: 'This is the single cell model for analysis of hormonal crosstalk in
-  Arabidopsis described in the article: Modelling and experimental analysis of hormonal
-  crosstalk in Arabidopsis. Liu J, Mehdi S, Topp'
+description: "This is the single cell model for analysis of hormonal crosstalk in Arabidopsis described in the article: Modelling and experimental analysis of hormonal crosstalk in Arabidopsis. It can be used to explore systemsbiology liu2010 hormonal crosstalk arabidopsis BioModels0000000269 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Twycross2010AuxinTransportModel1005200000Model'
-description: 'This is a model with 20 cells - 20 cytplasms and 21 apoplasts - as described
-  in the article: Stochastic and deterministic multiscale models for systems biology:
-  an auxin-transport case study. by Twycr'
+description: "This is a model with 20 cells - 20 cytplasms and 21 apoplasts - as described in the article: Stochastic and deterministic multiscale models for systems biology: an auxin-transport case study. It can be used to explore systemsbiology twycross2010 auxin transport model1005200000 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

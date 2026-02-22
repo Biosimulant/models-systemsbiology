@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Radosavljevic2009BioterroristattackPanicprotecBiomd0000000836Model'
-description: 'This model is from the article: Epidemics of panic during a bioterrorist
-  attack--a mathematical model. Radosavljevic V, Radunovic D, Belojevic G. Med Hypotheses
-  2009 Sep;73(3):342-6 19423234 , Abstrac'
+description: "This model is from the article: Epidemics of panic during a bioterrorist attack--a mathematical model. It can be used to explore systemsbiology radosavljevic2009 bioterroristattack panicprotec BioModels0000000836 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

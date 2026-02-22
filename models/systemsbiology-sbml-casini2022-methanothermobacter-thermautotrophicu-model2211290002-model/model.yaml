@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Casini2022MethanothermobacterThermautotrophicuModel2211290002Model'
-description: (iMTD22IC) This model is described in these articles:Casini, I., McCubbin,
-  T., Esquivel-Elizondo, S., Luque, G.G., Evseeva, D., Fink, C., Beblawy, S., Youngblut,
-  N.D., Aristilde, L., Huson, D., Drager
+description: "(iMTD22IC) This model is described in these articles:Casini, I., McCubbin, T., Esquivel-Elizondo, S., Luque, G.G., Evseeva, D., Fink, C., Beblawy, S., Youngblut, N.D., Aristilde, L., Huson, D., Drager. It can be used to explore systemsbiology casini2022 methanothermobacter thermautotrophicu model2211290002 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

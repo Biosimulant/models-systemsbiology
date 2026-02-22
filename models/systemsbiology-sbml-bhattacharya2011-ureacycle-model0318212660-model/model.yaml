@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Bhattacharya2011UreacycleModel0318212660Model'
-description: 'This model is from the article: Time Scale Simulation of Vmax of Urea
-  Cycle Enzymes. Pradip Bhattacharya, Alok Srivastava, Sarbashish Das, Samiyadeep
-  Nandi, Ganeshan Tamil, Ashutosh Viswabandhu, Heman'
+description: "This model is from the article: Time Scale Simulation of Vmax of Urea Cycle Enzymes. Pradip Bhattacharya, Alok Srivastava, Sarbashish Das, Samiyadeep Nandi, Ganeshan Tamil, Ashutosh Viswabandhu, Heman."
 standard: other
 tags:
 - systemsbiology

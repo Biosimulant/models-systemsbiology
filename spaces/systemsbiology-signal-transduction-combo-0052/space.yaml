@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Systemsbiology: Signal Transduction (COMBO_0052)'
-description: Systemsbiology signal transduction comparative space with 3 models, configured
-  as non-causal co-simulation.
+description: "Systemsbiology Signal Transduction (COMBO_0052) brings together proctor2013_effe_1, qiao2007_mapk_2, qiao2007_mapk_3 in a comparative space to examine how signal transduction mechanisms compare across these models. When you run it, you can compare participant trajectories through shared runtime settings and routed output streams."
 models:
 - repo: Biosimulant/models-systemsbiology
   alias: proctor2013_effe_1

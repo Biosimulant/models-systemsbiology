@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Systemsbiology: Metabolic Pathways (COMBO_0056)'
-description: Systemsbiology metabolic pathways comparative space with 4 models, configured
-  as non-causal co-simulation.
+description: "Systemsbiology Metabolic Pathways (COMBO_0056) organizes dan_glycolysis_1, goodwin1965_enzy_2, heiland2019_two_3 into a comparative simulation setup to examine how metabolic pathways mechanisms compare across these model. When you run it, you can compare participant trajectories through shared runtime settings and routed output streams."
 models:
 - repo: Biosimulant/models-systemsbiology
   alias: dan_glycolysis_1

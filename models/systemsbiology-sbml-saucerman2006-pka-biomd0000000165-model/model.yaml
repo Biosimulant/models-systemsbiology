@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Saucerman2006PkaBiomd0000000165Model'
-description: The model reproduces Fig 2B of the paper. Model successfully tested on
-  MathSBML To the extent possible under law, all copyright and related or neighbouring
-  rights to this encoded model have been dedic
+description: "The model reproduces Fig 2B of the paper. Model successfully tested on MathSBML To the extent possible under law, all copyright and related or neighbouring rights to this encoded model have been dedic."
 standard: other
 tags:
 - systemsbiology

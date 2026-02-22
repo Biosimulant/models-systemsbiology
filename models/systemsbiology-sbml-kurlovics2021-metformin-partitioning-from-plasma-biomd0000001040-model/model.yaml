@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Kurlovics2021MetforminPartitioningFromPlasmaBiomd0000001040Model'
-description: This model is a supplementary material of a manuscript'Diffusion driven
-  metformin exchange transport rates between plasma and red blood cells'by Janis Kurlovics,
-  Darta Maija Zake, Linda Zaharenko, Kri
+description: "This model is a supplementary material of a manuscript'Diffusion driven metformin exchange transport rates between plasma and red blood cells'by Janis Kurlovics, Darta Maija Zake, Linda Zaharenko, Kri. It can be used to explore systemsbiology kurlovics2021 metformin partitioning from plasma dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

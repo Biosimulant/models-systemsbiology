@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Curien2003MetthrSynthesisBiomd0000000068Model'
-description: 'This a model from the article: A kinetic model of the branch-point between
-  the methionine and threonine biosynthesis pathways in Arabidopsis thaliana. Curien
-  G, Ravanel S, Dumas R Eur. J. Biochem. 200'
+description: "This a model from the article: A kinetic model of the branch-point between the methionine and threonine biosynthesis pathways in Arabidopsis thaliana. It can be used to explore systemsbiology curien2003 metthr synthesis BioModels0000000068 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

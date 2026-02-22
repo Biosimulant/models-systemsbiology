@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: TikidjiHamburyan2018RodPhototransductionUndeModel1710030000Model'
-description: 'Tikidji-Hamburyan2018 - Rod phototransductionunder strong illumination
-  This model is described in the article: Rods progressively escape saturation to
-  drive visual responses in daylight conditions. Ti'
+description: "Tikidji-Hamburyan2018 - Rod phototransductionunder strong illumination This model is described in the article: Rods progressively escape saturation to drive visual responses in daylight conditions. It can be used to explore systemsbiology tikidji hamburyan2018 rod phototransduction unde dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

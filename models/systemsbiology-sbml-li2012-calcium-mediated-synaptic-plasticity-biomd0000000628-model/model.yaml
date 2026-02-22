@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Li2012CalciumMediatedSynapticPlasticityBiomd0000000628Model'
-description: 'Li2012 Calcium mediated synapticplasticity This model is an extension
-  of BIOMD0000000183 . This model is described in the article: Calcium input frequency,
-  duration and amplitude differentially modula'
+description: "Li2012 Calcium mediated synapticplasticity This model is an extension of BIOMD0000000183 . This model is described in the article: Calcium input frequency, duration and amplitude differentially modula."
 standard: other
 tags:
 - systemsbiology

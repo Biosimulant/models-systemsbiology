@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Model3632127506UrlXmlModel3632127506Model'
-description: This is a kinetic model of the dimeric photosystem II (PSII). The model
-  has partially based on the earlier model used for simulation of the flash-induced
-  period-four damped oscillation of oxygen evolu
+description: "This is a kinetic model of the dimeric photosystem II (PSII). The model has partially based on the earlier model used for simulation of the flash-induced period-four damped oscillation of oxygen evolu."
 standard: other
 tags:
 - systemsbiology

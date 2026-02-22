@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Wang2008MimickingTheInhibitoryEffectOfRiluBiomd0000000693Model'
-description: 'Wang2008 - Mimicking the inhibitory effect ofriluzole on membrane conductance
-  in skeletal fibres This model is described in the article: Riluzole-induced block
-  of voltage-gated Na+ current and activat'
+description: "Wang2008 - Mimicking the inhibitory effect ofriluzole on membrane conductance in skeletal fibres This model is described in the article: Riluzole-induced block of voltage-gated Na+ current and activat. It can be used to explore systemsbiology wang2008 mimicking the inhibitory effect dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Calzone2008RbModel4132046015Model'
-description: 'Protein names are HUGO names or usual names. In the latter case, they
-  are identified with a star (*) and the HUGO name is given in notes. This model originates
-  from BioModels Database: A Database of A'
+description: "Protein names are HUGO names or usual names. In the latter case, they are identified with a star (*) and the HUGO name is given in notes."
 standard: other
 tags:
 - systemsbiology

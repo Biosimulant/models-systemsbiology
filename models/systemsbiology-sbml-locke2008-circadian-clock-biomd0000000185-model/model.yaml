@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Locke2008CircadianClockBiomd0000000185Model'
-description: The model reproduces Fig 2A of the paper. Model successfully reproduced
-  using Jarnac and MathSBML. To the extent possible under law, all copyright and related
-  or neighbouring rights to this encoded mo
+description: "The model reproduces Fig 2A of the paper. It can be used to explore systemsbiology locke2008 circadian clock BioModels0000000185 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

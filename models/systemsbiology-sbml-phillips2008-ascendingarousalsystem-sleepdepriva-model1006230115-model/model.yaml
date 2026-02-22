@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Phillips2008AscendingarousalsystemSleepdeprivaModel1006230115Model'
-description: 'This a model from the article: Sleep deprivation in a quantitative physiologically
-  based model of the ascendingarousal system. Phillips AJ, Robinson PA. J Theor Biol
-  2008 Dec 21;255(4):413-23 18805427'
+description: "This a model from the article: Sleep deprivation in a quantitative physiologically based model of the ascendingarousal system. It can be used to explore systemsbiology phillips2008 ascendingarousalsystem sleepdepriva model1006230115 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

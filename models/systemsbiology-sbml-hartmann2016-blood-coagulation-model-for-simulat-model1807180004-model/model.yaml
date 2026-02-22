@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Hartmann2016BloodCoagulationModelForSimulatModel1807180004Model'
-description: Mathematical model of blood coagulation. Reused Wajima2009 model with
-  modifications to reactions 27 (formation of Va:Xa complex), 32 (Xa inhibition by
-  TFPI) and 45 (Xa inhibition by TFPI-Heparin compl
+description: "Mathematical model of blood coagulation. It can be used to explore systemsbiology hartmann2016 blood coagulation for simulat dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

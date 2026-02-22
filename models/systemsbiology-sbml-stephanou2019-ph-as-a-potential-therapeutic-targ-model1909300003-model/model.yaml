@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Stephanou2019PhAsAPotentialTherapeuticTargModel1909300003Model'
-description: Abstract:Despite intensive treatments including temozolomide (TMZ) administration,
-  glioblastoma patient prognosis remains dismal and innovative therapeutic strategies
-  are urgently needed. A systems ph
+description: "Abstract:Despite intensive treatments including temozolomide (TMZ) administration, glioblastoma patient prognosis remains dismal and innovative therapeutic strategies are urgently needed. It can be used to explore systemsbiology stephanou2019 ph as a potential dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

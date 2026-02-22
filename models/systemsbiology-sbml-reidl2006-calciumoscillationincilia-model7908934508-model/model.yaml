@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Reidl2006CalciumoscillationinciliaModel7908934508Model'
-description: 'This a model from the article: Model of calcium oscillations due to
-  negative feedback in olfactory cilia. Reidl J, Borowski P, Sensse A, Starke J, Zapotocky
-  M, Eiswirth M. Biophys J. 2006;90(4):1147-5'
+description: "This a model from the article: Model of calcium oscillations due to negative feedback in olfactory cilia. Reidl J, Borowski P, Sensse A, Starke J, Zapotocky M, Eiswirth M."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Ma2002CampOscillationsBiomd0000000229Model'
-description: 'This a model from the article: Quantifying robustness of biochemical
-  network models. Ma L, Iglesias PA. BMC Bioinformatics. 2002 Dec 13;3:38. 12482327
-  , Abstract: BACKGROUND: Robustness of mathematica'
+description: "This a model from the article: Quantifying robustness of biochemical network models. It can be used to explore systemsbiology ma2002 camp oscillations BioModels0000000229 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

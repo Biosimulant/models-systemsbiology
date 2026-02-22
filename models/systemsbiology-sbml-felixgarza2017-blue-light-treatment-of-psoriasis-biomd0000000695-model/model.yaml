@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Felixgarza2017BlueLightTreatmentOfPsoriasisBiomd0000000695Model'
-description: "FelixGarza2017 - Blue Light Treatment ofPsoriasis (simplified) This\
-  \ model is described in the article: A Dynamic Model for Prediction of Psoriasis\
-  \ Management by Blue Light Irradiation. F\xE9lix Garza ZC,"
+description: "FelixGarza2017 - Blue Light Treatment ofPsoriasis (simplified) This model is described in the article: A Dynamic Model for Prediction of Psoriasis Management by Blue Light Irradiation. It can be used to explore systemsbiology felixgarza2017 blue light treatment of dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

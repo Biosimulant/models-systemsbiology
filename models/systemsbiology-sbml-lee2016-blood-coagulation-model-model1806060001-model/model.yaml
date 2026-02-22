@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Lee2016BloodCoagulationModelModel1806060001Model'
-description: Blood coagulation model derived from Nayak2015.
+description: "Systems Biology Lee2016Blood Coagulation Model Model1806060001Model captures systemsbiology lee2016 blood coagulation model1806060001 behavior in the context of systemsbiology, sbml, biomodels_ebi using a biomo. When you run it, you can observe state and evaluate how the modeled system changes across runs."
 standard: other
 tags:
 - systemsbiology

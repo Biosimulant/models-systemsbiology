@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Proctor2017RoleOfMicrornasInOsteoarthritisModel1610100003Model'
-description: 'Proctor2017- Role of microRNAs inosteoarthritis (Positive Feedforward
-  Coherent By MicroRNA) This model is described in the article: Computer simulation
-  models as a tool to investigate the role of micr'
+description: "Proctor2017- Role of microRNAs inosteoarthritis (Positive Feedforward Coherent By MicroRNA) This model is described in the article: Computer simulation models as a tool to investigate the role of micr. It can be used to explore systemsbiology proctor2017 role of micrornas in dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

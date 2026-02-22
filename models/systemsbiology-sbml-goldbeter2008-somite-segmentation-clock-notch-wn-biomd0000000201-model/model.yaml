@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Goldbeter2008SomiteSegmentationClockNotchWnBiomd0000000201Model'
-description: "This is a model of the coupled Natch, Wnt and FGF modules as described\
-  \ in: A. Goldbeter and O. Pourqui\xE9 , Modeling the segmentation clock as a network\
-  \ of coupled oscillations in the Notch, Wnt and FGF"
+description: "This is a model of the coupled Natch, Wnt and FGF modules as described in: A. It can be used to explore systemsbiology goldbeter2008 somite segmentation clock notch dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

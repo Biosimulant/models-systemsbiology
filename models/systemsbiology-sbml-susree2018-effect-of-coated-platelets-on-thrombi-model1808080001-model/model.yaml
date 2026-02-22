@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Susree2018EffectOfCoatedPlateletsOnThrombiModel1808080001Model'
-description: Mathematical model of blood coagulation that simulates the effect of
-  coated platelets on thrombin generation.
+description: "Mathematical model of blood coagulation that simulates the effect of coated platelets on thrombin generation. It can be used to explore systemsbiology susree2018 effect of coated platelets dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

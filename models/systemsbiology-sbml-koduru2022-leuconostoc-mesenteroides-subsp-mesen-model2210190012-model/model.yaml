@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Koduru2022LeuconostocMesenteroidesSubspMesenModel2210190012Model'
-description: GEM reconstruction for Leuconostoc mesenteroides subsp. mesenteroides
-  ATCC 8293
+description: "GEM reconstruction for Leuconostoc mesenteroides subsp. It can be used to explore systemsbiology koduru2022 leuconostoc mesenteroides subsp mesen dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

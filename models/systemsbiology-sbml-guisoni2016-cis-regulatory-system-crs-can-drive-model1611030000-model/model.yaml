@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Guisoni2016CisRegulatorySystemCrsCanDriveModel1611030000Model'
-description: 'Guisoni2016 - Cis-regulatory system (CRS) candrive sustained oscillations
-  This model is described in the article: Promoters Architecture-Based Mechanism for
-  Noise-Induced Oscillations in a Single-Gene'
+description: "Guisoni2016 - Cis-regulatory system (CRS) candrive sustained oscillations This model is described in the article: Promoters Architecture-Based Mechanism for Noise-Induced Oscillations in a Single-Gene. It can be used to explore systemsbiology guisoni2016 cis regulatory system crs dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

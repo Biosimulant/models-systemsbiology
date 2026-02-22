@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: MouseIronDistributionRichAndDeficientIronBiomd0000000734Model'
-description: Mouse Iron Distribution Dynamics Dynamic model of iron distribution in
-  mice. This model attempts to fit the radioiron tracer data from Lopes et al. 2010
-  for mice fed iron deficient and rich diets by a
+description: "Mouse Iron Distribution Dynamics Dynamic model of iron distribution in mice. This model attempts to fit the radioiron tracer data from Lopes et al."
 standard: other
 tags:
 - systemsbiology

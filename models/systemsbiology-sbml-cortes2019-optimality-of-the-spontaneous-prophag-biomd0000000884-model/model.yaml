@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Cortes2019OptimalityOfTheSpontaneousProphagBiomd0000000884Model'
-description: "Optimality of the spontaneous prophage induction rate.Cortes MG1, Krog\
-  \ J2, Bal\xE1zsi G3.1 Department of Applied Mathematics and Statistics, Stony Brook\
-  \ University, Stony Brook, NY 11794, USA.2 The Louis"
+description: "Optimality of the spontaneous prophage induction rate.Cortes MG1, Krog J2, Bal\u00e1zsi G3.1 Department of Applied Mathematics and Statistics, Stony Brook University, Stony Brook, NY 11794, USA.2 The Louis. It can be used to explore systemsbiology cortes2019 optimality of the spontaneous dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

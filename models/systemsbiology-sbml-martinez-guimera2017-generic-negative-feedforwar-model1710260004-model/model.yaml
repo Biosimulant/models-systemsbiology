@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: MartinezGuimera2017GenericNegativeFeedforwarModel1710260004Model'
-description: 'Martinez-Guimera2017 - Generic negative feedforward circuit (Model 5)
-  This model is described in the article: ''Molecular habituation'' as a potential
-  mechanism of gradual homeostatic loss with age. Mar'
+description: "Martinez-Guimera2017 - Generic negative feedforward circuit (Model 5) This model is described in the article: 'Molecular habituation' as a potential mechanism of gradual homeostatic loss with age. It can be used to explore systemsbiology martinez guimera2017 generic negative feedforwar dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

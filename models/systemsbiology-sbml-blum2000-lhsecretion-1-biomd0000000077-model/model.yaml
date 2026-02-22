@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Blum2000Lhsecretion1Biomd0000000077Model'
-description: A mathematical model quantifying GnRH-induced LH secretion from gonadotropes
-  by Blum et al (2000) This paper includes three stages, and the model does not include
-  the third stage. Also an event is inc
+description: "A mathematical model quantifying GnRH-induced LH secretion from gonadotropes by Blum et al (2000) This paper includes three stages, and the model does not include the third stage. It can be used to explore systemsbiology blum2000 lhsecretion 1 BioModels0000000077 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

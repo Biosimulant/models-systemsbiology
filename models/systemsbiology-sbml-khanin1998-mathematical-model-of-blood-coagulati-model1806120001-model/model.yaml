@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Khanin1998MathematicalModelOfBloodCoagulatiModel1806120001Model'
-description: Blood coagulation model for prothrombin time test.
+description: "Blood coagulation model for prothrombin time test. It can be used to explore systemsbiology khanin1998 mathematical of blood coagulati dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

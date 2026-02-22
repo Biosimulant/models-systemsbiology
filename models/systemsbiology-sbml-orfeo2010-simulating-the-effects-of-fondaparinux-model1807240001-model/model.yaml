@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Orfeo2010SimulatingTheEffectsOfFondaparinuxModel1807240001Model'
-description: Reused mathematical model (Hockin et al., 2002) of blood coagulation
-  simulating the effects of coagulation factor inhibitors, fondaparinux (synthetic
-  heparin) and Rivaroxaban. Fondaparinux (Fpx) simul
+description: "Reused mathematical model (Hockin et al., 2002) of blood coagulation simulating the effects of coagulation factor inhibitors, fondaparinux (synthetic heparin) and Rivaroxaban. It can be used to explore systemsbiology orfeo2010 simulating the effects of dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

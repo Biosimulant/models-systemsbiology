@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Sorokina2011StarchmetabolismOstreococcusModel1204240000Model'
-description: "This model is from the article: Microarray data can predict diurnal\
-  \ changes of starch content in the picoalga Ostreococcus. Sorokina O, Corellou F,\
-  \ Dauvill\xE9e D, Sorokin A, Goryanin I, Ball S, Bouget F"
+description: "This model is from the article: Microarray data can predict diurnal changes of starch content in the picoalga Ostreococcus. Sorokina O, Corellou F, Dauvill\u00e9e D, Sorokin A, Goryanin I, Ball S, Bouget F."
 standard: other
 tags:
 - systemsbiology

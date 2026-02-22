@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Kamihira2000CalcitoninFibrillationKineticsBiomd0000000614Model'
-description: Kamihira2000 - calcitonin fibrillation kinetics This model studies the
-  kinetics of human calcitonin fibrillation described as a two-step process. Empirical
-  data is used to determine the parameter valu
+description: "Kamihira2000 - calcitonin fibrillation kinetics This model studies the kinetics of human calcitonin fibrillation described as a two-step process. Empirical data is used to determine the parameter valu."
 standard: other
 tags:
 - systemsbiology

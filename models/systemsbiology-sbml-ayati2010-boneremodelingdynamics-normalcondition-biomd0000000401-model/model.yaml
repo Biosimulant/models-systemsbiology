@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Ayati2010BoneremodelingdynamicsNormalconditionBiomd0000000401Model'
-description: 'This a model from the article: A mathematical model of bone remodeling
-  dynamics for normal bone cell populations and myeloma bone disease Bruce P Ayati,
-  Claire M Edwards, Glenn F Webb and John P Wiksw'
+description: "This a model from the article: A mathematical model of bone remodeling dynamics for normal bone cell populations and myeloma bone disease Bruce P Ayati, Claire M Edwards, Glenn F Webb and John P Wiksw. It can be used to explore systemsbiology ayati2010 boneremodelingdynamics normalcondition BioModels0000000401 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

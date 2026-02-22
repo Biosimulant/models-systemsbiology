@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Hayer2005AmparCamkiiWeakCouplingModel9087474843Model'
-description: 'This is a model of weak coupling between the AMPAR traffikcing bistability,
-  and the CaMKII autophosphorylation bistability. In this model, there are three stable
-  states: Both off, AMPAR on, or both on'
+description: "This is a model of weak coupling between the AMPAR traffikcing bistability, and the CaMKII autophosphorylation bistability. It can be used to explore systemsbiology hayer2005 ampar camkii weak coupling dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

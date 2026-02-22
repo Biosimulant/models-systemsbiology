@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Vu2019PlanarianDoubleHeadRegenerationModel2110050001Model'
-description: This spatio-temporal model explores tissue polarity re-organization during
-  planarian double-head formation upon regeneration with beta-catenin-1 RNAi treatment.
-  Initial conditions for A and M polarity
+description: "This spatio-temporal model explores tissue polarity re-organization during planarian double-head formation upon regeneration with beta-catenin-1 RNAi treatment. It can be used to explore systemsbiology vu2019 planarian double head regeneration dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

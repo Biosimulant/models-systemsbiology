@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Nguyenlk2011UbiquitinationDynamicsInRing1bBBiomd0000000622Model'
-description: NguyenLK2011 - Ubiquitination dynamics inRing1B-Bmi1 system This theoretical
-  model investigates thedynamics of Ring1B/Bmi1 ubiquitination to identify bistableswitch-like
-  and oscillatory behaviour in t
+description: "NguyenLK2011 - Ubiquitination dynamics inRing1B-Bmi1 system This theoretical model investigates thedynamics of Ring1B/Bmi1 ubiquitination to identify bistableswitch-like and oscillatory behaviour in t. It can be used to explore systemsbiology nguyenlk2011 ubiquitination dynamics in ring1b dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

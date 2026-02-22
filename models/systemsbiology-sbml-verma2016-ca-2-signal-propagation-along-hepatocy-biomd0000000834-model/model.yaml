@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Verma2016Ca2SignalPropagationAlongHepatocyBiomd0000000834Model'
-description: 'Verma2016 - Ca(2+) Signal Propagation Along Hepatocyte Cords This model
-  is described in the article: Computational Modeling of Spatiotemporal Ca(2+) Signal
-  Propagation Along Hepatocyte Cords. Verma A,'
+description: "Verma2016 - Ca(2+) Signal Propagation Along Hepatocyte Cords This model is described in the article: Computational Modeling of Spatiotemporal Ca(2+) Signal Propagation Along Hepatocyte Cords. It can be used to explore systemsbiology verma2016 ca 2 signal propagation dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

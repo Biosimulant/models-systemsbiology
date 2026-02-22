@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Edelstein1996EpspAchEventBiomd0000000001Model'
-description: Edelstein1996 - EPSP ACh event Model of a nicotinic Excitatory Post-Synaptic
-  Potential in a Torpedo electric organ. Acetylcholine is not represented explicitely,
-  but by an event that changes the const
+description: "Edelstein1996 - EPSP ACh event Model of a nicotinic Excitatory Post-Synaptic Potential in a Torpedo electric organ. Acetylcholine is not represented explicitely, but by an event that changes the const."
 standard: other
 tags:
 - systemsbiology

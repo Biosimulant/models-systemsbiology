@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Zi2007TgfbetaSignalingBiomd0000000163Model'
-description: The model reproduces the time profiles of Total Smad2 in the nucleus
-  as well as the cytoplasm as depicted in 2D and also the other time profiles as depicted
-  in Fig 2. Two parameters that are not prese
+description: "The model reproduces the time profiles of Total Smad2 in the nucleus as well as the cytoplasm as depicted in 2D and also the other time profiles as depicted in Fig 2. It can be used to explore systemsbiology zi2007 tgfbeta signaling BioModels0000000163 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

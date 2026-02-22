@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Graner1992SimulationOfBiologicalCellSortingModel2212170001Model'
-description: 'A CompuCell3D model simulating the sorting of a mixture of two types
-  of biological cells using a modified version of the large-Q Potts model with differential
-  adhesivity.Run model on nanoHUB: https://'
+description: "A CompuCell3D model simulating the sorting of a mixture of two types of biological cells using a modified version of the large-Q Potts model with differential adhesivity.Run model on nanoHUB: https://. It can be used to explore systemsbiology graner1992 simulation of biological cell dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

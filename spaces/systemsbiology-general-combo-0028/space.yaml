@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Systemsbiology: General (COMBO_0028)'
-description: Systemsbiology general comparative space with 2 models, configured as
-  non-causal co-simulation.
+description: "Systemsbiology General (COMBO_0028) organizes blum2000_lhsecre_1, boada2016_incohe_2, state_compare_mon into a comparative simulation setup to examine how general mechanisms compare across these models. When you run it, you can compare participant trajectories through shared runtime settings and routed output streams."
 models:
 - repo: Biosimulant/models-systemsbiology
   alias: blum2000_lhsecre_1

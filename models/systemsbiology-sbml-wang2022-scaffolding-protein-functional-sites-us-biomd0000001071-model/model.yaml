@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Wang2022ScaffoldingProteinFunctionalSitesUsBiomd0000001071Model'
-description: "Deep learning approaches for scaffolding such functional sites without\
-  \ needing to prespecify the fold or secondary structure of the scaffold. The first\
-  \ approach, \u201Cconstrained hallucination,\u201D optimizes"
+description: "Deep learning approaches for scaffolding such functional sites without needing to prespecify the fold or secondary structure of the scaffold. It can be used to explore systemsbiology wang2022 scaffolding protein functional sites dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

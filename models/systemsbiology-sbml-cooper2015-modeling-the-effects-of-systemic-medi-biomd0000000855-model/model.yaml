@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Cooper2015ModelingTheEffectsOfSystemicMediBiomd0000000855Model'
-description: This is an ordinary differential equation-based mathematical model describing
-  the inflammatory phase of the wound healing response. The model describes the interactions
-  in the wound between wound debr
+description: "This is an ordinary differential equation-based mathematical model describing the inflammatory phase of the wound healing response. The model describes the interactions in the wound between wound debr."
 standard: other
 tags:
 - systemsbiology

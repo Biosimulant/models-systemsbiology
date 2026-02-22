@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Watanabe2018StateTransitionModelDependentOnModel1803120005Model'
-description: 'Model dependent on changing parameters.There are 3 disease states: Healthy,
-  Sick, and Dead, where the Dead state is terminal.The yearly transition probabilities
-  are:Healthy to Dead: Age/1000; Healthy '
+description: "Model dependent on changing parameters.There are 3 disease states: Healthy, Sick, and Dead, where the Dead state is terminal.The yearly transition probabilities are:Healthy to Dead: Age/1000; Healthy. It can be used to explore systemsbiology watanabe2018 state transition dependent on dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

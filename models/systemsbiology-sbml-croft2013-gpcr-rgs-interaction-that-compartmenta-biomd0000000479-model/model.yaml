@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Croft2013GpcrRgsInteractionThatCompartmentaBiomd0000000479Model'
-description: Croft2013 - GPCR-RGS interaction that compartmentalizes RGS activity
-  Through modelling studies, the classic quaternary complex (ligand-GPCR-G-RGS) has
-  been extended to include an additional layer of r
+description: "Croft2013 - GPCR-RGS interaction that compartmentalizes RGS activity Through modelling studies, the classic quaternary complex (ligand-GPCR-G-RGS) has been extended to include an additional layer of r. It can be used to explore systemsbiology croft2013 gpcr rgs interaction that dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

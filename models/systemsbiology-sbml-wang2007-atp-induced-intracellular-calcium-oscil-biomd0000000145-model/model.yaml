@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Wang2007AtpInducedIntracellularCalciumOscilBiomd0000000145Model'
-description: Wang2007 - ATP induced intracellular Calicum Oscillation The model simulate
-  the ATP-induced intracellular Ca 2+ oscillations and the quantitative effect of
-  ATP concentration on the oscillation charact
+description: "Wang2007 - ATP induced intracellular Calicum Oscillation The model simulate the ATP-induced intracellular Ca 2+ oscillations and the quantitative effect of ATP concentration on the oscillation charact. It can be used to explore systemsbiology wang2007 atp induced intracellular calcium dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

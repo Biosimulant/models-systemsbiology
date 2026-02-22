@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: MouseIronDistributionDeficientIronDietNoTBiomd0000000737Model'
-description: 'Mouse Iron Distribution Dynamics Dynamic model of iron distribution
-  in mice. This model includes only normal iron with the parameters that fit the data
-  from Lopes et al. 2010 for mice fed a deficient '
+description: "Mouse Iron Distribution Dynamics Dynamic model of iron distribution in mice. This model includes only normal iron with the parameters that fit the data from Lopes et al."
 standard: other
 tags:
 - systemsbiology

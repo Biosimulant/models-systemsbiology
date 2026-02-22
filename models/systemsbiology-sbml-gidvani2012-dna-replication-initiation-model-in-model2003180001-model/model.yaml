@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Gidvani2012DnaReplicationInitiationModelInModel2003180001Model'
-description: A quantitative model of the initiation of DNA replication in Saccharomyces
-  cerevisiae predicts the effects of system perturbations. Model is encoded by Matthew
-  Maire and submitted in BioModels by Kris
+description: "A quantitative model of the initiation of DNA replication in Saccharomyces cerevisiae predicts the effects of system perturbations. Model is encoded by Matthew Maire and submitted in BioModels by Kris."
 standard: other
 tags:
 - systemsbiology

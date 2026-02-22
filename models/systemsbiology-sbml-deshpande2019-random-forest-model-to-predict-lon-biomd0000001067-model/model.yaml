@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Deshpande2019RandomForestModelToPredictLonBiomd0000001067Model'
-description: This is a Random Forest algorithm-based machine learning model to predict
-  lncRNAs from coding mRNAs in plant transcriptomic data. The model assigns 1 for
-  coding sequences and 2 for long non-coding seq
+description: "This is a Random Forest algorithm-based machine learning model to predict lncRNAs from coding mRNAs in plant transcriptomic data. The model assigns 1 for coding sequences and 2 for long non-coding seq."
 standard: other
 tags:
 - systemsbiology

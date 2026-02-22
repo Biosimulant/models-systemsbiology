@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Faville2008UpdepolarizationModel0912044015Model'
-description: 'This a model from the article: A biophysically based mathematical model
-  of unitary potential activity ininterstitial cells of Cajal. Faville RA, Pullan
-  AJ, Sanders KM, Smith NP. Biophys J 2008 Jul;95('
+description: "This a model from the article: A biophysically based mathematical model of unitary potential activity ininterstitial cells of Cajal. Faville RA, Pullan AJ, Sanders KM, Smith NP."
 standard: other
 tags:
 - systemsbiology

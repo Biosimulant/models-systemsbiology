@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Heldt2018ProliferationQuiescenceDecisionInRBiomd0000000700Model'
-description: 'Heldt2018 - Proliferation-quiescence decisionin response to DNA damage
-  This model is described in the article: A comprehensive model for the proliferation-quiescence
-  decision in response to endogenous'
+description: "Heldt2018 - Proliferation-quiescence decisionin response to DNA damage This model is described in the article: A comprehensive model for the proliferation-quiescence decision in response to endogenous. It can be used to explore systemsbiology heldt2018 proliferation quiescence decision in dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

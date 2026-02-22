@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Astaburuaga2019OdeModelOfLysosomalIonHomeoModel1910220001Model'
-description: To investigate the putative differential effect of chloride transport
-  on lysosomal ion homeostasis,we generated an ODE mathematical model for this system.
-  Our mathematical model builds upon a previous
+description: "To investigate the putative differential effect of chloride transport on lysosomal ion homeostasis,we generated an ODE mathematical model for this system. It can be used to explore systemsbiology astaburuaga2019 ode of lysosomal ion dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

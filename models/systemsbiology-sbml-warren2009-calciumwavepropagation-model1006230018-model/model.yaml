@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Warren2009CalciumwavepropagationModel1006230018Model'
-description: 'This a model from the article: Mathematical modelling of calcium wave
-  propagation in mammalian airwayepithelium: evidence for regenerative ATP release.
-  Warren NJ, Tawhai MH, Crampin EJ. Exp Physiol 20'
+description: "This a model from the article: Mathematical modelling of calcium wave propagation in mammalian airwayepithelium: evidence for regenerative ATP release. It can be used to explore systemsbiology warren2009 calciumwavepropagation model1006230018 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

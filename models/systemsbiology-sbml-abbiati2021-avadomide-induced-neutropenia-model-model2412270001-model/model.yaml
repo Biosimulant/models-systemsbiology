@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Abbiati2021AvadomideInducedNeutropeniaModelModel2412270001Model'
-description: 'This is the model for avadomide-induced neutropenia published by Abbiati
-  et al. in 2021:Citation: Roberto A. Abbiati, Michael Pourdehnad, Soraya Carrancio,
-  Daniel W. Pierce, Shailaja Kasibhatla, Mark '
+description: "This is the model for avadomide-induced neutropenia published by Abbiati et al. It can be used to explore systemsbiology abbiati2021 avadomide induced neutropenia model2412270001 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

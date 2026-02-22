@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: GpcrCubicTernaryComplexWithGProteinCycleModel2306220001Model'
-description: A model of G protein activation using ordinary differential equations.
-  Used to fit to experimental data obtained from the TRUPATH platform.
+description: "A model of G protein activation using ordinary differential equations. Used to fit to experimental data obtained from the TRUPATH platform."
 standard: other
 tags:
 - systemsbiology

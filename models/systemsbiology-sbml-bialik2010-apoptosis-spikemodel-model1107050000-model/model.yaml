@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Bialik2010ApoptosisSpikemodelModel1107050000Model'
-description: 'This model is from the article: Systems biology analysis of programmed
-  cell death Shani Bialik, Einat Zalckvar, Yaara Ber, Assaf D. Rubinstein, Adi Kimchi
-  Trends in Biochemical Sciences Volume 35, Iss'
+description: "This model is from the article: Systems biology analysis of programmed cell death Shani Bialik, Einat Zalckvar, Yaara Ber, Assaf D. Rubinstein, Adi Kimchi Trends in Biochemical Sciences Volume 35, Iss."
 standard: other
 tags:
 - systemsbiology

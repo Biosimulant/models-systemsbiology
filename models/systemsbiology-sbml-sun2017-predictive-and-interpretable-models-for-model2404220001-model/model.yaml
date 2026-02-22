@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Sun2017PredictiveAndInterpretableModelsForModel2404220001Model'
-description: Parallel Artificial Membrane Permeability is an in vitro surrogate to
-  determine the permeability of drugs across cellular membranes. PAMPA at pH 7.4 was
-  experimentally determined in a dataset of 5,473
+description: "Parallel Artificial Membrane Permeability is an in vitro surrogate to determine the permeability of drugs across cellular membranes. It can be used to explore systemsbiology sun2017 predictive and interpretable for dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

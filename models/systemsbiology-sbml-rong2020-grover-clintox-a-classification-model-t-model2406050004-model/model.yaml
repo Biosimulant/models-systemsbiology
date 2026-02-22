@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Rong2020GroverClintoxAClassificationModelTModel2406050004Model'
-description: This model has been trained using the GROVER transformer and the Molecule
-  Net dataset ClinTox, the authors trained a classification model to predict the likelihood
-  of failure in clinical trials due to
+description: "This model has been trained using the GROVER transformer and the Molecule Net dataset ClinTox, the authors trained a classification model to predict the likelihood of failure in clinical trials due to. It can be used to explore systemsbiology rong2020 grover clintox a classification dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

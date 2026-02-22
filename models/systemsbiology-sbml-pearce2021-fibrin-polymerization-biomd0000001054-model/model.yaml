@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Pearce2021FibrinPolymerizationBiomd0000001054Model'
-description: Here is an ode model for in vitro fibrin matrix polymerization reproducing
-  interactions among fibrinogen, fibrin and other proteins involved in the homeostatic
-  phase of wound healing.
+description: "Here is an ode model for in vitro fibrin matrix polymerization reproducing interactions among fibrinogen, fibrin and other proteins involved in the homeostatic phase of wound healing. It can be used to explore systemsbiology pearce2021 fibrin polymerization BioModels0000001054 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Mayya2005StatmoduleBiomd0000000167Model'
-description: The model reproduces Fig 2B of the paper. Model successfully reproduced
-  using MathSBML. To the extent possible under law, all copyright and related or neighbouring
-  rights to this encoded model have be
+description: "The model reproduces Fig 2B of the paper. It can be used to explore systemsbiology mayya2005 statmodule BioModels0000000167 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

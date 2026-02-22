@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Bungay2003ThrombinGenerationBiomd0000000334Model'
-description: 'This model is from the article: A mathematical model of lipid-mediated
-  thrombin generation Bungay Sharene D., Gentry Patricia A., Gentry Rodney D. Mathematical
-  Medicine and Biology Volume 20, Issue 1,'
+description: "This model is from the article: A mathematical model of lipid-mediated thrombin generation Bungay Sharene D., Gentry Patricia A., Gentry Rodney D. It can be used to explore systemsbiology bungay2003 thrombin generation BioModels0000000334 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

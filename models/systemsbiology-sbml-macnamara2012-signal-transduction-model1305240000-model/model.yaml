@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Macnamara2012SignalTransductionModel1305240000Model'
-description: 'MacNamara2012 - Signal transduction A toy model of signal tranduction
-  to illustrate how different logic formalizms (Boolean, fuzzy logic and differential
-  equations) treat state and time, is described '
+description: "MacNamara2012 - Signal transduction A toy model of signal tranduction to illustrate how different logic formalizms (Boolean, fuzzy logic and differential equations) treat state and time, is described. It can be used to explore systemsbiology macnamara2012 signal transduction model1305240000 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

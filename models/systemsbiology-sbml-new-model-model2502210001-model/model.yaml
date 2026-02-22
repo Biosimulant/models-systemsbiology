@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: NewModelModel2502210001Model'
-description: Toy model used to validate DynafluxR, as detailed in the publication.
+description: "Toy model used to validate DynafluxR, as detailed in the publication. It can be used to explore systemsbiology new model2502210001 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Boada2016IncoherentType1FeedForwardLoopI1Biomd0000000696Model'
-description: Boada2016 - Incoherent type 1 feed-forwardloop (I1-FFL) A synthetic-biology
-  mathematicalmodelling framework that was constructed to provide guidelines forexperimental
-  implementation and parameter opti
+description: "Boada2016 - Incoherent type 1 feed-forwardloop (I1-FFL) A synthetic-biology mathematicalmodelling framework that was constructed to provide guidelines forexperimental implementation and parameter opti. It can be used to explore systemsbiology boada2016 incoherent type 1 feed dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

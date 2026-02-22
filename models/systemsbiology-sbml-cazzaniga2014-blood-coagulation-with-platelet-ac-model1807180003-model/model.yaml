@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Cazzaniga2014BloodCoagulationWithPlateletAcModel1807180003Model'
-description: Mathematical model of blood coagulation with platelet activation. Model
-  includes factor XII, factor VIIIa fragments, meizothrombin, kallikrein, C1-inhibitor,
-  alpha1-Antitrypsin, alpha2-Antiplasmin, fi
+description: "Mathematical model of blood coagulation with platelet activation. Model includes factor XII, factor VIIIa fragments, meizothrombin, kallikrein, C1-inhibitor, alpha1-Antitrypsin, alpha2-Antiplasmin, fi."
 standard: other
 tags:
 - systemsbiology

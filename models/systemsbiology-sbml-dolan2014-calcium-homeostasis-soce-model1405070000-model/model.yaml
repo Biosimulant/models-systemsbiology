@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Dolan2014CalciumHomeostasisSoceModel1405070000Model'
-description: Faithful wrapper of upstream SBML model.
+description: "Systems Biology Dolan2014Calcium Homeostasis Soce Model1405070000Model captures systemsbiology dolan2014 calcium homeostasis soce model1405070000 behavior in the context of systemsbiology, sbml, biomodels_ebi u. When you run it, you can observe state and evaluate how the modeled system changes across runs."
 standard: other
 tags:
 - systemsbiology

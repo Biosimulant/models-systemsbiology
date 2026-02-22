@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Baugh1998RegulationOfCoagulationFactorXaByModel1807180001Model'
-description: Basic mathematical model of the formation of coagulation factor Xa involving
-  TF:VIIa and its inhibition by TFPI.
+description: "Basic mathematical model of the formation of coagulation factor Xa involving TF:VIIa and its inhibition by TFPI. It can be used to explore systemsbiology baugh1998 regulation of coagulation factor dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

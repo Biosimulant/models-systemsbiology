@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Lavrentovich2008CaOscillationsBiomd0000000184Model'
-description: The model reproduces the time profile of cytoplasmic Calcium as depicted
-  in Fig 3 of the paper. Model successfully reproduced using Jarnac and MathSBML.
-  To the extent possible under law, all copyright
+description: "The model reproduces the time profile of cytoplasmic Calcium as depicted in Fig 3 of the paper. It can be used to explore systemsbiology lavrentovich2008 ca oscillations BioModels0000000184 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

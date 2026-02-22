@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Zhang2000PeripheralSinoatrialNodeModel6962035527Model'
-description: 'This the model describing the action potentials of the peripheral rabbit
-  sinoatrial node from the article: Mathematical models of action potentials in the
-  periphery and center of the rabbit sinoatrial'
+description: "This the model describing the action potentials of the peripheral rabbit sinoatrial node from the article: Mathematical models of action potentials in the periphery and center of the rabbit sinoatrial. It can be used to explore systemsbiology zhang2000 peripheral sinoatrial node model6962035527 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

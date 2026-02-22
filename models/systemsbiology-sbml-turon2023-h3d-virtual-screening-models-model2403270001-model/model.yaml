@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Turon2023H3dVirtualScreeningModelsModel2403270001Model'
-description: 'The H3D virtual screening cascade contains models for Mycobacterium
-  tuberculosis and Plasmodium falciparum IC50 predictions, as well as ADME, cytotoxicity,
-  and solubility assays. Model Type: Predictiv'
+description: "The H3D virtual screening cascade contains models for Mycobacterium tuberculosis and Plasmodium falciparum IC50 predictions, as well as ADME, cytotoxicity, and solubility assays. It can be used to explore systemsbiology turon2023 h3d virtual screening model2403270001 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

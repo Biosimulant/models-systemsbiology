@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Bekkar2018Il1bSecretionAndRegulationInAtheModel1712240002Model'
-description: This network was obtained by combining (with an OR logical operator)
-  the following list of IL1B_secretion activators:TXNIP AND IL1B - reference in pubmed:23747245IL1B
-  AND hydrogen_peroxide - reference
+description: "This network was obtained by combining (with an OR logical operator) the following list of IL1B_secretion activators:TXNIP AND IL1B - reference in pubmed:23747245IL1B AND hydrogen_peroxide - reference. It can be used to explore systemsbiology bekkar2018 il1b secretion and regulation dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

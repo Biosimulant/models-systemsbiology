@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Haffez2017RarInteractionWithSyntheticAnalogBiomd0000000629Model'
-description: 'Haffez2017 - RAR interaction with syntheticanalogues This model is described
-  in the article: The molecular basis of the interactions between synthetic retinoic
-  acid analogues and the retinoic acid rec'
+description: "Haffez2017 - RAR interaction with syntheticanalogues This model is described in the article: The molecular basis of the interactions between synthetic retinoic acid analogues and the retinoic acid rec. It can be used to explore systemsbiology haffez2017 rar interaction with synthetic dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

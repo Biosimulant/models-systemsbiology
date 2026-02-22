@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Sharma2017LDonovaniIms604Model2408040003Model'
-description: FROG and miniFROG reports provided for iMS604. The model can be found
-  in the Supporting Information of the Sharma et al, 2017 paper cited here.
+description: "FROG and miniFROG reports provided for iMS604. The model can be found in the Supporting Information of the Sharma et al, 2017 paper cited here."
 standard: other
 tags:
 - systemsbiology

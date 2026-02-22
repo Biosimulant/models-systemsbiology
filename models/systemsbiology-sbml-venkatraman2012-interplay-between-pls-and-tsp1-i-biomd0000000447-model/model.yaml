@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Venkatraman2012InterplayBetweenPlsAndTsp1IBiomd0000000447Model'
-description: "Venkatraman2012 - Interplay between PLS and TSP1 in TGF-\u03B21 activation\
-  \ The interplay between PLS (Plasmin) and TSP1 (Thrombospondin-1) in TGF-\u03B2\
-  1 (Transforming growth factor-\u03B21)is shown using mathematic"
+description: "Venkatraman2012 - Interplay between PLS and TSP1 in TGF-\u03b21 activation The interplay between PLS (Plasmin) and TSP1 (Thrombospondin-1) in TGF-\u03b21 (Transforming growth factor-\u03b21)is shown using mathematic. It can be used to explore systemsbiology venkatraman2012 interplay between pls and dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

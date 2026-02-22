@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Pereira2020DiscoveringGrowthInhibitorsOfNeiModel2405080003Model'
-description: "The authors curated a dataset of 282 compounds from ChEMBL, of which\
-  \ 160 (56.7%) were labeled as active N. gonorrhoeae inhibitor compounds. They used\
-  \ this dataset to build a na\xEFve Bayesian model and u"
+description: "The authors curated a dataset of 282 compounds from ChEMBL, of which 160 (56.7%) were labeled as active N. It can be used to explore systemsbiology pereira2020 discovering growth inhibitors of dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

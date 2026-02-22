@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Rong2020GroverQm7AtomizationEnergyPredictioModel2406040003Model'
-description: This model has been trained using the GROVER embedding with the QM7 dataset
-  from MoleculeNet, a subset of GDB13 containing all molecules up to 23 atoms (7 heavy
-  atoms + C, S, O, N). This dataset conta
+description: "This model has been trained using the GROVER embedding with the QM7 dataset from MoleculeNet, a subset of GDB13 containing all molecules up to 23 atoms (7 heavy atoms + C, S, O, N). It can be used to explore systemsbiology rong2020 grover qm7 atomization energy dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

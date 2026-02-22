@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Salazar2009PhotoperiodicregulationModel1005050000Model'
-description: "This a model from the article: Prediction of photoperiodic regulators\
-  \ from quantitative gene circuit models. Salazar JD, Saithong T, Brown PE, Foreman\
-  \ J, Locke JC, Halliday KJ, Carr\xE9 IA, Rand DA, Mill"
+description: "This a model from the article: Prediction of photoperiodic regulators from quantitative gene circuit models. Salazar JD, Saithong T, Brown PE, Foreman J, Locke JC, Halliday KJ, Carr\u00e9 IA, Rand DA, Mill."
 standard: other
 tags:
 - systemsbiology

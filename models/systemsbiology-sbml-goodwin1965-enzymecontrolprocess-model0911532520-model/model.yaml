@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Goodwin1965EnzymecontrolprocessModel0911532520Model'
-description: 'This a model from the article: Oscillatory behavior in enzymatic control
-  processes. Goodwin BC. Adv Enzyme Regul 1965;3:425-38 5861813 , Abstract: The demonstration
-  of negative feedback control proces'
+description: "This a model from the article: Oscillatory behavior in enzymatic control processes. It can be used to explore systemsbiology goodwin1965 enzymecontrolprocess model0911532520 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

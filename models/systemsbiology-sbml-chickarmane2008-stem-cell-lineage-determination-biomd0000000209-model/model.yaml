@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Chickarmane2008StemCellLineageDeterminationBiomd0000000209Model'
-description: 'Chickarmane2008 - Stem cell lineage determination In this work, a dynamical
-  model of lineage determination based upon a minimal circuit, as discussed in PMID:
-  17215298 , which contains the Oct4/Sox2/N'
+description: "Chickarmane2008 - Stem cell lineage determination In this work, a dynamical model of lineage determination based upon a minimal circuit, as discussed in PMID: 17215298 , which contains the Oct4/Sox2/N. It can be used to explore systemsbiology chickarmane2008 stem cell lineage determination dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

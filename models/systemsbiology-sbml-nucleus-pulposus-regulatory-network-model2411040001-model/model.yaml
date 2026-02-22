@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: NucleusPulposusRegulatoryNetworkModel2411040001Model'
-description: We have added and new protein
+description: "Systems Biology Nucleus Pulposus Regulatory Network Model2411040001Model models core biological dynamics as a OTHER simulation curated from biomodels_ebi (biomodels_ebi:MODEL2411040001), focused on systemsbiolo. When you run it, you can track state over time and compare response patterns across parameter settings."
 standard: other
 tags:
 - systemsbiology

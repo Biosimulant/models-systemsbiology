@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Bartholome2007MdckiiBiomd0000000197Model'
-description: 'SBML model exported from PottersWheel on 2007-09-19 15:35:47. The values
-  for parameters and the inital concentrations of this model where directly provided
-  by the main author: Parameter values paramet'
+description: "SBML model exported from PottersWheel on 2007-09-19 15:35:47. The values for parameters and the inital concentrations of this model where directly provided by the main author: Parameter values paramet."
 standard: other
 tags:
 - systemsbiology

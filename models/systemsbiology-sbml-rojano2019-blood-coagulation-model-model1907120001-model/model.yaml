@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Rojano2019BloodCoagulationModelModel1907120001Model'
-description: 'Blood coagulation mathematical model derived from Chatterjee et al.
-  (2010) and Hockin et al. (2002). Included various inhibitors: TFPI, ATIII, generic
-  kallikrein inhibitor, C1-inhibitor, alpha1-antitr'
+description: "Blood coagulation mathematical model derived from Chatterjee et al. It can be used to explore systemsbiology rojano2019 blood coagulation model1907120001 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Siebert2008MusclecontractionCcsecModel1006230120Model'
-description: 'This a model from the article: Nonlinearities make a difference: comparison
-  of two common Hill-type models withreal muscle. Siebert T, Rode C, Herzog W, Till
-  O, Blickhan R. Biol Cybern 2008 Feb;98(2):'
+description: "This a model from the article: Nonlinearities make a difference: comparison of two common Hill-type models withreal muscle. Siebert T, Rode C, Herzog W, Till O, Blickhan R."
 standard: other
 tags:
 - systemsbiology

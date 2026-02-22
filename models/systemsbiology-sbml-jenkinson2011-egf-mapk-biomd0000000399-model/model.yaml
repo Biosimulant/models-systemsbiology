@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Jenkinson2011EgfMapkBiomd0000000399Model'
-description: 'This is a model described in the article: Thermodynamically Consistent
-  Model Calibration in Chemical Kinetics. Garrett Jenkinson and John Goutsias, BMC
-  Systems Biology 2011 May 6;5(1):64.; PMID: 21548'
+description: "This is a model described in the article: Thermodynamically Consistent Model Calibration in Chemical Kinetics. It can be used to explore systemsbiology jenkinson2011 egf mapk BioModels0000000399 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

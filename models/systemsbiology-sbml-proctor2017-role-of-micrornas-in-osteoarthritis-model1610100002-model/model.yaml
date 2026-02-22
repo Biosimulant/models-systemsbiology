@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Proctor2017RoleOfMicrornasInOsteoarthritisModel1610100002Model'
-description: 'Proctor2017- Role of microRNAs inosteoarthritis (Negative Feedback By
-  MicroRNA with Delay) This model is described in the article: Computer simulation
-  models as a tool to investigate the role of micro'
+description: "Proctor2017- Role of microRNAs inosteoarthritis (Negative Feedback By MicroRNA with Delay) This model is described in the article: Computer simulation models as a tool to investigate the role of micro. It can be used to explore systemsbiology proctor2017 role of micrornas in dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

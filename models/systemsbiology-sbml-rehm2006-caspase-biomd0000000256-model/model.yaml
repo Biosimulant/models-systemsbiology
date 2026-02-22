@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Rehm2006CaspaseBiomd0000000256Model'
-description: 'This is the standard model described in the article: Systems analysis
-  of effector caspase activation and its control by X-linked inhibitor of apoptosis
-  protein. Rehm M, Huber HJ, Dussmann H, Prehn JH.'
+description: "This is the standard model described in the article: Systems analysis of effector caspase activation and its control by X-linked inhibitor of apoptosis protein. Rehm M, Huber HJ, Dussmann H, Prehn JH."
 standard: other
 tags:
 - systemsbiology

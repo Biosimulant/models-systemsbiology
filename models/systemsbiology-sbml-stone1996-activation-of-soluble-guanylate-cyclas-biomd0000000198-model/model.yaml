@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Stone1996ActivationOfSolubleGuanylateCyclasBiomd0000000198Model'
-description: Stone1996 - activation of soluble guanylatecyclase by nitric oxide This
-  features the two step binding ofNO to soluble Guanylyl Cyclase as proposed by StoneJR,
-  Marletta MA. Biochemistry (1996) 35(4):10
+description: "Stone1996 - activation of soluble guanylatecyclase by nitric oxide This features the two step binding ofNO to soluble Guanylyl Cyclase as proposed by StoneJR, Marletta MA. It can be used to explore systemsbiology stone1996 activation of soluble guanylate dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

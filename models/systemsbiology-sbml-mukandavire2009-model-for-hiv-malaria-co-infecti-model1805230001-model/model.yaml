@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Mukandavire2009ModelForHivMalariaCoInfectiModel1805230001Model'
-description: Mathematical model for HIV, malaria and HIV-malaria co-infection.
+description: "Mathematical model for HIV, malaria and HIV-malaria co-infection. It can be used to explore systemsbiology mukandavire2009 for hiv malaria co dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

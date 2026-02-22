@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Vondassow2000SegmentPolarityNetworkModelOnBiomd0000001065Model'
-description: This is the segment polarity network model described by von Dassow et
-  al. (2000). It represents a toroidal hexagonal array of cells (1x4), where each
-  cell can express various genes (winglessengrailed,
+description: "This is the segment polarity network model described by von Dassow et al. It can be used to explore systemsbiology vondassow2000 segment polarity network on dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

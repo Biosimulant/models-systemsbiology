@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: LlorNsrico2016EffectsOfCisEncodedAntisenseModel1511170000Model'
-description: "Llor\xE9nsRico2016 - Effects of cis-Encoded antisense RNAs (asRNAs)\
-  \ - Case1 Three putative effects of the asRNAs were considered in this study: in\
-  \ case 1 (this model) , the binding of the asRNA to the co"
+description: "Llor\u00e9nsRico2016 - Effects of cis-Encoded antisense RNAs (asRNAs) - Case1 Three putative effects of the asRNAs were considered in this study: in case 1 (this model) , the binding of the asRNA to the co. It can be used to explore systemsbiology llor nsrico2016 effects of cis dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

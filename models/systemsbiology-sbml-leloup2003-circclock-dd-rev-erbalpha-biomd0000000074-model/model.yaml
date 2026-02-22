@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Leloup2003CircclockDdRevErbalphaBiomd0000000074Model'
-description: This is model in continous darkness (DD) described in the article Toward
-  a detailed computational model for the mammalian circadian clock This model features
-  the full interlocked negative and positive
+description: "This is model in continous darkness (DD) described in the article Toward a detailed computational model for the mammalian circadian clock This model features the full interlocked negative and positive. It can be used to explore systemsbiology leloup2003 circclock dd rev erbalpha dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

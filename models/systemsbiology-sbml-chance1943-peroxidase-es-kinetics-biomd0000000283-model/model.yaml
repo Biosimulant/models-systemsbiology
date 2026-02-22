@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Chance1943PeroxidaseEsKineticsBiomd0000000283Model'
-description: 'Default parameter values are those in the right hand panel of Fig 12.
-  The other panels may be obtained by setting X to 1, 2 or 4, and K3 to 0, 1/2 or
-  1. This model is described in: The kinetics of the'
+description: "Default parameter values are those in the right hand panel of Fig 12. It can be used to explore systemsbiology chance1943 peroxidase es kinetics BioModels0000000283 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

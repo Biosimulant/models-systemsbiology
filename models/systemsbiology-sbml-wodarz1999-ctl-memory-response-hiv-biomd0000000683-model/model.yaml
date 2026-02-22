@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Wodarz1999CtlMemoryResponseHivBiomd0000000683Model'
-description: 'This a model from the article: Specific therapy regimes could lead to
-  long-term immunological control of HIV. Wodarz D, Nowak MA. Proc Natl Acad Sci U
-  S A 1999 Dec 7;96(25):14464-9 10588728 , Abstract'
+description: "This a model from the article: Specific therapy regimes could lead to long-term immunological control of HIV. It can be used to explore systemsbiology wodarz1999 ctl memory response hiv dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

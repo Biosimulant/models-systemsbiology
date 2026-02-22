@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Vaga2014CrossModularityBetweenHighOsmolaritModel1506260002Model'
-description: Faithful wrapper of upstream SBML model.
+description: "Systems Biology Vaga2014Cross Modularity Between High Osmolarit Model1506260002Model captures core biological behavior in the context of systemsbiology, sbml, biomodels_ebi using a biomodels_ebi-sourced OTHER m. When you run it, you can observe state and evaluate how the modeled system changes across runs."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Yao2008RbE2fSwitchBiomd0000000318Model'
-description: 'This is the model described in the article: A bistable Rb-E2F switch
-  underlies the restriction point Guang Yao, Tae Jun Lee, Seiichi Mori, Joseph R.
-  Nevins, Lingchong You, Nat Cell Biol 2008 10:476-48'
+description: "This is the model described in the article: A bistable Rb-E2F switch underlies the restriction point Guang Yao, Tae Jun Lee, Seiichi Mori, Joseph R. It can be used to explore systemsbiology yao2008 rb e2f switch BioModels0000000318 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

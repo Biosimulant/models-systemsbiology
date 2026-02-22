@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Stefan2008CalmodulinAllosteryBiomd0000000183Model'
-description: 'Stefan2008 - calmodulin allostery An allosteric model for calmodulin
-  activation, in which binding to calcium facilitates the transition between a low-affinity
-  [tense (T)] and a high-affinity [relaxed '
+description: "Stefan2008 - calmodulin allostery An allosteric model for calmodulin activation, in which binding to calcium facilitates the transition between a low-affinity [tense (T)] and a high-affinity [relaxed. It can be used to explore systemsbiology stefan2008 calmodulin allostery BioModels0000000183 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

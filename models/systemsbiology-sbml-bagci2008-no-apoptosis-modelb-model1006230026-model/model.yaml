@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Bagci2008NoApoptosisModelbModel1006230026Model'
-description: 'This a model from the article: Computational insights on the competing
-  effects of nitric oxide in regulatingapoptosis. Bagci EZ, Vodovotz Y, Billiar TR,
-  Ermentrout B, Bahar I. PLoS One 2008 May 28;3(5'
+description: "This a model from the article: Computational insights on the competing effects of nitric oxide in regulatingapoptosis. Bagci EZ, Vodovotz Y, Billiar TR, Ermentrout B, Bahar I."
 standard: other
 tags:
 - systemsbiology

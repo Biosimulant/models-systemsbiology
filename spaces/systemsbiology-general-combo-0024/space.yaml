@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Systemsbiology: General (COMBO_0024)'
-description: Systemsbiology general comparative space with 2 models, configured as
-  non-causal co-simulation.
+description: "Systemsbiology General (COMBO_0024) assembles benson2014_faah_1, bertram1995_panc_2, state_compare_mon as a comparative composed simulation to examine how general mechanisms compare across these models. When you run it, you can compare synchronized outputs through the declared wiring paths and monitor views."
 models:
 - repo: Biosimulant/models-systemsbiology
   alias: benson2014_faah_1

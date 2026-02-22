@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Hinch2004VentricularmyocytesModel0848342500Model'
-description: 'This a model from the article: A simplified local control model of calcium-induced
-  calcium release in cardiacventricular myocytes. Hinch R, Greenstein JL, Tanskanen
-  AJ, Xu L, Winslow RL. Biophys J 200'
+description: "This a model from the article: A simplified local control model of calcium-induced calcium release in cardiacventricular myocytes. Hinch R, Greenstein JL, Tanskanen AJ, Xu L, Winslow RL."
 standard: other
 tags:
 - systemsbiology

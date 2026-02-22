@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Garny2003SinoatrialnodeModel0911601070Model'
-description: 'This a model from the article: One-dimensional rabbit sinoatrial node
-  models: benefits and limitations. Garny A, Kohl P, Hunter PJ, Boyett MR, Noble D.
-  J Cardiovasc Electrophysiol 2003 Oct;14(10 Suppl'
+description: "This a model from the article: One-dimensional rabbit sinoatrial node models: benefits and limitations. Garny A, Kohl P, Hunter PJ, Boyett MR, Noble D."
 standard: other
 tags:
 - systemsbiology

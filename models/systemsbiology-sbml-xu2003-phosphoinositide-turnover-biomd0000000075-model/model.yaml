@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Xu2003PhosphoinositideTurnoverBiomd0000000075Model'
-description: Xu2003 - Phosphoinositide turnover The model reproduces the percentage
-  change of PIP_PM, PIP2_PM and IP3_Cyt as depicted in Figure 1 of the paper. The
-  model also contains the equations for the analysi
+description: "Xu2003 - Phosphoinositide turnover The model reproduces the percentage change of PIP_PM, PIP2_PM and IP3_Cyt as depicted in Figure 1 of the paper. The model also contains the equations for the analysi."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: JimNezLuna2021ColoringMoleculesForForHergModel2405210007Model'
-description: By combining a Message-Passing Graph Neural Network (MPGNN) and a Forward
-  fully connected Neural Network (FNN) with an integrated gradients explainable artificial
-  intelligence (XAI) method, the author
+description: "By combining a Message-Passing Graph Neural Network (MPGNN) and a Forward fully connected Neural Network (FNN) with an integrated gradients explainable artificial intelligence (XAI) method, the author. It can be used to explore systemsbiology jim nez luna2021 coloring molecules dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

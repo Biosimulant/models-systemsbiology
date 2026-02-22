@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Dinh2019RhodosporidiumToruloidesIrhto1108Model2408140001Model'
-description: FROG and miniFROG reports provided here for the model iRhto1108 taken
-  from the Supplementary Material of the paper Dinh et al, 2019 cite here.
+description: "FROG and miniFROG reports provided here for the model iRhto1108 taken from the Supplementary Material of the paper Dinh et al, 2019 cite here. It can be used to explore systemsbiology dinh2019 rhodosporidium toruloides irhto1108 model2408140001 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Holzhutter2004ErythrocyteMetabolismBiomd0000000070Model'
-description: '. . . SBML level 2 code generated for the JWS Online project by Jacky
-  Snoep using PySCeS Run this model online at http://jjj.biochem.sun.ac.za To cite
-  JWS Online please refer to: Olivier, B.G. and Sno'
+description: ". It can be used to explore systemsbiology holzhutter2004 erythrocyte metabolism BioModels0000000070 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

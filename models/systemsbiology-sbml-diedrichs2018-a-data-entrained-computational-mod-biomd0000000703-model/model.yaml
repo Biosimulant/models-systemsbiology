@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Diedrichs2018ADataEntrainedComputationalModBiomd0000000703Model'
-description: 'A data-entrained computational model fortesting the regulatory logic
-  of the vertebrate unfolded proteinresponse This model is described in the article:
-  A data-entrained computational model for testing'
+description: "A data-entrained computational model fortesting the regulatory logic of the vertebrate unfolded proteinresponse This model is described in the article: A data-entrained computational model for testing. It can be used to explore systemsbiology diedrichs2018 a data entrained computational dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

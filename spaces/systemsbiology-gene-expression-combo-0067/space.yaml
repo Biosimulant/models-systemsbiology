@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Systemsbiology: Gene Expression (COMBO_0067)'
-description: Systemsbiology gene expression comparative space with 4 models, configured
-  as non-causal co-simulation.
+description: "Systemsbiology Gene Expression (COMBO_0067) organizes feist2006_methan_1, feist2006_methan_2, feist2006_methan_3 into a comparative simulation setup to examine how gene expression mechanisms compare across these models. When you run it, you can compare participant trajectories through shared runtime settings and routed output streams."
 models:
 - repo: Biosimulant/models-systemsbiology
   alias: feist2006_methan_1

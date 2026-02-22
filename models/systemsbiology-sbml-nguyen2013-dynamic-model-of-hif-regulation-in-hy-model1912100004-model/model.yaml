@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Nguyen2013DynamicModelOfHifRegulationInHyModel1912100004Model'
-description: Its a mathematcial model explaining regulation of HIF via FIH and oxygen.
-  Model is further validated by Experimental data and various hypothesis has been
-  tested on the same.
+description: "Its a mathematcial model explaining regulation of HIF via FIH and oxygen. Model is further validated by Experimental data and various hypothesis has been tested on the same."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Nelson2000Hiv1IntracellularDelayModel8102792069Model'
-description: 'described in: A model of HIV-1 pathogenesis that includes an intracellular
-  delay. Nelson PW, Murray JD, Perelson AS; Math Biosci. 2000 Feb;163(2):201-15. PMID:
-  10701304 ; doi: 10.1016/S0025-5564(99)00'
+description: "described in: A model of HIV-1 pathogenesis that includes an intracellular delay. Nelson PW, Murray JD, Perelson AS; Math Biosci."
 standard: other
 tags:
 - systemsbiology

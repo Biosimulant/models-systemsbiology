@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Nag2011ChloroplasticstarchdegradationBiomd0000000353Model'
-description: 'This model is from the article: Kinetic modeling and exploratory numerical
-  simulation of chloroplastic starch degradation. Nag A, Lunacek M, Graf PA, Chang
-  CH. BMC Syst Biol. 2011 Jun 18;5:94. 2168290'
+description: "This model is from the article: Kinetic modeling and exploratory numerical simulation of chloroplastic starch degradation. Nag A, Lunacek M, Graf PA, Chang CH."
 standard: other
 tags:
 - systemsbiology

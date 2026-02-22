@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Chi2019InSilicoPredictionOfPampaEffectiveModel2406030003Model'
-description: The authors provide a dataset of 200 small molecules and their experimentally
-  measured permeability in a PAMPA assay. Using this data, we have trained a model
-  that predicts the logarithm of the effect
+description: "The authors provide a dataset of 200 small molecules and their experimentally measured permeability in a PAMPA assay. Using this data, we have trained a model that predicts the logarithm of the effect."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Wang2019AMathematicalModelOfOncolyticVirotBiomd0000000772Model'
-description: A mathematical model describing oncolytic virotherapy with incorporation
-  the viral lytic cycle and the virus-specific CTL response. The thresholds for viral
-  treatment and virus-specific CTl response a
+description: "A mathematical model describing oncolytic virotherapy with incorporation the viral lytic cycle and the virus-specific CTL response. The thresholds for viral treatment and virus-specific CTl response a."
 standard: other
 tags:
 - systemsbiology

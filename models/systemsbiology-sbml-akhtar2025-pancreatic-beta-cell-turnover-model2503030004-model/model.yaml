@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Akhtar2025PancreaticBetaCellTurnoverModel2503030004Model'
-description: Beta-cells in the developing pancreas of zebrafish divide rapidly between
-  5 and 30 days post fertilization (dpf) and additional beta-cells are recruited to
-  the islet of Langerhans. Yet their overall n
+description: "Beta-cells in the developing pancreas of zebrafish divide rapidly between 5 and 30 days post fertilization (dpf) and additional beta-cells are recruited to the islet of Langerhans. It can be used to explore systemsbiology akhtar2025 pancreatic beta cell turnover dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

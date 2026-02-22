@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Smithae2002RantransportBiomd0000000164Model'
-description: The model reproduces the compartmental model for Ran transport as depicted
-  in Fig 3 of the paper. Model reproduced using MathSBML. To the extent possible under
-  law, all copyright and related or neighb
+description: "The model reproduces the compartmental model for Ran transport as depicted in Fig 3 of the paper. It can be used to explore systemsbiology smithae2002 rantransport BioModels0000000164 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

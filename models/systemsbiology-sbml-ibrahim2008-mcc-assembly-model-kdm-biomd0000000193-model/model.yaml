@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Ibrahim2008MccAssemblyModelKdmBiomd0000000193Model'
-description: 'BioSystems (2007), doi:10.1016/j.biosystems.2008.06.007 In-silico study
-  of kinetochore control, amplification, and inhibition effects in MCC assembly Bashar
-  Ibrahim, Eberhard Schmitt, Peter Dittrich, '
+description: "BioSystems (2007), doi:10.1016/j.biosystems.2008.06.007 In-silico study of kinetochore control, amplification, and inhibition effects in MCC assembly Bashar Ibrahim, Eberhard Schmitt, Peter Dittrich,. It can be used to explore systemsbiology ibrahim2008 mcc assembly kdm BioModels0000000193 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

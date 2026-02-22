@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Barr2017DynamicsOfP21InHtertRpe1CellsBiomd0000000660Model'
-description: Barr2017 - Dynamics of p21 in hTert-RPE1cells This deteministic model
-  reveals that abistable switch created by Cdt2, promotes irreversible S-phaseentry
-  by keeping p21 levels low, prevents premature S-
+description: "Barr2017 - Dynamics of p21 in hTert-RPE1cells This deteministic model reveals that abistable switch created by Cdt2, promotes irreversible S-phaseentry by keeping p21 levels low, prevents premature S-. It can be used to explore systemsbiology barr2017 dynamics of p21 in dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

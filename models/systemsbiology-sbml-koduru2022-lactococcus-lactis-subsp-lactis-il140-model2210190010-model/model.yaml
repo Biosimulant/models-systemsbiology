@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Koduru2022LactococcusLactisSubspLactisIl140Model2210190010Model'
-description: GEM reconstruction for Lactococcus lactis subsp. lactis IL1403
+description: "GEM reconstruction for Lactococcus lactis subsp. It can be used to explore systemsbiology koduru2022 lactococcus lactis subsp lactis dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

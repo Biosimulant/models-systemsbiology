@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Morris1981MusclefibreVoltageFullBiomd0000000324Model'
-description: 'This is the full model (eq. 1 and 2) of the voltage oscillations in
-  barnacle muscle fibers described in the article: Voltage oscillations in the barnacle
-  giant muscle fiber. Morris C, Lecar H. Biophys'
+description: "This is the full model (eq. 1 and 2) of the voltage oscillations in barnacle muscle fibers described in the article: Voltage oscillations in the barnacle giant muscle fiber."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Fisher2006CaOscillationDpdntNfatDynamicsBiomd0000000122Model'
-description: The model reproduces the calcium oscillation dependent activation-deactivation
-  kinetics of nuclear factor of activated T cells (NFAT) as depicted in Fig 4a of
-  the paper. A simple algorithm in the even
+description: "The model reproduces the calcium oscillation dependent activation-deactivation kinetics of nuclear factor of activated T cells (NFAT) as depicted in Fig 4a of the paper. It can be used to explore systemsbiology fisher2006 ca oscillation dpdnt nfat dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

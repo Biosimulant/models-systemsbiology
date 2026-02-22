@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: MartinezGuimera2017GenericNegativeFeedbackCModel1710260003Model'
-description: 'Martinez-Guimera2017 - Generic negative feedback circuit (Model 4) This
-  model is described in the article: ''Molecular habituation'' as a potential mechanism
-  of gradual homeostatic loss with age. Martin'
+description: "Martinez-Guimera2017 - Generic negative feedback circuit (Model 4) This model is described in the article: 'Molecular habituation' as a potential mechanism of gradual homeostatic loss with age. It can be used to explore systemsbiology martinez guimera2017 generic negative feedback dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

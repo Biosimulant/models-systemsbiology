@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Systemsbiology: Gene Expression (COMBO_0076)'
-description: Systemsbiology gene expression comparative space with 4 models, configured
-  as non-causal co-simulation.
+description: "Systemsbiology Gene Expression (COMBO_0076) brings together lahtvee2016_auto_1, lahtvee2016_auto_2, lahtvee2016_auto_3 in a comparative space to examine how gene expression mechanisms compare across these models. When you run it, you can compare participant trajectories through shared runtime settings and routed output streams."
 models:
 - repo: Biosimulant/models-systemsbiology
   alias: lahtvee2016_auto_1

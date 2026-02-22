@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Orfao2008ThrombingenerationAmidolyticactivityBiomd0000000366Model'
-description: S. Cunha Orfao, G. Jank, K. Mottaghy, S. Walcher & E. Zerz. Qualitative
-  properties and stabilizability of a model for blood thrombin formation. Journal
-  of Mathematical Analysis and Applications 346, 1
+description: "S. It can be used to explore systemsbiology orfao2008 thrombingeneration amidolyticactivity BioModels0000000366 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

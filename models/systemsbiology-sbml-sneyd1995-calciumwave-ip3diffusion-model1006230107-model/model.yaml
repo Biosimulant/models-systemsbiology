@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Sneyd1995CalciumwaveIp3diffusionModel1006230107Model'
-description: 'This a model from the article: Intercellular calcium waves mediated
-  by diffusion of inositol trisphosphate: atwo-dimensional model. Sneyd J, Wetton
-  BT, Charles AC, Sanderson MJ. Am J Physiol 1995 Jun;'
+description: "This a model from the article: Intercellular calcium waves mediated by diffusion of inositol trisphosphate: atwo-dimensional model. Sneyd J, Wetton BT, Charles AC, Sanderson MJ."
 standard: other
 tags:
 - systemsbiology

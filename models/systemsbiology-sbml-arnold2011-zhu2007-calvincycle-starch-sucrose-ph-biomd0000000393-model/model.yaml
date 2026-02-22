@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Arnold2011Zhu2007CalvincycleStarchSucrosePhBiomd0000000393Model'
-description: "This model is from the article: A quantitative comparison of Calvin\u2013\
-  Benson cycle models Anne Arnold, Zoran Nikoloski Trends in Plant Science 2011 Oct\
-  \ 14. 22001849 , Abstract: The Calvin-Benson cycle ("
+description: "This model is from the article: A quantitative comparison of Calvin\u2013Benson cycle models Anne Arnold, Zoran Nikoloski Trends in Plant Science 2011 Oct 14. It can be used to explore systemsbiology arnold2011 zhu2007 calvincycle starch sucrose dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

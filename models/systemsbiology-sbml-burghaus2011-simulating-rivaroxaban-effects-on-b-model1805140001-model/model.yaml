@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Burghaus2011SimulatingRivaroxabanEffectsOnBModel1805140001Model'
-description: Another mathematical model of blood coagulation.
+description: "Systems Biology Burghaus2011Simulating Rivaroxaban Effects On BModel1805140001Model represents core biological mechanisms from biomodels_ebi reference biomodels_ebi:MODEL1805140001. When you run it, you can inspect state and compare temporal behavior between baseline and adjusted inputs."
 standard: other
 tags:
 - systemsbiology

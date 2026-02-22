@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Bravo2012ModellingBloodCoagulationFactorVaBiomd0000000739Model'
-description: Mathematical model of blood coagulation factor Va and Va fragment inactivation
-  by APC, reactions with Xa and prothrombinase-prothrombin complex formation.
+description: "Mathematical model of blood coagulation factor Va and Va fragment inactivation by APC, reactions with Xa and prothrombinase-prothrombin complex formation. It can be used to explore systemsbiology bravo2012 modelling blood coagulation factor dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

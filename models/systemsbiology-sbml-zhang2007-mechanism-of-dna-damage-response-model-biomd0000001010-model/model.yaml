@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Zhang2007MechanismOfDnaDamageResponseModelBiomd0000001010Model'
-description: It's a mechanistic model explaining the impact of p53 on apoptosis decision.
-  This model represents schema 3 of manuscript.
+description: "It's a mechanistic model explaining the impact of p53 on apoptosis decision. It can be used to explore systemsbiology zhang2007 mechanism of dna damage dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

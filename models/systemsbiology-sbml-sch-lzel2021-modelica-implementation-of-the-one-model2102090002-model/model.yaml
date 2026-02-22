@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: SchLzel2021ModelicaImplementationOfTheOneModel2102090002Model'
-description: This project contains a reusable, reproducible, understandable, and extensible
-  reimplementation of the one-dimensional model of the rabbit atrioventricular node
-  by Inada et al. (Inada2009) in the lang
+description: "This project contains a reusable, reproducible, understandable, and extensible reimplementation of the one-dimensional model of the rabbit atrioventricular node by Inada et al. It can be used to explore systemsbiology sch lzel2021 modelica implementation of dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

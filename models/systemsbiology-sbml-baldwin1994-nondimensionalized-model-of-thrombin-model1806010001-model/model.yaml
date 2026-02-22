@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Baldwin1994NondimensionalizedModelOfThrombinModel1806010001Model'
-description: First mathematical model of thrombin production in flowing blood. Nondimensionalised
-  ODE model has been curated.
+description: "First mathematical model of thrombin production in flowing blood. It can be used to explore systemsbiology baldwin1994 nondimensionalized of thrombin model1806010001 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

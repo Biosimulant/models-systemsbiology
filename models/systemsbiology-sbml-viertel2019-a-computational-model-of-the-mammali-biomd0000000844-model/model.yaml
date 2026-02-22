@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Viertel2019AComputationalModelOfTheMammaliBiomd0000000844Model'
-description: This is a mathematical conductance-based model of the bursting activity
-  in external tufted (ET) cells of the olfactory bulb. The model includes ion-current
-  based descriptions of the mechanisms underly
+description: "This is a mathematical conductance-based model of the bursting activity in external tufted (ET) cells of the olfactory bulb. The model includes ion-current based descriptions of the mechanisms underly."
 standard: other
 tags:
 - systemsbiology

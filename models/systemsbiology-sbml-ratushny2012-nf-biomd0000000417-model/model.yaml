@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Ratushny2012NfBiomd0000000417Model'
-description: 'This model is from the article: Asymmetric positive feedback loops reliably
-  control biological responses Alexander V Ratushny, Ramsey A Saleem, Katherine Sitko,
-  Stephen A Ramsey &amp; John D Aitchison'
+description: "This model is from the article: Asymmetric positive feedback loops reliably control biological responses Alexander V Ratushny, Ramsey A Saleem, Katherine Sitko, Stephen A Ramsey &amp; John D Aitchison. It can be used to explore systemsbiology ratushny2012 nf BioModels0000000417 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

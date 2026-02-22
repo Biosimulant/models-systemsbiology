@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Ehrenstein1997TheCholineLeakageHypothesisInBiomd0000000553Model'
-description: 'Ehrenstein1997 - The choline-leakagehypothesis in Alzheimer''s disease
-  This model is described in the article: The choline-leakage hypothesis for the loss
-  of acetylcholine in Alzheimer''s disease. Ehren'
+description: "Ehrenstein1997 - The choline-leakagehypothesis in Alzheimer's disease This model is described in the article: The choline-leakage hypothesis for the loss of acetylcholine in Alzheimer's disease. It can be used to explore systemsbiology ehrenstein1997 the choline leakage hypothesis dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

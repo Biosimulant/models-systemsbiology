@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Cunha2022InnerBarkModelForQuercusSuberModel2205040002Model'
-description: Inner Bark GSM Model for Quercus suber
+description: "Systems Biology Cunha2022Inner Bark Model For Quercus Suber Model2205040002Model represents core biological mechanisms from biomodels_ebi reference biomodels_ebi:MODEL2205040002. When you run it, you can inspect state and compare temporal behavior between baseline and adjusted inputs."
 standard: other
 tags:
 - systemsbiology

@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Systemsbiology: Gene Expression (COMBO_0062)'
-description: Systemsbiology gene expression comparative space with 4 models, configured
-  as non-causal co-simulation.
+description: "Systemsbiology Gene Expression (COMBO_0062) brings together bingzheng1990_gl_1, bungay2003_throm_2, bungay2006_folli_3 in a comparative space to examine how gene expression mechanisms compare across these models. When you run it, you can compare participant trajectories through shared runtime settings and routed output streams."
 models:
 - repo: Biosimulant/models-systemsbiology
   alias: bingzheng1990_gl_1

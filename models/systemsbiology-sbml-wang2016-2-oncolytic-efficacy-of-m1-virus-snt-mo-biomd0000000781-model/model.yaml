@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Wang20162OncolyticEfficacyOfM1VirusSntMoBiomd0000000781Model'
-description: 'The paper describes a model of oncolytic virotherapy. Created by COPASI
-  4.25 (Build 207) This model is described in the article: A mathematical model verifying
-  potent oncolytic efficacy of M1 virusZiz'
+description: "The paper describes a model of oncolytic virotherapy. Created by COPASI 4.25 (Build 207) This model is described in the article: A mathematical model verifying potent oncolytic efficacy of M1 virusZiz."
 standard: other
 tags:
 - systemsbiology

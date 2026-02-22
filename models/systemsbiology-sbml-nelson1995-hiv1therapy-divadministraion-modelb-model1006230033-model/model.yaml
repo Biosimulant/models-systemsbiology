@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Nelson1995Hiv1therapyDivadministraionModelbModel1006230033Model'
-description: 'This a model from the article: Modeling defective interfering virus
-  therapy for AIDS: conditions for DIVsurvival. Nelson GW, Perelson AS. Math Biosci
-  1995 Feb;125(2):127-53 7881191 , Abstract: The adm'
+description: "This a model from the article: Modeling defective interfering virus therapy for AIDS: conditions for DIVsurvival. It can be used to explore systemsbiology nelson1995 hiv1therapy divadministraion modelb model1006230033 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

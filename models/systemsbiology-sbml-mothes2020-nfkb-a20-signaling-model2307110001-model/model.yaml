@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Mothes2020NfkbA20SignalingModel2307110001Model'
-description: 'The Mothes2020_NFkB_A20_signaling model is based on our previous model
-  published in Murakawa et al., Nat Commun, 2015 (doi: 10.1038/ncomms8367). In the
-  Mothes2020_NFkB_A20_signaling model, we removed '
+description: "The Mothes2020_NFkB_A20_signaling model is based on our previous model published in Murakawa et al., Nat Commun, 2015 (doi: 10.1038/ncomms8367). It can be used to explore systemsbiology mothes2020 nfkb a20 signaling model2307110001 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

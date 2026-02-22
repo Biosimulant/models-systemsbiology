@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Proctor2017RoleOfMicrornasInOsteoarthritisBiomd0000000862Model'
-description: 'Proctor2017- Role of microRNAs inosteoarthritis (Positive Feedback By
-  Micro RNA) This model is described in the article: Computer simulation models as
-  a tool to investigate the role of microRNAs in os'
+description: "Proctor2017- Role of microRNAs inosteoarthritis (Positive Feedback By Micro RNA) This model is described in the article: Computer simulation models as a tool to investigate the role of microRNAs in os. It can be used to explore systemsbiology proctor2017 role of micrornas in dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

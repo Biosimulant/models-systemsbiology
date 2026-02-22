@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Karapetyan2016GeneticOscillatoryNetworkActivBiomd0000000586Model'
-description: 'Karapetyan2016 - Genetic oscillatory network - Activator Titration Circuit
-  (ATC) This model is described in the article: Role of DNA binding sites and slow
-  unbinding kinetics in titration-based oscill'
+description: "Karapetyan2016 - Genetic oscillatory network - Activator Titration Circuit (ATC) This model is described in the article: Role of DNA binding sites and slow unbinding kinetics in titration-based oscill. It can be used to explore systemsbiology karapetyan2016 genetic oscillatory network activ dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

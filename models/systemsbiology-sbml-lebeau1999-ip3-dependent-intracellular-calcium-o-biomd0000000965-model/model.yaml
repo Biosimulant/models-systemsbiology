@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Lebeau1999Ip3DependentIntracellularCalciumOBiomd0000000965Model'
-description: The properties of inositol 1,4,5-trisphosphate (IP3)-dependent intracellular
-  calcium oscillations in pancreatic acinar cells depend crucially on the agonist
-  used to stimulate them. Acetylcholine or ca
+description: "The properties of inositol 1,4,5-trisphosphate (IP3)-dependent intracellular calcium oscillations in pancreatic acinar cells depend crucially on the agonist used to stimulate them. It can be used to explore systemsbiology lebeau1999 ip3 dependent intracellular calcium dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

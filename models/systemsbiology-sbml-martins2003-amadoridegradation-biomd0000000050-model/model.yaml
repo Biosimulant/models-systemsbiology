@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Martins2003AmadoridegradationBiomd0000000050Model'
-description: 'This a model from the article: Kinetic modelling of Amadori N-(1-deoxy-D-fructos-1-yl)-glycine
-  degradation pathways. Part II--kinetic analysis. Martins SI, Van Boekel MA. Carbohydr
-  Res 2003 Jul;338(16'
+description: "This a model from the article: Kinetic modelling of Amadori N-(1-deoxy-D-fructos-1-yl)-glycine degradation pathways. It can be used to explore systemsbiology martins2003 amadoridegradation BioModels0000000050 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Benson2014FaahInhibitorsForTheTreatmentOfBiomd0000000512Model'
-description: Benson2014 - FAAH inhibitors for the treatment of osteoarthritic pain
-  Evaluation of fatty acid amide hydrolase (FAAH) as a target for osteoarthritic pain
-  in humans, using an integrated systems pharmac
+description: "Benson2014 - FAAH inhibitors for the treatment of osteoarthritic pain Evaluation of fatty acid amide hydrolase (FAAH) as a target for osteoarthritic pain in humans, using an integrated systems pharmac. It can be used to explore systemsbiology benson2014 faah inhibitors for the dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

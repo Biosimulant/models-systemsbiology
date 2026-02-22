@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Mitrophanov2011ModeOfActionOfRfviiaOnThroModel1806040001Model'
-description: Mathematical model of blood coagulation investigating effects of varied
-  factor VIIa on thrombin generation. Model derived from Hockin2002/Butenas2004. Butenas
-  added two new reactions (R28 and R29) and
+description: "Mathematical model of blood coagulation investigating effects of varied factor VIIa on thrombin generation. It can be used to explore systemsbiology mitrophanov2011 mode of action of dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

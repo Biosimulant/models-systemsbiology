@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: RodriguezCaso2006PolyamineMetabolismBiomd0000000190Model'
-description: "SBML creators: Armando Reyes-Palomares * , Carlos Rodr\xEDguez-Caso\
-  \ +, Raul Monta\xF1ez * , Marta Cascante $, Francisca S\xE1nchez-Jim\xE9nez * ,\
-  \ Miguel A. Medina * * ProCel Group, Department of Molecular Biology"
+description: "SBML creators: Armando Reyes-Palomares * , Carlos Rodr\u00edguez-Caso +, Raul Monta\u00f1ez * , Marta Cascante $, Francisca S\u00e1nchez-Jim\u00e9nez * , Miguel A. Medina * * ProCel Group, Department of Molecular Biology."
 standard: other
 tags:
 - systemsbiology

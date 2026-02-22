@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Schmierer2010FihAnkyrinsBiomd0000000300Model'
-description: "This a model from the article: Hypoxia-dependent sequestration of an\
-  \ oxygen sensor by a widespread structural motif can shape the hypoxic response\
-  \ - a predictive kinetic model Bernhard Schmierer, B\xE9la"
+description: "This a model from the article: Hypoxia-dependent sequestration of an oxygen sensor by a widespread structural motif can shape the hypoxic response - a predictive kinetic model Bernhard Schmierer, B\u00e9la. It can be used to explore systemsbiology schmierer2010 fih ankyrins BioModels0000000300 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Munz2009ZombieSizrqModel1008060002Model'
-description: Munz2009 - Zombie SIZRQ This is the model with latent infection and quarantine
-  described in the article. This model was originally created by libAntimony v1.4
-  (using libSBML 3.4.1). This model is desc
+description: "Munz2009 - Zombie SIZRQ This is the model with latent infection and quarantine described in the article. It can be used to explore systemsbiology munz2009 zombie sizrq model1008060002 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

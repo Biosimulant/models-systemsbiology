@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Ota2015PositiveRegulationOfRhoGtpaseActiviBiomd0000000899Model'
-description: This is a ordinary differential equation mathematical model describing
-  the Rho GTPase cycle in which Rho GDP-dissociation inhibitors (RhoGDIs) inhibit
-  the regulatory activities of guanine nucleotide e
+description: "This is a ordinary differential equation mathematical model describing the Rho GTPase cycle in which Rho GDP-dissociation inhibitors (RhoGDIs) inhibit the regulatory activities of guanine nucleotide e. It can be used to explore systemsbiology ota2015 positive regulation of rho dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

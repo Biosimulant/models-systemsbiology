@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Talarmain2022ModelOfJak2Tet2Hoxa9InMyelopModel2212110001Model'
-description: Model describing how HOXA9 may control the evolution of myeloproliferative
-  neoplasms by integrating the orders of JAK2 and TET2 mutation
+description: "Model describing how HOXA9 may control the evolution of myeloproliferative neoplasms by integrating the orders of JAK2 and TET2 mutation. It can be used to explore systemsbiology talarmain2022 of jak2 tet2 hoxa9 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

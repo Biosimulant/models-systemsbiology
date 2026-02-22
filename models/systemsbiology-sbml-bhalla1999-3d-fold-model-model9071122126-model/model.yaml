@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Bhalla19993dFoldModelModel9071122126Model'
-description: 'This model is based closely on the one from &lt;a href = ''http://www.ncbi.nlm.nih.gov:80/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=9888852&amp;dopt=Abstract''&gt;Bhalla
-  US and Iyengar '
+description: "This model is based closely on the one from &lt;a href = 'http://www.ncbi.nlm.nih.gov:80/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=9888852&amp;dopt=Abstract'&gt;Bhalla US and Iyengar. It can be used to explore systemsbiology bhalla1999 3d fold model9071122126 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Szymanska2009MathematicalModelingOfHeatShocBiomd0000000896Model'
-description: This is a mathematical model of heat shock protein synthesis induced
-  by an external temperature stimulus. The model consists of a system of nine nonlinear
-  ordinary differential equations describing th
+description: "This is a mathematical model of heat shock protein synthesis induced by an external temperature stimulus. The model consists of a system of nine nonlinear ordinary differential equations describing th."
 standard: other
 tags:
 - systemsbiology

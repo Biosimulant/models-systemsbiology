@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Hatakeyama2003MapkBiomd0000000146Model'
-description: Figure4 and Figure5 can be simulated by Copasi. Figure4 can be simulated
-  in MathSBML as well. There are some typos in the paper:K29=234, is it should k_29;
-  Table2, reaction17, is there are 'slash' mis
+description: "Figure4 and Figure5 can be simulated by Copasi. Figure4 can be simulated in MathSBML as well."
 standard: other
 tags:
 - systemsbiology

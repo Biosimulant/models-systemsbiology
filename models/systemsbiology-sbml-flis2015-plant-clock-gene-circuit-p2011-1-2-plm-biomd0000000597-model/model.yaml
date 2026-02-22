@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Flis2015PlantClockGeneCircuitP201112PlmBiomd0000000597Model'
-description: 'Flis2015 - Plant clock gene circuit(P2011.1.2 PLM_71 ver 1) This model
-  is described in the article: Defining the robust behaviour of the plant clock gene
-  circuit with absolute RNA timeseries and open '
+description: "Flis2015 - Plant clock gene circuit(P2011.1.2 PLM_71 ver 1) This model is described in the article: Defining the robust behaviour of the plant clock gene circuit with absolute RNA timeseries and open. It can be used to explore systemsbiology flis2015 plant clock gene circuit dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

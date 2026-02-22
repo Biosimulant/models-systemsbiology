@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Wei2022HobpreAccuratePredictionOfHumanOralModel2406030001Model'
-description: "HobPre predicts the oral bioavailability of small molecules in humans.\
-  \ It has been trained using public data on ~1200 molecules (Falc\xF3n-Cano et al,\
-  \ 2020, complemented with other literature and ChEMBL "
+description: "HobPre predicts the oral bioavailability of small molecules in humans. It can be used to explore systemsbiology wei2022 hobpre accurate prediction of dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

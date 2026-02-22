@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Rong2020GroverToxcastProbabilityOfToxicityModel2406050002Model'
-description: 'This model has been trained using the GROVER embedding and performs
-  prediction across the ToxCast toxicity panel, containing hundreds of toxicity outcomes,
-  as part of the MoleculeNet benchmark. Model '
+description: "This model has been trained using the GROVER embedding and performs prediction across the ToxCast toxicity panel, containing hundreds of toxicity outcomes, as part of the MoleculeNet benchmark. It can be used to explore systemsbiology rong2020 grover toxcast probability of dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

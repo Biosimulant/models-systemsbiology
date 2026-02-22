@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Heldt2019ChlamydomonasMultipleFissionCyclesModel1904020001Model'
-description: This model is described in the article:A single light-responsive sizer
-  can control multiple-fission cycles in ChlamydomonasFrank S. Heldt, John J. Tyson,
-  Frederick R. Cross, Bela NovakAbstract:Most eu
+description: "This model is described in the article:A single light-responsive sizer can control multiple-fission cycles in ChlamydomonasFrank S. It can be used to explore systemsbiology heldt2019 chlamydomonas multiple fission cycles dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

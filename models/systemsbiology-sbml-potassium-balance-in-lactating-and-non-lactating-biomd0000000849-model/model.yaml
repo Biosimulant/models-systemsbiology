@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: PotassiumBalanceInLactatingAndNonLactatingBiomd0000000849Model'
-description: "M. Berg, J. Pl\xF6ntzke, S. Leonhard-Marek, K.E. M\xFCller & S. R\xF6\
-  blitz. A dynamic model to simulate potassium balance in dairy cows. Journal of Dairy\
-  \ Science 100, 12 (2017). High-performing dairy cows requ"
+description: "M. It can be used to explore systemsbiology potassium balance in lactating and dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Systemsbiology: General (COMBO_0037)'
-description: Systemsbiology general comparative space with 3 models, configured as
-  non-causal co-simulation.
+description: "Systemsbiology General (COMBO_0037) brings together caron2010_mtorc1_1, caron2010_mtorsi_2, casini2022_metha_3 in a comparative space to examine how general mechanisms compare across these models. When you run it, you can compare participant trajectories through shared runtime settings and routed output streams."
 models:
 - repo: Biosimulant/models-systemsbiology
   alias: caron2010_mtorc1_1

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Chassagnole2002CarbonMetabolismBiomd0000000051Model'
-description: The model reproduces Figures 4,5 and 6 of the publication. The analytical
-  functions for cometabolites Catp, Camp, Cnadph, and Cnadp slightly differ from the
-  equations given in the paper. These changes
+description: "The model reproduces Figures 4,5 and 6 of the publication. The analytical functions for cometabolites Catp, Camp, Cnadph, and Cnadp slightly differ from the equations given in the paper."
 standard: other
 tags:
 - systemsbiology

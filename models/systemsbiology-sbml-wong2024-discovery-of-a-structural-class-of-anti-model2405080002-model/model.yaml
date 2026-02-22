@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Wong2024DiscoveryOfAStructuralClassOfAntiModel2405080002Model'
-description: The authors use a large dataset (>30k) to train an explainable graph-based
-  model to identify potential antibiotics with low cytotoxicity. The model uses a
-  substructure-based approach to explore the ch
+description: "The authors use a large dataset (>30k) to train an explainable graph-based model to identify potential antibiotics with low cytotoxicity. The model uses a substructure-based approach to explore the ch."
 standard: other
 tags:
 - systemsbiology

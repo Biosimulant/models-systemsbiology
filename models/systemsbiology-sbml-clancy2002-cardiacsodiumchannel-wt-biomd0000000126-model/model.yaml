@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Clancy2002CardiacsodiumchannelWtBiomd0000000126Model'
-description: 'The model is according to the paper Na+ Channel Mutation That Causes
-  Both Brugada and Long-QT Syndrome Phenotypes: A Simulation Study of Mechanism Original
-  model comes from ModelDB with accession numb'
+description: "The model is according to the paper Na+ Channel Mutation That Causes Both Brugada and Long-QT Syndrome Phenotypes: A Simulation Study of Mechanism Original model comes from ModelDB with accession numb. It can be used to explore systemsbiology clancy2002 cardiacsodiumchannel wt BioModels0000000126 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Albert2005GlycolysisBiomd0000000211Model'
-description: 'This model is from the article: Experimental and in silico analyses
-  of glycolytic flux control in bloodstream form Trypanosoma brucei. Albert MA, Haanstra
-  JR, Hannaert V, Van Roy J, Opperdoes FR, Bakk'
+description: "This model is from the article: Experimental and in silico analyses of glycolytic flux control in bloodstream form Trypanosoma brucei. Albert MA, Haanstra JR, Hannaert V, Van Roy J, Opperdoes FR, Bakk."
 standard: other
 tags:
 - systemsbiology

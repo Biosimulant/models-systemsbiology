@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Evans2004CellBasedMathematicalModelOfTopotBiomd0000000945Model'
-description: A two compartment mathematical model of the antineoplastic compound topotecan
+description: "A two compartment mathematical model of the antineoplastic compound topotecan. It can be used to explore systemsbiology evans2004 cell based mathematical of dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

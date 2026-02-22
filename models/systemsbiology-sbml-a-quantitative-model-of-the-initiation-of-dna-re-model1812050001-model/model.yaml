@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: AQuantitativeModelOfTheInitiationOfDnaReModel1812050001Model'
-description: Requires input from Chen2004(BIOMD0000000056) model but did not work
-  correctly even after integrating both models.
+description: "Requires input from Chen2004(BIOMD0000000056) model but did not work correctly even after integrating both models. It can be used to explore systemsbiology a quantitative of the initiation dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

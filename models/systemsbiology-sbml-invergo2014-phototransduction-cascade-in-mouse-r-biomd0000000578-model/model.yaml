@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Invergo2014PhototransductionCascadeInMouseRBiomd0000000578Model'
-description: 'Invergo2014 - Phototransduction cascade inmouse rod cells This model
-  is described in the article: A comprehensive model of the phototransduction cascade
-  in mouse rod cells. Invergo BM, Dell''Orco D, Mo'
+description: "Invergo2014 - Phototransduction cascade inmouse rod cells This model is described in the article: A comprehensive model of the phototransduction cascade in mouse rod cells. It can be used to explore systemsbiology invergo2014 phototransduction cascade in mouse dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

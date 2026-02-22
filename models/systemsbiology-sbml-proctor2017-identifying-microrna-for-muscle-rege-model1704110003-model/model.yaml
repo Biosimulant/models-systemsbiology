@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Proctor2017IdentifyingMicrornaForMuscleRegeModel1704110003Model'
-description: 'Proctor2017 - Identifying microRNA for muscleregeneration during ageing
-  (Mir143_in_muscle) This model is described in the article: Using computer simulation
-  models to investigate the most promising mi'
+description: "Proctor2017 - Identifying microRNA for muscleregeneration during ageing (Mir143_in_muscle) This model is described in the article: Using computer simulation models to investigate the most promising mi. It can be used to explore systemsbiology proctor2017 identifying microrna for muscle dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

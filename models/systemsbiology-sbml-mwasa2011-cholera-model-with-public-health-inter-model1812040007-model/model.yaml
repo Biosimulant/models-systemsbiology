@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Mwasa2011CholeraModelWithPublicHealthInterModel1812040007Model'
-description: Mathematical analysis of a cholera model with public health interventions
+description: "Mathematical analysis of a cholera model with public health interventions. It can be used to explore systemsbiology mwasa2011 cholera with public health dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

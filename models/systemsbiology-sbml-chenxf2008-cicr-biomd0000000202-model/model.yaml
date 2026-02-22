@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Chenxf2008CicrBiomd0000000202Model'
-description: The model reproduces the plots in Figures 1 and 2. Note that the units
-  of the time scale 'A' are not right in the paper, it was corrected by the curator.
-  Model successfully tested on MathSBML.
+description: "The model reproduces the plots in Figures 1 and 2. Note that the units of the time scale 'A' are not right in the paper, it was corrected by the curator."
 standard: other
 tags:
 - systemsbiology

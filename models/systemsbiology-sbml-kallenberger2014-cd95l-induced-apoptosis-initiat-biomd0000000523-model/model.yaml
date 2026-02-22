@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Kallenberger2014Cd95lInducedApoptosisInitiatBiomd0000000523Model'
-description: Kallenberger2014 - CD95L induced apoptosis initiated by caspase-8, CD95
-  HeLa cells (cis/trans variant) The paper describes a new approach that combines
-  single cell and population data in the same mode
+description: "Kallenberger2014 - CD95L induced apoptosis initiated by caspase-8, CD95 HeLa cells (cis/trans variant) The paper describes a new approach that combines single cell and population data in the same mode. It can be used to explore systemsbiology kallenberger2014 cd95l induced apoptosis initiat dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

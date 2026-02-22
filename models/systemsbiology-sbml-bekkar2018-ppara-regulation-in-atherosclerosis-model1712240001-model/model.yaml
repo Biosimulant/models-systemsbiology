@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Bekkar2018PparaRegulationInAtherosclerosisModel1712240001Model'
-description: This network was obtained by combining (with an OR logical operator)
-  the following list of PPARA activators:SIRT1 AND PPARGC1A - reference in pubmed:23770291
-  (NOT MAPK14) AND PPARGC1A - reference in p
+description: "This network was obtained by combining (with an OR logical operator) the following list of PPARA activators:SIRT1 AND PPARGC1A - reference in pubmed:23770291 (NOT MAPK14) AND PPARGC1A - reference in p. It can be used to explore systemsbiology bekkar2018 ppara regulation in atherosclerosis dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

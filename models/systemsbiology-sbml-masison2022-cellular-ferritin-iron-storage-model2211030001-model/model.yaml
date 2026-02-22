@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Masison2022CellularFerritinIronStorageModel2211030001Model'
-description: "This is a small model of ferritin iron sequestration kinetics. The model\u2019\
-  s parameter values were determined from published kinetic and binding experiments\
-  \ and the model was validated against independe"
+description: "This is a small model of ferritin iron sequestration kinetics. The model\u2019s parameter values were determined from published kinetic and binding experiments and the model was validated against independe."
 standard: other
 tags:
 - systemsbiology

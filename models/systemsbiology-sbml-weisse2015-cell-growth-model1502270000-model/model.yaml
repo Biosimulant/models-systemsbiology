@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Weisse2015CellGrowthModel1502270000Model'
-description: Faithful wrapper of upstream SBML model.
+description: "Systems Biology Weisse2015Cell Growth Model1502270000Model captures systemsbiology weisse2015 cell growth model1502270000 behavior in the context of systemsbiology, sbml, biomodels_ebi using a biomodels_ebi-sou. When you run it, you can observe state and evaluate how the modeled system changes across runs."
 standard: other
 tags:
 - systemsbiology

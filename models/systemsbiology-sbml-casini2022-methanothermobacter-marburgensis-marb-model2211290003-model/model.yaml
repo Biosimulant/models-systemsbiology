@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Casini2022MethanothermobacterMarburgensisMarbModel2211290003Model'
-description: 'This model is described in these articles:Casini, I., McCubbin, T.,
-  Esquivel-Elizondo, S., Luque, G.G., Evseeva, D., Fink, C., Beblawy, S., Youngblut,
-  N.D., Aristilde, L., Huson, D., Drager, A., Ley, '
+description: "This model is described in these articles:Casini, I., McCubbin, T., Esquivel-Elizondo, S., Luque, G.G., Evseeva, D., Fink, C., Beblawy, S., Youngblut, N.D., Aristilde, L., Huson, D., Drager, A., Ley,. It can be used to explore systemsbiology casini2022 methanothermobacter marburgensis marb model2211290003 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

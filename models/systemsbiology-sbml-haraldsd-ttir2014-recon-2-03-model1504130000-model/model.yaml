@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: HaraldsdTtir2014Recon203Model1504130000Model'
-description: Faithful wrapper of upstream SBML model.
+description: "Systems Biology Haraldsd Ttir2014Recon203Model1504130000Model captures systemsbiology haraldsd ttir2014 recon 2 03 behavior in the context of systemsbiology, sbml, biomodels_ebi using a biomodels_ebi-sourced OT. When you run it, you can observe state and evaluate how the modeled system changes across runs."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Fenton1998MyocardiumvortexdynamicsModel0911989198Model'
-description: 'This a model from the article: Vortex dynamics in three-dimensional
-  continuous myocardium with fiber rotation:Filament instability and fibrillation.
-  Fenton F, Karma A. Chaos 1998 Mar;8(1):20-47 127797'
+description: "This a model from the article: Vortex dynamics in three-dimensional continuous myocardium with fiber rotation:Filament instability and fibrillation. It can be used to explore systemsbiology fenton1998 myocardiumvortexdynamics model0911989198 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Kim2011OscillatorSimpleiiiBiomd0000000323Model'
-description: 'This a model from the article: Synthetic in vitro transcriptional oscillators.
-  Kim J, Winfree E Mol. Syst. Biol. 2011 Feb 1;7:465. 21283141 , Abstract: The construction
-  of synthetic biochemical circui'
+description: "This a model from the article: Synthetic in vitro transcriptional oscillators. It can be used to explore systemsbiology kim2011 oscillator simpleiii BioModels0000000323 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

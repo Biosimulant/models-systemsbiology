@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Systemsbiology: Gene Expression (COMBO_0074)'
-description: Systemsbiology gene expression comparative space with 4 models, configured
-  as non-causal co-simulation.
+description: "Systemsbiology Gene Expression (COMBO_0074) organizes kim2011_oscillat_1, kim2011_oscillat_2, koch2019_a_3 into a comparative simulation setup to examine how gene expression mechanisms compare across these models. When you run it, you can compare participant trajectories through shared runtime settings and routed output streams."
 models:
 - repo: Biosimulant/models-systemsbiology
   alias: kim2011_oscillat_1

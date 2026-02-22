@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Troein2011ClockcircuitOstreococcustauriBiomd0000000350Model'
-description: 'This model is from the article: Multiple light inputs to a simple clock
-  circuit allow complex biological rhythms Troein C, Corellou F, Dixon LE, van Ooijen
-  G, O''Neill JS, Bouget FY, Millar AJ. Plant J'
+description: "This model is from the article: Multiple light inputs to a simple clock circuit allow complex biological rhythms Troein C, Corellou F, Dixon LE, van Ooijen G, O'Neill JS, Bouget FY, Millar AJ. It can be used to explore systemsbiology troein2011 clockcircuit ostreococcustauri BioModels0000000350 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

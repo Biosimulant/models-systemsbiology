@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Ortega2013InterplayBetweenSecretasesDeterminBiomd0000000556Model'
-description: 'Ortega2013 - Interplay between secretasesdetermines biphasic amyloid-beta
-  level This model is described in the article: Interplay between ?-, ?-, and ?-secretases
-  determines biphasic amyloid-? protein'
+description: "Ortega2013 - Interplay between secretasesdetermines biphasic amyloid-beta level This model is described in the article: Interplay between ?-, ?-, and ?-secretases determines biphasic amyloid-? It can be used to explore systemsbiology ortega2013 interplay between secretases determin dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

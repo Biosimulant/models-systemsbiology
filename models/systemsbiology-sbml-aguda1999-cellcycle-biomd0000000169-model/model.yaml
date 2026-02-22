@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Aguda1999CellcycleBiomd0000000169Model'
-description: The model reproduces the time profiles of p27, E2F and aE/cdk2 as depicted
-  in Figure 5 c of the paper. Model was simulated on MathSBML. To the extent possible
-  under law, all copyright and related or n
+description: "The model reproduces the time profiles of p27, E2F and aE/cdk2 as depicted in Figure 5 c of the paper. It can be used to explore systemsbiology aguda1999 cellcycle BioModels0000000169 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

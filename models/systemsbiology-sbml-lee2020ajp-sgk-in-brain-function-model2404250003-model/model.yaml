@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Lee2020ajpSgkInBrainFunctionModel2404250003Model'
-description: Faithful wrapper of upstream SBML model.
+description: "Systems Biology Lee2020ajp Sgk In Brain Function Model2404250003Model captures systemsbiology lee2020ajp sgk in brain function behavior in the context of systemsbiology, sbml, biomodels_ebi using a biomodels_eb. When you run it, you can observe state and evaluate how the modeled system changes across runs."
 standard: other
 tags:
 - systemsbiology

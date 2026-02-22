@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Bingzheng1990GlucocorticoidssecretionModel1172200168Model'
-description: 'This a model from the article: A mathematical model of the regulation
-  system of the secretion of glucocorticoids Liu Bingzheng, Zhao Zhenye and Chen Liansong
-  Journal of Biological Physics 1990 17(4):2'
+description: "This a model from the article: A mathematical model of the regulation system of the secretion of glucocorticoids Liu Bingzheng, Zhao Zhenye and Chen Liansong Journal of Biological Physics 1990 17(4):2. It can be used to explore systemsbiology bingzheng1990 glucocorticoidssecretion model1172200168 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

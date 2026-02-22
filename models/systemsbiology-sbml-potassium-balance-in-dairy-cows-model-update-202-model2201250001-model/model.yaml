@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: PotassiumBalanceInDairyCowsModelUpdate202Model2201250001Model'
-description: This updated model is derived from MODEL1710230000 here on Biomodels.
-  In the current version we changed 2 parameter values and the rate equation Keku.
-  Parameter p46, carbohydrate fraction in diet, was
+description: "This updated model is derived from MODEL1710230000 here on Biomodels. In the current version we changed 2 parameter values and the rate equation Keku."
 standard: other
 tags:
 - systemsbiology

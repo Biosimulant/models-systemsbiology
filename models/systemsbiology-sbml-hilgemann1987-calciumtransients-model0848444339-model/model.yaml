@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Hilgemann1987CalciumtransientsModel0848444339Model'
-description: 'This a model from the article: Excitation-contraction coupling and extracellular
-  calcium transients in rabbitatrium: reconstruction of basic cellular mechanisms.
-  Hilgemann DW, Noble D. Proc R Soc Lond'
+description: "This a model from the article: Excitation-contraction coupling and extracellular calcium transients in rabbitatrium: reconstruction of basic cellular mechanisms. It can be used to explore systemsbiology hilgemann1987 calciumtransients model0848444339 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

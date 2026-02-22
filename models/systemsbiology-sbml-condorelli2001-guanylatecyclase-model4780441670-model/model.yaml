@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Condorelli2001GuanylatecyclaseModel4780441670Model'
-description: This model features the observations of &lt;a href = 'http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=pubmed&amp;dopt=Abstract&amp;list_uids=11325714'&gt;Condorelli
-  P, George SC. Bio
+description: "This model features the observations of &lt;a href = 'http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=pubmed&amp;dopt=Abstract&amp;list_uids=11325714'&gt;Condorelli P, George SC. It can be used to explore systemsbiology condorelli2001 guanylatecyclase model4780441670 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

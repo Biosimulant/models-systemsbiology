@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Systemsbiology: Gene Expression (COMBO_0065)'
-description: Systemsbiology gene expression comparative space with 4 models, configured
-  as non-causal co-simulation.
+description: "Systemsbiology Gene Expression (COMBO_0065) assembles cronwright2002_g_1, cucuianu2010_a_2, cunha2022_iec787_3 as a comparative composed simulation to examine how gene expression mechanisms compare across these models. When you run it, you can compare synchronized outputs through the declared wiring paths and monitor views."
 models:
 - repo: Biosimulant/models-systemsbiology
   alias: cronwright2002_g_1

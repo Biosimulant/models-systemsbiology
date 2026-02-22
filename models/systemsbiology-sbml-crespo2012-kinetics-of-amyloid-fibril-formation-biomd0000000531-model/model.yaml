@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Crespo2012KineticsOfAmyloidFibrilFormationBiomd0000000531Model'
-description: 'Crespo2012 - Kinetics of Amyloid FibrilFormation This model is described
-  in the article: A generic crystallization-like model that describes the kinetics
-  of amyloid fibril formation. Crespo R, Rocha F'
+description: "Crespo2012 - Kinetics of Amyloid FibrilFormation This model is described in the article: A generic crystallization-like model that describes the kinetics of amyloid fibril formation. It can be used to explore systemsbiology crespo2012 kinetics of amyloid fibril dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

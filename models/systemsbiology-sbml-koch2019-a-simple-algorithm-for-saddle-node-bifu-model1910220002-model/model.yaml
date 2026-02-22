@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Koch2019ASimpleAlgorithmForSaddleNodeBifuModel1910220002Model'
-description: 'The annotated MatLab script contains a simple algorithm for creating
-  1D bifurcation plots for saddle-node bifurcations.The algorithm is intended as a
-  DIY alternative for creating bifurcation diagrams '
+description: "The annotated MatLab script contains a simple algorithm for creating 1D bifurcation plots for saddle-node bifurcations.The algorithm is intended as a DIY alternative for creating bifurcation diagrams. It can be used to explore systemsbiology koch2019 a simple algorithm for dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

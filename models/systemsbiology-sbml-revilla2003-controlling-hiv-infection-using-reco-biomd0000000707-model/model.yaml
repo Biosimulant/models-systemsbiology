@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Revilla2003ControllingHivInfectionUsingRecoBiomd0000000707Model'
-description: 'This a model from the article: Fighting a virus with a virus: a dynamic
-  model for HIV-1 therapy. Revilla T, Garcia-Ramos G. Math Biosci 2003 Oct;185(2):191-203
-  12941536 , Abstract: A mathematical mode'
+description: "This a model from the article: Fighting a virus with a virus: a dynamic model for HIV-1 therapy. It can be used to explore systemsbiology revilla2003 controlling hiv infection using dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

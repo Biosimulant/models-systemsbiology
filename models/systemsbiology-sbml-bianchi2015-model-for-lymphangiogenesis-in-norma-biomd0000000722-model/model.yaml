@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Bianchi2015ModelForLymphangiogenesisInNormaBiomd0000000722Model'
-description: Arianna Bianchi, Kevin J. Painter & Jonathan A. Sherratt. A mathematical
-  model for lymphangiogenesis in normal and diabetic wounds. Journal of Theoretical
-  Biology 383 (2015). Several studies suggest t
+description: "Arianna Bianchi, Kevin J. It can be used to explore systemsbiology bianchi2015 for lymphangiogenesis in norma dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

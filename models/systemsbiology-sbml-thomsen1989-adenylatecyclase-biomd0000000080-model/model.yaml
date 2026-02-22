@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Thomsen1989AdenylatecyclaseBiomd0000000080Model'
-description: 'This model reproduces figure 5 and figure 4(B)of the paper, with Kinh
-  represented by [G-GTP]. We arbitrarily chosed to set the initial concentration of
-  D to 31 micorMolar based on legend of figure 4. '
+description: "This model reproduces figure 5 and figure 4(B)of the paper, with Kinh represented by [G-GTP]. It can be used to explore systemsbiology thomsen1989 adenylatecyclase BioModels0000000080 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

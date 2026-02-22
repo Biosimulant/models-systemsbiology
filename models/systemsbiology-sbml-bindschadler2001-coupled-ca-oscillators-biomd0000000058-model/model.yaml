@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Bindschadler2001CoupledCaOscillatorsBiomd0000000058Model'
-description: 'The model reproduces the same amplitude antiphase calcium oscillations
-  of coupled cells depicted in Figure 5B of the publication. This model was successfully
-  tested on Jarnac and MathSBML. The values '
+description: "The model reproduces the same amplitude antiphase calcium oscillations of coupled cells depicted in Figure 5B of the publication. This model was successfully tested on Jarnac and MathSBML."
 standard: other
 tags:
 - systemsbiology

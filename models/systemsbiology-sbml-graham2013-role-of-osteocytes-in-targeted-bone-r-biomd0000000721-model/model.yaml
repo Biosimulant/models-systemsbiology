@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Graham2013RoleOfOsteocytesInTargetedBoneRBiomd0000000721Model'
-description: 'Jason M. Graham, Bruce P. Ayati, Sarah A. Holstein & James A. Martin.
-  The role of osteocytes in targeted bone remodeling: a mathematical model. PLoS ONE
-  8, 5 (2013). Until recently many studies of bon'
+description: "Jason M. It can be used to explore systemsbiology graham2013 role of osteocytes in dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

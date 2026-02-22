@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Decroly1982EnzymaticOscillatorBiomd0000000319Model'
-description: 'This is the scaled model described in the article: Birhythmicity, chaos,
-  and other patterns of temporal self-organization in a multiply regulated biochemical
-  system Olivier Decroly, Albert Goldbeter, '
+description: "This is the scaled model described in the article: Birhythmicity, chaos, and other patterns of temporal self-organization in a multiply regulated biochemical system Olivier Decroly, Albert Goldbeter,. It can be used to explore systemsbiology decroly1982 enzymatic oscillator BioModels0000000319 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

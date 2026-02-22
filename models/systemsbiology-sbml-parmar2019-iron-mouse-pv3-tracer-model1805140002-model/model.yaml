@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Parmar2019IronMousePv3TracerModel1805140002Model'
-description: Iron Mouse PV3 'A computational model to understand mouse iron physiology
-  and diseases' By Jignesh Parmar and Pedro Mendes Parameter estimation using radioactive
-  tracer data This is a dynamic model of
+description: "Iron Mouse PV3 'A computational model to understand mouse iron physiology and diseases' By Jignesh Parmar and Pedro Mendes Parameter estimation using radioactive tracer data This is a dynamic model of. It can be used to explore systemsbiology parmar2019 iron mouse pv3 tracer dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Qu2017AMumpsModelWithSeasonalFluctuationsModel1808280011Model'
-description: Faithful wrapper of upstream SBML model.
+description: "Systems Biology Qu2017AMumps Model With Seasonal Fluctuations Model1808280011Model represents core biological mechanisms from biomodels_ebi reference biomodels_ebi:MODEL1808280011. When you run it, you can inspect state and compare temporal behavior between baseline and adjusted inputs."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Gould2013TemperatureSensitiveCircadianClockBiomd0000000564Model'
-description: 'Gould2011 - Temperature Sensitive CircadianClock This model is a temperature
-  sensitiveversion of Pokhilko et al . 2010 (PMID: 20865009 ),which is BIOMD0000000273
-  in BioModels. This model is described '
+description: "Gould2011 - Temperature Sensitive CircadianClock This model is a temperature sensitiveversion of Pokhilko et al . 2010 (PMID: 20865009 ),which is BIOMD0000000273 in BioModels."
 standard: other
 tags:
 - systemsbiology

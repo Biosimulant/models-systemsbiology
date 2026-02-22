@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Santos2018PneumococcalInfectionInAlveoliModel1805170001Model'
-description: Multiscale mathematical model of pneumococcal alveolar infection. This
-  model analyses the role of cellular and molecular interactions during the first
-  10 h after alveolar invasion of Streptococcus pne
+description: "Multiscale mathematical model of pneumococcal alveolar infection. This model analyses the role of cellular and molecular interactions during the first 10 h after alveolar invasion of Streptococcus pne."
 standard: other
 tags:
 - systemsbiology

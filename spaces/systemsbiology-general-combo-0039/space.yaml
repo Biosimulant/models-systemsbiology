@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Systemsbiology: General (COMBO_0039)'
-description: Systemsbiology general comparative space with 3 models, configured as
-  non-causal co-simulation.
+description: "Systemsbiology General (COMBO_0039) assembles chance1943_perox_1, chance1952_catal_2, chatterjee2010_b_3 as a comparative composed simulation to examine how general mechanisms compare across these models. When you run it, you can compare synchronized outputs through the declared wiring paths and monitor views."
 models:
 - repo: Biosimulant/models-systemsbiology
   alias: chance1943_perox_1

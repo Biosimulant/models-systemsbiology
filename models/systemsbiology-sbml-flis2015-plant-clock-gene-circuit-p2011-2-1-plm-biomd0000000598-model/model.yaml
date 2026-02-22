@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Flis2015PlantClockGeneCircuitP201121PlmBiomd0000000598Model'
-description: cL_m_degr, param m1, modified to ensure light rate &gt; dark rate. Parameter
-  set from PLM_67v2_LDLLLDs_newFFT_1, with modification to m1 (= old_m1 - m2).
+description: "cL_m_degr, param m1, modified to ensure light rate &gt; dark rate. Parameter set from PLM_67v2_LDLLLDs_newFFT_1, with modification to m1 (= old_m1 - m2)."
 standard: other
 tags:
 - systemsbiology

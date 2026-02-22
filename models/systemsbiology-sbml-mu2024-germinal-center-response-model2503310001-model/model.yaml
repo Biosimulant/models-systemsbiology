@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Mu2024GerminalCenterResponseModel2503310001Model'
-description: The germinal center response or reaction (GCR) is a hallmark event of
-  adaptive humoral immunity. Unfolding in the B cell follicles of the secondary lymph
-  organs, a GC culminates in the production of h
+description: "The germinal center response or reaction (GCR) is a hallmark event of adaptive humoral immunity. Unfolding in the B cell follicles of the secondary lymph organs, a GC culminates in the production of h."
 standard: other
 tags:
 - systemsbiology

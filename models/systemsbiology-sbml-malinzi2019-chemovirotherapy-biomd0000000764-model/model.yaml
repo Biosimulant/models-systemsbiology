@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Malinzi2019ChemovirotherapyBiomd0000000764Model'
-description: 'The paper describes a model of oncolytic virothherapy. Created by COPASI
-  4.25 (Build 207) This model is described in the article: Mathematical Analysis of
-  a Mathematical Model of Chemovirotherapy: Eff'
+description: "The paper describes a model of oncolytic virothherapy. Created by COPASI 4.25 (Build 207) This model is described in the article: Mathematical Analysis of a Mathematical Model of Chemovirotherapy: Eff."
 standard: other
 tags:
 - systemsbiology

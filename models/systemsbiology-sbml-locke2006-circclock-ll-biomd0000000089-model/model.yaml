@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Locke2006CircclockLlBiomd0000000089Model'
-description: "This a model from the article: Experimental validation of a predicted\
-  \ feedback loop in the multi-oscillator clock of Arabidopsis thaliana. Locke JC,\
-  \ Kozma-Bogn\xE1r L, Gould PD, Feh\xE9r B, Kevei E, Nagy F,"
+description: "This a model from the article: Experimental validation of a predicted feedback loop in the multi-oscillator clock of Arabidopsis thaliana. Locke JC, Kozma-Bogn\u00e1r L, Gould PD, Feh\u00e9r B, Kevei E, Nagy F,."
 standard: other
 tags:
 - systemsbiology

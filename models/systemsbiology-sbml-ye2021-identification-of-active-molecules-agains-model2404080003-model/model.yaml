@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Ye2021IdentificationOfActiveMoleculesAgainsModel2404080003Model'
-description: Identification of active molecules against Mycobacterium tuberculosis
-  using an ensemble of data from ChEMBL25 (Target IDs 360, 2111188 and 2366634). The
-  final model is a stacking model integrating fou
+description: "Identification of active molecules against Mycobacterium tuberculosis using an ensemble of data from ChEMBL25 (Target IDs 360, 2111188 and 2366634). The final model is a stacking model integrating fou."
 standard: other
 tags:
 - systemsbiology

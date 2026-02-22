@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Li2019InSilicoMechanisticModelForProarrhytModel2111260002Model'
-description: "The International Council on Harmonization (ICH) S7B and E14 regulatory\
-  \ guidelines are sensitive but not specific for predicting which drugs are pro\u2010\
-  arrhythmic. In response, the Comprehensive In Vitro"
+description: "The International Council on Harmonization (ICH) S7B and E14 regulatory guidelines are sensitive but not specific for predicting which drugs are pro\u2010arrhythmic. It can be used to explore systemsbiology li2019 in silico mechanistic for dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

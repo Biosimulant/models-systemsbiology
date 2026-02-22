@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Band2012DiiVenusReducedmodelBiomd0000000414Model'
-description: 'This model is from the article: Root gravitropism is regulated by a
-  transient lateral auxin gradient controlled by a tipping-point mechanism. Band LR,
-  Wells DM, Larrieu A, Sun J, Middleton AM, French '
+description: "This model is from the article: Root gravitropism is regulated by a transient lateral auxin gradient controlled by a tipping-point mechanism. Band LR, Wells DM, Larrieu A, Sun J, Middleton AM, French."
 standard: other
 tags:
 - systemsbiology

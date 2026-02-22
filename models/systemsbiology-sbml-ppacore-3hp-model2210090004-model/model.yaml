@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Ppacore3hpModel2210090004Model'
-description: FTBL format model of 3-hydroxypropionic acid producing Pichia pastoris
-  strains. The model contains a stoichiometric core model and the carbon atom transitions.
-  Intended for calculation of fluxes using
+description: "FTBL format model of 3-hydroxypropionic acid producing Pichia pastoris strains. The model contains a stoichiometric core model and the carbon atom transitions."
 standard: other
 tags:
 - systemsbiology

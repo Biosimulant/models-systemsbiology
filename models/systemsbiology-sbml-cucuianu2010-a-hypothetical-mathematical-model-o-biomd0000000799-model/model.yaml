@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Cucuianu2010AHypotheticalMathematicalModelOBiomd0000000799Model'
-description: This is a simple mathematical model describing the growth and removal
-  of normal and leukemic haematopoietic stem cell populations and the role of these
-  cellular processes in generating monoclonal leuk
+description: "This is a simple mathematical model describing the growth and removal of normal and leukemic haematopoietic stem cell populations and the role of these cellular processes in generating monoclonal leuk. It can be used to explore systemsbiology cucuianu2010 a hypothetical mathematical o dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

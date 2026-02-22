@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Rovers1995PhotsyntheticOscillationsBiomd0000000292Model'
-description: 'This is the model described in the article: Photosynthetic oscillations
-  and the interdependence of photophosphorylation and electron transport as studied
-  by a mathematical model. Rovers W, Giersch C. '
+description: "This is the model described in the article: Photosynthetic oscillations and the interdependence of photophosphorylation and electron transport as studied by a mathematical model. It can be used to explore systemsbiology rovers1995 photsynthetic oscillations BioModels0000000292 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

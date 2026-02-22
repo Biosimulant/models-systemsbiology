@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Depaor1986CirculatoryautoregulationModel1172940336Model'
-description: 'This a model from the article: A feedback oscillator model for circulatory
-  autoregulation Annraoi M. De Paor, Patrick Timmons International Journal of Control
-  1986 43(2):679-688 doi:10.1080/0020717860'
+description: "This a model from the article: A feedback oscillator model for circulatory autoregulation Annraoi M. De Paor, Patrick Timmons International Journal of Control 1986 43(2):679-688 doi:10.1080/0020717860."
 standard: other
 tags:
 - systemsbiology

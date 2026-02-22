@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Adams2003ThrombinInhibitorsModel1808150002Model'
-description: 'Mathematical model of blood coagulation. Reused Hockin et al. 2002 model.
-  Simulation of thrombin inhibitors: Hirudin, Hirulog, Argatroban, Melagatran and
-  Efegatran.'
+description: "Mathematical model of blood coagulation. It can be used to explore systemsbiology adams2003 thrombin inhibitors model1808150002 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

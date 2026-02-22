@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Vilar2002OscillatorBiomd0000000035Model'
-description: Minimal Model for Circadian Oscillations Citation Vilar JMG, Kueh HY,
-  Barkai N, Leibler S, (2002) . Mechanisms of noise resistance in genetic oscillators,
-  PNAS, 99(9):5988-5992. http://www.pnas.org/cg
+description: "Minimal Model for Circadian Oscillations Citation Vilar JMG, Kueh HY, Barkai N, Leibler S, (2002) . It can be used to explore systemsbiology vilar2002 oscillator BioModels0000000035 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

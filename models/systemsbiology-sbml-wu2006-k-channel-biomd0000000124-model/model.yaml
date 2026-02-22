@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Wu2006KChannelBiomd0000000124Model'
-description: The model is described in the paper by Wu and Chang (2006). Diethyl pyrocarbonate,
-  a histidine-modifying agent, directly stimulates activity of ATP-sensitive potassium
-  channels in pituitary GH3 cells.
+description: "The model is described in the paper by Wu and Chang (2006). Diethyl pyrocarbonate, a histidine-modifying agent, directly stimulates activity of ATP-sensitive potassium channels in pituitary GH3 cells."
 standard: other
 tags:
 - systemsbiology

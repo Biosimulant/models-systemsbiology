@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Halloy2002FollicularautomatonModel1006230014Model'
-description: 'This a model from the article: The follicular automaton model: effect
-  of stochasticity and of synchronizationof hair cycles. Halloy J, Bernard BA, Loussouarn
-  G, Goldbeter A. J Theor Biol 2002 Feb 7;21'
+description: "This a model from the article: The follicular automaton model: effect of stochasticity and of synchronizationof hair cycles. Halloy J, Bernard BA, Loussouarn G, Goldbeter A."
 standard: other
 tags:
 - systemsbiology

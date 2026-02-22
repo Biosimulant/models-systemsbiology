@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Morris2009SynucleinAggregationVariableTemperBiomd0000000566Model'
-description: "Morris2009 - \u03B1-Synuclein aggregationvariable temperature and pH\
-  \ This model is described in the article: Alpha-synuclein aggregation variable temperature\
-  \ and variable pH kinetic data: a re-analysis usi"
+description: "Morris2009 - \u03b1-Synuclein aggregationvariable temperature and pH This model is described in the article: Alpha-synuclein aggregation variable temperature and variable pH kinetic data: a re-analysis usi. It can be used to explore systemsbiology morris2009 synuclein aggregation variable temper dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Systemsbiology: Signal Transduction (COMBO_0045)'
-description: Systemsbiology signal transduction comparative space with 3 models, configured
-  as non-causal co-simulation.
+description: "Systemsbiology Signal Transduction (COMBO_0045) brings together albeck2008_extri_1, bekkar2018_mapk1_2, bekkar2018_ppara_3 in a comparative space to examine how signal transduction mechanisms compare across these models. When you run it, you can compare participant trajectories through shared runtime settings and routed output streams."
 models:
 - repo: Biosimulant/models-systemsbiology
   alias: albeck2008_extri_1

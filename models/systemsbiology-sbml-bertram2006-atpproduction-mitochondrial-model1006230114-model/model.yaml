@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Bertram2006AtpproductionMitochondrialModel1006230114Model'
-description: 'This a model from the article: A simplified model for mitochondrial
-  ATP production. Bertram R, Gram Pedersen M, Luciani DS, Sherman A. J Theor Biol
-  2006 Dec 21;243(4):575-86 16945388 , Abstract: Most '
+description: "This a model from the article: A simplified model for mitochondrial ATP production. Bertram R, Gram Pedersen M, Luciani DS, Sherman A."
 standard: other
 tags:
 - systemsbiology

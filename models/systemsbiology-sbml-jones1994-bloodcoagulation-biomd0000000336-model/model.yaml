@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Jones1994BloodcoagulationBiomd0000000336Model'
-description: 'Jones1994_BloodCoagulation This model is built based on theexperimental
-  findings described in Lawson et al., 1994(PMID:8083241) This model is described
-  in the article: A model for the tissue factor pa'
+description: "Jones1994_BloodCoagulation This model is built based on theexperimental findings described in Lawson et al., 1994(PMID:8083241) This model is described in the article: A model for the tissue factor pa. It can be used to explore systemsbiology jones1994 bloodcoagulation BioModels0000000336 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

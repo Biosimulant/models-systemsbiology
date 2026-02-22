@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Liu2023AcinetobacterBaumanniiGrowthInhibitioModel2405080001Model'
-description: This model is a Chemprop neural network trained with a growth inhibition
-  dataset. Authors screened ~7,500 molecules for those that inhibited the growth of
-  A. baumannii in vitro. They discovered abauci
+description: "This model is a Chemprop neural network trained with a growth inhibition dataset. Authors screened ~7,500 molecules for those that inhibited the growth of A."
 standard: other
 tags:
 - systemsbiology

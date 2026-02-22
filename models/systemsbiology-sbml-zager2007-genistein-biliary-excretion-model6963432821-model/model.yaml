@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Zager2007GenisteinBiliaryExcretionModel6963432821Model'
-description: 'This the model from the article without the time delays: A Delayed Nonlinear
-  PBPK Model for Genistein Dosimetry in Rats. Zager MG, Schlosser PM, Tran HT. Bull
-  Math Biol. 2007 Jan;69(1):93-117. Pubmed '
+description: "This the model from the article without the time delays: A Delayed Nonlinear PBPK Model for Genistein Dosimetry in Rats. It can be used to explore systemsbiology zager2007 genistein biliary excretion model6963432821 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

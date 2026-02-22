@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Nikolaev2005AlbuminbilirubinadsorptionBiomd0000000291Model'
-description: 'This a model from the article: Mathematical model of binding of albumin-bilirubin
-  complex to the surface of carbon pyropolymer. Nikolaev AV, Rozhilo YA, Starozhilova
-  TK, Sarnatskaya VV, Yushko LA, Mik'
+description: "This a model from the article: Mathematical model of binding of albumin-bilirubin complex to the surface of carbon pyropolymer. Nikolaev AV, Rozhilo YA, Starozhilova TK, Sarnatskaya VV, Yushko LA, Mik."
 standard: other
 tags:
 - systemsbiology

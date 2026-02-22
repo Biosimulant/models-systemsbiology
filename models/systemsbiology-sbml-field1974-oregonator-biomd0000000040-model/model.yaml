@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Field1974OregonatorBiomd0000000040Model'
-description: 'Field-Noyes Model of BZ Reaction Citation R.J.Field and R.M.Noyes,J.Chem.Phys.60,1877
-  (1974) Description Field Noyes Version of Belousov-Zhabotinsky Reaction. BrO3 is
-  held constant; HOBr is typically '
+description: "Field-Noyes Model of BZ Reaction Citation R.J.Field and R.M.Noyes,J.Chem.Phys.60,1877 (1974) Description Field Noyes Version of Belousov-Zhabotinsky Reaction. It can be used to explore systemsbiology field1974 oregonator BioModels0000000040 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

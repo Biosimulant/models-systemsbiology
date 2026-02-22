@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Gonzalezheydrich1994HpaaxisregulationCortisolpModel0911270004Model'
-description: 'This a model from the article: A computer simulation of the hypothalamic-pituitary-adrenal
-  axis. Gonzalez-Heydrich J, Steingard RJ, Kohane I. Proc Annu Symp Comput Appl Med
-  Care 1994;:1010 7949852 , A'
+description: "This a model from the article: A computer simulation of the hypothalamic-pituitary-adrenal axis. It can be used to explore systemsbiology gonzalezheydrich1994 hpaaxisregulation cortisolp model0911270004 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

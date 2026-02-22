@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Kurata2002SinoatrialnodeModel0847712949Model'
-description: 'This a model from the article: Dynamical description of sinoatrial node
-  pacemaking: improved mathematical modelfor primary pacemaker cell. Kurata Y, Hisatome
-  I, Imanishi S, Shibamoto T. Am J Physiol H'
+description: "This a model from the article: Dynamical description of sinoatrial node pacemaking: improved mathematical modelfor primary pacemaker cell. Kurata Y, Hisatome I, Imanishi S, Shibamoto T."
 standard: other
 tags:
 - systemsbiology

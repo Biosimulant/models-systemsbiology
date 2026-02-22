@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Whitcomb2004BicarbonatePancreasBiomd0000000327Model'
-description: 'A mathematical model of the pancreatic duct cell generating high bicarbonate
-  concentrations in pancreatic juice David C Whitcomb, G Bard Ermentrout, Pancreas
-  2004 29:e30-40; PubMedID: 15257112 Abstrac'
+description: "A mathematical model of the pancreatic duct cell generating high bicarbonate concentrations in pancreatic juice David C Whitcomb, G Bard Ermentrout, Pancreas 2004 29:e30-40; PubMedID: 15257112 Abstrac. It can be used to explore systemsbiology whitcomb2004 bicarbonate pancreas BioModels0000000327 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Hayer2005SimpleAmparTraffModel2Model9086628127Model'
-description: This is a highly simplified model of the AMPAR trafficking cycle that
-  exhibits bistability. It is model 2 from Hayer and Bhalla, PLoS 2005. Its main purpose
-  it to illustrate how the bistability arises
+description: "This is a highly simplified model of the AMPAR trafficking cycle that exhibits bistability. It can be used to explore systemsbiology hayer2005 simple ampar traff model2 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

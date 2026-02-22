@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Systemsbiology: Metabolic Pathways (COMBO_0057)'
-description: Systemsbiology metabolic pathways comparative space with 4 models, configured
-  as non-causal co-simulation.
+description: "Systemsbiology Metabolic Pathways (COMBO_0057) assembles koivumaki2009_se_1, koivumaki2009_se_2, larsen2004_calci_3 as a comparative composed simulation to examine how metabolic pathways mechanisms compare across these m. When you run it, you can compare synchronized outputs through the declared wiring paths and monitor views."
 models:
 - repo: Biosimulant/models-systemsbiology
   alias: koivumaki2009_se_1

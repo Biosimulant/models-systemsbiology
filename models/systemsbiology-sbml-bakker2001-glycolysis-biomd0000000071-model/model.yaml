@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Bakker2001GlycolysisBiomd0000000071Model'
-description: '. . . SBML level 2 code generated for the JWS Online project by Jacky
-  Snoep using PySCeS Run this model online at http://jjj.biochem.sun.ac.za To cite
-  JWS Online please refer to: Olivier, B.G. and Sno'
+description: ". It can be used to explore systemsbiology bakker2001 glycolysis BioModels0000000071 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

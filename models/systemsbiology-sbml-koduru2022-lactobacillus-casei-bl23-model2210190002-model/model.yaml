@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Koduru2022LactobacillusCaseiBl23Model2210190002Model'
-description: GEM reconstruction for Lactobacillus casei BL23
+description: "Systems Biology Koduru2022Lactobacillus Casei Bl23Model2210190002Model models systemsbiology koduru2022 lactobacillus casei bl23 model2210190002 dynamics as a OTHER simulation curated from biomodels_ebi (biomod. When you run it, you can track state over time and compare response patterns across parameter settings."
 standard: other
 tags:
 - systemsbiology

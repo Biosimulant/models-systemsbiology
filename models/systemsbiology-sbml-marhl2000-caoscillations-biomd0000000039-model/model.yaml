@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Marhl2000CaoscillationsBiomd0000000039Model'
-description: In order to reproduce the model, the volume of all compartment is set
-  to 1, and the stoichiometry of CaER and CaM has been set to 0.25, corresponding
-  to betaER/rhoER and betaM/rhoM described in the pa
+description: "In order to reproduce the model, the volume of all compartment is set to 1, and the stoichiometry of CaER and CaM has been set to 0.25, corresponding to betaER/rhoER and betaM/rhoM described in the pa. It can be used to explore systemsbiology marhl2000 caoscillations BioModels0000000039 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

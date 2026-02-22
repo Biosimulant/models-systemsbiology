@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Chance1952CatalaseMechanismBiomd0000000282Model'
-description: 'This model is described in the article: The mechanism of catalase action.
-  II. Electric analog computer studies. Britton Chance, David S Greenstein, Joseph
-  Higgins, CC Yang, Arch Biochem. 1952 37:322-3'
+description: "This model is described in the article: The mechanism of catalase action. It can be used to explore systemsbiology chance1952 catalase mechanism BioModels0000000282 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

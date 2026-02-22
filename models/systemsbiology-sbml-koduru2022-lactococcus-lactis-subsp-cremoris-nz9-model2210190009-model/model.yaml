@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Koduru2022LactococcusLactisSubspCremorisNz9Model2210190009Model'
-description: GEM reconstruction of Lactococcus lactis subsp. cremoris NZ9000
+description: "GEM reconstruction of Lactococcus lactis subsp. It can be used to explore systemsbiology koduru2022 lactococcus lactis subsp cremoris dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

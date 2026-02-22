@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Naski1991AlphaThrombinCatalyzedConversionOfModel1808210002Model'
-description: Mathematical model of blood coagulation factor alpha-thrombin and conversion
-  of fibrinogen to fibrin with ATIII inhibition.
+description: "Mathematical model of blood coagulation factor alpha-thrombin and conversion of fibrinogen to fibrin with ATIII inhibition. It can be used to explore systemsbiology naski1991 alpha thrombin catalyzed conversion dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

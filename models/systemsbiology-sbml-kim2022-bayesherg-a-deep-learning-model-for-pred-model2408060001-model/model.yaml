@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Kim2022BayeshergADeepLearningModelForPredModel2408060001Model'
-description: 'BayeshERG is a predictor of small molecule-induced blockade of the hERG
-  ion channel. To increase its predictive power, the authors pretrained a bayesian
-  graph neural network with 300,000 molecules as '
+description: "BayeshERG is a predictor of small molecule-induced blockade of the hERG ion channel. It can be used to explore systemsbiology kim2022 bayesherg a deep learning dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

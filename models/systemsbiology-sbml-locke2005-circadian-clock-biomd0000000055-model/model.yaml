@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Locke2005CircadianClockBiomd0000000055Model'
-description: Locke2005 - Circadian Clock SBML model of the interlocked feedback loop
-  network The model describes the circuit depicted in Fig. 4 and reproduces the simulations
-  in Figure 5A and 5B. It provides initi
+description: "Locke2005 - Circadian Clock SBML model of the interlocked feedback loop network The model describes the circuit depicted in Fig. 4 and reproduces the simulations in Figure 5A and 5B."
 standard: other
 tags:
 - systemsbiology

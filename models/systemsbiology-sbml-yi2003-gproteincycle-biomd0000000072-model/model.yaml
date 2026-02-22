@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Yi2003GproteincycleBiomd0000000072Model'
-description: The paper describes both wild-type and mutant cells of G protein cycle
-  by using different values of G protein deactivation. We chosed the wild-type, k=0.11
-  s-1. The unit of the concentration for the p
+description: "The paper describes both wild-type and mutant cells of G protein cycle by using different values of G protein deactivation. It can be used to explore systemsbiology yi2003 gproteincycle BioModels0000000072 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

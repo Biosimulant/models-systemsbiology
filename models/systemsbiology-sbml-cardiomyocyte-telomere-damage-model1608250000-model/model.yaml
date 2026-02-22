@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: CardiomyocyteTelomereDamageModel1608250000Model'
-description: Faithful wrapper of upstream SBML model.
+description: "Systems Biology Cardiomyocyte Telomere Damage Model1608250000Model represents systemsbiology cardiomyocyte telomere damage model1608250000 mechanisms from biomodels_ebi reference biomodels_ebi:MODEL1608250000. When you run it, you can inspect state and compare temporal behavior between baseline and adjusted inputs."
 standard: other
 tags:
 - systemsbiology

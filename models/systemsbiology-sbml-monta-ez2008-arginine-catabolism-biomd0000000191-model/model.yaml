@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: MontaEz2008ArginineCatabolismBiomd0000000191Model'
-description: "SBML creators: Armando Reyes-Palomares * , Raul Monta\xF1ez *, Carlos\
-  \ Rodriguez-Caso +, Francisca Sanchez-Jimenez * , Miguel A. Medina * * ProCel Group,\
-  \ Department of Molecular Biology and Biochemistry, "
+description: "SBML creators: Armando Reyes-Palomares * , Raul Monta\u00f1ez *, Carlos Rodriguez-Caso +, Francisca Sanchez-Jimenez * , Miguel A. Medina * * ProCel Group, Department of Molecular Biology and Biochemistry,."
 standard: other
 tags:
 - systemsbiology

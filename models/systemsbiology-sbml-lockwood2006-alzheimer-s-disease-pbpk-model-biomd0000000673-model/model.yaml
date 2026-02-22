@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Lockwood2006AlzheimerSDiseasePbpkModelBiomd0000000673Model'
-description: Lockwood2006 - AlzheimersDisease PBPKmodel A mathematical model to predict
-  theeffectiveness of CI-1017 (muscarinic agonist) for Alzheimer'sdisease by evaluating
-  changes in ADAS-cog score. This model i
+description: "Lockwood2006 - AlzheimersDisease PBPKmodel A mathematical model to predict theeffectiveness of CI-1017 (muscarinic agonist) for Alzheimer'sdisease by evaluating changes in ADAS-cog score. It can be used to explore systemsbiology lockwood2006 alzheimer s disease pbpk dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

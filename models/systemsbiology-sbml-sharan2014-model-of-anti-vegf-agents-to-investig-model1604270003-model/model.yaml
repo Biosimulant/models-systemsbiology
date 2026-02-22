@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Sharan2014ModelOfAntiVegfAgentsToInvestigModel1604270003Model'
-description: Faithful wrapper of upstream SBML model.
+description: "Systems Biology Sharan2014Model Of Anti Vegf Agents To Investig Model1604270003Model models core biological dynamics as a OTHER simulation curated from biomodels_ebi (biomodels_ebi:MODEL1604270003), focused on. When you run it, you can track state over time and compare response patterns across parameter settings."
 standard: other
 tags:
 - systemsbiology

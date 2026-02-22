@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Terentyeva2015MechanismsOfXiiActivationModel1808160001Model'
-description: Mathematical model of the mechanism and kinetics of blood coagulation
-  factor XII.
+description: "Mathematical model of the mechanism and kinetics of blood coagulation factor XII. It can be used to explore systemsbiology terentyeva2015 mechanisms of xii activation dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

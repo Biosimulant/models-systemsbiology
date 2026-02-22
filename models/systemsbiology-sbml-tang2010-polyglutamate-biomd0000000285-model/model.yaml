@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Tang2010PolyglutamateBiomd0000000285Model'
-description: 'This a model from the article: Experimental and computational analysis
-  of polyglutamine-mediated cytotoxicity. Tang MY, Proctor CJ, Woulfe J, Gray DA.
-  PLoS Comput Biol. 2010 Sep 23;6(9). 20885783 , Ab'
+description: "This a model from the article: Experimental and computational analysis of polyglutamine-mediated cytotoxicity. Tang MY, Proctor CJ, Woulfe J, Gray DA."
 standard: other
 tags:
 - systemsbiology

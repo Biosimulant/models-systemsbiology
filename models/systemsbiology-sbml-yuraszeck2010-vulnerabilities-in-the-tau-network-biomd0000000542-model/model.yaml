@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Yuraszeck2010VulnerabilitiesInTheTauNetworkBiomd0000000542Model'
-description: 'Yuraszeck2010 - Vulnerabilities in the TauNetwork in Tau Pathophysiology
-  This model is described in the article: Vulnerabilities in the tau network and the
-  role of ultrasensitive points in tau pathoph'
+description: "Yuraszeck2010 - Vulnerabilities in the TauNetwork in Tau Pathophysiology This model is described in the article: Vulnerabilities in the tau network and the role of ultrasensitive points in tau pathoph. It can be used to explore systemsbiology yuraszeck2010 vulnerabilities in the tau dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

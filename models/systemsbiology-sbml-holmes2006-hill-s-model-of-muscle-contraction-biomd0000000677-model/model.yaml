@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Holmes2006HillSModelOfMuscleContractionBiomd0000000677Model'
-description: 'Holmes2006 - Hill''s model of muscle contraction This model is described
-  in the article: Teaching from classic papers: Hill''s model of muscle contraction.
-  Holmes JW. Adv Physiol Educ 2006 Jun; 30(2): 6'
+description: "Holmes2006 - Hill's model of muscle contraction This model is described in the article: Teaching from classic papers: Hill's model of muscle contraction. It can be used to explore systemsbiology holmes2006 hill s of muscle dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

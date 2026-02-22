@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Capuani2015BindingOfCblAndGrb2ToEgfrEarlBiomd0000000595Model'
-description: Fabrizio Capuani, Alexia Conte, Elisabetta Argenzio, Luca Marchetti,
-  Corrado Priami, Simona Polo, Pier Paolo Di Fiore, Sara Sigismund & Andrea Ciliberto.
-  Quantitative analysis reveals how EGFR activat
+description: "Fabrizio Capuani, Alexia Conte, Elisabetta Argenzio, Luca Marchetti, Corrado Priami, Simona Polo, Pier Paolo Di Fiore, Sara Sigismund & Andrea Ciliberto. It can be used to explore systemsbiology capuani2015 binding of cbl and dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

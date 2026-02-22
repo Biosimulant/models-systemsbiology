@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Hockin1999BloodcoagulationVainactivationBiomd0000000365Model'
-description: 'Matthew F. Hockin, Kevin M. Cawthern, Michael Kalafatis & Kenneth G.
-  Mann. A model describing the inactivation of factor Va by APC: bond cleavage, fragment
-  dissociation, and product inhibition. Bioche'
+description: "Matthew F. It can be used to explore systemsbiology hockin1999 bloodcoagulation vainactivation BioModels0000000365 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

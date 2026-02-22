@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Systemsbiology: Signal Transduction (COMBO_0047)'
-description: Systemsbiology signal transduction comparative space with 3 models, configured
-  as non-causal co-simulation.
+description: "Systemsbiology Signal Transduction (COMBO_0047) brings together curien2003_metth_1, dallepezze2014_c_2, hatakeyama2003_m_3 in a comparative space to examine how signal transduction mechanisms compare across these models. When you run it, you can compare participant trajectories through shared runtime settings and routed output streams."
 models:
 - repo: Biosimulant/models-systemsbiology
   alias: curien2003_metth_1

@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Smallbone2015MichaelisMentenModel1503180002Model'
-description: Faithful wrapper of upstream SBML model.
+description: "Systems Biology Smallbone2015Michaelis Menten Model1503180002Model represents systemsbiology smallbone2015 michaelis menten model1503180002 mechanisms from biomodels_ebi reference biomodels_ebi:MODEL1503180002. When you run it, you can inspect state and compare temporal behavior between baseline and adjusted inputs."
 standard: other
 tags:
 - systemsbiology

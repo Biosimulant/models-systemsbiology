@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: AjayBhalla2004FeedbackTuningModel9089914876Model'
-description: This model is taken from &lt;a href = 'http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&amp;cmd=Retrieve&amp;dopt=AbstractPlus&amp;list_uids=15548210&amp;query_hl=1&amp;itool=pubmed_docsum'&gt;
+description: "This model is taken from &lt;a href = 'http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&amp;cmd=Retrieve&amp;dopt=AbstractPlus&amp;list_uids=15548210&amp;query_hl=1&amp;itool=pubmed_docsum'&gt;. It can be used to explore systemsbiology ajay bhalla 2004 feedback tuning dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

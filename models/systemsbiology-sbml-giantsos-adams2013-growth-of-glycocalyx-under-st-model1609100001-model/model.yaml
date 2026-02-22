@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: GiantsosAdams2013GrowthOfGlycocalyxUnderStModel1609100001Model'
-description: 'Giantsos-Adams2013 - Growth of glycocalyxunder static conditions This
-  model is described in the article: Heparan Sulfate Regrowth Profiles Under Laminar
-  Shear Flow Following Enzymatic Degradation. Gia'
+description: "Giantsos-Adams2013 - Growth of glycocalyxunder static conditions This model is described in the article: Heparan Sulfate Regrowth Profiles Under Laminar Shear Flow Following Enzymatic Degradation. It can be used to explore systemsbiology giantsos adams2013 growth of glycocalyx dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

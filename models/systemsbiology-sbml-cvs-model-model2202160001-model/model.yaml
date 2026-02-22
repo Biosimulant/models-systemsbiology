@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: CvsModelModel2202160001Model'
-description: Added combine archive and version of the modular model with all modules
-  included as model definitions. Extensions changed from .sbml to .xml.
+description: "Added combine archive and version of the modular model with all modules included as model definitions. It can be used to explore systemsbiology cvs model2202160001 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Mitrophanov2016ExtendedMitrophanov2011BloodCModel1806280001Model'
-description: Mathematical model of blood coagulation. Extended model of Mitrophanov2011
-  (which is an extension of Hockin2002). Additional reactions added involving thrombin.
-  Modelling the effects of dilution and a
+description: "Mathematical model of blood coagulation. Extended model of Mitrophanov2011 (which is an extension of Hockin2002)."
 standard: other
 tags:
 - systemsbiology

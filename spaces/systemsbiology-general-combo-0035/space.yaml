@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Systemsbiology: General (COMBO_0035)'
-description: Systemsbiology general comparative space with 3 models, configured as
-  non-causal co-simulation.
+description: "Systemsbiology General (COMBO_0035) assembles cao2013_applicat_1, capuani2015_bind_2, cardiomyocyte_te_3 as a comparative composed simulation to examine how general mechanisms compare across these models. When you run it, you can compare synchronized outputs through the declared wiring paths and monitor views."
 models:
 - repo: Biosimulant/models-systemsbiology
   alias: cao2013_applicat_1

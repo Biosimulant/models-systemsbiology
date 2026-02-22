@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Li2021MicrornasNoncanonicalFeedbackModelModel2301180001Model'
-description: (I am not the first author of the paper who contributed to the experimental
-  data, I did the modeling)Bistable switches and oscillators have long been considered
-  key mechanisms underlying cell fate dec
+description: "(I am not the first author of the paper who contributed to the experimental data, I did the modeling)Bistable switches and oscillators have long been considered key mechanisms underlying cell fate dec. It can be used to explore systemsbiology li2021 micrornas noncanonical feedback model2301180001 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

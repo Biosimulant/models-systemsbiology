@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Systemsbiology: Signal Transduction (COMBO_0051)'
-description: Systemsbiology signal transduction comparative space with 3 models, configured
-  as non-causal co-simulation.
+description: "Systemsbiology Signal Transduction (COMBO_0051) assembles musante2017_swit_1, proctor2013_cart_2, proctor2013_effe_3 as a comparative composed simulation to examine how signal transduction mechanisms compare across these. When you run it, you can compare synchronized outputs through the declared wiring paths and monitor views."
 models:
 - repo: Biosimulant/models-systemsbiology
   alias: musante2017_swit_1

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Schliemann2011TnfProantiapoptosisBiomd0000000407Model'
-description: 'This model is from the article: Heterogeneity Reduces Sensitivity of
-  Cell Death for TNF-Stimuli Schliemann M, Bullinger E, Borchers S, Allgower F, Findeisen
-  R, Scheurich P. BMC Syst Biol. 2011 Dec 28;'
+description: "This model is from the article: Heterogeneity Reduces Sensitivity of Cell Death for TNF-Stimuli Schliemann M, Bullinger E, Borchers S, Allgower F, Findeisen R, Scheurich P. It can be used to explore systemsbiology schliemann2011 tnf proantiapoptosis BioModels0000000407 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

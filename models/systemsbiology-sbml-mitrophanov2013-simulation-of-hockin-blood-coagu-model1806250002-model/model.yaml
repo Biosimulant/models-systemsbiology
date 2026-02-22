@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Mitrophanov2013SimulationOfHockinBloodCoaguModel1806250002Model'
-description: Blood coagulation model using an updated Hockin2002 model. New reactions
-  for factor X and V activation by IXa and mIIa respectively (reactions R28 and R29,
-  parameters k43 and k44). Changes to paramete
+description: "Blood coagulation model using an updated Hockin2002 model. New reactions for factor X and V activation by IXa and mIIa respectively (reactions R28 and R29, parameters k43 and k44)."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Shankaran2018SystemsPharmacologyModelOfGastModel2110260001Model'
-description: Model predicted time course of enterocyte loss in patients treated with
-  weekly doses matched observed AE profiles. The model also correctly predicts a lower
-  level of AEs for every 3 weeks (Q3W), as co
+description: "Model predicted time course of enterocyte loss in patients treated with weekly doses matched observed AE profiles. The model also correctly predicts a lower level of AEs for every 3 weeks (Q3W), as co."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Zhang2017ModelIcw773OfCorynebacteriumGlutamModel2110010001Model'
-description: 'This model of Corynebacterium glutamicum was initially published by
-  Y. Zhang et al. (DOI: 10.1186/s13068-017-0856-3. PMID: 28680478; PMCID: PMC5493880)
-  and published in Microsoft Excel Spreadsheet for'
+description: "This model of Corynebacterium glutamicum was initially published by Y. It can be used to explore systemsbiology zhang2017 icw773 of corynebacterium glutam dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

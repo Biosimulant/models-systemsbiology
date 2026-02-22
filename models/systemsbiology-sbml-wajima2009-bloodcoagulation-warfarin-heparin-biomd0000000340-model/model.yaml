@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Wajima2009BloodcoagulationWarfarinHeparinBiomd0000000340Model'
-description: 'This model is from the article: A comprehensive model for the humoral
-  coagulation network in humans. Wajima T, Isbister GK, Duffull SB. Clinical Pharmacology
-  and therapeutics Volume 86, Issue 3, 10 Ju'
+description: "This model is from the article: A comprehensive model for the humoral coagulation network in humans. It can be used to explore systemsbiology wajima2009 bloodcoagulation warfarin heparin BioModels0000000340 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

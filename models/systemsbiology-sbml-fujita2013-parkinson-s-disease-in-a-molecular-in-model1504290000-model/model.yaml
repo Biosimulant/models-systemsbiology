@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Fujita2013ParkinsonSDiseaseInAMolecularInModel1504290000Model'
-description: Faithful wrapper of upstream SBML model.
+description: "Systems Biology Fujita2013Parkinson SDisease In AMolecular In Model1504290000Model models core biological dynamics as a OTHER simulation curated from biomodels_ebi (biomodels_ebi:MODEL1504290000), focused on sy. When you run it, you can track state over time and compare response patterns across parameter settings."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Nakano2010SynapticPlasticityModel1101170000Model'
-description: 'This is an SBML version of the model described in: A kinetic model of
-  dopamine- and calcium-dependent striatal synaptic plasticity. Nakano T, Doi T, Yoshimoto
-  J, Doya K. PLoS Comput Biol. 2010 Feb 12;'
+description: "This is an SBML version of the model described in: A kinetic model of dopamine- and calcium-dependent striatal synaptic plasticity. Nakano T, Doi T, Yoshimoto J, Doya K."
 standard: other
 tags:
 - systemsbiology

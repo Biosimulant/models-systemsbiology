@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Koduru2022LactobacillusPlantarumWcfs1Model2210190005Model'
-description: GEM reconstruction for Lactobacillus plantarum WCFS1
+description: "GEM reconstruction for Lactobacillus plantarum WCFS1. It can be used to explore systemsbiology koduru2022 lactobacillus plantarum wcfs1 model2210190005 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Koduru2022LactobacillusCaseiSubspCaseiAtccModel2210190001Model'
-description: GEM reconstruction for Lactobacillus casei subsp. casei ATCC 393
+description: "GEM reconstruction for Lactobacillus casei subsp. It can be used to explore systemsbiology koduru2022 lactobacillus casei subsp casei dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

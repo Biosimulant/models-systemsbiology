@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Kim2007CellularmemoryAsymmetricmodelBiomd0000000179Model'
-description: 'This model is from the article: Interlinked mutual inhibitory positive
-  feedbacks induce robust cellular memory effects. Kim TH, Jung SH, Cho KH FEBS Lett.
-  2007 Oct; 581(25) 17892872 , Abstract: Mutual'
+description: "This model is from the article: Interlinked mutual inhibitory positive feedbacks induce robust cellular memory effects. Kim TH, Jung SH, Cho KH FEBS Lett."
 standard: other
 tags:
 - systemsbiology

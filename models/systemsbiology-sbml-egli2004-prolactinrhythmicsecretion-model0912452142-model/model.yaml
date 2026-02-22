@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Egli2004ProlactinrhythmicsecretionModel0912452142Model'
-description: 'This a model from the article: Rhythmic secretion of prolactin in rats:
-  action of oxytocin coordinated byvasoactive intestinal polypeptide of suprachiasmatic
-  nucleus origin. Egli M, Bertram R, Sellix '
+description: "This a model from the article: Rhythmic secretion of prolactin in rats: action of oxytocin coordinated byvasoactive intestinal polypeptide of suprachiasmatic nucleus origin. It can be used to explore systemsbiology egli2004 prolactinrhythmicsecreti model0912452142 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

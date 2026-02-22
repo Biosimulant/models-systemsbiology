@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Systemsbiology: Metabolic Pathways (COMBO_0055)'
-description: Systemsbiology metabolic pathways comparative space with 3 models, configured
-  as non-causal co-simulation.
+description: "Systemsbiology Metabolic Pathways (COMBO_0055) organizes bertram2006_atpp_1, bhattacharya2011_2, chassagnole2002__3 into a comparative simulation setup to examine how metabolic pathways mechanisms compare across these mo. When you run it, you can compare participant trajectories through shared runtime settings and routed output streams."
 models:
 - repo: Biosimulant/models-systemsbiology
   alias: bertram2006_atpp_1

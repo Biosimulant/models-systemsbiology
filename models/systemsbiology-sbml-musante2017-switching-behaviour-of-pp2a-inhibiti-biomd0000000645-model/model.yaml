@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Musante2017SwitchingBehaviourOfPp2aInhibitiBiomd0000000645Model'
-description: 'Musante2017 - Switching behaviour of PP2Ainhibition by ARPP-16 - mutual
-  inhibitions and PKA inhibits MAST3and dominant negative effect This model is described
-  in the article: Reciprocal regulation of '
+description: "Musante2017 - Switching behaviour of PP2Ainhibition by ARPP-16 - mutual inhibitions and PKA inhibits MAST3and dominant negative effect This model is described in the article: Reciprocal regulation of. It can be used to explore systemsbiology musante2017 switching behaviour of pp2a dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

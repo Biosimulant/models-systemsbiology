@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Cloutier2012FeedbackMotifForParkinsonSDiseBiomd0000000558Model'
-description: 'Cloutier2012 - Feedback motif for Parkinson''sdisease This model is
-  described in the article: Feedback motif for the pathogenesis of Parkinson''s disease.
-  Cloutier M, Middleton R, Wellstead P. IET Syst '
+description: "Cloutier2012 - Feedback motif for Parkinson'sdisease This model is described in the article: Feedback motif for the pathogenesis of Parkinson's disease. It can be used to explore systemsbiology cloutier2012 feedback motif for parkinson dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Restif2006WhoopingCoughBiomd0000000249Model'
-description: 'Restif2006 - Whooping cough This model is described in the article:
-  Integrating life history and cross-immunity into the evolutionary dynamics of pathogens.
-  Restif O, Grenfell BT. Proc. Biol. Sci. 200'
+description: "Restif2006 - Whooping cough This model is described in the article: Integrating life history and cross-immunity into the evolutionary dynamics of pathogens. It can be used to explore systemsbiology restif2006 whooping cough BioModels0000000249 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

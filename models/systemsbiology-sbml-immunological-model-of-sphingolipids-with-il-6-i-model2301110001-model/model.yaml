@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: ImmunologicalModelOfSphingolipidsWithIl6IModel2301110001Model'
-description: In diseased state, we demonstrated that increase in production of sphingosine-1-phosphate
-  and overexpression of IL-6,lL-17 and IL-23 with SATB1 leads to disease progression.
+description: "In diseased state, we demonstrated that increase in production of sphingosine-1-phosphate and overexpression of IL-6,lL-17 and IL-23 with SATB1 leads to disease progression. It can be used to explore systemsbiology immunological of sphingolipids with il dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

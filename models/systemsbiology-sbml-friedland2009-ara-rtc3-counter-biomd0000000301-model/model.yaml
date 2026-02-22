@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Friedland2009AraRtc3CounterBiomd0000000301Model'
-description: 'This is the model of the RTC3 counter described in the article: Synthetic
-  gene networks that count. Friedland AE, Lu TK, Wang X, Shi D, Church G, Collins
-  JJ. Science. 2009 May 29;324(5931):1199-202. P'
+description: "This is the model of the RTC3 counter described in the article: Synthetic gene networks that count. Friedland AE, Lu TK, Wang X, Shi D, Church G, Collins JJ."
 standard: other
 tags:
 - systemsbiology

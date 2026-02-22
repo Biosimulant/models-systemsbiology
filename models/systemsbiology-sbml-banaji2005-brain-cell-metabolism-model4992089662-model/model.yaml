@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Banaji2005BrainCellMetabolismModel4992089662Model'
-description: 'This is a part of the model described in: A physiological model of cerebral
-  blood flow control Murad Banaji, Ilias Tachtsidis, David Delpy, Stephen Baigent,
-  Mathematical biosciences 2005 194:125-173; '
+description: "This is a part of the model described in: A physiological model of cerebral blood flow control Murad Banaji, Ilias Tachtsidis, David Delpy, Stephen Baigent, Mathematical biosciences 2005 194:125-173;. It can be used to explore systemsbiology banaji2005 brain cell metabolism model4992089662 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

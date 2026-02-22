@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Bouchnita2020ModelForBloodCoagulationUnderModel2011030003Model'
-description: A numerical simulation model to reproduce in vitro experiments of blood
-  coagulation in microfluidic capillaries. A reduced one-equation model of thrombin
-  distribution from the previous model under sim
+description: "A numerical simulation model to reproduce in vitro experiments of blood coagulation in microfluidic capillaries. A reduced one-equation model of thrombin distribution from the previous model under sim."
 standard: other
 tags:
 - systemsbiology

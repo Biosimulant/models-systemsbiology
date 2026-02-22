@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Wodarz2007CytomegalovirusInfectionModelWithBiomd0000000687Model'
-description: 'This a model from the article: Dynamics of killer T cell inflation in
-  viral infections. Wodarz D, Sierro S, Klenerman P. J R Soc Interface 2007 Jun 22;4(14):533-43
-  17251133 , Abstract: Upon acute vira'
+description: "This a model from the article: Dynamics of killer T cell inflation in viral infections. It can be used to explore systemsbiology wodarz2007 cytomegalovirus infection with BioModels0000000687 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

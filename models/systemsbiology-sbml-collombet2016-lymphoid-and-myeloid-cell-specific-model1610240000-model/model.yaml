@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Collombet2016LymphoidAndMyeloidCellSpecificModel1610240000Model'
-description: 'Collombet2016 - Lymphoid and myeloid cellspecification and transdifferentiation
-  This model is described in the article: Logical modeling of lymphoid and myeloid
-  cell specification and transdifferentia'
+description: "Collombet2016 - Lymphoid and myeloid cellspecification and transdifferentiation This model is described in the article: Logical modeling of lymphoid and myeloid cell specification and transdifferentia. It can be used to explore systemsbiology collombet2016 lymphoid and myeloid cell dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

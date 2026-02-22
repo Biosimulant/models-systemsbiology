@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Rozi2003GlycogenphosphorylaseActivationBiomd0000000100Model'
-description: The model reproduces the temporal evolution of Glycogen phosphorylase
-  for a vale of Vm5=30 as depicted in Fig 1a of the paper. The model makes use of
-  calcium oscillations from the Borghans model to st
+description: "The model reproduces the temporal evolution of Glycogen phosphorylase for a vale of Vm5=30 as depicted in Fig 1a of the paper. The model makes use of calcium oscillations from the Borghans model to st."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Puri2010MathematicalModelingForThePathogeneModel1409240001Model'
-description: 'Puri2010 - Mathematical Modeling for thePathogenesis of Alzheimer''s
-  Disease Puri2010 - Mathematical Modeling for the Pathogenesis of Alzheimer''s Disease
-  Encoded non-curated model. Issues: - Confusing '
+description: "Puri2010 - Mathematical Modeling for thePathogenesis of Alzheimer's Disease Puri2010 - Mathematical Modeling for the Pathogenesis of Alzheimer's Disease Encoded non-curated model. It can be used to explore systemsbiology puri2010 mathematical modeling for the dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

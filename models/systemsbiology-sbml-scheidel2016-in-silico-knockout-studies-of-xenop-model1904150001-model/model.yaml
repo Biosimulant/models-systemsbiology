@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Scheidel2016InSilicoKnockoutStudiesOfXenopModel1904150001Model'
-description: Xenophagy, also known as antibacterial autophagy, is a process of capturing
-  and eliminating cytosolic pathogens, like Salmonella. Salmonella is the best-studied
-  model organism for xenophagy. We presen
+description: "Xenophagy, also known as antibacterial autophagy, is a process of capturing and eliminating cytosolic pathogens, like Salmonella. Salmonella is the best-studied model organism for xenophagy."
 standard: other
 tags:
 - systemsbiology

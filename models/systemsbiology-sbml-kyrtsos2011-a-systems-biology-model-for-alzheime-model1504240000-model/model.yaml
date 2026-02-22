@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Kyrtsos2011ASystemsBiologyModelForAlzheimeModel1504240000Model'
-description: 'Kyrtsos2011 - A systems biology model forAlzheimer''s disease (Cholesterol
-  in AD) Encoded non-curated model. Issues: - Confusing HmgCoA differential equation
-  - Confusing d2 and t1 parameters - Lack of '
+description: "Kyrtsos2011 - A systems biology model forAlzheimer's disease (Cholesterol in AD) Encoded non-curated model. It can be used to explore systemsbiology kyrtsos2011 a systems biology for dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

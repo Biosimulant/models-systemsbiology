@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Smallbone2013ColonCryptCycleVersion0Biomd0000000520Model'
-description: 'Smallbone2013 - Colon Crypt cycle - Version 0 This model is described
-  in the article: A mathematical model of the colon crypt capturing compositional
-  dynamic interactions between cell types Kieran Sma'
+description: "Smallbone2013 - Colon Crypt cycle - Version 0 This model is described in the article: A mathematical model of the colon crypt capturing compositional dynamic interactions between cell types Kieran Sma. It can be used to explore systemsbiology smallbone2013 colon crypt cycle version dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

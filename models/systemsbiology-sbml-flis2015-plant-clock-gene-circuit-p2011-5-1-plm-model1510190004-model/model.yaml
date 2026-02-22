@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Flis2015PlantClockGeneCircuitP201151PlmModel1510190004Model'
-description: cL_m_degr, param m1, modified to ensure light rate &gt; dark rate.
+description: "cL_m_degr, param m1, modified to ensure light rate &gt; dark rate. It can be used to explore systemsbiology flis2015 plant clock gene circuit dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

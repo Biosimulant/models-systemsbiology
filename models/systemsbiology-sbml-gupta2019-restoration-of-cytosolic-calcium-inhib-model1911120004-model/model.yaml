@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Gupta2019RestorationOfCytosolicCalciumInhibModel1911120004Model'
-description: This is a four dimensionsal ordinary differential equation mathematical
-  model that explores the contribution of PI3P during Mycobacterium tuberculosis (Mtb)
-  phagocytosis. The model was built in an eff
+description: "This is a four dimensionsal ordinary differential equation mathematical model that explores the contribution of PI3P during Mycobacterium tuberculosis (Mtb) phagocytosis. It can be used to explore systemsbiology gupta2019 restoration of cytosolic calcium dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

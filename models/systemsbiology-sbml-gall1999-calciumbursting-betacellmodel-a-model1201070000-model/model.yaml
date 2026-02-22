@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Gall1999CalciumburstingBetacellmodelAModel1201070000Model'
-description: 'This a model from the article: Effect of Na/Ca exchange on plateau fraction
-  and [Ca]i in models for bursting in pancreatic beta-cells. Gall D, Susa I. Biophys
-  J. 1999 Jul;77(1):45-53. 10388739 , Abstr'
+description: "This a model from the article: Effect of Na/Ca exchange on plateau fraction and [Ca]i in models for bursting in pancreatic beta-cells. It can be used to explore systemsbiology gall1999 calciumbursting betacellmodel a model1201070000 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

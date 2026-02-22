@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Goldbeter1990CalciumspikeCicrBiomd0000000098Model'
-description: 'The model reproduces the time profile of cytosolic and intracellular
-  calcium as depicted in the upper panel of Fig 2 in the paper. The model was successfully
-  tested on MathSBML and Jarnac. This model '
+description: "The model reproduces the time profile of cytosolic and intracellular calcium as depicted in the upper panel of Fig 2 in the paper. The model was successfully tested on MathSBML and Jarnac."
 standard: other
 tags:
 - systemsbiology

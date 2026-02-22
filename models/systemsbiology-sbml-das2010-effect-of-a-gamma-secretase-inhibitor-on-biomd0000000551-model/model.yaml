@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Das2010EffectOfAGammaSecretaseInhibitorOnBiomd0000000551Model'
-description: 'Das2010 - Effect of a gamma-secretaseinhibitor on Amyloid-beta dynamics
-  This model is described in the article: Modeling effect of a ?-secretase inhibitor
-  on amyloid-? dynamics reveals significant rol'
+description: "Das2010 - Effect of a gamma-secretaseinhibitor on Amyloid-beta dynamics This model is described in the article: Modeling effect of a ?-secretase inhibitor on amyloid-? It can be used to explore systemsbiology das2010 effect of a gamma dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

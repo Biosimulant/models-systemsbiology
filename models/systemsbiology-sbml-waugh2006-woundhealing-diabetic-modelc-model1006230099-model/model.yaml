@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Waugh2006WoundhealingDiabeticModelcModel1006230099Model'
-description: 'This a model from the article: Modeling the effects of treating diabetic
-  wounds with engineered skinsubstitutes. Waugh HV, Sherratt JA. Wound Repair Regen
-  2007 Jul-Aug;15(4):556-65 17650100 , Abstract'
+description: "This a model from the article: Modeling the effects of treating diabetic wounds with engineered skinsubstitutes. It can be used to explore systemsbiology waugh2006 woundhealing diabetic modelc model1006230099 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

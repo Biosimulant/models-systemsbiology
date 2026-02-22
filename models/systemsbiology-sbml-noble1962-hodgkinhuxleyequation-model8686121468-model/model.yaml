@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Noble1962HodgkinhuxleyequationModel8686121468Model'
-description: 'This a model from the article: A modification of the Hodgkin--Huxley
-  equations applicable to Purkinje fibre action and pace-maker potentials. NOBLE D.
-  J Physiol. 1962;160:317-52. 14480151 , Abstract: '
+description: "This a model from the article: A modification of the Hodgkin--Huxley equations applicable to Purkinje fibre action and pace-maker potentials. It can be used to explore systemsbiology noble1962 hodgkinhuxleyequation model8686121468 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

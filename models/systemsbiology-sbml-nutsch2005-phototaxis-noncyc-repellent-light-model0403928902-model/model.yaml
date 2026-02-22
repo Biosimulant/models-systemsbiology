@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Nutsch2005PhototaxisNoncycRepellentLightModel0403928902Model'
-description: A quantitative model of the switch cycle of an archaeal flagellar motor
-  and its sensory control, Nutsch et al, Biophys. J. 2005 ( 16192281 ) and del Rosario
-  et al, IET Syst. Biol. 2007 ( 17708428 ). T
+description: "A quantitative model of the switch cycle of an archaeal flagellar motor and its sensory control, Nutsch et al, Biophys. It can be used to explore systemsbiology nutsch2005 phototaxis noncyc repellent light dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

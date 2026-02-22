@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Ciliberto2005SteadyStatesAndOscillationsInBiomd0000001006Model'
-description: Its a mathematial model studying steady state and oscialltions in p53-MDM2
-  network triggered by IR induced DNA Damage.
+description: "Its a mathematial model studying steady state and oscialltions in p53-MDM2 network triggered by IR induced DNA Damage. It can be used to explore systemsbiology ciliberto2005 steady states and oscillations dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Montagne2011OligatorOptimisedBiomd0000000315Model'
-description: 'This is the model of the in vitro DNA oscillator called oligator with
-  the optmized set of parameters described in the article: Programming an in vitro
-  DNA oscillator using a molecular networking strat'
+description: "This is the model of the in vitro DNA oscillator called oligator with the optmized set of parameters described in the article: Programming an in vitro DNA oscillator using a molecular networking strat. It can be used to explore systemsbiology montagne2011 oligator optimised BioModels0000000315 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

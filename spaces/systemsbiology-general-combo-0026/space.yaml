@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Systemsbiology: General (COMBO_0026)'
-description: Systemsbiology general comparative space with 2 models, configured as
-  non-causal co-simulation.
+description: "Systemsbiology General (COMBO_0026) organizes best2009_homeost_1, bhalla1999_3d_2, state_compare_mon into a comparative simulation setup to examine how general mechanisms compare across these models. When you run it, you can compare participant trajectories through shared runtime settings and routed output streams."
 models:
 - repo: Biosimulant/models-systemsbiology
   alias: best2009_homeost_1

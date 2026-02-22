@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: GomezCabrero2011AtherogenesisModel1002160000Model'
-description: 'This model is from the article: Workflow for generating competing hypothesis
-  from models with parameter uncertainty. David Gomez-Cabrero, Albert Compte and Jesper
-  Tegner Interface Focus 6 June 2011 vo'
+description: "This model is from the article: Workflow for generating competing hypothesis from models with parameter uncertainty. David Gomez-Cabrero, Albert Compte and Jesper Tegner Interface Focus 6 June 2011 vo."
 standard: other
 tags:
 - systemsbiology

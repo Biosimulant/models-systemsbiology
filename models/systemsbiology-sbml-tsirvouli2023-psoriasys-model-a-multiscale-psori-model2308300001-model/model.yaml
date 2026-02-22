@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Tsirvouli2023PsoriasysModelAMultiscalePsoriModel2308300001Model'
-description: The PsoriaSys model represent molecular and cellular interactions in
-  the psoriatic microenvironment. The model is able to simulate the dynamics of keratinocyte
-  proliferation in response to psoriatic t
+description: "The PsoriaSys model represent molecular and cellular interactions in the psoriatic microenvironment. The model is able to simulate the dynamics of keratinocyte proliferation in response to psoriatic t."
 standard: other
 tags:
 - systemsbiology

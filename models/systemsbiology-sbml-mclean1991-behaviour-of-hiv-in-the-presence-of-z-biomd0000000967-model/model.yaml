@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Mclean1991BehaviourOfHivInThePresenceOfZBiomd0000000967Model'
-description: A new mechanism is proposed for the apparent breakthrough of HIV that
-  occurs approximately 6 months after the commencement of therapy with zidovudine
-  (AZT). Using a simple mathematical model of the in
+description: "A new mechanism is proposed for the apparent breakthrough of HIV that occurs approximately 6 months after the commencement of therapy with zidovudine (AZT). It can be used to explore systemsbiology mclean1991 behaviour of hiv in dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

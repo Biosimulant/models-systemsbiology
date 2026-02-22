@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Proctor2017RoleOfMicrornasInOsteoarthritisModel1705170000Model'
-description: 'Proctor2017- Role of microRNAs inosteoarthritis (miR140-SMAD3 double
-  negative feedback) This model is described in the article: Computer simulation models
-  as a tool to investigate the role of microRNA'
+description: "Proctor2017- Role of microRNAs inosteoarthritis (miR140-SMAD3 double negative feedback) This model is described in the article: Computer simulation models as a tool to investigate the role of microRNA. It can be used to explore systemsbiology proctor2017 role of micrornas in dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

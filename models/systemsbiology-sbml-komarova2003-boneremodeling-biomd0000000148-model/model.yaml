@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Komarova2003BoneremodelingBiomd0000000148Model'
-description: 'This a model from the article: Mathematical model predicts a critical
-  role for osteoclast autocrine regulation in the control of bone remodeling. Komarova
-  SV, Smith RJ, Dixon SJ, Sims SM, Wahl LM Bone'
+description: "This a model from the article: Mathematical model predicts a critical role for osteoclast autocrine regulation in the control of bone remodeling. Komarova SV, Smith RJ, Dixon SJ, Sims SM, Wahl LM Bone."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Singh2006TcaEcoliGlucoseBiomd0000000222Model'
-description: 'This a model from the article: Kinetic modeling of tricarboxylic acid
-  cycle and glyoxylate bypass in Mycobacterium tuberculosis, and its application to
-  assessment of drugtargets. Singh VK , Ghosh I Th'
+description: "This a model from the article: Kinetic modeling of tricarboxylic acid cycle and glyoxylate bypass in Mycobacterium tuberculosis, and its application to assessment of drugtargets. It can be used to explore systemsbiology singh2006 tca ecoli glucose BioModels0000000222 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Plant1981BurstingnervecellsBiomd0000000304Model'
-description: 'This a model from the article: Bifurcation and resonance in a model
-  for bursting nerve cells. Plant RE J Math Biol 1981 Jan; 11(1): 15-32 7252375 ,
-  Abstract: In this paper we consider a model for the '
+description: "This a model from the article: Bifurcation and resonance in a model for bursting nerve cells. Plant RE J Math Biol 1981 Jan; 11(1): 15-32 7252375 , Abstract: In this paper we consider a model for the."
 standard: other
 tags:
 - systemsbiology

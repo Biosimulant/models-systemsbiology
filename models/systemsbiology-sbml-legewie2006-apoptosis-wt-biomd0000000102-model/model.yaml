@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Legewie2006ApoptosisWtBiomd0000000102Model'
-description: The model reproduces active Caspase-3 time profile corresponding to the
-  total Apaf-1 value of 20 nM as depicted in Fig 2-A . The model was successfully
-  tested on MathSBML.
+description: "The model reproduces active Caspase-3 time profile corresponding to the total Apaf-1 value of 20 nM as depicted in Fig 2-A . It can be used to explore systemsbiology legewie2006 apoptosis wt BioModels0000000102 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

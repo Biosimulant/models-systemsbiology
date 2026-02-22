@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Bungay2006FollicularfluidBiomd0000000333Model'
-description: 'This model is from the article: Modelling thrombin generation in human
-  ovarian follicular fluid Bungay Sharene D., Gentry Patricia A., Gentry Rodney D.
-  Bulletin of Mathematical Biology Volume 68, Issu'
+description: "This model is from the article: Modelling thrombin generation in human ovarian follicular fluid Bungay Sharene D., Gentry Patricia A., Gentry Rodney D. It can be used to explore systemsbiology bungay2006 follicularfluid BioModels0000000333 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

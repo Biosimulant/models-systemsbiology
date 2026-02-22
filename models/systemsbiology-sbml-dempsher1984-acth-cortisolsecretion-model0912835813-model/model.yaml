@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Dempsher1984ActhCortisolsecretionModel0912835813Model'
-description: 'This a model from the article: A mechanistic model of ACTH-stimulated
-  cortisol secretion. Dempsher DP, Gann DS, Phair RD. Am J Physiol 1984 Apr;246(4
-  Pt 2):R587-96 6326602 , Abstract: Adrenal secretor'
+description: "This a model from the article: A mechanistic model of ACTH-stimulated cortisol secretion. It can be used to explore systemsbiology dempsher1984 acth cortisolsecretion model0912835813 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

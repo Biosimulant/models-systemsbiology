@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Pokhilko2012CircclockRepressilatorfeedbackloopBiomd0000000412Model'
-description: "This model is from the article: The clock gene circuit in Arabidopsis\
-  \ includes a repressilator with additional feedback loops Pokhilko A, Fern\xE1ndez\
-  \ AP, Edwards KD, Southern MM, Halliday KJ, Millar AJ."
+description: "This model is from the article: The clock gene circuit in Arabidopsis includes a repressilator with additional feedback loops Pokhilko A, Fern\u00e1ndez AP, Edwards KD, Southern MM, Halliday KJ, Millar AJ. It can be used to explore systemsbiology pokhilko2012 circclock repressilatorfeedbackloo BioModels0000000412 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

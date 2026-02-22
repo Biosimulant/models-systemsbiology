@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Munz2009ZombiImpulsiveKillingModel1008060000Model'
-description: Munz2009 - Zombie Impulsive Killing This is the basic SZR model with
-  impulsive killing described in the article. This model was originally created by
-  libAntimony v1.4 (using libSBML 3.4.1). This model
+description: "Munz2009 - Zombie Impulsive Killing This is the basic SZR model with impulsive killing described in the article. It can be used to explore systemsbiology munz2009 zombi impulsive killing model1008060000 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

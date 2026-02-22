@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Calzone2010CellfateMasterModelModel0912180000Model'
-description: 'Attention: As this model cannot be encoded in SBML at this time, the
-  SBML file contains the whole model in GINML , a different XML model description
-  language, in its main annotation element. Still, th'
+description: "Attention: As this model cannot be encoded in SBML at this time, the SBML file contains the whole model in GINML , a different XML model description language, in its main annotation element. It can be used to explore systemsbiology calzone2010 cellfate master model0912180000 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

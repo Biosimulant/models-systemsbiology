@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Schmierer2008SmadTgfbBiomd0000000173Model'
-description: 'This sbml file describes the RECI model from: ''Mathematical modeling
-  identifies Smad nucleocytoplasmic shuttling as a dynamic signal-interpreting system''
-  by Bernhard Schmierer, Alexander L. Tournier, '
+description: "This sbml file describes the RECI model from: 'Mathematical modeling identifies Smad nucleocytoplasmic shuttling as a dynamic signal-interpreting system' by Bernhard Schmierer, Alexander L. It can be used to explore systemsbiology schmierer 2008 smad tgfb BioModels0000000173 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

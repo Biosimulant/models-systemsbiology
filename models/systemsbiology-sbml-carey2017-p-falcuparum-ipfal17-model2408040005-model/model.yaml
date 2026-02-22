@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Carey2017PFalcuparumIpfal17Model2408040005Model'
-description: FROG an miniFROG reports for the model iPfal17. The model can be found
-  in the Supplementary Information of the Carey et al, 2017 paper cited here.
+description: "FROG an miniFROG reports for the model iPfal17. The model can be found in the Supplementary Information of the Carey et al, 2017 paper cited here."
 standard: other
 tags:
 - systemsbiology

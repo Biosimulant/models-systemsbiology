@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Vantol2020ThalassiosiraPseudonanaCcmp1335GeModel2010230003Model'
-description: 'Thalassiosira pseudonana CCMP 1335, acclimated to 5 umol photons m-2
-  s-1 (iTps1432_LL).doi: https://doi.org/10.1101/2020.10.26.355578'
+description: "Thalassiosira pseudonana CCMP 1335, acclimated to 5 umol photons m-2 s-1 (iTps1432_LL).doi: https://doi.org/10.1101/2020.10.26.355578. It can be used to explore systemsbiology vantol2020 thalassiosira pseudonana ccmp 1335 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

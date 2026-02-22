@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Smallbone2011TrehalosebiosynthesisBiomd0000000380Model'
-description: 'This model is from the article: Building a Kinetic Model of Trehalose
-  Biosynthesis in Saccharomyces cerevisiae. Smallbone K, Malys N, Messiha HL, Wishart
-  JA, Simeonidis E. Methods Enzymol. 2011;500:35'
+description: "This model is from the article: Building a Kinetic Model of Trehalose Biosynthesis in Saccharomyces cerevisiae. Smallbone K, Malys N, Messiha HL, Wishart JA, Simeonidis E."
 standard: other
 tags:
 - systemsbiology

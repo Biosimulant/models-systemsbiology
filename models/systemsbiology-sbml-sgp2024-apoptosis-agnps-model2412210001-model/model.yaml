@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Sgp2024ApoptosisAgnpsModel2412210001Model'
-description: This model explores the temporal dynamics of silver nanoparticles (AgNPs)-induced
-  apoptosis using dynamic simulations in COPASI.It provides a time-resolved framework
-  for understanding how cellular str
+description: "This model explores the temporal dynamics of silver nanoparticles (AgNPs)-induced apoptosis using dynamic simulations in COPASI.It provides a time-resolved framework for understanding how cellular str. It can be used to explore systemsbiology sgp2024 apoptosis agnps model2412210001 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

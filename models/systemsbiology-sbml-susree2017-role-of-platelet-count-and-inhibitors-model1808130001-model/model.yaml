@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Susree2017RoleOfPlateletCountAndInhibitorsModel1808130001Model'
-description: Mathematical model of blood coagulation that incorporates platelet binding
-  sites.
+description: "Mathematical model of blood coagulation that incorporates platelet binding sites. It can be used to explore systemsbiology susree2017 role of platelet count dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

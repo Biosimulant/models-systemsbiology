@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Mushayabasa2011ModelingGonirrheaAndHivCoInModel1812040004Model'
-description: A mathematical model was designed to explore the co-interaction of gonorrhea
-  and HIV in the presence of antiretroviral therapy and gonorrhea treatment. Qualitative
-  and comprehensive mathematical techn
+description: "A mathematical model was designed to explore the co-interaction of gonorrhea and HIV in the presence of antiretroviral therapy and gonorrhea treatment. It can be used to explore systemsbiology mushayabasa2011 modeling gonirrhea and hiv dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

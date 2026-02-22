@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Mazet2020ModelOfThePiCycleModel2006300001Model'
-description: '&lt;notes xmlns=&quot;http://www.sbml.org/sbml/level2/version4&quot;&gt;
-  &lt;body xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt; &lt;pre&gt;PI cycle
-  Core Model Global Quantities = free + bound PL '
+description: "&lt;notes xmlns=&quot;http://www.sbml.org/sbml/level2/version4&quot;&gt; &lt;body xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt; &lt;pre&gt;PI cycle Core Model Global Quantities = free + bound PL. It can be used to explore systemsbiology mazet2020 of the pi cycle dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

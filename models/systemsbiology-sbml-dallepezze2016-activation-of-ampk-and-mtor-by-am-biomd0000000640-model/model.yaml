@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Dallepezze2016ActivationOfAmpkAndMtorByAmBiomd0000000640Model'
-description: 'DallePezze2016 - Activation of AMPK and mTORby amino acids (Model 3)
-  This model is as described in the Supplementary Software 3 of the reference publication:
-  SBML model similar to Model S2, but includ'
+description: "DallePezze2016 - Activation of AMPK and mTORby amino acids (Model 3) This model is as described in the Supplementary Software 3 of the reference publication: SBML model similar to Model S2, but includ. It can be used to explore systemsbiology dallepezze2016 activation of ampk and dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

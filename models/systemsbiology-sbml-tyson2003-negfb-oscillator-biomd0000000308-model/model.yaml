@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Tyson2003NegfbOscillatorBiomd0000000308Model'
-description: 'Originally created by libAntimony v1.4 (using libSBML 3.4.1) This is
-  an SBML implementation the model of negative feedback oscillator (figure 2a) described
-  in the article: Sniffers, buzzers, toggles a'
+description: "Originally created by libAntimony v1.4 (using libSBML 3.4.1) This is an SBML implementation the model of negative feedback oscillator (figure 2a) described in the article: Sniffers, buzzers, toggles a. It can be used to explore systemsbiology tyson2003 negfb oscillator BioModels0000000308 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

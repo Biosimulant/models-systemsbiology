@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Borghans1997CalciumOscillationModel2Biomd0000000044Model'
-description: Borghans1997 - Calcium Oscillation - Model 2 A theoretical expoloration
-  of possible mechanisms of intracellular calcium oscillations has been studied, considering
-  three hypothesis (see below). This mo
+description: "Borghans1997 - Calcium Oscillation - Model 2 A theoretical expoloration of possible mechanisms of intracellular calcium oscillations has been studied, considering three hypothesis (see below). It can be used to explore systemsbiology borghans1997 calcium oscillation 2 BioModels0000000044 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

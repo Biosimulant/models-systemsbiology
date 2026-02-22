@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Saeidi2012QuorumSensingDeviceThatProducesGBiomd0000000438Model'
-description: Saeidi2012 - Quorum sensing device that produces GFP Saeidi et al. (2012)
-  has modelled a quorum sensing device that produces green fluorescent protein (GFP)
-  as reporter in the presence of Acyl Homoser
+description: "Saeidi2012 - Quorum sensing device that produces GFP Saeidi et al. (2012) has modelled a quorum sensing device that produces green fluorescent protein (GFP) as reporter in the presence of Acyl Homoser."
 standard: other
 tags:
 - systemsbiology

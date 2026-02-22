@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Mostolizadeh2022DPigrumAndSAureusModel2209060002Model'
-description: This resulting community model combines the latest available curated
-  GEMs of D. pigrum and S. aureus. This use-case illustrates how to incorporate genuine
-  GEMs of participating microorganisms and crea
+description: "This resulting community model combines the latest available curated GEMs of D. It can be used to explore systemsbiology mostolizadeh2022 d pigrum and s dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

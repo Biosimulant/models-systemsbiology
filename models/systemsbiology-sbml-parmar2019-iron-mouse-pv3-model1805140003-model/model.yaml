@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Parmar2019IronMousePv3Model1805140003Model'
-description: Iron Mouse PV3 'A computational model to understand mouse iron physiology
-  and diseases' By Jignesh Parmar and Pedro Mendes Base model This is a dynamic model
-  of iron distribution in mice, covering sev
+description: "Iron Mouse PV3 'A computational model to understand mouse iron physiology and diseases' By Jignesh Parmar and Pedro Mendes Base model This is a dynamic model of iron distribution in mice, covering sev. It can be used to explore systemsbiology parmar2019 iron mouse pv3 model1805140003 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

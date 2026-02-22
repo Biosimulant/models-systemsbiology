@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Qi2013Il6AndIfnCrosstalkModelNonCompetitBiomd0000000543Model'
-description: Qi2013 - IL-6 and IFN crosstalk model(non-competitive) This model [BIOMD0000000543]
-  describes the crosstalk between IFN-gamma and IL-6 inducedsignalling; it aims to
-  outline mechanisms and factors that
+description: "Qi2013 - IL-6 and IFN crosstalk model(non-competitive) This model [BIOMD0000000543] describes the crosstalk between IFN-gamma and IL-6 inducedsignalling; it aims to outline mechanisms and factors that. It can be used to explore systemsbiology qi2013 il 6 and ifn dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

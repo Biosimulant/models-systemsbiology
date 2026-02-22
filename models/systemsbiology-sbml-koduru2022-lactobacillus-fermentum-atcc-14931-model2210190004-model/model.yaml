@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Koduru2022LactobacillusFermentumAtcc14931Model2210190004Model'
-description: GEM reconstruction for Lactobacillus fermentum ATCC 14931
+description: "GEM reconstruction for Lactobacillus fermentum ATCC 14931. It can be used to explore systemsbiology koduru2022 lactobacillus fermentum atcc 14931 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

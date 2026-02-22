@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Cao2013ApplicationOfAbsisMethodInBirthDeaBiomd0000000484Model'
-description: Youfang Cao & Jie Liang. Adaptively biased sequential importance sampling
-  for rare events in reaction networks with comparison to exact solutions from finite
-  buffer dCME method. The Journal of Chemica
+description: "Youfang Cao & Jie Liang. Adaptively biased sequential importance sampling for rare events in reaction networks with comparison to exact solutions from finite buffer dCME method."
 standard: other
 tags:
 - systemsbiology

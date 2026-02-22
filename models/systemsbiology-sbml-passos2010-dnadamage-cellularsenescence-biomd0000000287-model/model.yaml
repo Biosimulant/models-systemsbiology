@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Passos2010DnadamageCellularsenescenceBiomd0000000287Model'
-description: 'This is the model described in: Feedback between p21 and reactive oxygen
-  production is necessary for cell senescence. Passos JF, Nelson G, Wang C, Richter
-  T, Simillion C, Proctor CJ, Miwa S, Olijslage'
+description: "This is the model described in: Feedback between p21 and reactive oxygen production is necessary for cell senescence. Passos JF, Nelson G, Wang C, Richter T, Simillion C, Proctor CJ, Miwa S, Olijslage."
 standard: other
 tags:
 - systemsbiology

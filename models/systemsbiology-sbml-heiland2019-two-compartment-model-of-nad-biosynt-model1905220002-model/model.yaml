@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Heiland2019TwoCompartmentModelOfNadBiosyntModel1905220002Model'
-description: The model is based on MODEL1905220001 but has two compartments that have
-  different composition of the biosynthetic enzymes NADA and NamPT. One compartment
-  contains in addition NNMT, the other one does
+description: "The model is based on MODEL1905220001 but has two compartments that have different composition of the biosynthetic enzymes NADA and NamPT. One compartment contains in addition NNMT, the other one does."
 standard: other
 tags:
 - systemsbiology

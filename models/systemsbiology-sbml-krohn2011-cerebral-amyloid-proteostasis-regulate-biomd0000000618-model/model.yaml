@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Krohn2011CerebralAmyloidProteostasisRegulateBiomd0000000618Model'
-description: "Krohn2011 - Cerebral amyloid-\u03B2proteostasis regulated by membrane\
-  \ transport protein ABCC1 This model is described in the article: Cerebral amyloid-\u03B2\
-  \ proteostasis is regulated by the membrane transport "
+description: "Krohn2011 - Cerebral amyloid-\u03b2proteostasis regulated by membrane transport protein ABCC1 This model is described in the article: Cerebral amyloid-\u03b2 proteostasis is regulated by the membrane transport. It can be used to explore systemsbiology krohn2011 cerebral amyloid proteostasis regulate dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

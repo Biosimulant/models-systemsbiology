@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Mishra2018EnhancingSorafenibEfficacyByCoTaModel1808060001Model'
-description: Kinetic model of GSHnet of different HCC etiological conditions.
+description: "Kinetic model of GSHnet of different HCC etiological conditions. It can be used to explore systemsbiology mishra2018 enhancing sorafenib efficacy by dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

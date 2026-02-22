@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Boehm2014IsoformSpecificDimerizationOfPstatBiomd0000000591Model'
-description: Boehm2014 - isoform-specific dimerization of pSTAT5A and pSTAT5B To study
-  STAT5 activation, the authors build a dynamic model of pSTAT5 isoform dimerization.
-  Combinatorial binding of pSTAT5A and pSTAT
+description: "Boehm2014 - isoform-specific dimerization of pSTAT5A and pSTAT5B To study STAT5 activation, the authors build a dynamic model of pSTAT5 isoform dimerization. It can be used to explore systemsbiology boehm2014 isoform specific dimerization of dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

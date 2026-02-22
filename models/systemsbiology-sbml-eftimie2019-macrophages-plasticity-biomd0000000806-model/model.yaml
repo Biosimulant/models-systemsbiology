@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Eftimie2019MacrophagesPlasticityBiomd0000000806Model'
-description: 'This paper describes the complex interactions between two extreme types
-  of macrophages (M1 and M2 cells), effector T cells and an oncolytic Vesicular Stomatitis
-  Virus (VSV), on the growth/elimination '
+description: "This paper describes the complex interactions between two extreme types of macrophages (M1 and M2 cells), effector T cells and an oncolytic Vesicular Stomatitis Virus (VSV), on the growth/elimination. It can be used to explore systemsbiology eftimie2019 macrophages plasticity BioModels0000000806 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

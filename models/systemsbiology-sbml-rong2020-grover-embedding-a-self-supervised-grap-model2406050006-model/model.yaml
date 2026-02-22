@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Rong2020GroverEmbeddingASelfSupervisedGrapModel2406050006Model'
-description: This is the base grover model. GROVER is a self-supervised Graph Neural
-  Network for molecular representation pretrained with 10 million unlabelled molecules
-  from ChEMBL and ZINC15, and has been fine-t
+description: "This is the base grover model. GROVER is a self-supervised Graph Neural Network for molecular representation pretrained with 10 million unlabelled molecules from ChEMBL and ZINC15, and has been fine-t."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Chowhall2008DynamicsOfHumanWeightChangeOdeBiomd0000000901Model'
-description: This ODE model is a representation of the two compartment macronutrient
-  partition model that Chow and Hall outlined in their 2008 publication. It is one
-  of three models that they outlined in that publ
+description: "This ODE model is a representation of the two compartment macronutrient partition model that Chow and Hall outlined in their 2008 publication. It is one of three models that they outlined in that publ."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Zeilinger2006Prr7Prr9lightYBiomd0000000096Model'
-description: The model reproduces the time profile of cYm and cTm under light-dark
-  cycles as depicted in Fig 4 and Fig 5 respectively. 12 hour light-dark cycles are
-  accomplished using a simple algorithm in the eve
+description: "The model reproduces the time profile of cYm and cTm under light-dark cycles as depicted in Fig 4 and Fig 5 respectively. 12 hour light-dark cycles are accomplished using a simple algorithm in the eve."
 standard: other
 tags:
 - systemsbiology

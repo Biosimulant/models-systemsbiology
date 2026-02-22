@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Leloup1998CircclockLdBiomd0000000171Model'
-description: 'Leloup and Goldbeter, 1998 This model was created after the article
-  by Leloup and Goldbeter, J Biol Rhythms 1998, Vol:13(1),pp70-87, pubmedID: 9486845
-  A Model for Circadian Rhythms in Drosophila Incor'
+description: "Leloup and Goldbeter, 1998 This model was created after the article by Leloup and Goldbeter, J Biol Rhythms 1998, Vol:13(1),pp70-87, pubmedID: 9486845 A Model for Circadian Rhythms in Drosophila Incor. It can be used to explore systemsbiology leloup1998 circclock ld BioModels0000000171 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

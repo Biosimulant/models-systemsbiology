@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Rong2020GroverFreesolvExperimentalAndCalculModel2406050001Model'
-description: This model has been trained using the GROVER embedding and the the FreeSolv
-  dataset from MoleculeNet. The Model is based on experimental and calculated hydration
-  free energy of small molecules in wate
+description: "This model has been trained using the GROVER embedding and the the FreeSolv dataset from MoleculeNet. The Model is based on experimental and calculated hydration free energy of small molecules in wate."
 standard: other
 tags:
 - systemsbiology

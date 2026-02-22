@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Hamey2017BloodStemCellRegulatoryNetworkLmpModel1610060001Model'
-description: 'Hamey2017 - Blood stem cell regulatorynetwork (LMPP network) This model
-  is described in the article: Reconstructing blood stem cell regulatory network models
-  from single-cell molecular profiles Fiona '
+description: "Hamey2017 - Blood stem cell regulatorynetwork (LMPP network) This model is described in the article: Reconstructing blood stem cell regulatory network models from single-cell molecular profiles Fiona. It can be used to explore systemsbiology hamey2017 blood stem cell regulatory dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Simon2019NikDependentP100ProcessingIntoP52Biomd0000000870Model'
-description: This model represents NIK-dependent p100 processing into p52 and NIK-dependent
-  IkBd degradation with mass action kinetics. Compare this mass action representation
-  to the Michaelis-Menten model. In thi
+description: "This model represents NIK-dependent p100 processing into p52 and NIK-dependent IkBd degradation with mass action kinetics. Compare this mass action representation to the Michaelis-Menten model."
 standard: other
 tags:
 - systemsbiology

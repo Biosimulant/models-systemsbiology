@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Fisher2006NfatActivationBiomd0000000123Model'
-description: The model reproduces the kinetics of the nuclear factor of activated
-  cells (NFAT) as depicted in Figure 3a of the paper. Model was successfully tested
-  on Jarnac and MathSBML To the extent possible und
+description: "The model reproduces the kinetics of the nuclear factor of activated cells (NFAT) as depicted in Figure 3a of the paper. Model was successfully tested on Jarnac and MathSBML To the extent possible und."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Corrias2007GastricsmcellularactivationModel0913145131Model'
-description: 'This a model from the article: A quantitative model of gastric smooth
-  muscle cellular activation. Corrias A, Buist ML. Ann Biomed Eng 2007 Sep;35(9):1595-607
-  17486452 , Abstract: A physiologically rea'
+description: "This a model from the article: A quantitative model of gastric smooth muscle cellular activation. It can be used to explore systemsbiology corrias2007 gastricsmcellularactivat model0913145131 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Koch2020HomoOligomerisationInSignalTransducModel2003160001Model'
-description: Simple models of homo-oligomerisation show a surprising variety of complex
-  dynamics and non-linear steady-state behaviour, indicating that the role of homo-oligomerisation
-  could be more complex than p
+description: "Simple models of homo-oligomerisation show a surprising variety of complex dynamics and non-linear steady-state behaviour, indicating that the role of homo-oligomerisation could be more complex than p. It can be used to explore systemsbiology koch2020 homo oligomerisation in signal dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

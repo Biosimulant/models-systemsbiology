@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Golomb2006SomaticburstingBiomd0000000118Model'
-description: 'Model is according to the paper Contribution of Persistent Na+ Current
-  and M-Type K+ Current to Somatic Bursting in CA1 Pyramidal Cell: Combined Experimental.
-  Figure6Da has been reproduced by MathSBML'
+description: "Model is according to the paper Contribution of Persistent Na+ Current and M-Type K+ Current to Somatic Bursting in CA1 Pyramidal Cell: Combined Experimental. It can be used to explore systemsbiology golomb2006 somaticbursting BioModels0000000118 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

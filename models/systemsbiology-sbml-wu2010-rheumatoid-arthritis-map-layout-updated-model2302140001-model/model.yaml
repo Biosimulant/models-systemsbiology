@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Wu2010RheumatoidArthritisMapLayoutUpdatedModel2302140001Model'
-description: Contains molecular interactions known to be active in rheumatoid arthritis
+description: "Contains molecular interactions known to be active in rheumatoid arthritis. It can be used to explore systemsbiology wu2010 rheumatoid arthritis map layout dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

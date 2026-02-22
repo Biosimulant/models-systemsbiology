@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Hayer2005AmparTraffModel0Model9086207764Model'
-description: This is model 0 from Hayer and Bhalla, PLoS Comput Biol 2005. It has
-  a bistable model of AMPAR traffic, plus a non-bistable model of CaMKII. This differs
-  from the reference model (model 1) in that mod
+description: "This is model 0 from Hayer and Bhalla, PLoS Comput Biol 2005. It has a bistable model of AMPAR traffic, plus a non-bistable model of CaMKII."
 standard: other
 tags:
 - systemsbiology

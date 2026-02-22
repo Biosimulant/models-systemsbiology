@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: AbuSoud1999NoharginineModel9088294310Model'
-description: This model is taken from the &lt;a href = 'http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&amp;cmd=Retrieve&amp;dopt=AbstractPlus&amp;list_uids=10493814&amp;query_hl=10&amp;itool=pubmed_docsum
+description: "This model is taken from the &lt;a href = 'http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&amp;cmd=Retrieve&amp;dopt=AbstractPlus&amp;list_uids=10493814&amp;query_hl=10&amp;itool=pubmed_docsum. It can be used to explore systemsbiology abu soud1999 noharginine model9088294310 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

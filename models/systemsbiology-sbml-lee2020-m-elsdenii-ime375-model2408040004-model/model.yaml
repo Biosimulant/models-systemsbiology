@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Lee2020MElsdeniiIme375Model2408040004Model'
-description: FROG and miniFROG reports are compiled for the model iME375. This model
-  can be found in the Supplementary Information of the Lee et al, 2020 paper cited
-  here.
+description: "FROG and miniFROG reports are compiled for the model iME375. This model can be found in the Supplementary Information of the Lee et al, 2020 paper cited here."
 standard: other
 tags:
 - systemsbiology

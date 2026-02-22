@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Zatorsky2006P53Model2Biomd0000000158Model'
-description: The model reproduces time profile of p53 and Mdm2 as depicted in Fig
-  6B of the paper for Model 2. Results obtained using MathSBML. To the extent possible
-  under law, all copyright and related or neighb
+description: "The model reproduces time profile of p53 and Mdm2 as depicted in Fig 6B of the paper for Model 2. It can be used to explore systemsbiology zatorsky2006 p53 model2 BioModels0000000158 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

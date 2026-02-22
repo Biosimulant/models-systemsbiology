@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Steckmann2012AmyloidBetaProteinFibrillogenesBiomd0000000533Model'
-description: 'Steckmann2012 - Amyloid beta-proteinfibrillogenesis (kinetics of secondary
-  structure conversion) This model is described in the article: Kinetics of peptide
-  secondary structure conversion during amylo'
+description: "Steckmann2012 - Amyloid beta-proteinfibrillogenesis (kinetics of secondary structure conversion) This model is described in the article: Kinetics of peptide secondary structure conversion during amylo. It can be used to explore systemsbiology steckmann2012 amyloid beta protein fibrillogenes dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

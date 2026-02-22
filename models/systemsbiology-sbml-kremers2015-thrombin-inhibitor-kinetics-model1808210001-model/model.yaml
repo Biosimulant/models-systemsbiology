@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Kremers2015ThrombinInhibitorKineticsModel1808210001Model'
-description: Mathematical model of thrombin inhibition by ATIII, alpha-2-macroglobulin
-  and miscellaneous serpins (a1-antitrypsin, a1-proteinase inhibitor, a1-antichymotrypsin,
-  protease nexin-1, C1inhibitor and oth
+description: "Mathematical model of thrombin inhibition by ATIII, alpha-2-macroglobulin and miscellaneous serpins (a1-antitrypsin, a1-proteinase inhibitor, a1-antichymotrypsin, protease nexin-1, C1inhibitor and oth. It can be used to explore systemsbiology kremers2015 thrombin inhibitor kinetics model1808210001 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Rong2020GroverEsolPredictionOfWaterSolubilModel2406040005Model'
-description: 'This model has been trained using the GROVER embedding and the Molecule
-  Net ESOL dataset. . Model Type: Molecular properties prediction ML model. Model
-  Relevance: Predicts Log Solubility. Model Encode'
+description: "This model has been trained using the GROVER embedding and the Molecule Net ESOL dataset. It can be used to explore systemsbiology rong2020 grover esol prediction of dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

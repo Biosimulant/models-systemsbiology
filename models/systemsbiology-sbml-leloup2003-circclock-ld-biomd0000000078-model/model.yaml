@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Leloup2003CircclockLdBiomd0000000078Model'
-description: This model is described in the paper Toward a detailed computational
-  model for the mammalian circadian clock . In this model only interlocked negative
-  and positive regulation of Per, Cry, Bmal gene ar
+description: "This model is described in the paper Toward a detailed computational model for the mammalian circadian clock . In this model only interlocked negative and positive regulation of Per, Cry, Bmal gene ar."
 standard: other
 tags:
 - systemsbiology

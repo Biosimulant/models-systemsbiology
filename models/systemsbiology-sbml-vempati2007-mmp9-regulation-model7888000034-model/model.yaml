@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Vempati2007Mmp9RegulationModel7888000034Model'
-description: 'This is the model described in the article: A biochemical model of matrix
-  metalloproteinase 9 activation and inhibition. Vempati P, Karagiannis ED, Popel
-  AS. J Biol Chem. 2007 Dec 28;282(52):37585-96.'
+description: "This is the model described in the article: A biochemical model of matrix metalloproteinase 9 activation and inhibition. It can be used to explore systemsbiology vempati2007 mmp9 regulation model7888000034 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

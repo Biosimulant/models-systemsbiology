@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Proctor2013EffectOfAImmunisationInAlzheimeBiomd0000000634Model'
-description: "Proctor2013 - Effect of A\u03B2 immunisationin Alzheimer's disease (stochastic\
-  \ version) Extension of a previously publishedstochastic model (designed to examine\
-  \ some of the key pathwaysinvolved in the aggr"
+description: "Proctor2013 - Effect of A\u03b2 immunisationin Alzheimer's disease (stochastic version) Extension of a previously publishedstochastic model (designed to examine some of the key pathwaysinvolved in the aggr. It can be used to explore systemsbiology proctor2013 effect of a immunisation dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

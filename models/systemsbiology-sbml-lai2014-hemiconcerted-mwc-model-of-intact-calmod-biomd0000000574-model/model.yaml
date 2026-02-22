@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Lai2014HemiconcertedMwcModelOfIntactCalmodBiomd0000000574Model'
-description: 'Lai2014 - Hemiconcerted MWC model of intactcalmodulin with two targets
-  This model is described in the article: Modulation of calmodulin lobes by different
-  targets: an allosteric model with hemiconcert'
+description: "Lai2014 - Hemiconcerted MWC model of intactcalmodulin with two targets This model is described in the article: Modulation of calmodulin lobes by different targets: an allosteric model with hemiconcert. It can be used to explore systemsbiology lai2014 hemiconcerted mwc of intact dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Nagashima2002SimulatingBloodCoagulationInhibBiomd0000000747Model'
-description: Mathematical model of blood coagulation and the effects of inhibitors
-  of Xa, Va:Xa and IIa.
+description: "Mathematical model of blood coagulation and the effects of inhibitors of Xa, Va:Xa and IIa. It can be used to explore systemsbiology nagashima2002 simulating blood coagulation inhib dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

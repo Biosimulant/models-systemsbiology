@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Koduru2022LactobacillusPlantarumJdm1Model2210190007Model'
-description: GEM reconstruction for Lactobacillus plantarum JDM1
+description: "GEM reconstruction for Lactobacillus plantarum JDM1. It can be used to explore systemsbiology koduru2022 lactobacillus plantarum jdm1 model2210190007 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

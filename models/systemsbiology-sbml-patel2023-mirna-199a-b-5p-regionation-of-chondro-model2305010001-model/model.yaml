@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Patel2023Mirna199aB5pRegionationOfChondroModel2305010001Model'
-description: From a previous microarray study we developed a small chondrogenesis
-  model. We performed qPCR and measured how knockdown of miR-199a-5p or miR-199b-5p
-  could modulate chondrogenesis. Several experiment
+description: "From a previous microarray study we developed a small chondrogenesis model. We performed qPCR and measured how knockdown of miR-199a-5p or miR-199b-5p could modulate chondrogenesis."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Baker2017TheRoleOfCytokinesMmpsAndFibroneBiomd0000000928Model'
-description: 'Baker2017 - The role of cytokines, MMPs andfibronectin fragments osteoarthritis
-  This model is described in the article: Mathematical modelling of cytokines, MMPs
-  and fibronectin fragments in osteoarth'
+description: "Baker2017 - The role of cytokines, MMPs andfibronectin fragments osteoarthritis This model is described in the article: Mathematical modelling of cytokines, MMPs and fibronectin fragments in osteoarth. It can be used to explore systemsbiology baker2017 the role of cytokines dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

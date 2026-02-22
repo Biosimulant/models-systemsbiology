@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Mandlik2013SyntheticCircuitOfIpcSynthaseInModel1208030000Model'
-description: Mandlik2012 - Synthetic circuit of IPC synthase in Leishmania A genetic
-  circuit for the targeted enzyme inositol phosphorylceramide (IPC) synthase belonging
-  to the protozoan parasite Leishmania is con
+description: "Mandlik2012 - Synthetic circuit of IPC synthase in Leishmania A genetic circuit for the targeted enzyme inositol phosphorylceramide (IPC) synthase belonging to the protozoan parasite Leishmania is con. It can be used to explore systemsbiology mandlik2013 synthetic circuit of ipc dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

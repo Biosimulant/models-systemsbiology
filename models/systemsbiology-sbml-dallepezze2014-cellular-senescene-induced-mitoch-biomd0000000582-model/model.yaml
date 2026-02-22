@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Dallepezze2014CellularSenesceneInducedMitochBiomd0000000582Model'
-description: 'DallePazze2014 - Cellular senescene-inducedmitochondrial dysfunction
-  This model is described in the article: Dynamic modelling of pathways to cellular
-  senescence reveals strategies for targeted interv'
+description: "DallePazze2014 - Cellular senescene-inducedmitochondrial dysfunction This model is described in the article: Dynamic modelling of pathways to cellular senescence reveals strategies for targeted interv. It can be used to explore systemsbiology dallepezze2014 cellular senescene induced mitoch dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

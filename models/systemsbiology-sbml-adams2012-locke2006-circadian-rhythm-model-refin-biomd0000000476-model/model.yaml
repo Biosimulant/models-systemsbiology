@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Adams2012Locke2006CircadianRhythmModelRefinBiomd0000000476Model'
-description: As per BIO0000000089.xml but including a functional light.
+description: "As per BIO0000000089.xml but including a functional light. It can be used to explore systemsbiology adams2012 locke2006 circadian rhythm refin dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

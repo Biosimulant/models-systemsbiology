@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Lahtvee2016AutomaticallyGeneratedModelForSModel1511100008Model'
-description: Faithful wrapper of upstream SBML model.
+description: "Systems Biology Lahtvee2016Automatically Generated Model For SModel1511100008Model represents core biological mechanisms from biomodels_ebi reference biomodels_ebi:MODEL1511100008. When you run it, you can inspect state and compare temporal behavior between baseline and adjusted inputs."
 standard: other
 tags:
 - systemsbiology

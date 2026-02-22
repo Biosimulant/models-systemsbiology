@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Mears1997CracPancreaticbetacellsBiomd0000000375Model'
-description: 'This a model from the article: Evidence that calcium release-activated
-  current mediates the biphasic electricalactivity of mouse pancreatic beta-cells.
-  Mears D, Sheppard NF Jr, Atwater I, Rojas E, Ber'
+description: "This a model from the article: Evidence that calcium release-activated current mediates the biphasic electricalactivity of mouse pancreatic beta-cells. Mears D, Sheppard NF Jr, Atwater I, Rojas E, Ber."
 standard: other
 tags:
 - systemsbiology

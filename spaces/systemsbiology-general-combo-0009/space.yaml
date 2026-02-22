@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Systemsbiology: General (COMBO_0009)'
-description: Systemsbiology general comparative space with 2 models, configured as
-  non-causal co-simulation.
+description: "Systemsbiology General (COMBO_0009) brings together arnold2011_damou_1, arnold2011_farqu_2, state_compare_mon in a comparative space to examine how general mechanisms compare across these models. When you run it, you can compare participant trajectories through shared runtime settings and routed output streams."
 models:
 - repo: Biosimulant/models-systemsbiology
   alias: arnold2011_damou_1

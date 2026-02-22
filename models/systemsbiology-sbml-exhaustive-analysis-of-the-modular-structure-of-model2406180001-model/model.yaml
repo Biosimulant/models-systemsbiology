@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: ExhaustiveAnalysisOfTheModularStructureOfModel2406180001Model'
-description: We designed a structured model of spliceosome assembly, which combines
-  the demands on a platform that i) can display involved factors and concurrent processes,
-  ii) offers the possibility to run comput
+description: "We designed a structured model of spliceosome assembly, which combines the demands on a platform that i) can display involved factors and concurrent processes, ii) offers the possibility to run comput. It can be used to explore systemsbiology exhaustive analysis of the modular dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Proctor2008P53Mdm2CircuitP53StablisationByBiomd0000000189Model'
-description: 'Proctor2008 - p53/Mdm2 circuit - p53 stabilisation by p14ARF This model
-  is described in the article: Explaining oscillations and variability in the p53-Mdm2
-  system. Proctor CJ, Gray DA. BMC Syst Biol '
+description: "Proctor2008 - p53/Mdm2 circuit - p53 stabilisation by p14ARF This model is described in the article: Explaining oscillations and variability in the p53-Mdm2 system. It can be used to explore systemsbiology proctor2008 p53 mdm2 circuit p53 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

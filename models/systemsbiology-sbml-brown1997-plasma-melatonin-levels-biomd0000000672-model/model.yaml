@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Brown1997PlasmaMelatoninLevelsBiomd0000000672Model'
-description: 'Brown1997 - Plasma Melatonin Levels A mathematical model that incorporatesa
-  piecewise function for NAT activity to predict melatoninconcentration. This model
-  is described in the article: A mathematica'
+description: "Brown1997 - Plasma Melatonin Levels A mathematical model that incorporatesa piecewise function for NAT activity to predict melatoninconcentration. This model is described in the article: A mathematica."
 standard: other
 tags:
 - systemsbiology

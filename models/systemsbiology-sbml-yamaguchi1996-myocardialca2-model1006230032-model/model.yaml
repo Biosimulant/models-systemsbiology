@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Yamaguchi1996Myocardialca2Model1006230032Model'
-description: 'This a model from the article: Constancy and variability of contractile
-  efficiency as a function of calcium andcross-bridge kinetics: simulation. Yamaguchi
-  H, Takaki M, Matsubara H, Yasuhara S, Suga H'
+description: "This a model from the article: Constancy and variability of contractile efficiency as a function of calcium andcross-bridge kinetics: simulation. Yamaguchi H, Takaki M, Matsubara H, Yasuhara S, Suga H."
 standard: other
 tags:
 - systemsbiology

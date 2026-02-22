@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Back2018MechanisticPkModelOfFenofibrateModel2003030002Model'
-description: A mechanistic GI absorption model for quantitatively evaluating the effects
-  of food on fenofibrate absorption was successfully developed, and acceptable parameters
-  were obtained. The mechanism-based P
+description: "A mechanistic GI absorption model for quantitatively evaluating the effects of food on fenofibrate absorption was successfully developed, and acceptable parameters were obtained. It can be used to explore systemsbiology back2018 mechanistic pk of fenofibrate dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

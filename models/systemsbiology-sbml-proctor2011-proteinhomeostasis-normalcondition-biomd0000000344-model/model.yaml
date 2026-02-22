@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Proctor2011ProteinhomeostasisNormalconditionBiomd0000000344Model'
-description: 'This model is from the article: Modelling the Role of the Hsp70/Hsp90
-  System in the Maintenance of Protein Homeostasis Proctor CJ, Lorimer IAJ PLoS ONE
-  2011; 6(7): e22038. doi:10.1371/journal.pone.002'
+description: "This model is from the article: Modelling the Role of the Hsp70/Hsp90 System in the Maintenance of Protein Homeostasis Proctor CJ, Lorimer IAJ PLoS ONE 2011; 6(7): e22038. It can be used to explore systemsbiology proctor2011 proteinhomeostasis normalcondition BioModels0000000344 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

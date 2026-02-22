@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Leloup2003CircclockLdRevErbalphaBiomd0000000083Model'
-description: 'This is model is according to the paper Toward a detailed computational
-  model for the mammalian circadian clock In this model interlocked negative and positive
-  regulation of Per,Cry,Bmal,REV-ERBalpha '
+description: "This is model is according to the paper Toward a detailed computational model for the mammalian circadian clock In this model interlocked negative and positive regulation of Per,Cry,Bmal,REV-ERBalpha. It can be used to explore systemsbiology leloup2003 circclock ld rev erbalpha dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

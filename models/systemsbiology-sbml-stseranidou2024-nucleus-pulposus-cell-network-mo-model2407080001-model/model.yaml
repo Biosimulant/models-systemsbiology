@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Stseranidou2024NucleusPulposusCellNetworkMoModel2407080001Model'
-description: 'ABSTRACT: Intervertebral disc degeneration (IDD) arises from an intricate
-  imbalance between the anabolic and catabolic processes governing the extracellular
-  matrix (ECM) within the disc. Biochemical p'
+description: "ABSTRACT: Intervertebral disc degeneration (IDD) arises from an intricate imbalance between the anabolic and catabolic processes governing the extracellular matrix (ECM) within the disc. It can be used to explore systemsbiology stseranidou2024 nucleus pulposus cell network dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

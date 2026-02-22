@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Jenior2021ClostridiumDifficile630ModelModel2205060002Model'
-description: The pathogen Clostridioides difficile causes toxin-mediated diarrhea
-  and is the leading cause of hospital-acquired infection in the United States. Due
-  to growing antibiotic resistance and recurrent in
+description: "The pathogen Clostridioides difficile causes toxin-mediated diarrhea and is the leading cause of hospital-acquired infection in the United States. It can be used to explore systemsbiology jenior2021 clostridium difficile 630 model2205060002 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

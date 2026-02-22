@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Leeuwen2007ElucidatingTheInteractionsBetweenModel2001090001Model'
-description: Elucidating the interactions between the adhesive and transcriptional
-  functions of beta-catenin in normal and cancerous cells.van Leeuwen IM1, Byrne HM,
-  Jensen OE, King JR.Author information1 Centre f
+description: "Elucidating the interactions between the adhesive and transcriptional functions of beta-catenin in normal and cancerous cells.van Leeuwen IM1, Byrne HM, Jensen OE, King JR.Author information1 Centre f. It can be used to explore systemsbiology leeuwen2007 elucidating the interactions between dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

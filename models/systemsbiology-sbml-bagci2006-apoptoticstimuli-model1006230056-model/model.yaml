@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Bagci2006ApoptoticstimuliModel1006230056Model'
-description: 'This a model from the article: Bistability in apoptosis: roles of bax,
-  bcl-2, and mitochondrial permeabilitytransition pores. Bagci EZ, Vodovotz Y, Billiar
-  TR, Ermentrout GB, Bahar I. Biophys J 2006 M'
+description: "This a model from the article: Bistability in apoptosis: roles of bax, bcl-2, and mitochondrial permeabilitytransition pores. Bagci EZ, Vodovotz Y, Billiar TR, Ermentrout GB, Bahar I."
 standard: other
 tags:
 - systemsbiology

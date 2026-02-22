@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Munz2009ZombieSizrcBiomd0000000882Model'
-description: Munz2009 - Zombie SIZRC This is the model with an latent infection and
-  cure for zombies described in the article. This model was originally created by
-  libAntimony v1.4 (using libSBML 3.4.1). This mode
+description: "Munz2009 - Zombie SIZRC This is the model with an latent infection and cure for zombies described in the article. It can be used to explore systemsbiology munz2009 zombie sizrc BioModels0000000882 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

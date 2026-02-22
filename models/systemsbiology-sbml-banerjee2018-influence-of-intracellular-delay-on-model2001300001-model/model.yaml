@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Banerjee2018InfluenceOfIntracellularDelayOnModel2001300001Model'
-description: "Influence of Intracellular Delay on the Dynamics of Hepatitis C VirusSandip\
-  \ Banerjee 1\xB7 Ram Keval 2AbstractIn this paper, we present a delay induced model\
-  \ for hepatitis C virus incorporat-ing the heal"
+description: "Influence of Intracellular Delay on the Dynamics of Hepatitis C VirusSandip Banerjee 1\u00b7 Ram Keval 2AbstractIn this paper, we present a delay induced model for hepatitis C virus incorporat-ing the heal. It can be used to explore systemsbiology banerjee2018 influence of intracellular delay dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

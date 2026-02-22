@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Rong2020GroverTox21PredictsActivityOfCompoModel2406050005Model'
-description: This model has been trained using the GROVER transformer and Predicts
-  activity of compounds in the Tox21 toxicity panel, comprising of 12 toxicity pathways,
-  as part of the MoleculeNet benchmark datase
+description: "This model has been trained using the GROVER transformer and Predicts activity of compounds in the Tox21 toxicity panel, comprising of 12 toxicity pathways, as part of the MoleculeNet benchmark datase. It can be used to explore systemsbiology rong2020 grover tox21 predicts activity dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

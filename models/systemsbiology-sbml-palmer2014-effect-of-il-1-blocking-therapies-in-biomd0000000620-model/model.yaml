@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Palmer2014EffectOfIl1BlockingTherapiesInBiomd0000000620Model'
-description: "Palmer2014 - Effect of IL-1\u03B2-Blocking therapies in T2DM - Disease\
-  \ Condition This is the model with disease state initial conditions. A few changes\
-  \ were made to the model equations in order to bypass t"
+description: "Palmer2014 - Effect of IL-1\u03b2-Blocking therapies in T2DM - Disease Condition This is the model with disease state initial conditions. A few changes were made to the model equations in order to bypass t."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Merget2013MycobacteriumTuberculosisPermeabiliModel2405210004Model'
-description: MycPermCheck predicts potential to permeate the Mycobacterium tuberculosis
-  cell membrane based on physicochemical properties. Due to the lack of reliable experimental
-  datapoints, the authors defined t
+description: "MycPermCheck predicts potential to permeate the Mycobacterium tuberculosis cell membrane based on physicochemical properties. Due to the lack of reliable experimental datapoints, the authors defined t."
 standard: other
 tags:
 - systemsbiology

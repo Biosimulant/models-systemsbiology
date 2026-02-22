@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Mellor2012LipooxygenasepathwayBiomd0000000415Model'
-description: 'This model is from the article: Reduction of off-flavor generation in
-  soybean homogenates: a mathematical model. Mellor N , Bligh F , Chandler I , Hodgman
-  C J. Food Sci. 2010 Sep; 75(7): R131-8; PMID:'
+description: "This model is from the article: Reduction of off-flavor generation in soybean homogenates: a mathematical model. Mellor N , Bligh F , Chandler I , Hodgman C J."
 standard: other
 tags:
 - systemsbiology

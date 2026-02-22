@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Ma2005DigitalResponseOfP53ToDnaDamageAtmModel2005130001Model'
-description: "Recent observations show that the single-cell response of p53 to ionizing\
-  \ radiation (IR) is \u201Cdigital\u201D in that it is the number of oscillations\
-  \ rather than the amplitude of p53 that shows dependence on"
+description: "Recent observations show that the single-cell response of p53 to ionizing radiation (IR) is \u201cdigital\u201d in that it is the number of oscillations rather than the amplitude of p53 that shows dependence on. It can be used to explore systemsbiology ma2005 digital response of p53 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Wierschem2004ElectricalBurstingActivityInPaBiomd0000000682Model'
-description: 'This a model from the article: Complex bursting in pancreatic islets:
-  a potential glycolytic mechanism. Wierschem K, Bertram R. J Theor Biol 2004 Jun
-  21;228(4):513-21 15178199 , Abstract: The electric'
+description: "This a model from the article: Complex bursting in pancreatic islets: a potential glycolytic mechanism. It can be used to explore systemsbiology wierschem2004 electrical bursting activity in dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

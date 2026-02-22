@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Zhou2015BloodCoagulationModelPredictingEffeModel1806070001Model'
-description: Blood coagulation model investigating effects of Xa-inhibitors (Rivaroxaban
-  and Apixaban). Model is an extension of Pohl1994 and reduced from Wajima2009.Encoding
-  the model from the supplementary files
+description: "Blood coagulation model investigating effects of Xa-inhibitors (Rivaroxaban and Apixaban). Model is an extension of Pohl1994 and reduced from Wajima2009.Encoding the model from the supplementary files."
 standard: other
 tags:
 - systemsbiology

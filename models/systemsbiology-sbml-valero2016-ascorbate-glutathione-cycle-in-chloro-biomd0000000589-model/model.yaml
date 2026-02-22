@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Valero2016AscorbateGlutathioneCycleInChloroBiomd0000000589Model'
-description: 'Valero2016 - Ascorbate-Glutathione cycle in chloroplasts under light/dark
-  conditions This model is described in the article: Modeling the ascorbate-glutathione
-  cycle in chloroplasts under light/dark c'
+description: "Valero2016 - Ascorbate-Glutathione cycle in chloroplasts under light/dark conditions This model is described in the article: Modeling the ascorbate-glutathione cycle in chloroplasts under light/dark c. It can be used to explore systemsbiology valero2016 ascorbate glutathione cycle in dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

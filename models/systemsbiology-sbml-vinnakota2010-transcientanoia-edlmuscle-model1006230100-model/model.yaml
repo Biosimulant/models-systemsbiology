@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Vinnakota2010TranscientanoiaEdlmuscleModel1006230100Model'
-description: 'This a model from the article: Common phenotype of resting mouse extensor
-  digitorum longus and soleus muscles:equal ATPase and glycolytic flux during transient
-  anoxia. Vinnakota KC, Rusk J, Palmer L, '
+description: "This a model from the article: Common phenotype of resting mouse extensor digitorum longus and soleus muscles:equal ATPase and glycolytic flux during transient anoxia. It can be used to explore systemsbiology vinnakota2010 transcientanoia edlmuscle model1006230100 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

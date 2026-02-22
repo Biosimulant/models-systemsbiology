@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Bertram1995PancreaticbetacellCracBiomd0000000374Model'
-description: 'This a model from the article: A role for calcium release-activated
-  current (CRAC) in cholinergic modulation ofelectrical activity in pancreatic beta-cells.
-  Bertram R, Smolen P, Sherman A, Mears D, At'
+description: "This a model from the article: A role for calcium release-activated current (CRAC) in cholinergic modulation ofelectrical activity in pancreatic beta-cells. It can be used to explore systemsbiology bertram1995 pancreaticbetacell crac BioModels0000000374 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

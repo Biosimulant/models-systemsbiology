@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Bertram2000PancreaticbetacellsOscillationsBiomd0000000377Model'
-description: 'This a model from the article: The phantom burster model for pancreatic
-  beta-cells. Bertram R, Previte J, Sherman A, Kinard TA, Satin LS. Biophys J 2000
-  Dec;79(6):2880-92 11106596 , Abstract: Pancreat'
+description: "This a model from the article: The phantom burster model for pancreatic beta-cells. Bertram R, Previte J, Sherman A, Kinard TA, Satin LS."
 standard: other
 tags:
 - systemsbiology

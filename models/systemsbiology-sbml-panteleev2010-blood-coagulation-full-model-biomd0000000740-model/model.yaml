@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Panteleev2010BloodCoagulationFullModelBiomd0000000740Model'
-description: Full and reduced mathematical model of blood coagulation focusing on
-  fibrin formation and the response to varied TF and V.
+description: "Full and reduced mathematical model of blood coagulation focusing on fibrin formation and the response to varied TF and V. It can be used to explore systemsbiology panteleev2010 blood coagulation full BioModels0000000740 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Karapetyan2016GeneticOscillatoryNetworkRepreBiomd0000000587Model'
-description: 'Karapetyan2016 - Genetic oscillatory network - Repressor Titration Circuit
-  (RTC) This model is described in the article: Role of DNA binding sites and slow
-  unbinding kinetics in titration-based oscill'
+description: "Karapetyan2016 - Genetic oscillatory network - Repressor Titration Circuit (RTC) This model is described in the article: Role of DNA binding sites and slow unbinding kinetics in titration-based oscill. It can be used to explore systemsbiology karapetyan2016 genetic oscillatory network repre dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

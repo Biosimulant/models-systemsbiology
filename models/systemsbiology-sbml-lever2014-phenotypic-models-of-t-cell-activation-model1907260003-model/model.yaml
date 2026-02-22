@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Lever2014PhenotypicModelsOfTCellActivationModel1907260003Model'
-description: This is a phenotypic model of a kinetic proofreading mechanism used to
-  describe dynamics governing interactions between T cell receptors and peptide-MHC
-  complexes.
+description: "This is a phenotypic model of a kinetic proofreading mechanism used to describe dynamics governing interactions between T cell receptors and peptide-MHC complexes. It can be used to explore systemsbiology lever2014 phenotypic of t cell dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

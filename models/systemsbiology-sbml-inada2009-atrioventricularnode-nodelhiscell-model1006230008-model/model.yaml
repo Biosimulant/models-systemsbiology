@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Inada2009AtrioventricularnodeNodelhiscellModel1006230008Model'
-description: 'This a model from the article: One-dimensional mathematical model of
-  the atrioventricular node includingatrio-nodal, nodal, and nodal-his cells. Inada
-  S, Hancox JC, Zhang H, Boyett MR. Biophys J 2009 '
+description: "This a model from the article: One-dimensional mathematical model of the atrioventricular node includingatrio-nodal, nodal, and nodal-his cells. Inada S, Hancox JC, Zhang H, Boyett MR."
 standard: other
 tags:
 - systemsbiology

@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: ChacNMartNez2016SelfOrganizingPlasticityOModel1612120000Model'
-description: Faithful wrapper of upstream SBML model.
+description: "Systems Biology Chac NMart Nez2016Self Organizing Plasticity OModel1612120000Model represents core biological mechanisms from biomodels_ebi reference biomodels_ebi:MODEL1612120000. When you run it, you can inspect state and compare temporal behavior between baseline and adjusted inputs."
 standard: other
 tags:
 - systemsbiology

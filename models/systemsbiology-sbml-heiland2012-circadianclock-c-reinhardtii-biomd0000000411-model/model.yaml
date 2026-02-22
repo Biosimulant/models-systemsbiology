@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Heiland2012CircadianclockCReinhardtiiBiomd0000000411Model'
-description: 'This model is from the article: Modeling temperature entrainment of
-  circadian clocks using the Arrhenius equation and a reconstructed model from Chlamydomonas
-  reinhardtii Ines Heiland, Christian Boden'
+description: "This model is from the article: Modeling temperature entrainment of circadian clocks using the Arrhenius equation and a reconstructed model from Chlamydomonas reinhardtii Ines Heiland, Christian Boden. It can be used to explore systemsbiology heiland2012 circadianclock c reinhardtii BioModels0000000411 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

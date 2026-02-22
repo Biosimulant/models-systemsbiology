@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Willems1991SimulatingThrombinGenerationModel1807240002Model'
-description: Mathematical model of blood coagulation to simulate factor IIa, Va and
-  Xa concentration profiles. Publication also illustrates the effect of hirudin on
-  factor IIa, Va and Xa generation.
+description: "Mathematical model of blood coagulation to simulate factor IIa, Va and Xa concentration profiles. Publication also illustrates the effect of hirudin on factor IIa, Va and Xa generation."
 standard: other
 tags:
 - systemsbiology

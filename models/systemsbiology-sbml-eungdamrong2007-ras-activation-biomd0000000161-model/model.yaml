@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Eungdamrong2007RasActivationBiomd0000000161Model'
-description: The model reproduces the time profiles of Golgi Ras-GTP and plasma membrane
-  Ras-GTP, subjected to a palmitoylation rate of 0.00015849 second inverse. This is
-  depicted in Fig 5a and 5b for various palm
+description: "The model reproduces the time profiles of Golgi Ras-GTP and plasma membrane Ras-GTP, subjected to a palmitoylation rate of 0.00015849 second inverse. This is depicted in Fig 5a and 5b for various palm."
 standard: other
 tags:
 - systemsbiology

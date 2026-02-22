@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Hayer2005AmparCamkiiStrongCouplingModel9087255381Model'
-description: This is a model of tight coupling between the AMPAR trafficking bistability,
-  and the CaMKII autophosphorylation bistability. In this model, the CaMKII activity
-  is self sustaining only when AMPAR is tu
+description: "This is a model of tight coupling between the AMPAR trafficking bistability, and the CaMKII autophosphorylation bistability. In this model, the CaMKII activity is self sustaining only when AMPAR is tu."
 standard: other
 tags:
 - systemsbiology

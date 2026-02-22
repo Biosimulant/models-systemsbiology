@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Akman2008CircadianClockModel2Biomd0000000214Model'
-description: "This model 2 described in the supplement of the article below. It is\
-  \ parameterized for the WT at 24\xB0C. To reproduce figure 6 the results have to\
-  \ be rescaled to circadian time by multiplying time by 24"
+description: "This model 2 described in the supplement of the article below. It is parameterized for the WT at 24\u00b0C."
 standard: other
 tags:
 - systemsbiology

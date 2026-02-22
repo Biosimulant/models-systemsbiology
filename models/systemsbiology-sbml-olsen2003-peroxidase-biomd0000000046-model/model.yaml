@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Olsen2003PeroxidaseBiomd0000000046Model'
-description: 'Notes of the BioModels curators: The current model reproduce the figure
-  7, panel B of the paper. Note that there is a typo in the figure. The ordinates
-  represent the concentration of peroxyde, as stat'
+description: "Notes of the BioModels curators: The current model reproduce the figure 7, panel B of the paper. Note that there is a typo in the figure."
 standard: other
 tags:
 - systemsbiology

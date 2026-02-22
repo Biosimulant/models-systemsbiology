@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Watanabe2018SimpleMarkovModelForADiseaseMModel1803120002Model'
-description: 'Simple Markov model for a disease model.The model uses two disease states:
-  Alive and Dead, where the Dead state terminates simulation.The yearly probability
-  of transition between states Alive and Dead'
+description: "Simple Markov model for a disease model.The model uses two disease states: Alive and Dead, where the Dead state terminates simulation.The yearly probability of transition between states Alive and Dead. It can be used to explore systemsbiology watanabe2018 simple markov for a dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

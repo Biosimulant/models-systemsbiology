@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Hayer2005CamkiiNopkaModel3Model9086926384Model'
-description: This is the model of CaMKII bistability, model 3. It exhibits bistability
-  in CaMKII activation due to autophosphorylation at the PSD and local saturation
-  of PP1. This version of model 3 does not inclu
+description: "This is the model of CaMKII bistability, model 3. It exhibits bistability in CaMKII activation due to autophosphorylation at the PSD and local saturation of PP1."
 standard: other
 tags:
 - systemsbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Demir1994SinoatrialnodeModel0912887467Model'
-description: 'This a model from the article: A mathematical model of a rabbit sinoatrial
-  node cell. Demir SS, Clark JW, Murphey CR, Giles WR. Am J Physiol 1994 Mar;266(3
-  Pt 1):C832-52 8166247 , Abstract: A mathemat'
+description: "This a model from the article: A mathematical model of a rabbit sinoatrial node cell. Demir SS, Clark JW, Murphey CR, Giles WR."
 standard: other
 tags:
 - systemsbiology

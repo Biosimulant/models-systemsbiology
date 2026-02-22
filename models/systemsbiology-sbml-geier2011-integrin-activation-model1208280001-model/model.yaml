@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Geier2011IntegrinActivationModel1208280001Model'
-description: 'Geier2011 - Integrin activation Rule based model that integrates the
-  available data to test the biololical hypotheses regarding the role of talin, Dok1
-  and PIPKI in integrin activation. This model is '
+description: "Geier2011 - Integrin activation Rule based model that integrates the available data to test the biololical hypotheses regarding the role of talin, Dok1 and PIPKI in integrin activation. It can be used to explore systemsbiology geier2011 integrin activation model1208280001 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

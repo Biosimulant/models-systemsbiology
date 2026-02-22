@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Kyrylov2005HpaaxisModel0478740924Model'
-description: 'This a model from the article: Modeling robust oscillatory behavior
-  of the hypothalamic-pituitary-adrenal axis. Kyrylov V, Severyanova LA, Vieira A.
-  IEEE Trans Biomed Eng. 2005 Dec;52(12):1977-83. 163'
+description: "This a model from the article: Modeling robust oscillatory behavior of the hypothalamic-pituitary-adrenal axis. It can be used to explore systemsbiology kyrylov2005 hpaaxis model0478740924 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

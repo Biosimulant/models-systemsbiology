@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Proctor2013CartilageBreakdownInterventionsToBiomd0000000504Model'
-description: Proctor2013 - Cartilage breakdown, interventions to reduce collagen release
-  The molecular pathways involved in cartilage breakdown is studied using this model
-  to examine possible interventions to redu
+description: "Proctor2013 - Cartilage breakdown, interventions to reduce collagen release The molecular pathways involved in cartilage breakdown is studied using this model to examine possible interventions to redu. It can be used to explore systemsbiology proctor2013 cartilage breakdown interventions to dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology

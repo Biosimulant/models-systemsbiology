@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'SystemsBiology: Maltsev2009PacemakercellmodelSteadystateModel1006230104Model'
-description: 'This a model from the article: Synergism of coupled subsarcolemmal Ca2+
-  clocks and sarcolemmal voltage clocksconfers robust and flexible pacemaker function
-  in a novel pacemaker cell model. Maltsev VA,'
+description: "This a model from the article: Synergism of coupled subsarcolemmal Ca2+ clocks and sarcolemmal voltage clocksconfers robust and flexible pacemaker function in a novel pacemaker cell model. It can be used to explore systemsbiology maltsev2009 pacemakercellmodel steadystate model1006230104 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - systemsbiology
