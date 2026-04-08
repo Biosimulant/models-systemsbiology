@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Kumbale2025TandaModelToAssessTheImpactOfModel2502110001Model'
+title: "Kumbale 2025 - T&A Model to Assess the Impact of Dioxin on Cholesterol and Steroidogenesis"
 description: "Multiscale model to assess the impact of dioxin exposure on cholesterol dynamics and steroidogenesis. This model is represented as a Template and Anchor Model (T&A)."
 standard: other
 tags:

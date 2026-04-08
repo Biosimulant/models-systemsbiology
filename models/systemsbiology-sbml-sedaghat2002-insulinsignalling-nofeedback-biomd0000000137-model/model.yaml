@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Sedaghat2002InsulinsignallingNofeedbackBiomd0000000137Model'
+title: "Sedaghat2002_InsulinSignalling_noFeedback"
 description: "Model reproduces the various plots in Figure 6 and 7 of the paper. It can be used to explore systemsbiology sedaghat2002 insulinsignalling nofeedback BioModels0000000137 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

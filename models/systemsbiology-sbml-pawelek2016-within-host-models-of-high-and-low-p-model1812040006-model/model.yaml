@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Pawelek2016WithinHostModelsOfHighAndLowPModel1812040006Model'
+title: "Pawelek2016 - Within-Host Models of High and Low Pathogenic Influenza Virus Infections"
 description: "a possible mechanism of MP in determining HP versus LP outcomes, and how different interventions might affect infection dynamics. It can be used to explore systemsbiology pawelek2016 within host of high dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

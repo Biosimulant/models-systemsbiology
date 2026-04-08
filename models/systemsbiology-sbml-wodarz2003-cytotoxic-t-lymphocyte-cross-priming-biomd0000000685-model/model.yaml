@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Wodarz2003CytotoxicTLymphocyteCrossPrimingBiomd0000000685Model'
+title: "Wodarz2003 - Cytotoxic T lymphocyte cross-priming"
 description: "This a model from the article: A dynamical perspective of CTL cross-priming and regulation: implications forcancer immunology. It can be used to explore systemsbiology wodarz2003 cytotoxic t lymphocyte cross dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

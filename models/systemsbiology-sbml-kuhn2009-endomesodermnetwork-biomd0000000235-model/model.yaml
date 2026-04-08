@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Kuhn2009EndomesodermnetworkBiomd0000000235Model'
+title: "Kuhn2009_EndoMesodermNetwork"
 description: "This a model from the article: Monte Carlo analysis of an ODE Model of the Sea Urchin Endomesoderm Network. K\u00fchn C, Wierling C, K\u00fchn A, Klipp E, Panopoulou G, Lehrach H, Poustka AJ."
 standard: other
 tags:

@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Luan2010BloodCoagulationModelExtensionOfLuModel1806250001Model'
+title: "Luan2010 - Blood Coagulation Model (extension of Luan2007)"
 description: "Mathematical model of blood coagulation. It can be used to explore systemsbiology luan2010 blood coagulation extension of dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

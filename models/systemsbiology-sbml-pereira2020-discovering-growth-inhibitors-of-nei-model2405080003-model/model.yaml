@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Pereira2020DiscoveringGrowthInhibitorsOfNeiModel2405080003Model'
+title: "Pereira2020 - Discovering growth Inhibitors of Neisseria gonorrhoeae with Machine Learning"
 description: "The authors curated a dataset of 282 compounds from ChEMBL, of which 160 (56.7%) were labeled as active N. It can be used to explore systemsbiology pereira2020 discovering growth inhibitors of dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

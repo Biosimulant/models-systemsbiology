@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Model3631586579UrlXmlModel3631586579Model'
+title: "MODEL3631586579_url.xml"
 description: "This is a kinetic model of the monomeric photosystem II (PSII). The model is partially based on the earlier model used for simulation of the flash-induced period-four damped oscillation of oxygen evol."
 standard: other
 tags:

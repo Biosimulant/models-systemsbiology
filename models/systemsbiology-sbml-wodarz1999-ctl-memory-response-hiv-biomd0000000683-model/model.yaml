@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Wodarz1999CtlMemoryResponseHivBiomd0000000683Model'
+title: "Wodarz1999 CTL memory response HIV"
 description: "This a model from the article: Specific therapy regimes could lead to long-term immunological control of HIV. It can be used to explore systemsbiology wodarz1999 ctl memory response hiv dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Reed2004MethionineCycleBiomd0000000698Model'
+title: "Reed2004 - Methionine Cycle"
 description: "Reed2004 - Methionine Cycle This model is described in the article: A mathematical model of the methionine cycle. Reed MC, Nijhout HF, Sparks R, Ulrich CM."
 standard: other
 tags:

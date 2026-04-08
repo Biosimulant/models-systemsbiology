@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Mellor2012LipooxygenasepathwayBiomd0000000415Model'
+title: "Mellor2012_LipooxygenasePathway"
 description: "This model is from the article: Reduction of off-flavor generation in soybean homogenates: a mathematical model. Mellor N , Bligh F , Chandler I , Hodgman C J."
 standard: other
 tags:

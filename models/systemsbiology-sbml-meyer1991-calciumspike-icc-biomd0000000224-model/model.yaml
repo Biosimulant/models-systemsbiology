@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Meyer1991CalciumspikeIccBiomd0000000224Model'
+title: "Meyer1991_CalciumSpike_ICC"
 description: "This a model from the article: Calcium spiking. Meyer T, Stryer L Annu Rev Biophys Biophys Chem 1991:20:153-74 1867714 , Abstract: No Abstract Available The IP3-Ca2+ Crosscoupling Model (ICC) is revie."
 standard: other
 tags:

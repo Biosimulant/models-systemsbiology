@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Wu2006AtpsynthesisSkeletalmuscleModel1006230034Model'
+title: "Wu2006_ATPsynthesis_SkeletalMuscle"
 description: "This a model from the article: Oxidative ATP synthesis in skeletal muscle is controlled by substrate feedback. It can be used to explore systemsbiology wu2006 atpsynthesis skeletalmuscle model1006230034 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

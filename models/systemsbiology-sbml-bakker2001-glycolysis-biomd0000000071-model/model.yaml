@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Bakker2001GlycolysisBiomd0000000071Model'
+title: "Bakker2001_Glycolysis"
 description: ". It can be used to explore systemsbiology bakker2001 glycolysis BioModels0000000071 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Szeliova2020BiomassSpecificIchoModelIchoKModel1907260015Model'
+title: "Szeliova 2020 - biomass specific iCHO model (iCHO_K1par-0mMCD)"
 description: "iCHO1766 model from Hefzi et al. (2016) with cell line specific biomass composition and exchange rates."
 standard: other
 tags:

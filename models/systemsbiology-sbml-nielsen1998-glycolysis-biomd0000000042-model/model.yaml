@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Nielsen1998GlycolysisBiomd0000000042Model'
+title: "Nielsen1998_Glycolysis"
 description: "This model was automatically converted from model BIOMD0000000042 by using libSBML . According to the BioModels Database terms of use , this generated model is not related with model BIOMD0000000042 a."
 standard: other
 tags:

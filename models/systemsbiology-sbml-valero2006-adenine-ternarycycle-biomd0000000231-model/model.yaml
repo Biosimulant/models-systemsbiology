@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Valero2006AdenineTernarycycleBiomd0000000231Model'
+title: "Valero2006_Adenine_TernaryCycle"
 description: "This a model from the article: A kinetic study of a ternary cycle between adenine nucleotides. Valero E, Var\u00f3n R, Garc\u00eda-Carmona F FEBS J."
 standard: other
 tags:

@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Larsen2004CalciumspikingBiomd0000000330Model'
+title: "Larsen2004_CalciumSpiking"
 description: "This model is from the article: On the encoding and decoding of calcium signals in hepatocytes Ann Zahle Larsen, Lars Folke Olsen and Ursula Kummera Biophysical Chemistry Volume 107, Issue 1, 1 Januar. It can be used to explore systemsbiology larsen2004 calciumspiking BioModels0000000330 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

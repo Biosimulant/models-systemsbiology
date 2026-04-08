@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Vilar2002OscillatorBiomd0000000035Model'
+title: "Vilar2002_Oscillator"
 description: "Minimal Model for Circadian Oscillations Citation Vilar JMG, Kueh HY, Barkai N, Leibler S, (2002) . It can be used to explore systemsbiology vilar2002 oscillator BioModels0000000035 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

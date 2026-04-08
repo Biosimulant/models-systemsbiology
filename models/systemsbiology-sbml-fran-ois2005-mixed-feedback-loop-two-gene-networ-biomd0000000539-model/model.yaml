@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: FranOis2005MixedFeedbackLoopTwoGeneNetworBiomd0000000539Model'
+title: "François2005 - Mixed Feedback Loop (two-gene network)"
 description: "Paul Fran\u00e7ois & Vincent Hakim. It can be used to explore systemsbiology fran ois2005 mixed feedback loop dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

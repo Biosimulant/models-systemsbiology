@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: SchLzel2015ModelicaImplementationOfTheSeidModel2101280001Model'
+title: "Schölzel2015 - Modelica implementation of the Seidel-Herzel model of the human baroreflex (v1.6)"
 description: "This project contains a Modelica implementation of the model of the human baroreflex developed by H. Seidel in his PhD thesis (Seidel 1997) under the supervision of H."
 standard: other
 tags:

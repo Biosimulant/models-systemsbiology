@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Rahman2022HighThroughputAntibacterialScreeniModel2404080002Model'
+title: "Rahman2022 - High throughput antibacterial screening with machine learning."
 description: "Prediction of antimicrobial potential using a dataset of 29537 compounds screened against the antibiotic resistant pathogen Burkholderia cenocepacia. The model uses the Chemprop Direct Message Passing."
 standard: other
 tags:

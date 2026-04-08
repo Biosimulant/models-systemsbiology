@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Zatorsky2006P53Model1Biomd0000000159Model'
+title: "Zatorsky2006_p53_Model1"
 description: "The model reproduces the time profile of p53 and Mdm2 as depicted in Fig 6B of the plot for model 1. It can be used to explore systemsbiology zatorsky2006 p53 model1 BioModels0000000159 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

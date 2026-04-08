@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Devries2000PancreaticbetacellsInsulinsecretionBiomd0000000371Model'
+title: "DeVries2000_PancreaticBetaCells_InsulinSecretion"
 description: "This a model from the article: Channel sharing in pancreatic beta -cells revisited: enhancement of emergentbursting by noise. It can be used to explore systemsbiology devries2000 pancreaticbetacells insulinsecretion BioModels0000000371 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

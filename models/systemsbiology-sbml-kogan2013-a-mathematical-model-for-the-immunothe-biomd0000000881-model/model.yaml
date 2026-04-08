@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Kogan2013AMathematicalModelForTheImmunotheBiomd0000000881Model'
+title: "Kogan2013 - A mathematical model for the immunotherapeutic control of the TH1 TH2 imbalance in melanoma"
 description: "This is a mathematical model describing the imbalance between T helper (Th1/Th2) cell types in melanome patients, together with its regulation via IL-12 treatment. It can be used to explore systemsbiology kogan2013 a mathematical for the dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

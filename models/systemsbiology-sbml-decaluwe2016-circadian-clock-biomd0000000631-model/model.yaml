@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Decaluwe2016CircadianClockBiomd0000000631Model'
+title: "DeCaluwe2016 - Circadian Clock"
 description: "DeCaluw\u00e92016 - Circadian Clock This model is described in the article: A Compact Model for the Complex Plant Circadian Clock. De Caluw\u00e9 J, Xiao Q, Hermans C, Verbruggen N, Leloup JC, Gonze D."
 standard: other
 tags:

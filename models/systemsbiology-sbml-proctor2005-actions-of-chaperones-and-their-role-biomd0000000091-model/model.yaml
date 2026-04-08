@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Proctor2005ActionsOfChaperonesAndTheirRoleBiomd0000000091Model'
+title: "Proctor2005 - Actions of chaperones and their role in ageing"
 description: "Proctor2005 - Actions of chaperones and theirrole in ageing This model is described in the article: Modelling the actions of chaperones and their role in ageing. It can be used to explore systemsbiology proctor2005 actions of chaperones and dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Cao2008NetworkOfAToggleSwitchBiomd0000000483Model'
+title: "Cao2008 - Network of a toggle switch"
 description: "Youfang Cao & Jie Liang. Optimal enumeration of state space of finitely buffered stochastic molecular networks and exact computation of steady state landscape probability."
 standard: other
 tags:

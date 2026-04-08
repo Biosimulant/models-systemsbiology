@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Hockin2002BloodcoagulationBiomd0000000335Model'
+title: "Hockin2002_BloodCoagulation"
 description: "This model is from the article: A model for the stoichiometric regulation of blood coagulation. Hockin MF, Jones KC, Everse SJ, Mann KG."
 standard: other
 tags:

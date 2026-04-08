@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Rojano2019BloodCoagulationModelModel1907120001Model'
+title: "Rojano2019 - Blood Coagulation Model"
 description: "Blood coagulation mathematical model derived from Chatterjee et al. It can be used to explore systemsbiology rojano2019 blood coagulation model1907120001 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

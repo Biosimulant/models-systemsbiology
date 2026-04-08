@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Holzhutter2004ErythrocyteMetabolismBiomd0000000070Model'
+title: "Holzhutter2004_Erythrocyte_Metabolism"
 description: ". It can be used to explore systemsbiology holzhutter2004 erythrocyte metabolism BioModels0000000070 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

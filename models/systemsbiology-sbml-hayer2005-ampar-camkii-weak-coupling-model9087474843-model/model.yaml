@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Hayer2005AmparCamkiiWeakCouplingModel9087474843Model'
+title: "Hayer2005_AMPAR_CaMKII_weak_coupling"
 description: "This is a model of weak coupling between the AMPAR traffikcing bistability, and the CaMKII autophosphorylation bistability. It can be used to explore systemsbiology hayer2005 ampar camkii weak coupling dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

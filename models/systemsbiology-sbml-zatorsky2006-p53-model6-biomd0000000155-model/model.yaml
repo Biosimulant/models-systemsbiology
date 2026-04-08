@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Zatorsky2006P53Model6Biomd0000000155Model'
+title: "Zatorsky2006_p53_Model6"
 description: "The model reproduces Fig 6B of the paper for model 6. It can be used to explore systemsbiology zatorsky2006 p53 model6 BioModels0000000155 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

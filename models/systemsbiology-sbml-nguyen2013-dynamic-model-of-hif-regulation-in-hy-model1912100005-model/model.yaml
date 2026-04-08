@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Nguyen2013DynamicModelOfHifRegulationInHyModel1912100005Model'
+title: "Nguyen2013 - Dynamic model of HIF regulation in hypoxia (reduced model)"
 description: "Its a mathematcial model explaining regulation of HIF via FIH and oxygen. Model is further validated by Experimental data and various hypothesis has been tested on the same."
 standard: other
 tags:

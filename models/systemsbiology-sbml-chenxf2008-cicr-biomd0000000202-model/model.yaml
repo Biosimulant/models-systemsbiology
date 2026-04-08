@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Chenxf2008CicrBiomd0000000202Model'
+title: "ChenXF2008_CICR"
 description: "The model reproduces the plots in Figures 1 and 2. Note that the units of the time scale 'A' are not right in the paper, it was corrected by the curator."
 standard: other
 tags:

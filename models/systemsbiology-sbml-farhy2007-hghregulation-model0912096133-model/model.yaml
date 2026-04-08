@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Farhy2007HghregulationModel0912096133Model'
+title: "Farhy2007_hGHregulation"
 description: "This a model from the article: Model-projected mechanistic bases for sex differences in growth hormoneregulation in humans. It can be used to explore systemsbiology farhy2007 hghregulation model0912096133 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

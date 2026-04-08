@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Martins2004YeastGlycolysisGlycerolsynthesisModel1009220000Model'
+title: "Martins2004_Yeast_Glycolysis_GlycerolSynthesis"
 description: "A systems biology study of two distinct growth phases of Saccharomyces cerevisiae cultures AM Martins, D Camacho, J Shuman, W Sha, P Mendes, V Shulaev, Current Genomics 2004 5:649-663 This is a model. It can be used to explore systemsbiology martins2004 yeast glycolysis glycerolsynthesis model1009220000 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

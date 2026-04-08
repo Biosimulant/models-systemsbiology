@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Hatakeyama2003MapkBiomd0000000146Model'
+title: "Hatakeyama2003_MAPK"
 description: "Figure4 and Figure5 can be simulated by Copasi. Figure4 can be simulated in MathSBML as well."
 standard: other
 tags:

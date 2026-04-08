@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Wang2019AMathematicalModelOfOncolyticVirotBiomd0000000772Model'
+title: "Wang2019 - A mathematical model of oncolytic virotherapy with time delay"
 description: "A mathematical model describing oncolytic virotherapy with incorporation the viral lytic cycle and the virus-specific CTL response. The thresholds for viral treatment and virus-specific CTl response a."
 standard: other
 tags:

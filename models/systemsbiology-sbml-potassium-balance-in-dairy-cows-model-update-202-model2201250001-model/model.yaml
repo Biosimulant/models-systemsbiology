@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: PotassiumBalanceInDairyCowsModelUpdate202Model2201250001Model'
+title: "Potassium balance in dairy cows, model update 2021"
 description: "This updated model is derived from MODEL1710230000 here on Biomodels. In the current version we changed 2 parameter values and the rate equation Keku."
 standard: other
 tags:

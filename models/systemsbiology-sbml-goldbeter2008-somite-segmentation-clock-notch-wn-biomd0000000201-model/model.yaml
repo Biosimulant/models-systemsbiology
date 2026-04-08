@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Goldbeter2008SomiteSegmentationClockNotchWnBiomd0000000201Model'
+title: "Goldbeter2008_Somite_Segmentation_Clock_Notch_Wnt_FGF"
 description: "This is a model of the coupled Natch, Wnt and FGF modules as described in: A. It can be used to explore systemsbiology goldbeter2008 somite segmentation clock notch dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

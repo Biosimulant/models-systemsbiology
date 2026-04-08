@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Ehrenstein2000PositiveFeedbackModelForTheLBiomd0000000552Model'
+title: "Ehrenstein2000 - Positive-Feedback model for the loss of acetylcholine in Alzheimer's disease"
 description: "Ehrenstein2000 - Positive-Feedback model forthe loss of acetylcholine in Alzheimer's disease Curated model derived from BIOMD0000000553 This model is described in the article: A positive-feedback mode. It can be used to explore systemsbiology ehrenstein2000 positive feedback for the dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

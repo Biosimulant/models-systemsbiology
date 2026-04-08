@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Pokhilko2010CircclockBiomd0000000273Model'
+title: "Pokhilko2010_CircClock"
 description: "This a model from the article: Data assimilation constrains new connections and components in a complex, eukaryotic circadian clock model. Pokhilko A, Hodge SK, Stratford K, Knox K, Edwards KD, Thomso."
 standard: other
 tags:

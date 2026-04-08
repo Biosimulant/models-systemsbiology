@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Magnus1997MitocaBetacellminimalmodelModel1201140004Model'
+title: "Magnus1997_MitoCa_BetaCellMinimalModel"
 description: "This a model from the article: Minimal model of beta-cell mitochondrial Ca2+ handling. It can be used to explore systemsbiology magnus1997 mitoca betacellminimalmodel model1201140004 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

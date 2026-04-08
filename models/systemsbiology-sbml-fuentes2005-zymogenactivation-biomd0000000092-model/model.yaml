@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Fuentes2005ZymogenactivationBiomd0000000092Model'
+title: "Fuentes2005_ZymogenActivation"
 description: ". It can be used to explore systemsbiology fuentes2005 zymogenactivation BioModels0000000092 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

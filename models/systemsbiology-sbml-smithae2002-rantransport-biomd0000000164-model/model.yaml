@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Smithae2002RantransportBiomd0000000164Model'
+title: "SmithAE2002_RanTransport"
 description: "The model reproduces the compartmental model for Ran transport as depicted in Fig 3 of the paper. It can be used to explore systemsbiology smithae2002 rantransport BioModels0000000164 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

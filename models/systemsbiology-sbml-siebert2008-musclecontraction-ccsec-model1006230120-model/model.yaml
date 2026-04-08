@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Siebert2008MusclecontractionCcsecModel1006230120Model'
+title: "Siebert2008_MuscleContraction_CCSEC"
 description: "This a model from the article: Nonlinearities make a difference: comparison of two common Hill-type models withreal muscle. Siebert T, Rode C, Herzog W, Till O, Blickhan R."
 standard: other
 tags:

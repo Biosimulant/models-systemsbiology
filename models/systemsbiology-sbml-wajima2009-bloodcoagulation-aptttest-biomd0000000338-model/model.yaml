@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Wajima2009BloodcoagulationAptttestBiomd0000000338Model'
+title: "Wajima2009_BloodCoagulation_aPTTtest"
 description: "This model is from the article: A comprehensive model for the humoral coagulation network in humans. It can be used to explore systemsbiology wajima2009 bloodcoagulation aptttest BioModels0000000338 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

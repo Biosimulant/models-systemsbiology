@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Haut1974PentoseCycleRatModel1004070000Model'
+title: "Haut1974_Pentose_Cycle_Rat"
 description: "This is the Unlabelled model as described in: Simulation of the Pentose Cycle in Lactating Rat Mammary Gland Haut MJ , London JW , Garfinkel D Biochem J. It can be used to explore systemsbiology haut1974 pentose cycle rat model1004070000 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

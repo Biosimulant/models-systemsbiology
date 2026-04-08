@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Karim2021CardiotoxNetLigandBasedPredictionModel2407180003Model'
+title: "Karim2021 - CardioTox net: Ligand-based prediction of hERG blockade"
 description: "A robust predictor for hERG channel blockade based on an ensemble of five deep learning models. The authors have collected a dataset from public sources, such as BindingDB and ChEMBL on hERG blockers."
 standard: other
 tags:

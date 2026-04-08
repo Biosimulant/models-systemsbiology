@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Nikolov2020P53Mir34ModelBiomd0000001057Model'
+title: "Nikolov2020 - p53-miR34 model"
 description: "Svetoslav Nikolov, Olaf Wolkenhauer, Julio Vera & Momchil Nenov. The role of cooperativity in a p53-miR34 dynamical mathematical model."
 standard: other
 tags:

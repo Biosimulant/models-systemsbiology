@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: VorIlK2020BayesianEstimationOfSyntheticAcModel2407180002Model'
+title: "Voršilák2020 - Bayesian estimation of synthetic accessibility of organic compounds"
 description: "SYBA uses a fragment-based approach to classify whether a molecule is easy or hard to synthesize, and it can also be used to analyze the contribution of individual fragments to the total synthetic acc. It can be used to explore systemsbiology vor il k2020 bayesian estimation dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

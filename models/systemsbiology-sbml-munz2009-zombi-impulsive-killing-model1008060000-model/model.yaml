@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Munz2009ZombiImpulsiveKillingModel1008060000Model'
+title: "Munz2009 - Zombi Impulsive Killing"
 description: "Munz2009 - Zombie Impulsive Killing This is the basic SZR model with impulsive killing described in the article. It can be used to explore systemsbiology munz2009 zombi impulsive killing model1008060000 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

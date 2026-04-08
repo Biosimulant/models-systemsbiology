@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Dellorco2009PhototransductionBiomd0000000326Model'
+title: "DellOrco2009_phototransduction"
 description: "This a model from the article: Network-level analysis of light adaptation in rod cells under normal and altered conditions. It can be used to explore systemsbiology dellorco2009 phototransduction BioModels0000000326 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

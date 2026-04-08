@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Munz2009ZombieSizrcBiomd0000000882Model'
+title: "Munz2009 - Zombie SIZRC"
 description: "Munz2009 - Zombie SIZRC This is the model with an latent infection and cure for zombies described in the article. It can be used to explore systemsbiology munz2009 zombie sizrc BioModels0000000882 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

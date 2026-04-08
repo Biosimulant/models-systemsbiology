@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Vinnakotta2010TranscientanoxiaSolmuscleModel1006230112Model'
+title: "Vinnakotta2010_TranscientAnoxia_SOLmuscle"
 description: "This a model from the article: Common phenotype of resting mouse extensor digitorum longus and soleus muscles:equal ATPase and glycolytic flux during transient anoxia. It can be used to explore systemsbiology vinnakotta2010 transcientanoxia solmuscle model1006230112 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

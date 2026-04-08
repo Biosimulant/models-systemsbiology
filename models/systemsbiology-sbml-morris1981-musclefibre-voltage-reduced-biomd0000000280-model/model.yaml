@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Morris1981MusclefibreVoltageReducedBiomd0000000280Model'
+title: "Morris1981_MuscleFibre_Voltage_reduced"
 description: "This is the reduced model of the voltage oscillations in barnacle muscle fibers, generally known as the Morris-Lecar model (eg. wikipedia ), described in the article: Voltage oscillations in the barna."
 standard: other
 tags:

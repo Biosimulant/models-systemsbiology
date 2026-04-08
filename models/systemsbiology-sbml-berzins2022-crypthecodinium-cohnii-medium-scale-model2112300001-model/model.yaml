@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Berzins2022CrypthecodiniumCohniiMediumScaleModel2112300001Model'
+title: "Berzins2022 - Crypthecodinium cohnii medium scale model"
 description: "Systems Biology Berzins2022Crypthecodinium Cohnii Medium Scale Model2112300001Model represents core biological mechanisms from biomodels_ebi reference biomodels_ebi:MODEL2112300001. When you run it, you can inspect state and compare temporal behavior between baseline and adjusted inputs."
 standard: other
 tags:

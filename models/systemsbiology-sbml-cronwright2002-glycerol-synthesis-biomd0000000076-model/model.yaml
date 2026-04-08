@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Cronwright2002GlycerolSynthesisBiomd0000000076Model'
+title: "Cronwright2002_Glycerol_Synthesis"
 description: ". It can be used to explore systemsbiology cronwright2002 glycerol synthesis BioModels0000000076 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

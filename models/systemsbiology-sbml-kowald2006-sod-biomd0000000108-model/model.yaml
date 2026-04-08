@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Kowald2006SodBiomd0000000108Model'
+title: "Kowald2006_SOD"
 description: "This model is according to the paper from Axel Kowald Alternative pathways as mechanism for the negative effects associated with overexpression of superoxide dismutase. It can be used to explore systemsbiology kowald2006 sod BioModels0000000108 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

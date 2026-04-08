@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Lenbury1991CortisolsecretionsystemModel0479926177Model'
+title: "Lenbury1991_CortisolSecretionSystem"
 description: "This a model from the article: Modelling fluctuation phenomena in the plasma cortisol secretion system in normal man. It can be used to explore systemsbiology lenbury1991 cortisolsecretionsystem model0479926177 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

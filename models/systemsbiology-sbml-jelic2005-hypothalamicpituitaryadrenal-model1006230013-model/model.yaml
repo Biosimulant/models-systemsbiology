@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Jelic2005HypothalamicpituitaryadrenalModel1006230013Model'
+title: "Jelic2005_HypothalamicPituitaryAdrenal"
 description: "This a model from the article: Mathematical modeling of the hypothalamic-pituitary-adrenal system activity. It can be used to explore systemsbiology jelic2005 hypothalamicpituitaryadr model1006230013 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

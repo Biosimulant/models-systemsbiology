@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: MouseIronDistributionRichIronDietNoTracerBiomd0000000738Model'
+title: "Mouse Iron Distribution - Rich iron diet (No Tracer)"
 description: "Mouse Iron Distribution Dynamics Dynamic model of iron distribution in mice. This model includes only normal iron with the parameters that fit the data from Lopes et al."
 standard: other
 tags:

@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Keating2019MinimalModelDemonstratingSbmlLevModel1904090001Model'
+title: "Keating2019 - Minimal model demonstrating SBML Level 3 packages."
 description: "Minimal model demonstrating SBML Level 3 packages. It can be used to explore systemsbiology keating2019 minimal demonstrating lev model1904090001 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

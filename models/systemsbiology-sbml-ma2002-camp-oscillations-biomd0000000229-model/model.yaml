@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Ma2002CampOscillationsBiomd0000000229Model'
+title: "Ma2002_cAMP_oscillations"
 description: "This a model from the article: Quantifying robustness of biochemical network models. It can be used to explore systemsbiology ma2002 camp oscillations BioModels0000000229 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

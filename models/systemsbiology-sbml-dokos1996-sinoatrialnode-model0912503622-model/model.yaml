@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Dokos1996SinoatrialnodeModel0912503622Model'
+title: "Dokos1996_SinoatrialNode"
 description: "This a model from the article: Ion currents underlying sinoatrial node pacemaker activity: a new single cellmathematical model. It can be used to explore systemsbiology dokos1996 sinoatrialnode model0912503622 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

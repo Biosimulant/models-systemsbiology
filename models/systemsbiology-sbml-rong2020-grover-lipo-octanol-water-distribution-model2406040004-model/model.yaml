@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Rong2020GroverLipoOctanolWaterDistributionModel2406040004Model'
+title: "Rong2020 - Grover-Lipo: Octanol/water distribution coefficient"
 description: "This model has been trained using the GROVER embedding with the Lipophilicity Molecule Net dataset. It can be used to explore systemsbiology rong2020 grover lipo octanol water dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Sneppen2009ModelingProteasomeDynamicsInParkBiomd0000000548Model'
+title: "Sneppen2009 - Modeling proteasome dynamics in Parkinson's disease"
 description: "Sneppen2009 - Modeling proteasome dynamics inParkinson's disease This model is described in the article: Modeling proteasome dynamics in Parkinson's disease. It can be used to explore systemsbiology sneppen2009 modeling proteasome dynamics in dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

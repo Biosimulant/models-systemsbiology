@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Wodarz2007CytomegalovirusInfectionModelWithBiomd0000000687Model'
+title: "Wodarz2007 - Cytomegalovirus infection model with cytotoxic T lymphocyte response"
 description: "This a model from the article: Dynamics of killer T cell inflation in viral infections. It can be used to explore systemsbiology wodarz2007 cytomegalovirus infection with BioModels0000000687 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

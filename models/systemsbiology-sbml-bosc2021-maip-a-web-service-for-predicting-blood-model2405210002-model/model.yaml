@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Bosc2021MaipAWebServiceForPredictingBloodModel2405210002Model'
+title: "Bosc2021 - MAIP: a web service for predicting blood‐stage malaria inhibitors"
 description: "Prediction of the antimalarial potential of small molecules. This model is an ensemble of smaller QSAR models trained on proprietary data from various sources, up to a total of >7M compounds."
 standard: other
 tags:

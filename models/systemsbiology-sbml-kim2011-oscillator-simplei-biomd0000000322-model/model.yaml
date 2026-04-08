@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Kim2011OscillatorSimpleiBiomd0000000322Model'
+title: "Kim2011_Oscillator_SimpleI"
 description: "This a model from the article: Synthetic in vitro transcriptional oscillators. It can be used to explore systemsbiology kim2011 oscillator simplei BioModels0000000322 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

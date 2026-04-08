@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Kyrylov2005HpaaxisModel0478740924Model'
+title: "Kyrylov2005_HPAaxis"
 description: "This a model from the article: Modeling robust oscillatory behavior of the hypothalamic-pituitary-adrenal axis. It can be used to explore systemsbiology kyrylov2005 hpaaxis model0478740924 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

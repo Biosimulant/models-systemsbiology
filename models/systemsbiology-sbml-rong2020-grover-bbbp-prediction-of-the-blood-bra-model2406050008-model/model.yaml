@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Rong2020GroverBbbpPredictionOfTheBloodBraModel2406050008Model'
+title: "Rong2020 - Grover-bbbp: Prediction of the Blood-brain barrier penetration."
 description: "This model predicts the Blood-Brain Barrier (BBB) penetration potential of small molecules using as training data the curated MoleculeNet benchmark containing 2000 experimental data points. It can be used to explore systemsbiology rong2020 grover bbbp prediction of dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

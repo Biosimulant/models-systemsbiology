@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Proctor2012RoleOfAmyloidBetaDimersInAggreBiomd0000000462Model'
+title: "Proctor2012 - Role of Amyloid-beta dimers in aggregation formation"
 description: "Proctor2012 - Amyloid-beta aggregation This model supports the current thinking that levels of dimers are important in initiating the aggregation process. This model is described in the article: Aggre."
 standard: other
 tags:

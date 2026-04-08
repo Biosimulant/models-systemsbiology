@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Bagci2008NoApoptosisModelbModel1006230026Model'
+title: "Bagci2008_NO_Apoptosis_modelB"
 description: "This a model from the article: Computational insights on the competing effects of nitric oxide in regulatingapoptosis. Bagci EZ, Vodovotz Y, Billiar TR, Ermentrout B, Bahar I."
 standard: other
 tags:

@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Bertram2006AtpproductionMitochondrialModel1006230114Model'
+title: "Bertram2006_ATPproduction_Mitochondrial"
 description: "This a model from the article: A simplified model for mitochondrial ATP production. Bertram R, Gram Pedersen M, Luciani DS, Sherman A."
 standard: other
 tags:

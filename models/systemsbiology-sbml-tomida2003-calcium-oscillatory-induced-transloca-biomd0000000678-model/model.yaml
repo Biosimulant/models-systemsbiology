@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Tomida2003CalciumOscillatoryInducedTranslocaBiomd0000000678Model'
+title: "Tomida2003 - Calcium Oscillatory-induced translocation of nuclear factor of activated T cells"
 description: "Tomida2003 - NFAT functions CalciumOscillation This model is described in the article: NFAT functions as a working memory of Ca2+ signals in decoding Ca2+ oscillation. It can be used to explore systemsbiology tomida2003 calcium oscillatory induced transloca dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

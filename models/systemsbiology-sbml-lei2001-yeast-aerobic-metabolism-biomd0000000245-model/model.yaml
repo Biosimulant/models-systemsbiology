@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Lei2001YeastAerobicMetabolismBiomd0000000245Model'
+title: "Lei2001_Yeast_Aerobic_Metabolism"
 description: "This the model from the article: A biochemically structured model for Saccharomyces cerevisiae. It can be used to explore systemsbiology lei2001 yeast aerobic metabolism BioModels0000000245 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

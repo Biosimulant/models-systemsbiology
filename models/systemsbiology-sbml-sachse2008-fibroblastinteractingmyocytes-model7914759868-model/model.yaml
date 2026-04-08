@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Sachse2008FibroblastinteractingmyocytesModel7914759868Model'
+title: "Sachse2008_FibroblastInteractingMyocytes"
 description: "This a model from the article: Electrophysiological modeling of fibroblasts and their interaction with myocytes. It can be used to explore systemsbiology sachse2008 fibroblastinteractingmyo model7914759868 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

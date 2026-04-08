@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Tanos2008BloodCoagulationAndSnakeVenomModel1806150001Model'
+title: "Tanos2008 - Blood coagulation and Snake Venom"
 description: "Mathematical model of the blood coagulation cascade including interaction of snake venom and antivenom. It can be used to explore systemsbiology tanos2008 blood coagulation and snake dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

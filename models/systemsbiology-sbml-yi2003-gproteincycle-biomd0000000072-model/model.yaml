@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Yi2003GproteincycleBiomd0000000072Model'
+title: "Yi2003_GproteinCycle"
 description: "The paper describes both wild-type and mutant cells of G protein cycle by using different values of G protein deactivation. It can be used to explore systemsbiology yi2003 gproteincycle BioModels0000000072 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

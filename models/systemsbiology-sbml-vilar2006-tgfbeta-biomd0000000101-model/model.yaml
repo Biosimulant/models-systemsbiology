@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Vilar2006TgfbetaBiomd0000000101Model'
+title: "Vilar2006_TGFbeta"
 description: "The model reproduces Fig 5A of the paper. The ligand concentration is increased from 3E-5 to 0.01 at time t=2500 to ensure that the system reaches steady state."
 standard: other
 tags:

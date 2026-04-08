@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Kim2022BayeshergADeepLearningModelForPredModel2408060001Model'
+title: "Kim2022 - BayeshERG: A deep learning model for predicting hERG channel blockers"
 description: "BayeshERG is a predictor of small molecule-induced blockade of the hERG ion channel. It can be used to explore systemsbiology kim2022 bayesherg a deep learning dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

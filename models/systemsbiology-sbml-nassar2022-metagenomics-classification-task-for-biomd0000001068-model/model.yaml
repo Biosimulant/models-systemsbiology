@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Nassar2022MetagenomicsClassificationTaskForBiomd0000001068Model'
+title: "Nassar2022 - Metagenomics Classification Task for Scientific Literature Text"
 description: "This is a use case to show that, given any automatic metagenomic classification model for the documents, we can convert those to ONNX (Open Neural Network Exchange) format; it also consists of the Doc. It can be used to explore systemsbiology nassar2022 metagenomics classification task for dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

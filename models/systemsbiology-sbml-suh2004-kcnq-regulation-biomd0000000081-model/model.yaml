@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Suh2004KcnqRegulationBiomd0000000081Model'
+title: "Suh2004_KCNQ_Regulation"
 description: "The model reproduces FIG 11A and FIG 11B of the paper. However, please note that FIG 11B is a plot of normalised amounts versus time."
 standard: other
 tags:

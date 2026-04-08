@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Ataullahkhanov1996AdenylateBiomd0000000054Model'
+title: "Ataullahkhanov1996_Adenylate"
 description: "The model reproduces ion and adenylate pool concentration corresponding to line 2 of Fig 3 of the publication. This model was tested successfully on Jarnac To the extent possible under law, all copyri."
 standard: other
 tags:

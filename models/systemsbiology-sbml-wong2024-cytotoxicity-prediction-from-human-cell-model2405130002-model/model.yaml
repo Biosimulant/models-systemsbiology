@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Wong2024CytotoxicityPredictionFromHumanCellModel2405130002Model'
+title: "Wong2024 - Cytotoxicity Prediction from Human Cell Lines"
 description: "The authors use a large dataset (>30k) to train an explainable graph-based model to identify potential antibiotics with low cytotoxicity. The model uses a substructure-based approach to explore the ch."
 standard: other
 tags:

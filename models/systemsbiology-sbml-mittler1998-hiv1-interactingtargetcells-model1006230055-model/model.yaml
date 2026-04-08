@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Mittler1998Hiv1InteractingtargetcellsModel1006230055Model'
+title: "Mittler1998_HIV1_interactingTargetCells"
 description: "This a model from the article: Influence of delayed viral production on viral dynamics in HIV-1 infectedpatients. It can be used to explore systemsbiology mittler1998 hiv1 interactingtargetcells model1006230055 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

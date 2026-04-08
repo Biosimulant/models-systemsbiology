@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Viertel2019AComputationalModelOfTheMammaliBiomd0000000844Model'
+title: "Viertel2019 - A Computational model of the mammalian external tufted cell"
 description: "This is a mathematical conductance-based model of the bursting activity in external tufted (ET) cells of the olfactory bulb. The model includes ion-current based descriptions of the mechanisms underly."
 standard: other
 tags:

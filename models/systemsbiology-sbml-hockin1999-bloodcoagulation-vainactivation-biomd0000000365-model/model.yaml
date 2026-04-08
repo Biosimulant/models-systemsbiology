@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Hockin1999BloodcoagulationVainactivationBiomd0000000365Model'
+title: "Hockin1999_BloodCoagulation_VaInactivation"
 description: "Matthew F. It can be used to explore systemsbiology hockin1999 bloodcoagulation vainactivation BioModels0000000365 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

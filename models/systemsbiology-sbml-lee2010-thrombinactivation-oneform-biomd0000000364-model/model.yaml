@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Lee2010ThrombinactivationOneformBiomd0000000364Model'
+title: "Lee2010_ThrombinActivation_OneForm"
 description: "Chang Jun Lee, Sangwook Wu, Changsun Eun & Lee G. It can be used to explore systemsbiology lee2010 thrombinactivation oneform BioModels0000000364 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

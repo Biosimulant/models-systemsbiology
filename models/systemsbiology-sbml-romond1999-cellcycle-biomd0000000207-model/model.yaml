@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Romond1999CellcycleBiomd0000000207Model'
+title: "Romond1999_CellCycle"
 description: "The model reproduces Fig 3 of the paper. It can be used to explore systemsbiology romond1999 cellcycle BioModels0000000207 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

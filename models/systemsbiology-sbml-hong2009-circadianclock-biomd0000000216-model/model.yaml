@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Hong2009CircadianclockBiomd0000000216Model'
+title: "Hong2009_CircadianClock"
 description: "This a model from the article: Minimum criteria for DNA damage-induced phase advances in circadian rhythms. It can be used to explore systemsbiology hong2009 circadianclock BioModels0000000216 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

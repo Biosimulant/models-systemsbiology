@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Razumova2000MyofilamentcontractilebehaviourModel7909395757Model'
+title: "Razumova2000_MyofilamentContractileBehaviour"
 description: "This a model from the article: Different myofilament nearest-neighbor interactions have distinctive effects on contractile behavior. It can be used to explore systemsbiology razumova2000 myofilamentcontractilebe model7909395757 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

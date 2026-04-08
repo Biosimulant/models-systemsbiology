@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Wolf2000GlycolyticOscillationsBiomd0000000206Model'
+title: "Wolf2000_Glycolytic_Oscillations"
 description: "Model reproduces the dynamics of ATP and NADH as depicted in Fig 4 of the paper. It can be used to explore systemsbiology wolf2000 glycolytic oscillations BioModels0000000206 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

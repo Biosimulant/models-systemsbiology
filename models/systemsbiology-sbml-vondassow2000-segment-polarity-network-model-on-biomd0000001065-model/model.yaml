@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Vondassow2000SegmentPolarityNetworkModelOnBiomd0000001065Model'
+title: "vonDassow2000 - Segment Polarity Network model on 1x4 grid of cells"
 description: "This is the segment polarity network model described by von Dassow et al. It can be used to explore systemsbiology vondassow2000 segment polarity network on dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Sharp2019AmlBiomd0000000798Model'
+title: "Sharp2019 - AML"
 description: "The paper describes a model of acute myeloid leukaemia. Created by COPASI 4.26 (Build 213) This model is described in the article: Optimal control of acute myeloid leukaemia Jesse A."
 standard: other
 tags:

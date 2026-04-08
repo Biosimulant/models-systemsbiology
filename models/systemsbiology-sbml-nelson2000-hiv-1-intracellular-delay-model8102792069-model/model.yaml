@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Nelson2000Hiv1IntracellularDelayModel8102792069Model'
+title: "Nelson2000_HIV-1_intracellular_delay"
 description: "described in: A model of HIV-1 pathogenesis that includes an intracellular delay. Nelson PW, Murray JD, Perelson AS; Math Biosci."
 standard: other
 tags:

@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Garny2003SinoatrialnodeModel0911601070Model'
+title: "Garny2003_SinoatrialNode"
 description: "This a model from the article: One-dimensional rabbit sinoatrial node models: benefits and limitations. Garny A, Kohl P, Hunter PJ, Boyett MR, Noble D."
 standard: other
 tags:

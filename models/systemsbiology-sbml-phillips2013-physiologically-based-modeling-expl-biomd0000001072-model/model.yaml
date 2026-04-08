@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Phillips2013PhysiologicallyBasedModelingExplBiomd0000001072Model'
+title: "Phillips2013 - physiologically based modeling explaining Mammalian rest/activity patterns"
 description: "The model provides a framework for understanding rest/activity patterns effected by the circadian rhythm and relating them to underlying diverse phenotypes. It can be used to explore systemsbiology phillips2013 physiologically based modeling expl dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

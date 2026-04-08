@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Wodarz2007BasicModelOfCytomegalovirusInfectBiomd0000000686Model'
+title: "Wodarz2007 - Basic Model of Cytomegalovirus Infection"
 description: "This a model from the article: Dynamics of killer T cell inflation in viral infections. It can be used to explore systemsbiology wodarz2007 basic of cytomegalovirus infect dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

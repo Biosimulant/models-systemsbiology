@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Aghakhani2022HumanRheumatoidArthritisSynoviaModel2212220001Model'
+title: "Aghakhani2022 - Human rheumatoid arthritis synovial fibroblast model"
 description: "Systems Biology Aghakhani2022Human Rheumatoid Arthritis Synovia Model2212220001Model models core biological dynamics as a OTHER simulation curated from biomodels_ebi (biomodels_ebi:MODEL2212220001), focused on. When you run it, you can track state over time and compare response patterns across parameter settings."
 standard: other
 tags:

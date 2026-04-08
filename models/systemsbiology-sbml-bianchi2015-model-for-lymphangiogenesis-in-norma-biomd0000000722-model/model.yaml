@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Bianchi2015ModelForLymphangiogenesisInNormaBiomd0000000722Model'
+title: "Bianchi2015 -Model for lymphangiogenesis in normal and diabetic wounds"
 description: "Arianna Bianchi, Kevin J. It can be used to explore systemsbiology bianchi2015 for lymphangiogenesis in norma dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Clarke2006SmadSignallingBiomd0000000112Model'
+title: "Clarke2006_Smad_signalling"
 description: "The model reproduces the temporal evolution of four variables depicted in Fig 2a. It can be used to explore systemsbiology clarke2006 smad signalling BioModels0000000112 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

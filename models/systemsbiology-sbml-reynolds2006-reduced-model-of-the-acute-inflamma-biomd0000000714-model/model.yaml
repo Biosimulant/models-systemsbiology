@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'SystemsBiology: Reynolds2006ReducedModelOfTheAcuteInflammaBiomd0000000714Model'
+title: "Reynolds2006 - Reduced model of the acute inflammatory response"
 description: "Angela Reynolds, Jonathan Rubin, Gilles Clermont, Judy Day, Yoram Vodovotz & G. It can be used to explore systemsbiology reynolds2006 reduced of the acute dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
