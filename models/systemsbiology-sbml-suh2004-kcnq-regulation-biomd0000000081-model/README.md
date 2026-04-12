@@ -11,14 +11,13 @@ The model reproduces FIG 11A and FIG 11B of the paper. However, please note that
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-suh2004-kcnq-regulation-biomd0000000081-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-suh2004-kcnq-regulation-biomd0000000081-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Mathematical model of blood coagulation. Reused Hockin et al. 2002 model. Simula
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-adams2003-thrombin-inhibitors-model1808150002-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-adams2003-thrombin-inhibitors-model1808150002-model/model.yaml
 ```
 
 ## Tags

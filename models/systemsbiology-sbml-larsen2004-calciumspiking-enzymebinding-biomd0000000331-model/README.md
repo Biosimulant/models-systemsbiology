@@ -11,14 +11,13 @@ This a model from the article: On the encoding and decoding of calcium signals i
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-larsen2004-calciumspiking-enzymebinding-biomd0000000331-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-larsen2004-calciumspiking-enzymebinding-biomd0000000331-model/model.yaml
 ```
 
 ## Tags

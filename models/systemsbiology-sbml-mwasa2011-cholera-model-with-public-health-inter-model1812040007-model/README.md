@@ -11,14 +11,13 @@ Mathematical analysis of a cholera model with public health interventions
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-mwasa2011-cholera-model-with-public-health-inter-model1812040007-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-mwasa2011-cholera-model-with-public-health-inter-model1812040007-model/model.yaml
 ```
 
 ## Tags

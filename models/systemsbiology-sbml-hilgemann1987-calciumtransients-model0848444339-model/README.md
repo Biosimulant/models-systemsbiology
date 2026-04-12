@@ -11,14 +11,13 @@ This a model from the article: Excitation-contraction coupling and extracellular
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-hilgemann1987-calciumtransients-model0848444339-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-hilgemann1987-calciumtransients-model0848444339-model/model.yaml
 ```
 
 ## Tags

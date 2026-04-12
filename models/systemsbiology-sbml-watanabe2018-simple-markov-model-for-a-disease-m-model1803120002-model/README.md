@@ -11,14 +11,13 @@ Simple Markov model for a disease model.The model uses two disease states: Alive
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-watanabe2018-simple-markov-model-for-a-disease-m-model1803120002-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-watanabe2018-simple-markov-model-for-a-disease-m-model1803120002-model/model.yaml
 ```
 
 ## Tags

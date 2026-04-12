@@ -11,14 +11,13 @@ Kamihira2000 - calcitonin fibrillation kinetics This model studies the kinetics 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-kamihira2000-calcitonin-fibrillation-kinetics-biomd0000000614-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-kamihira2000-calcitonin-fibrillation-kinetics-biomd0000000614-model/model.yaml
 ```
 
 ## Tags

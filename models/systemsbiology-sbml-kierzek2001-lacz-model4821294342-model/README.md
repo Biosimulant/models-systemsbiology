@@ -11,14 +11,13 @@ An approximation to the &lt;a href = 'http://www.ncbi.nlm.nih.gov/entrez/query.f
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-kierzek2001-lacz-model4821294342-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-kierzek2001-lacz-model4821294342-model/model.yaml
 ```
 
 ## Tags

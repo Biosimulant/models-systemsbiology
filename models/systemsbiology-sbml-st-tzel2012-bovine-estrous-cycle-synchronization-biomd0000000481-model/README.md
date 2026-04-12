@@ -11,14 +11,13 @@ C. Stötzel, J. Plöntzke, W. Heuwieser & S. Röblitz. Advances in modeling of t
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-st-tzel2012-bovine-estrous-cycle-synchronization-biomd0000000481-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-st-tzel2012-bovine-estrous-cycle-synchronization-biomd0000000481-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Proctor2017- Role of microRNAs inosteoarthritis (miR140-IL1 coherent feed forwar
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-proctor2017-role-of-micrornas-in-osteoarthritis-model1705170001-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-proctor2017-role-of-micrornas-in-osteoarthritis-model1705170001-model/model.yaml
 ```
 
 ## Tags

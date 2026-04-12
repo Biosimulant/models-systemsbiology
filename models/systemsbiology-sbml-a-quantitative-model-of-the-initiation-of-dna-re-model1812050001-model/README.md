@@ -11,14 +11,13 @@ Requires input from Chen2004(BIOMD0000000056) model but did not work correctly e
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-a-quantitative-model-of-the-initiation-of-dna-re-model1812050001-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-a-quantitative-model-of-the-initiation-of-dna-re-model1812050001-model/model.yaml
 ```
 
 ## Tags

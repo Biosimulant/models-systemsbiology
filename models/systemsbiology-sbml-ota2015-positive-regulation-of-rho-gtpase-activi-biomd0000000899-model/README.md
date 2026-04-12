@@ -11,14 +11,13 @@ This is a ordinary differential equation mathematical model describing the Rho G
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-ota2015-positive-regulation-of-rho-gtpase-activi-biomd0000000899-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-ota2015-positive-regulation-of-rho-gtpase-activi-biomd0000000899-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Proctor2017- Role of microRNAs inosteoarthritis (miR140-SMAD3 double negative fe
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-proctor2017-role-of-micrornas-in-osteoarthritis-model1705170000-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-proctor2017-role-of-micrornas-in-osteoarthritis-model1705170000-model/model.yaml
 ```
 
 ## Tags

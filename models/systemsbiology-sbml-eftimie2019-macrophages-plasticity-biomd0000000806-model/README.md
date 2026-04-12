@@ -11,14 +11,13 @@ This paper describes the complex interactions between two extreme types of macro
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-eftimie2019-macrophages-plasticity-biomd0000000806-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-eftimie2019-macrophages-plasticity-biomd0000000806-model/model.yaml
 ```
 
 ## Tags

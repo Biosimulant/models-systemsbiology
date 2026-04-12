@@ -11,14 +11,13 @@ This is a mathematical model of heat shock protein synthesis induced by an exter
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-szymanska2009-mathematical-modeling-of-heat-shoc-biomd0000000896-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-szymanska2009-mathematical-modeling-of-heat-shoc-biomd0000000896-model/model.yaml
 ```
 
 ## Tags

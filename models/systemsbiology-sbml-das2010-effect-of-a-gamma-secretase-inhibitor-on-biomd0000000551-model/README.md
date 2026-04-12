@@ -11,14 +11,13 @@ Das2010 - Effect of a gamma-secretaseinhibitor on Amyloid-beta dynamics This mod
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-das2010-effect-of-a-gamma-secretase-inhibitor-on-biomd0000000551-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-das2010-effect-of-a-gamma-secretase-inhibitor-on-biomd0000000551-model/model.yaml
 ```
 
 ## Tags

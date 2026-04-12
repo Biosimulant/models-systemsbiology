@@ -11,14 +11,13 @@ This model relates to figure 5 in &lt;a href = 'http://www.ncbi.nlm.nih.gov/entr
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-bhalla2001-mapk-mkp1-oscillation-model9071773985-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-bhalla2001-mapk-mkp1-oscillation-model9071773985-model/model.yaml
 ```
 
 ## Tags

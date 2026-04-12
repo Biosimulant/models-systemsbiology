@@ -11,14 +11,13 @@ Barr2017 - Dynamics of p21 in hTert-RPE1cells This deteministic model reveals th
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-barr2017-dynamics-of-p21-in-htert-rpe1-cells-biomd0000000660-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-barr2017-dynamics-of-p21-in-htert-rpe1-cells-biomd0000000660-model/model.yaml
 ```
 
 ## Tags

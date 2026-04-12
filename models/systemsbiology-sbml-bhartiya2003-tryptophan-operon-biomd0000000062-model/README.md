@@ -11,14 +11,13 @@ SBML level 2 code originaly generated for the JWS Online project by Jacky Snoep 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-bhartiya2003-tryptophan-operon-biomd0000000062-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-bhartiya2003-tryptophan-operon-biomd0000000062-model/model.yaml
 ```
 
 ## Tags

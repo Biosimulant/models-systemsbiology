@@ -11,14 +11,13 @@ This model originates from BioModels Database: A Database of Annotated Published
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-kuharsky2001-bloodcoagulation-model1109150000-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-kuharsky2001-bloodcoagulation-model1109150000-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ This is a four dimensionsal ordinary differential equation mathematical model th
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-gupta2019-restoration-of-cytosolic-calcium-inhib-model1911120004-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-gupta2019-restoration-of-cytosolic-calcium-inhib-model1911120004-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ This a model from the article: A simplified model for mitochondrial ATP producti
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-bertram2006-atpproduction-mitochondrial-model1006230114-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-bertram2006-atpproduction-mitochondrial-model1006230114-model/model.yaml
 ```
 
 ## Tags

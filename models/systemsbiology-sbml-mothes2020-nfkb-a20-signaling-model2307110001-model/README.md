@@ -11,14 +11,13 @@ The Mothes2020_NFkB_A20_signaling model is based on our previous model published
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-mothes2020-nfkb-a20-signaling-model2307110001-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-mothes2020-nfkb-a20-signaling-model2307110001-model/model.yaml
 ```
 
 ## Tags

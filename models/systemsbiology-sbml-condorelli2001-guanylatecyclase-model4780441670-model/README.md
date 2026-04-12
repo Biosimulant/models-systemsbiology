@@ -11,14 +11,13 @@ This model features the observations of &lt;a href = 'http://www.ncbi.nlm.nih.go
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-condorelli2001-guanylatecyclase-model4780441670-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-condorelli2001-guanylatecyclase-model4780441670-model/model.yaml
 ```
 
 ## Tags

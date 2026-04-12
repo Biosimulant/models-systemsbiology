@@ -11,14 +11,13 @@ The model reproduces the calcium oscillation dependent activation-deactivation k
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-fisher2006-ca-oscillation-dpdnt-nfat-dynamics-biomd0000000122-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-fisher2006-ca-oscillation-dpdnt-nfat-dynamics-biomd0000000122-model/model.yaml
 ```
 
 ## Tags

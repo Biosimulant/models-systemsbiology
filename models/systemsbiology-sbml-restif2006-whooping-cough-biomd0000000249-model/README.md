@@ -11,14 +11,13 @@ Restif2006 - Whooping cough This model is described in the article: Integrating 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-restif2006-whooping-cough-biomd0000000249-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-restif2006-whooping-cough-biomd0000000249-model/model.yaml
 ```
 
 ## Tags

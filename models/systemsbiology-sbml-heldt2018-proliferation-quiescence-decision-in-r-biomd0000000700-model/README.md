@@ -11,14 +11,13 @@ Heldt2018 - Proliferation-quiescence decisionin response to DNA damage This mode
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-heldt2018-proliferation-quiescence-decision-in-r-biomd0000000700-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-heldt2018-proliferation-quiescence-decision-in-r-biomd0000000700-model/model.yaml
 ```
 
 ## Tags

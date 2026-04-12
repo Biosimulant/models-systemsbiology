@@ -11,14 +11,13 @@ This a model from the article: A role for calcium release-activated current (CRA
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-bertram1995-pancreaticbetacell-crac-biomd0000000374-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-bertram1995-pancreaticbetacell-crac-biomd0000000374-model/model.yaml
 ```
 
 ## Tags

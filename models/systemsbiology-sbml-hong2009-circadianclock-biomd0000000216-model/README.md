@@ -11,14 +11,13 @@ This a model from the article: Minimum criteria for DNA damage-induced phase adv
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-hong2009-circadianclock-biomd0000000216-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-hong2009-circadianclock-biomd0000000216-model/model.yaml
 ```
 
 ## Tags

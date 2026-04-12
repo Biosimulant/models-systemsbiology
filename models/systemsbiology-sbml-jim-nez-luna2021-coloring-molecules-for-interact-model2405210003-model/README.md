@@ -11,14 +11,13 @@ By combining a Message-Passing Graph Neural Network (MPGNN) and a Forward fully 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-jim-nez-luna2021-coloring-molecules-for-interact-model2405210003-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-jim-nez-luna2021-coloring-molecules-for-interact-model2405210003-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ This a model from the article: Synthetic in vitro transcriptional oscillators. K
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-kim2011-oscillator-simplei-biomd0000000322-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-kim2011-oscillator-simplei-biomd0000000322-model/model.yaml
 ```
 
 ## Tags

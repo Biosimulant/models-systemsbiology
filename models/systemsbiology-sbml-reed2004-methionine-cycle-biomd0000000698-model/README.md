@@ -11,14 +11,13 @@ Reed2004 - Methionine Cycle This model is described in the article: A mathematic
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-reed2004-methionine-cycle-biomd0000000698-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-reed2004-methionine-cycle-biomd0000000698-model/model.yaml
 ```
 
 ## Tags

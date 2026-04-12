@@ -11,14 +11,13 @@ The model should reproduce the figure 2F of the article. The equation 7 has been
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-ferreira2003-cml-generation2-biomd0000000053-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-ferreira2003-cml-generation2-biomd0000000053-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ This model is from the article: Modelling the Role of the Hsp70/Hsp90 System in 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-proctor2011-proteinhomeostasis-normalcondition-biomd0000000344-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-proctor2011-proteinhomeostasis-normalcondition-biomd0000000344-model/model.yaml
 ```
 
 ## Tags

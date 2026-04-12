@@ -11,14 +11,13 @@ This the model from the article: A biochemically structured model for Saccharomy
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-lei2001-yeast-aerobic-metabolism-biomd0000000245-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-lei2001-yeast-aerobic-metabolism-biomd0000000245-model/model.yaml
 ```
 
 ## Tags

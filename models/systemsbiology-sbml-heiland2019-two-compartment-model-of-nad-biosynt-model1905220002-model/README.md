@@ -11,14 +11,13 @@ The model is based on MODEL1905220001 but has two compartments that have differe
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-heiland2019-two-compartment-model-of-nad-biosynt-model1905220002-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-heiland2019-two-compartment-model-of-nad-biosynt-model1905220002-model/model.yaml
 ```
 
 ## Tags

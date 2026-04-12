@@ -11,14 +11,13 @@ This model 2 described in the supplement of the article below. It is parameteriz
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-akman2008-circadian-clock-model2-biomd0000000214-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-akman2008-circadian-clock-model2-biomd0000000214-model/model.yaml
 ```
 
 ## Tags

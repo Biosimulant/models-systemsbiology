@@ -11,14 +11,13 @@ This a model from the article: Constancy and variability of contractile efficien
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-yamaguchi1996-myocardialca2-model1006230032-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-yamaguchi1996-myocardialca2-model1006230032-model/model.yaml
 ```
 
 ## Tags

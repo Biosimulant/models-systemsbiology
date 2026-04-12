@@ -11,14 +11,13 @@ This is a model of tight coupling between the AMPAR trafficking bistability, and
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-hayer2005-ampar-camkii-strong-coupling-model9087255381-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-hayer2005-ampar-camkii-strong-coupling-model9087255381-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ cL_m_degr, param m1, modified to ensure light rate &gt; dark rate.
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-flis2015-plant-clock-gene-circuit-p2011-4-1-plm-model1510190003-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-flis2015-plant-clock-gene-circuit-p2011-4-1-plm-model1510190003-model/model.yaml
 ```
 
 ## Tags

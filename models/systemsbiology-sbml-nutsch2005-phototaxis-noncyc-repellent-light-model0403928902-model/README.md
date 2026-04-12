@@ -11,14 +11,13 @@ A quantitative model of the switch cycle of an archaeal flagellar motor and its 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-nutsch2005-phototaxis-noncyc-repellent-light-model0403928902-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-nutsch2005-phototaxis-noncyc-repellent-light-model0403928902-model/model.yaml
 ```
 
 ## Tags

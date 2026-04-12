@@ -11,14 +11,13 @@ SBML level 2 code generated for the JWS Online project by Jacky Snoep using PySC
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-hornberg2005-erkcascade-biomd0000000084-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-hornberg2005-erkcascade-biomd0000000084-model/model.yaml
 ```
 
 ## Tags

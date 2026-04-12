@@ -11,14 +11,13 @@ Biophysical Chemistry 134 (2008) 93-100 Mad2 binding is not sufficient for compl
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-ibrahim2008-cdc20-sequestring-template-model-biomd0000000194-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-ibrahim2008-cdc20-sequestring-template-model-biomd0000000194-model/model.yaml
 ```
 
 ## Tags

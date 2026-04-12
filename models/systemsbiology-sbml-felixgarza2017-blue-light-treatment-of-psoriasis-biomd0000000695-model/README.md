@@ -11,14 +11,13 @@ FelixGarza2017 - Blue Light Treatment ofPsoriasis (simplified) This model is des
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-felixgarza2017-blue-light-treatment-of-psoriasis-biomd0000000695-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-felixgarza2017-blue-light-treatment-of-psoriasis-biomd0000000695-model/model.yaml
 ```
 
 ## Tags

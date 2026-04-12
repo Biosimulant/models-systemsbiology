@@ -11,14 +11,13 @@ Prediction of the antimalarial potential of small molecules. This model is an en
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-bosc2021-maip-a-web-service-for-predicting-blood-model2405210002-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-bosc2021-maip-a-web-service-for-predicting-blood-model2405210002-model/model.yaml
 ```
 
 ## Tags

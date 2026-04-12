@@ -11,14 +11,13 @@ Encoded model contains complete kinetics of infection for coxsackievirus B3 (CVB
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-lopacinski2021-coxsackievirus-b3-cvb3-complete-k-model2110250001-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-lopacinski2021-coxsackievirus-b3-cvb3-complete-k-model2110250001-model/model.yaml
 ```
 
 ## Tags

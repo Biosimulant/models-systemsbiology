@@ -11,14 +11,13 @@ This model originates from BioModels Database: A Database of Annotated Published
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-feist2006-methanogenesis-optipyruvate-model5662425708-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-feist2006-methanogenesis-optipyruvate-model5662425708-model/model.yaml
 ```
 
 ## Tags

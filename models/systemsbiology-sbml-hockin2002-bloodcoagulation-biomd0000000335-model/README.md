@@ -11,14 +11,13 @@ This model is from the article: A model for the stoichiometric regulation of blo
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-hockin2002-bloodcoagulation-biomd0000000335-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-hockin2002-bloodcoagulation-biomd0000000335-model/model.yaml
 ```
 
 ## Tags

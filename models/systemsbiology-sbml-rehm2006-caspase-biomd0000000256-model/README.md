@@ -11,14 +11,13 @@ This is the standard model described in the article: Systems analysis of effecto
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-rehm2006-caspase-biomd0000000256-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-rehm2006-caspase-biomd0000000256-model/model.yaml
 ```
 
 ## Tags

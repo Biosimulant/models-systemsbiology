@@ -11,14 +11,13 @@ This a model from the article: A simplified local control model of calcium-induc
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-hinch2004-ventricularmyocytes-model0848342500-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-hinch2004-ventricularmyocytes-model0848342500-model/model.yaml
 ```
 
 ## Tags

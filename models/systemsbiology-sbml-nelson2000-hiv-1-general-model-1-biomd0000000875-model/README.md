@@ -11,14 +11,13 @@ This is the general model without delay described by the equation system (1) in:
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-nelson2000-hiv-1-general-model-1-biomd0000000875-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-nelson2000-hiv-1-general-model-1-biomd0000000875-model/model.yaml
 ```
 
 ## Tags

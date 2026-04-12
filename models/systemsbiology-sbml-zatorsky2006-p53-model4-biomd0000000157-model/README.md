@@ -11,14 +11,13 @@ The model reproduces time profile of p53 and Mdm2 as depicted in Fig 6B of the p
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-zatorsky2006-p53-model4-biomd0000000157-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-zatorsky2006-p53-model4-biomd0000000157-model/model.yaml
 ```
 
 ## Tags

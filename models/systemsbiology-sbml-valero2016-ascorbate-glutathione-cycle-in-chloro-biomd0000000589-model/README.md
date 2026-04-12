@@ -11,14 +11,13 @@ Valero2016 - Ascorbate-Glutathione cycle in chloroplasts under light/dark condit
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-valero2016-ascorbate-glutathione-cycle-in-chloro-biomd0000000589-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-valero2016-ascorbate-glutathione-cycle-in-chloro-biomd0000000589-model/model.yaml
 ```
 
 ## Tags

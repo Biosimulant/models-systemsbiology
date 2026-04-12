@@ -11,14 +11,13 @@ Croft2013 - GPCR-RGS interaction that compartmentalizes RGS activity Through mod
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-croft2013-gpcr-rgs-interaction-that-compartmenta-biomd0000000479-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-croft2013-gpcr-rgs-interaction-that-compartmenta-biomd0000000479-model/model.yaml
 ```
 
 ## Tags

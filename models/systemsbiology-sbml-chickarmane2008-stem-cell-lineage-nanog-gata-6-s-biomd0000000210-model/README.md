@@ -11,14 +11,13 @@ Chickarmane2008 - Stem cell lineage - NANOG GATA-6 switch In this work, a dynami
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-chickarmane2008-stem-cell-lineage-nanog-gata-6-s-biomd0000000210-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-chickarmane2008-stem-cell-lineage-nanog-gata-6-s-biomd0000000210-model/model.yaml
 ```
 
 ## Tags

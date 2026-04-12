@@ -11,14 +11,13 @@ SBML creators: Armando Reyes-Palomares * , Raul Montañez *, Carlos Rodriguez-Ca
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-monta-ez2008-arginine-catabolism-biomd0000000191-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-monta-ez2008-arginine-catabolism-biomd0000000191-model/model.yaml
 ```
 
 ## Tags

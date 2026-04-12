@@ -11,14 +11,13 @@ Parallel Artificial Membrane Permeability is an in vitro surrogate to determine 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-williams2022-permeable-compound-selection-using-model2404220004-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-williams2022-permeable-compound-selection-using-model2404220004-model/model.yaml
 ```
 
 ## Tags

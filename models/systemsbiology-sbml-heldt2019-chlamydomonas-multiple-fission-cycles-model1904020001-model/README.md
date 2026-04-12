@@ -11,14 +11,13 @@ This model is described in the article:A single light-responsive sizer can contr
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-heldt2019-chlamydomonas-multiple-fission-cycles-model1904020001-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-heldt2019-chlamydomonas-multiple-fission-cycles-model1904020001-model/model.yaml
 ```
 
 ## Tags

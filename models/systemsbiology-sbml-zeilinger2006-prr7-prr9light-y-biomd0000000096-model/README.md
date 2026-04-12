@@ -11,14 +11,13 @@ The model reproduces the time profile of cYm and cTm under light-dark cycles as 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-zeilinger2006-prr7-prr9light-y-biomd0000000096-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-zeilinger2006-prr7-prr9light-y-biomd0000000096-model/model.yaml
 ```
 
 ## Tags

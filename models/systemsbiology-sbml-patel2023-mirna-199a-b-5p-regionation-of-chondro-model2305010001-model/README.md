@@ -11,14 +11,13 @@ From a previous microarray study we developed a small chondrogenesis model. We p
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-patel2023-mirna-199a-b-5p-regionation-of-chondro-model2305010001-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-patel2023-mirna-199a-b-5p-regionation-of-chondro-model2305010001-model/model.yaml
 ```
 
 ## Tags

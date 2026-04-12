@@ -11,14 +11,13 @@ GEM reconstruction for Lactococcus lactis subsp. lactis IL1403
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-koduru2022-lactococcus-lactis-subsp-lactis-il140-model2210190010-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-koduru2022-lactococcus-lactis-subsp-lactis-il140-model2210190010-model/model.yaml
 ```
 
 ## Tags

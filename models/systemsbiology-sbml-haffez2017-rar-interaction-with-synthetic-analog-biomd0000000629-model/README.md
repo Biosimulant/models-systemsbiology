@@ -11,14 +11,13 @@ Haffez2017 - RAR interaction with syntheticanalogues This model is described in 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-haffez2017-rar-interaction-with-synthetic-analog-biomd0000000629-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-haffez2017-rar-interaction-with-synthetic-analog-biomd0000000629-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ This model represents a concentration gradient of RanGTP across the nuclear enve
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-g-rlich2003-rangtp-gradient-biomd0000000192-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-g-rlich2003-rangtp-gradient-biomd0000000192-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ The model reproduces the temporal evolution of four variables depicted in Fig 2a
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-clarke2006-smad-signalling-biomd0000000112-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-clarke2006-smad-signalling-biomd0000000112-model/model.yaml
 ```
 
 ## Tags

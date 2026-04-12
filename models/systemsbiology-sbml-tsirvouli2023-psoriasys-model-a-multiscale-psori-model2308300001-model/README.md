@@ -11,14 +11,13 @@ The PsoriaSys model represent molecular and cellular interactions in the psoriat
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-tsirvouli2023-psoriasys-model-a-multiscale-psori-model2308300001-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-tsirvouli2023-psoriasys-model-a-multiscale-psori-model2308300001-model/model.yaml
 ```
 
 ## Tags

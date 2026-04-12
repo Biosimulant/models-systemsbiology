@@ -11,14 +11,13 @@ Minimal Model for Circadian Oscillations Citation Vilar JMG, Kueh HY, Barkai N, 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-vilar2002-oscillator-biomd0000000035-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-vilar2002-oscillator-biomd0000000035-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ The model reproduces the time profiles of Golgi Ras-GTP and plasma membrane Ras-
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-eungdamrong2007-ras-activation-biomd0000000161-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-eungdamrong2007-ras-activation-biomd0000000161-model/model.yaml
 ```
 
 ## Tags

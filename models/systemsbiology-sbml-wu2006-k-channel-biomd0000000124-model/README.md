@@ -11,14 +11,13 @@ The model is described in the paper by Wu and Chang (2006). Diethyl pyrocarbonat
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-wu2006-k-channel-biomd0000000124-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-wu2006-k-channel-biomd0000000124-model/model.yaml
 ```
 
 ## Tags

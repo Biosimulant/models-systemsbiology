@@ -11,14 +11,13 @@ This a model from the article: Calcium spiking. Meyer T, Stryer L Annu Rev Bioph
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-meyer1991-calciumspike-icc-biomd0000000224-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-meyer1991-calciumspike-icc-biomd0000000224-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Originally created by libAntimony v1.4 (using libSBML 3.4.1) This is an SBML imp
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-tyson2003-negfb-oscillator-biomd0000000308-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-tyson2003-negfb-oscillator-biomd0000000308-model/model.yaml
 ```
 
 ## Tags

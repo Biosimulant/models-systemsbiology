@@ -11,14 +11,13 @@ The model uses Word2Vec, a natural language processing technique to represent SM
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-shao2022-predicting-hepg2-toxicity-using-the-s2d-model2408070003-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-shao2022-predicting-hepg2-toxicity-using-the-s2d-model2408070003-model/model.yaml
 ```
 
 ## Tags

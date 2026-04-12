@@ -11,14 +11,13 @@ Kyrtsos2011 - A systems biology model forAlzheimer's disease (Cholesterol in AD)
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-kyrtsos2011-a-systems-biology-model-for-alzheime-model1504240000-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-kyrtsos2011-a-systems-biology-model-for-alzheime-model1504240000-model/model.yaml
 ```
 
 ## Tags

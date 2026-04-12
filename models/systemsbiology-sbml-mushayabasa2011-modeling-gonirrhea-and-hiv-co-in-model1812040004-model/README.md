@@ -11,14 +11,13 @@ A mathematical model was designed to explore the co-interaction of gonorrhea and
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-mushayabasa2011-modeling-gonirrhea-and-hiv-co-in-model1812040004-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-mushayabasa2011-modeling-gonirrhea-and-hiv-co-in-model1812040004-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ A mathematical model of the pancreatic duct cell generating high bicarbonate con
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-whitcomb2004-bicarbonate-pancreas-biomd0000000327-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-whitcomb2004-bicarbonate-pancreas-biomd0000000327-model/model.yaml
 ```
 
 ## Tags

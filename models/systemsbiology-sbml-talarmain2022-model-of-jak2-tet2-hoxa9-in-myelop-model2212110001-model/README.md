@@ -11,14 +11,13 @@ Model describing how HOXA9 may control the evolution of myeloproliferative neopl
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-talarmain2022-model-of-jak2-tet2-hoxa9-in-myelop-model2212110001-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-talarmain2022-model-of-jak2-tet2-hoxa9-in-myelop-model2212110001-model/model.yaml
 ```
 
 ## Tags

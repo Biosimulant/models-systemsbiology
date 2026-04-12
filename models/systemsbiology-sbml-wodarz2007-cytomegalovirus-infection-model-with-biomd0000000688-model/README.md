@@ -11,14 +11,13 @@ This a model from the article: Dynamics of killer T cell inflation in viral infe
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-wodarz2007-cytomegalovirus-infection-model-with-biomd0000000688-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-wodarz2007-cytomegalovirus-infection-model-with-biomd0000000688-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ The model reproduces block A of Fig 5 and also Fig 3 (without the inclusion of T
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-fridlyand2003-calcium-flux-biomd0000000059-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-fridlyand2003-calcium-flux-biomd0000000059-model/model.yaml
 ```
 
 ## Tags

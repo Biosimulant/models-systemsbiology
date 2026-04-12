@@ -11,14 +11,13 @@ iCHO1766 model from Hefzi et al. (2016) with cell line specific biomass composit
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-szeliova-2020-biomass-specific-icho-model-icho-d-model1907260011-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-szeliova-2020-biomass-specific-icho-model-icho-d-model1907260011-model/model.yaml
 ```
 
 ## Tags

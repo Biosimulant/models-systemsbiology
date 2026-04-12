@@ -11,14 +11,13 @@ Heldt2012 - Influenza Virus Replication The model describes the life cycle of in
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-heldt2012-influenza-virus-replication-biomd0000000463-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-heldt2012-influenza-virus-replication-biomd0000000463-model/model.yaml
 ```
 
 ## Tags

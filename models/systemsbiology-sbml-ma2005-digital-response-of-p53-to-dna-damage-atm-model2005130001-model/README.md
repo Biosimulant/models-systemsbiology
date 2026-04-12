@@ -11,14 +11,13 @@ Recent observations show that the single-cell response of p53 to ionizing radiat
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-ma2005-digital-response-of-p53-to-dna-damage-atm-model2005130001-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-ma2005-digital-response-of-p53-to-dna-damage-atm-model2005130001-model/model.yaml
 ```
 
 ## Tags

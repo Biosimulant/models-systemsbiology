@@ -11,14 +11,13 @@ Holmes2006 - Hill's model of muscle contraction This model is described in the a
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-holmes2006-hill-s-model-of-muscle-contraction-biomd0000000677-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-holmes2006-hill-s-model-of-muscle-contraction-biomd0000000677-model/model.yaml
 ```
 
 ## Tags

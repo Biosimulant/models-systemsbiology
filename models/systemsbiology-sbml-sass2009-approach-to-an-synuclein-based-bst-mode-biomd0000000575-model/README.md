@@ -11,14 +11,13 @@ Sass2009 - Approach to anα-synuclein-based BST model of Parkinson's disease Thi
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-sass2009-approach-to-an-synuclein-based-bst-mode-biomd0000000575-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-sass2009-approach-to-an-synuclein-based-bst-mode-biomd0000000575-model/model.yaml
 ```
 
 ## Tags

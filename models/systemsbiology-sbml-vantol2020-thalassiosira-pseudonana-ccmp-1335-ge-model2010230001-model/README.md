@@ -11,14 +11,13 @@ Thalassiosira pseudonana CCMP 1335, acclimated to 60 umol photons m-2 s-1 (iTps1
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-vantol2020-thalassiosira-pseudonana-ccmp-1335-ge-model2010230001-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-vantol2020-thalassiosira-pseudonana-ccmp-1335-ge-model2010230001-model/model.yaml
 ```
 
 ## Tags

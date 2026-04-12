@@ -11,14 +11,13 @@ This is a part of the model described in: A physiological model of cerebral bloo
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-banaji2005-brain-cell-metabolism-model4992089662-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-banaji2005-brain-cell-metabolism-model4992089662-model/model.yaml
 ```
 
 ## Tags

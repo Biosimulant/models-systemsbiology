@@ -11,14 +11,13 @@ This a model from the article: Critical study of and improvements in chromatogra
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-ueda2001-typebtrichothecenes-model1006230044-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-ueda2001-typebtrichothecenes-model1006230044-model/model.yaml
 ```
 
 ## Tags

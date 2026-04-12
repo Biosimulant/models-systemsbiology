@@ -11,14 +11,13 @@ Qi2013 - IL-6 and IFN crosstalk model(non-competitive) This model [BIOMD00000005
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-qi2013-il-6-and-ifn-crosstalk-model-non-competit-biomd0000000543-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-qi2013-il-6-and-ifn-crosstalk-model-non-competit-biomd0000000543-model/model.yaml
 ```
 
 ## Tags

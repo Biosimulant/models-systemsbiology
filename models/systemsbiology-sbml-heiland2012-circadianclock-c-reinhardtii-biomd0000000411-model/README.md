@@ -11,14 +11,13 @@ This model is from the article: Modeling temperature entrainment of circadian cl
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-heiland2012-circadianclock-c-reinhardtii-biomd0000000411-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-heiland2012-circadianclock-c-reinhardtii-biomd0000000411-model/model.yaml
 ```
 
 ## Tags

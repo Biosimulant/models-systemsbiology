@@ -11,14 +11,13 @@ The model reproduces the time profiles of p27, E2F and aE/cdk2 as depicted in Fi
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-aguda1999-cellcycle-biomd0000000169-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-aguda1999-cellcycle-biomd0000000169-model/model.yaml
 ```
 
 ## Tags

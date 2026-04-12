@@ -11,14 +11,13 @@ This is a mathematical model describing the imbalance between T helper (Th1/Th2)
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-kogan2013-a-mathematical-model-for-the-immunothe-biomd0000000881-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-kogan2013-a-mathematical-model-for-the-immunothe-biomd0000000881-model/model.yaml
 ```
 
 ## Tags

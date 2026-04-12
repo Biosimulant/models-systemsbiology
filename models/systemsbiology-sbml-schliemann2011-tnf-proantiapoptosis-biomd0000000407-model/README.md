@@ -11,14 +11,13 @@ This model is from the article: Heterogeneity Reduces Sensitivity of Cell Death 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-schliemann2011-tnf-proantiapoptosis-biomd0000000407-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-schliemann2011-tnf-proantiapoptosis-biomd0000000407-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ The model reproduces Fig 6B of the paper for model 6. The model was reproduced u
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-zatorsky2006-p53-model6-biomd0000000155-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-zatorsky2006-p53-model6-biomd0000000155-model/model.yaml
 ```
 
 ## Tags

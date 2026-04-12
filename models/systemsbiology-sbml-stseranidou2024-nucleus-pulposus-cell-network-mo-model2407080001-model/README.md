@@ -11,14 +11,13 @@ ABSTRACT: Intervertebral disc degeneration (IDD) arises from an intricate imbala
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-stseranidou2024-nucleus-pulposus-cell-network-mo-model2407080001-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-stseranidou2024-nucleus-pulposus-cell-network-mo-model2407080001-model/model.yaml
 ```
 
 ## Tags

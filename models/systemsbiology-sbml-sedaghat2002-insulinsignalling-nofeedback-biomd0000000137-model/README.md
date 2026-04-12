@@ -11,14 +11,13 @@ Model reproduces the various plots in Figure 6 and 7 of the paper. It was succes
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-sedaghat2002-insulinsignalling-nofeedback-biomd0000000137-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-sedaghat2002-insulinsignalling-nofeedback-biomd0000000137-model/model.yaml
 ```
 
 ## Tags

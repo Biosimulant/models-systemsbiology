@@ -11,14 +11,13 @@ This is the model described in: Feedback between p21 and reactive oxygen product
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-passos2010-dnadamage-cellularsenescence-biomd0000000287-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-passos2010-dnadamage-cellularsenescence-biomd0000000287-model/model.yaml
 ```
 
 ## Tags

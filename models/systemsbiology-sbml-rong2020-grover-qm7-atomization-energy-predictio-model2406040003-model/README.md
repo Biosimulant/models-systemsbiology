@@ -11,14 +11,13 @@ This model has been trained using the GROVER embedding with the QM7 dataset from
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-rong2020-grover-qm7-atomization-energy-predictio-model2406040003-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-rong2020-grover-qm7-atomization-energy-predictio-model2406040003-model/model.yaml
 ```
 
 ## Tags

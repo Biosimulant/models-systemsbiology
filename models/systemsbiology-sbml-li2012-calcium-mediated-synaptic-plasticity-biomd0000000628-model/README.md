@@ -11,14 +11,13 @@ Li2012 Calcium mediated synapticplasticity This model is an extension of BIOMD00
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-li2012-calcium-mediated-synaptic-plasticity-biomd0000000628-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-li2012-calcium-mediated-synaptic-plasticity-biomd0000000628-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ This is the model for avadomide-induced neutropenia published by Abbiati et al. 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-abbiati2021-avadomide-induced-neutropenia-model-model2412270001-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-abbiati2021-avadomide-induced-neutropenia-model-model2412270001-model/model.yaml
 ```
 
 ## Tags

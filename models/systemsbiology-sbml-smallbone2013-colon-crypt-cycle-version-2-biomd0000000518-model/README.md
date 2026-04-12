@@ -11,14 +11,13 @@ Smallbone2013 - Colon Crypt cycle - Version 2 This model is described in the art
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-smallbone2013-colon-crypt-cycle-version-2-biomd0000000518-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-smallbone2013-colon-crypt-cycle-version-2-biomd0000000518-model/model.yaml
 ```
 
 ## Tags

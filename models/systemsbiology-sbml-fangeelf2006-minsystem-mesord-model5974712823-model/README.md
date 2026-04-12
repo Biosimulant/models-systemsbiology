@@ -11,14 +11,13 @@ To the extent possible under law, all copyright and related or neighbouring righ
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-fangeelf2006-minsystem-mesord-model5974712823-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-fangeelf2006-minsystem-mesord-model5974712823-model/model.yaml
 ```
 
 ## Tags

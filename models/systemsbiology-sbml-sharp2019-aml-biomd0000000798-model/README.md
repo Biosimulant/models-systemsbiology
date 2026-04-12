@@ -11,14 +11,13 @@ The paper describes a model of acute myeloid leukaemia. Created by COPASI 4.26 (
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-sharp2019-aml-biomd0000000798-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-sharp2019-aml-biomd0000000798-model/model.yaml
 ```
 
 ## Tags

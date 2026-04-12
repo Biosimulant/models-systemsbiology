@@ -11,14 +11,13 @@ The model reproduces Fig 2A of the paper. Model successfully reproduced using Ja
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-locke2008-circadian-clock-biomd0000000185-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-locke2008-circadian-clock-biomd0000000185-model/model.yaml
 ```
 
 ## Tags

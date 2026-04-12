@@ -11,14 +11,13 @@ Steckmann2012 - Amyloid beta-proteinfibrillogenesis (kinetics of secondary struc
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-steckmann2012-amyloid-beta-protein-fibrillogenes-biomd0000000533-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-steckmann2012-amyloid-beta-protein-fibrillogenes-biomd0000000533-model/model.yaml
 ```
 
 ## Tags

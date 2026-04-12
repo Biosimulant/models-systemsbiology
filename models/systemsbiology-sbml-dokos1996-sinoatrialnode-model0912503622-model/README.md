@@ -11,14 +11,13 @@ This a model from the article: Ion currents underlying sinoatrial node pacemaker
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-dokos1996-sinoatrialnode-model0912503622-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-dokos1996-sinoatrialnode-model0912503622-model/model.yaml
 ```
 
 ## Tags

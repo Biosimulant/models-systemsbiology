@@ -11,14 +11,13 @@ This a model from the article: A biophysically based mathematical model of unita
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-faville2008-updepolarization-model0912044015-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-faville2008-updepolarization-model0912044015-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ This a model from the article: A kinetic study of a ternary cycle between adenin
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-valero2006-adenine-ternarycycle-biomd0000000231-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-valero2006-adenine-ternarycycle-biomd0000000231-model/model.yaml
 ```
 
 ## Tags

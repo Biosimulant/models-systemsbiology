@@ -11,14 +11,13 @@ The model reproduces the same amplitude antiphase calcium oscillations of couple
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-bindschadler2001-coupled-ca-oscillators-biomd0000000058-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-bindschadler2001-coupled-ca-oscillators-biomd0000000058-model/model.yaml
 ```
 
 ## Tags

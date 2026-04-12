@@ -11,14 +11,13 @@ Munz2009 - Zombie Impulsive Killing This is the basic SZR model with impulsive k
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-munz2009-zombi-impulsive-killing-model1008060000-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-munz2009-zombi-impulsive-killing-model1008060000-model/model.yaml
 ```
 
 ## Tags

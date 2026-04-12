@@ -11,14 +11,13 @@ The authors use a large dataset (>30k) to train an explainable graph-based model
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-wong2024-discovery-of-a-structural-class-of-anti-model2405080002-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-wong2024-discovery-of-a-structural-class-of-anti-model2405080002-model/model.yaml
 ```
 
 ## Tags

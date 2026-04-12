@@ -11,14 +11,13 @@ Qi2013 - IL-6 and IFN crosstalk model This model [BIOMD0000000544] describes the
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-qi2013-il-6-and-ifn-crosstalk-model-biomd0000000544-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-qi2013-il-6-and-ifn-crosstalk-model-biomd0000000544-model/model.yaml
 ```
 
 ## Tags

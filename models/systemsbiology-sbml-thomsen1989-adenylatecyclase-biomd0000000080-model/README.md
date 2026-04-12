@@ -11,14 +11,13 @@ This model reproduces figure 5 and figure 4(B)of the paper, with Kinh represente
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-thomsen1989-adenylatecyclase-biomd0000000080-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-thomsen1989-adenylatecyclase-biomd0000000080-model/model.yaml
 ```
 
 ## Tags

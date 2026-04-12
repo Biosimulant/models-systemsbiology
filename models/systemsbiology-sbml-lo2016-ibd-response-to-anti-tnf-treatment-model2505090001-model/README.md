@@ -11,14 +11,13 @@ Faithful wrapper of upstream SBML model.
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-lo2016-ibd-response-to-anti-tnf-treatment-model2505090001-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-lo2016-ibd-response-to-anti-tnf-treatment-model2505090001-model/model.yaml
 ```
 
 ## Tags

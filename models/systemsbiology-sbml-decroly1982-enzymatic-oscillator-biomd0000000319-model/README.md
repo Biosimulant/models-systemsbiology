@@ -11,14 +11,13 @@ This is the scaled model described in the article: Birhythmicity, chaos, and oth
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-decroly1982-enzymatic-oscillator-biomd0000000319-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-decroly1982-enzymatic-oscillator-biomd0000000319-model/model.yaml
 ```
 
 ## Tags

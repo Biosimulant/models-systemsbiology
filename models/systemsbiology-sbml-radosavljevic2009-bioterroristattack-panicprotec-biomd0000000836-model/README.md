@@ -11,14 +11,13 @@ This model is from the article: Epidemics of panic during a bioterrorist attack-
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-radosavljevic2009-bioterroristattack-panicprotec-biomd0000000836-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-radosavljevic2009-bioterroristattack-panicprotec-biomd0000000836-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ The germinal center response or reaction (GCR) is a hallmark event of adaptive h
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-mu2024-germinal-center-response-model2503310001-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-mu2024-germinal-center-response-model2503310001-model/model.yaml
 ```
 
 ## Tags

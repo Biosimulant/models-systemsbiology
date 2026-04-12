@@ -11,14 +11,13 @@ Model for figure 1c in &lt;a href = 'http://www.ncbi.nlm.nih.gov/entrez/query.fc
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-bhalla2002-mapk-bistability-fig1c-model9079179924-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-bhalla2002-mapk-bistability-fig1c-model9079179924-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Fabrizio Capuani, Alexia Conte, Elisabetta Argenzio, Luca Marchetti, Corrado Pri
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-capuani2015-binding-of-cbl-and-grb2-to-egfr-earl-biomd0000000595-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-capuani2015-binding-of-cbl-and-grb2-to-egfr-earl-biomd0000000595-model/model.yaml
 ```
 
 ## Tags

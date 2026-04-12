@@ -11,14 +11,13 @@ The authors curated a dataset of 282 compounds from ChEMBL, of which 160 (56.7%)
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-pereira2020-discovering-growth-inhibitors-of-nei-model2405080003-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-pereira2020-discovering-growth-inhibitors-of-nei-model2405080003-model/model.yaml
 ```
 
 ## Tags

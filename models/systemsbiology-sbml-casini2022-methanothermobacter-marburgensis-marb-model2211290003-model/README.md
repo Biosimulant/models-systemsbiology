@@ -11,14 +11,13 @@ This model is described in these articles:Casini, I., McCubbin, T., Esquivel-Eli
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-casini2022-methanothermobacter-marburgensis-marb-model2211290003-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-casini2022-methanothermobacter-marburgensis-marb-model2211290003-model/model.yaml
 ```
 
 ## Tags

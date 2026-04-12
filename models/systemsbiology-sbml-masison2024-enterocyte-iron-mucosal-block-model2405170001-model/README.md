@@ -11,14 +11,13 @@ Enterocyte Iron Mucosal Block This is a model of enterocyte iron absorption, con
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-masison2024-enterocyte-iron-mucosal-block-model2405170001-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-masison2024-enterocyte-iron-mucosal-block-model2405170001-model/model.yaml
 ```
 
 ## Tags

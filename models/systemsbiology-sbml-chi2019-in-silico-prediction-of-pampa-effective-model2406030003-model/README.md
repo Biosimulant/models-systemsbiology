@@ -11,14 +11,13 @@ The authors provide a dataset of 200 small molecules and their experimentally me
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-chi2019-in-silico-prediction-of-pampa-effective-model2406030003-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-chi2019-in-silico-prediction-of-pampa-effective-model2406030003-model/model.yaml
 ```
 
 ## Tags

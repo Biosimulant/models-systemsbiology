@@ -11,14 +11,13 @@ Blood coagulation model using an updated Hockin2002 model. New reactions for fac
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-mitrophanov2013-simulation-of-hockin-blood-coagu-model1806250002-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-mitrophanov2013-simulation-of-hockin-blood-coagu-model1806250002-model/model.yaml
 ```
 
 ## Tags

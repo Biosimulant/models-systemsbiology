@@ -11,14 +11,13 @@ Prediction of the antimalarial potential of small molecules using data from vari
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-van-heerden2023-chemical-features-identification-model2403270002-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-van-heerden2023-chemical-features-identification-model2403270002-model/model.yaml
 ```
 
 ## Tags

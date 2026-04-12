@@ -11,14 +11,13 @@ Philip Aston. A New Model for the Dynamics of Hepatitis C Infection: Derivation,
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-aston2018-dynamics-of-hepatitis-c-infection-biomd0000000713-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-aston2018-dynamics-of-hepatitis-c-infection-biomd0000000713-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ This the model from the article without the time delays: A Delayed Nonlinear PBP
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-zager2007-genistein-biliary-excretion-model6963432821-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-zager2007-genistein-biliary-excretion-model6963432821-model/model.yaml
 ```
 
 ## Tags

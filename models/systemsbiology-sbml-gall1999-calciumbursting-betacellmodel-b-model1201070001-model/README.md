@@ -11,14 +11,13 @@ This a model from the article: Effect of Na/Ca exchange on plateau fraction and 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-gall1999-calciumbursting-betacellmodel-b-model1201070001-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-gall1999-calciumbursting-betacellmodel-b-model1201070001-model/model.yaml
 ```
 
 ## Tags

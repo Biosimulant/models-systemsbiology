@@ -11,14 +11,13 @@ Boehm2014 - isoform-specific dimerization of pSTAT5A and pSTAT5B To study STAT5 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-boehm2014-isoform-specific-dimerization-of-pstat-biomd0000000591-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-boehm2014-isoform-specific-dimerization-of-pstat-biomd0000000591-model/model.yaml
 ```
 
 ## Tags

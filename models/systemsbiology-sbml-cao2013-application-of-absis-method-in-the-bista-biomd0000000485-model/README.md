@@ -11,14 +11,13 @@ F. Schl�gl. Chemical reaction models for non-equilibrium phase transitions. Ze
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-cao2013-application-of-absis-method-in-the-bista-biomd0000000485-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-cao2013-application-of-absis-method-in-the-bista-biomd0000000485-model/model.yaml
 ```
 
 ## Tags

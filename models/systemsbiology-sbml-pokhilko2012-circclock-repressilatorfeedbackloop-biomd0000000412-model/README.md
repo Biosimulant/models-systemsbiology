@@ -11,14 +11,13 @@ This model is from the article: The clock gene circuit in Arabidopsis includes a
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-pokhilko2012-circclock-repressilatorfeedbackloop-biomd0000000412-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-pokhilko2012-circclock-repressilatorfeedbackloop-biomd0000000412-model/model.yaml
 ```
 
 ## Tags

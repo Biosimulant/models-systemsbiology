@@ -11,14 +11,13 @@ Arianna Bianchi, Kevin J. Painter & Jonathan A. Sherratt. A mathematical model f
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-bianchi2015-model-for-lymphangiogenesis-in-norma-biomd0000000722-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-bianchi2015-model-for-lymphangiogenesis-in-norma-biomd0000000722-model/model.yaml
 ```
 
 ## Tags

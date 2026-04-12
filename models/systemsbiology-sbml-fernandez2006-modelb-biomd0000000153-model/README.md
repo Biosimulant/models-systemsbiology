@@ -11,14 +11,13 @@ To the extent possible under law, all copyright and related or neighbouring righ
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-fernandez2006-modelb-biomd0000000153-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-fernandez2006-modelb-biomd0000000153-model/model.yaml
 ```
 
 ## Tags

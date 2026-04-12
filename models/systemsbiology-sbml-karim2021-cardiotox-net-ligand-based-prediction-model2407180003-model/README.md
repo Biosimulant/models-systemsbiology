@@ -11,14 +11,13 @@ A robust predictor for hERG channel blockade based on an ensemble of five deep l
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-karim2021-cardiotox-net-ligand-based-prediction-model2407180003-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-karim2021-cardiotox-net-ligand-based-prediction-model2407180003-model/model.yaml
 ```
 
 ## Tags

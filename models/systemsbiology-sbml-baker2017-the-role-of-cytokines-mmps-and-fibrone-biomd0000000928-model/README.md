@@ -11,14 +11,13 @@ Baker2017 - The role of cytokines, MMPs andfibronectin fragments osteoarthritis 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-baker2017-the-role-of-cytokines-mmps-and-fibrone-biomd0000000928-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-baker2017-the-role-of-cytokines-mmps-and-fibrone-biomd0000000928-model/model.yaml
 ```
 
 ## Tags

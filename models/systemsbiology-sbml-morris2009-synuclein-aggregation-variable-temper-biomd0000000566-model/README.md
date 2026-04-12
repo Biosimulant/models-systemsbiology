@@ -11,14 +11,13 @@ Morris2009 - α-Synuclein aggregationvariable temperature and pH This model is d
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-morris2009-synuclein-aggregation-variable-temper-biomd0000000566-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-morris2009-synuclein-aggregation-variable-temper-biomd0000000566-model/model.yaml
 ```
 
 ## Tags

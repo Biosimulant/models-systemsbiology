@@ -11,14 +11,13 @@ Prediction of antimicrobial potential using a dataset of 29537 compounds screene
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-rahman2022-high-throughput-antibacterial-screeni-model2404080002-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-rahman2022-high-throughput-antibacterial-screeni-model2404080002-model/model.yaml
 ```
 
 ## Tags

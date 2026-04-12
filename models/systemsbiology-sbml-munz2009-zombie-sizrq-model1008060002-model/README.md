@@ -11,14 +11,13 @@ Munz2009 - Zombie SIZRQ This is the model with latent infection and quarantine d
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-munz2009-zombie-sizrq-model1008060002-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-munz2009-zombie-sizrq-model1008060002-model/model.yaml
 ```
 
 ## Tags

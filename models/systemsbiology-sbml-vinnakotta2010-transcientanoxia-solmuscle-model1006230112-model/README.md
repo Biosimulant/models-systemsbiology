@@ -11,14 +11,13 @@ This a model from the article: Common phenotype of resting mouse extensor digito
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-vinnakotta2010-transcientanoxia-solmuscle-model1006230112-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-vinnakotta2010-transcientanoxia-solmuscle-model1006230112-model/model.yaml
 ```
 
 ## Tags

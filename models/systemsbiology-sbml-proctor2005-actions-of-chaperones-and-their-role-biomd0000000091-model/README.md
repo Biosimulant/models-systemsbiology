@@ -11,14 +11,13 @@ Proctor2005 - Actions of chaperones and theirrole in ageing This model is descri
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-proctor2005-actions-of-chaperones-and-their-role-biomd0000000091-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-proctor2005-actions-of-chaperones-and-their-role-biomd0000000091-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ This is a model of the coupled Natch, Wnt and FGF modules as described in: A. Go
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-goldbeter2008-somite-segmentation-clock-notch-wn-biomd0000000201-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-goldbeter2008-somite-segmentation-clock-notch-wn-biomd0000000201-model/model.yaml
 ```
 
 ## Tags

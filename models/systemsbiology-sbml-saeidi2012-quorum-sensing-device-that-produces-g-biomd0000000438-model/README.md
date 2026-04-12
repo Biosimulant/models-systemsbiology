@@ -11,14 +11,13 @@ Saeidi2012 - Quorum sensing device that produces GFP Saeidi et al. (2012) has mo
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-saeidi2012-quorum-sensing-device-that-produces-g-biomd0000000438-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-saeidi2012-quorum-sensing-device-that-produces-g-biomd0000000438-model/model.yaml
 ```
 
 ## Tags

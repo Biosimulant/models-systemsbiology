@@ -11,14 +11,13 @@ GEM reconstruction for Lactobacillus salivarius ATCC 11741
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-koduru2022-lactobacillus-salivarius-atcc-11741-model2210190008-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-koduru2022-lactobacillus-salivarius-atcc-11741-model2210190008-model/model.yaml
 ```
 
 ## Tags

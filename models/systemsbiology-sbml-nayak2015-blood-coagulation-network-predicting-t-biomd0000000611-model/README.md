@@ -11,14 +11,13 @@ Nayak2015 - Blood Coagulation Network - Predicting the Effects of Various Therap
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-nayak2015-blood-coagulation-network-predicting-t-biomd0000000611-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-nayak2015-blood-coagulation-network-predicting-t-biomd0000000611-model/model.yaml
 ```
 
 ## Tags

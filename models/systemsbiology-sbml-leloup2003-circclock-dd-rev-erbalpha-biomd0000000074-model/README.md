@@ -11,14 +11,13 @@ This is model in continous darkness (DD) described in the article Toward a detai
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-leloup2003-circclock-dd-rev-erbalpha-biomd0000000074-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-leloup2003-circclock-dd-rev-erbalpha-biomd0000000074-model/model.yaml
 ```
 
 ## Tags

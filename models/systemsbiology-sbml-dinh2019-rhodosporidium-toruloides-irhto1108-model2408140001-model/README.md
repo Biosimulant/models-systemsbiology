@@ -11,14 +11,13 @@ FROG and miniFROG reports provided here for the model iRhto1108 taken from the S
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-dinh2019-rhodosporidium-toruloides-irhto1108-model2408140001-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-dinh2019-rhodosporidium-toruloides-irhto1108-model2408140001-model/model.yaml
 ```
 
 ## Tags

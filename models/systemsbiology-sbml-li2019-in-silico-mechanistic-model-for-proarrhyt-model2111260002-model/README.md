@@ -11,14 +11,13 @@ The International Council on Harmonization (ICH) S7B and E14 regulatory guidelin
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-li2019-in-silico-mechanistic-model-for-proarrhyt-model2111260002-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-li2019-in-silico-mechanistic-model-for-proarrhyt-model2111260002-model/model.yaml
 ```
 
 ## Tags

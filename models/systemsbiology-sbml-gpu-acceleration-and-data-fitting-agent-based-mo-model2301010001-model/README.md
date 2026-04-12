@@ -11,14 +11,13 @@ Abstract from paper: 'For many years, infectious disease modelers have used agen
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-gpu-acceleration-and-data-fitting-agent-based-mo-model2301010001-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-gpu-acceleration-and-data-fitting-agent-based-mo-model2301010001-model/model.yaml
 ```
 
 ## Tags

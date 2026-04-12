@@ -11,14 +11,13 @@ Xu2003 - Phosphoinositide turnover The model reproduces the percentage change of
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-xu2003-phosphoinositide-turnover-biomd0000000075-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-xu2003-phosphoinositide-turnover-biomd0000000075-model/model.yaml
 ```
 
 ## Tags

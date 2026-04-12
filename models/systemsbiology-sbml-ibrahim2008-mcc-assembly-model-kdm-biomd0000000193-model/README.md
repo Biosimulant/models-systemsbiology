@@ -11,14 +11,13 @@ BioSystems (2007), doi:10.1016/j.biosystems.2008.06.007 In-silico study of kinet
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-ibrahim2008-mcc-assembly-model-kdm-biomd0000000193-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-ibrahim2008-mcc-assembly-model-kdm-biomd0000000193-model/model.yaml
 ```
 
 ## Tags

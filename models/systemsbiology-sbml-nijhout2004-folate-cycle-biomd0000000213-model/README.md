@@ -11,14 +11,13 @@ This is an SBML version of the folate cycle model model from: A mathematical mod
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-nijhout2004-folate-cycle-biomd0000000213-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-nijhout2004-folate-cycle-biomd0000000213-model/model.yaml
 ```
 
 ## Tags

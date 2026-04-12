@@ -11,14 +11,13 @@ Virgin Phellogen GSM Model of Quercus suber
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-cunha2022-virgin-phellogen-model-for-quercus-sub-model2205040004-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-cunha2022-virgin-phellogen-model-for-quercus-sub-model2205040004-model/model.yaml
 ```
 
 ## Tags

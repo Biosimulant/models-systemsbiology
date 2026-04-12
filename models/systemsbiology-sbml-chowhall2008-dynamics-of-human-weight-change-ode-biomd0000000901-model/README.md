@@ -11,14 +11,13 @@ This ODE model is a representation of the two compartment macronutrient partitio
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-chowhall2008-dynamics-of-human-weight-change-ode-biomd0000000901-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-chowhall2008-dynamics-of-human-weight-change-ode-biomd0000000901-model/model.yaml
 ```
 
 ## Tags

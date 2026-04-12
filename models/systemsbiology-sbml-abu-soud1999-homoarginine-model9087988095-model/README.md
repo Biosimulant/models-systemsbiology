@@ -11,14 +11,13 @@ This model is taken from the &lt;a href = 'http://www.ncbi.nlm.nih.gov/entrez/qu
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-abu-soud1999-homoarginine-model9087988095-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-abu-soud1999-homoarginine-model9087988095-model/model.yaml
 ```
 
 ## Tags

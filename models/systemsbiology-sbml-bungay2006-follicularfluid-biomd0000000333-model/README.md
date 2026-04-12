@@ -11,14 +11,13 @@ This model is from the article: Modelling thrombin generation in human ovarian f
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-bungay2006-follicularfluid-biomd0000000333-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-bungay2006-follicularfluid-biomd0000000333-model/model.yaml
 ```
 
 ## Tags

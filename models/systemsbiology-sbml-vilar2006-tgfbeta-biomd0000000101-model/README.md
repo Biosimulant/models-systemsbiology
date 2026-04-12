@@ -11,14 +11,13 @@ The model reproduces Fig 5A of the paper. The ligand concentration is increased 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-vilar2006-tgfbeta-biomd0000000101-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-vilar2006-tgfbeta-biomd0000000101-model/model.yaml
 ```
 
 ## Tags

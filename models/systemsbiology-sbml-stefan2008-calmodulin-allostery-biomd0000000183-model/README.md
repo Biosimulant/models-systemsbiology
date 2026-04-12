@@ -11,14 +11,13 @@ Stefan2008 - calmodulin allostery An allosteric model for calmodulin activation,
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-stefan2008-calmodulin-allostery-biomd0000000183-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-stefan2008-calmodulin-allostery-biomd0000000183-model/model.yaml
 ```
 
 ## Tags

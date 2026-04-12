@@ -11,14 +11,13 @@ Mouse Iron Distribution Dynamics Dynamic model of iron distribution in mice. Thi
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-mouse-iron-distribution-adequate-iron-diet-no-tr-biomd0000000736-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-mouse-iron-distribution-adequate-iron-diet-no-tr-biomd0000000736-model/model.yaml
 ```
 
 ## Tags

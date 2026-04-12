@@ -11,14 +11,13 @@ This a model from the article: Influence of delayed viral production on viral dy
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-mittler1998-hiv1-interactingtargetcells-model1006230055-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-mittler1998-hiv1-interactingtargetcells-model1006230055-model/model.yaml
 ```
 
 ## Tags

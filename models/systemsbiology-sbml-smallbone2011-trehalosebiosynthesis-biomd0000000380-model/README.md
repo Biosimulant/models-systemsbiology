@@ -11,14 +11,13 @@ This model is from the article: Building a Kinetic Model of Trehalose Biosynthes
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-smallbone2011-trehalosebiosynthesis-biomd0000000380-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-smallbone2011-trehalosebiosynthesis-biomd0000000380-model/model.yaml
 ```
 
 ## Tags

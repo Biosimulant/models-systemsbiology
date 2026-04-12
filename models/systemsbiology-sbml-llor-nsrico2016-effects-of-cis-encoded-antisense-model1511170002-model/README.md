@@ -11,14 +11,13 @@ LlorénsRico2016 - Effects of cis-Encodedantisense RNAs (asRNAs) - Case3 Three p
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-llor-nsrico2016-effects-of-cis-encoded-antisense-model1511170002-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-llor-nsrico2016-effects-of-cis-encoded-antisense-model1511170002-model/model.yaml
 ```
 
 ## Tags

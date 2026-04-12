@@ -11,14 +11,13 @@ Model predicted time course of enterocyte loss in patients treated with weekly d
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-shankaran2018-systems-pharmacology-model-of-gast-model2110260001-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-shankaran2018-systems-pharmacology-model-of-gast-model2110260001-model/model.yaml
 ```
 
 ## Tags

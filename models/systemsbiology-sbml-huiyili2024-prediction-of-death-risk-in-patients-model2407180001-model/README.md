@@ -11,14 +11,13 @@ The objective of this study was to develop and validate predictive models to ass
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-huiyili2024-prediction-of-death-risk-in-patients-model2407180001-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-huiyili2024-prediction-of-death-risk-in-patients-model2407180001-model/model.yaml
 ```
 
 ## Tags

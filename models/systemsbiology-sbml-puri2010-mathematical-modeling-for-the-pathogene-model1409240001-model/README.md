@@ -11,14 +11,13 @@ Puri2010 - Mathematical Modeling for thePathogenesis of Alzheimer's Disease Puri
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-puri2010-mathematical-modeling-for-the-pathogene-model1409240001-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-puri2010-mathematical-modeling-for-the-pathogene-model1409240001-model/model.yaml
 ```
 
 ## Tags

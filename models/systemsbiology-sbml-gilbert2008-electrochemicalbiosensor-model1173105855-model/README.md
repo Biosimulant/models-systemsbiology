@@ -11,14 +11,13 @@ This a model from the article: A Case Study in Model-driven Synthetic Biology Da
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-gilbert2008-electrochemicalbiosensor-model1173105855-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-gilbert2008-electrochemicalbiosensor-model1173105855-model/model.yaml
 ```
 
 ## Tags

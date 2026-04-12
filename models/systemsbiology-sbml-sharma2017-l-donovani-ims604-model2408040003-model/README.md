@@ -11,14 +11,13 @@ FROG and miniFROG reports provided for iMS604. The model can be found in the Sup
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-sharma2017-l-donovani-ims604-model2408040003-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-sharma2017-l-donovani-ims604-model2408040003-model/model.yaml
 ```
 
 ## Tags

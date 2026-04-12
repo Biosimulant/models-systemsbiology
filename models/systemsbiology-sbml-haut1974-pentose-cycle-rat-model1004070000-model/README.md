@@ -11,14 +11,13 @@ This is the Unlabelled model as described in: Simulation of the Pentose Cycle in
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-haut1974-pentose-cycle-rat-model1004070000-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-haut1974-pentose-cycle-rat-model1004070000-model/model.yaml
 ```
 
 ## Tags

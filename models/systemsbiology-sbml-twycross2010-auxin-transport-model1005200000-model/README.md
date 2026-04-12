@@ -11,14 +11,13 @@ This is a model with 20 cells - 20 cytplasms and 21 apoplasts - as described in 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-twycross2010-auxin-transport-model1005200000-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-twycross2010-auxin-transport-model1005200000-model/model.yaml
 ```
 
 ## Tags

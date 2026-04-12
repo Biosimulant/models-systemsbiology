@@ -11,14 +11,13 @@ Reused mathematical model (Hockin et al., 2002) of blood coagulation simulating 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-orfeo2010-simulating-the-effects-of-fondaparinux-model1807240001-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-orfeo2010-simulating-the-effects-of-fondaparinux-model1807240001-model/model.yaml
 ```
 
 ## Tags

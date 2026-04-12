@@ -11,14 +11,13 @@ Venkatraman2012 - Interplay between PLS and TSP1 in TGF-β1 activation The inter
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-venkatraman2012-interplay-between-pls-and-tsp1-i-biomd0000000447-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-venkatraman2012-interplay-between-pls-and-tsp1-i-biomd0000000447-model/model.yaml
 ```
 
 ## Tags

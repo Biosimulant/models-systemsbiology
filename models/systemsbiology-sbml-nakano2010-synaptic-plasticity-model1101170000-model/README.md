@@ -11,14 +11,13 @@ This is an SBML version of the model described in: A kinetic model of dopamine- 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-nakano2010-synaptic-plasticity-model1101170000-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-nakano2010-synaptic-plasticity-model1101170000-model/model.yaml
 ```
 
 ## Tags

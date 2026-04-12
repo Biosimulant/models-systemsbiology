@@ -11,14 +11,13 @@ Munz2009 - Zombie SIZRC This is the model with an latent infection and cure for 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-munz2009-zombie-sizrc-biomd0000000882-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-munz2009-zombie-sizrc-biomd0000000882-model/model.yaml
 ```
 
 ## Tags

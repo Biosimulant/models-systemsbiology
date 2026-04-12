@@ -11,14 +11,13 @@ Stone1996 - activation of soluble guanylatecyclase by nitric oxide This features
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-stone1996-activation-of-soluble-guanylate-cyclas-biomd0000000198-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-stone1996-activation-of-soluble-guanylate-cyclas-biomd0000000198-model/model.yaml
 ```
 
 ## Tags

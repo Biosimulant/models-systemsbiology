@@ -11,14 +11,13 @@ Palmer2014 - Effect of IL-1β-Blocking therapies in T2DM - Disease Condition Thi
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-palmer2014-effect-of-il-1-blocking-therapies-in-biomd0000000620-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-palmer2014-effect-of-il-1-blocking-therapies-in-biomd0000000620-model/model.yaml
 ```
 
 ## Tags

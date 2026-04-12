@@ -11,14 +11,13 @@ Borghans1997 - Calcium Oscillation - Model 3 A theoretical expoloration of possi
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-borghans1997-calcium-oscillation-model-3-biomd0000000045-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-borghans1997-calcium-oscillation-model-3-biomd0000000045-model/model.yaml
 ```
 
 ## Tags

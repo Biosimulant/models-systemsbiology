@@ -11,14 +11,13 @@ This is an ordinary differential equation-based mathematical model describing th
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-cooper2015-modeling-the-effects-of-systemic-medi-biomd0000000855-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-cooper2015-modeling-the-effects-of-systemic-medi-biomd0000000855-model/model.yaml
 ```
 
 ## Tags

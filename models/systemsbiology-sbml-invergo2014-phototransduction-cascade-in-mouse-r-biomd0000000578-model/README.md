@@ -11,14 +11,13 @@ Invergo2014 - Phototransduction cascade inmouse rod cells This model is describe
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-invergo2014-phototransduction-cascade-in-mouse-r-biomd0000000578-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-invergo2014-phototransduction-cascade-in-mouse-r-biomd0000000578-model/model.yaml
 ```
 
 ## Tags

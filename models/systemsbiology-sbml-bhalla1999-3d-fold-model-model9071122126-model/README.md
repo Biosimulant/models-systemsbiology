@@ -11,14 +11,13 @@ This model is based closely on the one from &lt;a href = 'http://www.ncbi.nlm.ni
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-bhalla1999-3d-fold-model-model9071122126-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-bhalla1999-3d-fold-model-model9071122126-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Model is according to the paper Contribution of Persistent Na+ Current and M-Typ
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-golomb2006-somaticbursting-nonzero-ca-biomd0000000119-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-golomb2006-somaticbursting-nonzero-ca-biomd0000000119-model/model.yaml
 ```
 
 ## Tags

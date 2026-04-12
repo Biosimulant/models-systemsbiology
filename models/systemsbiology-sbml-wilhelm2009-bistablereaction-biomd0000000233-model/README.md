@@ -11,14 +11,13 @@ This a model from the article: The smallest chemical reaction system with bistab
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-wilhelm2009-bistablereaction-biomd0000000233-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-wilhelm2009-bistablereaction-biomd0000000233-model/model.yaml
 ```
 
 ## Tags

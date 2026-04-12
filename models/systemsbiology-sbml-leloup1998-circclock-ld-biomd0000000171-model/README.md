@@ -11,14 +11,13 @@ Leloup and Goldbeter, 1998 This model was created after the article by Leloup an
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-leloup1998-circclock-ld-biomd0000000171-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-leloup1998-circclock-ld-biomd0000000171-model/model.yaml
 ```
 
 ## Tags

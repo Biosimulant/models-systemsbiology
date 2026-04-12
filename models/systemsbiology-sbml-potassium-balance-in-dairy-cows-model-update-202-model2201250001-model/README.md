@@ -11,14 +11,13 @@ This updated model is derived from MODEL1710230000 here on Biomodels. In the cur
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-potassium-balance-in-dairy-cows-model-update-202-model2201250001-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-potassium-balance-in-dairy-cows-model-update-202-model2201250001-model/model.yaml
 ```
 
 ## Tags

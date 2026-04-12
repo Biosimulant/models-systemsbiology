@@ -11,14 +11,13 @@ To investigate the putative differential effect of chloride transport on lysosom
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-astaburuaga2019-ode-model-of-lysosomal-ion-homeo-model1910220001-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-astaburuaga2019-ode-model-of-lysosomal-ion-homeo-model1910220001-model/model.yaml
 ```
 
 ## Tags

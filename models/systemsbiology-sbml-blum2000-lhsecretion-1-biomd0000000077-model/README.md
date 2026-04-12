@@ -11,14 +11,13 @@ A mathematical model quantifying GnRH-induced LH secretion from gonadotropes by 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-blum2000-lhsecretion-1-biomd0000000077-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-blum2000-lhsecretion-1-biomd0000000077-model/model.yaml
 ```
 
 ## Tags

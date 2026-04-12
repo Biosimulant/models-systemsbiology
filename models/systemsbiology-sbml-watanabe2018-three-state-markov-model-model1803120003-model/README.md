@@ -11,14 +11,13 @@ State transition diagram of a three-state Markov model.There are 3 disease state
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-watanabe2018-three-state-markov-model-model1803120003-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-watanabe2018-three-state-markov-model-model1803120003-model/model.yaml
 ```
 
 ## Tags

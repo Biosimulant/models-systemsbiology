@@ -11,14 +11,13 @@ This a model from the article: Modeling robust oscillatory behavior of the hypot
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-kyrylov2005-hpaaxis-model0478740924-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-kyrylov2005-hpaaxis-model0478740924-model/model.yaml
 ```
 
 ## Tags

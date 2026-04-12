@@ -11,14 +11,13 @@ This a model from the article: One-dimensional mathematical model of the atriove
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-inada2009-atrioventricularnode-nodelhiscell-model1006230008-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-inada2009-atrioventricularnode-nodelhiscell-model1006230008-model/model.yaml
 ```
 
 ## Tags

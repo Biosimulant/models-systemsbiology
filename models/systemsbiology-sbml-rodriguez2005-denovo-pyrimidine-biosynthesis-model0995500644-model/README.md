@@ -11,14 +11,13 @@ This model originates from BioModels Database: A Database of Annotated Published
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-rodriguez2005-denovo-pyrimidine-biosynthesis-model0995500644-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-rodriguez2005-denovo-pyrimidine-biosynthesis-model0995500644-model/model.yaml
 ```
 
 ## Tags

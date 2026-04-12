@@ -11,14 +11,13 @@ Jason M. Graham, Bruce P. Ayati, Sarah A. Holstein & James A. Martin. The role o
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-graham2013-role-of-osteocytes-in-targeted-bone-r-biomd0000000721-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-graham2013-role-of-osteocytes-in-targeted-bone-r-biomd0000000721-model/model.yaml
 ```
 
 ## Tags

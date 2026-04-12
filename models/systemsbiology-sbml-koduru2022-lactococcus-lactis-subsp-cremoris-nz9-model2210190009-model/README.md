@@ -11,14 +11,13 @@ GEM reconstruction of Lactococcus lactis subsp. cremoris NZ9000
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-koduru2022-lactococcus-lactis-subsp-cremoris-nz9-model2210190009-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-koduru2022-lactococcus-lactis-subsp-cremoris-nz9-model2210190009-model/model.yaml
 ```
 
 ## Tags

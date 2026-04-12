@@ -11,14 +11,13 @@ Kinetic model of GSHnet of different HCC etiological conditions.
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-mishra2018-enhancing-sorafenib-efficacy-by-co-ta-model1808060001-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-mishra2018-enhancing-sorafenib-efficacy-by-co-ta-model1808060001-model/model.yaml
 ```
 
 ## Tags

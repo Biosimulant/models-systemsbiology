@@ -11,14 +11,13 @@ This is a kinetic model of the dimeric photosystem II (PSII). The model has part
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-model3632127506-url-xml-model3632127506-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-model3632127506-url-xml-model3632127506-model/model.yaml
 ```
 
 ## Tags

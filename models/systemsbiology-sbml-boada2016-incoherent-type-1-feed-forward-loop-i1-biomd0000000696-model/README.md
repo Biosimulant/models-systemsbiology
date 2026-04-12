@@ -11,14 +11,13 @@ Boada2016 - Incoherent type 1 feed-forwardloop (I1-FFL) A synthetic-biology math
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-boada2016-incoherent-type-1-feed-forward-loop-i1-biomd0000000696-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-boada2016-incoherent-type-1-feed-forward-loop-i1-biomd0000000696-model/model.yaml
 ```
 
 ## Tags

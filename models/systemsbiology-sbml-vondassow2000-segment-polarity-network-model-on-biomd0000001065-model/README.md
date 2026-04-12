@@ -11,14 +11,13 @@ This is the segment polarity network model described by von Dassow et al. (2000)
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-vondassow2000-segment-polarity-network-model-on-biomd0000001065-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-vondassow2000-segment-polarity-network-model-on-biomd0000001065-model/model.yaml
 ```
 
 ## Tags

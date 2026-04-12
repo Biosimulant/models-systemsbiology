@@ -11,14 +11,13 @@ Mizuno2012 - AlzPathway: a comprehensive mapof Alzheimer's disease Non-kinetic m
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-mizuno2012-alzpathway-a-comprehensive-map-of-alz-model1504290001-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-mizuno2012-alzpathway-a-comprehensive-map-of-alz-model1504290001-model/model.yaml
 ```
 
 ## Tags

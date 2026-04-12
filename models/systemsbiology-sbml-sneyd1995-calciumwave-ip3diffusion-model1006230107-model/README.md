@@ -11,14 +11,13 @@ This a model from the article: Intercellular calcium waves mediated by diffusion
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-sneyd1995-calciumwave-ip3diffusion-model1006230107-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-sneyd1995-calciumwave-ip3diffusion-model1006230107-model/model.yaml
 ```
 
 ## Tags

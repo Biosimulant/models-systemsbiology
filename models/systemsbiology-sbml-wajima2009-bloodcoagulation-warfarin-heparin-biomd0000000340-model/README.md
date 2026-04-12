@@ -11,14 +11,13 @@ This model is from the article: A comprehensive model for the humoral coagulatio
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-wajima2009-bloodcoagulation-warfarin-heparin-biomd0000000340-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-wajima2009-bloodcoagulation-warfarin-heparin-biomd0000000340-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ This is the model of the in vitro DNA oscillator called oligator with the optmiz
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-montagne2011-oligator-optimised-biomd0000000315-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-montagne2011-oligator-optimised-biomd0000000315-model/model.yaml
 ```
 
 ## Tags

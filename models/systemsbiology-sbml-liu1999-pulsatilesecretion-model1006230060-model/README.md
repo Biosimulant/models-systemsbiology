@@ -11,14 +11,13 @@ This a model from the article: A dynamical model for the pubsatile secretion of 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-liu1999-pulsatilesecretion-model1006230060-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-liu1999-pulsatilesecretion-model1006230060-model/model.yaml
 ```
 
 ## Tags

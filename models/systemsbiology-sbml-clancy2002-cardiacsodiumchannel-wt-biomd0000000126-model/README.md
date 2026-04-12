@@ -11,14 +11,13 @@ The model is according to the paper Na+ Channel Mutation That Causes Both Brugad
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-clancy2002-cardiacsodiumchannel-wt-biomd0000000126-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-clancy2002-cardiacsodiumchannel-wt-biomd0000000126-model/model.yaml
 ```
 
 ## Tags

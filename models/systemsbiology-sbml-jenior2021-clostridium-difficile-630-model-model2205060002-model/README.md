@@ -11,14 +11,13 @@ The pathogen Clostridioides difficile causes toxin-mediated diarrhea and is the 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-jenior2021-clostridium-difficile-630-model-model2205060002-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-jenior2021-clostridium-difficile-630-model-model2205060002-model/model.yaml
 ```
 
 ## Tags

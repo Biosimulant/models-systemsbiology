@@ -11,14 +11,13 @@ FROG and miniFROG reports are compiled for the model iME375. This model can be f
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-lee2020-m-elsdenii-ime375-model2408040004-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-lee2020-m-elsdenii-ime375-model2408040004-model/model.yaml
 ```
 
 ## Tags

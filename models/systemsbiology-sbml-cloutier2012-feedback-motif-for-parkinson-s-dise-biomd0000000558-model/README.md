@@ -11,14 +11,13 @@ Cloutier2012 - Feedback motif for Parkinson'sdisease This model is described in 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-cloutier2012-feedback-motif-for-parkinson-s-dise-biomd0000000558-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-cloutier2012-feedback-motif-for-parkinson-s-dise-biomd0000000558-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Yuraszeck2010 - Vulnerabilities in the TauNetwork in Tau Pathophysiology This mo
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-yuraszeck2010-vulnerabilities-in-the-tau-network-biomd0000000542-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-yuraszeck2010-vulnerabilities-in-the-tau-network-biomd0000000542-model/model.yaml
 ```
 
 ## Tags

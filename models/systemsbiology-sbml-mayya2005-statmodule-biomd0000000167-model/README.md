@@ -11,14 +11,13 @@ The model reproduces Fig 2B of the paper. Model successfully reproduced using Ma
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-mayya2005-statmodule-biomd0000000167-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-mayya2005-statmodule-biomd0000000167-model/model.yaml
 ```
 
 ## Tags

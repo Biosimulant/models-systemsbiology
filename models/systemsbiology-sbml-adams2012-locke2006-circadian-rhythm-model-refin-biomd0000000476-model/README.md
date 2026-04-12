@@ -11,14 +11,13 @@ As per BIO0000000089.xml but including a functional light.
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-adams2012-locke2006-circadian-rhythm-model-refin-biomd0000000476-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-adams2012-locke2006-circadian-rhythm-model-refin-biomd0000000476-model/model.yaml
 ```
 
 ## Tags

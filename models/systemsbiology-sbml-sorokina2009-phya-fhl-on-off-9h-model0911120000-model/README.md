@@ -11,14 +11,13 @@ Final version obtained by merging of the PhyA_FHL model with On_OFF 9h long expe
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-sorokina2009-phya-fhl-on-off-9h-model0911120000-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-sorokina2009-phya-fhl-on-off-9h-model0911120000-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ The model provides a framework for understanding rest/activity patterns effected
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-phillips2013-physiologically-based-modeling-expl-biomd0000001072-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-phillips2013-physiologically-based-modeling-expl-biomd0000001072-model/model.yaml
 ```
 
 ## Tags

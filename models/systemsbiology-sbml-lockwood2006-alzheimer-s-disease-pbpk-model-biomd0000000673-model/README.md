@@ -11,14 +11,13 @@ Lockwood2006 - AlzheimersDisease PBPKmodel A mathematical model to predict theef
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-lockwood2006-alzheimer-s-disease-pbpk-model-biomd0000000673-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-lockwood2006-alzheimer-s-disease-pbpk-model-biomd0000000673-model/model.yaml
 ```
 
 ## Tags

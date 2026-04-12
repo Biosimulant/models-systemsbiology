@@ -11,14 +11,13 @@ Geier2011 - Integrin activation Rule based model that integrates the available d
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-geier2011-integrin-activation-model1208280001-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-geier2011-integrin-activation-model1208280001-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Proctor2017 - Identifying microRNA for muscle regeneration during ageing (Mir378
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-proctor2017-identifying-microrna-for-muscle-rege-model1704110002-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-proctor2017-identifying-microrna-for-muscle-rege-model1704110002-model/model.yaml
 ```
 
 ## Tags

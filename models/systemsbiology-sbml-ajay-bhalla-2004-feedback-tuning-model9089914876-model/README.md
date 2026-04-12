@@ -11,14 +11,13 @@ This model is taken from &lt;a href = 'http://www.ncbi.nlm.nih.gov/entrez/query.
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-ajay-bhalla-2004-feedback-tuning-model9089914876-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-ajay-bhalla-2004-feedback-tuning-model9089914876-model/model.yaml
 ```
 
 ## Tags

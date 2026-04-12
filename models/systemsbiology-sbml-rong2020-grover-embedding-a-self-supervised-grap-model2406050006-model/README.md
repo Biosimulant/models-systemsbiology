@@ -11,14 +11,13 @@ This is the base grover model. GROVER is a self-supervised Graph Neural Network 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-rong2020-grover-embedding-a-self-supervised-grap-model2406050006-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-rong2020-grover-embedding-a-self-supervised-grap-model2406050006-model/model.yaml
 ```
 
 ## Tags

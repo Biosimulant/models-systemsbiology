@@ -11,14 +11,13 @@ The model reproduces the plots in Figures 1 and 2. Note that the units of the ti
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-chenxf2008-cicr-biomd0000000202-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-chenxf2008-cicr-biomd0000000202-model/model.yaml
 ```
 
 ## Tags

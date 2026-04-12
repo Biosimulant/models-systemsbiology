@@ -11,14 +11,13 @@ described in: A model of HIV-1 pathogenesis that includes an intracellular delay
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-nelson2000-hiv-1-intracellular-delay-model8102792069-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-nelson2000-hiv-1-intracellular-delay-model8102792069-model/model.yaml
 ```
 
 ## Tags

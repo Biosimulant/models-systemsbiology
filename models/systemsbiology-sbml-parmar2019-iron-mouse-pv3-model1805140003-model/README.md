@@ -11,14 +11,13 @@ Iron Mouse PV3 'A computational model to understand mouse iron physiology and di
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-parmar2019-iron-mouse-pv3-model1805140003-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-parmar2019-iron-mouse-pv3-model1805140003-model/model.yaml
 ```
 
 ## Tags

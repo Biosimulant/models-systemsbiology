@@ -11,14 +11,13 @@ This model predicts the Blood-Brain Barrier (BBB) penetration potential of small
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-rong2020-grover-bbbp-prediction-of-the-blood-bra-model2406050008-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-rong2020-grover-bbbp-prediction-of-the-blood-bra-model2406050008-model/model.yaml
 ```
 
 ## Tags

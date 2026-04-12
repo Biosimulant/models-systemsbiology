@@ -11,14 +11,13 @@ Cut-out switch model Membrane identity and GTPase cascades regulated by toggle a
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-del-conte-zerial2008-rab5-rab7-cut-out-switch-biomd0000000174-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-del-conte-zerial2008-rab5-rab7-cut-out-switch-biomd0000000174-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Proctor2008 - p53/Mdm2 circuit - p53 stabilisation by p14ARF This model is descr
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-proctor2008-p53-mdm2-circuit-p53-stablisation-by-biomd0000000189-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-proctor2008-p53-mdm2-circuit-p53-stablisation-by-biomd0000000189-model/model.yaml
 ```
 
 ## Tags

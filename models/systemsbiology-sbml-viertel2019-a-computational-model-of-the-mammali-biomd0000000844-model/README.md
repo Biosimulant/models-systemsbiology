@@ -11,14 +11,13 @@ This is a mathematical conductance-based model of the bursting activity in exter
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-viertel2019-a-computational-model-of-the-mammali-biomd0000000844-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-viertel2019-a-computational-model-of-the-mammali-biomd0000000844-model/model.yaml
 ```
 
 ## Tags

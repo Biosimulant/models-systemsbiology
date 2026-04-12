@@ -11,14 +11,13 @@ BayeshERG is a predictor of small molecule-induced blockade of the hERG ion chan
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-kim2022-bayesherg-a-deep-learning-model-for-pred-model2408060001-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-kim2022-bayesherg-a-deep-learning-model-for-pred-model2408060001-model/model.yaml
 ```
 
 ## Tags

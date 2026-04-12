@@ -11,14 +11,13 @@ DeCaluwé2016 - Circadian Clock This model is described in the article: A Compac
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-decaluwe2016-circadian-clock-biomd0000000631-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-decaluwe2016-circadian-clock-biomd0000000631-model/model.yaml
 ```
 
 ## Tags

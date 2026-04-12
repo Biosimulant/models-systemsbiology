@@ -11,14 +11,13 @@ Mathematical model combining previous models (Jones1994, Leipoldt1995, Kuhursky2
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-luan2007-blood-coagulation-model-combining-previ-model1806050001-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-luan2007-blood-coagulation-model-combining-previ-model1806050001-model/model.yaml
 ```
 
 ## Tags

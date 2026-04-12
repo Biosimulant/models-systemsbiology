@@ -11,14 +11,13 @@ Giantsos-Adams2013 - Growth of glycocalyxunder static conditions This model is d
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-giantsos-adams2013-growth-of-glycocalyx-under-st-model1609100001-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-giantsos-adams2013-growth-of-glycocalyx-under-st-model1609100001-model/model.yaml
 ```
 
 ## Tags

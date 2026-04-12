@@ -11,14 +11,13 @@ Faithful wrapper of upstream SBML model.
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-fujita2013-parkinson-s-disease-in-a-molecular-in-model1504290000-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-fujita2013-parkinson-s-disease-in-a-molecular-in-model1504290000-model/model.yaml
 ```
 
 ## Tags

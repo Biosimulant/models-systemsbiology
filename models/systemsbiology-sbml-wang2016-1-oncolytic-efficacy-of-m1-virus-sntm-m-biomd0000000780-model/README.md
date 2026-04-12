@@ -11,14 +11,13 @@ The paper describes a model of oncolytic virotherapy. Created by COPASI 4.25 (Bu
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-wang2016-1-oncolytic-efficacy-of-m1-virus-sntm-m-biomd0000000780-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-wang2016-1-oncolytic-efficacy-of-m1-virus-sntm-m-biomd0000000780-model/model.yaml
 ```
 
 ## Tags

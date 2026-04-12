@@ -11,14 +11,13 @@ Kuznetsov2016(II) - α-syn aggregationkinetics in Parkinson's This theoretical m
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-kuznetsov2016-ii-syn-aggregation-kinetics-in-par-biomd0000000615-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-kuznetsov2016-ii-syn-aggregation-kinetics-in-par-biomd0000000615-model/model.yaml
 ```
 
 ## Tags

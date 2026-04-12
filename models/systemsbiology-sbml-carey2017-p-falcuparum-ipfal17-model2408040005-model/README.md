@@ -11,14 +11,13 @@ FROG an miniFROG reports for the model iPfal17. The model can be found in the Su
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-carey2017-p-falcuparum-ipfal17-model2408040005-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-carey2017-p-falcuparum-ipfal17-model2408040005-model/model.yaml
 ```
 
 ## Tags

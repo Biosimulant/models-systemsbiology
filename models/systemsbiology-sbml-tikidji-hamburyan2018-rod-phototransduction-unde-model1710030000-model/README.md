@@ -11,14 +11,13 @@ Tikidji-Hamburyan2018 - Rod phototransductionunder strong illumination This mode
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-tikidji-hamburyan2018-rod-phototransduction-unde-model1710030000-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-tikidji-hamburyan2018-rod-phototransduction-unde-model1710030000-model/model.yaml
 ```
 
 ## Tags

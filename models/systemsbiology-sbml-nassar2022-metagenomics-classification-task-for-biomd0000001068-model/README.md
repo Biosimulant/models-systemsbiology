@@ -11,14 +11,13 @@ This is a use case to show that, given any automatic metagenomic classification 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-nassar2022-metagenomics-classification-task-for-biomd0000001068-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-nassar2022-metagenomics-classification-task-for-biomd0000001068-model/model.yaml
 ```
 
 ## Tags

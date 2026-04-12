@@ -11,14 +11,13 @@ Dunster2014 - WBC Interactions (Model1) This is a sub-model of a three-stepinfla
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-dunster2014-wbc-interactions-model1-biomd0000000616-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-dunster2014-wbc-interactions-model1-biomd0000000616-model/model.yaml
 ```
 
 ## Tags

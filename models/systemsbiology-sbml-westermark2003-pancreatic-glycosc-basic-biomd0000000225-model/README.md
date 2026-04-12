@@ -11,14 +11,13 @@ This is the basic model described in eq. 1 of the article: A model of phosphofru
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-westermark2003-pancreatic-glycosc-basic-biomd0000000225-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-westermark2003-pancreatic-glycosc-basic-biomd0000000225-model/model.yaml
 ```
 
 ## Tags

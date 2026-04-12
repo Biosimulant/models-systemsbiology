@@ -11,14 +11,13 @@ Mathematical model of the blood coagulation cascade with new kinetic rates to si
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-mitrophanov2015-simulating-extended-hockin-blood-biomd0000000951-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-mitrophanov2015-simulating-extended-hockin-blood-biomd0000000951-model/model.yaml
 ```
 
 ## Tags

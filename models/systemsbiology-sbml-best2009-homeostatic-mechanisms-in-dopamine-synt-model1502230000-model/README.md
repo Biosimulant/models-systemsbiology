@@ -11,14 +11,13 @@ Best2009 - Homeostatic mechanisms in dopaminesynthesis and release Encoded non-c
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-best2009-homeostatic-mechanisms-in-dopamine-synt-model1502230000-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-best2009-homeostatic-mechanisms-in-dopamine-synt-model1502230000-model/model.yaml
 ```
 
 ## Tags

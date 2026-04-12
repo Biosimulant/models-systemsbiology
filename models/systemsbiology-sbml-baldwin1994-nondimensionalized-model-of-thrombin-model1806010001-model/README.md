@@ -11,14 +11,13 @@ First mathematical model of thrombin production in flowing blood. Nondimensional
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-baldwin1994-nondimensionalized-model-of-thrombin-model1806010001-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-baldwin1994-nondimensionalized-model-of-thrombin-model1806010001-model/model.yaml
 ```
 
 ## Tags

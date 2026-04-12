@@ -11,14 +11,13 @@ Optimality of the spontaneous prophage induction rate.Cortes MG1, Krog J2, Balá
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-cortes2019-optimality-of-the-spontaneous-prophag-biomd0000000884-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-cortes2019-optimality-of-the-spontaneous-prophag-biomd0000000884-model/model.yaml
 ```
 
 ## Tags

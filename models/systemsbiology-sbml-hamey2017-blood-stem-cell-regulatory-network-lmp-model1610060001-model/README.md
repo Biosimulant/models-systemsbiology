@@ -11,14 +11,13 @@ Hamey2017 - Blood stem cell regulatorynetwork (LMPP network) This model is descr
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-hamey2017-blood-stem-cell-regulatory-network-lmp-model1610060001-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-hamey2017-blood-stem-cell-regulatory-network-lmp-model1610060001-model/model.yaml
 ```
 
 ## Tags

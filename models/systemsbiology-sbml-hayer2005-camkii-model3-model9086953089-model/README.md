@@ -11,14 +11,13 @@ This is the complete model of CaMKII bistability, model 3. It exhibits bistabili
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-hayer2005-camkii-model3-model9086953089-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-hayer2005-camkii-model3-model9086953089-model/model.yaml
 ```
 
 ## Tags

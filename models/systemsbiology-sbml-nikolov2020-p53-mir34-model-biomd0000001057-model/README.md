@@ -11,14 +11,13 @@ Svetoslav Nikolov, Olaf Wolkenhauer, Julio Vera & Momchil Nenov. The role of coo
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-nikolov2020-p53-mir34-model-biomd0000001057-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-nikolov2020-p53-mir34-model-biomd0000001057-model/model.yaml
 ```
 
 ## Tags

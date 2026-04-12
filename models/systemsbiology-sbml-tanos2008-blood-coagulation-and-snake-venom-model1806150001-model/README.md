@@ -11,14 +11,13 @@ Mathematical model of the blood coagulation cascade including interaction of sna
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-tanos2008-blood-coagulation-and-snake-venom-model1806150001-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-tanos2008-blood-coagulation-and-snake-venom-model1806150001-model/model.yaml
 ```
 
 ## Tags

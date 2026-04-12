@@ -11,14 +11,13 @@ This a model from the article: A dynamical perspective of CTL cross-priming and 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-wodarz2003-cytotoxic-t-lymphocyte-cross-priming-biomd0000000685-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-wodarz2003-cytotoxic-t-lymphocyte-cross-priming-biomd0000000685-model/model.yaml
 ```
 
 ## Tags

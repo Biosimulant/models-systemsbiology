@@ -11,14 +11,13 @@ Default parameter values are those in the right hand panel of Fig 12. The other 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-chance1943-peroxidase-es-kinetics-biomd0000000283-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-chance1943-peroxidase-es-kinetics-biomd0000000283-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Mathematical model of blood coagulation factor Va and Va fragment inactivation b
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-bravo2012-modelling-blood-coagulation-factor-va-biomd0000000739-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-bravo2012-modelling-blood-coagulation-factor-va-biomd0000000739-model/model.yaml
 ```
 
 ## Tags

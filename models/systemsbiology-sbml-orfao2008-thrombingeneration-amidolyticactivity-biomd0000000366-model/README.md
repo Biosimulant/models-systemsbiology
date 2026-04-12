@@ -11,14 +11,13 @@ S. Cunha Orfao, G. Jank, K. Mottaghy, S. Walcher & E. Zerz. Qualitative properti
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-orfao2008-thrombingeneration-amidolyticactivity-biomd0000000366-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-orfao2008-thrombingeneration-amidolyticactivity-biomd0000000366-model/model.yaml
 ```
 
 ## Tags

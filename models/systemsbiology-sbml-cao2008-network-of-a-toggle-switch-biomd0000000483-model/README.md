@@ -11,14 +11,13 @@ Youfang Cao & Jie Liang. Optimal enumeration of state space of finitely buffered
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/systemsbiology-sbml-cao2008-network-of-a-toggle-switch-biomd0000000483-model
     alias: model
-    manifest_path: models/systemsbiology-sbml-cao2008-network-of-a-toggle-switch-biomd0000000483-model/model.yaml
 ```
 
 ## Tags
