@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Parmar2019 - Iron Mouse PV3 - tracer Visualisation
+description: Question-and-answer and dynamic visual summaries for Parmar2019 - Iron
+  Mouse PV3 - tracer.
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Parmar2019 Iron Mouse Pv3 Tracer Lab
+    question: 'Which physiological state variables carry the strongest baseline response?
+      Source model: Parmar2019 - Iron Mouse PV3 - tracer.'
+    answer_focus: Q/A table plus physiology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_parmar2019_iron_mouse_pv3_tracer_model1805140002_model
+      title: Parmar2019 - Iron Mouse PV3 - tracer
+      observables:
+      - id: FeRBC_0
+        port: fe_rbc
+        label: FeRBC
+        group: physiology
+      - id: FeDuo_0
+        port: fe_duo
+        label: FeDuo
+        group: physiology
+      - id: FeSpleen_0
+        port: fe_spleen
+        label: FeSpleen
+        group: physiology
+      - id: FeLiver_0
+        port: fe_liver
+        label: FeLiver
+        group: physiology
+      - id: FeRest_0
+        port: fe_rest
+        label: FeRest
+        group: physiology
+      - id: Fe2Tf_0
+        port: fe2_tf
+        label: Fe2Tf
+        group: physiology
+io:
+  inputs: []
+  outputs: []

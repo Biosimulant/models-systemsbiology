@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "a326b9b8-acb7-4fc2-8287-d6a8e8167093",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "ffef7f18-3dec-41ac-b398-c003f7d9d253",
+  "created_at": "2026-05-16T05:46:46.694003899+00:00",
+  "last_synced_at": "2026-05-17T04:50:10.166662+00:00",
+  "hub_manifest_hash": "e0376626b8fb04a36ab3ae1b0e667a26ad406135e953f135d5f438b484f1f6fd",
+  "package_name": "martins2003-amadoridegradation-lab"
+}

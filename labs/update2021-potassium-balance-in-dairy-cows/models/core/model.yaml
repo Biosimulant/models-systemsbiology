@@ -1,0 +1,76 @@
+schema_version: '2.0'
+title: Potassium balance in dairy cows, model update 2021
+description: This updated model is derived from MODEL1710230000 here on Biomodels.
+  In the current version we changed 2 parameter values and the rate equation Keku.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Plöntzke J
+- Berg M
+- Ehrig R
+- Leonhard-Marek S
+- Müller KE
+upstream:
+  id: biomodels_ebi:MODEL2201250001
+  source_db: biomodels_ebi
+  source_id: MODEL2201250001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2201250001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2201250001?filename=Ploentzke2021_potassium_cow.xml
+  license: CC0
+biosim:
+  entrypoint: src.potassium_balance_in_dairy_cows_model_update_202_model2201250001_model:PotassiumBalanceInDairyCowsModelUpdate202Model2201250001Model
+  init_kwargs:
+    model_path: data/MODEL2201250001.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: src_glucfeed
+    maps_to: p46
+    label: Src Glucfeed
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `p46`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: src_glucb
+    maps_to: src_Glucblood
+    label: src_Glucb
+    description: src_Glucb. Maps to SBML symbol `src_Glucblood`.
+  - name: gluc_stor
+    maps_to: Gluc_stor
+    label: Gluc_stor
+    description: Gluc_stor. Maps to SBML symbol `Gluc_stor`.
+  - name: k_tiss
+    maps_to: K_tiss
+    label: K_tiss
+    description: K_tiss. Maps to SBML symbol `K_tiss`.
+  - name: k_git
+    maps_to: K_git
+    label: K_git
+    description: K_git. Maps to SBML symbol `K_git`.
+  - name: gluc_prod
+    maps_to: Gluc_prod
+    label: Gluc_prod
+    description: Gluc_prod. Maps to SBML symbol `Gluc_prod`.
+  - name: ins_b
+    maps_to: ins_b
+    label: ins_b
+    description: ins_b. Maps to SBML symbol `ins_b`.

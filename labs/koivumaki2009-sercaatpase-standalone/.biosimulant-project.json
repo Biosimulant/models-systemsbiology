@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "5be8e7d9-e706-41af-9a5d-4694d7bc0230",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "8e9f8df3-72eb-457f-a8df-2d1f7942735e",
+  "created_at": "2026-05-16T05:46:44.854385580+00:00",
+  "last_synced_at": "2026-05-17T04:10:06.185270+00:00",
+  "hub_manifest_hash": "3acea674b74675986f3ad678aea51dd671a2576749163540a444a73febe3269c",
+  "package_name": "koivumaki2009-sercaatpase-standalone-lab"
+}

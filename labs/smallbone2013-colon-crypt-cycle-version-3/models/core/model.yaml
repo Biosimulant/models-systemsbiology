@@ -1,0 +1,86 @@
+schema_version: '2.0'
+title: Smallbone2013 - Colon Crypt cycle - Version 3
+description: 'Smallbone2013 - Colon Crypt cycle - Version 3 This model is described
+  in the article: A mathematical model of the colon crypt capturing compositional
+  dynamic interactions between cell types Kieran Sma. It can be used to explore systemsbiology
+  smallbone2013 colon crypt cycle version dynamics and compare simulation behavior
+  across conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Kieran Smallbone
+- Bernard M Corfe
+upstream:
+  id: biomodels_ebi:BIOMD0000000517
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000517
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000517
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000517?filename=BIOMD0000000517_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.smallbone2013_colon_crypt_cycle_version_3_biomd0000000517_model:Smallbone2013ColonCryptCycleVersion3Biomd0000000517Model
+  init_kwargs:
+    model_path: data/BIOMD0000000517.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_n2
+    maps_to: N2
+    label: Initial Model State N2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `N2`.
+  - name: initial_model_state_n1
+    maps_to: N1
+    label: Initial Model State N1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `N1`.
+  - name: initial_model_state_n0
+    maps_to: N0
+    label: Initial Model State N0
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `N0`.
+  - name: initial_model_state_n3
+    maps_to: N3
+    label: Initial Model State N3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `N3`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_n2
+    maps_to: N2
+    label: N2
+    description: N2. Maps to SBML symbol `N2`.
+  - name: model_state_n1
+    maps_to: N1
+    label: N1
+    description: N1. Maps to SBML symbol `N1`.
+  - name: model_state_n0
+    maps_to: N0
+    label: N0
+    description: N0. Maps to SBML symbol `N0`.
+  - name: model_state_n3
+    maps_to: N3
+    label: N3
+    description: N3. Maps to SBML symbol `N3`.

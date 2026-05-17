@@ -1,0 +1,78 @@
+schema_version: '2.0'
+title: Martins2001 Glyoxalase Lab
+description: . It can be used to explore systemsbiology martins2001 glyoxalase model6624199343
+  dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_martins2001_glyoxalase_model6624199343_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_martins2001_glyoxalase_model6624199343_model.state
+  to:
+  - visualisation.systemsbiology_sbml_martins2001_glyoxalase_model6624199343_model_state
+- from: systemsbiology_sbml_martins2001_glyoxalase_model6624199343_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_martins2001_glyoxalase_model6624199343_model_summary
+- from: systemsbiology_sbml_martins2001_glyoxalase_model6624199343_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_martins2001_glyoxalase_model6624199343_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_gsh
+    maps_to: systemsbiology_sbml_martins2001_glyoxalase_model6624199343_model.initial_model_state_gsh
+    label: Initial Model State Gsh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `GSH`.
+  - name: initial_model_state_mg
+    maps_to: systemsbiology_sbml_martins2001_glyoxalase_model6624199343_model.initial_model_state_mg
+    label: Initial Model State Mg
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MG`.
+  - name: initial_model_state_slg
+    maps_to: systemsbiology_sbml_martins2001_glyoxalase_model6624199343_model.initial_model_state_slg
+    label: Initial Model State Slg
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `SLG`.
+  - name: initial_model_state_lac
+    maps_to: systemsbiology_sbml_martins2001_glyoxalase_model6624199343_model.initial_model_state_lac
+    label: Initial Model State Lac
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Lac`.
+  - name: initial_model_state_hta
+    maps_to: systemsbiology_sbml_martins2001_glyoxalase_model6624199343_model.initial_model_state_hta
+    label: Initial Model State Hta
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `HTA`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_martins2001_glyoxalase_model6624199343_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_martins2001_glyoxalase_model6624199343_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_martins2001_glyoxalase_model6624199343_model.species_labels
+  - name: gsh
+    maps_to: systemsbiology_sbml_martins2001_glyoxalase_model6624199343_model.gsh
+  - name: model_state_mg
+    maps_to: systemsbiology_sbml_martins2001_glyoxalase_model6624199343_model.model_state_mg
+  - name: slg
+    maps_to: systemsbiology_sbml_martins2001_glyoxalase_model6624199343_model.slg
+  - name: lac
+    maps_to: systemsbiology_sbml_martins2001_glyoxalase_model6624199343_model.lac
+  - name: hta
+    maps_to: systemsbiology_sbml_martins2001_glyoxalase_model6624199343_model.hta

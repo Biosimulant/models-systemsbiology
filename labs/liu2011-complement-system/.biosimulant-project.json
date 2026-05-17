@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "a877f6fd-7159-4332-beef-50170e02c76b",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "caedebc5-6ecf-490e-9be0-296b942a2742",
+  "created_at": "2026-05-16T05:46:45.546692716+00:00",
+  "last_synced_at": "2026-05-17T04:34:04.805757+00:00",
+  "hub_manifest_hash": "bdd8650082e294f48a3a24a61845b0357aa661b40a7e5abf3f31ad8640e2dba8",
+  "package_name": "liu2011-complement-system-lab"
+}

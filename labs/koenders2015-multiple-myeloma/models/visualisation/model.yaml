@@ -1,0 +1,44 @@
+schema_version: '2.0'
+title: Koenders2015 - multiple myeloma Visualisation
+description: Question-and-answer and dynamic visual summaries for Koenders2015 - multiple
+  myeloma.
+standard: other
+tags:
+- immunology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Koenders2015 Multiple Myeloma Lab
+    question: 'Which immune or inflammatory states dominate the simulated response?
+      Source model: Koenders2015 - multiple myeloma.'
+    answer_focus: Q/A table plus immunology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_koenders2015_multiple_myeloma_biomd0000000804_model
+      title: Koenders2015 - multiple myeloma
+      observables:
+      - id: B
+        port: model_state_b
+        label: B
+        group: physiology
+      - id: T
+        port: model_state_t
+        label: T
+        group: physiology
+      - id: C
+        port: model_state_c
+        label: C
+        group: physiology
+io:
+  inputs: []
+  outputs: []

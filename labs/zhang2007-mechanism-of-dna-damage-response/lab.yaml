@@ -1,0 +1,72 @@
+schema_version: '2.0'
+title: Zhang2007 Mechanism Of Dna Damage Response Lab
+description: Its a mechanistic model explaining the impact of p53 om apoptosis decision.
+  It can be used to explore systemsbiology zhang2007 mechanism of dna damage dynamics
+  and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_zhang2007_mechanism_of_dna_damage_response_model_biomd0000001007_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_zhang2007_mechanism_of_dna_damage_response_model_biomd0000001007_model.state
+  to:
+  - visualisation.systemsbiology_sbml_zhang2007_mechanism_of_dna_damage_response_model_biomd0000001007_model_state
+- from: systemsbiology_sbml_zhang2007_mechanism_of_dna_damage_response_model_biomd0000001007_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_zhang2007_mechanism_of_dna_damage_response_model_biomd0000001007_model_summary
+- from: systemsbiology_sbml_zhang2007_mechanism_of_dna_damage_response_model_biomd0000001007_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_zhang2007_mechanism_of_dna_damage_response_model_biomd0000001007_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- cellcycle
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_dn_adamage
+    maps_to: systemsbiology_sbml_zhang2007_mechanism_of_dna_damage_response_model_biomd0000001007_model.initial_dn_adamage
+    label: Initial Dn Adamage
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `DNAdamage`.
+  - name: initial_model_state_p53
+    maps_to: systemsbiology_sbml_zhang2007_mechanism_of_dna_damage_response_model_biomd0000001007_model.initial_model_state_p53
+    label: Initial Model State P53
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `p53`.
+  - name: initial_mdm2nuc
+    maps_to: systemsbiology_sbml_zhang2007_mechanism_of_dna_damage_response_model_biomd0000001007_model.initial_mdm2nuc
+    label: Initial Mdm2nuc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MDM2nuc`.
+  - name: initial_mdm2cyt
+    maps_to: systemsbiology_sbml_zhang2007_mechanism_of_dna_damage_response_model_biomd0000001007_model.initial_mdm2cyt
+    label: Initial Mdm2cyt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MDM2cyt`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_zhang2007_mechanism_of_dna_damage_response_model_biomd0000001007_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_zhang2007_mechanism_of_dna_damage_response_model_biomd0000001007_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_zhang2007_mechanism_of_dna_damage_response_model_biomd0000001007_model.species_labels
+  - name: dn_adamage
+    maps_to: systemsbiology_sbml_zhang2007_mechanism_of_dna_damage_response_model_biomd0000001007_model.dn_adamage
+  - name: p53
+    maps_to: systemsbiology_sbml_zhang2007_mechanism_of_dna_damage_response_model_biomd0000001007_model.p53
+  - name: mdm2nuc
+    maps_to: systemsbiology_sbml_zhang2007_mechanism_of_dna_damage_response_model_biomd0000001007_model.mdm2nuc
+  - name: mdm2cyt
+    maps_to: systemsbiology_sbml_zhang2007_mechanism_of_dna_damage_response_model_biomd0000001007_model.mdm2cyt

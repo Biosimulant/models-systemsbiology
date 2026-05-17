@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "c84c30ff-8aea-452c-a114-16f9aeba91de",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "c6211f07-cac8-47e9-b980-1eadc2491b91",
+  "created_at": "2026-05-16T05:46:43.615592702+00:00",
+  "last_synced_at": "2026-05-17T03:19:27.284370+00:00",
+  "hub_manifest_hash": "0aa1c607f0028434d10c8c9838cc867f625af70a9171b0b07dfe85a5ecdbd3f9",
+  "package_name": "goldbeter1990-calciumspike-cicr-lab"
+}

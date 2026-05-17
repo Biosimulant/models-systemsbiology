@@ -1,0 +1,109 @@
+schema_version: '2.0'
+title: Burghaus2011 - Simulating Rivaroxaban effects on blood coagulation
+description: Systems Biology Burghaus2011Simulating Rivaroxaban Effects On BModel1805140001Model
+  represents core biological mechanisms from biomodels_ebi reference biomodels_ebi:MODEL1805140001.
+  When you run it, you can inspect state and compare temporal behavior between baseline
+  and adjusted inputs.
+standard: other
+tags:
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Rolf Burghaus
+- Katrin Coboeken
+- Thomas Gaub
+- Lars Kuepfer
+- Anke Sensse
+upstream:
+  id: biomodels_ebi:MODEL1805140001
+  source_db: biomodels_ebi
+  source_id: MODEL1805140001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1805140001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1805140001?filename=Burghaus2011.xml
+  license: CC0
+biosim:
+  entrypoint: src.burghaus2011_simulating_rivaroxaban_effects_on_b_model1805140001_model:Burghaus2011SimulatingRivaroxabanEffectsOnBModel1805140001Model
+  init_kwargs:
+    model_path: data/MODEL1805140001.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_alpha1_at
+    maps_to: alpha1AT
+    label: Initial Alpha1 At
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `alpha1AT`.
+  - name: initial_a2_mg
+    maps_to: a2MG
+    label: Initial A2 Mg
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `a2MG`.
+  - name: initial_apc_a2_ap
+    maps_to: APC_a2AP
+    label: Initial Apc A2 Ap
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `APC_a2AP`.
+  - name: initial_v_wf
+    maps_to: vWF
+    label: Initial V Wf
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `vWF`.
+  - name: initial_m_i_ia_alpha1_at
+    maps_to: mIIa_alpha1AT
+    label: Initial M I Ia Alpha1 At
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mIIa_alpha1AT`.
+  - name: initial_m_i_ia_a2_mg
+    maps_to: mIIa_a2MG
+    label: Initial M I Ia A2 Mg
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mIIa_a2MG`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: alpha1_at
+    maps_to: alpha1AT
+    label: alpha1AT
+    description: alpha1AT. Maps to SBML symbol `alpha1AT`.
+  - name: a2_mg
+    maps_to: a2MG
+    label: a2MG
+    description: a2MG. Maps to SBML symbol `a2MG`.
+  - name: apc_a2_ap
+    maps_to: APC_a2AP
+    label: APC_a2AP
+    description: APC_a2AP. Maps to SBML symbol `APC_a2AP`.
+  - name: v_wf
+    maps_to: vWF
+    label: vWF
+    description: vWF. Maps to SBML symbol `vWF`.
+  - name: m_i_ia_alpha1_at
+    maps_to: mIIa_alpha1AT
+    label: mIIa_alpha1AT
+    description: mIIa_alpha1AT. Maps to SBML symbol `mIIa_alpha1AT`.
+  - name: m_i_ia_a2_mg
+    maps_to: mIIa_a2MG
+    label: mIIa_a2MG
+    description: mIIa_a2MG. Maps to SBML symbol `mIIa_a2MG`.

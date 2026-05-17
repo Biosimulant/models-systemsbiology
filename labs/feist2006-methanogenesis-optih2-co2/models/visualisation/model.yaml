@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Feist2006_methanogenesis_OptiH2-CO2 Visualisation
+description: Question-and-answer and dynamic visual summaries for Feist2006_methanogenesis_OptiH2-CO2.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Feist2006 Methanogenesis Optih2 Co2 Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Feist2006_methanogenesis_OptiH2-CO2.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_feist2006_methanogenesis_optih2_co2_model5662398146_model
+      title: Feist2006_methanogenesis_OptiH2-CO2
+      observables:
+      - id: M_gcald_c_
+        port: glycolaldehyde
+        label: _Glycolaldehyde
+        group: metabolism
+      - id: M_gcald_e_
+        port: glycolaldehyde_2
+        label: _Glycolaldehyde
+        group: metabolism
+      - id: M_dtdpglu_c_
+        port: d_td_pglucose
+        label: _dTDPglucose
+        group: metabolism
+      - id: M_dtdp4d6dg_c_
+        port: d_tdp_4_dehydro_6_deoxy_d_glucose
+        label: _dTDP-4-dehydro-6-deoxy-D-glucose
+        group: metabolism
+      - id: M_datp_c_
+        port: d_atp
+        label: _dATP
+        group: metabolism
+      - id: M_dadp_c_
+        port: d_adp
+        label: _dADP
+        group: metabolism
+io:
+  inputs: []
+  outputs: []

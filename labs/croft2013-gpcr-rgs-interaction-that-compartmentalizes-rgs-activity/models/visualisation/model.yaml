@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: Croft2013 - GPCR-RGS interaction that compartmentalizes RGS activity Visualisation
+description: Question-and-answer and dynamic visual summaries for Croft2013 - GPCR-RGS
+  interaction that compartmentalizes RGS activity.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Croft2013 Gpcr Rgs Interaction That Compartmentalizes Rgs Activity
+      Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Croft2013 - GPCR-RGS interaction that compartmentalizes RGS activity.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_croft2013_gpcr_rgs_interaction_that_compartmenta_biomd0000000479_model
+      title: Croft2013 - GPCR-RGS interaction that compartmentalizes RGS activity
+      observables:
+      - id: z3
+        port: model_state_z3
+        label: z3
+        group: gene_regulation
+      - id: z2
+        port: model_state_z2
+        label: z2
+        group: gene_regulation
+      - id: z1
+        port: model_state_z1
+        label: z1
+        group: gene_regulation
+      - id: Effector
+        port: effector
+        label: Effector
+        group: gene_regulation
+      - id: Gbg
+        port: gbg
+        label: Gbg
+        group: gene_regulation
+      - id: GaGDP
+        port: ga_gdp
+        label: GaGDP
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

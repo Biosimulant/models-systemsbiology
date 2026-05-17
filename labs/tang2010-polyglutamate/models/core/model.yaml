@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Tang2010_PolyGlutamate
+description: 'This a model from the article: Experimental and computational analysis
+  of polyglutamine-mediated cytotoxicity. Tang MY, Proctor CJ, Woulfe J, Gray DA.'
+standard: other
+tags:
+- cellcycle
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Matthew Y Tang
+- Carole J Proctor
+- John Woulfe
+- Douglas A Gray
+upstream:
+  id: biomodels_ebi:BIOMD0000000285
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000285
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000285
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000285?filename=BIOMD0000000285_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.tang2010_polyglutamate_biomd0000000285_model:Tang2010PolyglutamateBiomd0000000285Model
+  init_kwargs:
+    model_path: data/BIOMD0000000285.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_nat_p
+    maps_to: NatP
+    label: Initial Nat P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NatP`.
+  - name: initial_p_ideath
+    maps_to: PIdeath
+    label: Initial P Ideath
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PIdeath`.
+  - name: initial_p38death
+    maps_to: p38death
+    label: Initial P38death
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `p38death`.
+  - name: initial_proteasome
+    maps_to: Proteasome
+    label: Initial Proteasome
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Proteasome`.
+  - name: initial_poly_q
+    maps_to: PolyQ
+    label: Initial Poly Q
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PolyQ`.
+  - name: initial_mrf_pu
+    maps_to: mRFPu
+    label: Initial Mrf Pu
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mRFPu`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: nat_p
+    maps_to: NatP
+    label: NatP
+    description: NatP. Maps to SBML symbol `NatP`.
+  - name: p_ideath
+    maps_to: PIdeath
+    label: PIdeath
+    description: PIdeath. Maps to SBML symbol `PIdeath`.
+  - name: p38death
+    maps_to: p38death
+    label: P38death
+    description: P38death. Maps to SBML symbol `p38death`.
+  - name: proteasome
+    maps_to: Proteasome
+    label: Proteasome
+    description: Proteasome. Maps to SBML symbol `Proteasome`.
+  - name: poly_q
+    maps_to: PolyQ
+    label: PolyQ
+    description: PolyQ. Maps to SBML symbol `PolyQ`.
+  - name: mrf_pu
+    maps_to: mRFPu
+    label: MRFPu
+    description: MRFPu. Maps to SBML symbol `mRFPu`.

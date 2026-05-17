@@ -1,0 +1,58 @@
+schema_version: '2.0'
+title: Proctor2013 - Cartilage breakdown, interventions to reduce collagen release
+  Visualisation
+description: Question-and-answer and dynamic visual summaries for Proctor2013 - Cartilage
+  breakdown, interventions to reduce collagen release.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Proctor2013 Cartilage Breakdown Interventions To Reduce Collagen Relea
+      Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Proctor2013 - Cartilage breakdown, interventions to reduce collagen
+      release.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_proctor2013_cartilage_breakdown_interventions_to_biomd0000000504_model
+      title: Proctor2013 - Cartilage breakdown, interventions to reduce collagen release
+      observables:
+      - id: TRAF6
+        port: traf6
+        label: TRAF6
+        group: signaling
+      - id: STAT3_cyt
+        port: stat3_cyt
+        label: STAT3 Cyt
+        group: signaling
+      - id: TIMP3_mRNA
+        port: timp3_mrna
+        label: TIMP3 MRNA
+        group: gene_regulation
+      - id: TIMP1_mRNA
+        port: timp1_mrna
+        label: TIMP1 MRNA
+        group: gene_regulation
+      - id: cJun_mRNA
+        port: c_jun_mrna
+        label: CJun MRNA
+        group: gene_regulation
+      - id: TRAF6_PP4
+        port: traf6_pp4
+        label: TRAF6 PP4
+        group: signaling
+io:
+  inputs: []
+  outputs: []

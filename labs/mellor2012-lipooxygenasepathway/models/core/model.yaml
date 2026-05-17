@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Mellor2012_LipooxygenasePathway
+description: 'This model is from the article: Reduction of off-flavor generation in
+  soybean homogenates: a mathematical model. Mellor N , Bligh F , Chandler I , Hodgman
+  C J.'
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Nathan Mellor
+- Frances Bligh
+- Ian Chandler
+- Charlie Hodgman
+upstream:
+  id: biomodels_ebi:BIOMD0000000415
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000415
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000415
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000415?filename=BIOMD0000000415_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.mellor2012_lipooxygenasepathway_biomd0000000415_model:Mellor2012LipooxygenasepathwayBiomd0000000415Model
+  init_kwargs:
+    model_path: data/BIOMD0000000415.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_la
+    maps_to: species_1
+    label: Initial Model State La
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_1`.
+  - name: initial_n_hexanal
+    maps_to: species_15
+    label: Initial N Hexanal
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_15`.
+  - name: initial_model_state_9_hod_s_z_e
+    maps_to: species_11
+    label: Initial Model State 9 Hod S Z E
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_11`.
+  - name: initial_model_state_9_hod_s_e_e
+    maps_to: species_13
+    label: Initial Model State 9 Hod S E E
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_13`.
+  - name: initial_model_state_9_hod_r_z_e
+    maps_to: species_12
+    label: Initial Model State 9 Hod R Z E
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_12`.
+  - name: initial_model_state_9_hod_r_e_e
+    maps_to: species_14
+    label: Initial Model State 9 Hod R E E
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_14`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_la
+    maps_to: species_1
+    label: LA
+    description: LA. Maps to SBML symbol `species_1`.
+  - name: n_hexanal
+    maps_to: species_15
+    label: nHexanal
+    description: nHexanal. Maps to SBML symbol `species_15`.
+  - name: model_state_9_hod_s_z_e
+    maps_to: species_11
+    label: 9HOD-S(Z,E)
+    description: 9HOD-S(Z,E). Maps to SBML symbol `species_11`.
+  - name: model_state_9_hod_s_e_e
+    maps_to: species_13
+    label: 9HOD-S(E,E)
+    description: 9HOD-S(E,E). Maps to SBML symbol `species_13`.
+  - name: model_state_9_hod_r_z_e
+    maps_to: species_12
+    label: 9HOD-R(Z,E)
+    description: 9HOD-R(Z,E). Maps to SBML symbol `species_12`.
+  - name: model_state_9_hod_r_e_e
+    maps_to: species_14
+    label: 9HOD-R(E,E)
+    description: 9HOD-R(E,E). Maps to SBML symbol `species_14`.

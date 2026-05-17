@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "58566864-8425-4deb-9ecf-2ba67ddbedfc",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "3e9b9a2e-d7ed-4c5a-b4dc-c27f347393e0",
+  "created_at": "2026-05-16T05:46:53.255923127+00:00",
+  "last_synced_at": "2026-05-17T06:52:31.685802+00:00",
+  "hub_manifest_hash": "75cb0c14d790d42d53ae73190ccf83f649250d548512d702e25a9e67eb4c7233",
+  "package_name": "wodarz2003-cytotoxic-t-lymphocyte-cross-priming-lab"
+}

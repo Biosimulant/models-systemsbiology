@@ -1,0 +1,51 @@
+schema_version: '2.0'
+title: Gall1999_CalciumBursting_BetaCellModel_B Visualisation
+description: Question-and-answer and dynamic visual summaries for Gall1999_CalciumBursting_BetaCellModel_B.
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Gall1999 Calciumbursting Betacellmodel B Lab
+    question: 'Which physiological state variables carry the strongest baseline response?
+      Source model: Gall1999_CalciumBursting_BetaCellModel_B.'
+    answer_focus: Q/A table plus physiology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_gall1999_calciumbursting_betacellmodel_b_model1201070001_model
+      title: Gall1999_CalciumBursting_BetaCellModel_B
+      observables:
+      - id: V_membrane
+        port: v_membrane
+        label: V Membrane
+        group: physiology
+      - id: Ca_ret
+        port: ca_ret
+        label: Ca Ret
+        group: physiology
+      - id: Ca_i
+        port: ca_i
+        label: Ca I
+        group: physiology
+      - id: s
+        port: model_state_s
+        label: S
+        group: physiology
+      - id: n
+        port: model_state_n
+        label: N
+        group: physiology
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Kim2011_Oscillator_DetailedIII Visualisation
+description: Question-and-answer and dynamic visual summaries for Kim2011_Oscillator_DetailedIII.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Kim2011 Oscillator Detailediii Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Kim2011_Oscillator_DetailedIII.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_kim2011_oscillator_detailediii_model1012090004_model
+      title: Kim2011_Oscillator_DetailedIII
+      observables:
+      - id: species_13
+        port: rnap
+        label: RNAP
+        group: gene_regulation
+      - id: species_14
+        port: r_nase_h
+        label: RNaseH
+        group: gene_regulation
+      - id: species_26
+        port: r_nase_ha3r_i3
+        label: RNaseHA3rI3
+        group: gene_regulation
+      - id: species_20
+        port: r_nase_ha2r_i2
+        label: RNaseHA2rI2
+        group: gene_regulation
+      - id: species_19
+        port: r_nase_ha1r_i1
+        label: RNaseHA1rI1
+        group: gene_regulation
+      - id: species_23
+        port: rnapt31_a1
+        label: RNAPT31A1
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

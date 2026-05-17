@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Singh2006_TCA_Ecoli_glucose Visualisation
+description: Question-and-answer and dynamic visual summaries for Singh2006_TCA_Ecoli_glucose.
+standard: other
+tags:
+- metabolism
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Singh2006 Tca Ecoli Glucose Lab
+    question: 'Which metabolic pools or flux-linked states show the strongest simulated
+      change? Source model: Singh2006_TCA_Ecoli_glucose.'
+    answer_focus: Q/A table plus metabolism timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_singh2006_tca_ecoli_glucose_biomd0000000222_model
+      title: Singh2006_TCA_Ecoli_glucose
+      observables:
+      - id: gly
+        port: gly
+        label: Gly
+        group: metabolism
+      - id: cit
+        port: cit
+        label: Cit
+        group: metabolism
+      - id: mal
+        port: mal
+        label: Mal
+        group: metabolism
+      - id: suc
+        port: suc
+        label: Suc
+        group: metabolism
+      - id: aca
+        port: aca
+        label: Aca
+        group: metabolism
+      - id: fa
+        port: model_state_fa
+        label: Fa
+        group: metabolism
+io:
+  inputs: []
+  outputs: []

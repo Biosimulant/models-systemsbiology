@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Heldt2018 Proliferation Quiescence Decision In Response To Dna Damag Lab
+description: 'Heldt2018 - Proliferation-quiescence decisionin response to DNA damage
+  This model is described in the article: A comprehensive model for the proliferation-quiescence
+  decision in response to endogenous. It can be used to explore systemsbiology heldt2018
+  proliferation quiescence decision in dynamics and compare simulation behavior across
+  conditions.'
+models:
+- alias: systemsbiology_sbml_heldt2018_proliferation_quiescence_decision_in_r_biomd0000000700_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_heldt2018_proliferation_quiescence_decision_in_r_biomd0000000700_model.state
+  to:
+  - visualisation.systemsbiology_sbml_heldt2018_proliferation_quiescence_decision_in_r_biomd0000000700_model_state
+- from: systemsbiology_sbml_heldt2018_proliferation_quiescence_decision_in_r_biomd0000000700_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_heldt2018_proliferation_quiescence_decision_in_r_biomd0000000700_model_summary
+- from: systemsbiology_sbml_heldt2018_proliferation_quiescence_decision_in_r_biomd0000000700_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_heldt2018_proliferation_quiescence_decision_in_r_biomd0000000700_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_cyclin_a_cdk2_total
+    maps_to: systemsbiology_sbml_heldt2018_proliferation_quiescence_decision_in_r_biomd0000000700_model.initial_cyclin_a_cdk2_total
+    label: Initial Cyclin A Cdk2 Total
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `tCa`.
+  - name: initial_retinoblastoma_protein_total
+    maps_to: systemsbiology_sbml_heldt2018_proliferation_quiescence_decision_in_r_biomd0000000700_model.initial_retinoblastoma_protein_total
+    label: Initial Retinoblastoma Protein Total
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `tRb`.
+  - name: initial_retinoblastoma_protein_hyperphosphorylated
+    maps_to: systemsbiology_sbml_heldt2018_proliferation_quiescence_decision_in_r_biomd0000000700_model.initial_retinoblastoma_protein_hyperphosphorylated
+    label: Initial Retinoblastoma Protein Hyperphosphorylated
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `pRb`.
+  - name: initial_cyclin_a_cdk2
+    maps_to: systemsbiology_sbml_heldt2018_proliferation_quiescence_decision_in_r_biomd0000000700_model.initial_cyclin_a_cdk2
+    label: Initial Cyclin A Cdk2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca`.
+  - name: initial_cyclin_e_cdk2_total
+    maps_to: systemsbiology_sbml_heldt2018_proliferation_quiescence_decision_in_r_biomd0000000700_model.initial_cyclin_e_cdk2_total
+    label: Initial Cyclin E Cdk2 Total
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `tCe`.
+  - name: initial_cyclin_e_cdk2_active
+    maps_to: systemsbiology_sbml_heldt2018_proliferation_quiescence_decision_in_r_biomd0000000700_model.initial_cyclin_e_cdk2_active
+    label: Initial Cyclin E Cdk2 Active
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ce`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_heldt2018_proliferation_quiescence_decision_in_r_biomd0000000700_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_heldt2018_proliferation_quiescence_decision_in_r_biomd0000000700_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_heldt2018_proliferation_quiescence_decision_in_r_biomd0000000700_model.species_labels
+  - name: cyclin_a_cdk2_total
+    maps_to: systemsbiology_sbml_heldt2018_proliferation_quiescence_decision_in_r_biomd0000000700_model.cyclin_a_cdk2_total
+  - name: retinoblastoma_protein_total
+    maps_to: systemsbiology_sbml_heldt2018_proliferation_quiescence_decision_in_r_biomd0000000700_model.retinoblastoma_protein_total
+  - name: retinoblastoma_protein_hyperphosphorylated
+    maps_to: systemsbiology_sbml_heldt2018_proliferation_quiescence_decision_in_r_biomd0000000700_model.retinoblastoma_protein_hyperphosphorylated
+  - name: cyclin_a_cdk2
+    maps_to: systemsbiology_sbml_heldt2018_proliferation_quiescence_decision_in_r_biomd0000000700_model.cyclin_a_cdk2
+  - name: cyclin_e_cdk2_total
+    maps_to: systemsbiology_sbml_heldt2018_proliferation_quiescence_decision_in_r_biomd0000000700_model.cyclin_e_cdk2_total
+  - name: cyclin_e_cdk2_active
+    maps_to: systemsbiology_sbml_heldt2018_proliferation_quiescence_decision_in_r_biomd0000000700_model.cyclin_e_cdk2_active

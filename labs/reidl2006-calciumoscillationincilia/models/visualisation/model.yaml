@@ -1,0 +1,47 @@
+schema_version: '2.0'
+title: Reidl2006_CalciumOscillationInCilia Visualisation
+description: Question-and-answer and dynamic visual summaries for Reidl2006_CalciumOscillationInCilia.
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Reidl2006 Calciumoscillationincilia Lab
+    question: 'Which physiological state variables carry the strongest baseline response?
+      Source model: Reidl2006_CalciumOscillationInCilia.'
+    answer_focus: Q/A table plus physiology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_reidl2006_calciumoscillationincilia_model7908934508_model
+      title: Reidl2006_CalciumOscillationInCilia
+      observables:
+      - id: CaM4
+        port: ca_m4
+        label: CaM4
+        group: physiology
+      - id: Ca
+        port: model_state_ca
+        label: Ca
+        group: physiology
+      - id: CNG_o
+        port: cng_o
+        label: CNG O
+        group: physiology
+      - id: CNG_i
+        port: cng_i
+        label: CNG I
+        group: physiology
+io:
+  inputs: []
+  outputs: []

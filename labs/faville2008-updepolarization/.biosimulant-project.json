@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "f5b3be9a-5d87-4002-bc03-1b1a8a4452df",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "2d3e2d52-aec1-4f8a-9cab-dcbd0fa744e7",
+  "created_at": "2026-05-16T05:46:43.079017586+00:00",
+  "last_synced_at": "2026-05-17T03:03:33.490674+00:00",
+  "hub_manifest_hash": "489de86dd5dc2a5f1331e4d94f339425e840705eaf114e3e67a48e8a36fe1e3e",
+  "package_name": "faville2008-updepolarization-lab"
+}

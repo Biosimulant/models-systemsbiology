@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "61e49d67-3b55-456b-935c-592641f95163",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "3a9967ab-9a9b-4168-9659-596aaab80eb4",
+  "created_at": "2026-05-16T05:46:53.822924322+00:00",
+  "last_synced_at": "2026-05-17T07:11:57.178907+00:00",
+  "hub_manifest_hash": "54562880e999a6177d7f9ed841edb623e09b4cb047ceb32b843400cc5de2c31d",
+  "package_name": "zi2007-tgfbeta-signaling-lab"
+}

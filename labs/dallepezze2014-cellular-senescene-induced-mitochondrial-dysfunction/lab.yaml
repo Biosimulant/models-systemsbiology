@@ -1,0 +1,60 @@
+schema_version: '2.0'
+title: Dallepezze2014 Cellular Senescene Induced Mitochondrial Dysfunction Lab
+description: 'DallePazze2014 - Cellular senescene-inducedmitochondrial dysfunction
+  This model is described in the article: Dynamic modelling of pathways to cellular
+  senescence reveals strategies for targeted interv. It can be used to explore systemsbiology
+  dallepezze2014 cellular senescene induced mitoch dynamics and compare simulation
+  behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_dallepezze2014_cellular_senescene_induced_mitoch_biomd0000000582_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_dallepezze2014_cellular_senescene_induced_mitoch_biomd0000000582_model.state
+  to:
+  - visualisation.systemsbiology_sbml_dallepezze2014_cellular_senescene_induced_mitoch_biomd0000000582_model_state
+- from: systemsbiology_sbml_dallepezze2014_cellular_senescene_induced_mitoch_biomd0000000582_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_dallepezze2014_cellular_senescene_induced_mitoch_biomd0000000582_model_summary
+- from: systemsbiology_sbml_dallepezze2014_cellular_senescene_induced_mitoch_biomd0000000582_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_dallepezze2014_cellular_senescene_induced_mitoch_biomd0000000582_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: akt_s473_phos_by_insulin
+    maps_to: systemsbiology_sbml_dallepezze2014_cellular_senescene_induced_mitoch_biomd0000000582_model.akt_s473_phos_by_insulin
+    label: Akt S473 Phos By Insulin
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `Akt_S473_phos_by_insulin`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_dallepezze2014_cellular_senescene_induced_mitoch_biomd0000000582_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_dallepezze2014_cellular_senescene_induced_mitoch_biomd0000000582_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_dallepezze2014_cellular_senescene_induced_mitoch_biomd0000000582_model.species_labels
+  - name: m_tor_p_s2448_obs
+    maps_to: systemsbiology_sbml_dallepezze2014_cellular_senescene_induced_mitoch_biomd0000000582_model.m_tor_p_s2448_obs
+  - name: m_torc1_p_s2448
+    maps_to: systemsbiology_sbml_dallepezze2014_cellular_senescene_induced_mitoch_biomd0000000582_model.m_torc1_p_s2448
+  - name: m_torc1
+    maps_to: systemsbiology_sbml_dallepezze2014_cellular_senescene_induced_mitoch_biomd0000000582_model.m_torc1
+  - name: mito_mass_turnover
+    maps_to: systemsbiology_sbml_dallepezze2014_cellular_senescene_induced_mitoch_biomd0000000582_model.mito_mass_turnover
+  - name: fox_o3a_total_obs
+    maps_to: systemsbiology_sbml_dallepezze2014_cellular_senescene_induced_mitoch_biomd0000000582_model.fox_o3a_total_obs
+  - name: mito_membr_pot_new
+    maps_to: systemsbiology_sbml_dallepezze2014_cellular_senescene_induced_mitoch_biomd0000000582_model.mito_membr_pot_new

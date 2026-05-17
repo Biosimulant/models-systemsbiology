@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "a1b459a0-8477-4bb6-9d57-d79ff0f3de72",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "328dfa1f-8838-426a-bce8-b9370c110bfe",
+  "created_at": "2026-05-16T05:46:41.347984750+00:00",
+  "last_synced_at": "2026-05-17T01:55:41.478952+00:00",
+  "hub_manifest_hash": "7ba94fc794fd9a80e34faaf44d8c37a73e948a3c2a10c0bfb47d3ef1f2c3d272",
+  "package_name": "banerjee2018-influence-of-intracellular-delay-on-the-dynamics-of"
+}

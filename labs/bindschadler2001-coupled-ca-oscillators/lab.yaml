@@ -1,0 +1,73 @@
+schema_version: '2.0'
+title: Bindschadler2001 Coupled Ca Oscillators Lab
+description: The model reproduces the same amplitude antiphase calcium oscillations
+  of coupled cells depicted in Figure 5B of the publication. This model was successfully
+  tested on Jarnac and MathSBML.
+models:
+- alias: systemsbiology_sbml_bindschadler2001_coupled_ca_oscillators_biomd0000000058_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_bindschadler2001_coupled_ca_oscillators_biomd0000000058_model.state
+  to:
+  - visualisation.systemsbiology_sbml_bindschadler2001_coupled_ca_oscillators_biomd0000000058_model_state
+- from: systemsbiology_sbml_bindschadler2001_coupled_ca_oscillators_biomd0000000058_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_bindschadler2001_coupled_ca_oscillators_biomd0000000058_model_summary
+- from: systemsbiology_sbml_bindschadler2001_coupled_ca_oscillators_biomd0000000058_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_bindschadler2001_coupled_ca_oscillators_biomd0000000058_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_receptor_fraction_cell1
+    maps_to: systemsbiology_sbml_bindschadler2001_coupled_ca_oscillators_biomd0000000058_model.initial_receptor_fraction_cell1
+    label: Initial Receptor Fraction Cell1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `h1`.
+  - name: initial_calcium_ion_cell1
+    maps_to: systemsbiology_sbml_bindschadler2001_coupled_ca_oscillators_biomd0000000058_model.initial_calcium_ion_cell1
+    label: Initial Calcium Ion Cell1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `c1`.
+  - name: initial_receptor_fraction_cell2
+    maps_to: systemsbiology_sbml_bindschadler2001_coupled_ca_oscillators_biomd0000000058_model.initial_receptor_fraction_cell2
+    label: Initial Receptor Fraction Cell2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `h2`.
+  - name: initial_calcium_ion_cell2
+    maps_to: systemsbiology_sbml_bindschadler2001_coupled_ca_oscillators_biomd0000000058_model.initial_calcium_ion_cell2
+    label: Initial Calcium Ion Cell2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `c2`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_bindschadler2001_coupled_ca_oscillators_biomd0000000058_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_bindschadler2001_coupled_ca_oscillators_biomd0000000058_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_bindschadler2001_coupled_ca_oscillators_biomd0000000058_model.species_labels
+  - name: receptor_fraction_cell1
+    maps_to: systemsbiology_sbml_bindschadler2001_coupled_ca_oscillators_biomd0000000058_model.receptor_fraction_cell1
+  - name: calcium_ion_cell1
+    maps_to: systemsbiology_sbml_bindschadler2001_coupled_ca_oscillators_biomd0000000058_model.calcium_ion_cell1
+  - name: receptor_fraction_cell2
+    maps_to: systemsbiology_sbml_bindschadler2001_coupled_ca_oscillators_biomd0000000058_model.receptor_fraction_cell2
+  - name: calcium_ion_cell2
+    maps_to: systemsbiology_sbml_bindschadler2001_coupled_ca_oscillators_biomd0000000058_model.calcium_ion_cell2

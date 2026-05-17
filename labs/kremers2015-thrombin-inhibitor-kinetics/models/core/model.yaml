@@ -1,0 +1,109 @@
+schema_version: '2.0'
+title: Kremers2015 - Thrombin Inhibitor Kinetics
+description: Mathematical model of thrombin inhibition by ATIII, alpha-2-macroglobulin
+  and miscellaneous serpins (a1-antitrypsin, a1-proteinase inhibitor, a1-antichymotrypsin,
+  protease nexin-1, C1inhibitor and oth. It can be used to explore systemsbiology
+  kremers2015 thrombin inhibitor kinetics model1808210001 dynamics and compare simulation
+  behavior across conditions.
+standard: other
+tags:
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- R M W Kremers
+- T C Peters
+- R J Wagenvoord
+- H C Hemker
+upstream:
+  id: biomodels_ebi:MODEL1808210001
+  source_db: biomodels_ebi
+  source_id: MODEL1808210001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1808210001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1808210001?filename=Kremers2015.xml
+  license: CC0
+biosim:
+  entrypoint: src.kremers2015_thrombin_inhibitor_kinetics_model1808210001_model:Kremers2015ThrombinInhibitorKineticsModel1808210001Model
+  init_kwargs:
+    model_path: data/MODEL1808210001.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_a2_m
+    maps_to: a2M
+    label: Initial A2 M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `a2M`.
+  - name: initial_t_a2_m
+    maps_to: T_a2M
+    label: Initial T A2 M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `T_a2M`.
+  - name: initial_t_ms
+    maps_to: T_MS
+    label: Initial T Ms
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `T_MS`.
+  - name: initial_t_at
+    maps_to: T_AT
+    label: Initial T At
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `T_AT`.
+  - name: initial_model_state_at
+    maps_to: AT
+    label: Initial Model State At
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `AT`.
+  - name: initial_model_state_ms
+    maps_to: MS
+    label: Initial Model State Ms
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MS`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: a2_m
+    maps_to: a2M
+    label: a2M
+    description: a2M. Maps to SBML symbol `a2M`.
+  - name: t_a2_m
+    maps_to: T_a2M
+    label: T:a2M
+    description: T:a2M. Maps to SBML symbol `T_a2M`.
+  - name: t_ms
+    maps_to: T_MS
+    label: T:MS
+    description: T:MS. Maps to SBML symbol `T_MS`.
+  - name: t_at
+    maps_to: T_AT
+    label: T:AT
+    description: T:AT. Maps to SBML symbol `T_AT`.
+  - name: model_state_at
+    maps_to: AT
+    label: AT
+    description: AT. Maps to SBML symbol `AT`.
+  - name: model_state_ms
+    maps_to: MS
+    label: MS
+    description: MS. Maps to SBML symbol `MS`.

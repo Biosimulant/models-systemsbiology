@@ -1,0 +1,97 @@
+schema_version: '2.0'
+title: Bianchi2015 -Model for lymphangiogenesis in normal and diabetic wounds
+description: Arianna Bianchi, Kevin J. It can be used to explore systemsbiology bianchi2015
+  for lymphangiogenesis in norma dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- generegulation
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Arianna Bianchi
+- Kevin J Painter
+- Jonathan A Sherratt
+upstream:
+  id: biomodels_ebi:BIOMD0000000722
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000722
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000722
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000722?filename=Wound
+    Healing with Normal health condition.xml
+  license: CC0
+biosim:
+  entrypoint: src.bianchi2015_model_for_lymphangiogenesis_in_norma_biomd0000000722_model:Bianchi2015ModelForLymphangiogenesisInNormaBiomd0000000722Model
+  init_kwargs:
+    model_path: data/BIOMD0000000722.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_active_tgf_beta
+    maps_to: Active_TGF_beta
+    label: Initial Active Tgf Beta
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Active_TGF_beta`.
+  - name: initial_macrophages
+    maps_to: Macrophages
+    label: Initial Macrophages
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Macrophages`.
+  - name: initial_vegf
+    maps_to: VEGF
+    label: Initial Vegf
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VEGF`.
+  - name: initial_le_cs
+    maps_to: LECs
+    label: Initial Le Cs
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `LECs`.
+  - name: initial_capillaries
+    maps_to: Capillaries
+    label: Initial Capillaries
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Capillaries`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: active_tgf_beta
+    maps_to: Active_TGF_beta
+    label: Active TGF-beta
+    description: Active TGF-beta. Maps to SBML symbol `Active_TGF_beta`.
+  - name: macrophages
+    maps_to: Macrophages
+    label: Macrophages
+    description: Macrophages. Maps to SBML symbol `Macrophages`.
+  - name: vegf
+    maps_to: VEGF
+    label: VEGF
+    description: VEGF. Maps to SBML symbol `VEGF`.
+  - name: le_cs
+    maps_to: LECs
+    label: LECs
+    description: LECs. Maps to SBML symbol `LECs`.
+  - name: capillaries
+    maps_to: Capillaries
+    label: Capillaries
+    description: Capillaries. Maps to SBML symbol `Capillaries`.

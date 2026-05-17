@@ -1,0 +1,64 @@
+schema_version: '2.0'
+title: Ataullahkhanov1996_Adenylate
+description: The model reproduces ion and adenylate pool concentration corresponding
+  to line 2 of Fig 3 of the publication. This model was tested successfully on Jarnac
+  To the extent possible under law, all copyri.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- F I Ataullakhanov
+- S V Komarova
+- V M Vitvitsky
+upstream:
+  id: biomodels_ebi:BIOMD0000000054
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000054
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000054
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000054?filename=BIOMD0000000054_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.ataullahkhanov1996_adenylate_biomd0000000054_model:Ataullahkhanov1996AdenylateBiomd0000000054Model
+  init_kwargs:
+    model_path: data/BIOMD0000000054.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: extracellular_ion_concentration
+    maps_to: J
+    label: Extracellular Ion Concentration
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `J`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: ions
+    maps_to: I
+    label: Ions
+    description: Ions. Maps to SBML symbol `I`.
+  - name: energy_pool
+    maps_to: E
+    label: Energy pool
+    description: Energy pool. Maps to SBML symbol `E`.
+  - name: adenylate_pool
+    maps_to: A
+    label: Adenylate pool
+    description: Adenylate pool. Maps to SBML symbol `A`.

@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Kowald2006_SOD Visualisation
+description: Question-and-answer and dynamic visual summaries for Kowald2006_SOD.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Kowald2006 Sod Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Kowald2006_SOD.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_kowald2006_sod_biomd0000000108_model
+      title: Kowald2006_SOD
+      observables:
+      - id: species_0000016
+        port: so_dtotal
+        label: SODtotal
+        group: gene_regulation
+      - id: species_0000017
+        port: cat
+        label: Cat
+        group: gene_regulation
+      - id: species_0000002
+        port: cu_ii_zn_sod
+        label: Cu(II)ZnSOD
+        group: gene_regulation
+      - id: species_0000001
+        port: model_state_o2
+        label: O2*-
+        group: gene_regulation
+      - id: species_0000009
+        port: looh
+        label: LOOH
+        group: gene_regulation
+      - id: species_0000007
+        port: loo
+        label: LOO*
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

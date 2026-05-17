@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "3f1a5500-cea3-41d9-a50e-52a6a0b4b25f",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "a54fba8a-a61f-48a4-853f-ce7b4c8f2f15",
+  "created_at": "2026-05-16T05:46:41.767810026+00:00",
+  "last_synced_at": "2026-05-17T02:13:34.597250+00:00",
+  "hub_manifest_hash": "e1aeec69949e849f11933926f02c0b7bdf668960df5fbae597d815db11e717b1",
+  "package_name": "blum2000-lhsecretion-1-lab"
+}

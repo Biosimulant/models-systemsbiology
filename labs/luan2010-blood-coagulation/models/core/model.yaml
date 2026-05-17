@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Luan2010 - Blood Coagulation Model (extension of Luan2007)
+description: Mathematical model of blood coagulation. It can be used to explore systemsbiology
+  luan2010 blood coagulation extension of dynamics and compare simulation behavior
+  across conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Deyan Luan
+- Fania Szlam
+- Kenichi A Tanaka
+- Philip S Barie
+- Jeffrey D Varner
+upstream:
+  id: biomodels_ebi:MODEL1806250001
+  source_db: biomodels_ebi
+  source_id: MODEL1806250001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1806250001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1806250001?filename=Luan2010.xml
+  license: CC0
+biosim:
+  entrypoint: src.luan2010_blood_coagulation_model_extension_of_lu_model1806250001_model:Luan2010BloodCoagulationModelExtensionOfLuModel1806250001Model
+  init_kwargs:
+    model_path: data/MODEL1806250001.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_adp_pl_psub
+    maps_to: ADP_PL_Psub
+    label: Initial ADP Pl Psub
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ADP_PL_Psub`.
+  - name: initial_adp_pl
+    maps_to: ADP_PL
+    label: Initial ADP Pl
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ADP_PL`.
+  - name: initial_model_state_adp
+    maps_to: ADP
+    label: Initial Model State ADP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ADP`.
+  - name: initial_u_pa_pci
+    maps_to: uPA_PCI
+    label: Initial U Pa Pci
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `uPA_PCI`.
+  - name: initial_u_pa_pai2
+    maps_to: uPA_PAI2
+    label: Initial U Pa Pai2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `uPA_PAI2`.
+  - name: initial_u_pa_pai1
+    maps_to: uPA_PAI1
+    label: Initial U Pa Pai1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `uPA_PAI1`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: adp_pl_psub
+    maps_to: ADP_PL_Psub
+    label: ADP-PL-Psub
+    description: ADP-PL-Psub. Maps to SBML symbol `ADP_PL_Psub`.
+  - name: adp_pl
+    maps_to: ADP_PL
+    label: ADP-PL
+    description: ADP-PL. Maps to SBML symbol `ADP_PL`.
+  - name: adp
+    maps_to: ADP
+    label: ADP
+    description: ADP. Maps to SBML symbol `ADP`.
+  - name: u_pa_pci
+    maps_to: uPA_PCI
+    label: uPA-PCI
+    description: uPA-PCI. Maps to SBML symbol `uPA_PCI`.
+  - name: u_pa_pai2
+    maps_to: uPA_PAI2
+    label: uPA-PAI2
+    description: uPA-PAI2. Maps to SBML symbol `uPA_PAI2`.
+  - name: u_pa_pai1
+    maps_to: uPA_PAI1
+    label: uPA-PAI1
+    description: uPA-PAI1. Maps to SBML symbol `uPA_PAI1`.

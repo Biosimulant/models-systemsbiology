@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Bialik2010_Apoptosis_SPIKEmodel
+description: 'This model is from the article: Systems biology analysis of programmed
+  cell death Shani Bialik, Einat Zalckvar, Yaara Ber, Assaf D. Rubinstein, Adi Kimchi
+  Trends in Biochemical Sciences Volume 35, Iss.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Shani Bialik
+- Einat Zalckvar
+- Yaara Ber
+- Assaf D Rubinstein
+- Adi Kimchi
+upstream:
+  id: biomodels_ebi:MODEL1107050000
+  source_db: biomodels_ebi
+  source_id: MODEL1107050000
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1107050000
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1107050000?filename=MODEL1107050000_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.bialik2010_apoptosis_spikemodel_model1107050000_model:Bialik2010ApoptosisSpikemodelModel1107050000Model
+  init_kwargs:
+    model_path: data/MODEL1107050000.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_mrna_xiap
+    maps_to: mRNA_XIAP
+    label: Initial MRNA Xiap
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mRNA_XIAP`.
+  - name: initial_mrna_eif4_g2
+    maps_to: mRNA_EIF4G2
+    label: Initial MRNA Eif4 G2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mRNA_EIF4G2`.
+  - name: initial_mrna_cdk1
+    maps_to: mRNA_CDK1
+    label: Initial MRNA Cdk1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mRNA_CDK1`.
+  - name: initial_mrna_birc2
+    maps_to: mRNA_BIRC2
+    label: Initial MRNA Birc2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mRNA_BIRC2`.
+  - name: initial_mrna_bcl2
+    maps_to: mRNA_BCL2
+    label: Initial MRNA Bcl2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mRNA_BCL2`.
+  - name: initial_mrna_apaf1
+    maps_to: mRNA_APAF1
+    label: Initial MRNA Apaf1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mRNA_APAF1`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: mrna_xiap
+    maps_to: mRNA_XIAP
+    label: mRNA_XIAP
+    description: mRNA_XIAP. Maps to SBML symbol `mRNA_XIAP`.
+  - name: mrna_eif4_g2
+    maps_to: mRNA_EIF4G2
+    label: mRNA_EIF4G2
+    description: mRNA_EIF4G2. Maps to SBML symbol `mRNA_EIF4G2`.
+  - name: mrna_cdk1
+    maps_to: mRNA_CDK1
+    label: mRNA_CDK1
+    description: mRNA_CDK1. Maps to SBML symbol `mRNA_CDK1`.
+  - name: mrna_birc2
+    maps_to: mRNA_BIRC2
+    label: mRNA_BIRC2
+    description: mRNA_BIRC2. Maps to SBML symbol `mRNA_BIRC2`.
+  - name: mrna_bcl2
+    maps_to: mRNA_BCL2
+    label: mRNA_BCL2
+    description: mRNA_BCL2. Maps to SBML symbol `mRNA_BCL2`.
+  - name: mrna_apaf1
+    maps_to: mRNA_APAF1
+    label: mRNA_APAF1
+    description: mRNA_APAF1. Maps to SBML symbol `mRNA_APAF1`.

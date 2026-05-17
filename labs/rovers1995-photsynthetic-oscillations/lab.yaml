@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Rovers1995 Photsynthetic Oscillations Lab
+description: 'This is the model described in the article: Photosynthetic oscillations
+  and the interdependence of photophosphorylation and electron transport as studied
+  by a mathematical model. It can be used to explore systemsbiology rovers1995 photsynthetic
+  oscillations BioModels0000000292 dynamics and compare simulation behavior across
+  conditions.'
+models:
+- alias: systemsbiology_sbml_rovers1995_photsynthetic_oscillations_biomd0000000292_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_rovers1995_photsynthetic_oscillations_biomd0000000292_model.state
+  to:
+  - visualisation.systemsbiology_sbml_rovers1995_photsynthetic_oscillations_biomd0000000292_model_state
+- from: systemsbiology_sbml_rovers1995_photsynthetic_oscillations_biomd0000000292_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_rovers1995_photsynthetic_oscillations_biomd0000000292_model_summary
+- from: systemsbiology_sbml_rovers1995_photsynthetic_oscillations_biomd0000000292_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_rovers1995_photsynthetic_oscillations_biomd0000000292_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_nadp_super
+    maps_to: systemsbiology_sbml_rovers1995_photsynthetic_oscillations_biomd0000000292_model.initial_nadp_super
+    label: Initial Nadp Super
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NADP`.
+  - name: initial_model_state_adp
+    maps_to: systemsbiology_sbml_rovers1995_photsynthetic_oscillations_biomd0000000292_model.initial_model_state_adp
+    label: Initial Model State ADP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ADP`.
+  - name: initial_nadph
+    maps_to: systemsbiology_sbml_rovers1995_photsynthetic_oscillations_biomd0000000292_model.initial_nadph
+    label: Initial Nadph
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NADPH`.
+  - name: initial_model_state_atp
+    maps_to: systemsbiology_sbml_rovers1995_photsynthetic_oscillations_biomd0000000292_model.initial_model_state_atp
+    label: Initial Model State ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATP`.
+  - name: initial_model_state_x
+    maps_to: systemsbiology_sbml_rovers1995_photsynthetic_oscillations_biomd0000000292_model.initial_model_state_x
+    label: Initial Model State X
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X`.
+  - name: initial_model_state_y
+    maps_to: systemsbiology_sbml_rovers1995_photsynthetic_oscillations_biomd0000000292_model.initial_model_state_y
+    label: Initial Model State Y
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Y`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_rovers1995_photsynthetic_oscillations_biomd0000000292_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_rovers1995_photsynthetic_oscillations_biomd0000000292_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_rovers1995_photsynthetic_oscillations_biomd0000000292_model.species_labels
+  - name: nadp_super
+    maps_to: systemsbiology_sbml_rovers1995_photsynthetic_oscillations_biomd0000000292_model.nadp_super
+  - name: adp
+    maps_to: systemsbiology_sbml_rovers1995_photsynthetic_oscillations_biomd0000000292_model.adp
+  - name: nadph
+    maps_to: systemsbiology_sbml_rovers1995_photsynthetic_oscillations_biomd0000000292_model.nadph
+  - name: atp
+    maps_to: systemsbiology_sbml_rovers1995_photsynthetic_oscillations_biomd0000000292_model.atp
+  - name: model_state_x
+    maps_to: systemsbiology_sbml_rovers1995_photsynthetic_oscillations_biomd0000000292_model.model_state_x
+  - name: model_state_y
+    maps_to: systemsbiology_sbml_rovers1995_photsynthetic_oscillations_biomd0000000292_model.model_state_y

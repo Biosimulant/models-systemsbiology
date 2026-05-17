@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "e86b92ee-b2e3-4305-bff8-35a70faf7f9a",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "fc9c91ec-b9bf-47b5-9c40-8aecacd67129",
+  "created_at": "2026-05-16T05:46:42.311101224+00:00",
+  "last_synced_at": "2026-05-17T02:32:18.388452+00:00",
+  "hub_manifest_hash": "92bf798fa6a7a1c9ce66e158ec07f02f2fa0b7fc0da6e19f9ef19cdf147d1c7f",
+  "package_name": "chassagnole2001-threonine-synthesis-lab"
+}

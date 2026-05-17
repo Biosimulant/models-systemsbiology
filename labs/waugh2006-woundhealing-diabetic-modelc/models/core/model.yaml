@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Waugh2006_WoundHealing_Diabetic_ModelC
+description: 'This a model from the article: Modeling the effects of treating diabetic
+  wounds with engineered skinsubstitutes. It can be used to explore systemsbiology
+  waugh2006 woundhealing diabetic modelc model1006230099 dynamics and compare simulation
+  behavior across conditions.'
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Helen V Waugh
+- Jonathan A Sherratt
+upstream:
+  id: biomodels_ebi:MODEL1006230099
+  source_db: biomodels_ebi
+  source_id: MODEL1006230099
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1006230099
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1006230099?filename=MODEL1006230099_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.waugh2006_woundhealing_diabetic_modelc_model1006230099_model:Waugh2006WoundhealingDiabeticModelcModel1006230099Model
+  init_kwargs:
+    model_path: data/MODEL1006230099.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_phi_r
+    maps_to: phi_R
+    label: Initial Phi R
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `phi_R`.
+  - name: initial_phi_i
+    maps_to: phi_I
+    label: Initial Phi I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `phi_I`.
+  - name: initial_model_state_t
+    maps_to: T
+    label: Initial Model State T
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `T`.
+  - name: initial_model_state_p
+    maps_to: P
+    label: Initial Model State P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P`.
+  - name: initial_model_state_h
+    maps_to: H
+    label: Initial Model State H
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `H`.
+  - name: initial_model_state_f
+    maps_to: F
+    label: Initial Model State F
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `F`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: phi_r
+    maps_to: phi_R
+    label: Phi R
+    description: Phi R. Maps to SBML symbol `phi_R`.
+  - name: phi_i
+    maps_to: phi_I
+    label: Phi I
+    description: Phi I. Maps to SBML symbol `phi_I`.
+  - name: model_state_t
+    maps_to: T
+    label: T
+    description: T. Maps to SBML symbol `T`.
+  - name: model_state_p
+    maps_to: P
+    label: P
+    description: P. Maps to SBML symbol `P`.
+  - name: model_state_h
+    maps_to: H
+    label: H
+    description: H. Maps to SBML symbol `H`.
+  - name: model_state_f
+    maps_to: F
+    label: F
+    description: F. Maps to SBML symbol `F`.

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "6190404c-4f32-4654-bb89-41f79d375bef",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "93747c01-2030-49df-af22-d2bb0eb7c1de",
+  "created_at": "2026-05-16T05:46:42.208497834+00:00",
+  "last_synced_at": "2026-05-17T02:28:55.173672+00:00",
+  "hub_manifest_hash": "ef7a01417bf5c60dba1df72e9bb24eb10ae9a1066e0d1040f90f128bebfda352",
+  "package_name": "caron2010-mtor-signalingnetwork-lab"
+}

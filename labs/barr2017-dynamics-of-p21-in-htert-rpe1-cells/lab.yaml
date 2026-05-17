@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Barr2017 Dynamics Of P21 In Htert Rpe1 Cells Lab
+description: Barr2017 - Dynamics of p21 in hTert-RPE1cells This deteministic model
+  reveals that abistable switch created by Cdt2, promotes irreversible S-phaseentry
+  by keeping p21 levels low, prevents premature S-. It can be used to explore systemsbiology
+  barr2017 dynamics of p21 in dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_barr2017_dynamics_of_p21_in_htert_rpe1_cells_biomd0000000660_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_barr2017_dynamics_of_p21_in_htert_rpe1_cells_biomd0000000660_model.state
+  to:
+  - visualisation.systemsbiology_sbml_barr2017_dynamics_of_p21_in_htert_rpe1_cells_biomd0000000660_model_state
+- from: systemsbiology_sbml_barr2017_dynamics_of_p21_in_htert_rpe1_cells_biomd0000000660_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_barr2017_dynamics_of_p21_in_htert_rpe1_cells_biomd0000000660_model_summary
+- from: systemsbiology_sbml_barr2017_dynamics_of_p21_in_htert_rpe1_cells_biomd0000000660_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_barr2017_dynamics_of_p21_in_htert_rpe1_cells_biomd0000000660_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_mrna_p53
+    maps_to: systemsbiology_sbml_barr2017_dynamics_of_p21_in_htert_rpe1_cells_biomd0000000660_model.initial_mrna_p53
+    label: Initial MRNA P53
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MrnaP53`.
+  - name: initial_mrna_p21
+    maps_to: systemsbiology_sbml_barr2017_dynamics_of_p21_in_htert_rpe1_cells_biomd0000000660_model.initial_mrna_p21
+    label: Initial MRNA P21
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MrnaP21`.
+  - name: initial_mrna_cy
+    maps_to: systemsbiology_sbml_barr2017_dynamics_of_p21_in_htert_rpe1_cells_biomd0000000660_model.initial_mrna_cy
+    label: Initial MRNA Cy
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MrnaCy`.
+  - name: initial_t_p21
+    maps_to: systemsbiology_sbml_barr2017_dynamics_of_p21_in_htert_rpe1_cells_biomd0000000660_model.initial_t_p21
+    label: Initial T P21
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `tP21`.
+  - name: initial_t_pcna
+    maps_to: systemsbiology_sbml_barr2017_dynamics_of_p21_in_htert_rpe1_cells_biomd0000000660_model.initial_t_pcna
+    label: Initial T Pcna
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `tPcna`.
+  - name: initial_a_pcna
+    maps_to: systemsbiology_sbml_barr2017_dynamics_of_p21_in_htert_rpe1_cells_biomd0000000660_model.initial_a_pcna
+    label: Initial A Pcna
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `aPcna`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_barr2017_dynamics_of_p21_in_htert_rpe1_cells_biomd0000000660_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_barr2017_dynamics_of_p21_in_htert_rpe1_cells_biomd0000000660_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_barr2017_dynamics_of_p21_in_htert_rpe1_cells_biomd0000000660_model.species_labels
+  - name: mrna_p53
+    maps_to: systemsbiology_sbml_barr2017_dynamics_of_p21_in_htert_rpe1_cells_biomd0000000660_model.mrna_p53
+  - name: mrna_p21
+    maps_to: systemsbiology_sbml_barr2017_dynamics_of_p21_in_htert_rpe1_cells_biomd0000000660_model.mrna_p21
+  - name: mrna_cy
+    maps_to: systemsbiology_sbml_barr2017_dynamics_of_p21_in_htert_rpe1_cells_biomd0000000660_model.mrna_cy
+  - name: t_p21
+    maps_to: systemsbiology_sbml_barr2017_dynamics_of_p21_in_htert_rpe1_cells_biomd0000000660_model.t_p21
+  - name: t_pcna
+    maps_to: systemsbiology_sbml_barr2017_dynamics_of_p21_in_htert_rpe1_cells_biomd0000000660_model.t_pcna
+  - name: a_pcna
+    maps_to: systemsbiology_sbml_barr2017_dynamics_of_p21_in_htert_rpe1_cells_biomd0000000660_model.a_pcna

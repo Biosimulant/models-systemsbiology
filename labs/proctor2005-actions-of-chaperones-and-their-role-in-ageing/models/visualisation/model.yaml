@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Proctor2005 - Actions of chaperones and their role in ageing Visualisation
+description: Question-and-answer and dynamic visual summaries for Proctor2005 - Actions
+  of chaperones and their role in ageing.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Proctor2005 Actions Of Chaperones And Their Role In Ageing Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Proctor2005 - Actions of chaperones and their role in ageing.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_proctor2005_actions_of_chaperones_and_their_role_biomd0000000091_model
+      title: Proctor2005 - Actions of chaperones and their role in ageing
+      observables:
+      - id: NatP
+        port: nat_p
+        label: NatP
+        group: metabolism
+      - id: ATP
+        port: atp
+        label: ATP
+        group: metabolism
+      - id: ADP
+        port: adp
+        label: ADP
+        group: metabolism
+      - id: source
+        port: source
+        label: source
+        group: physiology
+      - id: Hsp90
+        port: hsp90
+        label: Hsp90
+        group: physiology
+      - id: HCom
+        port: h_com
+        label: HCom
+        group: physiology
+io:
+  inputs: []
+  outputs: []

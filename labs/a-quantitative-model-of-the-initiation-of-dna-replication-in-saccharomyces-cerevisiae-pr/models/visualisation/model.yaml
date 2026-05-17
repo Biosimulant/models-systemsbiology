@@ -1,0 +1,60 @@
+schema_version: '2.0'
+title: A quantitative model of the initiation of DNA replication in Saccharomyces
+  cerevisiae predicts the effects of system perturbations Visualisation
+description: Question-and-answer and dynamic visual summaries for A quantitative model
+  of the initiation of DNA replication in Saccharomyces cerevisiae predicts the effects
+  of system perturbations.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: A Quantitative Model Of The Initiation Of Dna Replication In Saccharomyces
+      Cerevisiae Pr Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: A quantitative model of the initiation of DNA replication in Saccharomyces
+      cerevisiae predicts the effects of system perturbations.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_a_quantitative_model_of_the_initiation_of_dna_re_model1812050001_model
+      title: A quantitative model of the initiation of DNA replication in Saccharomyces
+        cerevisiae predicts the effects of system perturbations
+      observables:
+      - id: ORC_Total
+        port: orc_total
+        label: ORC-Total
+        group: physiology
+      - id: MCM_Total
+        port: mcm_total
+        label: MCM-Total
+        group: physiology
+      - id: CDT1_Total
+        port: cdt1_total
+        label: CDT1-Total
+        group: physiology
+      - id: CDC45_Total
+        port: cdc45_total
+        label: CDC45-Total
+        group: physiology
+      - id: ORC_P
+        port: orc_p
+        label: ORC_P
+        group: physiology
+      - id: ORC_MCM_DBF4_CDC45
+        port: orc_mcm_dbf4_cdc45
+        label: ORC_MCM_DBF4_CDC45
+        group: physiology
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Twycross2010 Auxin Transport Lab
+description: 'This is a model with 20 cells - 20 cytplasms and 21 apoplasts - as described
+  in the article: Stochastic and deterministic multiscale models for systems biology:
+  an auxin-transport case study. It can be used to explore systemsbiology twycross2010
+  auxin transport model1005200000 dynamics and compare simulation behavior across
+  conditions.'
+models:
+- alias: systemsbiology_sbml_twycross2010_auxin_transport_model1005200000_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_twycross2010_auxin_transport_model1005200000_model.state
+  to:
+  - visualisation.systemsbiology_sbml_twycross2010_auxin_transport_model1005200000_model_state
+- from: systemsbiology_sbml_twycross2010_auxin_transport_model1005200000_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_twycross2010_auxin_transport_model1005200000_model_summary
+- from: systemsbiology_sbml_twycross2010_auxin_transport_model1005200000_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_twycross2010_auxin_transport_model1005200000_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_ext
+    maps_to: systemsbiology_sbml_twycross2010_auxin_transport_model1005200000_model.initial_model_state_ext
+    label: Initial Model State Ext
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ext`.
+  - name: initial_model_state_c9
+    maps_to: systemsbiology_sbml_twycross2010_auxin_transport_model1005200000_model.initial_model_state_c9
+    label: Initial Model State C9
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `c9`.
+  - name: initial_model_state_c8
+    maps_to: systemsbiology_sbml_twycross2010_auxin_transport_model1005200000_model.initial_model_state_c8
+    label: Initial Model State C8
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `c8`.
+  - name: initial_model_state_c7
+    maps_to: systemsbiology_sbml_twycross2010_auxin_transport_model1005200000_model.initial_model_state_c7
+    label: Initial Model State C7
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `c7`.
+  - name: initial_model_state_c6
+    maps_to: systemsbiology_sbml_twycross2010_auxin_transport_model1005200000_model.initial_model_state_c6
+    label: Initial Model State C6
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `c6`.
+  - name: initial_model_state_c5
+    maps_to: systemsbiology_sbml_twycross2010_auxin_transport_model1005200000_model.initial_model_state_c5
+    label: Initial Model State C5
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `c5`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_twycross2010_auxin_transport_model1005200000_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_twycross2010_auxin_transport_model1005200000_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_twycross2010_auxin_transport_model1005200000_model.species_labels
+  - name: ext
+    maps_to: systemsbiology_sbml_twycross2010_auxin_transport_model1005200000_model.ext
+  - name: model_state_c9
+    maps_to: systemsbiology_sbml_twycross2010_auxin_transport_model1005200000_model.model_state_c9
+  - name: model_state_c8
+    maps_to: systemsbiology_sbml_twycross2010_auxin_transport_model1005200000_model.model_state_c8
+  - name: model_state_c7
+    maps_to: systemsbiology_sbml_twycross2010_auxin_transport_model1005200000_model.model_state_c7
+  - name: model_state_c6
+    maps_to: systemsbiology_sbml_twycross2010_auxin_transport_model1005200000_model.model_state_c6
+  - name: model_state_c5
+    maps_to: systemsbiology_sbml_twycross2010_auxin_transport_model1005200000_model.model_state_c5

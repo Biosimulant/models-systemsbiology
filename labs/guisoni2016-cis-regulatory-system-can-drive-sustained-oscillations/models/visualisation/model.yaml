@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Guisoni2016 - Cis-regulatory system (CRS) can drive sustained oscillations
+  Visualisation
+description: Question-and-answer and dynamic visual summaries for Guisoni2016 - Cis-regulatory
+  system (CRS) can drive sustained oscillations.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Guisoni2016 Cis Regulatory System Can Drive Sustained Oscillations
+      Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Guisoni2016 - Cis-regulatory system (CRS) can drive sustained
+      oscillations.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_guisoni2016_cis_regulatory_system_crs_can_drive_model1611030000_model
+      title: Guisoni2016 - Cis-regulatory system (CRS) can drive sustained oscillations
+      observables:
+      - id: ft
+        port: model_state_ft
+        label: ft
+        group: gene_regulation
+      - id: r3
+        port: model_state_r3
+        label: r3
+        group: gene_regulation
+      - id: r2
+        port: model_state_r2
+        label: r2
+        group: gene_regulation
+      - id: r1
+        port: model_state_r1
+        label: r1
+        group: gene_regulation
+      - id: r0
+        port: model_state_r0
+        label: r0
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

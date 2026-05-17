@@ -1,0 +1,51 @@
+schema_version: '2.0'
+title: Proctor2017- Role of microRNAs in osteoarthritis (Positive Feedforward Incoherent
+  By MicroRNA)_1 Visualisation
+description: Question-and-answer and dynamic visual summaries for Proctor2017- Role
+  of microRNAs in osteoarthritis (Positive Feedforward Incoherent By MicroRNA)_1.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Proctor2017 Role Of Micrornas In Osteoarthritis 1 Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Proctor2017- Role of microRNAs in osteoarthritis (Positive Feedforward
+      Incoherent By MicroRNA)_1.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_biomd0000000860_model
+      title: Proctor2017- Role of microRNAs in osteoarthritis (Positive Feedforward
+        Incoherent By MicroRNA)_1
+      observables:
+      - id: miR
+        port: mi_r
+        label: miR
+        group: gene_regulation
+      - id: TF1target_mRNA
+        port: tf1target_mrna
+        label: TF1target_mRNA
+        group: gene_regulation
+      - id: TF1
+        port: tf1
+        label: TF1
+        group: gene_regulation
+      - id: Sink
+        port: sink
+        label: Sink
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

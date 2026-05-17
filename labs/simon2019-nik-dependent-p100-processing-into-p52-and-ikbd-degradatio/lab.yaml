@@ -1,0 +1,80 @@
+schema_version: '2.0'
+title: BIOMD0000000869 Variant Simon2019 Nik Dependent P100 Processing Into P52 And Ikbd Degradatio Lab
+description: This model represents NIK-dependent p100 processing into p52 and NIK-dependent
+  IkBd degradation with Michaelis-Menten kinetics. It can be used to explore systemsbiology
+  simon2019 nik dependent p100 processing dynamics and compare simulation behavior
+  across conditions.
+models:
+- alias: systemsbiology_sbml_simon2019_nik_dependent_p100_processing_into_p52_biomd0000000869_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_simon2019_nik_dependent_p100_processing_into_p52_biomd0000000869_model.state
+  to:
+  - visualisation.systemsbiology_sbml_simon2019_nik_dependent_p100_processing_into_p52_biomd0000000869_model_state
+- from: systemsbiology_sbml_simon2019_nik_dependent_p100_processing_into_p52_biomd0000000869_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_simon2019_nik_dependent_p100_processing_into_p52_biomd0000000869_model_summary
+- from: systemsbiology_sbml_simon2019_nik_dependent_p100_processing_into_p52_biomd0000000869_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_simon2019_nik_dependent_p100_processing_into_p52_biomd0000000869_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_p100t
+    maps_to: systemsbiology_sbml_simon2019_nik_dependent_p100_processing_into_p52_biomd0000000869_model.initial_p100t
+    label: Initial P100t
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `p100t`.
+  - name: initial_model_state_p52
+    maps_to: systemsbiology_sbml_simon2019_nik_dependent_p100_processing_into_p52_biomd0000000869_model.initial_model_state_p52
+    label: Initial Model State P52
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `p52`.
+  - name: initial_p100
+    maps_to: systemsbiology_sbml_simon2019_nik_dependent_p100_processing_into_p52_biomd0000000869_model.initial_p100
+    label: Initial P100
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `p100`.
+  - name: initial_model_state_nik
+    maps_to: systemsbiology_sbml_simon2019_nik_dependent_p100_processing_into_p52_biomd0000000869_model.initial_model_state_nik
+    label: Initial Model State Nik
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NIK`.
+  - name: initial_ik_bd
+    maps_to: systemsbiology_sbml_simon2019_nik_dependent_p100_processing_into_p52_biomd0000000869_model.initial_ik_bd
+    label: Initial Ik Bd
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IkBd`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_simon2019_nik_dependent_p100_processing_into_p52_biomd0000000869_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_simon2019_nik_dependent_p100_processing_into_p52_biomd0000000869_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_simon2019_nik_dependent_p100_processing_into_p52_biomd0000000869_model.species_labels
+  - name: p100t
+    maps_to: systemsbiology_sbml_simon2019_nik_dependent_p100_processing_into_p52_biomd0000000869_model.p100t
+  - name: p52
+    maps_to: systemsbiology_sbml_simon2019_nik_dependent_p100_processing_into_p52_biomd0000000869_model.p52
+  - name: p100
+    maps_to: systemsbiology_sbml_simon2019_nik_dependent_p100_processing_into_p52_biomd0000000869_model.p100
+  - name: nik
+    maps_to: systemsbiology_sbml_simon2019_nik_dependent_p100_processing_into_p52_biomd0000000869_model.nik
+  - name: ik_bd
+    maps_to: systemsbiology_sbml_simon2019_nik_dependent_p100_processing_into_p52_biomd0000000869_model.ik_bd

@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Sengupta2015 - Knowledge base model of human energy pool network (HEPNet) Visualisation
+description: Question-and-answer and dynamic visual summaries for Sengupta2015 - Knowledge
+  base model of human energy pool network (HEPNet).
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Sengupta2015 Knowledge Base Model Of Human Energy Pool Network Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Sengupta2015 - Knowledge base model of human energy pool network
+      (HEPNet).'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_sengupta2015_knowledge_base_model_of_human_energ_biomd0000000579_model
+      title: Sengupta2015 - Knowledge base model of human energy pool network (HEPNet)
+      observables:
+      - id: s13
+        port: udp_glucose4epimerase
+        label: UDP glucose4epimerase
+        group: signaling
+      - id: s71
+        port: glucose
+        label: Glucose
+        group: metabolism
+      - id: s29
+        port: model_state_2_atp
+        label: 2ATP
+        group: metabolism
+      - id: s63
+        port: atp
+        label: ATP
+        group: metabolism
+      - id: s345
+        port: atp_2
+        label: ATP
+        group: metabolism
+      - id: s30
+        port: model_state_2_adp
+        label: 2ADP
+        group: metabolism
+io:
+  inputs: []
+  outputs: []

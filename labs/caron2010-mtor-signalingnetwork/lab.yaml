@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Caron2010 Mtor Signalingnetwork Lab
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models (http://www.ebi.ac.uk/biomodels/). It is copyright (c) 2005-2011
+  The BioModels.net Team.'
+models:
+- alias: systemsbiology_sbml_caron2010_mtor_signalingnetwork_model1012220002_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_caron2010_mtor_signalingnetwork_model1012220002_model.state
+  to:
+  - visualisation.systemsbiology_sbml_caron2010_mtor_signalingnetwork_model1012220002_model_state
+- from: systemsbiology_sbml_caron2010_mtor_signalingnetwork_model1012220002_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_caron2010_mtor_signalingnetwork_model1012220002_model_summary
+- from: systemsbiology_sbml_caron2010_mtor_signalingnetwork_model1012220002_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_caron2010_mtor_signalingnetwork_model1012220002_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_vegf_tumor_angiogenesis
+    maps_to: systemsbiology_sbml_caron2010_mtor_signalingnetwork_model1012220002_model.initial_vegf_tumor_angiogenesis
+    label: Initial Vegf Tumor Angiogenesis
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s2387`.
+  - name: initial_t_rna
+    maps_to: systemsbiology_sbml_caron2010_mtor_signalingnetwork_model1012220002_model.initial_t_rna
+    label: Initial T RNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s2121`.
+  - name: initial_ribosomal_mrna
+    maps_to: systemsbiology_sbml_caron2010_mtor_signalingnetwork_model1012220002_model.initial_ribosomal_mrna
+    label: Initial Ribosomal MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s2114`.
+  - name: initial_r_rna
+    maps_to: systemsbiology_sbml_caron2010_mtor_signalingnetwork_model1012220002_model.initial_r_rna
+    label: Initial R RNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s2112`.
+  - name: initial_oxidative_phosphorylation_br_tricarboxylic_acid_cycle_br_uncoupling_respiration
+    maps_to: systemsbiology_sbml_caron2010_mtor_signalingnetwork_model1012220002_model.initial_oxidative_phosphorylation_br_tricarboxylic_acid_cycle_br_uncoupling_respiration
+    label: Initial Oxidative Phosphorylation Br Tricarboxylic Acid Cycle Br Uncoupling
+      Respiration
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s3277`.
+  - name: initial_m_torc1_yy1_pgc_1_alpha_mito_genes
+    maps_to: systemsbiology_sbml_caron2010_mtor_signalingnetwork_model1012220002_model.initial_m_torc1_yy1_pgc_1_alpha_mito_genes
+    label: Initial M Torc1 YY1 Pgc 1 Alpha Mito Genes
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s3279`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_caron2010_mtor_signalingnetwork_model1012220002_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_caron2010_mtor_signalingnetwork_model1012220002_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_caron2010_mtor_signalingnetwork_model1012220002_model.species_labels
+  - name: vegf_tumor_angiogenesis
+    maps_to: systemsbiology_sbml_caron2010_mtor_signalingnetwork_model1012220002_model.vegf_tumor_angiogenesis
+  - name: t_rna
+    maps_to: systemsbiology_sbml_caron2010_mtor_signalingnetwork_model1012220002_model.t_rna
+  - name: ribosomal_mrna
+    maps_to: systemsbiology_sbml_caron2010_mtor_signalingnetwork_model1012220002_model.ribosomal_mrna
+  - name: r_rna
+    maps_to: systemsbiology_sbml_caron2010_mtor_signalingnetwork_model1012220002_model.r_rna
+  - name: oxidative_phosphorylation_br_tricarboxylic_acid_cycle_br_uncoupling_respiration
+    maps_to: systemsbiology_sbml_caron2010_mtor_signalingnetwork_model1012220002_model.oxidative_phosphorylation_br_tricarboxylic_acid_cycle_br_uncoupling_respiration
+  - name: m_torc1_yy1_pgc_1_alpha_mito_genes
+    maps_to: systemsbiology_sbml_caron2010_mtor_signalingnetwork_model1012220002_model.m_torc1_yy1_pgc_1_alpha_mito_genes

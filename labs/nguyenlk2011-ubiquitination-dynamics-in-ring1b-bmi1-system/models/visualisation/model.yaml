@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: NguyenLK2011 - Ubiquitination dynamics in Ring1B/Bmi1 system Visualisation
+description: Question-and-answer and dynamic visual summaries for NguyenLK2011 - Ubiquitination
+  dynamics in Ring1B/Bmi1 system.
+standard: other
+tags:
+- cellcycle
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Nguyenlk2011 Ubiquitination Dynamics In Ring1b Bmi1 System Lab
+    question: 'Which cell-cycle control states dominate the simulated progression?
+      Source model: NguyenLK2011 - Ubiquitination dynamics in Ring1B/Bmi1 system.'
+    answer_focus: Q/A table plus cellcycle timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_nguyenlk2011_ubiquitination_dynamics_in_ring1b_b_biomd0000000622_model
+      title: NguyenLK2011 - Ubiquitination dynamics in Ring1B/Bmi1 system
+      observables:
+      - id: Bmi1
+        port: bmi1
+        label: Bmi1
+        group: physiology
+      - id: Bmi1ubd
+        port: bmi1ubd
+        label: Bmi1ubd
+        group: physiology
+      - id: USP7tot
+        port: usp7tot
+        label: USP7tot
+        group: physiology
+      - id: R1Buba
+        port: r1_buba
+        label: R1Buba
+        group: physiology
+      - id: Zub
+        port: zub
+        label: Zub
+        group: physiology
+      - id: R1Bubd
+        port: r1_bubd
+        label: R1Bubd
+        group: physiology
+io:
+  inputs: []
+  outputs: []

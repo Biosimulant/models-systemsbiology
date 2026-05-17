@@ -1,0 +1,64 @@
+schema_version: '2.0'
+title: Sneyd1995 Calciumwave Ip3diffusion Lab
+description: 'This a model from the article: Intercellular calcium waves mediated
+  by diffusion of inositol trisphosphate: atwo-dimensional model. Sneyd J, Wetton
+  BT, Charles AC, Sanderson MJ.'
+models:
+- alias: systemsbiology_sbml_sneyd1995_calciumwave_ip3diffusion_model1006230107_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_sneyd1995_calciumwave_ip3diffusion_model1006230107_model.state
+  to:
+  - visualisation.systemsbiology_sbml_sneyd1995_calciumwave_ip3diffusion_model1006230107_model_state
+- from: systemsbiology_sbml_sneyd1995_calciumwave_ip3diffusion_model1006230107_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_sneyd1995_calciumwave_ip3diffusion_model1006230107_model_summary
+- from: systemsbiology_sbml_sneyd1995_calciumwave_ip3diffusion_model1006230107_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_sneyd1995_calciumwave_ip3diffusion_model1006230107_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_p
+    maps_to: systemsbiology_sbml_sneyd1995_calciumwave_ip3diffusion_model1006230107_model.initial_model_state_p
+    label: Initial Model State P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P`.
+  - name: initial_model_state_h
+    maps_to: systemsbiology_sbml_sneyd1995_calciumwave_ip3diffusion_model1006230107_model.initial_model_state_h
+    label: Initial Model State H
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `h`.
+  - name: initial_model_state_c
+    maps_to: systemsbiology_sbml_sneyd1995_calciumwave_ip3diffusion_model1006230107_model.initial_model_state_c
+    label: Initial Model State C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `c`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_sneyd1995_calciumwave_ip3diffusion_model1006230107_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_sneyd1995_calciumwave_ip3diffusion_model1006230107_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_sneyd1995_calciumwave_ip3diffusion_model1006230107_model.species_labels
+  - name: model_state_p
+    maps_to: systemsbiology_sbml_sneyd1995_calciumwave_ip3diffusion_model1006230107_model.model_state_p
+  - name: model_state_h
+    maps_to: systemsbiology_sbml_sneyd1995_calciumwave_ip3diffusion_model1006230107_model.model_state_h
+  - name: model_state_c
+    maps_to: systemsbiology_sbml_sneyd1995_calciumwave_ip3diffusion_model1006230107_model.model_state_c

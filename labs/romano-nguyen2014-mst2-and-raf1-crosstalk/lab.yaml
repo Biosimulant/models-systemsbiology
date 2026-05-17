@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Romano Nguyen2014 Mst2 And Raf1 Crosstalk Lab
+description: Originally created by libAntimony v1.3 (using libSBML 4.1.0-b2). It can
+  be used to explore systemsbiology romano nguyen2014 mst2 and raf1 dynamics and compare
+  simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_romano_nguyen2014_mst2_and_raf1_crosstalk_model1506070001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_romano_nguyen2014_mst2_and_raf1_crosstalk_model1506070001_model.state
+  to:
+  - visualisation.systemsbiology_sbml_romano_nguyen2014_mst2_and_raf1_crosstalk_model1506070001_model_state
+- from: systemsbiology_sbml_romano_nguyen2014_mst2_and_raf1_crosstalk_model1506070001_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_romano_nguyen2014_mst2_and_raf1_crosstalk_model1506070001_model_summary
+- from: systemsbiology_sbml_romano_nguyen2014_mst2_and_raf1_crosstalk_model1506070001_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_romano_nguyen2014_mst2_and_raf1_crosstalk_model1506070001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_erk
+    maps_to: systemsbiology_sbml_romano_nguyen2014_mst2_and_raf1_crosstalk_model1506070001_model.initial_model_state_erk
+    label: Initial Model State ERK
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ERK`.
+  - name: initial_model_state_mek
+    maps_to: systemsbiology_sbml_romano_nguyen2014_mst2_and_raf1_crosstalk_model1506070001_model.initial_model_state_mek
+    label: Initial Model State Mek
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MEK`.
+  - name: initial_mst2
+    maps_to: systemsbiology_sbml_romano_nguyen2014_mst2_and_raf1_crosstalk_model1506070001_model.initial_mst2
+    label: Initial Mst2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MST2`.
+  - name: initial_p_raf_1_i
+    maps_to: systemsbiology_sbml_romano_nguyen2014_mst2_and_raf1_crosstalk_model1506070001_model.initial_p_raf_1_i
+    label: Initial P RAF 1 I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `pRaf_1i`.
+  - name: initial_lats1
+    maps_to: systemsbiology_sbml_romano_nguyen2014_mst2_and_raf1_crosstalk_model1506070001_model.initial_lats1
+    label: Initial Lats1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `LATS1`.
+  - name: initial_f1_a
+    maps_to: systemsbiology_sbml_romano_nguyen2014_mst2_and_raf1_crosstalk_model1506070001_model.initial_f1_a
+    label: Initial F1 A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `F1A`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_romano_nguyen2014_mst2_and_raf1_crosstalk_model1506070001_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_romano_nguyen2014_mst2_and_raf1_crosstalk_model1506070001_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_romano_nguyen2014_mst2_and_raf1_crosstalk_model1506070001_model.species_labels
+  - name: erk
+    maps_to: systemsbiology_sbml_romano_nguyen2014_mst2_and_raf1_crosstalk_model1506070001_model.erk
+  - name: mek
+    maps_to: systemsbiology_sbml_romano_nguyen2014_mst2_and_raf1_crosstalk_model1506070001_model.mek
+  - name: mst2
+    maps_to: systemsbiology_sbml_romano_nguyen2014_mst2_and_raf1_crosstalk_model1506070001_model.mst2
+  - name: p_raf_1_i
+    maps_to: systemsbiology_sbml_romano_nguyen2014_mst2_and_raf1_crosstalk_model1506070001_model.p_raf_1_i
+  - name: lats1
+    maps_to: systemsbiology_sbml_romano_nguyen2014_mst2_and_raf1_crosstalk_model1506070001_model.lats1
+  - name: f1_a
+    maps_to: systemsbiology_sbml_romano_nguyen2014_mst2_and_raf1_crosstalk_model1506070001_model.f1_a

@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Bakker2001_Glycolysis Visualisation
+description: Question-and-answer and dynamic visual summaries for Bakker2001_Glycolysis.
+standard: other
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Bakker2001 Glycolysis Lab
+    question: 'Which metabolic pools or flux-linked states show the strongest simulated
+      change? Source model: Bakker2001_Glycolysis.'
+    answer_focus: Q/A table plus metabolism timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_bakker2001_glycolysis_biomd0000000071_model
+      title: Bakker2001_Glycolysis
+      observables:
+      - id: GlcE
+        port: glucose_external
+        label: Glucose external
+        group: metabolism
+      - id: PyrE
+        port: pyruvate_external
+        label: Pyruvate external
+        group: metabolism
+      - id: Fru16BP
+        port: fructose_1_6_bisphosphate
+        label: Fructose 1,6-bisphosphate
+        group: metabolism
+      - id: Pg
+        port: phosphates_in_glycosome
+        label: Phosphates in Glycosome
+        group: metabolism
+      - id: Pc
+        port: phosphates_cytosol
+        label: Phosphates cytosol
+        group: metabolism
+      - id: Pyr
+        port: pyruvate
+        label: Pyruvate
+        group: metabolism
+io:
+  inputs: []
+  outputs: []

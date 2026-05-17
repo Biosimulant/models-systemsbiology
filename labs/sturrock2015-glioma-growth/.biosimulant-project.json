@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "dcaf5139-8de6-42ea-8a0b-4cb933743b06",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "75ab8fcd-0a3f-4fa9-93d2-aec5813598f5",
+  "created_at": "2026-05-16T05:46:52.249839646+00:00",
+  "last_synced_at": "2026-05-17T06:23:06.875570+00:00",
+  "hub_manifest_hash": "55974f4b92b4544de1d07287bbca10963075b4b013f72bb4caf95c361378c821",
+  "package_name": "sturrock2015-glioma-growth-lab"
+}

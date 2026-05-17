@@ -1,0 +1,44 @@
+schema_version: '2.0'
+title: Aston2018 - Dynamics of Hepatitis C Infection Visualisation
+description: Question-and-answer and dynamic visual summaries for Aston2018 - Dynamics
+  of Hepatitis C Infection.
+standard: other
+tags:
+- epidemiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Aston2018 Dynamics Of Hepatitis C Infection Lab
+    question: 'Which infection or population states dominate the simulated trajectory?
+      Source model: Aston2018 - Dynamics of Hepatitis C Infection.'
+    answer_focus: Q/A table plus epidemiology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_aston2018_dynamics_of_hepatitis_c_infection_biomd0000000713_model
+      title: Aston2018 - Dynamics of Hepatitis C Infection
+      observables:
+      - id: V
+        port: viral_load_v
+        label: Viral Load (V)
+        group: physiology
+      - id: I
+        port: infected_hepatocytes_i
+        label: Infected Hepatocytes (I)
+        group: physiology
+      - id: T
+        port: healthy_hepatocytes_t
+        label: Healthy Hepatocytes (T)
+        group: physiology
+io:
+  inputs: []
+  outputs: []

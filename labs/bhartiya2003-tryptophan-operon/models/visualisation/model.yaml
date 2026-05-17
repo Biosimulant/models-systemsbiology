@@ -1,0 +1,47 @@
+schema_version: '2.0'
+title: Bhartiya2003_Tryptophan_operon Visualisation
+description: Question-and-answer and dynamic visual summaries for Bhartiya2003_Tryptophan_operon.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Bhartiya2003 Tryptophan Operon Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Bhartiya2003_Tryptophan_operon.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_bhartiya2003_tryptophan_operon_biomd0000000062_model
+      title: Bhartiya2003_Tryptophan_operon
+      observables:
+      - id: To
+        port: exog_trp
+        label: exog. Trp
+        group: gene_regulation
+      - id: Tt
+        port: total_tryptophan
+        label: Total tryptophan
+        group: gene_regulation
+      - id: Ts
+        port: synthesized_tryptophan
+        label: Synthesized tryptophan
+        group: gene_regulation
+      - id: Enz
+        port: anthranilate_synthase
+        label: Anthranilate synthase
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

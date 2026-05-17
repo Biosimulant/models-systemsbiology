@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Maltsev2009_PacemakerCellModel_nonSteadyState Visualisation
+description: Question-and-answer and dynamic visual summaries for Maltsev2009_PacemakerCellModel_nonSteadyState.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Maltsev2009 Pacemakercellmodel Nonsteadystate Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Maltsev2009_PacemakerCellModel_nonSteadyState.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_maltsev2009_pacemakercellmodel_nonsteadystate_model1006230069_model
+      title: Maltsev2009_PacemakerCellModel_nonSteadyState
+      observables:
+      - id: Vm_Vm
+        port: vm_vm
+        label: Vm Vm
+        group: signaling
+      - id: RI
+        port: model_state_ri
+        label: RI
+        group: signaling
+      - id: R_j_SRCarel
+        port: r_j_sr_carel
+        label: R J SRCarel
+        group: signaling
+      - id: qi
+        port: model_state_qi
+        label: Qi
+        group: signaling
+      - id: qa
+        port: model_state_qa
+        label: Qa
+        group: signaling
+      - id: pi_
+        port: model_state_pi
+        label: Pi
+        group: signaling
+io:
+  inputs: []
+  outputs: []

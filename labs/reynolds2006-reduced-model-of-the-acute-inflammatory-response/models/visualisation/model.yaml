@@ -1,0 +1,47 @@
+schema_version: '2.0'
+title: Reynolds2006 - Reduced model of the acute inflammatory response Visualisation
+description: Question-and-answer and dynamic visual summaries for Reynolds2006 - Reduced
+  model of the acute inflammatory response.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Reynolds2006 Reduced Model Of The Acute Inflammatory Response Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Reynolds2006 - Reduced model of the acute inflammatory response.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_reynolds2006_reduced_model_of_the_acute_inflamma_biomd0000000714_model
+      title: Reynolds2006 - Reduced model of the acute inflammatory response
+      observables:
+      - id: C_A
+        port: anti_inflammatory_mediators_c_a
+        label: Anti-inflammatory mediators (C_A)
+        group: physiology
+      - id: Nstar
+        port: activated_phagocytes_nstar
+        label: Activated Phagocytes (Nstar)
+        group: physiology
+      - id: P
+        port: pathogen_p
+        label: Pathogen (P)
+        group: physiology
+      - id: D
+        port: tissue_damage_d
+        label: Tissue Damage (D)
+        group: physiology
+io:
+  inputs: []
+  outputs: []

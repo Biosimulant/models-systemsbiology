@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Albert2005_Glycolysis
+description: 'This model is from the article: Experimental and in silico analyses
+  of glycolytic flux control in bloodstream form Trypanosoma brucei. Albert MA, Haanstra
+  JR, Hannaert V, Van Roy J, Opperdoes FR, Bakk.'
+standard: other
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Marie-Astrid Albert
+- Jurgen R Haanstra
+- Véronique Hannaert
+- Joris Van Roy
+- Fred R Opperdoes
+upstream:
+  id: biomodels_ebi:BIOMD0000000211
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000211
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000211
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000211?filename=BIOMD0000000211_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.albert2005_glycolysis_biomd0000000211_model:Albert2005GlycolysisBiomd0000000211Model
+  init_kwargs:
+    model_path: data/BIOMD0000000211.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_glucose_external
+    maps_to: species_25
+    label: Initial Glucose External
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_25`.
+  - name: initial_pyruvate_external
+    maps_to: species_26
+    label: Initial Pyruvate External
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_26`.
+  - name: initial_glycerol_external
+    maps_to: species_27
+    label: Initial Glycerol External
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_27`.
+  - name: initial_glycerol3phosphate
+    maps_to: species_22
+    label: Initial Glycerol3phosphate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_22`.
+  - name: initial_pyruvate
+    maps_to: species_1
+    label: Initial Pyruvate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_1`.
+  - name: initial_fructose16bisphosphate
+    maps_to: species_16
+    label: Initial Fructose16bisphosphate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_16`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: glucose_external
+    maps_to: species_25
+    label: glucose external
+    description: glucose external. Maps to SBML symbol `species_25`.
+  - name: pyruvate_external
+    maps_to: species_26
+    label: pyruvate external
+    description: pyruvate external. Maps to SBML symbol `species_26`.
+  - name: glycerol_external
+    maps_to: species_27
+    label: glycerol external
+    description: glycerol external. Maps to SBML symbol `species_27`.
+  - name: glycerol3phosphate
+    maps_to: species_22
+    label: glycerol3phosphate
+    description: glycerol3phosphate. Maps to SBML symbol `species_22`.
+  - name: pyruvate
+    maps_to: species_1
+    label: pyruvate
+    description: pyruvate. Maps to SBML symbol `species_1`.
+  - name: fructose16bisphosphate
+    maps_to: species_16
+    label: fructose16bisphosphate
+    description: fructose16bisphosphate. Maps to SBML symbol `species_16`.

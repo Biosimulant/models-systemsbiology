@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Sachse2008_FibroblastInteractingMyocytes Visualisation
+description: Question-and-answer and dynamic visual summaries for Sachse2008_FibroblastInteractingMyocytes.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Sachse2008 Fibroblastinteractingmyocytes Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Sachse2008_FibroblastInteractingMyocytes.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_sachse2008_fibroblastinteractingmyocytes_model7914759868_model
+      title: Sachse2008_FibroblastInteractingMyocytes
+      observables:
+      - id: VmReal
+        port: vm_real
+        label: VmReal
+        group: physiology
+      - id: V_membrane
+        port: v_membrane
+        label: V Membrane
+        group: physiology
+      - id: s_ss
+        port: s_ss
+        label: S Ss
+        group: physiology
+      - id: s_slow
+        port: s_slow
+        label: S Slow
+        group: physiology
+      - id: r_ss
+        port: r_ss
+        label: R Ss
+        group: physiology
+      - id: P_O2
+        port: p_o2
+        label: P O2
+        group: physiology
+io:
+  inputs: []
+  outputs: []

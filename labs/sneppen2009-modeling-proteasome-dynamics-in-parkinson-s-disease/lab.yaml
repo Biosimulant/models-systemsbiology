@@ -1,0 +1,65 @@
+schema_version: '2.0'
+title: Sneppen2009 Modeling Proteasome Dynamics In Parkinson S Disease Lab
+description: 'Sneppen2009 - Modeling proteasome dynamics inParkinson''s disease This
+  model is described in the article: Modeling proteasome dynamics in Parkinson''s
+  disease. It can be used to explore systemsbiology sneppen2009 modeling proteasome
+  dynamics in dynamics and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_sneppen2009_modeling_proteasome_dynamics_in_park_biomd0000000548_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_sneppen2009_modeling_proteasome_dynamics_in_park_biomd0000000548_model.state
+  to:
+  - visualisation.systemsbiology_sbml_sneppen2009_modeling_proteasome_dynamics_in_park_biomd0000000548_model_state
+- from: systemsbiology_sbml_sneppen2009_modeling_proteasome_dynamics_in_park_biomd0000000548_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_sneppen2009_modeling_proteasome_dynamics_in_park_biomd0000000548_model_summary
+- from: systemsbiology_sbml_sneppen2009_modeling_proteasome_dynamics_in_park_biomd0000000548_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_sneppen2009_modeling_proteasome_dynamics_in_park_biomd0000000548_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- neuroscience
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_f
+    maps_to: systemsbiology_sbml_sneppen2009_modeling_proteasome_dynamics_in_park_biomd0000000548_model.initial_model_state_f
+    label: Initial Model State F
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `F`.
+  - name: initial_model_state_c
+    maps_to: systemsbiology_sbml_sneppen2009_modeling_proteasome_dynamics_in_park_biomd0000000548_model.initial_model_state_c
+    label: Initial Model State C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C`.
+  - name: initial_model_state_p
+    maps_to: systemsbiology_sbml_sneppen2009_modeling_proteasome_dynamics_in_park_biomd0000000548_model.initial_model_state_p
+    label: Initial Model State P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_sneppen2009_modeling_proteasome_dynamics_in_park_biomd0000000548_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_sneppen2009_modeling_proteasome_dynamics_in_park_biomd0000000548_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_sneppen2009_modeling_proteasome_dynamics_in_park_biomd0000000548_model.species_labels
+  - name: model_state_f
+    maps_to: systemsbiology_sbml_sneppen2009_modeling_proteasome_dynamics_in_park_biomd0000000548_model.model_state_f
+  - name: model_state_c
+    maps_to: systemsbiology_sbml_sneppen2009_modeling_proteasome_dynamics_in_park_biomd0000000548_model.model_state_c
+  - name: model_state_p
+    maps_to: systemsbiology_sbml_sneppen2009_modeling_proteasome_dynamics_in_park_biomd0000000548_model.model_state_p

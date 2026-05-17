@@ -1,0 +1,105 @@
+schema_version: '2.0'
+title: Aguda1999_CellCycle
+description: The model reproduces the time profiles of p27, E2F and aE/cdk2 as depicted
+  in Figure 5 c of the paper. It can be used to explore systemsbiology aguda1999 cellcycle
+  BioModels0000000169 dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- cellcycle
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- B D Aguda
+- Y Tang
+upstream:
+  id: biomodels_ebi:BIOMD0000000169
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000169
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000169
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000169?filename=BIOMD0000000169_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.aguda1999_cellcycle_biomd0000000169_model:Aguda1999CellcycleBiomd0000000169Model
+  init_kwargs:
+    model_path: data/BIOMD0000000169.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_p27
+    maps_to: Y7_1
+    label: Initial Model State P27
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Y7_1`.
+  - name: initial_model_state_p16
+    maps_to: Y10_1
+    label: Initial Model State P16
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Y10_1`.
+  - name: initial_p_rb_e2_f
+    maps_to: Y3_1
+    label: Initial P Rb E2 F
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Y3_1`.
+  - name: initial_cyc_e_cdk2_p27
+    maps_to: Y8_1
+    label: Initial Cyc E Cdk2 P27
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Y8_1`.
+  - name: initial_p_rb
+    maps_to: Y5_1
+    label: Initial P Rb
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Y5_1`.
+  - name: initial_p_rb_p
+    maps_to: Y11_1
+    label: Initial P Rb P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Y11_1`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: p27
+    maps_to: Y7_1
+    label: p27
+    description: p27. Maps to SBML symbol `Y7_1`.
+  - name: p16
+    maps_to: Y10_1
+    label: p16
+    description: p16. Maps to SBML symbol `Y10_1`.
+  - name: p_rb_e2_f
+    maps_to: Y3_1
+    label: pRB_E2F
+    description: pRB_E2F. Maps to SBML symbol `Y3_1`.
+  - name: cyc_e_cdk2_p27
+    maps_to: Y8_1
+    label: cycE_CDK2_p27
+    description: cycE_CDK2_p27. Maps to SBML symbol `Y8_1`.
+  - name: p_rb
+    maps_to: Y5_1
+    label: pRB
+    description: pRB. Maps to SBML symbol `Y5_1`.
+  - name: p_rb_p
+    maps_to: Y11_1
+    label: pRB_P
+    description: pRB_P. Maps to SBML symbol `Y11_1`.

@@ -1,0 +1,60 @@
+schema_version: '2.0'
+title: Diedrichs2018 - A data-entrained computational model for testing the regulatory
+  logic of the vertebrate unfolded protein response Visualisation
+description: Question-and-answer and dynamic visual summaries for Diedrichs2018 -
+  A data-entrained computational model for testing the regulatory logic of the vertebrate
+  unfolded protein response.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Diedrichs2018 A Data Entrained Computational Model For Testing The
+      Regul Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Diedrichs2018 - A data-entrained computational model for testing
+      the regulatory logic of the vertebrate unfolded protein response.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_diedrichs2018_a_data_entrained_computational_mod_biomd0000000703_model
+      title: Diedrichs2018 - A data-entrained computational model for testing the
+        regulatory logic of the vertebrate unfolded protein response
+      observables:
+      - id: x
+        port: model_state_x
+        label: x
+        group: gene_regulation
+      - id: g
+        port: model_state_g
+        label: g
+        group: gene_regulation
+      - id: c
+        port: model_state_c
+        label: c
+        group: gene_regulation
+      - id: b
+        port: model_state_b
+        label: b
+        group: gene_regulation
+      - id: Ep
+        port: model_state_ep
+        label: Ep
+        group: gene_regulation
+      - id: Btot
+        port: btot
+        label: Btot
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,109 @@
+schema_version: '2.0'
+title: Giantsos-Adams2013 - Growth of glycocalyx under static conditions
+description: 'Giantsos-Adams2013 - Growth of glycocalyxunder static conditions This
+  model is described in the article: Heparan Sulfate Regrowth Profiles Under Laminar
+  Shear Flow Following Enzymatic Degradation. It can be used to explore systemsbiology
+  giantsos adams2013 growth of glycocalyx dynamics and compare simulation behavior
+  across conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Kristina M Giantsos-Adams
+- Andrew Jia-An Koo
+- Sukhyun Song
+- Jiro Sakai
+- Jagadish Sankaran
+upstream:
+  id: biomodels_ebi:MODEL1609100001
+  source_db: biomodels_ebi
+  source_id: MODEL1609100001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1609100001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1609100001?filename=MODEL1609100001_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.giantsos_adams2013_growth_of_glycocalyx_under_st_model1609100001_model:GiantsosAdams2013GrowthOfGlycocalyxUnderStModel1609100001Model
+  init_kwargs:
+    model_path: data/MODEL1609100001.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_lysosome
+    maps_to: s4
+    label: Initial Lysosome
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s4`.
+  - name: initial_late_endosome
+    maps_to: s3
+    label: Initial Late Endosome
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s3`.
+  - name: initial_early_endosome
+    maps_to: s2
+    label: Initial Early Endosome
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s2`.
+  - name: initial_hs_surface
+    maps_to: s1
+    label: Initial Hs Surface
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s1`.
+  - name: initial_golgi
+    maps_to: s6
+    label: Initial Golgi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s6`.
+  - name: initial_model_state_s8
+    maps_to: s8
+    label: Initial Model State S8
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s8`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: lysosome
+    maps_to: s4
+    label: lysosome
+    description: lysosome. Maps to SBML symbol `s4`.
+  - name: late_endosome
+    maps_to: s3
+    label: late endosome
+    description: late endosome. Maps to SBML symbol `s3`.
+  - name: early_endosome
+    maps_to: s2
+    label: early endosome
+    description: early endosome. Maps to SBML symbol `s2`.
+  - name: hs_surface
+    maps_to: s1
+    label: HS surface
+    description: HS surface. Maps to SBML symbol `s1`.
+  - name: golgi
+    maps_to: s6
+    label: golgi
+    description: golgi. Maps to SBML symbol `s6`.
+  - name: model_state_s8
+    maps_to: s8
+    label: s8
+    description: s8. Maps to SBML symbol `s8`.

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "dea0e240-0d42-4ffa-9cd1-df1db50603b6",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "8d7b26a5-3fe1-447d-aa1e-448db275f738",
+  "created_at": "2026-05-16T05:46:42.816415979+00:00",
+  "last_synced_at": "2026-05-17T02:53:23.749936+00:00",
+  "hub_manifest_hash": "07b8a16c3095bc1fa24ee7c820db7bdc4e7eab88328a29e735c38f3a1c252577",
+  "package_name": "devries2000-pancreaticbetacells-insulinsecretion-lab"
+}

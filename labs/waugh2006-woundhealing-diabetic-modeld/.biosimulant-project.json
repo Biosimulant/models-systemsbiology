@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "ca7713b4-f5f7-4a9b-a91c-048a38d392cd",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "979284b9-054c-4467-8d52-ce0ae1aab2a4",
+  "created_at": "2026-05-16T05:46:53.076938938+00:00",
+  "last_synced_at": "2026-05-17T06:47:40.275336+00:00",
+  "hub_manifest_hash": "09309e9ade545826020f706ec617b2c9b38a5b0660a56cc5ad5ca789795f6152",
+  "package_name": "waugh2006-woundhealing-diabetic-modeld-lab"
+}

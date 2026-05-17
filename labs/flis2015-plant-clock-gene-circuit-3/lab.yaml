@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Flis2015 Plant Clock Gene Circuit 3 Lab
+description: cL_m_degr, param m1, modified to ensure light rate &gt; dark rate. It
+  can be used to explore systemsbiology flis2015 plant clock gene circuit dynamics
+  and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_flis2015_plant_clock_gene_circuit_p2011_3_1_plm_model1510190002_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_flis2015_plant_clock_gene_circuit_p2011_3_1_plm_model1510190002_model.state
+  to:
+  - visualisation.systemsbiology_sbml_flis2015_plant_clock_gene_circuit_p2011_3_1_plm_model1510190002_model_state
+- from: systemsbiology_sbml_flis2015_plant_clock_gene_circuit_p2011_3_1_plm_model1510190002_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_flis2015_plant_clock_gene_circuit_p2011_3_1_plm_model1510190002_model_summary
+- from: systemsbiology_sbml_flis2015_plant_clock_gene_circuit_p2011_3_1_plm_model1510190002_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_flis2015_plant_clock_gene_circuit_p2011_3_1_plm_model1510190002_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_c_l_m
+    maps_to: systemsbiology_sbml_flis2015_plant_clock_gene_circuit_p2011_3_1_plm_model1510190002_model.initial_c_l_m
+    label: Initial C L M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cL_m`.
+  - name: initial_model_state_c_p
+    maps_to: systemsbiology_sbml_flis2015_plant_clock_gene_circuit_p2011_3_1_plm_model1510190002_model.initial_model_state_c_p
+    label: Initial Model State C P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cP`.
+  - name: initial_c_cop1n
+    maps_to: systemsbiology_sbml_flis2015_plant_clock_gene_circuit_p2011_3_1_plm_model1510190002_model.initial_c_cop1n
+    label: Initial C Cop1n
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cCOP1n`.
+  - name: initial_c_lux
+    maps_to: systemsbiology_sbml_flis2015_plant_clock_gene_circuit_p2011_3_1_plm_model1510190002_model.initial_c_lux
+    label: Initial C Lux
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cLUX`.
+  - name: initial_model_state_c_l
+    maps_to: systemsbiology_sbml_flis2015_plant_clock_gene_circuit_p2011_3_1_plm_model1510190002_model.initial_model_state_c_l
+    label: Initial Model State C L
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cL`.
+  - name: initial_c_p7_m
+    maps_to: systemsbiology_sbml_flis2015_plant_clock_gene_circuit_p2011_3_1_plm_model1510190002_model.initial_c_p7_m
+    label: Initial C P7 M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cP7_m`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_flis2015_plant_clock_gene_circuit_p2011_3_1_plm_model1510190002_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_flis2015_plant_clock_gene_circuit_p2011_3_1_plm_model1510190002_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_flis2015_plant_clock_gene_circuit_p2011_3_1_plm_model1510190002_model.species_labels
+  - name: c_l_m
+    maps_to: systemsbiology_sbml_flis2015_plant_clock_gene_circuit_p2011_3_1_plm_model1510190002_model.c_l_m
+  - name: c_p
+    maps_to: systemsbiology_sbml_flis2015_plant_clock_gene_circuit_p2011_3_1_plm_model1510190002_model.c_p
+  - name: c_cop1n
+    maps_to: systemsbiology_sbml_flis2015_plant_clock_gene_circuit_p2011_3_1_plm_model1510190002_model.c_cop1n
+  - name: c_lux
+    maps_to: systemsbiology_sbml_flis2015_plant_clock_gene_circuit_p2011_3_1_plm_model1510190002_model.c_lux
+  - name: c_l
+    maps_to: systemsbiology_sbml_flis2015_plant_clock_gene_circuit_p2011_3_1_plm_model1510190002_model.c_l
+  - name: c_p7_m
+    maps_to: systemsbiology_sbml_flis2015_plant_clock_gene_circuit_p2011_3_1_plm_model1510190002_model.c_p7_m

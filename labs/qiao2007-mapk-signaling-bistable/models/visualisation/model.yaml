@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Qiao2007_MAPK_Signaling_Bistable Visualisation
+description: Question-and-answer and dynamic visual summaries for Qiao2007_MAPK_Signaling_Bistable.
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Qiao2007 Mapk Signaling Bistable Lab
+    question: 'Which signalling variables dominate the simulated network response?
+      Source model: Qiao2007_MAPK_Signaling_Bistable.'
+    answer_focus: Q/A table plus signaling timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_qiao2007_mapk_signaling_bistable_model6185511733_model
+      title: Qiao2007_MAPK_Signaling_Bistable
+      observables:
+      - id: KPP
+        port: kpp
+        label: KPP
+        group: signaling
+      - id: KKPP
+        port: kkpp
+        label: KKPP
+        group: signaling
+      - id: KPase
+        port: k_pase
+        label: KPase
+        group: signaling
+      - id: KPPKPase
+        port: kppk_pase
+        label: KPPKPase
+        group: signaling
+      - id: KPKPase
+        port: kpk_pase
+        label: KPKPase
+        group: signaling
+      - id: KPKKPP
+        port: kpkkpp
+        label: KPKKPP
+        group: signaling
+io:
+  inputs: []
+  outputs: []

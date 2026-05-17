@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Fisher2006 Nfat Activation Lab
+description: The model reproduces the kinetics of the nuclear factor of activated
+  cells (NFAT) as depicted in Figure 3a of the paper. Model was successfully tested
+  on Jarnac and MathSBML To the extent possible und.
+models:
+- alias: systemsbiology_sbml_fisher2006_nfat_activation_biomd0000000123_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_fisher2006_nfat_activation_biomd0000000123_model.state
+  to:
+  - visualisation.systemsbiology_sbml_fisher2006_nfat_activation_biomd0000000123_model_state
+- from: systemsbiology_sbml_fisher2006_nfat_activation_biomd0000000123_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_fisher2006_nfat_activation_biomd0000000123_model_summary
+- from: systemsbiology_sbml_fisher2006_nfat_activation_biomd0000000123_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_fisher2006_nfat_activation_biomd0000000123_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_calcium_in_nucleus
+    maps_to: systemsbiology_sbml_fisher2006_nfat_activation_biomd0000000123_model.initial_calcium_in_nucleus
+    label: Initial Calcium In Nucleus
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_Nuc`.
+  - name: initial_calcium_in_cytosol
+    maps_to: systemsbiology_sbml_fisher2006_nfat_activation_biomd0000000123_model.initial_calcium_in_cytosol
+    label: Initial Calcium In Cytosol
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_Cyt`.
+  - name: initial_inactive_calcineurin_in_nucleus
+    maps_to: systemsbiology_sbml_fisher2006_nfat_activation_biomd0000000123_model.initial_inactive_calcineurin_in_nucleus
+    label: Initial Inactive Calcineurin In Nucleus
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Inact_C_Nuc`.
+  - name: initial_inactive_calcineurin_in_cytosol
+    maps_to: systemsbiology_sbml_fisher2006_nfat_activation_biomd0000000123_model.initial_inactive_calcineurin_in_cytosol
+    label: Initial Inactive Calcineurin In Cytosol
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Inact_C_Cyt`.
+  - name: initial_phosphorylated_nfat_in_cytosol
+    maps_to: systemsbiology_sbml_fisher2006_nfat_activation_biomd0000000123_model.initial_phosphorylated_nfat_in_cytosol
+    label: Initial Phosphorylated Nfat In Cytosol
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NFAT_Pi_Cyt`.
+  - name: initial_nfat_calcineurin_complex_in_nucleus
+    maps_to: systemsbiology_sbml_fisher2006_nfat_activation_biomd0000000123_model.initial_nfat_calcineurin_complex_in_nucleus
+    label: Initial Nfat Calcineurin Complex In Nucleus
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NFAT_Act_C_Nuc`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_fisher2006_nfat_activation_biomd0000000123_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_fisher2006_nfat_activation_biomd0000000123_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_fisher2006_nfat_activation_biomd0000000123_model.species_labels
+  - name: calcium_in_nucleus
+    maps_to: systemsbiology_sbml_fisher2006_nfat_activation_biomd0000000123_model.calcium_in_nucleus
+  - name: calcium_in_cytosol
+    maps_to: systemsbiology_sbml_fisher2006_nfat_activation_biomd0000000123_model.calcium_in_cytosol
+  - name: inactive_calcineurin_in_nucleus
+    maps_to: systemsbiology_sbml_fisher2006_nfat_activation_biomd0000000123_model.inactive_calcineurin_in_nucleus
+  - name: inactive_calcineurin_in_cytosol
+    maps_to: systemsbiology_sbml_fisher2006_nfat_activation_biomd0000000123_model.inactive_calcineurin_in_cytosol
+  - name: phosphorylated_nfat_in_cytosol
+    maps_to: systemsbiology_sbml_fisher2006_nfat_activation_biomd0000000123_model.phosphorylated_nfat_in_cytosol
+  - name: nfat_calcineurin_complex_in_nucleus
+    maps_to: systemsbiology_sbml_fisher2006_nfat_activation_biomd0000000123_model.nfat_calcineurin_complex_in_nucleus

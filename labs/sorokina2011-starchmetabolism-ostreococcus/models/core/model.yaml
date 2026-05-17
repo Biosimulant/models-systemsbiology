@@ -1,0 +1,109 @@
+schema_version: '2.0'
+title: Sorokina2011_StarchMetabolism_Ostreococcus
+description: 'This model is from the article: Microarray data can predict diurnal
+  changes of starch content in the picoalga Ostreococcus. Sorokina O, Corellou F,
+  Dauvillée D, Sorokin A, Goryanin I, Ball S, Bouget F.'
+standard: other
+tags:
+- generegulation
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Oksana Sorokina
+- Florence Corellou
+- David Dauvillée
+- Anatoly Sorokin
+- Igor Goryanin
+upstream:
+  id: biomodels_ebi:MODEL1204240000
+  source_db: biomodels_ebi
+  source_id: MODEL1204240000
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1204240000
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1204240000?filename=MODEL1204240000_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.sorokina2011_starchmetabolism_ostreococcus_model1204240000_model:Sorokina2011StarchmetabolismOstreococcusModel1204240000Model
+  init_kwargs:
+    model_path: data/MODEL1204240000.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_maltotriose
+    maps_to: species_16
+    label: Initial Maltotriose
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_16`.
+  - name: initial_maltose
+    maps_to: species_37
+    label: Initial Maltose
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_37`.
+  - name: initial_model_state_glu
+    maps_to: species_39
+    label: Initial Model State Glu
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_39`.
+  - name: initial_p_pi
+    maps_to: species_13
+    label: Initial P Pi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_13`.
+  - name: initial_model_state_p
+    maps_to: species_7
+    label: Initial Model State P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_7`.
+  - name: initial_nadph
+    maps_to: species_3
+    label: Initial Nadph
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_3`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: maltotriose
+    maps_to: species_16
+    label: maltotriose
+    description: maltotriose. Maps to SBML symbol `species_16`.
+  - name: maltose
+    maps_to: species_37
+    label: maltose
+    description: maltose. Maps to SBML symbol `species_37`.
+  - name: glu
+    maps_to: species_39
+    label: glu
+    description: glu. Maps to SBML symbol `species_39`.
+  - name: p_pi
+    maps_to: species_13
+    label: PPi
+    description: PPi. Maps to SBML symbol `species_13`.
+  - name: model_state_p
+    maps_to: species_7
+    label: P
+    description: P. Maps to SBML symbol `species_7`.
+  - name: nadph
+    maps_to: species_3
+    label: NADPH
+    description: NADPH. Maps to SBML symbol `species_3`.

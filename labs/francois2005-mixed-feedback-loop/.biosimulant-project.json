@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "aa70b95c-22f8-4f6f-8f9c-5f5af593f125",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "9ba7984c-517b-46b9-8ef8-e54c232072c4",
+  "created_at": "2026-05-16T05:46:43.407984285+00:00",
+  "last_synced_at": "2026-05-17T03:13:47.001581+00:00",
+  "hub_manifest_hash": "c7763ce07cb72dbf05edc1afc172232733f17fa85d81cadef70c62d67194daa0",
+  "package_name": "francois2005-mixed-feedback-loop-lab"
+}

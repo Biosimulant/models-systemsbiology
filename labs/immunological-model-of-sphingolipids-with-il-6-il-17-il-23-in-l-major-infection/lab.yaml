@@ -1,0 +1,90 @@
+schema_version: '2.0'
+title: Immunological Model Of Sphingolipids With Il 6 Il 17 Il 23 In L Major Infection
+  Lab
+description: In diseased state, we demonstrated that increase in production of sphingosine-1-phosphate
+  and overexpression of IL-6,lL-17 and IL-23 with SATB1 leads to disease progression.
+  It can be used to explore systemsbiology immunological of sphingolipids with il
+  dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_immunological_model_of_sphingolipids_with_il_6_i_model2301110001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_immunological_model_of_sphingolipids_with_il_6_i_model2301110001_model.state
+  to:
+  - visualisation.systemsbiology_sbml_immunological_model_of_sphingolipids_with_il_6_i_model2301110001_model_state
+- from: systemsbiology_sbml_immunological_model_of_sphingolipids_with_il_6_i_model2301110001_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_immunological_model_of_sphingolipids_with_il_6_i_model2301110001_model_summary
+- from: systemsbiology_sbml_immunological_model_of_sphingolipids_with_il_6_i_model2301110001_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_immunological_model_of_sphingolipids_with_il_6_i_model2301110001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- epidemiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_inflammatory_cytokine_genes
+    maps_to: systemsbiology_sbml_immunological_model_of_sphingolipids_with_il_6_i_model2301110001_model.initial_inflammatory_cytokine_genes
+    label: Initial Inflammatory Cytokine Genes
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mw206507a8_49d3_4b89_8767_b96e224682c5`.
+  - name: initial_rorgt_gene
+    maps_to: systemsbiology_sbml_immunological_model_of_sphingolipids_with_il_6_i_model2301110001_model.initial_rorgt_gene
+    label: Initial Rorgt Gene
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mw9d11e8ee_71f2_4317_9941_56b7d2e06360`.
+  - name: initial_il17_gene
+    maps_to: systemsbiology_sbml_immunological_model_of_sphingolipids_with_il_6_i_model2301110001_model.initial_il17_gene
+    label: Initial Il17 Gene
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mw216e700c_7d7b_4257_979b_ce4f450c69eb`.
+  - name: initial_sphk_genes
+    maps_to: systemsbiology_sbml_immunological_model_of_sphingolipids_with_il_6_i_model2301110001_model.initial_sphk_genes
+    label: Initial Sphk Genes
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mwb54ed2c0_8c56_445c_87dc_3297495bcb51`.
+  - name: initial_s1_pr_gene
+    maps_to: systemsbiology_sbml_immunological_model_of_sphingolipids_with_il_6_i_model2301110001_model.initial_s1_pr_gene
+    label: Initial S1 Pr Gene
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mw5b840e2d_377b_422a_9e21_3233425a594b`.
+  - name: initial_inflammatory_cytokine_genes_2
+    maps_to: systemsbiology_sbml_immunological_model_of_sphingolipids_with_il_6_i_model2301110001_model.initial_inflammatory_cytokine_genes_2
+    label: Initial Inflammatory Cytokine Genes 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mwff98169b_8370_40b4_8ae6_91da20b7a11b`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_immunological_model_of_sphingolipids_with_il_6_i_model2301110001_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_immunological_model_of_sphingolipids_with_il_6_i_model2301110001_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_immunological_model_of_sphingolipids_with_il_6_i_model2301110001_model.species_labels
+  - name: inflammatory_cytokine_genes
+    maps_to: systemsbiology_sbml_immunological_model_of_sphingolipids_with_il_6_i_model2301110001_model.inflammatory_cytokine_genes
+  - name: rorgt_gene
+    maps_to: systemsbiology_sbml_immunological_model_of_sphingolipids_with_il_6_i_model2301110001_model.rorgt_gene
+  - name: il17_gene
+    maps_to: systemsbiology_sbml_immunological_model_of_sphingolipids_with_il_6_i_model2301110001_model.il17_gene
+  - name: sphk_genes
+    maps_to: systemsbiology_sbml_immunological_model_of_sphingolipids_with_il_6_i_model2301110001_model.sphk_genes
+  - name: s1_pr_gene
+    maps_to: systemsbiology_sbml_immunological_model_of_sphingolipids_with_il_6_i_model2301110001_model.s1_pr_gene
+  - name: inflammatory_cytokine_genes_2
+    maps_to: systemsbiology_sbml_immunological_model_of_sphingolipids_with_il_6_i_model2301110001_model.inflammatory_cytokine_genes_2

@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Proctor2011_ProteinHomeostasis_NormalCondition Visualisation
+description: Question-and-answer and dynamic visual summaries for Proctor2011_ProteinHomeostasis_NormalCondition.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Proctor2011 Proteinhomeostasis Normalcondition Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Proctor2011_ProteinHomeostasis_NormalCondition.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_proctor2011_proteinhomeostasis_normalcondition_biomd0000000344_model
+      title: Proctor2011_ProteinHomeostasis_NormalCondition
+      observables:
+      - id: NatP
+        port: nat_p
+        label: NatP
+        group: metabolism
+      - id: ATP
+        port: atp
+        label: ATP
+        group: metabolism
+      - id: ADP
+        port: adp
+        label: ADP
+        group: metabolism
+      - id: PIDeath
+        port: pi_death
+        label: PIDeath
+        group: gene_regulation
+      - id: p38Death
+        port: p38_death
+        label: P38Death
+        group: gene_regulation
+      - id: JNKDeath
+        port: jnk_death
+        label: JNKDeath
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

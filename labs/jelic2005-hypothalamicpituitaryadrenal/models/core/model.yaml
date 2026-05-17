@@ -1,0 +1,65 @@
+schema_version: '2.0'
+title: Jelic2005_HypothalamicPituitaryAdrenal
+description: 'This a model from the article: Mathematical modeling of the hypothalamic-pituitary-adrenal
+  system activity. It can be used to explore systemsbiology jelic2005 hypothalamicpituitaryadr
+  model1006230013 dynamics and compare simulation behavior across conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Smiljana Jelić
+- Zeljko Cupić
+- Ljiljana Kolar-Anić
+upstream:
+  id: biomodels_ebi:MODEL1006230013
+  source_db: biomodels_ebi
+  source_id: MODEL1006230013
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1006230013
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1006230013?filename=MODEL1006230013_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.jelic2005_hypothalamicpituitaryadrenal_model1006230013_model:Jelic2005HypothalamicpituitaryadrenalModel1006230013Model
+  init_kwargs:
+    model_path: data/MODEL1006230013.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_g
+    maps_to: g
+    label: Initial Model State G
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `g`.
+  - name: initial_model_state_a
+    maps_to: a
+    label: Initial Model State A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `a`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_g
+    maps_to: g
+    label: G
+    description: G. Maps to SBML symbol `g`.
+  - name: model_state_a
+    maps_to: a
+    label: A
+    description: A. Maps to SBML symbol `a`.

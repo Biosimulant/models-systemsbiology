@@ -1,0 +1,86 @@
+schema_version: '2.0'
+title: Bindschadler2001_coupled_Ca_oscillators
+description: The model reproduces the same amplitude antiphase calcium oscillations
+  of coupled cells depicted in Figure 5B of the publication. This model was successfully
+  tested on Jarnac and MathSBML.
+standard: other
+tags:
+- generegulation
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Michael Bindschadler
+- James Sneyd
+upstream:
+  id: biomodels_ebi:BIOMD0000000058
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000058
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000058
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000058?filename=BIOMD0000000058_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.bindschadler2001_coupled_ca_oscillators_biomd0000000058_model:Bindschadler2001CoupledCaOscillatorsBiomd0000000058Model
+  init_kwargs:
+    model_path: data/BIOMD0000000058.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_receptor_fraction_cell1
+    maps_to: h1
+    label: Initial Receptor Fraction Cell1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `h1`.
+  - name: initial_calcium_ion_cell1
+    maps_to: c1
+    label: Initial Calcium Ion Cell1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `c1`.
+  - name: initial_receptor_fraction_cell2
+    maps_to: h2
+    label: Initial Receptor Fraction Cell2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `h2`.
+  - name: initial_calcium_ion_cell2
+    maps_to: c2
+    label: Initial Calcium Ion Cell2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `c2`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: receptor_fraction_cell1
+    maps_to: h1
+    label: Receptor fraction Cell1
+    description: Receptor fraction Cell1. Maps to SBML symbol `h1`.
+  - name: calcium_ion_cell1
+    maps_to: c1
+    label: Calcium ion Cell1
+    description: Calcium ion Cell1. Maps to SBML symbol `c1`.
+  - name: receptor_fraction_cell2
+    maps_to: h2
+    label: Receptor fraction Cell2
+    description: Receptor fraction Cell2. Maps to SBML symbol `h2`.
+  - name: calcium_ion_cell2
+    maps_to: c2
+    label: Calcium ion Cell2
+    description: Calcium ion Cell2. Maps to SBML symbol `c2`.

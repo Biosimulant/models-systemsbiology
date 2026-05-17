@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Reed2004 - Methionine Cycle Visualisation
+description: Question-and-answer and dynamic visual summaries for Reed2004 - Methionine
+  Cycle.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Reed2004 Methionine Cycle Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Reed2004 - Methionine Cycle.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_reed2004_methionine_cycle_biomd0000000698_model
+      title: Reed2004 - Methionine Cycle
+      observables:
+      - id: Cystathionine
+        port: cystathionine
+        label: Cystathionine
+        group: signaling
+      - id: Metin
+        port: metin
+        label: Metin
+        group: physiology
+      - id: AdoMet
+        port: ado_met
+        label: AdoMet
+        group: physiology
+      - id: Methionine
+        port: methionine
+        label: Methionine
+        group: physiology
+      - id: AdoHcy
+        port: ado_hcy
+        label: AdoHcy
+        group: physiology
+      - id: _5mTHF
+        port: model_state_5m_thf
+        label: 5mTHF
+        group: physiology
+io:
+  inputs: []
+  outputs: []

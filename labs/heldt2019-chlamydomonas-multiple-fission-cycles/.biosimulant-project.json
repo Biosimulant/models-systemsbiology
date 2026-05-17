@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "e60e9b4d-6325-4952-8c56-5aded537dab7",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "a1ac7e1d-15c9-46b1-a760-649c9f57b989",
+  "created_at": "2026-05-16T05:46:44.085712811+00:00",
+  "last_synced_at": "2026-05-17T03:40:41.673841+00:00",
+  "hub_manifest_hash": "9599b4eff6ef00a2e6872cc33c2250718ee36c75d7b7e1d9dcd47f9fd4274cc7",
+  "package_name": "heldt2019-chlamydomonas-multiple-fission-cycles-lab"
+}

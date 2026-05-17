@@ -1,0 +1,59 @@
+schema_version: '2.0'
+title: Phillips2013 - physiologically based modeling explaining Mammalian rest/activity
+  patterns Visualisation
+description: Question-and-answer and dynamic visual summaries for Phillips2013 - physiologically
+  based modeling explaining Mammalian rest/activity patterns.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Phillips2013 Physiologically Based Modeling Explaining Mammalian Rest
+      A Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Phillips2013 - physiologically based modeling explaining Mammalian
+      rest/activity patterns.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_phillips2013_physiologically_based_modeling_expl_biomd0000001072_model
+      title: Phillips2013 - physiologically based modeling explaining Mammalian rest/activity
+        patterns
+      observables:
+      - id: H
+        port: h_sleep_homeostatic_drive
+        label: H(sleep_homeostatic_drive)
+        group: signaling
+      - id: V_m
+        port: v_m_mean_cell_body_potential_ma
+        label: V_m(mean_cell_body_potential_MA)
+        group: physiology
+      - id: V_v
+        port: v_v_mean_cell_body_potential_vlpo
+        label: V_v(mean_cell_body_potential_VLPO)
+        group: physiology
+      - id: Y
+        port: y_complement_of_x
+        label: y(complement_of_x)
+        group: physiology
+      - id: X
+        port: x_scn_activity
+        label: x(SCN_activity)
+        group: physiology
+      - id: n
+        port: n_fraction_of_photoreceptors_that_are_activated
+        label: n(fraction_of_photoreceptors_that_are_activated)
+        group: physiology
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "e2e1dfd5-5dba-406d-9600-dc745d72925c",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "f61adfec-7e0f-48ed-bf6d-2fffa36b113c",
+  "created_at": "2026-05-16T05:46:52.044496534+00:00",
+  "last_synced_at": "2026-05-17T06:16:55.261045+00:00",
+  "hub_manifest_hash": "20d0986a8f42d831ade26c1f575fe9e4644d7dfd14c60aaabaf6900382dd1643",
+  "package_name": "smithae2002-rantransport-lab"
+}

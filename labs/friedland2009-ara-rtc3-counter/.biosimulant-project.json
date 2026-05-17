@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "4fb72db4-f0d7-48af-bbb0-abde55da801f",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "1eba4adf-74cc-47ed-8502-41049a1dbccb",
+  "created_at": "2026-05-16T05:46:43.441480660+00:00",
+  "last_synced_at": "2026-05-17T03:14:38.531854+00:00",
+  "hub_manifest_hash": "edd398a793dc219b48d0ec058414bc00137ac1b60eb02c581993a51b05d8d204",
+  "package_name": "friedland2009-ara-rtc3-counter-lab"
+}

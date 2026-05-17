@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Dempsher1984_ACTH_CortisolSecretion Visualisation
+description: Question-and-answer and dynamic visual summaries for Dempsher1984_ACTH_CortisolSecretion.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Dempsher1984 Acth Cortisolsecretion Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Dempsher1984_ACTH_CortisolSecretion.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_dempsher1984_acth_cortisolsecretion_model0912835813_model
+      title: Dempsher1984_ACTH_CortisolSecretion
+      observables:
+      - id: PRO
+        port: pro
+        label: PRO
+        group: physiology
+      - id: PREG
+        port: preg
+        label: PREG
+        group: physiology
+      - id: Kmtr
+        port: kmtr
+        label: Kmtr
+        group: physiology
+      - id: Kfor
+        port: kfor
+        label: Kfor
+        group: physiology
+      - id: HYPR
+        port: hypr
+        label: HYPR
+        group: physiology
+      - id: CORT
+        port: cort
+        label: CORT
+        group: physiology
+io:
+  inputs: []
+  outputs: []

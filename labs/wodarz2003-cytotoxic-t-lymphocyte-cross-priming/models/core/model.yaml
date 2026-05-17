@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Wodarz2003 - Cytotoxic T lymphocyte cross-priming
+description: 'This a model from the article: A dynamical perspective of CTL cross-priming
+  and regulation: implications forcancer immunology. It can be used to explore systemsbiology
+  wodarz2003 cytotoxic t lymphocyte cross dynamics and compare simulation behavior
+  across conditions.'
+standard: other
+tags:
+- immunology
+- oncology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Dominik Wodarz
+- Vincent A A Jansen
+upstream:
+  id: biomodels_ebi:BIOMD0000000685
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000685
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000685
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000685?filename=BIOMD0000000685_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.wodarz2003_cytotoxic_t_lymphocyte_cross_priming_biomd0000000685_model:Wodarz2003CytotoxicTLymphocyteCrossPrimingBiomd0000000685Model
+  init_kwargs:
+    model_path: data/BIOMD0000000685.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_a_star
+    maps_to: A_star
+    label: Initial A Star
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `A_star`.
+  - name: initial_model_state_t
+    maps_to: T
+    label: Initial Model State T
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `T`.
+  - name: initial_model_state_c
+    maps_to: C
+    label: Initial Model State C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C`.
+  - name: initial_model_state_a
+    maps_to: A
+    label: Initial Model State A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `A`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: a_star
+    maps_to: A_star
+    label: A Star
+    description: A Star. Maps to SBML symbol `A_star`.
+  - name: model_state_t
+    maps_to: T
+    label: T
+    description: T. Maps to SBML symbol `T`.
+  - name: model_state_c
+    maps_to: C
+    label: C
+    description: C. Maps to SBML symbol `C`.
+  - name: model_state_a
+    maps_to: A
+    label: A
+    description: A. Maps to SBML symbol `A`.

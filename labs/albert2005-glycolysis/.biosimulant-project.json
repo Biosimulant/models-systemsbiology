@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "cea6f1b2-c7fc-4e83-9538-12bd619d774e",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "c485b9f4-e2e7-4652-98b9-f36b8423e673",
+  "created_at": "2026-05-16T05:46:40.755903700+00:00",
+  "last_synced_at": "2026-05-17T01:35:49.920536+00:00",
+  "hub_manifest_hash": "20504b400030c6c0bb6881650a8496be4ea602a4c6e10e4f8f37d6d3132ffadc",
+  "package_name": "albert2005-glycolysis-lab"
+}

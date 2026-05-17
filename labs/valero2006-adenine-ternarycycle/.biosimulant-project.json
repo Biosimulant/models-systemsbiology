@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "ac97dcea-c724-4cf9-aab1-1aa5bae32a05",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "ea9e4f5e-72f6-4022-b2b2-df07287582c3",
+  "created_at": "2026-05-16T05:46:52.640289037+00:00",
+  "last_synced_at": "2026-05-17T06:34:32.631613+00:00",
+  "hub_manifest_hash": "ef44959bd2e04555b40de549a2c792acf87a1a84788045f5b49638b96581f77c",
+  "package_name": "valero2006-adenine-ternarycycle-lab"
+}

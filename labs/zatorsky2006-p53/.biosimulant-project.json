@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "0c54f8b2-a894-48a2-9c32-bc7c461acd33",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "f4b0519b-ac77-4107-aa7d-f429dae538ea",
+  "created_at": "2026-05-16T05:46:53.530683334+00:00",
+  "last_synced_at": "2026-05-17T07:06:29.043400+00:00",
+  "hub_manifest_hash": "050785e20f278ac68698c91d19802a36d4dd5f85a93da416ceea6511ca1583ea",
+  "package_name": "zatorsky2006-p53-lab"
+}

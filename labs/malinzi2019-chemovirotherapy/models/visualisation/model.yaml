@@ -1,0 +1,48 @@
+schema_version: '2.0'
+title: Malinzi2019 - chemovirotherapy Visualisation
+description: Question-and-answer and dynamic visual summaries for Malinzi2019 - chemovirotherapy.
+standard: other
+tags:
+- oncology
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Malinzi2019 Chemovirotherapy Lab
+    question: 'Which tumour, cell-fate, or treatment-linked states dominate the simulated
+      response? Source model: Malinzi2019 - chemovirotherapy.'
+    answer_focus: Q/A table plus oncology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_malinzi2019_chemovirotherapy_biomd0000000764_model
+      title: Malinzi2019 - chemovirotherapy
+      observables:
+      - id: U
+        port: model_state_u
+        label: U
+        group: physiology
+      - id: V
+        port: model_state_v
+        label: V
+        group: physiology
+      - id: C
+        port: model_state_c
+        label: C
+        group: physiology
+      - id: I
+        port: model_state_i
+        label: I
+        group: physiology
+io:
+  inputs: []
+  outputs: []

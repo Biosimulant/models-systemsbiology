@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Sen2013 Phospholipid Synthesis In P Knowlesi Lab
+description: 'Sen2013 - Phospholipid Synthesis in P.knowlesi The model describes the
+  multiple phospholipid synthetic pathways in Plasmodium knowlesi. This model is described
+  in the article: Kinetic modelling of pho.'
+models:
+- alias: systemsbiology_sbml_sen2013_phospholipid_synthesis_in_p_knowlesi_biomd0000000495_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_sen2013_phospholipid_synthesis_in_p_knowlesi_biomd0000000495_model.state
+  to:
+  - visualisation.systemsbiology_sbml_sen2013_phospholipid_synthesis_in_p_knowlesi_biomd0000000495_model_state
+- from: systemsbiology_sbml_sen2013_phospholipid_synthesis_in_p_knowlesi_biomd0000000495_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_sen2013_phospholipid_synthesis_in_p_knowlesi_biomd0000000495_model_summary
+- from: systemsbiology_sbml_sen2013_phospholipid_synthesis_in_p_knowlesi_biomd0000000495_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_sen2013_phospholipid_synthesis_in_p_knowlesi_biomd0000000495_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_ser_e
+    maps_to: systemsbiology_sbml_sen2013_phospholipid_synthesis_in_p_knowlesi_biomd0000000495_model.initial_ser_e
+    label: Initial Ser E
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mw73259e20_240e_4f3a_b2e0_9ca248658898`.
+  - name: initial_p_cho
+    maps_to: systemsbiology_sbml_sen2013_phospholipid_synthesis_in_p_knowlesi_biomd0000000495_model.initial_p_cho
+    label: Initial P Cho
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mwcb834e43_dc57_45ae_9452_f4c10955caf1`.
+  - name: initial_model_state_etn
+    maps_to: systemsbiology_sbml_sen2013_phospholipid_synthesis_in_p_knowlesi_biomd0000000495_model.initial_model_state_etn
+    label: Initial Model State Etn
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mw8796c919_9251_4970_8f87_0bca9ecfeb5c`.
+  - name: initial_cho_e
+    maps_to: systemsbiology_sbml_sen2013_phospholipid_synthesis_in_p_knowlesi_biomd0000000495_model.initial_cho_e
+    label: Initial Cho E
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mw919f8a86_e702_4b24_9cd7_adad694fcf9b`.
+  - name: initial_model_state_ser
+    maps_to: systemsbiology_sbml_sen2013_phospholipid_synthesis_in_p_knowlesi_biomd0000000495_model.initial_model_state_ser
+    label: Initial Model State Ser
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mw15abaa48_d7d0_4845_ae04_c573d289d495`.
+  - name: initial_model_state_ps
+    maps_to: systemsbiology_sbml_sen2013_phospholipid_synthesis_in_p_knowlesi_biomd0000000495_model.initial_model_state_ps
+    label: Initial Model State Ps
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mwfcfaf604_14d4_47a6_b021_226d1fb5497c`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_sen2013_phospholipid_synthesis_in_p_knowlesi_biomd0000000495_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_sen2013_phospholipid_synthesis_in_p_knowlesi_biomd0000000495_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_sen2013_phospholipid_synthesis_in_p_knowlesi_biomd0000000495_model.species_labels
+  - name: ser_e
+    maps_to: systemsbiology_sbml_sen2013_phospholipid_synthesis_in_p_knowlesi_biomd0000000495_model.ser_e
+  - name: p_cho
+    maps_to: systemsbiology_sbml_sen2013_phospholipid_synthesis_in_p_knowlesi_biomd0000000495_model.p_cho
+  - name: etn
+    maps_to: systemsbiology_sbml_sen2013_phospholipid_synthesis_in_p_knowlesi_biomd0000000495_model.etn
+  - name: cho_e
+    maps_to: systemsbiology_sbml_sen2013_phospholipid_synthesis_in_p_knowlesi_biomd0000000495_model.cho_e
+  - name: ser
+    maps_to: systemsbiology_sbml_sen2013_phospholipid_synthesis_in_p_knowlesi_biomd0000000495_model.ser
+  - name: model_state_ps
+    maps_to: systemsbiology_sbml_sen2013_phospholipid_synthesis_in_p_knowlesi_biomd0000000495_model.model_state_ps

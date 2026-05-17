@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Fuss2006_MitoticActivation
+description: The model was curated with XPP. It can be used to explore systemsbiology
+  fuss2006 mitoticactivation BioModels0000000069 dynamics and compare simulation behavior
+  across conditions.
+standard: other
+tags:
+- cellcycle
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Hendrik Fuss
+- Werner Dubitzky
+- Stephen Downes
+- Mary Jo Kurth
+upstream:
+  id: biomodels_ebi:BIOMD0000000069
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000069
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000069
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000069?filename=BIOMD0000000069_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.fuss2006_mitoticactivation_biomd0000000069_model:Fuss2006MitoticactivationBiomd0000000069Model
+  init_kwargs:
+    model_path: data/BIOMD0000000069.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_srci
+    maps_to: srci
+    label: Initial Srci
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `srci`.
+  - name: initial_model_state_ptp
+    maps_to: PTP
+    label: Initial Model State Ptp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PTP`.
+  - name: initial_model_state_cbp
+    maps_to: Cbp
+    label: Initial Model State Cbp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Cbp`.
+  - name: initial_csk_cytoplasm
+    maps_to: CSK_cytoplasm
+    label: Initial Csk Cytoplasm
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CSK_cytoplasm`.
+  - name: initial_srco
+    maps_to: srco
+    label: Initial Srco
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `srco`.
+  - name: initial_srcc
+    maps_to: srcc
+    label: Initial Srcc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `srcc`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: srci
+    maps_to: srci
+    label: Srci
+    description: Srci. Maps to SBML symbol `srci`.
+  - name: ptp
+    maps_to: PTP
+    label: PTP
+    description: PTP. Maps to SBML symbol `PTP`.
+  - name: cbp
+    maps_to: Cbp
+    label: Cbp
+    description: Cbp. Maps to SBML symbol `Cbp`.
+  - name: csk_cytoplasm
+    maps_to: CSK_cytoplasm
+    label: CSK Cytoplasm
+    description: CSK Cytoplasm. Maps to SBML symbol `CSK_cytoplasm`.
+  - name: srco
+    maps_to: srco
+    label: Srco
+    description: Srco. Maps to SBML symbol `srco`.
+  - name: srcc
+    maps_to: srcc
+    label: Srcc
+    description: Srcc. Maps to SBML symbol `srcc`.

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "1af4305f-a97c-40bc-8723-49c1bab16501",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "00e624cb-eb3a-457a-900a-5938d68abfbb",
+  "created_at": "2026-05-16T05:46:47.024259706+00:00",
+  "last_synced_at": "2026-05-17T04:53:42.251484+00:00",
+  "hub_manifest_hash": "1de5bceaf17d9a3f5b6caac049e1cb1f8b04b1a791ba210f0642ebd68ce52a7b",
+  "package_name": "mazemondet2012-beta-catenin-dynamics-in-human-neural-progenitor"
+}

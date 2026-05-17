@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: 'Panteleev2010 - Blood Coagulation: Full Model'
+description: Full and reduced mathematical model of blood coagulation focusing on
+  fibrin formation and the response to varied TF and V. It can be used to explore
+  systemsbiology panteleev2010 blood coagulation full BioModels0000000740 dynamics
+  and compare simulation behavior across conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Mikhail A Panteleev
+- Anna N Balandina
+- Elena N Lipets
+- Mikhail V Ovanesov
+- Fazoil I Ataullakhanov
+upstream:
+  id: biomodels_ebi:BIOMD0000000740
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000740
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000740
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000740?filename=Panteleev2010_full_model.xml
+  license: CC0
+biosim:
+  entrypoint: src.panteleev2010_blood_coagulation_full_model_biomd0000000740_model:Panteleev2010BloodCoagulationFullModelBiomd0000000740Model
+  init_kwargs:
+    model_path: data/BIOMD0000000740.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_protein_s_inhibitor
+    maps_to: ProteinS_inhibitor
+    label: Initial Protein S Inhibitor
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ProteinS_inhibitor`.
+  - name: initial_protein_c_inhibitor
+    maps_to: ProteinC_Inhibitor
+    label: Initial Protein C Inhibitor
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ProteinC_Inhibitor`.
+  - name: initial_alpha1_antitrypsin
+    maps_to: alpha1_antitrypsin
+    label: Initial Alpha1 Antitrypsin
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `alpha1_antitrypsin`.
+  - name: initial_fibrinogen
+    maps_to: fibrinogen
+    label: Initial Fibrinogen
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `fibrinogen`.
+  - name: initial_at_iii
+    maps_to: AT_III
+    label: Initial At Iii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `AT_III`.
+  - name: initial_alpha2_macroglobulin
+    maps_to: alpha2_macroglobulin
+    label: Initial Alpha2 Macroglobulin
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `alpha2_macroglobulin`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: protein_s_inhibitor
+    maps_to: ProteinS_inhibitor
+    label: ProteinS-inhibitor
+    description: ProteinS-inhibitor. Maps to SBML symbol `ProteinS_inhibitor`.
+  - name: protein_c_inhibitor
+    maps_to: ProteinC_Inhibitor
+    label: ProteinC-Inhibitor
+    description: ProteinC-Inhibitor. Maps to SBML symbol `ProteinC_Inhibitor`.
+  - name: alpha1_antitrypsin
+    maps_to: alpha1_antitrypsin
+    label: alpha1-antitrypsin
+    description: alpha1-antitrypsin. Maps to SBML symbol `alpha1_antitrypsin`.
+  - name: fibrinogen
+    maps_to: fibrinogen
+    label: fibrinogen
+    description: fibrinogen. Maps to SBML symbol `fibrinogen`.
+  - name: at_iii
+    maps_to: AT_III
+    label: AT-III
+    description: AT-III. Maps to SBML symbol `AT_III`.
+  - name: alpha2_macroglobulin
+    maps_to: alpha2_macroglobulin
+    label: alpha2-macroglobulin
+    description: alpha2-macroglobulin. Maps to SBML symbol `alpha2_macroglobulin`.

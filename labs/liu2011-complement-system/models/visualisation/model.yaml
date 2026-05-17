@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Liu2011_Complement_System Visualisation
+description: Question-and-answer and dynamic visual summaries for Liu2011_Complement_System.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Liu2011 Complement System Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Liu2011_Complement_System.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_liu2011_complement_system_biomd0000000303_model
+      title: Liu2011_Complement_System
+      observables:
+      - id: iC4b_C2a
+        port: i_c4b_c2a
+        label: iC4b/C2a
+        group: physiology
+      - id: dC4b_C2a_C4BP
+        port: d_c4b_c2a_c4_bp
+        label: dC4b/C2a/C4BP
+        group: physiology
+      - id: dC4b_C2a
+        port: d_c4b_c2a
+        label: dC4b/C2a
+        group: physiology
+      - id: dC3b
+        port: d_c3b
+        label: dC3b
+        group: physiology
+      - id: PC_CRP_LF_MASP
+        port: pc_crp_lf_masp
+        label: PC/CRP/LF/MASP
+        group: physiology
+      - id: PC_CRP_LF_C1_MASP
+        port: pc_crp_lf_c1_masp
+        label: PC/CRP/LF/C1/MASP
+        group: physiology
+io:
+  inputs: []
+  outputs: []

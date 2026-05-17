@@ -1,0 +1,59 @@
+schema_version: '2.0'
+title: Diedrichs2018 A Data Entrained Computational Model For Testing The Regul Lab
+description: 'A data-entrained computational model fortesting the regulatory logic
+  of the vertebrate unfolded proteinresponse This model is described in the article:
+  A data-entrained computational model for testing. It can be used to explore systemsbiology
+  diedrichs2018 a data entrained computational dynamics and compare simulation behavior
+  across conditions.'
+models:
+- alias: systemsbiology_sbml_diedrichs2018_a_data_entrained_computational_mod_biomd0000000703_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_diedrichs2018_a_data_entrained_computational_mod_biomd0000000703_model.state
+  to:
+  - visualisation.systemsbiology_sbml_diedrichs2018_a_data_entrained_computational_mod_biomd0000000703_model_state
+- from: systemsbiology_sbml_diedrichs2018_a_data_entrained_computational_mod_biomd0000000703_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_diedrichs2018_a_data_entrained_computational_mod_biomd0000000703_model_summary
+- from: systemsbiology_sbml_diedrichs2018_a_data_entrained_computational_mod_biomd0000000703_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_diedrichs2018_a_data_entrained_computational_mod_biomd0000000703_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: stress
+    maps_to: systemsbiology_sbml_diedrichs2018_a_data_entrained_computational_mod_biomd0000000703_model.stress
+    label: Stress
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `Stress`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_diedrichs2018_a_data_entrained_computational_mod_biomd0000000703_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_diedrichs2018_a_data_entrained_computational_mod_biomd0000000703_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_diedrichs2018_a_data_entrained_computational_mod_biomd0000000703_model.species_labels
+  - name: model_state_x
+    maps_to: systemsbiology_sbml_diedrichs2018_a_data_entrained_computational_mod_biomd0000000703_model.model_state_x
+  - name: model_state_g
+    maps_to: systemsbiology_sbml_diedrichs2018_a_data_entrained_computational_mod_biomd0000000703_model.model_state_g
+  - name: model_state_c
+    maps_to: systemsbiology_sbml_diedrichs2018_a_data_entrained_computational_mod_biomd0000000703_model.model_state_c
+  - name: model_state_b
+    maps_to: systemsbiology_sbml_diedrichs2018_a_data_entrained_computational_mod_biomd0000000703_model.model_state_b
+  - name: model_state_ep
+    maps_to: systemsbiology_sbml_diedrichs2018_a_data_entrained_computational_mod_biomd0000000703_model.model_state_ep
+  - name: btot
+    maps_to: systemsbiology_sbml_diedrichs2018_a_data_entrained_computational_mod_biomd0000000703_model.btot

@@ -1,0 +1,86 @@
+schema_version: '2.0'
+title: Stotzel2012 Bovine Estrous Cycle Synchronization With Prostaglandin F2 Lab
+description: C. It can be used to explore systemsbiology st tzel2012 bovine estrous
+  cycle dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_st_tzel2012_bovine_estrous_cycle_synchronization_biomd0000000481_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_st_tzel2012_bovine_estrous_cycle_synchronization_biomd0000000481_model.state
+  to:
+  - visualisation.systemsbiology_sbml_st_tzel2012_bovine_estrous_cycle_synchronization_biomd0000000481_model_state
+- from: systemsbiology_sbml_st_tzel2012_bovine_estrous_cycle_synchronization_biomd0000000481_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_st_tzel2012_bovine_estrous_cycle_synchronization_biomd0000000481_model_summary
+- from: systemsbiology_sbml_st_tzel2012_bovine_estrous_cycle_synchronization_biomd0000000481_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_st_tzel2012_bovine_estrous_cycle_synchronization_biomd0000000481_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_lh_pit
+    maps_to: systemsbiology_sbml_st_tzel2012_bovine_estrous_cycle_synchronization_biomd0000000481_model.initial_lh_pit
+    label: Initial Lh Pit
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `LH_Pit`.
+  - name: initial_gn_rh_hyp
+    maps_to: systemsbiology_sbml_st_tzel2012_bovine_estrous_cycle_synchronization_biomd0000000481_model.initial_gn_rh_hyp
+    label: Initial Gn Rh Hyp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `GnRH_Hyp`.
+  - name: initial_gn_rh_pit
+    maps_to: systemsbiology_sbml_st_tzel2012_bovine_estrous_cycle_synchronization_biomd0000000481_model.initial_gn_rh_pit
+    label: Initial Gn Rh Pit
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `GnRH_Pit`.
+  - name: initial_fsh_bld
+    maps_to: systemsbiology_sbml_st_tzel2012_bovine_estrous_cycle_synchronization_biomd0000000481_model.initial_fsh_bld
+    label: Initial Fsh Bld
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `FSH_Bld`.
+  - name: initial_lh_bld
+    maps_to: systemsbiology_sbml_st_tzel2012_bovine_estrous_cycle_synchronization_biomd0000000481_model.initial_lh_bld
+    label: Initial Lh Bld
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `LH_Bld`.
+  - name: initial_fsh_pit
+    maps_to: systemsbiology_sbml_st_tzel2012_bovine_estrous_cycle_synchronization_biomd0000000481_model.initial_fsh_pit
+    label: Initial Fsh Pit
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `FSH_Pit`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_st_tzel2012_bovine_estrous_cycle_synchronization_biomd0000000481_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_st_tzel2012_bovine_estrous_cycle_synchronization_biomd0000000481_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_st_tzel2012_bovine_estrous_cycle_synchronization_biomd0000000481_model.species_labels
+  - name: lh_pit
+    maps_to: systemsbiology_sbml_st_tzel2012_bovine_estrous_cycle_synchronization_biomd0000000481_model.lh_pit
+  - name: gn_rh_hyp
+    maps_to: systemsbiology_sbml_st_tzel2012_bovine_estrous_cycle_synchronization_biomd0000000481_model.gn_rh_hyp
+  - name: gn_rh_pit
+    maps_to: systemsbiology_sbml_st_tzel2012_bovine_estrous_cycle_synchronization_biomd0000000481_model.gn_rh_pit
+  - name: fsh_bld
+    maps_to: systemsbiology_sbml_st_tzel2012_bovine_estrous_cycle_synchronization_biomd0000000481_model.fsh_bld
+  - name: lh_bld
+    maps_to: systemsbiology_sbml_st_tzel2012_bovine_estrous_cycle_synchronization_biomd0000000481_model.lh_bld
+  - name: fsh_pit
+    maps_to: systemsbiology_sbml_st_tzel2012_bovine_estrous_cycle_synchronization_biomd0000000481_model.fsh_pit

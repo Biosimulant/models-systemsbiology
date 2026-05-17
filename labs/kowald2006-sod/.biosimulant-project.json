@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "36cf11e3-7235-422d-9313-01e854bf8dcd",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "c01e5c0c-c18f-4240-b699-6febc137c93d",
+  "created_at": "2026-05-16T05:46:44.901773157+00:00",
+  "last_synced_at": "2026-05-17T04:11:36.276121+00:00",
+  "hub_manifest_hash": "27fda2d4739779b7db4f40da3e747d1cd1a29510fb8de7ddb11288c6d11c7097",
+  "package_name": "kowald2006-sod-lab"
+}

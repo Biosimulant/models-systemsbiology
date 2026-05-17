@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: MODEL6624091635_url.xml Visualisation
+description: Question-and-answer and dynamic visual summaries for MODEL6624091635_url.xml.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Url Xml 2 Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: MODEL6624091635_url.xml.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_model6624091635_url_xml_model6624091635_model
+      title: MODEL6624091635_url.xml
+      observables:
+      - id: NAD
+        port: nad
+        label: NAD
+        group: metabolism
+      - id: ATP
+        port: atp
+        label: ATP
+        group: metabolism
+      - id: ADP
+        port: adp
+        label: ADP
+        group: metabolism
+      - id: NADH
+        port: nadh
+        label: NADH
+        group: metabolism
+      - id: ACAL
+        port: acal
+        label: ACAL
+        group: physiology
+      - id: Cellwall
+        port: cellwall
+        label: Cellwall
+        group: physiology
+io:
+  inputs: []
+  outputs: []

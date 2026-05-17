@@ -1,0 +1,61 @@
+schema_version: '2.0'
+title: Wang2008 - Mimicking the inhibitory effect of riluzole on membrane conductance
+  in skeletal fibres Visualisation
+description: Question-and-answer and dynamic visual summaries for Wang2008 - Mimicking
+  the inhibitory effect of riluzole on membrane conductance in skeletal fibres.
+standard: other
+tags:
+- cellcycle
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Wang2008 Mimicking The Inhibitory Effect Of Riluzole On Membrane Co
+      Lab
+    question: 'Which cell-cycle control states dominate the simulated progression?
+      Source model: Wang2008 - Mimicking the inhibitory effect of riluzole on membrane
+      conductance in skeletal fibres.'
+    answer_focus: Q/A table plus cellcycle timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_wang2008_mimicking_the_inhibitory_effect_of_rilu_biomd0000000693_model
+      title: Wang2008 - Mimicking the inhibitory effect of riluzole on membrane conductance
+        in skeletal fibres
+      observables:
+      - id: cer
+        port: cer
+        label: cer
+        group: physiology
+      - id: beta_m
+        port: beta_m
+        label: beta_m
+        group: physiology
+      - id: alpha_h
+        port: alpha_h
+        label: alpha_h
+        group: physiology
+      - id: alpha_m
+        port: alpha_m
+        label: alpha_m
+        group: physiology
+      - id: beta_n
+        port: beta_n
+        label: beta_n
+        group: physiology
+      - id: jleak
+        port: jleak
+        label: jleak
+        group: physiology
+io:
+  inputs: []
+  outputs: []

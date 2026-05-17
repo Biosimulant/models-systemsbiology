@@ -1,0 +1,79 @@
+schema_version: '2.0'
+title: Ratushny2012_SPF_I
+description: 'This model is from the article: Asymmetric positive feedback loops reliably
+  control biological responses Alexander V Ratushny, Ramsey A Saleem, Katherine Sitko,
+  Stephen A Ramsey &amp; John D Aitchison. It can be used to explore systemsbiology
+  ratushny2012 spf i BioModels0000000419 dynamics and compare simulation behavior
+  across conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Alexander V Ratushny
+- Ramsey A Saleem
+- Katherine Sitko
+- Stephen A Ramsey
+- John D Aitchison
+upstream:
+  id: biomodels_ebi:BIOMD0000000419
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000419
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000419
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000419?filename=BIOMD0000000419_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.ratushny2012_spf_i_biomd0000000419_model:Ratushny2012SpfIBiomd0000000419Model
+  init_kwargs:
+    model_path: data/BIOMD0000000419.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_target
+    maps_to: Target
+    label: Initial Target
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Target`.
+  - name: initial_model_state_p2
+    maps_to: P2
+    label: Initial Model State P2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P2`.
+  - name: initial_model_state_p1
+    maps_to: P1
+    label: Initial Model State P1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P1`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: target
+    maps_to: Target
+    label: Target
+    description: Target. Maps to SBML symbol `Target`.
+  - name: model_state_p2
+    maps_to: P2
+    label: P2
+    description: P2. Maps to SBML symbol `P2`.
+  - name: model_state_p1
+    maps_to: P1
+    label: P1
+    description: P1. Maps to SBML symbol `P1`.

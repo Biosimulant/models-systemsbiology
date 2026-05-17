@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: Burghaus2014 - Simulating blood coagulation factor Xa inhibitors Visualisation
+description: Question-and-answer and dynamic visual summaries for Burghaus2014 - Simulating
+  blood coagulation factor Xa inhibitors.
+standard: other
+tags:
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Burghaus2014 Simulating Blood Coagulation Factor Xa Inhibitors Lab
+    question: 'Which drug, dose, or target-linked model states drive the simulated
+      profile? Source model: Burghaus2014 - Simulating blood coagulation factor Xa
+      inhibitors.'
+    answer_focus: Q/A table plus pharmacology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_burghaus2014_simulating_blood_coagulation_factor_model1807180005_model
+      title: Burghaus2014 - Simulating blood coagulation factor Xa inhibitors
+      observables:
+      - id: S_warfarin
+        port: s_warfarin
+        label: S-warfarin
+        group: gene_regulation
+      - id: R_warfarin
+        port: r_warfarin
+        label: R-warfarin
+        group: gene_regulation
+      - id: fII
+        port: f_ii
+        label: fII
+        group: gene_regulation
+      - id: fX
+        port: f_x
+        label: fX
+        group: gene_regulation
+      - id: Protein_S
+        port: protein_s
+        label: Protein-S
+        group: gene_regulation
+      - id: fIX
+        port: f_ix
+        label: fIX
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

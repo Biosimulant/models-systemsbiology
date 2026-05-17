@@ -1,0 +1,90 @@
+schema_version: '2.0'
+title: Proctor2017 Role Of Micrornas In Osteoarthritis 6 Lab
+description: 'Proctor2017- Role of microRNAs in osteoarthritis (miR140-IL1 incoherent
+  feed forward) This model is described in the article: Computer simulation models
+  as a tool to investigate the role of microRNAs. It can be used to explore systemsbiology
+  proctor2017 role of micrornas in dynamics and compare simulation behavior across
+  conditions.'
+models:
+- alias: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_model1705170002_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_model1705170002_model.state
+  to:
+  - visualisation.systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_model1705170002_model_state
+- from: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_model1705170002_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_model1705170002_model_summary
+- from: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_model1705170002_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_model1705170002_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_n_fk_b
+    maps_to: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_model1705170002_model.initial_n_fk_b
+    label: Initial N Fk B
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NFkB`.
+  - name: initial_mi_r140_gene_n_fk_b
+    maps_to: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_model1705170002_model.initial_mi_r140_gene_n_fk_b
+    label: Initial Mi R140 Gene N Fk B
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `miR140_gene_NFkB`.
+  - name: initial_model_state_il1
+    maps_to: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_model1705170002_model.initial_model_state_il1
+    label: Initial Model State IL1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IL1`.
+  - name: initial_mmp13_mrna
+    maps_to: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_model1705170002_model.initial_mmp13_mrna
+    label: Initial Mmp13 MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MMP13_mRNA`.
+  - name: initial_mi_r140
+    maps_to: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_model1705170002_model.initial_mi_r140
+    label: Initial Mi R140
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `miR140`.
+  - name: initial_mi_r140_gene
+    maps_to: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_model1705170002_model.initial_mi_r140_gene
+    label: Initial Mi R140 Gene
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `miR140_gene`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_model1705170002_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_model1705170002_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_model1705170002_model.species_labels
+  - name: n_fk_b
+    maps_to: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_model1705170002_model.n_fk_b
+  - name: mi_r140_gene_n_fk_b
+    maps_to: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_model1705170002_model.mi_r140_gene_n_fk_b
+  - name: il1
+    maps_to: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_model1705170002_model.il1
+  - name: mmp13_mrna
+    maps_to: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_model1705170002_model.mmp13_mrna
+  - name: mi_r140
+    maps_to: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_model1705170002_model.mi_r140
+  - name: mi_r140_gene
+    maps_to: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_model1705170002_model.mi_r140_gene

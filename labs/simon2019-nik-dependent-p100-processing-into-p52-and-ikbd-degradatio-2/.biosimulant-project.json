@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "9022d641-e43b-40a5-96c2-869e1de0beda",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "3822a85b-9f8e-42ea-99fc-5909d2a6f83e",
+  "created_at": "2026-05-16T05:46:51.891772934+00:00",
+  "last_synced_at": "2026-05-17T09:43:57.050197+00:00",
+  "hub_manifest_hash": "955ff885bcc03f87d7afaf1ebd06117295be8adce64624e1319017ec32703001",
+  "package_name": "biomd0000000870-variant-simon2019-nik-dependent-p100-processing"
+}

@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Barr2017 - Dynamics of p21 in hTert-RPE1 cells
+description: Barr2017 - Dynamics of p21 in hTert-RPE1cells This deteministic model
+  reveals that abistable switch created by Cdt2, promotes irreversible S-phaseentry
+  by keeping p21 levels low, prevents premature S-. It can be used to explore systemsbiology
+  barr2017 dynamics of p21 in dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Alexis R Barr
+- Samuel Cooper
+- Frank S Heldt
+- Francesca Butera
+- Henriette Stoy
+upstream:
+  id: biomodels_ebi:BIOMD0000000660
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000660
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000660
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000660?filename=BIOMD0000000660_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.barr2017_dynamics_of_p21_in_htert_rpe1_cells_biomd0000000660_model:Barr2017DynamicsOfP21InHtertRpe1CellsBiomd0000000660Model
+  init_kwargs:
+    model_path: data/BIOMD0000000660.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_mrna_p53
+    maps_to: MrnaP53
+    label: Initial MRNA P53
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MrnaP53`.
+  - name: initial_mrna_p21
+    maps_to: MrnaP21
+    label: Initial MRNA P21
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MrnaP21`.
+  - name: initial_mrna_cy
+    maps_to: MrnaCy
+    label: Initial MRNA Cy
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MrnaCy`.
+  - name: initial_t_p21
+    maps_to: tP21
+    label: Initial T P21
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `tP21`.
+  - name: initial_t_pcna
+    maps_to: tPcna
+    label: Initial T Pcna
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `tPcna`.
+  - name: initial_a_pcna
+    maps_to: aPcna
+    label: Initial A Pcna
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `aPcna`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: mrna_p53
+    maps_to: MrnaP53
+    label: MrnaP53
+    description: MrnaP53. Maps to SBML symbol `MrnaP53`.
+  - name: mrna_p21
+    maps_to: MrnaP21
+    label: MrnaP21
+    description: MrnaP21. Maps to SBML symbol `MrnaP21`.
+  - name: mrna_cy
+    maps_to: MrnaCy
+    label: MrnaCy
+    description: MrnaCy. Maps to SBML symbol `MrnaCy`.
+  - name: t_p21
+    maps_to: tP21
+    label: tP21
+    description: tP21. Maps to SBML symbol `tP21`.
+  - name: t_pcna
+    maps_to: tPcna
+    label: tPcna
+    description: tPcna. Maps to SBML symbol `tPcna`.
+  - name: a_pcna
+    maps_to: aPcna
+    label: aPcna
+    description: aPcna. Maps to SBML symbol `aPcna`.

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "09ffc61c-a94f-4567-a98c-1f8c8846ef46",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "c20a1399-a3c6-4f7d-8806-d6913b8476f8",
+  "created_at": "2026-05-16T05:46:50.507598782+00:00",
+  "last_synced_at": "2026-05-17T05:32:03.624026+00:00",
+  "hub_manifest_hash": "99782e3932d57b76b1a4393c3d1450482681bd9e781405d52db8248c450a1a32",
+  "package_name": "pokhilko2012-circclock-repressilatorfeedbackloop-lab"
+}

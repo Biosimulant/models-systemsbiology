@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "74580c84-a602-4054-95cc-36e85eadbf72",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "9314d9a7-165d-4824-8350-e5b1e7f5456d",
+  "created_at": "2026-05-16T05:46:41.933218510+00:00",
+  "last_synced_at": "2026-05-17T02:18:56.701367+00:00",
+  "hub_manifest_hash": "771f7dc67bc9127d89d34f5e944f62e0f972f68ff798a80d0ac7f54809b3d44b",
+  "package_name": "brown1997-plasma-melatonin-levels-lab"
+}

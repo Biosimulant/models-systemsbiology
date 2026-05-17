@@ -1,0 +1,60 @@
+schema_version: '2.0'
+title: Nayak2015 - Blood Coagulation Network - Predicting the Effects of Various Therapies
+  on Biomarkers Visualisation
+description: Question-and-answer and dynamic visual summaries for Nayak2015 - Blood
+  Coagulation Network - Predicting the Effects of Various Therapies on Biomarkers.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Nayak2015 Blood Coagulation Network Predicting The Effects Of Variou
+      Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Nayak2015 - Blood Coagulation Network - Predicting the Effects
+      of Various Therapies on Biomarkers.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_nayak2015_blood_coagulation_network_predicting_t_biomd0000000611_model
+      title: Nayak2015 - Blood Coagulation Network - Predicting the Effects of Various
+        Therapies on Biomarkers
+      observables:
+      - id: mIIa_ATIII
+        port: m_i_ia_atiii
+        label: mIIa_ATIII
+        group: gene_regulation
+      - id: mIIa
+        port: m_i_ia
+        label: mIIa
+        group: gene_regulation
+      - id: Xa_Va_II
+        port: xa_va_ii
+        label: Xa_Va_II
+        group: gene_regulation
+      - id: Xa_Va
+        port: xa_va
+        label: Xa_Va
+        group: gene_regulation
+      - id: Xa_TFPI
+        port: xa_tfpi
+        label: Xa_TFPI
+        group: gene_regulation
+      - id: Xa_ATIII
+        port: xa_atiii
+        label: Xa_ATIII
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

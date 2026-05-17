@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Locke2005 Circadian Clock Lab
+description: Locke2005 - Circadian Clock SBML model of the interlocked feedback loop
+  network The model describes the circuit depicted in Fig. 4 and reproduces the simulations
+  in Figure 5A and 5B.
+models:
+- alias: systemsbiology_sbml_locke2005_circadian_clock_biomd0000000055_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_locke2005_circadian_clock_biomd0000000055_model.state
+  to:
+  - visualisation.systemsbiology_sbml_locke2005_circadian_clock_biomd0000000055_model_state
+- from: systemsbiology_sbml_locke2005_circadian_clock_biomd0000000055_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_locke2005_circadian_clock_biomd0000000055_model_summary
+- from: systemsbiology_sbml_locke2005_circadian_clock_biomd0000000055_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_locke2005_circadian_clock_biomd0000000055_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_toc1_protein_in_cytoplasm
+    maps_to: systemsbiology_sbml_locke2005_circadian_clock_biomd0000000055_model.initial_toc1_protein_in_cytoplasm
+    label: Initial Toc1 Protein In Cytoplasm
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cTc`.
+  - name: initial_x_protein_in_cytoplasm
+    maps_to: systemsbiology_sbml_locke2005_circadian_clock_biomd0000000055_model.initial_x_protein_in_cytoplasm
+    label: Initial X Protein In Cytoplasm
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cXc`.
+  - name: initial_light_sensitive_protein_p
+    maps_to: systemsbiology_sbml_locke2005_circadian_clock_biomd0000000055_model.initial_light_sensitive_protein_p
+    label: Initial Light Sensitive Protein P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cPn`.
+  - name: initial_lhy_mrna
+    maps_to: systemsbiology_sbml_locke2005_circadian_clock_biomd0000000055_model.initial_lhy_mrna
+    label: Initial Lhy MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cLm`.
+  - name: initial_toc1_mrna
+    maps_to: systemsbiology_sbml_locke2005_circadian_clock_biomd0000000055_model.initial_toc1_mrna
+    label: Initial Toc1 MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cTm`.
+  - name: initial_x_protein_in_nucleus
+    maps_to: systemsbiology_sbml_locke2005_circadian_clock_biomd0000000055_model.initial_x_protein_in_nucleus
+    label: Initial X Protein In Nucleus
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cXn`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_locke2005_circadian_clock_biomd0000000055_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_locke2005_circadian_clock_biomd0000000055_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_locke2005_circadian_clock_biomd0000000055_model.species_labels
+  - name: toc1_protein_in_cytoplasm
+    maps_to: systemsbiology_sbml_locke2005_circadian_clock_biomd0000000055_model.toc1_protein_in_cytoplasm
+  - name: x_protein_in_cytoplasm
+    maps_to: systemsbiology_sbml_locke2005_circadian_clock_biomd0000000055_model.x_protein_in_cytoplasm
+  - name: light_sensitive_protein_p
+    maps_to: systemsbiology_sbml_locke2005_circadian_clock_biomd0000000055_model.light_sensitive_protein_p
+  - name: lhy_mrna
+    maps_to: systemsbiology_sbml_locke2005_circadian_clock_biomd0000000055_model.lhy_mrna
+  - name: toc1_mrna
+    maps_to: systemsbiology_sbml_locke2005_circadian_clock_biomd0000000055_model.toc1_mrna
+  - name: x_protein_in_nucleus
+    maps_to: systemsbiology_sbml_locke2005_circadian_clock_biomd0000000055_model.x_protein_in_nucleus

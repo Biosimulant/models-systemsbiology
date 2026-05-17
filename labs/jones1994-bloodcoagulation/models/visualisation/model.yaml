@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Jones1994_BloodCoagulation Visualisation
+description: Question-and-answer and dynamic visual summaries for Jones1994_BloodCoagulation.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Jones1994 Bloodcoagulation Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Jones1994_BloodCoagulation.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_jones1994_bloodcoagulation_biomd0000000336_model
+      title: Jones1994_BloodCoagulation
+      observables:
+      - id: TF_VIIa
+        port: tf_vi_ia
+        label: TF_VIIa
+        group: physiology
+      - id: mIIa
+        port: m_i_ia
+        label: mIIa
+        group: physiology
+      - id: X_VIIIa_IXa
+        port: x_vii_ia_i_xa
+        label: X_VIIIa_IXa
+        group: physiology
+      - id: X_TF_VIIa
+        port: x_tf_vi_ia
+        label: X_TF_VIIa
+        group: physiology
+      - id: Va_Xa
+        port: va_xa
+        label: Va_Xa
+        group: physiology
+      - id: VIIIa_IXa
+        port: vii_ia_i_xa
+        label: VIIIa_IXa
+        group: physiology
+io:
+  inputs: []
+  outputs: []

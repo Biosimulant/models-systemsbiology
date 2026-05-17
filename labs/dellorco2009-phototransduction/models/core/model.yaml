@@ -1,0 +1,77 @@
+schema_version: '2.0'
+title: DellOrco2009_phototransduction
+description: 'This a model from the article: Network-level analysis of light adaptation
+  in rod cells under normal and altered conditions. It can be used to explore systemsbiology
+  dellorco2009 phototransduction BioModels0000000326 dynamics and compare simulation
+  behavior across conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Daniele Dell'Orco
+- Henning Schmidt
+- Simona Mariani
+- Francesca Fanelli
+upstream:
+  id: biomodels_ebi:BIOMD0000000326
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000326
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000326
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000326?filename=BIOMD0000000326_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.dellorco2009_phototransduction_biomd0000000326_model:Dellorco2009PhototransductionBiomd0000000326Model
+  init_kwargs:
+    model_path: data/BIOMD0000000326.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: otherstimulus
+    maps_to: otherstimulus
+    label: Otherstimulus
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `otherstimulus`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: rec_w_ca2_rk
+    maps_to: Rec_wCa2_RK
+    label: Rec_wCa2_RK
+    description: Rec_wCa2_RK. Maps to SBML symbol `Rec_wCa2_RK`.
+  - name: ca2_buff
+    maps_to: Ca2_buff
+    label: Ca2_buff
+    description: Ca2_buff. Maps to SBML symbol `Ca2_buff`.
+  - name: c_gmp
+    maps_to: cGMP
+    label: cGMP
+    description: cGMP. Maps to SBML symbol `cGMP`.
+  - name: ca2_free
+    maps_to: Ca2_free
+    label: Ca2_free
+    description: Ca2_free. Maps to SBML symbol `Ca2_free`.
+  - name: rgs_pde_a_ga_gtp
+    maps_to: RGS_PDE_a_Ga_GTP
+    label: RGS_PDE_a_Ga_GTP
+    description: RGS_PDE_a_Ga_GTP. Maps to SBML symbol `RGS_PDE_a_Ga_GTP`.
+  - name: r6_r_kpre
+    maps_to: R6_RKpre
+    label: R6_RKpre
+    description: R6_RKpre. Maps to SBML symbol `R6_RKpre`.

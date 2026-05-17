@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Holzhutter2004_Erythrocyte_Metabolism Visualisation
+description: Question-and-answer and dynamic visual summaries for Holzhutter2004_Erythrocyte_Metabolism.
+standard: other
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Holzhutter2004 Erythrocyte Metabolism Lab
+    question: 'Which metabolic pools or flux-linked states show the strongest simulated
+      change? Source model: Holzhutter2004_Erythrocyte_Metabolism.'
+    answer_focus: Q/A table plus metabolism timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_holzhutter2004_erythrocyte_metabolism_biomd0000000070_model
+      title: Holzhutter2004_Erythrocyte_Metabolism
+      observables:
+      - id: Lacex
+        port: external_lactate
+        label: External Lactate
+        group: metabolism
+      - id: Phiex
+        port: phosphate_external
+        label: Phosphate external
+        group: metabolism
+      - id: Pyrex
+        port: external_pyruvate
+        label: External Pyruvate
+        group: metabolism
+      - id: P2NADPH
+        port: protein2_bound_nadph
+        label: Protein2 bound NADPH
+        group: metabolism
+      - id: P1NADPH
+        port: protein1_bound_nadph
+        label: Protein1 bound NADPH
+        group: metabolism
+      - id: P2NADP
+        port: protein2_bound_nadp
+        label: Protein2 bound NADP
+        group: metabolism
+io:
+  inputs: []
+  outputs: []

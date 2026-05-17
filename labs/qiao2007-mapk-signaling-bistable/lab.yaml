@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Qiao2007 Mapk Signaling Bistable Lab
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models (http://www.ebi.ac.uk/biomodels/). It is copyright (c) 2005-2011
+  The BioModels.net Team.'
+models:
+- alias: systemsbiology_sbml_qiao2007_mapk_signaling_bistable_model6185511733_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_qiao2007_mapk_signaling_bistable_model6185511733_model.state
+  to:
+  - visualisation.systemsbiology_sbml_qiao2007_mapk_signaling_bistable_model6185511733_model_state
+- from: systemsbiology_sbml_qiao2007_mapk_signaling_bistable_model6185511733_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_qiao2007_mapk_signaling_bistable_model6185511733_model_summary
+- from: systemsbiology_sbml_qiao2007_mapk_signaling_bistable_model6185511733_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_qiao2007_mapk_signaling_bistable_model6185511733_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_kpp
+    maps_to: systemsbiology_sbml_qiao2007_mapk_signaling_bistable_model6185511733_model.initial_model_state_kpp
+    label: Initial Model State Kpp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `KPP`.
+  - name: initial_kkpp
+    maps_to: systemsbiology_sbml_qiao2007_mapk_signaling_bistable_model6185511733_model.initial_kkpp
+    label: Initial Kkpp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `KKPP`.
+  - name: initial_k_pase
+    maps_to: systemsbiology_sbml_qiao2007_mapk_signaling_bistable_model6185511733_model.initial_k_pase
+    label: Initial K Pase
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `KPase`.
+  - name: initial_kppk_pase
+    maps_to: systemsbiology_sbml_qiao2007_mapk_signaling_bistable_model6185511733_model.initial_kppk_pase
+    label: Initial Kppk Pase
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `KPPKPase`.
+  - name: initial_kpk_pase
+    maps_to: systemsbiology_sbml_qiao2007_mapk_signaling_bistable_model6185511733_model.initial_kpk_pase
+    label: Initial Kpk Pase
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `KPKPase`.
+  - name: initial_kpkkpp
+    maps_to: systemsbiology_sbml_qiao2007_mapk_signaling_bistable_model6185511733_model.initial_kpkkpp
+    label: Initial Kpkkpp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `KPKKPP`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_qiao2007_mapk_signaling_bistable_model6185511733_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_qiao2007_mapk_signaling_bistable_model6185511733_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_qiao2007_mapk_signaling_bistable_model6185511733_model.species_labels
+  - name: kpp
+    maps_to: systemsbiology_sbml_qiao2007_mapk_signaling_bistable_model6185511733_model.kpp
+  - name: kkpp
+    maps_to: systemsbiology_sbml_qiao2007_mapk_signaling_bistable_model6185511733_model.kkpp
+  - name: k_pase
+    maps_to: systemsbiology_sbml_qiao2007_mapk_signaling_bistable_model6185511733_model.k_pase
+  - name: kppk_pase
+    maps_to: systemsbiology_sbml_qiao2007_mapk_signaling_bistable_model6185511733_model.kppk_pase
+  - name: kpk_pase
+    maps_to: systemsbiology_sbml_qiao2007_mapk_signaling_bistable_model6185511733_model.kpk_pase
+  - name: kpkkpp
+    maps_to: systemsbiology_sbml_qiao2007_mapk_signaling_bistable_model6185511733_model.kpkkpp

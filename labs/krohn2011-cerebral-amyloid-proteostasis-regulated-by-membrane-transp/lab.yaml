@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Krohn2011 Cerebral Amyloid Proteostasis Regulated By Membrane Transp Lab
+description: 'Krohn2011 - Cerebral amyloid-βproteostasis regulated by membrane transport
+  protein ABCC1 This model is described in the article: Cerebral amyloid-β proteostasis
+  is regulated by the membrane transport. It can be used to explore systemsbiology
+  krohn2011 cerebral amyloid proteostasis regulate dynamics and compare simulation
+  behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_krohn2011_cerebral_amyloid_proteostasis_regulate_biomd0000000618_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_krohn2011_cerebral_amyloid_proteostasis_regulate_biomd0000000618_model.state
+  to:
+  - visualisation.systemsbiology_sbml_krohn2011_cerebral_amyloid_proteostasis_regulate_biomd0000000618_model_state
+- from: systemsbiology_sbml_krohn2011_cerebral_amyloid_proteostasis_regulate_biomd0000000618_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_krohn2011_cerebral_amyloid_proteostasis_regulate_biomd0000000618_model_summary
+- from: systemsbiology_sbml_krohn2011_cerebral_amyloid_proteostasis_regulate_biomd0000000618_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_krohn2011_cerebral_amyloid_proteostasis_regulate_biomd0000000618_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_soluble_obs
+    maps_to: systemsbiology_sbml_krohn2011_cerebral_amyloid_proteostasis_regulate_biomd0000000618_model.initial_soluble_obs
+    label: Initial Soluble Obs
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `soluble_obs`.
+  - name: initial_insoluble_obs
+    maps_to: systemsbiology_sbml_krohn2011_cerebral_amyloid_proteostasis_regulate_biomd0000000618_model.initial_insoluble_obs
+    label: Initial Insoluble Obs
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `insoluble_obs`.
+  - name: initial_model_state_a9
+    maps_to: systemsbiology_sbml_krohn2011_cerebral_amyloid_proteostasis_regulate_biomd0000000618_model.initial_model_state_a9
+    label: Initial Model State A9
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `A9`.
+  - name: initial_model_state_a8
+    maps_to: systemsbiology_sbml_krohn2011_cerebral_amyloid_proteostasis_regulate_biomd0000000618_model.initial_model_state_a8
+    label: Initial Model State A8
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `A8`.
+  - name: initial_model_state_a7
+    maps_to: systemsbiology_sbml_krohn2011_cerebral_amyloid_proteostasis_regulate_biomd0000000618_model.initial_model_state_a7
+    label: Initial Model State A7
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `A7`.
+  - name: initial_model_state_a54
+    maps_to: systemsbiology_sbml_krohn2011_cerebral_amyloid_proteostasis_regulate_biomd0000000618_model.initial_model_state_a54
+    label: Initial Model State A54
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `A54`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_krohn2011_cerebral_amyloid_proteostasis_regulate_biomd0000000618_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_krohn2011_cerebral_amyloid_proteostasis_regulate_biomd0000000618_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_krohn2011_cerebral_amyloid_proteostasis_regulate_biomd0000000618_model.species_labels
+  - name: soluble_obs
+    maps_to: systemsbiology_sbml_krohn2011_cerebral_amyloid_proteostasis_regulate_biomd0000000618_model.soluble_obs
+  - name: insoluble_obs
+    maps_to: systemsbiology_sbml_krohn2011_cerebral_amyloid_proteostasis_regulate_biomd0000000618_model.insoluble_obs
+  - name: model_state_a9
+    maps_to: systemsbiology_sbml_krohn2011_cerebral_amyloid_proteostasis_regulate_biomd0000000618_model.model_state_a9
+  - name: model_state_a8
+    maps_to: systemsbiology_sbml_krohn2011_cerebral_amyloid_proteostasis_regulate_biomd0000000618_model.model_state_a8
+  - name: model_state_a7
+    maps_to: systemsbiology_sbml_krohn2011_cerebral_amyloid_proteostasis_regulate_biomd0000000618_model.model_state_a7
+  - name: a54
+    maps_to: systemsbiology_sbml_krohn2011_cerebral_amyloid_proteostasis_regulate_biomd0000000618_model.a54

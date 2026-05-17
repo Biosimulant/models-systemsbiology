@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Dan2006 Glycolysis Reduction Lab
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models. It is copyright (c) 2005-2011 The BioModels.net Team.'
+models:
+- alias: systemsbiology_sbml_dan_2006_glycolysis_reduction_model5952308332_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_dan_2006_glycolysis_reduction_model5952308332_model.state
+  to:
+  - visualisation.systemsbiology_sbml_dan_2006_glycolysis_reduction_model5952308332_model_state
+- from: systemsbiology_sbml_dan_2006_glycolysis_reduction_model5952308332_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_dan_2006_glycolysis_reduction_model5952308332_model_summary
+- from: systemsbiology_sbml_dan_2006_glycolysis_reduction_model5952308332_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_dan_2006_glycolysis_reduction_model5952308332_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_aca
+    maps_to: systemsbiology_sbml_dan_2006_glycolysis_reduction_model5952308332_model.initial_model_state_aca
+    label: Initial Model State Aca
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ACA`.
+  - name: initial_acax
+    maps_to: systemsbiology_sbml_dan_2006_glycolysis_reduction_model5952308332_model.initial_acax
+    label: Initial Acax
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ACAX`.
+  - name: initial_triose_p
+    maps_to: systemsbiology_sbml_dan_2006_glycolysis_reduction_model5952308332_model.initial_triose_p
+    label: Initial Triose P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `trioseP`.
+  - name: initial_source
+    maps_to: systemsbiology_sbml_dan_2006_glycolysis_reduction_model5952308332_model.initial_source
+    label: Initial Source
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `source`.
+  - name: initial_sink
+    maps_to: systemsbiology_sbml_dan_2006_glycolysis_reduction_model5952308332_model.initial_sink
+    label: Initial Sink
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `sink`.
+  - name: initial_glc_x
+    maps_to: systemsbiology_sbml_dan_2006_glycolysis_reduction_model5952308332_model.initial_glc_x
+    label: Initial Glc X
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `GlcX`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_dan_2006_glycolysis_reduction_model5952308332_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_dan_2006_glycolysis_reduction_model5952308332_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_dan_2006_glycolysis_reduction_model5952308332_model.species_labels
+  - name: aca
+    maps_to: systemsbiology_sbml_dan_2006_glycolysis_reduction_model5952308332_model.aca
+  - name: acax
+    maps_to: systemsbiology_sbml_dan_2006_glycolysis_reduction_model5952308332_model.acax
+  - name: triose_p
+    maps_to: systemsbiology_sbml_dan_2006_glycolysis_reduction_model5952308332_model.triose_p
+  - name: source
+    maps_to: systemsbiology_sbml_dan_2006_glycolysis_reduction_model5952308332_model.source
+  - name: sink
+    maps_to: systemsbiology_sbml_dan_2006_glycolysis_reduction_model5952308332_model.sink
+  - name: glc_x
+    maps_to: systemsbiology_sbml_dan_2006_glycolysis_reduction_model5952308332_model.glc_x

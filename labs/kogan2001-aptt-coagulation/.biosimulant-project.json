@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "79457cae-9cbd-433f-9c91-2f312c5fa78b",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "066adea9-6874-4d3a-9eaf-5aea6b78e6bc",
+  "created_at": "2026-05-16T05:46:44.785971931+00:00",
+  "last_synced_at": "2026-05-17T04:07:37.230702+00:00",
+  "hub_manifest_hash": "66b3a488692d9320aed3a49fad362f38725970ff5295d42436c444950ce15dac",
+  "package_name": "kogan2001-aptt-coagulation-lab"
+}

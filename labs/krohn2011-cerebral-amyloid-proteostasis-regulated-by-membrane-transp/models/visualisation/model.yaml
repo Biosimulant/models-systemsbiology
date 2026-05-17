@@ -1,0 +1,59 @@
+schema_version: '2.0'
+title: Krohn2011 - Cerebral amyloid-β proteostasis regulated by membrane transport
+  protein ABCC1 Visualisation
+description: Question-and-answer and dynamic visual summaries for Krohn2011 - Cerebral
+  amyloid-β proteostasis regulated by membrane transport protein ABCC1.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Krohn2011 Cerebral Amyloid Proteostasis Regulated By Membrane Transp
+      Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Krohn2011 - Cerebral amyloid-β proteostasis regulated by membrane
+      transport protein ABCC1.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_krohn2011_cerebral_amyloid_proteostasis_regulate_biomd0000000618_model
+      title: Krohn2011 - Cerebral amyloid-β proteostasis regulated by membrane transport
+        protein ABCC1
+      observables:
+      - id: soluble_obs
+        port: soluble_obs
+        label: soluble_obs
+        group: gene_regulation
+      - id: insoluble_obs
+        port: insoluble_obs
+        label: insoluble_obs
+        group: gene_regulation
+      - id: A9
+        port: model_state_a9
+        label: A9
+        group: gene_regulation
+      - id: A8
+        port: model_state_a8
+        label: A8
+        group: gene_regulation
+      - id: A7
+        port: model_state_a7
+        label: A7
+        group: gene_regulation
+      - id: A54
+        port: a54
+        label: A54
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

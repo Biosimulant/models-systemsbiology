@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Dokos1996_SinoatrialNode Visualisation
+description: Question-and-answer and dynamic visual summaries for Dokos1996_SinoatrialNode.
+standard: other
+tags:
+- cardiovascular
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Dokos1996 Sinoatrialnode Lab
+    question: 'Which cardiovascular or blood-state variables dominate the simulated
+      response? Source model: Dokos1996_SinoatrialNode.'
+    answer_focus: Q/A table plus cardiovascular timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_dokos1996_sinoatrialnode_model0912503622_model
+      title: Dokos1996_SinoatrialNode
+      observables:
+      - id: Nao
+        port: nao
+        label: Nao
+        group: physiology
+      - id: Nai
+        port: nai
+        label: Nai
+        group: physiology
+      - id: Ko
+        port: model_state_ko
+        label: Ko
+        group: physiology
+      - id: Ki
+        port: model_state_ki
+        label: Ki
+        group: physiology
+      - id: fT
+        port: model_state_ft
+        label: FT
+        group: physiology
+      - id: fL2
+        port: fl2
+        label: FL2
+        group: physiology
+io:
+  inputs: []
+  outputs: []

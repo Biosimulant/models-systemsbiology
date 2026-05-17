@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "69b3bd61-c4d9-4922-b523-e77d4c59656a",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "422a0505-0b19-4b4b-8b0b-d5ddc70314cb",
+  "created_at": "2026-05-16T05:46:48.504486372+00:00",
+  "last_synced_at": "2026-05-17T05:10:44.286877+00:00",
+  "hub_manifest_hash": "f1426ac7da4ad2f8d5ccc26f196b1ead09a8badf794a418bf407cf75f5172d02",
+  "package_name": "nayak2015-blood-coagulation-network-predicting-the-effects-of-va"
+}

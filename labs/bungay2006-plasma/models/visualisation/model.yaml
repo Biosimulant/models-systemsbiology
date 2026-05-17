@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Bungay2006_Plasma Visualisation
+description: Question-and-answer and dynamic visual summaries for Bungay2006_Plasma.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Bungay2006 Plasma Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Bungay2006_Plasma.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_bungay2006_plasma_biomd0000000332_model
+      title: Bungay2006_Plasma
+      observables:
+      - id: AT_f
+        port: at_f
+        label: AT_f
+        group: gene_regulation
+      - id: alpha2M_l
+        port: alpha2_m_l
+        label: alpha2M_l
+        group: gene_regulation
+      - id: II_f
+        port: ii_f
+        label: II_f
+        group: gene_regulation
+      - id: PS_f
+        port: ps_f
+        label: PS_f
+        group: gene_regulation
+      - id: X_f
+        port: x_f
+        label: X_f
+        group: gene_regulation
+      - id: IX_f
+        port: ix_f
+        label: IX_f
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

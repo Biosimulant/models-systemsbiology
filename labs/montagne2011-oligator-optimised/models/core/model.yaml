@@ -1,0 +1,109 @@
+schema_version: '2.0'
+title: Montagne2011_Oligator_optimised
+description: 'This is the model of the in vitro DNA oscillator called oligator with
+  the optmized set of parameters described in the article: Programming an in vitro
+  DNA oscillator using a molecular networking strat. It can be used to explore systemsbiology
+  montagne2011 oligator optimised BioModels0000000315 dynamics and compare simulation
+  behavior across conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Kevin Montagne
+- Raphael Plasson
+- Yasuyuki Sakai
+- Teruo Fujii
+- Yannick Rondelez
+upstream:
+  id: biomodels_ebi:BIOMD0000000315
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000315
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000315
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000315?filename=BIOMD0000000315_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.montagne2011_oligator_optimised_biomd0000000315_model:Montagne2011OligatorOptimisedBiomd0000000315Model
+  init_kwargs:
+    model_path: data/BIOMD0000000315.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_alpha
+    maps_to: alpha
+    label: Initial Alpha
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `alpha`.
+  - name: initial_beta_t3_inh
+    maps_to: beta_T3_Inh
+    label: Initial Beta T3 Inh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `beta_T3_Inh`.
+  - name: initial_beta_t3
+    maps_to: beta_T3
+    label: Initial Beta T3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `beta_T3`.
+  - name: initial_beta_inh_t3
+    maps_to: beta_Inh_T3
+    label: Initial Beta Inh T3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `beta_Inh_T3`.
+  - name: initial_beta
+    maps_to: beta
+    label: Initial Beta
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `beta`.
+  - name: initial_alpha_beta_t2
+    maps_to: alpha_beta_T2
+    label: Initial Alpha Beta T2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `alpha_beta_T2`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: alpha
+    maps_to: alpha
+    label: alpha
+    description: alpha. Maps to SBML symbol `alpha`.
+  - name: beta_t3_inh
+    maps_to: beta_T3_Inh
+    label: beta_T3_Inh
+    description: beta_T3_Inh. Maps to SBML symbol `beta_T3_Inh`.
+  - name: beta_t3
+    maps_to: beta_T3
+    label: beta_T3
+    description: beta_T3. Maps to SBML symbol `beta_T3`.
+  - name: beta_inh_t3
+    maps_to: beta_Inh_T3
+    label: beta_Inh_T3
+    description: beta_Inh_T3. Maps to SBML symbol `beta_Inh_T3`.
+  - name: beta
+    maps_to: beta
+    label: beta
+    description: beta. Maps to SBML symbol `beta`.
+  - name: alpha_beta_t2
+    maps_to: alpha_beta_T2
+    label: alpha_beta_T2
+    description: alpha_beta_T2. Maps to SBML symbol `alpha_beta_T2`.

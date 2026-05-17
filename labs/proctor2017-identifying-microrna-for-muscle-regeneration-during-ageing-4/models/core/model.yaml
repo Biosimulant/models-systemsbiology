@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Proctor2017 - Identifying microRNA for muscle regeneration during ageing (Mirs_in_muscle)
+description: 'Proctor2017 - Identifying microRNA for muscleregeneration during ageing
+  (Mirs_in_muscle) This model is described in the article: Using computer simulation
+  models to investigate the most promising micr. It can be used to explore systemsbiology
+  proctor2017 identifying microrna for muscle dynamics and compare simulation behavior
+  across conditions.'
+standard: other
+tags:
+- generegulation
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Carole J. Proctor & Katarzyna Goljanek-Whysall
+upstream:
+  id: biomodels_ebi:MODEL1704110004
+  source_db: biomodels_ebi
+  source_id: MODEL1704110004
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1704110004
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1704110004?filename=MODEL1704110004_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.proctor2017_identifying_microrna_for_muscle_rege_model1704110004_model:Proctor2017IdentifyingMicrornaForMuscleRegeModel1704110004Model
+  init_kwargs:
+    model_path: data/MODEL1704110004.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_myo_d
+    maps_to: MyoD
+    label: Initial Myo D
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MyoD`.
+  - name: initial_model_state_msc
+    maps_to: Msc
+    label: Initial Model State Msc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Msc`.
+  - name: initial_igf2
+    maps_to: Igf2
+    label: Initial Igf2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Igf2`.
+  - name: initial_model_state_il6
+    maps_to: IL6
+    label: Initial Model State IL6
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IL6`.
+  - name: initial_hox_a11
+    maps_to: HoxA11
+    label: Initial Hox A11
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `HoxA11`.
+  - name: initial_sirt1
+    maps_to: Sirt1
+    label: Initial Sirt1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Sirt1`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: myo_d
+    maps_to: MyoD
+    label: MyoD
+    description: MyoD. Maps to SBML symbol `MyoD`.
+  - name: msc
+    maps_to: Msc
+    label: Msc
+    description: Msc. Maps to SBML symbol `Msc`.
+  - name: igf2
+    maps_to: Igf2
+    label: Igf2
+    description: Igf2. Maps to SBML symbol `Igf2`.
+  - name: il6
+    maps_to: IL6
+    label: IL6
+    description: IL6. Maps to SBML symbol `IL6`.
+  - name: hox_a11
+    maps_to: HoxA11
+    label: HoxA11
+    description: HoxA11. Maps to SBML symbol `HoxA11`.
+  - name: sirt1
+    maps_to: Sirt1
+    label: Sirt1
+    description: Sirt1. Maps to SBML symbol `Sirt1`.

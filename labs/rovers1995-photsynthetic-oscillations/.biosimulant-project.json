@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "de4cc430-dd8e-4506-855d-a69a39eb04d2",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "cffb01ac-5dff-4fe6-9caa-fcdb96f1f9a8",
+  "created_at": "2026-05-16T05:46:51.566979267+00:00",
+  "last_synced_at": "2026-05-17T06:02:45.221357+00:00",
+  "hub_manifest_hash": "f51911408bd72bfdee163b72eee491ecb765f9dfaa64861ab72a1da47b5fd254",
+  "package_name": "rovers1995-photsynthetic-oscillations-lab"
+}

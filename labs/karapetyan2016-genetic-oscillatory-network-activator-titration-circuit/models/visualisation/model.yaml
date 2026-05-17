@@ -1,0 +1,60 @@
+schema_version: '2.0'
+title: Karapetyan2016 - Genetic oscillatory network - Activator Titration Circuit
+  (ATC) Visualisation
+description: Question-and-answer and dynamic visual summaries for Karapetyan2016 -
+  Genetic oscillatory network - Activator Titration Circuit (ATC).
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Karapetyan2016 Genetic Oscillatory Network Activator Titration Circuit
+      Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Karapetyan2016 - Genetic oscillatory network - Activator Titration
+      Circuit (ATC).'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_karapetyan2016_genetic_oscillatory_network_activ_biomd0000000586_model
+      title: Karapetyan2016 - Genetic oscillatory network - Activator Titration Circuit
+        (ATC)
+      observables:
+      - id: rI
+        port: r_i
+        label: rI
+        group: gene_regulation
+      - id: rA
+        port: r_a
+        label: rA
+        group: gene_regulation
+      - id: G0
+        port: model_state_g0
+        label: G0
+        group: gene_regulation
+      - id: G3
+        port: model_state_g3
+        label: G3
+        group: gene_regulation
+      - id: G2
+        port: model_state_g2
+        label: G2
+        group: gene_regulation
+      - id: G1
+        port: model_state_g1
+        label: G1
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

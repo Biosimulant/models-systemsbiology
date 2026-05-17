@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Bartholome2007 Mdckii Lab
+description: 'SBML model exported from PottersWheel on 2007-09-19 15:35:47. The values
+  for parameters and the inital concentrations of this model where directly provided
+  by the main author: Parameter values paramet.'
+models:
+- alias: systemsbiology_sbml_bartholome2007_mdckii_biomd0000000197_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_bartholome2007_mdckii_biomd0000000197_model.state
+  to:
+  - visualisation.systemsbiology_sbml_bartholome2007_mdckii_biomd0000000197_model_state
+- from: systemsbiology_sbml_bartholome2007_mdckii_biomd0000000197_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_bartholome2007_mdckii_biomd0000000197_model_summary
+- from: systemsbiology_sbml_bartholome2007_mdckii_biomd0000000197_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_bartholome2007_mdckii_biomd0000000197_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_intracellular_bsp
+    maps_to: systemsbiology_sbml_bartholome2007_mdckii_biomd0000000197_model.initial_intracellular_bsp
+    label: Initial Intracellular Bsp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `BSP_cell`.
+  - name: initial_free_intracellular_bsp
+    maps_to: systemsbiology_sbml_bartholome2007_mdckii_biomd0000000197_model.initial_free_intracellular_bsp
+    label: Initial Free Intracellular Bsp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x3`.
+  - name: initial_bound_intracellular_bsp
+    maps_to: systemsbiology_sbml_bartholome2007_mdckii_biomd0000000197_model.initial_bound_intracellular_bsp
+    label: Initial Bound Intracellular Bsp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x4`.
+  - name: initial_apical_bsp
+    maps_to: systemsbiology_sbml_bartholome2007_mdckii_biomd0000000197_model.initial_apical_bsp
+    label: Initial Apical Bsp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x5`.
+  - name: initial_free_basolateral_bsp
+    maps_to: systemsbiology_sbml_bartholome2007_mdckii_biomd0000000197_model.initial_free_basolateral_bsp
+    label: Initial Free Basolateral Bsp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x1`.
+  - name: initial_total_bsp
+    maps_to: systemsbiology_sbml_bartholome2007_mdckii_biomd0000000197_model.initial_total_bsp
+    label: Initial Total Bsp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `BSP_tot`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_bartholome2007_mdckii_biomd0000000197_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_bartholome2007_mdckii_biomd0000000197_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_bartholome2007_mdckii_biomd0000000197_model.species_labels
+  - name: intracellular_bsp
+    maps_to: systemsbiology_sbml_bartholome2007_mdckii_biomd0000000197_model.intracellular_bsp
+  - name: free_intracellular_bsp
+    maps_to: systemsbiology_sbml_bartholome2007_mdckii_biomd0000000197_model.free_intracellular_bsp
+  - name: bound_intracellular_bsp
+    maps_to: systemsbiology_sbml_bartholome2007_mdckii_biomd0000000197_model.bound_intracellular_bsp
+  - name: apical_bsp
+    maps_to: systemsbiology_sbml_bartholome2007_mdckii_biomd0000000197_model.apical_bsp
+  - name: free_basolateral_bsp
+    maps_to: systemsbiology_sbml_bartholome2007_mdckii_biomd0000000197_model.free_basolateral_bsp
+  - name: total_bsp
+    maps_to: systemsbiology_sbml_bartholome2007_mdckii_biomd0000000197_model.total_bsp

@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Restif2006 Whooping Cough Lab
+description: 'Restif2006 - Whooping cough This model is described in the article:
+  Integrating life history and cross-immunity into the evolutionary dynamics of pathogens.
+  It can be used to explore systemsbiology restif2006 whooping cough BioModels0000000249
+  dynamics and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_restif2006_whooping_cough_biomd0000000249_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_restif2006_whooping_cough_biomd0000000249_model.state
+  to:
+  - visualisation.systemsbiology_sbml_restif2006_whooping_cough_biomd0000000249_model_state
+- from: systemsbiology_sbml_restif2006_whooping_cough_biomd0000000249_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_restif2006_whooping_cough_biomd0000000249_model_summary
+- from: systemsbiology_sbml_restif2006_whooping_cough_biomd0000000249_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_restif2006_whooping_cough_biomd0000000249_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_r_1
+    maps_to: systemsbiology_sbml_restif2006_whooping_cough_biomd0000000249_model.initial_model_state_r_1
+    label: Initial Model State R 1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `R_1`.
+  - name: initial_model_state_i_1
+    maps_to: systemsbiology_sbml_restif2006_whooping_cough_biomd0000000249_model.initial_model_state_i_1
+    label: Initial Model State I 1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `I_1`.
+  - name: initial_model_state_i_2
+    maps_to: systemsbiology_sbml_restif2006_whooping_cough_biomd0000000249_model.initial_model_state_i_2
+    label: Initial Model State I 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `I_2`.
+  - name: initial_model_state_r_p
+    maps_to: systemsbiology_sbml_restif2006_whooping_cough_biomd0000000249_model.initial_model_state_r_p
+    label: Initial Model State R P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `R_p`.
+  - name: initial_model_state_r_2
+    maps_to: systemsbiology_sbml_restif2006_whooping_cough_biomd0000000249_model.initial_model_state_r_2
+    label: Initial Model State R 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `R_2`.
+  - name: initial_i_2_p
+    maps_to: systemsbiology_sbml_restif2006_whooping_cough_biomd0000000249_model.initial_i_2_p
+    label: Initial I 2 P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `I_2p`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_restif2006_whooping_cough_biomd0000000249_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_restif2006_whooping_cough_biomd0000000249_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_restif2006_whooping_cough_biomd0000000249_model.species_labels
+  - name: r_1
+    maps_to: systemsbiology_sbml_restif2006_whooping_cough_biomd0000000249_model.r_1
+  - name: i_1
+    maps_to: systemsbiology_sbml_restif2006_whooping_cough_biomd0000000249_model.i_1
+  - name: i_2
+    maps_to: systemsbiology_sbml_restif2006_whooping_cough_biomd0000000249_model.i_2
+  - name: r_p
+    maps_to: systemsbiology_sbml_restif2006_whooping_cough_biomd0000000249_model.r_p
+  - name: r_2
+    maps_to: systemsbiology_sbml_restif2006_whooping_cough_biomd0000000249_model.r_2
+  - name: i_2_p
+    maps_to: systemsbiology_sbml_restif2006_whooping_cough_biomd0000000249_model.i_2_p

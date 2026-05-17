@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Wolf2000_Glycolytic_Oscillations
+description: Model reproduces the dynamics of ATP and NADH as depicted in Fig 4 of
+  the paper. It can be used to explore systemsbiology wolf2000 glycolytic oscillations
+  BioModels0000000206 dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Jana Wolf
+- J Passarge
+- O J Somsen
+- Snoep JL
+- R Heinrich
+upstream:
+  id: biomodels_ebi:BIOMD0000000206
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000206
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000206
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000206?filename=BIOMD0000000206_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.wolf2000_glycolytic_oscillations_biomd0000000206_model:Wolf2000GlycolyticOscillationsBiomd0000000206Model
+  init_kwargs:
+    model_path: data/BIOMD0000000206.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_pyruvate
+    maps_to: s5
+    label: Initial Pyruvate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s5`.
+  - name: initial_f16_p
+    maps_to: s2
+    label: Initial F16 P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s2`.
+  - name: initial_model_state_atp
+    maps_to: at
+    label: Initial Model State ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `at`.
+  - name: initial_glucose
+    maps_to: s1
+    label: Initial Glucose
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s1`.
+  - name: initial_model_state_3_pg
+    maps_to: s4
+    label: Initial Model State 3 Pg
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s4`.
+  - name: initial_triose_gly3_phos_dhap
+    maps_to: s3
+    label: Initial Triose Gly3 Phos Dhap
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s3`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: pyruvate
+    maps_to: s5
+    label: Pyruvate
+    description: Pyruvate. Maps to SBML symbol `s5`.
+  - name: f16_p
+    maps_to: s2
+    label: F16P
+    description: F16P. Maps to SBML symbol `s2`.
+  - name: atp
+    maps_to: at
+    label: ATP
+    description: ATP. Maps to SBML symbol `at`.
+  - name: glucose
+    maps_to: s1
+    label: Glucose
+    description: Glucose. Maps to SBML symbol `s1`.
+  - name: model_state_3_pg
+    maps_to: s4
+    label: 3PG
+    description: 3PG. Maps to SBML symbol `s4`.
+  - name: triose_gly3_phos_dhap
+    maps_to: s3
+    label: Triose_Gly3Phos_DHAP
+    description: Triose_Gly3Phos_DHAP. Maps to SBML symbol `s3`.

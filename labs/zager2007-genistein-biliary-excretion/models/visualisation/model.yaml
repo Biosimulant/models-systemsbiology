@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Zager2007_Genistein_Biliary_Excretion Visualisation
+description: Question-and-answer and dynamic visual summaries for Zager2007_Genistein_Biliary_Excretion.
+standard: other
+tags:
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Zager2007 Genistein Biliary Excretion Lab
+    question: 'Which drug, dose, or target-linked model states drive the simulated
+      profile? Source model: Zager2007_Genistein_Biliary_Excretion.'
+    answer_focus: Q/A table plus pharmacology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_zager2007_genistein_biliary_excretion_model6963432821_model
+      title: Zager2007_Genistein_Biliary_Excretion
+      observables:
+      - id: Cgen_rp
+        port: cgen_rp
+        label: Cgen Rp
+        group: physiology
+      - id: Cgen_pp
+        port: cgen_pp
+        label: Cgen Pp
+        group: physiology
+      - id: Cgen_l
+        port: cgen_l
+        label: Cgen L
+        group: physiology
+      - id: Cgen_GI
+        port: cgen_gi
+        label: Cgen GI
+        group: physiology
+      - id: Ccon_ROB
+        port: ccon_rob
+        label: Ccon ROB
+        group: physiology
+      - id: Ccon_l
+        port: ccon_l
+        label: Ccon L
+        group: physiology
+io:
+  inputs: []
+  outputs: []

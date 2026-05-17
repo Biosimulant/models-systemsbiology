@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Lee2010_ThrombinActivation_OneForm Visualisation
+description: Question-and-answer and dynamic visual summaries for Lee2010_ThrombinActivation_OneForm.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Lee2010 Thrombinactivation Oneform Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Lee2010_ThrombinActivation_OneForm.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_lee2010_thrombinactivation_oneform_biomd0000000364_model
+      title: Lee2010_ThrombinActivation_OneForm
+      observables:
+      - id: E_P_2
+        port: e_p_2
+        label: E_P_2
+        group: physiology
+      - id: E_P_1
+        port: e_p_1
+        label: E_P_1
+        group: physiology
+      - id: E_P21
+        port: e_p21
+        label: E_P21
+        group: physiology
+      - id: E_P2
+        port: e_p2
+        label: E_P2
+        group: physiology
+      - id: E_P1
+        port: e_p1
+        label: E_P1
+        group: physiology
+      - id: E_M1
+        port: e_m1
+        label: E_M1
+        group: physiology
+io:
+  inputs: []
+  outputs: []

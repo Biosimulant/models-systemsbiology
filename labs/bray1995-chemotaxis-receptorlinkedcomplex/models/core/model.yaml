@@ -1,0 +1,103 @@
+schema_version: '2.0'
+title: Bray1995_chemotaxis_receptorlinkedcomplex
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models. It is copyright (c) 2005-2009 The BioModels Team.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- D Bray
+- R B Bourret
+upstream:
+  id: biomodels_ebi:BIOMD0000000200
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000200
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000200
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000200?filename=BIOMD0000000200_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.bray1995_chemotaxis_receptorlinkedcomplex_biomd0000000200_model:Bray1995ChemotaxisReceptorlinkedcomplexBiomd0000000200Model
+  init_kwargs:
+    model_path: data/BIOMD0000000200.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_set_yp
+    maps_to: SetYp
+    label: Initial Set Yp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `SetYp`.
+  - name: initial_model_state_tt
+    maps_to: TT
+    label: Initial Model State Tt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TT`.
+  - name: initial_model_state_aa
+    maps_to: AA
+    label: Initial Model State Aa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `AA`.
+  - name: initial_model_state_yp
+    maps_to: Yp
+    label: Initial Model State Yp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Yp`.
+  - name: initial_wwa_ap
+    maps_to: WWAAp
+    label: Initial Wwa Ap
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `WWAAp`.
+  - name: initial_wwaa
+    maps_to: WWAA
+    label: Initial Wwaa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `WWAA`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: set_yp
+    maps_to: SetYp
+    label: setYp
+    description: setYp. Maps to SBML symbol `SetYp`.
+  - name: model_state_tt
+    maps_to: TT
+    label: TT
+    description: TT. Maps to SBML symbol `TT`.
+  - name: model_state_aa
+    maps_to: AA
+    label: AA
+    description: AA. Maps to SBML symbol `AA`.
+  - name: model_state_yp
+    maps_to: Yp
+    label: Yp
+    description: Yp. Maps to SBML symbol `Yp`.
+  - name: wwa_ap
+    maps_to: WWAAp
+    label: WWAAp
+    description: WWAAp. Maps to SBML symbol `WWAAp`.
+  - name: wwaa
+    maps_to: WWAA
+    label: WWAA
+    description: WWAA. Maps to SBML symbol `WWAA`.

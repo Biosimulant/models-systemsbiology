@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Hockin2002_BloodCoagulation Visualisation
+description: Question-and-answer and dynamic visual summaries for Hockin2002_BloodCoagulation.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Hockin2002 Bloodcoagulation Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Hockin2002_BloodCoagulation.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_hockin2002_bloodcoagulation_biomd0000000335_model
+      title: Hockin2002_BloodCoagulation
+      observables:
+      - id: mIIa_ATIII
+        port: m_i_ia_atiii
+        label: mIIa_ATIII
+        group: physiology
+      - id: mIIa
+        port: m_i_ia
+        label: mIIa
+        group: physiology
+      - id: Xa_Va_II
+        port: xa_va_ii
+        label: Xa_Va_II
+        group: physiology
+      - id: Xa_Va
+        port: xa_va
+        label: Xa_Va
+        group: physiology
+      - id: Xa_TFPI
+        port: xa_tfpi
+        label: Xa_TFPI
+        group: physiology
+      - id: Xa_ATIII
+        port: xa_atiii
+        label: Xa_ATIII
+        group: physiology
+io:
+  inputs: []
+  outputs: []

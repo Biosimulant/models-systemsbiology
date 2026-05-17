@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Heiland2012_CircadianClock_C.reinhardtii Visualisation
+description: Question-and-answer and dynamic visual summaries for Heiland2012_CircadianClock_C.reinhardtii.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Heiland2012 Circadianclock C Reinhardtii Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Heiland2012_CircadianClock_C.reinhardtii.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_heiland2012_circadianclock_c_reinhardtii_biomd0000000411_model
+      title: Heiland2012_CircadianClock_C.reinhardtii
+      observables:
+      - id: s9
+        port: c3_mrna
+        label: C3_mRNA
+        group: gene_regulation
+      - id: s2
+        port: c3_gene
+        label: C3_Gene
+        group: gene_regulation
+      - id: species_2
+        port: c1_mrna
+        label: C1_mRNA
+        group: gene_regulation
+      - id: species_4
+        port: c1c3complex
+        label: c1c3complex
+        group: physiology
+      - id: s13
+        port: c_3_pre
+        label: C_3_pre
+        group: physiology
+      - id: s11
+        port: c_3_p
+        label: C_3_P
+        group: physiology
+io:
+  inputs: []
+  outputs: []

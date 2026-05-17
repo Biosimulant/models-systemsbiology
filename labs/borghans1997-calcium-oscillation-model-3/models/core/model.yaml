@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Borghans1997 - Calcium Oscillation - Model 3
+description: Borghans1997 - Calcium Oscillation - Model 3 A theoretical expoloration
+  of possible mechanisms of intracellular calcium oscillations has been studied, considering
+  three hypothesis. It can be used to explore systemsbiology borghans1997 calcium
+  oscillation 3 BioModels0000000045 dynamics and compare simulation behavior across
+  conditions.
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- J M Borghans
+- G Dupont
+- A Goldbeter
+upstream:
+  id: biomodels_ebi:BIOMD0000000045
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000045
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000045
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000045?filename=BIOMD0000000045_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.borghans1997_calcium_oscillation_model_3_biomd0000000045_model:Borghans1997CalciumOscillationModel3Biomd0000000045Model
+  init_kwargs:
+    model_path: data/BIOMD0000000045.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_ec
+    maps_to: EC
+    label: Initial Model State Ec
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `EC`.
+  - name: initial_model_state_x
+    maps_to: X
+    label: Initial Model State X
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X`.
+  - name: initial_model_state_z
+    maps_to: Z
+    label: Initial Model State Z
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Z`.
+  - name: initial_model_state_y
+    maps_to: Y
+    label: Initial Model State Y
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Y`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_ec
+    maps_to: EC
+    label: EC
+    description: EC. Maps to SBML symbol `EC`.
+  - name: model_state_x
+    maps_to: X
+    label: X
+    description: X. Maps to SBML symbol `X`.
+  - name: model_state_z
+    maps_to: Z
+    label: Z
+    description: Z. Maps to SBML symbol `Z`.
+  - name: model_state_y
+    maps_to: Y
+    label: Y
+    description: Y. Maps to SBML symbol `Y`.

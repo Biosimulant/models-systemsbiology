@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "7b010e3a-27bb-4e36-a45b-7b6f5897d074",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "a60d8494-6c52-4328-b834-d52fe722085b",
+  "created_at": "2026-05-16T05:46:49.203903586+00:00",
+  "last_synced_at": "2026-05-17T05:17:53.521788+00:00",
+  "hub_manifest_hash": "1b1116df5390173e6be06faa1e77ad718277ce8c5cb424cd509725fb8d3a5db0",
+  "package_name": "nucleus-pulposus-regulatory-network-lab"
+}

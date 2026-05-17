@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Westermark2003_Pancreatic_GlycOsc_extended Visualisation
+description: Question-and-answer and dynamic visual summaries for Westermark2003_Pancreatic_GlycOsc_extended.
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Westermark2003 Pancreatic Glycosc Extended Lab
+    question: 'Which physiological state variables carry the strongest baseline response?
+      Source model: Westermark2003_Pancreatic_GlycOsc_extended.'
+    answer_focus: Q/A table plus physiology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_westermark2003_pancreatic_glycosc_extended_biomd0000000236_model
+      title: Westermark2003_Pancreatic_GlycOsc_extended
+      observables:
+      - id: GLC
+        port: intracellular_glucose
+        label: intracellular glucose
+        group: metabolism
+      - id: G6P_F6P
+        port: g6_p_f6_p
+        label: G6P_F6P
+        group: metabolism
+      - id: DHAP_G3P
+        port: dhap_g3_p_pool
+        label: DHAP-G3P pool
+        group: metabolism
+      - id: FBP
+        port: fructose_1_6_biphosphate
+        label: fructose-1,6-biphosphate
+        group: metabolism
+      - id: G3P
+        port: glyceraldehyde_phosphate
+        label: glyceraldehyde--phosphate
+        group: metabolism
+      - id: F6P
+        port: fructose_6_phosphate
+        label: fructose-6-phosphate
+        group: metabolism
+io:
+  inputs: []
+  outputs: []

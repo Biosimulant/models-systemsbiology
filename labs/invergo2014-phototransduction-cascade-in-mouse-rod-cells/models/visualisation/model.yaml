@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Invergo2014 - Phototransduction cascade in mouse rod cells Visualisation
+description: Question-and-answer and dynamic visual summaries for Invergo2014 - Phototransduction
+  cascade in mouse rod cells.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Invergo2014 Phototransduction Cascade In Mouse Rod Cells Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Invergo2014 - Phototransduction cascade in mouse rod cells.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_invergo2014_phototransduction_cascade_in_mouse_r_biomd0000000578_model
+      title: Invergo2014 - Phototransduction cascade in mouse rod cells
+      observables:
+      - id: R_Gt
+        port: r_gt
+        label: R_Gt
+        group: physiology
+      - id: Arr_di
+        port: arr_di
+        label: Arr_di
+        group: physiology
+      - id: Arr_tetra
+        port: arr_tetra
+        label: Arr_tetra
+        group: physiology
+      - id: RecR_Ca
+        port: rec_r_ca
+        label: RecR_Ca
+        group: physiology
+      - id: RecR_Ca_RK
+        port: rec_r_ca_rk
+        label: RecR_Ca_RK
+        group: physiology
+      - id: Ca2_buff
+        port: ca2_buff
+        label: Ca2_buff
+        group: physiology
+io:
+  inputs: []
+  outputs: []

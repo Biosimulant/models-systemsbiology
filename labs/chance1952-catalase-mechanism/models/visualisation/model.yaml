@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Chance1952_Catalase_Mechanism Visualisation
+description: Question-and-answer and dynamic visual summaries for Chance1952_Catalase_Mechanism.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Chance1952 Catalase Mechanism Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Chance1952_Catalase_Mechanism.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_chance1952_catalase_mechanism_biomd0000000282_model
+      title: Chance1952_Catalase_Mechanism
+      observables:
+      - id: p2
+        port: product_2
+        label: product 2
+        group: physiology
+      - id: p1
+        port: product_1
+        label: product 1
+        group: physiology
+      - id: x
+        port: substrate_s_hydrogen_peroxide
+        label: substrate S (hydrogen peroxide)
+        group: physiology
+      - id: e
+        port: enzyme_e_catalase
+        label: enzyme E (catalase)
+        group: physiology
+      - id: p
+        port: enzyme_substrate_complex_es_catalase_hydrogen_peroxide
+        label: enzyme-substrate complex ES (catalase - hydrogen peroxide)
+        group: physiology
+      - id: a
+        port: donor_ah2
+        label: donor AH2
+        group: physiology
+io:
+  inputs: []
+  outputs: []

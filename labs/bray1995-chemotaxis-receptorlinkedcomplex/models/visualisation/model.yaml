@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Bray1995_chemotaxis_receptorlinkedcomplex Visualisation
+description: Question-and-answer and dynamic visual summaries for Bray1995_chemotaxis_receptorlinkedcomplex.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Bray1995 Chemotaxis Receptorlinkedcomplex Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Bray1995_chemotaxis_receptorlinkedcomplex.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_bray1995_chemotaxis_receptorlinkedcomplex_biomd0000000200_model
+      title: Bray1995_chemotaxis_receptorlinkedcomplex
+      observables:
+      - id: SetYp
+        port: set_yp
+        label: setYp
+        group: core_system_state
+      - id: TT
+        port: model_state_tt
+        label: TT
+        group: core_system_state
+      - id: AA
+        port: model_state_aa
+        label: AA
+        group: core_system_state
+      - id: Yp
+        port: model_state_yp
+        label: Yp
+        group: core_system_state
+      - id: WWAAp
+        port: wwa_ap
+        label: WWAAp
+        group: core_system_state
+      - id: WWAA
+        port: wwaa
+        label: WWAA
+        group: core_system_state
+io:
+  inputs: []
+  outputs: []

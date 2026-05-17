@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Bakker2001_Glycolysis
+description: . It can be used to explore systemsbiology bakker2001 glycolysis BioModels0000000071
+  dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- S Helfert
+- A M Estévez
+- B Bakker
+- Paul A M Michels
+- C Clayton
+upstream:
+  id: biomodels_ebi:BIOMD0000000071
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000071
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000071
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000071?filename=BIOMD0000000071_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.bakker2001_glycolysis_biomd0000000071_model:Bakker2001GlycolysisBiomd0000000071Model
+  init_kwargs:
+    model_path: data/BIOMD0000000071.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_glucose_external
+    maps_to: GlcE
+    label: Initial Glucose External
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `GlcE`.
+  - name: initial_pyruvate_external
+    maps_to: PyrE
+    label: Initial Pyruvate External
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PyrE`.
+  - name: initial_fructose_1_6_bisphosphate
+    maps_to: Fru16BP
+    label: Initial Fructose 1 6 Bisphosphate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Fru16BP`.
+  - name: initial_phosphates_in_glycosome
+    maps_to: Pg
+    label: Initial Phosphates In Glycosome
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pg`.
+  - name: initial_phosphates_cytosol
+    maps_to: Pc
+    label: Initial Phosphates Cytosol
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pc`.
+  - name: initial_pyruvate
+    maps_to: Pyr
+    label: Initial Pyruvate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pyr`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: glucose_external
+    maps_to: GlcE
+    label: Glucose external
+    description: Glucose external. Maps to SBML symbol `GlcE`.
+  - name: pyruvate_external
+    maps_to: PyrE
+    label: Pyruvate external
+    description: Pyruvate external. Maps to SBML symbol `PyrE`.
+  - name: fructose_1_6_bisphosphate
+    maps_to: Fru16BP
+    label: Fructose 1,6-bisphosphate
+    description: Fructose 1,6-bisphosphate. Maps to SBML symbol `Fru16BP`.
+  - name: phosphates_in_glycosome
+    maps_to: Pg
+    label: Phosphates in Glycosome
+    description: Phosphates in Glycosome. Maps to SBML symbol `Pg`.
+  - name: phosphates_cytosol
+    maps_to: Pc
+    label: Phosphates cytosol
+    description: Phosphates cytosol. Maps to SBML symbol `Pc`.
+  - name: pyruvate
+    maps_to: Pyr
+    label: Pyruvate
+    description: Pyruvate. Maps to SBML symbol `Pyr`.

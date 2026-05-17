@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: Li2012 Calcium mediated synaptic plasticity Visualisation
+description: Question-and-answer and dynamic visual summaries for Li2012 Calcium mediated
+  synaptic plasticity.
+standard: other
+tags:
+- neuroscience
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Li2012 Calcium Mediated Synaptic Plasticity Lab
+    question: 'Which physiological state variables carry the strongest baseline response?
+      Source model: Li2012 Calcium mediated synaptic plasticity.'
+    answer_focus: Q/A table plus physiology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_li2012_calcium_mediated_synaptic_plasticity_biomd0000000628_model
+      title: Li2012 Calcium mediated synaptic plasticity
+      observables:
+      - id: CBPfastCa
+        port: cbp_fast_ca
+        label: CBP_fast_Ca
+        group: metabolism
+      - id: CBPmedia
+        port: cbp_media
+        label: CBP_media
+        group: physiology
+      - id: CBPfast
+        port: cbp_fast
+        label: CBP_fast
+        group: physiology
+      - id: CBPvslow
+        port: cbp_vslow
+        label: CBP_vslow
+        group: physiology
+      - id: CBPslow
+        port: cbp_slow
+        label: CBP_slow
+        group: physiology
+      - id: PP2Bi_Ca3
+        port: pp2_bi_ca3
+        label: PP2Bi_Ca3
+        group: physiology
+io:
+  inputs: []
+  outputs: []

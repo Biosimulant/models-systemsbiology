@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: Xu2002 - Blood Coagulation Model of Activated Factors with Platelet Activation
+  Visualisation
+description: Question-and-answer and dynamic visual summaries for Xu2002 - Blood Coagulation
+  Model of Activated Factors with Platelet Activation.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Xu2002 Blood Coagulation Model Of Activated Factors With Platelet Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Xu2002 - Blood Coagulation Model of Activated Factors with Platelet
+      Activation.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_xu2002_blood_coagulation_model_of_activated_fact_model1806130001_model
+      title: Xu2002 - Blood Coagulation Model of Activated Factors with Platelet Activation
+      observables:
+      - id: x5
+        port: model_state_x5
+        label: x5
+        group: physiology
+      - id: x4
+        port: model_state_x4
+        label: x4
+        group: physiology
+      - id: x2
+        port: model_state_x2
+        label: x2
+        group: physiology
+      - id: x6
+        port: model_state_x6
+        label: x6
+        group: physiology
+      - id: x3
+        port: model_state_x3
+        label: x3
+        group: physiology
+      - id: x1
+        port: model_state_x1
+        label: x1
+        group: physiology
+io:
+  inputs: []
+  outputs: []

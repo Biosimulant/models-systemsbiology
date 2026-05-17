@@ -1,0 +1,96 @@
+schema_version: '2.0'
+title: Munz2009 - Zombie SIZRQ
+description: Munz2009 - Zombie SIZRQ This is the model with latent infection and quarantine
+  described in the article. It can be used to explore systemsbiology munz2009 zombie
+  sizrq model1008060002 dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- epidemiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- P. Munz
+- I. Hudea
+- J. Imad and R.J. Smith
+upstream:
+  id: biomodels_ebi:MODEL1008060002
+  source_db: biomodels_ebi
+  source_id: MODEL1008060002
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1008060002
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1008060002?filename=MODEL1008060002_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.munz2009_zombie_sizrq_model1008060002_model:Munz2009ZombieSizrqModel1008060002Model
+  init_kwargs:
+    model_path: data/MODEL1008060002.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_zombie
+    maps_to: Z
+    label: Initial Zombie
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Z`.
+  - name: initial_susceptible
+    maps_to: S
+    label: Initial Susceptible
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S`.
+  - name: initial_removed
+    maps_to: R
+    label: Initial Removed
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `R`.
+  - name: initial_quarantined
+    maps_to: Q
+    label: Initial Quarantined
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Q`.
+  - name: initial_infected
+    maps_to: I
+    label: Initial Infected
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `I`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: zombie
+    maps_to: Z
+    label: Zombie
+    description: Zombie. Maps to SBML symbol `Z`.
+  - name: susceptible
+    maps_to: S
+    label: Susceptible
+    description: Susceptible. Maps to SBML symbol `S`.
+  - name: removed
+    maps_to: R
+    label: Removed
+    description: Removed. Maps to SBML symbol `R`.
+  - name: quarantined
+    maps_to: Q
+    label: Quarantined
+    description: Quarantined. Maps to SBML symbol `Q`.
+  - name: infected
+    maps_to: I
+    label: Infected
+    description: Infected. Maps to SBML symbol `I`.

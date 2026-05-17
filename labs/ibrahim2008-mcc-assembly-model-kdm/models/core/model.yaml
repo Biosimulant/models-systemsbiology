@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Ibrahim2008_MCC_assembly_model_KDM
+description: BioSystems (2007), doi:10.1016/j.biosystems.2008.06.007 In-silico study
+  of kinetochore control, amplification, and inhibition effects in MCC assembly Bashar
+  Ibrahim, Eberhard Schmitt, Peter Dittrich,. It can be used to explore systemsbiology
+  ibrahim2008 mcc assembly kdm BioModels0000000193 dynamics and compare simulation
+  behavior across conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Bashar Ibrahim
+- Eberhard Schmitt
+- Peter Dittrich
+- Stephan Diekmann
+upstream:
+  id: biomodels_ebi:BIOMD0000000193
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000193
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000193
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000193?filename=BIOMD0000000193_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.ibrahim2008_mcc_assembly_model_kdm_biomd0000000193_model:Ibrahim2008MccAssemblyModelKdmBiomd0000000193Model
+  init_kwargs:
+    model_path: data/BIOMD0000000193.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_o_mad2
+    maps_to: OMad2
+    label: Initial O Mad2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `OMad2`.
+  - name: initial_bub3_bub_r1
+    maps_to: Bub3_BubR1
+    label: Initial Bub3 Bub R1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Bub3_BubR1`.
+  - name: initial_mad1_c_mad2
+    maps_to: Mad1_CMad2
+    label: Initial Mad1 C Mad2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Mad1_CMad2`.
+  - name: initial_mad1_c_mad2_o_mad2
+    maps_to: Mad1_CMad2_OMad2
+    label: Initial Mad1 C Mad2 O Mad2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Mad1_CMad2_OMad2`.
+  - name: initial_cdc20_c_mad2
+    maps_to: Cdc20_CMad2
+    label: Initial Cdc20 C Mad2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Cdc20_CMad2`.
+  - name: initial_bub3_bub_r1_cdc20
+    maps_to: Bub3_BubR1_Cdc20
+    label: Initial Bub3 Bub R1 Cdc20
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Bub3_BubR1_Cdc20`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: o_mad2
+    maps_to: OMad2
+    label: O-Mad2
+    description: O-Mad2. Maps to SBML symbol `OMad2`.
+  - name: bub3_bub_r1
+    maps_to: Bub3_BubR1
+    label: Bub3:BubR1
+    description: Bub3:BubR1. Maps to SBML symbol `Bub3_BubR1`.
+  - name: mad1_c_mad2
+    maps_to: Mad1_CMad2
+    label: Mad1:C-Mad2
+    description: Mad1:C-Mad2. Maps to SBML symbol `Mad1_CMad2`.
+  - name: mad1_c_mad2_o_mad2
+    maps_to: Mad1_CMad2_OMad2
+    label: Mad1:C-Mad2:O-Mad2*
+    description: Mad1:C-Mad2:O-Mad2*. Maps to SBML symbol `Mad1_CMad2_OMad2`.
+  - name: cdc20_c_mad2
+    maps_to: Cdc20_CMad2
+    label: Cdc20:C-Mad2
+    description: Cdc20:C-Mad2. Maps to SBML symbol `Cdc20_CMad2`.
+  - name: bub3_bub_r1_cdc20
+    maps_to: Bub3_BubR1_Cdc20
+    label: Bub3:BubR1:Cdc20
+    description: Bub3:BubR1:Cdc20. Maps to SBML symbol `Bub3_BubR1_Cdc20`.

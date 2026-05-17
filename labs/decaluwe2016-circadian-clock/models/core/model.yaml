@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: DeCaluwe2016 - Circadian Clock
+description: 'DeCaluwé2016 - Circadian Clock This model is described in the article:
+  A Compact Model for the Complex Plant Circadian Clock. De Caluwé J, Xiao Q, Hermans
+  C, Verbruggen N, Leloup JC, Gonze D.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Joëlle De Caluwé
+- Qiying Xiao
+- Christian Hermans
+- Nathalie Verbruggen
+- Jean-Christophe Leloup
+upstream:
+  id: biomodels_ebi:BIOMD0000000631
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000631
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000631
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000631?filename=BIOMD0000000631_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.decaluwe2016_circadian_clock_biomd0000000631_model:Decaluwe2016CircadianClockBiomd0000000631Model
+  init_kwargs:
+    model_path: data/BIOMD0000000631.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_prr9_prr7_protein
+    maps_to: P97_p
+    label: Initial Prr9 Prr7 Protein
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P97_p`.
+  - name: initial_prr9_prr7_mrna
+    maps_to: P97_m
+    label: Initial Prr9 Prr7 MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P97_m`.
+  - name: initial_prr5_toc1_protein
+    maps_to: P51_p
+    label: Initial Prr5 Toc1 Protein
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P51_p`.
+  - name: initial_prr5_toc1_mrna
+    maps_to: P51_m
+    label: Initial Prr5 Toc1 MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P51_m`.
+  - name: initial_pif4_pif5_protein
+    maps_to: PIF_p
+    label: Initial Pif4 Pif5 Protein
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PIF_p`.
+  - name: initial_pif4_pif5_mrna
+    maps_to: PIF_m
+    label: Initial Pif4 Pif5 MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PIF_m`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: prr9_prr7_protein
+    maps_to: P97_p
+    label: PRR9/PRR7 protein
+    description: PRR9/PRR7 protein. Maps to SBML symbol `P97_p`.
+  - name: prr9_prr7_mrna
+    maps_to: P97_m
+    label: PRR9/PRR7 mRNA
+    description: PRR9/PRR7 mRNA. Maps to SBML symbol `P97_m`.
+  - name: prr5_toc1_protein
+    maps_to: P51_p
+    label: PRR5/TOC1 protein
+    description: PRR5/TOC1 protein. Maps to SBML symbol `P51_p`.
+  - name: prr5_toc1_mrna
+    maps_to: P51_m
+    label: PRR5/TOC1 mRNA
+    description: PRR5/TOC1 mRNA. Maps to SBML symbol `P51_m`.
+  - name: pif4_pif5_protein
+    maps_to: PIF_p
+    label: PIF4/PIF5 protein
+    description: PIF4/PIF5 protein. Maps to SBML symbol `PIF_p`.
+  - name: pif4_pif5_mrna
+    maps_to: PIF_m
+    label: PIF4/PIF5 mRNA
+    description: PIF4/PIF5 mRNA. Maps to SBML symbol `PIF_m`.

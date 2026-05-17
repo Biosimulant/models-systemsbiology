@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Arnold2011 Damour2007 Rubisco Calvincycle Lab
+description: 'This model is from the article: A quantitative comparison of Calvin–Benson
+  cycle models Anne Arnold, Zoran Nikoloski Trends in Plant Science 2011 Oct 14. It
+  can be used to explore systemsbiology arnold2011 damour2007 rubisco calvincycle
+  BioModels0000000387 dynamics and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_arnold2011_damour2007_rubisco_calvincycle_biomd0000000387_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_arnold2011_damour2007_rubisco_calvincycle_biomd0000000387_model.state
+  to:
+  - visualisation.systemsbiology_sbml_arnold2011_damour2007_rubisco_calvincycle_biomd0000000387_model_state
+- from: systemsbiology_sbml_arnold2011_damour2007_rubisco_calvincycle_biomd0000000387_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_arnold2011_damour2007_rubisco_calvincycle_biomd0000000387_model_summary
+- from: systemsbiology_sbml_arnold2011_damour2007_rubisco_calvincycle_biomd0000000387_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_arnold2011_damour2007_rubisco_calvincycle_biomd0000000387_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_starch
+    maps_to: systemsbiology_sbml_arnold2011_damour2007_rubisco_calvincycle_biomd0000000387_model.initial_starch
+    label: Initial Starch
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `starch`.
+  - name: initial_model_state_o2
+    maps_to: systemsbiology_sbml_arnold2011_damour2007_rubisco_calvincycle_biomd0000000387_model.initial_model_state_o2
+    label: Initial Model State O2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `O2`.
+  - name: initial_model_state_co2
+    maps_to: systemsbiology_sbml_arnold2011_damour2007_rubisco_calvincycle_biomd0000000387_model.initial_model_state_co2
+    label: Initial Model State CO2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CO2`.
+  - name: initial_model_state_pga
+    maps_to: systemsbiology_sbml_arnold2011_damour2007_rubisco_calvincycle_biomd0000000387_model.initial_model_state_pga
+    label: Initial Model State Pga
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PGA`.
+  - name: initial_ru_bp
+    maps_to: systemsbiology_sbml_arnold2011_damour2007_rubisco_calvincycle_biomd0000000387_model.initial_ru_bp
+    label: Initial Ru Bp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RuBP`.
+  - name: initial_nadp
+    maps_to: systemsbiology_sbml_arnold2011_damour2007_rubisco_calvincycle_biomd0000000387_model.initial_nadp
+    label: Initial Nadp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NADP`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_arnold2011_damour2007_rubisco_calvincycle_biomd0000000387_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_arnold2011_damour2007_rubisco_calvincycle_biomd0000000387_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_arnold2011_damour2007_rubisco_calvincycle_biomd0000000387_model.species_labels
+  - name: starch
+    maps_to: systemsbiology_sbml_arnold2011_damour2007_rubisco_calvincycle_biomd0000000387_model.starch
+  - name: model_state_o2
+    maps_to: systemsbiology_sbml_arnold2011_damour2007_rubisco_calvincycle_biomd0000000387_model.model_state_o2
+  - name: co2
+    maps_to: systemsbiology_sbml_arnold2011_damour2007_rubisco_calvincycle_biomd0000000387_model.co2
+  - name: pga
+    maps_to: systemsbiology_sbml_arnold2011_damour2007_rubisco_calvincycle_biomd0000000387_model.pga
+  - name: ru_bp
+    maps_to: systemsbiology_sbml_arnold2011_damour2007_rubisco_calvincycle_biomd0000000387_model.ru_bp
+  - name: nadp
+    maps_to: systemsbiology_sbml_arnold2011_damour2007_rubisco_calvincycle_biomd0000000387_model.nadp

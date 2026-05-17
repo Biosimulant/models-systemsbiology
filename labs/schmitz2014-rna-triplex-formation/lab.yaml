@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Schmitz2014 Rna Triplex Formation Lab
+description: Schmitz2014 - RNA triplex formation The model is parameterized using
+  theparameters for gene CCDC3 from Supplementary Table S1. It can be used to explore
+  systemsbiology schmitz2014 rna triplex formation BioModels0000000530 dynamics and
+  compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_schmitz2014_rna_triplex_formation_biomd0000000530_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_schmitz2014_rna_triplex_formation_biomd0000000530_model.state
+  to:
+  - visualisation.systemsbiology_sbml_schmitz2014_rna_triplex_formation_biomd0000000530_model_state
+- from: systemsbiology_sbml_schmitz2014_rna_triplex_formation_biomd0000000530_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_schmitz2014_rna_triplex_formation_biomd0000000530_model_summary
+- from: systemsbiology_sbml_schmitz2014_rna_triplex_formation_biomd0000000530_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_schmitz2014_rna_triplex_formation_biomd0000000530_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_protein
+    maps_to: systemsbiology_sbml_schmitz2014_rna_triplex_formation_biomd0000000530_model.initial_protein
+    label: Initial Protein
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_10`.
+  - name: initial_mrna
+    maps_to: systemsbiology_sbml_schmitz2014_rna_triplex_formation_biomd0000000530_model.initial_mrna
+    label: Initial MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_1`.
+  - name: initial_tf_mi_rna_2
+    maps_to: systemsbiology_sbml_schmitz2014_rna_triplex_formation_biomd0000000530_model.initial_tf_mi_rna_2
+    label: Initial Tf Mi RNA 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_9`.
+  - name: initial_tf_mi_rna_1
+    maps_to: systemsbiology_sbml_schmitz2014_rna_triplex_formation_biomd0000000530_model.initial_tf_mi_rna_1
+    label: Initial Tf Mi RNA 1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_8`.
+  - name: initial_tf_mrna
+    maps_to: systemsbiology_sbml_schmitz2014_rna_triplex_formation_biomd0000000530_model.initial_tf_mrna
+    label: Initial Tf MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_7`.
+  - name: initial_triplex
+    maps_to: systemsbiology_sbml_schmitz2014_rna_triplex_formation_biomd0000000530_model.initial_triplex
+    label: Initial Triplex
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_6`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_schmitz2014_rna_triplex_formation_biomd0000000530_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_schmitz2014_rna_triplex_formation_biomd0000000530_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_schmitz2014_rna_triplex_formation_biomd0000000530_model.species_labels
+  - name: protein
+    maps_to: systemsbiology_sbml_schmitz2014_rna_triplex_formation_biomd0000000530_model.protein
+  - name: mrna
+    maps_to: systemsbiology_sbml_schmitz2014_rna_triplex_formation_biomd0000000530_model.mrna
+  - name: tf_mi_rna_2
+    maps_to: systemsbiology_sbml_schmitz2014_rna_triplex_formation_biomd0000000530_model.tf_mi_rna_2
+  - name: tf_mi_rna_1
+    maps_to: systemsbiology_sbml_schmitz2014_rna_triplex_formation_biomd0000000530_model.tf_mi_rna_1
+  - name: tf_mrna
+    maps_to: systemsbiology_sbml_schmitz2014_rna_triplex_formation_biomd0000000530_model.tf_mrna
+  - name: triplex
+    maps_to: systemsbiology_sbml_schmitz2014_rna_triplex_formation_biomd0000000530_model.triplex

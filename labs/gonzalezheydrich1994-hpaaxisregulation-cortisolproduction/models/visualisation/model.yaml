@@ -1,0 +1,42 @@
+schema_version: '2.0'
+title: GonzalezHeydrich1994_HPAaxisRegulation_CortisolProduction Visualisation
+description: Question-and-answer and dynamic visual summaries for GonzalezHeydrich1994_HPAaxisRegulation_CortisolProduction.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Gonzalezheydrich1994 Hpaaxisregulation Cortisolproduction Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: GonzalezHeydrich1994_HPAaxisRegulation_CortisolProduction.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_gonzalezheydrich1994_hpaaxisregulation_cortisolp_model0911270004_model
+      title: GonzalezHeydrich1994_HPAaxisRegulation_CortisolProduction
+      observables:
+      - id: cortisol
+        port: cortisol
+        label: Cortisol
+        group: physiology
+      - id: CRH
+        port: crh
+        label: CRH
+        group: physiology
+      - id: ACTH
+        port: acth
+        label: ACTH
+        group: physiology
+io:
+  inputs: []
+  outputs: []

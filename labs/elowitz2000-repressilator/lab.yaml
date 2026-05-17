@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Elowitz2000 Repressilator Lab
+description: Elowitz2000 - Repressilator This model describes the deterministic version
+  of the repressilator system. The authors of this model (see reference) use three
+  transcriptional repressor systems that are n.
+models:
+- alias: systemsbiology_sbml_elowitz2000_repressilator_biomd0000000012_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_elowitz2000_repressilator_biomd0000000012_model.state
+  to:
+  - visualisation.systemsbiology_sbml_elowitz2000_repressilator_biomd0000000012_model_state
+- from: systemsbiology_sbml_elowitz2000_repressilator_biomd0000000012_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_elowitz2000_repressilator_biomd0000000012_model_summary
+- from: systemsbiology_sbml_elowitz2000_repressilator_biomd0000000012_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_elowitz2000_repressilator_biomd0000000012_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_c_i_protein
+    maps_to: systemsbiology_sbml_elowitz2000_repressilator_biomd0000000012_model.initial_c_i_protein
+    label: Initial C I Protein
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PZ`.
+  - name: initial_tet_r_protein
+    maps_to: systemsbiology_sbml_elowitz2000_repressilator_biomd0000000012_model.initial_tet_r_protein
+    label: Initial Tet R Protein
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PY`.
+  - name: initial_lac_i_protein
+    maps_to: systemsbiology_sbml_elowitz2000_repressilator_biomd0000000012_model.initial_lac_i_protein
+    label: Initial Lac I Protein
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PX`.
+  - name: initial_tet_r_mrna
+    maps_to: systemsbiology_sbml_elowitz2000_repressilator_biomd0000000012_model.initial_tet_r_mrna
+    label: Initial Tet R MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Y`.
+  - name: initial_c_i_mrna
+    maps_to: systemsbiology_sbml_elowitz2000_repressilator_biomd0000000012_model.initial_c_i_mrna
+    label: Initial C I MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Z`.
+  - name: initial_lac_i_mrna
+    maps_to: systemsbiology_sbml_elowitz2000_repressilator_biomd0000000012_model.initial_lac_i_mrna
+    label: Initial Lac I MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_elowitz2000_repressilator_biomd0000000012_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_elowitz2000_repressilator_biomd0000000012_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_elowitz2000_repressilator_biomd0000000012_model.species_labels
+  - name: c_i_protein
+    maps_to: systemsbiology_sbml_elowitz2000_repressilator_biomd0000000012_model.c_i_protein
+  - name: tet_r_protein
+    maps_to: systemsbiology_sbml_elowitz2000_repressilator_biomd0000000012_model.tet_r_protein
+  - name: lac_i_protein
+    maps_to: systemsbiology_sbml_elowitz2000_repressilator_biomd0000000012_model.lac_i_protein
+  - name: tet_r_mrna
+    maps_to: systemsbiology_sbml_elowitz2000_repressilator_biomd0000000012_model.tet_r_mrna
+  - name: c_i_mrna
+    maps_to: systemsbiology_sbml_elowitz2000_repressilator_biomd0000000012_model.c_i_mrna
+  - name: lac_i_mrna
+    maps_to: systemsbiology_sbml_elowitz2000_repressilator_biomd0000000012_model.lac_i_mrna

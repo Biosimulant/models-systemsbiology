@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "c7202637-316c-4381-8280-406fc573760c",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "bba09265-2306-4987-9a28-95a84b9155e2",
+  "created_at": "2026-05-16T05:46:44.886124560+00:00",
+  "last_synced_at": "2026-05-17T04:11:10.187265+00:00",
+  "hub_manifest_hash": "8053a474aa440c3869a9ac6e9ab4e7107c0d4fcb453956867ac5f8725c2a0b96",
+  "package_name": "komarova2003-boneremodeling-lab"
+}

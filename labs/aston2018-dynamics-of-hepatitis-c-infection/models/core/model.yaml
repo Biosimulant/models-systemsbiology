@@ -1,0 +1,73 @@
+schema_version: '2.0'
+title: Aston2018 - Dynamics of Hepatitis C Infection
+description: 'Philip Aston. A New Model for the Dynamics of Hepatitis C Infection:
+  Derivation, Analysis and Implications.'
+standard: other
+tags:
+- epidemiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Philip J Aston
+upstream:
+  id: biomodels_ebi:BIOMD0000000713
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000713
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000713
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000713?filename=PVR.xml
+  license: CC0
+biosim:
+  entrypoint: src.aston2018_dynamics_of_hepatitis_c_infection_biomd0000000713_model:Aston2018DynamicsOfHepatitisCInfectionBiomd0000000713Model
+  init_kwargs:
+    model_path: data/BIOMD0000000713.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_viral_load_v
+    maps_to: V
+    label: Initial Viral Load V
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `V`.
+  - name: initial_infected_hepatocytes_i
+    maps_to: I
+    label: Initial Infected Hepatocytes I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `I`.
+  - name: initial_healthy_hepatocytes_t
+    maps_to: T
+    label: Initial Healthy Hepatocytes T
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `T`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: viral_load_v
+    maps_to: V
+    label: Viral Load (V)
+    description: Viral Load (V). Maps to SBML symbol `V`.
+  - name: infected_hepatocytes_i
+    maps_to: I
+    label: Infected Hepatocytes (I)
+    description: Infected Hepatocytes (I). Maps to SBML symbol `I`.
+  - name: healthy_hepatocytes_t
+    maps_to: T
+    label: Healthy Hepatocytes (T)
+    description: Healthy Hepatocytes (T). Maps to SBML symbol `T`.

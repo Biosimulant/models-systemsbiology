@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Kowald2006_SOD
+description: This model is according to the paper from Axel Kowald Alternative pathways
+  as mechanism for the negative effects associated with overexpression of superoxide
+  dismutase. It can be used to explore systemsbiology kowald2006 sod BioModels0000000108
+  dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Axel Kowald
+- Hans Lehrach
+- Edda Klipp
+upstream:
+  id: biomodels_ebi:BIOMD0000000108
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000108
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000108
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000108?filename=BIOMD0000000108_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.kowald2006_sod_biomd0000000108_model:Kowald2006SodBiomd0000000108Model
+  init_kwargs:
+    model_path: data/BIOMD0000000108.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_so_dtotal
+    maps_to: species_0000016
+    label: Initial So Dtotal
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_0000016`.
+  - name: initial_model_state_cat
+    maps_to: species_0000017
+    label: Initial Model State Cat
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_0000017`.
+  - name: initial_cu_ii_zn_sod
+    maps_to: species_0000002
+    label: Initial Cu Ii Zn Sod
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_0000002`.
+  - name: initial_model_state_o2
+    maps_to: species_0000001
+    label: Initial Model State O2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_0000001`.
+  - name: initial_looh
+    maps_to: species_0000009
+    label: Initial Looh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_0000009`.
+  - name: initial_model_state_loo
+    maps_to: species_0000007
+    label: Initial Model State Loo
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_0000007`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: so_dtotal
+    maps_to: species_0000016
+    label: SODtotal
+    description: SODtotal. Maps to SBML symbol `species_0000016`.
+  - name: cat
+    maps_to: species_0000017
+    label: Cat
+    description: Cat. Maps to SBML symbol `species_0000017`.
+  - name: cu_ii_zn_sod
+    maps_to: species_0000002
+    label: Cu(II)ZnSOD
+    description: Cu(II)ZnSOD. Maps to SBML symbol `species_0000002`.
+  - name: model_state_o2
+    maps_to: species_0000001
+    label: O2*-
+    description: O2*-. Maps to SBML symbol `species_0000001`.
+  - name: looh
+    maps_to: species_0000009
+    label: LOOH
+    description: LOOH. Maps to SBML symbol `species_0000009`.
+  - name: loo
+    maps_to: species_0000007
+    label: LOO*
+    description: LOO*. Maps to SBML symbol `species_0000007`.

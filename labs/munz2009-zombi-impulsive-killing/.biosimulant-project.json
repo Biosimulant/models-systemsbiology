@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "60322085-1c1a-4efd-875e-e47920d0fd65",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "5d1ea8d3-542b-4a84-b4f6-cf11aadfd743",
+  "created_at": "2026-05-16T05:46:47.983575145+00:00",
+  "last_synced_at": "2026-05-17T05:05:11.047878+00:00",
+  "hub_manifest_hash": "9906a4ff95606c2cdf616ad11e1222167d27efbc804d7813086d5d7ce31e5af3",
+  "package_name": "munz2009-zombi-impulsive-killing-lab"
+}

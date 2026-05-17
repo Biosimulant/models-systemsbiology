@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "92044fd8-699d-41ca-a49a-c6a419d8d3ba",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "45f0b5d7-30b8-4f45-92da-f3177d50f925",
+  "created_at": "2026-05-16T05:46:50.491620647+00:00",
+  "last_synced_at": "2026-05-17T05:30:52.468986+00:00",
+  "hub_manifest_hash": "9f6d4e101206319c2cd589bc6c4a9b89499692f87905801287c7cae3621ba965",
+  "package_name": "pokhilko2010-circclock-lab"
+}

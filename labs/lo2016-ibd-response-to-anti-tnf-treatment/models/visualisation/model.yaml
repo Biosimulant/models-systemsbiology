@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Lo2016 – IBD Response to Anti-TNFα treatment Visualisation
+description: Question-and-answer and dynamic visual summaries for Lo2016 – IBD Response
+  to Anti-TNFα treatment.
+standard: other
+tags:
+- immunology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Lo2016 Ibd Response To Anti Tnf Treatment Lab
+    question: 'Which immune or inflammatory states dominate the simulated response?
+      Source model: Lo2016 – IBD Response to Anti-TNFα treatment.'
+    answer_focus: Q/A table plus immunology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_lo2016_ibd_response_to_anti_tnf_treatment_model2505090001_model
+      title: Lo2016 – IBD Response to Anti-TNFα treatment
+      observables:
+      - id: T17_0
+        port: t17
+        label: T17
+        group: signaling
+      - id: Tr_0
+        port: model_state_tr
+        label: Tr
+        group: signaling
+      - id: M_0
+        port: model_state_m
+        label: M
+        group: signaling
+      - id: T1_0
+        port: model_state_t1
+        label: T1
+        group: signaling
+      - id: M2_0
+        port: model_state_m2
+        label: M2
+        group: signaling
+      - id: M1_0
+        port: model_state_m1
+        label: M1
+        group: signaling
+io:
+  inputs: []
+  outputs: []

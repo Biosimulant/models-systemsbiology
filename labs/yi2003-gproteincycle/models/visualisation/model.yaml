@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Yi2003_GproteinCycle Visualisation
+description: Question-and-answer and dynamic visual summaries for Yi2003_GproteinCycle.
+standard: other
+tags:
+- immunology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Yi2003 Gproteincycle Lab
+    question: 'Which immune or inflammatory states dominate the simulated response?
+      Source model: Yi2003_GproteinCycle.'
+    answer_focus: Q/A table plus immunology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_yi2003_gproteincycle_biomd0000000072_model
+      title: Yi2003_GproteinCycle
+      observables:
+      - id: Gd
+        port: g_alpha_gdp
+        label: G-alpha-GDP
+        group: gene_regulation
+      - id: Gbg
+        port: free_levels_of_g_beta_gamma
+        label: Free levels of G-beta-gamma
+        group: gene_regulation
+      - id: RL
+        port: receptor_ligand
+        label: Receptor-Ligand
+        group: gene_regulation
+      - id: Ga
+        port: g_alpha_gtp
+        label: G-alpha-GTP
+        group: gene_regulation
+      - id: L
+        port: ligand
+        label: Ligand
+        group: gene_regulation
+      - id: R
+        port: receptor
+        label: Receptor
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

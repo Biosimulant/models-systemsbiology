@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: ChenXF2008_CICR
+description: The model reproduces the plots in Figures 1 and 2. Note that the units
+  of the time scale 'A' are not right in the paper, it was corrected by the curator.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Xiao-fang Chen
+- Cong-xin Li
+- Peng-ye Wang
+- Ming Li
+- Wei-chi Wang
+upstream:
+  id: biomodels_ebi:BIOMD0000000202
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000202
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000202
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000202?filename=BIOMD0000000202_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.chenxf2008_cicr_biomd0000000202_model:Chenxf2008CicrBiomd0000000202Model
+  init_kwargs:
+    model_path: data/BIOMD0000000202.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_s2
+    maps_to: S2
+    label: Initial Model State S2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S2`.
+  - name: initial_s2_a
+    maps_to: S2a
+    label: Initial S2 A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S2a`.
+  - name: initial_orai1
+    maps_to: Orai1
+    label: Initial Orai1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Orai1`.
+  - name: initial_model_state_s4
+    maps_to: S4
+    label: Initial Model State S4
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S4`.
+  - name: initial_model_state_oc
+    maps_to: Oc
+    label: Initial Model State Oc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Oc`.
+  - name: initial_model_state_o_o
+    maps_to: O_o
+    label: Initial Model State O O
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `O_o`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_s2
+    maps_to: S2
+    label: S2
+    description: S2. Maps to SBML symbol `S2`.
+  - name: s2_a
+    maps_to: S2a
+    label: S2A
+    description: S2A. Maps to SBML symbol `S2a`.
+  - name: orai1
+    maps_to: Orai1
+    label: Orai1
+    description: Orai1. Maps to SBML symbol `Orai1`.
+  - name: model_state_s4
+    maps_to: S4
+    label: S4
+    description: S4. Maps to SBML symbol `S4`.
+  - name: model_state_oc
+    maps_to: Oc
+    label: Oc
+    description: Oc. Maps to SBML symbol `Oc`.
+  - name: o_o
+    maps_to: O_o
+    label: O O
+    description: O O. Maps to SBML symbol `O_o`.

@@ -1,0 +1,47 @@
+schema_version: '2.0'
+title: Halloy2002_FollicularAutomaton Visualisation
+description: Question-and-answer and dynamic visual summaries for Halloy2002_FollicularAutomaton.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Halloy2002 Follicularautomaton Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Halloy2002_FollicularAutomaton.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_halloy2002_follicularautomaton_model1006230014_model
+      title: Halloy2002_FollicularAutomaton
+      observables:
+      - id: T
+        port: model_state_t
+        label: T
+        group: gene_regulation
+      - id: M
+        port: model_state_m
+        label: M
+        group: gene_regulation
+      - id: L
+        port: model_state_l
+        label: L
+        group: gene_regulation
+      - id: A
+        port: model_state_a
+        label: A
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

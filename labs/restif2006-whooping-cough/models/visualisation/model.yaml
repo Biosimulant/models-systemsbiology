@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Restif2006 - Whooping cough Visualisation
+description: Question-and-answer and dynamic visual summaries for Restif2006 - Whooping
+  cough.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Restif2006 Whooping Cough Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Restif2006 - Whooping cough.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_restif2006_whooping_cough_biomd0000000249_model
+      title: Restif2006 - Whooping cough
+      observables:
+      - id: R_1
+        port: r_1
+        label: R 1
+        group: physiology
+      - id: I_1
+        port: i_1
+        label: I 1
+        group: physiology
+      - id: I_2
+        port: i_2
+        label: I 2
+        group: physiology
+      - id: R_p
+        port: r_p
+        label: R P
+        group: physiology
+      - id: R_2
+        port: r_2
+        label: R 2
+        group: physiology
+      - id: I_2p
+        port: i_2_p
+        label: I 2P
+        group: physiology
+io:
+  inputs: []
+  outputs: []

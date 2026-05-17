@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Gidvani2012 Dna Replication Initiation Model In S Cevevisiae Lab
+description: A quantitative model of the initiation of DNA replication in Saccharomyces
+  cerevisiae predicts the effects of system perturbations. Model is encoded by Matthew
+  Maire and submitted in BioModels by Kris.
+models:
+- alias: systemsbiology_sbml_gidvani2012_dna_replication_initiation_model_in_model2003180001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_gidvani2012_dna_replication_initiation_model_in_model2003180001_model.state
+  to:
+  - visualisation.systemsbiology_sbml_gidvani2012_dna_replication_initiation_model_in_model2003180001_model_state
+- from: systemsbiology_sbml_gidvani2012_dna_replication_initiation_model_in_model2003180001_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_gidvani2012_dna_replication_initiation_model_in_model2003180001_model_summary
+- from: systemsbiology_sbml_gidvani2012_dna_replication_initiation_model_in_model2003180001_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_gidvani2012_dna_replication_initiation_model_in_model2003180001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_cdt1c
+    maps_to: systemsbiology_sbml_gidvani2012_dna_replication_initiation_model_in_model2003180001_model.initial_cdt1c
+    label: Initial Cdt1c
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cdt1c`.
+  - name: initial_cdt1_total
+    maps_to: systemsbiology_sbml_gidvani2012_dna_replication_initiation_model_in_model2003180001_model.initial_cdt1_total
+    label: Initial Cdt1 Total
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cdt1_total`.
+  - name: initial_cdc45n
+    maps_to: systemsbiology_sbml_gidvani2012_dna_replication_initiation_model_in_model2003180001_model.initial_cdc45n
+    label: Initial Cdc45n
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cdc45n`.
+  - name: initial_cdc45_total
+    maps_to: systemsbiology_sbml_gidvani2012_dna_replication_initiation_model_in_model2003180001_model.initial_cdc45_total
+    label: Initial Cdc45 Total
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cdc45_total`.
+  - name: initial_rc_total
+    maps_to: systemsbiology_sbml_gidvani2012_dna_replication_initiation_model_in_model2003180001_model.initial_rc_total
+    label: Initial Rc Total
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `rc_total`.
+  - name: initial_model_state_rc7
+    maps_to: systemsbiology_sbml_gidvani2012_dna_replication_initiation_model_in_model2003180001_model.initial_model_state_rc7
+    label: Initial Model State RC7
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `rc7`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_gidvani2012_dna_replication_initiation_model_in_model2003180001_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_gidvani2012_dna_replication_initiation_model_in_model2003180001_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_gidvani2012_dna_replication_initiation_model_in_model2003180001_model.species_labels
+  - name: cdt1c
+    maps_to: systemsbiology_sbml_gidvani2012_dna_replication_initiation_model_in_model2003180001_model.cdt1c
+  - name: cdt1_total
+    maps_to: systemsbiology_sbml_gidvani2012_dna_replication_initiation_model_in_model2003180001_model.cdt1_total
+  - name: cdc45n
+    maps_to: systemsbiology_sbml_gidvani2012_dna_replication_initiation_model_in_model2003180001_model.cdc45n
+  - name: cdc45_total
+    maps_to: systemsbiology_sbml_gidvani2012_dna_replication_initiation_model_in_model2003180001_model.cdc45_total
+  - name: rc_total
+    maps_to: systemsbiology_sbml_gidvani2012_dna_replication_initiation_model_in_model2003180001_model.rc_total
+  - name: rc7
+    maps_to: systemsbiology_sbml_gidvani2012_dna_replication_initiation_model_in_model2003180001_model.rc7

@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Lee2016 - Blood Coagulation Model Visualisation
+description: Question-and-answer and dynamic visual summaries for Lee2016 - Blood
+  Coagulation Model.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Lee2016 Blood Coagulation Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Lee2016 - Blood Coagulation Model.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_lee2016_blood_coagulation_model_model1806060001_model
+      title: Lee2016 - Blood Coagulation Model
+      observables:
+      - id: P_Fg
+        port: p_fg
+        label: P-Fg
+        group: signaling
+      - id: t_PA_Pg
+        port: t_pa_pg
+        label: t-PA-Pg
+        group: signaling
+      - id: t_PA
+        port: t_pa
+        label: t-PA
+        group: signaling
+      - id: P_F
+        port: p_f
+        label: P-F
+        group: signaling
+      - id: P_XF
+        port: p_xf
+        label: P-XF
+        group: signaling
+      - id: TF_FVII
+        port: tf_fvii
+        label: TF-FVII
+        group: signaling
+io:
+  inputs: []
+  outputs: []

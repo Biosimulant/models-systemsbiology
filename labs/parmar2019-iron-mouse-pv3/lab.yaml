@@ -1,0 +1,90 @@
+schema_version: '2.0'
+title: Parmar2019 Iron Mouse Pv3 Lab
+description: Iron Mouse PV3 'A computational model to understand mouse iron physiology
+  and diseases' By Jignesh Parmar and Pedro Mendes Base model This is a dynamic model
+  of iron distribution in mice, covering sev. It can be used to explore systemsbiology
+  parmar2019 iron mouse pv3 model1805140003 dynamics and compare simulation behavior
+  across conditions.
+models:
+- alias: systemsbiology_sbml_parmar2019_iron_mouse_pv3_model1805140003_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_parmar2019_iron_mouse_pv3_model1805140003_model.state
+  to:
+  - visualisation.systemsbiology_sbml_parmar2019_iron_mouse_pv3_model1805140003_model_state
+- from: systemsbiology_sbml_parmar2019_iron_mouse_pv3_model1805140003_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_parmar2019_iron_mouse_pv3_model1805140003_model_summary
+- from: systemsbiology_sbml_parmar2019_iron_mouse_pv3_model1805140003_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_parmar2019_iron_mouse_pv3_model1805140003_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_fe_rbc
+    maps_to: systemsbiology_sbml_parmar2019_iron_mouse_pv3_model1805140003_model.initial_fe_rbc
+    label: Initial Fe Rbc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `FeRBC`.
+  - name: initial_fe_duo
+    maps_to: systemsbiology_sbml_parmar2019_iron_mouse_pv3_model1805140003_model.initial_fe_duo
+    label: Initial Fe Duo
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `FeDuo`.
+  - name: initial_fe_spleen
+    maps_to: systemsbiology_sbml_parmar2019_iron_mouse_pv3_model1805140003_model.initial_fe_spleen
+    label: Initial Fe Spleen
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `FeSpleen`.
+  - name: initial_fe_bm
+    maps_to: systemsbiology_sbml_parmar2019_iron_mouse_pv3_model1805140003_model.initial_fe_bm
+    label: Initial Fe Bm
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `FeBM`.
+  - name: initial_fe_liver
+    maps_to: systemsbiology_sbml_parmar2019_iron_mouse_pv3_model1805140003_model.initial_fe_liver
+    label: Initial Fe Liver
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `FeLiver`.
+  - name: initial_fe_rest
+    maps_to: systemsbiology_sbml_parmar2019_iron_mouse_pv3_model1805140003_model.initial_fe_rest
+    label: Initial Fe Rest
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `FeRest`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_parmar2019_iron_mouse_pv3_model1805140003_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_parmar2019_iron_mouse_pv3_model1805140003_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_parmar2019_iron_mouse_pv3_model1805140003_model.species_labels
+  - name: fe_rbc
+    maps_to: systemsbiology_sbml_parmar2019_iron_mouse_pv3_model1805140003_model.fe_rbc
+  - name: fe_duo
+    maps_to: systemsbiology_sbml_parmar2019_iron_mouse_pv3_model1805140003_model.fe_duo
+  - name: fe_spleen
+    maps_to: systemsbiology_sbml_parmar2019_iron_mouse_pv3_model1805140003_model.fe_spleen
+  - name: fe_bm
+    maps_to: systemsbiology_sbml_parmar2019_iron_mouse_pv3_model1805140003_model.fe_bm
+  - name: fe_liver
+    maps_to: systemsbiology_sbml_parmar2019_iron_mouse_pv3_model1805140003_model.fe_liver
+  - name: fe_rest
+    maps_to: systemsbiology_sbml_parmar2019_iron_mouse_pv3_model1805140003_model.fe_rest

@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Arnold2011 Poolman2000 Calvincycle Starch Lab
+description: 'This model is from the article: A quantitative comparison of Calvin–Benson
+  cycle models Anne Arnold, Zoran Nikoloski Trends in Plant Science 2011 Oct 14. It
+  can be used to explore systemsbiology arnold2011 poolman2000 calvincycle starch
+  BioModels0000000391 dynamics and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_arnold2011_poolman2000_calvincycle_starch_biomd0000000391_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_arnold2011_poolman2000_calvincycle_starch_biomd0000000391_model.state
+  to:
+  - visualisation.systemsbiology_sbml_arnold2011_poolman2000_calvincycle_starch_biomd0000000391_model_state
+- from: systemsbiology_sbml_arnold2011_poolman2000_calvincycle_starch_biomd0000000391_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_arnold2011_poolman2000_calvincycle_starch_biomd0000000391_model_summary
+- from: systemsbiology_sbml_arnold2011_poolman2000_calvincycle_starch_biomd0000000391_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_arnold2011_poolman2000_calvincycle_starch_biomd0000000391_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_pga
+    maps_to: systemsbiology_sbml_arnold2011_poolman2000_calvincycle_starch_biomd0000000391_model.initial_model_state_pga
+    label: Initial Model State Pga
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PGA`.
+  - name: initial_s7_p
+    maps_to: systemsbiology_sbml_arnold2011_poolman2000_calvincycle_starch_biomd0000000391_model.initial_s7_p
+    label: Initial S7 P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S7P`.
+  - name: initial_ru_bp
+    maps_to: systemsbiology_sbml_arnold2011_poolman2000_calvincycle_starch_biomd0000000391_model.initial_ru_bp
+    label: Initial Ru Bp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RuBP`.
+  - name: initial_g6_p
+    maps_to: systemsbiology_sbml_arnold2011_poolman2000_calvincycle_starch_biomd0000000391_model.initial_g6_p
+    label: Initial G6 P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `G6P`.
+  - name: initial_model_state_pi
+    maps_to: systemsbiology_sbml_arnold2011_poolman2000_calvincycle_starch_biomd0000000391_model.initial_model_state_pi
+    label: Initial Model State Pi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pi`.
+  - name: initial_model_state_adp
+    maps_to: systemsbiology_sbml_arnold2011_poolman2000_calvincycle_starch_biomd0000000391_model.initial_model_state_adp
+    label: Initial Model State ADP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ADP`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_arnold2011_poolman2000_calvincycle_starch_biomd0000000391_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_arnold2011_poolman2000_calvincycle_starch_biomd0000000391_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_arnold2011_poolman2000_calvincycle_starch_biomd0000000391_model.species_labels
+  - name: pga
+    maps_to: systemsbiology_sbml_arnold2011_poolman2000_calvincycle_starch_biomd0000000391_model.pga
+  - name: s7_p
+    maps_to: systemsbiology_sbml_arnold2011_poolman2000_calvincycle_starch_biomd0000000391_model.s7_p
+  - name: ru_bp
+    maps_to: systemsbiology_sbml_arnold2011_poolman2000_calvincycle_starch_biomd0000000391_model.ru_bp
+  - name: g6_p
+    maps_to: systemsbiology_sbml_arnold2011_poolman2000_calvincycle_starch_biomd0000000391_model.g6_p
+  - name: model_state_pi
+    maps_to: systemsbiology_sbml_arnold2011_poolman2000_calvincycle_starch_biomd0000000391_model.model_state_pi
+  - name: adp
+    maps_to: systemsbiology_sbml_arnold2011_poolman2000_calvincycle_starch_biomd0000000391_model.adp

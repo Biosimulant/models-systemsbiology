@@ -1,0 +1,105 @@
+schema_version: '2.0'
+title: Sen2013 - Phospholipid Synthesis in P.knowlesi
+description: 'Sen2013 - Phospholipid Synthesis in P.knowlesi The model describes the
+  multiple phospholipid synthetic pathways in Plasmodium knowlesi. This model is described
+  in the article: Kinetic modelling of pho.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Partho Sen
+- Henri J Vial
+- Ovidiu Radulescu
+upstream:
+  id: biomodels_ebi:BIOMD0000000495
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000495
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000495
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000495?filename=BIOMD0000000495_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.sen2013_phospholipid_synthesis_in_p_knowlesi_biomd0000000495_model:Sen2013PhospholipidSynthesisInPKnowlesiBiomd0000000495Model
+  init_kwargs:
+    model_path: data/BIOMD0000000495.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_ser_e
+    maps_to: mw73259e20_240e_4f3a_b2e0_9ca248658898
+    label: Initial Ser E
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mw73259e20_240e_4f3a_b2e0_9ca248658898`.
+  - name: initial_p_cho
+    maps_to: mwcb834e43_dc57_45ae_9452_f4c10955caf1
+    label: Initial P Cho
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mwcb834e43_dc57_45ae_9452_f4c10955caf1`.
+  - name: initial_model_state_etn
+    maps_to: mw8796c919_9251_4970_8f87_0bca9ecfeb5c
+    label: Initial Model State Etn
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mw8796c919_9251_4970_8f87_0bca9ecfeb5c`.
+  - name: initial_cho_e
+    maps_to: mw919f8a86_e702_4b24_9cd7_adad694fcf9b
+    label: Initial Cho E
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mw919f8a86_e702_4b24_9cd7_adad694fcf9b`.
+  - name: initial_model_state_ser
+    maps_to: mw15abaa48_d7d0_4845_ae04_c573d289d495
+    label: Initial Model State Ser
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mw15abaa48_d7d0_4845_ae04_c573d289d495`.
+  - name: initial_model_state_ps
+    maps_to: mwfcfaf604_14d4_47a6_b021_226d1fb5497c
+    label: Initial Model State Ps
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mwfcfaf604_14d4_47a6_b021_226d1fb5497c`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: ser_e
+    maps_to: mw73259e20_240e_4f3a_b2e0_9ca248658898
+    label: SerE
+    description: SerE. Maps to SBML symbol `mw73259e20_240e_4f3a_b2e0_9ca248658898`.
+  - name: p_cho
+    maps_to: mwcb834e43_dc57_45ae_9452_f4c10955caf1
+    label: PCho
+    description: PCho. Maps to SBML symbol `mwcb834e43_dc57_45ae_9452_f4c10955caf1`.
+  - name: etn
+    maps_to: mw8796c919_9251_4970_8f87_0bca9ecfeb5c
+    label: Etn
+    description: Etn. Maps to SBML symbol `mw8796c919_9251_4970_8f87_0bca9ecfeb5c`.
+  - name: cho_e
+    maps_to: mw919f8a86_e702_4b24_9cd7_adad694fcf9b
+    label: ChoE
+    description: ChoE. Maps to SBML symbol `mw919f8a86_e702_4b24_9cd7_adad694fcf9b`.
+  - name: ser
+    maps_to: mw15abaa48_d7d0_4845_ae04_c573d289d495
+    label: Ser
+    description: Ser. Maps to SBML symbol `mw15abaa48_d7d0_4845_ae04_c573d289d495`.
+  - name: model_state_ps
+    maps_to: mwfcfaf604_14d4_47a6_b021_226d1fb5497c
+    label: PS
+    description: PS. Maps to SBML symbol `mwfcfaf604_14d4_47a6_b021_226d1fb5497c`.

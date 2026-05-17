@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Masison2024 - Enterocyte Iron Mucosal Block Visualisation
+description: Question-and-answer and dynamic visual summaries for Masison2024 - Enterocyte
+  Iron Mucosal Block.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Masison2024 Enterocyte Iron Mucosal Block Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Masison2024 - Enterocyte Iron Mucosal Block.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_masison2024_enterocyte_iron_mucosal_block_model2405170001_model
+      title: Masison2024 - Enterocyte Iron Mucosal Block
+      observables:
+      - id: FPN_internalized
+        port: fpn_internalized
+        label: FPN_internalized
+        group: gene_regulation
+      - id: core
+        port: core
+        label: core
+        group: physiology
+      - id: Fe_lumen
+        port: fe_lumen
+        label: Fe_lumen
+        group: physiology
+      - id: Fe_blood
+        port: fe_blood
+        label: Fe_blood
+        group: physiology
+      - id: FT_cage
+        port: ft_cage
+        label: FT-cage
+        group: physiology
+      - id: IRPs_active
+        port: ir_ps_active
+        label: IRPs_active
+        group: physiology
+io:
+  inputs: []
+  outputs: []

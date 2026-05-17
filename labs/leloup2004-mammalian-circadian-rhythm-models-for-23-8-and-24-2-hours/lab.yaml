@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Leloup2004 Mammalian Circadian Rhythm Models For 23 8 And 24 2 Hours Lab
+description: We extend the study of a computational model recently proposed for the
+  mammalian circadian clock (Proc. It can be used to explore systemsbiology leloup2004
+  mammalian circadian rhythm for dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_leloup2004_mammalian_circadian_rhythm_models_for_biomd0000000975_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_leloup2004_mammalian_circadian_rhythm_models_for_biomd0000000975_model.state
+  to:
+  - visualisation.systemsbiology_sbml_leloup2004_mammalian_circadian_rhythm_models_for_biomd0000000975_model_state
+- from: systemsbiology_sbml_leloup2004_mammalian_circadian_rhythm_models_for_biomd0000000975_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_leloup2004_mammalian_circadian_rhythm_models_for_biomd0000000975_model_summary
+- from: systemsbiology_sbml_leloup2004_mammalian_circadian_rhythm_models_for_biomd0000000975_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_leloup2004_mammalian_circadian_rhythm_models_for_biomd0000000975_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_mb
+    maps_to: systemsbiology_sbml_leloup2004_mammalian_circadian_rhythm_models_for_biomd0000000975_model.initial_model_state_mb
+    label: Initial Model State Mb
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MB_0`.
+  - name: initial_model_state_pcp
+    maps_to: systemsbiology_sbml_leloup2004_mammalian_circadian_rhythm_models_for_biomd0000000975_model.initial_model_state_pcp
+    label: Initial Model State Pcp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PCP_0`.
+  - name: initial_pcnp
+    maps_to: systemsbiology_sbml_leloup2004_mammalian_circadian_rhythm_models_for_biomd0000000975_model.initial_pcnp
+    label: Initial Pcnp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PCNP_0`.
+  - name: initial_model_state_pcn
+    maps_to: systemsbiology_sbml_leloup2004_mammalian_circadian_rhythm_models_for_biomd0000000975_model.initial_model_state_pcn
+    label: Initial Model State Pcn
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PCN_0`.
+  - name: initial_pccp
+    maps_to: systemsbiology_sbml_leloup2004_mammalian_circadian_rhythm_models_for_biomd0000000975_model.initial_pccp
+    label: Initial Pccp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PCCP_0`.
+  - name: initial_model_state_pcc
+    maps_to: systemsbiology_sbml_leloup2004_mammalian_circadian_rhythm_models_for_biomd0000000975_model.initial_model_state_pcc
+    label: Initial Model State Pcc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PCC_0`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_leloup2004_mammalian_circadian_rhythm_models_for_biomd0000000975_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_leloup2004_mammalian_circadian_rhythm_models_for_biomd0000000975_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_leloup2004_mammalian_circadian_rhythm_models_for_biomd0000000975_model.species_labels
+  - name: model_state_mb
+    maps_to: systemsbiology_sbml_leloup2004_mammalian_circadian_rhythm_models_for_biomd0000000975_model.model_state_mb
+  - name: pcp
+    maps_to: systemsbiology_sbml_leloup2004_mammalian_circadian_rhythm_models_for_biomd0000000975_model.pcp
+  - name: pcnp
+    maps_to: systemsbiology_sbml_leloup2004_mammalian_circadian_rhythm_models_for_biomd0000000975_model.pcnp
+  - name: pcn
+    maps_to: systemsbiology_sbml_leloup2004_mammalian_circadian_rhythm_models_for_biomd0000000975_model.pcn
+  - name: pccp
+    maps_to: systemsbiology_sbml_leloup2004_mammalian_circadian_rhythm_models_for_biomd0000000975_model.pccp
+  - name: pcc
+    maps_to: systemsbiology_sbml_leloup2004_mammalian_circadian_rhythm_models_for_biomd0000000975_model.pcc

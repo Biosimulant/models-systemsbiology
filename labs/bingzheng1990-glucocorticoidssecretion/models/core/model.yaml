@@ -1,0 +1,78 @@
+schema_version: '2.0'
+title: Bingzheng1990_GlucocorticoidsSecretion
+description: 'This a model from the article: A mathematical model of the regulation
+  system of the secretion of glucocorticoids Liu Bingzheng, Zhao Zhenye and Chen Liansong
+  Journal of Biological Physics 1990 17(4):2. It can be used to explore systemsbiology
+  bingzheng1990 glucocorticoidssecretion model1172200168 dynamics and compare simulation
+  behavior across conditions.'
+standard: other
+tags:
+- cellcycle
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Liu Bingzheng
+- Zhao Zhenye and Chen Liansong
+upstream:
+  id: biomodels_ebi:MODEL1172200168
+  source_db: biomodels_ebi
+  source_id: MODEL1172200168
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1172200168
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1172200168?filename=MODEL1172200168_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.bingzheng1990_glucocorticoidssecretion_model1172200168_model:Bingzheng1990GlucocorticoidssecretionModel1172200168Model
+  init_kwargs:
+    model_path: data/MODEL1172200168.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_x3
+    maps_to: X3
+    label: Initial Model State X3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X3`.
+  - name: initial_model_state_x2
+    maps_to: X2
+    label: Initial Model State X2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X2`.
+  - name: initial_model_state_x1
+    maps_to: X1
+    label: Initial Model State X1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X1`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_x3
+    maps_to: X3
+    label: X3
+    description: X3. Maps to SBML symbol `X3`.
+  - name: model_state_x2
+    maps_to: X2
+    label: X2
+    description: X2. Maps to SBML symbol `X2`.
+  - name: model_state_x1
+    maps_to: X1
+    label: X1
+    description: X1. Maps to SBML symbol `X1`.

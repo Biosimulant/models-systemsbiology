@@ -1,0 +1,36 @@
+schema_version: '2.0'
+title: Crespo2012 - Kinetics of Amyloid Fibril Formation Visualisation
+description: Question-and-answer and dynamic visual summaries for Crespo2012 - Kinetics
+  of Amyloid Fibril Formation.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Crespo2012 Kinetics Of Amyloid Fibril Formation Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Crespo2012 - Kinetics of Amyloid Fibril Formation.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_crespo2012_kinetics_of_amyloid_fibril_formation_biomd0000000531_model
+      title: Crespo2012 - Kinetics of Amyloid Fibril Formation
+      observables:
+      - id: alpha
+        port: alpha
+        label: alpha
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,59 @@
+schema_version: '2.0'
+title: Ortega2013 - Interplay between secretases determines biphasic amyloid-beta
+  level Visualisation
+description: Question-and-answer and dynamic visual summaries for Ortega2013 - Interplay
+  between secretases determines biphasic amyloid-beta level.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Ortega2013 Interplay Between Secretases Determines Biphasic Amyloid
+      B Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Ortega2013 - Interplay between secretases determines biphasic
+      amyloid-beta level.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_ortega2013_interplay_between_secretases_determin_biomd0000000556_model
+      title: Ortega2013 - Interplay between secretases determines biphasic amyloid-beta
+        level
+      observables:
+      - id: p3
+        port: model_state_p3
+        label: p3
+        group: physiology
+      - id: C99
+        port: c99
+        label: C99
+        group: physiology
+      - id: C83
+        port: c83
+        label: C83
+        group: physiology
+      - id: APP
+        port: app
+        label: APP
+        group: physiology
+      - id: AB
+        port: model_state_ab
+        label: AB
+        group: physiology
+      - id: X
+        port: model_state_x
+        label: X
+        group: physiology
+io:
+  inputs: []
+  outputs: []

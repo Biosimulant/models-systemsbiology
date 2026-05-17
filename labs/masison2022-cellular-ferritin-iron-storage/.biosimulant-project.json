@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "244bfc3b-f640-4337-9125-e5f25b5ae338",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "860315a2-2192-4049-a348-13ac208c4d25",
+  "created_at": "2026-05-16T05:46:46.884884190+00:00",
+  "last_synced_at": "2026-05-17T04:52:16.808171+00:00",
+  "hub_manifest_hash": "c206f699b2a5ba0fb6a1f587463b47b63aee8af2d595d8124c2e15127b63959b",
+  "package_name": "masison2022-cellular-ferritin-iron-storage-lab"
+}

@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Emiola2016 Crosstalk Between The Lipopolysaccharide And Phospholipid Lab
+description: Systems Biology Emiola2016Crosstalk Between The Lipopolysacchar Model1601080000Model
+  captures core biological behavior in the context of systemsbiology, sbml, biomodels_ebi
+  using a biomodels_ebi-sourced OTHER m. When you run it, you can observe state and
+  evaluate how the modeled system changes across runs.
+models:
+- alias: systemsbiology_sbml_emiola2016_crosstalk_between_the_lipopolysacchar_model1601080000_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_emiola2016_crosstalk_between_the_lipopolysacchar_model1601080000_model.state
+  to:
+  - visualisation.systemsbiology_sbml_emiola2016_crosstalk_between_the_lipopolysacchar_model1601080000_model_state
+- from: systemsbiology_sbml_emiola2016_crosstalk_between_the_lipopolysacchar_model1601080000_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_emiola2016_crosstalk_between_the_lipopolysacchar_model1601080000_model_summary
+- from: systemsbiology_sbml_emiola2016_crosstalk_between_the_lipopolysacchar_model1601080000_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_emiola2016_crosstalk_between_the_lipopolysacchar_model1601080000_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_promoter_lpx_c
+    maps_to: systemsbiology_sbml_emiola2016_crosstalk_between_the_lipopolysacchar_model1601080000_model.initial_promoter_lpx_c
+    label: Initial Promoter Lpx C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `promoter_LpxC`.
+  - name: initial_promoter_kdt_a
+    maps_to: systemsbiology_sbml_emiola2016_crosstalk_between_the_lipopolysacchar_model1601080000_model.initial_promoter_kdt_a
+    label: Initial Promoter Kdt A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `promoter_KdtA`.
+  - name: initial_acetyl_co_a
+    maps_to: systemsbiology_sbml_emiola2016_crosstalk_between_the_lipopolysacchar_model1601080000_model.initial_acetyl_co_a
+    label: Initial Acetyl Co A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `acetyl_CoA`.
+  - name: initial_udp_glc_nac
+    maps_to: systemsbiology_sbml_emiola2016_crosstalk_between_the_lipopolysacchar_model1601080000_model.initial_udp_glc_nac
+    label: Initial Udp Glc Nac
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `UDP_GlcNac`.
+  - name: initial_cmp_kdo
+    maps_to: systemsbiology_sbml_emiola2016_crosstalk_between_the_lipopolysacchar_model1601080000_model.initial_cmp_kdo
+    label: Initial Cmp Kdo
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CMP_KDO`.
+  - name: initial_fad_r
+    maps_to: systemsbiology_sbml_emiola2016_crosstalk_between_the_lipopolysacchar_model1601080000_model.initial_fad_r
+    label: Initial Fad R
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `FadR_0`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_emiola2016_crosstalk_between_the_lipopolysacchar_model1601080000_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_emiola2016_crosstalk_between_the_lipopolysacchar_model1601080000_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_emiola2016_crosstalk_between_the_lipopolysacchar_model1601080000_model.species_labels
+  - name: promoter_lpx_c
+    maps_to: systemsbiology_sbml_emiola2016_crosstalk_between_the_lipopolysacchar_model1601080000_model.promoter_lpx_c
+  - name: promoter_kdt_a
+    maps_to: systemsbiology_sbml_emiola2016_crosstalk_between_the_lipopolysacchar_model1601080000_model.promoter_kdt_a
+  - name: acetyl_co_a
+    maps_to: systemsbiology_sbml_emiola2016_crosstalk_between_the_lipopolysacchar_model1601080000_model.acetyl_co_a
+  - name: udp_glc_nac
+    maps_to: systemsbiology_sbml_emiola2016_crosstalk_between_the_lipopolysacchar_model1601080000_model.udp_glc_nac
+  - name: cmp_kdo
+    maps_to: systemsbiology_sbml_emiola2016_crosstalk_between_the_lipopolysacchar_model1601080000_model.cmp_kdo
+  - name: fad_r
+    maps_to: systemsbiology_sbml_emiola2016_crosstalk_between_the_lipopolysacchar_model1601080000_model.fad_r

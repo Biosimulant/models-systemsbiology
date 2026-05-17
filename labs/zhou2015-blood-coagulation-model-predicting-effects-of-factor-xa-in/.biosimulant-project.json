@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "91bcec21-ba00-4192-a39b-ae6444011204",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "26f075d1-a825-4100-9466-153ab29af9fe",
+  "created_at": "2026-05-16T05:46:53.786256112+00:00",
+  "last_synced_at": "2026-05-17T07:11:31.144719+00:00",
+  "hub_manifest_hash": "657bd179f08cce2331d32f959ef3fe2a16ced2ac04eccba95d547221f5d744b2",
+  "package_name": "zhou2015-blood-coagulation-model-predicting-effects-of-factor-xa"
+}

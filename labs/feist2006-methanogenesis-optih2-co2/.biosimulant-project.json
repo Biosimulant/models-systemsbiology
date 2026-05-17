@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "3e6d12de-8854-4abe-b422-4946f97a41ac",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "9610f1c2-55a8-430e-b00e-0d1c33069b1b",
+  "created_at": "2026-05-16T05:46:43.113358743+00:00",
+  "last_synced_at": "2026-05-17T03:05:03.990559+00:00",
+  "hub_manifest_hash": "58ef7f797493b8f9ad1819682740664de9a35fec2bf6a9233367ad39890f27e3",
+  "package_name": "feist2006-methanogenesis-optih2-co2-lab"
+}

@@ -1,0 +1,99 @@
+schema_version: '2.0'
+title: Bertram1995_PancreaticBetaCell_CRAC
+description: 'This a model from the article: A role for calcium release-activated
+  current (CRAC) in cholinergic modulation ofelectrical activity in pancreatic beta-cells.
+  It can be used to explore systemsbiology bertram1995 pancreaticbetacell crac BioModels0000000374
+  dynamics and compare simulation behavior across conditions.'
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- R Bertram
+- P Smolen
+- A Sherman
+- D Mears
+- I Atwater
+upstream:
+  id: biomodels_ebi:BIOMD0000000374
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000374
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000374
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000374?filename=BIOMD0000000374_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.bertram1995_pancreaticbetacell_crac_biomd0000000374_model:Bertram1995PancreaticbetacellCracBiomd0000000374Model
+  init_kwargs:
+    model_path: data/BIOMD0000000374.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_v_membrane
+    maps_to: V_membrane
+    label: Initial V Membrane
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `V_membrane`.
+  - name: initial_ca_er_ca_equations
+    maps_to: Ca_er_Ca_equations
+    label: Initial Ca Er Ca Equations
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_er_Ca_equations`.
+  - name: initial_model_state_jm
+    maps_to: jm
+    label: Initial Model State Jm
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `jm`.
+  - name: initial_ca_i
+    maps_to: Ca_i
+    label: Initial Ca I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_i`.
+  - name: initial_model_state_n
+    maps_to: n
+    label: Initial Model State N
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `n`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: v_membrane
+    maps_to: V_membrane
+    label: V_membrane
+    description: V_membrane. Maps to SBML symbol `V_membrane`.
+  - name: ca_er_ca_equations
+    maps_to: Ca_er_Ca_equations
+    label: ca_er_ca_equations
+    description: ca_er_ca_equations. Maps to SBML symbol `Ca_er_Ca_equations`.
+  - name: model_state_jm
+    maps_to: jm
+    label: jm
+    description: jm. Maps to SBML symbol `jm`.
+  - name: ca_i
+    maps_to: Ca_i
+    label: Ca_i
+    description: Ca_i. Maps to SBML symbol `Ca_i`.
+  - name: model_state_n
+    maps_to: n
+    label: n
+    description: n. Maps to SBML symbol `n`.

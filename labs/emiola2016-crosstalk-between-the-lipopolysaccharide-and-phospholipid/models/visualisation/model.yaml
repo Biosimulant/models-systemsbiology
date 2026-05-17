@@ -1,0 +1,59 @@
+schema_version: '2.0'
+title: Emiola2016 - Crosstalk between the lipopolysaccharide and phospholipid pathways
+  during outer membrane biosynthesis, Visualisation
+description: Question-and-answer and dynamic visual summaries for Emiola2016 - Crosstalk
+  between the lipopolysaccharide and phospholipid pathways during outer membrane biosynthesis,.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Emiola2016 Crosstalk Between The Lipopolysaccharide And Phospholipid
+      Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Emiola2016 - Crosstalk between the lipopolysaccharide and phospholipid
+      pathways during outer membrane biosynthesis,.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_emiola2016_crosstalk_between_the_lipopolysacchar_model1601080000_model
+      title: Emiola2016 - Crosstalk between the lipopolysaccharide and phospholipid
+        pathways during outer membrane biosynthesis,
+      observables:
+      - id: promoter_LpxC
+        port: promoter_lpx_c
+        label: promoter-LpxC
+        group: signaling
+      - id: promoter_KdtA
+        port: promoter_kdt_a
+        label: promoter-KdtA
+        group: signaling
+      - id: acetyl_CoA
+        port: acetyl_co_a
+        label: acetyl-CoA
+        group: signaling
+      - id: UDP_GlcNac
+        port: udp_glc_nac
+        label: UDP-GlcNac
+        group: signaling
+      - id: CMP_KDO
+        port: cmp_kdo
+        label: CMP-KDO
+        group: signaling
+      - id: FadR_0
+        port: fad_r
+        label: FadR
+        group: signaling
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Hayer2005_CaMKII_model3 Visualisation
+description: Question-and-answer and dynamic visual summaries for Hayer2005_CaMKII_model3.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Hayer2005 Camkii Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Hayer2005_CaMKII_model3.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_hayer2005_camkii_model3_model9086953089_model
+      title: Hayer2005_CaMKII_model3
+      observables:
+      - id: AC_slash_ATP
+        port: ac_slash_atp
+        label: AC Slash ATP
+        group: metabolism
+      - id: actCaMKII_minus_PSD
+        port: act_ca_mkii_minus_psd
+        label: ActCaMKII Minus PSD
+        group: metabolism
+      - id: NMDAR
+        port: nmdar
+        label: NMDAR
+        group: physiology
+      - id: CaM_slash_CaM_minus_PSD
+        port: ca_m_slash_ca_m_minus_psd
+        label: CaM Slash CaM Minus PSD
+        group: physiology
+      - id: CaM_slash_CaM
+        port: ca_m_slash_ca_m
+        label: CaM Slash CaM
+        group: physiology
+      - id: tot_CaMKII_cyt
+        port: tot_ca_mkii_cyt
+        label: Tot CaMKII Cyt
+        group: physiology
+io:
+  inputs: []
+  outputs: []

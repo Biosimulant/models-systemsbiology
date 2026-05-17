@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "e535978b-31d3-488c-9fbe-101435b5eb29",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "540b7943-bb10-4bfe-90d5-20c23ad95925",
+  "created_at": "2026-05-16T05:46:53.442047895+00:00",
+  "last_synced_at": "2026-05-17T07:03:34.377384+00:00",
+  "hub_manifest_hash": "c3c2086d8809fd3dc5290216609e591e6a85274fd72c8a0ce6297e9099c72296",
+  "package_name": "yamaguchi1996-myocardialca2-lab"
+}

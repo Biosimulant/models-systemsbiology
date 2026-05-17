@@ -1,0 +1,64 @@
+schema_version: '2.0'
+title: Fenton1998 Myocardiumvortexdynamics Lab
+description: 'This a model from the article: Vortex dynamics in three-dimensional
+  continuous myocardium with fiber rotation:Filament instability and fibrillation.
+  It can be used to explore systemsbiology fenton1998 myocardiumvortexdynamics model0911989198
+  dynamics and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_fenton1998_myocardiumvortexdynamics_model0911989198_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_fenton1998_myocardiumvortexdynamics_model0911989198_model.state
+  to:
+  - visualisation.systemsbiology_sbml_fenton1998_myocardiumvortexdynamics_model0911989198_model_state
+- from: systemsbiology_sbml_fenton1998_myocardiumvortexdynamics_model0911989198_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_fenton1998_myocardiumvortexdynamics_model0911989198_model_summary
+- from: systemsbiology_sbml_fenton1998_myocardiumvortexdynamics_model0911989198_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_fenton1998_myocardiumvortexdynamics_model0911989198_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_u_membrane
+    maps_to: systemsbiology_sbml_fenton1998_myocardiumvortexdynamics_model0911989198_model.initial_u_membrane
+    label: Initial U Membrane
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `u_membrane`.
+  - name: initial_model_state_w
+    maps_to: systemsbiology_sbml_fenton1998_myocardiumvortexdynamics_model0911989198_model.initial_model_state_w
+    label: Initial Model State W
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `w`.
+  - name: initial_model_state_v
+    maps_to: systemsbiology_sbml_fenton1998_myocardiumvortexdynamics_model0911989198_model.initial_model_state_v
+    label: Initial Model State V
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `v`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_fenton1998_myocardiumvortexdynamics_model0911989198_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_fenton1998_myocardiumvortexdynamics_model0911989198_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_fenton1998_myocardiumvortexdynamics_model0911989198_model.species_labels
+  - name: u_membrane
+    maps_to: systemsbiology_sbml_fenton1998_myocardiumvortexdynamics_model0911989198_model.u_membrane
+  - name: model_state_w
+    maps_to: systemsbiology_sbml_fenton1998_myocardiumvortexdynamics_model0911989198_model.model_state_w
+  - name: model_state_v
+    maps_to: systemsbiology_sbml_fenton1998_myocardiumvortexdynamics_model0911989198_model.model_state_v

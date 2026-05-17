@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "f0f513ef-d388-4f68-8a05-9349cc1323b3",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "54075cd9-2b02-4c0a-92a8-3a127d0d38d5",
+  "created_at": "2026-05-16T05:46:44.101383699+00:00",
+  "last_synced_at": "2026-05-17T03:41:11.293915+00:00",
+  "hub_manifest_hash": "c374e014fb00ae58e3ee87ce38f3507fa6ac70fbed1e63b048e93f184ca3eba0",
+  "package_name": "hilgemann1987-calciumtransients-lab"
+}

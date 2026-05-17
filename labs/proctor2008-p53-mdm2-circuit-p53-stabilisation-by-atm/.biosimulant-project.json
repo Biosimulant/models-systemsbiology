@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "ba605558-df4d-43dd-8b0a-758489dc2161",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "38d602d6-5501-474a-ba2a-79ffd1b4a3de",
+  "created_at": "2026-05-16T05:46:50.695486360+00:00",
+  "last_synced_at": "2026-05-17T05:35:14.895938+00:00",
+  "hub_manifest_hash": "2b6ac059c7149dbcd03e5d805ce6b5b25c1506a99e5d95c93300e0070c06eb2d",
+  "package_name": "proctor2008-p53-mdm2-circuit-p53-stabilisation-by-atm-lab"
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "fdb33f8d-3385-4854-8180-23358c054027",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "6e8316ee-00d8-47dc-84f8-af61e56110b1",
+  "created_at": "2026-05-16T05:46:51.757713519+00:00",
+  "last_synced_at": "2026-05-17T06:07:48.737535+00:00",
+  "hub_manifest_hash": "4a9584bd43fd63741bdbd9f6332b87c25aa165a4f3b50790c79b96b9940b58ff",
+  "package_name": "schmierer2010-fih-ankyrins-lab"
+}

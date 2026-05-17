@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "2d10303a-1c48-40bf-b811-1400bf3821c6",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "46fff39e-8a7a-47d4-ba1f-51353f63c96f",
+  "created_at": "2026-05-16T05:46:40.962219299+00:00",
+  "last_synced_at": "2026-05-17T01:44:58.029889+00:00",
+  "hub_manifest_hash": "5af3addf1c9edda31b6069437d7d0735ab7987e0263bd6c69575778d6ddab203",
+  "package_name": "arnold2011-schultz2003-rubisco-calvincycle-lab"
+}

@@ -1,0 +1,110 @@
+schema_version: '2.0'
+title: Ota2015 - Positive regulation of Rho GTPase activity by RhoGDIs as a result
+  of their direct interaction with GAPs (GDI integrated)
+description: This is a ordinary differential equation mathematical model describing
+  the Rho GTPase cycle in which Rho GDP-dissociation inhibitors (RhoGDIs) inhibit
+  the regulatory activities of guanine nucleotide e. It can be used to explore systemsbiology
+  ota2015 positive regulation of rho dynamics and compare simulation behavior across
+  conditions.
+standard: other
+tags:
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Takahide Ota
+- Masayo Maeda
+- Mayumi Okamoto
+- Masaaki Tatsuka
+upstream:
+  id: biomodels_ebi:BIOMD0000000899
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000899
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000899
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000899?filename=Ota2015_GDI-integrated.xml
+  license: CC0
+biosim:
+  entrypoint: src.ota2015_positive_regulation_of_rho_gtpase_activi_biomd0000000899_model:Ota2015PositiveRegulationOfRhoGtpaseActiviBiomd0000000899Model
+  init_kwargs:
+    model_path: data/BIOMD0000000899.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_gdigdp_rho
+    maps_to: s10
+    label: Initial Gdigdp Rho
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s10`.
+  - name: initial_effector
+    maps_to: s9
+    label: Initial Effector
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s9`.
+  - name: initial_activator
+    maps_to: s1
+    label: Initial Activator
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s1`.
+  - name: initial_model_state_gef
+    maps_to: s3
+    label: Initial Model State Gef
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s3`.
+  - name: initial_model_state_gap
+    maps_to: s8
+    label: Initial Model State Gap
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s8`.
+  - name: initial_gtp_rho
+    maps_to: s6
+    label: Initial Gtp Rho
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s6`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: gdigdp_rho
+    maps_to: s10
+    label: GDI·GDP-Rho
+    description: GDI·GDP-Rho. Maps to SBML symbol `s10`.
+  - name: effector
+    maps_to: s9
+    label: Effector
+    description: Effector. Maps to SBML symbol `s9`.
+  - name: activator
+    maps_to: s1
+    label: Activator
+    description: Activator. Maps to SBML symbol `s1`.
+  - name: gef
+    maps_to: s3
+    label: GEF
+    description: GEF. Maps to SBML symbol `s3`.
+  - name: gap
+    maps_to: s8
+    label: GAP
+    description: GAP. Maps to SBML symbol `s8`.
+  - name: gtp_rho
+    maps_to: s6
+    label: GTP-Rho
+    description: GTP-Rho. Maps to SBML symbol `s6`.

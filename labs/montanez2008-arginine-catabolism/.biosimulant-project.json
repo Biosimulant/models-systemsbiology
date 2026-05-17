@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "f0bb0155-0a1e-434f-96c4-297984d725c8",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "9902dfea-0bbf-41ac-831e-9277c8f83611",
+  "created_at": "2026-05-16T05:46:47.532995543+00:00",
+  "last_synced_at": "2026-05-17T04:59:33.524479+00:00",
+  "hub_manifest_hash": "ae1b82cdf849c489e7ef0e188047d29dc2e56115434ba7beb7c432d9fbaebad7",
+  "package_name": "montanez2008-arginine-catabolism-lab"
+}

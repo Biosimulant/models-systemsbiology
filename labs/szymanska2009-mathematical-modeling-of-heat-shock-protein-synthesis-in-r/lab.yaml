@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Szymanska2009 Mathematical Modeling Of Heat Shock Protein Synthesis In R Lab
+description: This is a mathematical model of heat shock protein synthesis induced
+  by an external temperature stimulus. The model consists of a system of nine nonlinear
+  ordinary differential equations describing th.
+models:
+- alias: systemsbiology_sbml_szymanska2009_mathematical_modeling_of_heat_shoc_biomd0000000896_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_szymanska2009_mathematical_modeling_of_heat_shoc_biomd0000000896_model.state
+  to:
+  - visualisation.systemsbiology_sbml_szymanska2009_mathematical_modeling_of_heat_shoc_biomd0000000896_model_state
+- from: systemsbiology_sbml_szymanska2009_mathematical_modeling_of_heat_shoc_biomd0000000896_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_szymanska2009_mathematical_modeling_of_heat_shoc_biomd0000000896_model_summary
+- from: systemsbiology_sbml_szymanska2009_mathematical_modeling_of_heat_shoc_biomd0000000896_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_szymanska2009_mathematical_modeling_of_heat_shoc_biomd0000000896_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_hsp70_hsf
+    maps_to: systemsbiology_sbml_szymanska2009_mathematical_modeling_of_heat_shoc_biomd0000000896_model.initial_hsp70_hsf
+    label: Initial Hsp70 Hsf
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Hsp70_HSF`.
+  - name: initial_mrna
+    maps_to: systemsbiology_sbml_szymanska2009_mathematical_modeling_of_heat_shoc_biomd0000000896_model.initial_mrna
+    label: Initial MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mRNA`.
+  - name: initial_hsf_3_hse
+    maps_to: systemsbiology_sbml_szymanska2009_mathematical_modeling_of_heat_shoc_biomd0000000896_model.initial_hsf_3_hse
+    label: Initial Hsf 3 Hse
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `HSF_3_HSE`.
+  - name: initial_hsf_3
+    maps_to: systemsbiology_sbml_szymanska2009_mathematical_modeling_of_heat_shoc_biomd0000000896_model.initial_hsf_3
+    label: Initial Hsf 3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `HSF_3`.
+  - name: initial_hsp70_s
+    maps_to: systemsbiology_sbml_szymanska2009_mathematical_modeling_of_heat_shoc_biomd0000000896_model.initial_hsp70_s
+    label: Initial Hsp70 S
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Hsp70_S`.
+  - name: initial_model_state_hse
+    maps_to: systemsbiology_sbml_szymanska2009_mathematical_modeling_of_heat_shoc_biomd0000000896_model.initial_model_state_hse
+    label: Initial Model State Hse
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `HSE`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_szymanska2009_mathematical_modeling_of_heat_shoc_biomd0000000896_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_szymanska2009_mathematical_modeling_of_heat_shoc_biomd0000000896_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_szymanska2009_mathematical_modeling_of_heat_shoc_biomd0000000896_model.species_labels
+  - name: hsp70_hsf
+    maps_to: systemsbiology_sbml_szymanska2009_mathematical_modeling_of_heat_shoc_biomd0000000896_model.hsp70_hsf
+  - name: mrna
+    maps_to: systemsbiology_sbml_szymanska2009_mathematical_modeling_of_heat_shoc_biomd0000000896_model.mrna
+  - name: hsf_3_hse
+    maps_to: systemsbiology_sbml_szymanska2009_mathematical_modeling_of_heat_shoc_biomd0000000896_model.hsf_3_hse
+  - name: hsf_3
+    maps_to: systemsbiology_sbml_szymanska2009_mathematical_modeling_of_heat_shoc_biomd0000000896_model.hsf_3
+  - name: hsp70_s
+    maps_to: systemsbiology_sbml_szymanska2009_mathematical_modeling_of_heat_shoc_biomd0000000896_model.hsp70_s
+  - name: hse
+    maps_to: systemsbiology_sbml_szymanska2009_mathematical_modeling_of_heat_shoc_biomd0000000896_model.hse

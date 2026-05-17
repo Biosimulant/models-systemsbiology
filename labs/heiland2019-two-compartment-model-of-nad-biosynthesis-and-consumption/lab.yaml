@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Heiland2019 Two Compartment Model Of Nad Biosynthesis And Consumption Lab
+description: The model is based on MODEL1905220001 but has two compartments that have
+  different composition of the biosynthetic enzymes NADA and NamPT. One compartment
+  contains in addition NNMT, the other one does.
+models:
+- alias: systemsbiology_sbml_heiland2019_two_compartment_model_of_nad_biosynt_model1905220002_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_heiland2019_two_compartment_model_of_nad_biosynt_model1905220002_model.state
+  to:
+  - visualisation.systemsbiology_sbml_heiland2019_two_compartment_model_of_nad_biosynt_model1905220002_model_state
+- from: systemsbiology_sbml_heiland2019_two_compartment_model_of_nad_biosynt_model1905220002_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_heiland2019_two_compartment_model_of_nad_biosynt_model1905220002_model_summary
+- from: systemsbiology_sbml_heiland2019_two_compartment_model_of_nad_biosynt_model1905220002_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_heiland2019_two_compartment_model_of_nad_biosynt_model1905220002_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_sah
+    maps_to: systemsbiology_sbml_heiland2019_two_compartment_model_of_nad_biosynt_model1905220002_model.initial_model_state_sah
+    label: Initial Model State Sah
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `SAH_NamPT_compartment`.
+  - name: initial_model_state_pi
+    maps_to: systemsbiology_sbml_heiland2019_two_compartment_model_of_nad_biosynt_model1905220002_model.initial_model_state_pi
+    label: Initial Model State Pi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pi_NamPT_compartment`.
+  - name: initial_model_state_pi_2
+    maps_to: systemsbiology_sbml_heiland2019_two_compartment_model_of_nad_biosynt_model1905220002_model.initial_model_state_pi_2
+    label: Initial Model State Pi 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pi_NADA_compartment`.
+  - name: initial_prpp
+    maps_to: systemsbiology_sbml_heiland2019_two_compartment_model_of_nad_biosynt_model1905220002_model.initial_prpp
+    label: Initial Prpp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PRPP_NamPT_compartment`.
+  - name: initial_prpp_2
+    maps_to: systemsbiology_sbml_heiland2019_two_compartment_model_of_nad_biosynt_model1905220002_model.initial_prpp_2
+    label: Initial Prpp 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PRPP_NADA_compartment`.
+  - name: initial_nam_ex
+    maps_to: systemsbiology_sbml_heiland2019_two_compartment_model_of_nad_biosynt_model1905220002_model.initial_nam_ex
+    label: Initial Nam Ex
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Nam_ex`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_heiland2019_two_compartment_model_of_nad_biosynt_model1905220002_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_heiland2019_two_compartment_model_of_nad_biosynt_model1905220002_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_heiland2019_two_compartment_model_of_nad_biosynt_model1905220002_model.species_labels
+  - name: sah
+    maps_to: systemsbiology_sbml_heiland2019_two_compartment_model_of_nad_biosynt_model1905220002_model.sah
+  - name: model_state_pi
+    maps_to: systemsbiology_sbml_heiland2019_two_compartment_model_of_nad_biosynt_model1905220002_model.model_state_pi
+  - name: model_state_pi_2
+    maps_to: systemsbiology_sbml_heiland2019_two_compartment_model_of_nad_biosynt_model1905220002_model.model_state_pi_2
+  - name: prpp
+    maps_to: systemsbiology_sbml_heiland2019_two_compartment_model_of_nad_biosynt_model1905220002_model.prpp
+  - name: prpp_2
+    maps_to: systemsbiology_sbml_heiland2019_two_compartment_model_of_nad_biosynt_model1905220002_model.prpp_2
+  - name: nam_ex
+    maps_to: systemsbiology_sbml_heiland2019_two_compartment_model_of_nad_biosynt_model1905220002_model.nam_ex

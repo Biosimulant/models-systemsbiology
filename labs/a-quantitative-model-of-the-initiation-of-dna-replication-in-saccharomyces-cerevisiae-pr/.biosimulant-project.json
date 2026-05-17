@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "b3d64a11-4094-483d-996b-3c0a31ac3b37",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "074fb88d-39f3-4e3f-94c8-186d89360b08",
+  "created_at": "2026-05-16T05:46:40.577127008+00:00",
+  "last_synced_at": "2026-05-17T01:30:05.653862+00:00",
+  "hub_manifest_hash": "57a1dd6752eb1a406bab6ea581bdb0d756cf2caa2ece6aee3bd5bd4ea846ea6c",
+  "package_name": "a-quantitative-model-of-the-initiation-of-dna-replication-in-sac"
+}

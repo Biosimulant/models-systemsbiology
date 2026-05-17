@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Sorokina2011 Starchmetabolism Ostreococcus Lab
+description: 'This model is from the article: Microarray data can predict diurnal
+  changes of starch content in the picoalga Ostreococcus. Sorokina O, Corellou F,
+  Dauvillée D, Sorokin A, Goryanin I, Ball S, Bouget F.'
+models:
+- alias: systemsbiology_sbml_sorokina2011_starchmetabolism_ostreococcus_model1204240000_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_sorokina2011_starchmetabolism_ostreococcus_model1204240000_model.state
+  to:
+  - visualisation.systemsbiology_sbml_sorokina2011_starchmetabolism_ostreococcus_model1204240000_model_state
+- from: systemsbiology_sbml_sorokina2011_starchmetabolism_ostreococcus_model1204240000_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_sorokina2011_starchmetabolism_ostreococcus_model1204240000_model_summary
+- from: systemsbiology_sbml_sorokina2011_starchmetabolism_ostreococcus_model1204240000_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_sorokina2011_starchmetabolism_ostreococcus_model1204240000_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_maltotriose
+    maps_to: systemsbiology_sbml_sorokina2011_starchmetabolism_ostreococcus_model1204240000_model.initial_maltotriose
+    label: Initial Maltotriose
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_16`.
+  - name: initial_maltose
+    maps_to: systemsbiology_sbml_sorokina2011_starchmetabolism_ostreococcus_model1204240000_model.initial_maltose
+    label: Initial Maltose
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_37`.
+  - name: initial_model_state_glu
+    maps_to: systemsbiology_sbml_sorokina2011_starchmetabolism_ostreococcus_model1204240000_model.initial_model_state_glu
+    label: Initial Model State Glu
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_39`.
+  - name: initial_p_pi
+    maps_to: systemsbiology_sbml_sorokina2011_starchmetabolism_ostreococcus_model1204240000_model.initial_p_pi
+    label: Initial P Pi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_13`.
+  - name: initial_model_state_p
+    maps_to: systemsbiology_sbml_sorokina2011_starchmetabolism_ostreococcus_model1204240000_model.initial_model_state_p
+    label: Initial Model State P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_7`.
+  - name: initial_nadph
+    maps_to: systemsbiology_sbml_sorokina2011_starchmetabolism_ostreococcus_model1204240000_model.initial_nadph
+    label: Initial Nadph
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_3`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_sorokina2011_starchmetabolism_ostreococcus_model1204240000_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_sorokina2011_starchmetabolism_ostreococcus_model1204240000_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_sorokina2011_starchmetabolism_ostreococcus_model1204240000_model.species_labels
+  - name: maltotriose
+    maps_to: systemsbiology_sbml_sorokina2011_starchmetabolism_ostreococcus_model1204240000_model.maltotriose
+  - name: maltose
+    maps_to: systemsbiology_sbml_sorokina2011_starchmetabolism_ostreococcus_model1204240000_model.maltose
+  - name: glu
+    maps_to: systemsbiology_sbml_sorokina2011_starchmetabolism_ostreococcus_model1204240000_model.glu
+  - name: p_pi
+    maps_to: systemsbiology_sbml_sorokina2011_starchmetabolism_ostreococcus_model1204240000_model.p_pi
+  - name: model_state_p
+    maps_to: systemsbiology_sbml_sorokina2011_starchmetabolism_ostreococcus_model1204240000_model.model_state_p
+  - name: nadph
+    maps_to: systemsbiology_sbml_sorokina2011_starchmetabolism_ostreococcus_model1204240000_model.nadph

@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Waugh2006 Woundhealing Diabetic Modela Lab
+description: 'This a model from the article: Modeling the effects of treating diabetic
+  wounds with engineered skinsubstitutes. It can be used to explore systemsbiology
+  waugh2006 woundhealing diabetic modela model1006230106 dynamics and compare simulation
+  behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_waugh2006_woundhealing_diabetic_modela_model1006230106_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_waugh2006_woundhealing_diabetic_modela_model1006230106_model.state
+  to:
+  - visualisation.systemsbiology_sbml_waugh2006_woundhealing_diabetic_modela_model1006230106_model_state
+- from: systemsbiology_sbml_waugh2006_woundhealing_diabetic_modela_model1006230106_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_waugh2006_woundhealing_diabetic_modela_model1006230106_model_summary
+- from: systemsbiology_sbml_waugh2006_woundhealing_diabetic_modela_model1006230106_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_waugh2006_woundhealing_diabetic_modela_model1006230106_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_phi_r
+    maps_to: systemsbiology_sbml_waugh2006_woundhealing_diabetic_modela_model1006230106_model.initial_phi_r
+    label: Initial Phi R
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `phi_R`.
+  - name: initial_phi_i
+    maps_to: systemsbiology_sbml_waugh2006_woundhealing_diabetic_modela_model1006230106_model.initial_phi_i
+    label: Initial Phi I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `phi_I`.
+  - name: initial_model_state_t
+    maps_to: systemsbiology_sbml_waugh2006_woundhealing_diabetic_modela_model1006230106_model.initial_model_state_t
+    label: Initial Model State T
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `T`.
+  - name: initial_model_state_p
+    maps_to: systemsbiology_sbml_waugh2006_woundhealing_diabetic_modela_model1006230106_model.initial_model_state_p
+    label: Initial Model State P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P`.
+  - name: initial_model_state_h
+    maps_to: systemsbiology_sbml_waugh2006_woundhealing_diabetic_modela_model1006230106_model.initial_model_state_h
+    label: Initial Model State H
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `H`.
+  - name: initial_model_state_f
+    maps_to: systemsbiology_sbml_waugh2006_woundhealing_diabetic_modela_model1006230106_model.initial_model_state_f
+    label: Initial Model State F
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `F`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_waugh2006_woundhealing_diabetic_modela_model1006230106_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_waugh2006_woundhealing_diabetic_modela_model1006230106_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_waugh2006_woundhealing_diabetic_modela_model1006230106_model.species_labels
+  - name: phi_r
+    maps_to: systemsbiology_sbml_waugh2006_woundhealing_diabetic_modela_model1006230106_model.phi_r
+  - name: phi_i
+    maps_to: systemsbiology_sbml_waugh2006_woundhealing_diabetic_modela_model1006230106_model.phi_i
+  - name: model_state_t
+    maps_to: systemsbiology_sbml_waugh2006_woundhealing_diabetic_modela_model1006230106_model.model_state_t
+  - name: model_state_p
+    maps_to: systemsbiology_sbml_waugh2006_woundhealing_diabetic_modela_model1006230106_model.model_state_p
+  - name: model_state_h
+    maps_to: systemsbiology_sbml_waugh2006_woundhealing_diabetic_modela_model1006230106_model.model_state_h
+  - name: model_state_f
+    maps_to: systemsbiology_sbml_waugh2006_woundhealing_diabetic_modela_model1006230106_model.model_state_f

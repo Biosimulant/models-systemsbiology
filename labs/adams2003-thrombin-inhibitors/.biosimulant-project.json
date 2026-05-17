@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "b6a22fda-5340-4211-aff7-c3364913f68f",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "9d4fa352-719f-4c3f-9312-6d0febeaed96",
+  "created_at": "2026-05-16T05:46:40.664352672+00:00",
+  "last_synced_at": "2026-05-17T01:33:03.207283+00:00",
+  "hub_manifest_hash": "d9c16301083c655fb84e88b4b9e85faf9ee0426070f3d11fdfdf3d129fc39743",
+  "package_name": "adams2003-thrombin-inhibitors-lab"
+}

@@ -1,0 +1,58 @@
+schema_version: '2.0'
+title: Heldt2019 Chlamydomonas Multiple Fission Cycles Lab
+description: This model is described in the article:A single light-responsive sizer
+  can control multiple-fission cycles in ChlamydomonasFrank S. It can be used to explore
+  systemsbiology heldt2019 chlamydomonas multiple fission cycles dynamics and compare
+  simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_heldt2019_chlamydomonas_multiple_fission_cycles_model1904020001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_heldt2019_chlamydomonas_multiple_fission_cycles_model1904020001_model.state
+  to:
+  - visualisation.systemsbiology_sbml_heldt2019_chlamydomonas_multiple_fission_cycles_model1904020001_model_state
+- from: systemsbiology_sbml_heldt2019_chlamydomonas_multiple_fission_cycles_model1904020001_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_heldt2019_chlamydomonas_multiple_fission_cycles_model1904020001_model_summary
+- from: systemsbiology_sbml_heldt2019_chlamydomonas_multiple_fission_cycles_model1904020001_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_heldt2019_chlamydomonas_multiple_fission_cycles_model1904020001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: light
+    maps_to: systemsbiology_sbml_heldt2019_chlamydomonas_multiple_fission_cycles_model1904020001_model.light
+    label: Light
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `Light`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_heldt2019_chlamydomonas_multiple_fission_cycles_model1904020001_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_heldt2019_chlamydomonas_multiple_fission_cycles_model1904020001_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_heldt2019_chlamydomonas_multiple_fission_cycles_model1904020001_model.species_labels
+  - name: i_nt
+    maps_to: systemsbiology_sbml_heldt2019_chlamydomonas_multiple_fission_cycles_model1904020001_model.i_nt
+  - name: model_state_ip
+    maps_to: systemsbiology_sbml_heldt2019_chlamydomonas_multiple_fission_cycles_model1904020001_model.model_state_ip
+  - name: in_value
+    maps_to: systemsbiology_sbml_heldt2019_chlamydomonas_multiple_fission_cycles_model1904020001_model.in_value
+  - name: t_ft
+    maps_to: systemsbiology_sbml_heldt2019_chlamydomonas_multiple_fission_cycles_model1904020001_model.t_ft
+  - name: model_state_sk
+    maps_to: systemsbiology_sbml_heldt2019_chlamydomonas_multiple_fission_cycles_model1904020001_model.model_state_sk
+  - name: intf
+    maps_to: systemsbiology_sbml_heldt2019_chlamydomonas_multiple_fission_cycles_model1904020001_model.intf

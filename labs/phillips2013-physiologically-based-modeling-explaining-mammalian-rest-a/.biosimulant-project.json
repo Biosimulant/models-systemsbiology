@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "b5160c63-21b2-4b0f-bb05-8c1d095461e4",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "edbd94cf-f8d1-4831-848b-79209bfd43cb",
+  "created_at": "2026-05-16T05:46:50.456878038+00:00",
+  "last_synced_at": "2026-05-17T05:29:57.253668+00:00",
+  "hub_manifest_hash": "55098a2566011a381ea9c1b91c3e32c5d2a87b1d4bf977d1232fc87937cc8a36",
+  "package_name": "phillips2013-physiologically-based-modeling-explaining-mammalian"
+}

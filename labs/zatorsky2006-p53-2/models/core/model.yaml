@@ -1,0 +1,77 @@
+schema_version: '2.0'
+title: Zatorsky2006_p53_Model2
+description: The model reproduces time profile of p53 and Mdm2 as depicted in Fig
+  6B of the paper for Model 2. It can be used to explore systemsbiology zatorsky2006
+  p53 model2 BioModels0000000158 dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Naama Geva-Zatorsky
+- Nitzan Rosenfeld
+- Shalev Itzkovitz
+- Ron Milo
+- Alex Sigal
+upstream:
+  id: biomodels_ebi:BIOMD0000000158
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000158
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000158
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000158?filename=BIOMD0000000158_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.zatorsky2006_p53_model2_biomd0000000158_model:Zatorsky2006P53Model2Biomd0000000158Model
+  init_kwargs:
+    model_path: data/BIOMD0000000158.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_precursor_mdm2
+    maps_to: y0
+    label: Initial Precursor Mdm2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `y0`.
+  - name: initial_mdm2
+    maps_to: y
+    label: Initial Mdm2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `y`.
+  - name: initial_model_state_p53
+    maps_to: x
+    label: Initial Model State P53
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: precursor_mdm2
+    maps_to: y0
+    label: precursor Mdm2
+    description: precursor Mdm2. Maps to SBML symbol `y0`.
+  - name: mdm2
+    maps_to: y
+    label: Mdm2
+    description: Mdm2. Maps to SBML symbol `y`.
+  - name: p53
+    maps_to: x
+    label: p53
+    description: p53. Maps to SBML symbol `x`.

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "3feb481f-046e-49e7-a8bd-b54ccb28cacd",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "de63d766-93a4-4e18-b7fb-d89fb48cceba",
+  "created_at": "2026-05-16T05:46:44.539738328+00:00",
+  "last_synced_at": "2026-05-17T04:02:18.357415+00:00",
+  "hub_manifest_hash": "76cfc14e0b5a152fddba45a5c17cb815ff1243955fc4542bf52269f8f05a59e8",
+  "package_name": "kim2007-cellularmemory-asymmetricmodel-lab"
+}

@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Friedland2009 Ara Rtc3 Counter Lab
+description: 'This is the model of the RTC3 counter described in the article: Synthetic
+  gene networks that count. Friedland AE, Lu TK, Wang X, Shi D, Church G, Collins
+  JJ.'
+models:
+- alias: systemsbiology_sbml_friedland2009_ara_rtc3_counter_biomd0000000301_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_friedland2009_ara_rtc3_counter_biomd0000000301_model.state
+  to:
+  - visualisation.systemsbiology_sbml_friedland2009_ara_rtc3_counter_biomd0000000301_model_state
+- from: systemsbiology_sbml_friedland2009_ara_rtc3_counter_biomd0000000301_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_friedland2009_ara_rtc3_counter_biomd0000000301_model_summary
+- from: systemsbiology_sbml_friedland2009_ara_rtc3_counter_biomd0000000301_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_friedland2009_ara_rtc3_counter_biomd0000000301_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_pgfp
+    maps_to: systemsbiology_sbml_friedland2009_ara_rtc3_counter_biomd0000000301_model.initial_pgfp
+    label: Initial Pgfp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `pGFP`.
+  - name: initial_mt7cr
+    maps_to: systemsbiology_sbml_friedland2009_ara_rtc3_counter_biomd0000000301_model.initial_mt7cr
+    label: Initial Mt7cr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mT7cr`.
+  - name: initial_mgf_pcr
+    maps_to: systemsbiology_sbml_friedland2009_ara_rtc3_counter_biomd0000000301_model.initial_mgf_pcr
+    label: Initial Mgf Pcr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mGFPcr`.
+  - name: initial_model_state_pt7
+    maps_to: systemsbiology_sbml_friedland2009_ara_rtc3_counter_biomd0000000301_model.initial_model_state_pt7
+    label: Initial Model State PT7
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `pT7`.
+  - name: initial_ta_rna
+    maps_to: systemsbiology_sbml_friedland2009_ara_rtc3_counter_biomd0000000301_model.initial_ta_rna
+    label: Initial Ta RNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `taRNA`.
+  - name: initial_mt3cr
+    maps_to: systemsbiology_sbml_friedland2009_ara_rtc3_counter_biomd0000000301_model.initial_mt3cr
+    label: Initial Mt3cr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mT3cr`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_friedland2009_ara_rtc3_counter_biomd0000000301_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_friedland2009_ara_rtc3_counter_biomd0000000301_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_friedland2009_ara_rtc3_counter_biomd0000000301_model.species_labels
+  - name: pgfp
+    maps_to: systemsbiology_sbml_friedland2009_ara_rtc3_counter_biomd0000000301_model.pgfp
+  - name: mt7cr
+    maps_to: systemsbiology_sbml_friedland2009_ara_rtc3_counter_biomd0000000301_model.mt7cr
+  - name: mgf_pcr
+    maps_to: systemsbiology_sbml_friedland2009_ara_rtc3_counter_biomd0000000301_model.mgf_pcr
+  - name: pt7
+    maps_to: systemsbiology_sbml_friedland2009_ara_rtc3_counter_biomd0000000301_model.pt7
+  - name: ta_rna
+    maps_to: systemsbiology_sbml_friedland2009_ara_rtc3_counter_biomd0000000301_model.ta_rna
+  - name: mt3cr
+    maps_to: systemsbiology_sbml_friedland2009_ara_rtc3_counter_biomd0000000301_model.mt3cr

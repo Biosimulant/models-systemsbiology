@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Thomsen1989 Adenylatecyclase Lab
+description: This model reproduces figure 5 and figure 4(B)of the paper, with Kinh
+  represented by [G-GTP]. It can be used to explore systemsbiology thomsen1989 adenylatecyclase
+  BioModels0000000080 dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_thomsen1989_adenylatecyclase_biomd0000000080_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_thomsen1989_adenylatecyclase_biomd0000000080_model.state
+  to:
+  - visualisation.systemsbiology_sbml_thomsen1989_adenylatecyclase_biomd0000000080_model_state
+- from: systemsbiology_sbml_thomsen1989_adenylatecyclase_biomd0000000080_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_thomsen1989_adenylatecyclase_biomd0000000080_model_summary
+- from: systemsbiology_sbml_thomsen1989_adenylatecyclase_biomd0000000080_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_thomsen1989_adenylatecyclase_biomd0000000080_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_g_gdp
+    maps_to: systemsbiology_sbml_thomsen1989_adenylatecyclase_biomd0000000080_model.initial_g_gdp
+    label: Initial G Gdp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `G_GDP`.
+  - name: initial_g_gtp
+    maps_to: systemsbiology_sbml_thomsen1989_adenylatecyclase_biomd0000000080_model.initial_g_gtp
+    label: Initial G Gtp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `G_GTP`.
+  - name: initial_drg_gtp
+    maps_to: systemsbiology_sbml_thomsen1989_adenylatecyclase_biomd0000000080_model.initial_drg_gtp
+    label: Initial Drg Gtp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `DRG_GTP`.
+  - name: initial_drg_gdp
+    maps_to: systemsbiology_sbml_thomsen1989_adenylatecyclase_biomd0000000080_model.initial_drg_gdp
+    label: Initial Drg Gdp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `DRG_GDP`.
+  - name: initial_model_state_gtp
+    maps_to: systemsbiology_sbml_thomsen1989_adenylatecyclase_biomd0000000080_model.initial_model_state_gtp
+    label: Initial Model State Gtp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `GTP`.
+  - name: initial_model_state_gdp
+    maps_to: systemsbiology_sbml_thomsen1989_adenylatecyclase_biomd0000000080_model.initial_model_state_gdp
+    label: Initial Model State Gdp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `GDP`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_thomsen1989_adenylatecyclase_biomd0000000080_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_thomsen1989_adenylatecyclase_biomd0000000080_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_thomsen1989_adenylatecyclase_biomd0000000080_model.species_labels
+  - name: g_gdp
+    maps_to: systemsbiology_sbml_thomsen1989_adenylatecyclase_biomd0000000080_model.g_gdp
+  - name: g_gtp
+    maps_to: systemsbiology_sbml_thomsen1989_adenylatecyclase_biomd0000000080_model.g_gtp
+  - name: drg_gtp
+    maps_to: systemsbiology_sbml_thomsen1989_adenylatecyclase_biomd0000000080_model.drg_gtp
+  - name: drg_gdp
+    maps_to: systemsbiology_sbml_thomsen1989_adenylatecyclase_biomd0000000080_model.drg_gdp
+  - name: gtp
+    maps_to: systemsbiology_sbml_thomsen1989_adenylatecyclase_biomd0000000080_model.gtp
+  - name: gdp
+    maps_to: systemsbiology_sbml_thomsen1989_adenylatecyclase_biomd0000000080_model.gdp

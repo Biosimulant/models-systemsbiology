@@ -1,0 +1,90 @@
+schema_version: '2.0'
+title: Larsen2004 Calciumspiking Enzymebinding Lab
+description: 'This a model from the article: On the encoding and decoding of calcium
+  signals in hepatocytes Ann Zahle Larsen, Lars Folke Olsen and Ursula Kummera Biophysical
+  Chemistry Volume 107, Issue 1, 1 January. It can be used to explore systemsbiology
+  larsen2004 calciumspiking enzymebinding BioModels0000000331 dynamics and compare
+  simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_larsen2004_calciumspiking_enzymebinding_biomd0000000331_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_larsen2004_calciumspiking_enzymebinding_biomd0000000331_model.state
+  to:
+  - visualisation.systemsbiology_sbml_larsen2004_calciumspiking_enzymebinding_biomd0000000331_model_state
+- from: systemsbiology_sbml_larsen2004_calciumspiking_enzymebinding_biomd0000000331_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_larsen2004_calciumspiking_enzymebinding_biomd0000000331_model_summary
+- from: systemsbiology_sbml_larsen2004_calciumspiking_enzymebinding_biomd0000000331_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_larsen2004_calciumspiking_enzymebinding_biomd0000000331_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_calcium_er
+    maps_to: systemsbiology_sbml_larsen2004_calciumspiking_enzymebinding_biomd0000000331_model.initial_calcium_er
+    label: Initial Calcium Er
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_ER`.
+  - name: initial_g_alpha
+    maps_to: systemsbiology_sbml_larsen2004_calciumspiking_enzymebinding_biomd0000000331_model.initial_g_alpha
+    label: Initial G Alpha
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `G_alpha`.
+  - name: initial_calcium_cyt
+    maps_to: systemsbiology_sbml_larsen2004_calciumspiking_enzymebinding_biomd0000000331_model.initial_calcium_cyt
+    label: Initial Calcium Cyt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_cyt`.
+  - name: initial_calcium_mit
+    maps_to: systemsbiology_sbml_larsen2004_calciumspiking_enzymebinding_biomd0000000331_model.initial_calcium_mit
+    label: Initial Calcium Mit
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_mit`.
+  - name: initial_enzyme
+    maps_to: systemsbiology_sbml_larsen2004_calciumspiking_enzymebinding_biomd0000000331_model.initial_enzyme
+    label: Initial Enzyme
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Enz`.
+  - name: initial_enz_catlysed_product
+    maps_to: systemsbiology_sbml_larsen2004_calciumspiking_enzymebinding_biomd0000000331_model.initial_enz_catlysed_product
+    label: Initial Enz Catlysed Product
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Product`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_larsen2004_calciumspiking_enzymebinding_biomd0000000331_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_larsen2004_calciumspiking_enzymebinding_biomd0000000331_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_larsen2004_calciumspiking_enzymebinding_biomd0000000331_model.species_labels
+  - name: calcium_er
+    maps_to: systemsbiology_sbml_larsen2004_calciumspiking_enzymebinding_biomd0000000331_model.calcium_er
+  - name: g_alpha
+    maps_to: systemsbiology_sbml_larsen2004_calciumspiking_enzymebinding_biomd0000000331_model.g_alpha
+  - name: calcium_cyt
+    maps_to: systemsbiology_sbml_larsen2004_calciumspiking_enzymebinding_biomd0000000331_model.calcium_cyt
+  - name: calcium_mit
+    maps_to: systemsbiology_sbml_larsen2004_calciumspiking_enzymebinding_biomd0000000331_model.calcium_mit
+  - name: enzyme
+    maps_to: systemsbiology_sbml_larsen2004_calciumspiking_enzymebinding_biomd0000000331_model.enzyme
+  - name: enz_catlysed_product
+    maps_to: systemsbiology_sbml_larsen2004_calciumspiking_enzymebinding_biomd0000000331_model.enz_catlysed_product

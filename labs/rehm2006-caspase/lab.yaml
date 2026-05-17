@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Rehm2006 Caspase Lab
+description: 'This is the standard model described in the article: Systems analysis
+  of effector caspase activation and its control by X-linked inhibitor of apoptosis
+  protein. Rehm M, Huber HJ, Dussmann H, Prehn JH.'
+models:
+- alias: systemsbiology_sbml_rehm2006_caspase_biomd0000000256_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_rehm2006_caspase_biomd0000000256_model.state
+  to:
+  - visualisation.systemsbiology_sbml_rehm2006_caspase_biomd0000000256_model_state
+- from: systemsbiology_sbml_rehm2006_caspase_biomd0000000256_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_rehm2006_caspase_biomd0000000256_model_summary
+- from: systemsbiology_sbml_rehm2006_caspase_biomd0000000256_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_rehm2006_caspase_biomd0000000256_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_cytochrome_c_in_mitochondrium
+    maps_to: systemsbiology_sbml_rehm2006_caspase_biomd0000000256_model.initial_cytochrome_c_in_mitochondrium
+    label: Initial Cytochrome C In Mitochondrium
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CytC_mit`.
+  - name: initial_smac_in_mitochondrium
+    maps_to: systemsbiology_sbml_rehm2006_caspase_biomd0000000256_model.initial_smac_in_mitochondrium
+    label: Initial Smac In Mitochondrium
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `SMAC_mito`.
+  - name: initial_casp3_substrate
+    maps_to: systemsbiology_sbml_rehm2006_caspase_biomd0000000256_model.initial_casp3_substrate
+    label: Initial Casp3 Substrate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Substrate`.
+  - name: initial_pro_casp3
+    maps_to: systemsbiology_sbml_rehm2006_caspase_biomd0000000256_model.initial_pro_casp3
+    label: Initial Pro Casp3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PC3`.
+  - name: initial_pro_casp9
+    maps_to: systemsbiology_sbml_rehm2006_caspase_biomd0000000256_model.initial_pro_casp9
+    label: Initial Pro Casp9
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PC9`.
+  - name: initial_cytosolic_cytochrome_c
+    maps_to: systemsbiology_sbml_rehm2006_caspase_biomd0000000256_model.initial_cytosolic_cytochrome_c
+    label: Initial Cytosolic Cytochrome C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CytC_cell`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_rehm2006_caspase_biomd0000000256_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_rehm2006_caspase_biomd0000000256_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_rehm2006_caspase_biomd0000000256_model.species_labels
+  - name: cytochrome_c_in_mitochondrium
+    maps_to: systemsbiology_sbml_rehm2006_caspase_biomd0000000256_model.cytochrome_c_in_mitochondrium
+  - name: smac_in_mitochondrium
+    maps_to: systemsbiology_sbml_rehm2006_caspase_biomd0000000256_model.smac_in_mitochondrium
+  - name: casp3_substrate
+    maps_to: systemsbiology_sbml_rehm2006_caspase_biomd0000000256_model.casp3_substrate
+  - name: pro_casp3
+    maps_to: systemsbiology_sbml_rehm2006_caspase_biomd0000000256_model.pro_casp3
+  - name: pro_casp9
+    maps_to: systemsbiology_sbml_rehm2006_caspase_biomd0000000256_model.pro_casp9
+  - name: cytosolic_cytochrome_c
+    maps_to: systemsbiology_sbml_rehm2006_caspase_biomd0000000256_model.cytosolic_cytochrome_c

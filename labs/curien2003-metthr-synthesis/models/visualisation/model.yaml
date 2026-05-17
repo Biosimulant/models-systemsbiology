@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Curien2003_MetThr_synthesis Visualisation
+description: Question-and-answer and dynamic visual summaries for Curien2003_MetThr_synthesis.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Curien2003 Metthr Synthesis Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Curien2003_MetThr_synthesis.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_curien2003_metthr_synthesis_biomd0000000068_model
+      title: Curien2003_MetThr_synthesis
+      observables:
+      - id: CGS
+        port: cystathionine_gamma_synthase
+        label: Cystathionine gamma-synthase
+        group: signaling
+      - id: Cystathionine
+        port: cystathionine
+        label: Cystathionine
+        group: signaling
+      - id: Phi
+        port: inorganic_phosphate
+        label: Inorganic phosphate
+        group: physiology
+      - id: AdoMet
+        port: s_adenosylmethionine
+        label: S-adenosylmethionine
+        group: physiology
+      - id: Cys
+        port: cysteine
+        label: Cysteine
+        group: physiology
+      - id: TS
+        port: threonine_synthase
+        label: Threonine synthase
+        group: physiology
+io:
+  inputs: []
+  outputs: []

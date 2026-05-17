@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "5ba6d2ab-b207-4f8a-b9d3-6d0f3c143b0a",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "8b93e0d6-53b9-4036-b480-6b4a568eccce",
+  "created_at": "2026-05-16T05:46:44.560000451+00:00",
+  "last_synced_at": "2026-05-17T04:02:53.585356+00:00",
+  "hub_manifest_hash": "509e5d84a2dfe10b3992ed2d4522ce54351165022187451e23b611ff6c619910",
+  "package_name": "kim2007-cellularmemory-symmetricmodel-lab"
+}

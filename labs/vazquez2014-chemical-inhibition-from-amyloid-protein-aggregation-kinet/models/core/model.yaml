@@ -1,0 +1,85 @@
+schema_version: '2.0'
+title: Vazquez2014 - Chemical inhibition from amyloid protein aggregation kinetics
+description: 'Vazquez2014 - Chemical inhibition fromamyloid protein aggregation kinetics
+  This model is described in the article: Modeling of chemical inhibition from amyloid
+  protein aggregation kinetics. It can be used to explore systemsbiology vazquez2014
+  chemical inhibition from amyloid dynamics and compare simulation behavior across
+  conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- José Antonio Vázquez
+upstream:
+  id: biomodels_ebi:BIOMD0000000532
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000532
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000532
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000532?filename=BIOMD0000000532_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.vazquez2014_chemical_inhibition_from_amyloid_pro_biomd0000000532_model:Vazquez2014ChemicalInhibitionFromAmyloidProBiomd0000000532Model
+  init_kwargs:
+    model_path: data/BIOMD0000000532.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_lambda_value
+    maps_to: Lambda
+    label: Initial Lambda Value
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Lambda`.
+  - name: initial_model_state_xm
+    maps_to: Xm
+    label: Initial Model State Xm
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xm`.
+  - name: initial_model_state_vm
+    maps_to: Vm
+    label: Initial Model State Vm
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Vm`.
+  - name: initial_model_state_x
+    maps_to: X
+    label: Initial Model State X
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: lambda_value
+    maps_to: Lambda
+    label: Lambda
+    description: Lambda. Maps to SBML symbol `Lambda`.
+  - name: model_state_xm
+    maps_to: Xm
+    label: Xm
+    description: Xm. Maps to SBML symbol `Xm`.
+  - name: model_state_vm
+    maps_to: Vm
+    label: Vm
+    description: Vm. Maps to SBML symbol `Vm`.
+  - name: model_state_x
+    maps_to: X
+    label: X
+    description: X. Maps to SBML symbol `X`.

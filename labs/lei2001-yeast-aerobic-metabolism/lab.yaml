@@ -1,0 +1,90 @@
+schema_version: '2.0'
+title: Lei2001 Yeast Aerobic Metabolism Lab
+description: 'This the model from the article: A biochemically structured model for
+  Saccharomyces cerevisiae. It can be used to explore systemsbiology lei2001 yeast
+  aerobic metabolism BioModels0000000245 dynamics and compare simulation behavior
+  across conditions.'
+models:
+- alias: systemsbiology_sbml_lei2001_yeast_aerobic_metabolism_biomd0000000245_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_lei2001_yeast_aerobic_metabolism_biomd0000000245_model.state
+  to:
+  - visualisation.systemsbiology_sbml_lei2001_yeast_aerobic_metabolism_biomd0000000245_model_state
+- from: systemsbiology_sbml_lei2001_yeast_aerobic_metabolism_biomd0000000245_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_lei2001_yeast_aerobic_metabolism_biomd0000000245_model_summary
+- from: systemsbiology_sbml_lei2001_yeast_aerobic_metabolism_biomd0000000245_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_lei2001_yeast_aerobic_metabolism_biomd0000000245_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- metabolism
+- microbiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_glucose_feed
+    maps_to: systemsbiology_sbml_lei2001_yeast_aerobic_metabolism_biomd0000000245_model.initial_glucose_feed
+    label: Initial Glucose Feed
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S_f`.
+  - name: initial_glucose
+    maps_to: systemsbiology_sbml_lei2001_yeast_aerobic_metabolism_biomd0000000245_model.initial_glucose
+    label: Initial Glucose
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s_glu`.
+  - name: initial_red_equ_nadh
+    maps_to: systemsbiology_sbml_lei2001_yeast_aerobic_metabolism_biomd0000000245_model.initial_red_equ_nadh
+    label: Initial Red Equ Nadh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Red`.
+  - name: initial_pyruvate
+    maps_to: systemsbiology_sbml_lei2001_yeast_aerobic_metabolism_biomd0000000245_model.initial_pyruvate
+    label: Initial Pyruvate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s_pyr`.
+  - name: initial_et_oh
+    maps_to: systemsbiology_sbml_lei2001_yeast_aerobic_metabolism_biomd0000000245_model.initial_et_oh
+    label: Initial Et Oh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s_EtOH`.
+  - name: initial_bm_ac_dh
+    maps_to: systemsbiology_sbml_lei2001_yeast_aerobic_metabolism_biomd0000000245_model.initial_bm_ac_dh
+    label: Initial Bm Ac Dh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `AcDH`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_lei2001_yeast_aerobic_metabolism_biomd0000000245_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_lei2001_yeast_aerobic_metabolism_biomd0000000245_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_lei2001_yeast_aerobic_metabolism_biomd0000000245_model.species_labels
+  - name: glucose_feed
+    maps_to: systemsbiology_sbml_lei2001_yeast_aerobic_metabolism_biomd0000000245_model.glucose_feed
+  - name: glucose
+    maps_to: systemsbiology_sbml_lei2001_yeast_aerobic_metabolism_biomd0000000245_model.glucose
+  - name: red_equ_nadh
+    maps_to: systemsbiology_sbml_lei2001_yeast_aerobic_metabolism_biomd0000000245_model.red_equ_nadh
+  - name: pyruvate
+    maps_to: systemsbiology_sbml_lei2001_yeast_aerobic_metabolism_biomd0000000245_model.pyruvate
+  - name: et_oh
+    maps_to: systemsbiology_sbml_lei2001_yeast_aerobic_metabolism_biomd0000000245_model.et_oh
+  - name: bm_ac_dh
+    maps_to: systemsbiology_sbml_lei2001_yeast_aerobic_metabolism_biomd0000000245_model.bm_ac_dh

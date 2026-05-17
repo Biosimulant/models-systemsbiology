@@ -1,0 +1,104 @@
+schema_version: '2.0'
+title: Nagashima2002 - Simulating blood coagulation inhibitory effects
+description: Mathematical model of blood coagulation and the effects of inhibitors
+  of Xa, Va:Xa and IIa. It can be used to explore systemsbiology nagashima2002 simulating
+  blood coagulation inhib dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Hajime Nagashima
+upstream:
+  id: biomodels_ebi:BIOMD0000000747
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000747
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000747
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000747?filename=Nagashima2002.xml
+  license: CC0
+biosim:
+  entrypoint: src.nagashima2002_simulating_blood_coagulation_inhib_biomd0000000747_model:Nagashima2002SimulatingBloodCoagulationInhibBiomd0000000747Model
+  init_kwargs:
+    model_path: data/BIOMD0000000747.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_tf_vi_ia
+    maps_to: TF_VIIa
+    label: Initial Tf Vi Ia
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TF_VIIa`.
+  - name: initial_xa_inact
+    maps_to: Xa_inact
+    label: Initial Xa Inact
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_inact`.
+  - name: initial_xa_inhibitor
+    maps_to: Xa_Inhibitor
+    label: Initial Xa Inhibitor
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_Inhibitor`.
+  - name: initial_xa_xa_inhibitor
+    maps_to: Xa_Xa_Inhibitor
+    label: Initial Xa Xa Inhibitor
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_Xa_Inhibitor`.
+  - name: initial_xa_viii
+    maps_to: Xa_VIII
+    label: Initial Xa Viii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_VIII`.
+  - name: initial_xa_v
+    maps_to: Xa_V
+    label: Initial Xa V
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_V`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: tf_vi_ia
+    maps_to: TF_VIIa
+    label: TF:VIIa
+    description: TF:VIIa. Maps to SBML symbol `TF_VIIa`.
+  - name: xa_inact
+    maps_to: Xa_inact
+    label: Xa_inact
+    description: Xa_inact. Maps to SBML symbol `Xa_inact`.
+  - name: xa_inhibitor
+    maps_to: Xa_Inhibitor
+    label: Xa_Inhibitor
+    description: Xa_Inhibitor. Maps to SBML symbol `Xa_Inhibitor`.
+  - name: xa_xa_inhibitor
+    maps_to: Xa_Xa_Inhibitor
+    label: Xa:Xa_Inhibitor
+    description: Xa:Xa_Inhibitor. Maps to SBML symbol `Xa_Xa_Inhibitor`.
+  - name: xa_viii
+    maps_to: Xa_VIII
+    label: Xa:VIII
+    description: Xa:VIII. Maps to SBML symbol `Xa_VIII`.
+  - name: xa_v
+    maps_to: Xa_V
+    label: Xa:V
+    description: Xa:V. Maps to SBML symbol `Xa_V`.

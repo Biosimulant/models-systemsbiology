@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Proctor2017 - Identifying microRNA for muscle regeneration during ageing (Mir1_in_muscle)
+description: 'Proctor2017 - Identifying microRNA for muscle regeneration during ageing
+  (Mir1_in_muscle) This model is described in the article: Using computer simulation
+  models to investigate the most promising mic. It can be used to explore systemsbiology
+  proctor2017 identifying microrna for muscle dynamics and compare simulation behavior
+  across conditions.'
+standard: other
+tags:
+- generegulation
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Carole J. Proctor & Katarzyna Goljanek-Whysall
+upstream:
+  id: biomodels_ebi:MODEL1704110000
+  source_db: biomodels_ebi
+  source_id: MODEL1704110000
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1704110000
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1704110000?filename=MODEL1704110000_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.proctor2017_identifying_microrna_for_muscle_rege_model1704110000_model:Proctor2017IdentifyingMicrornaForMuscleRegeModel1704110000Model
+  init_kwargs:
+    model_path: data/MODEL1704110000.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_myo_d
+    maps_to: MyoD
+    label: Initial Myo D
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MyoD`.
+  - name: initial_mi_r1
+    maps_to: miR1
+    label: Initial Mi R1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `miR1`.
+  - name: initial_pax3_mrna
+    maps_to: Pax3_mRNA
+    label: Initial Pax3 MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pax3_mRNA`.
+  - name: initial_pax3
+    maps_to: Pax3
+    label: Initial Pax3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pax3`.
+  - name: initial_myo_d_gene
+    maps_to: MyoD_gene
+    label: Initial Myo D Gene
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MyoD_gene`.
+  - name: initial_mi_r1_gene
+    maps_to: miR1_gene
+    label: Initial Mi R1 Gene
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `miR1_gene`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: myo_d
+    maps_to: MyoD
+    label: MyoD
+    description: MyoD. Maps to SBML symbol `MyoD`.
+  - name: mi_r1
+    maps_to: miR1
+    label: MiR1
+    description: MiR1. Maps to SBML symbol `miR1`.
+  - name: pax3_mrna
+    maps_to: Pax3_mRNA
+    label: Pax3 MRNA
+    description: Pax3 MRNA. Maps to SBML symbol `Pax3_mRNA`.
+  - name: pax3
+    maps_to: Pax3
+    label: Pax3
+    description: Pax3. Maps to SBML symbol `Pax3`.
+  - name: myo_d_gene
+    maps_to: MyoD_gene
+    label: MyoD Gene
+    description: MyoD Gene. Maps to SBML symbol `MyoD_gene`.
+  - name: mi_r1_gene
+    maps_to: miR1_gene
+    label: MiR1 Gene
+    description: MiR1 Gene. Maps to SBML symbol `miR1_gene`.

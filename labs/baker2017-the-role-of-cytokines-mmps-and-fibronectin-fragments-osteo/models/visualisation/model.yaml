@@ -1,0 +1,51 @@
+schema_version: '2.0'
+title: Baker2017 - The role of cytokines, MMPs and fibronectin fragments osteoarthritis
+  Visualisation
+description: Question-and-answer and dynamic visual summaries for Baker2017 - The
+  role of cytokines, MMPs and fibronectin fragments osteoarthritis.
+standard: other
+tags:
+- immunology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Baker2017 The Role Of Cytokines Mmps And Fibronectin Fragments Osteo
+      Lab
+    question: 'Which immune or inflammatory states dominate the simulated response?
+      Source model: Baker2017 - The role of cytokines, MMPs and fibronectin fragments
+      osteoarthritis.'
+    answer_focus: Q/A table plus immunology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_baker2017_the_role_of_cytokines_mmps_and_fibrone_biomd0000000928_model
+      title: Baker2017 - The role of cytokines, MMPs and fibronectin fragments osteoarthritis
+      observables:
+      - id: solution1
+        port: a_cytokines
+        label: a-Cytokines
+        group: physiology
+      - id: solution3
+        port: fragments
+        label: Fragments
+        group: physiology
+      - id: solution2
+        port: mmp
+        label: MMP
+        group: physiology
+      - id: solution0
+        port: p_cytokines
+        label: p-Cytokines
+        group: physiology
+io:
+  inputs: []
+  outputs: []

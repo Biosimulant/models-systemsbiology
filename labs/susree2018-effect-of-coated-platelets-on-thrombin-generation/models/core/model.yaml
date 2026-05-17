@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Susree2018 - Effect of coated platelets on thrombin generation
+description: Mathematical model of blood coagulation that simulates the effect of
+  coated platelets on thrombin generation. It can be used to explore systemsbiology
+  susree2018 effect of coated platelets dynamics and compare simulation behavior across
+  conditions.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- M Susree
+- Mikhail A Panteleev
+- M Anand
+upstream:
+  id: biomodels_ebi:MODEL1808080001
+  source_db: biomodels_ebi
+  source_id: MODEL1808080001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1808080001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1808080001?filename=Susree2018.xml
+  license: CC0
+biosim:
+  entrypoint: src.susree2018_effect_of_coated_platelets_on_thrombi_model1808080001_model:Susree2018EffectOfCoatedPlateletsOnThrombiModel1808080001Model
+  init_kwargs:
+    model_path: data/MODEL1808080001.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_a1_at
+    maps_to: a1AT
+    label: Initial A1 At
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `a1AT`.
+  - name: initial_ii_m
+    maps_to: II_m
+    label: Initial Ii M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `II_m`.
+  - name: initial_model_state_x_m
+    maps_to: X_m
+    label: Initial Model State X M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X_m`.
+  - name: initial_va_m
+    maps_to: Va_m
+    label: Initial Va M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Va_m`.
+  - name: initial_i_xa_m
+    maps_to: IXa_m
+    label: Initial I Xa M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IXa_m`.
+  - name: initial_vii_ia_m
+    maps_to: VIIIa_m
+    label: Initial Vii Ia M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VIIIa_m`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: a1_at
+    maps_to: a1AT
+    label: a1AT
+    description: a1AT. Maps to SBML symbol `a1AT`.
+  - name: ii_m
+    maps_to: II_m
+    label: II_m
+    description: II_m. Maps to SBML symbol `II_m`.
+  - name: x_m
+    maps_to: X_m
+    label: X_m
+    description: X_m. Maps to SBML symbol `X_m`.
+  - name: va_m
+    maps_to: Va_m
+    label: Va_m
+    description: Va_m. Maps to SBML symbol `Va_m`.
+  - name: i_xa_m
+    maps_to: IXa_m
+    label: IXa_m
+    description: IXa_m. Maps to SBML symbol `IXa_m`.
+  - name: vii_ia_m
+    maps_to: VIIIa_m
+    label: VIIIa_m
+    description: VIIIa_m. Maps to SBML symbol `VIIIa_m`.

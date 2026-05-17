@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Leloup2003 Circclock Ld Lab
+description: This model is described in the paper Toward a detailed computational
+  model for the mammalian circadian clock . In this model only interlocked negative
+  and positive regulation of Per, Cry, Bmal gene ar.
+models:
+- alias: systemsbiology_sbml_leloup2003_circclock_ld_biomd0000000078_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_leloup2003_circclock_ld_biomd0000000078_model.state
+  to:
+  - visualisation.systemsbiology_sbml_leloup2003_circclock_ld_biomd0000000078_model_state
+- from: systemsbiology_sbml_leloup2003_circclock_ld_biomd0000000078_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_leloup2003_circclock_ld_biomd0000000078_model_summary
+- from: systemsbiology_sbml_leloup2003_circclock_ld_biomd0000000078_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_leloup2003_circclock_ld_biomd0000000078_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_mb
+    maps_to: systemsbiology_sbml_leloup2003_circclock_ld_biomd0000000078_model.initial_model_state_mb
+    label: Initial Model State Mb
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_0`.
+  - name: initial_model_state_mp
+    maps_to: systemsbiology_sbml_leloup2003_circclock_ld_biomd0000000078_model.initial_model_state_mp
+    label: Initial Model State Mp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_7`.
+  - name: initial_model_state_bc
+    maps_to: systemsbiology_sbml_leloup2003_circclock_ld_biomd0000000078_model.initial_model_state_bc
+    label: Initial Model State Bc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_1`.
+  - name: initial_model_state_bn
+    maps_to: systemsbiology_sbml_leloup2003_circclock_ld_biomd0000000078_model.initial_model_state_bn
+    label: Initial Model State Bn
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_3`.
+  - name: initial_model_state_mc
+    maps_to: systemsbiology_sbml_leloup2003_circclock_ld_biomd0000000078_model.initial_model_state_mc
+    label: Initial Model State Mc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_5`.
+  - name: initial_p_cn
+    maps_to: systemsbiology_sbml_leloup2003_circclock_ld_biomd0000000078_model.initial_p_cn
+    label: Initial P Cn
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_12`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_leloup2003_circclock_ld_biomd0000000078_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_leloup2003_circclock_ld_biomd0000000078_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_leloup2003_circclock_ld_biomd0000000078_model.species_labels
+  - name: model_state_mb
+    maps_to: systemsbiology_sbml_leloup2003_circclock_ld_biomd0000000078_model.model_state_mb
+  - name: model_state_mp
+    maps_to: systemsbiology_sbml_leloup2003_circclock_ld_biomd0000000078_model.model_state_mp
+  - name: model_state_bc
+    maps_to: systemsbiology_sbml_leloup2003_circclock_ld_biomd0000000078_model.model_state_bc
+  - name: model_state_bn
+    maps_to: systemsbiology_sbml_leloup2003_circclock_ld_biomd0000000078_model.model_state_bn
+  - name: model_state_mc
+    maps_to: systemsbiology_sbml_leloup2003_circclock_ld_biomd0000000078_model.model_state_mc
+  - name: p_cn
+    maps_to: systemsbiology_sbml_leloup2003_circclock_ld_biomd0000000078_model.p_cn

@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Cao2008 - Network of a toggle switch Visualisation
+description: Question-and-answer and dynamic visual summaries for Cao2008 - Network
+  of a toggle switch.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Cao2008 Network Of A Toggle Switch Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Cao2008 - Network of a toggle switch.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_cao2008_network_of_a_toggle_switch_biomd0000000483_model
+      title: Cao2008 - Network of a toggle switch
+      observables:
+      - id: Pb
+        port: model_state_pb
+        label: Pb
+        group: signaling
+      - id: Pa
+        port: model_state_pa
+        label: Pa
+        group: signaling
+      - id: Db
+        port: model_state_db
+        label: Db
+        group: signaling
+      - id: Da
+        port: model_state_da
+        label: Da
+        group: signaling
+      - id: BDb
+        port: b_db
+        label: BDb
+        group: signaling
+      - id: BDa
+        port: b_da
+        label: BDa
+        group: signaling
+io:
+  inputs: []
+  outputs: []

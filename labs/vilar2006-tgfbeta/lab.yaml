@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Vilar2006 Tgfbeta Lab
+description: The model reproduces Fig 5A of the paper. The ligand concentration is
+  increased from 3E-5 to 0.01 at time t=2500 to ensure that the system reaches steady
+  state.
+models:
+- alias: systemsbiology_sbml_vilar2006_tgfbeta_biomd0000000101_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_vilar2006_tgfbeta_biomd0000000101_model.state
+  to:
+  - visualisation.systemsbiology_sbml_vilar2006_tgfbeta_biomd0000000101_model_state
+- from: systemsbiology_sbml_vilar2006_tgfbeta_biomd0000000101_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_vilar2006_tgfbeta_biomd0000000101_model_summary
+- from: systemsbiology_sbml_vilar2006_tgfbeta_biomd0000000101_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_vilar2006_tgfbeta_biomd0000000101_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_ligand_receptor_complex_endosome
+    maps_to: systemsbiology_sbml_vilar2006_tgfbeta_biomd0000000101_model.initial_ligand_receptor_complex_endosome
+    label: Initial Ligand Receptor Complex Endosome
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `lRIRII_endo`.
+  - name: initial_receptor_2
+    maps_to: systemsbiology_sbml_vilar2006_tgfbeta_biomd0000000101_model.initial_receptor_2
+    label: Initial Receptor 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RII`.
+  - name: initial_receptor_1
+    maps_to: systemsbiology_sbml_vilar2006_tgfbeta_biomd0000000101_model.initial_receptor_1
+    label: Initial Receptor 1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RI`.
+  - name: initial_ligand_receptor_complex_plasma_membrane
+    maps_to: systemsbiology_sbml_vilar2006_tgfbeta_biomd0000000101_model.initial_ligand_receptor_complex_plasma_membrane
+    label: Initial Ligand Receptor Complex Plasma Membrane
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `lRIRII`.
+  - name: initial_receptor_2_endosome
+    maps_to: systemsbiology_sbml_vilar2006_tgfbeta_biomd0000000101_model.initial_receptor_2_endosome
+    label: Initial Receptor 2 Endosome
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RII_endo`.
+  - name: initial_receptor_1_endosome
+    maps_to: systemsbiology_sbml_vilar2006_tgfbeta_biomd0000000101_model.initial_receptor_1_endosome
+    label: Initial Receptor 1 Endosome
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RI_endo`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_vilar2006_tgfbeta_biomd0000000101_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_vilar2006_tgfbeta_biomd0000000101_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_vilar2006_tgfbeta_biomd0000000101_model.species_labels
+  - name: ligand_receptor_complex_endosome
+    maps_to: systemsbiology_sbml_vilar2006_tgfbeta_biomd0000000101_model.ligand_receptor_complex_endosome
+  - name: receptor_2
+    maps_to: systemsbiology_sbml_vilar2006_tgfbeta_biomd0000000101_model.receptor_2
+  - name: receptor_1
+    maps_to: systemsbiology_sbml_vilar2006_tgfbeta_biomd0000000101_model.receptor_1
+  - name: ligand_receptor_complex_plasma_membrane
+    maps_to: systemsbiology_sbml_vilar2006_tgfbeta_biomd0000000101_model.ligand_receptor_complex_plasma_membrane
+  - name: receptor_2_endosome
+    maps_to: systemsbiology_sbml_vilar2006_tgfbeta_biomd0000000101_model.receptor_2_endosome
+  - name: receptor_1_endosome
+    maps_to: systemsbiology_sbml_vilar2006_tgfbeta_biomd0000000101_model.receptor_1_endosome

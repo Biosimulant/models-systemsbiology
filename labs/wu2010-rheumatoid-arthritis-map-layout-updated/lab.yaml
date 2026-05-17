@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Wu2010 Rheumatoid Arthritis Map Layout Updated Lab
+description: Contains molecular interactions known to be active in rheumatoid arthritis.
+  It can be used to explore systemsbiology wu2010 rheumatoid arthritis map layout
+  dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_wu2010_rheumatoid_arthritis_map_layout_updated_model2302140001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_wu2010_rheumatoid_arthritis_map_layout_updated_model2302140001_model.state
+  to:
+  - visualisation.systemsbiology_sbml_wu2010_rheumatoid_arthritis_map_layout_updated_model2302140001_model_state
+- from: systemsbiology_sbml_wu2010_rheumatoid_arthritis_map_layout_updated_model2302140001_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_wu2010_rheumatoid_arthritis_map_layout_updated_model2302140001_model_summary
+- from: systemsbiology_sbml_wu2010_rheumatoid_arthritis_map_layout_updated_model2302140001_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_wu2010_rheumatoid_arthritis_map_layout_updated_model2302140001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_cell_growth_differentiation_morphogenesis
+    maps_to: systemsbiology_sbml_wu2010_rheumatoid_arthritis_map_layout_updated_model2302140001_model.initial_cell_growth_differentiation_morphogenesis
+    label: Initial Cell Growth Differentiation Morphogenesis
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s422`.
+  - name: initial_wnt_signaling_pathway
+    maps_to: systemsbiology_sbml_wu2010_rheumatoid_arthritis_map_layout_updated_model2302140001_model.initial_wnt_signaling_pathway
+    label: Initial Wnt Signaling Pathway
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s1181`.
+  - name: initial_traf6
+    maps_to: systemsbiology_sbml_wu2010_rheumatoid_arthritis_map_layout_updated_model2302140001_model.initial_traf6
+    label: Initial Traf6
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s360`.
+  - name: initial_traf6_2
+    maps_to: systemsbiology_sbml_wu2010_rheumatoid_arthritis_map_layout_updated_model2302140001_model.initial_traf6_2
+    label: Initial Traf6 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s359`.
+  - name: initial_traf6_3
+    maps_to: systemsbiology_sbml_wu2010_rheumatoid_arthritis_map_layout_updated_model2302140001_model.initial_traf6_3
+    label: Initial Traf6 3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s36`.
+  - name: initial_traf3
+    maps_to: systemsbiology_sbml_wu2010_rheumatoid_arthritis_map_layout_updated_model2302140001_model.initial_traf3
+    label: Initial Traf3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s180`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_wu2010_rheumatoid_arthritis_map_layout_updated_model2302140001_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_wu2010_rheumatoid_arthritis_map_layout_updated_model2302140001_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_wu2010_rheumatoid_arthritis_map_layout_updated_model2302140001_model.species_labels
+  - name: cell_growth_differentiation_morphogenesis
+    maps_to: systemsbiology_sbml_wu2010_rheumatoid_arthritis_map_layout_updated_model2302140001_model.cell_growth_differentiation_morphogenesis
+  - name: wnt_signaling_pathway
+    maps_to: systemsbiology_sbml_wu2010_rheumatoid_arthritis_map_layout_updated_model2302140001_model.wnt_signaling_pathway
+  - name: traf6
+    maps_to: systemsbiology_sbml_wu2010_rheumatoid_arthritis_map_layout_updated_model2302140001_model.traf6
+  - name: traf6_2
+    maps_to: systemsbiology_sbml_wu2010_rheumatoid_arthritis_map_layout_updated_model2302140001_model.traf6_2
+  - name: traf6_3
+    maps_to: systemsbiology_sbml_wu2010_rheumatoid_arthritis_map_layout_updated_model2302140001_model.traf6_3
+  - name: traf3
+    maps_to: systemsbiology_sbml_wu2010_rheumatoid_arthritis_map_layout_updated_model2302140001_model.traf3

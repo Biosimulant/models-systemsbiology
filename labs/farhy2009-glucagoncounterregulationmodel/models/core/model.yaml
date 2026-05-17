@@ -1,0 +1,66 @@
+schema_version: '2.0'
+title: Farhy2009_GlucagonCounterRegulationModel
+description: 'This a model from the article: Pancreatic network control of glucagon
+  secretion and counterregulation. It can be used to explore systemsbiology farhy2009
+  glucagoncounterregulatio model1112110002 dynamics and compare simulation behavior
+  across conditions.'
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Leon S Farhy
+- Anthony L McCall
+upstream:
+  id: biomodels_ebi:MODEL1112110002
+  source_db: biomodels_ebi
+  source_id: MODEL1112110002
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1112110002
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1112110002?filename=MODEL1112110002_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.farhy2009_glucagoncounterregulationmodel_model1112110002_model:Farhy2009GlucagoncounterregulationmodelModel1112110002Model
+  init_kwargs:
+    model_path: data/MODEL1112110002.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_ins
+    maps_to: INS
+    label: Initial Model State Ins
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `INS`.
+  - name: initial_model_state_gl
+    maps_to: GL
+    label: Initial Model State Gl
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `GL`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: ins
+    maps_to: INS
+    label: INS
+    description: INS. Maps to SBML symbol `INS`.
+  - name: model_state_gl
+    maps_to: GL
+    label: GL
+    description: GL. Maps to SBML symbol `GL`.

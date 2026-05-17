@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "37435baa-e91c-42d3-8716-113eeb23a33c",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "82ff9cf3-2d9c-49c7-b125-5be0e6d5b7e6",
+  "created_at": "2026-05-16T05:46:46.508719288+00:00",
+  "last_synced_at": "2026-05-17T04:47:46.294916+00:00",
+  "hub_manifest_hash": "49420a58bdeb36a90ed08c68e1e7e4afb5cd445162ab650589f2d463bb24979f",
+  "package_name": "marhl2000-caoscillations-lab"
+}

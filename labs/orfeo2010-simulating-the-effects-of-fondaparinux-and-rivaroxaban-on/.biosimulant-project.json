@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "e83f2ca1-5fd9-41f3-95fd-f538a9320eda",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "dba2f8fb-fb8c-4fec-bb03-335b72c45d1e",
+  "created_at": "2026-05-16T05:46:49.473669104+00:00",
+  "last_synced_at": "2026-05-17T05:20:25.504897+00:00",
+  "hub_manifest_hash": "2aa4e99f5f9883f61f72e3f32dca8e9a80fd2e91325e2eec5f8bf66f4faecaf6",
+  "package_name": "orfeo2010-simulating-the-effects-of-fondaparinux-and-rivaroxaban"
+}

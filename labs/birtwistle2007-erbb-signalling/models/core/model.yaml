@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Birtwistle2007_ErbB_Signalling
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models. It is copyright (c) 2005-2009 The BioModels Team.'
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Marc R Birtwistle
+- Mariko Hatakeyama
+- Noriko Yumoto
+- Babatunde A Ogunnaike
+- Jan B Hoek
+upstream:
+  id: biomodels_ebi:BIOMD0000000175
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000175
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000175
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000175?filename=BIOMD0000000175_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.birtwistle2007_erbb_signalling_biomd0000000175_model:Birtwistle2007ErbbSignallingBiomd0000000175Model
+  init_kwargs:
+    model_path: data/BIOMD0000000175.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_raf
+    maps_to: Raf
+    label: Initial Model State RAF
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Raf`.
+  - name: initial_erb_b4
+    maps_to: E4
+    label: Initial Erb B4
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `E4`.
+  - name: initial_erb_b3
+    maps_to: E3
+    label: Initial Erb B3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `E3`.
+  - name: initial_erb_b1
+    maps_to: E1
+    label: Initial Erb B1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `E1`.
+  - name: initial_pip2
+    maps_to: P2
+    label: Initial Pip2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P2`.
+  - name: initial_erb_b2
+    maps_to: E2
+    label: Initial Erb B2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `E2`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: raf
+    maps_to: Raf
+    label: Raf
+    description: Raf. Maps to SBML symbol `Raf`.
+  - name: erb_b4
+    maps_to: E4
+    label: ErbB4
+    description: ErbB4. Maps to SBML symbol `E4`.
+  - name: erb_b3
+    maps_to: E3
+    label: ErbB3
+    description: ErbB3. Maps to SBML symbol `E3`.
+  - name: erb_b1
+    maps_to: E1
+    label: ErbB1
+    description: ErbB1. Maps to SBML symbol `E1`.
+  - name: pip2
+    maps_to: P2
+    label: PIP2
+    description: PIP2. Maps to SBML symbol `P2`.
+  - name: erb_b2
+    maps_to: E2
+    label: ErbB2
+    description: ErbB2. Maps to SBML symbol `E2`.

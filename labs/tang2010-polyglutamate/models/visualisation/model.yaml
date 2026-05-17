@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Tang2010_PolyGlutamate Visualisation
+description: Question-and-answer and dynamic visual summaries for Tang2010_PolyGlutamate.
+standard: other
+tags:
+- cellcycle
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Tang2010 Polyglutamate Lab
+    question: 'Which cell-cycle control states dominate the simulated progression?
+      Source model: Tang2010_PolyGlutamate.'
+    answer_focus: Q/A table plus cellcycle timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_tang2010_polyglutamate_biomd0000000285_model
+      title: Tang2010_PolyGlutamate
+      observables:
+      - id: NatP
+        port: nat_p
+        label: NatP
+        group: metabolism
+      - id: PIdeath
+        port: p_ideath
+        label: PIdeath
+        group: growth_fate
+      - id: p38death
+        port: p38death
+        label: P38death
+        group: growth_fate
+      - id: Proteasome
+        port: proteasome
+        label: Proteasome
+        group: core_system_state
+      - id: PolyQ
+        port: poly_q
+        label: PolyQ
+        group: core_system_state
+      - id: mRFPu
+        port: mrf_pu
+        label: MRFPu
+        group: core_system_state
+io:
+  inputs: []
+  outputs: []

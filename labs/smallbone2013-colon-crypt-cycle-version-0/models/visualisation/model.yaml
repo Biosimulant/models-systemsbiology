@@ -1,0 +1,43 @@
+schema_version: '2.0'
+title: Smallbone2013 - Colon Crypt cycle - Version 0 Visualisation
+description: Question-and-answer and dynamic visual summaries for Smallbone2013 -
+  Colon Crypt cycle - Version 0.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Smallbone2013 Colon Crypt Cycle Version 0 Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Smallbone2013 - Colon Crypt cycle - Version 0.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_smallbone2013_colon_crypt_cycle_version_0_biomd0000000520_model
+      title: Smallbone2013 - Colon Crypt cycle - Version 0
+      observables:
+      - id: N1
+        port: model_state_n1
+        label: N1
+        group: physiology
+      - id: N2
+        port: model_state_n2
+        label: N2
+        group: physiology
+      - id: N0
+        port: model_state_n0
+        label: N0
+        group: physiology
+io:
+  inputs: []
+  outputs: []

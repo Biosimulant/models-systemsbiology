@@ -1,0 +1,91 @@
+schema_version: '2.0'
+title: Proctor2007 Age Related Decline Of Proteolysis Ubiquitin Proteome Syst Lab
+description: Proctor2007 - Age related decline of proteolysis, ubiquitin-proteome
+  system This is a stochastic model of the ubiquitin-proteasome system for a generic
+  pool of native proteins (NatP), which have a hal. It can be used to explore systemsbiology
+  proctor2007 age related decline of dynamics and compare simulation behavior across
+  conditions.
+models:
+- alias: systemsbiology_sbml_proctor2007_age_related_decline_of_proteolysis_u_biomd0000000105_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_proctor2007_age_related_decline_of_proteolysis_u_biomd0000000105_model.state
+  to:
+  - visualisation.systemsbiology_sbml_proctor2007_age_related_decline_of_proteolysis_u_biomd0000000105_model_state
+- from: systemsbiology_sbml_proctor2007_age_related_decline_of_proteolysis_u_biomd0000000105_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_proctor2007_age_related_decline_of_proteolysis_u_biomd0000000105_model_summary
+- from: systemsbiology_sbml_proctor2007_age_related_decline_of_proteolysis_u_biomd0000000105_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_proctor2007_age_related_decline_of_proteolysis_u_biomd0000000105_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_atp
+    maps_to: systemsbiology_sbml_proctor2007_age_related_decline_of_proteolysis_u_biomd0000000105_model.initial_model_state_atp
+    label: Initial Model State ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATP`.
+  - name: initial_model_state_amp
+    maps_to: systemsbiology_sbml_proctor2007_age_related_decline_of_proteolysis_u_biomd0000000105_model.initial_model_state_amp
+    label: Initial Model State AMP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `AMP`.
+  - name: initial_model_state_adp
+    maps_to: systemsbiology_sbml_proctor2007_age_related_decline_of_proteolysis_u_biomd0000000105_model.initial_model_state_adp
+    label: Initial Model State ADP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ADP`.
+  - name: initial_model_state_ub
+    maps_to: systemsbiology_sbml_proctor2007_age_related_decline_of_proteolysis_u_biomd0000000105_model.initial_model_state_ub
+    label: Initial Model State Ub
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ub`.
+  - name: initial_nat_p
+    maps_to: systemsbiology_sbml_proctor2007_age_related_decline_of_proteolysis_u_biomd0000000105_model.initial_nat_p
+    label: Initial Nat P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NatP`.
+  - name: initial_model_state_dub
+    maps_to: systemsbiology_sbml_proctor2007_age_related_decline_of_proteolysis_u_biomd0000000105_model.initial_model_state_dub
+    label: Initial Model State Dub
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `DUB`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_proctor2007_age_related_decline_of_proteolysis_u_biomd0000000105_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_proctor2007_age_related_decline_of_proteolysis_u_biomd0000000105_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_proctor2007_age_related_decline_of_proteolysis_u_biomd0000000105_model.species_labels
+  - name: atp
+    maps_to: systemsbiology_sbml_proctor2007_age_related_decline_of_proteolysis_u_biomd0000000105_model.atp
+  - name: amp
+    maps_to: systemsbiology_sbml_proctor2007_age_related_decline_of_proteolysis_u_biomd0000000105_model.amp
+  - name: adp
+    maps_to: systemsbiology_sbml_proctor2007_age_related_decline_of_proteolysis_u_biomd0000000105_model.adp
+  - name: model_state_ub
+    maps_to: systemsbiology_sbml_proctor2007_age_related_decline_of_proteolysis_u_biomd0000000105_model.model_state_ub
+  - name: nat_p
+    maps_to: systemsbiology_sbml_proctor2007_age_related_decline_of_proteolysis_u_biomd0000000105_model.nat_p
+  - name: dub
+    maps_to: systemsbiology_sbml_proctor2007_age_related_decline_of_proteolysis_u_biomd0000000105_model.dub

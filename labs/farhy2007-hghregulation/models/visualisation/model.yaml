@@ -1,0 +1,51 @@
+schema_version: '2.0'
+title: Farhy2007_hGHregulation Visualisation
+description: Question-and-answer and dynamic visual summaries for Farhy2007_hGHregulation.
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Farhy2007 Hghregulation Lab
+    question: 'Which physiological state variables carry the strongest baseline response?
+      Source model: Farhy2007_hGHregulation.'
+    answer_focus: Q/A table plus physiology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_farhy2007_hghregulation_model0912096133_model
+      title: Farhy2007_hGHregulation
+      observables:
+      - id: SRIF_PeV
+        port: srif_pe_v
+        label: SRIF PeV
+        group: physiology
+      - id: SRIF_ArC
+        port: srif_ar_c
+        label: SRIF ArC
+        group: physiology
+      - id: ghr_GHRH
+        port: ghr_ghrh
+        label: Ghr GHRH
+        group: physiology
+      - id: GHRH
+        port: ghrh
+        label: GHRH
+        group: physiology
+      - id: GH
+        port: model_state_gh
+        label: GH
+        group: physiology
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,39 @@
+schema_version: '2.0'
+title: Farhy2009_GlucagonCounterRegulationModel Visualisation
+description: Question-and-answer and dynamic visual summaries for Farhy2009_GlucagonCounterRegulationModel.
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Farhy2009 Glucagoncounterregulationmodel Lab
+    question: 'Which physiological state variables carry the strongest baseline response?
+      Source model: Farhy2009_GlucagonCounterRegulationModel.'
+    answer_focus: Q/A table plus physiology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_farhy2009_glucagoncounterregulationmodel_model1112110002_model
+      title: Farhy2009_GlucagonCounterRegulationModel
+      observables:
+      - id: INS
+        port: ins
+        label: INS
+        group: physiology
+      - id: GL
+        port: model_state_gl
+        label: GL
+        group: physiology
+io:
+  inputs: []
+  outputs: []

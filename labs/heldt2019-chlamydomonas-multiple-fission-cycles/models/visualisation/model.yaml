@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Heldt2019 - Chlamydomonas multiple-fission cycles Visualisation
+description: Question-and-answer and dynamic visual summaries for Heldt2019 - Chlamydomonas
+  multiple-fission cycles.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Heldt2019 Chlamydomonas Multiple Fission Cycles Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Heldt2019 - Chlamydomonas multiple-fission cycles.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_heldt2019_chlamydomonas_multiple_fission_cycles_model1904020001_model
+      title: Heldt2019 - Chlamydomonas multiple-fission cycles
+      observables:
+      - id: INt
+        port: i_nt
+        label: INt
+        group: physiology
+      - id: IP
+        port: model_state_ip
+        label: IP
+        group: physiology
+      - id: IN
+        port: in_value
+        label: IN
+        group: physiology
+      - id: TFt
+        port: t_ft
+        label: TFt
+        group: physiology
+      - id: SK
+        port: model_state_sk
+        label: SK
+        group: physiology
+      - id: INTF
+        port: intf
+        label: INTF
+        group: physiology
+io:
+  inputs: []
+  outputs: []

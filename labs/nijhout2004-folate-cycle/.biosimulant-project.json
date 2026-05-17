@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "aa1c04de-edc5-4c44-b974-30128775255f",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "10220d84-94e3-42de-8307-8dea7e3ec09b",
+  "created_at": "2026-05-16T05:46:48.976505915+00:00",
+  "last_synced_at": "2026-05-17T05:15:34.500993+00:00",
+  "hub_manifest_hash": "7a50dfd7bfd01507e16d1e7e0edf8e86ff26fe8487cc677851cb99f9b9bda818",
+  "package_name": "nijhout2004-folate-cycle-lab"
+}

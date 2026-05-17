@@ -1,0 +1,90 @@
+schema_version: '2.0'
+title: Mushayabasa2011 Modeling Gonirrhea And Hiv Co Interaction Lab
+description: A mathematical model was designed to explore the co-interaction of gonorrhea
+  and HIV in the presence of antiretroviral therapy and gonorrhea treatment. It can
+  be used to explore systemsbiology mushayabasa2011 modeling gonirrhea and hiv dynamics
+  and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_mushayabasa2011_modeling_gonirrhea_and_hiv_co_in_model1812040004_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_mushayabasa2011_modeling_gonirrhea_and_hiv_co_in_model1812040004_model.state
+  to:
+  - visualisation.systemsbiology_sbml_mushayabasa2011_modeling_gonirrhea_and_hiv_co_in_model1812040004_model_state
+- from: systemsbiology_sbml_mushayabasa2011_modeling_gonirrhea_and_hiv_co_in_model1812040004_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_mushayabasa2011_modeling_gonirrhea_and_hiv_co_in_model1812040004_model_summary
+- from: systemsbiology_sbml_mushayabasa2011_modeling_gonirrhea_and_hiv_co_in_model1812040004_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_mushayabasa2011_modeling_gonirrhea_and_hiv_co_in_model1812040004_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- epidemiology
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_i_g
+    maps_to: systemsbiology_sbml_mushayabasa2011_modeling_gonirrhea_and_hiv_co_in_model1812040004_model.initial_model_state_i_g
+    label: Initial Model State I G
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `I_G`.
+  - name: initial_model_state_i_h
+    maps_to: systemsbiology_sbml_mushayabasa2011_modeling_gonirrhea_and_hiv_co_in_model1812040004_model.initial_model_state_i_h
+    label: Initial Model State I H
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `I_H`.
+  - name: initial_i_gh
+    maps_to: systemsbiology_sbml_mushayabasa2011_modeling_gonirrhea_and_hiv_co_in_model1812040004_model.initial_i_gh
+    label: Initial I Gh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `I_GH`.
+  - name: initial_a_ht
+    maps_to: systemsbiology_sbml_mushayabasa2011_modeling_gonirrhea_and_hiv_co_in_model1812040004_model.initial_a_ht
+    label: Initial A Ht
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `A_HT`.
+  - name: initial_model_state_a_h
+    maps_to: systemsbiology_sbml_mushayabasa2011_modeling_gonirrhea_and_hiv_co_in_model1812040004_model.initial_model_state_a_h
+    label: Initial Model State A H
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `A_H`.
+  - name: initial_a_ght
+    maps_to: systemsbiology_sbml_mushayabasa2011_modeling_gonirrhea_and_hiv_co_in_model1812040004_model.initial_a_ght
+    label: Initial A Ght
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `A_GHT`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_mushayabasa2011_modeling_gonirrhea_and_hiv_co_in_model1812040004_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_mushayabasa2011_modeling_gonirrhea_and_hiv_co_in_model1812040004_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_mushayabasa2011_modeling_gonirrhea_and_hiv_co_in_model1812040004_model.species_labels
+  - name: i_g
+    maps_to: systemsbiology_sbml_mushayabasa2011_modeling_gonirrhea_and_hiv_co_in_model1812040004_model.i_g
+  - name: i_h
+    maps_to: systemsbiology_sbml_mushayabasa2011_modeling_gonirrhea_and_hiv_co_in_model1812040004_model.i_h
+  - name: i_gh
+    maps_to: systemsbiology_sbml_mushayabasa2011_modeling_gonirrhea_and_hiv_co_in_model1812040004_model.i_gh
+  - name: a_ht
+    maps_to: systemsbiology_sbml_mushayabasa2011_modeling_gonirrhea_and_hiv_co_in_model1812040004_model.a_ht
+  - name: a_h
+    maps_to: systemsbiology_sbml_mushayabasa2011_modeling_gonirrhea_and_hiv_co_in_model1812040004_model.a_h
+  - name: a_ght
+    maps_to: systemsbiology_sbml_mushayabasa2011_modeling_gonirrhea_and_hiv_co_in_model1812040004_model.a_ght

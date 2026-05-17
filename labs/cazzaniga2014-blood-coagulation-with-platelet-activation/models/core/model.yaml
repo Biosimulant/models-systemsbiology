@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Cazzaniga2014 - Blood Coagulation with Platelet Activation
+description: Mathematical model of blood coagulation with platelet activation. Model
+  includes factor XII, factor VIIIa fragments, meizothrombin, kallikrein, C1-inhibitor,
+  alpha1-Antitrypsin, alpha2-Antiplasmin, fi.
+standard: other
+tags:
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Paolo Cazzaniga
+- Marco S. Nobile
+- Daniela Besozzi
+- Matteo Bellini
+- Giancarlo Mauri
+upstream:
+  id: biomodels_ebi:MODEL1807180003
+  source_db: biomodels_ebi
+  source_id: MODEL1807180003
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1807180003
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1807180003?filename=Cazzaniga2014.xml
+  license: CC0
+biosim:
+  entrypoint: src.cazzaniga2014_blood_coagulation_with_platelet_ac_model1807180003_model:Cazzaniga2014BloodCoagulationWithPlateletAcModel1807180003Model
+  init_kwargs:
+    model_path: data/MODEL1807180003.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_m_i_ia_atiii
+    maps_to: mIIa_ATIII
+    label: Initial M I Ia Atiii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mIIa_ATIII`.
+  - name: initial_m_i_ia
+    maps_to: mIIa
+    label: Initial M I Ia
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mIIa`.
+  - name: initial_xa_va_ii
+    maps_to: Xa_Va_II
+    label: Initial Xa Va Ii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_Va_II`.
+  - name: initial_xa_va
+    maps_to: Xa_Va
+    label: Initial Xa Va
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_Va`.
+  - name: initial_xa_viii
+    maps_to: Xa_VIII
+    label: Initial Xa Viii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_VIII`.
+  - name: initial_xa_tfpi
+    maps_to: Xa_TFPI
+    label: Initial Xa Tfpi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_TFPI`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: m_i_ia_atiii
+    maps_to: mIIa_ATIII
+    label: mIIa:ATIII
+    description: mIIa:ATIII. Maps to SBML symbol `mIIa_ATIII`.
+  - name: m_i_ia
+    maps_to: mIIa
+    label: mIIa
+    description: mIIa. Maps to SBML symbol `mIIa`.
+  - name: xa_va_ii
+    maps_to: Xa_Va_II
+    label: Xa:Va:II
+    description: Xa:Va:II. Maps to SBML symbol `Xa_Va_II`.
+  - name: xa_va
+    maps_to: Xa_Va
+    label: Xa:Va
+    description: Xa:Va. Maps to SBML symbol `Xa_Va`.
+  - name: xa_viii
+    maps_to: Xa_VIII
+    label: Xa:VIII
+    description: Xa:VIII. Maps to SBML symbol `Xa_VIII`.
+  - name: xa_tfpi
+    maps_to: Xa_TFPI
+    label: Xa:TFPI
+    description: Xa:TFPI. Maps to SBML symbol `Xa_TFPI`.

@@ -1,0 +1,65 @@
+schema_version: '2.0'
+title: Decroly1982 Enzymatic Oscillator Lab
+description: 'This is the scaled model described in the article: Birhythmicity, chaos,
+  and other patterns of temporal self-organization in a multiply regulated biochemical
+  system Olivier Decroly, Albert Goldbeter,. It can be used to explore systemsbiology
+  decroly1982 enzymatic oscillator BioModels0000000319 dynamics and compare simulation
+  behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_decroly1982_enzymatic_oscillator_biomd0000000319_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_decroly1982_enzymatic_oscillator_biomd0000000319_model.state
+  to:
+  - visualisation.systemsbiology_sbml_decroly1982_enzymatic_oscillator_biomd0000000319_model_state
+- from: systemsbiology_sbml_decroly1982_enzymatic_oscillator_biomd0000000319_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_decroly1982_enzymatic_oscillator_biomd0000000319_model_summary
+- from: systemsbiology_sbml_decroly1982_enzymatic_oscillator_biomd0000000319_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_decroly1982_enzymatic_oscillator_biomd0000000319_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_beta
+    maps_to: systemsbiology_sbml_decroly1982_enzymatic_oscillator_biomd0000000319_model.initial_beta
+    label: Initial Beta
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `beta`.
+  - name: initial_alpha
+    maps_to: systemsbiology_sbml_decroly1982_enzymatic_oscillator_biomd0000000319_model.initial_alpha
+    label: Initial Alpha
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `alpha`.
+  - name: initial_gamma
+    maps_to: systemsbiology_sbml_decroly1982_enzymatic_oscillator_biomd0000000319_model.initial_gamma
+    label: Initial Gamma
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `gamma`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_decroly1982_enzymatic_oscillator_biomd0000000319_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_decroly1982_enzymatic_oscillator_biomd0000000319_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_decroly1982_enzymatic_oscillator_biomd0000000319_model.species_labels
+  - name: beta
+    maps_to: systemsbiology_sbml_decroly1982_enzymatic_oscillator_biomd0000000319_model.beta
+  - name: alpha
+    maps_to: systemsbiology_sbml_decroly1982_enzymatic_oscillator_biomd0000000319_model.alpha
+  - name: gamma
+    maps_to: systemsbiology_sbml_decroly1982_enzymatic_oscillator_biomd0000000319_model.gamma

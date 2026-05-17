@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "b29325fc-6234-4777-9e61-d2cdffec4261",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "8d0bd2ad-adc4-4f72-811f-4b0b60b0bbea",
+  "created_at": "2026-05-16T05:46:43.649394323+00:00",
+  "last_synced_at": "2026-05-17T03:20:32.412303+00:00",
+  "hub_manifest_hash": "7734ff31654086f767e527d70c1c0202150f81505dfdbec30087b2b8bb034cb7",
+  "package_name": "goldbeter2008-somite-segmentation-clock-notch-wnt-fgf-lab"
+}

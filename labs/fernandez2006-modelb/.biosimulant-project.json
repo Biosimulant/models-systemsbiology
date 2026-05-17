@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "f84c42ba-38e4-4be9-a84d-a80fad16cb6b",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "eca3e8e0-0e9b-4117-9acb-ded213e7cae0",
+  "created_at": "2026-05-16T05:46:43.214677440+00:00",
+  "last_synced_at": "2026-05-17T03:08:33.214818+00:00",
+  "hub_manifest_hash": "680dda55a2b2dc87cb0a0f7dab6cc304838154b88e89a5a4535161cee64c5019",
+  "package_name": "fernandez2006-modelb-lab"
+}

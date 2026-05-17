@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Locke2008_Circadian_Clock
+description: The model reproduces Fig 2A of the paper. It can be used to explore systemsbiology
+  locke2008 circadian clock BioModels0000000185 dynamics and compare simulation behavior
+  across conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- James C W Locke
+- Pål O Westermark
+- Achim Kramer
+- Hanspeter Herzel
+upstream:
+  id: biomodels_ebi:BIOMD0000000185
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000185
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000185
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000185?filename=BIOMD0000000185_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.locke2008_circadian_clock_biomd0000000185_model:Locke2008CircadianClockBiomd0000000185Model
+  init_kwargs:
+    model_path: data/BIOMD0000000185.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_clock_gene_mrna
+    maps_to: X1
+    label: Initial Clock Gene MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X1`.
+  - name: initial_clock_protein
+    maps_to: Y1
+    label: Initial Clock Protein
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Y1`.
+  - name: initial_transcriptional_repressor
+    maps_to: Z1
+    label: Initial Transcriptional Repressor
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Z1`.
+  - name: initial_clock_protein_2
+    maps_to: Y2
+    label: Initial Clock Protein 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Y2`.
+  - name: initial_clock_gene_mrna_2
+    maps_to: X2
+    label: Initial Clock Gene MRNA 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X2`.
+  - name: initial_transcriptional_repressor_2
+    maps_to: Z2
+    label: Initial Transcriptional Repressor 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Z2`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: clock_gene_mrna
+    maps_to: X1
+    label: clock gene mRNA
+    description: clock gene mRNA. Maps to SBML symbol `X1`.
+  - name: clock_protein
+    maps_to: Y1
+    label: clock protein
+    description: clock protein. Maps to SBML symbol `Y1`.
+  - name: transcriptional_repressor
+    maps_to: Z1
+    label: Transcriptional repressor
+    description: Transcriptional repressor. Maps to SBML symbol `Z1`.
+  - name: clock_protein_2
+    maps_to: Y2
+    label: clock protein
+    description: clock protein. Maps to SBML symbol `Y2`.
+  - name: clock_gene_mrna_2
+    maps_to: X2
+    label: clock gene mRNA
+    description: clock gene mRNA. Maps to SBML symbol `X2`.
+  - name: transcriptional_repressor_2
+    maps_to: Z2
+    label: Transcriptional repressor
+    description: Transcriptional repressor. Maps to SBML symbol `Z2`.

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "b7832822-7283-4da8-b43d-cb526a70f5aa",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "b5b26b2a-893c-4c55-8b8b-4c2889ed6082",
+  "created_at": "2026-05-16T05:46:49.075463809+00:00",
+  "last_synced_at": "2026-05-17T05:16:23.754013+00:00",
+  "hub_manifest_hash": "1d67e7b1e8ab824bcd7bc9fe3a7e00689dfd7d193cd43eca4aead7406f09d343",
+  "package_name": "nikolaev2005-albuminbilirubinadsorption-lab"
+}

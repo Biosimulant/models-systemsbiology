@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: Eftimie2019-Macrophages Plasticity Visualisation
+description: Question-and-answer and dynamic visual summaries for Eftimie2019-Macrophages
+  Plasticity.
+standard: other
+tags:
+- immunology
+- oncology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Eftimie2019 Macrophages Plasticity Lab
+    question: 'Which immune or inflammatory states dominate the simulated response?
+      Source model: Eftimie2019-Macrophages Plasticity.'
+    answer_focus: Q/A table plus immunology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_eftimie2019_macrophages_plasticity_biomd0000000806_model
+      title: Eftimie2019-Macrophages Plasticity
+      observables:
+      - id: Virus_Xv
+        port: virus_xv
+        label: Virus(Xv)
+        group: physiology
+      - id: M2_Macrophage_Xm2
+        port: m2_macrophage_xm2
+        label: M2_Macrophage(Xm2)
+        group: physiology
+      - id: M1_Macrophage_Xm1
+        port: m1_macrophage_xm1
+        label: M1_Macrophage(Xm1)
+        group: physiology
+      - id: Infected_Tumour_Cells_Xi
+        port: infected_tumour_cells_xi
+        label: Infected_Tumour_Cells(Xi)
+        group: physiology
+      - id: UnInfected_Tumour_Cells_Xu
+        port: un_infected_tumour_cells_xu
+        label: UnInfected_Tumour_Cells(Xu)
+        group: physiology
+      - id: Effector_Cytotoxic_CD8_TCells__Xe
+        port: effector_cytotoxic_cd8_t_cells_xe
+        label: Effector_Cytotoxic_CD8_TCells (Xe)
+        group: physiology
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "b26d2e7c-0160-42ea-a75c-2acf19825298",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "fa465c82-ee17-4114-9b29-d4bbc01a5ad8",
+  "created_at": "2026-05-16T05:46:42.864503089+00:00",
+  "last_synced_at": "2026-05-17T02:54:47.025382+00:00",
+  "hub_manifest_hash": "bca650bfaa3b8aa4d89a49785500e8bda76f79e31271da946da4f6978e667bfa",
+  "package_name": "dunster2014-wbc-interactions-lab"
+}

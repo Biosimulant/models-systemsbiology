@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "d9f160be-dc15-40a6-b41c-83f080199965",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "16560b28-f922-4fb4-9f35-6fd3fcef074a",
+  "created_at": "2026-05-16T05:46:51.108825593+00:00",
+  "last_synced_at": "2026-05-17T05:49:05.443022+00:00",
+  "hub_manifest_hash": "c6e2847eb73caef2e42f0bafea0b93bcd336974bd225d3d27b9feb70a312428d",
+  "package_name": "puri2010-mathematical-modeling-for-the-pathogenesis-of-alzheimer"
+}

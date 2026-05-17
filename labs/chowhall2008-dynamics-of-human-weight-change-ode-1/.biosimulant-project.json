@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "7c8dc1af-a9f8-481c-9de4-e32d396464b0",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "d6cc03c6-b03e-49db-b829-9612ae2a7b55",
+  "created_at": "2026-05-16T05:46:42.407577274+00:00",
+  "last_synced_at": "2026-05-17T02:36:17.634570+00:00",
+  "hub_manifest_hash": "9347a230b2bfa490792c0483b215e09dcb64ca2aaf09a01db0b2e0e8b17e2254",
+  "package_name": "chowhall2008-dynamics-of-human-weight-change-ode-1-lab"
+}

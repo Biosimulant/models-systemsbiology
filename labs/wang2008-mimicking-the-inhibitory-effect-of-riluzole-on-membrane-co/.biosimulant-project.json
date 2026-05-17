@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "13289808-61be-4ec5-baa6-805c8d524fc7",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "8e55b977-9a82-4ac5-a055-15318976b5c5",
+  "created_at": "2026-05-16T05:46:52.879412312+00:00",
+  "last_synced_at": "2026-05-17T06:41:20.806472+00:00",
+  "hub_manifest_hash": "7557e8564ec3d71c2ce5830eae3bb6c025f698720106929d7f7d40c697b28434",
+  "package_name": "wang2008-mimicking-the-inhibitory-effect-of-riluzole-on-membrane"
+}

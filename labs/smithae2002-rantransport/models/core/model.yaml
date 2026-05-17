@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: SmithAE2002_RanTransport
+description: The model reproduces the compartmental model for Ran transport as depicted
+  in Fig 3 of the paper. It can be used to explore systemsbiology smithae2002 rantransport
+  BioModels0000000164 dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Alicia E Smith
+- Boris M Slepchenko
+- James C Schaff
+- Leslie M Loew
+- Ian G Macara
+upstream:
+  id: biomodels_ebi:BIOMD0000000164
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000164
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000164
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000164?filename=BIOMD0000000164_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.smithae2002_rantransport_biomd0000000164_model:Smithae2002RantransportBiomd0000000164Model
+  init_kwargs:
+    model_path: data/BIOMD0000000164.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_carrier_cytosol
+    maps_to: Carrier_Cytosol
+    label: Initial Carrier Cytosol
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Carrier_Cytosol`.
+  - name: initial_carrier_ran_gtp_nucleus
+    maps_to: Carrier_RanGTP_Nucleus
+    label: Initial Carrier Ran Gtp Nucleus
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Carrier_RanGTP_Nucleus`.
+  - name: initial_carrier_nucleus
+    maps_to: Carrier_Nucleus
+    label: Initial Carrier Nucleus
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Carrier_Nucleus`.
+  - name: initial_ran_bp1_cytosol
+    maps_to: RanBP1_Cytosol
+    label: Initial Ran BP1 Cytosol
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RanBP1_Cytosol`.
+  - name: initial_ran_gdp_cytosol
+    maps_to: RanGDP_Cytosol
+    label: Initial Ran Gdp Cytosol
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RanGDP_Cytosol`.
+  - name: initial_ntf2_ran_gdp_cytosol
+    maps_to: NTF2_RanGDP_Cytosol
+    label: Initial Ntf2 Ran Gdp Cytosol
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NTF2_RanGDP_Cytosol`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: carrier_cytosol
+    maps_to: Carrier_Cytosol
+    label: Carrier_Cytosol
+    description: Carrier_Cytosol. Maps to SBML symbol `Carrier_Cytosol`.
+  - name: carrier_ran_gtp_nucleus
+    maps_to: Carrier_RanGTP_Nucleus
+    label: Carrier_RanGTP_Nucleus
+    description: Carrier_RanGTP_Nucleus. Maps to SBML symbol `Carrier_RanGTP_Nucleus`.
+  - name: carrier_nucleus
+    maps_to: Carrier_Nucleus
+    label: Carrier_Nucleus
+    description: Carrier_Nucleus. Maps to SBML symbol `Carrier_Nucleus`.
+  - name: ran_bp1_cytosol
+    maps_to: RanBP1_Cytosol
+    label: RanBP1_Cytosol
+    description: RanBP1_Cytosol. Maps to SBML symbol `RanBP1_Cytosol`.
+  - name: ran_gdp_cytosol
+    maps_to: RanGDP_Cytosol
+    label: RanGDP_Cytosol
+    description: RanGDP_Cytosol. Maps to SBML symbol `RanGDP_Cytosol`.
+  - name: ntf2_ran_gdp_cytosol
+    maps_to: NTF2_RanGDP_Cytosol
+    label: NTF2_RanGDP_Cytosol
+    description: NTF2_RanGDP_Cytosol. Maps to SBML symbol `NTF2_RanGDP_Cytosol`.

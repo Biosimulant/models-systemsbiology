@@ -1,0 +1,58 @@
+schema_version: '2.0'
+title: Felixgarza2017 Blue Light Treatment Of Psoriasis Lab
+description: 'FelixGarza2017 - Blue Light Treatment ofPsoriasis (simplified) This
+  model is described in the article: A Dynamic Model for Prediction of Psoriasis Management
+  by Blue Light Irradiation. It can be used to explore systemsbiology felixgarza2017
+  blue light treatment of dynamics and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_felixgarza2017_blue_light_treatment_of_psoriasis_biomd0000000695_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_felixgarza2017_blue_light_treatment_of_psoriasis_biomd0000000695_model.state
+  to:
+  - visualisation.systemsbiology_sbml_felixgarza2017_blue_light_treatment_of_psoriasis_biomd0000000695_model_state
+- from: systemsbiology_sbml_felixgarza2017_blue_light_treatment_of_psoriasis_biomd0000000695_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_felixgarza2017_blue_light_treatment_of_psoriasis_biomd0000000695_model_summary
+- from: systemsbiology_sbml_felixgarza2017_blue_light_treatment_of_psoriasis_biomd0000000695_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_felixgarza2017_blue_light_treatment_of_psoriasis_biomd0000000695_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: treatment_duration
+    maps_to: systemsbiology_sbml_felixgarza2017_blue_light_treatment_of_psoriasis_biomd0000000695_model.treatment_duration
+    label: Treatment Duration
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `Treatment_Duration`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_felixgarza2017_blue_light_treatment_of_psoriasis_biomd0000000695_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_felixgarza2017_blue_light_treatment_of_psoriasis_biomd0000000695_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_felixgarza2017_blue_light_treatment_of_psoriasis_biomd0000000695_model.species_labels
+  - name: growth_arrested_cells
+    maps_to: systemsbiology_sbml_felixgarza2017_blue_light_treatment_of_psoriasis_biomd0000000695_model.growth_arrested_cells
+  - name: growth_arrested_cells_2
+    maps_to: systemsbiology_sbml_felixgarza2017_blue_light_treatment_of_psoriasis_biomd0000000695_model.growth_arrested_cells_2
+  - name: spinous_cells
+    maps_to: systemsbiology_sbml_felixgarza2017_blue_light_treatment_of_psoriasis_biomd0000000695_model.spinous_cells
+  - name: corneocytes
+    maps_to: systemsbiology_sbml_felixgarza2017_blue_light_treatment_of_psoriasis_biomd0000000695_model.corneocytes
+  - name: transit_amplifying_cells
+    maps_to: systemsbiology_sbml_felixgarza2017_blue_light_treatment_of_psoriasis_biomd0000000695_model.transit_amplifying_cells
+  - name: stem_cells
+    maps_to: systemsbiology_sbml_felixgarza2017_blue_light_treatment_of_psoriasis_biomd0000000695_model.stem_cells

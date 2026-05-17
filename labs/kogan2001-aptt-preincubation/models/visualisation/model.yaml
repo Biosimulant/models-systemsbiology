@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Kogan2001_aPTT_preincubation Visualisation
+description: Question-and-answer and dynamic visual summaries for Kogan2001_aPTT_preincubation.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Kogan2001 Aptt Preincubation Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Kogan2001_aPTT_preincubation.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_kogan2001_aptt_preincubation_model1109160000_model
+      title: Kogan2001_aPTT_preincubation
+      observables:
+      - id: species_4
+        port: alpha1_at
+        label: alpha1AT
+        group: core_system_state
+      - id: species_5
+        port: alpha2_m
+        label: alpha2M
+        group: core_system_state
+      - id: species_3
+        port: atiii
+        label: ATIII
+        group: core_system_state
+      - id: species_6
+        port: c1inh
+        label: C1inh
+        group: core_system_state
+      - id: species_11
+        port: alpha2_ap
+        label: alpha2AP
+        group: core_system_state
+      - id: species_29
+        port: model_state_pk
+        label: PK
+        group: core_system_state
+io:
+  inputs: []
+  outputs: []

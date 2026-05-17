@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "dcd7a0e0-f316-4fb9-8fac-8376f592a900",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "987d39bb-011c-49d0-ba2b-7e952b43d3b2",
+  "created_at": "2026-05-16T05:46:50.755961941+00:00",
+  "last_synced_at": "2026-05-17T05:36:56.682056+00:00",
+  "hub_manifest_hash": "481791828892b4a7625e9aeaa92595194514af6c6385d5f0cf4d10aba75bef03",
+  "package_name": "proctor2012-role-of-amyloid-beta-dimers-in-aggregation-formation"
+}

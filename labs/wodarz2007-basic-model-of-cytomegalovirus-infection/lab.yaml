@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Wodarz2007 Basic Model Of Cytomegalovirus Infection Lab
+description: 'This a model from the article: Dynamics of killer T cell inflation in
+  viral infections. It can be used to explore systemsbiology wodarz2007 basic of cytomegalovirus
+  infect dynamics and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_wodarz2007_basic_model_of_cytomegalovirus_infect_biomd0000000686_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_wodarz2007_basic_model_of_cytomegalovirus_infect_biomd0000000686_model.state
+  to:
+  - visualisation.systemsbiology_sbml_wodarz2007_basic_model_of_cytomegalovirus_infect_biomd0000000686_model_state
+- from: systemsbiology_sbml_wodarz2007_basic_model_of_cytomegalovirus_infect_biomd0000000686_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_wodarz2007_basic_model_of_cytomegalovirus_infect_biomd0000000686_model_summary
+- from: systemsbiology_sbml_wodarz2007_basic_model_of_cytomegalovirus_infect_biomd0000000686_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_wodarz2007_basic_model_of_cytomegalovirus_infect_biomd0000000686_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- epidemiology
+- immunology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_y1
+    maps_to: systemsbiology_sbml_wodarz2007_basic_model_of_cytomegalovirus_infect_biomd0000000686_model.initial_model_state_y1
+    label: Initial Model State Y1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `y1`.
+  - name: initial_model_state_y0
+    maps_to: systemsbiology_sbml_wodarz2007_basic_model_of_cytomegalovirus_infect_biomd0000000686_model.initial_model_state_y0
+    label: Initial Model State Y0
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `y0`.
+  - name: initial_model_state_x
+    maps_to: systemsbiology_sbml_wodarz2007_basic_model_of_cytomegalovirus_infect_biomd0000000686_model.initial_model_state_x
+    label: Initial Model State X
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x`.
+  - name: initial_model_state_v
+    maps_to: systemsbiology_sbml_wodarz2007_basic_model_of_cytomegalovirus_infect_biomd0000000686_model.initial_model_state_v
+    label: Initial Model State V
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `v`.
+  - name: initial_model_state_l
+    maps_to: systemsbiology_sbml_wodarz2007_basic_model_of_cytomegalovirus_infect_biomd0000000686_model.initial_model_state_l
+    label: Initial Model State L
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `L`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_wodarz2007_basic_model_of_cytomegalovirus_infect_biomd0000000686_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_wodarz2007_basic_model_of_cytomegalovirus_infect_biomd0000000686_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_wodarz2007_basic_model_of_cytomegalovirus_infect_biomd0000000686_model.species_labels
+  - name: model_state_y1
+    maps_to: systemsbiology_sbml_wodarz2007_basic_model_of_cytomegalovirus_infect_biomd0000000686_model.model_state_y1
+  - name: model_state_y0
+    maps_to: systemsbiology_sbml_wodarz2007_basic_model_of_cytomegalovirus_infect_biomd0000000686_model.model_state_y0
+  - name: model_state_x
+    maps_to: systemsbiology_sbml_wodarz2007_basic_model_of_cytomegalovirus_infect_biomd0000000686_model.model_state_x
+  - name: model_state_v
+    maps_to: systemsbiology_sbml_wodarz2007_basic_model_of_cytomegalovirus_infect_biomd0000000686_model.model_state_v
+  - name: model_state_l
+    maps_to: systemsbiology_sbml_wodarz2007_basic_model_of_cytomegalovirus_infect_biomd0000000686_model.model_state_l

@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Hong2009_CircadianClock Visualisation
+description: Question-and-answer and dynamic visual summaries for Hong2009_CircadianClock.
+standard: other
+tags:
+- cellcycle
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Hong2009 Circadianclock Lab
+    question: 'Which cell-cycle control states dominate the simulated progression?
+      Source model: Hong2009_CircadianClock.'
+    answer_focus: Q/A table plus cellcycle timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_hong2009_circadianclock_biomd0000000216_model
+      title: Hong2009_CircadianClock
+      observables:
+      - id: IC
+        port: model_state_ic
+        label: IC
+        group: physiology
+      - id: TF
+        port: model_state_tf
+        label: TF
+        group: physiology
+      - id: CP2
+        port: cp2
+        label: CP2
+        group: physiology
+      - id: CP
+        port: model_state_cp
+        label: CP
+        group: physiology
+      - id: CPtot
+        port: c_ptot
+        label: CPtot
+        group: physiology
+      - id: M
+        port: model_state_m
+        label: M
+        group: physiology
+io:
+  inputs: []
+  outputs: []

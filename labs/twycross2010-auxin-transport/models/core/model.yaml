@@ -1,0 +1,109 @@
+schema_version: '2.0'
+title: Twycross2010_Auxin_Transport
+description: 'This is a model with 20 cells - 20 cytplasms and 21 apoplasts - as described
+  in the article: Stochastic and deterministic multiscale models for systems biology:
+  an auxin-transport case study. It can be used to explore systemsbiology twycross2010
+  auxin transport model1005200000 dynamics and compare simulation behavior across
+  conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Jamie Twycross
+- Leah R Band
+- Malcolm J Bennett
+- John R King
+- Natalio Krasnogor
+upstream:
+  id: biomodels_ebi:MODEL1005200000
+  source_db: biomodels_ebi
+  source_id: MODEL1005200000
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1005200000
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1005200000?filename=MODEL1005200000_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.twycross2010_auxin_transport_model1005200000_model:Twycross2010AuxinTransportModel1005200000Model
+  init_kwargs:
+    model_path: data/MODEL1005200000.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_ext
+    maps_to: ext
+    label: Initial Model State Ext
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ext`.
+  - name: initial_model_state_c9
+    maps_to: c9
+    label: Initial Model State C9
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `c9`.
+  - name: initial_model_state_c8
+    maps_to: c8
+    label: Initial Model State C8
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `c8`.
+  - name: initial_model_state_c7
+    maps_to: c7
+    label: Initial Model State C7
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `c7`.
+  - name: initial_model_state_c6
+    maps_to: c6
+    label: Initial Model State C6
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `c6`.
+  - name: initial_model_state_c5
+    maps_to: c5
+    label: Initial Model State C5
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `c5`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: ext
+    maps_to: ext
+    label: ext
+    description: ext. Maps to SBML symbol `ext`.
+  - name: model_state_c9
+    maps_to: c9
+    label: c9
+    description: c9. Maps to SBML symbol `c9`.
+  - name: model_state_c8
+    maps_to: c8
+    label: c8
+    description: c8. Maps to SBML symbol `c8`.
+  - name: model_state_c7
+    maps_to: c7
+    label: c7
+    description: c7. Maps to SBML symbol `c7`.
+  - name: model_state_c6
+    maps_to: c6
+    label: c6
+    description: c6. Maps to SBML symbol `c6`.
+  - name: model_state_c5
+    maps_to: c5
+    label: c5
+    description: c5. Maps to SBML symbol `c5`.

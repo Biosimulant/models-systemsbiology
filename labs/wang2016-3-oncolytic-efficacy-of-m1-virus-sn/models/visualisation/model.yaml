@@ -1,0 +1,42 @@
+schema_version: '2.0'
+title: Wang2016/3 - oncolytic efficacy of M1 virus-SN model Visualisation
+description: Question-and-answer and dynamic visual summaries for Wang2016/3 - oncolytic
+  efficacy of M1 virus-SN model.
+standard: other
+tags:
+- cellcycle
+- oncology
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Wang2016 3 Oncolytic Efficacy Of M1 Virus Sn Lab
+    question: 'Which cell-cycle control states dominate the simulated progression?
+      Source model: Wang2016/3 - oncolytic efficacy of M1 virus-SN model.'
+    answer_focus: Q/A table plus cellcycle timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_wang2016_3_oncolytic_efficacy_of_m1_virus_sn_mod_biomd0000000782_model
+      title: Wang2016/3 - oncolytic efficacy of M1 virus-SN model
+      observables:
+      - id: N
+        port: model_state_n
+        label: N
+        group: physiology
+      - id: S
+        port: model_state_s
+        label: S
+        group: physiology
+io:
+  inputs: []
+  outputs: []

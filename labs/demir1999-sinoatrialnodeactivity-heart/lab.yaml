@@ -1,0 +1,90 @@
+schema_version: '2.0'
+title: Demir1999 Sinoatrialnodeactivity Heart Lab
+description: 'This a model from the article: Parasympathetic modulation of sinoatrial
+  node pacemaker activity in rabbitheart: a unifying model. It can be used to explore
+  systemsbiology demir1999 sinoatrialnodeactivity heart model0912940495 dynamics and
+  compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_demir1999_sinoatrialnodeactivity_heart_model0912940495_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_demir1999_sinoatrialnodeactivity_heart_model0912940495_model.state
+  to:
+  - visualisation.systemsbiology_sbml_demir1999_sinoatrialnodeactivity_heart_model0912940495_model_state
+- from: systemsbiology_sbml_demir1999_sinoatrialnodeactivity_heart_model0912940495_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_demir1999_sinoatrialnodeactivity_heart_model0912940495_model_summary
+- from: systemsbiology_sbml_demir1999_sinoatrialnodeactivity_heart_model0912940495_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_demir1999_sinoatrialnodeactivity_heart_model0912940495_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- cardiovascular
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_v_membrane
+    maps_to: systemsbiology_sbml_demir1999_sinoatrialnodeactivity_heart_model0912940495_model.initial_v_membrane
+    label: Initial V Membrane
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `V_membrane`.
+  - name: initial_model_state_p_i
+    maps_to: systemsbiology_sbml_demir1999_sinoatrialnodeactivity_heart_model0912940495_model.initial_model_state_p_i
+    label: Initial Model State P I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P_i`.
+  - name: initial_model_state_p_a
+    maps_to: systemsbiology_sbml_demir1999_sinoatrialnodeactivity_heart_model0912940495_model.initial_model_state_p_a
+    label: Initial Model State P A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P_a`.
+  - name: initial_na_i
+    maps_to: systemsbiology_sbml_demir1999_sinoatrialnodeactivity_heart_model0912940495_model.initial_na_i
+    label: Initial Na I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Na_i`.
+  - name: initial_na_c
+    maps_to: systemsbiology_sbml_demir1999_sinoatrialnodeactivity_heart_model0912940495_model.initial_na_c
+    label: Initial Na C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Na_c`.
+  - name: initial_mg_mg_trop
+    maps_to: systemsbiology_sbml_demir1999_sinoatrialnodeactivity_heart_model0912940495_model.initial_mg_mg_trop
+    label: Initial Mg Mg Trop
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Mg_Mg_Trop`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_demir1999_sinoatrialnodeactivity_heart_model0912940495_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_demir1999_sinoatrialnodeactivity_heart_model0912940495_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_demir1999_sinoatrialnodeactivity_heart_model0912940495_model.species_labels
+  - name: v_membrane
+    maps_to: systemsbiology_sbml_demir1999_sinoatrialnodeactivity_heart_model0912940495_model.v_membrane
+  - name: p_i
+    maps_to: systemsbiology_sbml_demir1999_sinoatrialnodeactivity_heart_model0912940495_model.p_i
+  - name: p_a
+    maps_to: systemsbiology_sbml_demir1999_sinoatrialnodeactivity_heart_model0912940495_model.p_a
+  - name: na_i
+    maps_to: systemsbiology_sbml_demir1999_sinoatrialnodeactivity_heart_model0912940495_model.na_i
+  - name: na_c
+    maps_to: systemsbiology_sbml_demir1999_sinoatrialnodeactivity_heart_model0912940495_model.na_c
+  - name: mg_mg_trop
+    maps_to: systemsbiology_sbml_demir1999_sinoatrialnodeactivity_heart_model0912940495_model.mg_mg_trop

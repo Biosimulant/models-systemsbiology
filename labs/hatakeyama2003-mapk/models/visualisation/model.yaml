@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Hatakeyama2003_MAPK Visualisation
+description: Question-and-answer and dynamic visual summaries for Hatakeyama2003_MAPK.
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Hatakeyama2003 Mapk Lab
+    question: 'Which signalling variables dominate the simulated network response?
+      Source model: Hatakeyama2003_MAPK.'
+    answer_focus: Q/A table plus signaling timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_hatakeyama2003_mapk_biomd0000000146_model
+      title: Hatakeyama2003_MAPK
+      observables:
+      - id: internalization
+        port: internalization
+        label: Internalization
+        group: signaling
+      - id: Shc
+        port: shc
+        label: Shc
+        group: signaling
+      - id: ERK
+        port: erk
+        label: ERK
+        group: signaling
+      - id: P_I
+        port: p_i
+        label: P I
+        group: signaling
+      - id: HRG
+        port: hrg
+        label: HRG
+        group: signaling
+      - id: RasGDP
+        port: ras_gdp
+        label: RasGDP
+        group: signaling
+io:
+  inputs: []
+  outputs: []

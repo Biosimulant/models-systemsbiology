@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Rehm2006_Caspase Visualisation
+description: Question-and-answer and dynamic visual summaries for Rehm2006_Caspase.
+standard: other
+tags:
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Rehm2006 Caspase Lab
+    question: 'Which drug, dose, or target-linked model states drive the simulated
+      profile? Source model: Rehm2006_Caspase.'
+    answer_focus: Q/A table plus pharmacology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_rehm2006_caspase_biomd0000000256_model
+      title: Rehm2006_Caspase
+      observables:
+      - id: CytC_mit
+        port: cytochrome_c_in_mitochondrium
+        label: Cytochrome C in mitochondrium
+        group: metabolism
+      - id: SMAC_mito
+        port: smac_in_mitochondrium
+        label: SMAC in mitochondrium
+        group: metabolism
+      - id: Substrate
+        port: casp3_substrate
+        label: Casp3 Substrate
+        group: gene_regulation
+      - id: PC3
+        port: pro_casp3
+        label: ProCasp3
+        group: gene_regulation
+      - id: PC9
+        port: pro_casp9
+        label: ProCasp9
+        group: gene_regulation
+      - id: CytC_cell
+        port: cytosolic_cytochrome_c
+        label: cytosolic Cytochrome C
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

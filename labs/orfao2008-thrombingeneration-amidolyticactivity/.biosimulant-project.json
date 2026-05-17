@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "435cb718-e707-4ffa-bfdb-ef6fb4a8e35b",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "cb3a676e-d9e3-47db-a517-2f1a9c190b05",
+  "created_at": "2026-05-16T05:46:49.431644169+00:00",
+  "last_synced_at": "2026-05-17T05:19:58.541766+00:00",
+  "hub_manifest_hash": "257d8a0ecf5439dacac9e3e1a4e5732cdc0c569e5f44f3da355251824d98362c",
+  "package_name": "orfao2008-thrombingeneration-amidolyticactivity-lab"
+}

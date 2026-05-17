@@ -1,0 +1,43 @@
+schema_version: '2.0'
+title: Lavrentovich2008_Ca_Oscillations Visualisation
+description: Question-and-answer and dynamic visual summaries for Lavrentovich2008_Ca_Oscillations.
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Lavrentovich2008 Ca Oscillations Lab
+    question: 'Which physiological state variables carry the strongest baseline response?
+      Source model: Lavrentovich2008_Ca_Oscillations.'
+    answer_focus: Q/A table plus physiology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_lavrentovich2008_ca_oscillations_biomd0000000184_model
+      title: Lavrentovich2008_Ca_Oscillations
+      observables:
+      - id: Y
+        port: calcium_in_er
+        label: Calcium in ER
+        group: physiology
+      - id: Z
+        port: ip3
+        label: IP3
+        group: physiology
+      - id: X
+        port: cytoplasmic_calcium
+        label: Cytoplasmic Calcium
+        group: physiology
+io:
+  inputs: []
+  outputs: []

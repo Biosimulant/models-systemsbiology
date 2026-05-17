@@ -1,0 +1,72 @@
+schema_version: '2.0'
+title: Cooper2015 Modeling The Effects Of Systemic Mediators On The Inflamma Lab
+description: This is an ordinary differential equation-based mathematical model describing
+  the inflammatory phase of the wound healing response. The model describes the interactions
+  in the wound between wound debr.
+models:
+- alias: systemsbiology_sbml_cooper2015_modeling_the_effects_of_systemic_medi_biomd0000000855_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_cooper2015_modeling_the_effects_of_systemic_medi_biomd0000000855_model.state
+  to:
+  - visualisation.systemsbiology_sbml_cooper2015_modeling_the_effects_of_systemic_medi_biomd0000000855_model_state
+- from: systemsbiology_sbml_cooper2015_modeling_the_effects_of_systemic_medi_biomd0000000855_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_cooper2015_modeling_the_effects_of_systemic_medi_biomd0000000855_model_summary
+- from: systemsbiology_sbml_cooper2015_modeling_the_effects_of_systemic_medi_biomd0000000855_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_cooper2015_modeling_the_effects_of_systemic_medi_biomd0000000855_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_pt
+    maps_to: systemsbiology_sbml_cooper2015_modeling_the_effects_of_systemic_medi_biomd0000000855_model.initial_model_state_pt
+    label: Initial Model State Pt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pt`.
+  - name: initial_model_state_p
+    maps_to: systemsbiology_sbml_cooper2015_modeling_the_effects_of_systemic_medi_biomd0000000855_model.initial_model_state_p
+    label: Initial Model State P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P`.
+  - name: initial_model_state_n
+    maps_to: systemsbiology_sbml_cooper2015_modeling_the_effects_of_systemic_medi_biomd0000000855_model.initial_model_state_n
+    label: Initial Model State N
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `N`.
+  - name: initial_model_state_m
+    maps_to: systemsbiology_sbml_cooper2015_modeling_the_effects_of_systemic_medi_biomd0000000855_model.initial_model_state_m
+    label: Initial Model State M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_cooper2015_modeling_the_effects_of_systemic_medi_biomd0000000855_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_cooper2015_modeling_the_effects_of_systemic_medi_biomd0000000855_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_cooper2015_modeling_the_effects_of_systemic_medi_biomd0000000855_model.species_labels
+  - name: model_state_pt
+    maps_to: systemsbiology_sbml_cooper2015_modeling_the_effects_of_systemic_medi_biomd0000000855_model.model_state_pt
+  - name: model_state_p
+    maps_to: systemsbiology_sbml_cooper2015_modeling_the_effects_of_systemic_medi_biomd0000000855_model.model_state_p
+  - name: model_state_n
+    maps_to: systemsbiology_sbml_cooper2015_modeling_the_effects_of_systemic_medi_biomd0000000855_model.model_state_n
+  - name: model_state_m
+    maps_to: systemsbiology_sbml_cooper2015_modeling_the_effects_of_systemic_medi_biomd0000000855_model.model_state_m

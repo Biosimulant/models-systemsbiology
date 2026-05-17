@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Li2012 Calcium mediated synaptic plasticity
+description: 'Li2012 Calcium mediated synapticplasticity This model is an extension
+  of BIOMD0000000183 . This model is described in the article: Calcium input frequency,
+  duration and amplitude differentially modula.'
+standard: other
+tags:
+- neuroscience
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Lu Li
+- Melanie I Stefan
+- Nicolas Le Novère
+upstream:
+  id: biomodels_ebi:BIOMD0000000628
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000628
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000628
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000628?filename=BIOMD0000000628_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.li2012_calcium_mediated_synaptic_plasticity_biomd0000000628_model:Li2012CalciumMediatedSynapticPlasticityBiomd0000000628Model
+  init_kwargs:
+    model_path: data/BIOMD0000000628.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_cbp_fast_ca
+    maps_to: CBPfastCa
+    label: Initial Cbp Fast Ca
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CBPfastCa`.
+  - name: initial_cbp_media
+    maps_to: CBPmedia
+    label: Initial Cbp Media
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CBPmedia`.
+  - name: initial_cbp_fast
+    maps_to: CBPfast
+    label: Initial Cbp Fast
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CBPfast`.
+  - name: initial_cbp_vslow
+    maps_to: CBPvslow
+    label: Initial Cbp Vslow
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CBPvslow`.
+  - name: initial_cbp_slow
+    maps_to: CBPslow
+    label: Initial Cbp Slow
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CBPslow`.
+  - name: initial_pp2_bi_ca3
+    maps_to: PP2Bi_Ca3
+    label: Initial PP2 Bi CA3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PP2Bi_Ca3`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: cbp_fast_ca
+    maps_to: CBPfastCa
+    label: CBP_fast_Ca
+    description: CBP_fast_Ca. Maps to SBML symbol `CBPfastCa`.
+  - name: cbp_media
+    maps_to: CBPmedia
+    label: CBP_media
+    description: CBP_media. Maps to SBML symbol `CBPmedia`.
+  - name: cbp_fast
+    maps_to: CBPfast
+    label: CBP_fast
+    description: CBP_fast. Maps to SBML symbol `CBPfast`.
+  - name: cbp_vslow
+    maps_to: CBPvslow
+    label: CBP_vslow
+    description: CBP_vslow. Maps to SBML symbol `CBPvslow`.
+  - name: cbp_slow
+    maps_to: CBPslow
+    label: CBP_slow
+    description: CBP_slow. Maps to SBML symbol `CBPslow`.
+  - name: pp2_bi_ca3
+    maps_to: PP2Bi_Ca3
+    label: PP2Bi_Ca3
+    description: PP2Bi_Ca3. Maps to SBML symbol `PP2Bi_Ca3`.

@@ -1,0 +1,78 @@
+schema_version: '2.0'
+title: Invergo2014 - Phototransduction cascade in mouse rod cells
+description: 'Invergo2014 - Phototransduction cascade inmouse rod cells This model
+  is described in the article: A comprehensive model of the phototransduction cascade
+  in mouse rod cells. It can be used to explore systemsbiology invergo2014 phototransduction
+  cascade in mouse dynamics and compare simulation behavior across conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Brandon M Invergo
+- Daniele Dell'Orco
+- Ludovica Montanucci
+- Karl-Wilhelm Koch
+- Jaume Bertranpetit
+upstream:
+  id: biomodels_ebi:BIOMD0000000578
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000578
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000578
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000578?filename=BIOMD0000000578_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.invergo2014_phototransduction_cascade_in_mouse_r_biomd0000000578_model:Invergo2014PhototransductionCascadeInMouseRBiomd0000000578Model
+  init_kwargs:
+    model_path: data/BIOMD0000000578.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: otherstimulus
+    maps_to: otherstimulus
+    label: Otherstimulus
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `otherstimulus`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: r_gt
+    maps_to: R_Gt
+    label: R_Gt
+    description: R_Gt. Maps to SBML symbol `R_Gt`.
+  - name: arr_di
+    maps_to: Arr_di
+    label: Arr_di
+    description: Arr_di. Maps to SBML symbol `Arr_di`.
+  - name: arr_tetra
+    maps_to: Arr_tetra
+    label: Arr_tetra
+    description: Arr_tetra. Maps to SBML symbol `Arr_tetra`.
+  - name: rec_r_ca
+    maps_to: RecR_Ca
+    label: RecR_Ca
+    description: RecR_Ca. Maps to SBML symbol `RecR_Ca`.
+  - name: rec_r_ca_rk
+    maps_to: RecR_Ca_RK
+    label: RecR_Ca_RK
+    description: RecR_Ca_RK. Maps to SBML symbol `RecR_Ca_RK`.
+  - name: ca2_buff
+    maps_to: Ca2_buff
+    label: Ca2_buff
+    description: Ca2_buff. Maps to SBML symbol `Ca2_buff`.

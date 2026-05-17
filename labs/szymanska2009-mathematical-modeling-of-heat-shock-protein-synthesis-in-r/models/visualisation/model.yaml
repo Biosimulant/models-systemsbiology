@@ -1,0 +1,61 @@
+schema_version: '2.0'
+title: Szymanska2009 - Mathematical modeling of heat shock protein synthesis in response
+  to temperature change Visualisation
+description: Question-and-answer and dynamic visual summaries for Szymanska2009 -
+  Mathematical modeling of heat shock protein synthesis in response to temperature
+  change.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Szymanska2009 Mathematical Modeling Of Heat Shock Protein Synthesis
+      In R Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Szymanska2009 - Mathematical modeling of heat shock protein synthesis
+      in response to temperature change.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_szymanska2009_mathematical_modeling_of_heat_shoc_biomd0000000896_model
+      title: Szymanska2009 - Mathematical modeling of heat shock protein synthesis
+        in response to temperature change
+      observables:
+      - id: Hsp70_HSF
+        port: hsp70_hsf
+        label: Hsp70_HSF
+        group: gene_regulation
+      - id: mRNA
+        port: mrna
+        label: mRNA
+        group: gene_regulation
+      - id: HSF_3_HSE
+        port: hsf_3_hse
+        label: HSF_3_HSE
+        group: gene_regulation
+      - id: HSF_3
+        port: hsf_3
+        label: HSF_3
+        group: gene_regulation
+      - id: Hsp70_S
+        port: hsp70_s
+        label: Hsp70_S
+        group: gene_regulation
+      - id: HSE
+        port: hse
+        label: HSE
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

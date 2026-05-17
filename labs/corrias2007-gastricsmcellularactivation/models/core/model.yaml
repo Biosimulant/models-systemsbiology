@@ -1,0 +1,76 @@
+schema_version: '2.0'
+title: Corrias2007_GastricSMCellularActivation
+description: 'This a model from the article: A quantitative model of gastric smooth
+  muscle cellular activation. It can be used to explore systemsbiology corrias2007
+  gastricsmcellularactivat model0913145131 dynamics and compare simulation behavior
+  across conditions.'
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Alberto Corrias
+- Martin L Buist
+upstream:
+  id: biomodels_ebi:MODEL0913145131
+  source_db: biomodels_ebi
+  source_id: MODEL0913145131
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL0913145131
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0913145131?filename=MODEL0913145131_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.corrias2007_gastricsmcellularactivation_model0913145131_model:Corrias2007GastricsmcellularactivationModel0913145131Model
+  init_kwargs:
+    model_path: data/MODEL0913145131.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: t_icc_stimulus
+    maps_to: t_ICC_stimulus
+    label: T Icc Stimulus
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `t_ICC_stimulus`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: xr2_sm
+    maps_to: xr2_SM
+    label: XR2 SM
+    description: XR2 SM. Maps to SBML symbol `xr2_SM`.
+  - name: xr1_sm
+    maps_to: xr1_SM
+    label: XR1 SM
+    description: XR1 SM. Maps to SBML symbol `xr1_SM`.
+  - name: xa2_sm
+    maps_to: xa2_SM
+    label: XA2 SM
+    description: XA2 SM. Maps to SBML symbol `xa2_SM`.
+  - name: xa1_sm
+    maps_to: xa1_SM
+    label: XA1 SM
+    description: XA1 SM. Maps to SBML symbol `xa1_SM`.
+  - name: vm_sm
+    maps_to: Vm_SM
+    label: Vm SM
+    description: Vm SM. Maps to SBML symbol `Vm_SM`.
+  - name: m_na_sm
+    maps_to: m_Na_SM
+    label: M Na SM
+    description: M Na SM. Maps to SBML symbol `m_Na_SM`.

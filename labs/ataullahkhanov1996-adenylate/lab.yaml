@@ -1,0 +1,52 @@
+schema_version: '2.0'
+title: Ataullahkhanov1996 Adenylate Lab
+description: The model reproduces ion and adenylate pool concentration corresponding
+  to line 2 of Fig 3 of the publication. This model was tested successfully on Jarnac
+  To the extent possible under law, all copyri.
+models:
+- alias: systemsbiology_sbml_ataullahkhanov1996_adenylate_biomd0000000054_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_ataullahkhanov1996_adenylate_biomd0000000054_model.state
+  to:
+  - visualisation.systemsbiology_sbml_ataullahkhanov1996_adenylate_biomd0000000054_model_state
+- from: systemsbiology_sbml_ataullahkhanov1996_adenylate_biomd0000000054_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_ataullahkhanov1996_adenylate_biomd0000000054_model_summary
+- from: systemsbiology_sbml_ataullahkhanov1996_adenylate_biomd0000000054_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_ataullahkhanov1996_adenylate_biomd0000000054_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: extracellular_ion_concentration
+    maps_to: systemsbiology_sbml_ataullahkhanov1996_adenylate_biomd0000000054_model.extracellular_ion_concentration
+    label: Extracellular Ion Concentration
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `J`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_ataullahkhanov1996_adenylate_biomd0000000054_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_ataullahkhanov1996_adenylate_biomd0000000054_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_ataullahkhanov1996_adenylate_biomd0000000054_model.species_labels
+  - name: ions
+    maps_to: systemsbiology_sbml_ataullahkhanov1996_adenylate_biomd0000000054_model.ions
+  - name: energy_pool
+    maps_to: systemsbiology_sbml_ataullahkhanov1996_adenylate_biomd0000000054_model.energy_pool
+  - name: adenylate_pool
+    maps_to: systemsbiology_sbml_ataullahkhanov1996_adenylate_biomd0000000054_model.adenylate_pool

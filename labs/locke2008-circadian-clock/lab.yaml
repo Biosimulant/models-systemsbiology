@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Locke2008 Circadian Clock Lab
+description: The model reproduces Fig 2A of the paper. It can be used to explore systemsbiology
+  locke2008 circadian clock BioModels0000000185 dynamics and compare simulation behavior
+  across conditions.
+models:
+- alias: systemsbiology_sbml_locke2008_circadian_clock_biomd0000000185_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_locke2008_circadian_clock_biomd0000000185_model.state
+  to:
+  - visualisation.systemsbiology_sbml_locke2008_circadian_clock_biomd0000000185_model_state
+- from: systemsbiology_sbml_locke2008_circadian_clock_biomd0000000185_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_locke2008_circadian_clock_biomd0000000185_model_summary
+- from: systemsbiology_sbml_locke2008_circadian_clock_biomd0000000185_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_locke2008_circadian_clock_biomd0000000185_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_clock_gene_mrna
+    maps_to: systemsbiology_sbml_locke2008_circadian_clock_biomd0000000185_model.initial_clock_gene_mrna
+    label: Initial Clock Gene MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X1`.
+  - name: initial_clock_protein
+    maps_to: systemsbiology_sbml_locke2008_circadian_clock_biomd0000000185_model.initial_clock_protein
+    label: Initial Clock Protein
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Y1`.
+  - name: initial_transcriptional_repressor
+    maps_to: systemsbiology_sbml_locke2008_circadian_clock_biomd0000000185_model.initial_transcriptional_repressor
+    label: Initial Transcriptional Repressor
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Z1`.
+  - name: initial_clock_protein_2
+    maps_to: systemsbiology_sbml_locke2008_circadian_clock_biomd0000000185_model.initial_clock_protein_2
+    label: Initial Clock Protein 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Y2`.
+  - name: initial_clock_gene_mrna_2
+    maps_to: systemsbiology_sbml_locke2008_circadian_clock_biomd0000000185_model.initial_clock_gene_mrna_2
+    label: Initial Clock Gene MRNA 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X2`.
+  - name: initial_transcriptional_repressor_2
+    maps_to: systemsbiology_sbml_locke2008_circadian_clock_biomd0000000185_model.initial_transcriptional_repressor_2
+    label: Initial Transcriptional Repressor 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Z2`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_locke2008_circadian_clock_biomd0000000185_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_locke2008_circadian_clock_biomd0000000185_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_locke2008_circadian_clock_biomd0000000185_model.species_labels
+  - name: clock_gene_mrna
+    maps_to: systemsbiology_sbml_locke2008_circadian_clock_biomd0000000185_model.clock_gene_mrna
+  - name: clock_protein
+    maps_to: systemsbiology_sbml_locke2008_circadian_clock_biomd0000000185_model.clock_protein
+  - name: transcriptional_repressor
+    maps_to: systemsbiology_sbml_locke2008_circadian_clock_biomd0000000185_model.transcriptional_repressor
+  - name: clock_protein_2
+    maps_to: systemsbiology_sbml_locke2008_circadian_clock_biomd0000000185_model.clock_protein_2
+  - name: clock_gene_mrna_2
+    maps_to: systemsbiology_sbml_locke2008_circadian_clock_biomd0000000185_model.clock_gene_mrna_2
+  - name: transcriptional_repressor_2
+    maps_to: systemsbiology_sbml_locke2008_circadian_clock_biomd0000000185_model.transcriptional_repressor_2

@@ -1,0 +1,59 @@
+schema_version: '2.0'
+title: Khanin1998 - Mathematical Model of Blood Coagulation Prothrombin Time Test
+  Visualisation
+description: Question-and-answer and dynamic visual summaries for Khanin1998 - Mathematical
+  Model of Blood Coagulation Prothrombin Time Test.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Khanin1998 Mathematical Model Of Blood Coagulation Prothrombin Time
+      T Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Khanin1998 - Mathematical Model of Blood Coagulation Prothrombin
+      Time Test.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_khanin1998_mathematical_model_of_blood_coagulati_model1806120001_model
+      title: Khanin1998 - Mathematical Model of Blood Coagulation Prothrombin Time
+        Test
+      observables:
+      - id: VII_TF
+        port: vii_tf
+        label: VII:TF
+        group: physiology
+      - id: IXa_VIIIa_PL
+        port: i_xa_vii_ia_pl
+        label: IXa:VIIIa:PL
+        group: physiology
+      - id: Xa_Va_PL
+        port: xa_va_pl
+        label: Xa:Va:PL
+        group: physiology
+      - id: Xa_TFPI
+        port: xa_tfpi
+        label: Xa:TFPI
+        group: physiology
+      - id: Xa_ATIII
+        port: xa_atiii
+        label: Xa:ATIII
+        group: physiology
+      - id: Va_Xa
+        port: va_xa
+        label: Va:Xa
+        group: physiology
+io:
+  inputs: []
+  outputs: []

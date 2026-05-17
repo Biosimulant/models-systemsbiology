@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Valero2006 Adenine Ternarycycle Lab
+description: 'This a model from the article: A kinetic study of a ternary cycle between
+  adenine nucleotides. Valero E, Varón R, García-Carmona F FEBS J.'
+models:
+- alias: systemsbiology_sbml_valero2006_adenine_ternarycycle_biomd0000000231_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_valero2006_adenine_ternarycycle_biomd0000000231_model.state
+  to:
+  - visualisation.systemsbiology_sbml_valero2006_adenine_ternarycycle_biomd0000000231_model_state
+- from: systemsbiology_sbml_valero2006_adenine_ternarycycle_biomd0000000231_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_valero2006_adenine_ternarycycle_biomd0000000231_model_summary
+- from: systemsbiology_sbml_valero2006_adenine_ternarycycle_biomd0000000231_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_valero2006_adenine_ternarycycle_biomd0000000231_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_nadh
+    maps_to: systemsbiology_sbml_valero2006_adenine_ternarycycle_biomd0000000231_model.initial_nadh
+    label: Initial Nadh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NADH`.
+  - name: initial_model_state_atp
+    maps_to: systemsbiology_sbml_valero2006_adenine_ternarycycle_biomd0000000231_model.initial_model_state_atp
+    label: Initial Model State ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATP`.
+  - name: initial_model_state_adp
+    maps_to: systemsbiology_sbml_valero2006_adenine_ternarycycle_biomd0000000231_model.initial_model_state_adp
+    label: Initial Model State ADP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ADP`.
+  - name: initial_model_state_pyr
+    maps_to: systemsbiology_sbml_valero2006_adenine_ternarycycle_biomd0000000231_model.initial_model_state_pyr
+    label: Initial Model State Pyr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pyr`.
+  - name: initial_model_state_lac
+    maps_to: systemsbiology_sbml_valero2006_adenine_ternarycycle_biomd0000000231_model.initial_model_state_lac
+    label: Initial Model State Lac
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Lac`.
+  - name: initial_model_state_amp
+    maps_to: systemsbiology_sbml_valero2006_adenine_ternarycycle_biomd0000000231_model.initial_model_state_amp
+    label: Initial Model State AMP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `AMP`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_valero2006_adenine_ternarycycle_biomd0000000231_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_valero2006_adenine_ternarycycle_biomd0000000231_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_valero2006_adenine_ternarycycle_biomd0000000231_model.species_labels
+  - name: nadh
+    maps_to: systemsbiology_sbml_valero2006_adenine_ternarycycle_biomd0000000231_model.nadh
+  - name: atp
+    maps_to: systemsbiology_sbml_valero2006_adenine_ternarycycle_biomd0000000231_model.atp
+  - name: adp
+    maps_to: systemsbiology_sbml_valero2006_adenine_ternarycycle_biomd0000000231_model.adp
+  - name: pyr
+    maps_to: systemsbiology_sbml_valero2006_adenine_ternarycycle_biomd0000000231_model.pyr
+  - name: lac
+    maps_to: systemsbiology_sbml_valero2006_adenine_ternarycycle_biomd0000000231_model.lac
+  - name: amp
+    maps_to: systemsbiology_sbml_valero2006_adenine_ternarycycle_biomd0000000231_model.amp

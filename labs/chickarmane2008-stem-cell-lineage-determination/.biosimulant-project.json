@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "b0353a1a-8a76-4144-8360-f4eb19580408",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "183324c4-6ae8-419e-90c8-5cf0af261e52",
+  "created_at": "2026-05-16T05:46:42.377344942+00:00",
+  "last_synced_at": "2026-05-17T02:35:08.133348+00:00",
+  "hub_manifest_hash": "5b2ecd74995cb55db2afd8f524c321c305a2eb816cf293d686d446925aab4fec",
+  "package_name": "chickarmane2008-stem-cell-lineage-determination-lab"
+}

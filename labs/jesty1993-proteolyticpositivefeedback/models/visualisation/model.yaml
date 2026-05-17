@@ -1,0 +1,46 @@
+schema_version: '2.0'
+title: Jesty1993_ProteolyticPositiveFeedback Visualisation
+description: Question-and-answer and dynamic visual summaries for Jesty1993_ProteolyticPositiveFeedback.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Jesty1993 Proteolyticpositivefeedback Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Jesty1993_ProteolyticPositiveFeedback.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_jesty1993_proteolyticpositivefeedback_model1108260010_model
+      title: Jesty1993_ProteolyticPositiveFeedback
+      observables:
+      - id: Z2
+        port: model_state_z2
+        label: Z2
+        group: core_system_state
+      - id: Z1
+        port: model_state_z1
+        label: Z1
+        group: core_system_state
+      - id: E2
+        port: model_state_e2
+        label: E2
+        group: core_system_state
+      - id: E1
+        port: model_state_e1
+        label: E1
+        group: core_system_state
+io:
+  inputs: []
+  outputs: []

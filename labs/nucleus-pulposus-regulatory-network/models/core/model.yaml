@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Nucleus Pulposus Regulatory Network
+description: Systems Biology Nucleus Pulposus Regulatory Network Model2411040001Model
+  models core biological dynamics as a OTHER simulation curated from biomodels_ebi
+  (biomodels_ebi:MODEL2411040001), focused on systemsbiolo. When you run it, you can
+  track state over time and compare response patterns across parameter settings.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Sofia Tseranidou
+- Maria Segarra-Queralt
+- Francis Kiptengwer Chemorion
+- Christine Le Maitre
+- Janet Piñero
+upstream:
+  id: biomodels_ebi:MODEL2411040001
+  source_db: biomodels_ebi
+  source_id: MODEL2411040001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2411040001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2411040001?filename=network_model.xml
+  license: CC0
+biosim:
+  entrypoint: src.nucleus_pulposus_regulatory_network_model2411040001_model:NucleusPulposusRegulatoryNetworkModel2411040001Model
+  init_kwargs:
+    model_path: data/MODEL2411040001.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_il_17_a
+    maps_to: IL_17A
+    label: Initial Il 17 A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IL_17A`.
+  - name: initial_il_1
+    maps_to: IL_1beta
+    label: Initial Il 1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IL_1beta`.
+  - name: initial_il_18
+    maps_to: IL_18
+    label: Initial Il 18
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IL_18`.
+  - name: initial_il_8
+    maps_to: IL_8
+    label: Initial Il 8
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IL_8`.
+  - name: initial_timp1_2
+    maps_to: TIMP1_2
+    label: Initial Timp1 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TIMP1_2`.
+  - name: initial_il_6
+    maps_to: IL_6
+    label: Initial Il 6
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IL_6`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: il_17_a
+    maps_to: IL_17A
+    label: IL-17A
+    description: IL-17A. Maps to SBML symbol `IL_17A`.
+  - name: il_1
+    maps_to: IL_1beta
+    label: IL-1β
+    description: IL-1β. Maps to SBML symbol `IL_1beta`.
+  - name: il_18
+    maps_to: IL_18
+    label: IL-18
+    description: IL-18. Maps to SBML symbol `IL_18`.
+  - name: il_8
+    maps_to: IL_8
+    label: IL-8
+    description: IL-8. Maps to SBML symbol `IL_8`.
+  - name: timp1_2
+    maps_to: TIMP1_2
+    label: TIMP1/2
+    description: TIMP1/2. Maps to SBML symbol `TIMP1_2`.
+  - name: il_6
+    maps_to: IL_6
+    label: IL-6
+    description: IL-6. Maps to SBML symbol `IL_6`.

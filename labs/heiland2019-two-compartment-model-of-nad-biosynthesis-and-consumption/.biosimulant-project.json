@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "eed0782e-e59f-45a8-8318-8d8706487662",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "3968ff59-0c7f-45ba-b9e4-f62421373330",
+  "created_at": "2026-05-16T05:46:44.039034100+00:00",
+  "last_synced_at": "2026-05-17T03:38:42.452063+00:00",
+  "hub_manifest_hash": "262cf8e894673b7c1ed7d65d09fdc65dad2fd90ea2b2c5cf49ae17b062c45102",
+  "package_name": "heiland2019-two-compartment-model-of-nad-biosynthesis-and-consum"
+}

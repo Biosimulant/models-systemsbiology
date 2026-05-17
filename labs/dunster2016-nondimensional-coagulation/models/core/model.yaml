@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Dunster2016 - Nondimensional Coagulation Model
+description: We undertake a mathematical investigation of a model for the generation
+  of thrombin, an enzyme central to haemostatic blood coagulation, as well as to thrombotic
+  disorders, that is the end product of. It can be used to explore systemsbiology
+  dunster2016 nondimensional coagulation BioModels0000000925 dynamics and compare
+  simulation behavior across conditions.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- J. L. Dunster
+- J. R. King
+upstream:
+  id: biomodels_ebi:BIOMD0000000925
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000925
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000925
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000925?filename=Dunster2016_Nondimensional_Model_Curated.xml
+  license: CC0
+biosim:
+  entrypoint: src.dunster2016_nondimensional_coagulation_model_biomd0000000925_model:Dunster2016NondimensionalCoagulationModelBiomd0000000925Model
+  init_kwargs:
+    model_path: data/BIOMD0000000925.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_prothrombin_ii
+    maps_to: Prothrombin__II
+    label: Initial Prothrombin Ii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Prothrombin__II`.
+  - name: initial_xa_l
+    maps_to: Xa_L
+    label: Initial Xa L
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_L`.
+  - name: initial_va_xa_l
+    maps_to: Va_Xa_L
+    label: Initial Va Xa L
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Va_Xa_L`.
+  - name: initial_thrombin_i_ia
+    maps_to: Thrombin__IIa
+    label: Initial Thrombin I Ia
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Thrombin__IIa`.
+  - name: initial_prothrombinase_va_xa
+    maps_to: Prothrombinase__Va_Xa
+    label: Initial Prothrombinase Va Xa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Prothrombinase__Va_Xa`.
+  - name: initial_inactive_protein_c
+    maps_to: Inactive_protein_C
+    label: Initial Inactive Protein C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Inactive_protein_C`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: prothrombin_ii
+    maps_to: Prothrombin__II
+    label: Prothrombin (II)
+    description: Prothrombin (II). Maps to SBML symbol `Prothrombin__II`.
+  - name: xa_l
+    maps_to: Xa_L
+    label: Xa:L
+    description: Xa:L. Maps to SBML symbol `Xa_L`.
+  - name: va_xa_l
+    maps_to: Va_Xa_L
+    label: Va:Xa:L
+    description: Va:Xa:L. Maps to SBML symbol `Va_Xa_L`.
+  - name: thrombin_i_ia
+    maps_to: Thrombin__IIa
+    label: Thrombin (IIa)
+    description: Thrombin (IIa). Maps to SBML symbol `Thrombin__IIa`.
+  - name: prothrombinase_va_xa
+    maps_to: Prothrombinase__Va_Xa
+    label: Prothrombinase (Va:Xa)
+    description: Prothrombinase (Va:Xa). Maps to SBML symbol `Prothrombinase__Va_Xa`.
+  - name: inactive_protein_c
+    maps_to: Inactive_protein_C
+    label: Inactive protein C
+    description: Inactive protein C. Maps to SBML symbol `Inactive_protein_C`.

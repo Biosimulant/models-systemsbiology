@@ -1,0 +1,111 @@
+schema_version: '2.0'
+title: Mandlik2013 - Synthetic circuit of IPC synthase in Leishmania
+description: Mandlik2012 - Synthetic circuit of IPC synthase in Leishmania A genetic
+  circuit for the targeted enzyme inositol phosphorylceramide (IPC) synthase belonging
+  to the protozoan parasite Leishmania is con. It can be used to explore systemsbiology
+  mandlik2013 synthetic circuit of ipc dynamics and compare simulation behavior across
+  conditions.
+standard: other
+tags:
+- generegulation
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Vineetha Mandlik
+- Dixita Limbachiya
+- Sonali Shinde
+- Milsee Mol
+- Shailza Singh
+upstream:
+  id: biomodels_ebi:MODEL1208030000
+  source_db: biomodels_ebi
+  source_id: MODEL1208030000
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1208030000
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1208030000?filename=MODEL1208030000_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.mandlik2013_synthetic_circuit_of_ipc_synthase_in_model1208030000_model:Mandlik2013SyntheticCircuitOfIpcSynthaseInModel1208030000Model
+  init_kwargs:
+    model_path: data/MODEL1208030000.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_rs1
+    maps_to: rs1
+    label: Initial Model State RS1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `rs1`.
+  - name: initial_model_state_rp5
+    maps_to: rp5
+    label: Initial Model State RP5
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `rp5`.
+  - name: initial_model_state_rp4
+    maps_to: rp4
+    label: Initial Model State RP4
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `rp4`.
+  - name: initial_model_state_rp3
+    maps_to: rp3
+    label: Initial Model State RP3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `rp3`.
+  - name: initial_model_state_rp2
+    maps_to: rp2
+    label: Initial Model State RP2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `rp2`.
+  - name: initial_model_state_rp1
+    maps_to: rp1
+    label: Initial Model State RP1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `rp1`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: rs1
+    maps_to: rs1
+    label: rs1
+    description: rs1. Maps to SBML symbol `rs1`.
+  - name: rp5
+    maps_to: rp5
+    label: rp5
+    description: rp5. Maps to SBML symbol `rp5`.
+  - name: rp4
+    maps_to: rp4
+    label: rp4
+    description: rp4. Maps to SBML symbol `rp4`.
+  - name: rp3
+    maps_to: rp3
+    label: rp3
+    description: rp3. Maps to SBML symbol `rp3`.
+  - name: rp2
+    maps_to: rp2
+    label: rp2
+    description: rp2. Maps to SBML symbol `rp2`.
+  - name: rp1
+    maps_to: rp1
+    label: rp1
+    description: rp1. Maps to SBML symbol `rp1`.

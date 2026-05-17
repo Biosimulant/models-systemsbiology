@@ -1,0 +1,63 @@
+schema_version: '2.0'
+title: Hartmann2016 Blood Coagulation Model For Simulating Anticoagulants Lab
+description: Mathematical model of blood coagulation. It can be used to explore systemsbiology
+  hartmann2016 blood coagulation for simulat dynamics and compare simulation behavior
+  across conditions.
+models:
+- alias: systemsbiology_sbml_hartmann2016_blood_coagulation_model_for_simulat_model1807180004_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_hartmann2016_blood_coagulation_model_for_simulat_model1807180004_model.state
+  to:
+  - visualisation.systemsbiology_sbml_hartmann2016_blood_coagulation_model_for_simulat_model1807180004_model_state
+- from: systemsbiology_sbml_hartmann2016_blood_coagulation_model_for_simulat_model1807180004_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_hartmann2016_blood_coagulation_model_for_simulat_model1807180004_model_summary
+- from: systemsbiology_sbml_hartmann2016_blood_coagulation_model_for_simulat_model1807180004_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_hartmann2016_blood_coagulation_model_for_simulat_model1807180004_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: riva_daily_dose
+    maps_to: systemsbiology_sbml_hartmann2016_blood_coagulation_model_for_simulat_model1807180004_model.riva_daily_dose
+    label: Riva Daily Dose
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `Riva_daily_dose`.
+  - name: warfarin_daily_dose
+    maps_to: systemsbiology_sbml_hartmann2016_blood_coagulation_model_for_simulat_model1807180004_model.warfarin_daily_dose
+    label: Warfarin Daily Dose
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `warfarin_daily_dose`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_hartmann2016_blood_coagulation_model_for_simulat_model1807180004_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_hartmann2016_blood_coagulation_model_for_simulat_model1807180004_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_hartmann2016_blood_coagulation_model_for_simulat_model1807180004_model.species_labels
+  - name: vk_p
+    maps_to: systemsbiology_sbml_hartmann2016_blood_coagulation_model_for_simulat_model1807180004_model.vk_p
+  - name: a_riva
+    maps_to: systemsbiology_sbml_hartmann2016_blood_coagulation_model_for_simulat_model1807180004_model.a_riva
+  - name: xa_tfpi
+    maps_to: systemsbiology_sbml_hartmann2016_blood_coagulation_model_for_simulat_model1807180004_model.xa_tfpi
+  - name: xa_atiii_heparin
+    maps_to: systemsbiology_sbml_hartmann2016_blood_coagulation_model_for_simulat_model1807180004_model.xa_atiii_heparin
+  - name: va_xa
+    maps_to: systemsbiology_sbml_hartmann2016_blood_coagulation_model_for_simulat_model1807180004_model.va_xa
+  - name: vi_ia_tf_xa_tfpi
+    maps_to: systemsbiology_sbml_hartmann2016_blood_coagulation_model_for_simulat_model1807180004_model.vi_ia_tf_xa_tfpi

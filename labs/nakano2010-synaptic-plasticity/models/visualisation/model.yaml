@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Nakano2010_Synaptic_Plasticity Visualisation
+description: Question-and-answer and dynamic visual summaries for Nakano2010_Synaptic_Plasticity.
+standard: other
+tags:
+- neuroscience
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Nakano2010 Synaptic Plasticity Lab
+    question: 'Which physiological state variables carry the strongest baseline response?
+      Source model: Nakano2010_Synaptic_Plasticity.'
+    answer_focus: Q/A table plus physiology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_nakano2010_synaptic_plasticity_model1101170000_model
+      title: Nakano2010_Synaptic_Plasticity
+      observables:
+      - id: ATP
+        port: atp
+        label: ATP
+        group: metabolism
+      - id: AC_Gsa_ATP
+        port: ac_gsa_atp
+        label: AC Gsa ATP
+        group: metabolism
+      - id: ACGsa_Ca_ATP
+        port: ac_gsa_ca_atp
+        label: ACGsa Ca ATP
+        group: metabolism
+      - id: Cam_total
+        port: cam_total
+        label: Cam Total
+        group: physiology
+      - id: CaM
+        port: ca_m
+        label: CaM
+        group: physiology
+      - id: CaMKII
+        port: ca_mkii
+        label: CaMKII
+        group: physiology
+io:
+  inputs: []
+  outputs: []

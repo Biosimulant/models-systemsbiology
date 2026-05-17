@@ -1,0 +1,86 @@
+schema_version: '2.0'
+title: Leloup1999 Circclock Lab
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models. It is copyright (c) 2005-2009 The BioModels Team.'
+models:
+- alias: systemsbiology_sbml_leloup1999_circclock_biomd0000000021_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_leloup1999_circclock_biomd0000000021_model.state
+  to:
+  - visualisation.systemsbiology_sbml_leloup1999_circclock_biomd0000000021_model_state
+- from: systemsbiology_sbml_leloup1999_circclock_biomd0000000021_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_leloup1999_circclock_biomd0000000021_model_summary
+- from: systemsbiology_sbml_leloup1999_circclock_biomd0000000021_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_leloup1999_circclock_biomd0000000021_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_tim_mrna
+    maps_to: systemsbiology_sbml_leloup1999_circclock_biomd0000000021_model.initial_tim_mrna
+    label: Initial Tim MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Mt`.
+  - name: initial_tim_protein_unphosphorylated
+    maps_to: systemsbiology_sbml_leloup1999_circclock_biomd0000000021_model.initial_tim_protein_unphosphorylated
+    label: Initial Tim Protein Unphosphorylated
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `T0`.
+  - name: initial_tim_protein_mono_phosphorylated
+    maps_to: systemsbiology_sbml_leloup1999_circclock_biomd0000000021_model.initial_tim_protein_mono_phosphorylated
+    label: Initial Tim Protein Mono Phosphorylated
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `T1`.
+  - name: initial_tim_protein_bi_phosphorylated
+    maps_to: systemsbiology_sbml_leloup1999_circclock_biomd0000000021_model.initial_tim_protein_bi_phosphorylated
+    label: Initial Tim Protein Bi Phosphorylated
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `T2`.
+  - name: initial_per_mrna
+    maps_to: systemsbiology_sbml_leloup1999_circclock_biomd0000000021_model.initial_per_mrna
+    label: Initial Per MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Mp`.
+  - name: initial_per_protein_unphosphorylated
+    maps_to: systemsbiology_sbml_leloup1999_circclock_biomd0000000021_model.initial_per_protein_unphosphorylated
+    label: Initial Per Protein Unphosphorylated
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P0`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_leloup1999_circclock_biomd0000000021_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_leloup1999_circclock_biomd0000000021_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_leloup1999_circclock_biomd0000000021_model.species_labels
+  - name: tim_mrna
+    maps_to: systemsbiology_sbml_leloup1999_circclock_biomd0000000021_model.tim_mrna
+  - name: tim_protein_unphosphorylated
+    maps_to: systemsbiology_sbml_leloup1999_circclock_biomd0000000021_model.tim_protein_unphosphorylated
+  - name: tim_protein_mono_phosphorylated
+    maps_to: systemsbiology_sbml_leloup1999_circclock_biomd0000000021_model.tim_protein_mono_phosphorylated
+  - name: tim_protein_bi_phosphorylated
+    maps_to: systemsbiology_sbml_leloup1999_circclock_biomd0000000021_model.tim_protein_bi_phosphorylated
+  - name: per_mrna
+    maps_to: systemsbiology_sbml_leloup1999_circclock_biomd0000000021_model.per_mrna
+  - name: per_protein_unphosphorylated
+    maps_to: systemsbiology_sbml_leloup1999_circclock_biomd0000000021_model.per_protein_unphosphorylated

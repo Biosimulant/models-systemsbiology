@@ -1,0 +1,59 @@
+schema_version: '2.0'
+title: Scheidel2016 - In Silico Knockout Studies of Xenophagy Capturing of Salmonella
+  Visualisation
+description: Question-and-answer and dynamic visual summaries for Scheidel2016 - In
+  Silico Knockout Studies of Xenophagy Capturing of Salmonella.
+standard: other
+tags:
+- microbiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Scheidel2016 In Silico Knockout Studies Of Xenophagy Capturing Of Salmo
+      Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Scheidel2016 - In Silico Knockout Studies of Xenophagy Capturing
+      of Salmonella.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_scheidel2016_in_silico_knockout_studies_of_xenop_model1904150001_model
+      title: Scheidel2016 - In Silico Knockout Studies of Xenophagy Capturing of Salmonella
+      observables:
+      - id: P382
+        port: m_torc1inactive
+        label: mTORC1inactive
+        group: signaling
+      - id: P384
+        port: m_torc1_ulk1comp
+        label: mTORC1:ULK1comp_
+        group: signaling
+      - id: P415
+        port: m_torc1_ulk1comp_scv
+        label: mTORC1:ULK1comp:SCV__
+        group: signaling
+      - id: P400
+        port: signal_sc_vdamage
+        label: SignalSCVdamage_
+        group: signaling
+      - id: P408
+        port: signal_autophagy_induction
+        label: SignalAutophagyInduction_
+        group: signaling
+      - id: P352
+        port: p62_i
+        label: p62'i
+        group: physiology
+io:
+  inputs: []
+  outputs: []

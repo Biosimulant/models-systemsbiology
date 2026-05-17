@@ -1,0 +1,74 @@
+schema_version: '2.0'
+title: Bhartiya2003 Tryptophan Operon Lab
+description: 'SBML level 2 code originaly generated for the JWS Online project by
+  Jacky Snoep using PySCeS Run this model online at http://jjj.biochem.sun.ac.za To
+  cite JWS Online please refer to: Olivier, B.G. It can be used to explore systemsbiology
+  bhartiya2003 tryptophan operon BioModels0000000062 dynamics and compare simulation
+  behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_bhartiya2003_tryptophan_operon_biomd0000000062_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_bhartiya2003_tryptophan_operon_biomd0000000062_model.state
+  to:
+  - visualisation.systemsbiology_sbml_bhartiya2003_tryptophan_operon_biomd0000000062_model_state
+- from: systemsbiology_sbml_bhartiya2003_tryptophan_operon_biomd0000000062_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_bhartiya2003_tryptophan_operon_biomd0000000062_model_summary
+- from: systemsbiology_sbml_bhartiya2003_tryptophan_operon_biomd0000000062_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_bhartiya2003_tryptophan_operon_biomd0000000062_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_exog_trp
+    maps_to: systemsbiology_sbml_bhartiya2003_tryptophan_operon_biomd0000000062_model.initial_exog_trp
+    label: Initial Exog Trp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `To`.
+  - name: initial_total_tryptophan
+    maps_to: systemsbiology_sbml_bhartiya2003_tryptophan_operon_biomd0000000062_model.initial_total_tryptophan
+    label: Initial Total Tryptophan
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Tt`.
+  - name: initial_synthesized_tryptophan
+    maps_to: systemsbiology_sbml_bhartiya2003_tryptophan_operon_biomd0000000062_model.initial_synthesized_tryptophan
+    label: Initial Synthesized Tryptophan
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ts`.
+  - name: initial_anthranilate_synthase
+    maps_to: systemsbiology_sbml_bhartiya2003_tryptophan_operon_biomd0000000062_model.initial_anthranilate_synthase
+    label: Initial Anthranilate Synthase
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Enz`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_bhartiya2003_tryptophan_operon_biomd0000000062_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_bhartiya2003_tryptophan_operon_biomd0000000062_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_bhartiya2003_tryptophan_operon_biomd0000000062_model.species_labels
+  - name: exog_trp
+    maps_to: systemsbiology_sbml_bhartiya2003_tryptophan_operon_biomd0000000062_model.exog_trp
+  - name: total_tryptophan
+    maps_to: systemsbiology_sbml_bhartiya2003_tryptophan_operon_biomd0000000062_model.total_tryptophan
+  - name: synthesized_tryptophan
+    maps_to: systemsbiology_sbml_bhartiya2003_tryptophan_operon_biomd0000000062_model.synthesized_tryptophan
+  - name: anthranilate_synthase
+    maps_to: systemsbiology_sbml_bhartiya2003_tryptophan_operon_biomd0000000062_model.anthranilate_synthase

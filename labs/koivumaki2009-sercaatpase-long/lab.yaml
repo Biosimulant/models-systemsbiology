@@ -1,0 +1,74 @@
+schema_version: '2.0'
+title: Koivumaki2009 Sercaatpase Long Lab
+description: 'This a model from the article: Modelling sarcoplasmic reticulum calcium
+  ATPase and its regulation in cardiacmyocytes. Koivumaki JT, Takalo J, Korhonen T,
+  Tavi P, Weckstrom M.'
+models:
+- alias: systemsbiology_sbml_koivumaki2009_sercaatpase_long_model1006230105_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_koivumaki2009_sercaatpase_long_model1006230105_model.state
+  to:
+  - visualisation.systemsbiology_sbml_koivumaki2009_sercaatpase_long_model1006230105_model_state
+- from: systemsbiology_sbml_koivumaki2009_sercaatpase_long_model1006230105_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_koivumaki2009_sercaatpase_long_model1006230105_model_summary
+- from: systemsbiology_sbml_koivumaki2009_sercaatpase_long_model1006230105_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_koivumaki2009_sercaatpase_long_model1006230105_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- cardiovascular
+- metabolism
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_plb_dephosph
+    maps_to: systemsbiology_sbml_koivumaki2009_sercaatpase_long_model1006230105_model.initial_plb_dephosph
+    label: Initial Plb Dephosph
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PLB_dephosph`.
+  - name: initial_ltrpn
+    maps_to: systemsbiology_sbml_koivumaki2009_sercaatpase_long_model1006230105_model.initial_ltrpn
+    label: Initial Ltrpn
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `LTRPN`.
+  - name: initial_ca_serca
+    maps_to: systemsbiology_sbml_koivumaki2009_sercaatpase_long_model1006230105_model.initial_ca_serca
+    label: Initial Ca Serca
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_serca`.
+  - name: initial_ca_cyt
+    maps_to: systemsbiology_sbml_koivumaki2009_sercaatpase_long_model1006230105_model.initial_ca_cyt
+    label: Initial Ca Cyt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_cyt`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_koivumaki2009_sercaatpase_long_model1006230105_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_koivumaki2009_sercaatpase_long_model1006230105_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_koivumaki2009_sercaatpase_long_model1006230105_model.species_labels
+  - name: plb_dephosph
+    maps_to: systemsbiology_sbml_koivumaki2009_sercaatpase_long_model1006230105_model.plb_dephosph
+  - name: ltrpn
+    maps_to: systemsbiology_sbml_koivumaki2009_sercaatpase_long_model1006230105_model.ltrpn
+  - name: ca_serca
+    maps_to: systemsbiology_sbml_koivumaki2009_sercaatpase_long_model1006230105_model.ca_serca
+  - name: ca_cyt
+    maps_to: systemsbiology_sbml_koivumaki2009_sercaatpase_long_model1006230105_model.ca_cyt

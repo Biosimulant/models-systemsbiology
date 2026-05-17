@@ -1,0 +1,43 @@
+schema_version: '2.0'
+title: ChowHall2008 Dynamics of Human Weight Change_ODE_1 Visualisation
+description: Question-and-answer and dynamic visual summaries for ChowHall2008 Dynamics
+  of Human Weight Change_ODE_1.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Chowhall2008 Dynamics Of Human Weight Change Ode 1 Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: ChowHall2008 Dynamics of Human Weight Change_ODE_1.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_chowhall2008_dynamics_of_human_weight_change_ode_biomd0000000901_model
+      title: ChowHall2008 Dynamics of Human Weight Change_ODE_1
+      observables:
+      - id: Body_Mass
+        port: body_mass
+        label: Body Mass
+        group: physiology
+      - id: Lean_Mass
+        port: lean_mass
+        label: Lean Mass
+        group: physiology
+      - id: Fat_Mass
+        port: fat_mass
+        label: Fat Mass
+        group: physiology
+io:
+  inputs: []
+  outputs: []

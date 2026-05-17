@@ -1,0 +1,90 @@
+schema_version: '2.0'
+title: Ota2015 Positive Regulation Of Rho Gtpase Activity By Rhogdis As A Lab
+description: This is a ordinary differential equation mathematical model describing
+  the Rho GTPase cycle in which Rho GDP-dissociation inhibitors (RhoGDIs) inhibit
+  the regulatory activities of guanine nucleotide e. It can be used to explore systemsbiology
+  ota2015 positive regulation of rho dynamics and compare simulation behavior across
+  conditions.
+models:
+- alias: systemsbiology_sbml_ota2015_positive_regulation_of_rho_gtpase_activi_biomd0000000899_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_ota2015_positive_regulation_of_rho_gtpase_activi_biomd0000000899_model.state
+  to:
+  - visualisation.systemsbiology_sbml_ota2015_positive_regulation_of_rho_gtpase_activi_biomd0000000899_model_state
+- from: systemsbiology_sbml_ota2015_positive_regulation_of_rho_gtpase_activi_biomd0000000899_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_ota2015_positive_regulation_of_rho_gtpase_activi_biomd0000000899_model_summary
+- from: systemsbiology_sbml_ota2015_positive_regulation_of_rho_gtpase_activi_biomd0000000899_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_ota2015_positive_regulation_of_rho_gtpase_activi_biomd0000000899_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_gdigdp_rho
+    maps_to: systemsbiology_sbml_ota2015_positive_regulation_of_rho_gtpase_activi_biomd0000000899_model.initial_gdigdp_rho
+    label: Initial Gdigdp Rho
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s10`.
+  - name: initial_effector
+    maps_to: systemsbiology_sbml_ota2015_positive_regulation_of_rho_gtpase_activi_biomd0000000899_model.initial_effector
+    label: Initial Effector
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s9`.
+  - name: initial_activator
+    maps_to: systemsbiology_sbml_ota2015_positive_regulation_of_rho_gtpase_activi_biomd0000000899_model.initial_activator
+    label: Initial Activator
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s1`.
+  - name: initial_model_state_gef
+    maps_to: systemsbiology_sbml_ota2015_positive_regulation_of_rho_gtpase_activi_biomd0000000899_model.initial_model_state_gef
+    label: Initial Model State Gef
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s3`.
+  - name: initial_model_state_gap
+    maps_to: systemsbiology_sbml_ota2015_positive_regulation_of_rho_gtpase_activi_biomd0000000899_model.initial_model_state_gap
+    label: Initial Model State Gap
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s8`.
+  - name: initial_gtp_rho
+    maps_to: systemsbiology_sbml_ota2015_positive_regulation_of_rho_gtpase_activi_biomd0000000899_model.initial_gtp_rho
+    label: Initial Gtp Rho
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s6`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_ota2015_positive_regulation_of_rho_gtpase_activi_biomd0000000899_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_ota2015_positive_regulation_of_rho_gtpase_activi_biomd0000000899_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_ota2015_positive_regulation_of_rho_gtpase_activi_biomd0000000899_model.species_labels
+  - name: gdigdp_rho
+    maps_to: systemsbiology_sbml_ota2015_positive_regulation_of_rho_gtpase_activi_biomd0000000899_model.gdigdp_rho
+  - name: effector
+    maps_to: systemsbiology_sbml_ota2015_positive_regulation_of_rho_gtpase_activi_biomd0000000899_model.effector
+  - name: activator
+    maps_to: systemsbiology_sbml_ota2015_positive_regulation_of_rho_gtpase_activi_biomd0000000899_model.activator
+  - name: gef
+    maps_to: systemsbiology_sbml_ota2015_positive_regulation_of_rho_gtpase_activi_biomd0000000899_model.gef
+  - name: gap
+    maps_to: systemsbiology_sbml_ota2015_positive_regulation_of_rho_gtpase_activi_biomd0000000899_model.gap
+  - name: gtp_rho
+    maps_to: systemsbiology_sbml_ota2015_positive_regulation_of_rho_gtpase_activi_biomd0000000899_model.gtp_rho

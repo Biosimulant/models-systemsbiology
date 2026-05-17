@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "713e62a9-e5a3-43ec-9e25-ca7f73877423",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "137e09f1-7158-455b-ab7b-50660972e8bd",
+  "created_at": "2026-05-16T05:46:47.358578546+00:00",
+  "last_synced_at": "2026-05-17T04:57:09.508561+00:00",
+  "hub_manifest_hash": "ac332f6d614bf1be5463990170b53f8a0b3b8f39838491b3c66a7c8d385fe1b2",
+  "package_name": "mitrophanov2015-simulating-extended-hockin-blood-coagulation-mod"
+}

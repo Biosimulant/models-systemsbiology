@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "1f904507-05af-4ce4-bbae-21e349f20768",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "0a479b18-b992-4997-a5f5-616d7089a9b6",
+  "created_at": "2026-05-16T05:46:42.531835853+00:00",
+  "last_synced_at": "2026-05-17T02:41:25.805066+00:00",
+  "hub_manifest_hash": "a4550708da336c84f76dd7316c844d68c54a8968fa7bdbb095ddc3d673b2ccc5",
+  "package_name": "cortes2019-optimality-of-the-spontaneous-prophage-induction-rate"
+}

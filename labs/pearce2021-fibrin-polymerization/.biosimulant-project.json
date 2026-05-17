@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "05e98503-0573-43f0-ba2e-66ad7f12f1f9",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "0ba948ca-b243-4b28-86f5-8642bd6c0990",
+  "created_at": "2026-05-16T05:46:50.221134263+00:00",
+  "last_synced_at": "2026-05-17T05:27:34.919950+00:00",
+  "hub_manifest_hash": "efc1d5e1103441c7a14132297e5b9f10cae997ae0ad87f1bdaf5e647c6ca7e65",
+  "package_name": "pearce2021-fibrin-polymerization-lab"
+}

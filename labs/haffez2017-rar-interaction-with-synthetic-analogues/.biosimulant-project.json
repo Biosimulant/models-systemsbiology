@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "8018a0be-16cb-47ec-8631-867a7bd19436",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "6e48362e-14f2-40e4-af36-59f2d8f206b6",
+  "created_at": "2026-05-16T05:46:43.810902521+00:00",
+  "last_synced_at": "2026-05-17T03:29:06.999571+00:00",
+  "hub_manifest_hash": "c176459b16336297dd4f7bc9ca09692d59afe865b7bd54e4b49449c95c0baaff",
+  "package_name": "haffez2017-rar-interaction-with-synthetic-analogues-lab"
+}

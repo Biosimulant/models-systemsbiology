@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Proctor2017- Role of microRNAs in osteoarthritis (Mir140-IGFBP5 incoherent
+  feed forward)
+description: 'Proctor2017- Role of microRNAs in osteoarthritis (Mir140-IGFBP5 incoherent
+  feed forward) This model is described in the article: Computer simulation models
+  as a tool to investigate the role of microRN. It can be used to explore systemsbiology
+  proctor2017 role of micrornas in dynamics and compare simulation behavior across
+  conditions.'
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Carole J Proctor
+- Graham R Smith
+upstream:
+  id: biomodels_ebi:MODEL1705170004
+  source_db: biomodels_ebi
+  source_id: MODEL1705170004
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1705170004
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1705170004?filename=MODEL1705170004_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.proctor2017_role_of_micrornas_in_osteoarthritis_model1705170004_model:Proctor2017RoleOfMicrornasInOsteoarthritisModel1705170004Model
+  init_kwargs:
+    model_path: data/MODEL1705170004.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_tn_fa
+    maps_to: TNFa
+    label: Initial Tn Fa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TNFa`.
+  - name: initial_ik_b_n_fk_b
+    maps_to: IkB_NFkB
+    label: Initial Ik B N Fk B
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IkB_NFkB`.
+  - name: initial_n_fk_b
+    maps_to: NFkB
+    label: Initial N Fk B
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NFkB`.
+  - name: initial_mi_r140_gene_n_fk_b
+    maps_to: miR140_gene_NFkB
+    label: Initial Mi R140 Gene N Fk B
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `miR140_gene_NFkB`.
+  - name: initial_igf1
+    maps_to: IGF1
+    label: Initial Igf1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IGF1`.
+  - name: initial_mi_r140
+    maps_to: miR140
+    label: Initial Mi R140
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `miR140`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: tn_fa
+    maps_to: TNFa
+    label: TNFa
+    description: TNFa. Maps to SBML symbol `TNFa`.
+  - name: ik_b_n_fk_b
+    maps_to: IkB_NFkB
+    label: IkB NFkB
+    description: IkB NFkB. Maps to SBML symbol `IkB_NFkB`.
+  - name: n_fk_b
+    maps_to: NFkB
+    label: NFkB
+    description: NFkB. Maps to SBML symbol `NFkB`.
+  - name: mi_r140_gene_n_fk_b
+    maps_to: miR140_gene_NFkB
+    label: MiR140 Gene NFkB
+    description: MiR140 Gene NFkB. Maps to SBML symbol `miR140_gene_NFkB`.
+  - name: igf1
+    maps_to: IGF1
+    label: IGF1
+    description: IGF1. Maps to SBML symbol `IGF1`.
+  - name: mi_r140
+    maps_to: miR140
+    label: MiR140
+    description: MiR140. Maps to SBML symbol `miR140`.

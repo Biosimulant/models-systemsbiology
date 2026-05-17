@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "9d465221-08bf-4d71-b088-2add9a49e9ca",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "cd0ce57f-e850-4941-8183-3efe71b4316f",
+  "created_at": "2026-05-16T05:46:52.803887793+00:00",
+  "last_synced_at": "2026-05-17T06:38:50.740037+00:00",
+  "hub_manifest_hash": "1e50a388d639e5e87e69d5cc0063895398787c86df29810f0fb00c93e4d2cd73",
+  "package_name": "vondassow2000-segment-polarity-network-model-on-1x4-grid-of-cell"
+}

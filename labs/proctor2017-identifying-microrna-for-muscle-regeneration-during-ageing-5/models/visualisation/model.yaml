@@ -1,0 +1,61 @@
+schema_version: '2.0'
+title: Proctor2017 - Identifying microRNA for muscle regeneration during ageing (Mir181_in_muscle)
+  Visualisation
+description: Question-and-answer and dynamic visual summaries for Proctor2017 - Identifying
+  microRNA for muscle regeneration during ageing (Mir181_in_muscle).
+standard: other
+tags:
+- generegulation
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Proctor2017 Identifying Microrna For Muscle Regeneration During Ageing
+      5 Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Proctor2017 - Identifying microRNA for muscle regeneration during
+      ageing (Mir181_in_muscle).'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110001_model
+      title: Proctor2017 - Identifying microRNA for muscle regeneration during ageing
+        (Mir181_in_muscle)
+      observables:
+      - id: HoxA11
+        port: hox_a11
+        label: HoxA11
+        group: gene_regulation
+      - id: Sirt1
+        port: sirt1
+        label: Sirt1
+        group: gene_regulation
+      - id: FoxO3
+        port: fox_o3
+        label: FoxO3
+        group: gene_regulation
+      - id: Sirt1_mRNA
+        port: sirt1_mrna
+        label: Sirt1 MRNA
+        group: gene_regulation
+      - id: HoxA11_mRNA
+        port: hox_a11_mrna
+        label: HoxA11 MRNA
+        group: gene_regulation
+      - id: FoxO3_Sirt1
+        port: fox_o3_sirt1
+        label: FoxO3 Sirt1
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

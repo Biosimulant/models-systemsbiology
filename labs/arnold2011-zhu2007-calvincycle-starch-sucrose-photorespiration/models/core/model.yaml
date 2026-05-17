@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Arnold2011_Zhu2007_CalvinCycle_Starch_Sucrose_Photorespiration
+description: 'This model is from the article: A quantitative comparison of Calvin–Benson
+  cycle models Anne Arnold, Zoran Nikoloski Trends in Plant Science 2011 Oct 14. It
+  can be used to explore systemsbiology arnold2011 zhu2007 calvincycle starch sucrose
+  dynamics and compare simulation behavior across conditions.'
+standard: other
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Anne Arnold
+- Zoran Nikoloski
+upstream:
+  id: biomodels_ebi:BIOMD0000000393
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000393
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000393
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000393?filename=BIOMD0000000393_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.arnold2011_zhu2007_calvincycle_starch_sucrose_ph_biomd0000000393_model:Arnold2011Zhu2007CalvincycleStarchSucrosePhBiomd0000000393Model
+  init_kwargs:
+    model_path: data/BIOMD0000000393.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_gl_uc
+    maps_to: GLUc
+    label: Initial Gl Uc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `GLUc`.
+  - name: initial_se_rc
+    maps_to: SERc
+    label: Initial Se Rc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `SERc`.
+  - name: initial_he_pc
+    maps_to: HePc
+    label: Initial He Pc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `HePc`.
+  - name: initial_pi_tc
+    maps_to: PiTc
+    label: Initial Pi Tc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PiTc`.
+  - name: initial_model_state_pic
+    maps_to: Pic
+    label: Initial Model State Pic
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pic`.
+  - name: initial_g6_pc
+    maps_to: G6Pc
+    label: Initial G6 Pc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `G6Pc`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: gl_uc
+    maps_to: GLUc
+    label: GLUc
+    description: GLUc. Maps to SBML symbol `GLUc`.
+  - name: se_rc
+    maps_to: SERc
+    label: SERc
+    description: SERc. Maps to SBML symbol `SERc`.
+  - name: he_pc
+    maps_to: HePc
+    label: HePc
+    description: HePc. Maps to SBML symbol `HePc`.
+  - name: pi_tc
+    maps_to: PiTc
+    label: PiTc
+    description: PiTc. Maps to SBML symbol `PiTc`.
+  - name: pic
+    maps_to: Pic
+    label: Pic
+    description: Pic. Maps to SBML symbol `Pic`.
+  - name: g6_pc
+    maps_to: G6Pc
+    label: G6Pc
+    description: G6Pc. Maps to SBML symbol `G6Pc`.

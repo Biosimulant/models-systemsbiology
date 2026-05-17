@@ -1,0 +1,43 @@
+schema_version: '2.0'
+title: Mueller2008_ThrombinGeneration_minimal Visualisation
+description: Question-and-answer and dynamic visual summaries for Mueller2008_ThrombinGeneration_minimal.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Mueller2008 Thrombingeneration Minimal Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Mueller2008_ThrombinGeneration_minimal.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_mueller2008_thrombingeneration_minimal_biomd0000000367_model
+      title: Mueller2008_ThrombinGeneration_minimal
+      observables:
+      - id: x
+        port: model_state_x
+        label: x
+        group: gene_regulation
+      - id: z
+        port: model_state_z
+        label: z
+        group: gene_regulation
+      - id: y
+        port: model_state_y
+        label: y
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

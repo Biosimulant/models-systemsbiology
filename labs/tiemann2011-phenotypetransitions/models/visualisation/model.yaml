@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Tiemann2011_PhenotypeTransitions Visualisation
+description: Question-and-answer and dynamic visual summaries for Tiemann2011_PhenotypeTransitions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Tiemann2011 Phenotypetransitions Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Tiemann2011_PhenotypeTransitions.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_tiemann2011_phenotypetransitions_model1112150000_model
+      title: Tiemann2011_PhenotypeTransitions
+      observables:
+      - id: species_4
+        port: tg_cyt
+        label: TG_cyt
+        group: physiology
+      - id: species_1
+        port: model_state_fc
+        label: FC
+        group: physiology
+      - id: species_8
+        port: ce_hdl
+        label: CE_HDL
+        group: physiology
+      - id: species_2
+        port: ce_cyt
+        label: CE_cyt
+        group: physiology
+      - id: species_7
+        port: ce_plasma
+        label: CE_plasma
+        group: physiology
+      - id: species_6
+        port: tg_plasma
+        label: TG_plasma
+        group: physiology
+io:
+  inputs: []
+  outputs: []

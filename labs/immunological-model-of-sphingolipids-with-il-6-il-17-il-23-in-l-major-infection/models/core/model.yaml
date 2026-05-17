@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Immunological Model of sphingolipids with IL-6/IL-17/IL-23 in L. major infection
+description: In diseased state, we demonstrated that increase in production of sphingosine-1-phosphate
+  and overexpression of IL-6,lL-17 and IL-23 with SATB1 leads to disease progression.
+  It can be used to explore systemsbiology immunological of sphingolipids with il
+  dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- epidemiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Diksha Jawale
+- Shweta Khandibharad
+- Shailza Singh
+upstream:
+  id: biomodels_ebi:MODEL2301110001
+  source_db: biomodels_ebi
+  source_id: MODEL2301110001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2301110001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2301110001?filename=disease_state.sbml.xml
+  license: CC0
+biosim:
+  entrypoint: src.immunological_model_of_sphingolipids_with_il_6_i_model2301110001_model:ImmunologicalModelOfSphingolipidsWithIl6IModel2301110001Model
+  init_kwargs:
+    model_path: data/MODEL2301110001.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_inflammatory_cytokine_genes
+    maps_to: mw206507a8_49d3_4b89_8767_b96e224682c5
+    label: Initial Inflammatory Cytokine Genes
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mw206507a8_49d3_4b89_8767_b96e224682c5`.
+  - name: initial_rorgt_gene
+    maps_to: mw9d11e8ee_71f2_4317_9941_56b7d2e06360
+    label: Initial Rorgt Gene
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mw9d11e8ee_71f2_4317_9941_56b7d2e06360`.
+  - name: initial_il17_gene
+    maps_to: mw216e700c_7d7b_4257_979b_ce4f450c69eb
+    label: Initial Il17 Gene
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mw216e700c_7d7b_4257_979b_ce4f450c69eb`.
+  - name: initial_sphk_genes
+    maps_to: mwb54ed2c0_8c56_445c_87dc_3297495bcb51
+    label: Initial Sphk Genes
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mwb54ed2c0_8c56_445c_87dc_3297495bcb51`.
+  - name: initial_s1_pr_gene
+    maps_to: mw5b840e2d_377b_422a_9e21_3233425a594b
+    label: Initial S1 Pr Gene
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mw5b840e2d_377b_422a_9e21_3233425a594b`.
+  - name: initial_inflammatory_cytokine_genes_2
+    maps_to: mwff98169b_8370_40b4_8ae6_91da20b7a11b
+    label: Initial Inflammatory Cytokine Genes 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mwff98169b_8370_40b4_8ae6_91da20b7a11b`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: inflammatory_cytokine_genes
+    maps_to: mw206507a8_49d3_4b89_8767_b96e224682c5
+    label: Inflammatory cytokine genes
+    description: Inflammatory cytokine genes. Maps to SBML symbol `mw206507a8_49d3_4b89_8767_b96e224682c5`.
+  - name: rorgt_gene
+    maps_to: mw9d11e8ee_71f2_4317_9941_56b7d2e06360
+    label: rorgt Gene
+    description: rorgt Gene. Maps to SBML symbol `mw9d11e8ee_71f2_4317_9941_56b7d2e06360`.
+  - name: il17_gene
+    maps_to: mw216e700c_7d7b_4257_979b_ce4f450c69eb
+    label: IL17 gene
+    description: IL17 gene. Maps to SBML symbol `mw216e700c_7d7b_4257_979b_ce4f450c69eb`.
+  - name: sphk_genes
+    maps_to: mwb54ed2c0_8c56_445c_87dc_3297495bcb51
+    label: SPHK Genes
+    description: SPHK Genes. Maps to SBML symbol `mwb54ed2c0_8c56_445c_87dc_3297495bcb51`.
+  - name: s1_pr_gene
+    maps_to: mw5b840e2d_377b_422a_9e21_3233425a594b
+    label: S1PR Gene
+    description: S1PR Gene. Maps to SBML symbol `mw5b840e2d_377b_422a_9e21_3233425a594b`.
+  - name: inflammatory_cytokine_genes_2
+    maps_to: mwff98169b_8370_40b4_8ae6_91da20b7a11b
+    label: Inflammatory Cytokine Genes
+    description: Inflammatory Cytokine Genes. Maps to SBML symbol `mwff98169b_8370_40b4_8ae6_91da20b7a11b`.

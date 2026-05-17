@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "1a7c283e-d7d8-41cb-85d5-669611ee0e4f",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "8eb70f0d-9b3c-4ee9-8155-4dbfd31e6963",
+  "created_at": "2026-05-16T05:46:52.070561209+00:00",
+  "last_synced_at": "2026-05-17T06:17:47.175546+00:00",
+  "hub_manifest_hash": "c2bd9d2308e74c8062f06345f21e2fa12af9bafcfc13f80fccd603761a61a513",
+  "package_name": "sneyd1995-calciumwave-ip3diffusion-lab"
+}

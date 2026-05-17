@@ -1,0 +1,105 @@
+schema_version: '2.0'
+title: Xu2003 - Phosphoinositide turnover
+description: Xu2003 - Phosphoinositide turnover The model reproduces the percentage
+  change of PIP_PM, PIP2_PM and IP3_Cyt as depicted in Figure 1 of the paper. The
+  model also contains the equations for the analysi.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Chang Xu
+- James Watras
+- Leslie M Loew
+upstream:
+  id: biomodels_ebi:BIOMD0000000075
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000075
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000075
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000075?filename=BIOMD0000000075_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.xu2003_phosphoinositide_turnover_biomd0000000075_model:Xu2003PhosphoinositideTurnoverBiomd0000000075Model
+  init_kwargs:
+    model_path: data/BIOMD0000000075.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_pi_pm
+    maps_to: PI_PM
+    label: Initial Pi Pm
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PI_PM`.
+  - name: initial_pip2_pm
+    maps_to: PIP2_PM
+    label: Initial Pip2 Pm
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PIP2_PM`.
+  - name: initial_pip_pm
+    maps_to: PIP_PM
+    label: Initial Pip Pm
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PIP_PM`.
+  - name: initial_dag_pm
+    maps_to: DAG_PM
+    label: Initial Dag Pm
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `DAG_PM`.
+  - name: initial_plc_pm
+    maps_to: PLC_PM
+    label: Initial Plc Pm
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PLC_PM`.
+  - name: initial_ip3_cyt
+    maps_to: IP3_Cyt
+    label: Initial IP3 Cyt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IP3_Cyt`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: pi_pm
+    maps_to: PI_PM
+    label: PI_PM
+    description: PI_PM. Maps to SBML symbol `PI_PM`.
+  - name: pip2_pm
+    maps_to: PIP2_PM
+    label: PIP2_PM
+    description: PIP2_PM. Maps to SBML symbol `PIP2_PM`.
+  - name: pip_pm
+    maps_to: PIP_PM
+    label: PIP_PM
+    description: PIP_PM. Maps to SBML symbol `PIP_PM`.
+  - name: dag_pm
+    maps_to: DAG_PM
+    label: DAG_PM
+    description: DAG_PM. Maps to SBML symbol `DAG_PM`.
+  - name: plc_pm
+    maps_to: PLC_PM
+    label: PLC_PM
+    description: PLC_PM. Maps to SBML symbol `PLC_PM`.
+  - name: ip3_cyt
+    maps_to: IP3_Cyt
+    label: IP3_Cyt
+    description: IP3_Cyt. Maps to SBML symbol `IP3_Cyt`.

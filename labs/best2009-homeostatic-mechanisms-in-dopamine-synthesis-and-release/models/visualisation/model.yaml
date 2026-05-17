@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Best2009 - Homeostatic mechanisms in dopamine synthesis and release Visualisation
+description: Question-and-answer and dynamic visual summaries for Best2009 - Homeostatic
+  mechanisms in dopamine synthesis and release.
+standard: other
+tags:
+- neuroscience
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Best2009 Homeostatic Mechanisms In Dopamine Synthesis And Release Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Best2009 - Homeostatic mechanisms in dopamine synthesis and release.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_best2009_homeostatic_mechanisms_in_dopamine_synt_model1502230000_model
+      title: Best2009 - Homeostatic mechanisms in dopamine synthesis and release
+      observables:
+      - id: tyrpool
+        port: tyrpool
+        label: tyrpool
+        group: signaling
+      - id: bh4
+        port: bh4
+        label: bh4
+        group: signaling
+      - id: tyr
+        port: tyr
+        label: tyr
+        group: signaling
+      - id: btyr
+        port: btyr
+        label: btyr
+        group: signaling
+      - id: vda
+        port: vda
+        label: vda
+        group: signaling
+      - id: bh2
+        port: bh2
+        label: bh2
+        group: signaling
+io:
+  inputs: []
+  outputs: []

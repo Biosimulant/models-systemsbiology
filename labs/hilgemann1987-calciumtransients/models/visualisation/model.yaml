@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Hilgemann1987_CalciumTransients Visualisation
+description: Question-and-answer and dynamic visual summaries for Hilgemann1987_CalciumTransients.
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Hilgemann1987 Calciumtransients Lab
+    question: 'Which physiological state variables carry the strongest baseline response?
+      Source model: Hilgemann1987_CalciumTransients.'
+    answer_focus: Q/A table plus physiology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_hilgemann1987_calciumtransients_model0848444339_model
+      title: Hilgemann1987_CalciumTransients
+      observables:
+      - id: V_membrane
+        port: v_membrane
+        label: V Membrane
+        group: physiology
+      - id: ProdFrac
+        port: prod_frac
+        label: ProdFrac
+        group: physiology
+      - id: Na_i
+        port: na_i
+        label: Na I
+        group: physiology
+      - id: K_i
+        port: k_i
+        label: K I
+        group: physiology
+      - id: f_Ca
+        port: f_ca
+        label: F Ca
+        group: physiology
+      - id: Ca_up
+        port: ca_up
+        label: Ca Up
+        group: physiology
+io:
+  inputs: []
+  outputs: []

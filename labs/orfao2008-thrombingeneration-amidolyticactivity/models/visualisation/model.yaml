@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Orfao2008_ThrombinGeneration_AmidolyticActivity Visualisation
+description: Question-and-answer and dynamic visual summaries for Orfao2008_ThrombinGeneration_AmidolyticActivity.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Orfao2008 Thrombingeneration Amidolyticactivity Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Orfao2008_ThrombinGeneration_AmidolyticActivity.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_orfao2008_thrombingeneration_amidolyticactivity_biomd0000000366_model
+      title: Orfao2008_ThrombinGeneration_AmidolyticActivity
+      observables:
+      - id: Xa_ATIII
+        port: xa_atiii
+        label: Xa_ATIII
+        group: gene_regulation
+      - id: IIa_alpha2M
+        port: i_ia_alpha2_m
+        label: IIa_alpha2M
+        group: gene_regulation
+      - id: IIa_ATIII
+        port: i_ia_atiii
+        label: IIa_ATIII
+        group: gene_regulation
+      - id: II
+        port: model_state_ii
+        label: II
+        group: gene_regulation
+      - id: PL
+        port: model_state_pl
+        label: PL
+        group: gene_regulation
+      - id: RVV
+        port: rvv
+        label: RVV
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

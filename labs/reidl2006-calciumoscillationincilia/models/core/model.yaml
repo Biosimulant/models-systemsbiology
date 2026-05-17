@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Reidl2006_CalciumOscillationInCilia
+description: 'This a model from the article: Model of calcium oscillations due to
+  negative feedback in olfactory cilia. Reidl J, Borowski P, Sensse A, Starke J, Zapotocky
+  M, Eiswirth M.'
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- J Reidl
+- P Borowski
+- A Sensse
+- J Starke
+- M Zapotocky
+upstream:
+  id: biomodels_ebi:MODEL7908934508
+  source_db: biomodels_ebi
+  source_id: MODEL7908934508
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL7908934508
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL7908934508?filename=MODEL7908934508_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.reidl2006_calciumoscillationincilia_model7908934508_model:Reidl2006CalciumoscillationinciliaModel7908934508Model
+  init_kwargs:
+    model_path: data/MODEL7908934508.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_ca_m4
+    maps_to: CaM4
+    label: Initial Ca M4
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaM4`.
+  - name: initial_model_state_ca
+    maps_to: Ca
+    label: Initial Model State Ca
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca`.
+  - name: initial_cng_o
+    maps_to: CNG_o
+    label: Initial Cng O
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CNG_o`.
+  - name: initial_cng_i
+    maps_to: CNG_i
+    label: Initial Cng I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CNG_i`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: ca_m4
+    maps_to: CaM4
+    label: CaM4
+    description: CaM4. Maps to SBML symbol `CaM4`.
+  - name: model_state_ca
+    maps_to: Ca
+    label: Ca
+    description: Ca. Maps to SBML symbol `Ca`.
+  - name: cng_o
+    maps_to: CNG_o
+    label: CNG O
+    description: CNG O. Maps to SBML symbol `CNG_o`.
+  - name: cng_i
+    maps_to: CNG_i
+    label: CNG I
+    description: CNG I. Maps to SBML symbol `CNG_i`.

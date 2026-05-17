@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Heldt2012 - Influenza Virus Replication Visualisation
+description: Question-and-answer and dynamic visual summaries for Heldt2012 - Influenza
+  Virus Replication.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Heldt2012 Influenza Virus Replication Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Heldt2012 - Influenza Virus Replication.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_heldt2012_influenza_virus_replication_biomd0000000463_model
+      title: Heldt2012 - Influenza Virus Replication
+      observables:
+      - id: species_39
+        port: total_v_rna_of_a_segment
+        label: total vRNA of a segment
+        group: gene_regulation
+      - id: species_38
+        port: total_v_rna
+        label: total vRNA
+        group: gene_regulation
+      - id: species_37
+        port: total_c_rna_of_a_segment
+        label: total cRNA of a segment
+        group: gene_regulation
+      - id: species_36
+        port: total_c_rna
+        label: total cRNA
+        group: gene_regulation
+      - id: species_4
+        port: blo
+        label: Blo
+        group: physiology
+      - id: species_1
+        port: bhi
+        label: Bhi
+        group: physiology
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "205c4544-7a77-45c4-b133-0c9acfc33e64",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "7fb6edcc-ae7f-4270-9884-ef85d963e063",
+  "created_at": "2026-05-16T05:46:52.304010180+00:00",
+  "last_synced_at": "2026-05-17T06:24:23.683433+00:00",
+  "hub_manifest_hash": "1209740e512d0251fc6dfdc06ce8b2b7ad621f189a2893a91725f7ebdcf43367",
+  "package_name": "susree2018-effect-of-coated-platelets-on-thrombin-generation-lab"
+}

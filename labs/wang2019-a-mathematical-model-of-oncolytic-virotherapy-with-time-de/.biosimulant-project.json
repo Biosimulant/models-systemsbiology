@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "5bf099b1-1e74-40b4-bf1c-91000c79679b",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "9673778f-de8a-4132-bd12-43776fb8cfba",
+  "created_at": "2026-05-16T05:46:52.938403453+00:00",
+  "last_synced_at": "2026-05-17T09:44:50.234341+00:00",
+  "hub_manifest_hash": "98ce9f973d88a700fca46fb8579b3d4bd98d9f31a166e1b9eb71f1381b1d623d",
+  "package_name": "biomd0000000772-wang2019-a-mathematical-model-of-oncolytic-virot"
+}

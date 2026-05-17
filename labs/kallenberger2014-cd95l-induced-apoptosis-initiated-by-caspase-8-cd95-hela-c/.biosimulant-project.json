@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "7e61c0cc-c934-48b8-8ab0-0b6c07ff8b22",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "5d3312ff-3b37-4e7b-8205-7a1e9601135d",
+  "created_at": "2026-05-17T07:46:11.976854973+00:00",
+  "last_synced_at": "2026-05-17T09:30:45.674997+00:00",
+  "hub_manifest_hash": "850b3135fc3c7ff9d46f5983aa3f999051683941c338bca7fc5f618980615da7",
+  "package_name": "biomd0000000523-variant-kallenberger2014-cd95l-induced-apoptosis"
+}

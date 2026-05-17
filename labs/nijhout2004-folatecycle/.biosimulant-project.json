@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "5593fdef-a4ef-4e94-8e13-47c66b71fdad",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "18f8fa64-ba4c-403e-86f0-57305ef4f26c",
+  "created_at": "2026-05-16T05:46:49.018947471+00:00",
+  "last_synced_at": "2026-05-17T05:15:58.567330+00:00",
+  "hub_manifest_hash": "28a7e40cc385ba53ccff37584d651ff470077bc9fdda0b2e62605bbbd2e80d02",
+  "package_name": "nijhout2004-folatecycle-lab"
+}

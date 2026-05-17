@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Heiland2012 Circadianclock C Reinhardtii Lab
+description: 'This model is from the article: Modeling temperature entrainment of
+  circadian clocks using the Arrhenius equation and a reconstructed model from Chlamydomonas
+  reinhardtii Ines Heiland, Christian Boden. It can be used to explore systemsbiology
+  heiland2012 circadianclock c reinhardtii BioModels0000000411 dynamics and compare
+  simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_heiland2012_circadianclock_c_reinhardtii_biomd0000000411_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_heiland2012_circadianclock_c_reinhardtii_biomd0000000411_model.state
+  to:
+  - visualisation.systemsbiology_sbml_heiland2012_circadianclock_c_reinhardtii_biomd0000000411_model_state
+- from: systemsbiology_sbml_heiland2012_circadianclock_c_reinhardtii_biomd0000000411_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_heiland2012_circadianclock_c_reinhardtii_biomd0000000411_model_summary
+- from: systemsbiology_sbml_heiland2012_circadianclock_c_reinhardtii_biomd0000000411_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_heiland2012_circadianclock_c_reinhardtii_biomd0000000411_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_c3_mrna
+    maps_to: systemsbiology_sbml_heiland2012_circadianclock_c_reinhardtii_biomd0000000411_model.initial_c3_mrna
+    label: Initial C3 MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s9`.
+  - name: initial_c3_gene
+    maps_to: systemsbiology_sbml_heiland2012_circadianclock_c_reinhardtii_biomd0000000411_model.initial_c3_gene
+    label: Initial C3 Gene
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s2`.
+  - name: initial_c1_mrna
+    maps_to: systemsbiology_sbml_heiland2012_circadianclock_c_reinhardtii_biomd0000000411_model.initial_c1_mrna
+    label: Initial C1 MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_2`.
+  - name: initial_c1c3complex
+    maps_to: systemsbiology_sbml_heiland2012_circadianclock_c_reinhardtii_biomd0000000411_model.initial_c1c3complex
+    label: Initial C1c3complex
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_4`.
+  - name: initial_c_3_pre
+    maps_to: systemsbiology_sbml_heiland2012_circadianclock_c_reinhardtii_biomd0000000411_model.initial_c_3_pre
+    label: Initial C 3 Pre
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s13`.
+  - name: initial_c_3_p
+    maps_to: systemsbiology_sbml_heiland2012_circadianclock_c_reinhardtii_biomd0000000411_model.initial_c_3_p
+    label: Initial C 3 P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s11`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_heiland2012_circadianclock_c_reinhardtii_biomd0000000411_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_heiland2012_circadianclock_c_reinhardtii_biomd0000000411_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_heiland2012_circadianclock_c_reinhardtii_biomd0000000411_model.species_labels
+  - name: c3_mrna
+    maps_to: systemsbiology_sbml_heiland2012_circadianclock_c_reinhardtii_biomd0000000411_model.c3_mrna
+  - name: c3_gene
+    maps_to: systemsbiology_sbml_heiland2012_circadianclock_c_reinhardtii_biomd0000000411_model.c3_gene
+  - name: c1_mrna
+    maps_to: systemsbiology_sbml_heiland2012_circadianclock_c_reinhardtii_biomd0000000411_model.c1_mrna
+  - name: c1c3complex
+    maps_to: systemsbiology_sbml_heiland2012_circadianclock_c_reinhardtii_biomd0000000411_model.c1c3complex
+  - name: c_3_pre
+    maps_to: systemsbiology_sbml_heiland2012_circadianclock_c_reinhardtii_biomd0000000411_model.c_3_pre
+  - name: c_3_p
+    maps_to: systemsbiology_sbml_heiland2012_circadianclock_c_reinhardtii_biomd0000000411_model.c_3_p

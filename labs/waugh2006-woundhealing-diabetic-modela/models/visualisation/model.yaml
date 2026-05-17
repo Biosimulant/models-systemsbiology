@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Waugh2006_WoundHealing_Diabetic_ModelA Visualisation
+description: Question-and-answer and dynamic visual summaries for Waugh2006_WoundHealing_Diabetic_ModelA.
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Waugh2006 Woundhealing Diabetic Modela Lab
+    question: 'Which physiological state variables carry the strongest baseline response?
+      Source model: Waugh2006_WoundHealing_Diabetic_ModelA.'
+    answer_focus: Q/A table plus physiology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_waugh2006_woundhealing_diabetic_modela_model1006230106_model
+      title: Waugh2006_WoundHealing_Diabetic_ModelA
+      observables:
+      - id: phi_R
+        port: phi_r
+        label: Phi R
+        group: physiology
+      - id: phi_I
+        port: phi_i
+        label: Phi I
+        group: physiology
+      - id: T
+        port: model_state_t
+        label: T
+        group: physiology
+      - id: P
+        port: model_state_p
+        label: P
+        group: physiology
+      - id: H
+        port: model_state_h
+        label: H
+        group: physiology
+      - id: F
+        port: model_state_f
+        label: F
+        group: physiology
+io:
+  inputs: []
+  outputs: []

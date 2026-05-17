@@ -1,0 +1,59 @@
+schema_version: '2.0'
+title: Luan2007 - Blood coagulation model combining previous models and platelet activation
+  Visualisation
+description: Question-and-answer and dynamic visual summaries for Luan2007 - Blood
+  coagulation model combining previous models and platelet activation.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Luan2007 Blood Coagulation Model Combining Previous Models And Plat
+      Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Luan2007 - Blood coagulation model combining previous models and
+      platelet activation.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_luan2007_blood_coagulation_model_combining_previ_model1806050001_model
+      title: Luan2007 - Blood coagulation model combining previous models and platelet
+        activation
+      observables:
+      - id: P5s
+        port: p5s
+        label: P5s
+        group: physiology
+      - id: P2s
+        port: p2s
+        label: P2s
+        group: physiology
+      - id: P8s
+        port: p8s
+        label: P8s
+        group: physiology
+      - id: P9s_0
+        port: p9s
+        label: P9s*
+        group: physiology
+      - id: P9s
+        port: p9s_2
+        label: P9s
+        group: physiology
+      - id: Xa_i
+        port: xa_i
+        label: Xa-i
+        group: physiology
+io:
+  inputs: []
+  outputs: []

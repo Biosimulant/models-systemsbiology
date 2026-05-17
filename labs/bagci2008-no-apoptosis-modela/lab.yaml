@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Bagci2008 No Apoptosis Modela Lab
+description: 'This a model from the article: Computational insights on the competing
+  effects of nitric oxide in regulatingapoptosis. Bagci EZ, Vodovotz Y, Billiar TR,
+  Ermentrout B, Bahar I.'
+models:
+- alias: systemsbiology_sbml_bagci2008_no_apoptosis_modela_model1006230064_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_bagci2008_no_apoptosis_modela_model1006230064_model.state
+  to:
+  - visualisation.systemsbiology_sbml_bagci2008_no_apoptosis_modela_model1006230064_model_state
+- from: systemsbiology_sbml_bagci2008_no_apoptosis_modela_model1006230064_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_bagci2008_no_apoptosis_modela_model1006230064_model_summary
+- from: systemsbiology_sbml_bagci2008_no_apoptosis_modela_model1006230064_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_bagci2008_no_apoptosis_modela_model1006230064_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_onoo_m
+    maps_to: systemsbiology_sbml_bagci2008_no_apoptosis_modela_model1006230064_model.initial_onoo_m
+    label: Initial Onoo M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ONOO_m`.
+  - name: initial_o_2_m
+    maps_to: systemsbiology_sbml_bagci2008_no_apoptosis_modela_model1006230064_model.initial_o_2_m
+    label: Initial O 2 M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `O_2m`.
+  - name: initial_no_2
+    maps_to: systemsbiology_sbml_bagci2008_no_apoptosis_modela_model1006230064_model.initial_no_2
+    label: Initial No 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NO_2`.
+  - name: initial_model_state_no
+    maps_to: systemsbiology_sbml_bagci2008_no_apoptosis_modela_model1006230064_model.initial_model_state_no
+    label: Initial Model State No
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NO`.
+  - name: initial_n2_o3
+    maps_to: systemsbiology_sbml_bagci2008_no_apoptosis_modela_model1006230064_model.initial_n2_o3
+    label: Initial N2 O3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `N2O3`.
+  - name: initial_gsno
+    maps_to: systemsbiology_sbml_bagci2008_no_apoptosis_modela_model1006230064_model.initial_gsno
+    label: Initial Gsno
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `GSNO`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_bagci2008_no_apoptosis_modela_model1006230064_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_bagci2008_no_apoptosis_modela_model1006230064_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_bagci2008_no_apoptosis_modela_model1006230064_model.species_labels
+  - name: onoo_m
+    maps_to: systemsbiology_sbml_bagci2008_no_apoptosis_modela_model1006230064_model.onoo_m
+  - name: o_2_m
+    maps_to: systemsbiology_sbml_bagci2008_no_apoptosis_modela_model1006230064_model.o_2_m
+  - name: no_2
+    maps_to: systemsbiology_sbml_bagci2008_no_apoptosis_modela_model1006230064_model.no_2
+  - name: model_state_no
+    maps_to: systemsbiology_sbml_bagci2008_no_apoptosis_modela_model1006230064_model.model_state_no
+  - name: n2_o3
+    maps_to: systemsbiology_sbml_bagci2008_no_apoptosis_modela_model1006230064_model.n2_o3
+  - name: gsno
+    maps_to: systemsbiology_sbml_bagci2008_no_apoptosis_modela_model1006230064_model.gsno

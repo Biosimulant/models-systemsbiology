@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Li2010 Yeastglycolysis Lab
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models (http://www.ebi.ac.uk/biomodels/). It is copyright (c) 2005-2011
+  The BioModels.net Team.'
+models:
+- alias: systemsbiology_sbml_li2010_yeastglycolysis_model1012110001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_li2010_yeastglycolysis_model1012110001_model.state
+  to:
+  - visualisation.systemsbiology_sbml_li2010_yeastglycolysis_model1012110001_model_state
+- from: systemsbiology_sbml_li2010_yeastglycolysis_model1012110001_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_li2010_yeastglycolysis_model1012110001_model_summary
+- from: systemsbiology_sbml_li2010_yeastglycolysis_model1012110001_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_li2010_yeastglycolysis_model1012110001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- metabolism
+- microbiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_d_glucose
+    maps_to: systemsbiology_sbml_li2010_yeastglycolysis_model1012110001_model.initial_d_glucose
+    label: Initial D Glucose
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_304`.
+  - name: initial_phosphate
+    maps_to: systemsbiology_sbml_li2010_yeastglycolysis_model1012110001_model.initial_phosphate
+    label: Initial Phosphate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_454`.
+  - name: initial_nicotinamide_adenine_dinucleotide
+    maps_to: systemsbiology_sbml_li2010_yeastglycolysis_model1012110001_model.initial_nicotinamide_adenine_dinucleotide
+    label: Initial Nicotinamide Adenine Dinucleotide
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_411`.
+  - name: initial_model_state_h
+    maps_to: systemsbiology_sbml_li2010_yeastglycolysis_model1012110001_model.initial_model_state_h
+    label: Initial Model State H
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_329`.
+  - name: initial_model_state_atp
+    maps_to: systemsbiology_sbml_li2010_yeastglycolysis_model1012110001_model.initial_model_state_atp
+    label: Initial Model State ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_172`.
+  - name: initial_yal038_w
+    maps_to: systemsbiology_sbml_li2010_yeastglycolysis_model1012110001_model.initial_yal038_w
+    label: Initial Yal038 W
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `E_726`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_li2010_yeastglycolysis_model1012110001_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_li2010_yeastglycolysis_model1012110001_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_li2010_yeastglycolysis_model1012110001_model.species_labels
+  - name: d_glucose
+    maps_to: systemsbiology_sbml_li2010_yeastglycolysis_model1012110001_model.d_glucose
+  - name: phosphate
+    maps_to: systemsbiology_sbml_li2010_yeastglycolysis_model1012110001_model.phosphate
+  - name: nicotinamide_adenine_dinucleotide
+    maps_to: systemsbiology_sbml_li2010_yeastglycolysis_model1012110001_model.nicotinamide_adenine_dinucleotide
+  - name: model_state_h
+    maps_to: systemsbiology_sbml_li2010_yeastglycolysis_model1012110001_model.model_state_h
+  - name: atp
+    maps_to: systemsbiology_sbml_li2010_yeastglycolysis_model1012110001_model.atp
+  - name: yal038_w
+    maps_to: systemsbiology_sbml_li2010_yeastglycolysis_model1012110001_model.yal038_w

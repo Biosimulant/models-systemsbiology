@@ -1,0 +1,79 @@
+schema_version: '2.0'
+title: Mothes2020_NFkB_A20_signaling
+description: 'The Mothes2020_NFkB_A20_signaling model is based on our previous model
+  published in Murakawa et al., Nat Commun, 2015 (doi: 10.1038/ncomms8367). It can
+  be used to explore systemsbiology mothes2020 nfkb a20 signaling model2307110001
+  dynamics and compare simulation behavior across conditions.'
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Janina Mothes
+- Inbal Ipenberg
+- Seda Çöl Arslan
+- Uwe Benary
+- Claus Scheidereit
+upstream:
+  id: biomodels_ebi:MODEL2307110001
+  source_db: biomodels_ebi
+  source_id: MODEL2307110001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2307110001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2307110001?filename=Mothes2020_NFkB_A20_signaling.xml
+  license: CC0
+biosim:
+  entrypoint: src.mothes2020_nfkb_a20_signaling_model2307110001_model:Mothes2020NfkbA20SignalingModel2307110001Model
+  init_kwargs:
+    model_path: data/MODEL2307110001.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: stimulus
+    maps_to: stimulus
+    label: Stimulus
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `stimulus`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: a20_mrna
+    maps_to: A20_mRNA
+    label: A20 MRNA
+    description: A20 MRNA. Maps to SBML symbol `A20_mRNA`.
+  - name: ik_ba_mrna
+    maps_to: IkBa_mRNA
+    label: IkBa MRNA
+    description: IkBa MRNA. Maps to SBML symbol `IkBa_mRNA`.
+  - name: n_fk_b_ik_ba
+    maps_to: NFkB_IkBa
+    label: NFkB IkBa
+    description: NFkB IkBa. Maps to SBML symbol `NFkB_IkBa`.
+  - name: ik_ba
+    maps_to: IkBa
+    label: IkBa
+    description: IkBa. Maps to SBML symbol `IkBa`.
+  - name: a20
+    maps_to: A20
+    label: A20
+    description: A20. Maps to SBML symbol `A20`.
+  - name: ikk_active
+    maps_to: IKK_active
+    label: IKK Active
+    description: IKK Active. Maps to SBML symbol `IKK_active`.

@@ -1,0 +1,109 @@
+schema_version: '2.0'
+title: LlorénsRico2016 - Effects of cis-Encoded antisense RNAs (asRNAs) - Case3
+description: 'LlorénsRico2016 - Effects of cis-Encodedantisense RNAs (asRNAs) - Case3
+  Three putative effects of the asRNAs were considered in this study: in case 1, the
+  binding of the asRNA to the corresponding mRN. It can be used to explore systemsbiology
+  llor nsrico2016 effects of cis dynamics and compare simulation behavior across conditions.'
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Verónica Lloréns-Rico
+- Jaime Cano
+- Tjerko Kamminga
+- Rosario Gil
+- Amparo Latorre
+upstream:
+  id: biomodels_ebi:MODEL1511170002
+  source_db: biomodels_ebi
+  source_id: MODEL1511170002
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1511170002
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1511170002?filename=MODEL1511170002_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.llor_nsrico2016_effects_of_cis_encoded_antisense_model1511170002_model:LlorNsrico2016EffectsOfCisEncodedAntisenseModel1511170002Model
+  init_kwargs:
+    model_path: data/MODEL1511170002.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_rib
+    maps_to: rib
+    label: Initial Model State Rib
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `rib`.
+  - name: initial_protein
+    maps_to: protein
+    label: Initial Protein
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `protein`.
+  - name: initial_mrna
+    maps_to: mrna
+    label: Initial MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mrna`.
+  - name: initial_asrna
+    maps_to: asrna
+    label: Initial Asrna
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `asrna`.
+  - name: initial_mrnarib
+    maps_to: mrnarib
+    label: Initial Mrnarib
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mrnarib`.
+  - name: initial_duplex
+    maps_to: duplex
+    label: Initial Duplex
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `duplex`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: rib
+    maps_to: rib
+    label: rib
+    description: rib. Maps to SBML symbol `rib`.
+  - name: protein
+    maps_to: protein
+    label: protein
+    description: protein. Maps to SBML symbol `protein`.
+  - name: mrna
+    maps_to: mrna
+    label: mrna
+    description: mrna. Maps to SBML symbol `mrna`.
+  - name: asrna
+    maps_to: asrna
+    label: asrna
+    description: asrna. Maps to SBML symbol `asrna`.
+  - name: mrnarib
+    maps_to: mrnarib
+    label: mrnarib
+    description: mrnarib. Maps to SBML symbol `mrnarib`.
+  - name: duplex
+    maps_to: duplex
+    label: duplex
+    description: duplex. Maps to SBML symbol `duplex`.

@@ -1,0 +1,59 @@
+schema_version: '2.0'
+title: Kyrtsos2011 - A systems biology model for Alzheimer's disease (Cholesterol
+  in AD) Visualisation
+description: Question-and-answer and dynamic visual summaries for Kyrtsos2011 - A
+  systems biology model for Alzheimer's disease (Cholesterol in AD).
+standard: other
+tags:
+- neuroscience
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Kyrtsos2011 A Systems Biology Model For Alzheimer S Disease Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Kyrtsos2011 - A systems biology model for Alzheimer''s disease
+      (Cholesterol in AD).'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_kyrtsos2011_a_systems_biology_model_for_alzheime_model1504240000_model
+      title: Kyrtsos2011 - A systems biology model for Alzheimer's disease (Cholesterol
+        in AD)
+      observables:
+      - id: TCA
+        port: tca
+        label: TCA
+        group: metabolism
+      - id: Cholesterol_A
+        port: cholesterol_a
+        label: Cholesterol_A
+        group: physiology
+      - id: ApoE_A
+        port: apo_e_a
+        label: ApoE_A
+        group: physiology
+      - id: Cholesterol_N
+        port: cholesterol_n
+        label: Cholesterol_N
+        group: physiology
+      - id: sAPP
+        port: s_app
+        label: sAPP
+        group: physiology
+      - id: gamma_secretase
+        port: gamma_secretase
+        label: gamma_secretase
+        group: physiology
+io:
+  inputs: []
+  outputs: []

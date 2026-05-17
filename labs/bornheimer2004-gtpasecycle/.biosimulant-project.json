@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "e7ca02c6-768b-4375-add5-b7136afc77c9",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "1dbd3ea7-66f1-4630-954c-8eb1f3d89ac9",
+  "created_at": "2026-05-16T05:46:41.851226571+00:00",
+  "last_synced_at": "2026-05-17T02:16:13.192669+00:00",
+  "hub_manifest_hash": "3d9fc9acc5a40bd1ac2d3d72dce62fa78d07b9ec73e876daac5ca2a531074a8c",
+  "package_name": "bornheimer2004-gtpasecycle-lab"
+}

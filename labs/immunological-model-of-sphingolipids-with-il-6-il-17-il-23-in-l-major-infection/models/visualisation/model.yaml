@@ -1,0 +1,60 @@
+schema_version: '2.0'
+title: Immunological Model of sphingolipids with IL-6/IL-17/IL-23 in L. major infection
+  Visualisation
+description: Question-and-answer and dynamic visual summaries for Immunological Model
+  of sphingolipids with IL-6/IL-17/IL-23 in L. major infection.
+standard: other
+tags:
+- epidemiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Immunological Model Of Sphingolipids With Il 6 Il 17 Il 23 In L Major
+      Infection Lab
+    question: 'Which infection or population states dominate the simulated trajectory?
+      Source model: Immunological Model of sphingolipids with IL-6/IL-17/IL-23 in
+      L. major infection.'
+    answer_focus: Q/A table plus epidemiology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_immunological_model_of_sphingolipids_with_il_6_i_model2301110001_model
+      title: Immunological Model of sphingolipids with IL-6/IL-17/IL-23 in L. major
+        infection
+      observables:
+      - id: mw206507a8_49d3_4b89_8767_b96e224682c5
+        port: inflammatory_cytokine_genes
+        label: Inflammatory cytokine genes
+        group: signaling
+      - id: mw9d11e8ee_71f2_4317_9941_56b7d2e06360
+        port: rorgt_gene
+        label: rorgt Gene
+        group: signaling
+      - id: mw216e700c_7d7b_4257_979b_ce4f450c69eb
+        port: il17_gene
+        label: IL17 gene
+        group: signaling
+      - id: mwb54ed2c0_8c56_445c_87dc_3297495bcb51
+        port: sphk_genes
+        label: SPHK Genes
+        group: signaling
+      - id: mw5b840e2d_377b_422a_9e21_3233425a594b
+        port: s1_pr_gene
+        label: S1PR Gene
+        group: signaling
+      - id: mwff98169b_8370_40b4_8ae6_91da20b7a11b
+        port: inflammatory_cytokine_genes_2
+        label: Inflammatory Cytokine Genes
+        group: signaling
+io:
+  inputs: []
+  outputs: []

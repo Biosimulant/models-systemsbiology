@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "d2797138-749d-417b-a2be-63f3f15a6b8f",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "9acfab49-8852-493b-a917-86ac8e6eeabd",
+  "created_at": "2026-05-16T05:46:47.634897067+00:00",
+  "last_synced_at": "2026-05-17T05:01:13.025558+00:00",
+  "hub_manifest_hash": "c04cbf132202b6d92644acb62dcf43a51962d8816bd409b28dc6752cfefc13f2",
+  "package_name": "morris2009-synuclein-aggregation-variable-temperature-and-ph-lab"
+}

@@ -1,0 +1,59 @@
+schema_version: '2.0'
+title: Stötzel2012 - Bovine estrous cycle, synchronization with prostaglandin F2α
+  Visualisation
+description: Question-and-answer and dynamic visual summaries for Stötzel2012 - Bovine
+  estrous cycle, synchronization with prostaglandin F2α.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Stotzel2012 Bovine Estrous Cycle Synchronization With Prostaglandin
+      F2 Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Stötzel2012 - Bovine estrous cycle, synchronization with prostaglandin
+      F2α.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_st_tzel2012_bovine_estrous_cycle_synchronization_biomd0000000481_model
+      title: Stötzel2012 - Bovine estrous cycle, synchronization with prostaglandin
+        F2α
+      observables:
+      - id: LH_Pit
+        port: lh_pit
+        label: LH_Pit
+        group: physiology
+      - id: GnRH_Hyp
+        port: gn_rh_hyp
+        label: GnRH_Hyp
+        group: physiology
+      - id: GnRH_Pit
+        port: gn_rh_pit
+        label: GnRH_Pit
+        group: physiology
+      - id: FSH_Bld
+        port: fsh_bld
+        label: FSH_Bld
+        group: physiology
+      - id: LH_Bld
+        port: lh_bld
+        label: LH_Bld
+        group: physiology
+      - id: FSH_Pit
+        port: fsh_pit
+        label: FSH_Pit
+        group: physiology
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "a14d7bb1-c9da-47f1-9e49-db7682354328",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "3b903c84-e78c-4303-bbad-6cec8b49003f",
+  "created_at": "2026-05-16T05:46:41.975196696+00:00",
+  "last_synced_at": "2026-05-17T02:20:08.468107+00:00",
+  "hub_manifest_hash": "3aa9d8f9f53fd9be9c15f6ebf1a529c25f5bfa5af89ad8cb16dd7cf2601629de",
+  "package_name": "bungay2003-thrombin-generation-lab"
+}

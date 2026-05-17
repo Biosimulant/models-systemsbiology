@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Schmierer2010 Fih Ankyrins Lab
+description: 'This a model from the article: Hypoxia-dependent sequestration of an
+  oxygen sensor by a widespread structural motif can shape the hypoxic response -
+  a predictive kinetic model Bernhard Schmierer, Béla. It can be used to explore systemsbiology
+  schmierer2010 fih ankyrins BioModels0000000300 dynamics and compare simulation behavior
+  across conditions.'
+models:
+- alias: systemsbiology_sbml_schmierer2010_fih_ankyrins_biomd0000000300_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_schmierer2010_fih_ankyrins_biomd0000000300_model.state
+  to:
+  - visualisation.systemsbiology_sbml_schmierer2010_fih_ankyrins_biomd0000000300_model_state
+- from: systemsbiology_sbml_schmierer2010_fih_ankyrins_biomd0000000300_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_schmierer2010_fih_ankyrins_biomd0000000300_model_summary
+- from: systemsbiology_sbml_schmierer2010_fih_ankyrins_biomd0000000300_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_schmierer2010_fih_ankyrins_biomd0000000300_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_atot
+    maps_to: systemsbiology_sbml_schmierer2010_fih_ankyrins_biomd0000000300_model.initial_atot
+    label: Initial Atot
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_5`.
+  - name: initial_model_state_a
+    maps_to: systemsbiology_sbml_schmierer2010_fih_ankyrins_biomd0000000300_model.initial_model_state_a
+    label: Initial Model State A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_3`.
+  - name: initial_ftot
+    maps_to: systemsbiology_sbml_schmierer2010_fih_ankyrins_biomd0000000300_model.initial_ftot
+    label: Initial Ftot
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_7`.
+  - name: initial_a_for_plotting
+    maps_to: systemsbiology_sbml_schmierer2010_fih_ankyrins_biomd0000000300_model.initial_a_for_plotting
+    label: Initial A For Plotting
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_16`.
+  - name: initial_ptot
+    maps_to: systemsbiology_sbml_schmierer2010_fih_ankyrins_biomd0000000300_model.initial_ptot
+    label: Initial Ptot
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_8`.
+  - name: initial_fi_hfree
+    maps_to: systemsbiology_sbml_schmierer2010_fih_ankyrins_biomd0000000300_model.initial_fi_hfree
+    label: Initial Fi Hfree
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_12`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_schmierer2010_fih_ankyrins_biomd0000000300_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_schmierer2010_fih_ankyrins_biomd0000000300_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_schmierer2010_fih_ankyrins_biomd0000000300_model.species_labels
+  - name: atot
+    maps_to: systemsbiology_sbml_schmierer2010_fih_ankyrins_biomd0000000300_model.atot
+  - name: model_state_a
+    maps_to: systemsbiology_sbml_schmierer2010_fih_ankyrins_biomd0000000300_model.model_state_a
+  - name: ftot
+    maps_to: systemsbiology_sbml_schmierer2010_fih_ankyrins_biomd0000000300_model.ftot
+  - name: a_for_plotting
+    maps_to: systemsbiology_sbml_schmierer2010_fih_ankyrins_biomd0000000300_model.a_for_plotting
+  - name: ptot
+    maps_to: systemsbiology_sbml_schmierer2010_fih_ankyrins_biomd0000000300_model.ptot
+  - name: fi_hfree
+    maps_to: systemsbiology_sbml_schmierer2010_fih_ankyrins_biomd0000000300_model.fi_hfree

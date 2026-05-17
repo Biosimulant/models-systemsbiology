@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Karapetyan2016 - Genetic oscillatory network - Activator Titration Circuit
+  (ATC)
+description: 'Karapetyan2016 - Genetic oscillatory network - Activator Titration Circuit
+  (ATC) This model is described in the article: Role of DNA binding sites and slow
+  unbinding kinetics in titration-based oscill. It can be used to explore systemsbiology
+  karapetyan2016 genetic oscillatory network activ dynamics and compare simulation
+  behavior across conditions.'
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Sargis Karapetyan
+- Nicolas E Buchler
+upstream:
+  id: biomodels_ebi:BIOMD0000000586
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000586
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000586
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000586?filename=BIOMD0000000586_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.karapetyan2016_genetic_oscillatory_network_activ_biomd0000000586_model:Karapetyan2016GeneticOscillatoryNetworkActivBiomd0000000586Model
+  init_kwargs:
+    model_path: data/BIOMD0000000586.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_r_i
+    maps_to: rI
+    label: Initial Model State R I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `rI`.
+  - name: initial_model_state_r_a
+    maps_to: rA
+    label: Initial Model State R A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `rA`.
+  - name: initial_model_state_g0
+    maps_to: G0
+    label: Initial Model State G0
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `G0`.
+  - name: initial_model_state_g3
+    maps_to: G3
+    label: Initial Model State G3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `G3`.
+  - name: initial_model_state_g2
+    maps_to: G2
+    label: Initial Model State G2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `G2`.
+  - name: initial_model_state_g1
+    maps_to: G1
+    label: Initial Model State G1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `G1`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: r_i
+    maps_to: rI
+    label: rI
+    description: rI. Maps to SBML symbol `rI`.
+  - name: r_a
+    maps_to: rA
+    label: rA
+    description: rA. Maps to SBML symbol `rA`.
+  - name: model_state_g0
+    maps_to: G0
+    label: G0
+    description: G0. Maps to SBML symbol `G0`.
+  - name: model_state_g3
+    maps_to: G3
+    label: G3
+    description: G3. Maps to SBML symbol `G3`.
+  - name: model_state_g2
+    maps_to: G2
+    label: G2
+    description: G2. Maps to SBML symbol `G2`.
+  - name: model_state_g1
+    maps_to: G1
+    label: G1
+    description: G1. Maps to SBML symbol `G1`.

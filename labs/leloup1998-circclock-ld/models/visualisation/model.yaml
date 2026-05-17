@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Leloup1998_CircClock_LD Visualisation
+description: Question-and-answer and dynamic visual summaries for Leloup1998_CircClock_LD.
+standard: other
+tags:
+- development
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Leloup1998 Circclock Ld Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Leloup1998_CircClock_LD.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_leloup1998_circclock_ld_biomd0000000171_model
+      title: Leloup1998_CircClock_LD
+      observables:
+      - id: M_T
+        port: tim_mrna
+        label: tim mRNA
+        group: gene_regulation
+      - id: M_P
+        port: per_mrna
+        label: per mRNA
+        group: gene_regulation
+      - id: T2
+        port: tim_pp
+        label: TIM-pp
+        group: physiology
+      - id: CN
+        port: per_tim_complex_nuclear
+        label: PER_TIM complex nuclear
+        group: physiology
+      - id: T1
+        port: tim_p
+        label: TIM-p
+        group: physiology
+      - id: T0
+        port: tim
+        label: TIM
+        group: physiology
+io:
+  inputs: []
+  outputs: []

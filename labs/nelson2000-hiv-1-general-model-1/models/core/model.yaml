@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Nelson2000- HIV-1 general model 1
+description: 'This is the general model without delay described by the equation system
+  (1) in: A model of HIV-1 pathogenesis that includes an intracellular delay. Nelson
+  PW, Murray JD, Perelson AS; Math Biosci.'
+standard: other
+tags:
+- epidemiology
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- P W Nelson
+- J D Murray
+- A S Perelson
+upstream:
+  id: biomodels_ebi:BIOMD0000000875
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000875
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000875
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000875?filename=Nelson2000.xml
+  license: CC0
+biosim:
+  entrypoint: src.nelson2000_hiv_1_general_model_1_biomd0000000875_model:Nelson2000Hiv1GeneralModel1Biomd0000000875Model
+  init_kwargs:
+    model_path: data/BIOMD0000000875.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_v_i
+    maps_to: V_I
+    label: Initial Model State V I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `V_I`.
+  - name: initial_model_state_t
+    maps_to: T_i
+    label: Initial Model State T
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `T_i`.
+  - name: initial_v_ni
+    maps_to: V_NI
+    label: Initial V Ni
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `V_NI`.
+  - name: initial_model_state_t_2
+    maps_to: T
+    label: Initial Model State T 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `T`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: v_i
+    maps_to: V_I
+    label: V_I
+    description: V_I. Maps to SBML symbol `V_I`.
+  - name: model_state_t
+    maps_to: T_i
+    label: T*
+    description: T*. Maps to SBML symbol `T_i`.
+  - name: v_ni
+    maps_to: V_NI
+    label: V_NI
+    description: V_NI. Maps to SBML symbol `V_NI`.
+  - name: model_state_t_2
+    maps_to: T
+    label: T
+    description: T. Maps to SBML symbol `T`.

@@ -1,0 +1,39 @@
+schema_version: '2.0'
+title: Brown1997 - Plasma Melatonin Levels Visualisation
+description: Question-and-answer and dynamic visual summaries for Brown1997 - Plasma
+  Melatonin Levels.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Brown1997 Plasma Melatonin Levels Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Brown1997 - Plasma Melatonin Levels.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_brown1997_plasma_melatonin_levels_biomd0000000672_model
+      title: Brown1997 - Plasma Melatonin Levels
+      observables:
+      - id: H2
+        port: model_state_h2
+        label: H2
+        group: physiology
+      - id: H1
+        port: model_state_h1
+        label: H1
+        group: physiology
+io:
+  inputs: []
+  outputs: []

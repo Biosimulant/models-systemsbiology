@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Saeidi2012 Quorum Sensing Device That Produces Gfp Lab
+description: Saeidi2012 - Quorum sensing device that produces GFP Saeidi et al. (2012)
+  has modelled a quorum sensing device that produces green fluorescent protein (GFP)
+  as reporter in the presence of Acyl Homoser.
+models:
+- alias: systemsbiology_sbml_saeidi2012_quorum_sensing_device_that_produces_g_biomd0000000438_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_saeidi2012_quorum_sensing_device_that_produces_g_biomd0000000438_model.state
+  to:
+  - visualisation.systemsbiology_sbml_saeidi2012_quorum_sensing_device_that_produces_g_biomd0000000438_model_state
+- from: systemsbiology_sbml_saeidi2012_quorum_sensing_device_that_produces_g_biomd0000000438_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_saeidi2012_quorum_sensing_device_that_produces_g_biomd0000000438_model_summary
+- from: systemsbiology_sbml_saeidi2012_quorum_sensing_device_that_produces_g_biomd0000000438_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_saeidi2012_quorum_sensing_device_that_produces_g_biomd0000000438_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_p_lux_r
+    maps_to: systemsbiology_sbml_saeidi2012_quorum_sensing_device_that_produces_g_biomd0000000438_model.initial_p_lux_r
+    label: Initial P Lux R
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s16`.
+  - name: initial_ptet_las_r
+    maps_to: systemsbiology_sbml_saeidi2012_quorum_sensing_device_that_produces_g_biomd0000000438_model.initial_ptet_las_r
+    label: Initial Ptet Las R
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s1`.
+  - name: initial_model_state_3_oc12_hsl
+    maps_to: systemsbiology_sbml_saeidi2012_quorum_sensing_device_that_produces_g_biomd0000000438_model.initial_model_state_3_oc12_hsl
+    label: Initial Model State 3 Oc12 Hsl
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s4`.
+  - name: initial_las_r
+    maps_to: systemsbiology_sbml_saeidi2012_quorum_sensing_device_that_produces_g_biomd0000000438_model.initial_las_r
+    label: Initial Las R
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s19`.
+  - name: initial_sa6_degraded
+    maps_to: systemsbiology_sbml_saeidi2012_quorum_sensing_device_that_produces_g_biomd0000000438_model.initial_sa6_degraded
+    label: Initial SA6 Degraded
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s5`.
+  - name: initial_sa3_degraded
+    maps_to: systemsbiology_sbml_saeidi2012_quorum_sensing_device_that_produces_g_biomd0000000438_model.initial_sa3_degraded
+    label: Initial SA3 Degraded
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s3`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_saeidi2012_quorum_sensing_device_that_produces_g_biomd0000000438_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_saeidi2012_quorum_sensing_device_that_produces_g_biomd0000000438_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_saeidi2012_quorum_sensing_device_that_produces_g_biomd0000000438_model.species_labels
+  - name: p_lux_r
+    maps_to: systemsbiology_sbml_saeidi2012_quorum_sensing_device_that_produces_g_biomd0000000438_model.p_lux_r
+  - name: ptet_las_r
+    maps_to: systemsbiology_sbml_saeidi2012_quorum_sensing_device_that_produces_g_biomd0000000438_model.ptet_las_r
+  - name: model_state_3_oc12_hsl
+    maps_to: systemsbiology_sbml_saeidi2012_quorum_sensing_device_that_produces_g_biomd0000000438_model.model_state_3_oc12_hsl
+  - name: las_r
+    maps_to: systemsbiology_sbml_saeidi2012_quorum_sensing_device_that_produces_g_biomd0000000438_model.las_r
+  - name: sa6_degraded
+    maps_to: systemsbiology_sbml_saeidi2012_quorum_sensing_device_that_produces_g_biomd0000000438_model.sa6_degraded
+  - name: sa3_degraded
+    maps_to: systemsbiology_sbml_saeidi2012_quorum_sensing_device_that_produces_g_biomd0000000438_model.sa3_degraded

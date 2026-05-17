@@ -1,0 +1,91 @@
+schema_version: '2.0'
+title: Leeuwen2007 Elucidating The Interactions Between The Adhesive And Tran Lab
+description: Elucidating the interactions between the adhesive and transcriptional
+  functions of beta-catenin in normal and cancerous cells.van Leeuwen IM1, Byrne HM,
+  Jensen OE, King JR.Author information1 Centre f. It can be used to explore systemsbiology
+  leeuwen2007 elucidating the interactions between dynamics and compare simulation
+  behavior across conditions.
+models:
+- alias: systemsbiology_sbml_leeuwen2007_elucidating_the_interactions_between_model2001090001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_leeuwen2007_elucidating_the_interactions_between_model2001090001_model.state
+  to:
+  - visualisation.systemsbiology_sbml_leeuwen2007_elucidating_the_interactions_between_model2001090001_model_state
+- from: systemsbiology_sbml_leeuwen2007_elucidating_the_interactions_between_model2001090001_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_leeuwen2007_elucidating_the_interactions_between_model2001090001_model_summary
+- from: systemsbiology_sbml_leeuwen2007_elucidating_the_interactions_between_model2001090001_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_leeuwen2007_elucidating_the_interactions_between_model2001090001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- oncology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_ca
+    maps_to: systemsbiology_sbml_leeuwen2007_elucidating_the_interactions_between_model2001090001_model.initial_model_state_ca
+    label: Initial Model State Ca
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CA`.
+  - name: initial_c0_t
+    maps_to: systemsbiology_sbml_leeuwen2007_elucidating_the_interactions_between_model2001090001_model.initial_c0_t
+    label: Initial C0 T
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C0T`.
+  - name: initial_model_state_c0
+    maps_to: systemsbiology_sbml_leeuwen2007_elucidating_the_interactions_between_model2001090001_model.initial_model_state_c0
+    label: Initial Model State C0
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C0`.
+  - name: initial_model_state_cu
+    maps_to: systemsbiology_sbml_leeuwen2007_elucidating_the_interactions_between_model2001090001_model.initial_model_state_cu
+    label: Initial Model State Cu
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Cu`.
+  - name: initial_cc_t
+    maps_to: systemsbiology_sbml_leeuwen2007_elucidating_the_interactions_between_model2001090001_model.initial_cc_t
+    label: Initial Cc T
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CcT`.
+  - name: initial_model_state_cc
+    maps_to: systemsbiology_sbml_leeuwen2007_elucidating_the_interactions_between_model2001090001_model.initial_model_state_cc
+    label: Initial Model State Cc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Cc`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_leeuwen2007_elucidating_the_interactions_between_model2001090001_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_leeuwen2007_elucidating_the_interactions_between_model2001090001_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_leeuwen2007_elucidating_the_interactions_between_model2001090001_model.species_labels
+  - name: model_state_ca
+    maps_to: systemsbiology_sbml_leeuwen2007_elucidating_the_interactions_between_model2001090001_model.model_state_ca
+  - name: c0_t
+    maps_to: systemsbiology_sbml_leeuwen2007_elucidating_the_interactions_between_model2001090001_model.c0_t
+  - name: model_state_c0
+    maps_to: systemsbiology_sbml_leeuwen2007_elucidating_the_interactions_between_model2001090001_model.model_state_c0
+  - name: model_state_cu
+    maps_to: systemsbiology_sbml_leeuwen2007_elucidating_the_interactions_between_model2001090001_model.model_state_cu
+  - name: cc_t
+    maps_to: systemsbiology_sbml_leeuwen2007_elucidating_the_interactions_between_model2001090001_model.cc_t
+  - name: model_state_cc
+    maps_to: systemsbiology_sbml_leeuwen2007_elucidating_the_interactions_between_model2001090001_model.model_state_cc

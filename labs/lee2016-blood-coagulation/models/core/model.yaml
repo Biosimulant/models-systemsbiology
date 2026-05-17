@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Lee2016 - Blood Coagulation Model
+description: Systems Biology Lee2016Blood Coagulation Model Model1806060001Model captures
+  systemsbiology lee2016 blood coagulation model1806060001 behavior in the context
+  of systemsbiology, sbml, biomodels_ebi using a biomo. When you run it, you can observe
+  state and evaluate how the modeled system changes across runs.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- D Lee
+- S Nayak
+- S W Martin
+- A C Heatherington
+- P Vicini
+upstream:
+  id: biomodels_ebi:MODEL1806060001
+  source_db: biomodels_ebi
+  source_id: MODEL1806060001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1806060001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1806060001?filename=Lee2016.xml
+  license: CC0
+biosim:
+  entrypoint: src.lee2016_blood_coagulation_model_model1806060001_model:Lee2016BloodCoagulationModelModel1806060001Model
+  init_kwargs:
+    model_path: data/MODEL1806060001.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_p_fg
+    maps_to: P_Fg
+    label: Initial P Fg
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P_Fg`.
+  - name: initial_t_pa_pg
+    maps_to: t_PA_Pg
+    label: Initial T Pa Pg
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `t_PA_Pg`.
+  - name: initial_t_pa
+    maps_to: t_PA
+    label: Initial T Pa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `t_PA`.
+  - name: initial_model_state_p_f
+    maps_to: P_F
+    label: Initial Model State P F
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P_F`.
+  - name: initial_p_xf
+    maps_to: P_XF
+    label: Initial P Xf
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P_XF`.
+  - name: initial_tf_fvii
+    maps_to: TF_FVII
+    label: Initial Tf Fvii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TF_FVII`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: p_fg
+    maps_to: P_Fg
+    label: P-Fg
+    description: P-Fg. Maps to SBML symbol `P_Fg`.
+  - name: t_pa_pg
+    maps_to: t_PA_Pg
+    label: t-PA-Pg
+    description: t-PA-Pg. Maps to SBML symbol `t_PA_Pg`.
+  - name: t_pa
+    maps_to: t_PA
+    label: t-PA
+    description: t-PA. Maps to SBML symbol `t_PA`.
+  - name: p_f
+    maps_to: P_F
+    label: P-F
+    description: P-F. Maps to SBML symbol `P_F`.
+  - name: p_xf
+    maps_to: P_XF
+    label: P-XF
+    description: P-XF. Maps to SBML symbol `P_XF`.
+  - name: tf_fvii
+    maps_to: TF_FVII
+    label: TF-FVII
+    description: TF-FVII. Maps to SBML symbol `TF_FVII`.

@@ -1,0 +1,59 @@
+schema_version: '2.0'
+title: Proctor2017- Role of microRNAs in osteoarthritis (miR140-IL1 coherent feed
+  forward) Visualisation
+description: Question-and-answer and dynamic visual summaries for Proctor2017- Role
+  of microRNAs in osteoarthritis (miR140-IL1 coherent feed forward).
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Proctor2017 Role Of Micrornas In Osteoarthritis 5 Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Proctor2017- Role of microRNAs in osteoarthritis (miR140-IL1 coherent
+      feed forward).'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_model1705170001_model
+      title: Proctor2017- Role of microRNAs in osteoarthritis (miR140-IL1 coherent
+        feed forward)
+      observables:
+      - id: miR140
+        port: mi_r140
+        label: MiR140
+        group: gene_regulation
+      - id: IL1
+        port: il1
+        label: IL1
+        group: gene_regulation
+      - id: miR140_gene
+        port: mi_r140_gene
+        label: MiR140 Gene
+        group: gene_regulation
+      - id: Sink
+        port: sink
+        label: Sink
+        group: gene_regulation
+      - id: ADAMTS5_mRNA_miR140
+        port: adamts5_mrna_mi_r140
+        label: ADAMTS5 MRNA MiR140
+        group: gene_regulation
+      - id: ADAMTS5_mRNA
+        port: adamts5_mrna
+        label: ADAMTS5 MRNA
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

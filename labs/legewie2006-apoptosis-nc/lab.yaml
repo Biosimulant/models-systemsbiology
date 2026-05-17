@@ -1,0 +1,86 @@
+schema_version: '2.0'
+title: Legewie2006 Apoptosis Nc Lab
+description: This model represents the non-competitive binding of XIAP to Casapase-3
+  and Caspase-9. In other words, XIAP mediated feedback is abolished in this model.
+models:
+- alias: systemsbiology_sbml_legewie2006_apoptosis_nc_biomd0000000103_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_legewie2006_apoptosis_nc_biomd0000000103_model.state
+  to:
+  - visualisation.systemsbiology_sbml_legewie2006_apoptosis_nc_biomd0000000103_model_state
+- from: systemsbiology_sbml_legewie2006_apoptosis_nc_biomd0000000103_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_legewie2006_apoptosis_nc_biomd0000000103_model_summary
+- from: systemsbiology_sbml_legewie2006_apoptosis_nc_biomd0000000103_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_legewie2006_apoptosis_nc_biomd0000000103_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_caspase_3
+    maps_to: systemsbiology_sbml_legewie2006_apoptosis_nc_biomd0000000103_model.initial_caspase_3
+    label: Initial Caspase 3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C3`.
+  - name: initial_caspase_9
+    maps_to: systemsbiology_sbml_legewie2006_apoptosis_nc_biomd0000000103_model.initial_caspase_9
+    label: Initial Caspase 9
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C9`.
+  - name: initial_caspase_9_xiap_complex
+    maps_to: systemsbiology_sbml_legewie2006_apoptosis_nc_biomd0000000103_model.initial_caspase_9_xiap_complex
+    label: Initial Caspase 9 Xiap Complex
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C9X`.
+  - name: initial_caspase_9_cleaved_xiap_complex
+    maps_to: systemsbiology_sbml_legewie2006_apoptosis_nc_biomd0000000103_model.initial_caspase_9_cleaved_xiap_complex
+    label: Initial Caspase 9 Cleaved Xiap Complex
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C9_starX`.
+  - name: initial_caspase_9_cleaved
+    maps_to: systemsbiology_sbml_legewie2006_apoptosis_nc_biomd0000000103_model.initial_caspase_9_cleaved
+    label: Initial Caspase 9 Cleaved
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C9_star`.
+  - name: initial_caspase_3_cleaved_xiap_complex
+    maps_to: systemsbiology_sbml_legewie2006_apoptosis_nc_biomd0000000103_model.initial_caspase_3_cleaved_xiap_complex
+    label: Initial Caspase 3 Cleaved Xiap Complex
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C3_starX`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_legewie2006_apoptosis_nc_biomd0000000103_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_legewie2006_apoptosis_nc_biomd0000000103_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_legewie2006_apoptosis_nc_biomd0000000103_model.species_labels
+  - name: caspase_3
+    maps_to: systemsbiology_sbml_legewie2006_apoptosis_nc_biomd0000000103_model.caspase_3
+  - name: caspase_9
+    maps_to: systemsbiology_sbml_legewie2006_apoptosis_nc_biomd0000000103_model.caspase_9
+  - name: caspase_9_xiap_complex
+    maps_to: systemsbiology_sbml_legewie2006_apoptosis_nc_biomd0000000103_model.caspase_9_xiap_complex
+  - name: caspase_9_cleaved_xiap_complex
+    maps_to: systemsbiology_sbml_legewie2006_apoptosis_nc_biomd0000000103_model.caspase_9_cleaved_xiap_complex
+  - name: caspase_9_cleaved
+    maps_to: systemsbiology_sbml_legewie2006_apoptosis_nc_biomd0000000103_model.caspase_9_cleaved
+  - name: caspase_3_cleaved_xiap_complex
+    maps_to: systemsbiology_sbml_legewie2006_apoptosis_nc_biomd0000000103_model.caspase_3_cleaved_xiap_complex

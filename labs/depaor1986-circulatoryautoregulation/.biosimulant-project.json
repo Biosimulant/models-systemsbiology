@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "518d47cc-6b96-4fc2-9b38-022a77901a20",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "06fea5f9-6f2c-45e4-a637-d3177b9811c8",
+  "created_at": "2026-05-16T05:46:42.802733691+00:00",
+  "last_synced_at": "2026-05-17T02:52:50.191537+00:00",
+  "hub_manifest_hash": "5fe03e7fa21487734ba21542bac40b607ae980a0ba39b52131526842dff22f86",
+  "package_name": "depaor1986-circulatoryautoregulation-lab"
+}

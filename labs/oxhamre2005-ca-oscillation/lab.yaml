@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Oxhamre2005 Ca Oscillation Lab
+description: 'The model should reproduce the figure 1C of the article (successfully
+  reproduced in MathSBML). If your software does not support the variable ''time'',
+  you can replace the assignmentRule: n = n0 * [ exp.'
+models:
+- alias: systemsbiology_sbml_oxhamre2005_ca_oscillation_biomd0000000047_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_oxhamre2005_ca_oscillation_biomd0000000047_model.state
+  to:
+  - visualisation.systemsbiology_sbml_oxhamre2005_ca_oscillation_biomd0000000047_model_state
+- from: systemsbiology_sbml_oxhamre2005_ca_oscillation_biomd0000000047_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_oxhamre2005_ca_oscillation_biomd0000000047_model_summary
+- from: systemsbiology_sbml_oxhamre2005_ca_oscillation_biomd0000000047_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_oxhamre2005_ca_oscillation_biomd0000000047_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_ca_er
+    maps_to: systemsbiology_sbml_oxhamre2005_ca_oscillation_biomd0000000047_model.initial_ca_er
+    label: Initial Ca Er
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaER`.
+  - name: initial_ca_cyt
+    maps_to: systemsbiology_sbml_oxhamre2005_ca_oscillation_biomd0000000047_model.initial_ca_cyt
+    label: Initial Ca Cyt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_Cyt`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_oxhamre2005_ca_oscillation_biomd0000000047_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_oxhamre2005_ca_oscillation_biomd0000000047_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_oxhamre2005_ca_oscillation_biomd0000000047_model.species_labels
+  - name: ca_er
+    maps_to: systemsbiology_sbml_oxhamre2005_ca_oscillation_biomd0000000047_model.ca_er
+  - name: ca_cyt
+    maps_to: systemsbiology_sbml_oxhamre2005_ca_oscillation_biomd0000000047_model.ca_cyt

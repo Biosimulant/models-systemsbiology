@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Curien2003 Metthr Synthesis Lab
+description: 'This a model from the article: A kinetic model of the branch-point between
+  the methionine and threonine biosynthesis pathways in Arabidopsis thaliana. It can
+  be used to explore systemsbiology curien2003 metthr synthesis BioModels0000000068
+  dynamics and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_curien2003_metthr_synthesis_biomd0000000068_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_curien2003_metthr_synthesis_biomd0000000068_model.state
+  to:
+  - visualisation.systemsbiology_sbml_curien2003_metthr_synthesis_biomd0000000068_model_state
+- from: systemsbiology_sbml_curien2003_metthr_synthesis_biomd0000000068_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_curien2003_metthr_synthesis_biomd0000000068_model_summary
+- from: systemsbiology_sbml_curien2003_metthr_synthesis_biomd0000000068_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_curien2003_metthr_synthesis_biomd0000000068_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_cystathionine_gamma_synthase
+    maps_to: systemsbiology_sbml_curien2003_metthr_synthesis_biomd0000000068_model.initial_cystathionine_gamma_synthase
+    label: Initial Cystathionine Gamma Synthase
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CGS`.
+  - name: initial_cystathionine
+    maps_to: systemsbiology_sbml_curien2003_metthr_synthesis_biomd0000000068_model.initial_cystathionine
+    label: Initial Cystathionine
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Cystathionine`.
+  - name: initial_inorganic_phosphate
+    maps_to: systemsbiology_sbml_curien2003_metthr_synthesis_biomd0000000068_model.initial_inorganic_phosphate
+    label: Initial Inorganic Phosphate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Phi`.
+  - name: initial_s_adenosylmethionine
+    maps_to: systemsbiology_sbml_curien2003_metthr_synthesis_biomd0000000068_model.initial_s_adenosylmethionine
+    label: Initial S Adenosylmethionine
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `AdoMet`.
+  - name: initial_cysteine
+    maps_to: systemsbiology_sbml_curien2003_metthr_synthesis_biomd0000000068_model.initial_cysteine
+    label: Initial Cysteine
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Cys`.
+  - name: initial_threonine_synthase
+    maps_to: systemsbiology_sbml_curien2003_metthr_synthesis_biomd0000000068_model.initial_threonine_synthase
+    label: Initial Threonine Synthase
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TS`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_curien2003_metthr_synthesis_biomd0000000068_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_curien2003_metthr_synthesis_biomd0000000068_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_curien2003_metthr_synthesis_biomd0000000068_model.species_labels
+  - name: cystathionine_gamma_synthase
+    maps_to: systemsbiology_sbml_curien2003_metthr_synthesis_biomd0000000068_model.cystathionine_gamma_synthase
+  - name: cystathionine
+    maps_to: systemsbiology_sbml_curien2003_metthr_synthesis_biomd0000000068_model.cystathionine
+  - name: inorganic_phosphate
+    maps_to: systemsbiology_sbml_curien2003_metthr_synthesis_biomd0000000068_model.inorganic_phosphate
+  - name: s_adenosylmethionine
+    maps_to: systemsbiology_sbml_curien2003_metthr_synthesis_biomd0000000068_model.s_adenosylmethionine
+  - name: cysteine
+    maps_to: systemsbiology_sbml_curien2003_metthr_synthesis_biomd0000000068_model.cysteine
+  - name: threonine_synthase
+    maps_to: systemsbiology_sbml_curien2003_metthr_synthesis_biomd0000000068_model.threonine_synthase

@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Bagci2008_NO_Apoptosis_modelB
+description: 'This a model from the article: Computational insights on the competing
+  effects of nitric oxide in regulatingapoptosis. Bagci EZ, Vodovotz Y, Billiar TR,
+  Ermentrout B, Bahar I.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- E Z Bagci
+- Yoram Vodovotz
+- Timothy R Billiar
+- Bard Ermentrout
+- Ivet Bahar
+upstream:
+  id: biomodels_ebi:MODEL1006230026
+  source_db: biomodels_ebi
+  source_id: MODEL1006230026
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1006230026
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1006230026?filename=MODEL1006230026_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.bagci2008_no_apoptosis_modelb_model1006230026_model:Bagci2008NoApoptosisModelbModel1006230026Model
+  init_kwargs:
+    model_path: data/MODEL1006230026.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_cytc_apaf_1
+    maps_to: CytcApaf_1
+    label: Initial Cytc Apaf 1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CytcApaf_1`.
+  - name: initial_casp9_pro3
+    maps_to: Casp9Pro3
+    label: Initial Casp9 Pro3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Casp9Pro3`.
+  - name: initial_casp9_iap
+    maps_to: Casp9IAP
+    label: Initial Casp9 Iap
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Casp9IAP`.
+  - name: initial_casp9
+    maps_to: Casp9
+    label: Initial Casp9
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Casp9`.
+  - name: initial_casp8_bid
+    maps_to: Casp8Bid
+    label: Initial Casp8 Bid
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Casp8Bid`.
+  - name: initial_casp8
+    maps_to: Casp8
+    label: Initial Casp8
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Casp8`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: cytc_apaf_1
+    maps_to: CytcApaf_1
+    label: CytcApaf 1
+    description: CytcApaf 1. Maps to SBML symbol `CytcApaf_1`.
+  - name: casp9_pro3
+    maps_to: Casp9Pro3
+    label: Casp9Pro3
+    description: Casp9Pro3. Maps to SBML symbol `Casp9Pro3`.
+  - name: casp9_iap
+    maps_to: Casp9IAP
+    label: Casp9IAP
+    description: Casp9IAP. Maps to SBML symbol `Casp9IAP`.
+  - name: casp9
+    maps_to: Casp9
+    label: Casp9
+    description: Casp9. Maps to SBML symbol `Casp9`.
+  - name: casp8_bid
+    maps_to: Casp8Bid
+    label: Casp8Bid
+    description: Casp8Bid. Maps to SBML symbol `Casp8Bid`.
+  - name: casp8
+    maps_to: Casp8
+    label: Casp8
+    description: Casp8. Maps to SBML symbol `Casp8`.

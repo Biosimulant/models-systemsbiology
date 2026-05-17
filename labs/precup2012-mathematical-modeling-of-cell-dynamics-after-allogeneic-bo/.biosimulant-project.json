@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "dbf47425-a35f-4e48-bef7-c4ea857567cc",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "28614daa-8e25-4fcd-9ea5-fd4ed170334a",
+  "created_at": "2026-05-16T05:46:50.538068069+00:00",
+  "last_synced_at": "2026-05-17T05:33:00.791930+00:00",
+  "hub_manifest_hash": "cf36db865fe16c615cd2e6bd363767d553c7a6aa10d01b8fc2471e948b66546f",
+  "package_name": "precup2012-mathematical-modeling-of-cell-dynamics-after-allogene"
+}

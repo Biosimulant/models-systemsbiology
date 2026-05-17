@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Mandlik2015 Tristable Genetic Circuit Of Leishmania Lab
+description: 'Vineetha Mandlik, Mayuri Gurav & Shailza Singh. Regulatory dynamics
+  of network architecture and function in tristable genetic circuit of Leishmania:
+  a mathematical biology approach.'
+models:
+- alias: systemsbiology_sbml_mandlik2015_tristable_genetic_circuit_of_leishma_biomd0000000584_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_mandlik2015_tristable_genetic_circuit_of_leishma_biomd0000000584_model.state
+  to:
+  - visualisation.systemsbiology_sbml_mandlik2015_tristable_genetic_circuit_of_leishma_biomd0000000584_model_state
+- from: systemsbiology_sbml_mandlik2015_tristable_genetic_circuit_of_leishma_biomd0000000584_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_mandlik2015_tristable_genetic_circuit_of_leishma_biomd0000000584_model_summary
+- from: systemsbiology_sbml_mandlik2015_tristable_genetic_circuit_of_leishma_biomd0000000584_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_mandlik2015_tristable_genetic_circuit_of_leishma_biomd0000000584_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_ia1_inactive_tf
+    maps_to: systemsbiology_sbml_mandlik2015_tristable_genetic_circuit_of_leishma_biomd0000000584_model.initial_ia1_inactive_tf
+    label: Initial IA1 Inactive Tf
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ia1_InactiveTF`.
+  - name: initial_ia1_active_tf
+    maps_to: systemsbiology_sbml_mandlik2015_tristable_genetic_circuit_of_leishma_biomd0000000584_model.initial_ia1_active_tf
+    label: Initial IA1 Active Tf
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ia1_ActiveTF`.
+  - name: initial_ter6
+    maps_to: systemsbiology_sbml_mandlik2015_tristable_genetic_circuit_of_leishma_biomd0000000584_model.initial_ter6
+    label: Initial Ter6
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ter6`.
+  - name: initial_ter5
+    maps_to: systemsbiology_sbml_mandlik2015_tristable_genetic_circuit_of_leishma_biomd0000000584_model.initial_ter5
+    label: Initial Ter5
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ter5`.
+  - name: initial_ter4
+    maps_to: systemsbiology_sbml_mandlik2015_tristable_genetic_circuit_of_leishma_biomd0000000584_model.initial_ter4
+    label: Initial Ter4
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ter4`.
+  - name: initial_ter3
+    maps_to: systemsbiology_sbml_mandlik2015_tristable_genetic_circuit_of_leishma_biomd0000000584_model.initial_ter3
+    label: Initial Ter3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ter3`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_mandlik2015_tristable_genetic_circuit_of_leishma_biomd0000000584_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_mandlik2015_tristable_genetic_circuit_of_leishma_biomd0000000584_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_mandlik2015_tristable_genetic_circuit_of_leishma_biomd0000000584_model.species_labels
+  - name: ia1_inactive_tf
+    maps_to: systemsbiology_sbml_mandlik2015_tristable_genetic_circuit_of_leishma_biomd0000000584_model.ia1_inactive_tf
+  - name: ia1_active_tf
+    maps_to: systemsbiology_sbml_mandlik2015_tristable_genetic_circuit_of_leishma_biomd0000000584_model.ia1_active_tf
+  - name: ter6
+    maps_to: systemsbiology_sbml_mandlik2015_tristable_genetic_circuit_of_leishma_biomd0000000584_model.ter6
+  - name: ter5
+    maps_to: systemsbiology_sbml_mandlik2015_tristable_genetic_circuit_of_leishma_biomd0000000584_model.ter5
+  - name: ter4
+    maps_to: systemsbiology_sbml_mandlik2015_tristable_genetic_circuit_of_leishma_biomd0000000584_model.ter4
+  - name: ter3
+    maps_to: systemsbiology_sbml_mandlik2015_tristable_genetic_circuit_of_leishma_biomd0000000584_model.ter3

@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Baldwin1994 - Nondimensionalized Model of Thrombin Production Visualisation
+description: Question-and-answer and dynamic visual summaries for Baldwin1994 - Nondimensionalized
+  Model of Thrombin Production.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Baldwin1994 Nondimensionalized Model Of Thrombin Production Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Baldwin1994 - Nondimensionalized Model of Thrombin Production.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_baldwin1994_nondimensionalized_model_of_thrombin_model1806010001_model
+      title: Baldwin1994 - Nondimensionalized Model of Thrombin Production
+      observables:
+      - id: x7
+        port: model_state_x7
+        label: x7
+        group: physiology
+      - id: x5
+        port: model_state_x5
+        label: x5
+        group: physiology
+      - id: x3
+        port: model_state_x3
+        label: x3
+        group: physiology
+      - id: x1
+        port: model_state_x1
+        label: x1
+        group: physiology
+      - id: x8
+        port: model_state_x8
+        label: x8
+        group: physiology
+      - id: x6
+        port: model_state_x6
+        label: x6
+        group: physiology
+io:
+  inputs: []
+  outputs: []

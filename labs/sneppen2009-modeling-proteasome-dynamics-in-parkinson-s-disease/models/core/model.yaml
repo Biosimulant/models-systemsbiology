@@ -1,0 +1,79 @@
+schema_version: '2.0'
+title: Sneppen2009 - Modeling proteasome dynamics in Parkinson's disease
+description: 'Sneppen2009 - Modeling proteasome dynamics inParkinson''s disease This
+  model is described in the article: Modeling proteasome dynamics in Parkinson''s
+  disease. It can be used to explore systemsbiology sneppen2009 modeling proteasome
+  dynamics in dynamics and compare simulation behavior across conditions.'
+standard: other
+tags:
+- neuroscience
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Kim Sneppen
+- Ludvig Lizana
+- Mogens H Jensen
+- Simone Pigolotti
+- Daniel Otzen
+upstream:
+  id: biomodels_ebi:BIOMD0000000548
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000548
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000548
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000548?filename=BIOMD0000000548_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.sneppen2009_modeling_proteasome_dynamics_in_park_biomd0000000548_model:Sneppen2009ModelingProteasomeDynamicsInParkBiomd0000000548Model
+  init_kwargs:
+    model_path: data/BIOMD0000000548.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_f
+    maps_to: F
+    label: Initial Model State F
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `F`.
+  - name: initial_model_state_c
+    maps_to: C
+    label: Initial Model State C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C`.
+  - name: initial_model_state_p
+    maps_to: P
+    label: Initial Model State P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_f
+    maps_to: F
+    label: F
+    description: F. Maps to SBML symbol `F`.
+  - name: model_state_c
+    maps_to: C
+    label: C
+    description: C. Maps to SBML symbol `C`.
+  - name: model_state_p
+    maps_to: P
+    label: P
+    description: P. Maps to SBML symbol `P`.

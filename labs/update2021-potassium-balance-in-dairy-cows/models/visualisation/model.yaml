@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Potassium balance in dairy cows, model update 2021 Visualisation
+description: Question-and-answer and dynamic visual summaries for Potassium balance
+  in dairy cows, model update 2021.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Update2021 Potassium Balance In Dairy Cows Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Potassium balance in dairy cows, model update 2021.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_potassium_balance_in_dairy_cows_model_update_202_model2201250001_model
+      title: Potassium balance in dairy cows, model update 2021
+      observables:
+      - id: src_Glucblood
+        port: src_glucb
+        label: src_Glucb
+        group: physiology
+      - id: Gluc_stor
+        port: gluc_stor
+        label: Gluc_stor
+        group: core_system_state
+      - id: K_tiss
+        port: k_tiss
+        label: K_tiss
+        group: core_system_state
+      - id: K_git
+        port: k_git
+        label: K_git
+        group: core_system_state
+      - id: Gluc_prod
+        port: gluc_prod
+        label: Gluc_prod
+        group: core_system_state
+      - id: ins_b
+        port: ins_b
+        label: ins_b
+        group: core_system_state
+io:
+  inputs: []
+  outputs: []

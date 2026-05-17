@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Wu2006 K Channel Lab
+description: The model is described in the paper by Wu and Chang (2006). Diethyl pyrocarbonate,
+  a histidine-modifying agent, directly stimulates activity of ATP-sensitive potassium
+  channels in pituitary GH3 cells.
+models:
+- alias: systemsbiology_sbml_wu2006_k_channel_biomd0000000124_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_wu2006_k_channel_biomd0000000124_model.state
+  to:
+  - visualisation.systemsbiology_sbml_wu2006_k_channel_biomd0000000124_model_state
+- from: systemsbiology_sbml_wu2006_k_channel_biomd0000000124_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_wu2006_k_channel_biomd0000000124_model_summary
+- from: systemsbiology_sbml_wu2006_k_channel_biomd0000000124_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_wu2006_k_channel_biomd0000000124_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_er_ca_concentration
+    maps_to: systemsbiology_sbml_wu2006_k_channel_biomd0000000124_model.initial_er_ca_concentration
+    label: Initial Er Ca Concentration
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cer`.
+  - name: initial_cytosolic_free_ca_concentration
+    maps_to: systemsbiology_sbml_wu2006_k_channel_biomd0000000124_model.initial_cytosolic_free_ca_concentration
+    label: Initial Cytosolic Free Ca Concentration
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `c`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_wu2006_k_channel_biomd0000000124_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_wu2006_k_channel_biomd0000000124_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_wu2006_k_channel_biomd0000000124_model.species_labels
+  - name: er_ca_concentration
+    maps_to: systemsbiology_sbml_wu2006_k_channel_biomd0000000124_model.er_ca_concentration
+  - name: cytosolic_free_ca_concentration
+    maps_to: systemsbiology_sbml_wu2006_k_channel_biomd0000000124_model.cytosolic_free_ca_concentration

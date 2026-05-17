@@ -1,0 +1,38 @@
+schema_version: '2.0'
+title: Oxhamre2005_Ca_oscillation Visualisation
+description: Question-and-answer and dynamic visual summaries for Oxhamre2005_Ca_oscillation.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Oxhamre2005 Ca Oscillation Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Oxhamre2005_Ca_oscillation.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_oxhamre2005_ca_oscillation_biomd0000000047_model
+      title: Oxhamre2005_Ca_oscillation
+      observables:
+      - id: CaER
+        port: ca_er
+        label: CaER
+        group: physiology
+      - id: Ca_Cyt
+        port: ca_cyt
+        label: Ca Cyt
+        group: physiology
+io:
+  inputs: []
+  outputs: []

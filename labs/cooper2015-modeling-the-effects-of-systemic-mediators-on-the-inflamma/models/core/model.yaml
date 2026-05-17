@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Cooper2015 - Modeling the effects of systemic mediators on the inflammatory
+  phase of wound healing
+description: This is an ordinary differential equation-based mathematical model describing
+  the inflammatory phase of the wound healing response. The model describes the interactions
+  in the wound between wound debr.
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Racheal L Cooper
+- Rebecca A Segal
+- Robert F Diegelmann
+- Angela M Reynolds
+upstream:
+  id: biomodels_ebi:BIOMD0000000855
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000855
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000855
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000855?filename=Cooper2015.xml
+  license: CC0
+biosim:
+  entrypoint: src.cooper2015_modeling_the_effects_of_systemic_medi_biomd0000000855_model:Cooper2015ModelingTheEffectsOfSystemicMediBiomd0000000855Model
+  init_kwargs:
+    model_path: data/BIOMD0000000855.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_pt
+    maps_to: Pt
+    label: Initial Model State Pt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pt`.
+  - name: initial_model_state_p
+    maps_to: P
+    label: Initial Model State P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P`.
+  - name: initial_model_state_n
+    maps_to: N
+    label: Initial Model State N
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `N`.
+  - name: initial_model_state_m
+    maps_to: M
+    label: Initial Model State M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_pt
+    maps_to: Pt
+    label: Pt
+    description: Pt. Maps to SBML symbol `Pt`.
+  - name: model_state_p
+    maps_to: P
+    label: P
+    description: P. Maps to SBML symbol `P`.
+  - name: model_state_n
+    maps_to: N
+    label: N
+    description: N. Maps to SBML symbol `N`.
+  - name: model_state_m
+    maps_to: M
+    label: M
+    description: M. Maps to SBML symbol `M`.

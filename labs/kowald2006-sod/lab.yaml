@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Kowald2006 Sod Lab
+description: This model is according to the paper from Axel Kowald Alternative pathways
+  as mechanism for the negative effects associated with overexpression of superoxide
+  dismutase. It can be used to explore systemsbiology kowald2006 sod BioModels0000000108
+  dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_kowald2006_sod_biomd0000000108_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_kowald2006_sod_biomd0000000108_model.state
+  to:
+  - visualisation.systemsbiology_sbml_kowald2006_sod_biomd0000000108_model_state
+- from: systemsbiology_sbml_kowald2006_sod_biomd0000000108_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_kowald2006_sod_biomd0000000108_model_summary
+- from: systemsbiology_sbml_kowald2006_sod_biomd0000000108_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_kowald2006_sod_biomd0000000108_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_so_dtotal
+    maps_to: systemsbiology_sbml_kowald2006_sod_biomd0000000108_model.initial_so_dtotal
+    label: Initial So Dtotal
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_0000016`.
+  - name: initial_model_state_cat
+    maps_to: systemsbiology_sbml_kowald2006_sod_biomd0000000108_model.initial_model_state_cat
+    label: Initial Model State Cat
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_0000017`.
+  - name: initial_cu_ii_zn_sod
+    maps_to: systemsbiology_sbml_kowald2006_sod_biomd0000000108_model.initial_cu_ii_zn_sod
+    label: Initial Cu Ii Zn Sod
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_0000002`.
+  - name: initial_model_state_o2
+    maps_to: systemsbiology_sbml_kowald2006_sod_biomd0000000108_model.initial_model_state_o2
+    label: Initial Model State O2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_0000001`.
+  - name: initial_looh
+    maps_to: systemsbiology_sbml_kowald2006_sod_biomd0000000108_model.initial_looh
+    label: Initial Looh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_0000009`.
+  - name: initial_model_state_loo
+    maps_to: systemsbiology_sbml_kowald2006_sod_biomd0000000108_model.initial_model_state_loo
+    label: Initial Model State Loo
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_0000007`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_kowald2006_sod_biomd0000000108_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_kowald2006_sod_biomd0000000108_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_kowald2006_sod_biomd0000000108_model.species_labels
+  - name: so_dtotal
+    maps_to: systemsbiology_sbml_kowald2006_sod_biomd0000000108_model.so_dtotal
+  - name: cat
+    maps_to: systemsbiology_sbml_kowald2006_sod_biomd0000000108_model.cat
+  - name: cu_ii_zn_sod
+    maps_to: systemsbiology_sbml_kowald2006_sod_biomd0000000108_model.cu_ii_zn_sod
+  - name: model_state_o2
+    maps_to: systemsbiology_sbml_kowald2006_sod_biomd0000000108_model.model_state_o2
+  - name: looh
+    maps_to: systemsbiology_sbml_kowald2006_sod_biomd0000000108_model.looh
+  - name: loo
+    maps_to: systemsbiology_sbml_kowald2006_sod_biomd0000000108_model.loo

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "92924b1d-b035-480f-9b1c-3c314a28e48f",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "d0062e39-a7c4-44f5-94ee-ac4f54451892",
+  "created_at": "2026-05-16T05:46:42.544873441+00:00",
+  "last_synced_at": "2026-05-17T02:41:51.758222+00:00",
+  "hub_manifest_hash": "2f4fcab70c04e7378545f2d0398e99eafa9aee08287193d27b06c588c6904fbb",
+  "package_name": "crespo2012-kinetics-of-amyloid-fibril-formation-lab"
+}

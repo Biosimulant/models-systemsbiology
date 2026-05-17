@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "210f9c9b-ec70-453a-b4c2-6449bc5cc051",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "de2ae9da-2146-4104-a91d-ae980bb23e1a",
+  "created_at": "2026-05-16T05:46:51.775449548+00:00",
+  "last_synced_at": "2026-05-17T06:08:12.700720+00:00",
+  "hub_manifest_hash": "c591793d6b7fa6200f6c81043911683e4544baf8b3425c63956cee1f88f5f9fd",
+  "package_name": "schmitz2014-rna-triplex-formation-lab"
+}

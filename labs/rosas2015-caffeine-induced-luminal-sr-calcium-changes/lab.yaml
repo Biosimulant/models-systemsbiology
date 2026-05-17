@@ -1,0 +1,80 @@
+schema_version: '2.0'
+title: Rosas2015 Caffeine Induced Luminal Sr Calcium Changes Lab
+description: This SBML model reproduced the calcium release from SR by application
+  of 20 mM or 2mM caffeine, described in the paper. * Ca_i_Total and Ca_SR_Total respectively
+  represent the total calcium concentrat.
+models:
+- alias: systemsbiology_sbml_rosas2015_caffeine_induced_luminal_sr_calcium_ch_biomd0000000601_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_rosas2015_caffeine_induced_luminal_sr_calcium_ch_biomd0000000601_model.state
+  to:
+  - visualisation.systemsbiology_sbml_rosas2015_caffeine_induced_luminal_sr_calcium_ch_biomd0000000601_model_state
+- from: systemsbiology_sbml_rosas2015_caffeine_induced_luminal_sr_calcium_ch_biomd0000000601_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_rosas2015_caffeine_induced_luminal_sr_calcium_ch_biomd0000000601_model_summary
+- from: systemsbiology_sbml_rosas2015_caffeine_induced_luminal_sr_calcium_ch_biomd0000000601_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_rosas2015_caffeine_induced_luminal_sr_calcium_ch_biomd0000000601_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_ca_sr_total
+    maps_to: systemsbiology_sbml_rosas2015_caffeine_induced_luminal_sr_calcium_ch_biomd0000000601_model.initial_ca_sr_total
+    label: Initial Ca Sr Total
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mwd805cc43_4a96_472f_a894_c119a6aa895f`.
+  - name: initial_ca_sr
+    maps_to: systemsbiology_sbml_rosas2015_caffeine_induced_luminal_sr_calcium_ch_biomd0000000601_model.initial_ca_sr
+    label: Initial Ca Sr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mw447078ee_8bc8_4358_abcd_ade10dba93b0`.
+  - name: initial_ca_i_total
+    maps_to: systemsbiology_sbml_rosas2015_caffeine_induced_luminal_sr_calcium_ch_biomd0000000601_model.initial_ca_i_total
+    label: Initial Ca I Total
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mw40a96ef6_32da_46d1_9712_4f53f60bad43`.
+  - name: initial_ca_i
+    maps_to: systemsbiology_sbml_rosas2015_caffeine_induced_luminal_sr_calcium_ch_biomd0000000601_model.initial_ca_i
+    label: Initial Ca I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mwe1a0a651_d2d5_4f75_8d45_9336c60eb9a6`.
+  - name: initial_caff
+    maps_to: systemsbiology_sbml_rosas2015_caffeine_induced_luminal_sr_calcium_ch_biomd0000000601_model.initial_caff
+    label: Initial Caff
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mw168e0d8a_b9f7_4d4c_b437_a81206c5d381`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_rosas2015_caffeine_induced_luminal_sr_calcium_ch_biomd0000000601_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_rosas2015_caffeine_induced_luminal_sr_calcium_ch_biomd0000000601_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_rosas2015_caffeine_induced_luminal_sr_calcium_ch_biomd0000000601_model.species_labels
+  - name: ca_sr_total
+    maps_to: systemsbiology_sbml_rosas2015_caffeine_induced_luminal_sr_calcium_ch_biomd0000000601_model.ca_sr_total
+  - name: ca_sr
+    maps_to: systemsbiology_sbml_rosas2015_caffeine_induced_luminal_sr_calcium_ch_biomd0000000601_model.ca_sr
+  - name: ca_i_total
+    maps_to: systemsbiology_sbml_rosas2015_caffeine_induced_luminal_sr_calcium_ch_biomd0000000601_model.ca_i_total
+  - name: ca_i
+    maps_to: systemsbiology_sbml_rosas2015_caffeine_induced_luminal_sr_calcium_ch_biomd0000000601_model.ca_i
+  - name: caff
+    maps_to: systemsbiology_sbml_rosas2015_caffeine_induced_luminal_sr_calcium_ch_biomd0000000601_model.caff

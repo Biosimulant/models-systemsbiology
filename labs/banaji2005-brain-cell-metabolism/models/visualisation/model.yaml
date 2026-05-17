@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Banaji2005_Brain_Cell_Metabolism Visualisation
+description: Question-and-answer and dynamic visual summaries for Banaji2005_Brain_Cell_Metabolism.
+standard: other
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Banaji2005 Brain Cell Metabolism Lab
+    question: 'Which metabolic pools or flux-linked states show the strongest simulated
+      change? Source model: Banaji2005_Brain_Cell_Metabolism.'
+    answer_focus: Q/A table plus metabolism timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_banaji2005_brain_cell_metabolism_model4992089662_model
+      title: Banaji2005_Brain_Cell_Metabolism
+      observables:
+      - id: Pbuf
+        port: sites_on_cellular_proteins_capable_of_binding_protons
+        label: sites on cellular proteins capable of binding protons
+        group: metabolism
+      - id: PbufH
+        port: sites_on_cellular_proteins_bound_to_protons
+        label: sites on cellular proteins bound to protons
+        group: metabolism
+      - id: _K
+        port: potassium_ion
+        label: potassium ion
+        group: metabolism
+      - id: _eNa
+        port: sodium_ion
+        label: sodium ion
+        group: metabolism
+      - id: _mBiC
+        port: bicarbonate_ion
+        label: bicarbonate ion
+        group: metabolism
+      - id: _eBiC
+        port: bicarbonate_ion_2
+        label: bicarbonate ion
+        group: metabolism
+io:
+  inputs: []
+  outputs: []

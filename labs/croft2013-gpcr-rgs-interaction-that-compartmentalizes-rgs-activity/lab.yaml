@@ -1,0 +1,60 @@
+schema_version: '2.0'
+title: Croft2013 Gpcr Rgs Interaction That Compartmentalizes Rgs Activity Lab
+description: Croft2013 - GPCR-RGS interaction that compartmentalizes RGS activity
+  Through modelling studies, the classic quaternary complex (ligand-GPCR-G-RGS) has
+  been extended to include an additional layer of r. It can be used to explore systemsbiology
+  croft2013 gpcr rgs interaction that dynamics and compare simulation behavior across
+  conditions.
+models:
+- alias: systemsbiology_sbml_croft2013_gpcr_rgs_interaction_that_compartmenta_biomd0000000479_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_croft2013_gpcr_rgs_interaction_that_compartmenta_biomd0000000479_model.state
+  to:
+  - visualisation.systemsbiology_sbml_croft2013_gpcr_rgs_interaction_that_compartmenta_biomd0000000479_model_state
+- from: systemsbiology_sbml_croft2013_gpcr_rgs_interaction_that_compartmenta_biomd0000000479_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_croft2013_gpcr_rgs_interaction_that_compartmenta_biomd0000000479_model_summary
+- from: systemsbiology_sbml_croft2013_gpcr_rgs_interaction_that_compartmenta_biomd0000000479_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_croft2013_gpcr_rgs_interaction_that_compartmenta_biomd0000000479_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: ligand_conc
+    maps_to: systemsbiology_sbml_croft2013_gpcr_rgs_interaction_that_compartmenta_biomd0000000479_model.ligand_conc
+    label: Ligand Conc
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `Ligand_conc`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_croft2013_gpcr_rgs_interaction_that_compartmenta_biomd0000000479_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_croft2013_gpcr_rgs_interaction_that_compartmenta_biomd0000000479_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_croft2013_gpcr_rgs_interaction_that_compartmenta_biomd0000000479_model.species_labels
+  - name: model_state_z3
+    maps_to: systemsbiology_sbml_croft2013_gpcr_rgs_interaction_that_compartmenta_biomd0000000479_model.model_state_z3
+  - name: model_state_z2
+    maps_to: systemsbiology_sbml_croft2013_gpcr_rgs_interaction_that_compartmenta_biomd0000000479_model.model_state_z2
+  - name: model_state_z1
+    maps_to: systemsbiology_sbml_croft2013_gpcr_rgs_interaction_that_compartmenta_biomd0000000479_model.model_state_z1
+  - name: effector
+    maps_to: systemsbiology_sbml_croft2013_gpcr_rgs_interaction_that_compartmenta_biomd0000000479_model.effector
+  - name: gbg
+    maps_to: systemsbiology_sbml_croft2013_gpcr_rgs_interaction_that_compartmenta_biomd0000000479_model.gbg
+  - name: ga_gdp
+    maps_to: systemsbiology_sbml_croft2013_gpcr_rgs_interaction_that_compartmenta_biomd0000000479_model.ga_gdp

@@ -1,0 +1,61 @@
+schema_version: '2.0'
+title: Ota2015 - Positive regulation of Rho GTPase activity by RhoGDIs as a result
+  of their direct interaction with GAPs (GDI integrated) Visualisation
+description: Question-and-answer and dynamic visual summaries for Ota2015 - Positive
+  regulation of Rho GTPase activity by RhoGDIs as a result of their direct interaction
+  with GAPs (GDI integrated).
+standard: other
+tags:
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Ota2015 Positive Regulation Of Rho Gtpase Activity By Rhogdis As A
+      Lab
+    question: 'Which drug, dose, or target-linked model states drive the simulated
+      profile? Source model: Ota2015 - Positive regulation of Rho GTPase activity
+      by RhoGDIs as a result of their direct interaction with GAPs (GDI integrated).'
+    answer_focus: Q/A table plus pharmacology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_ota2015_positive_regulation_of_rho_gtpase_activi_biomd0000000899_model
+      title: Ota2015 - Positive regulation of Rho GTPase activity by RhoGDIs as a
+        result of their direct interaction with GAPs (GDI integrated)
+      observables:
+      - id: s10
+        port: gdigdp_rho
+        label: GDI·GDP-Rho
+        group: physiology
+      - id: s9
+        port: effector
+        label: Effector
+        group: physiology
+      - id: s1
+        port: activator
+        label: Activator
+        group: physiology
+      - id: s3
+        port: gef
+        label: GEF
+        group: physiology
+      - id: s8
+        port: gap
+        label: GAP
+        group: physiology
+      - id: s6
+        port: gtp_rho
+        label: GTP-Rho
+        group: physiology
+io:
+  inputs: []
+  outputs: []

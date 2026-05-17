@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "1c2e56d2-4627-4c1e-b184-7fce5f4ec7f6",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "ba109676-24e2-40ad-b300-c970d8a2258e",
+  "created_at": "2026-05-16T05:46:42.981780796+00:00",
+  "last_synced_at": "2026-05-17T02:59:52.139205+00:00",
+  "hub_manifest_hash": "123e320a00625ec5877ffa70529ec77f946ed63e9621925eb874fb974873db60",
+  "package_name": "elowitz2000-repressilator-lab"
+}

@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Proctor2006_telomere
+description: To the extent possible under law, all copyright and related or neighbouring
+  rights to this encoded model have been dedicated to the public domain worldwide.
+  It can be used to explore systemsbiology proctor2006 telomere BioModels0000000087
+  dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- C J Proctor
+- D A Lydall
+- R J Boys
+- C S Gillespie
+- Daryl P Shanley
+upstream:
+  id: biomodels_ebi:BIOMD0000000087
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000087
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000087
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000087?filename=BIOMD0000000087_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.proctor2006_telomere_biomd0000000087_model:Proctor2006TelomereBiomd0000000087Model
+  init_kwargs:
+    model_path: data/BIOMD0000000087.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_atp
+    maps_to: ATP
+    label: Initial Model State ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATP`.
+  - name: initial_model_state_adp
+    maps_to: ADP
+    label: Initial Model State ADP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ADP`.
+  - name: initial_scyclin
+    maps_to: Scyclin
+    label: Initial Scyclin
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Scyclin`.
+  - name: initial_mcyclin
+    maps_to: Mcyclin
+    label: Initial Mcyclin
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Mcyclin`.
+  - name: initial_g2cyclin
+    maps_to: G2cyclin
+    label: Initial G2cyclin
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `G2cyclin`.
+  - name: initial_g1cyclin
+    maps_to: G1cyclin
+    label: Initial G1cyclin
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `G1cyclin`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: atp
+    maps_to: ATP
+    label: ATP
+    description: ATP. Maps to SBML symbol `ATP`.
+  - name: adp
+    maps_to: ADP
+    label: ADP
+    description: ADP. Maps to SBML symbol `ADP`.
+  - name: scyclin
+    maps_to: Scyclin
+    label: Scyclin
+    description: Scyclin. Maps to SBML symbol `Scyclin`.
+  - name: mcyclin
+    maps_to: Mcyclin
+    label: Mcyclin
+    description: Mcyclin. Maps to SBML symbol `Mcyclin`.
+  - name: g2cyclin
+    maps_to: G2cyclin
+    label: G2cyclin
+    description: G2cyclin. Maps to SBML symbol `G2cyclin`.
+  - name: g1cyclin
+    maps_to: G1cyclin
+    label: G1cyclin
+    description: G1cyclin. Maps to SBML symbol `G1cyclin`.

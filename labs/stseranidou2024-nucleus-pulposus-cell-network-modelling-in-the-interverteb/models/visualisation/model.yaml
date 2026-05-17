@@ -1,0 +1,60 @@
+schema_version: '2.0'
+title: stseranidou2024 - Nucleus Pulposus Cell Network Modelling in the Intervertebral
+  Disc Visualisation
+description: Question-and-answer and dynamic visual summaries for stseranidou2024
+  - Nucleus Pulposus Cell Network Modelling in the Intervertebral Disc.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Stseranidou2024 Nucleus Pulposus Cell Network Modelling In The Interverteb
+      Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: stseranidou2024 - Nucleus Pulposus Cell Network Modelling in the
+      Intervertebral Disc.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_stseranidou2024_nucleus_pulposus_cell_network_mo_model2407080001_model
+      title: stseranidou2024 - Nucleus Pulposus Cell Network Modelling in the Intervertebral
+        Disc
+      observables:
+      - id: TNF
+        port: tnf
+        label: TNF
+        group: signaling
+      - id: IL_10
+        port: il_10
+        label: IL-10
+        group: gene_regulation
+      - id: IL_1beta
+        port: il_1
+        label: IL-1β
+        group: gene_regulation
+      - id: TGF_beta
+        port: tgf
+        label: TGF-β
+        group: gene_regulation
+      - id: IL_8
+        port: il_8
+        label: IL-8
+        group: gene_regulation
+      - id: IL_6
+        port: il_6
+        label: IL-6
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

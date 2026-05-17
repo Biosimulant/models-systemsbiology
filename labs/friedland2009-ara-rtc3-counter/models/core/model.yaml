@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Friedland2009_Ara_RTC3_counter
+description: 'This is the model of the RTC3 counter described in the article: Synthetic
+  gene networks that count. Friedland AE, Lu TK, Wang X, Shi D, Church G, Collins
+  JJ.'
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Ari E Friedland
+- Timothy K Lu
+- Xiao Wang
+- David Shi
+- George Church
+upstream:
+  id: biomodels_ebi:BIOMD0000000301
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000301
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000301
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000301?filename=BIOMD0000000301_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.friedland2009_ara_rtc3_counter_biomd0000000301_model:Friedland2009AraRtc3CounterBiomd0000000301Model
+  init_kwargs:
+    model_path: data/BIOMD0000000301.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_pgfp
+    maps_to: pGFP
+    label: Initial Pgfp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `pGFP`.
+  - name: initial_mt7cr
+    maps_to: mT7cr
+    label: Initial Mt7cr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mT7cr`.
+  - name: initial_mgf_pcr
+    maps_to: mGFPcr
+    label: Initial Mgf Pcr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mGFPcr`.
+  - name: initial_model_state_pt7
+    maps_to: pT7
+    label: Initial Model State PT7
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `pT7`.
+  - name: initial_ta_rna
+    maps_to: taRNA
+    label: Initial Ta RNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `taRNA`.
+  - name: initial_mt3cr
+    maps_to: mT3cr
+    label: Initial Mt3cr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mT3cr`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: pgfp
+    maps_to: pGFP
+    label: PGFP
+    description: PGFP. Maps to SBML symbol `pGFP`.
+  - name: mt7cr
+    maps_to: mT7cr
+    label: MT7cr
+    description: MT7cr. Maps to SBML symbol `mT7cr`.
+  - name: mgf_pcr
+    maps_to: mGFPcr
+    label: MGFPcr
+    description: MGFPcr. Maps to SBML symbol `mGFPcr`.
+  - name: pt7
+    maps_to: pT7
+    label: PT7
+    description: PT7. Maps to SBML symbol `pT7`.
+  - name: ta_rna
+    maps_to: taRNA
+    label: TaRNA
+    description: TaRNA. Maps to SBML symbol `taRNA`.
+  - name: mt3cr
+    maps_to: mT3cr
+    label: MT3cr
+    description: MT3cr. Maps to SBML symbol `mT3cr`.

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "9d1cce66-19ee-4043-adb8-dfd2bada90a2",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "ff0f430b-4061-421b-a098-34e1621095bc",
+  "created_at": "2026-05-16T05:46:45.443997327+00:00",
+  "last_synced_at": "2026-05-17T04:29:30.078447+00:00",
+  "hub_manifest_hash": "a9e3804ab22955c84fab46f6f62ac0f928c125a215d1f9a88bf65b7c28f65bb0",
+  "package_name": "lever2014-phenotypic-models-of-t-cell-activation-lab"
+}

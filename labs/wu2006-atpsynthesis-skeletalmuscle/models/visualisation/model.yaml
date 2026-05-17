@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Wu2006_ATPsynthesis_SkeletalMuscle Visualisation
+description: Question-and-answer and dynamic visual summaries for Wu2006_ATPsynthesis_SkeletalMuscle.
+standard: other
+tags:
+- metabolism
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Wu2006 Atpsynthesis Skeletalmuscle Lab
+    question: 'Which metabolic pools or flux-linked states show the strongest simulated
+      change? Source model: Wu2006_ATPsynthesis_SkeletalMuscle.'
+    answer_focus: Q/A table plus metabolism timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_wu2006_atpsynthesis_skeletalmuscle_model1006230034_model
+      title: Wu2006_ATPsynthesis_SkeletalMuscle
+      observables:
+      - id: Q_x
+        port: q_x
+        label: Q X
+        group: metabolism
+      - id: PI_x
+        port: pi_x
+        label: PI X
+        group: metabolism
+      - id: PI_i
+        port: pi_i
+        label: PI I
+        group: metabolism
+      - id: PI_c
+        port: pi_c
+        label: PI C
+        group: metabolism
+      - id: pH_x
+        port: ph_x
+        label: PH X
+        group: metabolism
+      - id: PCr_c
+        port: p_cr_c
+        label: PCr C
+        group: metabolism
+io:
+  inputs: []
+  outputs: []

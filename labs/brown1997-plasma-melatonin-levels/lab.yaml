@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Brown1997 Plasma Melatonin Levels Lab
+description: 'Brown1997 - Plasma Melatonin Levels A mathematical model that incorporatesa
+  piecewise function for NAT activity to predict melatoninconcentration. This model
+  is described in the article: A mathematica.'
+models:
+- alias: systemsbiology_sbml_brown1997_plasma_melatonin_levels_biomd0000000672_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_brown1997_plasma_melatonin_levels_biomd0000000672_model.state
+  to:
+  - visualisation.systemsbiology_sbml_brown1997_plasma_melatonin_levels_biomd0000000672_model_state
+- from: systemsbiology_sbml_brown1997_plasma_melatonin_levels_biomd0000000672_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_brown1997_plasma_melatonin_levels_biomd0000000672_model_summary
+- from: systemsbiology_sbml_brown1997_plasma_melatonin_levels_biomd0000000672_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_brown1997_plasma_melatonin_levels_biomd0000000672_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_h2
+    maps_to: systemsbiology_sbml_brown1997_plasma_melatonin_levels_biomd0000000672_model.initial_model_state_h2
+    label: Initial Model State H2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `H2`.
+  - name: initial_model_state_h1
+    maps_to: systemsbiology_sbml_brown1997_plasma_melatonin_levels_biomd0000000672_model.initial_model_state_h1
+    label: Initial Model State H1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `H1`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_brown1997_plasma_melatonin_levels_biomd0000000672_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_brown1997_plasma_melatonin_levels_biomd0000000672_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_brown1997_plasma_melatonin_levels_biomd0000000672_model.species_labels
+  - name: model_state_h2
+    maps_to: systemsbiology_sbml_brown1997_plasma_melatonin_levels_biomd0000000672_model.model_state_h2
+  - name: model_state_h1
+    maps_to: systemsbiology_sbml_brown1997_plasma_melatonin_levels_biomd0000000672_model.model_state_h1

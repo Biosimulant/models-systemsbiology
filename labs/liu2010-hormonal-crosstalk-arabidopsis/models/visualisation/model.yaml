@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Liu2010_Hormonal_Crosstalk_Arabidopsis Visualisation
+description: Question-and-answer and dynamic visual summaries for Liu2010_Hormonal_Crosstalk_Arabidopsis.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Liu2010 Hormonal Crosstalk Arabidopsis Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Liu2010_Hormonal_Crosstalk_Arabidopsis.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_liu2010_hormonal_crosstalk_arabidopsis_biomd0000000269_model
+      title: Liu2010_Hormonal_Crosstalk_Arabidopsis
+      observables:
+      - id: RaT
+        port: ra_total
+        label: Ra_total
+        group: physiology
+      - id: Ra_star
+        port: model_state_ra
+        label: Ra*
+        group: physiology
+      - id: ReT
+        port: re_total
+        label: Re_total
+        group: physiology
+      - id: Re_star
+        port: model_state_re
+        label: Re*
+        group: physiology
+      - id: CTR1T
+        port: ctr1_total
+        label: CTR1_total
+        group: physiology
+      - id: CTR1_star
+        port: ctr1
+        label: CTR1*
+        group: physiology
+io:
+  inputs: []
+  outputs: []

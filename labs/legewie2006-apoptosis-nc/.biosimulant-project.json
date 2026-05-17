@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "d88a70a3-5664-44ae-95e9-c35e7a042ac6",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "bed3ca67-2f09-4ebc-9edf-b10fada0ff85",
+  "created_at": "2026-05-16T05:46:45.209150207+00:00",
+  "last_synced_at": "2026-05-17T04:22:41.731833+00:00",
+  "hub_manifest_hash": "161ea465e9b1c0868e2c92ffad3c5a91243706ee6d6392968f303b245811dc5c",
+  "package_name": "legewie2006-apoptosis-nc-lab"
+}

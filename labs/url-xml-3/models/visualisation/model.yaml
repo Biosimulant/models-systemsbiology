@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: MODEL8262229752_url.xml Visualisation
+description: Question-and-answer and dynamic visual summaries for MODEL8262229752_url.xml.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Url Xml 3 Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: MODEL8262229752_url.xml.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_model8262229752_url_xml_model8262229752_model
+      title: MODEL8262229752_url.xml
+      observables:
+      - id: Decarb_SAM
+        port: decarb_sam
+        label: Decarb SAM
+        group: physiology
+      - id: Pfs_mRNA
+        port: pfs_mrna
+        label: Pfs MRNA
+        group: gene_regulation
+      - id: LuxS_mRNA
+        port: lux_s_mrna
+        label: LuxS MRNA
+        group: gene_regulation
+      - id: pfs_gene
+        port: pfs_gene
+        label: Pfs Gene
+        group: gene_regulation
+      - id: LuxS_gene
+        port: lux_s_gene
+        label: LuxS Gene
+        group: gene_regulation
+      - id: Nutrients
+        port: nutrients
+        label: Nutrients
+        group: core_system_state
+io:
+  inputs: []
+  outputs: []

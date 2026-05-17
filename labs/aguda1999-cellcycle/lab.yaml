@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Aguda1999 Cellcycle Lab
+description: The model reproduces the time profiles of p27, E2F and aE/cdk2 as depicted
+  in Figure 5 c of the paper. It can be used to explore systemsbiology aguda1999 cellcycle
+  BioModels0000000169 dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_aguda1999_cellcycle_biomd0000000169_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_aguda1999_cellcycle_biomd0000000169_model.state
+  to:
+  - visualisation.systemsbiology_sbml_aguda1999_cellcycle_biomd0000000169_model_state
+- from: systemsbiology_sbml_aguda1999_cellcycle_biomd0000000169_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_aguda1999_cellcycle_biomd0000000169_model_summary
+- from: systemsbiology_sbml_aguda1999_cellcycle_biomd0000000169_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_aguda1999_cellcycle_biomd0000000169_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- cellcycle
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_p27
+    maps_to: systemsbiology_sbml_aguda1999_cellcycle_biomd0000000169_model.initial_model_state_p27
+    label: Initial Model State P27
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Y7_1`.
+  - name: initial_model_state_p16
+    maps_to: systemsbiology_sbml_aguda1999_cellcycle_biomd0000000169_model.initial_model_state_p16
+    label: Initial Model State P16
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Y10_1`.
+  - name: initial_p_rb_e2_f
+    maps_to: systemsbiology_sbml_aguda1999_cellcycle_biomd0000000169_model.initial_p_rb_e2_f
+    label: Initial P Rb E2 F
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Y3_1`.
+  - name: initial_cyc_e_cdk2_p27
+    maps_to: systemsbiology_sbml_aguda1999_cellcycle_biomd0000000169_model.initial_cyc_e_cdk2_p27
+    label: Initial Cyc E Cdk2 P27
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Y8_1`.
+  - name: initial_p_rb
+    maps_to: systemsbiology_sbml_aguda1999_cellcycle_biomd0000000169_model.initial_p_rb
+    label: Initial P Rb
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Y5_1`.
+  - name: initial_p_rb_p
+    maps_to: systemsbiology_sbml_aguda1999_cellcycle_biomd0000000169_model.initial_p_rb_p
+    label: Initial P Rb P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Y11_1`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_aguda1999_cellcycle_biomd0000000169_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_aguda1999_cellcycle_biomd0000000169_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_aguda1999_cellcycle_biomd0000000169_model.species_labels
+  - name: p27
+    maps_to: systemsbiology_sbml_aguda1999_cellcycle_biomd0000000169_model.p27
+  - name: p16
+    maps_to: systemsbiology_sbml_aguda1999_cellcycle_biomd0000000169_model.p16
+  - name: p_rb_e2_f
+    maps_to: systemsbiology_sbml_aguda1999_cellcycle_biomd0000000169_model.p_rb_e2_f
+  - name: cyc_e_cdk2_p27
+    maps_to: systemsbiology_sbml_aguda1999_cellcycle_biomd0000000169_model.cyc_e_cdk2_p27
+  - name: p_rb
+    maps_to: systemsbiology_sbml_aguda1999_cellcycle_biomd0000000169_model.p_rb
+  - name: p_rb_p
+    maps_to: systemsbiology_sbml_aguda1999_cellcycle_biomd0000000169_model.p_rb_p

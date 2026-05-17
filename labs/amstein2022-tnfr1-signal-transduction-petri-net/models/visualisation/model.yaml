@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: Amstein2022 - TNFR1 Signal Transduction, Petri Net Visualisation
+description: Question-and-answer and dynamic visual summaries for Amstein2022 - TNFR1
+  Signal Transduction, Petri Net.
+standard: other
+tags:
+- immunology
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Amstein2022 Tnfr1 Signal Transduction Petri Net Lab
+    question: 'Which immune or inflammatory states dominate the simulated response?
+      Source model: Amstein2022 - TNFR1 Signal Transduction, Petri Net.'
+    answer_focus: Q/A table plus immunology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_amstein2022_tnfr1_signal_transduction_petri_net_model2210170001_model
+      title: Amstein2022 - TNFR1 Signal Transduction, Petri Net
+      observables:
+      - id: P95
+        port: c_flipl_mrna
+        label: cFLIPL_mRNA
+        group: signaling
+      - id: P93
+        port: xiap_mrna
+        label: XIAP_mRNA
+        group: signaling
+      - id: P79
+        port: ik_b_mrna
+        label: IkB_mRNA
+        group: signaling
+      - id: P96
+        port: bcl_2_mrna
+        label: BCL-2_mRNA
+        group: signaling
+      - id: P92
+        port: a20_mrna
+        label: A20_mRNA
+        group: signaling
+      - id: P105
+        port: t_bid_mom
+        label: tBid_MOM
+        group: signaling
+io:
+  inputs: []
+  outputs: []

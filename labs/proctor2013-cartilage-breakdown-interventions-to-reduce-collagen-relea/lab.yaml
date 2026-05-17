@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Proctor2013 Cartilage Breakdown Interventions To Reduce Collagen Relea Lab
+description: Proctor2013 - Cartilage breakdown, interventions to reduce collagen release
+  The molecular pathways involved in cartilage breakdown is studied using this model
+  to examine possible interventions to redu. It can be used to explore systemsbiology
+  proctor2013 cartilage breakdown interventions to dynamics and compare simulation
+  behavior across conditions.
+models:
+- alias: systemsbiology_sbml_proctor2013_cartilage_breakdown_interventions_to_biomd0000000504_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_proctor2013_cartilage_breakdown_interventions_to_biomd0000000504_model.state
+  to:
+  - visualisation.systemsbiology_sbml_proctor2013_cartilage_breakdown_interventions_to_biomd0000000504_model_state
+- from: systemsbiology_sbml_proctor2013_cartilage_breakdown_interventions_to_biomd0000000504_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_proctor2013_cartilage_breakdown_interventions_to_biomd0000000504_model_summary
+- from: systemsbiology_sbml_proctor2013_cartilage_breakdown_interventions_to_biomd0000000504_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_proctor2013_cartilage_breakdown_interventions_to_biomd0000000504_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_traf6
+    maps_to: systemsbiology_sbml_proctor2013_cartilage_breakdown_interventions_to_biomd0000000504_model.initial_traf6
+    label: Initial Traf6
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TRAF6`.
+  - name: initial_stat3_cyt
+    maps_to: systemsbiology_sbml_proctor2013_cartilage_breakdown_interventions_to_biomd0000000504_model.initial_stat3_cyt
+    label: Initial Stat3 Cyt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `STAT3_cyt`.
+  - name: initial_timp3_mrna
+    maps_to: systemsbiology_sbml_proctor2013_cartilage_breakdown_interventions_to_biomd0000000504_model.initial_timp3_mrna
+    label: Initial Timp3 MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TIMP3_mRNA`.
+  - name: initial_timp1_mrna
+    maps_to: systemsbiology_sbml_proctor2013_cartilage_breakdown_interventions_to_biomd0000000504_model.initial_timp1_mrna
+    label: Initial Timp1 MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TIMP1_mRNA`.
+  - name: initial_c_jun_mrna
+    maps_to: systemsbiology_sbml_proctor2013_cartilage_breakdown_interventions_to_biomd0000000504_model.initial_c_jun_mrna
+    label: Initial C Jun MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cJun_mRNA`.
+  - name: initial_traf6_pp4
+    maps_to: systemsbiology_sbml_proctor2013_cartilage_breakdown_interventions_to_biomd0000000504_model.initial_traf6_pp4
+    label: Initial Traf6 PP4
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TRAF6_PP4`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_proctor2013_cartilage_breakdown_interventions_to_biomd0000000504_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_proctor2013_cartilage_breakdown_interventions_to_biomd0000000504_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_proctor2013_cartilage_breakdown_interventions_to_biomd0000000504_model.species_labels
+  - name: traf6
+    maps_to: systemsbiology_sbml_proctor2013_cartilage_breakdown_interventions_to_biomd0000000504_model.traf6
+  - name: stat3_cyt
+    maps_to: systemsbiology_sbml_proctor2013_cartilage_breakdown_interventions_to_biomd0000000504_model.stat3_cyt
+  - name: timp3_mrna
+    maps_to: systemsbiology_sbml_proctor2013_cartilage_breakdown_interventions_to_biomd0000000504_model.timp3_mrna
+  - name: timp1_mrna
+    maps_to: systemsbiology_sbml_proctor2013_cartilage_breakdown_interventions_to_biomd0000000504_model.timp1_mrna
+  - name: c_jun_mrna
+    maps_to: systemsbiology_sbml_proctor2013_cartilage_breakdown_interventions_to_biomd0000000504_model.c_jun_mrna
+  - name: traf6_pp4
+    maps_to: systemsbiology_sbml_proctor2013_cartilage_breakdown_interventions_to_biomd0000000504_model.traf6_pp4

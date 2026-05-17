@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Romond1999_CellCycle Visualisation
+description: Question-and-answer and dynamic visual summaries for Romond1999_CellCycle.
+standard: other
+tags:
+- cellcycle
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Romond1999 Cellcycle Lab
+    question: 'Which cell-cycle control states dominate the simulated progression?
+      Source model: Romond1999_CellCycle.'
+    answer_focus: Q/A table plus cellcycle timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_romond1999_cellcycle_biomd0000000207_model
+      title: Romond1999_CellCycle
+      observables:
+      - id: C1
+        port: cyclin_b
+        label: cyclinB
+        group: physiology
+      - id: M1
+        port: cdk1
+        label: cdk1
+        group: physiology
+      - id: X1
+        port: ubiquitin_ligase
+        label: ubiquitin ligase
+        group: physiology
+      - id: C2
+        port: cyclin_e
+        label: cyclinE
+        group: physiology
+      - id: M2
+        port: cdk2
+        label: cdk2
+        group: physiology
+      - id: X2
+        port: ubiquitin_ligase_2
+        label: Ubiquitin ligase 2
+        group: physiology
+io:
+  inputs: []
+  outputs: []

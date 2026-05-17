@@ -1,0 +1,110 @@
+schema_version: '2.0'
+title: stseranidou2024 - Nucleus Pulposus Cell Network Modelling in the Intervertebral
+  Disc
+description: 'ABSTRACT: Intervertebral disc degeneration (IDD) arises from an intricate
+  imbalance between the anabolic and catabolic processes governing the extracellular
+  matrix (ECM) within the disc. It can be used to explore systemsbiology stseranidou2024
+  nucleus pulposus cell network dynamics and compare simulation behavior across conditions.'
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Sofia Tseranidou
+- Maria Segarra-Queralt
+- Francis Kiptengwer Chemorion
+- Christine Le Maitre
+- Janet Pinero
+upstream:
+  id: biomodels_ebi:MODEL2407080001
+  source_db: biomodels_ebi
+  source_id: MODEL2407080001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2407080001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2407080001?filename=model.xml
+  license: CC0
+biosim:
+  entrypoint: src.stseranidou2024_nucleus_pulposus_cell_network_mo_model2407080001_model:Stseranidou2024NucleusPulposusCellNetworkMoModel2407080001Model
+  init_kwargs:
+    model_path: data/MODEL2407080001.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_tnf
+    maps_to: TNF
+    label: Initial Model State TNF
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TNF`.
+  - name: initial_il_10
+    maps_to: IL_10
+    label: Initial Il 10
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IL_10`.
+  - name: initial_il_1
+    maps_to: IL_1beta
+    label: Initial Il 1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IL_1beta`.
+  - name: initial_model_state_tgf
+    maps_to: TGF_beta
+    label: Initial Model State Tgf
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TGF_beta`.
+  - name: initial_il_8
+    maps_to: IL_8
+    label: Initial Il 8
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IL_8`.
+  - name: initial_il_6
+    maps_to: IL_6
+    label: Initial Il 6
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IL_6`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: tnf
+    maps_to: TNF
+    label: TNF
+    description: TNF. Maps to SBML symbol `TNF`.
+  - name: il_10
+    maps_to: IL_10
+    label: IL-10
+    description: IL-10. Maps to SBML symbol `IL_10`.
+  - name: il_1
+    maps_to: IL_1beta
+    label: IL-1β
+    description: IL-1β. Maps to SBML symbol `IL_1beta`.
+  - name: tgf
+    maps_to: TGF_beta
+    label: TGF-β
+    description: TGF-β. Maps to SBML symbol `TGF_beta`.
+  - name: il_8
+    maps_to: IL_8
+    label: IL-8
+    description: IL-8. Maps to SBML symbol `IL_8`.
+  - name: il_6
+    maps_to: IL_6
+    label: IL-6
+    description: IL-6. Maps to SBML symbol `IL_6`.

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "69eb2a1c-dced-40b5-bd97-c7630e1de8e9",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "eec6b2cf-acef-482b-adb6-9de10ae49779",
+  "created_at": "2026-05-16T05:46:43.096413120+00:00",
+  "last_synced_at": "2026-05-17T03:04:01.361350+00:00",
+  "hub_manifest_hash": "a6cdb58e2b47be108d72bb2beff9cff52af745dab83ecbd6a598062eddf36285",
+  "package_name": "feist2006-methanogenesis-optiacetate-lab"
+}

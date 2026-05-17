@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Stefan2008 - calmodulin allostery Visualisation
+description: Question-and-answer and dynamic visual summaries for Stefan2008 - calmodulin
+  allostery.
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Stefan2008 Calmodulin Allostery Lab
+    question: 'Which physiological state variables carry the strongest baseline response?
+      Source model: Stefan2008 - calmodulin allostery.'
+    answer_focus: Q/A table plus physiology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_stefan2008_calmodulin_allostery_biomd0000000183_model
+      title: Stefan2008 - calmodulin allostery
+      observables:
+      - id: species_33
+        port: ca_mkii
+        label: CaMKII
+        group: physiology
+      - id: species_1
+        port: model_state_ca
+        label: ca
+        group: physiology
+      - id: species_50
+        port: pp2_b
+        label: PP2B
+        group: physiology
+      - id: species_17
+        port: cam_t
+        label: camT
+        group: physiology
+      - id: species_0
+        port: cam_r
+        label: camR
+        group: physiology
+      - id: species_32
+        port: cam_t_ca4_abcd
+        label: camT_ca4_ABCD
+        group: physiology
+io:
+  inputs: []
+  outputs: []

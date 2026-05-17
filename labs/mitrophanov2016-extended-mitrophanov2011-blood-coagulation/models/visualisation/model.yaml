@@ -1,0 +1,58 @@
+schema_version: '2.0'
+title: Mitrophanov2016 - Extended Mitrophanov2011 Blood Coagulation Model (additional
+  thrombin reactions) Visualisation
+description: Question-and-answer and dynamic visual summaries for Mitrophanov2016
+  - Extended Mitrophanov2011 Blood Coagulation Model (additional thrombin reactions).
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Mitrophanov2016 Extended Mitrophanov2011 Blood Coagulation Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Mitrophanov2016 - Extended Mitrophanov2011 Blood Coagulation Model
+      (additional thrombin reactions).'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_mitrophanov2016_extended_mitrophanov2011_blood_c_model1806280001_model
+      title: Mitrophanov2016 - Extended Mitrophanov2011 Blood Coagulation Model (additional
+        thrombin reactions)
+      observables:
+      - id: alpha_2_M
+        port: alpha_2_m
+        label: alpha_2_M
+        group: physiology
+      - id: rVIIa
+        port: r_vi_ia
+        label: rVIIa
+        group: physiology
+      - id: mIIa_ATIII
+        port: m_i_ia_atiii
+        label: mIIa_ATIII
+        group: physiology
+      - id: mIIa
+        port: m_i_ia
+        label: mIIa
+        group: physiology
+      - id: Xa_Va_II
+        port: xa_va_ii
+        label: Xa_Va_II
+        group: physiology
+      - id: Xa_Va
+        port: xa_va
+        label: Xa_Va
+        group: physiology
+io:
+  inputs: []
+  outputs: []

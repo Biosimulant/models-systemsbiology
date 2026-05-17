@@ -1,0 +1,104 @@
+schema_version: '2.0'
+title: Condorelli2001_GuanylateCyclase
+description: This model features the observations of &lt;a href = 'http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=pubmed&amp;dopt=Abstract&amp;list_uids=11325714'&gt;Condorelli
+  P, George SC. It can be used to explore systemsbiology condorelli2001 guanylatecyclase
+  model4780441670 dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- P Condorelli
+- S C George
+upstream:
+  id: biomodels_ebi:MODEL4780441670
+  source_db: biomodels_ebi
+  source_id: MODEL4780441670
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL4780441670
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL4780441670?filename=MODEL4780441670_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.condorelli2001_guanylatecyclase_model4780441670_model:Condorelli2001GuanylatecyclaseModel4780441670Model
+  init_kwargs:
+    model_path: data/MODEL4780441670.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_gc_slash_gtp
+    maps_to: GC_slash_GTP
+    label: Initial Gc Slash Gtp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `GC_slash_GTP`.
+  - name: initial_gc_slash_sgc_basal
+    maps_to: GC_slash_sGC_basal
+    label: Initial Gc Slash Sgc Basal
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `GC_slash_sGC_basal`.
+  - name: initial_gc_slash_no_a
+    maps_to: GC_slash_NO_a
+    label: Initial Gc Slash No A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `GC_slash_NO_a`.
+  - name: initial_gc_slash_no_sg_cpart_act
+    maps_to: GC_slash_NO_sGCpart_act
+    label: Initial Gc Slash No Sg Cpart Act
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `GC_slash_NO_sGCpart_act`.
+  - name: initial_gc_slash_no_sg_cfull_act
+    maps_to: GC_slash_NO_sGCfull_act
+    label: Initial Gc Slash No Sg Cfull Act
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `GC_slash_NO_sGCfull_act`.
+  - name: initial_gc_slash_no
+    maps_to: GC_slash_NO
+    label: Initial Gc Slash No
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `GC_slash_NO`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: gc_slash_gtp
+    maps_to: GC_slash_GTP
+    label: GC Slash GTP
+    description: GC Slash GTP. Maps to SBML symbol `GC_slash_GTP`.
+  - name: gc_slash_sgc_basal
+    maps_to: GC_slash_sGC_basal
+    label: GC Slash SGC Basal
+    description: GC Slash SGC Basal. Maps to SBML symbol `GC_slash_sGC_basal`.
+  - name: gc_slash_no_a
+    maps_to: GC_slash_NO_a
+    label: GC Slash NO A
+    description: GC Slash NO A. Maps to SBML symbol `GC_slash_NO_a`.
+  - name: gc_slash_no_sg_cpart_act
+    maps_to: GC_slash_NO_sGCpart_act
+    label: GC Slash NO SGCpart Act
+    description: GC Slash NO SGCpart Act. Maps to SBML symbol `GC_slash_NO_sGCpart_act`.
+  - name: gc_slash_no_sg_cfull_act
+    maps_to: GC_slash_NO_sGCfull_act
+    label: GC Slash NO SGCfull Act
+    description: GC Slash NO SGCfull Act. Maps to SBML symbol `GC_slash_NO_sGCfull_act`.
+  - name: gc_slash_no
+    maps_to: GC_slash_NO
+    label: GC Slash NO
+    description: GC Slash NO. Maps to SBML symbol `GC_slash_NO`.

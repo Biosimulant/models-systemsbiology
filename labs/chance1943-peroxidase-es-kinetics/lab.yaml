@@ -1,0 +1,71 @@
+schema_version: '2.0'
+title: Chance1943 Peroxidase Es Kinetics Lab
+description: Default parameter values are those in the right hand panel of Fig 12.
+  It can be used to explore systemsbiology chance1943 peroxidase es kinetics BioModels0000000283
+  dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_chance1943_peroxidase_es_kinetics_biomd0000000283_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_chance1943_peroxidase_es_kinetics_biomd0000000283_model.state
+  to:
+  - visualisation.systemsbiology_sbml_chance1943_peroxidase_es_kinetics_biomd0000000283_model_state
+- from: systemsbiology_sbml_chance1943_peroxidase_es_kinetics_biomd0000000283_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_chance1943_peroxidase_es_kinetics_biomd0000000283_model_summary
+- from: systemsbiology_sbml_chance1943_peroxidase_es_kinetics_biomd0000000283_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_chance1943_peroxidase_es_kinetics_biomd0000000283_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_x
+    maps_to: systemsbiology_sbml_chance1943_peroxidase_es_kinetics_biomd0000000283_model.initial_model_state_x
+    label: Initial Model State X
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X`.
+  - name: initial_model_state_e
+    maps_to: systemsbiology_sbml_chance1943_peroxidase_es_kinetics_biomd0000000283_model.initial_model_state_e
+    label: Initial Model State E
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `E`.
+  - name: initial_model_state_q
+    maps_to: systemsbiology_sbml_chance1943_peroxidase_es_kinetics_biomd0000000283_model.initial_model_state_q
+    label: Initial Model State Q
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Q`.
+  - name: initial_model_state_p
+    maps_to: systemsbiology_sbml_chance1943_peroxidase_es_kinetics_biomd0000000283_model.initial_model_state_p
+    label: Initial Model State P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_chance1943_peroxidase_es_kinetics_biomd0000000283_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_chance1943_peroxidase_es_kinetics_biomd0000000283_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_chance1943_peroxidase_es_kinetics_biomd0000000283_model.species_labels
+  - name: model_state_x
+    maps_to: systemsbiology_sbml_chance1943_peroxidase_es_kinetics_biomd0000000283_model.model_state_x
+  - name: model_state_e
+    maps_to: systemsbiology_sbml_chance1943_peroxidase_es_kinetics_biomd0000000283_model.model_state_e
+  - name: model_state_q
+    maps_to: systemsbiology_sbml_chance1943_peroxidase_es_kinetics_biomd0000000283_model.model_state_q
+  - name: model_state_p
+    maps_to: systemsbiology_sbml_chance1943_peroxidase_es_kinetics_biomd0000000283_model.model_state_p

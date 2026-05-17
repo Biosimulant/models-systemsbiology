@@ -1,0 +1,79 @@
+schema_version: '2.0'
+title: Liu1999 Pulsatilesecretion Lab
+description: 'This a model from the article: A dynamical model for the pubsatile secretion
+  of the hypothalamo-pituitary-adrenal axis. Yi-wei Liu, Zhi-Hong Hu, Jian-Hua Peng
+  and Bing-Zheng Liu Mathematical and Compu.'
+models:
+- alias: systemsbiology_sbml_liu1999_pulsatilesecretion_model1006230060_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_liu1999_pulsatilesecretion_model1006230060_model.state
+  to:
+  - visualisation.systemsbiology_sbml_liu1999_pulsatilesecretion_model1006230060_model_state
+- from: systemsbiology_sbml_liu1999_pulsatilesecretion_model1006230060_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_liu1999_pulsatilesecretion_model1006230060_model_summary
+- from: systemsbiology_sbml_liu1999_pulsatilesecretion_model1006230060_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_liu1999_pulsatilesecretion_model1006230060_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_x5
+    maps_to: systemsbiology_sbml_liu1999_pulsatilesecretion_model1006230060_model.initial_model_state_x5
+    label: Initial Model State X5
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x5`.
+  - name: initial_model_state_x4
+    maps_to: systemsbiology_sbml_liu1999_pulsatilesecretion_model1006230060_model.initial_model_state_x4
+    label: Initial Model State X4
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x4`.
+  - name: initial_model_state_x3
+    maps_to: systemsbiology_sbml_liu1999_pulsatilesecretion_model1006230060_model.initial_model_state_x3
+    label: Initial Model State X3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x3`.
+  - name: initial_model_state_x2
+    maps_to: systemsbiology_sbml_liu1999_pulsatilesecretion_model1006230060_model.initial_model_state_x2
+    label: Initial Model State X2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x2`.
+  - name: initial_model_state_x1
+    maps_to: systemsbiology_sbml_liu1999_pulsatilesecretion_model1006230060_model.initial_model_state_x1
+    label: Initial Model State X1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x1`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_liu1999_pulsatilesecretion_model1006230060_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_liu1999_pulsatilesecretion_model1006230060_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_liu1999_pulsatilesecretion_model1006230060_model.species_labels
+  - name: model_state_x5
+    maps_to: systemsbiology_sbml_liu1999_pulsatilesecretion_model1006230060_model.model_state_x5
+  - name: model_state_x4
+    maps_to: systemsbiology_sbml_liu1999_pulsatilesecretion_model1006230060_model.model_state_x4
+  - name: model_state_x3
+    maps_to: systemsbiology_sbml_liu1999_pulsatilesecretion_model1006230060_model.model_state_x3
+  - name: model_state_x2
+    maps_to: systemsbiology_sbml_liu1999_pulsatilesecretion_model1006230060_model.model_state_x2
+  - name: model_state_x1
+    maps_to: systemsbiology_sbml_liu1999_pulsatilesecretion_model1006230060_model.model_state_x1

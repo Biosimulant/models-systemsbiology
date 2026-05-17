@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Singh2006_TCA_Ecoli_glucose
+description: 'This a model from the article: Kinetic modeling of tricarboxylic acid
+  cycle and glyoxylate bypass in Mycobacterium tuberculosis, and its application to
+  assessment of drugtargets. It can be used to explore systemsbiology singh2006 tca
+  ecoli glucose BioModels0000000222 dynamics and compare simulation behavior across
+  conditions.'
+standard: other
+tags:
+- metabolism
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Vivek Kumar Singh
+- Indira Ghosh
+upstream:
+  id: biomodels_ebi:BIOMD0000000222
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000222
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000222
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000222?filename=BIOMD0000000222_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.singh2006_tca_ecoli_glucose_biomd0000000222_model:Singh2006TcaEcoliGlucoseBiomd0000000222Model
+  init_kwargs:
+    model_path: data/BIOMD0000000222.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_gly
+    maps_to: gly
+    label: Initial Model State Gly
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `gly`.
+  - name: initial_model_state_cit
+    maps_to: cit
+    label: Initial Model State Cit
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cit`.
+  - name: initial_model_state_mal
+    maps_to: mal
+    label: Initial Model State Mal
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mal`.
+  - name: initial_model_state_suc
+    maps_to: suc
+    label: Initial Model State Suc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `suc`.
+  - name: initial_model_state_aca
+    maps_to: aca
+    label: Initial Model State Aca
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `aca`.
+  - name: initial_model_state_fa
+    maps_to: fa
+    label: Initial Model State Fa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `fa`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: gly
+    maps_to: gly
+    label: Gly
+    description: Gly. Maps to SBML symbol `gly`.
+  - name: cit
+    maps_to: cit
+    label: Cit
+    description: Cit. Maps to SBML symbol `cit`.
+  - name: mal
+    maps_to: mal
+    label: Mal
+    description: Mal. Maps to SBML symbol `mal`.
+  - name: suc
+    maps_to: suc
+    label: Suc
+    description: Suc. Maps to SBML symbol `suc`.
+  - name: aca
+    maps_to: aca
+    label: Aca
+    description: Aca. Maps to SBML symbol `aca`.
+  - name: model_state_fa
+    maps_to: fa
+    label: Fa
+    description: Fa. Maps to SBML symbol `fa`.

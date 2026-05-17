@@ -1,0 +1,42 @@
+schema_version: '2.0'
+title: Zatorsky2006_p53_Model4 Visualisation
+description: Question-and-answer and dynamic visual summaries for Zatorsky2006_p53_Model4.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Zatorsky2006 P53 3 Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Zatorsky2006_p53_Model4.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_zatorsky2006_p53_model4_biomd0000000157_model
+      title: Zatorsky2006_p53_Model4
+      observables:
+      - id: y0
+        port: precursor_mdm2
+        label: precursor Mdm2
+        group: physiology
+      - id: y
+        port: mdm2
+        label: Mdm2
+        group: physiology
+      - id: x
+        port: p53
+        label: p53
+        group: physiology
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,105 @@
+schema_version: '2.0'
+title: Kogan2001_aPTT_coagulation
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models (http://www.ebi.ac.uk/biomodels/). It is copyright (c) 2005-2011
+  The BioModels.net Team.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- A E Kogan
+- D V Kardakov
+- M A Khanin
+upstream:
+  id: biomodels_ebi:MODEL1109160001
+  source_db: biomodels_ebi
+  source_id: MODEL1109160001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1109160001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1109160001?filename=MODEL1109160001_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.kogan2001_aptt_coagulation_model1109160001_model:Kogan2001ApttCoagulationModel1109160001Model
+  init_kwargs:
+    model_path: data/MODEL1109160001.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_alpha1_at
+    maps_to: species_12
+    label: Initial Alpha1 At
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_12`.
+  - name: initial_model_state_i
+    maps_to: species_35
+    label: Initial Model State I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_35`.
+  - name: initial_atiii
+    maps_to: species_8
+    label: Initial Atiii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_8`.
+  - name: initial_alpha2_m
+    maps_to: species_14
+    label: Initial Alpha2 M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_14`.
+  - name: initial_model_state_ii
+    maps_to: species_32
+    label: Initial Model State Ii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_32`.
+  - name: initial_c1inh
+    maps_to: species_20
+    label: Initial C1inh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_20`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: alpha1_at
+    maps_to: species_12
+    label: alpha1AT
+    description: alpha1AT. Maps to SBML symbol `species_12`.
+  - name: model_state_i
+    maps_to: species_35
+    label: I
+    description: I. Maps to SBML symbol `species_35`.
+  - name: atiii
+    maps_to: species_8
+    label: ATIII
+    description: ATIII. Maps to SBML symbol `species_8`.
+  - name: alpha2_m
+    maps_to: species_14
+    label: alpha2M
+    description: alpha2M. Maps to SBML symbol `species_14`.
+  - name: model_state_ii
+    maps_to: species_32
+    label: II
+    description: II. Maps to SBML symbol `species_32`.
+  - name: c1inh
+    maps_to: species_20
+    label: C1inh
+    description: C1inh. Maps to SBML symbol `species_20`.

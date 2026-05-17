@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Nguyen2013 - Dynamic model of HIF regulation in hypoxia
+description: Its a mathematcial model explaining regulation of HIF via FIH and oxygen.
+  Model is further validated by Experimental data and various hypothesis has been
+  tested on the same.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Lan K Nguyen
+- Miguel A S Cavadas
+- Carsten C Scholz
+- Susan F Fitzpatrick
+- Ulrike Bruning
+upstream:
+  id: biomodels_ebi:MODEL1912100004
+  source_db: biomodels_ebi
+  source_id: MODEL1912100004
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1912100004
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1912100004?filename=Nguyen2013_HIF.xml
+  license: CC0
+biosim:
+  entrypoint: src.nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100004_model:Nguyen2013DynamicModelOfHifRegulationInHyModel1912100004Model
+  init_kwargs:
+    model_path: data/MODEL1912100004.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_mrna
+    maps_to: mRNA
+    label: Initial MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mRNA`.
+  - name: initial_protein
+    maps_to: Protein
+    label: Initial Protein
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Protein`.
+  - name: initial_luciferase
+    maps_to: Luciferase
+    label: Initial Luciferase
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Luciferase`.
+  - name: initial_vhl_n
+    maps_to: VHL_n
+    label: Initial Vhl N
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VHL_n`.
+  - name: initial_fih_n
+    maps_to: FIH_n
+    label: Initial Fih N
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `FIH_n`.
+  - name: initial_phd_n
+    maps_to: PHD_n
+    label: Initial Phd N
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PHD_n`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: mrna
+    maps_to: mRNA
+    label: mRNA
+    description: mRNA. Maps to SBML symbol `mRNA`.
+  - name: protein
+    maps_to: Protein
+    label: Protein
+    description: Protein. Maps to SBML symbol `Protein`.
+  - name: luciferase
+    maps_to: Luciferase
+    label: Luciferase
+    description: Luciferase. Maps to SBML symbol `Luciferase`.
+  - name: vhl_n
+    maps_to: VHL_n
+    label: VHL_n
+    description: VHL_n. Maps to SBML symbol `VHL_n`.
+  - name: fih_n
+    maps_to: FIH_n
+    label: FIH_n
+    description: FIH_n. Maps to SBML symbol `FIH_n`.
+  - name: phd_n
+    maps_to: PHD_n
+    label: PHD_n
+    description: PHD_n. Maps to SBML symbol `PHD_n`.

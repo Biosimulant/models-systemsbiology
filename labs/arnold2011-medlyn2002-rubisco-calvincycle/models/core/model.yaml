@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Arnold2011_Medlyn2002_RuBisCO-CalvinCycle
+description: 'This model is from the article: A quantitative comparison of Calvin–Benson
+  cycle models Anne Arnold, Zoran Nikoloski Trends in Plant Science 2011 Oct 14. It
+  can be used to explore systemsbiology arnold2011 medlyn2002 rubisco calvincycle
+  BioModels0000000384 dynamics and compare simulation behavior across conditions.'
+standard: other
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Anne Arnold
+- Zoran Nikoloski
+upstream:
+  id: biomodels_ebi:BIOMD0000000384
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000384
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000384
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000384?filename=BIOMD0000000384_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.arnold2011_medlyn2002_rubisco_calvincycle_biomd0000000384_model:Arnold2011Medlyn2002RubiscoCalvincycleBiomd0000000384Model
+  init_kwargs:
+    model_path: data/BIOMD0000000384.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_co2
+    maps_to: CO2
+    label: Initial Model State CO2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CO2`.
+  - name: initial_model_state_o2
+    maps_to: O2
+    label: Initial Model State O2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `O2`.
+  - name: initial_model_state_pga
+    maps_to: PGA
+    label: Initial Model State Pga
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PGA`.
+  - name: initial_ru_bp
+    maps_to: RuBP
+    label: Initial Ru Bp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RuBP`.
+  - name: initial_nadp
+    maps_to: NADP
+    label: Initial Nadp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NADP`.
+  - name: initial_nadph
+    maps_to: NADPH
+    label: Initial Nadph
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NADPH`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: co2
+    maps_to: CO2
+    label: CO2
+    description: CO2. Maps to SBML symbol `CO2`.
+  - name: model_state_o2
+    maps_to: O2
+    label: O2
+    description: O2. Maps to SBML symbol `O2`.
+  - name: pga
+    maps_to: PGA
+    label: PGA
+    description: PGA. Maps to SBML symbol `PGA`.
+  - name: ru_bp
+    maps_to: RuBP
+    label: RuBP
+    description: RuBP. Maps to SBML symbol `RuBP`.
+  - name: nadp
+    maps_to: NADP
+    label: NADP
+    description: NADP. Maps to SBML symbol `NADP`.
+  - name: nadph
+    maps_to: NADPH
+    label: NADPH
+    description: NADPH. Maps to SBML symbol `NADPH`.

@@ -1,0 +1,47 @@
+schema_version: '2.0'
+title: Dunster2014 - WBC Interactions (Model1) Visualisation
+description: Question-and-answer and dynamic visual summaries for Dunster2014 - WBC
+  Interactions (Model1).
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Dunster2014 Wbc Interactions Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Dunster2014 - WBC Interactions (Model1).'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_dunster2014_wbc_interactions_model1_biomd0000000616_model
+      title: Dunster2014 - WBC Interactions (Model1)
+      observables:
+      - id: n
+        port: model_state_n
+        label: n
+        group: physiology
+      - id: m
+        port: model_state_m
+        label: m
+        group: physiology
+      - id: c
+        port: model_state_c
+        label: c
+        group: physiology
+      - id: a
+        port: model_state_a
+        label: a
+        group: physiology
+io:
+  inputs: []
+  outputs: []

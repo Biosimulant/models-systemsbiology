@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "36dfb442-a915-4a68-b7d3-e09568daca88",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "be441082-38de-4f52-a89b-bf5fb8e42a83",
+  "created_at": "2026-05-16T05:46:40.917712312+00:00",
+  "last_synced_at": "2026-05-17T01:43:55.386691+00:00",
+  "hub_manifest_hash": "0ec65df8425ad0e64c3b9c537b0bd2ea7e28e5a775443130dab4f47382dd6a91",
+  "package_name": "arnold2011-medlyn2002-rubisco-calvincycle-lab"
+}

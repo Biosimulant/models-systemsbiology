@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Komarova2003_BoneRemodeling Visualisation
+description: Question-and-answer and dynamic visual summaries for Komarova2003_BoneRemodeling.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Komarova2003 Boneremodeling Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Komarova2003_BoneRemodeling.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_komarova2003_boneremodeling_biomd0000000148_model
+      title: Komarova2003_BoneRemodeling
+      observables:
+      - id: x1_bar
+        port: steady_state_osteoclast
+        label: Steady state osteoclast
+        group: signaling
+      - id: x2_bar
+        port: steady_state_osteoblast
+        label: Steady state osteoblast
+        group: signaling
+      - id: x2
+        port: osteoblast
+        label: Osteoblast
+        group: physiology
+      - id: x1
+        port: osteoclast
+        label: Osteoclast
+        group: physiology
+      - id: y1
+        port: cells_actively_resorbing_bone
+        label: Cells actively resorbing bone
+        group: physiology
+      - id: y2
+        port: cells_actively_forming_bone
+        label: Cells actively forming bone
+        group: physiology
+io:
+  inputs: []
+  outputs: []

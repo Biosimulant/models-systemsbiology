@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Dupont1991 Caoscillation Lab
+description: 'This model is according to the paper Signal-induced Ca2+ oscillations:
+  Properties of a model based on Ca2+-induced Ca2+ release. Figure4B in the paper
+  has been reproduced by RoadRunner and MathSBML.'
+models:
+- alias: systemsbiology_sbml_dupont1991_caoscillation_biomd0000000117_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_dupont1991_caoscillation_biomd0000000117_model.state
+  to:
+  - visualisation.systemsbiology_sbml_dupont1991_caoscillation_biomd0000000117_model_state
+- from: systemsbiology_sbml_dupont1991_caoscillation_biomd0000000117_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_dupont1991_caoscillation_biomd0000000117_model_summary
+- from: systemsbiology_sbml_dupont1991_caoscillation_biomd0000000117_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_dupont1991_caoscillation_biomd0000000117_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_ca_in_the_ins_p3_insensitive_pool
+    maps_to: systemsbiology_sbml_dupont1991_caoscillation_biomd0000000117_model.initial_ca_in_the_ins_p3_insensitive_pool
+    label: Initial Ca In The Ins P3 Insensitive Pool
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `y`.
+  - name: initial_ca_in_the_cytosol
+    maps_to: systemsbiology_sbml_dupont1991_caoscillation_biomd0000000117_model.initial_ca_in_the_cytosol
+    label: Initial Ca In The Cytosol
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `z`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_dupont1991_caoscillation_biomd0000000117_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_dupont1991_caoscillation_biomd0000000117_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_dupont1991_caoscillation_biomd0000000117_model.species_labels
+  - name: ca_in_the_ins_p3_insensitive_pool
+    maps_to: systemsbiology_sbml_dupont1991_caoscillation_biomd0000000117_model.ca_in_the_ins_p3_insensitive_pool
+  - name: ca_in_the_cytosol
+    maps_to: systemsbiology_sbml_dupont1991_caoscillation_biomd0000000117_model.ca_in_the_cytosol

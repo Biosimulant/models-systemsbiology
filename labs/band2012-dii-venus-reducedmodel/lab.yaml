@@ -1,0 +1,47 @@
+schema_version: '2.0'
+title: Band2012 Dii Venus Reducedmodel Lab
+description: 'This model is from the article: Root gravitropism is regulated by a
+  transient lateral auxin gradient controlled by a tipping-point mechanism. Band LR,
+  Wells DM, Larrieu A, Sun J, Middleton AM, French.'
+models:
+- alias: systemsbiology_sbml_band2012_dii_venus_reducedmodel_biomd0000000414_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_band2012_dii_venus_reducedmodel_biomd0000000414_model.state
+  to:
+  - visualisation.systemsbiology_sbml_band2012_dii_venus_reducedmodel_biomd0000000414_model_state
+- from: systemsbiology_sbml_band2012_dii_venus_reducedmodel_biomd0000000414_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_band2012_dii_venus_reducedmodel_biomd0000000414_model_summary
+- from: systemsbiology_sbml_band2012_dii_venus_reducedmodel_biomd0000000414_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_band2012_dii_venus_reducedmodel_biomd0000000414_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_venus
+    maps_to: systemsbiology_sbml_band2012_dii_venus_reducedmodel_biomd0000000414_model.initial_venus
+    label: Initial Venus
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VENUS`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_band2012_dii_venus_reducedmodel_biomd0000000414_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_band2012_dii_venus_reducedmodel_biomd0000000414_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_band2012_dii_venus_reducedmodel_biomd0000000414_model.species_labels
+  - name: venus
+    maps_to: systemsbiology_sbml_band2012_dii_venus_reducedmodel_biomd0000000414_model.venus

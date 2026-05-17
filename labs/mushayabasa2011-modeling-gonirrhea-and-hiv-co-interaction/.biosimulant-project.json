@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "6eba85a1-3187-4e19-a9ad-63caef74515e",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "3b2378d0-52ca-4de8-8dc8-d07f1ce9b959",
+  "created_at": "2026-05-16T05:46:48.246345959+00:00",
+  "last_synced_at": "2026-05-17T05:08:29.102501+00:00",
+  "hub_manifest_hash": "1a6cd02e6d1ea9d432d727ac6339c4e005b380fef6d2a4c0daa52665bdb86e48",
+  "package_name": "mushayabasa2011-modeling-gonirrhea-and-hiv-co-interaction-lab"
+}

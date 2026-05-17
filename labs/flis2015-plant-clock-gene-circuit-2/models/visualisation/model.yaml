@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Flis2015 - Plant clock gene circuit (P2011.2.1 PLM_71 ver 2) Visualisation
+description: Question-and-answer and dynamic visual summaries for Flis2015 - Plant
+  clock gene circuit (P2011.2.1 PLM_71 ver 2).
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Flis2015 Plant Clock Gene Circuit 2 Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Flis2015 - Plant clock gene circuit (P2011.2.1 PLM_71 ver 2).'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_flis2015_plant_clock_gene_circuit_p2011_2_1_plm_biomd0000000598_model
+      title: Flis2015 - Plant clock gene circuit (P2011.2.1 PLM_71 ver 2)
+      observables:
+      - id: cL_m
+        port: c_l_m
+        label: cL_m
+        group: gene_regulation
+      - id: cP
+        port: c_p
+        label: cP
+        group: gene_regulation
+      - id: cCOP1n
+        port: c_cop1n
+        label: cCOP1n
+        group: gene_regulation
+      - id: cLUX
+        port: c_lux
+        label: cLUX
+        group: gene_regulation
+      - id: cL
+        port: c_l
+        label: cL
+        group: gene_regulation
+      - id: cP7_m
+        port: c_p7_m
+        label: cP7_m
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

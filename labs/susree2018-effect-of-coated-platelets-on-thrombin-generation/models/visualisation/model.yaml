@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Susree2018 - Effect of coated platelets on thrombin generation Visualisation
+description: Question-and-answer and dynamic visual summaries for Susree2018 - Effect
+  of coated platelets on thrombin generation.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Susree2018 Effect Of Coated Platelets On Thrombin Generation Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Susree2018 - Effect of coated platelets on thrombin generation.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_susree2018_effect_of_coated_platelets_on_thrombi_model1808080001_model
+      title: Susree2018 - Effect of coated platelets on thrombin generation
+      observables:
+      - id: a1AT
+        port: a1_at
+        label: a1AT
+        group: gene_regulation
+      - id: II_m
+        port: ii_m
+        label: II_m
+        group: gene_regulation
+      - id: X_m
+        port: x_m
+        label: X_m
+        group: gene_regulation
+      - id: Va_m
+        port: va_m
+        label: Va_m
+        group: gene_regulation
+      - id: IXa_m
+        port: i_xa_m
+        label: IXa_m
+        group: gene_regulation
+      - id: VIIIa_m
+        port: vii_ia_m
+        label: VIIIa_m
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

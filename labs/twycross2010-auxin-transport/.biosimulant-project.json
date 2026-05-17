@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "bc7650e8-20d9-43cf-ba60-363b8068e5e7",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "0c90ba48-41a5-4231-8f43-ff1113b781f0",
+  "created_at": "2026-05-16T05:46:52.473725943+00:00",
+  "last_synced_at": "2026-05-17T06:29:11.135650+00:00",
+  "hub_manifest_hash": "abc30a400829cc02dc9986acecdd1aff30cfd3597f6f1f126b817c5fbd6bbb0e",
+  "package_name": "twycross2010-auxin-transport-lab"
+}

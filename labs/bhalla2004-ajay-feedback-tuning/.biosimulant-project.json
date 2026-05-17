@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "2b76368a-7e79-4fb8-9d7d-8b7df6499632",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "fe19c717-ebef-49bd-a59a-952b6a6d8a82",
+  "created_at": "2026-05-16T05:46:41.570419607+00:00",
+  "last_synced_at": "2026-05-17T02:06:38.622727+00:00",
+  "hub_manifest_hash": "47b58b57935ae667f5479039163ed9aacedf873ae336c0360f32f75239d5cc97",
+  "package_name": "bhalla2004-ajay-feedback-tuning-lab"
+}

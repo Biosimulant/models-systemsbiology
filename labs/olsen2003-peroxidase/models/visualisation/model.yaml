@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Olsen2003_peroxidase Visualisation
+description: Question-and-answer and dynamic visual summaries for Olsen2003_peroxidase.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Olsen2003 Peroxidase Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Olsen2003_peroxidase.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_olsen2003_peroxidase_biomd0000000046_model
+      title: Olsen2003_peroxidase
+      observables:
+      - id: NADrad
+        port: na_drad
+        label: NADrad
+        group: metabolism
+      - id: NADHres
+        port: nad_hres
+        label: NADHres
+        group: metabolism
+      - id: NADH
+        port: nadh
+        label: NADH
+        group: metabolism
+      - id: NAD2
+        port: nad2
+        label: NAD2
+        group: metabolism
+      - id: NAD
+        port: nad
+        label: NAD
+        group: metabolism
+      - id: ArH
+        port: ar_h
+        label: ArH
+        group: core_system_state
+io:
+  inputs: []
+  outputs: []

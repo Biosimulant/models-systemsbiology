@@ -1,0 +1,90 @@
+schema_version: '2.0'
+title: Fisher2006 Ca Oscillation Dpdnt Nfat Dynamics Lab
+description: The model reproduces the calcium oscillation dependent activation-deactivation
+  kinetics of nuclear factor of activated T cells (NFAT) as depicted in Fig 4a of
+  the paper. It can be used to explore systemsbiology fisher2006 ca oscillation dpdnt
+  nfat dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_fisher2006_ca_oscillation_dpdnt_nfat_dynamics_biomd0000000122_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_fisher2006_ca_oscillation_dpdnt_nfat_dynamics_biomd0000000122_model.state
+  to:
+  - visualisation.systemsbiology_sbml_fisher2006_ca_oscillation_dpdnt_nfat_dynamics_biomd0000000122_model_state
+- from: systemsbiology_sbml_fisher2006_ca_oscillation_dpdnt_nfat_dynamics_biomd0000000122_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_fisher2006_ca_oscillation_dpdnt_nfat_dynamics_biomd0000000122_model_summary
+- from: systemsbiology_sbml_fisher2006_ca_oscillation_dpdnt_nfat_dynamics_biomd0000000122_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_fisher2006_ca_oscillation_dpdnt_nfat_dynamics_biomd0000000122_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- immunology
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_calcium_in_nucleus
+    maps_to: systemsbiology_sbml_fisher2006_ca_oscillation_dpdnt_nfat_dynamics_biomd0000000122_model.initial_calcium_in_nucleus
+    label: Initial Calcium In Nucleus
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_Nuc`.
+  - name: initial_calcium_in_cytosol
+    maps_to: systemsbiology_sbml_fisher2006_ca_oscillation_dpdnt_nfat_dynamics_biomd0000000122_model.initial_calcium_in_cytosol
+    label: Initial Calcium In Cytosol
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_Cyt`.
+  - name: initial_inactive_calcineurin_in_nucleus
+    maps_to: systemsbiology_sbml_fisher2006_ca_oscillation_dpdnt_nfat_dynamics_biomd0000000122_model.initial_inactive_calcineurin_in_nucleus
+    label: Initial Inactive Calcineurin In Nucleus
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Inact_C_Nuc`.
+  - name: initial_inactive_calcineurin_in_cytosol
+    maps_to: systemsbiology_sbml_fisher2006_ca_oscillation_dpdnt_nfat_dynamics_biomd0000000122_model.initial_inactive_calcineurin_in_cytosol
+    label: Initial Inactive Calcineurin In Cytosol
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Inact_C_Cyt`.
+  - name: initial_phosphorylated_nfat_in_cytosol
+    maps_to: systemsbiology_sbml_fisher2006_ca_oscillation_dpdnt_nfat_dynamics_biomd0000000122_model.initial_phosphorylated_nfat_in_cytosol
+    label: Initial Phosphorylated Nfat In Cytosol
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NFAT_Pi_Cyt`.
+  - name: initial_nfat_calcineurin_complex_in_nucleus
+    maps_to: systemsbiology_sbml_fisher2006_ca_oscillation_dpdnt_nfat_dynamics_biomd0000000122_model.initial_nfat_calcineurin_complex_in_nucleus
+    label: Initial Nfat Calcineurin Complex In Nucleus
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NFAT_Act_C_Nuc`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_fisher2006_ca_oscillation_dpdnt_nfat_dynamics_biomd0000000122_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_fisher2006_ca_oscillation_dpdnt_nfat_dynamics_biomd0000000122_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_fisher2006_ca_oscillation_dpdnt_nfat_dynamics_biomd0000000122_model.species_labels
+  - name: calcium_in_nucleus
+    maps_to: systemsbiology_sbml_fisher2006_ca_oscillation_dpdnt_nfat_dynamics_biomd0000000122_model.calcium_in_nucleus
+  - name: calcium_in_cytosol
+    maps_to: systemsbiology_sbml_fisher2006_ca_oscillation_dpdnt_nfat_dynamics_biomd0000000122_model.calcium_in_cytosol
+  - name: inactive_calcineurin_in_nucleus
+    maps_to: systemsbiology_sbml_fisher2006_ca_oscillation_dpdnt_nfat_dynamics_biomd0000000122_model.inactive_calcineurin_in_nucleus
+  - name: inactive_calcineurin_in_cytosol
+    maps_to: systemsbiology_sbml_fisher2006_ca_oscillation_dpdnt_nfat_dynamics_biomd0000000122_model.inactive_calcineurin_in_cytosol
+  - name: phosphorylated_nfat_in_cytosol
+    maps_to: systemsbiology_sbml_fisher2006_ca_oscillation_dpdnt_nfat_dynamics_biomd0000000122_model.phosphorylated_nfat_in_cytosol
+  - name: nfat_calcineurin_complex_in_nucleus
+    maps_to: systemsbiology_sbml_fisher2006_ca_oscillation_dpdnt_nfat_dynamics_biomd0000000122_model.nfat_calcineurin_complex_in_nucleus

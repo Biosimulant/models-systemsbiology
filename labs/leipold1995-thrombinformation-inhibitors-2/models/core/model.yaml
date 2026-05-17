@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Leipold1995_ThrombinFormation+inhibitors
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models (http://www.ebi.ac.uk/biomodels/). It is copyright (c) 2005-2011
+  The BioModels.net Team.'
+standard: other
+tags:
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- R J Leipold
+- T A Bozarth
+- A L Racanelli
+- I B Dicker
+upstream:
+  id: biomodels_ebi:MODEL1109150002
+  source_db: biomodels_ebi
+  source_id: MODEL1109150002
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1109150002
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1109150002?filename=MODEL1109150002_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.leipold1995_thrombinformation_inhibitors_model1109150002_model:Leipold1995ThrombinformationInhibitorsModel1109150002Model
+  init_kwargs:
+    model_path: data/MODEL1109150002.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_ii
+    maps_to: species_24
+    label: Initial Model State Ii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_24`.
+  - name: initial_model_state_x
+    maps_to: species_6
+    label: Initial Model State X
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_6`.
+  - name: initial_model_state_ix
+    maps_to: species_1
+    label: Initial Model State Ix
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_1`.
+  - name: initial_model_state_v
+    maps_to: species_19
+    label: Initial Model State V
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_19`.
+  - name: initial_model_state_i
+    maps_to: species_34
+    label: Initial Model State I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_34`.
+  - name: initial_viii
+    maps_to: species_8
+    label: Initial Viii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_8`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_ii
+    maps_to: species_24
+    label: II
+    description: II. Maps to SBML symbol `species_24`.
+  - name: model_state_x
+    maps_to: species_6
+    label: X
+    description: X. Maps to SBML symbol `species_6`.
+  - name: model_state_ix
+    maps_to: species_1
+    label: IX
+    description: IX. Maps to SBML symbol `species_1`.
+  - name: model_state_v
+    maps_to: species_19
+    label: V
+    description: V. Maps to SBML symbol `species_19`.
+  - name: model_state_i
+    maps_to: species_34
+    label: I
+    description: I. Maps to SBML symbol `species_34`.
+  - name: viii
+    maps_to: species_8
+    label: VIII
+    description: VIII. Maps to SBML symbol `species_8`.

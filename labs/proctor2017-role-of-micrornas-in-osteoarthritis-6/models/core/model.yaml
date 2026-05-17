@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Proctor2017- Role of microRNAs in osteoarthritis (miR140-IL1 incoherent feed
+  forward)
+description: 'Proctor2017- Role of microRNAs in osteoarthritis (miR140-IL1 incoherent
+  feed forward) This model is described in the article: Computer simulation models
+  as a tool to investigate the role of microRNAs. It can be used to explore systemsbiology
+  proctor2017 role of micrornas in dynamics and compare simulation behavior across
+  conditions.'
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Carole J Proctor
+- Graham R Smith
+upstream:
+  id: biomodels_ebi:MODEL1705170002
+  source_db: biomodels_ebi
+  source_id: MODEL1705170002
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1705170002
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1705170002?filename=MODEL1705170002_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.proctor2017_role_of_micrornas_in_osteoarthritis_model1705170002_model:Proctor2017RoleOfMicrornasInOsteoarthritisModel1705170002Model
+  init_kwargs:
+    model_path: data/MODEL1705170002.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_n_fk_b
+    maps_to: NFkB
+    label: Initial N Fk B
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NFkB`.
+  - name: initial_mi_r140_gene_n_fk_b
+    maps_to: miR140_gene_NFkB
+    label: Initial Mi R140 Gene N Fk B
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `miR140_gene_NFkB`.
+  - name: initial_model_state_il1
+    maps_to: IL1
+    label: Initial Model State IL1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IL1`.
+  - name: initial_mmp13_mrna
+    maps_to: MMP13_mRNA
+    label: Initial Mmp13 MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MMP13_mRNA`.
+  - name: initial_mi_r140
+    maps_to: miR140
+    label: Initial Mi R140
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `miR140`.
+  - name: initial_mi_r140_gene
+    maps_to: miR140_gene
+    label: Initial Mi R140 Gene
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `miR140_gene`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: n_fk_b
+    maps_to: NFkB
+    label: NFkB
+    description: NFkB. Maps to SBML symbol `NFkB`.
+  - name: mi_r140_gene_n_fk_b
+    maps_to: miR140_gene_NFkB
+    label: MiR140 Gene NFkB
+    description: MiR140 Gene NFkB. Maps to SBML symbol `miR140_gene_NFkB`.
+  - name: il1
+    maps_to: IL1
+    label: IL1
+    description: IL1. Maps to SBML symbol `IL1`.
+  - name: mmp13_mrna
+    maps_to: MMP13_mRNA
+    label: MMP13 MRNA
+    description: MMP13 MRNA. Maps to SBML symbol `MMP13_mRNA`.
+  - name: mi_r140
+    maps_to: miR140
+    label: MiR140
+    description: MiR140. Maps to SBML symbol `miR140`.
+  - name: mi_r140_gene
+    maps_to: miR140_gene
+    label: MiR140 Gene
+    description: MiR140 Gene. Maps to SBML symbol `miR140_gene`.

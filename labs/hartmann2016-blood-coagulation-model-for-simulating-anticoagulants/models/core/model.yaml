@@ -1,0 +1,83 @@
+schema_version: '2.0'
+title: Hartmann2016 - Blood coagulation model for simulating anticoagulants
+description: Mathematical model of blood coagulation. It can be used to explore systemsbiology
+  hartmann2016 blood coagulation for simulat dynamics and compare simulation behavior
+  across conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- S Hartmann
+- K Biliouris
+- L J Lesko
+- U Nowak-Göttl
+- M N Trame
+upstream:
+  id: biomodels_ebi:MODEL1807180004
+  source_db: biomodels_ebi
+  source_id: MODEL1807180004
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1807180004
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1807180004?filename=Hartmann2016.xml
+  license: CC0
+biosim:
+  entrypoint: src.hartmann2016_blood_coagulation_model_for_simulat_model1807180004_model:Hartmann2016BloodCoagulationModelForSimulatModel1807180004Model
+  init_kwargs:
+    model_path: data/MODEL1807180004.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: riva_daily_dose
+    maps_to: Riva_daily_dose
+    label: Riva Daily Dose
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `Riva_daily_dose`.
+  - name: warfarin_daily_dose
+    maps_to: warfarin_daily_dose
+    label: Warfarin Daily Dose
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `warfarin_daily_dose`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: vk_p
+    maps_to: VK_p
+    label: VK_p
+    description: VK_p. Maps to SBML symbol `VK_p`.
+  - name: a_riva
+    maps_to: A_riva
+    label: A_riva
+    description: A_riva. Maps to SBML symbol `A_riva`.
+  - name: xa_tfpi
+    maps_to: Xa_TFPI
+    label: Xa_TFPI
+    description: Xa_TFPI. Maps to SBML symbol `Xa_TFPI`.
+  - name: xa_atiii_heparin
+    maps_to: Xa_ATIII_Heparin
+    label: Xa_ATIII_Heparin
+    description: Xa_ATIII_Heparin. Maps to SBML symbol `Xa_ATIII_Heparin`.
+  - name: va_xa
+    maps_to: Va_Xa
+    label: Va_Xa
+    description: Va_Xa. Maps to SBML symbol `Va_Xa`.
+  - name: vi_ia_tf_xa_tfpi
+    maps_to: VIIa_TF_Xa_TFPI
+    label: VIIa_TF_Xa_TFPI
+    description: VIIa_TF_Xa_TFPI. Maps to SBML symbol `VIIa_TF_Xa_TFPI`.

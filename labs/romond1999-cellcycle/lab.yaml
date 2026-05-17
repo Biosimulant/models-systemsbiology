@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Romond1999 Cellcycle Lab
+description: The model reproduces Fig 3 of the paper. It can be used to explore systemsbiology
+  romond1999 cellcycle BioModels0000000207 dynamics and compare simulation behavior
+  across conditions.
+models:
+- alias: systemsbiology_sbml_romond1999_cellcycle_biomd0000000207_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_romond1999_cellcycle_biomd0000000207_model.state
+  to:
+  - visualisation.systemsbiology_sbml_romond1999_cellcycle_biomd0000000207_model_state
+- from: systemsbiology_sbml_romond1999_cellcycle_biomd0000000207_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_romond1999_cellcycle_biomd0000000207_model_summary
+- from: systemsbiology_sbml_romond1999_cellcycle_biomd0000000207_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_romond1999_cellcycle_biomd0000000207_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- cellcycle
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_cyclin_b
+    maps_to: systemsbiology_sbml_romond1999_cellcycle_biomd0000000207_model.initial_cyclin_b
+    label: Initial Cyclin B
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C1`.
+  - name: initial_cdk1
+    maps_to: systemsbiology_sbml_romond1999_cellcycle_biomd0000000207_model.initial_cdk1
+    label: Initial Cdk1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M1`.
+  - name: initial_ubiquitin_ligase
+    maps_to: systemsbiology_sbml_romond1999_cellcycle_biomd0000000207_model.initial_ubiquitin_ligase
+    label: Initial Ubiquitin Ligase
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X1`.
+  - name: initial_cyclin_e
+    maps_to: systemsbiology_sbml_romond1999_cellcycle_biomd0000000207_model.initial_cyclin_e
+    label: Initial Cyclin E
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C2`.
+  - name: initial_cdk2
+    maps_to: systemsbiology_sbml_romond1999_cellcycle_biomd0000000207_model.initial_cdk2
+    label: Initial Cdk2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M2`.
+  - name: initial_ubiquitin_ligase_2
+    maps_to: systemsbiology_sbml_romond1999_cellcycle_biomd0000000207_model.initial_ubiquitin_ligase_2
+    label: Initial Ubiquitin Ligase 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X2`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_romond1999_cellcycle_biomd0000000207_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_romond1999_cellcycle_biomd0000000207_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_romond1999_cellcycle_biomd0000000207_model.species_labels
+  - name: cyclin_b
+    maps_to: systemsbiology_sbml_romond1999_cellcycle_biomd0000000207_model.cyclin_b
+  - name: cdk1
+    maps_to: systemsbiology_sbml_romond1999_cellcycle_biomd0000000207_model.cdk1
+  - name: ubiquitin_ligase
+    maps_to: systemsbiology_sbml_romond1999_cellcycle_biomd0000000207_model.ubiquitin_ligase
+  - name: cyclin_e
+    maps_to: systemsbiology_sbml_romond1999_cellcycle_biomd0000000207_model.cyclin_e
+  - name: cdk2
+    maps_to: systemsbiology_sbml_romond1999_cellcycle_biomd0000000207_model.cdk2
+  - name: ubiquitin_ligase_2
+    maps_to: systemsbiology_sbml_romond1999_cellcycle_biomd0000000207_model.ubiquitin_ligase_2

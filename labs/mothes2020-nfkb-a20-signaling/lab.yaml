@@ -1,0 +1,59 @@
+schema_version: '2.0'
+title: Mothes2020 Nfkb A20 Signaling Lab
+description: 'The Mothes2020_NFkB_A20_signaling model is based on our previous model
+  published in Murakawa et al., Nat Commun, 2015 (doi: 10.1038/ncomms8367). It can
+  be used to explore systemsbiology mothes2020 nfkb a20 signaling model2307110001
+  dynamics and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_mothes2020_nfkb_a20_signaling_model2307110001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_mothes2020_nfkb_a20_signaling_model2307110001_model.state
+  to:
+  - visualisation.systemsbiology_sbml_mothes2020_nfkb_a20_signaling_model2307110001_model_state
+- from: systemsbiology_sbml_mothes2020_nfkb_a20_signaling_model2307110001_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_mothes2020_nfkb_a20_signaling_model2307110001_model_summary
+- from: systemsbiology_sbml_mothes2020_nfkb_a20_signaling_model2307110001_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_mothes2020_nfkb_a20_signaling_model2307110001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: stimulus
+    maps_to: systemsbiology_sbml_mothes2020_nfkb_a20_signaling_model2307110001_model.stimulus
+    label: Stimulus
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `stimulus`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_mothes2020_nfkb_a20_signaling_model2307110001_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_mothes2020_nfkb_a20_signaling_model2307110001_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_mothes2020_nfkb_a20_signaling_model2307110001_model.species_labels
+  - name: a20_mrna
+    maps_to: systemsbiology_sbml_mothes2020_nfkb_a20_signaling_model2307110001_model.a20_mrna
+  - name: ik_ba_mrna
+    maps_to: systemsbiology_sbml_mothes2020_nfkb_a20_signaling_model2307110001_model.ik_ba_mrna
+  - name: n_fk_b_ik_ba
+    maps_to: systemsbiology_sbml_mothes2020_nfkb_a20_signaling_model2307110001_model.n_fk_b_ik_ba
+  - name: ik_ba
+    maps_to: systemsbiology_sbml_mothes2020_nfkb_a20_signaling_model2307110001_model.ik_ba
+  - name: a20
+    maps_to: systemsbiology_sbml_mothes2020_nfkb_a20_signaling_model2307110001_model.a20
+  - name: ikk_active
+    maps_to: systemsbiology_sbml_mothes2020_nfkb_a20_signaling_model2307110001_model.ikk_active

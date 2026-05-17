@@ -1,0 +1,82 @@
+schema_version: '2.0'
+title: Larsen2004 Calciumspiking Lab
+description: 'This model is from the article: On the encoding and decoding of calcium
+  signals in hepatocytes Ann Zahle Larsen, Lars Folke Olsen and Ursula Kummera Biophysical
+  Chemistry Volume 107, Issue 1, 1 Januar. It can be used to explore systemsbiology
+  larsen2004 calciumspiking BioModels0000000330 dynamics and compare simulation behavior
+  across conditions.'
+models:
+- alias: systemsbiology_sbml_larsen2004_calciumspiking_biomd0000000330_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_larsen2004_calciumspiking_biomd0000000330_model.state
+  to:
+  - visualisation.systemsbiology_sbml_larsen2004_calciumspiking_biomd0000000330_model_state
+- from: systemsbiology_sbml_larsen2004_calciumspiking_biomd0000000330_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_larsen2004_calciumspiking_biomd0000000330_model_summary
+- from: systemsbiology_sbml_larsen2004_calciumspiking_biomd0000000330_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_larsen2004_calciumspiking_biomd0000000330_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_calcium_er
+    maps_to: systemsbiology_sbml_larsen2004_calciumspiking_biomd0000000330_model.initial_calcium_er
+    label: Initial Calcium Er
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_ER`.
+  - name: initial_g_alpha
+    maps_to: systemsbiology_sbml_larsen2004_calciumspiking_biomd0000000330_model.initial_g_alpha
+    label: Initial G Alpha
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `G_alpha`.
+  - name: initial_calcium_cyt
+    maps_to: systemsbiology_sbml_larsen2004_calciumspiking_biomd0000000330_model.initial_calcium_cyt
+    label: Initial Calcium Cyt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_cyt`.
+  - name: initial_calcium_mit
+    maps_to: systemsbiology_sbml_larsen2004_calciumspiking_biomd0000000330_model.initial_calcium_mit
+    label: Initial Calcium Mit
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_mit`.
+  - name: initial_model_state_plc
+    maps_to: systemsbiology_sbml_larsen2004_calciumspiking_biomd0000000330_model.initial_model_state_plc
+    label: Initial Model State Plc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PLC`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_larsen2004_calciumspiking_biomd0000000330_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_larsen2004_calciumspiking_biomd0000000330_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_larsen2004_calciumspiking_biomd0000000330_model.species_labels
+  - name: calcium_er
+    maps_to: systemsbiology_sbml_larsen2004_calciumspiking_biomd0000000330_model.calcium_er
+  - name: g_alpha
+    maps_to: systemsbiology_sbml_larsen2004_calciumspiking_biomd0000000330_model.g_alpha
+  - name: calcium_cyt
+    maps_to: systemsbiology_sbml_larsen2004_calciumspiking_biomd0000000330_model.calcium_cyt
+  - name: calcium_mit
+    maps_to: systemsbiology_sbml_larsen2004_calciumspiking_biomd0000000330_model.calcium_mit
+  - name: plc
+    maps_to: systemsbiology_sbml_larsen2004_calciumspiking_biomd0000000330_model.plc

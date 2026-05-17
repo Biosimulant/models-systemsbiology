@@ -1,0 +1,104 @@
+schema_version: '2.0'
+title: Brands2002 - Monosaccharide-casein systems
+description: 'Brands2002 - Monosaccharide-casein systems A kinetic model of the Maillard
+  reaction occurring in heated monosaccharide-casein system. This model is described
+  in the article: Kinetic modeling of reacti.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Carline M J Brands
+- Martinus A J S van Boekel
+upstream:
+  id: biomodels_ebi:BIOMD0000000052
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000052
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000052
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000052?filename=BIOMD0000000052_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.brands2002_monosaccharide_casein_systems_biomd0000000052_model:Brands2002MonosaccharideCaseinSystemsBiomd0000000052Model
+  init_kwargs:
+    model_path: data/BIOMD0000000052.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_glu
+    maps_to: Glu
+    label: Initial Model State Glu
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Glu`.
+  - name: initial_lys_r
+    maps_to: lys_R
+    label: Initial Lys R
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `lys_R`.
+  - name: initial_triose
+    maps_to: Triose
+    label: Initial Triose
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Triose`.
+  - name: initial_melanoidin
+    maps_to: Melanoidin
+    label: Initial Melanoidin
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Melanoidin`.
+  - name: initial_model_state_fru
+    maps_to: Fru
+    label: Initial Model State Fru
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Fru`.
+  - name: initial_formic_acid
+    maps_to: Formic_acid
+    label: Initial Formic Acid
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Formic_acid`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: glu
+    maps_to: Glu
+    label: Glu
+    description: Glu. Maps to SBML symbol `Glu`.
+  - name: lys_r
+    maps_to: lys_R
+    label: Lys R
+    description: Lys R. Maps to SBML symbol `lys_R`.
+  - name: triose
+    maps_to: Triose
+    label: Triose
+    description: Triose. Maps to SBML symbol `Triose`.
+  - name: melanoidin
+    maps_to: Melanoidin
+    label: Melanoidin
+    description: Melanoidin. Maps to SBML symbol `Melanoidin`.
+  - name: fru
+    maps_to: Fru
+    label: Fru
+    description: Fru. Maps to SBML symbol `Fru`.
+  - name: formic_acid
+    maps_to: Formic_acid
+    label: Formic Acid
+    description: Formic Acid. Maps to SBML symbol `Formic_acid`.

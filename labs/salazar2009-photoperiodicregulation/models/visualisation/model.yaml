@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Salazar2009_PhotoperiodicRegulation Visualisation
+description: Question-and-answer and dynamic visual summaries for Salazar2009_PhotoperiodicRegulation.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Salazar2009 Photoperiodicregulation Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Salazar2009_PhotoperiodicRegulation.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_salazar2009_photoperiodicregulation_model1005050000_model
+      title: Salazar2009_PhotoperiodicRegulation
+      observables:
+      - id: cTc
+        port: c_tc
+        label: cTc
+        group: gene_regulation
+      - id: cXc
+        port: c_xc
+        label: cXc
+        group: gene_regulation
+      - id: cPn
+        port: c_pn
+        label: cPn
+        group: gene_regulation
+      - id: cLm
+        port: c_lm
+        label: cLm
+        group: gene_regulation
+      - id: cTm
+        port: c_tm
+        label: cTm
+        group: gene_regulation
+      - id: cXn
+        port: c_xn
+        label: cXn
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

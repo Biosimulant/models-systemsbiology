@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Willems1991 - Simulating thrombin generation Visualisation
+description: Question-and-answer and dynamic visual summaries for Willems1991 - Simulating
+  thrombin generation.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Willems1991 Simulating Thrombin Generation Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Willems1991 - Simulating thrombin generation.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_willems1991_simulating_thrombin_generation_model1807240002_model
+      title: Willems1991 - Simulating thrombin generation
+      observables:
+      - id: Xa_ATIII
+        port: xa_atiii
+        label: Xa-ATIII
+        group: gene_regulation
+      - id: Va_inactive
+        port: va_inactive
+        label: Va_inactive
+        group: gene_regulation
+      - id: Va_Xa
+        port: va_xa
+        label: Va-Xa
+        group: gene_regulation
+      - id: IIa_Hirudin
+        port: i_ia_hirudin
+        label: IIa-Hirudin
+        group: gene_regulation
+      - id: IIa_ATIII
+        port: i_ia_atiii
+        label: IIa-ATIII
+        group: gene_regulation
+      - id: APC_inactive
+        port: apc_inactive
+        label: APC_inactive
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

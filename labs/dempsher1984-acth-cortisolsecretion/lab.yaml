@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Dempsher1984 Acth Cortisolsecretion Lab
+description: 'This a model from the article: A mechanistic model of ACTH-stimulated
+  cortisol secretion. It can be used to explore systemsbiology dempsher1984 acth cortisolsecretion
+  model0912835813 dynamics and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_dempsher1984_acth_cortisolsecretion_model0912835813_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_dempsher1984_acth_cortisolsecretion_model0912835813_model.state
+  to:
+  - visualisation.systemsbiology_sbml_dempsher1984_acth_cortisolsecretion_model0912835813_model_state
+- from: systemsbiology_sbml_dempsher1984_acth_cortisolsecretion_model0912835813_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_dempsher1984_acth_cortisolsecretion_model0912835813_model_summary
+- from: systemsbiology_sbml_dempsher1984_acth_cortisolsecretion_model0912835813_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_dempsher1984_acth_cortisolsecretion_model0912835813_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_pro
+    maps_to: systemsbiology_sbml_dempsher1984_acth_cortisolsecretion_model0912835813_model.initial_model_state_pro
+    label: Initial Model State Pro
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PRO`.
+  - name: initial_preg
+    maps_to: systemsbiology_sbml_dempsher1984_acth_cortisolsecretion_model0912835813_model.initial_preg
+    label: Initial Preg
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PREG`.
+  - name: initial_kmtr
+    maps_to: systemsbiology_sbml_dempsher1984_acth_cortisolsecretion_model0912835813_model.initial_kmtr
+    label: Initial Kmtr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Kmtr`.
+  - name: initial_kfor
+    maps_to: systemsbiology_sbml_dempsher1984_acth_cortisolsecretion_model0912835813_model.initial_kfor
+    label: Initial Kfor
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Kfor`.
+  - name: initial_hypr
+    maps_to: systemsbiology_sbml_dempsher1984_acth_cortisolsecretion_model0912835813_model.initial_hypr
+    label: Initial Hypr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `HYPR`.
+  - name: initial_cort
+    maps_to: systemsbiology_sbml_dempsher1984_acth_cortisolsecretion_model0912835813_model.initial_cort
+    label: Initial Cort
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CORT`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_dempsher1984_acth_cortisolsecretion_model0912835813_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_dempsher1984_acth_cortisolsecretion_model0912835813_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_dempsher1984_acth_cortisolsecretion_model0912835813_model.species_labels
+  - name: pro
+    maps_to: systemsbiology_sbml_dempsher1984_acth_cortisolsecretion_model0912835813_model.pro
+  - name: preg
+    maps_to: systemsbiology_sbml_dempsher1984_acth_cortisolsecretion_model0912835813_model.preg
+  - name: kmtr
+    maps_to: systemsbiology_sbml_dempsher1984_acth_cortisolsecretion_model0912835813_model.kmtr
+  - name: kfor
+    maps_to: systemsbiology_sbml_dempsher1984_acth_cortisolsecretion_model0912835813_model.kfor
+  - name: hypr
+    maps_to: systemsbiology_sbml_dempsher1984_acth_cortisolsecretion_model0912835813_model.hypr
+  - name: cort
+    maps_to: systemsbiology_sbml_dempsher1984_acth_cortisolsecretion_model0912835813_model.cort

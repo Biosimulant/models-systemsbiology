@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Demir1999_SinoatrialNodeActivity_Heart Visualisation
+description: Question-and-answer and dynamic visual summaries for Demir1999_SinoatrialNodeActivity_Heart.
+standard: other
+tags:
+- cardiovascular
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Demir1999 Sinoatrialnodeactivity Heart Lab
+    question: 'Which cardiovascular or blood-state variables dominate the simulated
+      response? Source model: Demir1999_SinoatrialNodeActivity_Heart.'
+    answer_focus: Q/A table plus cardiovascular timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_demir1999_sinoatrialnodeactivity_heart_model0912940495_model
+      title: Demir1999_SinoatrialNodeActivity_Heart
+      observables:
+      - id: V_membrane
+        port: v_membrane
+        label: V Membrane
+        group: signaling
+      - id: P_i
+        port: p_i
+        label: P I
+        group: signaling
+      - id: P_a
+        port: p_a
+        label: P A
+        group: signaling
+      - id: Na_i
+        port: na_i
+        label: Na I
+        group: signaling
+      - id: Na_c
+        port: na_c
+        label: Na C
+        group: signaling
+      - id: Mg_Mg_Trop
+        port: mg_mg_trop
+        label: Mg Mg Trop
+        group: signaling
+io:
+  inputs: []
+  outputs: []

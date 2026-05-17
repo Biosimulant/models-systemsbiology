@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Büchel2013 - Dopaminergic Nerve Cell Model Visualisation
+description: Question-and-answer and dynamic visual summaries for Büchel2013 - Dopaminergic
+  Nerve Cell Model.
+standard: other
+tags:
+- neuroscience
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Buchel2013 Dopaminergic Nerve Cell Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Büchel2013 - Dopaminergic Nerve Cell Model.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_b_chel2013_dopaminergic_nerve_cell_model_model1302200000_model
+      title: Büchel2013 - Dopaminergic Nerve Cell Model
+      observables:
+      - id: BiogenesisMitochondria
+        port: biogenesis_mitochondria
+        label: BiogenesisMitochondria
+        group: signaling
+      - id: mtDNADefect
+        port: mt_dna_defect
+        label: mtDNADefect
+        group: signaling
+      - id: damagedProtein
+        port: damaged_protein
+        label: damagedProtein
+        group: signaling
+      - id: NAD
+        port: nad
+        label: NAD+
+        group: signaling
+      - id: ADP_P
+        port: adp_pi
+        label: ADP+Pi
+        group: signaling
+      - id: Complex_damagedProtein_TRAP1P
+        port: complex_damaged_protein_trap1_p
+        label: Complex_damagedProtein_TRAP1P
+        group: signaling
+io:
+  inputs: []
+  outputs: []

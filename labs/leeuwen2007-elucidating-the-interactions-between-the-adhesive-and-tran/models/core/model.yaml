@@ -1,0 +1,111 @@
+schema_version: '2.0'
+title: Leeuwen2007 - Elucidating the interactions between the adhesive and transcriptional
+  functions of beta-catenin in normal and cancerous cells
+description: Elucidating the interactions between the adhesive and transcriptional
+  functions of beta-catenin in normal and cancerous cells.van Leeuwen IM1, Byrne HM,
+  Jensen OE, King JR.Author information1 Centre f. It can be used to explore systemsbiology
+  leeuwen2007 elucidating the interactions between dynamics and compare simulation
+  behavior across conditions.
+standard: other
+tags:
+- generegulation
+- oncology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Ingeborg M M van Leeuwen
+- Helen M Byrne
+- Oliver E Jensen
+- John R King
+upstream:
+  id: biomodels_ebi:MODEL2001090001
+  source_db: biomodels_ebi
+  source_id: MODEL2001090001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2001090001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2001090001?filename=Leeuwen2007.xml
+  license: CC0
+biosim:
+  entrypoint: src.leeuwen2007_elucidating_the_interactions_between_model2001090001_model:Leeuwen2007ElucidatingTheInteractionsBetweenModel2001090001Model
+  init_kwargs:
+    model_path: data/MODEL2001090001.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_ca
+    maps_to: CA
+    label: Initial Model State Ca
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CA`.
+  - name: initial_c0_t
+    maps_to: C0T
+    label: Initial C0 T
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C0T`.
+  - name: initial_model_state_c0
+    maps_to: C0
+    label: Initial Model State C0
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C0`.
+  - name: initial_model_state_cu
+    maps_to: Cu
+    label: Initial Model State Cu
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Cu`.
+  - name: initial_cc_t
+    maps_to: CcT
+    label: Initial Cc T
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CcT`.
+  - name: initial_model_state_cc
+    maps_to: Cc
+    label: Initial Model State Cc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Cc`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_ca
+    maps_to: CA
+    label: CA
+    description: CA. Maps to SBML symbol `CA`.
+  - name: c0_t
+    maps_to: C0T
+    label: C0T
+    description: C0T. Maps to SBML symbol `C0T`.
+  - name: model_state_c0
+    maps_to: C0
+    label: C0
+    description: C0. Maps to SBML symbol `C0`.
+  - name: model_state_cu
+    maps_to: Cu
+    label: Cu
+    description: Cu. Maps to SBML symbol `Cu`.
+  - name: cc_t
+    maps_to: CcT
+    label: CcT
+    description: CcT. Maps to SBML symbol `CcT`.
+  - name: model_state_cc
+    maps_to: Cc
+    label: Cc
+    description: Cc. Maps to SBML symbol `Cc`.

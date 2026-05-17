@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Danø2006_Glycolysis_Reduction Visualisation
+description: Question-and-answer and dynamic visual summaries for Danø2006_Glycolysis_Reduction.
+standard: other
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Dan2006 Glycolysis Reduction Lab
+    question: 'Which metabolic pools or flux-linked states show the strongest simulated
+      change? Source model: Danø2006_Glycolysis_Reduction.'
+    answer_focus: Q/A table plus metabolism timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_dan_2006_glycolysis_reduction_model5952308332_model
+      title: Danø2006_Glycolysis_Reduction
+      observables:
+      - id: ACA
+        port: aca
+        label: ACA
+        group: metabolism
+      - id: ACAX
+        port: acax
+        label: ACAX
+        group: metabolism
+      - id: trioseP
+        port: triose_p
+        label: trioseP
+        group: metabolism
+      - id: source
+        port: source
+        label: source
+        group: metabolism
+      - id: sink
+        port: sink
+        label: sink
+        group: metabolism
+      - id: GlcX
+        port: glc_x
+        label: GlcX
+        group: metabolism
+io:
+  inputs: []
+  outputs: []

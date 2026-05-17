@@ -1,0 +1,59 @@
+schema_version: '2.0'
+title: Proctor2017- Role of microRNAs in osteoarthritis (miR140-SMAD3 double negative
+  feedback) Visualisation
+description: Question-and-answer and dynamic visual summaries for Proctor2017- Role
+  of microRNAs in osteoarthritis (miR140-SMAD3 double negative feedback).
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Proctor2017 Role Of Micrornas In Osteoarthritis 8 Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Proctor2017- Role of microRNAs in osteoarthritis (miR140-SMAD3
+      double negative feedback).'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_model1705170000_model
+      title: Proctor2017- Role of microRNAs in osteoarthritis (miR140-SMAD3 double
+        negative feedback)
+      observables:
+      - id: TGFb_A
+        port: tg_fb_a
+        label: TGFb A
+        group: signaling
+      - id: TGFb_I
+        port: tg_fb_i
+        label: TGFb I
+        group: signaling
+      - id: miR140
+        port: mi_r140
+        label: MiR140
+        group: gene_regulation
+      - id: SMAD3
+        port: smad3
+        label: SMAD3
+        group: gene_regulation
+      - id: miR140_SMAD3_mRNA
+        port: mi_r140_smad3_mrna
+        label: MiR140 SMAD3 MRNA
+        group: gene_regulation
+      - id: SMAD3_mRNA
+        port: smad3_mrna
+        label: SMAD3 MRNA
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

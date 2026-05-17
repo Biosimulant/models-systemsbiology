@@ -1,0 +1,65 @@
+schema_version: '2.0'
+title: Masison2024 Enterocyte Iron Mucosal Block Lab
+description: Enterocyte Iron Mucosal Block This is a model of enterocyte iron absorption,
+  consisting of iron uptake (movement of iron from intestinal lumen into cytplasm),
+  and transfer (transport of iron from cyto. It can be used to explore systemsbiology
+  masison2024 enterocyte iron mucosal block dynamics and compare simulation behavior
+  across conditions.
+models:
+- alias: systemsbiology_sbml_masison2024_enterocyte_iron_mucosal_block_model2405170001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_masison2024_enterocyte_iron_mucosal_block_model2405170001_model.state
+  to:
+  - visualisation.systemsbiology_sbml_masison2024_enterocyte_iron_mucosal_block_model2405170001_model_state
+- from: systemsbiology_sbml_masison2024_enterocyte_iron_mucosal_block_model2405170001_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_masison2024_enterocyte_iron_mucosal_block_model2405170001_model_summary
+- from: systemsbiology_sbml_masison2024_enterocyte_iron_mucosal_block_model2405170001_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_masison2024_enterocyte_iron_mucosal_block_model2405170001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: dose_0
+    maps_to: systemsbiology_sbml_masison2024_enterocyte_iron_mucosal_block_model2405170001_model.dose_0
+    label: Dose 0
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `dose_0`.
+  - name: dose_fe
+    maps_to: systemsbiology_sbml_masison2024_enterocyte_iron_mucosal_block_model2405170001_model.dose_fe
+    label: Dose Fe
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `dose_fe`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_masison2024_enterocyte_iron_mucosal_block_model2405170001_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_masison2024_enterocyte_iron_mucosal_block_model2405170001_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_masison2024_enterocyte_iron_mucosal_block_model2405170001_model.species_labels
+  - name: fpn_internalized
+    maps_to: systemsbiology_sbml_masison2024_enterocyte_iron_mucosal_block_model2405170001_model.fpn_internalized
+  - name: core
+    maps_to: systemsbiology_sbml_masison2024_enterocyte_iron_mucosal_block_model2405170001_model.core
+  - name: fe_lumen
+    maps_to: systemsbiology_sbml_masison2024_enterocyte_iron_mucosal_block_model2405170001_model.fe_lumen
+  - name: fe_blood
+    maps_to: systemsbiology_sbml_masison2024_enterocyte_iron_mucosal_block_model2405170001_model.fe_blood
+  - name: ft_cage
+    maps_to: systemsbiology_sbml_masison2024_enterocyte_iron_mucosal_block_model2405170001_model.ft_cage
+  - name: ir_ps_active
+    maps_to: systemsbiology_sbml_masison2024_enterocyte_iron_mucosal_block_model2405170001_model.ir_ps_active

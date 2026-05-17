@@ -1,0 +1,104 @@
+schema_version: '2.0'
+title: Ma2002_cAMP_oscillations
+description: 'This a model from the article: Quantifying robustness of biochemical
+  network models. It can be used to explore systemsbiology ma2002 camp oscillations
+  BioModels0000000229 dynamics and compare simulation behavior across conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Lan Ma
+- Pablo A Iglesias
+upstream:
+  id: biomodels_ebi:BIOMD0000000229
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000229
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000229
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000229?filename=BIOMD0000000229_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.ma2002_camp_oscillations_biomd0000000229_model:Ma2002CampOscillationsBiomd0000000229Model
+  init_kwargs:
+    model_path: data/BIOMD0000000229.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_erk2
+    maps_to: ERK2
+    label: Initial Erk2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ERK2`.
+  - name: initial_incamp
+    maps_to: incAMP
+    label: Initial Incamp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `incAMP`.
+  - name: initial_excamp
+    maps_to: excAMP
+    label: Initial Excamp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `excAMP`.
+  - name: initial_model_state_aca
+    maps_to: ACA
+    label: Initial Model State Aca
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ACA`.
+  - name: initial_car1
+    maps_to: CAR1
+    label: Initial Car1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CAR1`.
+  - name: initial_model_state_pka
+    maps_to: PKA
+    label: Initial Model State Pka
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PKA`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: erk2
+    maps_to: ERK2
+    label: ERK2
+    description: ERK2. Maps to SBML symbol `ERK2`.
+  - name: incamp
+    maps_to: incAMP
+    label: incAMP
+    description: incAMP. Maps to SBML symbol `incAMP`.
+  - name: excamp
+    maps_to: excAMP
+    label: excAMP
+    description: excAMP. Maps to SBML symbol `excAMP`.
+  - name: aca
+    maps_to: ACA
+    label: ACA
+    description: ACA. Maps to SBML symbol `ACA`.
+  - name: car1
+    maps_to: CAR1
+    label: CAR1
+    description: CAR1. Maps to SBML symbol `CAR1`.
+  - name: pka
+    maps_to: PKA
+    label: PKA
+    description: PKA. Maps to SBML symbol `PKA`.

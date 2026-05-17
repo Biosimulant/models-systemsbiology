@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "5d8b5a97-beb1-41d5-a418-28d1781a07df",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "9a4d4e4f-f638-4fd4-bfcf-2ba65f0cc33f",
+  "created_at": "2026-05-16T05:46:41.123782373+00:00",
+  "last_synced_at": "2026-05-17T01:50:00.687710+00:00",
+  "hub_manifest_hash": "a40c4541f5164d25c21300860681f165887082ea32879fc7422c0d2569b6c6e3",
+  "package_name": "ayati2010-boneremodelingdynamics-withtumour-drugtreatment-lab"
+}

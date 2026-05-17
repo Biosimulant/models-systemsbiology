@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "76f82930-419a-40a3-9ac8-8ed9e514408b",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "cd0f8032-a631-426c-aa97-12c10a3cc48a",
+  "created_at": "2026-05-16T05:46:52.340010524+00:00",
+  "last_synced_at": "2026-05-17T06:25:22.865029+00:00",
+  "hub_manifest_hash": "7a50d3747d50e15599794da3a8dd3321c4201a01d12c8f5839a430710e1a6762",
+  "package_name": "tang2010-polyglutamate-lab"
+}

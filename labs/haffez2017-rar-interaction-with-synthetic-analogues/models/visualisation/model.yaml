@@ -1,0 +1,51 @@
+schema_version: '2.0'
+title: Haffez2017 - RAR interaction with synthetic analogues Visualisation
+description: Question-and-answer and dynamic visual summaries for Haffez2017 - RAR
+  interaction with synthetic analogues.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Haffez2017 Rar Interaction With Synthetic Analogues Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Haffez2017 - RAR interaction with synthetic analogues.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_haffez2017_rar_interaction_with_synthetic_analog_biomd0000000629_model
+      title: Haffez2017 - RAR interaction with synthetic analogues
+      observables:
+      - id: CA
+        port: co_activator
+        label: CoActivator
+        group: physiology
+      - id: LRCA
+        port: ligand_receptor_co_activator
+        label: Ligand-Receptor-CoActivator
+        group: physiology
+      - id: LR
+        port: ligand_receptor
+        label: Ligand-Receptor
+        group: physiology
+      - id: R
+        port: receptor
+        label: Receptor
+        group: physiology
+      - id: L
+        port: ligand
+        label: Ligand
+        group: physiology
+io:
+  inputs: []
+  outputs: []

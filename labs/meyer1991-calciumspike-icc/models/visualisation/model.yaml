@@ -1,0 +1,47 @@
+schema_version: '2.0'
+title: Meyer1991_CalciumSpike_ICC Visualisation
+description: Question-and-answer and dynamic visual summaries for Meyer1991_CalciumSpike_ICC.
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Meyer1991 Calciumspike Icc Lab
+    question: 'Which physiological state variables carry the strongest baseline response?
+      Source model: Meyer1991_CalciumSpike_ICC.'
+    answer_focus: Q/A table plus physiology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_meyer1991_calciumspike_icc_biomd0000000224_model
+      title: Meyer1991_CalciumSpike_ICC
+      observables:
+      - id: CaS
+        port: ca_s
+        label: CaS
+        group: physiology
+      - id: CaI
+        port: ca_i
+        label: CaI
+        group: physiology
+      - id: IP3
+        port: ip3
+        label: IP3
+        group: physiology
+      - id: g
+        port: model_state_g
+        label: G
+        group: physiology
+io:
+  inputs: []
+  outputs: []

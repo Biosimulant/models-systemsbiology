@@ -1,0 +1,63 @@
+schema_version: '2.0'
+title: Cao2013 - Application of ABSIS method in the bistable Schlögl model
+description: F. It can be used to explore systemsbiology cao2013 application of absis
+  method dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Youfang Cao
+- Jie Liang
+upstream:
+  id: biomodels_ebi:BIOMD0000000485
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000485
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000485
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000485?filename=BIOMD0000000485_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.cao2013_application_of_absis_method_in_the_bista_biomd0000000485_model:Cao2013ApplicationOfAbsisMethodInTheBistaBiomd0000000485Model
+  init_kwargs:
+    model_path: data/BIOMD0000000485.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_es
+    maps_to: ES
+    label: Initial Model State Es
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ES`.
+  - name: initial_model_state_x
+    maps_to: X
+    label: Initial Model State X
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_es
+    maps_to: ES
+    label: ES
+    description: ES. Maps to SBML symbol `ES`.
+  - name: model_state_x
+    maps_to: X
+    label: X
+    description: X. Maps to SBML symbol `X`.

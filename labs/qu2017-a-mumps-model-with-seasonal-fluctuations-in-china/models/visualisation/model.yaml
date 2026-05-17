@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Qu2017 - A mumps model with seasonal fluctuations in China Visualisation
+description: Question-and-answer and dynamic visual summaries for Qu2017 - A mumps
+  model with seasonal fluctuations in China.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Qu2017 A Mumps Model With Seasonal Fluctuations In China Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Qu2017 - A mumps model with seasonal fluctuations in China.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_qu2017_a_mumps_model_with_seasonal_fluctuations_model1808280011_model
+      title: Qu2017 - A mumps model with seasonal fluctuations in China
+      observables:
+      - id: N
+        port: model_state_n
+        label: N
+        group: signaling
+      - id: S
+        port: model_state_s
+        label: S
+        group: signaling
+      - id: R
+        port: model_state_r
+        label: R
+        group: signaling
+      - id: I
+        port: model_state_i
+        label: I
+        group: signaling
+      - id: L
+        port: model_state_l
+        label: L
+        group: signaling
+      - id: E
+        port: model_state_e
+        label: E
+        group: signaling
+io:
+  inputs: []
+  outputs: []

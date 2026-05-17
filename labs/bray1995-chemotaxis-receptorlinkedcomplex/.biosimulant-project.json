@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "580af5e5-4d78-4a3a-b8ca-1c75bdb717f3",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "de2d9b12-a219-4fd9-ad66-ed30303cc826",
+  "created_at": "2026-05-15T20:26:53.106451276+00:00",
+  "last_synced_at": "2026-05-17T02:18:27.572745+00:00",
+  "hub_manifest_hash": "f47d5144ebc11fa3610797d8f794027dd21641d1781769c05bbf0dcbc10eeb4c",
+  "package_name": "bray1995-chemotaxis-receptorlinkedcomplex-lab"
+}

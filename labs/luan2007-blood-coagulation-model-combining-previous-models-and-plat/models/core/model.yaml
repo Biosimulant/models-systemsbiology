@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Luan2007 - Blood coagulation model combining previous models and platelet activation
+description: Mathematical model combining previous models (Jones1994, Leipoldt1995,
+  Kuhursky2001, Hockin2002) into one model with platelet activation. It can be used
+  to explore systemsbiology luan2007 blood coagulation combining previ dynamics and
+  compare simulation behavior across conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Deyan Luan
+- Michael Zai
+- Jeffrey D Varner
+upstream:
+  id: biomodels_ebi:MODEL1806050001
+  source_db: biomodels_ebi
+  source_id: MODEL1806050001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1806050001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1806050001?filename=Luan2007.xml
+  license: CC0
+biosim:
+  entrypoint: src.luan2007_blood_coagulation_model_combining_previ_model1806050001_model:Luan2007BloodCoagulationModelCombiningPreviModel1806050001Model
+  init_kwargs:
+    model_path: data/MODEL1806050001.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_p5s
+    maps_to: P5s
+    label: Initial Model State P5S
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P5s`.
+  - name: initial_model_state_p2s
+    maps_to: P2s
+    label: Initial Model State P2S
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P2s`.
+  - name: initial_model_state_p8s
+    maps_to: P8s
+    label: Initial Model State P8S
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P8s`.
+  - name: initial_model_state_p9s
+    maps_to: P9s_0
+    label: Initial Model State P9S
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P9s_0`.
+  - name: initial_model_state_p9s_2
+    maps_to: P9s
+    label: Initial Model State P9S 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P9s`.
+  - name: initial_xa_i
+    maps_to: Xa_i
+    label: Initial Xa I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_i`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: p5s
+    maps_to: P5s
+    label: P5s
+    description: P5s. Maps to SBML symbol `P5s`.
+  - name: p2s
+    maps_to: P2s
+    label: P2s
+    description: P2s. Maps to SBML symbol `P2s`.
+  - name: p8s
+    maps_to: P8s
+    label: P8s
+    description: P8s. Maps to SBML symbol `P8s`.
+  - name: p9s
+    maps_to: P9s_0
+    label: P9s*
+    description: P9s*. Maps to SBML symbol `P9s_0`.
+  - name: p9s_2
+    maps_to: P9s
+    label: P9s
+    description: P9s. Maps to SBML symbol `P9s`.
+  - name: xa_i
+    maps_to: Xa_i
+    label: Xa-i
+    description: Xa-i. Maps to SBML symbol `Xa_i`.

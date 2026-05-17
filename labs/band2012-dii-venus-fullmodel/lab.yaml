@@ -1,0 +1,79 @@
+schema_version: '2.0'
+title: Band2012 Dii Venus Fullmodel Lab
+description: 'This model is from the article: Root gravitropism is regulated by a
+  transient lateral auxin gradient controlled by a tipping-point mechanism. Band LR,
+  Wells DM, Larrieu A, Sun J, Middleton AM, French.'
+models:
+- alias: systemsbiology_sbml_band2012_dii_venus_fullmodel_biomd0000000413_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_band2012_dii_venus_fullmodel_biomd0000000413_model.state
+  to:
+  - visualisation.systemsbiology_sbml_band2012_dii_venus_fullmodel_biomd0000000413_model_state
+- from: systemsbiology_sbml_band2012_dii_venus_fullmodel_biomd0000000413_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_band2012_dii_venus_fullmodel_biomd0000000413_model_summary
+- from: systemsbiology_sbml_band2012_dii_venus_fullmodel_biomd0000000413_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_band2012_dii_venus_fullmodel_biomd0000000413_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_venus
+    maps_to: systemsbiology_sbml_band2012_dii_venus_fullmodel_biomd0000000413_model.initial_venus
+    label: Initial Venus
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VENUS`.
+  - name: initial_tir1
+    maps_to: systemsbiology_sbml_band2012_dii_venus_fullmodel_biomd0000000413_model.initial_tir1
+    label: Initial Tir1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TIR1`.
+  - name: initial_auxin
+    maps_to: systemsbiology_sbml_band2012_dii_venus_fullmodel_biomd0000000413_model.initial_auxin
+    label: Initial Auxin
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `auxin`.
+  - name: initial_auxin_tir1_venus
+    maps_to: systemsbiology_sbml_band2012_dii_venus_fullmodel_biomd0000000413_model.initial_auxin_tir1_venus
+    label: Initial Auxin Tir1 Venus
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `auxinTIR1VENUS`.
+  - name: initial_auxin_tir1
+    maps_to: systemsbiology_sbml_band2012_dii_venus_fullmodel_biomd0000000413_model.initial_auxin_tir1
+    label: Initial Auxin Tir1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `auxinTIR1`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_band2012_dii_venus_fullmodel_biomd0000000413_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_band2012_dii_venus_fullmodel_biomd0000000413_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_band2012_dii_venus_fullmodel_biomd0000000413_model.species_labels
+  - name: venus
+    maps_to: systemsbiology_sbml_band2012_dii_venus_fullmodel_biomd0000000413_model.venus
+  - name: tir1
+    maps_to: systemsbiology_sbml_band2012_dii_venus_fullmodel_biomd0000000413_model.tir1
+  - name: auxin
+    maps_to: systemsbiology_sbml_band2012_dii_venus_fullmodel_biomd0000000413_model.auxin
+  - name: auxin_tir1_venus
+    maps_to: systemsbiology_sbml_band2012_dii_venus_fullmodel_biomd0000000413_model.auxin_tir1_venus
+  - name: auxin_tir1
+    maps_to: systemsbiology_sbml_band2012_dii_venus_fullmodel_biomd0000000413_model.auxin_tir1

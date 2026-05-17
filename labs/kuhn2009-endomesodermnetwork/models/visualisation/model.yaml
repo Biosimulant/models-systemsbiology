@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Kuhn2009_EndoMesodermNetwork Visualisation
+description: Question-and-answer and dynamic visual summaries for Kuhn2009_EndoMesodermNetwork.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Kuhn2009 Endomesodermnetwork Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Kuhn2009_EndoMesodermNetwork.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_kuhn2009_endomesodermnetwork_biomd0000000235_model
+      title: Kuhn2009_EndoMesodermNetwork
+      observables:
+      - id: mRNA_P_VEGFR
+        port: mrna_p_vegfr
+        label: mRNA_P_VEGFR
+        group: signaling
+      - id: mRNA_M_VEGFR
+        port: mrna_m_vegfr
+        label: mRNA_M_VEGFR
+        group: signaling
+      - id: mRNA_E_VEGFR
+        port: mrna_e_vegfr
+        label: mRNA_E_VEGFR
+        group: signaling
+      - id: PROTEIN_P_VEGFSignal
+        port: protein_p_vegf_signal
+        label: PROTEIN_P_VEGFSignal
+        group: signaling
+      - id: PROTEIN_P_VEGFR
+        port: protein_p_vegfr
+        label: PROTEIN_P_VEGFR
+        group: signaling
+      - id: PROTEIN_M_VEGFSignal
+        port: protein_m_vegf_signal
+        label: PROTEIN_M_VEGFSignal
+        group: signaling
+io:
+  inputs: []
+  outputs: []

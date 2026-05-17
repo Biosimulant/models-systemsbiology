@@ -1,0 +1,79 @@
+schema_version: '2.0'
+title: Sharp2019 Aml Lab
+description: 'The paper describes a model of acute myeloid leukaemia. Created by COPASI
+  4.26 (Build 213) This model is described in the article: Optimal control of acute
+  myeloid leukaemia Jesse A.'
+models:
+- alias: systemsbiology_sbml_sharp2019_aml_biomd0000000798_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_sharp2019_aml_biomd0000000798_model.state
+  to:
+  - visualisation.systemsbiology_sbml_sharp2019_aml_biomd0000000798_model_state
+- from: systemsbiology_sbml_sharp2019_aml_biomd0000000798_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_sharp2019_aml_biomd0000000798_model_summary
+- from: systemsbiology_sbml_sharp2019_aml_biomd0000000798_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_sharp2019_aml_biomd0000000798_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_s
+    maps_to: systemsbiology_sbml_sharp2019_aml_biomd0000000798_model.initial_model_state_s
+    label: Initial Model State S
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S`.
+  - name: initial_model_state_l
+    maps_to: systemsbiology_sbml_sharp2019_aml_biomd0000000798_model.initial_model_state_l
+    label: Initial Model State L
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `L`.
+  - name: initial_model_state_t
+    maps_to: systemsbiology_sbml_sharp2019_aml_biomd0000000798_model.initial_model_state_t
+    label: Initial Model State T
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `T`.
+  - name: initial_model_state_d
+    maps_to: systemsbiology_sbml_sharp2019_aml_biomd0000000798_model.initial_model_state_d
+    label: Initial Model State D
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `D`.
+  - name: initial_model_state_a
+    maps_to: systemsbiology_sbml_sharp2019_aml_biomd0000000798_model.initial_model_state_a
+    label: Initial Model State A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `A`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_sharp2019_aml_biomd0000000798_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_sharp2019_aml_biomd0000000798_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_sharp2019_aml_biomd0000000798_model.species_labels
+  - name: model_state_s
+    maps_to: systemsbiology_sbml_sharp2019_aml_biomd0000000798_model.model_state_s
+  - name: model_state_l
+    maps_to: systemsbiology_sbml_sharp2019_aml_biomd0000000798_model.model_state_l
+  - name: model_state_t
+    maps_to: systemsbiology_sbml_sharp2019_aml_biomd0000000798_model.model_state_t
+  - name: model_state_d
+    maps_to: systemsbiology_sbml_sharp2019_aml_biomd0000000798_model.model_state_d
+  - name: model_state_a
+    maps_to: systemsbiology_sbml_sharp2019_aml_biomd0000000798_model.model_state_a

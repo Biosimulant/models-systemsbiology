@@ -1,0 +1,73 @@
+schema_version: '2.0'
+title: Smallbone2013 Colon Crypt Cycle Version 2 Lab
+description: 'Smallbone2013 - Colon Crypt cycle - Version 2 This model is described
+  in the article: A mathematical model of the colon crypt capturing compositional
+  dynamic interactions between cell types Kieran Sma. It can be used to explore systemsbiology
+  smallbone2013 colon crypt cycle version dynamics and compare simulation behavior
+  across conditions.'
+models:
+- alias: systemsbiology_sbml_smallbone2013_colon_crypt_cycle_version_2_biomd0000000518_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_smallbone2013_colon_crypt_cycle_version_2_biomd0000000518_model.state
+  to:
+  - visualisation.systemsbiology_sbml_smallbone2013_colon_crypt_cycle_version_2_biomd0000000518_model_state
+- from: systemsbiology_sbml_smallbone2013_colon_crypt_cycle_version_2_biomd0000000518_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_smallbone2013_colon_crypt_cycle_version_2_biomd0000000518_model_summary
+- from: systemsbiology_sbml_smallbone2013_colon_crypt_cycle_version_2_biomd0000000518_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_smallbone2013_colon_crypt_cycle_version_2_biomd0000000518_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_n2
+    maps_to: systemsbiology_sbml_smallbone2013_colon_crypt_cycle_version_2_biomd0000000518_model.initial_model_state_n2
+    label: Initial Model State N2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `N2`.
+  - name: initial_model_state_n1
+    maps_to: systemsbiology_sbml_smallbone2013_colon_crypt_cycle_version_2_biomd0000000518_model.initial_model_state_n1
+    label: Initial Model State N1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `N1`.
+  - name: initial_model_state_n0
+    maps_to: systemsbiology_sbml_smallbone2013_colon_crypt_cycle_version_2_biomd0000000518_model.initial_model_state_n0
+    label: Initial Model State N0
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `N0`.
+  - name: initial_model_state_n3
+    maps_to: systemsbiology_sbml_smallbone2013_colon_crypt_cycle_version_2_biomd0000000518_model.initial_model_state_n3
+    label: Initial Model State N3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `N3`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_smallbone2013_colon_crypt_cycle_version_2_biomd0000000518_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_smallbone2013_colon_crypt_cycle_version_2_biomd0000000518_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_smallbone2013_colon_crypt_cycle_version_2_biomd0000000518_model.species_labels
+  - name: model_state_n2
+    maps_to: systemsbiology_sbml_smallbone2013_colon_crypt_cycle_version_2_biomd0000000518_model.model_state_n2
+  - name: model_state_n1
+    maps_to: systemsbiology_sbml_smallbone2013_colon_crypt_cycle_version_2_biomd0000000518_model.model_state_n1
+  - name: model_state_n0
+    maps_to: systemsbiology_sbml_smallbone2013_colon_crypt_cycle_version_2_biomd0000000518_model.model_state_n0
+  - name: model_state_n3
+    maps_to: systemsbiology_sbml_smallbone2013_colon_crypt_cycle_version_2_biomd0000000518_model.model_state_n3

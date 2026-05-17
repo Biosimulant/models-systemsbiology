@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "92017f4a-dd21-4c0f-a7ae-8c8f28dd3995",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "2ff7c248-abe9-4470-9fa8-1f846d70f7ae",
+  "created_at": "2026-05-16T05:46:41.162851845+00:00",
+  "last_synced_at": "2026-05-17T01:50:56.294860+00:00",
+  "hub_manifest_hash": "6e866162374737fadea46a3c9a9bd98b799c46b7a3df66e64bf4f15fb562e1ac",
+  "package_name": "bagci2006-apoptoticstimuli-lab"
+}

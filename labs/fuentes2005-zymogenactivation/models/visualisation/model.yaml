@@ -1,0 +1,46 @@
+schema_version: '2.0'
+title: Fuentes2005_ZymogenActivation Visualisation
+description: Question-and-answer and dynamic visual summaries for Fuentes2005_ZymogenActivation.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Fuentes2005 Zymogenactivation Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Fuentes2005_ZymogenActivation.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_fuentes2005_zymogenactivation_biomd0000000092_model
+      title: Fuentes2005_ZymogenActivation
+      observables:
+      - id: ez
+        port: enzyme_substrate_complex
+        label: Enzyme-Substrate complex
+        group: physiology
+      - id: z
+        port: zymogen
+        label: Zymogen
+        group: physiology
+      - id: w
+        port: peptide
+        label: Peptide
+        group: physiology
+      - id: e
+        port: enzyme
+        label: Enzyme
+        group: physiology
+io:
+  inputs: []
+  outputs: []

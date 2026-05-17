@@ -1,0 +1,46 @@
+schema_version: '2.0'
+title: Chance1943_Peroxidase_ES_Kinetics Visualisation
+description: Question-and-answer and dynamic visual summaries for Chance1943_Peroxidase_ES_Kinetics.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Chance1943 Peroxidase Es Kinetics Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Chance1943_Peroxidase_ES_Kinetics.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_chance1943_peroxidase_es_kinetics_biomd0000000283_model
+      title: Chance1943_Peroxidase_ES_Kinetics
+      observables:
+      - id: X
+        port: model_state_x
+        label: X
+        group: physiology
+      - id: E
+        port: model_state_e
+        label: E
+        group: physiology
+      - id: Q
+        port: model_state_q
+        label: Q
+        group: physiology
+      - id: P
+        port: model_state_p
+        label: P
+        group: physiology
+io:
+  inputs: []
+  outputs: []

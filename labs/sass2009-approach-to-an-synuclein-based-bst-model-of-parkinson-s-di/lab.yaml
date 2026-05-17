@@ -1,0 +1,90 @@
+schema_version: '2.0'
+title: Sass2009 Approach To An Synuclein Based Bst Model Of Parkinson S Di Lab
+description: 'Sass2009 - Approach to anα-synuclein-based BST model of Parkinson''s
+  disease This model is described in the article: A pragmatic approach to biochemical
+  systems theory applied to an alpha-synuclein-bas. It can be used to explore systemsbiology
+  sass2009 approach to an synuclein dynamics and compare simulation behavior across
+  conditions.'
+models:
+- alias: systemsbiology_sbml_sass2009_approach_to_an_synuclein_based_bst_mode_biomd0000000575_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_sass2009_approach_to_an_synuclein_based_bst_mode_biomd0000000575_model.state
+  to:
+  - visualisation.systemsbiology_sbml_sass2009_approach_to_an_synuclein_based_bst_mode_biomd0000000575_model_state
+- from: systemsbiology_sbml_sass2009_approach_to_an_synuclein_based_bst_mode_biomd0000000575_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_sass2009_approach_to_an_synuclein_based_bst_mode_biomd0000000575_model_summary
+- from: systemsbiology_sbml_sass2009_approach_to_an_synuclein_based_bst_mode_biomd0000000575_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_sass2009_approach_to_an_synuclein_based_bst_mode_biomd0000000575_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- neuroscience
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_nad
+    maps_to: systemsbiology_sbml_sass2009_approach_to_an_synuclein_based_bst_mode_biomd0000000575_model.initial_model_state_nad
+    label: Initial Model State Nad
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NAD`.
+  - name: initial_model_state_atp
+    maps_to: systemsbiology_sbml_sass2009_approach_to_an_synuclein_based_bst_mode_biomd0000000575_model.initial_model_state_atp
+    label: Initial Model State ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATP`.
+  - name: initial_nadh
+    maps_to: systemsbiology_sbml_sass2009_approach_to_an_synuclein_based_bst_mode_biomd0000000575_model.initial_nadh
+    label: Initial Nadh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NADH`.
+  - name: initial_v_da
+    maps_to: systemsbiology_sbml_sass2009_approach_to_an_synuclein_based_bst_mode_biomd0000000575_model.initial_v_da
+    label: Initial V Da
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `V_DA`.
+  - name: initial_l_tyr
+    maps_to: systemsbiology_sbml_sass2009_approach_to_an_synuclein_based_bst_mode_biomd0000000575_model.initial_l_tyr
+    label: Initial L Tyr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `L_Tyr`.
+  - name: initial_parkin_synphilin_1_ub
+    maps_to: systemsbiology_sbml_sass2009_approach_to_an_synuclein_based_bst_mode_biomd0000000575_model.initial_parkin_synphilin_1_ub
+    label: Initial Parkin Synphilin 1 Ub
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Parkin_synphilin_1_ub`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_sass2009_approach_to_an_synuclein_based_bst_mode_biomd0000000575_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_sass2009_approach_to_an_synuclein_based_bst_mode_biomd0000000575_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_sass2009_approach_to_an_synuclein_based_bst_mode_biomd0000000575_model.species_labels
+  - name: nad
+    maps_to: systemsbiology_sbml_sass2009_approach_to_an_synuclein_based_bst_mode_biomd0000000575_model.nad
+  - name: atp
+    maps_to: systemsbiology_sbml_sass2009_approach_to_an_synuclein_based_bst_mode_biomd0000000575_model.atp
+  - name: nadh
+    maps_to: systemsbiology_sbml_sass2009_approach_to_an_synuclein_based_bst_mode_biomd0000000575_model.nadh
+  - name: v_da
+    maps_to: systemsbiology_sbml_sass2009_approach_to_an_synuclein_based_bst_mode_biomd0000000575_model.v_da
+  - name: l_tyr
+    maps_to: systemsbiology_sbml_sass2009_approach_to_an_synuclein_based_bst_mode_biomd0000000575_model.l_tyr
+  - name: parkin_synphilin_1_ub
+    maps_to: systemsbiology_sbml_sass2009_approach_to_an_synuclein_based_bst_mode_biomd0000000575_model.parkin_synphilin_1_ub

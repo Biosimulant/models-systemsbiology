@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Rohwer2001 Sucrose Lab
+description: SBML Level 2 code generated for the JWS Online project by Jacky Snoep
+  using PySCeS . It can be used to explore systemsbiology rohwer2001 sucrose BioModels0000000023
+  dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_rohwer2001_sucrose_biomd0000000023_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_rohwer2001_sucrose_biomd0000000023_model.state
+  to:
+  - visualisation.systemsbiology_sbml_rohwer2001_sucrose_biomd0000000023_model_state
+- from: systemsbiology_sbml_rohwer2001_sucrose_biomd0000000023_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_rohwer2001_sucrose_biomd0000000023_model_summary
+- from: systemsbiology_sbml_rohwer2001_sucrose_biomd0000000023_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_rohwer2001_sucrose_biomd0000000023_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_atp
+    maps_to: systemsbiology_sbml_rohwer2001_sucrose_biomd0000000023_model.initial_model_state_atp
+    label: Initial Model State ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATP`.
+  - name: initial_model_state_adp
+    maps_to: systemsbiology_sbml_rohwer2001_sucrose_biomd0000000023_model.initial_model_state_adp
+    label: Initial Model State ADP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ADP`.
+  - name: initial_glycolysis
+    maps_to: systemsbiology_sbml_rohwer2001_sucrose_biomd0000000023_model.initial_glycolysis
+    label: Initial Glycolysis
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `glycolysis`.
+  - name: initial_phos
+    maps_to: systemsbiology_sbml_rohwer2001_sucrose_biomd0000000023_model.initial_phos
+    label: Initial Phos
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `phos`.
+  - name: initial_glcex
+    maps_to: systemsbiology_sbml_rohwer2001_sucrose_biomd0000000023_model.initial_glcex
+    label: Initial Glcex
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Glcex`.
+  - name: initial_fruex
+    maps_to: systemsbiology_sbml_rohwer2001_sucrose_biomd0000000023_model.initial_fruex
+    label: Initial Fruex
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Fruex`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_rohwer2001_sucrose_biomd0000000023_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_rohwer2001_sucrose_biomd0000000023_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_rohwer2001_sucrose_biomd0000000023_model.species_labels
+  - name: atp
+    maps_to: systemsbiology_sbml_rohwer2001_sucrose_biomd0000000023_model.atp
+  - name: adp
+    maps_to: systemsbiology_sbml_rohwer2001_sucrose_biomd0000000023_model.adp
+  - name: glycolysis
+    maps_to: systemsbiology_sbml_rohwer2001_sucrose_biomd0000000023_model.glycolysis
+  - name: phos
+    maps_to: systemsbiology_sbml_rohwer2001_sucrose_biomd0000000023_model.phos
+  - name: glcex
+    maps_to: systemsbiology_sbml_rohwer2001_sucrose_biomd0000000023_model.glcex
+  - name: fruex
+    maps_to: systemsbiology_sbml_rohwer2001_sucrose_biomd0000000023_model.fruex

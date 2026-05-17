@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "fe5379e2-c9a9-4073-b0aa-42614db04fbb",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "b12a3db4-ef08-46af-8ac9-e393a17e0080",
+  "created_at": "2026-05-16T05:46:51.085920502+00:00",
+  "last_synced_at": "2026-05-17T05:43:40.715414+00:00",
+  "hub_manifest_hash": "2235b9ae10d25de193b492303bea212a61aed762a4cd70105738854fc02f92ad",
+  "package_name": "proctor2017-role-of-micrornas-in-osteoarthritis-10-lab"
+}

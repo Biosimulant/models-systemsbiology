@@ -1,0 +1,63 @@
+schema_version: '2.0'
+title: Gonzalezheydrich1994 Hpaaxisregulation Cortisolproduction Lab
+description: 'This a model from the article: A computer simulation of the hypothalamic-pituitary-adrenal
+  axis. It can be used to explore systemsbiology gonzalezheydrich1994 hpaaxisregulation
+  cortisolp model0911270004 dynamics and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_gonzalezheydrich1994_hpaaxisregulation_cortisolp_model0911270004_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_gonzalezheydrich1994_hpaaxisregulation_cortisolp_model0911270004_model.state
+  to:
+  - visualisation.systemsbiology_sbml_gonzalezheydrich1994_hpaaxisregulation_cortisolp_model0911270004_model_state
+- from: systemsbiology_sbml_gonzalezheydrich1994_hpaaxisregulation_cortisolp_model0911270004_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_gonzalezheydrich1994_hpaaxisregulation_cortisolp_model0911270004_model_summary
+- from: systemsbiology_sbml_gonzalezheydrich1994_hpaaxisregulation_cortisolp_model0911270004_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_gonzalezheydrich1994_hpaaxisregulation_cortisolp_model0911270004_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_cortisol
+    maps_to: systemsbiology_sbml_gonzalezheydrich1994_hpaaxisregulation_cortisolp_model0911270004_model.initial_cortisol
+    label: Initial Cortisol
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cortisol`.
+  - name: initial_model_state_crh
+    maps_to: systemsbiology_sbml_gonzalezheydrich1994_hpaaxisregulation_cortisolp_model0911270004_model.initial_model_state_crh
+    label: Initial Model State Crh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CRH`.
+  - name: initial_acth
+    maps_to: systemsbiology_sbml_gonzalezheydrich1994_hpaaxisregulation_cortisolp_model0911270004_model.initial_acth
+    label: Initial Acth
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ACTH`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_gonzalezheydrich1994_hpaaxisregulation_cortisolp_model0911270004_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_gonzalezheydrich1994_hpaaxisregulation_cortisolp_model0911270004_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_gonzalezheydrich1994_hpaaxisregulation_cortisolp_model0911270004_model.species_labels
+  - name: cortisol
+    maps_to: systemsbiology_sbml_gonzalezheydrich1994_hpaaxisregulation_cortisolp_model0911270004_model.cortisol
+  - name: crh
+    maps_to: systemsbiology_sbml_gonzalezheydrich1994_hpaaxisregulation_cortisolp_model0911270004_model.crh
+  - name: acth
+    maps_to: systemsbiology_sbml_gonzalezheydrich1994_hpaaxisregulation_cortisolp_model0911270004_model.acth

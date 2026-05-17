@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Nielsen1998_Glycolysis Visualisation
+description: Question-and-answer and dynamic visual summaries for Nielsen1998_Glycolysis.
+standard: other
+tags:
+- generegulation
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Nielsen1998 Glycolysis Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Nielsen1998_Glycolysis.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_nielsen1998_glycolysis_biomd0000000042_model
+      title: Nielsen1998_Glycolysis
+      observables:
+      - id: ATP
+        port: atp
+        label: ATP
+        group: metabolism
+      - id: NAD
+        port: nad
+        label: NAD
+        group: metabolism
+      - id: F6P
+        port: f6_p
+        label: F6P
+        group: metabolism
+      - id: NADH
+        port: nadh
+        label: NADH
+        group: metabolism
+      - id: EtOH
+        port: et_oh
+        label: EtOH
+        group: metabolism
+      - id: DPG
+        port: dpg
+        label: DPG
+        group: metabolism
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Oda2005_EGFR Visualisation
+description: Question-and-answer and dynamic visual summaries for Oda2005_EGFR.
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Oda2005 Egfr Lab
+    question: 'Which signalling variables dominate the simulated network response?
+      Source model: Oda2005_EGFR.'
+    answer_focus: Q/A table plus signaling timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_oda2005_egfr_model2463576061_model
+      title: Oda2005_EGFR
+      observables:
+      - id: s412
+        port: tumorigenesis
+        label: tumorigenesis
+        group: signaling
+      - id: s357
+        port: cell_cycle_br_progression
+        label: cell cycle_br_progression
+        group: signaling
+      - id: s260
+        port: c_adpr
+        label: cADPR
+        group: signaling
+      - id: s261
+        port: complex_c_adpr_fkbp
+        label: Complex(cADPR/FKBP)
+        group: signaling
+      - id: s299
+        port: truncated_br_plc_beta
+        label: truncated_br_PLC_beta
+        group: signaling
+      - id: s306
+        port: truncated_br_plc_beta_2
+        label: truncated_br_PLC_beta
+        group: signaling
+io:
+  inputs: []
+  outputs: []

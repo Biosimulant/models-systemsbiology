@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: FelixGarza2017 - Blue Light Treatment of Psoriasis (simplified) Visualisation
+description: Question-and-answer and dynamic visual summaries for FelixGarza2017 -
+  Blue Light Treatment of Psoriasis (simplified).
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Felixgarza2017 Blue Light Treatment Of Psoriasis Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: FelixGarza2017 - Blue Light Treatment of Psoriasis (simplified).'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_felixgarza2017_blue_light_treatment_of_psoriasis_biomd0000000695_model
+      title: FelixGarza2017 - Blue Light Treatment of Psoriasis (simplified)
+      observables:
+      - id: xFinal_9
+        port: growth_arrested_cells
+        label: Growth Arrested Cells
+        group: physiology
+      - id: xFinal_3
+        port: growth_arrested_cells_2
+        label: Growth Arrested Cells
+        group: physiology
+      - id: xFinal_10
+        port: spinous_cells
+        label: Spinous cells
+        group: physiology
+      - id: xFinal_12
+        port: corneocytes
+        label: Corneocytes
+        group: physiology
+      - id: xFinal_8
+        port: transit_amplifying_cells
+        label: Transit Amplifying Cells
+        group: physiology
+      - id: xFinal_7
+        port: stem_cells
+        label: Stem Cells
+        group: physiology
+io:
+  inputs: []
+  outputs: []

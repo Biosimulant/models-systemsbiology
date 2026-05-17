@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Bartholome2007_MDCKII
+description: 'SBML model exported from PottersWheel on 2007-09-19 15:35:47. The values
+  for parameters and the inital concentrations of this model where directly provided
+  by the main author: Parameter values paramet.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Kilian Bartholomé
+- Maria Rius
+- Katrin Letschert
+- Daniela Keller
+- Jens Timmer
+upstream:
+  id: biomodels_ebi:BIOMD0000000197
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000197
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000197
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000197?filename=BIOMD0000000197_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.bartholome2007_mdckii_biomd0000000197_model:Bartholome2007MdckiiBiomd0000000197Model
+  init_kwargs:
+    model_path: data/BIOMD0000000197.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_intracellular_bsp
+    maps_to: BSP_cell
+    label: Initial Intracellular Bsp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `BSP_cell`.
+  - name: initial_free_intracellular_bsp
+    maps_to: x3
+    label: Initial Free Intracellular Bsp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x3`.
+  - name: initial_bound_intracellular_bsp
+    maps_to: x4
+    label: Initial Bound Intracellular Bsp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x4`.
+  - name: initial_apical_bsp
+    maps_to: x5
+    label: Initial Apical Bsp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x5`.
+  - name: initial_free_basolateral_bsp
+    maps_to: x1
+    label: Initial Free Basolateral Bsp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x1`.
+  - name: initial_total_bsp
+    maps_to: BSP_tot
+    label: Initial Total Bsp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `BSP_tot`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: intracellular_bsp
+    maps_to: BSP_cell
+    label: intracellular BSP
+    description: intracellular BSP. Maps to SBML symbol `BSP_cell`.
+  - name: free_intracellular_bsp
+    maps_to: x3
+    label: free intracellular BSP
+    description: free intracellular BSP. Maps to SBML symbol `x3`.
+  - name: bound_intracellular_bsp
+    maps_to: x4
+    label: bound intracellular BSP
+    description: bound intracellular BSP. Maps to SBML symbol `x4`.
+  - name: apical_bsp
+    maps_to: x5
+    label: apical BSP
+    description: apical BSP. Maps to SBML symbol `x5`.
+  - name: free_basolateral_bsp
+    maps_to: x1
+    label: free basolateral BSP
+    description: free basolateral BSP. Maps to SBML symbol `x1`.
+  - name: total_bsp
+    maps_to: BSP_tot
+    label: total BSP
+    description: total BSP. Maps to SBML symbol `BSP_tot`.

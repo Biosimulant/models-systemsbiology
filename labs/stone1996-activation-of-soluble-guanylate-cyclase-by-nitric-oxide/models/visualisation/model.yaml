@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Stone1996 - activation of soluble guanylate cyclase by nitric oxide Visualisation
+description: Question-and-answer and dynamic visual summaries for Stone1996 - activation
+  of soluble guanylate cyclase by nitric oxide.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Stone1996 Activation Of Soluble Guanylate Cyclase By Nitric Oxide Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Stone1996 - activation of soluble guanylate cyclase by nitric
+      oxide.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_stone1996_activation_of_soluble_guanylate_cyclas_biomd0000000198_model
+      title: Stone1996 - activation of soluble guanylate cyclase by nitric oxide
+      observables:
+      - id: 'NO'
+        port: model_state_no
+        label: 'NO'
+        group: physiology
+      - id: sGCslow
+        port: sg_cslow
+        label: SGCslow
+        group: physiology
+      - id: sGCfast
+        port: sg_cfast
+        label: SGCfast
+        group: physiology
+      - id: sGC_inact_tot
+        port: sgc_inact_tot
+        label: SGC Inact Tot
+        group: physiology
+      - id: NO_sGCslow_6coord_NO_int
+        port: no_sg_cslow_6coord_no_int
+        label: NO SGCslow 6coord NO Int
+        group: physiology
+      - id: NO_sGCslow_6coord
+        port: no_sg_cslow_6coord
+        label: NO SGCslow 6coord
+        group: physiology
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Marwan2003 - Genetics, regulatory hierarchy between genes Visualisation
+description: Question-and-answer and dynamic visual summaries for Marwan2003 - Genetics,
+  regulatory hierarchy between genes.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Marwan2003 Genetics Regulatory Hierarchy Between Genes Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Marwan2003 - Genetics, regulatory hierarchy between genes.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_marwan2003_genetics_regulatory_hierarchy_between_biomd0000000037_model
+      title: Marwan2003 - Genetics, regulatory hierarchy between genes
+      observables:
+      - id: prepreS
+        port: prepre_s
+        label: PrepreS
+        group: gene_regulation
+      - id: Pfr
+        port: pfr
+        label: Pfr
+        group: gene_regulation
+      - id: Xi
+        port: model_state_xi
+        label: Xi
+        group: gene_regulation
+      - id: Ya
+        port: model_state_ya
+        label: Ya
+        group: gene_regulation
+      - id: Yi
+        port: model_state_yi
+        label: Yi
+        group: gene_regulation
+      - id: Xa
+        port: model_state_xa
+        label: Xa
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

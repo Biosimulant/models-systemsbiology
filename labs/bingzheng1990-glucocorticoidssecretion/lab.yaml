@@ -1,0 +1,67 @@
+schema_version: '2.0'
+title: Bingzheng1990 Glucocorticoidssecretion Lab
+description: 'This a model from the article: A mathematical model of the regulation
+  system of the secretion of glucocorticoids Liu Bingzheng, Zhao Zhenye and Chen Liansong
+  Journal of Biological Physics 1990 17(4):2. It can be used to explore systemsbiology
+  bingzheng1990 glucocorticoidssecretion model1172200168 dynamics and compare simulation
+  behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_bingzheng1990_glucocorticoidssecretion_model1172200168_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_bingzheng1990_glucocorticoidssecretion_model1172200168_model.state
+  to:
+  - visualisation.systemsbiology_sbml_bingzheng1990_glucocorticoidssecretion_model1172200168_model_state
+- from: systemsbiology_sbml_bingzheng1990_glucocorticoidssecretion_model1172200168_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_bingzheng1990_glucocorticoidssecretion_model1172200168_model_summary
+- from: systemsbiology_sbml_bingzheng1990_glucocorticoidssecretion_model1172200168_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_bingzheng1990_glucocorticoidssecretion_model1172200168_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- cellcycle
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_x3
+    maps_to: systemsbiology_sbml_bingzheng1990_glucocorticoidssecretion_model1172200168_model.initial_model_state_x3
+    label: Initial Model State X3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X3`.
+  - name: initial_model_state_x2
+    maps_to: systemsbiology_sbml_bingzheng1990_glucocorticoidssecretion_model1172200168_model.initial_model_state_x2
+    label: Initial Model State X2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X2`.
+  - name: initial_model_state_x1
+    maps_to: systemsbiology_sbml_bingzheng1990_glucocorticoidssecretion_model1172200168_model.initial_model_state_x1
+    label: Initial Model State X1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X1`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_bingzheng1990_glucocorticoidssecretion_model1172200168_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_bingzheng1990_glucocorticoidssecretion_model1172200168_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_bingzheng1990_glucocorticoidssecretion_model1172200168_model.species_labels
+  - name: model_state_x3
+    maps_to: systemsbiology_sbml_bingzheng1990_glucocorticoidssecretion_model1172200168_model.model_state_x3
+  - name: model_state_x2
+    maps_to: systemsbiology_sbml_bingzheng1990_glucocorticoidssecretion_model1172200168_model.model_state_x2
+  - name: model_state_x1
+    maps_to: systemsbiology_sbml_bingzheng1990_glucocorticoidssecretion_model1172200168_model.model_state_x1

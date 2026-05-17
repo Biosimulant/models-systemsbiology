@@ -1,0 +1,50 @@
+schema_version: '2.0'
+title: Marhl2000_CaOscillations Visualisation
+description: Question-and-answer and dynamic visual summaries for Marhl2000_CaOscillations.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Marhl2000 Caoscillations Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Marhl2000_CaOscillations.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_marhl2000_caoscillations_biomd0000000039_model
+      title: Marhl2000_CaOscillations
+      observables:
+      - id: CaPr
+        port: ca_pr
+        label: CaPr
+        group: physiology
+      - id: Pr
+        port: model_state_pr
+        label: Pr
+        group: physiology
+      - id: CaER
+        port: ca_er
+        label: CaER
+        group: physiology
+      - id: Ca_cyt
+        port: ca_cyt
+        label: Ca Cyt
+        group: physiology
+      - id: CaM
+        port: ca_m
+        label: CaM
+        group: physiology
+io:
+  inputs: []
+  outputs: []

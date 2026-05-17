@@ -1,0 +1,109 @@
+schema_version: '2.0'
+title: Schmitz2014 - RNA triplex formation
+description: Schmitz2014 - RNA triplex formation The model is parameterized using
+  theparameters for gene CCDC3 from Supplementary Table S1. It can be used to explore
+  systemsbiology schmitz2014 rna triplex formation BioModels0000000530 dynamics and
+  compare simulation behavior across conditions.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Ulf Schmitz
+- Xin Lai
+- Felix Winter
+- Olaf Wolkenhauer
+- Julio Vera
+upstream:
+  id: biomodels_ebi:BIOMD0000000530
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000530
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000530
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000530?filename=BIOMD0000000530_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.schmitz2014_rna_triplex_formation_biomd0000000530_model:Schmitz2014RnaTriplexFormationBiomd0000000530Model
+  init_kwargs:
+    model_path: data/BIOMD0000000530.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_protein
+    maps_to: species_10
+    label: Initial Protein
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_10`.
+  - name: initial_mrna
+    maps_to: species_1
+    label: Initial MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_1`.
+  - name: initial_tf_mi_rna_2
+    maps_to: species_9
+    label: Initial Tf Mi RNA 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_9`.
+  - name: initial_tf_mi_rna_1
+    maps_to: species_8
+    label: Initial Tf Mi RNA 1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_8`.
+  - name: initial_tf_mrna
+    maps_to: species_7
+    label: Initial Tf MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_7`.
+  - name: initial_triplex
+    maps_to: species_6
+    label: Initial Triplex
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_6`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: protein
+    maps_to: species_10
+    label: protein
+    description: protein. Maps to SBML symbol `species_10`.
+  - name: mrna
+    maps_to: species_1
+    label: mRNA
+    description: mRNA. Maps to SBML symbol `species_1`.
+  - name: tf_mi_rna_2
+    maps_to: species_9
+    label: TF_miRNA_2
+    description: TF_miRNA_2. Maps to SBML symbol `species_9`.
+  - name: tf_mi_rna_1
+    maps_to: species_8
+    label: TF_miRNA_1
+    description: TF_miRNA_1. Maps to SBML symbol `species_8`.
+  - name: tf_mrna
+    maps_to: species_7
+    label: TF_mRNA
+    description: TF_mRNA. Maps to SBML symbol `species_7`.
+  - name: triplex
+    maps_to: species_6
+    label: triplex
+    description: triplex. Maps to SBML symbol `species_6`.

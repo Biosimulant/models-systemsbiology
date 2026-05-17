@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Zi2007_TGFbeta_signaling Visualisation
+description: Question-and-answer and dynamic visual summaries for Zi2007_TGFbeta_signaling.
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Zi2007 Tgfbeta Signaling Lab
+    question: 'Which signalling variables dominate the simulated network response?
+      Source model: Zi2007_TGFbeta_signaling.'
+    answer_focus: Q/A table plus signaling timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_zi2007_tgfbeta_signaling_biomd0000000163_model
+      title: Zi2007_TGFbeta_signaling
+      observables:
+      - id: T1R_Cave
+        port: t1_r_cave
+        label: T1R_Cave
+        group: signaling
+      - id: T1R_EE
+        port: t1_r_ee
+        label: T1R_EE
+        group: signaling
+      - id: T2R_Cave
+        port: t2_r_cave
+        label: T2R_Cave
+        group: signaling
+      - id: T2R_EE
+        port: t2_r_ee
+        label: T2R_EE
+        group: signaling
+      - id: T1R_Surf
+        port: t1_r_surf
+        label: T1R_Surf
+        group: signaling
+      - id: T2R_Surf
+        port: t2_r_surf
+        label: T2R_Surf
+        group: signaling
+io:
+  inputs: []
+  outputs: []

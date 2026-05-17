@@ -1,0 +1,111 @@
+schema_version: '2.0'
+title: Rohwer2000_Phosphotransferase_System
+description: 'SBML level 2 code generated for the JWS Online project by Jacky Snoep
+  using PySCeS Run this model online at http://jjj.biochem.sun.ac.za To cite JWS Online
+  please refer to: Olivier, B.G. It can be used to explore systemsbiology rohwer2000
+  phosphotransferase system BioModels0000000038 dynamics and compare simulation behavior
+  across conditions.'
+standard: other
+tags:
+- generegulation
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- J M Rohwer
+- N D Meadow
+- S Roseman
+- H V Westerhoff
+- P W Postma
+upstream:
+  id: biomodels_ebi:BIOMD0000000038
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000038
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000038
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000038?filename=BIOMD0000000038_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.rohwer2000_phosphotransferase_system_biomd0000000038_model:Rohwer2000PhosphotransferaseSystemBiomd0000000038Model
+  init_kwargs:
+    model_path: data/BIOMD0000000038.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_pep
+    maps_to: PEP
+    label: Initial Model State Pep
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PEP`.
+  - name: initial_model_state_pyr
+    maps_to: Pyr
+    label: Initial Model State Pyr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pyr`.
+  - name: initial_model_state_glc
+    maps_to: Glc
+    label: Initial Model State Glc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Glc`.
+  - name: initial_glc_p
+    maps_to: GlcP
+    label: Initial Glc P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `GlcP`.
+  - name: initial_h_pr_p
+    maps_to: HPrP
+    label: Initial H Pr P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `HPrP`.
+  - name: initial_h_pr
+    maps_to: HPr
+    label: Initial H Pr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `HPr`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: pep
+    maps_to: PEP
+    label: PEP
+    description: PEP. Maps to SBML symbol `PEP`.
+  - name: pyr
+    maps_to: Pyr
+    label: Pyr
+    description: Pyr. Maps to SBML symbol `Pyr`.
+  - name: glc
+    maps_to: Glc
+    label: Glc
+    description: Glc. Maps to SBML symbol `Glc`.
+  - name: glc_p
+    maps_to: GlcP
+    label: GlcP
+    description: GlcP. Maps to SBML symbol `GlcP`.
+  - name: h_pr_p
+    maps_to: HPrP
+    label: HPrP
+    description: HPrP. Maps to SBML symbol `HPrP`.
+  - name: h_pr
+    maps_to: HPr
+    label: HPr
+    description: HPr. Maps to SBML symbol `HPr`.

@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Wolf2000 Glycolytic Oscillations Lab
+description: Model reproduces the dynamics of ATP and NADH as depicted in Fig 4 of
+  the paper. It can be used to explore systemsbiology wolf2000 glycolytic oscillations
+  BioModels0000000206 dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_wolf2000_glycolytic_oscillations_biomd0000000206_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_wolf2000_glycolytic_oscillations_biomd0000000206_model.state
+  to:
+  - visualisation.systemsbiology_sbml_wolf2000_glycolytic_oscillations_biomd0000000206_model_state
+- from: systemsbiology_sbml_wolf2000_glycolytic_oscillations_biomd0000000206_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_wolf2000_glycolytic_oscillations_biomd0000000206_model_summary
+- from: systemsbiology_sbml_wolf2000_glycolytic_oscillations_biomd0000000206_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_wolf2000_glycolytic_oscillations_biomd0000000206_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_pyruvate
+    maps_to: systemsbiology_sbml_wolf2000_glycolytic_oscillations_biomd0000000206_model.initial_pyruvate
+    label: Initial Pyruvate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s5`.
+  - name: initial_f16_p
+    maps_to: systemsbiology_sbml_wolf2000_glycolytic_oscillations_biomd0000000206_model.initial_f16_p
+    label: Initial F16 P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s2`.
+  - name: initial_model_state_atp
+    maps_to: systemsbiology_sbml_wolf2000_glycolytic_oscillations_biomd0000000206_model.initial_model_state_atp
+    label: Initial Model State ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `at`.
+  - name: initial_glucose
+    maps_to: systemsbiology_sbml_wolf2000_glycolytic_oscillations_biomd0000000206_model.initial_glucose
+    label: Initial Glucose
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s1`.
+  - name: initial_model_state_3_pg
+    maps_to: systemsbiology_sbml_wolf2000_glycolytic_oscillations_biomd0000000206_model.initial_model_state_3_pg
+    label: Initial Model State 3 Pg
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s4`.
+  - name: initial_triose_gly3_phos_dhap
+    maps_to: systemsbiology_sbml_wolf2000_glycolytic_oscillations_biomd0000000206_model.initial_triose_gly3_phos_dhap
+    label: Initial Triose Gly3 Phos Dhap
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s3`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_wolf2000_glycolytic_oscillations_biomd0000000206_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_wolf2000_glycolytic_oscillations_biomd0000000206_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_wolf2000_glycolytic_oscillations_biomd0000000206_model.species_labels
+  - name: pyruvate
+    maps_to: systemsbiology_sbml_wolf2000_glycolytic_oscillations_biomd0000000206_model.pyruvate
+  - name: f16_p
+    maps_to: systemsbiology_sbml_wolf2000_glycolytic_oscillations_biomd0000000206_model.f16_p
+  - name: atp
+    maps_to: systemsbiology_sbml_wolf2000_glycolytic_oscillations_biomd0000000206_model.atp
+  - name: glucose
+    maps_to: systemsbiology_sbml_wolf2000_glycolytic_oscillations_biomd0000000206_model.glucose
+  - name: model_state_3_pg
+    maps_to: systemsbiology_sbml_wolf2000_glycolytic_oscillations_biomd0000000206_model.model_state_3_pg
+  - name: triose_gly3_phos_dhap
+    maps_to: systemsbiology_sbml_wolf2000_glycolytic_oscillations_biomd0000000206_model.triose_gly3_phos_dhap

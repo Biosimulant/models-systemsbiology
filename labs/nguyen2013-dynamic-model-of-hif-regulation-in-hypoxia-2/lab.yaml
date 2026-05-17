@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Nguyen2013 Dynamic Model Of Hif Regulation In Hypoxia 2 Lab
+description: Its a mathematcial model explaining regulation of HIF via FIH and oxygen.
+  Model is further validated by Experimental data and various hypothesis has been
+  tested on the same.
+models:
+- alias: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100005_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100005_model.state
+  to:
+  - visualisation.systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100005_model_state
+- from: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100005_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100005_model_summary
+- from: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100005_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100005_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_fih_n
+    maps_to: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100005_model.initial_fih_n
+    label: Initial Fih N
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `FIH_n`.
+  - name: initial_hi_falpha_n
+    maps_to: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100005_model.initial_hi_falpha_n
+    label: Initial Hi Falpha N
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `HIFalpha_n`.
+  - name: initial_hi_falpha_a_oh_n
+    maps_to: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100005_model.initial_hi_falpha_a_oh_n
+    label: Initial Hi Falpha A Oh N
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `HIFalpha_aOH_n`.
+  - name: initial_hi_falpha_a_oh
+    maps_to: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100005_model.initial_hi_falpha_a_oh
+    label: Initial Hi Falpha A Oh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `HIFalpha_aOH`.
+  - name: initial_model_state_fih
+    maps_to: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100005_model.initial_model_state_fih
+    label: Initial Model State Fih
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `FIH`.
+  - name: initial_model_state_o2
+    maps_to: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100005_model.initial_model_state_o2
+    label: Initial Model State O2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `O2`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100005_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100005_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100005_model.species_labels
+  - name: fih_n
+    maps_to: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100005_model.fih_n
+  - name: hi_falpha_n
+    maps_to: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100005_model.hi_falpha_n
+  - name: hi_falpha_a_oh_n
+    maps_to: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100005_model.hi_falpha_a_oh_n
+  - name: hi_falpha_a_oh
+    maps_to: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100005_model.hi_falpha_a_oh
+  - name: fih
+    maps_to: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100005_model.fih
+  - name: model_state_o2
+    maps_to: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100005_model.model_state_o2

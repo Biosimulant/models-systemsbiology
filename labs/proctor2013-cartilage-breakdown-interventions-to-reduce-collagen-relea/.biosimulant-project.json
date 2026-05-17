@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "1c023e38-7066-417d-a31d-90007d2993ad",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "591108f3-6335-4cd1-a4e8-1a78d3948178",
+  "created_at": "2026-05-16T05:46:50.772883939+00:00",
+  "last_synced_at": "2026-05-17T05:37:25.969547+00:00",
+  "hub_manifest_hash": "71724e9d445f0ef1a9158e4c4e3eb5372cb737bf7277266bfa054c7fa4be65df",
+  "package_name": "proctor2013-cartilage-breakdown-interventions-to-reduce-collagen"
+}

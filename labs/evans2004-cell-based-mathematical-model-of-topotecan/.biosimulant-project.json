@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "75796975-a714-4e6e-b61d-f0f090dfcd72",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "4cc7100c-fda3-4b6a-b17a-4ac1521833d9",
+  "created_at": "2026-05-16T05:46:43.030190360+00:00",
+  "last_synced_at": "2026-05-17T03:02:13.302519+00:00",
+  "hub_manifest_hash": "93dbaf5ce3ebd60fbeeb89c5790aa9084fa8f7d432687dec251dae928cc97f59",
+  "package_name": "evans2004-cell-based-mathematical-model-of-topotecan-lab"
+}

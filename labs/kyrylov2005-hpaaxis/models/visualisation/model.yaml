@@ -1,0 +1,50 @@
+schema_version: '2.0'
+title: Kyrylov2005_HPAaxis Visualisation
+description: Question-and-answer and dynamic visual summaries for Kyrylov2005_HPAaxis.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Kyrylov2005 Hpaaxis Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Kyrylov2005_HPAaxis.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_kyrylov2005_hpaaxis_model0478740924_model
+      title: Kyrylov2005_HPAaxis
+      observables:
+      - id: y4
+        port: model_state_y4
+        label: Y4
+        group: physiology
+      - id: y3
+        port: model_state_y3
+        label: Y3
+        group: physiology
+      - id: y2
+        port: model_state_y2
+        label: Y2
+        group: physiology
+      - id: y1
+        port: model_state_y1
+        label: Y1
+        group: physiology
+      - id: y0
+        port: model_state_y0
+        label: Y0
+        group: physiology
+io:
+  inputs: []
+  outputs: []

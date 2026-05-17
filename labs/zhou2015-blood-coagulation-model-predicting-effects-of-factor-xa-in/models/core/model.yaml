@@ -1,0 +1,76 @@
+schema_version: '2.0'
+title: Zhou2015 - Blood coagulation model predicting effects of factor Xa inhibitors
+description: Blood coagulation model investigating effects of Xa-inhibitors (Rivaroxaban
+  and Apixaban). Model is an extension of Pohl1994 and reduced from Wajima2009.Encoding
+  the model from the supplementary files.
+standard: other
+tags:
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- X Zhou
+- Drh Huntjens
+- Rahj Gilissen
+upstream:
+  id: biomodels_ebi:MODEL1806070001
+  source_db: biomodels_ebi
+  source_id: MODEL1806070001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1806070001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1806070001?filename=Zhou2015.xml
+  license: CC0
+biosim:
+  entrypoint: src.zhou2015_blood_coagulation_model_predicting_effe_model1806070001_model:Zhou2015BloodCoagulationModelPredictingEffeModel1806070001Model
+  init_kwargs:
+    model_path: data/MODEL1806070001.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: drug
+    maps_to: Drug
+    label: Drug
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `Drug`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: xa_xa_inhibitor
+    maps_to: Xa_Xa_Inhibitor
+    label: Xa:Xa_Inhibitor
+    description: Xa:Xa_Inhibitor. Maps to SBML symbol `Xa_Xa_Inhibitor`.
+  - name: xa_va_xa_inhibitor
+    maps_to: Xa_Va_Xa_Inhibitor
+    label: Xa:Va:Xa_Inhibitor
+    description: Xa:Va:Xa_Inhibitor. Maps to SBML symbol `Xa_Va_Xa_Inhibitor`.
+  - name: xa_inhibitor
+    maps_to: Xa_Inhibitor
+    label: Xa_Inhibitor
+    description: Xa_Inhibitor. Maps to SBML symbol `Xa_Inhibitor`.
+  - name: xa_va
+    maps_to: Xa_Va
+    label: Xa:Va
+    description: Xa:Va. Maps to SBML symbol `Xa_Va`.
+  - name: xa_tfpi
+    maps_to: Xa_TFPI
+    label: Xa:TFPI
+    description: Xa:TFPI. Maps to SBML symbol `Xa_TFPI`.
+  - name: xa_atiii
+    maps_to: Xa_ATIII
+    label: Xa:ATIII
+    description: Xa:ATIII. Maps to SBML symbol `Xa_ATIII`.

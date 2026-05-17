@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Willems1991 Simulating Thrombin Generation Lab
+description: Mathematical model of blood coagulation to simulate factor IIa, Va and
+  Xa concentration profiles. Publication also illustrates the effect of hirudin on
+  factor IIa, Va and Xa generation.
+models:
+- alias: systemsbiology_sbml_willems1991_simulating_thrombin_generation_model1807240002_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_willems1991_simulating_thrombin_generation_model1807240002_model.state
+  to:
+  - visualisation.systemsbiology_sbml_willems1991_simulating_thrombin_generation_model1807240002_model_state
+- from: systemsbiology_sbml_willems1991_simulating_thrombin_generation_model1807240002_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_willems1991_simulating_thrombin_generation_model1807240002_model_summary
+- from: systemsbiology_sbml_willems1991_simulating_thrombin_generation_model1807240002_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_willems1991_simulating_thrombin_generation_model1807240002_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_xa_atiii
+    maps_to: systemsbiology_sbml_willems1991_simulating_thrombin_generation_model1807240002_model.initial_xa_atiii
+    label: Initial Xa Atiii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_ATIII`.
+  - name: initial_va_inactive
+    maps_to: systemsbiology_sbml_willems1991_simulating_thrombin_generation_model1807240002_model.initial_va_inactive
+    label: Initial Va Inactive
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Va_inactive`.
+  - name: initial_va_xa
+    maps_to: systemsbiology_sbml_willems1991_simulating_thrombin_generation_model1807240002_model.initial_va_xa
+    label: Initial Va Xa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Va_Xa`.
+  - name: initial_i_ia_hirudin
+    maps_to: systemsbiology_sbml_willems1991_simulating_thrombin_generation_model1807240002_model.initial_i_ia_hirudin
+    label: Initial I Ia Hirudin
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IIa_Hirudin`.
+  - name: initial_i_ia_atiii
+    maps_to: systemsbiology_sbml_willems1991_simulating_thrombin_generation_model1807240002_model.initial_i_ia_atiii
+    label: Initial I Ia Atiii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IIa_ATIII`.
+  - name: initial_apc_inactive
+    maps_to: systemsbiology_sbml_willems1991_simulating_thrombin_generation_model1807240002_model.initial_apc_inactive
+    label: Initial Apc Inactive
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `APC_inactive`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_willems1991_simulating_thrombin_generation_model1807240002_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_willems1991_simulating_thrombin_generation_model1807240002_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_willems1991_simulating_thrombin_generation_model1807240002_model.species_labels
+  - name: xa_atiii
+    maps_to: systemsbiology_sbml_willems1991_simulating_thrombin_generation_model1807240002_model.xa_atiii
+  - name: va_inactive
+    maps_to: systemsbiology_sbml_willems1991_simulating_thrombin_generation_model1807240002_model.va_inactive
+  - name: va_xa
+    maps_to: systemsbiology_sbml_willems1991_simulating_thrombin_generation_model1807240002_model.va_xa
+  - name: i_ia_hirudin
+    maps_to: systemsbiology_sbml_willems1991_simulating_thrombin_generation_model1807240002_model.i_ia_hirudin
+  - name: i_ia_atiii
+    maps_to: systemsbiology_sbml_willems1991_simulating_thrombin_generation_model1807240002_model.i_ia_atiii
+  - name: apc_inactive
+    maps_to: systemsbiology_sbml_willems1991_simulating_thrombin_generation_model1807240002_model.apc_inactive

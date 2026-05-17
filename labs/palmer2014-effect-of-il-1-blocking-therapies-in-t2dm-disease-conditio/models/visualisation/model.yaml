@@ -1,0 +1,58 @@
+schema_version: '2.0'
+title: Palmer2014 - Effect of IL-1β-Blocking therapies in T2DM - Disease Condition
+  Visualisation
+description: Question-and-answer and dynamic visual summaries for Palmer2014 - Effect
+  of IL-1β-Blocking therapies in T2DM - Disease Condition.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Palmer2014 Effect Of Il 1 Blocking Therapies In T2dm Disease Conditio
+      Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Palmer2014 - Effect of IL-1β-Blocking therapies in T2DM - Disease
+      Condition.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_palmer2014_effect_of_il_1_blocking_therapies_in_biomd0000000620_model
+      title: Palmer2014 - Effect of IL-1β-Blocking therapies in T2DM - Disease Condition
+      observables:
+      - id: Insulin
+        port: insulin
+        label: Insulin
+        group: signaling
+      - id: Proinsulin
+        port: proinsulin
+        label: Proinsulin
+        group: signaling
+      - id: Glucose
+        port: glucose
+        label: Glucose
+        group: signaling
+      - id: IL1Ra
+        port: il1_ra
+        label: IL1Ra
+        group: signaling
+      - id: hba1c
+        port: hba1c
+        label: Hba1c
+        group: signaling
+      - id: rbc1
+        port: rbc1
+        label: Rbc1
+        group: signaling
+io:
+  inputs: []
+  outputs: []

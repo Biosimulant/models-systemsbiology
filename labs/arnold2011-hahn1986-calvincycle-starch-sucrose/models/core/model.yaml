@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Arnold2011_Hahn1986_CalvinCycle_Starch_Sucrose
+description: 'This model is from the article: A quantitative comparison of Calvin–Benson
+  cycle models Anne Arnold, Zoran Nikoloski Trends in Plant Science 2011 Oct 14. It
+  can be used to explore systemsbiology arnold2011 hahn1986 calvincycle starch sucrose
+  dynamics and compare simulation behavior across conditions.'
+standard: other
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Anne Arnold
+- Zoran Nikoloski
+upstream:
+  id: biomodels_ebi:BIOMD0000000389
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000389
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000389
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000389?filename=BIOMD0000000389_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.arnold2011_hahn1986_calvincycle_starch_sucrose_biomd0000000389_model:Arnold2011Hahn1986CalvincycleStarchSucroseBiomd0000000389Model
+  init_kwargs:
+    model_path: data/BIOMD0000000389.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_gg
+    maps_to: GG
+    label: Initial Model State Gg
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `GG`.
+  - name: initial_suc_v
+    maps_to: SucV
+    label: Initial Suc V
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `SucV`.
+  - name: initial_model_state_suc
+    maps_to: Suc
+    label: Initial Model State Suc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Suc`.
+  - name: initial_model_state_co2
+    maps_to: CO2
+    label: Initial Model State CO2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CO2`.
+  - name: initial_model_state_atp
+    maps_to: ATP
+    label: Initial Model State ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATP`.
+  - name: initial_model_state_utp
+    maps_to: UTP
+    label: Initial Model State Utp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `UTP`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_gg
+    maps_to: GG
+    label: GG
+    description: GG. Maps to SBML symbol `GG`.
+  - name: suc_v
+    maps_to: SucV
+    label: SucV
+    description: SucV. Maps to SBML symbol `SucV`.
+  - name: suc
+    maps_to: Suc
+    label: Suc
+    description: Suc. Maps to SBML symbol `Suc`.
+  - name: co2
+    maps_to: CO2
+    label: CO2
+    description: CO2. Maps to SBML symbol `CO2`.
+  - name: atp
+    maps_to: ATP
+    label: ATP
+    description: ATP. Maps to SBML symbol `ATP`.
+  - name: utp
+    maps_to: UTP
+    label: UTP
+    description: UTP. Maps to SBML symbol `UTP`.

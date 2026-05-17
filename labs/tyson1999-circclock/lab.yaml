@@ -1,0 +1,64 @@
+schema_version: '2.0'
+title: Tyson1999 Circclock Lab
+description: To the extent possible under law, all copyright and related or neighbouring
+  rights to this encoded model have been dedicated to the public domain worldwide.
+  It can be used to explore systemsbiology tyson1999 circclock BioModels0000000036
+  dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_tyson1999_circclock_biomd0000000036_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_tyson1999_circclock_biomd0000000036_model.state
+  to:
+  - visualisation.systemsbiology_sbml_tyson1999_circclock_biomd0000000036_model_state
+- from: systemsbiology_sbml_tyson1999_circclock_biomd0000000036_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_tyson1999_circclock_biomd0000000036_model_summary
+- from: systemsbiology_sbml_tyson1999_circclock_biomd0000000036_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_tyson1999_circclock_biomd0000000036_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_pt
+    maps_to: systemsbiology_sbml_tyson1999_circclock_biomd0000000036_model.initial_model_state_pt
+    label: Initial Model State Pt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P`.
+  - name: initial_empty_set
+    maps_to: systemsbiology_sbml_tyson1999_circclock_biomd0000000036_model.initial_empty_set
+    label: Initial Empty Set
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `EmptySet`.
+  - name: initial_model_state_m
+    maps_to: systemsbiology_sbml_tyson1999_circclock_biomd0000000036_model.initial_model_state_m
+    label: Initial Model State M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_tyson1999_circclock_biomd0000000036_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_tyson1999_circclock_biomd0000000036_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_tyson1999_circclock_biomd0000000036_model.species_labels
+  - name: model_state_pt
+    maps_to: systemsbiology_sbml_tyson1999_circclock_biomd0000000036_model.model_state_pt
+  - name: empty_set
+    maps_to: systemsbiology_sbml_tyson1999_circclock_biomd0000000036_model.empty_set
+  - name: model_state_m
+    maps_to: systemsbiology_sbml_tyson1999_circclock_biomd0000000036_model.model_state_m

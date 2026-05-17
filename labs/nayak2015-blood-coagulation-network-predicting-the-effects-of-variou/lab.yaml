@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Nayak2015 Blood Coagulation Network Predicting The Effects Of Variou Lab
+description: 'Nayak2015 - Blood Coagulation Network - Predicting the Effects of Various
+  Therapies on Biomarkers Note: The SBML model is generated from SimBiology. The SimBiology
+  (.sbproj) file is available for down.'
+models:
+- alias: systemsbiology_sbml_nayak2015_blood_coagulation_network_predicting_t_biomd0000000611_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_nayak2015_blood_coagulation_network_predicting_t_biomd0000000611_model.state
+  to:
+  - visualisation.systemsbiology_sbml_nayak2015_blood_coagulation_network_predicting_t_biomd0000000611_model_state
+- from: systemsbiology_sbml_nayak2015_blood_coagulation_network_predicting_t_biomd0000000611_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_nayak2015_blood_coagulation_network_predicting_t_biomd0000000611_model_summary
+- from: systemsbiology_sbml_nayak2015_blood_coagulation_network_predicting_t_biomd0000000611_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_nayak2015_blood_coagulation_network_predicting_t_biomd0000000611_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_m_i_ia_atiii
+    maps_to: systemsbiology_sbml_nayak2015_blood_coagulation_network_predicting_t_biomd0000000611_model.initial_m_i_ia_atiii
+    label: Initial M I Ia Atiii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mIIa_ATIII`.
+  - name: initial_m_i_ia
+    maps_to: systemsbiology_sbml_nayak2015_blood_coagulation_network_predicting_t_biomd0000000611_model.initial_m_i_ia
+    label: Initial M I Ia
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mIIa`.
+  - name: initial_xa_va_ii
+    maps_to: systemsbiology_sbml_nayak2015_blood_coagulation_network_predicting_t_biomd0000000611_model.initial_xa_va_ii
+    label: Initial Xa Va Ii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_Va_II`.
+  - name: initial_xa_va
+    maps_to: systemsbiology_sbml_nayak2015_blood_coagulation_network_predicting_t_biomd0000000611_model.initial_xa_va
+    label: Initial Xa Va
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_Va`.
+  - name: initial_xa_tfpi
+    maps_to: systemsbiology_sbml_nayak2015_blood_coagulation_network_predicting_t_biomd0000000611_model.initial_xa_tfpi
+    label: Initial Xa Tfpi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_TFPI`.
+  - name: initial_xa_atiii
+    maps_to: systemsbiology_sbml_nayak2015_blood_coagulation_network_predicting_t_biomd0000000611_model.initial_xa_atiii
+    label: Initial Xa Atiii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_ATIII`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_nayak2015_blood_coagulation_network_predicting_t_biomd0000000611_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_nayak2015_blood_coagulation_network_predicting_t_biomd0000000611_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_nayak2015_blood_coagulation_network_predicting_t_biomd0000000611_model.species_labels
+  - name: m_i_ia_atiii
+    maps_to: systemsbiology_sbml_nayak2015_blood_coagulation_network_predicting_t_biomd0000000611_model.m_i_ia_atiii
+  - name: m_i_ia
+    maps_to: systemsbiology_sbml_nayak2015_blood_coagulation_network_predicting_t_biomd0000000611_model.m_i_ia
+  - name: xa_va_ii
+    maps_to: systemsbiology_sbml_nayak2015_blood_coagulation_network_predicting_t_biomd0000000611_model.xa_va_ii
+  - name: xa_va
+    maps_to: systemsbiology_sbml_nayak2015_blood_coagulation_network_predicting_t_biomd0000000611_model.xa_va
+  - name: xa_tfpi
+    maps_to: systemsbiology_sbml_nayak2015_blood_coagulation_network_predicting_t_biomd0000000611_model.xa_tfpi
+  - name: xa_atiii
+    maps_to: systemsbiology_sbml_nayak2015_blood_coagulation_network_predicting_t_biomd0000000611_model.xa_atiii

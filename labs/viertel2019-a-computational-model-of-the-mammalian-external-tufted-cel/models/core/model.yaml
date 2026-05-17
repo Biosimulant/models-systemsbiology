@@ -1,0 +1,105 @@
+schema_version: '2.0'
+title: Viertel2019 - A Computational model of the mammalian external tufted cell
+description: This is a mathematical conductance-based model of the bursting activity
+  in external tufted (ET) cells of the olfactory bulb. The model includes ion-current
+  based descriptions of the mechanisms underly.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Ryan Viertel
+- Alla Borisyuk
+upstream:
+  id: biomodels_ebi:BIOMD0000000844
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000844
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000844
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000844?filename=Viertel2019.xml
+  license: CC0
+biosim:
+  entrypoint: src.viertel2019_a_computational_model_of_the_mammali_biomd0000000844_model:Viertel2019AComputationalModelOfTheMammaliBiomd0000000844Model
+  init_kwargs:
+    model_path: data/BIOMD0000000844.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_h_lva
+    maps_to: hLVA
+    label: Initial H Lva
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `hLVA`.
+  - name: initial_model_state_h_h
+    maps_to: hH
+    label: Initial Model State H H
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `hH`.
+  - name: initial_h_na_p
+    maps_to: hNaP
+    label: Initial H Na P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `hNaP`.
+  - name: initial_m_bk
+    maps_to: mBK
+    label: Initial M Bk
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mBK`.
+  - name: initial_model_state_n_k
+    maps_to: nK
+    label: Initial Model State N K
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `nK`.
+  - name: initial_n_hvk
+    maps_to: nHVK
+    label: Initial N Hvk
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `nHVK`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: h_lva
+    maps_to: hLVA
+    label: hLVA
+    description: hLVA. Maps to SBML symbol `hLVA`.
+  - name: h_h
+    maps_to: hH
+    label: hH
+    description: hH. Maps to SBML symbol `hH`.
+  - name: h_na_p
+    maps_to: hNaP
+    label: hNaP
+    description: hNaP. Maps to SBML symbol `hNaP`.
+  - name: m_bk
+    maps_to: mBK
+    label: mBK
+    description: mBK. Maps to SBML symbol `mBK`.
+  - name: n_k
+    maps_to: nK
+    label: nK
+    description: nK. Maps to SBML symbol `nK`.
+  - name: n_hvk
+    maps_to: nHVK
+    label: nHVK
+    description: nHVK. Maps to SBML symbol `nHVK`.

@@ -1,0 +1,77 @@
+schema_version: '2.0'
+title: Egli2004_ProlactinRhythmicSecretion
+description: 'This a model from the article: Rhythmic secretion of prolactin in rats:
+  action of oxytocin coordinated byvasoactive intestinal polypeptide of suprachiasmatic
+  nucleus origin. It can be used to explore systemsbiology egli2004 prolactinrhythmicsecreti
+  model0912452142 dynamics and compare simulation behavior across conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Marcel Egli
+- Richard Bertram
+- Michael T Sellix
+- Marc E Freeman
+upstream:
+  id: biomodels_ebi:MODEL0912452142
+  source_db: biomodels_ebi
+  source_id: MODEL0912452142
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL0912452142
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0912452142?filename=MODEL0912452142_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.egli2004_prolactinrhythmicsecretion_model0912452142_model:Egli2004ProlactinrhythmicsecretionModel0912452142Model
+  init_kwargs:
+    model_path: data/MODEL0912452142.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_prl
+    maps_to: PRL
+    label: Initial Model State Prl
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PRL`.
+  - name: initial_model_state_ot
+    maps_to: OT
+    label: Initial Model State Ot
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `OT`.
+  - name: initial_model_state_da
+    maps_to: DA
+    label: Initial Model State Da
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `DA`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: prl
+    maps_to: PRL
+    label: PRL
+    description: PRL. Maps to SBML symbol `PRL`.
+  - name: model_state_ot
+    maps_to: OT
+    label: OT
+    description: OT. Maps to SBML symbol `OT`.
+  - name: model_state_da
+    maps_to: DA
+    label: DA
+    description: DA. Maps to SBML symbol `DA`.

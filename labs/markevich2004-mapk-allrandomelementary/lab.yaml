@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Markevich2004 Mapk Allrandomelementary Lab
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models. It is copyright (c) 2005-2009 The BioModels Team.'
+models:
+- alias: systemsbiology_sbml_markevich2004_mapk_allrandomelementary_biomd0000000030_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_markevich2004_mapk_allrandomelementary_biomd0000000030_model.state
+  to:
+  - visualisation.systemsbiology_sbml_markevich2004_mapk_allrandomelementary_biomd0000000030_model_state
+- from: systemsbiology_sbml_markevich2004_mapk_allrandomelementary_biomd0000000030_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_markevich2004_mapk_allrandomelementary_biomd0000000030_model_summary
+- from: systemsbiology_sbml_markevich2004_mapk_allrandomelementary_biomd0000000030_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_markevich2004_mapk_allrandomelementary_biomd0000000030_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_mapk_mkp_y
+    maps_to: systemsbiology_sbml_markevich2004_mapk_allrandomelementary_biomd0000000030_model.initial_mapk_mkp_y
+    label: Initial MAPK Mkp Y
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_MKP_Y`.
+  - name: initial_mapk_mkp_t
+    maps_to: systemsbiology_sbml_markevich2004_mapk_allrandomelementary_biomd0000000030_model.initial_mapk_mkp_t
+    label: Initial MAPK Mkp T
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_MKP_T`.
+  - name: initial_mapk_mapkk_y
+    maps_to: systemsbiology_sbml_markevich2004_mapk_allrandomelementary_biomd0000000030_model.initial_mapk_mapkk_y
+    label: Initial MAPK Mapkk Y
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_MAPKK_Y`.
+  - name: initial_mapk_mapkk_t
+    maps_to: systemsbiology_sbml_markevich2004_mapk_allrandomelementary_biomd0000000030_model.initial_mapk_mapkk_t
+    label: Initial MAPK Mapkk T
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_MAPKK_T`.
+  - name: initial_mapk_py_mkp_y
+    maps_to: systemsbiology_sbml_markevich2004_mapk_allrandomelementary_biomd0000000030_model.initial_mapk_py_mkp_y
+    label: Initial MAPK Py Mkp Y
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MpY_MKP_Y`.
+  - name: initial_mapk_py_mkp_t
+    maps_to: systemsbiology_sbml_markevich2004_mapk_allrandomelementary_biomd0000000030_model.initial_mapk_py_mkp_t
+    label: Initial MAPK Py Mkp T
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MpY_MKP_T`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_markevich2004_mapk_allrandomelementary_biomd0000000030_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_markevich2004_mapk_allrandomelementary_biomd0000000030_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_markevich2004_mapk_allrandomelementary_biomd0000000030_model.species_labels
+  - name: mapk_mkp_y
+    maps_to: systemsbiology_sbml_markevich2004_mapk_allrandomelementary_biomd0000000030_model.mapk_mkp_y
+  - name: mapk_mkp_t
+    maps_to: systemsbiology_sbml_markevich2004_mapk_allrandomelementary_biomd0000000030_model.mapk_mkp_t
+  - name: mapk_mapkk_y
+    maps_to: systemsbiology_sbml_markevich2004_mapk_allrandomelementary_biomd0000000030_model.mapk_mapkk_y
+  - name: mapk_mapkk_t
+    maps_to: systemsbiology_sbml_markevich2004_mapk_allrandomelementary_biomd0000000030_model.mapk_mapkk_t
+  - name: mapk_py_mkp_y
+    maps_to: systemsbiology_sbml_markevich2004_mapk_allrandomelementary_biomd0000000030_model.mapk_py_mkp_y
+  - name: mapk_py_mkp_t
+    maps_to: systemsbiology_sbml_markevich2004_mapk_allrandomelementary_biomd0000000030_model.mapk_py_mkp_t

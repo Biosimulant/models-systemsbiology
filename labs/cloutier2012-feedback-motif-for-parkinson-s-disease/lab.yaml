@@ -1,0 +1,58 @@
+schema_version: '2.0'
+title: Cloutier2012 Feedback Motif For Parkinson S Disease Lab
+description: 'Cloutier2012 - Feedback motif for Parkinson''sdisease This model is
+  described in the article: Feedback motif for the pathogenesis of Parkinson''s disease.
+  It can be used to explore systemsbiology cloutier2012 feedback motif for parkinson
+  dynamics and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_cloutier2012_feedback_motif_for_parkinson_s_dise_biomd0000000558_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_cloutier2012_feedback_motif_for_parkinson_s_dise_biomd0000000558_model.state
+  to:
+  - visualisation.systemsbiology_sbml_cloutier2012_feedback_motif_for_parkinson_s_dise_biomd0000000558_model_state
+- from: systemsbiology_sbml_cloutier2012_feedback_motif_for_parkinson_s_dise_biomd0000000558_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_cloutier2012_feedback_motif_for_parkinson_s_dise_biomd0000000558_model_summary
+- from: systemsbiology_sbml_cloutier2012_feedback_motif_for_parkinson_s_dise_biomd0000000558_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_cloutier2012_feedback_motif_for_parkinson_s_dise_biomd0000000558_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- neuroscience
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_alpha_syn
+    maps_to: systemsbiology_sbml_cloutier2012_feedback_motif_for_parkinson_s_dise_biomd0000000558_model.initial_alpha_syn
+    label: Initial Alpha Syn
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `alpha_syn`.
+  - name: initial_model_state_ros
+    maps_to: systemsbiology_sbml_cloutier2012_feedback_motif_for_parkinson_s_dise_biomd0000000558_model.initial_model_state_ros
+    label: Initial Model State Ros
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ROS`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_cloutier2012_feedback_motif_for_parkinson_s_dise_biomd0000000558_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_cloutier2012_feedback_motif_for_parkinson_s_dise_biomd0000000558_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_cloutier2012_feedback_motif_for_parkinson_s_dise_biomd0000000558_model.species_labels
+  - name: alpha_syn
+    maps_to: systemsbiology_sbml_cloutier2012_feedback_motif_for_parkinson_s_dise_biomd0000000558_model.alpha_syn
+  - name: ros
+    maps_to: systemsbiology_sbml_cloutier2012_feedback_motif_for_parkinson_s_dise_biomd0000000558_model.ros

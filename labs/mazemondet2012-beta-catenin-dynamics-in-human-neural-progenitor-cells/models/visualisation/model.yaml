@@ -1,0 +1,53 @@
+schema_version: '2.0'
+title: Mazemondet2012 - beta-catenin dynamics in human neural progenitor cells Visualisation
+description: Question-and-answer and dynamic visual summaries for Mazemondet2012 -
+  beta-catenin dynamics in human neural progenitor cells.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Mazemondet2012 Beta Catenin Dynamics In Human Neural Progenitor Cells
+      Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Mazemondet2012 - beta-catenin dynamics in human neural progenitor
+      cells.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_mazemondet2012_beta_catenin_dynamics_in_human_ne_model1303140000_model
+      title: Mazemondet2012 - beta-catenin dynamics in human neural progenitor cells
+      observables:
+      - id: species_1
+        port: beta_cyt
+        label: BetaCyt
+        group: signaling
+      - id: species_6
+        port: beta_nuc
+        label: BetaNuc
+        group: signaling
+      - id: species_4
+        port: wnt
+        label: Wnt
+        group: signaling
+      - id: species_2
+        port: axin
+        label: Axin
+        group: signaling
+      - id: species_3
+        port: axin_p
+        label: AxinP
+        group: signaling
+io:
+  inputs: []
+  outputs: []

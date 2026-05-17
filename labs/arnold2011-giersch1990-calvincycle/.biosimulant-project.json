@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "9982416f-0ce8-4b65-ba32-3431deb5bc1f",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "c328b351-e890-4a7d-9af0-39990a5b6793",
+  "created_at": "2026-05-16T05:46:40.850038570+00:00",
+  "last_synced_at": "2026-05-17T01:38:14.533380+00:00",
+  "hub_manifest_hash": "94a8ad17e7943444888da08c6c134fd7bd2f4afd1b052ab101e797917dbb16ff",
+  "package_name": "arnold2011-giersch1990-calvincycle-lab"
+}

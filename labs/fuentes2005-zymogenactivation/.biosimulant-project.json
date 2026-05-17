@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "f4bf174a-1277-4761-9db3-7e81e6a677f0",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "2d50b13b-bd13-4610-ab9e-96ec4bdbd3d3",
+  "created_at": "2026-05-16T05:46:43.455425528+00:00",
+  "last_synced_at": "2026-05-17T03:15:15.219780+00:00",
+  "hub_manifest_hash": "0fc1c65cc82edc73416cd388a43e40a4e9d6724e6ffc4228869b3ddf5009dd2d",
+  "package_name": "fuentes2005-zymogenactivation-lab"
+}

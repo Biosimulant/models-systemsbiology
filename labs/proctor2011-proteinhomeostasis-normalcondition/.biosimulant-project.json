@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "05f0af10-62a8-4af4-b7ac-ec92ef1bc4a9",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "51d57ce4-b4d5-4f18-8554-303a319b9337",
+  "created_at": "2026-05-16T05:46:50.741071918+00:00",
+  "last_synced_at": "2026-05-17T05:36:27.703737+00:00",
+  "hub_manifest_hash": "17cae8dea249f4831d5284aeea9da956e6ba842bccba001d46aa0c6c35940ae5",
+  "package_name": "proctor2011-proteinhomeostasis-normalcondition-lab"
+}

@@ -1,0 +1,99 @@
+schema_version: '2.0'
+title: Wang2008 - Mimicking the inhibitory effect of riluzole on membrane conductance
+  in skeletal fibres
+description: 'Wang2008 - Mimicking the inhibitory effect ofriluzole on membrane conductance
+  in skeletal fibres This model is described in the article: Riluzole-induced block
+  of voltage-gated Na+ current and activat. It can be used to explore systemsbiology
+  wang2008 mimicking the inhibitory effect dynamics and compare simulation behavior
+  across conditions.'
+standard: other
+tags:
+- cellcycle
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Ya-Jean Wang
+- Ming-Wei Lin
+- An-An Lin
+- Sheng-Nan Wu
+upstream:
+  id: biomodels_ebi:BIOMD0000000693
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000693
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000693
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000693?filename=BIOMD0000000693_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.wang2008_mimicking_the_inhibitory_effect_of_rilu_biomd0000000693_model:Wang2008MimickingTheInhibitoryEffectOfRiluBiomd0000000693Model
+  init_kwargs:
+    model_path: data/BIOMD0000000693.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: stimulus_duration
+    maps_to: Stimulus_Duration
+    label: Stimulus Duration
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `Stimulus_Duration`.
+  - name: stimulus_magnitude
+    maps_to: Stimulus_Magnitude
+    label: Stimulus Magnitude
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `Stimulus_Magnitude`.
+  - name: stimulus_period
+    maps_to: Stimulus_Period
+    label: Stimulus Period
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `Stimulus_Period`.
+  - name: stimulus_start
+    maps_to: Stimulus_Start
+    label: Stimulus Start
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `Stimulus_Start`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: cer
+    maps_to: cer
+    label: cer
+    description: cer. Maps to SBML symbol `cer`.
+  - name: beta_m
+    maps_to: beta_m
+    label: beta_m
+    description: beta_m. Maps to SBML symbol `beta_m`.
+  - name: alpha_h
+    maps_to: alpha_h
+    label: alpha_h
+    description: alpha_h. Maps to SBML symbol `alpha_h`.
+  - name: alpha_m
+    maps_to: alpha_m
+    label: alpha_m
+    description: alpha_m. Maps to SBML symbol `alpha_m`.
+  - name: beta_n
+    maps_to: beta_n
+    label: beta_n
+    description: beta_n. Maps to SBML symbol `beta_n`.
+  - name: jleak
+    maps_to: jleak
+    label: jleak
+    description: jleak. Maps to SBML symbol `jleak`.

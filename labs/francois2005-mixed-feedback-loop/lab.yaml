@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Francois2005 Mixed Feedback Loop Lab
+description: Paul François & Vincent Hakim. It can be used to explore systemsbiology
+  fran ois2005 mixed feedback loop dynamics and compare simulation behavior across
+  conditions.
+models:
+- alias: systemsbiology_sbml_fran_ois2005_mixed_feedback_loop_two_gene_networ_biomd0000000539_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_fran_ois2005_mixed_feedback_loop_two_gene_networ_biomd0000000539_model.state
+  to:
+  - visualisation.systemsbiology_sbml_fran_ois2005_mixed_feedback_loop_two_gene_networ_biomd0000000539_model_state
+- from: systemsbiology_sbml_fran_ois2005_mixed_feedback_loop_two_gene_networ_biomd0000000539_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_fran_ois2005_mixed_feedback_loop_two_gene_networ_biomd0000000539_model_summary
+- from: systemsbiology_sbml_fran_ois2005_mixed_feedback_loop_two_gene_networ_biomd0000000539_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_fran_ois2005_mixed_feedback_loop_two_gene_networ_biomd0000000539_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_g_b
+    maps_to: systemsbiology_sbml_fran_ois2005_mixed_feedback_loop_two_gene_networ_biomd0000000539_model.initial_model_state_g_b
+    label: Initial Model State G B
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `gB`.
+  - name: initial_model_state_r_b
+    maps_to: systemsbiology_sbml_fran_ois2005_mixed_feedback_loop_two_gene_networ_biomd0000000539_model.initial_model_state_r_b
+    label: Initial Model State R B
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `rB`.
+  - name: initial_ag_b
+    maps_to: systemsbiology_sbml_fran_ois2005_mixed_feedback_loop_two_gene_networ_biomd0000000539_model.initial_ag_b
+    label: Initial Ag B
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `AgB`.
+  - name: initial_model_state_ab
+    maps_to: systemsbiology_sbml_fran_ois2005_mixed_feedback_loop_two_gene_networ_biomd0000000539_model.initial_model_state_ab
+    label: Initial Model State Ab
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `AB`.
+  - name: initial_model_state_a
+    maps_to: systemsbiology_sbml_fran_ois2005_mixed_feedback_loop_two_gene_networ_biomd0000000539_model.initial_model_state_a
+    label: Initial Model State A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `A`.
+  - name: initial_model_state_b
+    maps_to: systemsbiology_sbml_fran_ois2005_mixed_feedback_loop_two_gene_networ_biomd0000000539_model.initial_model_state_b
+    label: Initial Model State B
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `B`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_fran_ois2005_mixed_feedback_loop_two_gene_networ_biomd0000000539_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_fran_ois2005_mixed_feedback_loop_two_gene_networ_biomd0000000539_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_fran_ois2005_mixed_feedback_loop_two_gene_networ_biomd0000000539_model.species_labels
+  - name: g_b
+    maps_to: systemsbiology_sbml_fran_ois2005_mixed_feedback_loop_two_gene_networ_biomd0000000539_model.g_b
+  - name: r_b
+    maps_to: systemsbiology_sbml_fran_ois2005_mixed_feedback_loop_two_gene_networ_biomd0000000539_model.r_b
+  - name: ag_b
+    maps_to: systemsbiology_sbml_fran_ois2005_mixed_feedback_loop_two_gene_networ_biomd0000000539_model.ag_b
+  - name: model_state_ab
+    maps_to: systemsbiology_sbml_fran_ois2005_mixed_feedback_loop_two_gene_networ_biomd0000000539_model.model_state_ab
+  - name: model_state_a
+    maps_to: systemsbiology_sbml_fran_ois2005_mixed_feedback_loop_two_gene_networ_biomd0000000539_model.model_state_a
+  - name: model_state_b
+    maps_to: systemsbiology_sbml_fran_ois2005_mixed_feedback_loop_two_gene_networ_biomd0000000539_model.model_state_b

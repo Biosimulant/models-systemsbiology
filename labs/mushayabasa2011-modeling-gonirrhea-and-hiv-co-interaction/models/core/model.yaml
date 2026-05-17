@@ -1,0 +1,109 @@
+schema_version: '2.0'
+title: Mushayabasa2011- Modeling gonirrhea and HIV co-interaction
+description: A mathematical model was designed to explore the co-interaction of gonorrhea
+  and HIV in the presence of antiretroviral therapy and gonorrhea treatment. It can
+  be used to explore systemsbiology mushayabasa2011 modeling gonirrhea and hiv dynamics
+  and compare simulation behavior across conditions.
+standard: other
+tags:
+- epidemiology
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- S Mushayabasa
+- Jean Michel Tchuenche
+- C P Bhunu
+- E Ngarakana-Gwasira
+upstream:
+  id: biomodels_ebi:MODEL1812040004
+  source_db: biomodels_ebi
+  source_id: MODEL1812040004
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1812040004
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1812040004?filename=Model.xml
+  license: CC0
+biosim:
+  entrypoint: src.mushayabasa2011_modeling_gonirrhea_and_hiv_co_in_model1812040004_model:Mushayabasa2011ModelingGonirrheaAndHivCoInModel1812040004Model
+  init_kwargs:
+    model_path: data/MODEL1812040004.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_i_g
+    maps_to: I_G
+    label: Initial Model State I G
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `I_G`.
+  - name: initial_model_state_i_h
+    maps_to: I_H
+    label: Initial Model State I H
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `I_H`.
+  - name: initial_i_gh
+    maps_to: I_GH
+    label: Initial I Gh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `I_GH`.
+  - name: initial_a_ht
+    maps_to: A_HT
+    label: Initial A Ht
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `A_HT`.
+  - name: initial_model_state_a_h
+    maps_to: A_H
+    label: Initial Model State A H
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `A_H`.
+  - name: initial_a_ght
+    maps_to: A_GHT
+    label: Initial A Ght
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `A_GHT`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: i_g
+    maps_to: I_G
+    label: I_G
+    description: I_G. Maps to SBML symbol `I_G`.
+  - name: i_h
+    maps_to: I_H
+    label: I_H
+    description: I_H. Maps to SBML symbol `I_H`.
+  - name: i_gh
+    maps_to: I_GH
+    label: I_GH
+    description: I_GH. Maps to SBML symbol `I_GH`.
+  - name: a_ht
+    maps_to: A_HT
+    label: A_HT
+    description: A_HT. Maps to SBML symbol `A_HT`.
+  - name: a_h
+    maps_to: A_H
+    label: A_H
+    description: A_H. Maps to SBML symbol `A_H`.
+  - name: a_ght
+    maps_to: A_GHT
+    label: A_GHT
+    description: A_GHT. Maps to SBML symbol `A_GHT`.

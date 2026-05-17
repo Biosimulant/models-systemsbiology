@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Fridlyand2003 Calcium Flux Lab
+description: The model reproduces block A of Fig 5 and also Fig 3 (without the inclusion
+  of Tg action). The model was successfully tested on MathSBML To the extent possible
+  under law, all copyright and related or.
+models:
+- alias: systemsbiology_sbml_fridlyand2003_calcium_flux_biomd0000000059_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_fridlyand2003_calcium_flux_biomd0000000059_model.state
+  to:
+  - visualisation.systemsbiology_sbml_fridlyand2003_calcium_flux_biomd0000000059_model_state
+- from: systemsbiology_sbml_fridlyand2003_calcium_flux_biomd0000000059_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_fridlyand2003_calcium_flux_biomd0000000059_model_summary
+- from: systemsbiology_sbml_fridlyand2003_calcium_flux_biomd0000000059_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_fridlyand2003_calcium_flux_biomd0000000059_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_cytosolic_adp
+    maps_to: systemsbiology_sbml_fridlyand2003_calcium_flux_biomd0000000059_model.initial_cytosolic_adp
+    label: Initial Cytosolic ADP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ADP_cyt`.
+  - name: initial_cytosolic_atp
+    maps_to: systemsbiology_sbml_fridlyand2003_calcium_flux_biomd0000000059_model.initial_cytosolic_atp
+    label: Initial Cytosolic ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATP_cyt`.
+  - name: initial_cytosolic_sodium
+    maps_to: systemsbiology_sbml_fridlyand2003_calcium_flux_biomd0000000059_model.initial_cytosolic_sodium
+    label: Initial Cytosolic Sodium
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Na_cyt`.
+  - name: initial_er_calcium
+    maps_to: systemsbiology_sbml_fridlyand2003_calcium_flux_biomd0000000059_model.initial_er_calcium
+    label: Initial Er Calcium
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_er`.
+  - name: initial_cytosolic_ip3
+    maps_to: systemsbiology_sbml_fridlyand2003_calcium_flux_biomd0000000059_model.initial_cytosolic_ip3
+    label: Initial Cytosolic IP3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IP3_cyt`.
+  - name: initial_cytosolic_calcium
+    maps_to: systemsbiology_sbml_fridlyand2003_calcium_flux_biomd0000000059_model.initial_cytosolic_calcium
+    label: Initial Cytosolic Calcium
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_cyt`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_fridlyand2003_calcium_flux_biomd0000000059_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_fridlyand2003_calcium_flux_biomd0000000059_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_fridlyand2003_calcium_flux_biomd0000000059_model.species_labels
+  - name: cytosolic_adp
+    maps_to: systemsbiology_sbml_fridlyand2003_calcium_flux_biomd0000000059_model.cytosolic_adp
+  - name: cytosolic_atp
+    maps_to: systemsbiology_sbml_fridlyand2003_calcium_flux_biomd0000000059_model.cytosolic_atp
+  - name: cytosolic_sodium
+    maps_to: systemsbiology_sbml_fridlyand2003_calcium_flux_biomd0000000059_model.cytosolic_sodium
+  - name: er_calcium
+    maps_to: systemsbiology_sbml_fridlyand2003_calcium_flux_biomd0000000059_model.er_calcium
+  - name: cytosolic_ip3
+    maps_to: systemsbiology_sbml_fridlyand2003_calcium_flux_biomd0000000059_model.cytosolic_ip3
+  - name: cytosolic_calcium
+    maps_to: systemsbiology_sbml_fridlyand2003_calcium_flux_biomd0000000059_model.cytosolic_calcium

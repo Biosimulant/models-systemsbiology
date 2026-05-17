@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "bd207fbc-ab49-4e48-a98b-2a81564855a4",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "588f2ecf-fa94-4555-b329-2856bde98742",
+  "created_at": "2026-05-16T05:46:43.854141150+00:00",
+  "last_synced_at": "2026-05-17T03:30:46.995191+00:00",
+  "hub_manifest_hash": "b4a37e706cb3b026e57c87a44f0b26414f6c20b4b71dcf614171ec3b29ab2a66",
+  "package_name": "hatakeyama2003-mapk-lab"
+}

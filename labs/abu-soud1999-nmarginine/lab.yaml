@@ -1,0 +1,79 @@
+schema_version: '2.0'
+title: Abu Soud1999 Nmarginine Lab
+description: This model is taken from the &lt;a href = 'http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=retrieve&amp;db=pubmed&amp;list_uids=7559438&amp;dopt=Abstract'&gt;Peer-reviewed
+  publication&gt;Husam M. It can be used to explore systemsbiology abu soud1999 nmarginine
+  model9088169066 dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_abu_soud1999_nmarginine_model9088169066_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_abu_soud1999_nmarginine_model9088169066_model.state
+  to:
+  - visualisation.systemsbiology_sbml_abu_soud1999_nmarginine_model9088169066_model_state
+- from: systemsbiology_sbml_abu_soud1999_nmarginine_model9088169066_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_abu_soud1999_nmarginine_model9088169066_model_summary
+- from: systemsbiology_sbml_abu_soud1999_nmarginine_model9088169066_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_abu_soud1999_nmarginine_model9088169066_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_nm_minus_arginine
+    maps_to: systemsbiology_sbml_abu_soud1999_nmarginine_model9088169066_model.initial_nm_minus_arginine
+    label: Initial Nm Minus Arginine
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NM_minus_Arginine`.
+  - name: initial_im_minus_nnos
+    maps_to: systemsbiology_sbml_abu_soud1999_nmarginine_model9088169066_model.initial_im_minus_nnos
+    label: Initial Im Minus Nnos
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Im_minus_nNOS`.
+  - name: initial_imidazole
+    maps_to: systemsbiology_sbml_abu_soud1999_nmarginine_model9088169066_model.initial_imidazole
+    label: Initial Imidazole
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Imidazole`.
+  - name: initial_nnos_minus_nm_minus_arginine
+    maps_to: systemsbiology_sbml_abu_soud1999_nmarginine_model9088169066_model.initial_nnos_minus_nm_minus_arginine
+    label: Initial Nnos Minus Nm Minus Arginine
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `nNOS_minus_NM_minus_Arginine`.
+  - name: initial_im_minus_nnos_minus_nm_minus_arginine
+    maps_to: systemsbiology_sbml_abu_soud1999_nmarginine_model9088169066_model.initial_im_minus_nnos_minus_nm_minus_arginine
+    label: Initial Im Minus Nnos Minus Nm Minus Arginine
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Im_minus_nNOS_minus_NM_minus_Arginine`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_abu_soud1999_nmarginine_model9088169066_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_abu_soud1999_nmarginine_model9088169066_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_abu_soud1999_nmarginine_model9088169066_model.species_labels
+  - name: nm_minus_arginine
+    maps_to: systemsbiology_sbml_abu_soud1999_nmarginine_model9088169066_model.nm_minus_arginine
+  - name: im_minus_nnos
+    maps_to: systemsbiology_sbml_abu_soud1999_nmarginine_model9088169066_model.im_minus_nnos
+  - name: imidazole
+    maps_to: systemsbiology_sbml_abu_soud1999_nmarginine_model9088169066_model.imidazole
+  - name: nnos_minus_nm_minus_arginine
+    maps_to: systemsbiology_sbml_abu_soud1999_nmarginine_model9088169066_model.nnos_minus_nm_minus_arginine
+  - name: im_minus_nnos_minus_nm_minus_arginine
+    maps_to: systemsbiology_sbml_abu_soud1999_nmarginine_model9088169066_model.im_minus_nnos_minus_nm_minus_arginine

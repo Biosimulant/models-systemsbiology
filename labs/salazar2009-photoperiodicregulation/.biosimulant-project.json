@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "099a61b5-d730-41db-b481-36e7679b8578",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "b6946e03-3554-46b4-8acb-c724d34e0218",
+  "created_at": "2026-05-16T05:46:51.637314850+00:00",
+  "last_synced_at": "2026-05-17T06:04:33.728496+00:00",
+  "hub_manifest_hash": "0ed6b6e1afb4412fa6d7f538b612f13a75862975e7aa1f1997f9f2d7f2c6c508",
+  "package_name": "salazar2009-photoperiodicregulation-lab"
+}

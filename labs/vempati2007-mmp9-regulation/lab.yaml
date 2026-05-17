@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Vempati2007 Mmp9 Regulation Lab
+description: 'This is the model described in the article: A biochemical model of matrix
+  metalloproteinase 9 activation and inhibition. It can be used to explore systemsbiology
+  vempati2007 mmp9 regulation model7888000034 dynamics and compare simulation behavior
+  across conditions.'
+models:
+- alias: systemsbiology_sbml_vempati2007_mmp9_regulation_model7888000034_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_vempati2007_mmp9_regulation_model7888000034_model.state
+  to:
+  - visualisation.systemsbiology_sbml_vempati2007_mmp9_regulation_model7888000034_model_state
+- from: systemsbiology_sbml_vempati2007_mmp9_regulation_model7888000034_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_vempati2007_mmp9_regulation_model7888000034_model_summary
+- from: systemsbiology_sbml_vempati2007_mmp9_regulation_model7888000034_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_vempati2007_mmp9_regulation_model7888000034_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_tr_pm9_t1_m3
+    maps_to: systemsbiology_sbml_vempati2007_mmp9_regulation_model7888000034_model.initial_tr_pm9_t1_m3
+    label: Initial Tr PM9 T1 M3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Tr_pM9_T1_M3`.
+  - name: initial_tr_pm9_t1
+    maps_to: systemsbiology_sbml_vempati2007_mmp9_regulation_model7888000034_model.initial_tr_pm9_t1
+    label: Initial Tr PM9 T1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Tr_pM9_T1`.
+  - name: initial_tr_pm9
+    maps_to: systemsbiology_sbml_vempati2007_mmp9_regulation_model7888000034_model.initial_tr_pm9
+    label: Initial Tr PM9
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Tr_pM9`.
+  - name: initial_model_state_tr
+    maps_to: systemsbiology_sbml_vempati2007_mmp9_regulation_model7888000034_model.initial_model_state_tr
+    label: Initial Model State Tr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Tr`.
+  - name: initial_model_state_t1
+    maps_to: systemsbiology_sbml_vempati2007_mmp9_regulation_model7888000034_model.initial_model_state_t1
+    label: Initial Model State T1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `T1`.
+  - name: initial_pm9_t1_m3
+    maps_to: systemsbiology_sbml_vempati2007_mmp9_regulation_model7888000034_model.initial_pm9_t1_m3
+    label: Initial PM9 T1 M3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `pM9_T1_M3`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_vempati2007_mmp9_regulation_model7888000034_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_vempati2007_mmp9_regulation_model7888000034_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_vempati2007_mmp9_regulation_model7888000034_model.species_labels
+  - name: tr_pm9_t1_m3
+    maps_to: systemsbiology_sbml_vempati2007_mmp9_regulation_model7888000034_model.tr_pm9_t1_m3
+  - name: tr_pm9_t1
+    maps_to: systemsbiology_sbml_vempati2007_mmp9_regulation_model7888000034_model.tr_pm9_t1
+  - name: tr_pm9
+    maps_to: systemsbiology_sbml_vempati2007_mmp9_regulation_model7888000034_model.tr_pm9
+  - name: model_state_tr
+    maps_to: systemsbiology_sbml_vempati2007_mmp9_regulation_model7888000034_model.model_state_tr
+  - name: model_state_t1
+    maps_to: systemsbiology_sbml_vempati2007_mmp9_regulation_model7888000034_model.model_state_t1
+  - name: pm9_t1_m3
+    maps_to: systemsbiology_sbml_vempati2007_mmp9_regulation_model7888000034_model.pm9_t1_m3

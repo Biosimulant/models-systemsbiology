@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "9c32ac6f-3708-47a4-8c60-6fa20e49416b",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "63473804-d4d4-4b9a-b2d5-ad00e83c2cfd",
+  "created_at": "2026-05-16T05:46:47.230373100+00:00",
+  "last_synced_at": "2026-05-17T04:55:40.321756+00:00",
+  "hub_manifest_hash": "881c4d7c7cd58dd5a565052bb4f0801c723dc381d286d0d39e4fb42eadcd26c1",
+  "package_name": "meyer1991-calciumspike-icc-lab"
+}

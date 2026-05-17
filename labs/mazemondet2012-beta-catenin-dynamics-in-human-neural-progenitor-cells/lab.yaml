@@ -1,0 +1,80 @@
+schema_version: '2.0'
+title: Mazemondet2012 Beta Catenin Dynamics In Human Neural Progenitor Cells Lab
+description: Systems Biology Mazemondet2012Beta Catenin Dynamics In Human Ne Model1303140000Model
+  represents core biological mechanisms from biomodels_ebi reference biomodels_ebi:MODEL1303140000.
+  When you run it, you can inspect state and compare temporal behavior between baseline
+  and adjusted inputs.
+models:
+- alias: systemsbiology_sbml_mazemondet2012_beta_catenin_dynamics_in_human_ne_model1303140000_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_mazemondet2012_beta_catenin_dynamics_in_human_ne_model1303140000_model.state
+  to:
+  - visualisation.systemsbiology_sbml_mazemondet2012_beta_catenin_dynamics_in_human_ne_model1303140000_model_state
+- from: systemsbiology_sbml_mazemondet2012_beta_catenin_dynamics_in_human_ne_model1303140000_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_mazemondet2012_beta_catenin_dynamics_in_human_ne_model1303140000_model_summary
+- from: systemsbiology_sbml_mazemondet2012_beta_catenin_dynamics_in_human_ne_model1303140000_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_mazemondet2012_beta_catenin_dynamics_in_human_ne_model1303140000_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_beta_cyt
+    maps_to: systemsbiology_sbml_mazemondet2012_beta_catenin_dynamics_in_human_ne_model1303140000_model.initial_beta_cyt
+    label: Initial Beta Cyt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_1`.
+  - name: initial_beta_nuc
+    maps_to: systemsbiology_sbml_mazemondet2012_beta_catenin_dynamics_in_human_ne_model1303140000_model.initial_beta_nuc
+    label: Initial Beta Nuc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_6`.
+  - name: initial_model_state_wnt
+    maps_to: systemsbiology_sbml_mazemondet2012_beta_catenin_dynamics_in_human_ne_model1303140000_model.initial_model_state_wnt
+    label: Initial Model State Wnt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_4`.
+  - name: initial_axin
+    maps_to: systemsbiology_sbml_mazemondet2012_beta_catenin_dynamics_in_human_ne_model1303140000_model.initial_axin
+    label: Initial Axin
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_2`.
+  - name: initial_axin_p
+    maps_to: systemsbiology_sbml_mazemondet2012_beta_catenin_dynamics_in_human_ne_model1303140000_model.initial_axin_p
+    label: Initial Axin P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_3`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_mazemondet2012_beta_catenin_dynamics_in_human_ne_model1303140000_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_mazemondet2012_beta_catenin_dynamics_in_human_ne_model1303140000_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_mazemondet2012_beta_catenin_dynamics_in_human_ne_model1303140000_model.species_labels
+  - name: beta_cyt
+    maps_to: systemsbiology_sbml_mazemondet2012_beta_catenin_dynamics_in_human_ne_model1303140000_model.beta_cyt
+  - name: beta_nuc
+    maps_to: systemsbiology_sbml_mazemondet2012_beta_catenin_dynamics_in_human_ne_model1303140000_model.beta_nuc
+  - name: wnt
+    maps_to: systemsbiology_sbml_mazemondet2012_beta_catenin_dynamics_in_human_ne_model1303140000_model.wnt
+  - name: axin
+    maps_to: systemsbiology_sbml_mazemondet2012_beta_catenin_dynamics_in_human_ne_model1303140000_model.axin
+  - name: axin_p
+    maps_to: systemsbiology_sbml_mazemondet2012_beta_catenin_dynamics_in_human_ne_model1303140000_model.axin_p

@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Jones1994_BloodCoagulation
+description: 'Jones1994_BloodCoagulation This model is built based on theexperimental
+  findings described in Lawson et al., 1994(PMID:8083241) This model is described
+  in the article: A model for the tissue factor pa. It can be used to explore systemsbiology
+  jones1994 bloodcoagulation BioModels0000000336 dynamics and compare simulation behavior
+  across conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- K C Jones
+- K G Mann
+upstream:
+  id: biomodels_ebi:BIOMD0000000336
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000336
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000336
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000336?filename=BIOMD0000000336_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.jones1994_bloodcoagulation_biomd0000000336_model:Jones1994BloodcoagulationBiomd0000000336Model
+  init_kwargs:
+    model_path: data/BIOMD0000000336.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_tf_vi_ia
+    maps_to: TF_VIIa
+    label: Initial Tf Vi Ia
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TF_VIIa`.
+  - name: initial_m_i_ia
+    maps_to: mIIa
+    label: Initial M I Ia
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mIIa`.
+  - name: initial_x_vii_ia_i_xa
+    maps_to: X_VIIIa_IXa
+    label: Initial X Vii Ia I Xa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X_VIIIa_IXa`.
+  - name: initial_x_tf_vi_ia
+    maps_to: X_TF_VIIa
+    label: Initial X Tf Vi Ia
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X_TF_VIIa`.
+  - name: initial_va_xa
+    maps_to: Va_Xa
+    label: Initial Va Xa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Va_Xa`.
+  - name: initial_vii_ia_i_xa
+    maps_to: VIIIa_IXa
+    label: Initial Vii Ia I Xa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VIIIa_IXa`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: tf_vi_ia
+    maps_to: TF_VIIa
+    label: TF_VIIa
+    description: TF_VIIa. Maps to SBML symbol `TF_VIIa`.
+  - name: m_i_ia
+    maps_to: mIIa
+    label: mIIa
+    description: mIIa. Maps to SBML symbol `mIIa`.
+  - name: x_vii_ia_i_xa
+    maps_to: X_VIIIa_IXa
+    label: X_VIIIa_IXa
+    description: X_VIIIa_IXa. Maps to SBML symbol `X_VIIIa_IXa`.
+  - name: x_tf_vi_ia
+    maps_to: X_TF_VIIa
+    label: X_TF_VIIa
+    description: X_TF_VIIa. Maps to SBML symbol `X_TF_VIIa`.
+  - name: va_xa
+    maps_to: Va_Xa
+    label: Va_Xa
+    description: Va_Xa. Maps to SBML symbol `Va_Xa`.
+  - name: vii_ia_i_xa
+    maps_to: VIIIa_IXa
+    label: VIIIa_IXa
+    description: VIIIa_IXa. Maps to SBML symbol `VIIIa_IXa`.

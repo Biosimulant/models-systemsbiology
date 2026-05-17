@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Qi2013 - IL-6 and IFN crosstalk model Visualisation
+description: Question-and-answer and dynamic visual summaries for Qi2013 - IL-6 and
+  IFN crosstalk model.
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Qi2013 Il 6 And Ifn Crosstalk Lab
+    question: 'Which signalling variables dominate the simulated network response?
+      Source model: Qi2013 - IL-6 and IFN crosstalk model.'
+    answer_focus: Q/A table plus signaling timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_qi2013_il_6_and_ifn_crosstalk_model_biomd0000000544_model
+      title: Qi2013 - IL-6 and IFN crosstalk model
+      observables:
+      - id: species_30
+        port: mrna_socs3_n
+        label: mRNA-SOCS3N
+        group: signaling
+      - id: species_31
+        port: mrna_socs3_c
+        label: mRNA-SOCS3C
+        group: signaling
+      - id: species_97
+        port: mrna_socs1_n
+        label: mRNA-SOCS1N
+        group: signaling
+      - id: species_98
+        port: mrna_socs1_c
+        label: mRNA-SOCS1C
+        group: signaling
+      - id: species_51
+        port: mek
+        label: MEK
+        group: signaling
+      - id: species_74
+        port: ceb_pi
+        label: CEBPi
+        group: signaling
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Weisse2015 - Cell Growth Visualisation
+description: Question-and-answer and dynamic visual summaries for Weisse2015 - Cell
+  Growth.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Weisse2015 Cell Growth Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Weisse2015 - Cell Growth.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_weisse2015_cell_growth_model1502270000_model
+      title: Weisse2015 - Cell Growth
+      observables:
+      - id: zmt
+        port: zmt
+        label: Zmt
+        group: signaling
+      - id: zmr
+        port: zmr
+        label: Zmr
+        group: signaling
+      - id: zmq
+        port: zmq
+        label: Zmq
+        group: signaling
+      - id: zmp
+        port: zmp
+        label: Zmp
+        group: signaling
+      - id: zmm
+        port: zmm
+        label: Zmm
+        group: signaling
+      - id: si
+        port: model_state_si
+        label: Si
+        group: signaling
+io:
+  inputs: []
+  outputs: []

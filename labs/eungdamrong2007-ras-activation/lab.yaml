@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Eungdamrong2007 Ras Activation Lab
+description: The model reproduces the time profiles of Golgi Ras-GTP and plasma membrane
+  Ras-GTP, subjected to a palmitoylation rate of 0.00015849 second inverse. This is
+  depicted in Fig 5a and 5b for various palm.
+models:
+- alias: systemsbiology_sbml_eungdamrong2007_ras_activation_biomd0000000161_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_eungdamrong2007_ras_activation_biomd0000000161_model.state
+  to:
+  - visualisation.systemsbiology_sbml_eungdamrong2007_ras_activation_biomd0000000161_model_state
+- from: systemsbiology_sbml_eungdamrong2007_ras_activation_biomd0000000161_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_eungdamrong2007_ras_activation_biomd0000000161_model_summary
+- from: systemsbiology_sbml_eungdamrong2007_ras_activation_biomd0000000161_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_eungdamrong2007_ras_activation_biomd0000000161_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- cellcycle
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_ract_ca
+    maps_to: systemsbiology_sbml_eungdamrong2007_ras_activation_biomd0000000161_model.initial_ract_ca
+    label: Initial Ract Ca
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RactCa`.
+  - name: initial_ca_er
+    maps_to: systemsbiology_sbml_eungdamrong2007_ras_activation_biomd0000000161_model.initial_ca_er
+    label: Initial Ca Er
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_ER`.
+  - name: initial_serca
+    maps_to: systemsbiology_sbml_eungdamrong2007_ras_activation_biomd0000000161_model.initial_serca
+    label: Initial Serca
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `serca`.
+  - name: initial_capri_cyt
+    maps_to: systemsbiology_sbml_eungdamrong2007_ras_activation_biomd0000000161_model.initial_capri_cyt
+    label: Initial Capri Cyt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CAPRI_cyt`.
+  - name: initial_rinh_ca
+    maps_to: systemsbiology_sbml_eungdamrong2007_ras_activation_biomd0000000161_model.initial_rinh_ca
+    label: Initial Rinh Ca
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RinhCa`.
+  - name: initial_ras_ca_pl_ce_gm
+    maps_to: systemsbiology_sbml_eungdamrong2007_ras_activation_biomd0000000161_model.initial_ras_ca_pl_ce_gm
+    label: Initial RAS Ca Pl Ce Gm
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ras_CaPLCe_GM`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_eungdamrong2007_ras_activation_biomd0000000161_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_eungdamrong2007_ras_activation_biomd0000000161_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_eungdamrong2007_ras_activation_biomd0000000161_model.species_labels
+  - name: ract_ca
+    maps_to: systemsbiology_sbml_eungdamrong2007_ras_activation_biomd0000000161_model.ract_ca
+  - name: ca_er
+    maps_to: systemsbiology_sbml_eungdamrong2007_ras_activation_biomd0000000161_model.ca_er
+  - name: serca
+    maps_to: systemsbiology_sbml_eungdamrong2007_ras_activation_biomd0000000161_model.serca
+  - name: capri_cyt
+    maps_to: systemsbiology_sbml_eungdamrong2007_ras_activation_biomd0000000161_model.capri_cyt
+  - name: rinh_ca
+    maps_to: systemsbiology_sbml_eungdamrong2007_ras_activation_biomd0000000161_model.rinh_ca
+  - name: ras_ca_pl_ce_gm
+    maps_to: systemsbiology_sbml_eungdamrong2007_ras_activation_biomd0000000161_model.ras_ca_pl_ce_gm

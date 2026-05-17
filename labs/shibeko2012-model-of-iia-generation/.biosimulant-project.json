@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "d90d8ff6-c159-4c61-9ce4-72bcd535cff3",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "2d30481e-4fee-497c-b155-0f60f6e8270e",
+  "created_at": "2026-05-16T05:46:51.854931809+00:00",
+  "last_synced_at": "2026-05-17T06:11:06.072686+00:00",
+  "hub_manifest_hash": "48332b0279f4eb672dbee31ccc0e8d41fb3541d0462f1d2dab90f82182e968b8",
+  "package_name": "shibeko2012-model-of-iia-generation-lab"
+}

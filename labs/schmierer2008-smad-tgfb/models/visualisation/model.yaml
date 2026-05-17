@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Schmierer_2008_Smad_Tgfb Visualisation
+description: Question-and-answer and dynamic visual summaries for Schmierer_2008_Smad_Tgfb.
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Schmierer2008 Smad Tgfb Lab
+    question: 'Which signalling variables dominate the simulated network response?
+      Source model: Schmierer_2008_Smad_Tgfb.'
+    answer_focus: Q/A table plus signaling timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_schmierer_2008_smad_tgfb_biomd0000000173_model
+      title: Schmierer_2008_Smad_Tgfb
+      observables:
+      - id: S2_c
+        port: smad2_c
+        label: Smad2_c
+        group: signaling
+      - id: G_c
+        port: gfp_smad2_c
+        label: GFP-Smad2_c
+        group: signaling
+      - id: S4_c
+        port: smad4_c
+        label: Smad4_c
+        group: signaling
+      - id: S4_n
+        port: smad4_n
+        label: Smad4_n
+        group: signaling
+      - id: S2_n
+        port: smad2_n
+        label: Smad2_n
+        group: signaling
+      - id: G_n
+        port: gfp_smad2_n
+        label: GFP-Smad2_n
+        group: signaling
+io:
+  inputs: []
+  outputs: []

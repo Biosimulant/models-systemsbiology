@@ -1,0 +1,71 @@
+schema_version: '2.0'
+title: Wilhelm2009 Bistablereaction Lab
+description: 'This a model from the article: The smallest chemical reaction system
+  with bistability Thomas Wilhelm BMC Systems Biology 2009;Sep 8;3:90. 19737387 ,
+  Abstract: Background Bistability underlies basic bi.'
+models:
+- alias: systemsbiology_sbml_wilhelm2009_bistablereaction_biomd0000000233_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_wilhelm2009_bistablereaction_biomd0000000233_model.state
+  to:
+  - visualisation.systemsbiology_sbml_wilhelm2009_bistablereaction_biomd0000000233_model_state
+- from: systemsbiology_sbml_wilhelm2009_bistablereaction_biomd0000000233_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_wilhelm2009_bistablereaction_biomd0000000233_model_summary
+- from: systemsbiology_sbml_wilhelm2009_bistablereaction_biomd0000000233_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_wilhelm2009_bistablereaction_biomd0000000233_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_y
+    maps_to: systemsbiology_sbml_wilhelm2009_bistablereaction_biomd0000000233_model.initial_model_state_y
+    label: Initial Model State Y
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Y`.
+  - name: initial_model_state_x
+    maps_to: systemsbiology_sbml_wilhelm2009_bistablereaction_biomd0000000233_model.initial_model_state_x
+    label: Initial Model State X
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X`.
+  - name: initial_model_state_s
+    maps_to: systemsbiology_sbml_wilhelm2009_bistablereaction_biomd0000000233_model.initial_model_state_s
+    label: Initial Model State S
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S`.
+  - name: initial_model_state_p
+    maps_to: systemsbiology_sbml_wilhelm2009_bistablereaction_biomd0000000233_model.initial_model_state_p
+    label: Initial Model State P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_wilhelm2009_bistablereaction_biomd0000000233_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_wilhelm2009_bistablereaction_biomd0000000233_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_wilhelm2009_bistablereaction_biomd0000000233_model.species_labels
+  - name: model_state_y
+    maps_to: systemsbiology_sbml_wilhelm2009_bistablereaction_biomd0000000233_model.model_state_y
+  - name: model_state_x
+    maps_to: systemsbiology_sbml_wilhelm2009_bistablereaction_biomd0000000233_model.model_state_x
+  - name: model_state_s
+    maps_to: systemsbiology_sbml_wilhelm2009_bistablereaction_biomd0000000233_model.model_state_s
+  - name: model_state_p
+    maps_to: systemsbiology_sbml_wilhelm2009_bistablereaction_biomd0000000233_model.model_state_p

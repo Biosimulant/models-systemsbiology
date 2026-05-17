@@ -1,0 +1,91 @@
+schema_version: '2.0'
+title: Yuraszeck2010 Vulnerabilities In The Tau Network In Tau Pathophysiology Lab
+description: 'Yuraszeck2010 - Vulnerabilities in the TauNetwork in Tau Pathophysiology
+  This model is described in the article: Vulnerabilities in the tau network and the
+  role of ultrasensitive points in tau pathoph. It can be used to explore systemsbiology
+  yuraszeck2010 vulnerabilities in the tau dynamics and compare simulation behavior
+  across conditions.'
+models:
+- alias: systemsbiology_sbml_yuraszeck2010_vulnerabilities_in_the_tau_network_biomd0000000542_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_yuraszeck2010_vulnerabilities_in_the_tau_network_biomd0000000542_model.state
+  to:
+  - visualisation.systemsbiology_sbml_yuraszeck2010_vulnerabilities_in_the_tau_network_biomd0000000542_model_state
+- from: systemsbiology_sbml_yuraszeck2010_vulnerabilities_in_the_tau_network_biomd0000000542_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_yuraszeck2010_vulnerabilities_in_the_tau_network_biomd0000000542_model_summary
+- from: systemsbiology_sbml_yuraszeck2010_vulnerabilities_in_the_tau_network_biomd0000000542_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_yuraszeck2010_vulnerabilities_in_the_tau_network_biomd0000000542_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- physiology
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_adp
+    maps_to: systemsbiology_sbml_yuraszeck2010_vulnerabilities_in_the_tau_network_biomd0000000542_model.initial_model_state_adp
+    label: Initial Model State ADP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ADP`.
+  - name: initial_model_state_atp
+    maps_to: systemsbiology_sbml_yuraszeck2010_vulnerabilities_in_the_tau_network_biomd0000000542_model.initial_model_state_atp
+    label: Initial Model State ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATP`.
+  - name: initial_tau_n_4_r
+    maps_to: systemsbiology_sbml_yuraszeck2010_vulnerabilities_in_the_tau_network_biomd0000000542_model.initial_tau_n_4_r
+    label: Initial Tau N 4 R
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TauN_4R`.
+  - name: initial_tau_n_3_r
+    maps_to: systemsbiology_sbml_yuraszeck2010_vulnerabilities_in_the_tau_network_biomd0000000542_model.initial_tau_n_3_r
+    label: Initial Tau N 3 R
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TauN_3R`.
+  - name: initial_tau_h4_r_hsp90
+    maps_to: systemsbiology_sbml_yuraszeck2010_vulnerabilities_in_the_tau_network_biomd0000000542_model.initial_tau_h4_r_hsp90
+    label: Initial Tau H4 R Hsp90
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TauH4R_Hsp90`.
+  - name: initial_tau_h4_r_hsc70
+    maps_to: systemsbiology_sbml_yuraszeck2010_vulnerabilities_in_the_tau_network_biomd0000000542_model.initial_tau_h4_r_hsc70
+    label: Initial Tau H4 R Hsc70
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TauH4R_Hsc70`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_yuraszeck2010_vulnerabilities_in_the_tau_network_biomd0000000542_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_yuraszeck2010_vulnerabilities_in_the_tau_network_biomd0000000542_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_yuraszeck2010_vulnerabilities_in_the_tau_network_biomd0000000542_model.species_labels
+  - name: adp
+    maps_to: systemsbiology_sbml_yuraszeck2010_vulnerabilities_in_the_tau_network_biomd0000000542_model.adp
+  - name: atp
+    maps_to: systemsbiology_sbml_yuraszeck2010_vulnerabilities_in_the_tau_network_biomd0000000542_model.atp
+  - name: tau_n_4_r
+    maps_to: systemsbiology_sbml_yuraszeck2010_vulnerabilities_in_the_tau_network_biomd0000000542_model.tau_n_4_r
+  - name: tau_n_3_r
+    maps_to: systemsbiology_sbml_yuraszeck2010_vulnerabilities_in_the_tau_network_biomd0000000542_model.tau_n_3_r
+  - name: tau_h4_r_hsp90
+    maps_to: systemsbiology_sbml_yuraszeck2010_vulnerabilities_in_the_tau_network_biomd0000000542_model.tau_h4_r_hsp90
+  - name: tau_h4_r_hsc70
+    maps_to: systemsbiology_sbml_yuraszeck2010_vulnerabilities_in_the_tau_network_biomd0000000542_model.tau_h4_r_hsc70

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "0d9c0551-b3e9-4193-9786-ccca79e0a575",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "9b17d2c1-f9a9-4c29-80c5-3fcf7bd2ac2c",
+  "created_at": "2026-05-16T05:46:52.728078487+00:00",
+  "last_synced_at": "2026-05-17T06:36:54.459127+00:00",
+  "hub_manifest_hash": "c6f0384a125af725c465356973535558a4c4807124b0976f5e99f94dce0fdfc7",
+  "package_name": "verma2016-ca-signal-propagation-along-hepatocyte-cords-lab"
+}

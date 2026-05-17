@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "f057ef66-2599-4145-ba5a-d146ac08d6d0",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "793fecde-ecbc-4034-9b00-62fe37f94afc",
+  "created_at": "2026-05-16T05:46:52.357584888+00:00",
+  "last_synced_at": "2026-05-17T06:25:52.049832+00:00",
+  "hub_manifest_hash": "15eb66b9c36931dac12062e85f09cfceaec4230dccf3fb26b90b457ff7ec31d4",
+  "package_name": "tanos2008-blood-coagulation-and-snake-venom-lab"
+}

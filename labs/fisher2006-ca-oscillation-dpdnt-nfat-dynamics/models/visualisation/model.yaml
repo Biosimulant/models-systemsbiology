@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Fisher2006_Ca_Oscillation_dpdnt_NFAT_dynamics Visualisation
+description: Question-and-answer and dynamic visual summaries for Fisher2006_Ca_Oscillation_dpdnt_NFAT_dynamics.
+standard: other
+tags:
+- immunology
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Fisher2006 Ca Oscillation Dpdnt Nfat Dynamics Lab
+    question: 'Which immune or inflammatory states dominate the simulated response?
+      Source model: Fisher2006_Ca_Oscillation_dpdnt_NFAT_dynamics.'
+    answer_focus: Q/A table plus immunology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_fisher2006_ca_oscillation_dpdnt_nfat_dynamics_biomd0000000122_model
+      title: Fisher2006_Ca_Oscillation_dpdnt_NFAT_dynamics
+      observables:
+      - id: Ca_Nuc
+        port: calcium_in_nucleus
+        label: Calcium in Nucleus
+        group: physiology
+      - id: Ca_Cyt
+        port: calcium_in_cytosol
+        label: Calcium in Cytosol
+        group: physiology
+      - id: Inact_C_Nuc
+        port: inactive_calcineurin_in_nucleus
+        label: Inactive Calcineurin in nucleus
+        group: physiology
+      - id: Inact_C_Cyt
+        port: inactive_calcineurin_in_cytosol
+        label: Inactive Calcineurin in cytosol
+        group: physiology
+      - id: NFAT_Pi_Cyt
+        port: phosphorylated_nfat_in_cytosol
+        label: Phosphorylated NFAT in cytosol
+        group: physiology
+      - id: NFAT_Act_C_Nuc
+        port: nfat_calcineurin_complex_in_nucleus
+        label: NFAT Calcineurin complex in nucleus
+        group: physiology
+io:
+  inputs: []
+  outputs: []

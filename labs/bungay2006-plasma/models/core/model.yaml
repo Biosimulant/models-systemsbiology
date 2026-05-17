@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Bungay2006_Plasma
+description: 'This model is from the article: Modelling thrombin generation in human
+  ovarian follicular fluid Bungay Sharene D., Gentry Patricia A., Gentry Rodney D.
+  It can be used to explore systemsbiology bungay2006 plasma BioModels0000000332 dynamics
+  and compare simulation behavior across conditions.'
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Sharene D Bungay
+- Patricia A Gentry
+- Rodney D Gentry
+upstream:
+  id: biomodels_ebi:BIOMD0000000332
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000332
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000332
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000332?filename=BIOMD0000000332_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.bungay2006_plasma_biomd0000000332_model:Bungay2006PlasmaBiomd0000000332Model
+  init_kwargs:
+    model_path: data/BIOMD0000000332.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_at_f
+    maps_to: AT_f
+    label: Initial At F
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `AT_f`.
+  - name: initial_alpha2_m_l
+    maps_to: alpha2M_l
+    label: Initial Alpha2 M L
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `alpha2M_l`.
+  - name: initial_ii_f
+    maps_to: II_f
+    label: Initial Ii F
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `II_f`.
+  - name: initial_ps_f
+    maps_to: PS_f
+    label: Initial Ps F
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PS_f`.
+  - name: initial_model_state_x_f
+    maps_to: X_f
+    label: Initial Model State X F
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X_f`.
+  - name: initial_ix_f
+    maps_to: IX_f
+    label: Initial Ix F
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IX_f`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: at_f
+    maps_to: AT_f
+    label: AT_f
+    description: AT_f. Maps to SBML symbol `AT_f`.
+  - name: alpha2_m_l
+    maps_to: alpha2M_l
+    label: alpha2M_l
+    description: alpha2M_l. Maps to SBML symbol `alpha2M_l`.
+  - name: ii_f
+    maps_to: II_f
+    label: II_f
+    description: II_f. Maps to SBML symbol `II_f`.
+  - name: ps_f
+    maps_to: PS_f
+    label: PS_f
+    description: PS_f. Maps to SBML symbol `PS_f`.
+  - name: x_f
+    maps_to: X_f
+    label: X_f
+    description: X_f. Maps to SBML symbol `X_f`.
+  - name: ix_f
+    maps_to: IX_f
+    label: IX_f
+    description: IX_f. Maps to SBML symbol `IX_f`.

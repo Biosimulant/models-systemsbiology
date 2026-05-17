@@ -1,0 +1,104 @@
+schema_version: '2.0'
+title: Lambeth2002_Glycogenolysis
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models (http://www.ebi.ac.uk/biomodels/). It is copyright (c) 2005-2011
+  The BioModels.net Team.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Melissa J Lambeth
+- Martin J Kushmerick
+upstream:
+  id: biomodels_ebi:MODEL6623617994
+  source_db: biomodels_ebi
+  source_id: MODEL6623617994
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL6623617994
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL6623617994?filename=MODEL6623617994_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.lambeth2002_glycogenolysis_model6623617994_model:Lambeth2002GlycogenolysisModel6623617994Model
+  init_kwargs:
+    model_path: data/MODEL6623617994.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_atp
+    maps_to: atp
+    label: Initial Model State ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `atp`.
+  - name: initial_model_state_nad
+    maps_to: NAD
+    label: Initial Model State Nad
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NAD`.
+  - name: initial_model_state_adp
+    maps_to: adp
+    label: Initial Model State ADP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `adp`.
+  - name: initial_nadh
+    maps_to: NADH
+    label: Initial Nadh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NADH`.
+  - name: initial_model_state_gly
+    maps_to: Gly
+    label: Initial Model State Gly
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Gly`.
+  - name: initial_p_cr
+    maps_to: PCr
+    label: Initial P Cr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PCr`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: atp
+    maps_to: atp
+    label: ATP
+    description: ATP. Maps to SBML symbol `atp`.
+  - name: nad
+    maps_to: NAD
+    label: NAD
+    description: NAD. Maps to SBML symbol `NAD`.
+  - name: adp
+    maps_to: adp
+    label: ADP
+    description: ADP. Maps to SBML symbol `adp`.
+  - name: nadh
+    maps_to: NADH
+    label: NADH
+    description: NADH. Maps to SBML symbol `NADH`.
+  - name: gly
+    maps_to: Gly
+    label: Gly
+    description: Gly. Maps to SBML symbol `Gly`.
+  - name: p_cr
+    maps_to: PCr
+    label: PCr
+    description: PCr. Maps to SBML symbol `PCr`.

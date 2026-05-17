@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Smithae2002 Rantransport Lab
+description: The model reproduces the compartmental model for Ran transport as depicted
+  in Fig 3 of the paper. It can be used to explore systemsbiology smithae2002 rantransport
+  BioModels0000000164 dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_smithae2002_rantransport_biomd0000000164_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_smithae2002_rantransport_biomd0000000164_model.state
+  to:
+  - visualisation.systemsbiology_sbml_smithae2002_rantransport_biomd0000000164_model_state
+- from: systemsbiology_sbml_smithae2002_rantransport_biomd0000000164_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_smithae2002_rantransport_biomd0000000164_model_summary
+- from: systemsbiology_sbml_smithae2002_rantransport_biomd0000000164_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_smithae2002_rantransport_biomd0000000164_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_carrier_cytosol
+    maps_to: systemsbiology_sbml_smithae2002_rantransport_biomd0000000164_model.initial_carrier_cytosol
+    label: Initial Carrier Cytosol
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Carrier_Cytosol`.
+  - name: initial_carrier_ran_gtp_nucleus
+    maps_to: systemsbiology_sbml_smithae2002_rantransport_biomd0000000164_model.initial_carrier_ran_gtp_nucleus
+    label: Initial Carrier Ran Gtp Nucleus
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Carrier_RanGTP_Nucleus`.
+  - name: initial_carrier_nucleus
+    maps_to: systemsbiology_sbml_smithae2002_rantransport_biomd0000000164_model.initial_carrier_nucleus
+    label: Initial Carrier Nucleus
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Carrier_Nucleus`.
+  - name: initial_ran_bp1_cytosol
+    maps_to: systemsbiology_sbml_smithae2002_rantransport_biomd0000000164_model.initial_ran_bp1_cytosol
+    label: Initial Ran BP1 Cytosol
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RanBP1_Cytosol`.
+  - name: initial_ran_gdp_cytosol
+    maps_to: systemsbiology_sbml_smithae2002_rantransport_biomd0000000164_model.initial_ran_gdp_cytosol
+    label: Initial Ran Gdp Cytosol
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RanGDP_Cytosol`.
+  - name: initial_ntf2_ran_gdp_cytosol
+    maps_to: systemsbiology_sbml_smithae2002_rantransport_biomd0000000164_model.initial_ntf2_ran_gdp_cytosol
+    label: Initial Ntf2 Ran Gdp Cytosol
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NTF2_RanGDP_Cytosol`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_smithae2002_rantransport_biomd0000000164_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_smithae2002_rantransport_biomd0000000164_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_smithae2002_rantransport_biomd0000000164_model.species_labels
+  - name: carrier_cytosol
+    maps_to: systemsbiology_sbml_smithae2002_rantransport_biomd0000000164_model.carrier_cytosol
+  - name: carrier_ran_gtp_nucleus
+    maps_to: systemsbiology_sbml_smithae2002_rantransport_biomd0000000164_model.carrier_ran_gtp_nucleus
+  - name: carrier_nucleus
+    maps_to: systemsbiology_sbml_smithae2002_rantransport_biomd0000000164_model.carrier_nucleus
+  - name: ran_bp1_cytosol
+    maps_to: systemsbiology_sbml_smithae2002_rantransport_biomd0000000164_model.ran_bp1_cytosol
+  - name: ran_gdp_cytosol
+    maps_to: systemsbiology_sbml_smithae2002_rantransport_biomd0000000164_model.ran_gdp_cytosol
+  - name: ntf2_ran_gdp_cytosol
+    maps_to: systemsbiology_sbml_smithae2002_rantransport_biomd0000000164_model.ntf2_ran_gdp_cytosol

@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: François2005 - Mixed Feedback Loop (two-gene network) Visualisation
+description: Question-and-answer and dynamic visual summaries for François2005 - Mixed
+  Feedback Loop (two-gene network).
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Francois2005 Mixed Feedback Loop Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: François2005 - Mixed Feedback Loop (two-gene network).'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_fran_ois2005_mixed_feedback_loop_two_gene_networ_biomd0000000539_model
+      title: François2005 - Mixed Feedback Loop (two-gene network)
+      observables:
+      - id: gB
+        port: g_b
+        label: gB
+        group: gene_regulation
+      - id: rB
+        port: r_b
+        label: rB
+        group: gene_regulation
+      - id: AgB
+        port: ag_b
+        label: AgB
+        group: gene_regulation
+      - id: AB
+        port: model_state_ab
+        label: AB
+        group: gene_regulation
+      - id: A
+        port: model_state_a
+        label: A
+        group: gene_regulation
+      - id: B
+        port: model_state_b
+        label: B
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,60 @@
+schema_version: '2.0'
+title: Dallepezze2016 Activation Of Ampk And Mtor By Amino Acids 3 Lab
+description: 'DallePezze2016 - Activation of AMPK and mTORby amino acids (Model 2)
+  This model is as described in the Supplementary Software 2 of the reference publication:
+  SBML model including four amino acids inpu. It can be used to explore systemsbiology
+  dallepezze2016 activation of ampk and dynamics and compare simulation behavior across
+  conditions.'
+models:
+- alias: systemsbiology_sbml_dallepezze2016_activation_of_ampk_and_mtor_by_am_model1705030001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_dallepezze2016_activation_of_ampk_and_mtor_by_am_model1705030001_model.state
+  to:
+  - visualisation.systemsbiology_sbml_dallepezze2016_activation_of_ampk_and_mtor_by_am_model1705030001_model_state
+- from: systemsbiology_sbml_dallepezze2016_activation_of_ampk_and_mtor_by_am_model1705030001_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_dallepezze2016_activation_of_ampk_and_mtor_by_am_model1705030001_model_summary
+- from: systemsbiology_sbml_dallepezze2016_activation_of_ampk_and_mtor_by_am_model1705030001_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_dallepezze2016_activation_of_ampk_and_mtor_by_am_model1705030001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: ir_beta_phos_by_insulin
+    maps_to: systemsbiology_sbml_dallepezze2016_activation_of_ampk_and_mtor_by_am_model1705030001_model.ir_beta_phos_by_insulin
+    label: Ir Beta Phos By Insulin
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `IR_beta_phos_by_Insulin`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_dallepezze2016_activation_of_ampk_and_mtor_by_am_model1705030001_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_dallepezze2016_activation_of_ampk_and_mtor_by_am_model1705030001_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_dallepezze2016_activation_of_ampk_and_mtor_by_am_model1705030001_model.species_labels
+  - name: p70_s6_k
+    maps_to: systemsbiology_sbml_dallepezze2016_activation_of_ampk_and_mtor_by_am_model1705030001_model.p70_s6_k
+  - name: m_torc2
+    maps_to: systemsbiology_sbml_dallepezze2016_activation_of_ampk_and_mtor_by_am_model1705030001_model.m_torc2
+  - name: m_torc1
+    maps_to: systemsbiology_sbml_dallepezze2016_activation_of_ampk_and_mtor_by_am_model1705030001_model.m_torc1
+  - name: tsc1_tsc2
+    maps_to: systemsbiology_sbml_dallepezze2016_activation_of_ampk_and_mtor_by_am_model1705030001_model.tsc1_tsc2
+  - name: pi3_k_variant
+    maps_to: systemsbiology_sbml_dallepezze2016_activation_of_ampk_and_mtor_by_am_model1705030001_model.pi3_k_variant
+  - name: pi3_k_pdk1
+    maps_to: systemsbiology_sbml_dallepezze2016_activation_of_ampk_and_mtor_by_am_model1705030001_model.pi3_k_pdk1

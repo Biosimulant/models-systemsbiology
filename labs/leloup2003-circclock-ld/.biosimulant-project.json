@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "f81a2f7a-0055-459b-91bd-e39cc5b43fe7",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "a0cd56fc-5244-4aee-9055-a78f3d39a41e",
+  "created_at": "2026-05-16T05:46:45.372435801+00:00",
+  "last_synced_at": "2026-05-17T04:27:25.061717+00:00",
+  "hub_manifest_hash": "a174cf22be7a6e501d30d9f036f7f076cfbed0822f7e04f999a6e89e101d678b",
+  "package_name": "leloup2003-circclock-ld-lab"
+}

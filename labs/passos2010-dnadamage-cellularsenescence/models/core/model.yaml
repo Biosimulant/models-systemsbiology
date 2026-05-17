@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Passos2010_DNAdamage_CellularSenescence
+description: 'This is the model described in: Feedback between p21 and reactive oxygen
+  production is necessary for cell senescence. Passos JF, Nelson G, Wang C, Richter
+  T, Simillion C, Proctor CJ, Miwa S, Olijslage.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- João F Passos
+- Glyn Nelson
+- Chunfang Wang
+- Torsten Richter
+- Cedric Simillion
+upstream:
+  id: biomodels_ebi:BIOMD0000000287
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000287
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000287
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000287?filename=BIOMD0000000287_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.passos2010_dnadamage_cellularsenescence_biomd0000000287_model:Passos2010DnadamageCellularsenescenceBiomd0000000287Model
+  init_kwargs:
+    model_path: data/BIOMD0000000287.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_p53_mrna
+    maps_to: p53_mRNA
+    label: Initial P53 MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `p53_mRNA`.
+  - name: initial_mdm2_mrna
+    maps_to: Mdm2_mRNA
+    label: Initial Mdm2 MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Mdm2_mRNA`.
+  - name: initial_p21_mrna
+    maps_to: p21_mRNA
+    label: Initial P21 MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `p21_mRNA`.
+  - name: initial_atmi
+    maps_to: ATMI
+    label: Initial Atmi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATMI`.
+  - name: initial_model_state_p38
+    maps_to: p38
+    label: Initial Model State P38
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `p38`.
+  - name: initial_mdm2_p53
+    maps_to: Mdm2_p53
+    label: Initial Mdm2 P53
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Mdm2_p53`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: p53_mrna
+    maps_to: p53_mRNA
+    label: P53 MRNA
+    description: P53 MRNA. Maps to SBML symbol `p53_mRNA`.
+  - name: mdm2_mrna
+    maps_to: Mdm2_mRNA
+    label: Mdm2 MRNA
+    description: Mdm2 MRNA. Maps to SBML symbol `Mdm2_mRNA`.
+  - name: p21_mrna
+    maps_to: p21_mRNA
+    label: P21 MRNA
+    description: P21 MRNA. Maps to SBML symbol `p21_mRNA`.
+  - name: atmi
+    maps_to: ATMI
+    label: ATMI
+    description: ATMI. Maps to SBML symbol `ATMI`.
+  - name: p38
+    maps_to: p38
+    label: P38
+    description: P38. Maps to SBML symbol `p38`.
+  - name: mdm2_p53
+    maps_to: Mdm2_p53
+    label: Mdm2 P53
+    description: Mdm2 P53. Maps to SBML symbol `Mdm2_p53`.

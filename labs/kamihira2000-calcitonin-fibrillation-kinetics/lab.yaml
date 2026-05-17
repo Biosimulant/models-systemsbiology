@@ -1,0 +1,47 @@
+schema_version: '2.0'
+title: Kamihira2000 Calcitonin Fibrillation Kinetics Lab
+description: Kamihira2000 - calcitonin fibrillation kinetics This model studies the
+  kinetics of human calcitonin fibrillation described as a two-step process. Empirical
+  data is used to determine the parameter valu.
+models:
+- alias: systemsbiology_sbml_kamihira2000_calcitonin_fibrillation_kinetics_biomd0000000614_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_kamihira2000_calcitonin_fibrillation_kinetics_biomd0000000614_model.state
+  to:
+  - visualisation.systemsbiology_sbml_kamihira2000_calcitonin_fibrillation_kinetics_biomd0000000614_model_state
+- from: systemsbiology_sbml_kamihira2000_calcitonin_fibrillation_kinetics_biomd0000000614_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_kamihira2000_calcitonin_fibrillation_kinetics_biomd0000000614_model_summary
+- from: systemsbiology_sbml_kamihira2000_calcitonin_fibrillation_kinetics_biomd0000000614_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_kamihira2000_calcitonin_fibrillation_kinetics_biomd0000000614_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_fibril_fraction
+    maps_to: systemsbiology_sbml_kamihira2000_calcitonin_fibrillation_kinetics_biomd0000000614_model.initial_fibril_fraction
+    label: Initial Fibril Fraction
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `f`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_kamihira2000_calcitonin_fibrillation_kinetics_biomd0000000614_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_kamihira2000_calcitonin_fibrillation_kinetics_biomd0000000614_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_kamihira2000_calcitonin_fibrillation_kinetics_biomd0000000614_model.species_labels
+  - name: fibril_fraction
+    maps_to: systemsbiology_sbml_kamihira2000_calcitonin_fibrillation_kinetics_biomd0000000614_model.fibril_fraction

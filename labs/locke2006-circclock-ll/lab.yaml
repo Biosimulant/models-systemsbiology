@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: Locke2006 Circclock Ll Lab
+description: 'This a model from the article: Experimental validation of a predicted
+  feedback loop in the multi-oscillator clock of Arabidopsis thaliana. Locke JC, Kozma-Bognár
+  L, Gould PD, Fehér B, Kevei E, Nagy F,.'
+models:
+- alias: systemsbiology_sbml_locke2006_circclock_ll_biomd0000000089_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_locke2006_circclock_ll_biomd0000000089_model.state
+  to:
+  - visualisation.systemsbiology_sbml_locke2006_circclock_ll_biomd0000000089_model_state
+- from: systemsbiology_sbml_locke2006_circclock_ll_biomd0000000089_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_locke2006_circclock_ll_biomd0000000089_model_summary
+- from: systemsbiology_sbml_locke2006_circclock_ll_biomd0000000089_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_locke2006_circclock_ll_biomd0000000089_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: light
+    maps_to: systemsbiology_sbml_locke2006_circclock_ll_biomd0000000089_model.light
+    label: Light
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `light`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_locke2006_circclock_ll_biomd0000000089_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_locke2006_circclock_ll_biomd0000000089_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_locke2006_circclock_ll_biomd0000000089_model.species_labels
+  - name: ppr7_9_mrna
+    maps_to: systemsbiology_sbml_locke2006_circclock_ll_biomd0000000089_model.ppr7_9_mrna
+  - name: ppr7_9_protein_in_nucleus
+    maps_to: systemsbiology_sbml_locke2006_circclock_ll_biomd0000000089_model.ppr7_9_protein_in_nucleus
+  - name: ppr7_9_protein_in_cytoplasm
+    maps_to: systemsbiology_sbml_locke2006_circclock_ll_biomd0000000089_model.ppr7_9_protein_in_cytoplasm
+  - name: toc1_protein_in_cytoplasm
+    maps_to: systemsbiology_sbml_locke2006_circclock_ll_biomd0000000089_model.toc1_protein_in_cytoplasm
+  - name: x_protein_in_cytoplasm
+    maps_to: systemsbiology_sbml_locke2006_circclock_ll_biomd0000000089_model.x_protein_in_cytoplasm
+  - name: light_sensitive_protein_p
+    maps_to: systemsbiology_sbml_locke2006_circclock_ll_biomd0000000089_model.light_sensitive_protein_p

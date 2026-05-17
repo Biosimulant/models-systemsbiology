@@ -1,0 +1,36 @@
+schema_version: '2.0'
+title: Holmes2006 - Hill's model of muscle contraction Visualisation
+description: Question-and-answer and dynamic visual summaries for Holmes2006 - Hill's
+  model of muscle contraction.
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Holmes2006 Hill S Model Of Muscle Contraction Lab
+    question: 'Which physiological state variables carry the strongest baseline response?
+      Source model: Holmes2006 - Hill''s model of muscle contraction.'
+    answer_focus: Q/A table plus physiology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_holmes2006_hill_s_model_of_muscle_contraction_biomd0000000677_model
+      title: Holmes2006 - Hill's model of muscle contraction
+      observables:
+      - id: L_ce
+        port: l_ce
+        label: L Ce
+        group: physiology
+io:
+  inputs: []
+  outputs: []

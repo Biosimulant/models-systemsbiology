@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "8250d9d6-7c20-48c2-aaf5-0d0f4812c526",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "db2f28f2-0c48-4648-8ce0-c56f84cadf6d",
+  "created_at": "2026-05-16T05:46:53.289903830+00:00",
+  "last_synced_at": "2026-05-17T09:46:42.049524+00:00",
+  "hub_manifest_hash": "84f23e8b10aade79ebe64ddbb1e4c9489baf7f6a3da565d5e5f71b88985f2587",
+  "package_name": "biomd0000000687-wodarz2007-cytomegalovirus-infection-model-with"
+}

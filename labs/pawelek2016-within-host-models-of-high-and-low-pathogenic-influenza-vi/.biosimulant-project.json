@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "77abd6bc-dd6f-4e7d-a211-2d2b3b706123",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "bdc04933-1ad5-4d1e-b7ec-b56dfd070d43",
+  "created_at": "2026-05-16T05:46:50.172703949+00:00",
+  "last_synced_at": "2026-05-17T05:27:09.667628+00:00",
+  "hub_manifest_hash": "49d0723fdfffeb0aa271527fdd425da98dcf163a64f1a14eac619eb555122457",
+  "package_name": "pawelek2016-within-host-models-of-high-and-low-pathogenic-influe"
+}

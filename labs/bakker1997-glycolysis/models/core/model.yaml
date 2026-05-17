@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Bakker1997_Glycolysis
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models (http://www.ebi.ac.uk/biomodels/). It is copyright (c) 2005-2011
+  The BioModels.net Team.'
+standard: other
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- B M Bakker
+- Paul A M Michels
+- Fred R Opperdoes
+- H V Westerhoff
+upstream:
+  id: biomodels_ebi:MODEL1101100000
+  source_db: biomodels_ebi
+  source_id: MODEL1101100000
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1101100000
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1101100000?filename=MODEL1101100000_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.bakker1997_glycolysis_model1101100000_model:Bakker1997GlycolysisModel1101100000Model
+  init_kwargs:
+    model_path: data/MODEL1101100000.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_camp
+    maps_to: s11
+    label: Initial CAMP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s11`.
+  - name: initial_ca_super_2_endsuper
+    maps_to: s46
+    label: Initial Ca Super 2 Endsuper
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s46`.
+  - name: initial_model_state_adp
+    maps_to: s4
+    label: Initial Model State ADP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s4`.
+  - name: initial_model_state_4_1_2_7
+    maps_to: s17
+    label: Initial Model State 4 1 2 7
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s17`.
+  - name: initial_dhap
+    maps_to: s15
+    label: Initial Dhap
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s15`.
+  - name: initial_model_state_pep
+    maps_to: s28
+    label: Initial Model State Pep
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s28`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: camp
+    maps_to: s11
+    label: cAMP
+    description: cAMP. Maps to SBML symbol `s11`.
+  - name: ca_super_2_endsuper
+    maps_to: s46
+    label: Ca_super_2+_endsuper_
+    description: Ca_super_2+_endsuper_. Maps to SBML symbol `s46`.
+  - name: adp
+    maps_to: s4
+    label: ADP
+    description: ADP. Maps to SBML symbol `s4`.
+  - name: model_state_4_1_2_7
+    maps_to: s17
+    label: 4.1.2.7
+    description: 4.1.2.7. Maps to SBML symbol `s17`.
+  - name: dhap
+    maps_to: s15
+    label: DHAP
+    description: DHAP. Maps to SBML symbol `s15`.
+  - name: pep
+    maps_to: s28
+    label: PEP
+    description: PEP. Maps to SBML symbol `s28`.

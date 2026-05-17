@@ -1,0 +1,110 @@
+schema_version: '2.0'
+title: Proctor2013 - Effect of Aβ immunisation in Alzheimer's disease (stochastic
+  version)
+description: Proctor2013 - Effect of Aβ immunisationin Alzheimer's disease (stochastic
+  version) Extension of a previously publishedstochastic model (designed to examine
+  some of the key pathwaysinvolved in the aggr. It can be used to explore systemsbiology
+  proctor2013 effect of a immunisation dynamics and compare simulation behavior across
+  conditions.
+standard: other
+tags:
+- neuroscience
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Carole J Proctor
+- Delphine Boche
+- Douglas A Gray
+- James A R Nicoll
+upstream:
+  id: biomodels_ebi:BIOMD0000000634
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000634
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000634
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000634?filename=BIOMD0000000634_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.proctor2013_effect_of_a_immunisation_in_alzheime_biomd0000000634_model:Proctor2013EffectOfAImmunisationInAlzheimeBiomd0000000634Model
+  init_kwargs:
+    model_path: data/BIOMD0000000634.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_atp
+    maps_to: ATP
+    label: Initial Model State ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATP`.
+  - name: initial_model_state_adp
+    maps_to: ADP
+    label: Initial Model State ADP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ADP`.
+  - name: initial_p53_mrna
+    maps_to: p53_mRNA
+    label: Initial P53 MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `p53_mRNA`.
+  - name: initial_mdm2_mrna
+    maps_to: Mdm2_mRNA
+    label: Initial Mdm2 MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Mdm2_mRNA`.
+  - name: initial_model_state_ub
+    maps_to: Ub
+    label: Initial Model State Ub
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ub`.
+  - name: initial_model_state_amp
+    maps_to: AMP
+    label: Initial Model State AMP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `AMP`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: atp
+    maps_to: ATP
+    label: ATP
+    description: ATP. Maps to SBML symbol `ATP`.
+  - name: adp
+    maps_to: ADP
+    label: ADP
+    description: ADP. Maps to SBML symbol `ADP`.
+  - name: p53_mrna
+    maps_to: p53_mRNA
+    label: P53 MRNA
+    description: P53 MRNA. Maps to SBML symbol `p53_mRNA`.
+  - name: mdm2_mrna
+    maps_to: Mdm2_mRNA
+    label: Mdm2 MRNA
+    description: Mdm2 MRNA. Maps to SBML symbol `Mdm2_mRNA`.
+  - name: model_state_ub
+    maps_to: Ub
+    label: Ub
+    description: Ub. Maps to SBML symbol `Ub`.
+  - name: amp
+    maps_to: AMP
+    label: AMP
+    description: AMP. Maps to SBML symbol `AMP`.

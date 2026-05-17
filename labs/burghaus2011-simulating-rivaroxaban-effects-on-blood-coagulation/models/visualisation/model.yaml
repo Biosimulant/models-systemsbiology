@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: Burghaus2011 - Simulating Rivaroxaban effects on blood coagulation Visualisation
+description: Question-and-answer and dynamic visual summaries for Burghaus2011 - Simulating
+  Rivaroxaban effects on blood coagulation.
+standard: other
+tags:
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Burghaus2011 Simulating Rivaroxaban Effects On Blood Coagulation Lab
+    question: 'Which drug, dose, or target-linked model states drive the simulated
+      profile? Source model: Burghaus2011 - Simulating Rivaroxaban effects on blood
+      coagulation.'
+    answer_focus: Q/A table plus pharmacology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_burghaus2011_simulating_rivaroxaban_effects_on_b_model1805140001_model
+      title: Burghaus2011 - Simulating Rivaroxaban effects on blood coagulation
+      observables:
+      - id: alpha1AT
+        port: alpha1_at
+        label: alpha1AT
+        group: signaling
+      - id: a2MG
+        port: a2_mg
+        label: a2MG
+        group: signaling
+      - id: APC_a2AP
+        port: apc_a2_ap
+        label: APC_a2AP
+        group: signaling
+      - id: vWF
+        port: v_wf
+        label: vWF
+        group: signaling
+      - id: mIIa_alpha1AT
+        port: m_i_ia_alpha1_at
+        label: mIIa_alpha1AT
+        group: signaling
+      - id: mIIa_a2MG
+        port: m_i_ia_a2_mg
+        label: mIIa_a2MG
+        group: signaling
+io:
+  inputs: []
+  outputs: []

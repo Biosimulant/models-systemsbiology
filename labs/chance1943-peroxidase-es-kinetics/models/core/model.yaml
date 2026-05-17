@@ -1,0 +1,83 @@
+schema_version: '2.0'
+title: Chance1943_Peroxidase_ES_Kinetics
+description: Default parameter values are those in the right hand panel of Fig 12.
+  It can be used to explore systemsbiology chance1943 peroxidase es kinetics BioModels0000000283
+  dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- B Chance
+upstream:
+  id: biomodels_ebi:BIOMD0000000283
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000283
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000283
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000283?filename=BIOMD0000000283_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.chance1943_peroxidase_es_kinetics_biomd0000000283_model:Chance1943PeroxidaseEsKineticsBiomd0000000283Model
+  init_kwargs:
+    model_path: data/BIOMD0000000283.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_x
+    maps_to: X
+    label: Initial Model State X
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X`.
+  - name: initial_model_state_e
+    maps_to: E
+    label: Initial Model State E
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `E`.
+  - name: initial_model_state_q
+    maps_to: Q
+    label: Initial Model State Q
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Q`.
+  - name: initial_model_state_p
+    maps_to: P
+    label: Initial Model State P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_x
+    maps_to: X
+    label: X
+    description: X. Maps to SBML symbol `X`.
+  - name: model_state_e
+    maps_to: E
+    label: E
+    description: E. Maps to SBML symbol `E`.
+  - name: model_state_q
+    maps_to: Q
+    label: Q
+    description: Q. Maps to SBML symbol `Q`.
+  - name: model_state_p
+    maps_to: P
+    label: P
+    description: P. Maps to SBML symbol `P`.

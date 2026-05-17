@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Mukandavire2009 - Model for HIV-Malaria co-infection Visualisation
+description: Question-and-answer and dynamic visual summaries for Mukandavire2009
+  - Model for HIV-Malaria co-infection.
+standard: other
+tags:
+- epidemiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Mukandavire2009 Model For Hiv Malaria Co Infection Lab
+    question: 'Which infection or population states dominate the simulated trajectory?
+      Source model: Mukandavire2009 - Model for HIV-Malaria co-infection.'
+    answer_focus: Q/A table plus epidemiology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_mukandavire2009_model_for_hiv_malaria_co_infecti_model1805230001_model
+      title: Mukandavire2009 - Model for HIV-Malaria co-infection
+      observables:
+      - id: S_V
+        port: s_v
+        label: S_V
+        group: physiology
+      - id: S_H
+        port: s_h
+        label: S_H
+        group: physiology
+      - id: E_V
+        port: e_v
+        label: E_V
+        group: physiology
+      - id: E_M
+        port: e_m
+        label: E_M
+        group: physiology
+      - id: I_V
+        port: i_v
+        label: I_V
+        group: physiology
+      - id: I_M
+        port: i_m
+        label: I_M
+        group: physiology
+io:
+  inputs: []
+  outputs: []

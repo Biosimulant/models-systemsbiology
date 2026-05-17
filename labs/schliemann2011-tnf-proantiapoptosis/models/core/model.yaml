@@ -1,0 +1,110 @@
+schema_version: '2.0'
+title: Schliemann2011_TNF_ProAntiApoptosis
+description: 'This model is from the article: Heterogeneity Reduces Sensitivity of
+  Cell Death for TNF-Stimuli Schliemann M, Bullinger E, Borchers S, Allgower F, Findeisen
+  R, Scheurich P. It can be used to explore systemsbiology schliemann2011 tnf proantiapoptosis
+  BioModels0000000407 dynamics and compare simulation behavior across conditions.'
+standard: other
+tags:
+- generegulation
+- immunology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Monica Schliemann
+- Eric Bullinger
+- Steffen Borchers
+- Frank Allgöwer
+- Rolf Findeisen
+upstream:
+  id: biomodels_ebi:BIOMD0000000407
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000407
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000407
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000407?filename=BIOMD0000000407_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.schliemann2011_tnf_proantiapoptosis_biomd0000000407_model:Schliemann2011TnfProantiapoptosisBiomd0000000407Model
+  init_kwargs:
+    model_path: data/BIOMD0000000407.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_p_casp8
+    maps_to: pCasp8
+    label: Initial P Casp8
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `pCasp8`.
+  - name: initial_p_casp3
+    maps_to: pCasp3
+    label: Initial P Casp3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `pCasp3`.
+  - name: initial_tnf_e
+    maps_to: TNF_E
+    label: Initial TNF E
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TNF_E`.
+  - name: initial_p_casp6
+    maps_to: pCasp6
+    label: Initial P Casp6
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `pCasp6`.
+  - name: initial_ik_ba_n_fk_b
+    maps_to: IkBa_NFkB
+    label: Initial Ik Ba N Fk B
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IkBa_NFkB`.
+  - name: initial_tnfr_e
+    maps_to: TNFR_E
+    label: Initial Tnfr E
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TNFR_E`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: p_casp8
+    maps_to: pCasp8
+    label: pCasp8
+    description: pCasp8. Maps to SBML symbol `pCasp8`.
+  - name: p_casp3
+    maps_to: pCasp3
+    label: pCasp3
+    description: pCasp3. Maps to SBML symbol `pCasp3`.
+  - name: tnf_e
+    maps_to: TNF_E
+    label: TNF_E
+    description: TNF_E. Maps to SBML symbol `TNF_E`.
+  - name: p_casp6
+    maps_to: pCasp6
+    label: pCasp6
+    description: pCasp6. Maps to SBML symbol `pCasp6`.
+  - name: ik_ba_n_fk_b
+    maps_to: IkBa_NFkB
+    label: IkBa:NFkB
+    description: IkBa:NFkB. Maps to SBML symbol `IkBa_NFkB`.
+  - name: tnfr_e
+    maps_to: TNFR_E
+    label: TNFR_E
+    description: TNFR_E. Maps to SBML symbol `TNFR_E`.

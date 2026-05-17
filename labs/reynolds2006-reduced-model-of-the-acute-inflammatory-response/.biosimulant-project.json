@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "d10ada4c-3a80-470e-aea7-d99cb08aa36c",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "f7a110e6-0174-4ab1-8b5d-c17eb8628140",
+  "created_at": "2026-05-16T05:46:51.421497577+00:00",
+  "last_synced_at": "2026-05-17T05:58:56.785164+00:00",
+  "hub_manifest_hash": "a418bd5548c68346b98efc5ffe8c3e0da21c1adb66029301d01a4e419c5709cb",
+  "package_name": "reynolds2006-reduced-model-of-the-acute-inflammatory-response-la"
+}

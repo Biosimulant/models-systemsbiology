@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Rohwer2000_Phosphotransferase_System Visualisation
+description: Question-and-answer and dynamic visual summaries for Rohwer2000_Phosphotransferase_System.
+standard: other
+tags:
+- generegulation
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Rohwer2000 Phosphotransferase System Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Rohwer2000_Phosphotransferase_System.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_rohwer2000_phosphotransferase_system_biomd0000000038_model
+      title: Rohwer2000_Phosphotransferase_System
+      observables:
+      - id: PEP
+        port: pep
+        label: PEP
+        group: signaling
+      - id: Pyr
+        port: pyr
+        label: Pyr
+        group: signaling
+      - id: Glc
+        port: glc
+        label: Glc
+        group: signaling
+      - id: GlcP
+        port: glc_p
+        label: GlcP
+        group: signaling
+      - id: HPrP
+        port: h_pr_p
+        label: HPrP
+        group: signaling
+      - id: HPr
+        port: h_pr
+        label: HPr
+        group: signaling
+io:
+  inputs: []
+  outputs: []

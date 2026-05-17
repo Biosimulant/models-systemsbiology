@@ -1,0 +1,58 @@
+schema_version: '2.0'
+title: Yuraszeck2010 - Vulnerabilities in the Tau Network in Tau Pathophysiology Visualisation
+description: Question-and-answer and dynamic visual summaries for Yuraszeck2010 -
+  Vulnerabilities in the Tau Network in Tau Pathophysiology.
+standard: other
+tags:
+- physiology
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Yuraszeck2010 Vulnerabilities In The Tau Network In Tau Pathophysiology
+      Lab
+    question: 'Which physiological state variables carry the strongest baseline response?
+      Source model: Yuraszeck2010 - Vulnerabilities in the Tau Network in Tau Pathophysiology.'
+    answer_focus: Q/A table plus physiology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_yuraszeck2010_vulnerabilities_in_the_tau_network_biomd0000000542_model
+      title: Yuraszeck2010 - Vulnerabilities in the Tau Network in Tau Pathophysiology
+      observables:
+      - id: ADP
+        port: adp
+        label: ADP
+        group: signaling
+      - id: ATP
+        port: atp
+        label: ATP
+        group: signaling
+      - id: TauN_4R
+        port: tau_n_4_r
+        label: TauN*4R
+        group: signaling
+      - id: TauN_3R
+        port: tau_n_3_r
+        label: TauN*3R
+        group: signaling
+      - id: TauH4R_Hsp90
+        port: tau_h4_r_hsp90
+        label: TauH4R-Hsp90
+        group: signaling
+      - id: TauH4R_Hsc70
+        port: tau_h4_r_hsc70
+        label: TauH4R-Hsc70
+        group: signaling
+io:
+  inputs: []
+  outputs: []

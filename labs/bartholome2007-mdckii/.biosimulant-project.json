@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "8bc3f809-53b4-48bd-9a51-9211b5c28f79",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "8019eb8b-5165-4ca2-b028-f56653dc7828",
+  "created_at": "2026-05-16T05:46:41.384811416+00:00",
+  "last_synced_at": "2026-05-17T01:56:48.123321+00:00",
+  "hub_manifest_hash": "28916aec84af5793db2e6462ce9843d1b090272a8752520f5831b3f465c322f4",
+  "package_name": "bartholome2007-mdckii-lab"
+}

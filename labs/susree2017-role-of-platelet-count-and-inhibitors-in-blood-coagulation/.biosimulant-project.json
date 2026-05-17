@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "500f55e2-8b1e-47d0-a0b9-3578d067fb67",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "e76908c5-1ad7-443d-9afe-2c20647ac698",
+  "created_at": "2026-05-16T05:46:52.283003774+00:00",
+  "last_synced_at": "2026-05-17T06:23:58.285143+00:00",
+  "hub_manifest_hash": "c521ed34b4ac293b4ff2ba2bc11898ce378b952106484e41fde931a0043fdeed",
+  "package_name": "susree2017-role-of-platelet-count-and-inhibitors-in-blood-coagul"
+}

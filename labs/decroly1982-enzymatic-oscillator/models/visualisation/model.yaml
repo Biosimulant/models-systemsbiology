@@ -1,0 +1,42 @@
+schema_version: '2.0'
+title: Decroly1982_Enzymatic_Oscillator Visualisation
+description: Question-and-answer and dynamic visual summaries for Decroly1982_Enzymatic_Oscillator.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Decroly1982 Enzymatic Oscillator Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Decroly1982_Enzymatic_Oscillator.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_decroly1982_enzymatic_oscillator_biomd0000000319_model
+      title: Decroly1982_Enzymatic_Oscillator
+      observables:
+      - id: beta
+        port: beta
+        label: beta
+        group: physiology
+      - id: alpha
+        port: alpha
+        label: alpha
+        group: physiology
+      - id: gamma
+        port: gamma
+        label: gamma
+        group: physiology
+io:
+  inputs: []
+  outputs: []

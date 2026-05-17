@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "34dde548-6b97-47b1-be25-e601f348376d",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "700dd5fb-4ee6-4471-a665-baece34f8c59",
+  "created_at": "2026-05-16T05:46:42.965845286+00:00",
+  "last_synced_at": "2026-05-17T02:59:19.127165+00:00",
+  "hub_manifest_hash": "22e041922cf7a93c3210f27b4f24b4effe5d662df68cfa043a56259a84165610",
+  "package_name": "ehrenstein2000-positive-feedback-model-for-the-loss-of-acetylcho"
+}

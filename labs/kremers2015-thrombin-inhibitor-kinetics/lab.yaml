@@ -1,0 +1,90 @@
+schema_version: '2.0'
+title: Kremers2015 Thrombin Inhibitor Kinetics Lab
+description: Mathematical model of thrombin inhibition by ATIII, alpha-2-macroglobulin
+  and miscellaneous serpins (a1-antitrypsin, a1-proteinase inhibitor, a1-antichymotrypsin,
+  protease nexin-1, C1inhibitor and oth. It can be used to explore systemsbiology
+  kremers2015 thrombin inhibitor kinetics model1808210001 dynamics and compare simulation
+  behavior across conditions.
+models:
+- alias: systemsbiology_sbml_kremers2015_thrombin_inhibitor_kinetics_model1808210001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_kremers2015_thrombin_inhibitor_kinetics_model1808210001_model.state
+  to:
+  - visualisation.systemsbiology_sbml_kremers2015_thrombin_inhibitor_kinetics_model1808210001_model_state
+- from: systemsbiology_sbml_kremers2015_thrombin_inhibitor_kinetics_model1808210001_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_kremers2015_thrombin_inhibitor_kinetics_model1808210001_model_summary
+- from: systemsbiology_sbml_kremers2015_thrombin_inhibitor_kinetics_model1808210001_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_kremers2015_thrombin_inhibitor_kinetics_model1808210001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_a2_m
+    maps_to: systemsbiology_sbml_kremers2015_thrombin_inhibitor_kinetics_model1808210001_model.initial_a2_m
+    label: Initial A2 M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `a2M`.
+  - name: initial_t_a2_m
+    maps_to: systemsbiology_sbml_kremers2015_thrombin_inhibitor_kinetics_model1808210001_model.initial_t_a2_m
+    label: Initial T A2 M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `T_a2M`.
+  - name: initial_t_ms
+    maps_to: systemsbiology_sbml_kremers2015_thrombin_inhibitor_kinetics_model1808210001_model.initial_t_ms
+    label: Initial T Ms
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `T_MS`.
+  - name: initial_t_at
+    maps_to: systemsbiology_sbml_kremers2015_thrombin_inhibitor_kinetics_model1808210001_model.initial_t_at
+    label: Initial T At
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `T_AT`.
+  - name: initial_model_state_at
+    maps_to: systemsbiology_sbml_kremers2015_thrombin_inhibitor_kinetics_model1808210001_model.initial_model_state_at
+    label: Initial Model State At
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `AT`.
+  - name: initial_model_state_ms
+    maps_to: systemsbiology_sbml_kremers2015_thrombin_inhibitor_kinetics_model1808210001_model.initial_model_state_ms
+    label: Initial Model State Ms
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MS`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_kremers2015_thrombin_inhibitor_kinetics_model1808210001_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_kremers2015_thrombin_inhibitor_kinetics_model1808210001_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_kremers2015_thrombin_inhibitor_kinetics_model1808210001_model.species_labels
+  - name: a2_m
+    maps_to: systemsbiology_sbml_kremers2015_thrombin_inhibitor_kinetics_model1808210001_model.a2_m
+  - name: t_a2_m
+    maps_to: systemsbiology_sbml_kremers2015_thrombin_inhibitor_kinetics_model1808210001_model.t_a2_m
+  - name: t_ms
+    maps_to: systemsbiology_sbml_kremers2015_thrombin_inhibitor_kinetics_model1808210001_model.t_ms
+  - name: t_at
+    maps_to: systemsbiology_sbml_kremers2015_thrombin_inhibitor_kinetics_model1808210001_model.t_at
+  - name: model_state_at
+    maps_to: systemsbiology_sbml_kremers2015_thrombin_inhibitor_kinetics_model1808210001_model.model_state_at
+  - name: model_state_ms
+    maps_to: systemsbiology_sbml_kremers2015_thrombin_inhibitor_kinetics_model1808210001_model.model_state_ms

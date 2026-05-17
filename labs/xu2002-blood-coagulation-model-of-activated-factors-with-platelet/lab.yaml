@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Xu2002 Blood Coagulation Model Of Activated Factors With Platelet Lab
+description: System of ODEs to describe the dynamics of several activated factors
+  of blood coagulation. Publication introduces a platelet activation term for synthesis
+  of Xa and IIa.
+models:
+- alias: systemsbiology_sbml_xu2002_blood_coagulation_model_of_activated_fact_model1806130001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_xu2002_blood_coagulation_model_of_activated_fact_model1806130001_model.state
+  to:
+  - visualisation.systemsbiology_sbml_xu2002_blood_coagulation_model_of_activated_fact_model1806130001_model_state
+- from: systemsbiology_sbml_xu2002_blood_coagulation_model_of_activated_fact_model1806130001_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_xu2002_blood_coagulation_model_of_activated_fact_model1806130001_model_summary
+- from: systemsbiology_sbml_xu2002_blood_coagulation_model_of_activated_fact_model1806130001_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_xu2002_blood_coagulation_model_of_activated_fact_model1806130001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_x5
+    maps_to: systemsbiology_sbml_xu2002_blood_coagulation_model_of_activated_fact_model1806130001_model.initial_model_state_x5
+    label: Initial Model State X5
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x5`.
+  - name: initial_model_state_x4
+    maps_to: systemsbiology_sbml_xu2002_blood_coagulation_model_of_activated_fact_model1806130001_model.initial_model_state_x4
+    label: Initial Model State X4
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x4`.
+  - name: initial_model_state_x2
+    maps_to: systemsbiology_sbml_xu2002_blood_coagulation_model_of_activated_fact_model1806130001_model.initial_model_state_x2
+    label: Initial Model State X2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x2`.
+  - name: initial_model_state_x6
+    maps_to: systemsbiology_sbml_xu2002_blood_coagulation_model_of_activated_fact_model1806130001_model.initial_model_state_x6
+    label: Initial Model State X6
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x6`.
+  - name: initial_model_state_x3
+    maps_to: systemsbiology_sbml_xu2002_blood_coagulation_model_of_activated_fact_model1806130001_model.initial_model_state_x3
+    label: Initial Model State X3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x3`.
+  - name: initial_model_state_x1
+    maps_to: systemsbiology_sbml_xu2002_blood_coagulation_model_of_activated_fact_model1806130001_model.initial_model_state_x1
+    label: Initial Model State X1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x1`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_xu2002_blood_coagulation_model_of_activated_fact_model1806130001_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_xu2002_blood_coagulation_model_of_activated_fact_model1806130001_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_xu2002_blood_coagulation_model_of_activated_fact_model1806130001_model.species_labels
+  - name: model_state_x5
+    maps_to: systemsbiology_sbml_xu2002_blood_coagulation_model_of_activated_fact_model1806130001_model.model_state_x5
+  - name: model_state_x4
+    maps_to: systemsbiology_sbml_xu2002_blood_coagulation_model_of_activated_fact_model1806130001_model.model_state_x4
+  - name: model_state_x2
+    maps_to: systemsbiology_sbml_xu2002_blood_coagulation_model_of_activated_fact_model1806130001_model.model_state_x2
+  - name: model_state_x6
+    maps_to: systemsbiology_sbml_xu2002_blood_coagulation_model_of_activated_fact_model1806130001_model.model_state_x6
+  - name: model_state_x3
+    maps_to: systemsbiology_sbml_xu2002_blood_coagulation_model_of_activated_fact_model1806130001_model.model_state_x3
+  - name: model_state_x1
+    maps_to: systemsbiology_sbml_xu2002_blood_coagulation_model_of_activated_fact_model1806130001_model.model_state_x1

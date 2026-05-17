@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "c80a3ddd-6227-4279-b90b-923899b89c42",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "2ce09d7e-7474-4cce-bb76-4dc4429fd779",
+  "created_at": "2026-05-16T05:46:49.522401623+00:00",
+  "last_synced_at": "2026-05-17T05:20:51.080585+00:00",
+  "hub_manifest_hash": "1897d1ee9481492547b80d6eebfd41a51ee0d18a520584aeeed5d88f5b78e9ca",
+  "package_name": "ortega2013-interplay-between-secretases-determines-biphasic-amyl"
+}

@@ -1,0 +1,90 @@
+schema_version: '2.0'
+title: Steckmann2012 Amyloid Beta Protein Fibrillogenesis Lab
+description: 'Steckmann2012 - Amyloid beta-proteinfibrillogenesis (kinetics of secondary
+  structure conversion) This model is described in the article: Kinetics of peptide
+  secondary structure conversion during amylo. It can be used to explore systemsbiology
+  steckmann2012 amyloid beta protein fibrillogenes dynamics and compare simulation
+  behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_steckmann2012_amyloid_beta_protein_fibrillogenes_biomd0000000533_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_steckmann2012_amyloid_beta_protein_fibrillogenes_biomd0000000533_model.state
+  to:
+  - visualisation.systemsbiology_sbml_steckmann2012_amyloid_beta_protein_fibrillogenes_biomd0000000533_model_state
+- from: systemsbiology_sbml_steckmann2012_amyloid_beta_protein_fibrillogenes_biomd0000000533_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_steckmann2012_amyloid_beta_protein_fibrillogenes_biomd0000000533_model_summary
+- from: systemsbiology_sbml_steckmann2012_amyloid_beta_protein_fibrillogenes_biomd0000000533_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_steckmann2012_amyloid_beta_protein_fibrillogenes_biomd0000000533_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_beta
+    maps_to: systemsbiology_sbml_steckmann2012_amyloid_beta_protein_fibrillogenes_biomd0000000533_model.initial_beta
+    label: Initial Beta
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `beta`.
+  - name: initial_alpha
+    maps_to: systemsbiology_sbml_steckmann2012_amyloid_beta_protein_fibrillogenes_biomd0000000533_model.initial_alpha
+    label: Initial Alpha
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `alpha`.
+  - name: initial_rct0
+    maps_to: systemsbiology_sbml_steckmann2012_amyloid_beta_protein_fibrillogenes_biomd0000000533_model.initial_rct0
+    label: Initial Rct0
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RCT0`.
+  - name: initial_model_state_rc
+    maps_to: systemsbiology_sbml_steckmann2012_amyloid_beta_protein_fibrillogenes_biomd0000000533_model.initial_model_state_rc
+    label: Initial Model State Rc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RC`.
+  - name: initial_model_state_bn1
+    maps_to: systemsbiology_sbml_steckmann2012_amyloid_beta_protein_fibrillogenes_biomd0000000533_model.initial_model_state_bn1
+    label: Initial Model State BN1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `BN1`.
+  - name: initial_rct1
+    maps_to: systemsbiology_sbml_steckmann2012_amyloid_beta_protein_fibrillogenes_biomd0000000533_model.initial_rct1
+    label: Initial Rct1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RCT1`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_steckmann2012_amyloid_beta_protein_fibrillogenes_biomd0000000533_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_steckmann2012_amyloid_beta_protein_fibrillogenes_biomd0000000533_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_steckmann2012_amyloid_beta_protein_fibrillogenes_biomd0000000533_model.species_labels
+  - name: beta
+    maps_to: systemsbiology_sbml_steckmann2012_amyloid_beta_protein_fibrillogenes_biomd0000000533_model.beta
+  - name: alpha
+    maps_to: systemsbiology_sbml_steckmann2012_amyloid_beta_protein_fibrillogenes_biomd0000000533_model.alpha
+  - name: rct0
+    maps_to: systemsbiology_sbml_steckmann2012_amyloid_beta_protein_fibrillogenes_biomd0000000533_model.rct0
+  - name: model_state_rc
+    maps_to: systemsbiology_sbml_steckmann2012_amyloid_beta_protein_fibrillogenes_biomd0000000533_model.model_state_rc
+  - name: bn1
+    maps_to: systemsbiology_sbml_steckmann2012_amyloid_beta_protein_fibrillogenes_biomd0000000533_model.bn1
+  - name: rct1
+    maps_to: systemsbiology_sbml_steckmann2012_amyloid_beta_protein_fibrillogenes_biomd0000000533_model.rct1

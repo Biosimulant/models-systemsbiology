@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Nijhout2004_Folate_Cycle
+description: 'This is an SBML version of the folate cycle model model from: A mathematical
+  model of the folate cycle: new insights into folate homeostasis. Nijhout HF, Reed
+  MC, Budu P, Ulrich CM J.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- H Frederik Nijhout
+- Michael C Reed
+- Paula Budu
+- Cornelia M Ulrich
+upstream:
+  id: biomodels_ebi:BIOMD0000000213
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000213
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000213
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000213?filename=BIOMD0000000213_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.nijhout2004_folate_cycle_biomd0000000213_model:Nijhout2004FolateCycleBiomd0000000213Model
+  init_kwargs:
+    model_path: data/BIOMD0000000213.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_nadph
+    maps_to: NADPH
+    label: Initial Nadph
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NADPH`.
+  - name: initial_model_state_gly
+    maps_to: Gly
+    label: Initial Model State Gly
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Gly`.
+  - name: initial_hcooh
+    maps_to: HCOOH
+    label: Initial Hcooh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `HCOOH`.
+  - name: initial_model_state_ser
+    maps_to: Ser
+    label: Initial Model State Ser
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ser`.
+  - name: initial_dump
+    maps_to: dUMP
+    label: Initial Dump
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `dUMP`.
+  - name: initial_model_state_gar
+    maps_to: GAR
+    label: Initial Model State Gar
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `GAR`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: nadph
+    maps_to: NADPH
+    label: NADPH
+    description: NADPH. Maps to SBML symbol `NADPH`.
+  - name: gly
+    maps_to: Gly
+    label: Gly
+    description: Gly. Maps to SBML symbol `Gly`.
+  - name: hcooh
+    maps_to: HCOOH
+    label: HCOOH
+    description: HCOOH. Maps to SBML symbol `HCOOH`.
+  - name: ser
+    maps_to: Ser
+    label: Ser
+    description: Ser. Maps to SBML symbol `Ser`.
+  - name: dump
+    maps_to: dUMP
+    label: DUMP
+    description: DUMP. Maps to SBML symbol `dUMP`.
+  - name: gar
+    maps_to: GAR
+    label: GAR
+    description: GAR. Maps to SBML symbol `GAR`.

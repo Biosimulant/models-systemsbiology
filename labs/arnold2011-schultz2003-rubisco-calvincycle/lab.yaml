@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Arnold2011 Schultz2003 Rubisco Calvincycle Lab
+description: 'This model is from the article: A quantitative comparison of Calvin–Benson
+  cycle models Anne Arnold, Zoran Nikoloski Trends in Plant Science 2011 Oct 14. It
+  can be used to explore systemsbiology arnold2011 schultz2003 rubisco calvincycle
+  BioModels0000000385 dynamics and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_arnold2011_schultz2003_rubisco_calvincycle_biomd0000000385_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_arnold2011_schultz2003_rubisco_calvincycle_biomd0000000385_model.state
+  to:
+  - visualisation.systemsbiology_sbml_arnold2011_schultz2003_rubisco_calvincycle_biomd0000000385_model_state
+- from: systemsbiology_sbml_arnold2011_schultz2003_rubisco_calvincycle_biomd0000000385_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_arnold2011_schultz2003_rubisco_calvincycle_biomd0000000385_model_summary
+- from: systemsbiology_sbml_arnold2011_schultz2003_rubisco_calvincycle_biomd0000000385_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_arnold2011_schultz2003_rubisco_calvincycle_biomd0000000385_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_co2
+    maps_to: systemsbiology_sbml_arnold2011_schultz2003_rubisco_calvincycle_biomd0000000385_model.initial_model_state_co2
+    label: Initial Model State CO2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CO2`.
+  - name: initial_model_state_o2
+    maps_to: systemsbiology_sbml_arnold2011_schultz2003_rubisco_calvincycle_biomd0000000385_model.initial_model_state_o2
+    label: Initial Model State O2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `O2`.
+  - name: initial_model_state_pga
+    maps_to: systemsbiology_sbml_arnold2011_schultz2003_rubisco_calvincycle_biomd0000000385_model.initial_model_state_pga
+    label: Initial Model State Pga
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PGA`.
+  - name: initial_ru_bp
+    maps_to: systemsbiology_sbml_arnold2011_schultz2003_rubisco_calvincycle_biomd0000000385_model.initial_ru_bp
+    label: Initial Ru Bp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RuBP`.
+  - name: initial_nadp
+    maps_to: systemsbiology_sbml_arnold2011_schultz2003_rubisco_calvincycle_biomd0000000385_model.initial_nadp
+    label: Initial Nadp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NADP`.
+  - name: initial_nadph
+    maps_to: systemsbiology_sbml_arnold2011_schultz2003_rubisco_calvincycle_biomd0000000385_model.initial_nadph
+    label: Initial Nadph
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NADPH`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_arnold2011_schultz2003_rubisco_calvincycle_biomd0000000385_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_arnold2011_schultz2003_rubisco_calvincycle_biomd0000000385_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_arnold2011_schultz2003_rubisco_calvincycle_biomd0000000385_model.species_labels
+  - name: co2
+    maps_to: systemsbiology_sbml_arnold2011_schultz2003_rubisco_calvincycle_biomd0000000385_model.co2
+  - name: model_state_o2
+    maps_to: systemsbiology_sbml_arnold2011_schultz2003_rubisco_calvincycle_biomd0000000385_model.model_state_o2
+  - name: pga
+    maps_to: systemsbiology_sbml_arnold2011_schultz2003_rubisco_calvincycle_biomd0000000385_model.pga
+  - name: ru_bp
+    maps_to: systemsbiology_sbml_arnold2011_schultz2003_rubisco_calvincycle_biomd0000000385_model.ru_bp
+  - name: nadp
+    maps_to: systemsbiology_sbml_arnold2011_schultz2003_rubisco_calvincycle_biomd0000000385_model.nadp
+  - name: nadph
+    maps_to: systemsbiology_sbml_arnold2011_schultz2003_rubisco_calvincycle_biomd0000000385_model.nadph

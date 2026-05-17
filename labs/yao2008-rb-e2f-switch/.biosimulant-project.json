@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "e335e177-9823-431e-a919-1bfce0576a54",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "db41bee9-f371-435a-87be-8a9717d01570",
+  "created_at": "2026-05-16T05:46:53.460889285+00:00",
+  "last_synced_at": "2026-05-17T07:04:00.281133+00:00",
+  "hub_manifest_hash": "52068478f0879bc3c499ec9acacff65a6ab9c520c457b83b10c64b21eb820987",
+  "package_name": "yao2008-rb-e2f-switch-lab"
+}

@@ -1,0 +1,109 @@
+schema_version: '2.0'
+title: Li2010_YeastGlycolysis
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models (http://www.ebi.ac.uk/biomodels/). It is copyright (c) 2005-2011
+  The BioModels.net Team.'
+standard: other
+tags:
+- metabolism
+- microbiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Peter Li
+- Joseph O Dada
+- Daniel Jameson
+- Irena Spasic
+- Neil Swainston
+upstream:
+  id: biomodels_ebi:MODEL1012110001
+  source_db: biomodels_ebi
+  source_id: MODEL1012110001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1012110001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1012110001?filename=MODEL1012110001_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.li2010_yeastglycolysis_model1012110001_model:Li2010YeastglycolysisModel1012110001Model
+  init_kwargs:
+    model_path: data/MODEL1012110001.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_d_glucose
+    maps_to: M_304
+    label: Initial D Glucose
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_304`.
+  - name: initial_phosphate
+    maps_to: M_454
+    label: Initial Phosphate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_454`.
+  - name: initial_nicotinamide_adenine_dinucleotide
+    maps_to: M_411
+    label: Initial Nicotinamide Adenine Dinucleotide
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_411`.
+  - name: initial_model_state_h
+    maps_to: M_329
+    label: Initial Model State H
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_329`.
+  - name: initial_model_state_atp
+    maps_to: M_172
+    label: Initial Model State ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_172`.
+  - name: initial_yal038_w
+    maps_to: E_726
+    label: Initial Yal038 W
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `E_726`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: d_glucose
+    maps_to: M_304
+    label: D-Glucose
+    description: D-Glucose. Maps to SBML symbol `M_304`.
+  - name: phosphate
+    maps_to: M_454
+    label: Phosphate
+    description: Phosphate. Maps to SBML symbol `M_454`.
+  - name: nicotinamide_adenine_dinucleotide
+    maps_to: M_411
+    label: Nicotinamide adenine dinucleotide
+    description: Nicotinamide adenine dinucleotide. Maps to SBML symbol `M_411`.
+  - name: model_state_h
+    maps_to: M_329
+    label: H+
+    description: H+. Maps to SBML symbol `M_329`.
+  - name: atp
+    maps_to: M_172
+    label: ATP
+    description: ATP. Maps to SBML symbol `M_172`.
+  - name: yal038_w
+    maps_to: E_726
+    label: YAL038W
+    description: YAL038W. Maps to SBML symbol `E_726`.

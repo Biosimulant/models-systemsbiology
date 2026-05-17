@@ -1,0 +1,109 @@
+schema_version: '2.0'
+title: Burghaus2014 - Simulating blood coagulation factor Xa inhibitors
+description: Mathematical model of blood coagulation factors II, VII, IX and X as
+  well as protein C and protein S and the effect of warfarin on kinetic rates. It
+  can be used to explore systemsbiology burghaus2014 simulating blood coagulation
+  factor dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Rolf Burghaus
+- Katrin Coboeken
+- Thomas Gaub
+- Christoph Niederalt
+- Anke Sensse
+upstream:
+  id: biomodels_ebi:MODEL1807180005
+  source_db: biomodels_ebi
+  source_id: MODEL1807180005
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1807180005
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1807180005?filename=Burghaus2014.xml
+  license: CC0
+biosim:
+  entrypoint: src.burghaus2014_simulating_blood_coagulation_factor_model1807180005_model:Burghaus2014SimulatingBloodCoagulationFactorModel1807180005Model
+  init_kwargs:
+    model_path: data/MODEL1807180005.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_s_warfarin
+    maps_to: S_warfarin
+    label: Initial S Warfarin
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S_warfarin`.
+  - name: initial_r_warfarin
+    maps_to: R_warfarin
+    label: Initial R Warfarin
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `R_warfarin`.
+  - name: initial_f_ii
+    maps_to: fII
+    label: Initial F Ii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `fII`.
+  - name: initial_model_state_f_x
+    maps_to: fX
+    label: Initial Model State F X
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `fX`.
+  - name: initial_protein_s
+    maps_to: Protein_S
+    label: Initial Protein S
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Protein_S`.
+  - name: initial_f_ix
+    maps_to: fIX
+    label: Initial F Ix
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `fIX`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: s_warfarin
+    maps_to: S_warfarin
+    label: S-warfarin
+    description: S-warfarin. Maps to SBML symbol `S_warfarin`.
+  - name: r_warfarin
+    maps_to: R_warfarin
+    label: R-warfarin
+    description: R-warfarin. Maps to SBML symbol `R_warfarin`.
+  - name: f_ii
+    maps_to: fII
+    label: fII
+    description: fII. Maps to SBML symbol `fII`.
+  - name: f_x
+    maps_to: fX
+    label: fX
+    description: fX. Maps to SBML symbol `fX`.
+  - name: protein_s
+    maps_to: Protein_S
+    label: Protein-S
+    description: Protein-S. Maps to SBML symbol `Protein_S`.
+  - name: f_ix
+    maps_to: fIX
+    label: fIX
+    description: fIX. Maps to SBML symbol `fIX`.

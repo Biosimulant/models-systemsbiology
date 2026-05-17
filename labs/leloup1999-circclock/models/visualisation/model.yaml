@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Leloup1999_CircClock Visualisation
+description: Question-and-answer and dynamic visual summaries for Leloup1999_CircClock.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Leloup1999 Circclock Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Leloup1999_CircClock.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_leloup1999_circclock_biomd0000000021_model
+      title: Leloup1999_CircClock
+      observables:
+      - id: Mt
+        port: tim_mrna
+        label: TIM mRNA
+        group: gene_regulation
+      - id: T0
+        port: tim_protein_unphosphorylated
+        label: TIM Protein (unphosphorylated)
+        group: gene_regulation
+      - id: T1
+        port: tim_protein_mono_phosphorylated
+        label: TIM Protein (mono-phosphorylated)
+        group: gene_regulation
+      - id: T2
+        port: tim_protein_bi_phosphorylated
+        label: TIM Protein (bi-phosphorylated)
+        group: gene_regulation
+      - id: Mp
+        port: per_mrna
+        label: PER mRNA
+        group: gene_regulation
+      - id: P0
+        port: per_protein_unphosphorylated
+        label: PER Protein (unphosphorylated)
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,80 @@
+schema_version: '2.0'
+title: Kyrylov2005 Hpaaxis Lab
+description: 'This a model from the article: Modeling robust oscillatory behavior
+  of the hypothalamic-pituitary-adrenal axis. It can be used to explore systemsbiology
+  kyrylov2005 hpaaxis model0478740924 dynamics and compare simulation behavior across
+  conditions.'
+models:
+- alias: systemsbiology_sbml_kyrylov2005_hpaaxis_model0478740924_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_kyrylov2005_hpaaxis_model0478740924_model.state
+  to:
+  - visualisation.systemsbiology_sbml_kyrylov2005_hpaaxis_model0478740924_model_state
+- from: systemsbiology_sbml_kyrylov2005_hpaaxis_model0478740924_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_kyrylov2005_hpaaxis_model0478740924_model_summary
+- from: systemsbiology_sbml_kyrylov2005_hpaaxis_model0478740924_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_kyrylov2005_hpaaxis_model0478740924_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_y4
+    maps_to: systemsbiology_sbml_kyrylov2005_hpaaxis_model0478740924_model.initial_model_state_y4
+    label: Initial Model State Y4
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `y4`.
+  - name: initial_model_state_y3
+    maps_to: systemsbiology_sbml_kyrylov2005_hpaaxis_model0478740924_model.initial_model_state_y3
+    label: Initial Model State Y3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `y3`.
+  - name: initial_model_state_y2
+    maps_to: systemsbiology_sbml_kyrylov2005_hpaaxis_model0478740924_model.initial_model_state_y2
+    label: Initial Model State Y2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `y2`.
+  - name: initial_model_state_y1
+    maps_to: systemsbiology_sbml_kyrylov2005_hpaaxis_model0478740924_model.initial_model_state_y1
+    label: Initial Model State Y1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `y1`.
+  - name: initial_model_state_y0
+    maps_to: systemsbiology_sbml_kyrylov2005_hpaaxis_model0478740924_model.initial_model_state_y0
+    label: Initial Model State Y0
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `y0`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_kyrylov2005_hpaaxis_model0478740924_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_kyrylov2005_hpaaxis_model0478740924_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_kyrylov2005_hpaaxis_model0478740924_model.species_labels
+  - name: model_state_y4
+    maps_to: systemsbiology_sbml_kyrylov2005_hpaaxis_model0478740924_model.model_state_y4
+  - name: model_state_y3
+    maps_to: systemsbiology_sbml_kyrylov2005_hpaaxis_model0478740924_model.model_state_y3
+  - name: model_state_y2
+    maps_to: systemsbiology_sbml_kyrylov2005_hpaaxis_model0478740924_model.model_state_y2
+  - name: model_state_y1
+    maps_to: systemsbiology_sbml_kyrylov2005_hpaaxis_model0478740924_model.model_state_y1
+  - name: model_state_y0
+    maps_to: systemsbiology_sbml_kyrylov2005_hpaaxis_model0478740924_model.model_state_y0

@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Mellor2012_LipooxygenasePathway Visualisation
+description: Question-and-answer and dynamic visual summaries for Mellor2012_LipooxygenasePathway.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Mellor2012 Lipooxygenasepathway Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Mellor2012_LipooxygenasePathway.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_mellor2012_lipooxygenasepathway_biomd0000000415_model
+      title: Mellor2012_LipooxygenasePathway
+      observables:
+      - id: species_1
+        port: model_state_la
+        label: LA
+        group: metabolism
+      - id: species_15
+        port: n_hexanal
+        label: nHexanal
+        group: metabolism
+      - id: species_11
+        port: model_state_9_hod_s_z_e
+        label: 9HOD-S(Z,E)
+        group: metabolism
+      - id: species_13
+        port: model_state_9_hod_s_e_e
+        label: 9HOD-S(E,E)
+        group: metabolism
+      - id: species_12
+        port: model_state_9_hod_r_z_e
+        label: 9HOD-R(Z,E)
+        group: metabolism
+      - id: species_14
+        port: model_state_9_hod_r_e_e
+        label: 9HOD-R(E,E)
+        group: metabolism
+io:
+  inputs: []
+  outputs: []

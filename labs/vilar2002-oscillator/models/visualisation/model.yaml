@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Vilar2002_Oscillator Visualisation
+description: Question-and-answer and dynamic visual summaries for Vilar2002_Oscillator.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Vilar2002 Oscillator Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Vilar2002_Oscillator.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_vilar2002_oscillator_biomd0000000035_model
+      title: Vilar2002_Oscillator
+      observables:
+      - id: DR
+        port: model_state_dr
+        label: DR
+        group: physiology
+      - id: DA
+        port: model_state_da
+        label: DA
+        group: physiology
+      - id: MR
+        port: model_state_mr
+        label: MR
+        group: physiology
+      - id: MA
+        port: model_state_ma
+        label: MA
+        group: physiology
+      - id: EmptySet
+        port: empty_set
+        label: EmptySet
+        group: physiology
+      - id: DRp
+        port: d_rp
+        label: DRp
+        group: physiology
+io:
+  inputs: []
+  outputs: []

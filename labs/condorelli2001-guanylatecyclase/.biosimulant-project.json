@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "25174e1a-945d-4040-96f0-c3b9b566d558",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "c9e791d8-e59f-4503-83d3-7295c16b4007",
+  "created_at": "2026-05-16T05:46:42.485633470+00:00",
+  "last_synced_at": "2026-05-17T02:39:55.178037+00:00",
+  "hub_manifest_hash": "28f3c472f634ffb6480f8a641a70b917020367297a98a74dabe7dab352213873",
+  "package_name": "condorelli2001-guanylatecyclase-lab"
+}

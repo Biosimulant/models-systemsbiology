@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Cardiomyocyte Telomere Damage Visualisation
+description: Question-and-answer and dynamic visual summaries for Cardiomyocyte Telomere
+  Damage.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Cardiomyocyte Telomere Damage Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Cardiomyocyte Telomere Damage.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_cardiomyocyte_telomere_damage_model1608250000_model
+      title: Cardiomyocyte Telomere Damage
+      observables:
+      - id: ROS
+        port: ros
+        label: ROS
+        group: signaling
+      - id: intact
+        port: intact
+        label: Intact
+        group: signaling
+      - id: one_taf
+        port: one_taf
+        label: One Taf
+        group: signaling
+      - id: Source
+        port: source
+        label: Source
+        group: signaling
+      - id: two_taf_div
+        port: two_taf_div
+        label: Two Taf Div
+        group: signaling
+      - id: two_taf
+        port: two_taf
+        label: Two Taf
+        group: signaling
+io:
+  inputs: []
+  outputs: []

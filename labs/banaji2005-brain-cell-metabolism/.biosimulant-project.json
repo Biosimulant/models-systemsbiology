@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "5920c632-0e5f-482b-b5bd-c9385a152759",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "62097eef-6ada-4e2e-b126-03ce85664682",
+  "created_at": "2026-05-16T05:46:41.302362734+00:00",
+  "last_synced_at": "2026-05-17T01:54:12.204947+00:00",
+  "hub_manifest_hash": "0c033e634d1bd92488464a240d7d918ff04344da7fce2c0e6676554bbf7b881e",
+  "package_name": "banaji2005-brain-cell-metabolism-lab"
+}

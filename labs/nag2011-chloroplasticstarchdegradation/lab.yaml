@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Nag2011 Chloroplasticstarchdegradation Lab
+description: 'This model is from the article: Kinetic modeling and exploratory numerical
+  simulation of chloroplastic starch degradation. Nag A, Lunacek M, Graf PA, Chang
+  CH.'
+models:
+- alias: systemsbiology_sbml_nag2011_chloroplasticstarchdegradation_biomd0000000353_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_nag2011_chloroplasticstarchdegradation_biomd0000000353_model.state
+  to:
+  - visualisation.systemsbiology_sbml_nag2011_chloroplasticstarchdegradation_biomd0000000353_model_state
+- from: systemsbiology_sbml_nag2011_chloroplasticstarchdegradation_biomd0000000353_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_nag2011_chloroplasticstarchdegradation_biomd0000000353_model_summary
+- from: systemsbiology_sbml_nag2011_chloroplasticstarchdegradation_biomd0000000353_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_nag2011_chloroplasticstarchdegradation_biomd0000000353_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- cellcycle
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_atp_pool
+    maps_to: systemsbiology_sbml_nag2011_chloroplasticstarchdegradation_biomd0000000353_model.initial_atp_pool
+    label: Initial ATP Pool
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cpd_C00002tot_CY`.
+  - name: initial_adp_pool
+    maps_to: systemsbiology_sbml_nag2011_chloroplasticstarchdegradation_biomd0000000353_model.initial_adp_pool
+    label: Initial ADP Pool
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cpd_C00008tot_CY`.
+  - name: initial_d_glucose_1_6_bisphosphate_pool
+    maps_to: systemsbiology_sbml_nag2011_chloroplasticstarchdegradation_biomd0000000353_model.initial_d_glucose_1_6_bisphosphate_pool
+    label: Initial D Glucose 1 6 Bisphosphate Pool
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cpd_C00660tot_CY`.
+  - name: initial_d_glucose
+    maps_to: systemsbiology_sbml_nag2011_chloroplasticstarchdegradation_biomd0000000353_model.initial_d_glucose
+    label: Initial D Glucose
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cpd_C00031_CY`.
+  - name: initial_d_glucose_2
+    maps_to: systemsbiology_sbml_nag2011_chloroplasticstarchdegradation_biomd0000000353_model.initial_d_glucose_2
+    label: Initial D Glucose 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cpd_C00031_CS`.
+  - name: initial_glucose_transporter_p_glc_t
+    maps_to: systemsbiology_sbml_nag2011_chloroplasticstarchdegradation_biomd0000000353_model.initial_glucose_transporter_p_glc_t
+    label: Initial Glucose Transporter P Glc T
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `tc_2_A_1_1_17_CIMS`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_nag2011_chloroplasticstarchdegradation_biomd0000000353_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_nag2011_chloroplasticstarchdegradation_biomd0000000353_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_nag2011_chloroplasticstarchdegradation_biomd0000000353_model.species_labels
+  - name: atp_pool
+    maps_to: systemsbiology_sbml_nag2011_chloroplasticstarchdegradation_biomd0000000353_model.atp_pool
+  - name: adp_pool
+    maps_to: systemsbiology_sbml_nag2011_chloroplasticstarchdegradation_biomd0000000353_model.adp_pool
+  - name: d_glucose_1_6_bisphosphate_pool
+    maps_to: systemsbiology_sbml_nag2011_chloroplasticstarchdegradation_biomd0000000353_model.d_glucose_1_6_bisphosphate_pool
+  - name: d_glucose
+    maps_to: systemsbiology_sbml_nag2011_chloroplasticstarchdegradation_biomd0000000353_model.d_glucose
+  - name: d_glucose_2
+    maps_to: systemsbiology_sbml_nag2011_chloroplasticstarchdegradation_biomd0000000353_model.d_glucose_2
+  - name: glucose_transporter_p_glc_t
+    maps_to: systemsbiology_sbml_nag2011_chloroplasticstarchdegradation_biomd0000000353_model.glucose_transporter_p_glc_t

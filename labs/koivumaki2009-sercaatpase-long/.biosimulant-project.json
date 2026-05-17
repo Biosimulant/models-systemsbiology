@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "e0d973ec-9649-4628-be6d-d8e3a27340aa",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "886faac5-2de0-4a9b-b738-d4c6bb91bc73",
+  "created_at": "2026-05-16T05:46:44.829908468+00:00",
+  "last_synced_at": "2026-05-17T04:09:14.679582+00:00",
+  "hub_manifest_hash": "25e3369decd3e5c97d0fbf6ba2db300c13456518839fb69acaaa968c9b12996a",
+  "package_name": "koivumaki2009-sercaatpase-long-lab"
+}

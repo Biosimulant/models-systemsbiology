@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "0bee8b07-94a5-40e9-a3d0-9f0bda40da3b",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "e3fa3203-c8b8-43e4-b0f7-8c512546be25",
+  "created_at": "2026-05-16T05:46:44.193635718+00:00",
+  "last_synced_at": "2026-05-17T03:45:17.108797+00:00",
+  "hub_manifest_hash": "498bc25fd761b9b9d28761d8e19fb7158488c7eaa0c9a1b34422e4bf41326bad",
+  "package_name": "hornberg2005-erkcascade-lab"
+}

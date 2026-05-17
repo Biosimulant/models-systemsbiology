@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Bertram2006_ATPproduction_Mitochondrial Visualisation
+description: Question-and-answer and dynamic visual summaries for Bertram2006_ATPproduction_Mitochondrial.
+standard: other
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Bertram2006 Atpproduction Mitochondrial Lab
+    question: 'Which metabolic pools or flux-linked states show the strongest simulated
+      change? Source model: Bertram2006_ATPproduction_Mitochondrial.'
+    answer_focus: Q/A table plus metabolism timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_bertram2006_atpproduction_mitochondrial_model1006230114_model
+      title: Bertram2006_ATPproduction_Mitochondrial
+      observables:
+      - id: Cam
+        port: cam
+        label: Cam
+        group: metabolism
+      - id: PSIm
+        port: ps_im
+        label: PSIm
+        group: metabolism
+      - id: NADHm
+        port: nad_hm
+        label: NADHm
+        group: metabolism
+      - id: FBP
+        port: fbp
+        label: FBP
+        group: metabolism
+      - id: ADPm
+        port: ad_pm
+        label: ADPm
+        group: metabolism
+      - id: ADPc
+        port: ad_pc
+        label: ADPc
+        group: metabolism
+io:
+  inputs: []
+  outputs: []

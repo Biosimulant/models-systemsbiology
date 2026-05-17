@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: Heldt2018 - Proliferation-quiescence decision in response to DNA damage Visualisation
+description: Question-and-answer and dynamic visual summaries for Heldt2018 - Proliferation-quiescence
+  decision in response to DNA damage.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Heldt2018 Proliferation Quiescence Decision In Response To Dna Damag
+      Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Heldt2018 - Proliferation-quiescence decision in response to DNA
+      damage.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_heldt2018_proliferation_quiescence_decision_in_r_biomd0000000700_model
+      title: Heldt2018 - Proliferation-quiescence decision in response to DNA damage
+      observables:
+      - id: tCa
+        port: cyclin_a_cdk2_total
+        label: CyclinA_Cdk2_total
+        group: metabolism
+      - id: tRb
+        port: retinoblastoma_protein_total
+        label: Retinoblastoma_protein_total
+        group: gene_regulation
+      - id: pRb
+        port: retinoblastoma_protein_hyperphosphorylated
+        label: Retinoblastoma_protein_hyperphosphorylated
+        group: gene_regulation
+      - id: Ca
+        port: cyclin_a_cdk2
+        label: CyclinA_Cdk2
+        group: physiology
+      - id: tCe
+        port: cyclin_e_cdk2_total
+        label: CyclinE_Cdk2_total
+        group: physiology
+      - id: Ce
+        port: cyclin_e_cdk2_active
+        label: CyclinE_Cdk2_active
+        group: physiology
+io:
+  inputs: []
+  outputs: []

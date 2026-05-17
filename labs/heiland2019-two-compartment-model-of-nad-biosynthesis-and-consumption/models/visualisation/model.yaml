@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Heiland2019 - Two compartment model of NAD biosynthesis and consumption Visualisation
+description: Question-and-answer and dynamic visual summaries for Heiland2019 - Two
+  compartment model of NAD biosynthesis and consumption.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Heiland2019 Two Compartment Model Of Nad Biosynthesis And Consumption
+      Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Heiland2019 - Two compartment model of NAD biosynthesis and consumption.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_heiland2019_two_compartment_model_of_nad_biosynt_model1905220002_model
+      title: Heiland2019 - Two compartment model of NAD biosynthesis and consumption
+      observables:
+      - id: SAH_NamPT_compartment
+        port: sah
+        label: SAH
+        group: metabolism
+      - id: Pi_NamPT_compartment
+        port: model_state_pi
+        label: Pi
+        group: metabolism
+      - id: Pi_NADA_compartment
+        port: model_state_pi_2
+        label: Pi
+        group: metabolism
+      - id: PRPP_NamPT_compartment
+        port: prpp
+        label: PRPP
+        group: metabolism
+      - id: PRPP_NADA_compartment
+        port: prpp_2
+        label: PRPP
+        group: metabolism
+      - id: Nam_ex
+        port: nam_ex
+        label: Nam_ex
+        group: metabolism
+io:
+  inputs: []
+  outputs: []

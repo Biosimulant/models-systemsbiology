@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Kogan2001 Aptt Preincubation Lab
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models (http://www.ebi.ac.uk/biomodels/). It is copyright (c) 2005-2011
+  The BioModels.net Team.'
+models:
+- alias: systemsbiology_sbml_kogan2001_aptt_preincubation_model1109160000_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_kogan2001_aptt_preincubation_model1109160000_model.state
+  to:
+  - visualisation.systemsbiology_sbml_kogan2001_aptt_preincubation_model1109160000_model_state
+- from: systemsbiology_sbml_kogan2001_aptt_preincubation_model1109160000_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_kogan2001_aptt_preincubation_model1109160000_model_summary
+- from: systemsbiology_sbml_kogan2001_aptt_preincubation_model1109160000_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_kogan2001_aptt_preincubation_model1109160000_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_alpha1_at
+    maps_to: systemsbiology_sbml_kogan2001_aptt_preincubation_model1109160000_model.initial_alpha1_at
+    label: Initial Alpha1 At
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_4`.
+  - name: initial_alpha2_m
+    maps_to: systemsbiology_sbml_kogan2001_aptt_preincubation_model1109160000_model.initial_alpha2_m
+    label: Initial Alpha2 M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_5`.
+  - name: initial_atiii
+    maps_to: systemsbiology_sbml_kogan2001_aptt_preincubation_model1109160000_model.initial_atiii
+    label: Initial Atiii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_3`.
+  - name: initial_c1inh
+    maps_to: systemsbiology_sbml_kogan2001_aptt_preincubation_model1109160000_model.initial_c1inh
+    label: Initial C1inh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_6`.
+  - name: initial_alpha2_ap
+    maps_to: systemsbiology_sbml_kogan2001_aptt_preincubation_model1109160000_model.initial_alpha2_ap
+    label: Initial Alpha2 Ap
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_11`.
+  - name: initial_model_state_pk
+    maps_to: systemsbiology_sbml_kogan2001_aptt_preincubation_model1109160000_model.initial_model_state_pk
+    label: Initial Model State Pk
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_29`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_kogan2001_aptt_preincubation_model1109160000_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_kogan2001_aptt_preincubation_model1109160000_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_kogan2001_aptt_preincubation_model1109160000_model.species_labels
+  - name: alpha1_at
+    maps_to: systemsbiology_sbml_kogan2001_aptt_preincubation_model1109160000_model.alpha1_at
+  - name: alpha2_m
+    maps_to: systemsbiology_sbml_kogan2001_aptt_preincubation_model1109160000_model.alpha2_m
+  - name: atiii
+    maps_to: systemsbiology_sbml_kogan2001_aptt_preincubation_model1109160000_model.atiii
+  - name: c1inh
+    maps_to: systemsbiology_sbml_kogan2001_aptt_preincubation_model1109160000_model.c1inh
+  - name: alpha2_ap
+    maps_to: systemsbiology_sbml_kogan2001_aptt_preincubation_model1109160000_model.alpha2_ap
+  - name: model_state_pk
+    maps_to: systemsbiology_sbml_kogan2001_aptt_preincubation_model1109160000_model.model_state_pk

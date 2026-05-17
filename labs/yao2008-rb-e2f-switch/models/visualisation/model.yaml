@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Yao2008_Rb_E2F_Switch Visualisation
+description: Question-and-answer and dynamic visual summaries for Yao2008_Rb_E2F_Switch.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Yao2008 Rb E2f Switch Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Yao2008_Rb_E2F_Switch.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_yao2008_rb_e2f_switch_biomd0000000318_model
+      title: Yao2008_Rb_E2F_Switch
+      observables:
+      - id: RE
+        port: rb_e2_f_complex
+        label: Rb-E2F complex
+        group: physiology
+      - id: RP
+        port: phosphorylated_rb
+        label: phosphorylated Rb
+        group: physiology
+      - id: RB
+        port: model_state_rb
+        label: Rb
+        group: physiology
+      - id: MC
+        port: myc
+        label: Myc
+        group: physiology
+      - id: EF
+        port: e2_f
+        label: E2F
+        group: physiology
+      - id: CE
+        port: cyc_e
+        label: CycE
+        group: physiology
+io:
+  inputs: []
+  outputs: []

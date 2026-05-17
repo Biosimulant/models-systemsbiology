@@ -1,0 +1,105 @@
+schema_version: '2.0'
+title: Pandey2018-reversible transition between quiescence and proliferation
+description: Cells switch between quiescence and proliferation states for maintaining
+  tissue homeostasis and regeneration. At the restriction point (R-point), cells become
+  irreversibly committed to the completion.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Nishtha Pandey
+- P K Vinod
+upstream:
+  id: biomodels_ebi:BIOMD0000000954
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000954
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000954
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000954?filename=Pandey2018_wildtype.xml
+  license: CC0
+biosim:
+  entrypoint: src.pandey2018_reversible_transition_between_quiesce_biomd0000000954_model:Pandey2018ReversibleTransitionBetweenQuiesceBiomd0000000954Model
+  init_kwargs:
+    model_path: data/BIOMD0000000954.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_cdh1dp
+    maps_to: Cdh1dp
+    label: Initial Cdh1dp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Cdh1dp`.
+  - name: initial_cdh1_t
+    maps_to: Cdh1T
+    label: Initial Cdh1 T
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Cdh1T`.
+  - name: initial_cdh1
+    maps_to: Cdh1
+    label: Initial Cdh1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Cdh1`.
+  - name: initial_model_state_rb
+    maps_to: Rb
+    label: Initial Model State Rb
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Rb`.
+  - name: initial_cki_t
+    maps_to: CkiT
+    label: Initial Cki T
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CkiT`.
+  - name: initial_cyc_et
+    maps_to: CycET
+    label: Initial Cyc Et
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CycET`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: cdh1dp
+    maps_to: Cdh1dp
+    label: Cdh1dp
+    description: Cdh1dp. Maps to SBML symbol `Cdh1dp`.
+  - name: cdh1_t
+    maps_to: Cdh1T
+    label: Cdh1T
+    description: Cdh1T. Maps to SBML symbol `Cdh1T`.
+  - name: cdh1
+    maps_to: Cdh1
+    label: Cdh1
+    description: Cdh1. Maps to SBML symbol `Cdh1`.
+  - name: model_state_rb
+    maps_to: Rb
+    label: Rb
+    description: Rb. Maps to SBML symbol `Rb`.
+  - name: cki_t
+    maps_to: CkiT
+    label: CkiT
+    description: CkiT. Maps to SBML symbol `CkiT`.
+  - name: cyc_et
+    maps_to: CycET
+    label: CycET
+    description: CycET. Maps to SBML symbol `CycET`.

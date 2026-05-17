@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Chickarmane2008 - Stem cell lineage - NANOG GATA-6 switch Visualisation
+description: Question-and-answer and dynamic visual summaries for Chickarmane2008
+  - Stem cell lineage - NANOG GATA-6 switch.
+standard: other
+tags:
+- development
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Chickarmane2008 Stem Cell Lineage Nanog Gata 6 Switch Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Chickarmane2008 - Stem cell lineage - NANOG GATA-6 switch.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_chickarmane2008_stem_cell_lineage_nanog_gata_6_s_biomd0000000210_model
+      title: Chickarmane2008 - Stem cell lineage - NANOG GATA-6 switch
+      observables:
+      - id: targetGene
+        port: target_gene
+        label: TargetGene
+        group: gene_regulation
+      - id: SOX2_Gene
+        port: sox2_gene
+        label: SOX2 Gene
+        group: gene_regulation
+      - id: Protein
+        port: protein
+        label: Protein
+        group: gene_regulation
+      - id: OCT4_Gene
+        port: oct4_gene
+        label: OCT4 Gene
+        group: gene_regulation
+      - id: NANOG_Gene
+        port: nanog_gene
+        label: NANOG Gene
+        group: gene_regulation
+      - id: GCNF_Gene
+        port: gcnf_gene
+        label: GCNF Gene
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

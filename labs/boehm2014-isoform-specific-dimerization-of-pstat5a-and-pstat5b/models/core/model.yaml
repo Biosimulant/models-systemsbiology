@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Boehm2014 - isoform-specific dimerization of pSTAT5A and pSTAT5B
+description: Boehm2014 - isoform-specific dimerization of pSTAT5A and pSTAT5B To study
+  STAT5 activation, the authors build a dynamic model of pSTAT5 isoform dimerization.
+  It can be used to explore systemsbiology boehm2014 isoform specific dimerization
+  of dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Martin E Boehm
+- Lorenz Adlung
+- Marcel Schilling
+- Susanne Roth
+- Ursula Klingmüller
+upstream:
+  id: biomodels_ebi:BIOMD0000000591
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000591
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000591
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000591?filename=BIOMD0000000591_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.boehm2014_isoform_specific_dimerization_of_pstat_biomd0000000591_model:Boehm2014IsoformSpecificDimerizationOfPstatBiomd0000000591Model
+  init_kwargs:
+    model_path: data/BIOMD0000000591.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_stat5_b
+    maps_to: STAT5B
+    label: Initial Stat5 B
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `STAT5B`.
+  - name: initial_stat5_a
+    maps_to: STAT5A
+    label: Initial Stat5 A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `STAT5A`.
+  - name: initial_p_bp_b
+    maps_to: pBpB
+    label: Initial P Bp B
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `pBpB`.
+  - name: initial_p_ap_b
+    maps_to: pApB
+    label: Initial P Ap B
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `pApB`.
+  - name: initial_p_ap_a
+    maps_to: pApA
+    label: Initial P Ap A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `pApA`.
+  - name: initial_nucp_bp_b
+    maps_to: nucpBpB
+    label: Initial Nucp Bp B
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `nucpBpB`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: stat5_b
+    maps_to: STAT5B
+    label: STAT5B
+    description: STAT5B. Maps to SBML symbol `STAT5B`.
+  - name: stat5_a
+    maps_to: STAT5A
+    label: STAT5A
+    description: STAT5A. Maps to SBML symbol `STAT5A`.
+  - name: p_bp_b
+    maps_to: pBpB
+    label: PBpB
+    description: PBpB. Maps to SBML symbol `pBpB`.
+  - name: p_ap_b
+    maps_to: pApB
+    label: PApB
+    description: PApB. Maps to SBML symbol `pApB`.
+  - name: p_ap_a
+    maps_to: pApA
+    label: PApA
+    description: PApA. Maps to SBML symbol `pApA`.
+  - name: nucp_bp_b
+    maps_to: nucpBpB
+    label: NucpBpB
+    description: NucpBpB. Maps to SBML symbol `nucpBpB`.

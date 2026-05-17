@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Stephanou2019 Ph As A Potential Therapeutic Target To Improve Temozolomi Lab
+description: Abstract:Despite intensive treatments including temozolomide (TMZ) administration,
+  glioblastoma patient prognosis remains dismal and innovative therapeutic strategies
+  are urgently needed. It can be used to explore systemsbiology stephanou2019 ph as
+  a potential dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_stephanou2019_ph_as_a_potential_therapeutic_targ_model1909300003_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_stephanou2019_ph_as_a_potential_therapeutic_targ_model1909300003_model.state
+  to:
+  - visualisation.systemsbiology_sbml_stephanou2019_ph_as_a_potential_therapeutic_targ_model1909300003_model_state
+- from: systemsbiology_sbml_stephanou2019_ph_as_a_potential_therapeutic_targ_model1909300003_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_stephanou2019_ph_as_a_potential_therapeutic_targ_model1909300003_model_summary
+- from: systemsbiology_sbml_stephanou2019_ph_as_a_potential_therapeutic_targ_model1909300003_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_stephanou2019_ph_as_a_potential_therapeutic_targ_model1909300003_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- oncology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_mtic_m_i
+    maps_to: systemsbiology_sbml_stephanou2019_ph_as_a_potential_therapeutic_targ_model1909300003_model.initial_mtic_m_i
+    label: Initial Mtic M I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MTIC_M_i`.
+  - name: initial_dna_adducts
+    maps_to: systemsbiology_sbml_stephanou2019_ph_as_a_potential_therapeutic_targ_model1909300003_model.initial_dna_adducts
+    label: Initial DNA Adducts
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `DNA_adducts`.
+  - name: initial_cation_c_i
+    maps_to: systemsbiology_sbml_stephanou2019_ph_as_a_potential_therapeutic_targ_model1909300003_model.initial_cation_c_i
+    label: Initial Cation C I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Cation_C_i`.
+  - name: initial_tmz_intracellular_dynamics_t_i
+    maps_to: systemsbiology_sbml_stephanou2019_ph_as_a_potential_therapeutic_targ_model1909300003_model.initial_tmz_intracellular_dynamics_t_i
+    label: Initial Tmz Intracellular Dynamics T I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TMZ_intracellular_dynamics_T_i`.
+  - name: initial_tmz_extracellular_concentration_t_o
+    maps_to: systemsbiology_sbml_stephanou2019_ph_as_a_potential_therapeutic_targ_model1909300003_model.initial_tmz_extracellular_concentration_t_o
+    label: Initial Tmz Extracellular Concentration T O
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TMZ_extracellular_concentration_T_o`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_stephanou2019_ph_as_a_potential_therapeutic_targ_model1909300003_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_stephanou2019_ph_as_a_potential_therapeutic_targ_model1909300003_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_stephanou2019_ph_as_a_potential_therapeutic_targ_model1909300003_model.species_labels
+  - name: mtic_m_i
+    maps_to: systemsbiology_sbml_stephanou2019_ph_as_a_potential_therapeutic_targ_model1909300003_model.mtic_m_i
+  - name: dna_adducts
+    maps_to: systemsbiology_sbml_stephanou2019_ph_as_a_potential_therapeutic_targ_model1909300003_model.dna_adducts
+  - name: cation_c_i
+    maps_to: systemsbiology_sbml_stephanou2019_ph_as_a_potential_therapeutic_targ_model1909300003_model.cation_c_i
+  - name: tmz_intracellular_dynamics_t_i
+    maps_to: systemsbiology_sbml_stephanou2019_ph_as_a_potential_therapeutic_targ_model1909300003_model.tmz_intracellular_dynamics_t_i
+  - name: tmz_extracellular_concentration_t_o
+    maps_to: systemsbiology_sbml_stephanou2019_ph_as_a_potential_therapeutic_targ_model1909300003_model.tmz_extracellular_concentration_t_o

@@ -1,0 +1,104 @@
+schema_version: '2.0'
+title: Hayer2005_CaMKII_noPKA_model3
+description: This is the model of CaMKII bistability, model 3. It exhibits bistability
+  in CaMKII activation due to autophosphorylation at the PSD and local saturation
+  of PP1.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Arnold Hayer
+- Upinder S Bhalla
+upstream:
+  id: biomodels_ebi:MODEL9086926384
+  source_db: biomodels_ebi
+  source_id: MODEL9086926384
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL9086926384
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL9086926384?filename=MODEL9086926384_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.hayer2005_camkii_nopka_model3_model9086926384_model:Hayer2005CamkiiNopkaModel3Model9086926384Model
+  init_kwargs:
+    model_path: data/MODEL9086926384.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_act_ca_mkii_minus_psd
+    maps_to: actCaMKII_minus_PSD
+    label: Initial Act Ca Mkii Minus Psd
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `actCaMKII_minus_PSD`.
+  - name: initial_nmdar
+    maps_to: NMDAR
+    label: Initial Nmdar
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NMDAR`.
+  - name: initial_ca_m_slash_ca_m_minus_psd
+    maps_to: CaM_slash_CaM_minus_PSD
+    label: Initial Ca M Slash Ca M Minus Psd
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaM_slash_CaM_minus_PSD`.
+  - name: initial_ca_m_slash_ca_m
+    maps_to: CaM_slash_CaM
+    label: Initial Ca M Slash Ca M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaM_slash_CaM`.
+  - name: initial_tot_ca_mkii_cyt
+    maps_to: tot_CaMKII_cyt
+    label: Initial Tot Ca Mkii Cyt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `tot_CaMKII_cyt`.
+  - name: initial_ca_mkii_slash_ca_mkii
+    maps_to: CaMKII_slash_CaMKII
+    label: Initial Ca Mkii Slash Ca Mkii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaMKII_slash_CaMKII`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: act_ca_mkii_minus_psd
+    maps_to: actCaMKII_minus_PSD
+    label: ActCaMKII Minus PSD
+    description: ActCaMKII Minus PSD. Maps to SBML symbol `actCaMKII_minus_PSD`.
+  - name: nmdar
+    maps_to: NMDAR
+    label: NMDAR
+    description: NMDAR. Maps to SBML symbol `NMDAR`.
+  - name: ca_m_slash_ca_m_minus_psd
+    maps_to: CaM_slash_CaM_minus_PSD
+    label: CaM Slash CaM Minus PSD
+    description: CaM Slash CaM Minus PSD. Maps to SBML symbol `CaM_slash_CaM_minus_PSD`.
+  - name: ca_m_slash_ca_m
+    maps_to: CaM_slash_CaM
+    label: CaM Slash CaM
+    description: CaM Slash CaM. Maps to SBML symbol `CaM_slash_CaM`.
+  - name: tot_ca_mkii_cyt
+    maps_to: tot_CaMKII_cyt
+    label: Tot CaMKII Cyt
+    description: Tot CaMKII Cyt. Maps to SBML symbol `tot_CaMKII_cyt`.
+  - name: ca_mkii_slash_ca_mkii
+    maps_to: CaMKII_slash_CaMKII
+    label: CaMKII Slash CaMKII
+    description: CaMKII Slash CaMKII. Maps to SBML symbol `CaMKII_slash_CaMKII`.

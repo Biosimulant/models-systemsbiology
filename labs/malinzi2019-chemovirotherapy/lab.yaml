@@ -1,0 +1,73 @@
+schema_version: '2.0'
+title: Malinzi2019 Chemovirotherapy Lab
+description: 'The paper describes a model of oncolytic virothherapy. Created by COPASI
+  4.25 (Build 207) This model is described in the article: Mathematical Analysis of
+  a Mathematical Model of Chemovirotherapy: Eff.'
+models:
+- alias: systemsbiology_sbml_malinzi2019_chemovirotherapy_biomd0000000764_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_malinzi2019_chemovirotherapy_biomd0000000764_model.state
+  to:
+  - visualisation.systemsbiology_sbml_malinzi2019_chemovirotherapy_biomd0000000764_model_state
+- from: systemsbiology_sbml_malinzi2019_chemovirotherapy_biomd0000000764_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_malinzi2019_chemovirotherapy_biomd0000000764_model_summary
+- from: systemsbiology_sbml_malinzi2019_chemovirotherapy_biomd0000000764_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_malinzi2019_chemovirotherapy_biomd0000000764_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- oncology
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_u
+    maps_to: systemsbiology_sbml_malinzi2019_chemovirotherapy_biomd0000000764_model.initial_model_state_u
+    label: Initial Model State U
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `U`.
+  - name: initial_model_state_v
+    maps_to: systemsbiology_sbml_malinzi2019_chemovirotherapy_biomd0000000764_model.initial_model_state_v
+    label: Initial Model State V
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `V`.
+  - name: initial_model_state_c
+    maps_to: systemsbiology_sbml_malinzi2019_chemovirotherapy_biomd0000000764_model.initial_model_state_c
+    label: Initial Model State C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C`.
+  - name: initial_model_state_i
+    maps_to: systemsbiology_sbml_malinzi2019_chemovirotherapy_biomd0000000764_model.initial_model_state_i
+    label: Initial Model State I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `I`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_malinzi2019_chemovirotherapy_biomd0000000764_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_malinzi2019_chemovirotherapy_biomd0000000764_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_malinzi2019_chemovirotherapy_biomd0000000764_model.species_labels
+  - name: model_state_u
+    maps_to: systemsbiology_sbml_malinzi2019_chemovirotherapy_biomd0000000764_model.model_state_u
+  - name: model_state_v
+    maps_to: systemsbiology_sbml_malinzi2019_chemovirotherapy_biomd0000000764_model.model_state_v
+  - name: model_state_c
+    maps_to: systemsbiology_sbml_malinzi2019_chemovirotherapy_biomd0000000764_model.model_state_c
+  - name: model_state_i
+    maps_to: systemsbiology_sbml_malinzi2019_chemovirotherapy_biomd0000000764_model.model_state_i

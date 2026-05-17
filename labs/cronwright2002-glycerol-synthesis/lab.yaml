@@ -1,0 +1,62 @@
+schema_version: '2.0'
+title: Cronwright2002 Glycerol Synthesis Lab
+description: . It can be used to explore systemsbiology cronwright2002 glycerol synthesis
+  BioModels0000000076 dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_cronwright2002_glycerol_synthesis_biomd0000000076_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_cronwright2002_glycerol_synthesis_biomd0000000076_model.state
+  to:
+  - visualisation.systemsbiology_sbml_cronwright2002_glycerol_synthesis_biomd0000000076_model_state
+- from: systemsbiology_sbml_cronwright2002_glycerol_synthesis_biomd0000000076_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_cronwright2002_glycerol_synthesis_biomd0000000076_model_summary
+- from: systemsbiology_sbml_cronwright2002_glycerol_synthesis_biomd0000000076_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_cronwright2002_glycerol_synthesis_biomd0000000076_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_glycerol
+    maps_to: systemsbiology_sbml_cronwright2002_glycerol_synthesis_biomd0000000076_model.initial_glycerol
+    label: Initial Glycerol
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Gly`.
+  - name: initial_glycerol_3_phosphate
+    maps_to: systemsbiology_sbml_cronwright2002_glycerol_synthesis_biomd0000000076_model.initial_glycerol_3_phosphate
+    label: Initial Glycerol 3 Phosphate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `G3P`.
+  - name: initial_dhap
+    maps_to: systemsbiology_sbml_cronwright2002_glycerol_synthesis_biomd0000000076_model.initial_dhap
+    label: Initial Dhap
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `DHAP`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_cronwright2002_glycerol_synthesis_biomd0000000076_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_cronwright2002_glycerol_synthesis_biomd0000000076_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_cronwright2002_glycerol_synthesis_biomd0000000076_model.species_labels
+  - name: glycerol
+    maps_to: systemsbiology_sbml_cronwright2002_glycerol_synthesis_biomd0000000076_model.glycerol
+  - name: glycerol_3_phosphate
+    maps_to: systemsbiology_sbml_cronwright2002_glycerol_synthesis_biomd0000000076_model.glycerol_3_phosphate
+  - name: dhap
+    maps_to: systemsbiology_sbml_cronwright2002_glycerol_synthesis_biomd0000000076_model.dhap

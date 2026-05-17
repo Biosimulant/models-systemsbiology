@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "7250295f-e6c0-4bfb-8e8b-82411cb7716b",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "fbc5d091-240b-4ee0-9f66-04eb4803346a",
+  "created_at": "2026-05-16T05:46:51.390225466+00:00",
+  "last_synced_at": "2026-05-17T05:58:05.988838+00:00",
+  "hub_manifest_hash": "f21a02894ffb9cdd699f87922014abdbfa0dc2e218ee3287192ff53f7e742cca",
+  "package_name": "restif2006-whooping-cough-lab"
+}

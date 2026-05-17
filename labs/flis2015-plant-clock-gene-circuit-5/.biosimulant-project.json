@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "f685715c-73c5-4d32-b9e0-2b0f59bf2bad",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "dd92f04f-c9ce-4525-ac6f-9604f8c8f10c",
+  "created_at": "2026-05-16T05:46:43.374409869+00:00",
+  "last_synced_at": "2026-05-17T03:12:54.686678+00:00",
+  "hub_manifest_hash": "103adf96f0d3b10489148e0ba4005fd11c0325718b487b5331a01630223ea043",
+  "package_name": "flis2015-plant-clock-gene-circuit-5-lab"
+}

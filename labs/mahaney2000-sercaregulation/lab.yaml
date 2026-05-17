@@ -1,0 +1,86 @@
+schema_version: '2.0'
+title: Mahaney2000 Sercaregulation Lab
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models. It is copyright (c) 2005-2011 The BioModels.net Team.'
+models:
+- alias: systemsbiology_sbml_mahaney2000_sercaregulation_model4816599063_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_mahaney2000_sercaregulation_model4816599063_model.state
+  to:
+  - visualisation.systemsbiology_sbml_mahaney2000_sercaregulation_model4816599063_model_state
+- from: systemsbiology_sbml_mahaney2000_sercaregulation_model4816599063_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_mahaney2000_sercaregulation_model4816599063_model_summary
+- from: systemsbiology_sbml_mahaney2000_sercaregulation_model4816599063_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_mahaney2000_sercaregulation_model4816599063_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_atp_ca2_e1prime
+    maps_to: systemsbiology_sbml_mahaney2000_sercaregulation_model4816599063_model.initial_atp_ca2_e1prime
+    label: Initial ATP CA2 E1prime
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATP_Ca2_E1prime`.
+  - name: initial_model_state_atp
+    maps_to: systemsbiology_sbml_mahaney2000_sercaregulation_model4816599063_model.initial_model_state_atp
+    label: Initial Model State ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATP`.
+  - name: initial_model_state_adp
+    maps_to: systemsbiology_sbml_mahaney2000_sercaregulation_model4816599063_model.initial_model_state_adp
+    label: Initial Model State ADP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ADP`.
+  - name: initial_ca_e1prime
+    maps_to: systemsbiology_sbml_mahaney2000_sercaregulation_model4816599063_model.initial_ca_e1prime
+    label: Initial Ca E1prime
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_E1prime`.
+  - name: initial_ca_e1
+    maps_to: systemsbiology_sbml_mahaney2000_sercaregulation_model4816599063_model.initial_ca_e1
+    label: Initial Ca E1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_E1`.
+  - name: initial_ca2_e1prime
+    maps_to: systemsbiology_sbml_mahaney2000_sercaregulation_model4816599063_model.initial_ca2_e1prime
+    label: Initial CA2 E1prime
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca2_E1prime`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_mahaney2000_sercaregulation_model4816599063_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_mahaney2000_sercaregulation_model4816599063_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_mahaney2000_sercaregulation_model4816599063_model.species_labels
+  - name: atp_ca2_e1prime
+    maps_to: systemsbiology_sbml_mahaney2000_sercaregulation_model4816599063_model.atp_ca2_e1prime
+  - name: atp
+    maps_to: systemsbiology_sbml_mahaney2000_sercaregulation_model4816599063_model.atp
+  - name: adp
+    maps_to: systemsbiology_sbml_mahaney2000_sercaregulation_model4816599063_model.adp
+  - name: ca_e1prime
+    maps_to: systemsbiology_sbml_mahaney2000_sercaregulation_model4816599063_model.ca_e1prime
+  - name: ca_e1
+    maps_to: systemsbiology_sbml_mahaney2000_sercaregulation_model4816599063_model.ca_e1
+  - name: ca2_e1prime
+    maps_to: systemsbiology_sbml_mahaney2000_sercaregulation_model4816599063_model.ca2_e1prime

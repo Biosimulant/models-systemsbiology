@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "83661dff-e039-4fae-b032-8d2a6fede2ab",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "7f772b86-c1c4-47b9-bae6-2d2ec4b03645",
+  "created_at": "2026-05-16T05:46:44.869949844+00:00",
+  "last_synced_at": "2026-05-17T04:10:31.893636+00:00",
+  "hub_manifest_hash": "402e1f9eec4d5562c6bfa811776ef41292af1e5cc370e285fccd7e8c22f84c79",
+  "package_name": "kolomeisky2003-myosinv-processivity-lab"
+}

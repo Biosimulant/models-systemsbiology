@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Aguda1999_CellCycle Visualisation
+description: Question-and-answer and dynamic visual summaries for Aguda1999_CellCycle.
+standard: other
+tags:
+- cellcycle
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Aguda1999 Cellcycle Lab
+    question: 'Which cell-cycle control states dominate the simulated progression?
+      Source model: Aguda1999_CellCycle.'
+    answer_focus: Q/A table plus cellcycle timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_aguda1999_cellcycle_biomd0000000169_model
+      title: Aguda1999_CellCycle
+      observables:
+      - id: Y7_1
+        port: p27
+        label: p27
+        group: physiology
+      - id: Y10_1
+        port: p16
+        label: p16
+        group: physiology
+      - id: Y3_1
+        port: p_rb_e2_f
+        label: pRB_E2F
+        group: physiology
+      - id: Y8_1
+        port: cyc_e_cdk2_p27
+        label: cycE_CDK2_p27
+        group: physiology
+      - id: Y5_1
+        port: p_rb
+        label: pRB
+        group: physiology
+      - id: Y11_1
+        port: p_rb_p
+        label: pRB_P
+        group: physiology
+io:
+  inputs: []
+  outputs: []

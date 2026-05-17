@@ -1,0 +1,90 @@
+schema_version: '2.0'
+title: Schmierer2008 Smad Tgfb Lab
+description: 'This sbml file describes the RECI model from: ''Mathematical modeling
+  identifies Smad nucleocytoplasmic shuttling as a dynamic signal-interpreting system''
+  by Bernhard Schmierer, Alexander L. It can be used to explore systemsbiology schmierer
+  2008 smad tgfb BioModels0000000173 dynamics and compare simulation behavior across
+  conditions.'
+models:
+- alias: systemsbiology_sbml_schmierer_2008_smad_tgfb_biomd0000000173_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_schmierer_2008_smad_tgfb_biomd0000000173_model.state
+  to:
+  - visualisation.systemsbiology_sbml_schmierer_2008_smad_tgfb_biomd0000000173_model_state
+- from: systemsbiology_sbml_schmierer_2008_smad_tgfb_biomd0000000173_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_schmierer_2008_smad_tgfb_biomd0000000173_model_summary
+- from: systemsbiology_sbml_schmierer_2008_smad_tgfb_biomd0000000173_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_schmierer_2008_smad_tgfb_biomd0000000173_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_smad2_c
+    maps_to: systemsbiology_sbml_schmierer_2008_smad_tgfb_biomd0000000173_model.initial_smad2_c
+    label: Initial Smad2 C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S2_c`.
+  - name: initial_gfp_smad2_c
+    maps_to: systemsbiology_sbml_schmierer_2008_smad_tgfb_biomd0000000173_model.initial_gfp_smad2_c
+    label: Initial Gfp Smad2 C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `G_c`.
+  - name: initial_smad4_c
+    maps_to: systemsbiology_sbml_schmierer_2008_smad_tgfb_biomd0000000173_model.initial_smad4_c
+    label: Initial Smad4 C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S4_c`.
+  - name: initial_smad4_n
+    maps_to: systemsbiology_sbml_schmierer_2008_smad_tgfb_biomd0000000173_model.initial_smad4_n
+    label: Initial Smad4 N
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S4_n`.
+  - name: initial_smad2_n
+    maps_to: systemsbiology_sbml_schmierer_2008_smad_tgfb_biomd0000000173_model.initial_smad2_n
+    label: Initial Smad2 N
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S2_n`.
+  - name: initial_gfp_smad2_n
+    maps_to: systemsbiology_sbml_schmierer_2008_smad_tgfb_biomd0000000173_model.initial_gfp_smad2_n
+    label: Initial Gfp Smad2 N
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `G_n`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_schmierer_2008_smad_tgfb_biomd0000000173_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_schmierer_2008_smad_tgfb_biomd0000000173_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_schmierer_2008_smad_tgfb_biomd0000000173_model.species_labels
+  - name: smad2_c
+    maps_to: systemsbiology_sbml_schmierer_2008_smad_tgfb_biomd0000000173_model.smad2_c
+  - name: gfp_smad2_c
+    maps_to: systemsbiology_sbml_schmierer_2008_smad_tgfb_biomd0000000173_model.gfp_smad2_c
+  - name: smad4_c
+    maps_to: systemsbiology_sbml_schmierer_2008_smad_tgfb_biomd0000000173_model.smad4_c
+  - name: smad4_n
+    maps_to: systemsbiology_sbml_schmierer_2008_smad_tgfb_biomd0000000173_model.smad4_n
+  - name: smad2_n
+    maps_to: systemsbiology_sbml_schmierer_2008_smad_tgfb_biomd0000000173_model.smad2_n
+  - name: gfp_smad2_n
+    maps_to: systemsbiology_sbml_schmierer_2008_smad_tgfb_biomd0000000173_model.gfp_smad2_n

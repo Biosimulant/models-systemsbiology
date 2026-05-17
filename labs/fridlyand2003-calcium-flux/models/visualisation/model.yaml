@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Fridlyand2003_Calcium_flux Visualisation
+description: Question-and-answer and dynamic visual summaries for Fridlyand2003_Calcium_flux.
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Fridlyand2003 Calcium Flux Lab
+    question: 'Which physiological state variables carry the strongest baseline response?
+      Source model: Fridlyand2003_Calcium_flux.'
+    answer_focus: Q/A table plus physiology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_fridlyand2003_calcium_flux_biomd0000000059_model
+      title: Fridlyand2003_Calcium_flux
+      observables:
+      - id: ADP_cyt
+        port: cytosolic_adp
+        label: Cytosolic ADP
+        group: metabolism
+      - id: ATP_cyt
+        port: cytosolic_atp
+        label: Cytosolic ATP
+        group: metabolism
+      - id: Na_cyt
+        port: cytosolic_sodium
+        label: Cytosolic Sodium
+        group: physiology
+      - id: Ca_er
+        port: er_calcium
+        label: ER Calcium
+        group: physiology
+      - id: IP3_cyt
+        port: cytosolic_ip3
+        label: Cytosolic IP3
+        group: physiology
+      - id: Ca_cyt
+        port: cytosolic_calcium
+        label: Cytosolic Calcium
+        group: physiology
+io:
+  inputs: []
+  outputs: []

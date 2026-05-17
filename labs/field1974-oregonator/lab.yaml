@@ -1,0 +1,80 @@
+schema_version: '2.0'
+title: Field1974 Oregonator Lab
+description: Field-Noyes Model of BZ Reaction Citation R.J.Field and R.M.Noyes,J.Chem.Phys.60,1877
+  (1974) Description Field Noyes Version of Belousov-Zhabotinsky Reaction. It can
+  be used to explore systemsbiology field1974 oregonator BioModels0000000040 dynamics
+  and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_field1974_oregonator_biomd0000000040_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_field1974_oregonator_biomd0000000040_model.state
+  to:
+  - visualisation.systemsbiology_sbml_field1974_oregonator_biomd0000000040_model_state
+- from: systemsbiology_sbml_field1974_oregonator_biomd0000000040_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_field1974_oregonator_biomd0000000040_model_summary
+- from: systemsbiology_sbml_field1974_oregonator_biomd0000000040_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_field1974_oregonator_biomd0000000040_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_br_o3
+    maps_to: systemsbiology_sbml_field1974_oregonator_biomd0000000040_model.initial_br_o3
+    label: Initial Br O3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `BrO3`.
+  - name: initial_model_state_ce4
+    maps_to: systemsbiology_sbml_field1974_oregonator_biomd0000000040_model.initial_model_state_ce4
+    label: Initial Model State CE4
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ce`.
+  - name: initial_model_state_br
+    maps_to: systemsbiology_sbml_field1974_oregonator_biomd0000000040_model.initial_model_state_br
+    label: Initial Model State Br
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Br`.
+  - name: initial_h_br_o2
+    maps_to: systemsbiology_sbml_field1974_oregonator_biomd0000000040_model.initial_h_br_o2
+    label: Initial H Br O2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `HBrO2`.
+  - name: initial_ho_br
+    maps_to: systemsbiology_sbml_field1974_oregonator_biomd0000000040_model.initial_ho_br
+    label: Initial Ho Br
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `HOBr`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_field1974_oregonator_biomd0000000040_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_field1974_oregonator_biomd0000000040_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_field1974_oregonator_biomd0000000040_model.species_labels
+  - name: br_o3
+    maps_to: systemsbiology_sbml_field1974_oregonator_biomd0000000040_model.br_o3
+  - name: ce4
+    maps_to: systemsbiology_sbml_field1974_oregonator_biomd0000000040_model.ce4
+  - name: model_state_br
+    maps_to: systemsbiology_sbml_field1974_oregonator_biomd0000000040_model.model_state_br
+  - name: h_br_o2
+    maps_to: systemsbiology_sbml_field1974_oregonator_biomd0000000040_model.h_br_o2
+  - name: ho_br
+    maps_to: systemsbiology_sbml_field1974_oregonator_biomd0000000040_model.ho_br

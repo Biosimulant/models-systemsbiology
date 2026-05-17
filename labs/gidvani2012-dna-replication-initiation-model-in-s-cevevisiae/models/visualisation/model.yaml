@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Gidvani2012 - DNA replication initiation model in S. Cevevisiae Visualisation
+description: Question-and-answer and dynamic visual summaries for Gidvani2012 - DNA
+  replication initiation model in S. Cevevisiae.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Gidvani2012 Dna Replication Initiation Model In S Cevevisiae Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Gidvani2012 - DNA replication initiation model in S. Cevevisiae.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_gidvani2012_dna_replication_initiation_model_in_model2003180001_model
+      title: Gidvani2012 - DNA replication initiation model in S. Cevevisiae
+      observables:
+      - id: cdt1c
+        port: cdt1c
+        label: cdt1c
+        group: physiology
+      - id: cdt1_total
+        port: cdt1_total
+        label: cdt1_total
+        group: physiology
+      - id: cdc45n
+        port: cdc45n
+        label: cdc45n
+        group: physiology
+      - id: cdc45_total
+        port: cdc45_total
+        label: cdc45_total
+        group: physiology
+      - id: rc_total
+        port: rc_total
+        label: rc_total
+        group: physiology
+      - id: rc7
+        port: rc7
+        label: rc7
+        group: physiology
+io:
+  inputs: []
+  outputs: []

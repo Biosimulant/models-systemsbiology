@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Chatterjee2010_BloodCoagulation Visualisation
+description: Question-and-answer and dynamic visual summaries for Chatterjee2010_BloodCoagulation.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Chatterjee2010 Bloodcoagulation Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Chatterjee2010_BloodCoagulation.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_chatterjee2010_bloodcoagulation_model1108260014_model
+      title: Chatterjee2010_BloodCoagulation
+      observables:
+      - id: species_57
+        port: alpha1_at
+        label: alpha1AT
+        group: physiology
+      - id: species_36
+        port: boc_vpr_mca
+        label: Boc_VPR_MCA
+        group: physiology
+      - id: species_65
+        port: fbg
+        label: Fbg
+        group: physiology
+      - id: species_47
+        port: cti
+        label: CTI
+        group: physiology
+      - id: species_29
+        port: atiii
+        label: ATIII
+        group: physiology
+      - id: species_49
+        port: c1inh
+        label: C1inh
+        group: physiology
+io:
+  inputs: []
+  outputs: []

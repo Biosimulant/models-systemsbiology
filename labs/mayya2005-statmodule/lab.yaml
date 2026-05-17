@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Mayya2005 Statmodule Lab
+description: The model reproduces Fig 2B of the paper. It can be used to explore systemsbiology
+  mayya2005 statmodule BioModels0000000167 dynamics and compare simulation behavior
+  across conditions.
+models:
+- alias: systemsbiology_sbml_mayya2005_statmodule_biomd0000000167_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_mayya2005_statmodule_biomd0000000167_model.state
+  to:
+  - visualisation.systemsbiology_sbml_mayya2005_statmodule_biomd0000000167_model_state
+- from: systemsbiology_sbml_mayya2005_statmodule_biomd0000000167_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_mayya2005_statmodule_biomd0000000167_model_summary
+- from: systemsbiology_sbml_mayya2005_statmodule_biomd0000000167_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_mayya2005_statmodule_biomd0000000167_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_stat_phosphatase_nuc
+    maps_to: systemsbiology_sbml_mayya2005_statmodule_biomd0000000167_model.initial_stat_phosphatase_nuc
+    label: Initial Stat Phosphatase Nuc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `statPhosphatase_nuc`.
+  - name: initial_stat_sol
+    maps_to: systemsbiology_sbml_mayya2005_statmodule_biomd0000000167_model.initial_stat_sol
+    label: Initial Stat Sol
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `stat_sol`.
+  - name: initial_stat_nuc
+    maps_to: systemsbiology_sbml_mayya2005_statmodule_biomd0000000167_model.initial_stat_nuc
+    label: Initial Stat Nuc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `stat_nuc`.
+  - name: initial_stat_kinase_sol
+    maps_to: systemsbiology_sbml_mayya2005_statmodule_biomd0000000167_model.initial_stat_kinase_sol
+    label: Initial Stat Kinase Sol
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `statKinase_sol`.
+  - name: initial_species_test
+    maps_to: systemsbiology_sbml_mayya2005_statmodule_biomd0000000167_model.initial_species_test
+    label: Initial Species Test
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_test`.
+  - name: initial_pstat_sol
+    maps_to: systemsbiology_sbml_mayya2005_statmodule_biomd0000000167_model.initial_pstat_sol
+    label: Initial Pstat Sol
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pstat_sol`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_mayya2005_statmodule_biomd0000000167_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_mayya2005_statmodule_biomd0000000167_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_mayya2005_statmodule_biomd0000000167_model.species_labels
+  - name: stat_phosphatase_nuc
+    maps_to: systemsbiology_sbml_mayya2005_statmodule_biomd0000000167_model.stat_phosphatase_nuc
+  - name: stat_sol
+    maps_to: systemsbiology_sbml_mayya2005_statmodule_biomd0000000167_model.stat_sol
+  - name: stat_nuc
+    maps_to: systemsbiology_sbml_mayya2005_statmodule_biomd0000000167_model.stat_nuc
+  - name: stat_kinase_sol
+    maps_to: systemsbiology_sbml_mayya2005_statmodule_biomd0000000167_model.stat_kinase_sol
+  - name: species_test
+    maps_to: systemsbiology_sbml_mayya2005_statmodule_biomd0000000167_model.species_test
+  - name: pstat_sol
+    maps_to: systemsbiology_sbml_mayya2005_statmodule_biomd0000000167_model.pstat_sol

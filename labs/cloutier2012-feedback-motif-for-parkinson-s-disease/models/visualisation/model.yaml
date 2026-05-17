@@ -1,0 +1,41 @@
+schema_version: '2.0'
+title: Cloutier2012 - Feedback motif for Parkinson's disease Visualisation
+description: Question-and-answer and dynamic visual summaries for Cloutier2012 - Feedback
+  motif for Parkinson's disease.
+standard: other
+tags:
+- generegulation
+- neuroscience
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Cloutier2012 Feedback Motif For Parkinson S Disease Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Cloutier2012 - Feedback motif for Parkinson''s disease.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_cloutier2012_feedback_motif_for_parkinson_s_dise_biomd0000000558_model
+      title: Cloutier2012 - Feedback motif for Parkinson's disease
+      observables:
+      - id: alpha_syn
+        port: alpha_syn
+        label: alpha-syn
+        group: gene_regulation
+      - id: ROS
+        port: ros
+        label: ROS
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "b88ce582-00d1-4123-b267-846541e80875",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "ad2c3db4-bb47-4c37-a2e7-c44db494921d",
+  "created_at": "2026-05-16T05:46:48.020463269+00:00",
+  "last_synced_at": "2026-05-17T05:05:47.856633+00:00",
+  "hub_manifest_hash": "a5ac28c0b633f7eb92dcd4a4d0d0467fbab87bb956f6b4e6d1168b361bdfd991",
+  "package_name": "munz2009-zombie-sizrc-lab"
+}

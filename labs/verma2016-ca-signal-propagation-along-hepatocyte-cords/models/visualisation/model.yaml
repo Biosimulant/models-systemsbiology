@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Verma2016 - Ca(2+) Signal Propagation Along Hepatocyte Cords Visualisation
+description: Question-and-answer and dynamic visual summaries for Verma2016 - Ca(2+)
+  Signal Propagation Along Hepatocyte Cords.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Verma2016 Ca Signal Propagation Along Hepatocyte Cords Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Verma2016 - Ca(2+) Signal Propagation Along Hepatocyte Cords.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_verma2016_ca_2_signal_propagation_along_hepatocy_biomd0000000834_model
+      title: Verma2016 - Ca(2+) Signal Propagation Along Hepatocyte Cords
+      observables:
+      - id: CaT_9
+        port: total_intracellular_store_ca2_content_ca_t_9
+        label: total intracellular store Ca2+ content_CaT_9
+        group: signaling
+      - id: CaT_8
+        port: total_intracellular_store_ca2_content_ca_t_8
+        label: total intracellular store Ca2+ content_CaT_8
+        group: signaling
+      - id: CaT_7
+        port: total_intracellular_store_ca2_content_ca_t_7
+        label: total intracellular store Ca2+ content_CaT_7
+        group: signaling
+      - id: CaT_6
+        port: total_intracellular_store_ca2_content_ca_t_6
+        label: total intracellular store Ca2+ content_CaT_6
+        group: signaling
+      - id: CaT_5
+        port: total_intracellular_store_ca2_content_ca_t_5
+        label: total intracellular store Ca2+ content_CaT_5
+        group: signaling
+      - id: CaT_4
+        port: total_intracellular_store_ca2_content_ca_t_4
+        label: total intracellular store Ca2+ content_CaT_4
+        group: signaling
+io:
+  inputs: []
+  outputs: []

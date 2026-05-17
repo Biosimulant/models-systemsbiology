@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Mukandavire2009 - Model for HIV-Malaria co-infection
+description: Mathematical model for HIV, malaria and HIV-malaria co-infection. It
+  can be used to explore systemsbiology mukandavire2009 for hiv malaria co dynamics
+  and compare simulation behavior across conditions.
+standard: other
+tags:
+- epidemiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Mukandavire Z
+- Abba B Gumel
+- Garira W
+- Jean Michel Tchuenche
+upstream:
+  id: biomodels_ebi:MODEL1805230001
+  source_db: biomodels_ebi
+  source_id: MODEL1805230001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1805230001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1805230001?filename=Mukandavire2009.xml
+  license: CC0
+biosim:
+  entrypoint: src.mukandavire2009_model_for_hiv_malaria_co_infecti_model1805230001_model:Mukandavire2009ModelForHivMalariaCoInfectiModel1805230001Model
+  init_kwargs:
+    model_path: data/MODEL1805230001.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_s_v
+    maps_to: S_V
+    label: Initial Model State S V
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S_V`.
+  - name: initial_model_state_s_h
+    maps_to: S_H
+    label: Initial Model State S H
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S_H`.
+  - name: initial_model_state_e_v
+    maps_to: E_V
+    label: Initial Model State E V
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `E_V`.
+  - name: initial_model_state_e_m
+    maps_to: E_M
+    label: Initial Model State E M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `E_M`.
+  - name: initial_model_state_i_v
+    maps_to: I_V
+    label: Initial Model State I V
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `I_V`.
+  - name: initial_model_state_i_m
+    maps_to: I_M
+    label: Initial Model State I M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `I_M`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: s_v
+    maps_to: S_V
+    label: S_V
+    description: S_V. Maps to SBML symbol `S_V`.
+  - name: s_h
+    maps_to: S_H
+    label: S_H
+    description: S_H. Maps to SBML symbol `S_H`.
+  - name: e_v
+    maps_to: E_V
+    label: E_V
+    description: E_V. Maps to SBML symbol `E_V`.
+  - name: e_m
+    maps_to: E_M
+    label: E_M
+    description: E_M. Maps to SBML symbol `E_M`.
+  - name: i_v
+    maps_to: I_V
+    label: I_V
+    description: I_V. Maps to SBML symbol `I_V`.
+  - name: i_m
+    maps_to: I_M
+    label: I_M
+    description: I_M. Maps to SBML symbol `I_M`.

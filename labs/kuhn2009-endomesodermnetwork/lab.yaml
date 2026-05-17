@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Kuhn2009 Endomesodermnetwork Lab
+description: 'This a model from the article: Monte Carlo analysis of an ODE Model
+  of the Sea Urchin Endomesoderm Network. Kühn C, Wierling C, Kühn A, Klipp E, Panopoulou
+  G, Lehrach H, Poustka AJ.'
+models:
+- alias: systemsbiology_sbml_kuhn2009_endomesodermnetwork_biomd0000000235_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_kuhn2009_endomesodermnetwork_biomd0000000235_model.state
+  to:
+  - visualisation.systemsbiology_sbml_kuhn2009_endomesodermnetwork_biomd0000000235_model_state
+- from: systemsbiology_sbml_kuhn2009_endomesodermnetwork_biomd0000000235_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_kuhn2009_endomesodermnetwork_biomd0000000235_model_summary
+- from: systemsbiology_sbml_kuhn2009_endomesodermnetwork_biomd0000000235_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_kuhn2009_endomesodermnetwork_biomd0000000235_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_mrna_p_vegfr
+    maps_to: systemsbiology_sbml_kuhn2009_endomesodermnetwork_biomd0000000235_model.initial_mrna_p_vegfr
+    label: Initial MRNA P Vegfr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mRNA_P_VEGFR`.
+  - name: initial_mrna_m_vegfr
+    maps_to: systemsbiology_sbml_kuhn2009_endomesodermnetwork_biomd0000000235_model.initial_mrna_m_vegfr
+    label: Initial MRNA M Vegfr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mRNA_M_VEGFR`.
+  - name: initial_mrna_e_vegfr
+    maps_to: systemsbiology_sbml_kuhn2009_endomesodermnetwork_biomd0000000235_model.initial_mrna_e_vegfr
+    label: Initial MRNA E Vegfr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mRNA_E_VEGFR`.
+  - name: initial_protein_p_vegf_signal
+    maps_to: systemsbiology_sbml_kuhn2009_endomesodermnetwork_biomd0000000235_model.initial_protein_p_vegf_signal
+    label: Initial Protein P Vegf Signal
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PROTEIN_P_VEGFSignal`.
+  - name: initial_protein_p_vegfr
+    maps_to: systemsbiology_sbml_kuhn2009_endomesodermnetwork_biomd0000000235_model.initial_protein_p_vegfr
+    label: Initial Protein P Vegfr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PROTEIN_P_VEGFR`.
+  - name: initial_protein_m_vegf_signal
+    maps_to: systemsbiology_sbml_kuhn2009_endomesodermnetwork_biomd0000000235_model.initial_protein_m_vegf_signal
+    label: Initial Protein M Vegf Signal
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PROTEIN_M_VEGFSignal`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_kuhn2009_endomesodermnetwork_biomd0000000235_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_kuhn2009_endomesodermnetwork_biomd0000000235_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_kuhn2009_endomesodermnetwork_biomd0000000235_model.species_labels
+  - name: mrna_p_vegfr
+    maps_to: systemsbiology_sbml_kuhn2009_endomesodermnetwork_biomd0000000235_model.mrna_p_vegfr
+  - name: mrna_m_vegfr
+    maps_to: systemsbiology_sbml_kuhn2009_endomesodermnetwork_biomd0000000235_model.mrna_m_vegfr
+  - name: mrna_e_vegfr
+    maps_to: systemsbiology_sbml_kuhn2009_endomesodermnetwork_biomd0000000235_model.mrna_e_vegfr
+  - name: protein_p_vegf_signal
+    maps_to: systemsbiology_sbml_kuhn2009_endomesodermnetwork_biomd0000000235_model.protein_p_vegf_signal
+  - name: protein_p_vegfr
+    maps_to: systemsbiology_sbml_kuhn2009_endomesodermnetwork_biomd0000000235_model.protein_p_vegfr
+  - name: protein_m_vegf_signal
+    maps_to: systemsbiology_sbml_kuhn2009_endomesodermnetwork_biomd0000000235_model.protein_m_vegf_signal

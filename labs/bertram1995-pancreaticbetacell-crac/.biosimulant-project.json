@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "3d67c9c1-64e6-4a51-bf19-362aaef41f57",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "79f9347e-cf1f-484c-9c3e-3a85c345bf1a",
+  "created_at": "2026-05-16T05:46:41.450459766+00:00",
+  "last_synced_at": "2026-05-17T02:02:08.671919+00:00",
+  "hub_manifest_hash": "f4e5b33c40f315f8541e2e2e3de6a0f9d52a63a674652a8a0a0f4ce8009f17e2",
+  "package_name": "bertram1995-pancreaticbetacell-crac-lab"
+}

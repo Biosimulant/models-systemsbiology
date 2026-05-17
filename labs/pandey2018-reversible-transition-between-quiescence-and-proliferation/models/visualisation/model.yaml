@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: Pandey2018-reversible transition between quiescence and proliferation Visualisation
+description: Question-and-answer and dynamic visual summaries for Pandey2018-reversible
+  transition between quiescence and proliferation.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Pandey2018 Reversible Transition Between Quiescence And Proliferation
+      Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Pandey2018-reversible transition between quiescence and proliferation.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_pandey2018_reversible_transition_between_quiesce_biomd0000000954_model
+      title: Pandey2018-reversible transition between quiescence and proliferation
+      observables:
+      - id: Cdh1dp
+        port: cdh1dp
+        label: Cdh1dp
+        group: signaling
+      - id: Cdh1T
+        port: cdh1_t
+        label: Cdh1T
+        group: signaling
+      - id: Cdh1
+        port: cdh1
+        label: Cdh1
+        group: signaling
+      - id: Rb
+        port: model_state_rb
+        label: Rb
+        group: signaling
+      - id: CkiT
+        port: cki_t
+        label: CkiT
+        group: signaling
+      - id: CycET
+        port: cyc_et
+        label: CycET
+        group: signaling
+io:
+  inputs: []
+  outputs: []

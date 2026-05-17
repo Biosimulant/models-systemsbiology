@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Kim2007_CellularMemory_AsymmetricModel Visualisation
+description: Question-and-answer and dynamic visual summaries for Kim2007_CellularMemory_AsymmetricModel.
+standard: other
+tags:
+- immunology
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Kim2007 Cellularmemory Asymmetricmodel Lab
+    question: 'Which immune or inflammatory states dominate the simulated response?
+      Source model: Kim2007_CellularMemory_AsymmetricModel.'
+    answer_focus: Q/A table plus immunology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_kim2007_cellularmemory_asymmetricmodel_biomd0000000179_model
+      title: Kim2007_CellularMemory_AsymmetricModel
+      observables:
+      - id: P2_prime
+        port: p2_prime
+        label: P2 Prime
+        group: physiology
+      - id: P2
+        port: model_state_p2
+        label: P2
+        group: physiology
+      - id: R2
+        port: model_state_r2
+        label: R2
+        group: physiology
+      - id: P3_prime
+        port: p3_prime
+        label: P3 Prime
+        group: physiology
+      - id: P1_prime
+        port: p1_prime
+        label: P1 Prime
+        group: physiology
+      - id: P1
+        port: model_state_p1
+        label: P1
+        group: physiology
+io:
+  inputs: []
+  outputs: []

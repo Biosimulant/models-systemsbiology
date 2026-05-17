@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Panteleev2002 Tfpimechanism Schmema3 Lab
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models (http://www.ebi.ac.uk/biomodels/). It is copyright (c) 2005-2011
+  The BioModels.net Team.'
+models:
+- alias: systemsbiology_sbml_panteleev2002_tfpimechanism_schmema3_biomd0000000359_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_panteleev2002_tfpimechanism_schmema3_biomd0000000359_model.state
+  to:
+  - visualisation.systemsbiology_sbml_panteleev2002_tfpimechanism_schmema3_biomd0000000359_model_state
+- from: systemsbiology_sbml_panteleev2002_tfpimechanism_schmema3_biomd0000000359_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_panteleev2002_tfpimechanism_schmema3_biomd0000000359_model_summary
+- from: systemsbiology_sbml_panteleev2002_tfpimechanism_schmema3_biomd0000000359_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_panteleev2002_tfpimechanism_schmema3_biomd0000000359_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_vi_ia_tf
+    maps_to: systemsbiology_sbml_panteleev2002_tfpimechanism_schmema3_biomd0000000359_model.initial_vi_ia_tf
+    label: Initial Vi Ia Tf
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VIIa_TF`.
+  - name: initial_xa_tfpi_vi_ia_tf
+    maps_to: systemsbiology_sbml_panteleev2002_tfpimechanism_schmema3_biomd0000000359_model.initial_xa_tfpi_vi_ia_tf
+    label: Initial Xa Tfpi Vi Ia Tf
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_TFPI_VIIa_TF`.
+  - name: initial_xa_tfpi
+    maps_to: systemsbiology_sbml_panteleev2002_tfpimechanism_schmema3_biomd0000000359_model.initial_xa_tfpi
+    label: Initial Xa Tfpi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_TFPI`.
+  - name: initial_vi_ia_tf_xa_tfpi
+    maps_to: systemsbiology_sbml_panteleev2002_tfpimechanism_schmema3_biomd0000000359_model.initial_vi_ia_tf_xa_tfpi
+    label: Initial Vi Ia Tf Xa Tfpi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VIIa_TF_Xa_TFPI`.
+  - name: initial_vi_ia_tf_xa
+    maps_to: systemsbiology_sbml_panteleev2002_tfpimechanism_schmema3_biomd0000000359_model.initial_vi_ia_tf_xa
+    label: Initial Vi Ia Tf Xa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VIIa_TF_Xa`.
+  - name: initial_vi_ia_tf_x
+    maps_to: systemsbiology_sbml_panteleev2002_tfpimechanism_schmema3_biomd0000000359_model.initial_vi_ia_tf_x
+    label: Initial Vi Ia Tf X
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VIIa_TF_X`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_panteleev2002_tfpimechanism_schmema3_biomd0000000359_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_panteleev2002_tfpimechanism_schmema3_biomd0000000359_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_panteleev2002_tfpimechanism_schmema3_biomd0000000359_model.species_labels
+  - name: vi_ia_tf
+    maps_to: systemsbiology_sbml_panteleev2002_tfpimechanism_schmema3_biomd0000000359_model.vi_ia_tf
+  - name: xa_tfpi_vi_ia_tf
+    maps_to: systemsbiology_sbml_panteleev2002_tfpimechanism_schmema3_biomd0000000359_model.xa_tfpi_vi_ia_tf
+  - name: xa_tfpi
+    maps_to: systemsbiology_sbml_panteleev2002_tfpimechanism_schmema3_biomd0000000359_model.xa_tfpi
+  - name: vi_ia_tf_xa_tfpi
+    maps_to: systemsbiology_sbml_panteleev2002_tfpimechanism_schmema3_biomd0000000359_model.vi_ia_tf_xa_tfpi
+  - name: vi_ia_tf_xa
+    maps_to: systemsbiology_sbml_panteleev2002_tfpimechanism_schmema3_biomd0000000359_model.vi_ia_tf_xa
+  - name: vi_ia_tf_x
+    maps_to: systemsbiology_sbml_panteleev2002_tfpimechanism_schmema3_biomd0000000359_model.vi_ia_tf_x

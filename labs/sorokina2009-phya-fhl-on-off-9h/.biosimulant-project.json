@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "67ebd511-47a4-4736-8e9c-71728c3c4c73",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "1798e46e-1cf8-4731-83c4-33696b969c1d",
+  "created_at": "2026-05-16T05:46:52.092450145+00:00",
+  "last_synced_at": "2026-05-17T06:18:13.737036+00:00",
+  "hub_manifest_hash": "c1cdebc3123d849e75839ff0e7eb49bb14508e4411d23e7d8afe0ee14dfc3e1b",
+  "package_name": "sorokina2009-phya-fhl-on-off-9h-lab"
+}

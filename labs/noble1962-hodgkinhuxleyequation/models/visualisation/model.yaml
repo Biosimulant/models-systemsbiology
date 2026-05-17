@@ -1,0 +1,46 @@
+schema_version: '2.0'
+title: Noble1962_HodgkinHuxleyEquation Visualisation
+description: Question-and-answer and dynamic visual summaries for Noble1962_HodgkinHuxleyEquation.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Noble1962 Hodgkinhuxleyequation Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Noble1962_HodgkinHuxleyEquation.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_noble1962_hodgkinhuxleyequation_model8686121468_model
+      title: Noble1962_HodgkinHuxleyEquation
+      observables:
+      - id: V_membrane
+        port: v_membrane
+        label: V Membrane
+        group: physiology
+      - id: n
+        port: model_state_n
+        label: N
+        group: physiology
+      - id: m
+        port: model_state_m
+        label: M
+        group: physiology
+      - id: h
+        port: model_state_h
+        label: H
+        group: physiology
+io:
+  inputs: []
+  outputs: []

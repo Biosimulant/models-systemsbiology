@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "b8fc90c7-2472-403d-9289-d184bdcb1b7a",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "014afecb-02a9-43c4-92e0-f678b0fa26a9",
+  "created_at": "2026-05-16T05:46:44.437618140+00:00",
+  "last_synced_at": "2026-05-17T03:58:17.519317+00:00",
+  "hub_manifest_hash": "d091c8269118e152eff47b781c40efbd1ebb7b4fd3ecffa865d89995ac86e209",
+  "package_name": "karagiannis2004-collageniproteolysis-lab"
+}

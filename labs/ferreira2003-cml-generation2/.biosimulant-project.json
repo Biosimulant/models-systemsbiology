@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "eaad2629-6443-451f-8881-5011e882350c",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "2c28309e-329d-41ae-8251-ea7e81780671",
+  "created_at": "2026-05-16T05:46:43.231497939+00:00",
+  "last_synced_at": "2026-05-17T03:09:10.334441+00:00",
+  "hub_manifest_hash": "fed48eebc7354a60edcaca261433272223cc10c7a678360b3e93bc3f181c4793",
+  "package_name": "ferreira2003-cml-generation2-lab"
+}

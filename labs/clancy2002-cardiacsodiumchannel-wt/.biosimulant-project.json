@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "9382b8d9-b5d9-4725-a1f4-ccec9efdcd55",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "dba77842-30c5-444e-9b6b-aa1d124ef0e3",
+  "created_at": "2026-05-16T05:46:42.440496115+00:00",
+  "last_synced_at": "2026-05-17T02:37:54.618107+00:00",
+  "hub_manifest_hash": "afa0df6170dc8c4409fb895a77ccbc879150c5eddfd449c53efbe16255679e8e",
+  "package_name": "clancy2002-cardiacsodiumchannel-wt-lab"
+}

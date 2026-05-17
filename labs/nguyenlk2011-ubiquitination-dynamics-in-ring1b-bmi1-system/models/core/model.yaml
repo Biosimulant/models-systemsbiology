@@ -1,0 +1,110 @@
+schema_version: '2.0'
+title: NguyenLK2011 - Ubiquitination dynamics in Ring1B/Bmi1 system
+description: NguyenLK2011 - Ubiquitination dynamics inRing1B-Bmi1 system This theoretical
+  model investigates thedynamics of Ring1B/Bmi1 ubiquitination to identify bistableswitch-like
+  and oscillatory behaviour in t. It can be used to explore systemsbiology nguyenlk2011
+  ubiquitination dynamics in ring1b dynamics and compare simulation behavior across
+  conditions.
+standard: other
+tags:
+- cellcycle
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Lan K Nguyen
+- Javier Muñoz-García
+- Helene Maccario
+- Aaron Ciechanover
+- Walter Kolch
+upstream:
+  id: biomodels_ebi:BIOMD0000000622
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000622
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000622
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000622?filename=BIOMD0000000622_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.nguyenlk2011_ubiquitination_dynamics_in_ring1b_b_biomd0000000622_model:Nguyenlk2011UbiquitinationDynamicsInRing1bBBiomd0000000622Model
+  init_kwargs:
+    model_path: data/BIOMD0000000622.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_bmi1
+    maps_to: Bmi1
+    label: Initial Bmi1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Bmi1`.
+  - name: initial_bmi1ubd
+    maps_to: Bmi1ubd
+    label: Initial Bmi1ubd
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Bmi1ubd`.
+  - name: initial_usp7tot
+    maps_to: USP7tot
+    label: Initial Usp7tot
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `USP7tot`.
+  - name: initial_r1_buba
+    maps_to: R1Buba
+    label: Initial R1 Buba
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `R1Buba`.
+  - name: initial_model_state_zub
+    maps_to: Zub
+    label: Initial Model State Zub
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Zub`.
+  - name: initial_r1_bubd
+    maps_to: R1Bubd
+    label: Initial R1 Bubd
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `R1Bubd`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: bmi1
+    maps_to: Bmi1
+    label: Bmi1
+    description: Bmi1. Maps to SBML symbol `Bmi1`.
+  - name: bmi1ubd
+    maps_to: Bmi1ubd
+    label: Bmi1ubd
+    description: Bmi1ubd. Maps to SBML symbol `Bmi1ubd`.
+  - name: usp7tot
+    maps_to: USP7tot
+    label: USP7tot
+    description: USP7tot. Maps to SBML symbol `USP7tot`.
+  - name: r1_buba
+    maps_to: R1Buba
+    label: R1Buba
+    description: R1Buba. Maps to SBML symbol `R1Buba`.
+  - name: zub
+    maps_to: Zub
+    label: Zub
+    description: Zub. Maps to SBML symbol `Zub`.
+  - name: r1_bubd
+    maps_to: R1Bubd
+    label: R1Bubd
+    description: R1Bubd. Maps to SBML symbol `R1Bubd`.

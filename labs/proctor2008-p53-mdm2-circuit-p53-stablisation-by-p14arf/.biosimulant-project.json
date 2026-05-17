@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "2e09608c-5248-4640-9be4-c34c84fe1c1a",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "76d2950c-0fac-4698-abe5-df2515e718e2",
+  "created_at": "2026-05-16T05:46:50.716159103+00:00",
+  "last_synced_at": "2026-05-17T05:35:53.446703+00:00",
+  "hub_manifest_hash": "3e77886507714198d6a7222e6e884e679ef3e1d310036414a68c0a0fffb5a79e",
+  "package_name": "proctor2008-p53-mdm2-circuit-p53-stablisation-by-p14arf-lab"
+}

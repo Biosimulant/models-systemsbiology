@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Rodriguez-Caso2006_Polyamine_Metabolism
+description: 'SBML creators: Armando Reyes-Palomares * , Carlos Rodríguez-Caso +,
+  Raul Montañez * , Marta Cascante $, Francisca Sánchez-Jiménez * , Miguel A. Medina
+  * * ProCel Group, Department of Molecular Biology.'
+standard: other
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Carlos Rodríguez-Caso
+- Raúl Montañez
+- Marta Cascante
+- Francisca Sánchez-Jiménez
+- Miguel A Medina
+upstream:
+  id: biomodels_ebi:BIOMD0000000190
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000190
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000190
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000190?filename=BIOMD0000000190_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.rodriguez_caso2006_polyamine_metabolism_biomd0000000190_model:RodriguezCaso2006PolyamineMetabolismBiomd0000000190Model
+  init_kwargs:
+    model_path: data/BIOMD0000000190.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_l_ornithine
+    maps_to: ORN
+    label: Initial L Ornithine
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ORN`.
+  - name: initial_methionine
+    maps_to: Met
+    label: Initial Methionine
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Met`.
+  - name: initial_acetyl_co_a
+    maps_to: AcCoA
+    label: Initial Acetyl Co A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `AcCoA`.
+  - name: initial_s_adenosyl_l_methionine
+    maps_to: SAM
+    label: Initial S Adenosyl L Methionine
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `SAM`.
+  - name: initial_n1_acetylspermine
+    maps_to: aS
+    label: Initial N1 Acetylspermine
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `aS`.
+  - name: initial_n1_acetylspermidine
+    maps_to: aD
+    label: Initial N1 Acetylspermidine
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `aD`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: l_ornithine
+    maps_to: ORN
+    label: L-Ornithine
+    description: L-Ornithine. Maps to SBML symbol `ORN`.
+  - name: methionine
+    maps_to: Met
+    label: Methionine
+    description: Methionine. Maps to SBML symbol `Met`.
+  - name: acetyl_co_a
+    maps_to: AcCoA
+    label: Acetyl-CoA
+    description: Acetyl-CoA. Maps to SBML symbol `AcCoA`.
+  - name: s_adenosyl_l_methionine
+    maps_to: SAM
+    label: S-adenosyl-L-methionine
+    description: S-adenosyl-L-methionine. Maps to SBML symbol `SAM`.
+  - name: n1_acetylspermine
+    maps_to: aS
+    label: N1-Acetylspermine
+    description: N1-Acetylspermine. Maps to SBML symbol `aS`.
+  - name: n1_acetylspermidine
+    maps_to: aD
+    label: N1-Acetylspermidine
+    description: N1-Acetylspermidine. Maps to SBML symbol `aD`.

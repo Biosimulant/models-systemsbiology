@@ -1,0 +1,66 @@
+schema_version: '2.0'
+title: Morris2009 - α-Synuclein aggregation variable temperature and pH
+description: 'Morris2009 - α-Synuclein aggregationvariable temperature and pH This
+  model is described in the article: Alpha-synuclein aggregation variable temperature
+  and variable pH kinetic data: a re-analysis usi. It can be used to explore systemsbiology
+  morris2009 synuclein aggregation variable temper dynamics and compare simulation
+  behavior across conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Aimee M Morris
+- Richard G Finke
+upstream:
+  id: biomodels_ebi:BIOMD0000000566
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000566
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000566
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000566?filename=BIOMD0000000566_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.morris2009_synuclein_aggregation_variable_temper_biomd0000000566_model:Morris2009SynucleinAggregationVariableTemperBiomd0000000566Model
+  init_kwargs:
+    model_path: data/BIOMD0000000566.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_a
+    maps_to: A
+    label: Initial Model State A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `A`.
+  - name: initial_model_state_b
+    maps_to: B
+    label: Initial Model State B
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `B`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_a
+    maps_to: A
+    label: A
+    description: A. Maps to SBML symbol `A`.
+  - name: model_state_b
+    maps_to: B
+    label: B
+    description: B. Maps to SBML symbol `B`.

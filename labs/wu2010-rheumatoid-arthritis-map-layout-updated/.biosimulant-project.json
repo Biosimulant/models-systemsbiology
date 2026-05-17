@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "937c9e1c-2fba-4516-b4a8-33a4a23ff73f",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "fde3ddab-a647-4714-9484-eb63ff896424",
+  "created_at": "2026-05-16T05:46:53.377891443+00:00",
+  "last_synced_at": "2026-05-17T06:58:13.584794+00:00",
+  "hub_manifest_hash": "d1dcd24be8d6f56f2964b8ff9a1eff7a190b3931202793f29b1266ede046b6ca",
+  "package_name": "wu2010-rheumatoid-arthritis-map-layout-updated-lab"
+}

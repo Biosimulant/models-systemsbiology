@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Szymanska2009 - Mathematical modeling of heat shock protein synthesis in response
+  to temperature change
+description: This is a mathematical model of heat shock protein synthesis induced
+  by an external temperature stimulus. The model consists of a system of nine nonlinear
+  ordinary differential equations describing th.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Zuzanna Szymańska
+- Maciej Zylicz
+upstream:
+  id: biomodels_ebi:BIOMD0000000896
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000896
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000896
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000896?filename=Szymanska2009.xml
+  license: CC0
+biosim:
+  entrypoint: src.szymanska2009_mathematical_modeling_of_heat_shoc_biomd0000000896_model:Szymanska2009MathematicalModelingOfHeatShocBiomd0000000896Model
+  init_kwargs:
+    model_path: data/BIOMD0000000896.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_hsp70_hsf
+    maps_to: Hsp70_HSF
+    label: Initial Hsp70 Hsf
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Hsp70_HSF`.
+  - name: initial_mrna
+    maps_to: mRNA
+    label: Initial MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mRNA`.
+  - name: initial_hsf_3_hse
+    maps_to: HSF_3_HSE
+    label: Initial Hsf 3 Hse
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `HSF_3_HSE`.
+  - name: initial_hsf_3
+    maps_to: HSF_3
+    label: Initial Hsf 3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `HSF_3`.
+  - name: initial_hsp70_s
+    maps_to: Hsp70_S
+    label: Initial Hsp70 S
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Hsp70_S`.
+  - name: initial_model_state_hse
+    maps_to: HSE
+    label: Initial Model State Hse
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `HSE`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: hsp70_hsf
+    maps_to: Hsp70_HSF
+    label: Hsp70_HSF
+    description: Hsp70_HSF. Maps to SBML symbol `Hsp70_HSF`.
+  - name: mrna
+    maps_to: mRNA
+    label: mRNA
+    description: mRNA. Maps to SBML symbol `mRNA`.
+  - name: hsf_3_hse
+    maps_to: HSF_3_HSE
+    label: HSF_3_HSE
+    description: HSF_3_HSE. Maps to SBML symbol `HSF_3_HSE`.
+  - name: hsf_3
+    maps_to: HSF_3
+    label: HSF_3
+    description: HSF_3. Maps to SBML symbol `HSF_3`.
+  - name: hsp70_s
+    maps_to: Hsp70_S
+    label: Hsp70_S
+    description: Hsp70_S. Maps to SBML symbol `Hsp70_S`.
+  - name: hse
+    maps_to: HSE
+    label: HSE
+    description: HSE. Maps to SBML symbol `HSE`.

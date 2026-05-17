@@ -1,0 +1,66 @@
+schema_version: '2.0'
+title: Leloup1998 Circclock Ld Lab
+description: 'Leloup and Goldbeter, 1998 This model was created after the article
+  by Leloup and Goldbeter, J Biol Rhythms 1998, Vol:13(1),pp70-87, pubmedID: 9486845
+  A Model for Circadian Rhythms in Drosophila Incor. It can be used to explore systemsbiology
+  leloup1998 circclock ld BioModels0000000171 dynamics and compare simulation behavior
+  across conditions.'
+models:
+- alias: systemsbiology_sbml_leloup1998_circclock_ld_biomd0000000171_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_leloup1998_circclock_ld_biomd0000000171_model.state
+  to:
+  - visualisation.systemsbiology_sbml_leloup1998_circclock_ld_biomd0000000171_model_state
+- from: systemsbiology_sbml_leloup1998_circclock_ld_biomd0000000171_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_leloup1998_circclock_ld_biomd0000000171_model_summary
+- from: systemsbiology_sbml_leloup1998_circclock_ld_biomd0000000171_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_leloup1998_circclock_ld_biomd0000000171_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- development
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: light_dark_period
+    maps_to: systemsbiology_sbml_leloup1998_circclock_ld_biomd0000000171_model.light_dark_period
+    label: Light Dark Period
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `l_d`.
+  - name: v_d_t_fold_incr_during_light
+    maps_to: systemsbiology_sbml_leloup1998_circclock_ld_biomd0000000171_model.v_d_t_fold_incr_during_light
+    label: V D T Fold Incr During Light
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `v_dT_fac`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_leloup1998_circclock_ld_biomd0000000171_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_leloup1998_circclock_ld_biomd0000000171_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_leloup1998_circclock_ld_biomd0000000171_model.species_labels
+  - name: tim_mrna
+    maps_to: systemsbiology_sbml_leloup1998_circclock_ld_biomd0000000171_model.tim_mrna
+  - name: per_mrna
+    maps_to: systemsbiology_sbml_leloup1998_circclock_ld_biomd0000000171_model.per_mrna
+  - name: tim_pp
+    maps_to: systemsbiology_sbml_leloup1998_circclock_ld_biomd0000000171_model.tim_pp
+  - name: per_tim_complex_nuclear
+    maps_to: systemsbiology_sbml_leloup1998_circclock_ld_biomd0000000171_model.per_tim_complex_nuclear
+  - name: tim_p
+    maps_to: systemsbiology_sbml_leloup1998_circclock_ld_biomd0000000171_model.tim_p
+  - name: tim
+    maps_to: systemsbiology_sbml_leloup1998_circclock_ld_biomd0000000171_model.tim

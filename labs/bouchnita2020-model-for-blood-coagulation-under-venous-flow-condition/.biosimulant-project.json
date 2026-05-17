@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "6f5f4e3a-3ff8-4124-80a6-eb21480971b8",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "5e836c46-ce68-4bce-80db-e51efa1cdd5d",
+  "created_at": "2026-05-16T05:46:41.867662867+00:00",
+  "last_synced_at": "2026-05-17T02:16:57.206986+00:00",
+  "hub_manifest_hash": "e9903f50371980e94e9a8ebe277472dcab25d36b8fc7b7393393225ea49a86b0",
+  "package_name": "bouchnita2020-model-for-blood-coagulation-under-venous-flow-cond"
+}

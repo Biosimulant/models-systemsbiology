@@ -1,0 +1,77 @@
+schema_version: '2.0'
+title: Munz2009 - Zombie SIZRC
+description: Munz2009 - Zombie SIZRC This is the model with an latent infection and
+  cure for zombies described in the article. It can be used to explore systemsbiology
+  munz2009 zombie sizrc BioModels0000000882 dynamics and compare simulation behavior
+  across conditions.
+standard: other
+tags:
+- epidemiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- P. Munz
+- I. Hudea
+- J. Imad and R.J. Smith
+upstream:
+  id: biomodels_ebi:BIOMD0000000882
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000882
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000882
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000882?filename=munz2000.xml
+  license: CC0
+biosim:
+  entrypoint: src.munz2009_zombie_sizrc_biomd0000000882_model:Munz2009ZombieSizrcBiomd0000000882Model
+  init_kwargs:
+    model_path: data/BIOMD0000000882.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_susceptible
+    maps_to: Susceptible
+    label: Initial Susceptible
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Susceptible`.
+  - name: initial_zombie
+    maps_to: Zombie
+    label: Initial Zombie
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Zombie`.
+  - name: initial_removal
+    maps_to: Removal
+    label: Initial Removal
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Removal`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: susceptible
+    maps_to: Susceptible
+    label: Susceptible
+    description: Susceptible. Maps to SBML symbol `Susceptible`.
+  - name: zombie
+    maps_to: Zombie
+    label: Zombie
+    description: Zombie. Maps to SBML symbol `Zombie`.
+  - name: removal
+    maps_to: Removal
+    label: Removal
+    description: Removal. Maps to SBML symbol `Removal`.

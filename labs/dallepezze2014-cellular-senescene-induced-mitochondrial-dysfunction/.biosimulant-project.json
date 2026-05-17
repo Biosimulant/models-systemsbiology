@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "3258e4ca-b0ab-4425-bdae-4c027ac3fafd",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "4a9a3da4-0e78-4b8b-b8ac-ab1c7cdd4198",
+  "created_at": "2026-05-16T05:46:42.638837480+00:00",
+  "last_synced_at": "2026-05-17T02:44:49.348979+00:00",
+  "hub_manifest_hash": "89e65719744daa179c885bbcd476b32d2628a9ea997f56dff05e6654cabce164",
+  "package_name": "dallepezze2014-cellular-senescene-induced-mitochondrial-dysfunct"
+}

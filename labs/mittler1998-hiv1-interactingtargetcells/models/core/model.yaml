@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Mittler1998_HIV1_interactingTargetCells
+description: 'This a model from the article: Influence of delayed viral production
+  on viral dynamics in HIV-1 infectedpatients. It can be used to explore systemsbiology
+  mittler1998 hiv1 interactingtargetcells model1006230055 dynamics and compare simulation
+  behavior across conditions.'
+standard: other
+tags:
+- epidemiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- J E Mittler
+- B Sulzer
+- A U Neumann
+- A S Perelson
+upstream:
+  id: biomodels_ebi:MODEL1006230055
+  source_db: biomodels_ebi
+  source_id: MODEL1006230055
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1006230055
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1006230055?filename=MODEL1006230055_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.mittler1998_hiv1_interactingtargetcells_model1006230055_model:Mittler1998Hiv1InteractingtargetcellsModel1006230055Model
+  init_kwargs:
+    model_path: data/MODEL1006230055.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_vni
+    maps_to: VNI
+    label: Initial Model State Vni
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VNI`.
+  - name: initial_model_state_vi
+    maps_to: VI
+    label: Initial Model State Vi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VI`.
+  - name: initial_model_state_e4
+    maps_to: E4
+    label: Initial Model State E4
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `E4`.
+  - name: initial_model_state_e3
+    maps_to: E3
+    label: Initial Model State E3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `E3`.
+  - name: initial_model_state_e2
+    maps_to: E2
+    label: Initial Model State E2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `E2`.
+  - name: initial_model_state_e1
+    maps_to: E1
+    label: Initial Model State E1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `E1`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: vni
+    maps_to: VNI
+    label: VNI
+    description: VNI. Maps to SBML symbol `VNI`.
+  - name: model_state_vi
+    maps_to: VI
+    label: VI
+    description: VI. Maps to SBML symbol `VI`.
+  - name: model_state_e4
+    maps_to: E4
+    label: E4
+    description: E4. Maps to SBML symbol `E4`.
+  - name: model_state_e3
+    maps_to: E3
+    label: E3
+    description: E3. Maps to SBML symbol `E3`.
+  - name: model_state_e2
+    maps_to: E2
+    label: E2
+    description: E2. Maps to SBML symbol `E2`.
+  - name: model_state_e1
+    maps_to: E1
+    label: E1
+    description: E1. Maps to SBML symbol `E1`.

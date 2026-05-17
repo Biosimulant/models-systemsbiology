@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Sen2013 - Phospholipid Synthesis in P.knowlesi Visualisation
+description: Question-and-answer and dynamic visual summaries for Sen2013 - Phospholipid
+  Synthesis in P.knowlesi.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Sen2013 Phospholipid Synthesis In P Knowlesi Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Sen2013 - Phospholipid Synthesis in P.knowlesi.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_sen2013_phospholipid_synthesis_in_p_knowlesi_biomd0000000495_model
+      title: Sen2013 - Phospholipid Synthesis in P.knowlesi
+      observables:
+      - id: mw73259e20_240e_4f3a_b2e0_9ca248658898
+        port: ser_e
+        label: SerE
+        group: physiology
+      - id: mwcb834e43_dc57_45ae_9452_f4c10955caf1
+        port: p_cho
+        label: PCho
+        group: physiology
+      - id: mw8796c919_9251_4970_8f87_0bca9ecfeb5c
+        port: etn
+        label: Etn
+        group: physiology
+      - id: mw919f8a86_e702_4b24_9cd7_adad694fcf9b
+        port: cho_e
+        label: ChoE
+        group: core_system_state
+      - id: mw15abaa48_d7d0_4845_ae04_c573d289d495
+        port: ser
+        label: Ser
+        group: core_system_state
+      - id: mwfcfaf604_14d4_47a6_b021_226d1fb5497c
+        port: model_state_ps
+        label: PS
+        group: core_system_state
+io:
+  inputs: []
+  outputs: []

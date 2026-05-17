@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Bakker2001 Glycolysis Lab
+description: . It can be used to explore systemsbiology bakker2001 glycolysis BioModels0000000071
+  dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_bakker2001_glycolysis_biomd0000000071_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_bakker2001_glycolysis_biomd0000000071_model.state
+  to:
+  - visualisation.systemsbiology_sbml_bakker2001_glycolysis_biomd0000000071_model_state
+- from: systemsbiology_sbml_bakker2001_glycolysis_biomd0000000071_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_bakker2001_glycolysis_biomd0000000071_model_summary
+- from: systemsbiology_sbml_bakker2001_glycolysis_biomd0000000071_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_bakker2001_glycolysis_biomd0000000071_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_glucose_external
+    maps_to: systemsbiology_sbml_bakker2001_glycolysis_biomd0000000071_model.initial_glucose_external
+    label: Initial Glucose External
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `GlcE`.
+  - name: initial_pyruvate_external
+    maps_to: systemsbiology_sbml_bakker2001_glycolysis_biomd0000000071_model.initial_pyruvate_external
+    label: Initial Pyruvate External
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PyrE`.
+  - name: initial_fructose_1_6_bisphosphate
+    maps_to: systemsbiology_sbml_bakker2001_glycolysis_biomd0000000071_model.initial_fructose_1_6_bisphosphate
+    label: Initial Fructose 1 6 Bisphosphate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Fru16BP`.
+  - name: initial_phosphates_in_glycosome
+    maps_to: systemsbiology_sbml_bakker2001_glycolysis_biomd0000000071_model.initial_phosphates_in_glycosome
+    label: Initial Phosphates In Glycosome
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pg`.
+  - name: initial_phosphates_cytosol
+    maps_to: systemsbiology_sbml_bakker2001_glycolysis_biomd0000000071_model.initial_phosphates_cytosol
+    label: Initial Phosphates Cytosol
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pc`.
+  - name: initial_pyruvate
+    maps_to: systemsbiology_sbml_bakker2001_glycolysis_biomd0000000071_model.initial_pyruvate
+    label: Initial Pyruvate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pyr`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_bakker2001_glycolysis_biomd0000000071_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_bakker2001_glycolysis_biomd0000000071_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_bakker2001_glycolysis_biomd0000000071_model.species_labels
+  - name: glucose_external
+    maps_to: systemsbiology_sbml_bakker2001_glycolysis_biomd0000000071_model.glucose_external
+  - name: pyruvate_external
+    maps_to: systemsbiology_sbml_bakker2001_glycolysis_biomd0000000071_model.pyruvate_external
+  - name: fructose_1_6_bisphosphate
+    maps_to: systemsbiology_sbml_bakker2001_glycolysis_biomd0000000071_model.fructose_1_6_bisphosphate
+  - name: phosphates_in_glycosome
+    maps_to: systemsbiology_sbml_bakker2001_glycolysis_biomd0000000071_model.phosphates_in_glycosome
+  - name: phosphates_cytosol
+    maps_to: systemsbiology_sbml_bakker2001_glycolysis_biomd0000000071_model.phosphates_cytosol
+  - name: pyruvate
+    maps_to: systemsbiology_sbml_bakker2001_glycolysis_biomd0000000071_model.pyruvate

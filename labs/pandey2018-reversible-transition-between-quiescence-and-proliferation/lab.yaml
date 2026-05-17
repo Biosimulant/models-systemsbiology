@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Pandey2018 Reversible Transition Between Quiescence And Proliferation Lab
+description: Cells switch between quiescence and proliferation states for maintaining
+  tissue homeostasis and regeneration. At the restriction point (R-point), cells become
+  irreversibly committed to the completion.
+models:
+- alias: systemsbiology_sbml_pandey2018_reversible_transition_between_quiesce_biomd0000000954_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_pandey2018_reversible_transition_between_quiesce_biomd0000000954_model.state
+  to:
+  - visualisation.systemsbiology_sbml_pandey2018_reversible_transition_between_quiesce_biomd0000000954_model_state
+- from: systemsbiology_sbml_pandey2018_reversible_transition_between_quiesce_biomd0000000954_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_pandey2018_reversible_transition_between_quiesce_biomd0000000954_model_summary
+- from: systemsbiology_sbml_pandey2018_reversible_transition_between_quiesce_biomd0000000954_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_pandey2018_reversible_transition_between_quiesce_biomd0000000954_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_cdh1dp
+    maps_to: systemsbiology_sbml_pandey2018_reversible_transition_between_quiesce_biomd0000000954_model.initial_cdh1dp
+    label: Initial Cdh1dp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Cdh1dp`.
+  - name: initial_cdh1_t
+    maps_to: systemsbiology_sbml_pandey2018_reversible_transition_between_quiesce_biomd0000000954_model.initial_cdh1_t
+    label: Initial Cdh1 T
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Cdh1T`.
+  - name: initial_cdh1
+    maps_to: systemsbiology_sbml_pandey2018_reversible_transition_between_quiesce_biomd0000000954_model.initial_cdh1
+    label: Initial Cdh1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Cdh1`.
+  - name: initial_model_state_rb
+    maps_to: systemsbiology_sbml_pandey2018_reversible_transition_between_quiesce_biomd0000000954_model.initial_model_state_rb
+    label: Initial Model State Rb
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Rb`.
+  - name: initial_cki_t
+    maps_to: systemsbiology_sbml_pandey2018_reversible_transition_between_quiesce_biomd0000000954_model.initial_cki_t
+    label: Initial Cki T
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CkiT`.
+  - name: initial_cyc_et
+    maps_to: systemsbiology_sbml_pandey2018_reversible_transition_between_quiesce_biomd0000000954_model.initial_cyc_et
+    label: Initial Cyc Et
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CycET`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_pandey2018_reversible_transition_between_quiesce_biomd0000000954_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_pandey2018_reversible_transition_between_quiesce_biomd0000000954_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_pandey2018_reversible_transition_between_quiesce_biomd0000000954_model.species_labels
+  - name: cdh1dp
+    maps_to: systemsbiology_sbml_pandey2018_reversible_transition_between_quiesce_biomd0000000954_model.cdh1dp
+  - name: cdh1_t
+    maps_to: systemsbiology_sbml_pandey2018_reversible_transition_between_quiesce_biomd0000000954_model.cdh1_t
+  - name: cdh1
+    maps_to: systemsbiology_sbml_pandey2018_reversible_transition_between_quiesce_biomd0000000954_model.cdh1
+  - name: model_state_rb
+    maps_to: systemsbiology_sbml_pandey2018_reversible_transition_between_quiesce_biomd0000000954_model.model_state_rb
+  - name: cki_t
+    maps_to: systemsbiology_sbml_pandey2018_reversible_transition_between_quiesce_biomd0000000954_model.cki_t
+  - name: cyc_et
+    maps_to: systemsbiology_sbml_pandey2018_reversible_transition_between_quiesce_biomd0000000954_model.cyc_et

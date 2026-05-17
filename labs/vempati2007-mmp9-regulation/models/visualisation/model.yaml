@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Vempati2007_MMP9_Regulation Visualisation
+description: Question-and-answer and dynamic visual summaries for Vempati2007_MMP9_Regulation.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Vempati2007 Mmp9 Regulation Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Vempati2007_MMP9_Regulation.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_vempati2007_mmp9_regulation_model7888000034_model
+      title: Vempati2007_MMP9_Regulation
+      observables:
+      - id: Tr_pM9_T1_M3
+        port: tr_pm9_t1_m3
+        label: Tr PM9 T1 M3
+        group: gene_regulation
+      - id: Tr_pM9_T1
+        port: tr_pm9_t1
+        label: Tr PM9 T1
+        group: gene_regulation
+      - id: Tr_pM9
+        port: tr_pm9
+        label: Tr PM9
+        group: gene_regulation
+      - id: Tr
+        port: model_state_tr
+        label: Tr
+        group: gene_regulation
+      - id: T1
+        port: model_state_t1
+        label: T1
+        group: gene_regulation
+      - id: pM9_T1_M3
+        port: pm9_t1_m3
+        label: PM9 T1 M3
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

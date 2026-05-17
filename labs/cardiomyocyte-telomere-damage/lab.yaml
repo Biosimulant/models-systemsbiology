@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Cardiomyocyte Telomere Damage Lab
+description: Systems Biology Cardiomyocyte Telomere Damage Model1608250000Model represents
+  systemsbiology cardiomyocyte telomere damage model1608250000 mechanisms from biomodels_ebi
+  reference biomodels_ebi:MODEL1608250000. When you run it, you can inspect state
+  and compare temporal behavior between baseline and adjusted inputs.
+models:
+- alias: systemsbiology_sbml_cardiomyocyte_telomere_damage_model1608250000_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_cardiomyocyte_telomere_damage_model1608250000_model.state
+  to:
+  - visualisation.systemsbiology_sbml_cardiomyocyte_telomere_damage_model1608250000_model_state
+- from: systemsbiology_sbml_cardiomyocyte_telomere_damage_model1608250000_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_cardiomyocyte_telomere_damage_model1608250000_model_summary
+- from: systemsbiology_sbml_cardiomyocyte_telomere_damage_model1608250000_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_cardiomyocyte_telomere_damage_model1608250000_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_ros
+    maps_to: systemsbiology_sbml_cardiomyocyte_telomere_damage_model1608250000_model.initial_model_state_ros
+    label: Initial Model State Ros
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ROS`.
+  - name: initial_intact
+    maps_to: systemsbiology_sbml_cardiomyocyte_telomere_damage_model1608250000_model.initial_intact
+    label: Initial Intact
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `intact`.
+  - name: initial_one_taf
+    maps_to: systemsbiology_sbml_cardiomyocyte_telomere_damage_model1608250000_model.initial_one_taf
+    label: Initial One Taf
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `one_taf`.
+  - name: initial_source
+    maps_to: systemsbiology_sbml_cardiomyocyte_telomere_damage_model1608250000_model.initial_source
+    label: Initial Source
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Source`.
+  - name: initial_two_taf_div
+    maps_to: systemsbiology_sbml_cardiomyocyte_telomere_damage_model1608250000_model.initial_two_taf_div
+    label: Initial Two Taf Div
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `two_taf_div`.
+  - name: initial_two_taf
+    maps_to: systemsbiology_sbml_cardiomyocyte_telomere_damage_model1608250000_model.initial_two_taf
+    label: Initial Two Taf
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `two_taf`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_cardiomyocyte_telomere_damage_model1608250000_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_cardiomyocyte_telomere_damage_model1608250000_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_cardiomyocyte_telomere_damage_model1608250000_model.species_labels
+  - name: ros
+    maps_to: systemsbiology_sbml_cardiomyocyte_telomere_damage_model1608250000_model.ros
+  - name: intact
+    maps_to: systemsbiology_sbml_cardiomyocyte_telomere_damage_model1608250000_model.intact
+  - name: one_taf
+    maps_to: systemsbiology_sbml_cardiomyocyte_telomere_damage_model1608250000_model.one_taf
+  - name: source
+    maps_to: systemsbiology_sbml_cardiomyocyte_telomere_damage_model1608250000_model.source
+  - name: two_taf_div
+    maps_to: systemsbiology_sbml_cardiomyocyte_telomere_damage_model1608250000_model.two_taf_div
+  - name: two_taf
+    maps_to: systemsbiology_sbml_cardiomyocyte_telomere_damage_model1608250000_model.two_taf

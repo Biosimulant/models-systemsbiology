@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "5a8242ad-d656-48b7-bab5-ee10c4d66afd",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "6caf76a5-746b-40db-a822-40ac6f979dc8",
+  "created_at": "2026-05-16T05:46:46.335238696+00:00",
+  "last_synced_at": "2026-05-17T04:44:25.803684+00:00",
+  "hub_manifest_hash": "a5e6712f7c5c840cae93adacf16bb4d07c001aaf775746ed736d5935d6010891",
+  "package_name": "maltsev2009-pacemakercellmodel-nonsteadystate-lab"
+}

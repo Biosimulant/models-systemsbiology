@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Tikidji Hamburyan2018 Rod Phototransduction Under Strong Illumination Lab
+description: 'Tikidji-Hamburyan2018 - Rod phototransductionunder strong illumination
+  This model is described in the article: Rods progressively escape saturation to
+  drive visual responses in daylight conditions. It can be used to explore systemsbiology
+  tikidji hamburyan2018 rod phototransduction unde dynamics and compare simulation
+  behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_tikidji_hamburyan2018_rod_phototransduction_unde_model1710030000_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_tikidji_hamburyan2018_rod_phototransduction_unde_model1710030000_model.state
+  to:
+  - visualisation.systemsbiology_sbml_tikidji_hamburyan2018_rod_phototransduction_unde_model1710030000_model_state
+- from: systemsbiology_sbml_tikidji_hamburyan2018_rod_phototransduction_unde_model1710030000_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_tikidji_hamburyan2018_rod_phototransduction_unde_model1710030000_model_summary
+- from: systemsbiology_sbml_tikidji_hamburyan2018_rod_phototransduction_unde_model1710030000_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_tikidji_hamburyan2018_rod_phototransduction_unde_model1710030000_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_os_cp_trash_ca
+    maps_to: systemsbiology_sbml_tikidji_hamburyan2018_rod_phototransduction_unde_model1710030000_model.initial_os_cp_trash_ca
+    label: Initial Os Cp Trash Ca
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S220`.
+  - name: initial_is_cp_arr_bs_1_bs_2
+    maps_to: systemsbiology_sbml_tikidji_hamburyan2018_rod_phototransduction_unde_model1710030000_model.initial_is_cp_arr_bs_1_bs_2
+    label: Initial Is Cp Arr Bs 1 Bs 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S49`.
+  - name: initial_os_dm_rhod_act_i_bs_1_ps_1_p0
+    maps_to: systemsbiology_sbml_tikidji_hamburyan2018_rod_phototransduction_unde_model1710030000_model.initial_os_dm_rhod_act_i_bs_1_ps_1_p0
+    label: Initial Os Dm Rhod Act I Bs 1 Ps 1 P0
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S11`.
+  - name: initial_os_cp_gt_a_g_dp_1_gt_bg_bs_1_1_bs_2
+    maps_to: systemsbiology_sbml_tikidji_hamburyan2018_rod_phototransduction_unde_model1710030000_model.initial_os_cp_gt_a_g_dp_1_gt_bg_bs_1_1_bs_2
+    label: Initial Os Cp Gt A G Dp 1 Gt Bg Bs 1 1 Bs 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S44`.
+  - name: initial_os_cp_rk_bs_1_1_rec_bs_1_2_w_ca2_bs_1_2_bs_2_1
+    maps_to: systemsbiology_sbml_tikidji_hamburyan2018_rod_phototransduction_unde_model1710030000_model.initial_os_cp_rk_bs_1_1_rec_bs_1_2_w_ca2_bs_1_2_bs_2_1
+    label: Initial Os Cp Rk Bs 1 1 Rec Bs 1 2 W CA2 Bs 1 2 Bs 2 1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S24`.
+  - name: initial_is_cp_rec_t_bs_1_bs_2
+    maps_to: systemsbiology_sbml_tikidji_hamburyan2018_rod_phototransduction_unde_model1710030000_model.initial_is_cp_rec_t_bs_1_bs_2
+    label: Initial Is Cp Rec T Bs 1 Bs 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S81`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_tikidji_hamburyan2018_rod_phototransduction_unde_model1710030000_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_tikidji_hamburyan2018_rod_phototransduction_unde_model1710030000_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_tikidji_hamburyan2018_rod_phototransduction_unde_model1710030000_model.species_labels
+  - name: os_cp_trash_ca
+    maps_to: systemsbiology_sbml_tikidji_hamburyan2018_rod_phototransduction_unde_model1710030000_model.os_cp_trash_ca
+  - name: is_cp_arr_bs_1_bs_2
+    maps_to: systemsbiology_sbml_tikidji_hamburyan2018_rod_phototransduction_unde_model1710030000_model.is_cp_arr_bs_1_bs_2
+  - name: os_dm_rhod_act_i_bs_1_ps_1_p0
+    maps_to: systemsbiology_sbml_tikidji_hamburyan2018_rod_phototransduction_unde_model1710030000_model.os_dm_rhod_act_i_bs_1_ps_1_p0
+  - name: os_cp_gt_a_g_dp_1_gt_bg_bs_1_1_bs_2
+    maps_to: systemsbiology_sbml_tikidji_hamburyan2018_rod_phototransduction_unde_model1710030000_model.os_cp_gt_a_g_dp_1_gt_bg_bs_1_1_bs_2
+  - name: os_cp_rk_bs_1_1_rec_bs_1_2_w_ca2_bs_1_2_bs_2_1
+    maps_to: systemsbiology_sbml_tikidji_hamburyan2018_rod_phototransduction_unde_model1710030000_model.os_cp_rk_bs_1_1_rec_bs_1_2_w_ca2_bs_1_2_bs_2_1
+  - name: is_cp_rec_t_bs_1_bs_2
+    maps_to: systemsbiology_sbml_tikidji_hamburyan2018_rod_phototransduction_unde_model1710030000_model.is_cp_rec_t_bs_1_bs_2

@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Karagiannis2004_CollagenIproteolysis Visualisation
+description: Question-and-answer and dynamic visual summaries for Karagiannis2004_CollagenIproteolysis.
+standard: other
+tags:
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Karagiannis2004 Collageniproteolysis Lab
+    question: 'Which drug, dose, or target-linked model states drive the simulated
+      profile? Source model: Karagiannis2004_CollagenIproteolysis.'
+    answer_focus: Q/A table plus pharmacology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_karagiannis2004_collageniproteolysis_model0911270007_model
+      title: Karagiannis2004_CollagenIproteolysis
+      observables:
+      - id: T2
+        port: model_state_t2
+        label: T2
+        group: gene_regulation
+      - id: MT1t
+        port: mt1t
+        label: MT1t
+        group: gene_regulation
+      - id: MT1cat
+        port: mt1cat
+        label: MT1cat
+        group: gene_regulation
+      - id: MT1_T2_star
+        port: mt1_t2_star
+        label: MT1 T2 Star
+        group: gene_regulation
+      - id: MT1_T2_M2p_MT1
+        port: mt1_t2_m2_p_mt1
+        label: MT1 T2 M2P MT1
+        group: gene_regulation
+      - id: MT1_T2_M2p
+        port: mt1_t2_m2_p
+        label: MT1 T2 M2P
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

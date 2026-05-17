@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Leloup2003 Circclock Dd Rev Erbalpha Lab
+description: This is model in continous darkness (DD) described in the article Toward
+  a detailed computational model for the mammalian circadian clock This model features
+  the full interlocked negative and positive. It can be used to explore systemsbiology
+  leloup2003 circclock dd rev erbalpha dynamics and compare simulation behavior across
+  conditions.
+models:
+- alias: systemsbiology_sbml_leloup2003_circclock_dd_rev_erbalpha_biomd0000000074_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_leloup2003_circclock_dd_rev_erbalpha_biomd0000000074_model.state
+  to:
+  - visualisation.systemsbiology_sbml_leloup2003_circclock_dd_rev_erbalpha_biomd0000000074_model_state
+- from: systemsbiology_sbml_leloup2003_circclock_dd_rev_erbalpha_biomd0000000074_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_leloup2003_circclock_dd_rev_erbalpha_biomd0000000074_model_summary
+- from: systemsbiology_sbml_leloup2003_circclock_dd_rev_erbalpha_biomd0000000074_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_leloup2003_circclock_dd_rev_erbalpha_biomd0000000074_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_rn
+    maps_to: systemsbiology_sbml_leloup2003_circclock_dd_rev_erbalpha_biomd0000000074_model.initial_model_state_rn
+    label: Initial Model State Rn
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_18`.
+  - name: initial_model_state_rc
+    maps_to: systemsbiology_sbml_leloup2003_circclock_dd_rev_erbalpha_biomd0000000074_model.initial_model_state_rc
+    label: Initial Model State Rc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_17`.
+  - name: initial_model_state_pcp
+    maps_to: systemsbiology_sbml_leloup2003_circclock_dd_rev_erbalpha_biomd0000000074_model.initial_model_state_pcp
+    label: Initial Model State Pcp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_9`.
+  - name: initial_model_state_pc
+    maps_to: systemsbiology_sbml_leloup2003_circclock_dd_rev_erbalpha_biomd0000000074_model.initial_model_state_pc
+    label: Initial Model State Pc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_8`.
+  - name: initial_p_cnp
+    maps_to: systemsbiology_sbml_leloup2003_circclock_dd_rev_erbalpha_biomd0000000074_model.initial_p_cnp
+    label: Initial P Cnp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_14`.
+  - name: initial_p_cn
+    maps_to: systemsbiology_sbml_leloup2003_circclock_dd_rev_erbalpha_biomd0000000074_model.initial_p_cn
+    label: Initial P Cn
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_12`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_leloup2003_circclock_dd_rev_erbalpha_biomd0000000074_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_leloup2003_circclock_dd_rev_erbalpha_biomd0000000074_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_leloup2003_circclock_dd_rev_erbalpha_biomd0000000074_model.species_labels
+  - name: model_state_rn
+    maps_to: systemsbiology_sbml_leloup2003_circclock_dd_rev_erbalpha_biomd0000000074_model.model_state_rn
+  - name: model_state_rc
+    maps_to: systemsbiology_sbml_leloup2003_circclock_dd_rev_erbalpha_biomd0000000074_model.model_state_rc
+  - name: pcp
+    maps_to: systemsbiology_sbml_leloup2003_circclock_dd_rev_erbalpha_biomd0000000074_model.pcp
+  - name: model_state_pc
+    maps_to: systemsbiology_sbml_leloup2003_circclock_dd_rev_erbalpha_biomd0000000074_model.model_state_pc
+  - name: p_cnp
+    maps_to: systemsbiology_sbml_leloup2003_circclock_dd_rev_erbalpha_biomd0000000074_model.p_cnp
+  - name: p_cn
+    maps_to: systemsbiology_sbml_leloup2003_circclock_dd_rev_erbalpha_biomd0000000074_model.p_cn

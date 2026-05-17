@@ -1,0 +1,80 @@
+schema_version: '2.0'
+title: Plant1981 Burstingnervecells Lab
+description: 'This a model from the article: Bifurcation and resonance in a model
+  for bursting nerve cells. Plant RE J Math Biol 1981 Jan; 11(1): 15-32 7252375 ,
+  Abstract: In this paper we consider a model for the.'
+models:
+- alias: systemsbiology_sbml_plant1981_burstingnervecells_biomd0000000304_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_plant1981_burstingnervecells_biomd0000000304_model.state
+  to:
+  - visualisation.systemsbiology_sbml_plant1981_burstingnervecells_biomd0000000304_model_state
+- from: systemsbiology_sbml_plant1981_burstingnervecells_biomd0000000304_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_plant1981_burstingnervecells_biomd0000000304_model_summary
+- from: systemsbiology_sbml_plant1981_burstingnervecells_biomd0000000304_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_plant1981_burstingnervecells_biomd0000000304_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- neuroscience
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_v
+    maps_to: systemsbiology_sbml_plant1981_burstingnervecells_biomd0000000304_model.initial_model_state_v
+    label: Initial Model State V
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `V_membrane`.
+  - name: initial_model_state_h1
+    maps_to: systemsbiology_sbml_plant1981_burstingnervecells_biomd0000000304_model.initial_model_state_h1
+    label: Initial Model State H1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `h1`.
+  - name: initial_model_state_x1
+    maps_to: systemsbiology_sbml_plant1981_burstingnervecells_biomd0000000304_model.initial_model_state_x1
+    label: Initial Model State X1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x1`.
+  - name: initial_model_state_n1
+    maps_to: systemsbiology_sbml_plant1981_burstingnervecells_biomd0000000304_model.initial_model_state_n1
+    label: Initial Model State N1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `n1`.
+  - name: initial_model_state_c
+    maps_to: systemsbiology_sbml_plant1981_burstingnervecells_biomd0000000304_model.initial_model_state_c
+    label: Initial Model State C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `c`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_plant1981_burstingnervecells_biomd0000000304_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_plant1981_burstingnervecells_biomd0000000304_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_plant1981_burstingnervecells_biomd0000000304_model.species_labels
+  - name: model_state_v
+    maps_to: systemsbiology_sbml_plant1981_burstingnervecells_biomd0000000304_model.model_state_v
+  - name: model_state_h1
+    maps_to: systemsbiology_sbml_plant1981_burstingnervecells_biomd0000000304_model.model_state_h1
+  - name: model_state_x1
+    maps_to: systemsbiology_sbml_plant1981_burstingnervecells_biomd0000000304_model.model_state_x1
+  - name: model_state_n1
+    maps_to: systemsbiology_sbml_plant1981_burstingnervecells_biomd0000000304_model.model_state_n1
+  - name: model_state_c
+    maps_to: systemsbiology_sbml_plant1981_burstingnervecells_biomd0000000304_model.model_state_c

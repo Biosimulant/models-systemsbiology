@@ -1,0 +1,86 @@
+schema_version: '2.0'
+title: Zhang2007 - Mechanism of DNA damage response (Model1)
+description: Its a mechanistic model explaining the impact of p53 om apoptosis decision.
+  It can be used to explore systemsbiology zhang2007 mechanism of dna damage dynamics
+  and compare simulation behavior across conditions.
+standard: other
+tags:
+- cellcycle
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Tongli Zhang
+- Paul Brazhnik
+- John J Tyson
+upstream:
+  id: biomodels_ebi:BIOMD0000001007
+  source_db: biomodels_ebi
+  source_id: BIOMD0000001007
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001007
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001007?filename=Zhang2007_M1_lowDD.xml
+  license: CC0
+biosim:
+  entrypoint: src.zhang2007_mechanism_of_dna_damage_response_model_biomd0000001007_model:Zhang2007MechanismOfDnaDamageResponseModelBiomd0000001007Model
+  init_kwargs:
+    model_path: data/BIOMD0000001007.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_dn_adamage
+    maps_to: DNAdamage
+    label: Initial Dn Adamage
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `DNAdamage`.
+  - name: initial_model_state_p53
+    maps_to: p53
+    label: Initial Model State P53
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `p53`.
+  - name: initial_mdm2nuc
+    maps_to: MDM2nuc
+    label: Initial Mdm2nuc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MDM2nuc`.
+  - name: initial_mdm2cyt
+    maps_to: MDM2cyt
+    label: Initial Mdm2cyt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MDM2cyt`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: dn_adamage
+    maps_to: DNAdamage
+    label: DNAdamage
+    description: DNAdamage. Maps to SBML symbol `DNAdamage`.
+  - name: p53
+    maps_to: p53
+    label: p53
+    description: p53. Maps to SBML symbol `p53`.
+  - name: mdm2nuc
+    maps_to: MDM2nuc
+    label: MDM2nuc
+    description: MDM2nuc. Maps to SBML symbol `MDM2nuc`.
+  - name: mdm2cyt
+    maps_to: MDM2cyt
+    label: MDM2cyt
+    description: MDM2cyt. Maps to SBML symbol `MDM2cyt`.

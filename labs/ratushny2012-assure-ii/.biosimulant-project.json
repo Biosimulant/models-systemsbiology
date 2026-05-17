@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "15afa43f-1e99-4b96-acf9-b4abb1bf3bcb",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "8dbc5bfd-c49d-47ef-a283-330bef3aa512",
+  "created_at": "2026-05-16T05:46:51.247390410+00:00",
+  "last_synced_at": "2026-05-17T05:53:25.160396+00:00",
+  "hub_manifest_hash": "4fd0787280ff6db903a7e681b095a43aa8de1c26594791e39a0cda1cf11a9fcd",
+  "package_name": "ratushny2012-assure-ii-lab"
+}

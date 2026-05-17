@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Brands2002 Monosaccharide Casein Systems Lab
+description: 'Brands2002 - Monosaccharide-casein systems A kinetic model of the Maillard
+  reaction occurring in heated monosaccharide-casein system. This model is described
+  in the article: Kinetic modeling of reacti.'
+models:
+- alias: systemsbiology_sbml_brands2002_monosaccharide_casein_systems_biomd0000000052_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_brands2002_monosaccharide_casein_systems_biomd0000000052_model.state
+  to:
+  - visualisation.systemsbiology_sbml_brands2002_monosaccharide_casein_systems_biomd0000000052_model_state
+- from: systemsbiology_sbml_brands2002_monosaccharide_casein_systems_biomd0000000052_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_brands2002_monosaccharide_casein_systems_biomd0000000052_model_summary
+- from: systemsbiology_sbml_brands2002_monosaccharide_casein_systems_biomd0000000052_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_brands2002_monosaccharide_casein_systems_biomd0000000052_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_glu
+    maps_to: systemsbiology_sbml_brands2002_monosaccharide_casein_systems_biomd0000000052_model.initial_model_state_glu
+    label: Initial Model State Glu
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Glu`.
+  - name: initial_lys_r
+    maps_to: systemsbiology_sbml_brands2002_monosaccharide_casein_systems_biomd0000000052_model.initial_lys_r
+    label: Initial Lys R
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `lys_R`.
+  - name: initial_triose
+    maps_to: systemsbiology_sbml_brands2002_monosaccharide_casein_systems_biomd0000000052_model.initial_triose
+    label: Initial Triose
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Triose`.
+  - name: initial_melanoidin
+    maps_to: systemsbiology_sbml_brands2002_monosaccharide_casein_systems_biomd0000000052_model.initial_melanoidin
+    label: Initial Melanoidin
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Melanoidin`.
+  - name: initial_model_state_fru
+    maps_to: systemsbiology_sbml_brands2002_monosaccharide_casein_systems_biomd0000000052_model.initial_model_state_fru
+    label: Initial Model State Fru
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Fru`.
+  - name: initial_formic_acid
+    maps_to: systemsbiology_sbml_brands2002_monosaccharide_casein_systems_biomd0000000052_model.initial_formic_acid
+    label: Initial Formic Acid
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Formic_acid`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_brands2002_monosaccharide_casein_systems_biomd0000000052_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_brands2002_monosaccharide_casein_systems_biomd0000000052_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_brands2002_monosaccharide_casein_systems_biomd0000000052_model.species_labels
+  - name: glu
+    maps_to: systemsbiology_sbml_brands2002_monosaccharide_casein_systems_biomd0000000052_model.glu
+  - name: lys_r
+    maps_to: systemsbiology_sbml_brands2002_monosaccharide_casein_systems_biomd0000000052_model.lys_r
+  - name: triose
+    maps_to: systemsbiology_sbml_brands2002_monosaccharide_casein_systems_biomd0000000052_model.triose
+  - name: melanoidin
+    maps_to: systemsbiology_sbml_brands2002_monosaccharide_casein_systems_biomd0000000052_model.melanoidin
+  - name: fru
+    maps_to: systemsbiology_sbml_brands2002_monosaccharide_casein_systems_biomd0000000052_model.fru
+  - name: formic_acid
+    maps_to: systemsbiology_sbml_brands2002_monosaccharide_casein_systems_biomd0000000052_model.formic_acid

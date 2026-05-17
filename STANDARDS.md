@@ -19,7 +19,7 @@ New contributions **must** satisfy all items marked **REQUIRED**. Items marked
    - [Naming Conventions](#naming-conventions)
 2. [Space Standards](#space-standards)
    - [Directory Layout](#space-directory-layout)
-   - [Manifest (`space.yaml`)](#manifest-spaceyaml)
+   - [Manifest (`lab.yaml`)](#manifest-spaceyaml)
    - [Wiring](#wiring)
    - [Runner Scripts](#runner-scripts)
    - [Space Tests](#space-tests)
@@ -129,10 +129,10 @@ following interface:
 
 | Method | Signature | Purpose |
 |--------|-----------|---------|
-| `__init__` | `(self, ..., min_dt: float = <default>) -> None` | Constructor. Must set `self.min_dt`. All domain parameters must have sensible defaults. `min_dt` should be the last parameter. |
+| `__init__` | `(self, ..., communication_step: float = <default>) -> None` | Constructor. Must set `self.communication_step`. All domain parameters must have sensible defaults. `communication_step` should be the last parameter. |
 | `inputs` | `(self) -> Set[str]` | Return the set of input signal names this module accepts. Return `set()` if the module has no inputs. |
 | `outputs` | `(self) -> Set[str]` | Return the set of output signal names this module produces. Must not be empty — every model must produce at least one output. |
-| `advance_to` | `(self, t: float) -> None` | Advance internal state to simulation time `t`. Must update `self._outputs`. |
+| `advance_window` | `(self, t: float) -> None` | Advance internal state to simulation time `t`. Must update `self._outputs`. |
 | `get_outputs` | `(self) -> Dict[str, BioSignal]` | Return a fresh dict of current output signals. Keys must match the set returned by `outputs()`. |
 
 #### Conditionally Required Methods
@@ -178,8 +178,8 @@ wiring compatibility.
 
 **REQUIRED**:
 - All constructor parameters must have sensible defaults so the model can be
-  instantiated with zero arguments (except `min_dt` which always has a default).
-- `min_dt` must reflect the biological timescale of the model:
+  instantiated with zero arguments (except `communication_step` which always has a default).
+- `communication_step` must reflect the biological timescale of the model:
   - Fast dynamics (e.g., Hodgkin-Huxley): `0.0001` (0.1 ms)
   - Moderate dynamics (e.g., Izhikevich): `0.001` (1 ms)
   - Slow dynamics (e.g., ecology populations): `1.0`
@@ -203,7 +203,7 @@ wiring compatibility.
 | `heatmap` | `{"data": [[...]], "x_labels": [...], "y_labels": [...], "colorscale": str}` | Matrix data |
 
 Rules:
-- Return `None` before the first `advance_to` call (no data to show yet).
+- Return `None` before the first `advance_window` call (no data to show yet).
 - Keep history buffers bounded (use `max_points` / `max_neurons` parameters).
 
 ---
@@ -220,7 +220,7 @@ Verify the module can be created with default parameters:
 ```python
 def test_instantiation():
     module = MyModule()
-    assert module.min_dt > 0
+    assert module.communication_step > 0
     assert isinstance(module.inputs(), set)
     assert isinstance(module.outputs(), set)
     assert len(module.outputs()) > 0
@@ -228,12 +228,12 @@ def test_instantiation():
 
 #### 2. Advance & Output Test
 
-Verify `advance_to` produces valid outputs:
+Verify `advance_window` produces valid outputs:
 
 ```python
 def test_advance_produces_outputs():
-    module = MyModule(min_dt=0.1)
-    module.advance_to(0.1)
+    module = MyModule(communication_step=0.1)
+    module.advance_window(0.1)
     outputs = module.get_outputs()
     for name in module.outputs():
         assert name in outputs
@@ -248,11 +248,11 @@ Verify state is fully cleared:
 
 ```python
 def test_reset():
-    module = MyModule(min_dt=0.1)
-    module.advance_to(0.1)
-    module.advance_to(0.2)
+    module = MyModule(communication_step=0.1)
+    module.advance_window(0.1)
+    module.advance_window(0.2)
     module.reset()
-    module.advance_to(0.1)
+    module.advance_window(0.1)
     outputs = module.get_outputs()
     # Assert outputs match a fresh module at t=0.1
 ```
@@ -264,11 +264,11 @@ Verify `set_inputs` processes signals correctly:
 ```python
 def test_set_inputs():
     from biosim.signals import BioSignal
-    module = MyModule(min_dt=0.1)
+    module = MyModule(communication_step=0.1)
     module.set_inputs({
         "input_name": BioSignal(source="test", name="input_name", value=1.0, time=0.1)
     })
-    module.advance_to(0.1)
+    module.advance_window(0.1)
     outputs = module.get_outputs()
     # Assert outputs reflect the injected input
 ```
@@ -277,12 +277,12 @@ def test_set_inputs():
 
 ```python
 def test_visualize_none_before_advance():
-    module = MyModule(min_dt=0.1)
+    module = MyModule(communication_step=0.1)
     assert module.visualize() is None
 
 def test_visualize_after_advance():
-    module = MyModule(min_dt=0.1)
-    module.advance_to(0.1)
+    module = MyModule(communication_step=0.1)
+    module.advance_window(0.1)
     vis = module.visualize()
     assert vis is not None
     assert vis["render"] in ("timeseries", "image", "table", "heatmap")
@@ -294,18 +294,18 @@ Verify that `get_outputs()` keys always match `outputs()`:
 
 ```python
 def test_output_keys_match():
-    module = MyModule(min_dt=0.1)
-    module.advance_to(0.1)
+    module = MyModule(communication_step=0.1)
+    module.advance_window(0.1)
     assert set(module.get_outputs().keys()) == module.outputs()
 ```
 
 **Running tests**:
 ```bash
 # Single model
-pytest models/<model-slug>/tests/
+pytest labs/<lab-slug>/models/core/tests/
 
 # All models
-pytest models/models/
+pytest labs/*/models/core/
 ```
 
 ---
@@ -350,7 +350,6 @@ Examples:
 - Public CellML (cardiovascular): `cardiovascular-cellml-noble1962-cardiac-ap-<cellml_id>-model`
 - Legacy native: `neuro-hodgkin-huxley-population` (still valid)
 
-**Grandfathered legacy slugs:** existing directories already in `models/models/` may keep older prefixes and the native 3-part form.
 New public-catalog models should use science-domain + format-visible slugs.
 
 The subject is the most important part — it is what makes a slug unique and
@@ -432,7 +431,6 @@ Example (SBML, epidemiology):
 | `ecology-` | Ecosystems and population interactions |
 | `systemsbiology-` | Fallback bucket for molecular/cellular models without a clearer category |
 
-**Legacy slugs:** existing `models/models/` directories may keep older prefixes (e.g. `neuro-`, `virtualcell-`, `example-`) without renaming.
 
 New domains can be added as the repository grows. Propose a prefix in your PR
 description and get approval before merging.
@@ -446,16 +444,16 @@ description and get approval before merging.
 **REQUIRED** — every space directory must contain at minimum:
 
 ```
-spaces/<domain>-<scenario>/
-├── space.yaml             # Composition manifest (models + wiring + runtime)
+labs/<domain>-<scenario>/
+├── lab.yaml             # Composition manifest (models + wiring + runtime)
 └── wiring.yaml            # Local wiring spec (module classes + connections)
 ```
 
 **RECOMMENDED** — include runner scripts for local development:
 
 ```
-spaces/<domain>-<scenario>/
-├── space.yaml
+labs/<domain>-<scenario>/
+├── lab.yaml
 ├── wiring.yaml
 ├── run_local.py           # Python runner for CLI testing
 ├── simui_local.py         # SimUI web dashboard runner (if interactive)
@@ -465,7 +463,7 @@ spaces/<domain>-<scenario>/
 
 | Path | Required | Purpose |
 |------|----------|---------|
-| `space.yaml` | REQUIRED | Declares models, wiring, and runtime parameters |
+| `lab.yaml` | REQUIRED | Declares models, wiring, and runtime parameters |
 | `wiring.yaml` | REQUIRED | Local-equivalent wiring with `class:` references and `args:` |
 | `run_local.py` | RECOMMENDED | Standalone Python script to run the simulation from CLI |
 | `simui_local.py` | RECOMMENDED | SimUI launcher for interactive web-based exploration |
@@ -473,7 +471,7 @@ spaces/<domain>-<scenario>/
 
 ---
 
-### Manifest (`space.yaml`)
+### Manifest (`lab.yaml`)
 
 **REQUIRED** fields:
 
@@ -482,7 +480,7 @@ schema_version: "2.0"
 title: "<Domain>: <Scenario Name>"
 description: "<One-line description of what this space demonstrates>"
 models:
-  - path: ../models/<model-slug>
+  - path: ../labs/<lab-slug>/models/core
     alias: <unique_alias>
     parameters:
       <key>: <value>
@@ -506,7 +504,7 @@ wiring:
 | `models[].package` / `models[].version` | Immutable published model reference |
 | `models[].parameters` | Dict of constructor kwargs overriding model defaults |
 | `runtime.duration` | Positive float — total simulation time |
-| `runtime.tick_dt` | Positive float — must be ≤ the smallest `min_dt` among all models |
+| `runtime.tick_dt` | Positive float — must be ≤ the smallest `communication_step` among all models |
 | `wiring` | List of `{from, to}` signal routes |
 
 **Validation rules**:
@@ -531,10 +529,10 @@ wiring:
 ```
 
 Rules:
-- Every model alias in `space.yaml` must have a corresponding entry in
+- Every model alias in `lab.yaml` must have a corresponding entry in
   `wiring.yaml`.
 - `class` must match the `biosim.entrypoint` from the model's `model.yaml`.
-- `args` must be consistent with `parameters` in `space.yaml` (same keys, same
+- `args` must be consistent with `parameters` in `lab.yaml` (same keys, same
   values).
 
 ---
@@ -556,7 +554,7 @@ Demonstrates:
 
 Run:
     pip install "biosim @ git+https://github.com/BioSimulant/biosim.git@<ref>"
-    python spaces/<space-slug>/run_local.py
+    python labs/<space-slug>/run_local.py
 """
 from __future__ import annotations
 
@@ -685,11 +683,11 @@ Use this checklist before submitting a new model or space.
 - [ ] `src/<module>.py` exists with SPDX header, module docstring, and
       `from __future__ import annotations`
 - [ ] Class inherits from `biosim.BioModule`
-- [ ] `__init__` accepts `min_dt` as the last parameter with a sensible default
-- [ ] `__init__` sets `self.min_dt`
+- [ ] `__init__` accepts `communication_step` as the last parameter with a sensible default
+- [ ] `__init__` sets `self.communication_step`
 - [ ] `inputs()` returns `Set[str]`
 - [ ] `outputs()` returns non-empty `Set[str]`
-- [ ] `advance_to(t)` updates internal state and populates `self._outputs`
+- [ ] `advance_window(t)` updates internal state and populates `self._outputs`
 - [ ] `get_outputs()` returns `Dict[str, BioSignal]` with keys matching `outputs()`
 - [ ] `set_inputs()` implemented if `inputs()` is non-empty
 - [ ] `reset()` implemented (RECOMMENDED)
@@ -709,12 +707,12 @@ Use this checklist before submitting a new model or space.
 
 ### New Space Checklist
 
-- [ ] Directory follows `spaces/<domain>-<scenario>/` structure
-- [ ] `space.yaml` contains all required fields (`schema_version`, `title`,
+- [ ] Directory follows `labs/<domain>-<scenario>/` structure
+- [ ] `lab.yaml` contains all required fields (`schema_version`, `title`,
       `description`, `models`, `runtime`, `wiring`)
 - [ ] Every model entry has `alias` plus either `path` or `package` + `version`
 - [ ] All model aliases are unique within the space
-- [ ] `runtime.tick_dt` ≤ smallest `min_dt` of any model in the space
+- [ ] `runtime.tick_dt` ≤ smallest `communication_step` of any model in the space
 - [ ] All `wiring` entries use valid `<alias>.<signal>` references
 - [ ] Signal names in `from`/`to` match model `inputs()`/`outputs()`
 - [ ] No dangling inputs (every model input is wired or has a default)

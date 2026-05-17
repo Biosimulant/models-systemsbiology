@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Jenkinson2011 Egf Mapk Lab
+description: 'This is a model described in the article: Thermodynamically Consistent
+  Model Calibration in Chemical Kinetics. It can be used to explore systemsbiology
+  jenkinson2011 egf mapk BioModels0000000399 dynamics and compare simulation behavior
+  across conditions.'
+models:
+- alias: systemsbiology_sbml_jenkinson2011_egf_mapk_biomd0000000399_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_jenkinson2011_egf_mapk_biomd0000000399_model.state
+  to:
+  - visualisation.systemsbiology_sbml_jenkinson2011_egf_mapk_biomd0000000399_model_state
+- from: systemsbiology_sbml_jenkinson2011_egf_mapk_biomd0000000399_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_jenkinson2011_egf_mapk_biomd0000000399_model_summary
+- from: systemsbiology_sbml_jenkinson2011_egf_mapk_biomd0000000399_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_jenkinson2011_egf_mapk_biomd0000000399_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_mek
+    maps_to: systemsbiology_sbml_jenkinson2011_egf_mapk_biomd0000000399_model.initial_model_state_mek
+    label: Initial Model State Mek
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x47`.
+  - name: initial_model_state_erk
+    maps_to: systemsbiology_sbml_jenkinson2011_egf_mapk_biomd0000000399_model.initial_model_state_erk
+    label: Initial Model State ERK
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x55`.
+  - name: initial_phosphotase3
+    maps_to: systemsbiology_sbml_jenkinson2011_egf_mapk_biomd0000000399_model.initial_phosphotase3
+    label: Initial Phosphotase3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x60`.
+  - name: initial_model_state_shc
+    maps_to: systemsbiology_sbml_jenkinson2011_egf_mapk_biomd0000000399_model.initial_model_state_shc
+    label: Initial Model State Shc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x31`.
+  - name: initial_prot
+    maps_to: systemsbiology_sbml_jenkinson2011_egf_mapk_biomd0000000399_model.initial_prot
+    label: Initial Prot
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x12`.
+  - name: initial_ras_gdp
+    maps_to: systemsbiology_sbml_jenkinson2011_egf_mapk_biomd0000000399_model.initial_ras_gdp
+    label: Initial RAS Gdp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x26`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_jenkinson2011_egf_mapk_biomd0000000399_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_jenkinson2011_egf_mapk_biomd0000000399_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_jenkinson2011_egf_mapk_biomd0000000399_model.species_labels
+  - name: mek
+    maps_to: systemsbiology_sbml_jenkinson2011_egf_mapk_biomd0000000399_model.mek
+  - name: erk
+    maps_to: systemsbiology_sbml_jenkinson2011_egf_mapk_biomd0000000399_model.erk
+  - name: phosphotase3
+    maps_to: systemsbiology_sbml_jenkinson2011_egf_mapk_biomd0000000399_model.phosphotase3
+  - name: shc
+    maps_to: systemsbiology_sbml_jenkinson2011_egf_mapk_biomd0000000399_model.shc
+  - name: prot
+    maps_to: systemsbiology_sbml_jenkinson2011_egf_mapk_biomd0000000399_model.prot
+  - name: ras_gdp
+    maps_to: systemsbiology_sbml_jenkinson2011_egf_mapk_biomd0000000399_model.ras_gdp

@@ -1,0 +1,58 @@
+schema_version: '2.0'
+title: GPCR Cubic Ternary Complex with G protein Cycle, Redfern-Nichols 2023 Visualisation
+description: Question-and-answer and dynamic visual summaries for GPCR Cubic Ternary
+  Complex with G protein Cycle, Redfern-Nichols 2023.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Redfern Nichols2023 Gpcr Cubic Ternary Complex With G Protein Cycle
+      Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: GPCR Cubic Ternary Complex with G protein Cycle, Redfern-Nichols
+      2023.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_gpcr_cubic_ternary_complex_with_g_protein_cycle_model2306220001_model
+      title: GPCR Cubic Ternary Complex with G protein Cycle, Redfern-Nichols 2023
+      observables:
+      - id: cAMP
+        port: camp
+        label: cAMP
+        group: gene_regulation
+      - id: ATP
+        port: atp
+        label: ATP
+        group: metabolism
+      - id: AC
+        port: model_state_ac
+        label: AC
+        group: gene_regulation
+      - id: Ri
+        port: model_state_ri
+        label: Ri
+        group: gene_regulation
+      - id: RiG
+        port: ri_g
+        label: RiG
+        group: gene_regulation
+      - id: RaG
+        port: ra_g
+        label: RaG
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

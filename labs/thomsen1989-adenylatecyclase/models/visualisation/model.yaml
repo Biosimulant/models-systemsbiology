@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Thomsen1989_AdenylateCyclase Visualisation
+description: Question-and-answer and dynamic visual summaries for Thomsen1989_AdenylateCyclase.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Thomsen1989 Adenylatecyclase Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Thomsen1989_AdenylateCyclase.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_thomsen1989_adenylatecyclase_biomd0000000080_model
+      title: Thomsen1989_AdenylateCyclase
+      observables:
+      - id: G_GDP
+        port: g_gdp
+        label: G_GDP
+        group: physiology
+      - id: G_GTP
+        port: g_gtp
+        label: G_GTP
+        group: physiology
+      - id: DRG_GTP
+        port: drg_gtp
+        label: DRG_GTP
+        group: physiology
+      - id: DRG_GDP
+        port: drg_gdp
+        label: DRG_GDP
+        group: physiology
+      - id: GTP
+        port: gtp
+        label: GTP
+        group: physiology
+      - id: GDP
+        port: gdp
+        label: GDP
+        group: physiology
+io:
+  inputs: []
+  outputs: []

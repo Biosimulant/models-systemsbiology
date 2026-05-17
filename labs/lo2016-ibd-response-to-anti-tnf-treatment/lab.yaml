@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Lo2016 Ibd Response To Anti Tnf Treatment Lab
+description: Systems Biology Lo2016Ibd Response To Anti Tnf Treatment Model2505090001Model
+  captures core biological behavior in the context of systemsbiology, sbml, biomodels_ebi
+  using a biomodels_ebi-sourced OTHER model. When you run it, you can observe state
+  and evaluate how the modeled system changes across runs.
+models:
+- alias: systemsbiology_sbml_lo2016_ibd_response_to_anti_tnf_treatment_model2505090001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_lo2016_ibd_response_to_anti_tnf_treatment_model2505090001_model.state
+  to:
+  - visualisation.systemsbiology_sbml_lo2016_ibd_response_to_anti_tnf_treatment_model2505090001_model_state
+- from: systemsbiology_sbml_lo2016_ibd_response_to_anti_tnf_treatment_model2505090001_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_lo2016_ibd_response_to_anti_tnf_treatment_model2505090001_model_summary
+- from: systemsbiology_sbml_lo2016_ibd_response_to_anti_tnf_treatment_model2505090001_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_lo2016_ibd_response_to_anti_tnf_treatment_model2505090001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- immunology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_t17
+    maps_to: systemsbiology_sbml_lo2016_ibd_response_to_anti_tnf_treatment_model2505090001_model.initial_model_state_t17
+    label: Initial Model State T17
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `T17_0`.
+  - name: initial_model_state_tr
+    maps_to: systemsbiology_sbml_lo2016_ibd_response_to_anti_tnf_treatment_model2505090001_model.initial_model_state_tr
+    label: Initial Model State Tr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Tr_0`.
+  - name: initial_model_state_m
+    maps_to: systemsbiology_sbml_lo2016_ibd_response_to_anti_tnf_treatment_model2505090001_model.initial_model_state_m
+    label: Initial Model State M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_0`.
+  - name: initial_model_state_t1
+    maps_to: systemsbiology_sbml_lo2016_ibd_response_to_anti_tnf_treatment_model2505090001_model.initial_model_state_t1
+    label: Initial Model State T1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `T1_0`.
+  - name: initial_model_state_m2
+    maps_to: systemsbiology_sbml_lo2016_ibd_response_to_anti_tnf_treatment_model2505090001_model.initial_model_state_m2
+    label: Initial Model State M2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M2_0`.
+  - name: initial_model_state_m1
+    maps_to: systemsbiology_sbml_lo2016_ibd_response_to_anti_tnf_treatment_model2505090001_model.initial_model_state_m1
+    label: Initial Model State M1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M1_0`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_lo2016_ibd_response_to_anti_tnf_treatment_model2505090001_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_lo2016_ibd_response_to_anti_tnf_treatment_model2505090001_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_lo2016_ibd_response_to_anti_tnf_treatment_model2505090001_model.species_labels
+  - name: t17
+    maps_to: systemsbiology_sbml_lo2016_ibd_response_to_anti_tnf_treatment_model2505090001_model.t17
+  - name: model_state_tr
+    maps_to: systemsbiology_sbml_lo2016_ibd_response_to_anti_tnf_treatment_model2505090001_model.model_state_tr
+  - name: model_state_m
+    maps_to: systemsbiology_sbml_lo2016_ibd_response_to_anti_tnf_treatment_model2505090001_model.model_state_m
+  - name: model_state_t1
+    maps_to: systemsbiology_sbml_lo2016_ibd_response_to_anti_tnf_treatment_model2505090001_model.model_state_t1
+  - name: model_state_m2
+    maps_to: systemsbiology_sbml_lo2016_ibd_response_to_anti_tnf_treatment_model2505090001_model.model_state_m2
+  - name: model_state_m1
+    maps_to: systemsbiology_sbml_lo2016_ibd_response_to_anti_tnf_treatment_model2505090001_model.model_state_m1

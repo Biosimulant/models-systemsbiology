@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Suh2004_KCNQ_Regulation
+description: The model reproduces FIG 11A and FIG 11B of the paper. However, please
+  note that FIG 11B is a plot of normalised amounts versus time.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Byung-Chang Suh
+- Lisa F Horowitz
+- Wiebke Hirdes
+- Ken Mackie
+- Bertil Hille
+upstream:
+  id: biomodels_ebi:BIOMD0000000081
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000081
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000081
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000081?filename=BIOMD0000000081_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.suh2004_kcnq_regulation_biomd0000000081_model:Suh2004KcnqRegulationBiomd0000000081Model
+  init_kwargs:
+    model_path: data/BIOMD0000000081.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_atp_c
+    maps_to: ATP_C
+    label: Initial ATP C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATP_C`.
+  - name: initial_pi_m
+    maps_to: PI_M
+    label: Initial Pi M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PI_M`.
+  - name: initial_pip2_m
+    maps_to: PIP2_M
+    label: Initial Pip2 M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PIP2_M`.
+  - name: initial_mg2_c
+    maps_to: Mg2_C
+    label: Initial MG2 C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Mg2_C`.
+  - name: initial_pip_m
+    maps_to: PIP_M
+    label: Initial Pip M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PIP_M`.
+  - name: initial_ggdp_m
+    maps_to: GGDP_M
+    label: Initial Ggdp M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `GGDP_M`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: atp_c
+    maps_to: ATP_C
+    label: ATP_C
+    description: ATP_C. Maps to SBML symbol `ATP_C`.
+  - name: pi_m
+    maps_to: PI_M
+    label: PI_M
+    description: PI_M. Maps to SBML symbol `PI_M`.
+  - name: pip2_m
+    maps_to: PIP2_M
+    label: PIP2_M
+    description: PIP2_M. Maps to SBML symbol `PIP2_M`.
+  - name: mg2_c
+    maps_to: Mg2_C
+    label: Mg2_C
+    description: Mg2_C. Maps to SBML symbol `Mg2_C`.
+  - name: pip_m
+    maps_to: PIP_M
+    label: PIP_M
+    description: PIP_M. Maps to SBML symbol `PIP_M`.
+  - name: ggdp_m
+    maps_to: GGDP_M
+    label: GGDP_M
+    description: GGDP_M. Maps to SBML symbol `GGDP_M`.

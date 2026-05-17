@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "ab32432e-df21-4737-82a4-2cfe7b888ed8",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "7f82a1c2-319a-48c0-adaf-02ca05a69fe4",
+  "created_at": "2026-05-16T05:46:43.888706054+00:00",
+  "last_synced_at": "2026-05-17T03:31:53.054646+00:00",
+  "hub_manifest_hash": "33e67980cc1a7b3cc1461efa9a5df91c6b16bd9c6bbc2549b7e23708b5747655",
+  "package_name": "hayer2005-ampar-camkii-strong-coupling-lab"
+}

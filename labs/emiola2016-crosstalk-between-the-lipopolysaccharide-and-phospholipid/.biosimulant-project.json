@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "85180605-f037-4848-bdcb-3ca1fa08e28d",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "674eb81e-9beb-422b-a4b2-fe41d6025554",
+  "created_at": "2026-05-16T05:46:42.998234508+00:00",
+  "last_synced_at": "2026-05-17T03:00:34.547712+00:00",
+  "hub_manifest_hash": "9836f270945b8bb3377f5e68ea2f8a3fccda0f561e16a60e87216ace9b29b830",
+  "package_name": "emiola2016-crosstalk-between-the-lipopolysaccharide-and-phosphol"
+}

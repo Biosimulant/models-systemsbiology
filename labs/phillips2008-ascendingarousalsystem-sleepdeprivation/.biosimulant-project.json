@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "e2917ef0-b277-4790-913e-e9577305ad9a",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "affac237-97fe-42a0-9ec6-93c033eff513",
+  "created_at": "2026-05-16T05:46:50.432409550+00:00",
+  "last_synced_at": "2026-05-17T05:29:30.911224+00:00",
+  "hub_manifest_hash": "e770baeca428a454420ee4eccf534f6f33d07d1ada84a081b70b63d3951a544f",
+  "package_name": "phillips2008-ascendingarousalsystem-sleepdeprivation-lab"
+}

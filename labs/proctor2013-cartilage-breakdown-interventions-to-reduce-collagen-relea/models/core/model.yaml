@@ -1,0 +1,109 @@
+schema_version: '2.0'
+title: Proctor2013 - Cartilage breakdown, interventions to reduce collagen release
+description: Proctor2013 - Cartilage breakdown, interventions to reduce collagen release
+  The molecular pathways involved in cartilage breakdown is studied using this model
+  to examine possible interventions to redu. It can be used to explore systemsbiology
+  proctor2013 cartilage breakdown interventions to dynamics and compare simulation
+  behavior across conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Proctor CJ
+- Macdonald C
+- Milner JM
+- Rowan AD
+- Cawston TE.
+upstream:
+  id: biomodels_ebi:BIOMD0000000504
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000504
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000504
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000504?filename=BIOMD0000000504_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.proctor2013_cartilage_breakdown_interventions_to_biomd0000000504_model:Proctor2013CartilageBreakdownInterventionsToBiomd0000000504Model
+  init_kwargs:
+    model_path: data/BIOMD0000000504.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_traf6
+    maps_to: TRAF6
+    label: Initial Traf6
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TRAF6`.
+  - name: initial_stat3_cyt
+    maps_to: STAT3_cyt
+    label: Initial Stat3 Cyt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `STAT3_cyt`.
+  - name: initial_timp3_mrna
+    maps_to: TIMP3_mRNA
+    label: Initial Timp3 MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TIMP3_mRNA`.
+  - name: initial_timp1_mrna
+    maps_to: TIMP1_mRNA
+    label: Initial Timp1 MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TIMP1_mRNA`.
+  - name: initial_c_jun_mrna
+    maps_to: cJun_mRNA
+    label: Initial C Jun MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cJun_mRNA`.
+  - name: initial_traf6_pp4
+    maps_to: TRAF6_PP4
+    label: Initial Traf6 PP4
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TRAF6_PP4`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: traf6
+    maps_to: TRAF6
+    label: TRAF6
+    description: TRAF6. Maps to SBML symbol `TRAF6`.
+  - name: stat3_cyt
+    maps_to: STAT3_cyt
+    label: STAT3 Cyt
+    description: STAT3 Cyt. Maps to SBML symbol `STAT3_cyt`.
+  - name: timp3_mrna
+    maps_to: TIMP3_mRNA
+    label: TIMP3 MRNA
+    description: TIMP3 MRNA. Maps to SBML symbol `TIMP3_mRNA`.
+  - name: timp1_mrna
+    maps_to: TIMP1_mRNA
+    label: TIMP1 MRNA
+    description: TIMP1 MRNA. Maps to SBML symbol `TIMP1_mRNA`.
+  - name: c_jun_mrna
+    maps_to: cJun_mRNA
+    label: CJun MRNA
+    description: CJun MRNA. Maps to SBML symbol `cJun_mRNA`.
+  - name: traf6_pp4
+    maps_to: TRAF6_PP4
+    label: TRAF6 PP4
+    description: TRAF6 PP4. Maps to SBML symbol `TRAF6_PP4`.

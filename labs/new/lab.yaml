@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: New Lab
+description: Toy model used to validate DynafluxR, as detailed in the publication.
+  It can be used to explore systemsbiology new model2502210001 dynamics and compare
+  simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_new_model_model2502210001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_new_model_model2502210001_model.state
+  to:
+  - visualisation.systemsbiology_sbml_new_model_model2502210001_model_state
+- from: systemsbiology_sbml_new_model_model2502210001_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_new_model_model2502210001_model_summary
+- from: systemsbiology_sbml_new_model_model2502210001_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_new_model_model2502210001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_a
+    maps_to: systemsbiology_sbml_new_model_model2502210001_model.initial_model_state_a
+    label: Initial Model State A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `A`.
+  - name: initial_model_state_k
+    maps_to: systemsbiology_sbml_new_model_model2502210001_model.initial_model_state_k
+    label: Initial Model State K
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `K`.
+  - name: initial_model_state_j
+    maps_to: systemsbiology_sbml_new_model_model2502210001_model.initial_model_state_j
+    label: Initial Model State J
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `J`.
+  - name: initial_model_state_i
+    maps_to: systemsbiology_sbml_new_model_model2502210001_model.initial_model_state_i
+    label: Initial Model State I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `I`.
+  - name: initial_model_state_h
+    maps_to: systemsbiology_sbml_new_model_model2502210001_model.initial_model_state_h
+    label: Initial Model State H
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `H`.
+  - name: initial_model_state_g
+    maps_to: systemsbiology_sbml_new_model_model2502210001_model.initial_model_state_g
+    label: Initial Model State G
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `G`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_new_model_model2502210001_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_new_model_model2502210001_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_new_model_model2502210001_model.species_labels
+  - name: model_state_a
+    maps_to: systemsbiology_sbml_new_model_model2502210001_model.model_state_a
+  - name: model_state_k
+    maps_to: systemsbiology_sbml_new_model_model2502210001_model.model_state_k
+  - name: model_state_j
+    maps_to: systemsbiology_sbml_new_model_model2502210001_model.model_state_j
+  - name: model_state_i
+    maps_to: systemsbiology_sbml_new_model_model2502210001_model.model_state_i
+  - name: model_state_h
+    maps_to: systemsbiology_sbml_new_model_model2502210001_model.model_state_h
+  - name: model_state_g
+    maps_to: systemsbiology_sbml_new_model_model2502210001_model.model_state_g

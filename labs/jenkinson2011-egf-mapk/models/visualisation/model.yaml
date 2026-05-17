@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Jenkinson2011_EGF_MAPK Visualisation
+description: Question-and-answer and dynamic visual summaries for Jenkinson2011_EGF_MAPK.
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Jenkinson2011 Egf Mapk Lab
+    question: 'Which signalling variables dominate the simulated network response?
+      Source model: Jenkinson2011_EGF_MAPK.'
+    answer_focus: Q/A table plus signaling timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_jenkinson2011_egf_mapk_biomd0000000399_model
+      title: Jenkinson2011_EGF_MAPK
+      observables:
+      - id: x47
+        port: mek
+        label: MEK
+        group: signaling
+      - id: x55
+        port: erk
+        label: ERK
+        group: signaling
+      - id: x60
+        port: phosphotase3
+        label: Phosphotase3
+        group: signaling
+      - id: x31
+        port: shc
+        label: Shc
+        group: signaling
+      - id: x12
+        port: prot
+        label: Prot
+        group: signaling
+      - id: x26
+        port: ras_gdp
+        label: Ras-GDP
+        group: signaling
+io:
+  inputs: []
+  outputs: []

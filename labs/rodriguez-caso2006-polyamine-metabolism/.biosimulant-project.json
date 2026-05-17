@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "484194a9-cddd-4200-a86e-0cc1bddae1c6",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "d1b29e28-af6b-44d0-8cb4-9a473ae2ec54",
+  "created_at": "2026-05-16T05:46:51.439732267+00:00",
+  "last_synced_at": "2026-05-17T05:59:24.146868+00:00",
+  "hub_manifest_hash": "9e7d45f953f1fae58497027738395ff26e692daf89c954e855dd96ee5706e48e",
+  "package_name": "rodriguez-caso2006-polyamine-metabolism-lab"
+}

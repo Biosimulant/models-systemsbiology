@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Hayer2005_AMPAR_CaMKII_strong_coupling Visualisation
+description: Question-and-answer and dynamic visual summaries for Hayer2005_AMPAR_CaMKII_strong_coupling.
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Hayer2005 Ampar Camkii Strong Coupling Lab
+    question: 'Which signalling variables dominate the simulated network response?
+      Source model: Hayer2005_AMPAR_CaMKII_strong_coupling.'
+    answer_focus: Q/A table plus signaling timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_hayer2005_ampar_camkii_strong_coupling_model9087255381_model
+      title: Hayer2005_AMPAR_CaMKII_strong_coupling
+      observables:
+      - id: AC_slash_ATP
+        port: ac_slash_atp
+        label: AC Slash ATP
+        group: signaling
+      - id: actCaMKII_minus_PSD
+        port: act_ca_mkii_minus_psd
+        label: ActCaMKII Minus PSD
+        group: signaling
+      - id: actCaMKII_minus_PSD_slash_CaMKII_slash_CaMKII_cplx
+        port: act_ca_mkii_minus_psd_slash_ca_mkii_slash_ca_mkii_cplx
+        label: ActCaMKII Minus PSD Slash CaMKII Slash CaMKII Cplx
+        group: signaling
+      - id: actCaMKII_minus_PSD_slash_CaMKII_sbo_4_sbc__slash_CaMKII_sbo_4_sbc__cplx
+        port: act_ca_mkii_minus_psd_slash_ca_mkii_sbo_4_sbc_slash_ca_mkii_sbo_4_sbc_cplx
+        label: ActCaMKII Minus PSD Slash CaMKII Sbo 4 Sbc Slash CaMKII Sbo 4 Sbc Cplx
+        group: signaling
+      - id: actCaMKII_minus_PSD_slash_CaMKII_sbo_8_sbc__slash_CaMKII_sbo_8_sbc__cplx
+        port: act_ca_mkii_minus_psd_slash_ca_mkii_sbo_8_sbc_slash_ca_mkii_sbo_8_sbc_cplx
+        label: ActCaMKII Minus PSD Slash CaMKII Sbo 8 Sbc Slash CaMKII Sbo 8 Sbc Cplx
+        group: signaling
+      - id: actCaMKII_minus_PSD_slash_CaMKII_sbo_12_sbc__slash_CaMKII_sbo_12_sbc__cplx
+        port: act_ca_mkii_minus_psd_slash_ca_mkii_sbo_12_sbc_slash_ca_mkii_sbo_12_sbc_cplx
+        label: ActCaMKII Minus PSD Slash CaMKII Sbo 12 Sbc Slash CaMKII Sbo 12 Sbc
+          Cplx
+        group: signaling
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,100 @@
+schema_version: '2.0'
+title: LeBeau1999 - IP3-dependent intracellular calcium oscillations due to agonist
+  stimulation from Cholecytokinin
+description: The properties of inositol 1,4,5-trisphosphate (IP3)-dependent intracellular
+  calcium oscillations in pancreatic acinar cells depend crucially on the agonist
+  used to stimulate them. It can be used to explore systemsbiology lebeau1999 ip3
+  dependent intracellular calcium dynamics and compare simulation behavior across
+  conditions.
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- A P LeBeau
+- D I Yule
+- G E Groblewski
+- J Sneyd
+upstream:
+  id: biomodels_ebi:BIOMD0000000965
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000965
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000965
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000965?filename=LeBeau1999_Phosphorylation_CCK.xml
+  license: CC0
+biosim:
+  entrypoint: src.lebeau1999_ip3_dependent_intracellular_calcium_o_biomd0000000965_model:Lebeau1999Ip3DependentIntracellularCalciumOBiomd0000000965Model
+  init_kwargs:
+    model_path: data/BIOMD0000000965.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_ca2
+    maps_to: c
+    label: Initial Model State CA2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `c`.
+  - name: initial_model_state_i2
+    maps_to: I2
+    label: Initial Model State I2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `I2`.
+  - name: initial_model_state_i1
+    maps_to: I1
+    label: Initial Model State I1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `I1`.
+  - name: initial_model_state_s
+    maps_to: S
+    label: Initial Model State S
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S`.
+  - name: initial_model_state_o
+    maps_to: O
+    label: Initial Model State O
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `O`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: ca2
+    maps_to: c
+    label: Ca2+
+    description: Ca2+. Maps to SBML symbol `c`.
+  - name: model_state_i2
+    maps_to: I2
+    label: I2
+    description: I2. Maps to SBML symbol `I2`.
+  - name: model_state_i1
+    maps_to: I1
+    label: I1
+    description: I1. Maps to SBML symbol `I1`.
+  - name: model_state_s
+    maps_to: S
+    label: S
+    description: S. Maps to SBML symbol `S`.
+  - name: model_state_o
+    maps_to: O
+    label: O
+    description: O. Maps to SBML symbol `O`.

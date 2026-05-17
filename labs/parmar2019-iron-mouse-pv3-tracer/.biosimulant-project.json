@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "6b2315dc-5a72-4bf7-b0c8-5eb5bf59430e",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "af615abb-b436-483a-a713-f905e75464bf",
+  "created_at": "2026-05-16T05:46:49.980753170+00:00",
+  "last_synced_at": "2026-05-17T05:25:52.425643+00:00",
+  "hub_manifest_hash": "c68cb97e94fef227838d0e95d3de2ffa7257d72110118d6073c1cbf6b8277218",
+  "package_name": "parmar2019-iron-mouse-pv3-tracer-lab"
+}

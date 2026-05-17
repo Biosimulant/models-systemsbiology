@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "1852f719-2e4c-479d-9227-96fe18a3d6c8",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "04514f84-0ce8-4ab2-bc03-7152b7eccf0f",
+  "created_at": "2026-05-16T05:46:53.223539947+00:00",
+  "last_synced_at": "2026-05-17T06:51:38.579188+00:00",
+  "hub_manifest_hash": "03ed054f09073ba539694d5f3587bef7b3d1b3ce7254292afb8c5043f3681d60",
+  "package_name": "willems1991-simulating-thrombin-generation-lab"
+}

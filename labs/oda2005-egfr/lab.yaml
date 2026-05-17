@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Oda2005 Egfr Lab
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models (http://www.ebi.ac.uk/biomodels/). It is copyright (c) 2005-2011
+  The BioModels.net Team.'
+models:
+- alias: systemsbiology_sbml_oda2005_egfr_model2463576061_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_oda2005_egfr_model2463576061_model.state
+  to:
+  - visualisation.systemsbiology_sbml_oda2005_egfr_model2463576061_model_state
+- from: systemsbiology_sbml_oda2005_egfr_model2463576061_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_oda2005_egfr_model2463576061_model_summary
+- from: systemsbiology_sbml_oda2005_egfr_model2463576061_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_oda2005_egfr_model2463576061_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_tumorigenesis
+    maps_to: systemsbiology_sbml_oda2005_egfr_model2463576061_model.initial_tumorigenesis
+    label: Initial Tumorigenesis
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s412`.
+  - name: initial_cell_cycle_br_progression
+    maps_to: systemsbiology_sbml_oda2005_egfr_model2463576061_model.initial_cell_cycle_br_progression
+    label: Initial Cell Cycle Br Progression
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s357`.
+  - name: initial_c_adpr
+    maps_to: systemsbiology_sbml_oda2005_egfr_model2463576061_model.initial_c_adpr
+    label: Initial C Adpr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s260`.
+  - name: initial_complex_c_adpr_fkbp
+    maps_to: systemsbiology_sbml_oda2005_egfr_model2463576061_model.initial_complex_c_adpr_fkbp
+    label: Initial Complex C Adpr Fkbp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s261`.
+  - name: initial_truncated_br_plc_beta
+    maps_to: systemsbiology_sbml_oda2005_egfr_model2463576061_model.initial_truncated_br_plc_beta
+    label: Initial Truncated Br Plc Beta
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s299`.
+  - name: initial_truncated_br_plc_beta_2
+    maps_to: systemsbiology_sbml_oda2005_egfr_model2463576061_model.initial_truncated_br_plc_beta_2
+    label: Initial Truncated Br Plc Beta 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s306`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_oda2005_egfr_model2463576061_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_oda2005_egfr_model2463576061_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_oda2005_egfr_model2463576061_model.species_labels
+  - name: tumorigenesis
+    maps_to: systemsbiology_sbml_oda2005_egfr_model2463576061_model.tumorigenesis
+  - name: cell_cycle_br_progression
+    maps_to: systemsbiology_sbml_oda2005_egfr_model2463576061_model.cell_cycle_br_progression
+  - name: c_adpr
+    maps_to: systemsbiology_sbml_oda2005_egfr_model2463576061_model.c_adpr
+  - name: complex_c_adpr_fkbp
+    maps_to: systemsbiology_sbml_oda2005_egfr_model2463576061_model.complex_c_adpr_fkbp
+  - name: truncated_br_plc_beta
+    maps_to: systemsbiology_sbml_oda2005_egfr_model2463576061_model.truncated_br_plc_beta
+  - name: truncated_br_plc_beta_2
+    maps_to: systemsbiology_sbml_oda2005_egfr_model2463576061_model.truncated_br_plc_beta_2

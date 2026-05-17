@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Lopez2013 Extrinsic Apoptosis M1a Embedded Lab
+description: Systems Biology Lopez2013Extrinsic Apoptosis M1a Embedded Model1303010000Model
+  models core biological dynamics as a OTHER simulation curated from biomodels_ebi
+  (biomodels_ebi:MODEL1303010000), focused on system. When you run it, you can track
+  state over time and compare response patterns across parameter settings.
+models:
+- alias: systemsbiology_sbml_lopez2013_extrinsic_apoptosis_m1a_embedded_model1303010000_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_lopez2013_extrinsic_apoptosis_m1a_embedded_model1303010000_model.state
+  to:
+  - visualisation.systemsbiology_sbml_lopez2013_extrinsic_apoptosis_m1a_embedded_model1303010000_model_state
+- from: systemsbiology_sbml_lopez2013_extrinsic_apoptosis_m1a_embedded_model1303010000_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_lopez2013_extrinsic_apoptosis_m1a_embedded_model1303010000_model_summary
+- from: systemsbiology_sbml_lopez2013_extrinsic_apoptosis_m1a_embedded_model1303010000_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_lopez2013_extrinsic_apoptosis_m1a_embedded_model1303010000_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_parp_bf_none_state_u
+    maps_to: systemsbiology_sbml_lopez2013_extrinsic_apoptosis_m1a_embedded_model1303010000_model.initial_parp_bf_none_state_u
+    label: Initial Parp Bf None State U
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s9`.
+  - name: initial_cyto_c_bf_none_state_m
+    maps_to: systemsbiology_sbml_lopez2013_extrinsic_apoptosis_m1a_embedded_model1303010000_model.initial_cyto_c_bf_none_state_m
+    label: Initial Cyto C Bf None State M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s19`.
+  - name: initial_xiap_bf_none
+    maps_to: systemsbiology_sbml_lopez2013_extrinsic_apoptosis_m1a_embedded_model1303010000_model.initial_xiap_bf_none
+    label: Initial Xiap Bf None
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s10`.
+  - name: initial_smac_bf_none_state_m
+    maps_to: systemsbiology_sbml_lopez2013_extrinsic_apoptosis_m1a_embedded_model1303010000_model.initial_smac_bf_none_state_m
+    label: Initial Smac Bf None State M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s20`.
+  - name: initial_c9_bf_none
+    maps_to: systemsbiology_sbml_lopez2013_extrinsic_apoptosis_m1a_embedded_model1303010000_model.initial_c9_bf_none
+    label: Initial C9 Bf None
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s8`.
+  - name: initial_apaf_bf_none_state_i
+    maps_to: systemsbiology_sbml_lopez2013_extrinsic_apoptosis_m1a_embedded_model1303010000_model.initial_apaf_bf_none_state_i
+    label: Initial Apaf Bf None State I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s5`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_lopez2013_extrinsic_apoptosis_m1a_embedded_model1303010000_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_lopez2013_extrinsic_apoptosis_m1a_embedded_model1303010000_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_lopez2013_extrinsic_apoptosis_m1a_embedded_model1303010000_model.species_labels
+  - name: parp_bf_none_state_u
+    maps_to: systemsbiology_sbml_lopez2013_extrinsic_apoptosis_m1a_embedded_model1303010000_model.parp_bf_none_state_u
+  - name: cyto_c_bf_none_state_m
+    maps_to: systemsbiology_sbml_lopez2013_extrinsic_apoptosis_m1a_embedded_model1303010000_model.cyto_c_bf_none_state_m
+  - name: xiap_bf_none
+    maps_to: systemsbiology_sbml_lopez2013_extrinsic_apoptosis_m1a_embedded_model1303010000_model.xiap_bf_none
+  - name: smac_bf_none_state_m
+    maps_to: systemsbiology_sbml_lopez2013_extrinsic_apoptosis_m1a_embedded_model1303010000_model.smac_bf_none_state_m
+  - name: c9_bf_none
+    maps_to: systemsbiology_sbml_lopez2013_extrinsic_apoptosis_m1a_embedded_model1303010000_model.c9_bf_none
+  - name: apaf_bf_none_state_i
+    maps_to: systemsbiology_sbml_lopez2013_extrinsic_apoptosis_m1a_embedded_model1303010000_model.apaf_bf_none_state_i

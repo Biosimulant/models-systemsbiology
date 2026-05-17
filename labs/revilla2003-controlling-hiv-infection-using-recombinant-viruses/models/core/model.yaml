@@ -1,0 +1,96 @@
+schema_version: '2.0'
+title: Revilla2003 - Controlling HIV infection using recombinant viruses
+description: 'This a model from the article: Fighting a virus with a virus: a dynamic
+  model for HIV-1 therapy. It can be used to explore systemsbiology revilla2003 controlling
+  hiv infection using dynamics and compare simulation behavior across conditions.'
+standard: other
+tags:
+- epidemiology
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Tomás Revilla
+- Gisela García-Ramos
+upstream:
+  id: biomodels_ebi:BIOMD0000000707
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000707
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000707
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000707?filename=MODEL1006230047.xml
+  license: CC0
+biosim:
+  entrypoint: src.revilla2003_controlling_hiv_infection_using_reco_biomd0000000707_model:Revilla2003ControllingHivInfectionUsingRecoBiomd0000000707Model
+  init_kwargs:
+    model_path: data/BIOMD0000000707.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_normal_th_cells
+    maps_to: Normal_Th_cells
+    label: Initial Normal Th Cells
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Normal_Th_cells`.
+  - name: initial_pathogen_virus
+    maps_to: Pathogen_Virus
+    label: Initial Pathogen Virus
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pathogen_Virus`.
+  - name: initial_single_infected_th_cells
+    maps_to: Single_Infected_Th_Cells
+    label: Initial Single Infected Th Cells
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Single_Infected_Th_Cells`.
+  - name: initial_recombinant_virus
+    maps_to: Recombinant_Virus
+    label: Initial Recombinant Virus
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Recombinant_Virus`.
+  - name: initial_double_infected_th_cells
+    maps_to: Double_Infected_Th_Cells
+    label: Initial Double Infected Th Cells
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Double_Infected_Th_Cells`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: normal_th_cells
+    maps_to: Normal_Th_cells
+    label: Normal Th cells
+    description: Normal Th cells. Maps to SBML symbol `Normal_Th_cells`.
+  - name: pathogen_virus
+    maps_to: Pathogen_Virus
+    label: Pathogen Virus
+    description: Pathogen Virus. Maps to SBML symbol `Pathogen_Virus`.
+  - name: single_infected_th_cells
+    maps_to: Single_Infected_Th_Cells
+    label: Single Infected Th Cells
+    description: Single Infected Th Cells. Maps to SBML symbol `Single_Infected_Th_Cells`.
+  - name: recombinant_virus
+    maps_to: Recombinant_Virus
+    label: Recombinant Virus
+    description: Recombinant Virus. Maps to SBML symbol `Recombinant_Virus`.
+  - name: double_infected_th_cells
+    maps_to: Double_Infected_Th_Cells
+    label: Double Infected Th Cells
+    description: Double Infected Th Cells. Maps to SBML symbol `Double_Infected_Th_Cells`.

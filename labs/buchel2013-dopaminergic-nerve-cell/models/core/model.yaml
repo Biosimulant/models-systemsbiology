@@ -1,0 +1,109 @@
+schema_version: '2.0'
+title: Büchel2013 - Dopaminergic Nerve Cell Model
+description: Systems Biology BChel2013Dopaminergic Nerve Cell Model Model1302200000Model
+  models core biological dynamics as a OTHER simulation curated from biomodels_ebi
+  (biomodels_ebi:MODEL1302200000), focused on systemsbi. When you run it, you can
+  track state over time and compare response patterns across parameter settings.
+standard: other
+tags:
+- neuroscience
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Finja Büchel
+- Sandra Saliger
+- Andreas Dräger
+- Stephanie Hoffmann
+- Wrzodek C
+upstream:
+  id: biomodels_ebi:MODEL1302200000
+  source_db: biomodels_ebi
+  source_id: MODEL1302200000
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1302200000
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1302200000?filename=MODEL1302200000_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.b_chel2013_dopaminergic_nerve_cell_model_model1302200000_model:BChel2013DopaminergicNerveCellModelModel1302200000Model
+  init_kwargs:
+    model_path: data/MODEL1302200000.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_biogenesis_mitochondria
+    maps_to: BiogenesisMitochondria
+    label: Initial Biogenesis Mitochondria
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `BiogenesisMitochondria`.
+  - name: initial_mt_dna_defect
+    maps_to: mtDNADefect
+    label: Initial Mt DNA Defect
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mtDNADefect`.
+  - name: initial_damaged_protein
+    maps_to: damagedProtein
+    label: Initial Damaged Protein
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `damagedProtein`.
+  - name: initial_model_state_nad
+    maps_to: NAD
+    label: Initial Model State Nad
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NAD`.
+  - name: initial_adp_pi
+    maps_to: ADP_P
+    label: Initial ADP Pi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ADP_P`.
+  - name: initial_complex_damaged_protein_trap1_p
+    maps_to: Complex_damagedProtein_TRAP1P
+    label: Initial Complex Damaged Protein Trap1 P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Complex_damagedProtein_TRAP1P`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: biogenesis_mitochondria
+    maps_to: BiogenesisMitochondria
+    label: BiogenesisMitochondria
+    description: BiogenesisMitochondria. Maps to SBML symbol `BiogenesisMitochondria`.
+  - name: mt_dna_defect
+    maps_to: mtDNADefect
+    label: mtDNADefect
+    description: mtDNADefect. Maps to SBML symbol `mtDNADefect`.
+  - name: damaged_protein
+    maps_to: damagedProtein
+    label: damagedProtein
+    description: damagedProtein. Maps to SBML symbol `damagedProtein`.
+  - name: nad
+    maps_to: NAD
+    label: NAD+
+    description: NAD+. Maps to SBML symbol `NAD`.
+  - name: adp_pi
+    maps_to: ADP_P
+    label: ADP+Pi
+    description: ADP+Pi. Maps to SBML symbol `ADP_P`.
+  - name: complex_damaged_protein_trap1_p
+    maps_to: Complex_damagedProtein_TRAP1P
+    label: Complex_damagedProtein_TRAP1P
+    description: Complex_damagedProtein_TRAP1P. Maps to SBML symbol `Complex_damagedProtein_TRAP1P`.

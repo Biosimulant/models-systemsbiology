@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Bhattacharya2011_UreaCycle
+description: 'This model is from the article: Time Scale Simulation of Vmax of Urea
+  Cycle Enzymes. Pradip Bhattacharya, Alok Srivastava, Sarbashish Das, Samiyadeep
+  Nandi, Ganeshan Tamil, Ashutosh Viswabandhu, Heman.'
+standard: other
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Pradip Bhattacharya
+- Alok Srivastava
+- Sarbashish Das
+- Samiyadeep Nandi
+- Ganeshan Tamil
+upstream:
+  id: biomodels_ebi:MODEL0318212660
+  source_db: biomodels_ebi
+  source_id: MODEL0318212660
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL0318212660
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0318212660?filename=MODEL0318212660_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.bhattacharya2011_ureacycle_model0318212660_model:Bhattacharya2011UreacycleModel0318212660Model
+  init_kwargs:
+    model_path: data/MODEL0318212660.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_node9
+    maps_to: Node9
+    label: Initial Node9
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Node9`.
+  - name: initial_node8
+    maps_to: Node8
+    label: Initial Node8
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Node8`.
+  - name: initial_node7
+    maps_to: Node7
+    label: Initial Node7
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Node7`.
+  - name: initial_node6
+    maps_to: Node6
+    label: Initial Node6
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Node6`.
+  - name: initial_node4
+    maps_to: Node4
+    label: Initial Node4
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Node4`.
+  - name: initial_node3
+    maps_to: Node3
+    label: Initial Node3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Node3`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: node9
+    maps_to: Node9
+    label: Node9
+    description: Node9. Maps to SBML symbol `Node9`.
+  - name: node8
+    maps_to: Node8
+    label: Node8
+    description: Node8. Maps to SBML symbol `Node8`.
+  - name: node7
+    maps_to: Node7
+    label: Node7
+    description: Node7. Maps to SBML symbol `Node7`.
+  - name: node6
+    maps_to: Node6
+    label: Node6
+    description: Node6. Maps to SBML symbol `Node6`.
+  - name: node4
+    maps_to: Node4
+    label: Node4
+    description: Node4. Maps to SBML symbol `Node4`.
+  - name: node3
+    maps_to: Node3
+    label: Node3
+    description: Node3. Maps to SBML symbol `Node3`.

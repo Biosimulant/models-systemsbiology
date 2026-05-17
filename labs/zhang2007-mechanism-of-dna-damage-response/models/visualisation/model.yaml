@@ -1,0 +1,48 @@
+schema_version: '2.0'
+title: Zhang2007 - Mechanism of DNA damage response (Model1) Visualisation
+description: Question-and-answer and dynamic visual summaries for Zhang2007 - Mechanism
+  of DNA damage response (Model1).
+standard: other
+tags:
+- cellcycle
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Zhang2007 Mechanism Of Dna Damage Response Lab
+    question: 'Which cell-cycle control states dominate the simulated progression?
+      Source model: Zhang2007 - Mechanism of DNA damage response (Model1).'
+    answer_focus: Q/A table plus cellcycle timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_zhang2007_mechanism_of_dna_damage_response_model_biomd0000001007_model
+      title: Zhang2007 - Mechanism of DNA damage response (Model1)
+      observables:
+      - id: DNAdamage
+        port: dn_adamage
+        label: DNAdamage
+        group: metabolism
+      - id: p53
+        port: p53
+        label: p53
+        group: physiology
+      - id: MDM2nuc
+        port: mdm2nuc
+        label: MDM2nuc
+        group: physiology
+      - id: MDM2cyt
+        port: mdm2cyt
+        label: MDM2cyt
+        group: physiology
+io:
+  inputs: []
+  outputs: []

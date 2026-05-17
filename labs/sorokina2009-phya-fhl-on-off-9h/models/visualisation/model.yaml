@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Sorokina2009_PhyA_FHL_ON_OFF_9h Visualisation
+description: Question-and-answer and dynamic visual summaries for Sorokina2009_PhyA_FHL_ON_OFF_9h.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Sorokina2009 Phya Fhl On Off 9h Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Sorokina2009_PhyA_FHL_ON_OFF_9h.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_sorokina2009_phya_fhl_on_off_9h_model0911120000_model
+      title: Sorokina2009_PhyA_FHL_ON_OFF_9h
+      observables:
+      - id: nLuc
+        port: n_luc
+        label: nLuc
+        group: physiology
+      - id: nLUC
+        port: n_luc_2
+        label: nLUC
+        group: physiology
+      - id: Pr_PIF3
+        port: pr_pif3
+        label: Pr_PIF3
+        group: physiology
+      - id: Pr_GBD_f
+        port: pr_gbd_f
+        label: Pr_GBD_f
+        group: physiology
+      - id: Pfr_PIF3
+        port: pfr_pif3
+        label: Pfr_PIF3
+        group: physiology
+      - id: Pfr_GBD_f
+        port: pfr_gbd_f
+        label: Pfr_GBD_f
+        group: physiology
+io:
+  inputs: []
+  outputs: []

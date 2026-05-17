@@ -1,0 +1,78 @@
+schema_version: '2.0'
+title: Ma2005-digital response of p53 to DNA damage-ATM Activation Module
+description: Recent observations show that the single-cell response of p53 to ionizing
+  radiation (IR) is “digital” in that it is the number of oscillations rather than
+  the amplitude of p53 that shows dependence on. It can be used to explore systemsbiology
+  ma2005 digital response of p53 dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Lan Ma
+- John Wagner
+- John Jeremy Rice
+- Wenwei Hu
+- Arnold J Levine
+upstream:
+  id: biomodels_ebi:MODEL2005130001
+  source_db: biomodels_ebi
+  source_id: MODEL2005130001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2005130001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2005130001?filename=Ma2005.xml
+  license: CC0
+biosim:
+  entrypoint: src.ma2005_digital_response_of_p53_to_dna_damage_atm_model2005130001_model:Ma2005DigitalResponseOfP53ToDnaDamageAtmModel2005130001Model
+  init_kwargs:
+    model_path: data/MODEL2005130001.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_atm_star
+    maps_to: ATM_star
+    label: Initial Atm Star
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATM_star`.
+  - name: initial_atm_d
+    maps_to: ATM_D
+    label: Initial Atm D
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATM_D`.
+  - name: initial_model_state_atm
+    maps_to: ATM
+    label: Initial Model State Atm
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATM`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: atm_star
+    maps_to: ATM_star
+    label: ATM_star
+    description: ATM_star. Maps to SBML symbol `ATM_star`.
+  - name: atm_d
+    maps_to: ATM_D
+    label: ATM_D
+    description: ATM_D. Maps to SBML symbol `ATM_D`.
+  - name: atm
+    maps_to: ATM
+    label: ATM
+    description: ATM. Maps to SBML symbol `ATM`.

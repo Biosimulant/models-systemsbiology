@@ -1,0 +1,104 @@
+schema_version: '2.0'
+title: Keating2019 - Minimal model demonstrating SBML Level 3 packages.
+description: Minimal model demonstrating SBML Level 3 packages. It can be used to
+  explore systemsbiology keating2019 minimal demonstrating lev model1904090001 dynamics
+  and compare simulation behavior across conditions.
+standard: other
+tags:
+- cellcycle
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- biomodels_ebi
+upstream:
+  id: biomodels_ebi:MODEL1904090001
+  source_db: biomodels_ebi
+  source_id: MODEL1904090001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1904090001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1904090001?filename=tiny_example_12.xml
+  license: CC0
+biosim:
+  entrypoint: src.keating2019_minimal_model_demonstrating_sbml_lev_model1904090001_model:Keating2019MinimalModelDemonstratingSbmlLevModel1904090001Model
+  init_kwargs:
+    model_path: data/MODEL1904090001.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_glucose
+    maps_to: glc
+    label: Initial Glucose
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `glc`.
+  - name: initial_glucose_6_phosphate
+    maps_to: g6p
+    label: Initial Glucose 6 Phosphate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `g6p`.
+  - name: initial_model_state_atp
+    maps_to: atp
+    label: Initial Model State ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `atp`.
+  - name: initial_model_state_adp
+    maps_to: adp
+    label: Initial Model State ADP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `adp`.
+  - name: initial_model_state_p
+    maps_to: phos
+    label: Initial Model State P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `phos`.
+  - name: initial_model_state_h
+    maps_to: hydron
+    label: Initial Model State H
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `hydron`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: glucose
+    maps_to: glc
+    label: glucose
+    description: glucose. Maps to SBML symbol `glc`.
+  - name: glucose_6_phosphate
+    maps_to: g6p
+    label: glucose-6-phosphate
+    description: glucose-6-phosphate. Maps to SBML symbol `g6p`.
+  - name: atp
+    maps_to: atp
+    label: ATP
+    description: ATP. Maps to SBML symbol `atp`.
+  - name: adp
+    maps_to: adp
+    label: ADP
+    description: ADP. Maps to SBML symbol `adp`.
+  - name: model_state_p
+    maps_to: phos
+    label: P
+    description: P. Maps to SBML symbol `phos`.
+  - name: model_state_h
+    maps_to: hydron
+    label: H+
+    description: H+. Maps to SBML symbol `hydron`.

@@ -1,0 +1,104 @@
+schema_version: '2.0'
+title: Goldbeter2008_Somite_Segmentation_Clock_Notch_Wnt_FGF
+description: 'This is a model of the coupled Natch, Wnt and FGF modules as described
+  in: A. It can be used to explore systemsbiology goldbeter2008 somite segmentation
+  clock notch dynamics and compare simulation behavior across conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Albert Goldbeter
+- Olivier Pourquié
+upstream:
+  id: biomodels_ebi:BIOMD0000000201
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000201
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000201
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000201?filename=BIOMD0000000201_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.goldbeter2008_somite_segmentation_clock_notch_wn_biomd0000000201_model:Goldbeter2008SomiteSegmentationClockNotchWnBiomd0000000201Model
+  init_kwargs:
+    model_path: data/BIOMD0000000201.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_ras_total
+    maps_to: Rast
+    label: Initial RAS Total
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Rast`.
+  - name: initial_erk_total
+    maps_to: ERKt
+    label: Initial ERK Total
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ERKt`.
+  - name: initial_active_ras
+    maps_to: Rasa
+    label: Initial Active RAS
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Rasa`.
+  - name: initial_active_erk
+    maps_to: ERKa
+    label: Initial Active ERK
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ERKa`.
+  - name: initial_lunatic_fringe_mrna
+    maps_to: MF
+    label: Initial Lunatic Fringe MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MF`.
+  - name: initial_dusp6_protein
+    maps_to: Dusp
+    label: Initial Dusp6 Protein
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Dusp`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: ras_total
+    maps_to: Rast
+    label: Ras total
+    description: Ras total. Maps to SBML symbol `Rast`.
+  - name: erk_total
+    maps_to: ERKt
+    label: ERK total
+    description: ERK total. Maps to SBML symbol `ERKt`.
+  - name: active_ras
+    maps_to: Rasa
+    label: active Ras
+    description: active Ras. Maps to SBML symbol `Rasa`.
+  - name: active_erk
+    maps_to: ERKa
+    label: active ERK
+    description: active ERK. Maps to SBML symbol `ERKa`.
+  - name: lunatic_fringe_mrna
+    maps_to: MF
+    label: Lunatic fringe mRNA
+    description: Lunatic fringe mRNA. Maps to SBML symbol `MF`.
+  - name: dusp6_protein
+    maps_to: Dusp
+    label: Dusp6 protein
+    description: Dusp6 protein. Maps to SBML symbol `Dusp`.

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "7db69af5-cad2-4f38-93e7-0233d586a582",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "3ee71d0d-34a8-4406-b1e0-0684c8e7a5af",
+  "created_at": "2026-05-16T05:46:43.986981914+00:00",
+  "last_synced_at": "2026-05-17T03:36:26.773015+00:00",
+  "hub_manifest_hash": "58d62d8d6517d1460eb4c2902042b32c18e9bbd13f61471ee94d91280fde67b4",
+  "package_name": "hayer2005-camkii-nopka-lab"
+}

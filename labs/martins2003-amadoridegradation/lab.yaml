@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Martins2003 Amadoridegradation Lab
+description: 'This a model from the article: Kinetic modelling of Amadori N-(1-deoxy-D-fructos-1-yl)-glycine
+  degradation pathways. It can be used to explore systemsbiology martins2003 amadoridegradation
+  BioModels0000000050 dynamics and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_martins2003_amadoridegradation_biomd0000000050_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_martins2003_amadoridegradation_biomd0000000050_model.state
+  to:
+  - visualisation.systemsbiology_sbml_martins2003_amadoridegradation_biomd0000000050_model_state
+- from: systemsbiology_sbml_martins2003_amadoridegradation_biomd0000000050_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_martins2003_amadoridegradation_biomd0000000050_model_summary
+- from: systemsbiology_sbml_martins2003_amadoridegradation_biomd0000000050_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_martins2003_amadoridegradation_biomd0000000050_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_dfg
+    maps_to: systemsbiology_sbml_martins2003_amadoridegradation_biomd0000000050_model.initial_model_state_dfg
+    label: Initial Model State Dfg
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `DFG`.
+  - name: initial_model_state_mel
+    maps_to: systemsbiology_sbml_martins2003_amadoridegradation_biomd0000000050_model.initial_model_state_mel
+    label: Initial Model State Mel
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Mel`.
+  - name: initial_model_state_man
+    maps_to: systemsbiology_sbml_martins2003_amadoridegradation_biomd0000000050_model.initial_model_state_man
+    label: Initial Model State Man
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Man`.
+  - name: initial_model_state_mg
+    maps_to: systemsbiology_sbml_martins2003_amadoridegradation_biomd0000000050_model.initial_model_state_mg
+    label: Initial Model State Mg
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MG`.
+  - name: initial_model_state_gly
+    maps_to: systemsbiology_sbml_martins2003_amadoridegradation_biomd0000000050_model.initial_model_state_gly
+    label: Initial Model State Gly
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Gly`.
+  - name: initial_model_state_glu
+    maps_to: systemsbiology_sbml_martins2003_amadoridegradation_biomd0000000050_model.initial_model_state_glu
+    label: Initial Model State Glu
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Glu`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_martins2003_amadoridegradation_biomd0000000050_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_martins2003_amadoridegradation_biomd0000000050_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_martins2003_amadoridegradation_biomd0000000050_model.species_labels
+  - name: dfg
+    maps_to: systemsbiology_sbml_martins2003_amadoridegradation_biomd0000000050_model.dfg
+  - name: mel
+    maps_to: systemsbiology_sbml_martins2003_amadoridegradation_biomd0000000050_model.mel
+  - name: man
+    maps_to: systemsbiology_sbml_martins2003_amadoridegradation_biomd0000000050_model.man
+  - name: model_state_mg
+    maps_to: systemsbiology_sbml_martins2003_amadoridegradation_biomd0000000050_model.model_state_mg
+  - name: gly
+    maps_to: systemsbiology_sbml_martins2003_amadoridegradation_biomd0000000050_model.gly
+  - name: glu
+    maps_to: systemsbiology_sbml_martins2003_amadoridegradation_biomd0000000050_model.glu

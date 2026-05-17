@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Feist2006_methanogenesis_OptiMethanol
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models (http://www.ebi.ac.uk/biomodels/). It is copyright (c) 2005-2011
+  The BioModels.net Team.'
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Adam M Feist
+- Johannes C M Scholten
+- Bernhard Ø Palsson
+- Fred J Brockman
+- Trey Ideker
+upstream:
+  id: biomodels_ebi:BIOMD0000001098
+  source_db: biomodels_ebi
+  source_id: BIOMD0000001098
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001098
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001098?filename=MODEL5662324959_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.feist2006_methanogenesis_optimethanol_biomd0000001098_model:Feist2006MethanogenesisOptimethanolBiomd0000001098Model
+  init_kwargs:
+    model_path: data/BIOMD0000001098.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_glycolaldehyde
+    maps_to: M_gcald_c_
+    label: Initial Glycolaldehyde
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_gcald_c_`.
+  - name: initial_glycolaldehyde_2
+    maps_to: M_gcald_e_
+    label: Initial Glycolaldehyde 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_gcald_e_`.
+  - name: initial_d_td_pglucose
+    maps_to: M_dtdpglu_c_
+    label: Initial D Td Pglucose
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_dtdpglu_c_`.
+  - name: initial_d_tdp_4_dehydro_6_deoxy_d_glucose
+    maps_to: M_dtdp4d6dg_c_
+    label: Initial D Tdp 4 Dehydro 6 Deoxy D Glucose
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_dtdp4d6dg_c_`.
+  - name: initial_d_atp
+    maps_to: M_datp_c_
+    label: Initial D ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_datp_c_`.
+  - name: initial_d_adp
+    maps_to: M_dadp_c_
+    label: Initial D ADP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_dadp_c_`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: glycolaldehyde
+    maps_to: M_gcald_c_
+    label: _Glycolaldehyde
+    description: _Glycolaldehyde. Maps to SBML symbol `M_gcald_c_`.
+  - name: glycolaldehyde_2
+    maps_to: M_gcald_e_
+    label: _Glycolaldehyde
+    description: _Glycolaldehyde. Maps to SBML symbol `M_gcald_e_`.
+  - name: d_td_pglucose
+    maps_to: M_dtdpglu_c_
+    label: _dTDPglucose
+    description: _dTDPglucose. Maps to SBML symbol `M_dtdpglu_c_`.
+  - name: d_tdp_4_dehydro_6_deoxy_d_glucose
+    maps_to: M_dtdp4d6dg_c_
+    label: _dTDP-4-dehydro-6-deoxy-D-glucose
+    description: _dTDP-4-dehydro-6-deoxy-D-glucose. Maps to SBML symbol `M_dtdp4d6dg_c_`.
+  - name: d_atp
+    maps_to: M_datp_c_
+    label: _dATP
+    description: _dATP. Maps to SBML symbol `M_datp_c_`.
+  - name: d_adp
+    maps_to: M_dadp_c_
+    label: _dADP
+    description: _dADP. Maps to SBML symbol `M_dadp_c_`.

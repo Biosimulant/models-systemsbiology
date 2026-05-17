@@ -1,0 +1,79 @@
+schema_version: '2.0'
+title: Ehrenstein2000 - Positive-Feedback model for the loss of acetylcholine in Alzheimer's
+  disease
+description: 'Ehrenstein2000 - Positive-Feedback model forthe loss of acetylcholine
+  in Alzheimer''s disease Curated model derived from BIOMD0000000553 This model is
+  described in the article: A positive-feedback mode. It can be used to explore systemsbiology
+  ehrenstein2000 positive feedback for the dynamics and compare simulation behavior
+  across conditions.'
+standard: other
+tags:
+- neuroscience
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- G Ehrenstein
+- Z Galdzicki
+- G D Lange
+upstream:
+  id: biomodels_ebi:BIOMD0000000552
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000552
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000552
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000552?filename=BIOMD0000000552_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.ehrenstein2000_positive_feedback_model_for_the_l_biomd0000000552_model:Ehrenstein2000PositiveFeedbackModelForTheLBiomd0000000552Model
+  init_kwargs:
+    model_path: data/BIOMD0000000552.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_a_rel
+    maps_to: aRel
+    label: Initial A Rel
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `aRel`.
+  - name: initial_model_state_a
+    maps_to: a
+    label: Initial Model State A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `a`.
+  - name: initial_model_state_b
+    maps_to: b
+    label: Initial Model State B
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `b`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: a_rel
+    maps_to: aRel
+    label: aRel
+    description: aRel. Maps to SBML symbol `aRel`.
+  - name: model_state_a
+    maps_to: a
+    label: a
+    description: a. Maps to SBML symbol `a`.
+  - name: model_state_b
+    maps_to: b
+    label: b
+    description: b. Maps to SBML symbol `b`.

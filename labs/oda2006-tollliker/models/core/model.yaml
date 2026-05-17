@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Oda2006_TollLikeR
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models (http://www.ebi.ac.uk/biomodels/). It is copyright (c) 2005-2011
+  The BioModels.net Team.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Kanae Oda
+- Hiroaki Kitano
+upstream:
+  id: biomodels_ebi:MODEL2463683119
+  source_db: biomodels_ebi
+  source_id: MODEL2463683119
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2463683119
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2463683119?filename=MODEL2463683119_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.oda2006_tollliker_model2463683119_model:Oda2006TolllikerModel2463683119Model
+  init_kwargs:
+    model_path: data/MODEL2463683119.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_target_genes_br_ex_il_1_il_8_il_6_tnf_alpha_ifn_gamma_gm_csf_m_csf_br_i_nos_cox2_mhc_class_i_ii_e_selectin_beta_defensin2
+    maps_to: s1290
+    label: Initial Target Genes Br Ex Il 1 Il 8 Il 6 TNF Alpha Ifn Gamma Gm Csf M
+      Csf Br I Nos Cox2 Mhc Class I Ii E Selectin Beta Defensin2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s1290`.
+  - name: initial_target_genes_br_ex_cyclin_d1
+    maps_to: s1304
+    label: Initial Target Genes Br Ex Cyclin D1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s1304`.
+  - name: initial_cell_cycle
+    maps_to: s1138
+    label: Initial Cell Cycle
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s1138`.
+  - name: initial_rna_br_metabolism
+    maps_to: s805
+    label: Initial RNA Br Metabolism
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s805`.
+  - name: initial_complex_rip1_traf6_ticam1
+    maps_to: s288
+    label: Initial Complex Rip1 Traf6 Ticam1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s288`.
+  - name: initial_transcription
+    maps_to: s1184
+    label: Initial Transcription
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s1184`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: target_genes_br_ex_il_1_il_8_il_6_tnf_alpha_ifn_gamma_gm_csf_m_csf_br_i_nos_cox2_mhc_class_i_ii_e_selectin_beta_defensin2
+    maps_to: s1290
+    label: target genes_br_ex. IL-1, IL-8, IL-6, TNF_alpha_ , IFN_gamma_ , GM-CSF,
+      M-CSF,_br_iNOS, COX2, MHC class I / II, E-selectin, _beta_ -defensin2
+    description: target genes_br_ex. IL-1, IL-8, IL-6, TNF_alpha_ , IFN_gamma_ , GM-CSF,
+      M-CSF,_br_iNOS, COX2, MHC class I / II, E-selectin, _beta_ -defensin2. Maps
+      to SBML symbol `s1290`.
+  - name: target_genes_br_ex_cyclin_d1
+    maps_to: s1304
+    label: target genes_br_   ex. cyclin D1
+    description: target genes_br_   ex. cyclin D1. Maps to SBML symbol `s1304`.
+  - name: cell_cycle
+    maps_to: s1138
+    label: cell cycle
+    description: cell cycle. Maps to SBML symbol `s1138`.
+  - name: rna_br_metabolism
+    maps_to: s805
+    label: RNA_br_metabolism
+    description: RNA_br_metabolism. Maps to SBML symbol `s805`.
+  - name: complex_rip1_traf6_ticam1
+    maps_to: s288
+    label: Complex(RIP1/TRAF6/TICAM1*)
+    description: Complex(RIP1/TRAF6/TICAM1*). Maps to SBML symbol `s288`.
+  - name: transcription
+    maps_to: s1184
+    label: transcription
+    description: transcription. Maps to SBML symbol `s1184`.

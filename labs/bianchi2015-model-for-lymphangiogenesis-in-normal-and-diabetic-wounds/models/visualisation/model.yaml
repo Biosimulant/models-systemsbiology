@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Bianchi2015 -Model for lymphangiogenesis in normal and diabetic wounds Visualisation
+description: Question-and-answer and dynamic visual summaries for Bianchi2015 -Model
+  for lymphangiogenesis in normal and diabetic wounds.
+standard: other
+tags:
+- generegulation
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Bianchi2015 Model For Lymphangiogenesis In Normal And Diabetic Wounds
+      Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Bianchi2015 -Model for lymphangiogenesis in normal and diabetic
+      wounds.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_bianchi2015_model_for_lymphangiogenesis_in_norma_biomd0000000722_model
+      title: Bianchi2015 -Model for lymphangiogenesis in normal and diabetic wounds
+      observables:
+      - id: Active_TGF_beta
+        port: active_tgf_beta
+        label: Active TGF-beta
+        group: gene_regulation
+      - id: Macrophages
+        port: macrophages
+        label: Macrophages
+        group: gene_regulation
+      - id: VEGF
+        port: vegf
+        label: VEGF
+        group: gene_regulation
+      - id: LECs
+        port: le_cs
+        label: LECs
+        group: gene_regulation
+      - id: Capillaries
+        port: capillaries
+        label: Capillaries
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

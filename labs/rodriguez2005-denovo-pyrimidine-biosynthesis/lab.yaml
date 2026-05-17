@@ -1,0 +1,86 @@
+schema_version: '2.0'
+title: Rodriguez2005 Denovo Pyrimidine Biosynthesis Lab
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models. It is copyright (c) 2005-2011 The BioModels.net Team.'
+models:
+- alias: systemsbiology_sbml_rodriguez2005_denovo_pyrimidine_biosynthesis_model0995500644_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_rodriguez2005_denovo_pyrimidine_biosynthesis_model0995500644_model.state
+  to:
+  - visualisation.systemsbiology_sbml_rodriguez2005_denovo_pyrimidine_biosynthesis_model0995500644_model_state
+- from: systemsbiology_sbml_rodriguez2005_denovo_pyrimidine_biosynthesis_model0995500644_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_rodriguez2005_denovo_pyrimidine_biosynthesis_model0995500644_model_summary
+- from: systemsbiology_sbml_rodriguez2005_denovo_pyrimidine_biosynthesis_model0995500644_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_rodriguez2005_denovo_pyrimidine_biosynthesis_model0995500644_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_atp
+    maps_to: systemsbiology_sbml_rodriguez2005_denovo_pyrimidine_biosynthesis_model0995500644_model.initial_model_state_atp
+    label: Initial Model State ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `atp`.
+  - name: initial_model_state_ca
+    maps_to: systemsbiology_sbml_rodriguez2005_denovo_pyrimidine_biosynthesis_model0995500644_model.initial_model_state_ca
+    label: Initial Model State Ca
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ca`.
+  - name: initial_model_state_e2
+    maps_to: systemsbiology_sbml_rodriguez2005_denovo_pyrimidine_biosynthesis_model0995500644_model.initial_model_state_e2
+    label: Initial Model State E2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `E2`.
+  - name: initial_model_state_oro
+    maps_to: systemsbiology_sbml_rodriguez2005_denovo_pyrimidine_biosynthesis_model0995500644_model.initial_model_state_oro
+    label: Initial Model State Oro
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `oro`.
+  - name: initial_model_state_omp
+    maps_to: systemsbiology_sbml_rodriguez2005_denovo_pyrimidine_biosynthesis_model0995500644_model.initial_model_state_omp
+    label: Initial Model State Omp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `omp`.
+  - name: initial_model_state_dho
+    maps_to: systemsbiology_sbml_rodriguez2005_denovo_pyrimidine_biosynthesis_model0995500644_model.initial_model_state_dho
+    label: Initial Model State Dho
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `dho`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_rodriguez2005_denovo_pyrimidine_biosynthesis_model0995500644_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_rodriguez2005_denovo_pyrimidine_biosynthesis_model0995500644_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_rodriguez2005_denovo_pyrimidine_biosynthesis_model0995500644_model.species_labels
+  - name: atp
+    maps_to: systemsbiology_sbml_rodriguez2005_denovo_pyrimidine_biosynthesis_model0995500644_model.atp
+  - name: model_state_ca
+    maps_to: systemsbiology_sbml_rodriguez2005_denovo_pyrimidine_biosynthesis_model0995500644_model.model_state_ca
+  - name: model_state_e2
+    maps_to: systemsbiology_sbml_rodriguez2005_denovo_pyrimidine_biosynthesis_model0995500644_model.model_state_e2
+  - name: oro
+    maps_to: systemsbiology_sbml_rodriguez2005_denovo_pyrimidine_biosynthesis_model0995500644_model.oro
+  - name: omp
+    maps_to: systemsbiology_sbml_rodriguez2005_denovo_pyrimidine_biosynthesis_model0995500644_model.omp
+  - name: dho
+    maps_to: systemsbiology_sbml_rodriguez2005_denovo_pyrimidine_biosynthesis_model0995500644_model.dho

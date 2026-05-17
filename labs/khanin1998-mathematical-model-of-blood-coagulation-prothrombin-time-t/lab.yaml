@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Khanin1998 Mathematical Model Of Blood Coagulation Prothrombin Time T Lab
+description: Blood coagulation model for prothrombin time test. It can be used to
+  explore systemsbiology khanin1998 mathematical of blood coagulati dynamics and compare
+  simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_khanin1998_mathematical_model_of_blood_coagulati_model1806120001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_khanin1998_mathematical_model_of_blood_coagulati_model1806120001_model.state
+  to:
+  - visualisation.systemsbiology_sbml_khanin1998_mathematical_model_of_blood_coagulati_model1806120001_model_state
+- from: systemsbiology_sbml_khanin1998_mathematical_model_of_blood_coagulati_model1806120001_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_khanin1998_mathematical_model_of_blood_coagulati_model1806120001_model_summary
+- from: systemsbiology_sbml_khanin1998_mathematical_model_of_blood_coagulati_model1806120001_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_khanin1998_mathematical_model_of_blood_coagulati_model1806120001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_vii_tf
+    maps_to: systemsbiology_sbml_khanin1998_mathematical_model_of_blood_coagulati_model1806120001_model.initial_vii_tf
+    label: Initial Vii Tf
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VII_TF`.
+  - name: initial_i_xa_vii_ia_pl
+    maps_to: systemsbiology_sbml_khanin1998_mathematical_model_of_blood_coagulati_model1806120001_model.initial_i_xa_vii_ia_pl
+    label: Initial I Xa Vii Ia Pl
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IXa_VIIIa_PL`.
+  - name: initial_xa_va_pl
+    maps_to: systemsbiology_sbml_khanin1998_mathematical_model_of_blood_coagulati_model1806120001_model.initial_xa_va_pl
+    label: Initial Xa Va Pl
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_Va_PL`.
+  - name: initial_xa_tfpi
+    maps_to: systemsbiology_sbml_khanin1998_mathematical_model_of_blood_coagulati_model1806120001_model.initial_xa_tfpi
+    label: Initial Xa Tfpi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_TFPI`.
+  - name: initial_xa_atiii
+    maps_to: systemsbiology_sbml_khanin1998_mathematical_model_of_blood_coagulati_model1806120001_model.initial_xa_atiii
+    label: Initial Xa Atiii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_ATIII`.
+  - name: initial_va_xa
+    maps_to: systemsbiology_sbml_khanin1998_mathematical_model_of_blood_coagulati_model1806120001_model.initial_va_xa
+    label: Initial Va Xa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Va_Xa`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_khanin1998_mathematical_model_of_blood_coagulati_model1806120001_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_khanin1998_mathematical_model_of_blood_coagulati_model1806120001_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_khanin1998_mathematical_model_of_blood_coagulati_model1806120001_model.species_labels
+  - name: vii_tf
+    maps_to: systemsbiology_sbml_khanin1998_mathematical_model_of_blood_coagulati_model1806120001_model.vii_tf
+  - name: i_xa_vii_ia_pl
+    maps_to: systemsbiology_sbml_khanin1998_mathematical_model_of_blood_coagulati_model1806120001_model.i_xa_vii_ia_pl
+  - name: xa_va_pl
+    maps_to: systemsbiology_sbml_khanin1998_mathematical_model_of_blood_coagulati_model1806120001_model.xa_va_pl
+  - name: xa_tfpi
+    maps_to: systemsbiology_sbml_khanin1998_mathematical_model_of_blood_coagulati_model1806120001_model.xa_tfpi
+  - name: xa_atiii
+    maps_to: systemsbiology_sbml_khanin1998_mathematical_model_of_blood_coagulati_model1806120001_model.xa_atiii
+  - name: va_xa
+    maps_to: systemsbiology_sbml_khanin1998_mathematical_model_of_blood_coagulati_model1806120001_model.va_xa

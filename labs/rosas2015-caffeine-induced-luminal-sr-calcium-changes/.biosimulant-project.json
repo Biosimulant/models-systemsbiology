@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "32ebafa7-b264-4365-b922-409d1321d80f",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "dd942a91-7373-4063-b93e-e37cedd88457",
+  "created_at": "2026-05-16T05:46:51.549197655+00:00",
+  "last_synced_at": "2026-05-17T06:02:08.743370+00:00",
+  "hub_manifest_hash": "67ff6543c8375656e5b4f1294e7b9e4d77cb3a1229ace71d9bf2c137fd71f7fb",
+  "package_name": "rosas2015-caffeine-induced-luminal-sr-calcium-changes-lab"
+}

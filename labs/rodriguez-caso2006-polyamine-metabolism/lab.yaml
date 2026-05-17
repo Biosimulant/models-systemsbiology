@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Rodriguez Caso2006 Polyamine Metabolism Lab
+description: 'SBML creators: Armando Reyes-Palomares * , Carlos Rodríguez-Caso +,
+  Raul Montañez * , Marta Cascante $, Francisca Sánchez-Jiménez * , Miguel A. Medina
+  * * ProCel Group, Department of Molecular Biology.'
+models:
+- alias: systemsbiology_sbml_rodriguez_caso2006_polyamine_metabolism_biomd0000000190_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_rodriguez_caso2006_polyamine_metabolism_biomd0000000190_model.state
+  to:
+  - visualisation.systemsbiology_sbml_rodriguez_caso2006_polyamine_metabolism_biomd0000000190_model_state
+- from: systemsbiology_sbml_rodriguez_caso2006_polyamine_metabolism_biomd0000000190_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_rodriguez_caso2006_polyamine_metabolism_biomd0000000190_model_summary
+- from: systemsbiology_sbml_rodriguez_caso2006_polyamine_metabolism_biomd0000000190_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_rodriguez_caso2006_polyamine_metabolism_biomd0000000190_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_l_ornithine
+    maps_to: systemsbiology_sbml_rodriguez_caso2006_polyamine_metabolism_biomd0000000190_model.initial_l_ornithine
+    label: Initial L Ornithine
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ORN`.
+  - name: initial_methionine
+    maps_to: systemsbiology_sbml_rodriguez_caso2006_polyamine_metabolism_biomd0000000190_model.initial_methionine
+    label: Initial Methionine
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Met`.
+  - name: initial_acetyl_co_a
+    maps_to: systemsbiology_sbml_rodriguez_caso2006_polyamine_metabolism_biomd0000000190_model.initial_acetyl_co_a
+    label: Initial Acetyl Co A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `AcCoA`.
+  - name: initial_s_adenosyl_l_methionine
+    maps_to: systemsbiology_sbml_rodriguez_caso2006_polyamine_metabolism_biomd0000000190_model.initial_s_adenosyl_l_methionine
+    label: Initial S Adenosyl L Methionine
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `SAM`.
+  - name: initial_n1_acetylspermine
+    maps_to: systemsbiology_sbml_rodriguez_caso2006_polyamine_metabolism_biomd0000000190_model.initial_n1_acetylspermine
+    label: Initial N1 Acetylspermine
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `aS`.
+  - name: initial_n1_acetylspermidine
+    maps_to: systemsbiology_sbml_rodriguez_caso2006_polyamine_metabolism_biomd0000000190_model.initial_n1_acetylspermidine
+    label: Initial N1 Acetylspermidine
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `aD`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_rodriguez_caso2006_polyamine_metabolism_biomd0000000190_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_rodriguez_caso2006_polyamine_metabolism_biomd0000000190_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_rodriguez_caso2006_polyamine_metabolism_biomd0000000190_model.species_labels
+  - name: l_ornithine
+    maps_to: systemsbiology_sbml_rodriguez_caso2006_polyamine_metabolism_biomd0000000190_model.l_ornithine
+  - name: methionine
+    maps_to: systemsbiology_sbml_rodriguez_caso2006_polyamine_metabolism_biomd0000000190_model.methionine
+  - name: acetyl_co_a
+    maps_to: systemsbiology_sbml_rodriguez_caso2006_polyamine_metabolism_biomd0000000190_model.acetyl_co_a
+  - name: s_adenosyl_l_methionine
+    maps_to: systemsbiology_sbml_rodriguez_caso2006_polyamine_metabolism_biomd0000000190_model.s_adenosyl_l_methionine
+  - name: n1_acetylspermine
+    maps_to: systemsbiology_sbml_rodriguez_caso2006_polyamine_metabolism_biomd0000000190_model.n1_acetylspermine
+  - name: n1_acetylspermidine
+    maps_to: systemsbiology_sbml_rodriguez_caso2006_polyamine_metabolism_biomd0000000190_model.n1_acetylspermidine

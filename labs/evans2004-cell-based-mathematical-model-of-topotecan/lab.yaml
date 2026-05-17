@@ -1,0 +1,79 @@
+schema_version: '2.0'
+title: Evans2004 Cell Based Mathematical Model Of Topotecan Lab
+description: A two compartment mathematical model of the antineoplastic compound topotecan.
+  It can be used to explore systemsbiology evans2004 cell based mathematical of dynamics
+  and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_evans2004_cell_based_mathematical_model_of_topot_biomd0000000945_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_evans2004_cell_based_mathematical_model_of_topot_biomd0000000945_model.state
+  to:
+  - visualisation.systemsbiology_sbml_evans2004_cell_based_mathematical_model_of_topot_biomd0000000945_model_state
+- from: systemsbiology_sbml_evans2004_cell_based_mathematical_model_of_topot_biomd0000000945_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_evans2004_cell_based_mathematical_model_of_topot_biomd0000000945_model_summary
+- from: systemsbiology_sbml_evans2004_cell_based_mathematical_model_of_topot_biomd0000000945_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_evans2004_cell_based_mathematical_model_of_topot_biomd0000000945_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_l_m
+    maps_to: systemsbiology_sbml_evans2004_cell_based_mathematical_model_of_topot_biomd0000000945_model.initial_model_state_l_m
+    label: Initial Model State L M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `L_m`.
+  - name: initial_model_state_l_n
+    maps_to: systemsbiology_sbml_evans2004_cell_based_mathematical_model_of_topot_biomd0000000945_model.initial_model_state_l_n
+    label: Initial Model State L N
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `L_n`.
+  - name: initial_model_state_l_c
+    maps_to: systemsbiology_sbml_evans2004_cell_based_mathematical_model_of_topot_biomd0000000945_model.initial_model_state_l_c
+    label: Initial Model State L C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `L_c`.
+  - name: initial_model_state_h_m
+    maps_to: systemsbiology_sbml_evans2004_cell_based_mathematical_model_of_topot_biomd0000000945_model.initial_model_state_h_m
+    label: Initial Model State H M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `H_m`.
+  - name: initial_model_state_h_c
+    maps_to: systemsbiology_sbml_evans2004_cell_based_mathematical_model_of_topot_biomd0000000945_model.initial_model_state_h_c
+    label: Initial Model State H C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `H_c`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_evans2004_cell_based_mathematical_model_of_topot_biomd0000000945_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_evans2004_cell_based_mathematical_model_of_topot_biomd0000000945_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_evans2004_cell_based_mathematical_model_of_topot_biomd0000000945_model.species_labels
+  - name: l_m
+    maps_to: systemsbiology_sbml_evans2004_cell_based_mathematical_model_of_topot_biomd0000000945_model.l_m
+  - name: l_n
+    maps_to: systemsbiology_sbml_evans2004_cell_based_mathematical_model_of_topot_biomd0000000945_model.l_n
+  - name: l_c
+    maps_to: systemsbiology_sbml_evans2004_cell_based_mathematical_model_of_topot_biomd0000000945_model.l_c
+  - name: h_m
+    maps_to: systemsbiology_sbml_evans2004_cell_based_mathematical_model_of_topot_biomd0000000945_model.h_m
+  - name: h_c
+    maps_to: systemsbiology_sbml_evans2004_cell_based_mathematical_model_of_topot_biomd0000000945_model.h_c

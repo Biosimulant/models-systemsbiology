@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Calzone2008_Rb Visualisation
+description: Question-and-answer and dynamic visual summaries for Calzone2008_Rb.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Calzone2008 Rb Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Calzone2008_Rb.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_calzone2008_rb_model4132046015_model
+      title: Calzone2008_Rb
+      observables:
+      - id: s401
+        port: cyclin_h
+        label: cyclin H*
+        group: gene_regulation
+      - id: s1486
+        port: cyclin_e1_cdk2_p130
+        label: cyclin E1*/CDK2/p130
+        group: gene_regulation
+      - id: s1487
+        port: cyclin_e1_cdk2_p107
+        label: cyclin E1*/CDK2/p107
+        group: gene_regulation
+      - id: s787
+        port: cyclin_e1_cdk2_cdkn1_a
+        label: cyclin E1*/CDK2/CDKN1A
+        group: gene_regulation
+      - id: s723
+        port: cyclin_e1_cdk2
+        label: cyclin E1*/CDK2
+        group: gene_regulation
+      - id: s721
+        port: cyclin_e1_cdk2_2
+        label: cyclin E1*/CDK2
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Akman2008_Circadian_Clock_Model2 Visualisation
+description: Question-and-answer and dynamic visual summaries for Akman2008_Circadian_Clock_Model2.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Akman2008 Circadian Clock Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Akman2008_Circadian_Clock_Model2.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_akman2008_circadian_clock_model2_biomd0000000214_model
+      title: Akman2008_Circadian_Clock_Model2
+      observables:
+      - id: MW
+        port: wc_1_mrna
+        label: WC-1 mRNA
+        group: gene_regulation
+      - id: MF
+        port: frq_mrna
+        label: Frq mRNA
+        group: gene_regulation
+      - id: PW
+        port: wc_1
+        label: WC-1
+        group: physiology
+      - id: E1W
+        port: wc_1_1
+        label: WC-1_1
+        group: physiology
+      - id: E2W
+        port: wc_1_2
+        label: WC-1_2
+        group: physiology
+      - id: E1Fp
+        port: l_frq_1
+        label: l-Frq_1
+        group: physiology
+io:
+  inputs: []
+  outputs: []

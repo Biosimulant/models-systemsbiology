@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "5f56b7b5-c5ae-41bb-9a40-f72cde17dd59",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "880b4497-8057-4cd8-86cb-0da93b898bd6",
+  "created_at": "2026-05-16T05:46:47.769308394+00:00",
+  "last_synced_at": "2026-05-17T05:02:41.188180+00:00",
+  "hub_manifest_hash": "4baf9f2c6c0a8c05af80efd0460c926587479429b66de4c2e59b9aaad5608026",
+  "package_name": "mouse-iron-distribution-deficient-iron-diet-lab"
+}

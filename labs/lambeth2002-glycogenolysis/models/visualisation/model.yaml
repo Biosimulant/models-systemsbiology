@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Lambeth2002_Glycogenolysis Visualisation
+description: Question-and-answer and dynamic visual summaries for Lambeth2002_Glycogenolysis.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Lambeth2002 Glycogenolysis Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Lambeth2002_Glycogenolysis.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_lambeth2002_glycogenolysis_model6623617994_model
+      title: Lambeth2002_Glycogenolysis
+      observables:
+      - id: atp
+        port: atp
+        label: ATP
+        group: metabolism
+      - id: NAD
+        port: nad
+        label: NAD
+        group: metabolism
+      - id: adp
+        port: adp
+        label: ADP
+        group: metabolism
+      - id: NADH
+        port: nadh
+        label: NADH
+        group: metabolism
+      - id: Gly
+        port: gly
+        label: Gly
+        group: core_system_state
+      - id: PCr
+        port: p_cr
+        label: PCr
+        group: core_system_state
+io:
+  inputs: []
+  outputs: []

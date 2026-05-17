@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Tyson2003_NegFB_Oscillator Visualisation
+description: Question-and-answer and dynamic visual summaries for Tyson2003_NegFB_Oscillator.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Tyson2003 Negfb Oscillator Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Tyson2003_NegFB_Oscillator.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_tyson2003_negfb_oscillator_biomd0000000308_model
+      title: Tyson2003_NegFB_Oscillator
+      observables:
+      - id: Yp
+        port: model_state_yp
+        label: Yp
+        group: physiology
+      - id: Rp
+        port: model_state_rp
+        label: Rp
+        group: physiology
+      - id: Y
+        port: model_state_y
+        label: Y
+        group: physiology
+      - id: X
+        port: model_state_x
+        label: X
+        group: physiology
+      - id: S
+        port: model_state_s
+        label: S
+        group: physiology
+      - id: R
+        port: model_state_r
+        label: R
+        group: physiology
+io:
+  inputs: []
+  outputs: []

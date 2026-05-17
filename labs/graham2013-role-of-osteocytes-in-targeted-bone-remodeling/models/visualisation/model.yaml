@@ -1,0 +1,51 @@
+schema_version: '2.0'
+title: Graham2013 - Role of osteocytes in targeted bone remodeling Visualisation
+description: Question-and-answer and dynamic visual summaries for Graham2013 - Role
+  of osteocytes in targeted bone remodeling.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Graham2013 Role Of Osteocytes In Targeted Bone Remodeling Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Graham2013 - Role of osteocytes in targeted bone remodeling.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_graham2013_role_of_osteocytes_in_targeted_bone_r_biomd0000000721_model
+      title: Graham2013 - Role of osteocytes in targeted bone remodeling
+      observables:
+      - id: Osteocytes__S
+        port: osteocytes_s
+        label: Osteocytes (S)
+        group: physiology
+      - id: Bone_volume__z
+        port: bone_volume_z
+        label: Bone volume (z)
+        group: physiology
+      - id: Pre_Osteoblasts__P
+        port: pre_osteoblasts_p
+        label: Pre-Osteoblasts (P)
+        group: physiology
+      - id: Osteoclasts__C
+        port: osteoclasts_c
+        label: Osteoclasts (C)
+        group: physiology
+      - id: Osteoblasts__B
+        port: osteoblasts_b
+        label: Osteoblasts (B)
+        group: physiology
+io:
+  inputs: []
+  outputs: []

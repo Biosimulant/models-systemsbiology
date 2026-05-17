@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "c5485eeb-ae3a-4b61-aedd-a3fea669be64",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "a994a6ca-5e17-4a00-92b6-f75801102c64",
+  "created_at": "2026-05-16T05:46:41.092734634+00:00",
+  "last_synced_at": "2026-05-17T01:48:49.236904+00:00",
+  "hub_manifest_hash": "244a7288877270e8cf82ec9d239c8a2021e79052d005e9b03f2548fd41fd8e07",
+  "package_name": "ayati2010-boneremodelingdynamics-normalcondition-lab"
+}

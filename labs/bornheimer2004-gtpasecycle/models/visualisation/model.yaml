@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Bornheimer2004_GTPaseCycle Visualisation
+description: Question-and-answer and dynamic visual summaries for Bornheimer2004_GTPaseCycle.
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Bornheimer2004 Gtpasecycle Lab
+    question: 'Which signalling variables dominate the simulated network response?
+      Source model: Bornheimer2004_GTPaseCycle.'
+    answer_focus: Q/A table plus signaling timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_bornheimer2004_gtpasecycle_biomd0000000086_model
+      title: Bornheimer2004_GTPaseCycle
+      observables:
+      - id: species_7
+        port: model_state_pi
+        label: Pi
+        group: signaling
+      - id: species_3
+        port: model_state_t
+        label: T
+        group: signaling
+      - id: species_8
+        port: model_state_d
+        label: D
+        group: signaling
+      - id: species_4
+        port: model_state_r
+        label: R
+        group: signaling
+      - id: species_1
+        port: model_state_g
+        label: G
+        group: signaling
+      - id: species_13
+        port: rgd
+        label: RGD
+        group: signaling
+io:
+  inputs: []
+  outputs: []

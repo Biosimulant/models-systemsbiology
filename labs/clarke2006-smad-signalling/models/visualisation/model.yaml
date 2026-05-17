@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Clarke2006_Smad_signalling Visualisation
+description: Question-and-answer and dynamic visual summaries for Clarke2006_Smad_signalling.
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Clarke2006 Smad Signalling Lab
+    question: 'Which signalling variables dominate the simulated network response?
+      Source model: Clarke2006_Smad_signalling.'
+    answer_focus: Q/A table plus signaling timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_clarke2006_smad_signalling_biomd0000000112_model
+      title: Clarke2006_Smad_signalling
+      observables:
+      - id: R_smad_cyt
+        port: r_smad_cyt
+        label: R-Smad_cyt
+        group: signaling
+      - id: smad4_cyt
+        port: smad4_cyt
+        label: Smad4_cyt
+        group: signaling
+      - id: smad4_nuc
+        port: smad4_nuc
+        label: Smad4_nuc
+        group: signaling
+      - id: R_smad_nuc
+        port: r_smad_nuc
+        label: R-Smad_nuc
+        group: signaling
+      - id: receptor
+        port: receptors
+        label: receptors
+        group: signaling
+      - id: R_smad_P_nuc
+        port: r_smad_p_nuc
+        label: R-Smad-P_nuc
+        group: signaling
+io:
+  inputs: []
+  outputs: []

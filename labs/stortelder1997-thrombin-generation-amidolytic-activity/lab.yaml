@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Stortelder1997 Thrombin Generation Amidolytic Activity Lab
+description: 'Stortelder1997 - Thrombin Generation Amidolytic Activity Mathematical
+  modelling of a part of the blood coagulation mechanism. This model is described
+  in the article: Mathematical modelling in blood co.'
+models:
+- alias: systemsbiology_sbml_stortelder1997_thrombin_generation_amidolytic_ac_biomd0000000358_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_stortelder1997_thrombin_generation_amidolytic_ac_biomd0000000358_model.state
+  to:
+  - visualisation.systemsbiology_sbml_stortelder1997_thrombin_generation_amidolytic_ac_biomd0000000358_model_state
+- from: systemsbiology_sbml_stortelder1997_thrombin_generation_amidolytic_ac_biomd0000000358_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_stortelder1997_thrombin_generation_amidolytic_ac_biomd0000000358_model_summary
+- from: systemsbiology_sbml_stortelder1997_thrombin_generation_amidolytic_ac_biomd0000000358_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_stortelder1997_thrombin_generation_amidolytic_ac_biomd0000000358_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_xa_atiii
+    maps_to: systemsbiology_sbml_stortelder1997_thrombin_generation_amidolytic_ac_biomd0000000358_model.initial_xa_atiii
+    label: Initial Xa Atiii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_ATIII`.
+  - name: initial_i_ia_alpha2_m
+    maps_to: systemsbiology_sbml_stortelder1997_thrombin_generation_amidolytic_ac_biomd0000000358_model.initial_i_ia_alpha2_m
+    label: Initial I Ia Alpha2 M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IIa_alpha2M`.
+  - name: initial_i_ia_atiii
+    maps_to: systemsbiology_sbml_stortelder1997_thrombin_generation_amidolytic_ac_biomd0000000358_model.initial_i_ia_atiii
+    label: Initial I Ia Atiii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IIa_ATIII`.
+  - name: initial_model_state_ii
+    maps_to: systemsbiology_sbml_stortelder1997_thrombin_generation_amidolytic_ac_biomd0000000358_model.initial_model_state_ii
+    label: Initial Model State Ii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `II`.
+  - name: initial_model_state_pl
+    maps_to: systemsbiology_sbml_stortelder1997_thrombin_generation_amidolytic_ac_biomd0000000358_model.initial_model_state_pl
+    label: Initial Model State Pl
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PL`.
+  - name: initial_model_state_rvv
+    maps_to: systemsbiology_sbml_stortelder1997_thrombin_generation_amidolytic_ac_biomd0000000358_model.initial_model_state_rvv
+    label: Initial Model State Rvv
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RVV`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_stortelder1997_thrombin_generation_amidolytic_ac_biomd0000000358_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_stortelder1997_thrombin_generation_amidolytic_ac_biomd0000000358_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_stortelder1997_thrombin_generation_amidolytic_ac_biomd0000000358_model.species_labels
+  - name: xa_atiii
+    maps_to: systemsbiology_sbml_stortelder1997_thrombin_generation_amidolytic_ac_biomd0000000358_model.xa_atiii
+  - name: i_ia_alpha2_m
+    maps_to: systemsbiology_sbml_stortelder1997_thrombin_generation_amidolytic_ac_biomd0000000358_model.i_ia_alpha2_m
+  - name: i_ia_atiii
+    maps_to: systemsbiology_sbml_stortelder1997_thrombin_generation_amidolytic_ac_biomd0000000358_model.i_ia_atiii
+  - name: model_state_ii
+    maps_to: systemsbiology_sbml_stortelder1997_thrombin_generation_amidolytic_ac_biomd0000000358_model.model_state_ii
+  - name: model_state_pl
+    maps_to: systemsbiology_sbml_stortelder1997_thrombin_generation_amidolytic_ac_biomd0000000358_model.model_state_pl
+  - name: rvv
+    maps_to: systemsbiology_sbml_stortelder1997_thrombin_generation_amidolytic_ac_biomd0000000358_model.rvv

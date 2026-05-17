@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "9aa16c71-c24a-4585-830e-9ca62c1ef164",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "d3b37d84-04b0-4732-b7ca-af05c85a0673",
+  "created_at": "2026-05-16T05:46:41.401507459+00:00",
+  "last_synced_at": "2026-05-17T01:57:46.532483+00:00",
+  "hub_manifest_hash": "e4037fcfdcde398c79edac0037c06debb9e8d76d35d3964fc4b966212aa6e564",
+  "package_name": "baugh1998-regulation-of-coagulation-factor-xa-by-tfpi-lab"
+}

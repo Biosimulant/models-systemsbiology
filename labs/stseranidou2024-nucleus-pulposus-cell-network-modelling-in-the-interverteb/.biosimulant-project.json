@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "4bdd7595-d43f-4dfb-83f0-fdf7bc0fdd28",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "6c46edf5-e967-469b-acb9-a51c52da0cce",
+  "created_at": "2026-05-16T05:46:52.234423796+00:00",
+  "last_synced_at": "2026-05-17T06:22:15.494811+00:00",
+  "hub_manifest_hash": "020a77ac28b651f2dabaf113f6eb9fd16239795b808ddd661f5db44459f2a212",
+  "package_name": "stseranidou2024-nucleus-pulposus-cell-network-modelling-in-the-i"
+}

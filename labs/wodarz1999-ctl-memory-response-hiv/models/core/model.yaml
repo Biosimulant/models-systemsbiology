@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Wodarz1999 CTL memory response HIV
+description: 'This a model from the article: Specific therapy regimes could lead to
+  long-term immunological control of HIV. It can be used to explore systemsbiology
+  wodarz1999 ctl memory response hiv dynamics and compare simulation behavior across
+  conditions.'
+standard: other
+tags:
+- epidemiology
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- D Wodarz
+- M A Nowak
+upstream:
+  id: biomodels_ebi:BIOMD0000000683
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000683
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000683
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000683?filename=BIOMD0000000683.xml
+  license: CC0
+biosim:
+  entrypoint: src.wodarz1999_ctl_memory_response_hiv_biomd0000000683_model:Wodarz1999CtlMemoryResponseHivBiomd0000000683Model
+  init_kwargs:
+    model_path: data/BIOMD0000000683.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_x
+    maps_to: x
+    label: Initial Model State X
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x`.
+  - name: initial_model_state_y
+    maps_to: y
+    label: Initial Model State Y
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `y`.
+  - name: initial_model_state_w
+    maps_to: w
+    label: Initial Model State W
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `w`.
+  - name: initial_model_state_z
+    maps_to: z
+    label: Initial Model State Z
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `z`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_x
+    maps_to: x
+    label: x
+    description: x. Maps to SBML symbol `x`.
+  - name: model_state_y
+    maps_to: y
+    label: y
+    description: y. Maps to SBML symbol `y`.
+  - name: model_state_w
+    maps_to: w
+    label: w
+    description: w. Maps to SBML symbol `w`.
+  - name: model_state_z
+    maps_to: z
+    label: z
+    description: z. Maps to SBML symbol `z`.

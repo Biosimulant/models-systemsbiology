@@ -1,0 +1,90 @@
+schema_version: '2.0'
+title: Clancy2002 Cardiacsodiumchannel Wt Lab
+description: 'The model is according to the paper Na+ Channel Mutation That Causes
+  Both Brugada and Long-QT Syndrome Phenotypes: A Simulation Study of Mechanism Original
+  model comes from ModelDB with accession numb. It can be used to explore systemsbiology
+  clancy2002 cardiacsodiumchannel wt BioModels0000000126 dynamics and compare simulation
+  behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_clancy2002_cardiacsodiumchannel_wt_biomd0000000126_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_clancy2002_cardiacsodiumchannel_wt_biomd0000000126_model.state
+  to:
+  - visualisation.systemsbiology_sbml_clancy2002_cardiacsodiumchannel_wt_biomd0000000126_model_state
+- from: systemsbiology_sbml_clancy2002_cardiacsodiumchannel_wt_biomd0000000126_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_clancy2002_cardiacsodiumchannel_wt_biomd0000000126_model_summary
+- from: systemsbiology_sbml_clancy2002_cardiacsodiumchannel_wt_biomd0000000126_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_clancy2002_cardiacsodiumchannel_wt_biomd0000000126_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- cardiovascular
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_open_states
+    maps_to: systemsbiology_sbml_clancy2002_cardiacsodiumchannel_wt_biomd0000000126_model.initial_open_states
+    label: Initial Open States
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `O`.
+  - name: initial_model_state_c3
+    maps_to: systemsbiology_sbml_clancy2002_cardiacsodiumchannel_wt_biomd0000000126_model.initial_model_state_c3
+    label: Initial Model State C3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C3`.
+  - name: initial_model_state_im2
+    maps_to: systemsbiology_sbml_clancy2002_cardiacsodiumchannel_wt_biomd0000000126_model.initial_model_state_im2
+    label: Initial Model State IM2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IM2`.
+  - name: initial_model_state_im1
+    maps_to: systemsbiology_sbml_clancy2002_cardiacsodiumchannel_wt_biomd0000000126_model.initial_model_state_im1
+    label: Initial Model State IM1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IM1`.
+  - name: initial_if_value
+    maps_to: systemsbiology_sbml_clancy2002_cardiacsodiumchannel_wt_biomd0000000126_model.initial_if_value
+    label: Initial If Value
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IF`.
+  - name: initial_model_state_ic3
+    maps_to: systemsbiology_sbml_clancy2002_cardiacsodiumchannel_wt_biomd0000000126_model.initial_model_state_ic3
+    label: Initial Model State IC3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IC3`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_clancy2002_cardiacsodiumchannel_wt_biomd0000000126_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_clancy2002_cardiacsodiumchannel_wt_biomd0000000126_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_clancy2002_cardiacsodiumchannel_wt_biomd0000000126_model.species_labels
+  - name: open_states
+    maps_to: systemsbiology_sbml_clancy2002_cardiacsodiumchannel_wt_biomd0000000126_model.open_states
+  - name: model_state_c3
+    maps_to: systemsbiology_sbml_clancy2002_cardiacsodiumchannel_wt_biomd0000000126_model.model_state_c3
+  - name: im2
+    maps_to: systemsbiology_sbml_clancy2002_cardiacsodiumchannel_wt_biomd0000000126_model.im2
+  - name: im1
+    maps_to: systemsbiology_sbml_clancy2002_cardiacsodiumchannel_wt_biomd0000000126_model.im1
+  - name: if_value
+    maps_to: systemsbiology_sbml_clancy2002_cardiacsodiumchannel_wt_biomd0000000126_model.if_value
+  - name: ic3
+    maps_to: systemsbiology_sbml_clancy2002_cardiacsodiumchannel_wt_biomd0000000126_model.ic3

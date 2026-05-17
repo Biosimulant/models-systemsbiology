@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Faville2008 Updepolarization Lab
+description: 'This a model from the article: A biophysically based mathematical model
+  of unitary potential activity ininterstitial cells of Cajal. Faville RA, Pullan
+  AJ, Sanders KM, Smith NP.'
+models:
+- alias: systemsbiology_sbml_faville2008_updepolarization_model0912044015_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_faville2008_updepolarization_model0912044015_model.state
+  to:
+  - visualisation.systemsbiology_sbml_faville2008_updepolarization_model0912044015_model_state
+- from: systemsbiology_sbml_faville2008_updepolarization_model0912044015_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_faville2008_updepolarization_model0912044015_model_summary
+- from: systemsbiology_sbml_faville2008_updepolarization_model0912044015_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_faville2008_updepolarization_model0912044015_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_vm
+    maps_to: systemsbiology_sbml_faville2008_updepolarization_model0912044015_model.initial_model_state_vm
+    label: Initial Model State Vm
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Vm`.
+  - name: initial_phi3
+    maps_to: systemsbiology_sbml_faville2008_updepolarization_model0912044015_model.initial_phi3
+    label: Initial Phi3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `phi3`.
+  - name: initial_model_state_ns1
+    maps_to: systemsbiology_sbml_faville2008_updepolarization_model0912044015_model.initial_model_state_ns1
+    label: Initial Model State NS1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NS1`.
+  - name: initial_model_state_cs2
+    maps_to: systemsbiology_sbml_faville2008_updepolarization_model0912044015_model.initial_model_state_cs2
+    label: Initial Model State CS2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CS2`.
+  - name: initial_model_state_cs1
+    maps_to: systemsbiology_sbml_faville2008_updepolarization_model0912044015_model.initial_model_state_cs1
+    label: Initial Model State CS1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CS1`.
+  - name: initial_model_state_cmt
+    maps_to: systemsbiology_sbml_faville2008_updepolarization_model0912044015_model.initial_model_state_cmt
+    label: Initial Model State Cmt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CMT`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_faville2008_updepolarization_model0912044015_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_faville2008_updepolarization_model0912044015_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_faville2008_updepolarization_model0912044015_model.species_labels
+  - name: model_state_vm
+    maps_to: systemsbiology_sbml_faville2008_updepolarization_model0912044015_model.model_state_vm
+  - name: phi3
+    maps_to: systemsbiology_sbml_faville2008_updepolarization_model0912044015_model.phi3
+  - name: ns1
+    maps_to: systemsbiology_sbml_faville2008_updepolarization_model0912044015_model.ns1
+  - name: cs2
+    maps_to: systemsbiology_sbml_faville2008_updepolarization_model0912044015_model.cs2
+  - name: cs1
+    maps_to: systemsbiology_sbml_faville2008_updepolarization_model0912044015_model.cs1
+  - name: cmt
+    maps_to: systemsbiology_sbml_faville2008_updepolarization_model0912044015_model.cmt

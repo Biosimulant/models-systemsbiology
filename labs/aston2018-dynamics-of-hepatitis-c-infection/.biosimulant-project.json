@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "cf69b65c-a6cd-4968-8926-49f29e268f9e",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "860b1dab-20dc-47f4-822b-8b7729e25df7",
+  "created_at": "2026-05-16T05:46:41.052564259+00:00",
+  "last_synced_at": "2026-05-17T01:46:49.539090+00:00",
+  "hub_manifest_hash": "d84fb0ac722b83d40d4f9e8203374339c489d9123d9a45d04611d62026a81ab3",
+  "package_name": "aston2018-dynamics-of-hepatitis-c-infection-lab"
+}

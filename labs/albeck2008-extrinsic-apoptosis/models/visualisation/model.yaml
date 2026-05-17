@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Albeck2008_extrinsic_apoptosis Visualisation
+description: Question-and-answer and dynamic visual summaries for Albeck2008_extrinsic_apoptosis.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Albeck2008 Extrinsic Apoptosis Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Albeck2008_extrinsic_apoptosis.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_albeck2008_extrinsic_apoptosis_biomd0000000220_model
+      title: Albeck2008_extrinsic_apoptosis
+      observables:
+      - id: CytoCm
+        port: cyto_c_m
+        label: CytoC_m
+        group: physiology
+      - id: pC9
+        port: pro_c9
+        label: proC9
+        group: physiology
+      - id: Smacm
+        port: smac_m
+        label: Smac_m
+        group: physiology
+      - id: pC8
+        port: pro_c8
+        label: proC8
+        group: physiology
+      - id: Bcl2c
+        port: cytosolic_bcl_2
+        label: cytosolic Bcl-2
+        group: physiology
+      - id: Bcl2
+        port: bcl_2
+        label: Bcl-2
+        group: physiology
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: ChenXF2008_CICR Visualisation
+description: Question-and-answer and dynamic visual summaries for ChenXF2008_CICR.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Chenxf2008 Cicr Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: ChenXF2008_CICR.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_chenxf2008_cicr_biomd0000000202_model
+      title: ChenXF2008_CICR
+      observables:
+      - id: S2
+        port: model_state_s2
+        label: S2
+        group: physiology
+      - id: S2a
+        port: s2_a
+        label: S2A
+        group: physiology
+      - id: Orai1
+        port: orai1
+        label: Orai1
+        group: physiology
+      - id: S4
+        port: model_state_s4
+        label: S4
+        group: physiology
+      - id: Oc
+        port: model_state_oc
+        label: Oc
+        group: physiology
+      - id: O_o
+        port: o_o
+        label: O O
+        group: physiology
+io:
+  inputs: []
+  outputs: []

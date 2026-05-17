@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Bagci2008_NO_Apoptosis_modelB Visualisation
+description: Question-and-answer and dynamic visual summaries for Bagci2008_NO_Apoptosis_modelB.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Bagci2008 No Apoptosis Modelb Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Bagci2008_NO_Apoptosis_modelB.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_bagci2008_no_apoptosis_modelb_model1006230026_model
+      title: Bagci2008_NO_Apoptosis_modelB
+      observables:
+      - id: CytcApaf_1
+        port: cytc_apaf_1
+        label: CytcApaf 1
+        group: metabolism
+      - id: Casp9Pro3
+        port: casp9_pro3
+        label: Casp9Pro3
+        group: physiology
+      - id: Casp9IAP
+        port: casp9_iap
+        label: Casp9IAP
+        group: physiology
+      - id: Casp9
+        port: casp9
+        label: Casp9
+        group: physiology
+      - id: Casp8Bid
+        port: casp8_bid
+        label: Casp8Bid
+        group: physiology
+      - id: Casp8
+        port: casp8
+        label: Casp8
+        group: physiology
+io:
+  inputs: []
+  outputs: []

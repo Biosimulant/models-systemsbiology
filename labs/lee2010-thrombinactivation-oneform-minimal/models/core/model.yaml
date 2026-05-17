@@ -1,0 +1,86 @@
+schema_version: '2.0'
+title: Lee2010_ThrombinActivation_OneForm_minimal
+description: Chang Jun Lee, Sangwook Wu, Changsun Eun & Lee G. It can be used to explore
+  systemsbiology lee2010 thrombinactivation oneform minimal BioModels0000000363 dynamics
+  and compare simulation behavior across conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Chang Jun Lee
+- Sangwook Wu
+- Changsun Eun
+- Lee G Pedersen
+upstream:
+  id: biomodels_ebi:BIOMD0000000363
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000363
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000363
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000363?filename=BIOMD0000000363_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.lee2010_thrombinactivation_oneform_minimal_biomd0000000363_model:Lee2010ThrombinactivationOneformMinimalBiomd0000000363Model
+  init_kwargs:
+    model_path: data/BIOMD0000000363.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_ii
+    maps_to: II
+    label: Initial Model State Ii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `II`.
+  - name: initial_model_state_p2
+    maps_to: P2
+    label: Initial Model State P2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P2`.
+  - name: initial_i_ia
+    maps_to: IIa
+    label: Initial I Ia
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IIa`.
+  - name: initial_model_state_m
+    maps_to: M
+    label: Initial Model State M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_ii
+    maps_to: II
+    label: II
+    description: II. Maps to SBML symbol `II`.
+  - name: model_state_p2
+    maps_to: P2
+    label: P2
+    description: P2. Maps to SBML symbol `P2`.
+  - name: i_ia
+    maps_to: IIa
+    label: IIa
+    description: IIa. Maps to SBML symbol `IIa`.
+  - name: model_state_m
+    maps_to: M
+    label: M
+    description: M. Maps to SBML symbol `M`.

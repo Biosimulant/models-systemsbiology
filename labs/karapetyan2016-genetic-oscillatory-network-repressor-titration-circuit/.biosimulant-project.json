@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "6931c457-5f1a-4f9b-ab95-a1d211251f46",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "8916aa5c-0087-4784-b058-81496c920778",
+  "created_at": "2026-05-16T05:46:44.470556356+00:00",
+  "last_synced_at": "2026-05-17T03:59:49.847196+00:00",
+  "hub_manifest_hash": "098cfdbc1e04b389adee1e8b4dbaebda287e51d2026adde3bb12b6264d2fcad0",
+  "package_name": "karapetyan2016-genetic-oscillatory-network-repressor-titration-c"
+}

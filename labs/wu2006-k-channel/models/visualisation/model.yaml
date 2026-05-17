@@ -1,0 +1,39 @@
+schema_version: '2.0'
+title: Wu2006_K+Channel Visualisation
+description: Question-and-answer and dynamic visual summaries for Wu2006_K+Channel.
+standard: other
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Wu2006 K Channel Lab
+    question: 'Which metabolic pools or flux-linked states show the strongest simulated
+      change? Source model: Wu2006_K+Channel.'
+    answer_focus: Q/A table plus metabolism timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_wu2006_k_channel_biomd0000000124_model
+      title: Wu2006_K+Channel
+      observables:
+      - id: cer
+        port: er_ca_concentration
+        label: ER ca concentration
+        group: metabolism
+      - id: c
+        port: cytosolic_free_ca_concentration
+        label: cytosolic free ca concentration
+        group: metabolism
+io:
+  inputs: []
+  outputs: []

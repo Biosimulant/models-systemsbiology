@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "8c41e458-4418-4ffe-ab15-77ddf123774b",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "bf8afc8c-f9e3-4e4c-90cd-3a7ca969fb44",
+  "created_at": "2026-05-16T05:46:47.906049984+00:00",
+  "last_synced_at": "2026-05-17T05:04:05.458951+00:00",
+  "hub_manifest_hash": "cb1f5b46b0b9da613702403d7d72827e287c227816968847e853ca5d1ffcd7b2",
+  "package_name": "mueller2008-thrombingeneration-minimal-lab"
+}

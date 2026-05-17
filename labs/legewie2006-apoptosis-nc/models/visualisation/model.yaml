@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Legewie2006_apoptosis_NC Visualisation
+description: Question-and-answer and dynamic visual summaries for Legewie2006_apoptosis_NC.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Legewie2006 Apoptosis Nc Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Legewie2006_apoptosis_NC.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_legewie2006_apoptosis_nc_biomd0000000103_model
+      title: Legewie2006_apoptosis_NC
+      observables:
+      - id: C3
+        port: caspase_3
+        label: Caspase 3
+        group: physiology
+      - id: C9
+        port: caspase_9
+        label: Caspase 9
+        group: physiology
+      - id: C9X
+        port: caspase_9_xiap_complex
+        label: Caspase 9-XIAP complex
+        group: physiology
+      - id: C9_starX
+        port: caspase_9_cleaved_xiap_complex
+        label: Caspase 9 cleaved-XIAP complex
+        group: physiology
+      - id: C9_star
+        port: caspase_9_cleaved
+        label: Caspase 9 cleaved
+        group: physiology
+      - id: C3_starX
+        port: caspase_3_cleaved_xiap_complex
+        label: Caspase 3 cleaved - XIAP complex
+        group: physiology
+io:
+  inputs: []
+  outputs: []

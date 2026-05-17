@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "0a13857b-3785-40ce-82c8-eff8a9a7cf0e",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "85989f7d-b841-49c6-91f1-4c9ae79b3bfb",
+  "created_at": "2026-05-16T05:46:42.892809820+00:00",
+  "last_synced_at": "2026-05-17T02:56:48.036360+00:00",
+  "hub_manifest_hash": "5d08e142ec1443cfce30d12f6b29352fee31e0a724d87d1e1d7902b43967d81d",
+  "package_name": "dupont1991-caoscillation-lab"
+}

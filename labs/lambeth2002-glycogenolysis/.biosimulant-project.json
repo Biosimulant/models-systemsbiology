@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "9ec9b4c5-163c-453e-b6af-9391786c3be1",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "781a452c-0686-415d-b949-7bd8345d77f0",
+  "created_at": "2026-05-16T05:46:45.053859723+00:00",
+  "last_synced_at": "2026-05-17T04:16:17.463822+00:00",
+  "hub_manifest_hash": "e679142e026188640a5d5b4770e857b749807bffcfece1dadbf09bcf69f770f9",
+  "package_name": "lambeth2002-glycogenolysis-lab"
+}

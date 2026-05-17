@@ -1,0 +1,105 @@
+schema_version: '2.0'
+title: Marwan2003 - Genetics, regulatory hierarchy between genes
+description: To the extent possible under law, all copyright and related or neighbouring
+  rights to this encoded model have been dedicated to the public domain worldwide.
+  It can be used to explore systemsbiology marwan2003 genetics regulatory hierarchy
+  between dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Wolfgang Marwan
+upstream:
+  id: biomodels_ebi:BIOMD0000000037
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000037
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000037
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000037?filename=BIOMD0000000037_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.marwan2003_genetics_regulatory_hierarchy_between_biomd0000000037_model:Marwan2003GeneticsRegulatoryHierarchyBetweenBiomd0000000037Model
+  init_kwargs:
+    model_path: data/BIOMD0000000037.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_prepre_s
+    maps_to: prepreS
+    label: Initial Prepre S
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `prepreS`.
+  - name: initial_model_state_pfr
+    maps_to: Pfr
+    label: Initial Model State Pfr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pfr`.
+  - name: initial_model_state_xi
+    maps_to: Xi
+    label: Initial Model State Xi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xi`.
+  - name: initial_model_state_ya
+    maps_to: Ya
+    label: Initial Model State Ya
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ya`.
+  - name: initial_model_state_yi
+    maps_to: Yi
+    label: Initial Model State Yi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Yi`.
+  - name: initial_model_state_xa
+    maps_to: Xa
+    label: Initial Model State Xa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: prepre_s
+    maps_to: prepreS
+    label: PrepreS
+    description: PrepreS. Maps to SBML symbol `prepreS`.
+  - name: pfr
+    maps_to: Pfr
+    label: Pfr
+    description: Pfr. Maps to SBML symbol `Pfr`.
+  - name: model_state_xi
+    maps_to: Xi
+    label: Xi
+    description: Xi. Maps to SBML symbol `Xi`.
+  - name: model_state_ya
+    maps_to: Ya
+    label: Ya
+    description: Ya. Maps to SBML symbol `Ya`.
+  - name: model_state_yi
+    maps_to: Yi
+    label: Yi
+    description: Yi. Maps to SBML symbol `Yi`.
+  - name: model_state_xa
+    maps_to: Xa
+    label: Xa
+    description: Xa. Maps to SBML symbol `Xa`.

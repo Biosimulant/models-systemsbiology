@@ -1,0 +1,66 @@
+schema_version: '2.0'
+title: Brown1997 - Plasma Melatonin Levels
+description: 'Brown1997 - Plasma Melatonin Levels A mathematical model that incorporatesa
+  piecewise function for NAT activity to predict melatoninconcentration. This model
+  is described in the article: A mathematica.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- E N Brown
+- Y Choe
+- T L Shanahan
+- C A Czeisler
+upstream:
+  id: biomodels_ebi:BIOMD0000000672
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000672
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000672
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000672?filename=BIOMD0000000672_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.brown1997_plasma_melatonin_levels_biomd0000000672_model:Brown1997PlasmaMelatoninLevelsBiomd0000000672Model
+  init_kwargs:
+    model_path: data/BIOMD0000000672.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_h2
+    maps_to: H2
+    label: Initial Model State H2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `H2`.
+  - name: initial_model_state_h1
+    maps_to: H1
+    label: Initial Model State H1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `H1`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_h2
+    maps_to: H2
+    label: H2
+    description: H2. Maps to SBML symbol `H2`.
+  - name: model_state_h1
+    maps_to: H1
+    label: H1
+    description: H1. Maps to SBML symbol `H1`.

@@ -1,0 +1,109 @@
+schema_version: '2.0'
+title: Valero2016 - Ascorbate-Glutathione cycle in chloroplasts under light/dark conditions
+description: 'Valero2016 - Ascorbate-Glutathione cycle in chloroplasts under light/dark
+  conditions This model is described in the article: Modeling the ascorbate-glutathione
+  cycle in chloroplasts under light/dark c. It can be used to explore systemsbiology
+  valero2016 ascorbate glutathione cycle in dynamics and compare simulation behavior
+  across conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Edelmira Valero
+- Hermenegilda Macià
+- Ildefonso M De la Fuente
+- José-Antonio Hernández
+- María-Isabel González-Sánchez
+upstream:
+  id: biomodels_ebi:BIOMD0000000589
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000589
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000589
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000589?filename=BIOMD0000000589_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.valero2016_ascorbate_glutathione_cycle_in_chloro_biomd0000000589_model:Valero2016AscorbateGlutathioneCycleInChloroBiomd0000000589Model
+  init_kwargs:
+    model_path: data/BIOMD0000000589.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_nadph
+    maps_to: NADPH
+    label: Initial Nadph
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NADPH`.
+  - name: initial_nad_pplus
+    maps_to: NADPplus
+    label: Initial Nad Pplus
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NADPplus`.
+  - name: initial_model_state_asc
+    maps_to: ASC
+    label: Initial Model State Asc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ASC`.
+  - name: initial_model_state_gsh
+    maps_to: GSH
+    label: Initial Model State Gsh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `GSH`.
+  - name: initial_model_state_apx
+    maps_to: APX
+    label: Initial Model State Apx
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `APX`.
+  - name: initial_o2neg
+    maps_to: O2neg
+    label: Initial O2neg
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `O2neg`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: nadph
+    maps_to: NADPH
+    label: NADPH
+    description: NADPH. Maps to SBML symbol `NADPH`.
+  - name: nad_pplus
+    maps_to: NADPplus
+    label: NADPplus
+    description: NADPplus. Maps to SBML symbol `NADPplus`.
+  - name: asc
+    maps_to: ASC
+    label: ASC
+    description: ASC. Maps to SBML symbol `ASC`.
+  - name: gsh
+    maps_to: GSH
+    label: GSH
+    description: GSH. Maps to SBML symbol `GSH`.
+  - name: apx
+    maps_to: APX
+    label: APX
+    description: APX. Maps to SBML symbol `APX`.
+  - name: o2neg
+    maps_to: O2neg
+    label: O2neg
+    description: O2neg. Maps to SBML symbol `O2neg`.

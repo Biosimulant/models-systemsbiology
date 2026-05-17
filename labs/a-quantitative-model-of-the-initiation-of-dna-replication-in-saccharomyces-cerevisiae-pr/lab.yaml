@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: A Quantitative Model Of The Initiation Of Dna Replication In Saccharomyces
+  Cerevisiae Pr Lab
+description: Requires input from Chen2004(BIOMD0000000056) model but did not work
+  correctly even after integrating both models. It can be used to explore systemsbiology
+  a quantitative of the initiation dynamics and compare simulation behavior across
+  conditions.
+models:
+- alias: systemsbiology_sbml_a_quantitative_model_of_the_initiation_of_dna_re_model1812050001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_a_quantitative_model_of_the_initiation_of_dna_re_model1812050001_model.state
+  to:
+  - visualisation.systemsbiology_sbml_a_quantitative_model_of_the_initiation_of_dna_re_model1812050001_model_state
+- from: systemsbiology_sbml_a_quantitative_model_of_the_initiation_of_dna_re_model1812050001_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_a_quantitative_model_of_the_initiation_of_dna_re_model1812050001_model_summary
+- from: systemsbiology_sbml_a_quantitative_model_of_the_initiation_of_dna_re_model1812050001_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_a_quantitative_model_of_the_initiation_of_dna_re_model1812050001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_orc_total
+    maps_to: systemsbiology_sbml_a_quantitative_model_of_the_initiation_of_dna_re_model1812050001_model.initial_orc_total
+    label: Initial Orc Total
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ORC_Total`.
+  - name: initial_mcm_total
+    maps_to: systemsbiology_sbml_a_quantitative_model_of_the_initiation_of_dna_re_model1812050001_model.initial_mcm_total
+    label: Initial Mcm Total
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MCM_Total`.
+  - name: initial_cdt1_total
+    maps_to: systemsbiology_sbml_a_quantitative_model_of_the_initiation_of_dna_re_model1812050001_model.initial_cdt1_total
+    label: Initial Cdt1 Total
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CDT1_Total`.
+  - name: initial_cdc45_total
+    maps_to: systemsbiology_sbml_a_quantitative_model_of_the_initiation_of_dna_re_model1812050001_model.initial_cdc45_total
+    label: Initial Cdc45 Total
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CDC45_Total`.
+  - name: initial_orc_p
+    maps_to: systemsbiology_sbml_a_quantitative_model_of_the_initiation_of_dna_re_model1812050001_model.initial_orc_p
+    label: Initial Orc P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ORC_P`.
+  - name: initial_orc_mcm_dbf4_cdc45
+    maps_to: systemsbiology_sbml_a_quantitative_model_of_the_initiation_of_dna_re_model1812050001_model.initial_orc_mcm_dbf4_cdc45
+    label: Initial Orc Mcm Dbf4 Cdc45
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ORC_MCM_DBF4_CDC45`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_a_quantitative_model_of_the_initiation_of_dna_re_model1812050001_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_a_quantitative_model_of_the_initiation_of_dna_re_model1812050001_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_a_quantitative_model_of_the_initiation_of_dna_re_model1812050001_model.species_labels
+  - name: orc_total
+    maps_to: systemsbiology_sbml_a_quantitative_model_of_the_initiation_of_dna_re_model1812050001_model.orc_total
+  - name: mcm_total
+    maps_to: systemsbiology_sbml_a_quantitative_model_of_the_initiation_of_dna_re_model1812050001_model.mcm_total
+  - name: cdt1_total
+    maps_to: systemsbiology_sbml_a_quantitative_model_of_the_initiation_of_dna_re_model1812050001_model.cdt1_total
+  - name: cdc45_total
+    maps_to: systemsbiology_sbml_a_quantitative_model_of_the_initiation_of_dna_re_model1812050001_model.cdc45_total
+  - name: orc_p
+    maps_to: systemsbiology_sbml_a_quantitative_model_of_the_initiation_of_dna_re_model1812050001_model.orc_p
+  - name: orc_mcm_dbf4_cdc45
+    maps_to: systemsbiology_sbml_a_quantitative_model_of_the_initiation_of_dna_re_model1812050001_model.orc_mcm_dbf4_cdc45

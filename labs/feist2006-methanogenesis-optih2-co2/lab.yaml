@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Feist2006 Methanogenesis Optih2 Co2 Lab
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models (http://www.ebi.ac.uk/biomodels/). It is copyright (c) 2005-2011
+  The BioModels.net Team.'
+models:
+- alias: systemsbiology_sbml_feist2006_methanogenesis_optih2_co2_model5662398146_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_feist2006_methanogenesis_optih2_co2_model5662398146_model.state
+  to:
+  - visualisation.systemsbiology_sbml_feist2006_methanogenesis_optih2_co2_model5662398146_model_state
+- from: systemsbiology_sbml_feist2006_methanogenesis_optih2_co2_model5662398146_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_feist2006_methanogenesis_optih2_co2_model5662398146_model_summary
+- from: systemsbiology_sbml_feist2006_methanogenesis_optih2_co2_model5662398146_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_feist2006_methanogenesis_optih2_co2_model5662398146_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_glycolaldehyde
+    maps_to: systemsbiology_sbml_feist2006_methanogenesis_optih2_co2_model5662398146_model.initial_glycolaldehyde
+    label: Initial Glycolaldehyde
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_gcald_c_`.
+  - name: initial_glycolaldehyde_2
+    maps_to: systemsbiology_sbml_feist2006_methanogenesis_optih2_co2_model5662398146_model.initial_glycolaldehyde_2
+    label: Initial Glycolaldehyde 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_gcald_e_`.
+  - name: initial_d_td_pglucose
+    maps_to: systemsbiology_sbml_feist2006_methanogenesis_optih2_co2_model5662398146_model.initial_d_td_pglucose
+    label: Initial D Td Pglucose
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_dtdpglu_c_`.
+  - name: initial_d_tdp_4_dehydro_6_deoxy_d_glucose
+    maps_to: systemsbiology_sbml_feist2006_methanogenesis_optih2_co2_model5662398146_model.initial_d_tdp_4_dehydro_6_deoxy_d_glucose
+    label: Initial D Tdp 4 Dehydro 6 Deoxy D Glucose
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_dtdp4d6dg_c_`.
+  - name: initial_d_atp
+    maps_to: systemsbiology_sbml_feist2006_methanogenesis_optih2_co2_model5662398146_model.initial_d_atp
+    label: Initial D ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_datp_c_`.
+  - name: initial_d_adp
+    maps_to: systemsbiology_sbml_feist2006_methanogenesis_optih2_co2_model5662398146_model.initial_d_adp
+    label: Initial D ADP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_dadp_c_`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_feist2006_methanogenesis_optih2_co2_model5662398146_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_feist2006_methanogenesis_optih2_co2_model5662398146_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_feist2006_methanogenesis_optih2_co2_model5662398146_model.species_labels
+  - name: glycolaldehyde
+    maps_to: systemsbiology_sbml_feist2006_methanogenesis_optih2_co2_model5662398146_model.glycolaldehyde
+  - name: glycolaldehyde_2
+    maps_to: systemsbiology_sbml_feist2006_methanogenesis_optih2_co2_model5662398146_model.glycolaldehyde_2
+  - name: d_td_pglucose
+    maps_to: systemsbiology_sbml_feist2006_methanogenesis_optih2_co2_model5662398146_model.d_td_pglucose
+  - name: d_tdp_4_dehydro_6_deoxy_d_glucose
+    maps_to: systemsbiology_sbml_feist2006_methanogenesis_optih2_co2_model5662398146_model.d_tdp_4_dehydro_6_deoxy_d_glucose
+  - name: d_atp
+    maps_to: systemsbiology_sbml_feist2006_methanogenesis_optih2_co2_model5662398146_model.d_atp
+  - name: d_adp
+    maps_to: systemsbiology_sbml_feist2006_methanogenesis_optih2_co2_model5662398146_model.d_adp

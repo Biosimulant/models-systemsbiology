@@ -1,0 +1,71 @@
+schema_version: '2.0'
+title: Reynolds2006 Reduced Model Of The Acute Inflammatory Response Lab
+description: Angela Reynolds, Jonathan Rubin, Gilles Clermont, Judy Day, Yoram Vodovotz
+  & G. It can be used to explore systemsbiology reynolds2006 reduced of the acute
+  dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_reynolds2006_reduced_model_of_the_acute_inflamma_biomd0000000714_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_reynolds2006_reduced_model_of_the_acute_inflamma_biomd0000000714_model.state
+  to:
+  - visualisation.systemsbiology_sbml_reynolds2006_reduced_model_of_the_acute_inflamma_biomd0000000714_model_state
+- from: systemsbiology_sbml_reynolds2006_reduced_model_of_the_acute_inflamma_biomd0000000714_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_reynolds2006_reduced_model_of_the_acute_inflamma_biomd0000000714_model_summary
+- from: systemsbiology_sbml_reynolds2006_reduced_model_of_the_acute_inflamma_biomd0000000714_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_reynolds2006_reduced_model_of_the_acute_inflamma_biomd0000000714_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_anti_inflammatory_mediators_c_a
+    maps_to: systemsbiology_sbml_reynolds2006_reduced_model_of_the_acute_inflamma_biomd0000000714_model.initial_anti_inflammatory_mediators_c_a
+    label: Initial Anti Inflammatory Mediators C A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C_A`.
+  - name: initial_activated_phagocytes_nstar
+    maps_to: systemsbiology_sbml_reynolds2006_reduced_model_of_the_acute_inflamma_biomd0000000714_model.initial_activated_phagocytes_nstar
+    label: Initial Activated Phagocytes Nstar
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Nstar`.
+  - name: initial_pathogen_p
+    maps_to: systemsbiology_sbml_reynolds2006_reduced_model_of_the_acute_inflamma_biomd0000000714_model.initial_pathogen_p
+    label: Initial Pathogen P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P`.
+  - name: initial_tissue_damage_d
+    maps_to: systemsbiology_sbml_reynolds2006_reduced_model_of_the_acute_inflamma_biomd0000000714_model.initial_tissue_damage_d
+    label: Initial Tissue Damage D
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `D`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_reynolds2006_reduced_model_of_the_acute_inflamma_biomd0000000714_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_reynolds2006_reduced_model_of_the_acute_inflamma_biomd0000000714_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_reynolds2006_reduced_model_of_the_acute_inflamma_biomd0000000714_model.species_labels
+  - name: anti_inflammatory_mediators_c_a
+    maps_to: systemsbiology_sbml_reynolds2006_reduced_model_of_the_acute_inflamma_biomd0000000714_model.anti_inflammatory_mediators_c_a
+  - name: activated_phagocytes_nstar
+    maps_to: systemsbiology_sbml_reynolds2006_reduced_model_of_the_acute_inflamma_biomd0000000714_model.activated_phagocytes_nstar
+  - name: pathogen_p
+    maps_to: systemsbiology_sbml_reynolds2006_reduced_model_of_the_acute_inflamma_biomd0000000714_model.pathogen_p
+  - name: tissue_damage_d
+    maps_to: systemsbiology_sbml_reynolds2006_reduced_model_of_the_acute_inflamma_biomd0000000714_model.tissue_damage_d

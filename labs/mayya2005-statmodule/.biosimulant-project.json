@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "42941289-f1bb-41ce-8d9b-40d037072576",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "f2550bb9-9500-4ccf-8b6b-57860d1348fd",
+  "created_at": "2026-05-16T05:46:46.960320293+00:00",
+  "last_synced_at": "2026-05-17T04:53:15.565292+00:00",
+  "hub_manifest_hash": "1c84572aaf51f7aaa309580c271caf9f2de12a064c480367d0cb7f3a2bf9b145",
+  "package_name": "mayya2005-statmodule-lab"
+}

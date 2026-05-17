@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "204fff74-d4e7-4813-828e-435a6513cf55",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "17619a0e-0c0b-4160-9d29-6b5622ad8ba1",
+  "created_at": "2026-05-16T05:46:53.426857834+00:00",
+  "last_synced_at": "2026-05-17T07:03:05.810374+00:00",
+  "hub_manifest_hash": "8b5f00f1f2bfdfe57241950467acbebed488150a2c97034973ff23fb2b5f17cf",
+  "package_name": "xu2003-phosphoinositide-turnover-lab"
+}

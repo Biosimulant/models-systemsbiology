@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Fuss2006_MitoticActivation Visualisation
+description: Question-and-answer and dynamic visual summaries for Fuss2006_MitoticActivation.
+standard: other
+tags:
+- cellcycle
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Fuss2006 Mitoticactivation Lab
+    question: 'Which cell-cycle control states dominate the simulated progression?
+      Source model: Fuss2006_MitoticActivation.'
+    answer_focus: Q/A table plus cellcycle timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_fuss2006_mitoticactivation_biomd0000000069_model
+      title: Fuss2006_MitoticActivation
+      observables:
+      - id: srci
+        port: srci
+        label: Srci
+        group: physiology
+      - id: PTP
+        port: ptp
+        label: PTP
+        group: physiology
+      - id: Cbp
+        port: cbp
+        label: Cbp
+        group: physiology
+      - id: CSK_cytoplasm
+        port: csk_cytoplasm
+        label: CSK Cytoplasm
+        group: physiology
+      - id: srco
+        port: srco
+        label: Srco
+        group: physiology
+      - id: srcc
+        port: srcc
+        label: Srcc
+        group: physiology
+io:
+  inputs: []
+  outputs: []

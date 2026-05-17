@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Schmierer2010_FIH_Ankyrins
+description: 'This a model from the article: Hypoxia-dependent sequestration of an
+  oxygen sensor by a widespread structural motif can shape the hypoxic response -
+  a predictive kinetic model Bernhard Schmierer, Béla. It can be used to explore systemsbiology
+  schmierer2010 fih ankyrins BioModels0000000300 dynamics and compare simulation behavior
+  across conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Bernhard Schmierer
+- Béla Novák
+- Christopher J Schofield
+upstream:
+  id: biomodels_ebi:BIOMD0000000300
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000300
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000300
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000300?filename=BIOMD0000000300_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.schmierer2010_fih_ankyrins_biomd0000000300_model:Schmierer2010FihAnkyrinsBiomd0000000300Model
+  init_kwargs:
+    model_path: data/BIOMD0000000300.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_atot
+    maps_to: species_5
+    label: Initial Atot
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_5`.
+  - name: initial_model_state_a
+    maps_to: species_3
+    label: Initial Model State A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_3`.
+  - name: initial_ftot
+    maps_to: species_7
+    label: Initial Ftot
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_7`.
+  - name: initial_a_for_plotting
+    maps_to: species_16
+    label: Initial A For Plotting
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_16`.
+  - name: initial_ptot
+    maps_to: species_8
+    label: Initial Ptot
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_8`.
+  - name: initial_fi_hfree
+    maps_to: species_12
+    label: Initial Fi Hfree
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_12`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: atot
+    maps_to: species_5
+    label: Atot
+    description: Atot. Maps to SBML symbol `species_5`.
+  - name: model_state_a
+    maps_to: species_3
+    label: A
+    description: A. Maps to SBML symbol `species_3`.
+  - name: ftot
+    maps_to: species_7
+    label: Ftot
+    description: Ftot. Maps to SBML symbol `species_7`.
+  - name: a_for_plotting
+    maps_to: species_16
+    label: A for plotting
+    description: A for plotting. Maps to SBML symbol `species_16`.
+  - name: ptot
+    maps_to: species_8
+    label: Ptot
+    description: Ptot. Maps to SBML symbol `species_8`.
+  - name: fi_hfree
+    maps_to: species_12
+    label: FIHfree
+    description: FIHfree. Maps to SBML symbol `species_12`.

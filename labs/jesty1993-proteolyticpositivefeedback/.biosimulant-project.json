@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "c47078a8-fc17-4be3-97e7-396dbbb3de59",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "7f891f54-e584-4b1f-82bf-bb6a8dd76000",
+  "created_at": "2026-05-16T05:46:44.303936012+00:00",
+  "last_synced_at": "2026-05-17T03:51:20.154346+00:00",
+  "hub_manifest_hash": "02a732108a1bc5e2279d04ff7151203b4b665626911861f046a6b6f5d5947662",
+  "package_name": "jesty1993-proteolyticpositivefeedback-lab"
+}

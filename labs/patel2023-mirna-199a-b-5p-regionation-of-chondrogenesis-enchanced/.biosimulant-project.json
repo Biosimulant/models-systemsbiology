@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "45efd07d-017d-4cff-9fd8-db095d19a478",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "8827b146-2563-4ac7-bcca-507ed2c468ff",
+  "created_at": "2026-05-16T05:46:50.116785603+00:00",
+  "last_synced_at": "2026-05-17T05:26:43.205997+00:00",
+  "hub_manifest_hash": "6f9b41d013d2793ecee28a2ae6f34a75f7faaedc6be13161d7326c43db384d2b",
+  "package_name": "patel2023-mirna-199a-b-5p-regionation-of-chondrogenesis-enchance"
+}

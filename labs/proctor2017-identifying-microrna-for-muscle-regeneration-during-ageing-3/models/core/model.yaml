@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Proctor2017 - Identifying microRNA for muscle regeneration during ageing (Mir143_in_muscle)
+description: 'Proctor2017 - Identifying microRNA for muscleregeneration during ageing
+  (Mir143_in_muscle) This model is described in the article: Using computer simulation
+  models to investigate the most promising mi. It can be used to explore systemsbiology
+  proctor2017 identifying microrna for muscle dynamics and compare simulation behavior
+  across conditions.'
+standard: other
+tags:
+- generegulation
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Carole J. Proctor & Katarzyna Goljanek-Whysall
+upstream:
+  id: biomodels_ebi:MODEL1704110003
+  source_db: biomodels_ebi
+  source_id: MODEL1704110003
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1704110003
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1704110003?filename=MODEL1704110003_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.proctor2017_identifying_microrna_for_muscle_rege_model1704110003_model:Proctor2017IdentifyingMicrornaForMuscleRegeModel1704110003Model
+  init_kwargs:
+    model_path: data/MODEL1704110003.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_myo_d
+    maps_to: MyoD
+    label: Initial Myo D
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MyoD`.
+  - name: initial_igf2
+    maps_to: Igf2
+    label: Initial Igf2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Igf2`.
+  - name: initial_model_state_il6
+    maps_to: IL6
+    label: Initial Model State IL6
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IL6`.
+  - name: initial_mi_r143
+    maps_to: miR143
+    label: Initial Mi R143
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `miR143`.
+  - name: initial_igfbp5
+    maps_to: Igfbp5
+    label: Initial Igfbp5
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Igfbp5`.
+  - name: initial_model_state_akt
+    maps_to: Akt
+    label: Initial Model State Akt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Akt`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: myo_d
+    maps_to: MyoD
+    label: MyoD
+    description: MyoD. Maps to SBML symbol `MyoD`.
+  - name: igf2
+    maps_to: Igf2
+    label: Igf2
+    description: Igf2. Maps to SBML symbol `Igf2`.
+  - name: il6
+    maps_to: IL6
+    label: IL6
+    description: IL6. Maps to SBML symbol `IL6`.
+  - name: mi_r143
+    maps_to: miR143
+    label: MiR143
+    description: MiR143. Maps to SBML symbol `miR143`.
+  - name: igfbp5
+    maps_to: Igfbp5
+    label: Igfbp5
+    description: Igfbp5. Maps to SBML symbol `Igfbp5`.
+  - name: akt
+    maps_to: Akt
+    label: Akt
+    description: Akt. Maps to SBML symbol `Akt`.

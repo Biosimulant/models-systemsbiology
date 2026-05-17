@@ -1,0 +1,110 @@
+schema_version: '2.0'
+title: Pearce2021 - Fibrin Polymerization
+description: Here is an ode model for in vitro fibrin matrix polymerization reproducing
+  interactions among fibrinogen, fibrin and other proteins involved in the homeostatic
+  phase of wound healing. It can be used to explore systemsbiology pearce2021 fibrin
+  polymerization BioModels0000001054 dynamics and compare simulation behavior across
+  conditions.
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Katherine J Pearce
+- Kimberly Nellenbach
+- Ralph C Smith
+- Ashley C Brown
+- Mansoor A Haider
+upstream:
+  id: biomodels_ebi:BIOMD0000001054
+  source_db: biomodels_ebi
+  source_id: BIOMD0000001054
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001054
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001054?filename=fibrin_polymerization.xml
+  license: CC0
+biosim:
+  entrypoint: src.pearce2021_fibrin_polymerization_biomd0000001054_model:Pearce2021FibrinPolymerizationBiomd0000001054Model
+  init_kwargs:
+    model_path: data/BIOMD0000001054.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_fbni
+    maps_to: Fbni
+    label: Initial Fbni
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Fbni`.
+  - name: initial_model_state_thb
+    maps_to: Thb
+    label: Initial Model State Thb
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Thb`.
+  - name: initial_model_state_fm
+    maps_to: FM
+    label: Initial Model State Fm
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `FM`.
+  - name: initial_fbna
+    maps_to: Fbna
+    label: Initial Fbna
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Fbna`.
+  - name: initial_model_state_c2
+    maps_to: C2
+    label: Initial Model State C2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C2`.
+  - name: initial_model_state_c1
+    maps_to: C1
+    label: Initial Model State C1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C1`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: fbni
+    maps_to: Fbni
+    label: Fbni
+    description: Fbni. Maps to SBML symbol `Fbni`.
+  - name: thb
+    maps_to: Thb
+    label: Thb
+    description: Thb. Maps to SBML symbol `Thb`.
+  - name: model_state_fm
+    maps_to: FM
+    label: FM
+    description: FM. Maps to SBML symbol `FM`.
+  - name: fbna
+    maps_to: Fbna
+    label: Fbna
+    description: Fbna. Maps to SBML symbol `Fbna`.
+  - name: model_state_c2
+    maps_to: C2
+    label: C2
+    description: C2. Maps to SBML symbol `C2`.
+  - name: model_state_c1
+    maps_to: C1
+    label: C1
+    description: C1. Maps to SBML symbol `C1`.

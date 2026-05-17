@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Proctor2017- Role of microRNAs in osteoarthritis (Positive Feedforward Incoherent
+  By MicroRNA)_1
+description: 'Proctor2017- Role of microRNAs inosteoarthritis (Positive Feedforward
+  Incoherent By MicroRNA) This model is described in the article: Computer simulation
+  models as a tool to investigate the role of mi. It can be used to explore systemsbiology
+  proctor2017 role of micrornas in dynamics and compare simulation behavior across
+  conditions.'
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Carole J Proctor
+- Graham R Smith
+upstream:
+  id: biomodels_ebi:BIOMD0000000860
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000860
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000860
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000860?filename=proctor2017_model4.xml
+  license: CC0
+biosim:
+  entrypoint: src.proctor2017_role_of_micrornas_in_osteoarthritis_biomd0000000860_model:Proctor2017RoleOfMicrornasInOsteoarthritisBiomd0000000860Model
+  init_kwargs:
+    model_path: data/BIOMD0000000860.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_mi_r
+    maps_to: miR
+    label: Initial Mi R
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `miR`.
+  - name: initial_tf1target_mrna
+    maps_to: TF1target_mRNA
+    label: Initial Tf1target MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TF1target_mRNA`.
+  - name: initial_model_state_tf1
+    maps_to: TF1
+    label: Initial Model State TF1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TF1`.
+  - name: initial_sink
+    maps_to: Sink
+    label: Initial Sink
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Sink`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: mi_r
+    maps_to: miR
+    label: miR
+    description: miR. Maps to SBML symbol `miR`.
+  - name: tf1target_mrna
+    maps_to: TF1target_mRNA
+    label: TF1target_mRNA
+    description: TF1target_mRNA. Maps to SBML symbol `TF1target_mRNA`.
+  - name: tf1
+    maps_to: TF1
+    label: TF1
+    description: TF1. Maps to SBML symbol `TF1`.
+  - name: sink
+    maps_to: Sink
+    label: Sink
+    description: Sink. Maps to SBML symbol `Sink`.

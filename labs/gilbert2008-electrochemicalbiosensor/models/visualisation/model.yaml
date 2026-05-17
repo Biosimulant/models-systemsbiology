@@ -1,0 +1,47 @@
+schema_version: '2.0'
+title: Gilbert2008_ElectrochemicalBiosensor Visualisation
+description: Question-and-answer and dynamic visual summaries for Gilbert2008_ElectrochemicalBiosensor.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Gilbert2008 Electrochemicalbiosensor Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Gilbert2008_ElectrochemicalBiosensor.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_gilbert2008_electrochemicalbiosensor_model1173105855_model
+      title: Gilbert2008_ElectrochemicalBiosensor
+      observables:
+      - id: TFS
+        port: tfs
+        label: TFS
+        group: gene_regulation
+      - id: TF
+        port: model_state_tf
+        label: TF
+        group: gene_regulation
+      - id: PhzMS
+        port: phz_ms
+        label: PhzMS
+        group: gene_regulation
+      - id: PYO
+        port: pyo
+        label: PYO
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

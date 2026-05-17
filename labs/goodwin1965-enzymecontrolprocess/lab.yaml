@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Goodwin1965 Enzymecontrolprocess Lab
+description: 'This a model from the article: Oscillatory behavior in enzymatic control
+  processes. It can be used to explore systemsbiology goodwin1965 enzymecontrolprocess
+  model0911532520 dynamics and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_goodwin1965_enzymecontrolprocess_model0911532520_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_goodwin1965_enzymecontrolprocess_model0911532520_model.state
+  to:
+  - visualisation.systemsbiology_sbml_goodwin1965_enzymecontrolprocess_model0911532520_model_state
+- from: systemsbiology_sbml_goodwin1965_enzymecontrolprocess_model0911532520_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_goodwin1965_enzymecontrolprocess_model0911532520_model_summary
+- from: systemsbiology_sbml_goodwin1965_enzymecontrolprocess_model0911532520_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_goodwin1965_enzymecontrolprocess_model0911532520_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_yi
+    maps_to: systemsbiology_sbml_goodwin1965_enzymecontrolprocess_model0911532520_model.initial_model_state_yi
+    label: Initial Model State Yi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Yi`.
+  - name: initial_model_state_xi
+    maps_to: systemsbiology_sbml_goodwin1965_enzymecontrolprocess_model0911532520_model.initial_model_state_xi
+    label: Initial Model State Xi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xi`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_goodwin1965_enzymecontrolprocess_model0911532520_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_goodwin1965_enzymecontrolprocess_model0911532520_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_goodwin1965_enzymecontrolprocess_model0911532520_model.species_labels
+  - name: model_state_yi
+    maps_to: systemsbiology_sbml_goodwin1965_enzymecontrolprocess_model0911532520_model.model_state_yi
+  - name: model_state_xi
+    maps_to: systemsbiology_sbml_goodwin1965_enzymecontrolprocess_model0911532520_model.model_state_xi

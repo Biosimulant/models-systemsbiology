@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "23e1fe60-7ece-4070-b083-32838b06a00b",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "c28c3dcc-1d65-431d-97f1-ceb247aa69e3",
+  "created_at": "2026-05-16T05:46:52.956719059+00:00",
+  "last_synced_at": "2026-05-17T09:45:44.349661+00:00",
+  "hub_manifest_hash": "1f31e631655d6ebaa8d902aab5f3b566fdee77260d5edfc9230c78b6c204f36b",
+  "package_name": "biomd0000000902-variant-wang2019-a-mathematical-model-of-oncolyt"
+}

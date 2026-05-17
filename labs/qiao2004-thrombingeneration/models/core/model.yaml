@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Qiao2004_ThrombinGeneration
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models (http://www.ebi.ac.uk/biomodels/). It is copyright (c) 2005-2011
+  The BioModels.net Team.'
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Y H Qiao
+- C Q Xu
+- Y J Zeng
+- X H Xu
+- H Zhao
+upstream:
+  id: biomodels_ebi:MODEL1108260015
+  source_db: biomodels_ebi
+  source_id: MODEL1108260015
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1108260015
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1108260015?filename=MODEL1108260015_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.qiao2004_thrombingeneration_model1108260015_model:Qiao2004ThrombingenerationModel1108260015Model
+  init_kwargs:
+    model_path: data/MODEL1108260015.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_xa
+    maps_to: Xa
+    label: Initial Model State Xa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa`.
+  - name: initial_model_state_va
+    maps_to: Va
+    label: Initial Model State Va
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Va`.
+  - name: initial_vii_ia
+    maps_to: VIIIa
+    label: Initial Vii Ia
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VIIIa`.
+  - name: initial_i_xa
+    maps_to: IXa
+    label: Initial I Xa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IXa`.
+  - name: initial_i_ia
+    maps_to: IIa
+    label: Initial I Ia
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IIa`.
+  - name: initial_model_state_apc
+    maps_to: APC
+    label: Initial Model State Apc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `APC`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_xa
+    maps_to: Xa
+    label: Xa
+    description: Xa. Maps to SBML symbol `Xa`.
+  - name: model_state_va
+    maps_to: Va
+    label: Va
+    description: Va. Maps to SBML symbol `Va`.
+  - name: vii_ia
+    maps_to: VIIIa
+    label: VIIIa
+    description: VIIIa. Maps to SBML symbol `VIIIa`.
+  - name: i_xa
+    maps_to: IXa
+    label: IXa
+    description: IXa. Maps to SBML symbol `IXa`.
+  - name: i_ia
+    maps_to: IIa
+    label: IIa
+    description: IIa. Maps to SBML symbol `IIa`.
+  - name: apc
+    maps_to: APC
+    label: APC
+    description: APC. Maps to SBML symbol `APC`.

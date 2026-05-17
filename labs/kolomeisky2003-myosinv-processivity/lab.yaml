@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Kolomeisky2003 Myosinv Processivity Lab
+description: 'This is the 2 state model of Myosin V movement described in the article:
+  A simple kinetic model describes the processivity of myosin-v. It can be used to
+  explore systemsbiology kolomeisky2003 myosinv processivity BioModels0000000305 dynamics
+  and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_kolomeisky2003_myosinv_processivity_biomd0000000305_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_kolomeisky2003_myosinv_processivity_biomd0000000305_model.state
+  to:
+  - visualisation.systemsbiology_sbml_kolomeisky2003_myosinv_processivity_biomd0000000305_model_state
+- from: systemsbiology_sbml_kolomeisky2003_myosinv_processivity_biomd0000000305_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_kolomeisky2003_myosinv_processivity_biomd0000000305_model_summary
+- from: systemsbiology_sbml_kolomeisky2003_myosinv_processivity_biomd0000000305_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_kolomeisky2003_myosinv_processivity_biomd0000000305_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_atp
+    maps_to: systemsbiology_sbml_kolomeisky2003_myosinv_processivity_biomd0000000305_model.initial_model_state_atp
+    label: Initial Model State ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATP`.
+  - name: initial_model_state_adp
+    maps_to: systemsbiology_sbml_kolomeisky2003_myosinv_processivity_biomd0000000305_model.initial_model_state_adp
+    label: Initial Model State ADP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ADP`.
+  - name: initial_model_state_s0
+    maps_to: systemsbiology_sbml_kolomeisky2003_myosinv_processivity_biomd0000000305_model.initial_model_state_s0
+    label: Initial Model State S0
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S0`.
+  - name: initial_model_state_s1
+    maps_to: systemsbiology_sbml_kolomeisky2003_myosinv_processivity_biomd0000000305_model.initial_model_state_s1
+    label: Initial Model State S1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S1`.
+  - name: initial_model_state_pi
+    maps_to: systemsbiology_sbml_kolomeisky2003_myosinv_processivity_biomd0000000305_model.initial_model_state_pi
+    label: Initial Model State Pi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pi_`.
+  - name: initial_fwd_step2
+    maps_to: systemsbiology_sbml_kolomeisky2003_myosinv_processivity_biomd0000000305_model.initial_fwd_step2
+    label: Initial Fwd Step2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `fwd_step2`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_kolomeisky2003_myosinv_processivity_biomd0000000305_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_kolomeisky2003_myosinv_processivity_biomd0000000305_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_kolomeisky2003_myosinv_processivity_biomd0000000305_model.species_labels
+  - name: atp
+    maps_to: systemsbiology_sbml_kolomeisky2003_myosinv_processivity_biomd0000000305_model.atp
+  - name: adp
+    maps_to: systemsbiology_sbml_kolomeisky2003_myosinv_processivity_biomd0000000305_model.adp
+  - name: model_state_s0
+    maps_to: systemsbiology_sbml_kolomeisky2003_myosinv_processivity_biomd0000000305_model.model_state_s0
+  - name: model_state_s1
+    maps_to: systemsbiology_sbml_kolomeisky2003_myosinv_processivity_biomd0000000305_model.model_state_s1
+  - name: model_state_pi
+    maps_to: systemsbiology_sbml_kolomeisky2003_myosinv_processivity_biomd0000000305_model.model_state_pi
+  - name: fwd_step2
+    maps_to: systemsbiology_sbml_kolomeisky2003_myosinv_processivity_biomd0000000305_model.fwd_step2

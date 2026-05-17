@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "2f6a6171-4ec2-4203-a95e-c91383fea3e8",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "f182ce07-e44b-49fd-a56e-04ff9373c696",
+  "created_at": "2026-05-16T05:46:52.266444772+00:00",
+  "last_synced_at": "2026-05-17T06:23:32.168806+00:00",
+  "hub_manifest_hash": "869e505ac2f7ac1d08b6421cd485cd53df5db9eaa201fcf8c35ec90f1c99a08e",
+  "package_name": "suh2004-kcnq-regulation-lab"
+}

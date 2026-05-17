@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Revilla2003 Controlling Hiv Infection Using Recombinant Viruses Lab
+description: 'This a model from the article: Fighting a virus with a virus: a dynamic
+  model for HIV-1 therapy. It can be used to explore systemsbiology revilla2003 controlling
+  hiv infection using dynamics and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_revilla2003_controlling_hiv_infection_using_reco_biomd0000000707_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_revilla2003_controlling_hiv_infection_using_reco_biomd0000000707_model.state
+  to:
+  - visualisation.systemsbiology_sbml_revilla2003_controlling_hiv_infection_using_reco_biomd0000000707_model_state
+- from: systemsbiology_sbml_revilla2003_controlling_hiv_infection_using_reco_biomd0000000707_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_revilla2003_controlling_hiv_infection_using_reco_biomd0000000707_model_summary
+- from: systemsbiology_sbml_revilla2003_controlling_hiv_infection_using_reco_biomd0000000707_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_revilla2003_controlling_hiv_infection_using_reco_biomd0000000707_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- epidemiology
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_normal_th_cells
+    maps_to: systemsbiology_sbml_revilla2003_controlling_hiv_infection_using_reco_biomd0000000707_model.initial_normal_th_cells
+    label: Initial Normal Th Cells
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Normal_Th_cells`.
+  - name: initial_pathogen_virus
+    maps_to: systemsbiology_sbml_revilla2003_controlling_hiv_infection_using_reco_biomd0000000707_model.initial_pathogen_virus
+    label: Initial Pathogen Virus
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pathogen_Virus`.
+  - name: initial_single_infected_th_cells
+    maps_to: systemsbiology_sbml_revilla2003_controlling_hiv_infection_using_reco_biomd0000000707_model.initial_single_infected_th_cells
+    label: Initial Single Infected Th Cells
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Single_Infected_Th_Cells`.
+  - name: initial_recombinant_virus
+    maps_to: systemsbiology_sbml_revilla2003_controlling_hiv_infection_using_reco_biomd0000000707_model.initial_recombinant_virus
+    label: Initial Recombinant Virus
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Recombinant_Virus`.
+  - name: initial_double_infected_th_cells
+    maps_to: systemsbiology_sbml_revilla2003_controlling_hiv_infection_using_reco_biomd0000000707_model.initial_double_infected_th_cells
+    label: Initial Double Infected Th Cells
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Double_Infected_Th_Cells`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_revilla2003_controlling_hiv_infection_using_reco_biomd0000000707_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_revilla2003_controlling_hiv_infection_using_reco_biomd0000000707_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_revilla2003_controlling_hiv_infection_using_reco_biomd0000000707_model.species_labels
+  - name: normal_th_cells
+    maps_to: systemsbiology_sbml_revilla2003_controlling_hiv_infection_using_reco_biomd0000000707_model.normal_th_cells
+  - name: pathogen_virus
+    maps_to: systemsbiology_sbml_revilla2003_controlling_hiv_infection_using_reco_biomd0000000707_model.pathogen_virus
+  - name: single_infected_th_cells
+    maps_to: systemsbiology_sbml_revilla2003_controlling_hiv_infection_using_reco_biomd0000000707_model.single_infected_th_cells
+  - name: recombinant_virus
+    maps_to: systemsbiology_sbml_revilla2003_controlling_hiv_infection_using_reco_biomd0000000707_model.recombinant_virus
+  - name: double_infected_th_cells
+    maps_to: systemsbiology_sbml_revilla2003_controlling_hiv_infection_using_reco_biomd0000000707_model.double_infected_th_cells

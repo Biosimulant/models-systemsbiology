@@ -1,0 +1,49 @@
+schema_version: '2.0'
+title: Crespo2012 Kinetics Of Amyloid Fibril Formation Lab
+description: 'Crespo2012 - Kinetics of Amyloid FibrilFormation This model is described
+  in the article: A generic crystallization-like model that describes the kinetics
+  of amyloid fibril formation. It can be used to explore systemsbiology crespo2012
+  kinetics of amyloid fibril dynamics and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_crespo2012_kinetics_of_amyloid_fibril_formation_biomd0000000531_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_crespo2012_kinetics_of_amyloid_fibril_formation_biomd0000000531_model.state
+  to:
+  - visualisation.systemsbiology_sbml_crespo2012_kinetics_of_amyloid_fibril_formation_biomd0000000531_model_state
+- from: systemsbiology_sbml_crespo2012_kinetics_of_amyloid_fibril_formation_biomd0000000531_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_crespo2012_kinetics_of_amyloid_fibril_formation_biomd0000000531_model_summary
+- from: systemsbiology_sbml_crespo2012_kinetics_of_amyloid_fibril_formation_biomd0000000531_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_crespo2012_kinetics_of_amyloid_fibril_formation_biomd0000000531_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_alpha
+    maps_to: systemsbiology_sbml_crespo2012_kinetics_of_amyloid_fibril_formation_biomd0000000531_model.initial_alpha
+    label: Initial Alpha
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `alpha`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_crespo2012_kinetics_of_amyloid_fibril_formation_biomd0000000531_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_crespo2012_kinetics_of_amyloid_fibril_formation_biomd0000000531_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_crespo2012_kinetics_of_amyloid_fibril_formation_biomd0000000531_model.species_labels
+  - name: alpha
+    maps_to: systemsbiology_sbml_crespo2012_kinetics_of_amyloid_fibril_formation_biomd0000000531_model.alpha

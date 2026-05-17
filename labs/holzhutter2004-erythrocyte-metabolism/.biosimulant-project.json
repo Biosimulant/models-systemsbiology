@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "84a0daf1-4786-4ba7-a1be-0f93cd50f613",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "e0d7d1e6-ef02-43fe-a069-b468d33322eb",
+  "created_at": "2026-05-16T05:46:44.158603779+00:00",
+  "last_synced_at": "2026-05-17T03:43:43.001231+00:00",
+  "hub_manifest_hash": "3b4d27c41321203263732817dbcd98c3186534e7f2153038c7b77df3871f0442",
+  "package_name": "holzhutter2004-erythrocyte-metabolism-lab"
+}

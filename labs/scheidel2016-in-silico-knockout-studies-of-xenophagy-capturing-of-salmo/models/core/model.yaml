@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Scheidel2016 - In Silico Knockout Studies of Xenophagy Capturing of Salmonella
+description: Xenophagy, also known as antibacterial autophagy, is a process of capturing
+  and eliminating cytosolic pathogens, like Salmonella. Salmonella is the best-studied
+  model organism for xenophagy.
+standard: other
+tags:
+- microbiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Jennifer Scheidel
+- Leonie Amstein
+- Jörg Ackermann
+- Ivan Dikic
+- Koch I
+upstream:
+  id: biomodels_ebi:MODEL1904150001
+  source_db: biomodels_ebi
+  source_id: MODEL1904150001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1904150001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1904150001?filename=Scheidel2016_InSilico_Knockout_Studies_Xenophagic_Capturing_Salmonella_PetriNets.xml
+  license: CC0
+biosim:
+  entrypoint: src.scheidel2016_in_silico_knockout_studies_of_xenop_model1904150001_model:Scheidel2016InSilicoKnockoutStudiesOfXenopModel1904150001Model
+  init_kwargs:
+    model_path: data/MODEL1904150001.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_m_torc1inactive
+    maps_to: P382
+    label: Initial M Torc1inactive
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P382`.
+  - name: initial_m_torc1_ulk1comp
+    maps_to: P384
+    label: Initial M Torc1 Ulk1comp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P384`.
+  - name: initial_m_torc1_ulk1comp_scv
+    maps_to: P415
+    label: Initial M Torc1 Ulk1comp Scv
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P415`.
+  - name: initial_signal_sc_vdamage
+    maps_to: P400
+    label: Initial Signal Sc Vdamage
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P400`.
+  - name: initial_signal_autophagy_induction
+    maps_to: P408
+    label: Initial Signal Autophagy Induction
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P408`.
+  - name: initial_p62_i
+    maps_to: P352
+    label: Initial P62 I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P352`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: m_torc1inactive
+    maps_to: P382
+    label: mTORC1inactive
+    description: mTORC1inactive. Maps to SBML symbol `P382`.
+  - name: m_torc1_ulk1comp
+    maps_to: P384
+    label: mTORC1:ULK1comp_
+    description: mTORC1:ULK1comp_. Maps to SBML symbol `P384`.
+  - name: m_torc1_ulk1comp_scv
+    maps_to: P415
+    label: mTORC1:ULK1comp:SCV__
+    description: mTORC1:ULK1comp:SCV__. Maps to SBML symbol `P415`.
+  - name: signal_sc_vdamage
+    maps_to: P400
+    label: SignalSCVdamage_
+    description: SignalSCVdamage_. Maps to SBML symbol `P400`.
+  - name: signal_autophagy_induction
+    maps_to: P408
+    label: SignalAutophagyInduction_
+    description: SignalAutophagyInduction_. Maps to SBML symbol `P408`.
+  - name: p62_i
+    maps_to: P352
+    label: p62'i
+    description: p62'i. Maps to SBML symbol `P352`.

@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Ajay_Bhalla_2004_PKM_Tuning Visualisation
+description: Question-and-answer and dynamic visual summaries for Ajay_Bhalla_2004_PKM_Tuning.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Bhalla2004 Ajay Pkm Tuning Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Ajay_Bhalla_2004_PKM_Tuning.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_ajay_bhalla_2004_pkm_tuning_model9089491423_model
+      title: Ajay_Bhalla_2004_PKM_Tuning
+      observables:
+      - id: EGFR_slash_Internal_L_dot_EGFR
+        port: egfr_slash_internal_l_dot_egfr
+        label: EGFR Slash Internal L Dot EGFR
+        group: signaling
+      - id: AC_slash_ATP
+        port: ac_slash_atp
+        label: AC Slash ATP
+        group: metabolism
+      - id: MAPK_slash_MAPK
+        port: mapk_slash_mapk
+        label: MAPK Slash MAPK
+        group: signaling
+      - id: Ras_slash_GDP_minus_Ras
+        port: ras_slash_gdp_minus_ras
+        label: RAS Slash GDP Minus RAS
+        group: signaling
+      - id: MAPK_slash_MAPKK
+        port: mapk_slash_mapkk
+        label: MAPK Slash MAPKK
+        group: signaling
+      - id: MAPK_slash_craf_minus_1
+        port: mapk_slash_craf_minus_1
+        label: MAPK Slash Craf Minus 1
+        group: signaling
+io:
+  inputs: []
+  outputs: []

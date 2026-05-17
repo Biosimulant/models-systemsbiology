@@ -1,0 +1,50 @@
+schema_version: '2.0'
+title: Golomb2006_SomaticBursting Visualisation
+description: Question-and-answer and dynamic visual summaries for Golomb2006_SomaticBursting.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Golomb2006 Somaticbursting Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Golomb2006_SomaticBursting.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_golomb2006_somaticbursting_biomd0000000118_model
+      title: Golomb2006_SomaticBursting
+      observables:
+      - id: zzs
+        port: zzs
+        label: Zzs
+        group: physiology
+      - id: nns
+        port: nns
+        label: Nns
+        group: physiology
+      - id: hhs
+        port: hhs
+        label: Hhs
+        group: physiology
+      - id: bbs
+        port: bbs
+        label: Bbs
+        group: physiology
+      - id: V
+        port: model_state_v
+        label: V
+        group: physiology
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "5b91622a-d8b4-48cc-ae1f-34eb3c60032c",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "3be90fcb-ced0-4a53-9ff1-e866f34bfde5",
+  "created_at": "2026-05-16T05:46:51.604430259+00:00",
+  "last_synced_at": "2026-05-17T06:03:40.519304+00:00",
+  "hub_manifest_hash": "1f58e1ae9a670a9359c9dd150e4896a1eff5a3423ec87753a54e9b5dbe238edf",
+  "package_name": "sachse2008-fibroblastinteractingmyocytes-lab"
+}

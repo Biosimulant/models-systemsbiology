@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Arnold2011 Giersch1990 Calvincycle Lab
+description: 'This model is from the article: A quantitative comparison of Calvin–Benson
+  cycle models Anne Arnold, Zoran Nikoloski Trends in Plant Science 2011 Oct 14. It
+  can be used to explore systemsbiology arnold2011 giersch1990 calvincycle BioModels0000000390
+  dynamics and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_arnold2011_giersch1990_calvincycle_biomd0000000390_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_arnold2011_giersch1990_calvincycle_biomd0000000390_model.state
+  to:
+  - visualisation.systemsbiology_sbml_arnold2011_giersch1990_calvincycle_biomd0000000390_model_state
+- from: systemsbiology_sbml_arnold2011_giersch1990_calvincycle_biomd0000000390_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_arnold2011_giersch1990_calvincycle_biomd0000000390_model_summary
+- from: systemsbiology_sbml_arnold2011_giersch1990_calvincycle_biomd0000000390_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_arnold2011_giersch1990_calvincycle_biomd0000000390_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_tot_ru_bp
+    maps_to: systemsbiology_sbml_arnold2011_giersch1990_calvincycle_biomd0000000390_model.initial_tot_ru_bp
+    label: Initial Tot Ru Bp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `totRuBP`.
+  - name: initial_ru_bis_co
+    maps_to: systemsbiology_sbml_arnold2011_giersch1990_calvincycle_biomd0000000390_model.initial_ru_bis_co
+    label: Initial Ru Bis Co
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `E_RuBisCO`.
+  - name: initial_model_state_pi
+    maps_to: systemsbiology_sbml_arnold2011_giersch1990_calvincycle_biomd0000000390_model.initial_model_state_pi
+    label: Initial Model State Pi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pi`.
+  - name: initial_model_state_pga
+    maps_to: systemsbiology_sbml_arnold2011_giersch1990_calvincycle_biomd0000000390_model.initial_model_state_pga
+    label: Initial Model State Pga
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PGA`.
+  - name: initial_ru_bp
+    maps_to: systemsbiology_sbml_arnold2011_giersch1990_calvincycle_biomd0000000390_model.initial_ru_bp
+    label: Initial Ru Bp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RuBP`.
+  - name: initial_model_state_pic
+    maps_to: systemsbiology_sbml_arnold2011_giersch1990_calvincycle_biomd0000000390_model.initial_model_state_pic
+    label: Initial Model State Pic
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pic`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_arnold2011_giersch1990_calvincycle_biomd0000000390_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_arnold2011_giersch1990_calvincycle_biomd0000000390_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_arnold2011_giersch1990_calvincycle_biomd0000000390_model.species_labels
+  - name: tot_ru_bp
+    maps_to: systemsbiology_sbml_arnold2011_giersch1990_calvincycle_biomd0000000390_model.tot_ru_bp
+  - name: ru_bis_co
+    maps_to: systemsbiology_sbml_arnold2011_giersch1990_calvincycle_biomd0000000390_model.ru_bis_co
+  - name: model_state_pi
+    maps_to: systemsbiology_sbml_arnold2011_giersch1990_calvincycle_biomd0000000390_model.model_state_pi
+  - name: pga
+    maps_to: systemsbiology_sbml_arnold2011_giersch1990_calvincycle_biomd0000000390_model.pga
+  - name: ru_bp
+    maps_to: systemsbiology_sbml_arnold2011_giersch1990_calvincycle_biomd0000000390_model.ru_bp
+  - name: pic
+    maps_to: systemsbiology_sbml_arnold2011_giersch1990_calvincycle_biomd0000000390_model.pic

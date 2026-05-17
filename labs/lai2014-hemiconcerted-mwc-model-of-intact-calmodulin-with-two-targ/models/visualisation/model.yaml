@@ -1,0 +1,58 @@
+schema_version: '2.0'
+title: Lai2014 - Hemiconcerted MWC model of intact calmodulin with two targets Visualisation
+description: Question-and-answer and dynamic visual summaries for Lai2014 - Hemiconcerted
+  MWC model of intact calmodulin with two targets.
+standard: other
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Lai2014 Hemiconcerted Mwc Model Of Intact Calmodulin With Two Targ
+      Lab
+    question: 'Which metabolic pools or flux-linked states show the strongest simulated
+      change? Source model: Lai2014 - Hemiconcerted MWC model of intact calmodulin
+      with two targets.'
+    answer_focus: Q/A table plus metabolism timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_lai2014_hemiconcerted_mwc_model_of_intact_calmod_biomd0000000574_model
+      title: Lai2014 - Hemiconcerted MWC model of intact calmodulin with two targets
+      observables:
+      - id: rbp
+        port: rbp
+        label: rbp
+        group: metabolism
+      - id: cam_TT_0_0
+        port: cam_tt_0_0
+        label: cam_TT_0_0
+        group: metabolism
+      - id: tbp
+        port: tbp
+        label: tbp
+        group: metabolism
+      - id: cam_TT_D_tbp
+        port: cam_tt_d_tbp
+        label: cam_TT_D_tbp
+        group: metabolism
+      - id: cam_TT_D_rbp
+        port: cam_tt_d_rbp
+        label: cam_TT_D_rbp
+        group: metabolism
+      - id: cam_TT_D_0
+        port: cam_tt_d_0
+        label: cam_TT_D_0
+        group: metabolism
+io:
+  inputs: []
+  outputs: []

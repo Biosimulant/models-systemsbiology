@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Nguyen2013 Dynamic Model Of Hif Regulation In Hypoxia Lab
+description: Its a mathematcial model explaining regulation of HIF via FIH and oxygen.
+  Model is further validated by Experimental data and various hypothesis has been
+  tested on the same.
+models:
+- alias: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100004_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100004_model.state
+  to:
+  - visualisation.systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100004_model_state
+- from: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100004_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100004_model_summary
+- from: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100004_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100004_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_mrna
+    maps_to: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100004_model.initial_mrna
+    label: Initial MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mRNA`.
+  - name: initial_protein
+    maps_to: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100004_model.initial_protein
+    label: Initial Protein
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Protein`.
+  - name: initial_luciferase
+    maps_to: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100004_model.initial_luciferase
+    label: Initial Luciferase
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Luciferase`.
+  - name: initial_vhl_n
+    maps_to: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100004_model.initial_vhl_n
+    label: Initial Vhl N
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VHL_n`.
+  - name: initial_fih_n
+    maps_to: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100004_model.initial_fih_n
+    label: Initial Fih N
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `FIH_n`.
+  - name: initial_phd_n
+    maps_to: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100004_model.initial_phd_n
+    label: Initial Phd N
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PHD_n`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100004_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100004_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100004_model.species_labels
+  - name: mrna
+    maps_to: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100004_model.mrna
+  - name: protein
+    maps_to: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100004_model.protein
+  - name: luciferase
+    maps_to: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100004_model.luciferase
+  - name: vhl_n
+    maps_to: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100004_model.vhl_n
+  - name: fih_n
+    maps_to: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100004_model.fih_n
+  - name: phd_n
+    maps_to: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100004_model.phd_n

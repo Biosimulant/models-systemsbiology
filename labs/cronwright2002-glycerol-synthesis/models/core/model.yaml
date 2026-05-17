@@ -1,0 +1,74 @@
+schema_version: '2.0'
+title: Cronwright2002_Glycerol_Synthesis
+description: . It can be used to explore systemsbiology cronwright2002 glycerol synthesis
+  BioModels0000000076 dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Garth R Cronwright
+- Johann M Rohwer
+- Bernard A Prior
+upstream:
+  id: biomodels_ebi:BIOMD0000000076
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000076
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000076
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000076?filename=BIOMD0000000076_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.cronwright2002_glycerol_synthesis_biomd0000000076_model:Cronwright2002GlycerolSynthesisBiomd0000000076Model
+  init_kwargs:
+    model_path: data/BIOMD0000000076.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_glycerol
+    maps_to: Gly
+    label: Initial Glycerol
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Gly`.
+  - name: initial_glycerol_3_phosphate
+    maps_to: G3P
+    label: Initial Glycerol 3 Phosphate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `G3P`.
+  - name: initial_dhap
+    maps_to: DHAP
+    label: Initial Dhap
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `DHAP`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: glycerol
+    maps_to: Gly
+    label: Glycerol
+    description: Glycerol. Maps to SBML symbol `Gly`.
+  - name: glycerol_3_phosphate
+    maps_to: G3P
+    label: Glycerol 3-phosphate
+    description: Glycerol 3-phosphate. Maps to SBML symbol `G3P`.
+  - name: dhap
+    maps_to: DHAP
+    label: DHAP
+    description: DHAP. Maps to SBML symbol `DHAP`.

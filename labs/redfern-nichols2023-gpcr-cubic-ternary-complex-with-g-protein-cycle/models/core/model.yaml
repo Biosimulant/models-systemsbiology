@@ -1,0 +1,77 @@
+schema_version: '2.0'
+title: GPCR Cubic Ternary Complex with G protein Cycle, Redfern-Nichols 2023
+description: A model of G protein activation using ordinary differential equations.
+  Used to fit to experimental data obtained from the TRUPATH platform.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Theo Redfern-Nichols
+- Shannon L O'Brien
+- Xianglin Huang
+- Brian Medel-Lacruz
+- Davide Calebiro
+upstream:
+  id: biomodels_ebi:MODEL2306220001
+  source_db: biomodels_ebi
+  source_id: MODEL2306220001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2306220001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2306220001?filename=Single_G_protein_Model.xml
+  license: CC0
+biosim:
+  entrypoint: src.gpcr_cubic_ternary_complex_with_g_protein_cycle_model2306220001_model:GpcrCubicTernaryComplexWithGProteinCycleModel2306220001Model
+  init_kwargs:
+    model_path: data/MODEL2306220001.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: event_ligand_applied
+    maps_to: Event__Ligand__Applied
+    label: Event Ligand Applied
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `Event__Ligand__Applied`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: camp
+    maps_to: cAMP
+    label: cAMP
+    description: cAMP. Maps to SBML symbol `cAMP`.
+  - name: atp
+    maps_to: ATP
+    label: ATP
+    description: ATP. Maps to SBML symbol `ATP`.
+  - name: model_state_ac
+    maps_to: AC
+    label: AC
+    description: AC. Maps to SBML symbol `AC`.
+  - name: model_state_ri
+    maps_to: Ri
+    label: Ri
+    description: Ri. Maps to SBML symbol `Ri`.
+  - name: ri_g
+    maps_to: RiG
+    label: RiG
+    description: RiG. Maps to SBML symbol `RiG`.
+  - name: ra_g
+    maps_to: RaG
+    label: RaG
+    description: RaG. Maps to SBML symbol `RaG`.

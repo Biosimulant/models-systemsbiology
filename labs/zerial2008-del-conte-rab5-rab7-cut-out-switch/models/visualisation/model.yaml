@@ -1,0 +1,46 @@
+schema_version: '2.0'
+title: Del_Conte_Zerial2008_Rab5_Rab7_cut_out_switch Visualisation
+description: Question-and-answer and dynamic visual summaries for Del_Conte_Zerial2008_Rab5_Rab7_cut_out_switch.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Zerial2008 Del Conte Rab5 Rab7 Cut Out Switch Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Del_Conte_Zerial2008_Rab5_Rab7_cut_out_switch.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_del_conte_zerial2008_rab5_rab7_cut_out_switch_biomd0000000174_model
+      title: Del_Conte_Zerial2008_Rab5_Rab7_cut_out_switch
+      observables:
+      - id: r7
+        port: rab7_gdp
+        label: Rab7-GDP
+        group: physiology
+      - id: r5
+        port: rab5_gdp
+        label: Rab5-GDP
+        group: physiology
+      - id: R7
+        port: rab7_gtp
+        label: Rab7-GTP
+        group: physiology
+      - id: R5
+        port: rab5_gtp
+        label: Rab5-GTP
+        group: physiology
+io:
+  inputs: []
+  outputs: []

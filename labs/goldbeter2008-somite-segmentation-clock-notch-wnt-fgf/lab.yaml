@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Goldbeter2008 Somite Segmentation Clock Notch Wnt Fgf Lab
+description: 'This is a model of the coupled Natch, Wnt and FGF modules as described
+  in: A. It can be used to explore systemsbiology goldbeter2008 somite segmentation
+  clock notch dynamics and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_goldbeter2008_somite_segmentation_clock_notch_wn_biomd0000000201_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_goldbeter2008_somite_segmentation_clock_notch_wn_biomd0000000201_model.state
+  to:
+  - visualisation.systemsbiology_sbml_goldbeter2008_somite_segmentation_clock_notch_wn_biomd0000000201_model_state
+- from: systemsbiology_sbml_goldbeter2008_somite_segmentation_clock_notch_wn_biomd0000000201_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_goldbeter2008_somite_segmentation_clock_notch_wn_biomd0000000201_model_summary
+- from: systemsbiology_sbml_goldbeter2008_somite_segmentation_clock_notch_wn_biomd0000000201_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_goldbeter2008_somite_segmentation_clock_notch_wn_biomd0000000201_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_ras_total
+    maps_to: systemsbiology_sbml_goldbeter2008_somite_segmentation_clock_notch_wn_biomd0000000201_model.initial_ras_total
+    label: Initial RAS Total
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Rast`.
+  - name: initial_erk_total
+    maps_to: systemsbiology_sbml_goldbeter2008_somite_segmentation_clock_notch_wn_biomd0000000201_model.initial_erk_total
+    label: Initial ERK Total
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ERKt`.
+  - name: initial_active_ras
+    maps_to: systemsbiology_sbml_goldbeter2008_somite_segmentation_clock_notch_wn_biomd0000000201_model.initial_active_ras
+    label: Initial Active RAS
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Rasa`.
+  - name: initial_active_erk
+    maps_to: systemsbiology_sbml_goldbeter2008_somite_segmentation_clock_notch_wn_biomd0000000201_model.initial_active_erk
+    label: Initial Active ERK
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ERKa`.
+  - name: initial_lunatic_fringe_mrna
+    maps_to: systemsbiology_sbml_goldbeter2008_somite_segmentation_clock_notch_wn_biomd0000000201_model.initial_lunatic_fringe_mrna
+    label: Initial Lunatic Fringe MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MF`.
+  - name: initial_dusp6_protein
+    maps_to: systemsbiology_sbml_goldbeter2008_somite_segmentation_clock_notch_wn_biomd0000000201_model.initial_dusp6_protein
+    label: Initial Dusp6 Protein
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Dusp`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_goldbeter2008_somite_segmentation_clock_notch_wn_biomd0000000201_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_goldbeter2008_somite_segmentation_clock_notch_wn_biomd0000000201_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_goldbeter2008_somite_segmentation_clock_notch_wn_biomd0000000201_model.species_labels
+  - name: ras_total
+    maps_to: systemsbiology_sbml_goldbeter2008_somite_segmentation_clock_notch_wn_biomd0000000201_model.ras_total
+  - name: erk_total
+    maps_to: systemsbiology_sbml_goldbeter2008_somite_segmentation_clock_notch_wn_biomd0000000201_model.erk_total
+  - name: active_ras
+    maps_to: systemsbiology_sbml_goldbeter2008_somite_segmentation_clock_notch_wn_biomd0000000201_model.active_ras
+  - name: active_erk
+    maps_to: systemsbiology_sbml_goldbeter2008_somite_segmentation_clock_notch_wn_biomd0000000201_model.active_erk
+  - name: lunatic_fringe_mrna
+    maps_to: systemsbiology_sbml_goldbeter2008_somite_segmentation_clock_notch_wn_biomd0000000201_model.lunatic_fringe_mrna
+  - name: dusp6_protein
+    maps_to: systemsbiology_sbml_goldbeter2008_somite_segmentation_clock_notch_wn_biomd0000000201_model.dusp6_protein

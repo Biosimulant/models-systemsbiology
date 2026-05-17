@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "3edfd0ce-cbbd-4be9-8bd4-6c9b8c8df23f",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "2d22b447-9097-4389-a99f-846f17fdd8b2",
+  "created_at": "2026-05-16T05:46:42.340295153+00:00",
+  "last_synced_at": "2026-05-17T02:33:47.347435+00:00",
+  "hub_manifest_hash": "ae810e3b8bca5e26c46c706cda95153a44b57c1a347ca4cc307374504d7593a5",
+  "package_name": "chatterjee2010-bloodcoagulation-lab"
+}

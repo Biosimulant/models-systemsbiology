@@ -1,0 +1,91 @@
+schema_version: '2.0'
+title: Sivakumar2011 Neuralstemcelldifferentiation Crosstalk Lab
+description: Sivakumar2011_NeuralStemCellDifferentiation_Crosstalk This model is generated
+  by integrating BIOMD0000000394 (EGFR), BIOMD0000000395 (Hedgehog), BIOMD0000000396
+  (Notch) and BIOMD0000000397 (Wnt), to i. It can be used to explore systemsbiology
+  sivakumar2011 neuralstemcelldifferenti cros BioModels0000000398 dynamics and compare
+  simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_sivakumar2011_neuralstemcelldifferentiation_cros_biomd0000000398_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_sivakumar2011_neuralstemcelldifferentiation_cros_biomd0000000398_model.state
+  to:
+  - visualisation.systemsbiology_sbml_sivakumar2011_neuralstemcelldifferentiation_cros_biomd0000000398_model_state
+- from: systemsbiology_sbml_sivakumar2011_neuralstemcelldifferentiation_cros_biomd0000000398_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_sivakumar2011_neuralstemcelldifferentiation_cros_biomd0000000398_model_summary
+- from: systemsbiology_sbml_sivakumar2011_neuralstemcelldifferentiation_cros_biomd0000000398_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_sivakumar2011_neuralstemcelldifferentiation_cros_biomd0000000398_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_erlotinib
+    maps_to: systemsbiology_sbml_sivakumar2011_neuralstemcelldifferentiation_cros_biomd0000000398_model.initial_erlotinib
+    label: Initial Erlotinib
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s101`.
+  - name: initial_dapt
+    maps_to: systemsbiology_sbml_sivakumar2011_neuralstemcelldifferentiation_cros_biomd0000000398_model.initial_dapt
+    label: Initial Dapt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s61`.
+  - name: initial_model_state_6_bromoindirubin_3_oxime
+    maps_to: systemsbiology_sbml_sivakumar2011_neuralstemcelldifferentiation_cros_biomd0000000398_model.initial_model_state_6_bromoindirubin_3_oxime
+    label: Initial Model State 6 Bromoindirubin 3 Oxime
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s147`.
+  - name: initial_model_state_smo
+    maps_to: systemsbiology_sbml_sivakumar2011_neuralstemcelldifferentiation_cros_biomd0000000398_model.initial_model_state_smo
+    label: Initial Model State Smo
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s88`.
+  - name: initial_model_state_wnt
+    maps_to: systemsbiology_sbml_sivakumar2011_neuralstemcelldifferentiation_cros_biomd0000000398_model.initial_model_state_wnt
+    label: Initial Model State Wnt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s107`.
+  - name: initial_model_state_shh
+    maps_to: systemsbiology_sbml_sivakumar2011_neuralstemcelldifferentiation_cros_biomd0000000398_model.initial_model_state_shh
+    label: Initial Model State Shh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s81`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_sivakumar2011_neuralstemcelldifferentiation_cros_biomd0000000398_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_sivakumar2011_neuralstemcelldifferentiation_cros_biomd0000000398_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_sivakumar2011_neuralstemcelldifferentiation_cros_biomd0000000398_model.species_labels
+  - name: erlotinib
+    maps_to: systemsbiology_sbml_sivakumar2011_neuralstemcelldifferentiation_cros_biomd0000000398_model.erlotinib
+  - name: dapt
+    maps_to: systemsbiology_sbml_sivakumar2011_neuralstemcelldifferentiation_cros_biomd0000000398_model.dapt
+  - name: model_state_6_bromoindirubin_3_oxime
+    maps_to: systemsbiology_sbml_sivakumar2011_neuralstemcelldifferentiation_cros_biomd0000000398_model.model_state_6_bromoindirubin_3_oxime
+  - name: smo
+    maps_to: systemsbiology_sbml_sivakumar2011_neuralstemcelldifferentiation_cros_biomd0000000398_model.smo
+  - name: wnt
+    maps_to: systemsbiology_sbml_sivakumar2011_neuralstemcelldifferentiation_cros_biomd0000000398_model.wnt
+  - name: shh
+    maps_to: systemsbiology_sbml_sivakumar2011_neuralstemcelldifferentiation_cros_biomd0000000398_model.shh

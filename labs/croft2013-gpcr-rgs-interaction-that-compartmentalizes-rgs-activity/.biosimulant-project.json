@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "fdaf3d5e-bd1f-4251-a89e-8333c76ae6a7",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "538d5fd0-d28e-43f3-91cc-6b308edbae9e",
+  "created_at": "2026-05-16T05:46:42.557659198+00:00",
+  "last_synced_at": "2026-05-17T02:42:32.050068+00:00",
+  "hub_manifest_hash": "03b98817fe8648ecb75ff6f690705afc435794c848da6523d0aa1694ce9a924f",
+  "package_name": "croft2013-gpcr-rgs-interaction-that-compartmentalizes-rgs-activi"
+}

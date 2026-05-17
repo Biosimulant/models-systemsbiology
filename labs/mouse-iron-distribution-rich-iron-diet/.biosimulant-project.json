@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "0fa25d87-5b1e-4191-aa06-1ef79c93b769",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "708080aa-8341-4557-bda0-b665fa6c04f0",
+  "created_at": "2026-05-16T05:46:47.846763139+00:00",
+  "last_synced_at": "2026-05-17T05:03:33.976889+00:00",
+  "hub_manifest_hash": "142c133a599d787d41461feeb9aa6d0e3c8d94fe8f998c639fe7517a3458f624",
+  "package_name": "mouse-iron-distribution-rich-iron-diet-lab"
+}

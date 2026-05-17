@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "baf5c76f-2d61-45ea-bfd8-63e2b3b8cbf1",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "7449288c-0400-4703-95f8-226a132c7fc4",
+  "created_at": "2026-05-16T05:46:44.290532762+00:00",
+  "last_synced_at": "2026-05-17T03:50:50.038988+00:00",
+  "hub_manifest_hash": "2e59ea2d70d7bb6a2d5275c8745e463e024f534a42fd1d398f52e87206fcf96d",
+  "package_name": "jenkinson2011-egf-mapk-lab"
+}

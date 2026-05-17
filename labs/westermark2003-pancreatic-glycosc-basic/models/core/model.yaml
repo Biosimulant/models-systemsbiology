@@ -1,0 +1,94 @@
+schema_version: '2.0'
+title: Westermark2003_Pancreatic_GlycOsc_basic
+description: 'This is the basic model described in eq. 1 of the article: A model of
+  phosphofructokinase and glycolytic oscillations in the pancreatic beta-cell.'
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Pål O Westermark
+- Anders Lansner
+upstream:
+  id: biomodels_ebi:BIOMD0000000225
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000225
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000225
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000225?filename=BIOMD0000000225_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.westermark2003_pancreatic_glycosc_basic_biomd0000000225_model:Westermark2003PancreaticGlycoscBasicBiomd0000000225Model
+  init_kwargs:
+    model_path: data/BIOMD0000000225.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_g6_p_f6_p
+    maps_to: G6P_F6P
+    label: Initial G6 P F6 P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `G6P_F6P`.
+  - name: initial_model_state_glc
+    maps_to: GLC
+    label: Initial Model State Glc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `GLC`.
+  - name: initial_model_state_fbp
+    maps_to: FBP
+    label: Initial Model State Fbp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `FBP`.
+  - name: initial_g3_p
+    maps_to: G3P
+    label: Initial G3 P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `G3P`.
+  - name: initial_f6_p
+    maps_to: F6P
+    label: Initial F6 P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `F6P`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: g6_p_f6_p
+    maps_to: G6P_F6P
+    label: G6P_F6P
+    description: G6P_F6P. Maps to SBML symbol `G6P_F6P`.
+  - name: glc
+    maps_to: GLC
+    label: GLC
+    description: GLC. Maps to SBML symbol `GLC`.
+  - name: fbp
+    maps_to: FBP
+    label: FBP
+    description: FBP. Maps to SBML symbol `FBP`.
+  - name: g3_p
+    maps_to: G3P
+    label: G3P
+    description: G3P. Maps to SBML symbol `G3P`.
+  - name: f6_p
+    maps_to: F6P
+    label: F6P
+    description: F6P. Maps to SBML symbol `F6P`.

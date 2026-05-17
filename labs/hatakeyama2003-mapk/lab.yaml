@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Hatakeyama2003 Mapk Lab
+description: Figure4 and Figure5 can be simulated by Copasi. Figure4 can be simulated
+  in MathSBML as well.
+models:
+- alias: systemsbiology_sbml_hatakeyama2003_mapk_biomd0000000146_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_hatakeyama2003_mapk_biomd0000000146_model.state
+  to:
+  - visualisation.systemsbiology_sbml_hatakeyama2003_mapk_biomd0000000146_model_state
+- from: systemsbiology_sbml_hatakeyama2003_mapk_biomd0000000146_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_hatakeyama2003_mapk_biomd0000000146_model_summary
+- from: systemsbiology_sbml_hatakeyama2003_mapk_biomd0000000146_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_hatakeyama2003_mapk_biomd0000000146_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_internalization
+    maps_to: systemsbiology_sbml_hatakeyama2003_mapk_biomd0000000146_model.initial_internalization
+    label: Initial Internalization
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `internalization`.
+  - name: initial_model_state_shc
+    maps_to: systemsbiology_sbml_hatakeyama2003_mapk_biomd0000000146_model.initial_model_state_shc
+    label: Initial Model State Shc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Shc`.
+  - name: initial_model_state_erk
+    maps_to: systemsbiology_sbml_hatakeyama2003_mapk_biomd0000000146_model.initial_model_state_erk
+    label: Initial Model State ERK
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ERK`.
+  - name: initial_model_state_p_i
+    maps_to: systemsbiology_sbml_hatakeyama2003_mapk_biomd0000000146_model.initial_model_state_p_i
+    label: Initial Model State P I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P_I`.
+  - name: initial_model_state_hrg
+    maps_to: systemsbiology_sbml_hatakeyama2003_mapk_biomd0000000146_model.initial_model_state_hrg
+    label: Initial Model State Hrg
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `HRG`.
+  - name: initial_ras_gdp
+    maps_to: systemsbiology_sbml_hatakeyama2003_mapk_biomd0000000146_model.initial_ras_gdp
+    label: Initial RAS Gdp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RasGDP`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_hatakeyama2003_mapk_biomd0000000146_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_hatakeyama2003_mapk_biomd0000000146_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_hatakeyama2003_mapk_biomd0000000146_model.species_labels
+  - name: internalization
+    maps_to: systemsbiology_sbml_hatakeyama2003_mapk_biomd0000000146_model.internalization
+  - name: shc
+    maps_to: systemsbiology_sbml_hatakeyama2003_mapk_biomd0000000146_model.shc
+  - name: erk
+    maps_to: systemsbiology_sbml_hatakeyama2003_mapk_biomd0000000146_model.erk
+  - name: p_i
+    maps_to: systemsbiology_sbml_hatakeyama2003_mapk_biomd0000000146_model.p_i
+  - name: hrg
+    maps_to: systemsbiology_sbml_hatakeyama2003_mapk_biomd0000000146_model.hrg
+  - name: ras_gdp
+    maps_to: systemsbiology_sbml_hatakeyama2003_mapk_biomd0000000146_model.ras_gdp

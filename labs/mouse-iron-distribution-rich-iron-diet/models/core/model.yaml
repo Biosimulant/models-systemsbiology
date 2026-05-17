@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Mouse Iron Distribution - Rich iron diet (No Tracer)
+description: Mouse Iron Distribution Dynamics Dynamic model of iron distribution in
+  mice. This model includes only normal iron with the parameters that fit the data
+  from Lopes et al.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Jignesh H Parmar
+- Grey Davis
+- Hope Shevchuk
+- Pedro Mendes
+upstream:
+  id: biomodels_ebi:BIOMD0000000738
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000738
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000738
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000738?filename=Parmar2017_Rich_NoTracer.xml
+  license: CC0
+biosim:
+  entrypoint: src.mouse_iron_distribution_rich_iron_diet_no_tracer_biomd0000000738_model:MouseIronDistributionRichIronDietNoTracerBiomd0000000738Model
+  init_kwargs:
+    model_path: data/BIOMD0000000738.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_fe_liver
+    maps_to: FeLiver
+    label: Initial Fe Liver
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `FeLiver`.
+  - name: initial_fe_rbc
+    maps_to: FeRBC
+    label: Initial Fe Rbc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `FeRBC`.
+  - name: initial_fe_duo
+    maps_to: FeDuo
+    label: Initial Fe Duo
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `FeDuo`.
+  - name: initial_fe_spleen
+    maps_to: FeSpleen
+    label: Initial Fe Spleen
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `FeSpleen`.
+  - name: initial_fe_bm
+    maps_to: FeBM
+    label: Initial Fe Bm
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `FeBM`.
+  - name: initial_fe_rest
+    maps_to: FeRest
+    label: Initial Fe Rest
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `FeRest`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: fe_liver
+    maps_to: FeLiver
+    label: FeLiver
+    description: FeLiver. Maps to SBML symbol `FeLiver`.
+  - name: fe_rbc
+    maps_to: FeRBC
+    label: FeRBC
+    description: FeRBC. Maps to SBML symbol `FeRBC`.
+  - name: fe_duo
+    maps_to: FeDuo
+    label: FeDuo
+    description: FeDuo. Maps to SBML symbol `FeDuo`.
+  - name: fe_spleen
+    maps_to: FeSpleen
+    label: FeSpleen
+    description: FeSpleen. Maps to SBML symbol `FeSpleen`.
+  - name: fe_bm
+    maps_to: FeBM
+    label: FeBM
+    description: FeBM. Maps to SBML symbol `FeBM`.
+  - name: fe_rest
+    maps_to: FeRest
+    label: FeRest
+    description: FeRest. Maps to SBML symbol `FeRest`.

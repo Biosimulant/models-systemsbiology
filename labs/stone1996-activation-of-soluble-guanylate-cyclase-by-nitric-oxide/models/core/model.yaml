@@ -1,0 +1,105 @@
+schema_version: '2.0'
+title: Stone1996 - activation of soluble guanylate cyclase by nitric oxide
+description: Stone1996 - activation of soluble guanylatecyclase by nitric oxide This
+  features the two step binding ofNO to soluble Guanylyl Cyclase as proposed by StoneJR,
+  Marletta MA. It can be used to explore systemsbiology stone1996 activation of soluble
+  guanylate dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- J R Stone
+- M A Marletta
+upstream:
+  id: biomodels_ebi:BIOMD0000000198
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000198
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000198
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000198?filename=BIOMD0000000198_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.stone1996_activation_of_soluble_guanylate_cyclas_biomd0000000198_model:Stone1996ActivationOfSolubleGuanylateCyclasBiomd0000000198Model
+  init_kwargs:
+    model_path: data/BIOMD0000000198.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_no
+    maps_to: 'NO'
+    label: Initial Model State No
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NO`.
+  - name: initial_sg_cslow
+    maps_to: sGCslow
+    label: Initial Sg Cslow
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `sGCslow`.
+  - name: initial_sg_cfast
+    maps_to: sGCfast
+    label: Initial Sg Cfast
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `sGCfast`.
+  - name: initial_sgc_inact_tot
+    maps_to: sGC_inact_tot
+    label: Initial Sgc Inact Tot
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `sGC_inact_tot`.
+  - name: initial_no_sg_cslow_6coord_no_int
+    maps_to: NO_sGCslow_6coord_NO_int
+    label: Initial No Sg Cslow 6coord No Int
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NO_sGCslow_6coord_NO_int`.
+  - name: initial_no_sg_cslow_6coord
+    maps_to: NO_sGCslow_6coord
+    label: Initial No Sg Cslow 6coord
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NO_sGCslow_6coord`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_no
+    maps_to: 'NO'
+    label: 'NO'
+    description: NO. Maps to SBML symbol `NO`.
+  - name: sg_cslow
+    maps_to: sGCslow
+    label: SGCslow
+    description: SGCslow. Maps to SBML symbol `sGCslow`.
+  - name: sg_cfast
+    maps_to: sGCfast
+    label: SGCfast
+    description: SGCfast. Maps to SBML symbol `sGCfast`.
+  - name: sgc_inact_tot
+    maps_to: sGC_inact_tot
+    label: SGC Inact Tot
+    description: SGC Inact Tot. Maps to SBML symbol `sGC_inact_tot`.
+  - name: no_sg_cslow_6coord_no_int
+    maps_to: NO_sGCslow_6coord_NO_int
+    label: NO SGCslow 6coord NO Int
+    description: NO SGCslow 6coord NO Int. Maps to SBML symbol `NO_sGCslow_6coord_NO_int`.
+  - name: no_sg_cslow_6coord
+    maps_to: NO_sGCslow_6coord
+    label: NO SGCslow 6coord
+    description: NO SGCslow 6coord. Maps to SBML symbol `NO_sGCslow_6coord`.

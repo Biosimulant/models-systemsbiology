@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Cazzaniga2014 Blood Coagulation With Platelet Activation Lab
+description: Mathematical model of blood coagulation with platelet activation. Model
+  includes factor XII, factor VIIIa fragments, meizothrombin, kallikrein, C1-inhibitor,
+  alpha1-Antitrypsin, alpha2-Antiplasmin, fi.
+models:
+- alias: systemsbiology_sbml_cazzaniga2014_blood_coagulation_with_platelet_ac_model1807180003_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_cazzaniga2014_blood_coagulation_with_platelet_ac_model1807180003_model.state
+  to:
+  - visualisation.systemsbiology_sbml_cazzaniga2014_blood_coagulation_with_platelet_ac_model1807180003_model_state
+- from: systemsbiology_sbml_cazzaniga2014_blood_coagulation_with_platelet_ac_model1807180003_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_cazzaniga2014_blood_coagulation_with_platelet_ac_model1807180003_model_summary
+- from: systemsbiology_sbml_cazzaniga2014_blood_coagulation_with_platelet_ac_model1807180003_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_cazzaniga2014_blood_coagulation_with_platelet_ac_model1807180003_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_m_i_ia_atiii
+    maps_to: systemsbiology_sbml_cazzaniga2014_blood_coagulation_with_platelet_ac_model1807180003_model.initial_m_i_ia_atiii
+    label: Initial M I Ia Atiii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mIIa_ATIII`.
+  - name: initial_m_i_ia
+    maps_to: systemsbiology_sbml_cazzaniga2014_blood_coagulation_with_platelet_ac_model1807180003_model.initial_m_i_ia
+    label: Initial M I Ia
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mIIa`.
+  - name: initial_xa_va_ii
+    maps_to: systemsbiology_sbml_cazzaniga2014_blood_coagulation_with_platelet_ac_model1807180003_model.initial_xa_va_ii
+    label: Initial Xa Va Ii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_Va_II`.
+  - name: initial_xa_va
+    maps_to: systemsbiology_sbml_cazzaniga2014_blood_coagulation_with_platelet_ac_model1807180003_model.initial_xa_va
+    label: Initial Xa Va
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_Va`.
+  - name: initial_xa_viii
+    maps_to: systemsbiology_sbml_cazzaniga2014_blood_coagulation_with_platelet_ac_model1807180003_model.initial_xa_viii
+    label: Initial Xa Viii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_VIII`.
+  - name: initial_xa_tfpi
+    maps_to: systemsbiology_sbml_cazzaniga2014_blood_coagulation_with_platelet_ac_model1807180003_model.initial_xa_tfpi
+    label: Initial Xa Tfpi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_TFPI`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_cazzaniga2014_blood_coagulation_with_platelet_ac_model1807180003_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_cazzaniga2014_blood_coagulation_with_platelet_ac_model1807180003_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_cazzaniga2014_blood_coagulation_with_platelet_ac_model1807180003_model.species_labels
+  - name: m_i_ia_atiii
+    maps_to: systemsbiology_sbml_cazzaniga2014_blood_coagulation_with_platelet_ac_model1807180003_model.m_i_ia_atiii
+  - name: m_i_ia
+    maps_to: systemsbiology_sbml_cazzaniga2014_blood_coagulation_with_platelet_ac_model1807180003_model.m_i_ia
+  - name: xa_va_ii
+    maps_to: systemsbiology_sbml_cazzaniga2014_blood_coagulation_with_platelet_ac_model1807180003_model.xa_va_ii
+  - name: xa_va
+    maps_to: systemsbiology_sbml_cazzaniga2014_blood_coagulation_with_platelet_ac_model1807180003_model.xa_va
+  - name: xa_viii
+    maps_to: systemsbiology_sbml_cazzaniga2014_blood_coagulation_with_platelet_ac_model1807180003_model.xa_viii
+  - name: xa_tfpi
+    maps_to: systemsbiology_sbml_cazzaniga2014_blood_coagulation_with_platelet_ac_model1807180003_model.xa_tfpi

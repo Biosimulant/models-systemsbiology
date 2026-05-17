@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: Hayer2005_simple_AMPAR_traff_model2 Visualisation
+description: Question-and-answer and dynamic visual summaries for Hayer2005_simple_AMPAR_traff_model2.
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Hayer2005 Simple Ampar Traff Lab
+    question: 'Which signalling variables dominate the simulated network response?
+      Source model: Hayer2005_simple_AMPAR_traff_model2.'
+    answer_focus: Q/A table plus signaling timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_hayer2005_simple_ampar_traff_model2_model9086628127_model
+      title: Hayer2005_simple_AMPAR_traff_model2
+      observables:
+      - id: Internal_slash_IR_star_
+        port: internal_slash_ir_star
+        label: Internal Slash IR Star
+        group: signaling
+      - id: Internal_slash_IR
+        port: internal_slash_ir
+        label: Internal Slash IR
+        group: signaling
+      - id: PKA_minus_active_slash_internal_minus_PKA_minus_act_slash_internal_minus_PKA_minus_act_cplx
+        port: pka_minus_active_slash_internal_minus_pka_minus_act_slash_internal_minus_pka_minus_act_cplx
+        label: PKA Minus Active Slash Internal Minus PKA Minus Act Slash Internal
+          Minus PKA Minus Act Cplx
+        group: signaling
+      - id: PKA_minus_active_slash_internal_minus_PKA_minus_act_sbo_1_sbc__slash_internal_minus_PKA_minus_act_sbo_1_sbc__cplx
+        port: pka_minus_active_slash_internal_minus_pka_minus_act_sbo_1_sbc_slash_internal_minus_pka_minus_act_sbo_1_sbc_cplx
+        label: PKA Minus Active Slash Internal Minus PKA Minus Act Sbo 1 Sbc Slash
+          Internal Minus PKA Minus Act Sbo 1 Sbc Cplx
+        group: signaling
+      - id: Internal_slash_IR_star__star_
+        port: internal_slash_ir_star_star
+        label: Internal Slash IR Star Star
+        group: signaling
+      - id: Anchor
+        port: anchor
+        label: Anchor
+        group: signaling
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "cf857707-37be-4efd-8485-1723565f3e15",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "24bf111f-4e87-403b-b749-b8203b7ae1dc",
+  "created_at": "2026-05-16T05:46:44.320181560+00:00",
+  "last_synced_at": "2026-05-17T03:51:55.445965+00:00",
+  "hub_manifest_hash": "008fce053a6dfd38b607d7524b26ff109ae2ea7283b58c4d892d2d7903d74362",
+  "package_name": "jol2012-yeastmetabolism-efmanalysis-lab"
+}

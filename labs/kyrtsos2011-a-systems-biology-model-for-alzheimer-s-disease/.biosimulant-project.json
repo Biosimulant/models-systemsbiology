@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "e2ca4a2b-8b60-461e-823d-fbd87870772c",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "b7bd6439-6a28-4934-b459-4bd60aee08c8",
+  "created_at": "2026-05-16T05:46:45.007547799+00:00",
+  "last_synced_at": "2026-05-17T04:14:44.030543+00:00",
+  "hub_manifest_hash": "b9ae35a9bbcf5c74e87f35f73b75f31305b594df036a288e1cb8a37ea01a5d25",
+  "package_name": "kyrtsos2011-a-systems-biology-model-for-alzheimer-s-disease-lab"
+}

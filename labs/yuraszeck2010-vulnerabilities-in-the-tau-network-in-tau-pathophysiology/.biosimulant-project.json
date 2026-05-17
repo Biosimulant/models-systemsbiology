@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "54bad6bc-ad45-4f89-9007-a3855223ec41",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "7f5e05de-58c7-4f50-96f3-2066cadb322f",
+  "created_at": "2026-05-16T05:46:53.497952116+00:00",
+  "last_synced_at": "2026-05-17T07:05:17.667679+00:00",
+  "hub_manifest_hash": "05a6bc6f3a282702cd8f84faa2643b713f723a5e620a77d95f5e70c00e92855d",
+  "package_name": "yuraszeck2010-vulnerabilities-in-the-tau-network-in-tau-pathophy"
+}

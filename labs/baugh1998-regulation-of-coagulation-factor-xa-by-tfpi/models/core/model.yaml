@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Baugh1998 - Regulation of coagulation factor Xa by TFPI
+description: Basic mathematical model of the formation of coagulation factor Xa involving
+  TF:VIIa and its inhibition by TFPI. It can be used to explore systemsbiology baugh1998
+  regulation of coagulation factor dynamics and compare simulation behavior across
+  conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- R J Baugh
+- G J Broze
+- S Krishnaswamy
+upstream:
+  id: biomodels_ebi:MODEL1807180001
+  source_db: biomodels_ebi
+  source_id: MODEL1807180001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1807180001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1807180001?filename=Baugh1998.xml
+  license: CC0
+biosim:
+  entrypoint: src.baugh1998_regulation_of_coagulation_factor_xa_by_model1807180001_model:Baugh1998RegulationOfCoagulationFactorXaByModel1807180001Model
+  init_kwargs:
+    model_path: data/MODEL1807180001.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_p_i
+    maps_to: P_I
+    label: Initial Model State P I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P_I`.
+  - name: initial_ep_i
+    maps_to: EP_I
+    label: Initial Ep I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `EP_I`.
+  - name: initial_model_state_es
+    maps_to: ES
+    label: Initial Model State Es
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ES`.
+  - name: initial_model_state_s
+    maps_to: S
+    label: Initial Model State S
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S`.
+  - name: initial_model_state_i
+    maps_to: I
+    label: Initial Model State I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `I`.
+  - name: initial_model_state_e
+    maps_to: E
+    label: Initial Model State E
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `E`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: p_i
+    maps_to: P_I
+    label: P:I
+    description: P:I. Maps to SBML symbol `P_I`.
+  - name: ep_i
+    maps_to: EP_I
+    label: EP:I
+    description: EP:I. Maps to SBML symbol `EP_I`.
+  - name: model_state_es
+    maps_to: ES
+    label: ES
+    description: ES. Maps to SBML symbol `ES`.
+  - name: model_state_s
+    maps_to: S
+    label: S
+    description: S. Maps to SBML symbol `S`.
+  - name: model_state_i
+    maps_to: I
+    label: I
+    description: I. Maps to SBML symbol `I`.
+  - name: model_state_e
+    maps_to: E
+    label: E
+    description: E. Maps to SBML symbol `E`.

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "d73081a2-0dd7-42b4-b30d-a28bf04c1ea1",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "5b4acd44-c020-4a23-8e34-1c50cbf83f6d",
+  "created_at": "2026-05-16T05:46:48.209452126+00:00",
+  "last_synced_at": "2026-05-17T09:37:09.135631+00:00",
+  "hub_manifest_hash": "9cd2d97fdd4de98707a531585bcf9fcba320b9fe463ccc7dfda75a4a1107d1d0",
+  "package_name": "biomd0000000644-variant-musante2017-switching-behaviour-of-pp2a"
+}

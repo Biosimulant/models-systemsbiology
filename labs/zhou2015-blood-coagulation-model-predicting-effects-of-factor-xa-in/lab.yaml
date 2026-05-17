@@ -1,0 +1,58 @@
+schema_version: '2.0'
+title: Zhou2015 Blood Coagulation Model Predicting Effects Of Factor Xa In Lab
+description: Blood coagulation model investigating effects of Xa-inhibitors (Rivaroxaban
+  and Apixaban). Model is an extension of Pohl1994 and reduced from Wajima2009.Encoding
+  the model from the supplementary files.
+models:
+- alias: systemsbiology_sbml_zhou2015_blood_coagulation_model_predicting_effe_model1806070001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_zhou2015_blood_coagulation_model_predicting_effe_model1806070001_model.state
+  to:
+  - visualisation.systemsbiology_sbml_zhou2015_blood_coagulation_model_predicting_effe_model1806070001_model_state
+- from: systemsbiology_sbml_zhou2015_blood_coagulation_model_predicting_effe_model1806070001_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_zhou2015_blood_coagulation_model_predicting_effe_model1806070001_model_summary
+- from: systemsbiology_sbml_zhou2015_blood_coagulation_model_predicting_effe_model1806070001_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_zhou2015_blood_coagulation_model_predicting_effe_model1806070001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: drug
+    maps_to: systemsbiology_sbml_zhou2015_blood_coagulation_model_predicting_effe_model1806070001_model.drug
+    label: Drug
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `Drug`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_zhou2015_blood_coagulation_model_predicting_effe_model1806070001_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_zhou2015_blood_coagulation_model_predicting_effe_model1806070001_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_zhou2015_blood_coagulation_model_predicting_effe_model1806070001_model.species_labels
+  - name: xa_xa_inhibitor
+    maps_to: systemsbiology_sbml_zhou2015_blood_coagulation_model_predicting_effe_model1806070001_model.xa_xa_inhibitor
+  - name: xa_va_xa_inhibitor
+    maps_to: systemsbiology_sbml_zhou2015_blood_coagulation_model_predicting_effe_model1806070001_model.xa_va_xa_inhibitor
+  - name: xa_inhibitor
+    maps_to: systemsbiology_sbml_zhou2015_blood_coagulation_model_predicting_effe_model1806070001_model.xa_inhibitor
+  - name: xa_va
+    maps_to: systemsbiology_sbml_zhou2015_blood_coagulation_model_predicting_effe_model1806070001_model.xa_va
+  - name: xa_tfpi
+    maps_to: systemsbiology_sbml_zhou2015_blood_coagulation_model_predicting_effe_model1806070001_model.xa_tfpi
+  - name: xa_atiii
+    maps_to: systemsbiology_sbml_zhou2015_blood_coagulation_model_predicting_effe_model1806070001_model.xa_atiii

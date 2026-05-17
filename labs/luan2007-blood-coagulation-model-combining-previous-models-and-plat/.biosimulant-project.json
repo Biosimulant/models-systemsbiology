@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "edbef8a3-3fdb-415f-8983-dab245dd2574",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "5bc02fcf-ef45-4a06-ba6c-1fecf1066347",
+  "created_at": "2026-05-16T05:46:46.102678631+00:00",
+  "last_synced_at": "2026-05-17T04:41:10.646032+00:00",
+  "hub_manifest_hash": "eb8c8f343cf966cf6635b06bc41fb5a60c6163aa0e2f4e96f1ee76ac133f13df",
+  "package_name": "luan2007-blood-coagulation-model-combining-previous-models-and-p"
+}

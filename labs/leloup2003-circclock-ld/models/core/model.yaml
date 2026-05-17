@@ -1,0 +1,105 @@
+schema_version: '2.0'
+title: Leloup2003_CircClock_LD
+description: This model is described in the paper Toward a detailed computational
+  model for the mammalian circadian clock . In this model only interlocked negative
+  and positive regulation of Per, Cry, Bmal gene ar.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Jean-Christophe Leloup
+- Albert Goldbeter
+upstream:
+  id: biomodels_ebi:BIOMD0000000078
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000078
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000078
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000078?filename=BIOMD0000000078_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.leloup2003_circclock_ld_biomd0000000078_model:Leloup2003CircclockLdBiomd0000000078Model
+  init_kwargs:
+    model_path: data/BIOMD0000000078.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_mb
+    maps_to: species_0
+    label: Initial Model State Mb
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_0`.
+  - name: initial_model_state_mp
+    maps_to: species_7
+    label: Initial Model State Mp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_7`.
+  - name: initial_model_state_bc
+    maps_to: species_1
+    label: Initial Model State Bc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_1`.
+  - name: initial_model_state_bn
+    maps_to: species_3
+    label: Initial Model State Bn
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_3`.
+  - name: initial_model_state_mc
+    maps_to: species_5
+    label: Initial Model State Mc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_5`.
+  - name: initial_p_cn
+    maps_to: species_12
+    label: Initial P Cn
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_12`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_mb
+    maps_to: species_0
+    label: Mb
+    description: Mb. Maps to SBML symbol `species_0`.
+  - name: model_state_mp
+    maps_to: species_7
+    label: Mp
+    description: Mp. Maps to SBML symbol `species_7`.
+  - name: model_state_bc
+    maps_to: species_1
+    label: Bc
+    description: Bc. Maps to SBML symbol `species_1`.
+  - name: model_state_bn
+    maps_to: species_3
+    label: Bn
+    description: Bn. Maps to SBML symbol `species_3`.
+  - name: model_state_mc
+    maps_to: species_5
+    label: Mc
+    description: Mc. Maps to SBML symbol `species_5`.
+  - name: p_cn
+    maps_to: species_12
+    label: PCn
+    description: PCn. Maps to SBML symbol `species_12`.

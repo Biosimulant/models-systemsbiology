@@ -1,0 +1,52 @@
+schema_version: '2.0'
+title: Yamaguchi1996_MyocardialCa2 Visualisation
+description: Question-and-answer and dynamic visual summaries for Yamaguchi1996_MyocardialCa2.
+standard: other
+tags:
+- cardiovascular
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Yamaguchi1996 Myocardialca2 Lab
+    question: 'Which cardiovascular or blood-state variables dominate the simulated
+      response? Source model: Yamaguchi1996_MyocardialCa2.'
+    answer_focus: Q/A table plus cardiovascular timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_yamaguchi1996_myocardialca2_model1006230032_model
+      title: Yamaguchi1996_MyocardialCa2
+      observables:
+      - id: TnCa
+        port: tn_ca
+        label: TnCa
+        group: physiology
+      - id: FTI
+        port: fti
+        label: FTI
+        group: physiology
+      - id: CumCB_on
+        port: cum_cb_on
+        label: CumCB On
+        group: physiology
+      - id: CumCB_off
+        port: cum_cb_off
+        label: CumCB Off
+        group: physiology
+      - id: CB_on
+        port: cb_on
+        label: CB On
+        group: physiology
+io:
+  inputs: []
+  outputs: []

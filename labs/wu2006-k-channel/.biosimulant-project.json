@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "5c562510-7f6e-48a8-9979-b281a452dd23",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "56460f4b-68a8-48e7-9d2a-ac4f20aad96d",
+  "created_at": "2026-05-16T05:46:53.358888471+00:00",
+  "last_synced_at": "2026-05-17T06:57:43.690316+00:00",
+  "hub_manifest_hash": "8b31fe7c196fc4bec19101541a76d1327bad446afd7f48a3c2e5e1317c951985",
+  "package_name": "wu2006-k-channel-lab"
+}

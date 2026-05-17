@@ -1,0 +1,109 @@
+schema_version: '2.0'
+title: Heldt2018 - Proliferation-quiescence decision in response to DNA damage
+description: 'Heldt2018 - Proliferation-quiescence decisionin response to DNA damage
+  This model is described in the article: A comprehensive model for the proliferation-quiescence
+  decision in response to endogenous. It can be used to explore systemsbiology heldt2018
+  proliferation quiescence decision in dynamics and compare simulation behavior across
+  conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Frank S Heldt
+- Alexis R Barr
+- Sam Cooper
+- Chris Bakal
+- Béla Novák
+upstream:
+  id: biomodels_ebi:BIOMD0000000700
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000700
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000700
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000700?filename=BIOMD0000000700_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.heldt2018_proliferation_quiescence_decision_in_r_biomd0000000700_model:Heldt2018ProliferationQuiescenceDecisionInRBiomd0000000700Model
+  init_kwargs:
+    model_path: data/BIOMD0000000700.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_cyclin_a_cdk2_total
+    maps_to: tCa
+    label: Initial Cyclin A Cdk2 Total
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `tCa`.
+  - name: initial_retinoblastoma_protein_total
+    maps_to: tRb
+    label: Initial Retinoblastoma Protein Total
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `tRb`.
+  - name: initial_retinoblastoma_protein_hyperphosphorylated
+    maps_to: pRb
+    label: Initial Retinoblastoma Protein Hyperphosphorylated
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `pRb`.
+  - name: initial_cyclin_a_cdk2
+    maps_to: Ca
+    label: Initial Cyclin A Cdk2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca`.
+  - name: initial_cyclin_e_cdk2_total
+    maps_to: tCe
+    label: Initial Cyclin E Cdk2 Total
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `tCe`.
+  - name: initial_cyclin_e_cdk2_active
+    maps_to: Ce
+    label: Initial Cyclin E Cdk2 Active
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ce`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: cyclin_a_cdk2_total
+    maps_to: tCa
+    label: CyclinA_Cdk2_total
+    description: CyclinA_Cdk2_total. Maps to SBML symbol `tCa`.
+  - name: retinoblastoma_protein_total
+    maps_to: tRb
+    label: Retinoblastoma_protein_total
+    description: Retinoblastoma_protein_total. Maps to SBML symbol `tRb`.
+  - name: retinoblastoma_protein_hyperphosphorylated
+    maps_to: pRb
+    label: Retinoblastoma_protein_hyperphosphorylated
+    description: Retinoblastoma_protein_hyperphosphorylated. Maps to SBML symbol `pRb`.
+  - name: cyclin_a_cdk2
+    maps_to: Ca
+    label: CyclinA_Cdk2
+    description: CyclinA_Cdk2. Maps to SBML symbol `Ca`.
+  - name: cyclin_e_cdk2_total
+    maps_to: tCe
+    label: CyclinE_Cdk2_total
+    description: CyclinE_Cdk2_total. Maps to SBML symbol `tCe`.
+  - name: cyclin_e_cdk2_active
+    maps_to: Ce
+    label: CyclinE_Cdk2_active
+    description: CyclinE_Cdk2_active. Maps to SBML symbol `Ce`.

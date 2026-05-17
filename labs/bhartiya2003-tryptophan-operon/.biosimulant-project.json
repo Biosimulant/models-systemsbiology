@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "523faea6-e8d7-458c-8788-ac786425a111",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "31a717b2-8aba-4812-b33b-2c776a71af24",
+  "created_at": "2026-05-16T05:46:41.630866813+00:00",
+  "last_synced_at": "2026-05-17T02:08:58.772098+00:00",
+  "hub_manifest_hash": "e01a79ba2a6ec9baf5768cf4f4209abb1680421dbd62ef0ab767a272fee84111",
+  "package_name": "bhartiya2003-tryptophan-operon-lab"
+}

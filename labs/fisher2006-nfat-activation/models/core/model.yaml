@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Fisher2006_NFAT_Activation
+description: The model reproduces the kinetics of the nuclear factor of activated
+  cells (NFAT) as depicted in Figure 3a of the paper. Model was successfully tested
+  on Jarnac and MathSBML To the extent possible und.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Wayne G Fisher
+- Pei-Chi Yang
+- Ram K Medikonduri
+- M Saleet Jafri
+upstream:
+  id: biomodels_ebi:BIOMD0000000123
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000123
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000123
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000123?filename=BIOMD0000000123_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.fisher2006_nfat_activation_biomd0000000123_model:Fisher2006NfatActivationBiomd0000000123Model
+  init_kwargs:
+    model_path: data/BIOMD0000000123.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_calcium_in_nucleus
+    maps_to: Ca_Nuc
+    label: Initial Calcium In Nucleus
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_Nuc`.
+  - name: initial_calcium_in_cytosol
+    maps_to: Ca_Cyt
+    label: Initial Calcium In Cytosol
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_Cyt`.
+  - name: initial_inactive_calcineurin_in_nucleus
+    maps_to: Inact_C_Nuc
+    label: Initial Inactive Calcineurin In Nucleus
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Inact_C_Nuc`.
+  - name: initial_inactive_calcineurin_in_cytosol
+    maps_to: Inact_C_Cyt
+    label: Initial Inactive Calcineurin In Cytosol
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Inact_C_Cyt`.
+  - name: initial_phosphorylated_nfat_in_cytosol
+    maps_to: NFAT_Pi_Cyt
+    label: Initial Phosphorylated Nfat In Cytosol
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NFAT_Pi_Cyt`.
+  - name: initial_nfat_calcineurin_complex_in_nucleus
+    maps_to: NFAT_Act_C_Nuc
+    label: Initial Nfat Calcineurin Complex In Nucleus
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NFAT_Act_C_Nuc`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: calcium_in_nucleus
+    maps_to: Ca_Nuc
+    label: Calcium in Nucleus
+    description: Calcium in Nucleus. Maps to SBML symbol `Ca_Nuc`.
+  - name: calcium_in_cytosol
+    maps_to: Ca_Cyt
+    label: Calcium in Cytosol
+    description: Calcium in Cytosol. Maps to SBML symbol `Ca_Cyt`.
+  - name: inactive_calcineurin_in_nucleus
+    maps_to: Inact_C_Nuc
+    label: Inactive Calcineurin in nucleus
+    description: Inactive Calcineurin in nucleus. Maps to SBML symbol `Inact_C_Nuc`.
+  - name: inactive_calcineurin_in_cytosol
+    maps_to: Inact_C_Cyt
+    label: Inactive Calcineurin in cytosol
+    description: Inactive Calcineurin in cytosol. Maps to SBML symbol `Inact_C_Cyt`.
+  - name: phosphorylated_nfat_in_cytosol
+    maps_to: NFAT_Pi_Cyt
+    label: Phosphorylated NFAT in cytosol
+    description: Phosphorylated NFAT in cytosol. Maps to SBML symbol `NFAT_Pi_Cyt`.
+  - name: nfat_calcineurin_complex_in_nucleus
+    maps_to: NFAT_Act_C_Nuc
+    label: NFAT Calcineurin complex in nucleus
+    description: NFAT Calcineurin complex in nucleus. Maps to SBML symbol `NFAT_Act_C_Nuc`.

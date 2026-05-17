@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Susree2017 Role Of Platelet Count And Inhibitors In Blood Coagulation Lab
+description: Mathematical model of blood coagulation that incorporates platelet binding
+  sites. It can be used to explore systemsbiology susree2017 role of platelet count
+  dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_susree2017_role_of_platelet_count_and_inhibitors_model1808130001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_susree2017_role_of_platelet_count_and_inhibitors_model1808130001_model.state
+  to:
+  - visualisation.systemsbiology_sbml_susree2017_role_of_platelet_count_and_inhibitors_model1808130001_model_state
+- from: systemsbiology_sbml_susree2017_role_of_platelet_count_and_inhibitors_model1808130001_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_susree2017_role_of_platelet_count_and_inhibitors_model1808130001_model_summary
+- from: systemsbiology_sbml_susree2017_role_of_platelet_count_and_inhibitors_model1808130001_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_susree2017_role_of_platelet_count_and_inhibitors_model1808130001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_xa_m_va_m
+    maps_to: systemsbiology_sbml_susree2017_role_of_platelet_count_and_inhibitors_model1808130001_model.initial_xa_m_va_m
+    label: Initial Xa M Va M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_m_Va_m`.
+  - name: initial_xa_m
+    maps_to: systemsbiology_sbml_susree2017_role_of_platelet_count_and_inhibitors_model1808130001_model.initial_xa_m
+    label: Initial Xa M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_m`.
+  - name: initial_xa_tfpi
+    maps_to: systemsbiology_sbml_susree2017_role_of_platelet_count_and_inhibitors_model1808130001_model.initial_xa_tfpi
+    label: Initial Xa Tfpi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_TFPI`.
+  - name: initial_model_state_x_m
+    maps_to: systemsbiology_sbml_susree2017_role_of_platelet_count_and_inhibitors_model1808130001_model.initial_model_state_x_m
+    label: Initial Model State X M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X_m`.
+  - name: initial_va_m
+    maps_to: systemsbiology_sbml_susree2017_role_of_platelet_count_and_inhibitors_model1808130001_model.initial_va_m
+    label: Initial Va M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Va_m`.
+  - name: initial_model_state_v_m
+    maps_to: systemsbiology_sbml_susree2017_role_of_platelet_count_and_inhibitors_model1808130001_model.initial_model_state_v_m
+    label: Initial Model State V M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `V_m`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_susree2017_role_of_platelet_count_and_inhibitors_model1808130001_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_susree2017_role_of_platelet_count_and_inhibitors_model1808130001_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_susree2017_role_of_platelet_count_and_inhibitors_model1808130001_model.species_labels
+  - name: xa_m_va_m
+    maps_to: systemsbiology_sbml_susree2017_role_of_platelet_count_and_inhibitors_model1808130001_model.xa_m_va_m
+  - name: xa_m
+    maps_to: systemsbiology_sbml_susree2017_role_of_platelet_count_and_inhibitors_model1808130001_model.xa_m
+  - name: xa_tfpi
+    maps_to: systemsbiology_sbml_susree2017_role_of_platelet_count_and_inhibitors_model1808130001_model.xa_tfpi
+  - name: x_m
+    maps_to: systemsbiology_sbml_susree2017_role_of_platelet_count_and_inhibitors_model1808130001_model.x_m
+  - name: va_m
+    maps_to: systemsbiology_sbml_susree2017_role_of_platelet_count_and_inhibitors_model1808130001_model.va_m
+  - name: v_m
+    maps_to: systemsbiology_sbml_susree2017_role_of_platelet_count_and_inhibitors_model1808130001_model.v_m

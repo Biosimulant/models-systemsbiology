@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Jones1994 Bloodcoagulation Lab
+description: 'Jones1994_BloodCoagulation This model is built based on theexperimental
+  findings described in Lawson et al., 1994(PMID:8083241) This model is described
+  in the article: A model for the tissue factor pa. It can be used to explore systemsbiology
+  jones1994 bloodcoagulation BioModels0000000336 dynamics and compare simulation behavior
+  across conditions.'
+models:
+- alias: systemsbiology_sbml_jones1994_bloodcoagulation_biomd0000000336_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_jones1994_bloodcoagulation_biomd0000000336_model.state
+  to:
+  - visualisation.systemsbiology_sbml_jones1994_bloodcoagulation_biomd0000000336_model_state
+- from: systemsbiology_sbml_jones1994_bloodcoagulation_biomd0000000336_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_jones1994_bloodcoagulation_biomd0000000336_model_summary
+- from: systemsbiology_sbml_jones1994_bloodcoagulation_biomd0000000336_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_jones1994_bloodcoagulation_biomd0000000336_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_tf_vi_ia
+    maps_to: systemsbiology_sbml_jones1994_bloodcoagulation_biomd0000000336_model.initial_tf_vi_ia
+    label: Initial Tf Vi Ia
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TF_VIIa`.
+  - name: initial_m_i_ia
+    maps_to: systemsbiology_sbml_jones1994_bloodcoagulation_biomd0000000336_model.initial_m_i_ia
+    label: Initial M I Ia
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mIIa`.
+  - name: initial_x_vii_ia_i_xa
+    maps_to: systemsbiology_sbml_jones1994_bloodcoagulation_biomd0000000336_model.initial_x_vii_ia_i_xa
+    label: Initial X Vii Ia I Xa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X_VIIIa_IXa`.
+  - name: initial_x_tf_vi_ia
+    maps_to: systemsbiology_sbml_jones1994_bloodcoagulation_biomd0000000336_model.initial_x_tf_vi_ia
+    label: Initial X Tf Vi Ia
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X_TF_VIIa`.
+  - name: initial_va_xa
+    maps_to: systemsbiology_sbml_jones1994_bloodcoagulation_biomd0000000336_model.initial_va_xa
+    label: Initial Va Xa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Va_Xa`.
+  - name: initial_vii_ia_i_xa
+    maps_to: systemsbiology_sbml_jones1994_bloodcoagulation_biomd0000000336_model.initial_vii_ia_i_xa
+    label: Initial Vii Ia I Xa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VIIIa_IXa`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_jones1994_bloodcoagulation_biomd0000000336_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_jones1994_bloodcoagulation_biomd0000000336_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_jones1994_bloodcoagulation_biomd0000000336_model.species_labels
+  - name: tf_vi_ia
+    maps_to: systemsbiology_sbml_jones1994_bloodcoagulation_biomd0000000336_model.tf_vi_ia
+  - name: m_i_ia
+    maps_to: systemsbiology_sbml_jones1994_bloodcoagulation_biomd0000000336_model.m_i_ia
+  - name: x_vii_ia_i_xa
+    maps_to: systemsbiology_sbml_jones1994_bloodcoagulation_biomd0000000336_model.x_vii_ia_i_xa
+  - name: x_tf_vi_ia
+    maps_to: systemsbiology_sbml_jones1994_bloodcoagulation_biomd0000000336_model.x_tf_vi_ia
+  - name: va_xa
+    maps_to: systemsbiology_sbml_jones1994_bloodcoagulation_biomd0000000336_model.va_xa
+  - name: vii_ia_i_xa
+    maps_to: systemsbiology_sbml_jones1994_bloodcoagulation_biomd0000000336_model.vii_ia_i_xa

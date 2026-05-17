@@ -1,0 +1,110 @@
+schema_version: '2.0'
+title: Wang2007 - ATP induced intracellular Calcium Oscillation
+description: Wang2007 - ATP induced intracellular Calicum Oscillation The model simulate
+  the ATP-induced intracellular Ca 2+ oscillations and the quantitative effect of
+  ATP concentration on the oscillation charact. It can be used to explore systemsbiology
+  wang2007 atp induced intracellular calcium dynamics and compare simulation behavior
+  across conditions.
+standard: other
+tags:
+- cellcycle
+- metabolism
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Jinhui Wang
+- Xudong Huang
+- Weidong Huang
+upstream:
+  id: biomodels_ebi:BIOMD0000000145
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000145
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000145
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000145?filename=BIOMD0000000145_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.wang2007_atp_induced_intracellular_calcium_oscil_biomd0000000145_model:Wang2007AtpInducedIntracellularCalciumOscilBiomd0000000145Model
+  init_kwargs:
+    model_path: data/BIOMD0000000145.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_calcium
+    maps_to: Ca_ER
+    label: Initial Calcium
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_ER`.
+  - name: initial_calcium_2
+    maps_to: Ca_Cyt
+    label: Initial Calcium 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_Cyt`.
+  - name: initial_galpha_gtp
+    maps_to: Galpha_GTP
+    label: Initial Galpha Gtp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Galpha_GTP`.
+  - name: initial_diacylglycerol
+    maps_to: DG
+    label: Initial Diacylglycerol
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `DG`.
+  - name: initial_aplc
+    maps_to: APLC
+    label: Initial Aplc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `APLC`.
+  - name: initial_model_state_plc
+    maps_to: PLC
+    label: Initial Model State Plc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PLC`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: calcium
+    maps_to: Ca_ER
+    label: Calcium
+    description: Calcium. Maps to SBML symbol `Ca_ER`.
+  - name: calcium_2
+    maps_to: Ca_Cyt
+    label: Calcium
+    description: Calcium. Maps to SBML symbol `Ca_Cyt`.
+  - name: galpha_gtp
+    maps_to: Galpha_GTP
+    label: Galpha_GTP
+    description: Galpha_GTP. Maps to SBML symbol `Galpha_GTP`.
+  - name: diacylglycerol
+    maps_to: DG
+    label: Diacylglycerol
+    description: Diacylglycerol. Maps to SBML symbol `DG`.
+  - name: aplc
+    maps_to: APLC
+    label: APLC
+    description: APLC. Maps to SBML symbol `APLC`.
+  - name: plc
+    maps_to: PLC
+    label: PLC
+    description: PLC. Maps to SBML symbol `PLC`.

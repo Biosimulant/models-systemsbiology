@@ -1,0 +1,104 @@
+schema_version: '2.0'
+title: mahaney2000_SERCAregulation
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models. It is copyright (c) 2005-2011 The BioModels.net Team.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- J E Mahaney
+- J M Autry
+- L R Jones
+upstream:
+  id: biomodels_ebi:MODEL4816599063
+  source_db: biomodels_ebi
+  source_id: MODEL4816599063
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL4816599063
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL4816599063?filename=MODEL4816599063_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.mahaney2000_sercaregulation_model4816599063_model:Mahaney2000SercaregulationModel4816599063Model
+  init_kwargs:
+    model_path: data/MODEL4816599063.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_atp_ca2_e1prime
+    maps_to: ATP_Ca2_E1prime
+    label: Initial ATP CA2 E1prime
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATP_Ca2_E1prime`.
+  - name: initial_model_state_atp
+    maps_to: ATP
+    label: Initial Model State ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATP`.
+  - name: initial_model_state_adp
+    maps_to: ADP
+    label: Initial Model State ADP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ADP`.
+  - name: initial_ca_e1prime
+    maps_to: Ca_E1prime
+    label: Initial Ca E1prime
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_E1prime`.
+  - name: initial_ca_e1
+    maps_to: Ca_E1
+    label: Initial Ca E1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_E1`.
+  - name: initial_ca2_e1prime
+    maps_to: Ca2_E1prime
+    label: Initial CA2 E1prime
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca2_E1prime`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: atp_ca2_e1prime
+    maps_to: ATP_Ca2_E1prime
+    label: ATP_Ca2_E1prime
+    description: ATP_Ca2_E1prime. Maps to SBML symbol `ATP_Ca2_E1prime`.
+  - name: atp
+    maps_to: ATP
+    label: ATP
+    description: ATP. Maps to SBML symbol `ATP`.
+  - name: adp
+    maps_to: ADP
+    label: ADP
+    description: ADP. Maps to SBML symbol `ADP`.
+  - name: ca_e1prime
+    maps_to: Ca_E1prime
+    label: Ca_E1prime
+    description: Ca_E1prime. Maps to SBML symbol `Ca_E1prime`.
+  - name: ca_e1
+    maps_to: Ca_E1
+    label: Ca_E1
+    description: Ca_E1. Maps to SBML symbol `Ca_E1`.
+  - name: ca2_e1prime
+    maps_to: Ca2_E1prime
+    label: Ca2_E1prime
+    description: Ca2_E1prime. Maps to SBML symbol `Ca2_E1prime`.

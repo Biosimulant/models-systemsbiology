@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "86cd7087-e1f3-4c0a-ab45-cc973be37ef2",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "2f61e6bd-f8eb-4509-b7f4-cc7cecb12433",
+  "created_at": "2026-05-16T05:46:41.678076226+00:00",
+  "last_synced_at": "2026-05-17T02:09:55.247644+00:00",
+  "hub_manifest_hash": "c546846914fffcc12fa9aaa9ece213e4c9d46f96bba50872f05fc09794969a60",
+  "package_name": "bialik2010-apoptosis-spikemodel-lab"
+}

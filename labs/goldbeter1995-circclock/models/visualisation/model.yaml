@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Goldbeter1995_CircClock Visualisation
+description: Question-and-answer and dynamic visual summaries for Goldbeter1995_CircClock.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Goldbeter1995 Circclock Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Goldbeter1995_CircClock.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_goldbeter1995_circclock_biomd0000000016_model
+      title: Goldbeter1995_CircClock
+      observables:
+      - id: M
+        port: per_mrna
+        label: PER mRNA
+        group: gene_regulation
+      - id: Pt
+        port: total_per
+        label: total PER
+        group: physiology
+      - id: P0
+        port: unphosphorylated_per
+        label: unphosphorylated PER
+        group: physiology
+      - id: Pn
+        port: nuclear_per
+        label: nuclear PER
+        group: physiology
+      - id: P1
+        port: monophosphorylated_per
+        label: monophosphorylated PER
+        group: physiology
+      - id: P2
+        port: biphosphorylated_per
+        label: biphosphorylated PER
+        group: physiology
+io:
+  inputs: []
+  outputs: []

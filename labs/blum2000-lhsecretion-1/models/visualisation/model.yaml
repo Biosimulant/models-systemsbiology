@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Blum2000_LHsecretion_1 Visualisation
+description: Question-and-answer and dynamic visual summaries for Blum2000_LHsecretion_1.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Blum2000 Lhsecretion 1 Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Blum2000_LHsecretion_1.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_blum2000_lhsecretion_1_biomd0000000077_model
+      title: Blum2000_LHsecretion_1
+      observables:
+      - id: GQ
+        port: model_state_gq
+        label: GQ
+        group: metabolism
+      - id: IP3
+        port: ip3
+        label: IP3
+        group: metabolism
+      - id: HRRH
+        port: hrrh
+        label: HRRH
+        group: metabolism
+      - id: HR
+        port: model_state_hr
+        label: HR
+        group: metabolism
+      - id: CHO
+        port: cho
+        label: CHO
+        group: metabolism
+      - id: H
+        port: model_state_h
+        label: H
+        group: metabolism
+io:
+  inputs: []
+  outputs: []

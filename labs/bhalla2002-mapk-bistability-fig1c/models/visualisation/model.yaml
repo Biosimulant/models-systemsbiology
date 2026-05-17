@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Bhalla2002_MAPK-bistability-fig1c Visualisation
+description: Question-and-answer and dynamic visual summaries for Bhalla2002_MAPK-bistability-fig1c.
+standard: other
+tags:
+- cellcycle
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Bhalla2002 Mapk Bistability Fig1c Lab
+    question: 'Which cell-cycle control states dominate the simulated progression?
+      Source model: Bhalla2002_MAPK-bistability-fig1c.'
+    answer_focus: Q/A table plus cellcycle timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_bhalla2002_mapk_bistability_fig1c_model9079179924_model
+      title: Bhalla2002_MAPK-bistability-fig1c
+      observables:
+      - id: PDGFR_slash_Internal_L_dot_PDGFR
+        port: pdgfr_slash_internal_l_dot_pdgfr
+        label: PDGFR Slash Internal L Dot PDGFR
+        group: signaling
+      - id: PLA2_slash_APC
+        port: pla2_slash_apc
+        label: PLA2 Slash APC
+        group: signaling
+      - id: DAG
+        port: dag
+        label: DAG
+        group: signaling
+      - id: AA
+        port: model_state_aa
+        label: AA
+        group: signaling
+      - id: temp_minus_PIP2
+        port: temp_minus_pip2
+        label: Temp Minus PIP2
+        group: signaling
+      - id: Sos_slash_Grb2
+        port: sos_slash_grb2
+        label: Sos Slash Grb2
+        group: signaling
+io:
+  inputs: []
+  outputs: []

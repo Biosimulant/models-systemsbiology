@@ -1,0 +1,74 @@
+schema_version: '2.0'
+title: Mclean1991 Behaviour Of Hiv In The Presence Of Zidovudine Lab
+description: A new mechanism is proposed for the apparent breakthrough of HIV that
+  occurs approximately 6 months after the commencement of therapy with zidovudine
+  (AZT). It can be used to explore systemsbiology mclean1991 behaviour of hiv in dynamics
+  and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_mclean1991_behaviour_of_hiv_in_the_presence_of_z_biomd0000000967_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_mclean1991_behaviour_of_hiv_in_the_presence_of_z_biomd0000000967_model.state
+  to:
+  - visualisation.systemsbiology_sbml_mclean1991_behaviour_of_hiv_in_the_presence_of_z_biomd0000000967_model_state
+- from: systemsbiology_sbml_mclean1991_behaviour_of_hiv_in_the_presence_of_z_biomd0000000967_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_mclean1991_behaviour_of_hiv_in_the_presence_of_z_biomd0000000967_model_summary
+- from: systemsbiology_sbml_mclean1991_behaviour_of_hiv_in_the_presence_of_z_biomd0000000967_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_mclean1991_behaviour_of_hiv_in_the_presence_of_z_biomd0000000967_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- epidemiology
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_r
+    maps_to: systemsbiology_sbml_mclean1991_behaviour_of_hiv_in_the_presence_of_z_biomd0000000967_model.initial_model_state_r
+    label: Initial Model State R
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `R`.
+  - name: initial_model_state_v
+    maps_to: systemsbiology_sbml_mclean1991_behaviour_of_hiv_in_the_presence_of_z_biomd0000000967_model.initial_model_state_v
+    label: Initial Model State V
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `V`.
+  - name: initial_model_state_l
+    maps_to: systemsbiology_sbml_mclean1991_behaviour_of_hiv_in_the_presence_of_z_biomd0000000967_model.initial_model_state_l
+    label: Initial Model State L
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `L`.
+  - name: initial_model_state_e
+    maps_to: systemsbiology_sbml_mclean1991_behaviour_of_hiv_in_the_presence_of_z_biomd0000000967_model.initial_model_state_e
+    label: Initial Model State E
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `E`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_mclean1991_behaviour_of_hiv_in_the_presence_of_z_biomd0000000967_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_mclean1991_behaviour_of_hiv_in_the_presence_of_z_biomd0000000967_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_mclean1991_behaviour_of_hiv_in_the_presence_of_z_biomd0000000967_model.species_labels
+  - name: model_state_r
+    maps_to: systemsbiology_sbml_mclean1991_behaviour_of_hiv_in_the_presence_of_z_biomd0000000967_model.model_state_r
+  - name: model_state_v
+    maps_to: systemsbiology_sbml_mclean1991_behaviour_of_hiv_in_the_presence_of_z_biomd0000000967_model.model_state_v
+  - name: model_state_l
+    maps_to: systemsbiology_sbml_mclean1991_behaviour_of_hiv_in_the_presence_of_z_biomd0000000967_model.model_state_l
+  - name: model_state_e
+    maps_to: systemsbiology_sbml_mclean1991_behaviour_of_hiv_in_the_presence_of_z_biomd0000000967_model.model_state_e

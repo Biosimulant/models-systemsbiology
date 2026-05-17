@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: dAlcantara2003_SynapticPlasticity
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models (http://www.ebi.ac.uk/biomodels/). It is copyright (c) 2005-2011
+  The BioModels.net Team.'
+standard: other
+tags:
+- neuroscience
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Pablo D'Alcantara
+- Serge N Schiffmann
+- Stéphane Swillens
+upstream:
+  id: biomodels_ebi:MODEL8938094216
+  source_db: biomodels_ebi
+  source_id: MODEL8938094216
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL8938094216
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL8938094216?filename=MODEL8938094216_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.dalcantara2003_synapticplasticity_model8938094216_model:Dalcantara2003SynapticplasticityModel8938094216Model
+  init_kwargs:
+    model_path: data/MODEL8938094216.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_s_total
+    maps_to: Stotal
+    label: Initial S Total
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Stotal`.
+  - name: initial_model_state_p
+    maps_to: Pstar
+    label: Initial Model State P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pstar`.
+  - name: initial_model_state_s
+    maps_to: Sstar
+    label: Initial Model State S
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Sstar`.
+  - name: initial_model_state_r
+    maps_to: Rstar
+    label: Initial Model State R
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Rstar`.
+  - name: initial_model_state_r_2
+    maps_to: Rprime
+    label: Initial Model State R 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Rprime`.
+  - name: initial_model_state_n
+    maps_to: Nstar
+    label: Initial Model State N
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Nstar`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: s_total
+    maps_to: Stotal
+    label: S total
+    description: S total. Maps to SBML symbol `Stotal`.
+  - name: model_state_p
+    maps_to: Pstar
+    label: P*
+    description: P*. Maps to SBML symbol `Pstar`.
+  - name: model_state_s
+    maps_to: Sstar
+    label: S*
+    description: S*. Maps to SBML symbol `Sstar`.
+  - name: model_state_r
+    maps_to: Rstar
+    label: R*
+    description: R*. Maps to SBML symbol `Rstar`.
+  - name: model_state_r_2
+    maps_to: Rprime
+    label: R'
+    description: R'. Maps to SBML symbol `Rprime`.
+  - name: model_state_n
+    maps_to: Nstar
+    label: N*
+    description: N*. Maps to SBML symbol `Nstar`.

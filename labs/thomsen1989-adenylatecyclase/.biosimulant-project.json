@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "e553a4b8-7e5f-45f7-b507-b7d590191da4",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "3eff00bf-b6b1-4547-88ca-4f9eacba276e",
+  "created_at": "2026-05-16T05:46:52.377260977+00:00",
+  "last_synced_at": "2026-05-17T06:26:31.122353+00:00",
+  "hub_manifest_hash": "5ddef3f2bad12b6f1087a5bb4a8d1ff81f21a1538c9b057e5128261bf1af7b95",
+  "package_name": "thomsen1989-adenylatecyclase-lab"
+}

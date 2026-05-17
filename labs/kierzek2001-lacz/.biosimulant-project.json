@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "98127f13-d037-4518-bca3-a7e24a399c2c",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "754cad8b-d4cb-4af4-b17f-ee6ae4c67266",
+  "created_at": "2026-05-16T05:46:44.519260583+00:00",
+  "last_synced_at": "2026-05-17T04:01:23.951567+00:00",
+  "hub_manifest_hash": "febac171c3413c3c13b3ced3c40d2691e6f9a82a8f75978c58363197abbe04b8",
+  "package_name": "kierzek2001-lacz-lab"
+}

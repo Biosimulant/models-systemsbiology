@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Hatakeyama2003_MAPK
+description: Figure4 and Figure5 can be simulated by Copasi. Figure4 can be simulated
+  in MathSBML as well.
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Mariko Hatakeyama
+- Shuhei Kimura
+- Takashi Naka
+- Takuji Kawasaki
+- Noriko Yumoto
+upstream:
+  id: biomodels_ebi:BIOMD0000000146
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000146
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000146
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000146?filename=BIOMD0000000146_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.hatakeyama2003_mapk_biomd0000000146_model:Hatakeyama2003MapkBiomd0000000146Model
+  init_kwargs:
+    model_path: data/BIOMD0000000146.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_internalization
+    maps_to: internalization
+    label: Initial Internalization
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `internalization`.
+  - name: initial_model_state_shc
+    maps_to: Shc
+    label: Initial Model State Shc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Shc`.
+  - name: initial_model_state_erk
+    maps_to: ERK
+    label: Initial Model State ERK
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ERK`.
+  - name: initial_model_state_p_i
+    maps_to: P_I
+    label: Initial Model State P I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P_I`.
+  - name: initial_model_state_hrg
+    maps_to: HRG
+    label: Initial Model State Hrg
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `HRG`.
+  - name: initial_ras_gdp
+    maps_to: RasGDP
+    label: Initial RAS Gdp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RasGDP`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: internalization
+    maps_to: internalization
+    label: Internalization
+    description: Internalization. Maps to SBML symbol `internalization`.
+  - name: shc
+    maps_to: Shc
+    label: Shc
+    description: Shc. Maps to SBML symbol `Shc`.
+  - name: erk
+    maps_to: ERK
+    label: ERK
+    description: ERK. Maps to SBML symbol `ERK`.
+  - name: p_i
+    maps_to: P_I
+    label: P I
+    description: P I. Maps to SBML symbol `P_I`.
+  - name: hrg
+    maps_to: HRG
+    label: HRG
+    description: HRG. Maps to SBML symbol `HRG`.
+  - name: ras_gdp
+    maps_to: RasGDP
+    label: RasGDP
+    description: RasGDP. Maps to SBML symbol `RasGDP`.

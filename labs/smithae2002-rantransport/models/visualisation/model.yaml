@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: SmithAE2002_RanTransport Visualisation
+description: Question-and-answer and dynamic visual summaries for SmithAE2002_RanTransport.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Smithae2002 Rantransport Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: SmithAE2002_RanTransport.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_smithae2002_rantransport_biomd0000000164_model
+      title: SmithAE2002_RanTransport
+      observables:
+      - id: Carrier_Cytosol
+        port: carrier_cytosol
+        label: Carrier_Cytosol
+        group: physiology
+      - id: Carrier_RanGTP_Nucleus
+        port: carrier_ran_gtp_nucleus
+        label: Carrier_RanGTP_Nucleus
+        group: physiology
+      - id: Carrier_Nucleus
+        port: carrier_nucleus
+        label: Carrier_Nucleus
+        group: physiology
+      - id: RanBP1_Cytosol
+        port: ran_bp1_cytosol
+        label: RanBP1_Cytosol
+        group: physiology
+      - id: RanGDP_Cytosol
+        port: ran_gdp_cytosol
+        label: RanGDP_Cytosol
+        group: physiology
+      - id: NTF2_RanGDP_Cytosol
+        port: ntf2_ran_gdp_cytosol
+        label: NTF2_RanGDP_Cytosol
+        group: physiology
+io:
+  inputs: []
+  outputs: []

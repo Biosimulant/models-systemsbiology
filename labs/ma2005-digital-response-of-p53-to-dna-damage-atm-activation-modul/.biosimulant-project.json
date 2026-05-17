@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "337b70c7-c8c0-4ef6-8293-0747fa719bce",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "f3687cd5-0a3c-456c-9bd9-540fe5b97e8c",
+  "created_at": "2026-05-16T05:46:46.211705983+00:00",
+  "last_synced_at": "2026-05-17T04:43:03.721415+00:00",
+  "hub_manifest_hash": "600e4fadc233695b35840c9794be8c7e29dc59a9c1185bd7bc0cace956d06768",
+  "package_name": "ma2005-digital-response-of-p53-to-dna-damage-atm-activation-modu"
+}

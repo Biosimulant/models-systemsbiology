@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Ortega2013 Interplay Between Secretases Determines Biphasic Amyloid B Lab
+description: 'Ortega2013 - Interplay between secretasesdetermines biphasic amyloid-beta
+  level This model is described in the article: Interplay between ?-, ?-, and ?-secretases
+  determines biphasic amyloid-? It can be used to explore systemsbiology ortega2013
+  interplay between secretases determin dynamics and compare simulation behavior across
+  conditions.'
+models:
+- alias: systemsbiology_sbml_ortega2013_interplay_between_secretases_determin_biomd0000000556_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_ortega2013_interplay_between_secretases_determin_biomd0000000556_model.state
+  to:
+  - visualisation.systemsbiology_sbml_ortega2013_interplay_between_secretases_determin_biomd0000000556_model_state
+- from: systemsbiology_sbml_ortega2013_interplay_between_secretases_determin_biomd0000000556_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_ortega2013_interplay_between_secretases_determin_biomd0000000556_model_summary
+- from: systemsbiology_sbml_ortega2013_interplay_between_secretases_determin_biomd0000000556_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_ortega2013_interplay_between_secretases_determin_biomd0000000556_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_p3
+    maps_to: systemsbiology_sbml_ortega2013_interplay_between_secretases_determin_biomd0000000556_model.initial_model_state_p3
+    label: Initial Model State P3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `p3`.
+  - name: initial_model_state_c99
+    maps_to: systemsbiology_sbml_ortega2013_interplay_between_secretases_determin_biomd0000000556_model.initial_model_state_c99
+    label: Initial Model State C99
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C99`.
+  - name: initial_model_state_c83
+    maps_to: systemsbiology_sbml_ortega2013_interplay_between_secretases_determin_biomd0000000556_model.initial_model_state_c83
+    label: Initial Model State C83
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C83`.
+  - name: initial_model_state_app
+    maps_to: systemsbiology_sbml_ortega2013_interplay_between_secretases_determin_biomd0000000556_model.initial_model_state_app
+    label: Initial Model State App
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `APP`.
+  - name: initial_model_state_ab
+    maps_to: systemsbiology_sbml_ortega2013_interplay_between_secretases_determin_biomd0000000556_model.initial_model_state_ab
+    label: Initial Model State Ab
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `AB`.
+  - name: initial_model_state_x
+    maps_to: systemsbiology_sbml_ortega2013_interplay_between_secretases_determin_biomd0000000556_model.initial_model_state_x
+    label: Initial Model State X
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_ortega2013_interplay_between_secretases_determin_biomd0000000556_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_ortega2013_interplay_between_secretases_determin_biomd0000000556_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_ortega2013_interplay_between_secretases_determin_biomd0000000556_model.species_labels
+  - name: model_state_p3
+    maps_to: systemsbiology_sbml_ortega2013_interplay_between_secretases_determin_biomd0000000556_model.model_state_p3
+  - name: c99
+    maps_to: systemsbiology_sbml_ortega2013_interplay_between_secretases_determin_biomd0000000556_model.c99
+  - name: c83
+    maps_to: systemsbiology_sbml_ortega2013_interplay_between_secretases_determin_biomd0000000556_model.c83
+  - name: app
+    maps_to: systemsbiology_sbml_ortega2013_interplay_between_secretases_determin_biomd0000000556_model.app
+  - name: model_state_ab
+    maps_to: systemsbiology_sbml_ortega2013_interplay_between_secretases_determin_biomd0000000556_model.model_state_ab
+  - name: model_state_x
+    maps_to: systemsbiology_sbml_ortega2013_interplay_between_secretases_determin_biomd0000000556_model.model_state_x

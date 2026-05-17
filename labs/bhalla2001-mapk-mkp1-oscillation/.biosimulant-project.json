@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "c7ede46d-b632-4870-8396-7918ca84b4cc",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "76372352-10e9-482e-bab7-3041dbf421c5",
+  "created_at": "2026-05-16T05:46:41.535447959+00:00",
+  "last_synced_at": "2026-05-17T02:05:12.382883+00:00",
+  "hub_manifest_hash": "748b11307608a7515301155af652956ea8d13d3872534a6cce0b4405e620ad73",
+  "package_name": "bhalla2001-mapk-mkp1-oscillation-lab"
+}

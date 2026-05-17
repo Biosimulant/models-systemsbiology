@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "f6689d8a-533b-445b-b970-fa118922d3ff",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "8fdd7124-8d57-4b14-a37d-0b9a70bd6604",
+  "created_at": "2026-05-16T05:46:43.782184254+00:00",
+  "last_synced_at": "2026-05-17T03:26:42.858901+00:00",
+  "hub_manifest_hash": "6c96278f3fd6a5cd7ca2f74fd4812caa7d53e9f48d63695a2127b4b6296210fa",
+  "package_name": "guisoni2016-cis-regulatory-system-can-drive-sustained-oscillatio"
+}

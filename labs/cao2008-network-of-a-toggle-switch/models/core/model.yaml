@@ -1,0 +1,104 @@
+schema_version: '2.0'
+title: Cao2008 - Network of a toggle switch
+description: Youfang Cao & Jie Liang. Optimal enumeration of state space of finitely
+  buffered stochastic molecular networks and exact computation of steady state landscape
+  probability.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Youfang Cao
+- Jie Liang
+upstream:
+  id: biomodels_ebi:BIOMD0000000483
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000483
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000483
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000483?filename=BIOMD0000000483_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.cao2008_network_of_a_toggle_switch_biomd0000000483_model:Cao2008NetworkOfAToggleSwitchBiomd0000000483Model
+  init_kwargs:
+    model_path: data/BIOMD0000000483.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_pb
+    maps_to: Pb
+    label: Initial Model State Pb
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pb`.
+  - name: initial_model_state_pa
+    maps_to: Pa
+    label: Initial Model State Pa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pa`.
+  - name: initial_model_state_db
+    maps_to: Db
+    label: Initial Model State Db
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Db`.
+  - name: initial_model_state_da
+    maps_to: Da
+    label: Initial Model State Da
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Da`.
+  - name: initial_b_db
+    maps_to: BDb
+    label: Initial B Db
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `BDb`.
+  - name: initial_b_da
+    maps_to: BDa
+    label: Initial B Da
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `BDa`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_pb
+    maps_to: Pb
+    label: Pb
+    description: Pb. Maps to SBML symbol `Pb`.
+  - name: model_state_pa
+    maps_to: Pa
+    label: Pa
+    description: Pa. Maps to SBML symbol `Pa`.
+  - name: model_state_db
+    maps_to: Db
+    label: Db
+    description: Db. Maps to SBML symbol `Db`.
+  - name: model_state_da
+    maps_to: Da
+    label: Da
+    description: Da. Maps to SBML symbol `Da`.
+  - name: b_db
+    maps_to: BDb
+    label: BDb
+    description: BDb. Maps to SBML symbol `BDb`.
+  - name: b_da
+    maps_to: BDa
+    label: BDa
+    description: BDa. Maps to SBML symbol `BDa`.

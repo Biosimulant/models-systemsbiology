@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Caron2010_mTORC1_UpstreamRegulators Visualisation
+description: Question-and-answer and dynamic visual summaries for Caron2010_mTORC1_UpstreamRegulators.
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Caron2010 Mtorc1 Upstreamregulators Lab
+    question: 'Which signalling variables dominate the simulated network response?
+      Source model: Caron2010_mTORC1_UpstreamRegulators.'
+    answer_focus: Q/A table plus signaling timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_caron2010_mtorc1_upstreamregulators_model1012220003_model
+      title: Caron2010_mTORC1_UpstreamRegulators
+      observables:
+      - id: s3574
+        port: protein_synthesis
+        label: Protein synthesis
+        group: signaling
+      - id: s79
+        port: growth_factor
+        label: Growth factor
+        group: signaling
+      - id: s3447
+        port: sa11_degraded
+        label: sa11_degraded
+        group: signaling
+      - id: s3560
+        port: s3560
+        label: s3560
+        group: signaling
+      - id: s117
+        port: s16
+        label: s16
+        group: signaling
+      - id: s149
+        port: s149
+        label: s149
+        group: signaling
+io:
+  inputs: []
+  outputs: []

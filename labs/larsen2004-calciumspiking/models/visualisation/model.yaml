@@ -1,0 +1,51 @@
+schema_version: '2.0'
+title: Larsen2004_CalciumSpiking Visualisation
+description: Question-and-answer and dynamic visual summaries for Larsen2004_CalciumSpiking.
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Larsen2004 Calciumspiking Lab
+    question: 'Which physiological state variables carry the strongest baseline response?
+      Source model: Larsen2004_CalciumSpiking.'
+    answer_focus: Q/A table plus physiology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_larsen2004_calciumspiking_biomd0000000330_model
+      title: Larsen2004_CalciumSpiking
+      observables:
+      - id: Ca_ER
+        port: calcium_er
+        label: Calcium-ER
+        group: signaling
+      - id: G_alpha
+        port: g_alpha
+        label: G-alpha
+        group: signaling
+      - id: Ca_cyt
+        port: calcium_cyt
+        label: Calcium-Cyt
+        group: signaling
+      - id: Ca_mit
+        port: calcium_mit
+        label: Calcium-mit
+        group: signaling
+      - id: PLC
+        port: plc
+        label: PLC
+        group: signaling
+io:
+  inputs: []
+  outputs: []

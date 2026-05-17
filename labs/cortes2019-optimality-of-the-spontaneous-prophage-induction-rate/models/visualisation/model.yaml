@@ -1,0 +1,45 @@
+schema_version: '2.0'
+title: Cortes2019 - Optimality of the spontaneous prophage induction rate. Visualisation
+description: Question-and-answer and dynamic visual summaries for Cortes2019 - Optimality
+  of the spontaneous prophage induction rate..
+standard: other
+tags:
+- cellcycle
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Cortes2019 Optimality Of The Spontaneous Prophage Induction Rate Lab
+    question: 'Which cell-cycle control states dominate the simulated progression?
+      Source model: Cortes2019 - Optimality of the spontaneous prophage induction
+      rate..'
+    answer_focus: Q/A table plus cellcycle timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_cortes2019_optimality_of_the_spontaneous_prophag_biomd0000000884_model
+      title: Cortes2019 - Optimality of the spontaneous prophage induction rate.
+      observables:
+      - id: U
+        port: model_state_u
+        label: U
+        group: signaling
+      - id: L
+        port: model_state_l
+        label: L
+        group: signaling
+      - id: V
+        port: model_state_v
+        label: V
+        group: signaling
+io:
+  inputs: []
+  outputs: []

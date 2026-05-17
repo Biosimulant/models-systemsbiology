@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "86fde0f7-48cc-4ada-ab70-d4dfac4a7884",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "6137027d-426b-4746-85e4-8754a7862e95",
+  "created_at": "2026-05-16T05:46:41.785261809+00:00",
+  "last_synced_at": "2026-05-17T02:14:02.544070+00:00",
+  "hub_manifest_hash": "743650f0cc246913e287422803445bc116a66a68a705b84d6c1d11fd3701dd78",
+  "package_name": "boehm2014-isoform-specific-dimerization-of-pstat5a-and-pstat5b-l"
+}

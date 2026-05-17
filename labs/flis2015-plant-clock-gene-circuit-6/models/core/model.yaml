@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Flis2015 - Plant clock gene circuit (P2011.6.1 PLM_1044 ver 1)
+description: cL_m_degr, param m1, modified to ensure light rate &gt; dark rate. It
+  can be used to explore systemsbiology flis2015 plant clock gene circuit dynamics
+  and compare simulation behavior across conditions.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Anna Flis
+- Aurora Piñas Fernández
+- Tomasz Zielinski
+- Virginie Mengin
+- Ronan Sulpice
+upstream:
+  id: biomodels_ebi:MODEL1510190005
+  source_db: biomodels_ebi
+  source_id: MODEL1510190005
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1510190005
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1510190005?filename=MODEL1510190005_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.flis2015_plant_clock_gene_circuit_p2011_6_1_plm_model1510190005_model:Flis2015PlantClockGeneCircuitP201161PlmModel1510190005Model
+  init_kwargs:
+    model_path: data/MODEL1510190005.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_c_l_m
+    maps_to: cL_m
+    label: Initial C L M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cL_m`.
+  - name: initial_model_state_c_p
+    maps_to: cP
+    label: Initial Model State C P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cP`.
+  - name: initial_c_cop1n
+    maps_to: cCOP1n
+    label: Initial C Cop1n
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cCOP1n`.
+  - name: initial_c_lux
+    maps_to: cLUX
+    label: Initial C Lux
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cLUX`.
+  - name: initial_model_state_c_l
+    maps_to: cL
+    label: Initial Model State C L
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cL`.
+  - name: initial_c_p7_m
+    maps_to: cP7_m
+    label: Initial C P7 M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cP7_m`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: c_l_m
+    maps_to: cL_m
+    label: cL_m
+    description: cL_m. Maps to SBML symbol `cL_m`.
+  - name: c_p
+    maps_to: cP
+    label: cP
+    description: cP. Maps to SBML symbol `cP`.
+  - name: c_cop1n
+    maps_to: cCOP1n
+    label: cCOP1n
+    description: cCOP1n. Maps to SBML symbol `cCOP1n`.
+  - name: c_lux
+    maps_to: cLUX
+    label: cLUX
+    description: cLUX. Maps to SBML symbol `cLUX`.
+  - name: c_l
+    maps_to: cL
+    label: cL
+    description: cL. Maps to SBML symbol `cL`.
+  - name: c_p7_m
+    maps_to: cP7_m
+    label: cP7_m
+    description: cP7_m. Maps to SBML symbol `cP7_m`.

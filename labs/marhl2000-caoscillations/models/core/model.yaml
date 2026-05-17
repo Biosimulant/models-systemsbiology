@@ -1,0 +1,98 @@
+schema_version: '2.0'
+title: Marhl2000_CaOscillations
+description: In order to reproduce the model, the volume of all compartment is set
+  to 1, and the stoichiometry of CaER and CaM has been set to 0.25, corresponding
+  to betaER/rhoER and betaM/rhoM described in the pa. It can be used to explore systemsbiology
+  marhl2000 caoscillations BioModels0000000039 dynamics and compare simulation behavior
+  across conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- M Marhl
+- T Haberichter
+- M Brumen
+- R Heinrich
+upstream:
+  id: biomodels_ebi:BIOMD0000000039
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000039
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000039
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000039?filename=BIOMD0000000039_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.marhl2000_caoscillations_biomd0000000039_model:Marhl2000CaoscillationsBiomd0000000039Model
+  init_kwargs:
+    model_path: data/BIOMD0000000039.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_ca_pr
+    maps_to: CaPr
+    label: Initial Ca Pr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaPr`.
+  - name: initial_model_state_pr
+    maps_to: Pr
+    label: Initial Model State Pr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pr`.
+  - name: initial_ca_er
+    maps_to: CaER
+    label: Initial Ca Er
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaER`.
+  - name: initial_ca_cyt
+    maps_to: Ca_cyt
+    label: Initial Ca Cyt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_cyt`.
+  - name: initial_ca_m
+    maps_to: CaM
+    label: Initial Ca M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaM`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: ca_pr
+    maps_to: CaPr
+    label: CaPr
+    description: CaPr. Maps to SBML symbol `CaPr`.
+  - name: model_state_pr
+    maps_to: Pr
+    label: Pr
+    description: Pr. Maps to SBML symbol `Pr`.
+  - name: ca_er
+    maps_to: CaER
+    label: CaER
+    description: CaER. Maps to SBML symbol `CaER`.
+  - name: ca_cyt
+    maps_to: Ca_cyt
+    label: Ca Cyt
+    description: Ca Cyt. Maps to SBML symbol `Ca_cyt`.
+  - name: ca_m
+    maps_to: CaM
+    label: CaM
+    description: CaM. Maps to SBML symbol `CaM`.

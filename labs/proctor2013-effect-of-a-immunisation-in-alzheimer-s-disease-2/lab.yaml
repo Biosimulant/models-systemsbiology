@@ -1,0 +1,90 @@
+schema_version: '2.0'
+title: Proctor2013 Effect Of A Immunisation In Alzheimer S Disease 2 Lab
+description: Proctor2013 - Effect of Aβ immunisationin Alzheimer's disease (stochastic
+  version) Extension of a previously publishedstochastic model (designed to examine
+  some of the key pathwaysinvolved in the aggr. It can be used to explore systemsbiology
+  proctor2013 effect of a immunisation dynamics and compare simulation behavior across
+  conditions.
+models:
+- alias: systemsbiology_sbml_proctor2013_effect_of_a_immunisation_in_alzheime_biomd0000000634_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_proctor2013_effect_of_a_immunisation_in_alzheime_biomd0000000634_model.state
+  to:
+  - visualisation.systemsbiology_sbml_proctor2013_effect_of_a_immunisation_in_alzheime_biomd0000000634_model_state
+- from: systemsbiology_sbml_proctor2013_effect_of_a_immunisation_in_alzheime_biomd0000000634_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_proctor2013_effect_of_a_immunisation_in_alzheime_biomd0000000634_model_summary
+- from: systemsbiology_sbml_proctor2013_effect_of_a_immunisation_in_alzheime_biomd0000000634_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_proctor2013_effect_of_a_immunisation_in_alzheime_biomd0000000634_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- neuroscience
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_atp
+    maps_to: systemsbiology_sbml_proctor2013_effect_of_a_immunisation_in_alzheime_biomd0000000634_model.initial_model_state_atp
+    label: Initial Model State ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATP`.
+  - name: initial_model_state_adp
+    maps_to: systemsbiology_sbml_proctor2013_effect_of_a_immunisation_in_alzheime_biomd0000000634_model.initial_model_state_adp
+    label: Initial Model State ADP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ADP`.
+  - name: initial_p53_mrna
+    maps_to: systemsbiology_sbml_proctor2013_effect_of_a_immunisation_in_alzheime_biomd0000000634_model.initial_p53_mrna
+    label: Initial P53 MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `p53_mRNA`.
+  - name: initial_mdm2_mrna
+    maps_to: systemsbiology_sbml_proctor2013_effect_of_a_immunisation_in_alzheime_biomd0000000634_model.initial_mdm2_mrna
+    label: Initial Mdm2 MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Mdm2_mRNA`.
+  - name: initial_model_state_ub
+    maps_to: systemsbiology_sbml_proctor2013_effect_of_a_immunisation_in_alzheime_biomd0000000634_model.initial_model_state_ub
+    label: Initial Model State Ub
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ub`.
+  - name: initial_model_state_amp
+    maps_to: systemsbiology_sbml_proctor2013_effect_of_a_immunisation_in_alzheime_biomd0000000634_model.initial_model_state_amp
+    label: Initial Model State AMP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `AMP`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_proctor2013_effect_of_a_immunisation_in_alzheime_biomd0000000634_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_proctor2013_effect_of_a_immunisation_in_alzheime_biomd0000000634_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_proctor2013_effect_of_a_immunisation_in_alzheime_biomd0000000634_model.species_labels
+  - name: atp
+    maps_to: systemsbiology_sbml_proctor2013_effect_of_a_immunisation_in_alzheime_biomd0000000634_model.atp
+  - name: adp
+    maps_to: systemsbiology_sbml_proctor2013_effect_of_a_immunisation_in_alzheime_biomd0000000634_model.adp
+  - name: p53_mrna
+    maps_to: systemsbiology_sbml_proctor2013_effect_of_a_immunisation_in_alzheime_biomd0000000634_model.p53_mrna
+  - name: mdm2_mrna
+    maps_to: systemsbiology_sbml_proctor2013_effect_of_a_immunisation_in_alzheime_biomd0000000634_model.mdm2_mrna
+  - name: model_state_ub
+    maps_to: systemsbiology_sbml_proctor2013_effect_of_a_immunisation_in_alzheime_biomd0000000634_model.model_state_ub
+  - name: amp
+    maps_to: systemsbiology_sbml_proctor2013_effect_of_a_immunisation_in_alzheime_biomd0000000634_model.amp

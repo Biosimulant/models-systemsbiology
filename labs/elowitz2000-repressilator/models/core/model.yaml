@@ -1,0 +1,105 @@
+schema_version: '2.0'
+title: Elowitz2000 - Repressilator
+description: Elowitz2000 - Repressilator This model describes the deterministic version
+  of the repressilator system. The authors of this model (see reference) use three
+  transcriptional repressor systems that are n.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- M B Elowitz
+- S Leibler
+upstream:
+  id: biomodels_ebi:BIOMD0000000012
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000012
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000012
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000012?filename=BIOMD0000000012_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.elowitz2000_repressilator_biomd0000000012_model:Elowitz2000RepressilatorBiomd0000000012Model
+  init_kwargs:
+    model_path: data/BIOMD0000000012.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_c_i_protein
+    maps_to: PZ
+    label: Initial C I Protein
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PZ`.
+  - name: initial_tet_r_protein
+    maps_to: PY
+    label: Initial Tet R Protein
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PY`.
+  - name: initial_lac_i_protein
+    maps_to: PX
+    label: Initial Lac I Protein
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PX`.
+  - name: initial_tet_r_mrna
+    maps_to: Y
+    label: Initial Tet R MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Y`.
+  - name: initial_c_i_mrna
+    maps_to: Z
+    label: Initial C I MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Z`.
+  - name: initial_lac_i_mrna
+    maps_to: X
+    label: Initial Lac I MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: c_i_protein
+    maps_to: PZ
+    label: cI protein
+    description: cI protein. Maps to SBML symbol `PZ`.
+  - name: tet_r_protein
+    maps_to: PY
+    label: TetR protein
+    description: TetR protein. Maps to SBML symbol `PY`.
+  - name: lac_i_protein
+    maps_to: PX
+    label: LacI protein
+    description: LacI protein. Maps to SBML symbol `PX`.
+  - name: tet_r_mrna
+    maps_to: Y
+    label: TetR mRNA
+    description: TetR mRNA. Maps to SBML symbol `Y`.
+  - name: c_i_mrna
+    maps_to: Z
+    label: cI mRNA
+    description: cI mRNA. Maps to SBML symbol `Z`.
+  - name: lac_i_mrna
+    maps_to: X
+    label: LacI mRNA
+    description: LacI mRNA. Maps to SBML symbol `X`.

@@ -1,0 +1,111 @@
+schema_version: '2.0'
+title: Hayer2005_simple_AMPAR_traff_model2
+description: This is a highly simplified model of the AMPAR trafficking cycle that
+  exhibits bistability. It can be used to explore systemsbiology hayer2005 simple
+  ampar traff model2 dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Arnold Hayer
+- Upinder S Bhalla
+upstream:
+  id: biomodels_ebi:MODEL9086628127
+  source_db: biomodels_ebi
+  source_id: MODEL9086628127
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL9086628127
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL9086628127?filename=MODEL9086628127_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.hayer2005_simple_ampar_traff_model2_model9086628127_model:Hayer2005SimpleAmparTraffModel2Model9086628127Model
+  init_kwargs:
+    model_path: data/MODEL9086628127.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_internal_slash_ir_star
+    maps_to: Internal_slash_IR_star_
+    label: Initial Internal Slash Ir Star
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Internal_slash_IR_star_`.
+  - name: initial_internal_slash_ir
+    maps_to: Internal_slash_IR
+    label: Initial Internal Slash Ir
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Internal_slash_IR`.
+  - name: initial_pka_minus_active_slash_internal_minus_pka_minus_act_slash_internal_minus_pka_minus_act_cplx
+    maps_to: PKA_minus_active_slash_internal_minus_PKA_minus_act_slash_internal_minus_PKA_minus_act_cplx
+    label: Initial Pka Minus Active Slash Internal Minus Pka Minus Act Slash Internal
+      Minus Pka Minus Act Cplx
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PKA_minus_active_slash_internal_minus_PKA_minus_act_slash_internal_minus_PKA_minus_act_cplx`.
+  - name: initial_pka_minus_active_slash_internal_minus_pka_minus_act_sbo_1_sbc_slash_internal_minus_pka_minus_act_sbo_1_sbc_cplx
+    maps_to: PKA_minus_active_slash_internal_minus_PKA_minus_act_sbo_1_sbc__slash_internal_minus_PKA_minus_act_sbo_1_sbc__cplx
+    label: Initial Pka Minus Active Slash Internal Minus Pka Minus Act Sbo 1 Sbc Slash
+      Internal Minus Pka Minus Act Sbo 1 Sbc Cplx
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PKA_minus_active_slash_internal_minus_PKA_minus_act_sbo_1_sbc__slash_internal_minus_PKA_minus_act_sbo_1_sbc__cplx`.
+  - name: initial_internal_slash_ir_star_star
+    maps_to: Internal_slash_IR_star__star_
+    label: Initial Internal Slash Ir Star Star
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Internal_slash_IR_star__star_`.
+  - name: initial_anchor
+    maps_to: Anchor
+    label: Initial Anchor
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Anchor`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: internal_slash_ir_star
+    maps_to: Internal_slash_IR_star_
+    label: Internal Slash IR Star
+    description: Internal Slash IR Star. Maps to SBML symbol `Internal_slash_IR_star_`.
+  - name: internal_slash_ir
+    maps_to: Internal_slash_IR
+    label: Internal Slash IR
+    description: Internal Slash IR. Maps to SBML symbol `Internal_slash_IR`.
+  - name: pka_minus_active_slash_internal_minus_pka_minus_act_slash_internal_minus_pka_minus_act_cplx
+    maps_to: PKA_minus_active_slash_internal_minus_PKA_minus_act_slash_internal_minus_PKA_minus_act_cplx
+    label: PKA Minus Active Slash Internal Minus PKA Minus Act Slash Internal Minus
+      PKA Minus Act Cplx
+    description: PKA Minus Active Slash Internal Minus PKA Minus Act Slash Internal
+      Minus PKA Minus Act Cplx. Maps to SBML symbol `PKA_minus_active_slash_internal_minus_PKA_minus_act_slash_internal_minus_PKA_minus_act_cplx`.
+  - name: pka_minus_active_slash_internal_minus_pka_minus_act_sbo_1_sbc_slash_internal_minus_pka_minus_act_sbo_1_sbc_cplx
+    maps_to: PKA_minus_active_slash_internal_minus_PKA_minus_act_sbo_1_sbc__slash_internal_minus_PKA_minus_act_sbo_1_sbc__cplx
+    label: PKA Minus Active Slash Internal Minus PKA Minus Act Sbo 1 Sbc Slash Internal
+      Minus PKA Minus Act Sbo 1 Sbc Cplx
+    description: PKA Minus Active Slash Internal Minus PKA Minus Act Sbo 1 Sbc Slash
+      Internal Minus PKA Minus Act Sbo 1 Sbc Cplx. Maps to SBML symbol `PKA_minus_active_slash_internal_minus_PKA_minus_act_sbo_1_sbc__slash_internal_minus_PKA_minus_act_sbo_1_sbc__cplx`.
+  - name: internal_slash_ir_star_star
+    maps_to: Internal_slash_IR_star__star_
+    label: Internal Slash IR Star Star
+    description: Internal Slash IR Star Star. Maps to SBML symbol `Internal_slash_IR_star__star_`.
+  - name: anchor
+    maps_to: Anchor
+    label: Anchor
+    description: Anchor. Maps to SBML symbol `Anchor`.

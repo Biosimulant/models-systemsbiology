@@ -1,0 +1,58 @@
+schema_version: '2.0'
+title: Invergo2014 Phototransduction Cascade In Mouse Rod Cells Lab
+description: 'Invergo2014 - Phototransduction cascade inmouse rod cells This model
+  is described in the article: A comprehensive model of the phototransduction cascade
+  in mouse rod cells. It can be used to explore systemsbiology invergo2014 phototransduction
+  cascade in mouse dynamics and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_invergo2014_phototransduction_cascade_in_mouse_r_biomd0000000578_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_invergo2014_phototransduction_cascade_in_mouse_r_biomd0000000578_model.state
+  to:
+  - visualisation.systemsbiology_sbml_invergo2014_phototransduction_cascade_in_mouse_r_biomd0000000578_model_state
+- from: systemsbiology_sbml_invergo2014_phototransduction_cascade_in_mouse_r_biomd0000000578_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_invergo2014_phototransduction_cascade_in_mouse_r_biomd0000000578_model_summary
+- from: systemsbiology_sbml_invergo2014_phototransduction_cascade_in_mouse_r_biomd0000000578_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_invergo2014_phototransduction_cascade_in_mouse_r_biomd0000000578_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: otherstimulus
+    maps_to: systemsbiology_sbml_invergo2014_phototransduction_cascade_in_mouse_r_biomd0000000578_model.otherstimulus
+    label: Otherstimulus
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `otherstimulus`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_invergo2014_phototransduction_cascade_in_mouse_r_biomd0000000578_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_invergo2014_phototransduction_cascade_in_mouse_r_biomd0000000578_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_invergo2014_phototransduction_cascade_in_mouse_r_biomd0000000578_model.species_labels
+  - name: r_gt
+    maps_to: systemsbiology_sbml_invergo2014_phototransduction_cascade_in_mouse_r_biomd0000000578_model.r_gt
+  - name: arr_di
+    maps_to: systemsbiology_sbml_invergo2014_phototransduction_cascade_in_mouse_r_biomd0000000578_model.arr_di
+  - name: arr_tetra
+    maps_to: systemsbiology_sbml_invergo2014_phototransduction_cascade_in_mouse_r_biomd0000000578_model.arr_tetra
+  - name: rec_r_ca
+    maps_to: systemsbiology_sbml_invergo2014_phototransduction_cascade_in_mouse_r_biomd0000000578_model.rec_r_ca
+  - name: rec_r_ca_rk
+    maps_to: systemsbiology_sbml_invergo2014_phototransduction_cascade_in_mouse_r_biomd0000000578_model.rec_r_ca_rk
+  - name: ca2_buff
+    maps_to: systemsbiology_sbml_invergo2014_phototransduction_cascade_in_mouse_r_biomd0000000578_model.ca2_buff

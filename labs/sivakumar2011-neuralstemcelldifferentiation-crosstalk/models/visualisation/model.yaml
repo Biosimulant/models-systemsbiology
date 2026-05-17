@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Sivakumar2011_NeuralStemCellDifferentiation_Crosstalk Visualisation
+description: Question-and-answer and dynamic visual summaries for Sivakumar2011_NeuralStemCellDifferentiation_Crosstalk.
+standard: other
+tags:
+- generegulation
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Sivakumar2011 Neuralstemcelldifferentiation Crosstalk Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Sivakumar2011_NeuralStemCellDifferentiation_Crosstalk.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_sivakumar2011_neuralstemcelldifferentiation_cros_biomd0000000398_model
+      title: Sivakumar2011_NeuralStemCellDifferentiation_Crosstalk
+      observables:
+      - id: s101
+        port: erlotinib
+        label: Erlotinib
+        group: signaling
+      - id: s61
+        port: dapt
+        label: DAPT
+        group: signaling
+      - id: s147
+        port: model_state_6_bromoindirubin_3_oxime
+        label: 6 bromoindirubin 3`oxime
+        group: signaling
+      - id: s88
+        port: smo
+        label: smo
+        group: signaling
+      - id: s107
+        port: wnt
+        label: Wnt
+        group: signaling
+      - id: s81
+        port: shh
+        label: Shh
+        group: signaling
+io:
+  inputs: []
+  outputs: []

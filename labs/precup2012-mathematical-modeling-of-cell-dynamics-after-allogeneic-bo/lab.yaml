@@ -1,0 +1,66 @@
+schema_version: '2.0'
+title: Precup2012 Mathematical Modeling Of Cell Dynamics After Allogeneic Bo Lab
+description: This is a basic mathematical model describing the dynamics of three cell
+  lines (normal host cells, leukemic host cells and donor cells) after allogeneic
+  stem cell transplantation. It can be used to explore systemsbiology precup2012 mathematical
+  modeling of cell dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_precup2012_mathematical_modeling_of_cell_dynamic_biomd0000000800_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_precup2012_mathematical_modeling_of_cell_dynamic_biomd0000000800_model.state
+  to:
+  - visualisation.systemsbiology_sbml_precup2012_mathematical_modeling_of_cell_dynamic_biomd0000000800_model_state
+- from: systemsbiology_sbml_precup2012_mathematical_modeling_of_cell_dynamic_biomd0000000800_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_precup2012_mathematical_modeling_of_cell_dynamic_biomd0000000800_model_summary
+- from: systemsbiology_sbml_precup2012_mathematical_modeling_of_cell_dynamic_biomd0000000800_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_precup2012_mathematical_modeling_of_cell_dynamic_biomd0000000800_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- immunology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_z
+    maps_to: systemsbiology_sbml_precup2012_mathematical_modeling_of_cell_dynamic_biomd0000000800_model.initial_model_state_z
+    label: Initial Model State Z
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `z`.
+  - name: initial_model_state_x
+    maps_to: systemsbiology_sbml_precup2012_mathematical_modeling_of_cell_dynamic_biomd0000000800_model.initial_model_state_x
+    label: Initial Model State X
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x`.
+  - name: initial_model_state_y
+    maps_to: systemsbiology_sbml_precup2012_mathematical_modeling_of_cell_dynamic_biomd0000000800_model.initial_model_state_y
+    label: Initial Model State Y
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `y`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_precup2012_mathematical_modeling_of_cell_dynamic_biomd0000000800_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_precup2012_mathematical_modeling_of_cell_dynamic_biomd0000000800_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_precup2012_mathematical_modeling_of_cell_dynamic_biomd0000000800_model.species_labels
+  - name: model_state_z
+    maps_to: systemsbiology_sbml_precup2012_mathematical_modeling_of_cell_dynamic_biomd0000000800_model.model_state_z
+  - name: model_state_x
+    maps_to: systemsbiology_sbml_precup2012_mathematical_modeling_of_cell_dynamic_biomd0000000800_model.model_state_x
+  - name: model_state_y
+    maps_to: systemsbiology_sbml_precup2012_mathematical_modeling_of_cell_dynamic_biomd0000000800_model.model_state_y

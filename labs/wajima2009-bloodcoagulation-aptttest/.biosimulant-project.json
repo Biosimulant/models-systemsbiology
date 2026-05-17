@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "da8a9cae-f650-4847-b63d-67d154610dca",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "7098bcbc-6583-4e4f-a4df-078d3ff130fd",
+  "created_at": "2026-05-16T05:46:52.821460616+00:00",
+  "last_synced_at": "2026-05-17T06:39:30.519299+00:00",
+  "hub_manifest_hash": "42ddd4096d3e91c866610ddc6ab403088cb1165d3d79957100343986f608e9d5",
+  "package_name": "wajima2009-bloodcoagulation-aptttest-lab"
+}

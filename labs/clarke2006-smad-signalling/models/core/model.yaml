@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Clarke2006_Smad_signalling
+description: The model reproduces the temporal evolution of four variables depicted
+  in Fig 2a. It can be used to explore systemsbiology clarke2006 smad signalling BioModels0000000112
+  dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- D C Clarke
+- M D Betterton
+- Xuedong Liu
+upstream:
+  id: biomodels_ebi:BIOMD0000000112
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000112
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000112
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000112?filename=BIOMD0000000112_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.clarke2006_smad_signalling_biomd0000000112_model:Clarke2006SmadSignallingBiomd0000000112Model
+  init_kwargs:
+    model_path: data/BIOMD0000000112.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_r_smad_cyt
+    maps_to: R_smad_cyt
+    label: Initial R Smad Cyt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `R_smad_cyt`.
+  - name: initial_smad4_cyt
+    maps_to: smad4_cyt
+    label: Initial Smad4 Cyt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `smad4_cyt`.
+  - name: initial_smad4_nuc
+    maps_to: smad4_nuc
+    label: Initial Smad4 Nuc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `smad4_nuc`.
+  - name: initial_r_smad_nuc
+    maps_to: R_smad_nuc
+    label: Initial R Smad Nuc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `R_smad_nuc`.
+  - name: initial_receptors
+    maps_to: receptor
+    label: Initial Receptors
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `receptor`.
+  - name: initial_r_smad_p_nuc
+    maps_to: R_smad_P_nuc
+    label: Initial R Smad P Nuc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `R_smad_P_nuc`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: r_smad_cyt
+    maps_to: R_smad_cyt
+    label: R-Smad_cyt
+    description: R-Smad_cyt. Maps to SBML symbol `R_smad_cyt`.
+  - name: smad4_cyt
+    maps_to: smad4_cyt
+    label: Smad4_cyt
+    description: Smad4_cyt. Maps to SBML symbol `smad4_cyt`.
+  - name: smad4_nuc
+    maps_to: smad4_nuc
+    label: Smad4_nuc
+    description: Smad4_nuc. Maps to SBML symbol `smad4_nuc`.
+  - name: r_smad_nuc
+    maps_to: R_smad_nuc
+    label: R-Smad_nuc
+    description: R-Smad_nuc. Maps to SBML symbol `R_smad_nuc`.
+  - name: receptors
+    maps_to: receptor
+    label: receptors
+    description: receptors. Maps to SBML symbol `receptor`.
+  - name: r_smad_p_nuc
+    maps_to: R_smad_P_nuc
+    label: R-Smad-P_nuc
+    description: R-Smad-P_nuc. Maps to SBML symbol `R_smad_P_nuc`.

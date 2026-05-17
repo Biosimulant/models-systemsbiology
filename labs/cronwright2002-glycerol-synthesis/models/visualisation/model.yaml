@@ -1,0 +1,42 @@
+schema_version: '2.0'
+title: Cronwright2002_Glycerol_Synthesis Visualisation
+description: Question-and-answer and dynamic visual summaries for Cronwright2002_Glycerol_Synthesis.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Cronwright2002 Glycerol Synthesis Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Cronwright2002_Glycerol_Synthesis.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_cronwright2002_glycerol_synthesis_biomd0000000076_model
+      title: Cronwright2002_Glycerol_Synthesis
+      observables:
+      - id: Gly
+        port: glycerol
+        label: Glycerol
+        group: physiology
+      - id: G3P
+        port: glycerol_3_phosphate
+        label: Glycerol 3-phosphate
+        group: physiology
+      - id: DHAP
+        port: dhap
+        label: DHAP
+        group: physiology
+io:
+  inputs: []
+  outputs: []

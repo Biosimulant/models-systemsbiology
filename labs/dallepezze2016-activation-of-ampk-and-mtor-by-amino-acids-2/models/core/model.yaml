@@ -1,0 +1,80 @@
+schema_version: '2.0'
+title: DallePezze2016 - Activation of AMPK and mTOR by amino acids (Model 1)
+description: 'DallePezze2016 - Activation of AMPK and mTORby amino acids (Model 1)
+  This model is as described inSupplementary Software 2 of the reference publication:
+  SBMLmodel including only the canonical amino ac. It can be used to explore systemsbiology
+  dallepezze2016 activation of ampk and dynamics and compare simulation behavior across
+  conditions.'
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Piero Dalle Pezze
+- Stefanie Ruf
+- Annika G Sonntag
+- Miriam Langelaar-Makkinje
+- Philip Hall
+upstream:
+  id: biomodels_ebi:MODEL1705030000
+  source_db: biomodels_ebi
+  source_id: MODEL1705030000
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1705030000
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1705030000?filename=MODEL1705030000_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.dallepezze2016_activation_of_ampk_and_mtor_by_am_model1705030000_model:Dallepezze2016ActivationOfAmpkAndMtorByAmModel1705030000Model
+  init_kwargs:
+    model_path: data/MODEL1705030000.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: ir_beta_phos_by_insulin
+    maps_to: IR_beta_phos_by_Insulin
+    label: Ir Beta Phos By Insulin
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `IR_beta_phos_by_Insulin`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: p70_s6_k
+    maps_to: p70_S6K
+    label: p70_S6K
+    description: p70_S6K. Maps to SBML symbol `p70_S6K`.
+  - name: m_torc2
+    maps_to: mTORC2
+    label: mTORC2
+    description: mTORC2. Maps to SBML symbol `mTORC2`.
+  - name: m_torc1
+    maps_to: mTORC1
+    label: mTORC1
+    description: mTORC1. Maps to SBML symbol `mTORC1`.
+  - name: tsc1_tsc2
+    maps_to: TSC1_TSC2
+    label: TSC1_TSC2
+    description: TSC1_TSC2. Maps to SBML symbol `TSC1_TSC2`.
+  - name: pi3_k_variant
+    maps_to: PI3K_variant
+    label: PI3K_variant
+    description: PI3K_variant. Maps to SBML symbol `PI3K_variant`.
+  - name: pi3_k_pdk1
+    maps_to: PI3K_PDK1
+    label: PI3K_PDK1
+    description: PI3K_PDK1. Maps to SBML symbol `PI3K_PDK1`.

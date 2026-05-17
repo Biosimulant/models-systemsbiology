@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Barr2017 - Dynamics of p21 in hTert-RPE1 cells Visualisation
+description: Question-and-answer and dynamic visual summaries for Barr2017 - Dynamics
+  of p21 in hTert-RPE1 cells.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Barr2017 Dynamics Of P21 In Htert Rpe1 Cells Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Barr2017 - Dynamics of p21 in hTert-RPE1 cells.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_barr2017_dynamics_of_p21_in_htert_rpe1_cells_biomd0000000660_model
+      title: Barr2017 - Dynamics of p21 in hTert-RPE1 cells
+      observables:
+      - id: MrnaP53
+        port: mrna_p53
+        label: MrnaP53
+        group: gene_regulation
+      - id: MrnaP21
+        port: mrna_p21
+        label: MrnaP21
+        group: gene_regulation
+      - id: MrnaCy
+        port: mrna_cy
+        label: MrnaCy
+        group: gene_regulation
+      - id: tP21
+        port: t_p21
+        label: tP21
+        group: physiology
+      - id: tPcna
+        port: t_pcna
+        label: tPcna
+        group: physiology
+      - id: aPcna
+        port: a_pcna
+        label: aPcna
+        group: physiology
+io:
+  inputs: []
+  outputs: []

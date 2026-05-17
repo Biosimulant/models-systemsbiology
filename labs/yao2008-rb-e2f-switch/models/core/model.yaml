@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Yao2008_Rb_E2F_Switch
+description: 'This is the model described in the article: A bistable Rb-E2F switch
+  underlies the restriction point Guang Yao, Tae Jun Lee, Seiichi Mori, Joseph R.
+  It can be used to explore systemsbiology yao2008 rb e2f switch BioModels0000000318
+  dynamics and compare simulation behavior across conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Guang Yao
+- Tae Jun Lee
+- Seiichi Mori
+- Joseph R Nevins
+- Lingchong You
+upstream:
+  id: biomodels_ebi:BIOMD0000000318
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000318
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000318
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000318?filename=BIOMD0000000318_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.yao2008_rb_e2f_switch_biomd0000000318_model:Yao2008RbE2fSwitchBiomd0000000318Model
+  init_kwargs:
+    model_path: data/BIOMD0000000318.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_rb_e2_f_complex
+    maps_to: RE
+    label: Initial Rb E2 F Complex
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RE`.
+  - name: initial_phosphorylated_rb
+    maps_to: RP
+    label: Initial Phosphorylated Rb
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RP`.
+  - name: initial_model_state_rb
+    maps_to: RB
+    label: Initial Model State Rb
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RB`.
+  - name: initial_model_state_myc
+    maps_to: MC
+    label: Initial Model State Myc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MC`.
+  - name: initial_e2_f
+    maps_to: EF
+    label: Initial E2 F
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `EF`.
+  - name: initial_cyc_e
+    maps_to: CE
+    label: Initial Cyc E
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CE`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: rb_e2_f_complex
+    maps_to: RE
+    label: Rb-E2F complex
+    description: Rb-E2F complex. Maps to SBML symbol `RE`.
+  - name: phosphorylated_rb
+    maps_to: RP
+    label: phosphorylated Rb
+    description: phosphorylated Rb. Maps to SBML symbol `RP`.
+  - name: model_state_rb
+    maps_to: RB
+    label: Rb
+    description: Rb. Maps to SBML symbol `RB`.
+  - name: myc
+    maps_to: MC
+    label: Myc
+    description: Myc. Maps to SBML symbol `MC`.
+  - name: e2_f
+    maps_to: EF
+    label: E2F
+    description: E2F. Maps to SBML symbol `EF`.
+  - name: cyc_e
+    maps_to: CE
+    label: CycE
+    description: CycE. Maps to SBML symbol `CE`.

@@ -1,0 +1,105 @@
+schema_version: '2.0'
+title: Beltrami1995_ThrombinGeneration_C
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models (http://www.ebi.ac.uk/biomodels/). It is copyright (c) 2005-2011
+  The BioModels.net Team.'
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- E Beltrami
+- J Jesty
+upstream:
+  id: biomodels_ebi:BIOMD0000000368
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000368
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000368
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000368?filename=BIOMD0000000368_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.beltrami1995_thrombingeneration_c_biomd0000000368_model:Beltrami1995ThrombingenerationCBiomd0000000368Model
+  init_kwargs:
+    model_path: data/BIOMD0000000368.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_z4
+    maps_to: Z4
+    label: Initial Model State Z4
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Z4`.
+  - name: initial_model_state_z3
+    maps_to: Z3
+    label: Initial Model State Z3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Z3`.
+  - name: initial_model_state_z2
+    maps_to: Z2
+    label: Initial Model State Z2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Z2`.
+  - name: initial_model_state_z1
+    maps_to: Z1
+    label: Initial Model State Z1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Z1`.
+  - name: initial_model_state_e4
+    maps_to: E4
+    label: Initial Model State E4
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `E4`.
+  - name: initial_model_state_e3
+    maps_to: E3
+    label: Initial Model State E3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `E3`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_z4
+    maps_to: Z4
+    label: Z4
+    description: Z4. Maps to SBML symbol `Z4`.
+  - name: model_state_z3
+    maps_to: Z3
+    label: Z3
+    description: Z3. Maps to SBML symbol `Z3`.
+  - name: model_state_z2
+    maps_to: Z2
+    label: Z2
+    description: Z2. Maps to SBML symbol `Z2`.
+  - name: model_state_z1
+    maps_to: Z1
+    label: Z1
+    description: Z1. Maps to SBML symbol `Z1`.
+  - name: model_state_e4
+    maps_to: E4
+    label: E4
+    description: E4. Maps to SBML symbol `E4`.
+  - name: model_state_e3
+    maps_to: E3
+    label: E3
+    description: E3. Maps to SBML symbol `E3`.

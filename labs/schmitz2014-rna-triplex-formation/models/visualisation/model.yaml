@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Schmitz2014 - RNA triplex formation Visualisation
+description: Question-and-answer and dynamic visual summaries for Schmitz2014 - RNA
+  triplex formation.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Schmitz2014 Rna Triplex Formation Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Schmitz2014 - RNA triplex formation.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_schmitz2014_rna_triplex_formation_biomd0000000530_model
+      title: Schmitz2014 - RNA triplex formation
+      observables:
+      - id: species_10
+        port: protein
+        label: protein
+        group: gene_regulation
+      - id: species_1
+        port: mrna
+        label: mRNA
+        group: gene_regulation
+      - id: species_9
+        port: tf_mi_rna_2
+        label: TF_miRNA_2
+        group: gene_regulation
+      - id: species_8
+        port: tf_mi_rna_1
+        label: TF_miRNA_1
+        group: gene_regulation
+      - id: species_7
+        port: tf_mrna
+        label: TF_mRNA
+        group: gene_regulation
+      - id: species_6
+        port: triplex
+        label: triplex
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

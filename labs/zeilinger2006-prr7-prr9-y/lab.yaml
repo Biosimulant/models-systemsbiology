@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Zeilinger2006 Prr7 Prr9 Y Lab
+description: The model reproduces the circadian charecteristics as given in Table
+  1 for the PRR7-PRR9-Y model. The model makes use of the event section to introduce
+  light at 30 hours.
+models:
+- alias: systemsbiology_sbml_zeilinger2006_prr7_prr9_y_biomd0000000095_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_zeilinger2006_prr7_prr9_y_biomd0000000095_model.state
+  to:
+  - visualisation.systemsbiology_sbml_zeilinger2006_prr7_prr9_y_biomd0000000095_model_state
+- from: systemsbiology_sbml_zeilinger2006_prr7_prr9_y_biomd0000000095_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_zeilinger2006_prr7_prr9_y_biomd0000000095_model_summary
+- from: systemsbiology_sbml_zeilinger2006_prr7_prr9_y_biomd0000000095_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_zeilinger2006_prr7_prr9_y_biomd0000000095_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_c_xn
+    maps_to: systemsbiology_sbml_zeilinger2006_prr7_prr9_y_biomd0000000095_model.initial_c_xn
+    label: Initial C Xn
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cXn`.
+  - name: initial_c_p7c
+    maps_to: systemsbiology_sbml_zeilinger2006_prr7_prr9_y_biomd0000000095_model.initial_c_p7c
+    label: Initial C P7C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cP7c`.
+  - name: initial_c_xc
+    maps_to: systemsbiology_sbml_zeilinger2006_prr7_prr9_y_biomd0000000095_model.initial_c_xc
+    label: Initial C Xc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cXc`.
+  - name: initial_c_xm
+    maps_to: systemsbiology_sbml_zeilinger2006_prr7_prr9_y_biomd0000000095_model.initial_c_xm
+    label: Initial C Xm
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cXm`.
+  - name: initial_c_tn
+    maps_to: systemsbiology_sbml_zeilinger2006_prr7_prr9_y_biomd0000000095_model.initial_c_tn
+    label: Initial C Tn
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cTn`.
+  - name: initial_c_yc
+    maps_to: systemsbiology_sbml_zeilinger2006_prr7_prr9_y_biomd0000000095_model.initial_c_yc
+    label: Initial C Yc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cYc`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_zeilinger2006_prr7_prr9_y_biomd0000000095_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_zeilinger2006_prr7_prr9_y_biomd0000000095_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_zeilinger2006_prr7_prr9_y_biomd0000000095_model.species_labels
+  - name: c_xn
+    maps_to: systemsbiology_sbml_zeilinger2006_prr7_prr9_y_biomd0000000095_model.c_xn
+  - name: c_p7c
+    maps_to: systemsbiology_sbml_zeilinger2006_prr7_prr9_y_biomd0000000095_model.c_p7c
+  - name: c_xc
+    maps_to: systemsbiology_sbml_zeilinger2006_prr7_prr9_y_biomd0000000095_model.c_xc
+  - name: c_xm
+    maps_to: systemsbiology_sbml_zeilinger2006_prr7_prr9_y_biomd0000000095_model.c_xm
+  - name: c_tn
+    maps_to: systemsbiology_sbml_zeilinger2006_prr7_prr9_y_biomd0000000095_model.c_tn
+  - name: c_yc
+    maps_to: systemsbiology_sbml_zeilinger2006_prr7_prr9_y_biomd0000000095_model.c_yc

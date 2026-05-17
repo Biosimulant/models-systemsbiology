@@ -1,0 +1,59 @@
+schema_version: '2.0'
+title: Nielsen1998 Glycolysis Lab
+description: This model was automatically converted from model BIOMD0000000042 by
+  using libSBML . According to the BioModels Database terms of use , this generated
+  model is not related with model BIOMD0000000042 a.
+models:
+- alias: systemsbiology_sbml_nielsen1998_glycolysis_biomd0000000042_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_nielsen1998_glycolysis_biomd0000000042_model.state
+  to:
+  - visualisation.systemsbiology_sbml_nielsen1998_glycolysis_biomd0000000042_model_state
+- from: systemsbiology_sbml_nielsen1998_glycolysis_biomd0000000042_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_nielsen1998_glycolysis_biomd0000000042_model_summary
+- from: systemsbiology_sbml_nielsen1998_glycolysis_biomd0000000042_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_nielsen1998_glycolysis_biomd0000000042_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: flow
+    maps_to: systemsbiology_sbml_nielsen1998_glycolysis_biomd0000000042_model.flow
+    label: Flow
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `flow`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_nielsen1998_glycolysis_biomd0000000042_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_nielsen1998_glycolysis_biomd0000000042_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_nielsen1998_glycolysis_biomd0000000042_model.species_labels
+  - name: atp
+    maps_to: systemsbiology_sbml_nielsen1998_glycolysis_biomd0000000042_model.atp
+  - name: nad
+    maps_to: systemsbiology_sbml_nielsen1998_glycolysis_biomd0000000042_model.nad
+  - name: f6_p
+    maps_to: systemsbiology_sbml_nielsen1998_glycolysis_biomd0000000042_model.f6_p
+  - name: nadh
+    maps_to: systemsbiology_sbml_nielsen1998_glycolysis_biomd0000000042_model.nadh
+  - name: et_oh
+    maps_to: systemsbiology_sbml_nielsen1998_glycolysis_biomd0000000042_model.et_oh
+  - name: dpg
+    maps_to: systemsbiology_sbml_nielsen1998_glycolysis_biomd0000000042_model.dpg

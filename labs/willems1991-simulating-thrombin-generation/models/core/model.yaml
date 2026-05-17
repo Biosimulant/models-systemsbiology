@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Willems1991 - Simulating thrombin generation
+description: Mathematical model of blood coagulation to simulate factor IIa, Va and
+  Xa concentration profiles. Publication also illustrates the effect of hirudin on
+  factor IIa, Va and Xa generation.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- G M Willems
+- T Lindhout
+- W T Hermens
+- H C Hemker
+upstream:
+  id: biomodels_ebi:MODEL1807240002
+  source_db: biomodels_ebi
+  source_id: MODEL1807240002
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1807240002
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1807240002?filename=Willems1991.xml
+  license: CC0
+biosim:
+  entrypoint: src.willems1991_simulating_thrombin_generation_model1807240002_model:Willems1991SimulatingThrombinGenerationModel1807240002Model
+  init_kwargs:
+    model_path: data/MODEL1807240002.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_xa_atiii
+    maps_to: Xa_ATIII
+    label: Initial Xa Atiii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_ATIII`.
+  - name: initial_va_inactive
+    maps_to: Va_inactive
+    label: Initial Va Inactive
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Va_inactive`.
+  - name: initial_va_xa
+    maps_to: Va_Xa
+    label: Initial Va Xa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Va_Xa`.
+  - name: initial_i_ia_hirudin
+    maps_to: IIa_Hirudin
+    label: Initial I Ia Hirudin
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IIa_Hirudin`.
+  - name: initial_i_ia_atiii
+    maps_to: IIa_ATIII
+    label: Initial I Ia Atiii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IIa_ATIII`.
+  - name: initial_apc_inactive
+    maps_to: APC_inactive
+    label: Initial Apc Inactive
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `APC_inactive`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: xa_atiii
+    maps_to: Xa_ATIII
+    label: Xa-ATIII
+    description: Xa-ATIII. Maps to SBML symbol `Xa_ATIII`.
+  - name: va_inactive
+    maps_to: Va_inactive
+    label: Va_inactive
+    description: Va_inactive. Maps to SBML symbol `Va_inactive`.
+  - name: va_xa
+    maps_to: Va_Xa
+    label: Va-Xa
+    description: Va-Xa. Maps to SBML symbol `Va_Xa`.
+  - name: i_ia_hirudin
+    maps_to: IIa_Hirudin
+    label: IIa-Hirudin
+    description: IIa-Hirudin. Maps to SBML symbol `IIa_Hirudin`.
+  - name: i_ia_atiii
+    maps_to: IIa_ATIII
+    label: IIa-ATIII
+    description: IIa-ATIII. Maps to SBML symbol `IIa_ATIII`.
+  - name: apc_inactive
+    maps_to: APC_inactive
+    label: APC_inactive
+    description: APC_inactive. Maps to SBML symbol `APC_inactive`.

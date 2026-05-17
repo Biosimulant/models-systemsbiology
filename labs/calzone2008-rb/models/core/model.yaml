@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Calzone2008_Rb
+description: Protein names are HUGO names or usual names. In the latter case, they
+  are identified with a star (*) and the HUGO name is given in notes.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Laurence Calzone
+- Amélie Gelay
+- Andrei Zinovyev
+- François Radvanyi
+- Emmanuel Barillot
+upstream:
+  id: biomodels_ebi:MODEL4132046015
+  source_db: biomodels_ebi
+  source_id: MODEL4132046015
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL4132046015
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL4132046015?filename=MODEL4132046015_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.calzone2008_rb_model4132046015_model:Calzone2008RbModel4132046015Model
+  init_kwargs:
+    model_path: data/MODEL4132046015.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_cyclin_h
+    maps_to: s401
+    label: Initial Cyclin H
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s401`.
+  - name: initial_cyclin_e1_cdk2_p130
+    maps_to: s1486
+    label: Initial Cyclin E1 Cdk2 P130
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s1486`.
+  - name: initial_cyclin_e1_cdk2_p107
+    maps_to: s1487
+    label: Initial Cyclin E1 Cdk2 P107
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s1487`.
+  - name: initial_cyclin_e1_cdk2_cdkn1_a
+    maps_to: s787
+    label: Initial Cyclin E1 Cdk2 Cdkn1 A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s787`.
+  - name: initial_cyclin_e1_cdk2
+    maps_to: s723
+    label: Initial Cyclin E1 Cdk2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s723`.
+  - name: initial_cyclin_e1_cdk2_2
+    maps_to: s721
+    label: Initial Cyclin E1 Cdk2 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s721`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: cyclin_h
+    maps_to: s401
+    label: cyclin H*
+    description: cyclin H*. Maps to SBML symbol `s401`.
+  - name: cyclin_e1_cdk2_p130
+    maps_to: s1486
+    label: cyclin E1*/CDK2/p130
+    description: cyclin E1*/CDK2/p130. Maps to SBML symbol `s1486`.
+  - name: cyclin_e1_cdk2_p107
+    maps_to: s1487
+    label: cyclin E1*/CDK2/p107
+    description: cyclin E1*/CDK2/p107. Maps to SBML symbol `s1487`.
+  - name: cyclin_e1_cdk2_cdkn1_a
+    maps_to: s787
+    label: cyclin E1*/CDK2/CDKN1A
+    description: cyclin E1*/CDK2/CDKN1A. Maps to SBML symbol `s787`.
+  - name: cyclin_e1_cdk2
+    maps_to: s723
+    label: cyclin E1*/CDK2
+    description: cyclin E1*/CDK2. Maps to SBML symbol `s723`.
+  - name: cyclin_e1_cdk2_2
+    maps_to: s721
+    label: cyclin E1*/CDK2
+    description: cyclin E1*/CDK2. Maps to SBML symbol `s721`.

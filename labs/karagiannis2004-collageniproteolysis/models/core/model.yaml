@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Karagiannis2004_CollagenIproteolysis
+description: 'This a model from the article: A theoretical model of type I collagen
+  proteolysis by matrix metalloproteinase(MMP) 2 and membrane type 1 MMP in the presence
+  of tissue inhibitor ofmetalloproteinase 2. It can be used to explore systemsbiology
+  karagiannis2004 collageniproteolysis model0911270007 dynamics and compare simulation
+  behavior across conditions.'
+standard: other
+tags:
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Emmanouil D Karagiannis
+- Popel AS
+upstream:
+  id: biomodels_ebi:MODEL0911270007
+  source_db: biomodels_ebi
+  source_id: MODEL0911270007
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL0911270007
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0911270007?filename=MODEL0911270007_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.karagiannis2004_collageniproteolysis_model0911270007_model:Karagiannis2004CollageniproteolysisModel0911270007Model
+  init_kwargs:
+    model_path: data/MODEL0911270007.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_t2
+    maps_to: T2
+    label: Initial Model State T2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `T2`.
+  - name: initial_mt1t
+    maps_to: MT1t
+    label: Initial Mt1t
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MT1t`.
+  - name: initial_mt1cat
+    maps_to: MT1cat
+    label: Initial Mt1cat
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MT1cat`.
+  - name: initial_mt1_t2_star
+    maps_to: MT1_T2_star
+    label: Initial MT1 T2 Star
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MT1_T2_star`.
+  - name: initial_mt1_t2_m2_p_mt1
+    maps_to: MT1_T2_M2p_MT1
+    label: Initial MT1 T2 M2 P MT1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MT1_T2_M2p_MT1`.
+  - name: initial_mt1_t2_m2_p
+    maps_to: MT1_T2_M2p
+    label: Initial MT1 T2 M2 P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MT1_T2_M2p`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_t2
+    maps_to: T2
+    label: T2
+    description: T2. Maps to SBML symbol `T2`.
+  - name: mt1t
+    maps_to: MT1t
+    label: MT1t
+    description: MT1t. Maps to SBML symbol `MT1t`.
+  - name: mt1cat
+    maps_to: MT1cat
+    label: MT1cat
+    description: MT1cat. Maps to SBML symbol `MT1cat`.
+  - name: mt1_t2_star
+    maps_to: MT1_T2_star
+    label: MT1 T2 Star
+    description: MT1 T2 Star. Maps to SBML symbol `MT1_T2_star`.
+  - name: mt1_t2_m2_p_mt1
+    maps_to: MT1_T2_M2p_MT1
+    label: MT1 T2 M2P MT1
+    description: MT1 T2 M2P MT1. Maps to SBML symbol `MT1_T2_M2p_MT1`.
+  - name: mt1_t2_m2_p
+    maps_to: MT1_T2_M2p
+    label: MT1 T2 M2P
+    description: MT1 T2 M2P. Maps to SBML symbol `MT1_T2_M2p`.

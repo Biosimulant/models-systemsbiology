@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "f45ef68a-453e-48e5-8900-07415bf7abbd",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "730a444a-3f81-4671-a96f-e8966ce202b0",
+  "created_at": "2026-05-16T05:46:40.942076175+00:00",
+  "last_synced_at": "2026-05-17T01:44:20.958081+00:00",
+  "hub_manifest_hash": "7cda755d37c0fdd04b4cbb62a63956987dc6031995c16502fec0d5ab4a14c3b2",
+  "package_name": "arnold2011-poolman2000-calvincycle-starch-lab"
+}

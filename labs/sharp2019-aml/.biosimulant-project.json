@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "c6fec50f-d54e-4247-b73e-763b9e98e2d2",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "dbfc4b28-c02b-4820-bc79-7391650b02fc",
+  "created_at": "2026-05-16T05:46:51.832778626+00:00",
+  "last_synced_at": "2026-05-17T06:10:38.421180+00:00",
+  "hub_manifest_hash": "0ba6423dc518a62883fa8c09af2e8651b7d8376c494e47b592be2ec80ffbb2ae",
+  "package_name": "sharp2019-aml-lab"
+}

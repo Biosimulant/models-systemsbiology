@@ -1,0 +1,64 @@
+schema_version: '2.0'
+title: Egli2004 Prolactinrhythmicsecretion Lab
+description: 'This a model from the article: Rhythmic secretion of prolactin in rats:
+  action of oxytocin coordinated byvasoactive intestinal polypeptide of suprachiasmatic
+  nucleus origin. It can be used to explore systemsbiology egli2004 prolactinrhythmicsecreti
+  model0912452142 dynamics and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_egli2004_prolactinrhythmicsecretion_model0912452142_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_egli2004_prolactinrhythmicsecretion_model0912452142_model.state
+  to:
+  - visualisation.systemsbiology_sbml_egli2004_prolactinrhythmicsecretion_model0912452142_model_state
+- from: systemsbiology_sbml_egli2004_prolactinrhythmicsecretion_model0912452142_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_egli2004_prolactinrhythmicsecretion_model0912452142_model_summary
+- from: systemsbiology_sbml_egli2004_prolactinrhythmicsecretion_model0912452142_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_egli2004_prolactinrhythmicsecretion_model0912452142_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_prl
+    maps_to: systemsbiology_sbml_egli2004_prolactinrhythmicsecretion_model0912452142_model.initial_model_state_prl
+    label: Initial Model State Prl
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PRL`.
+  - name: initial_model_state_ot
+    maps_to: systemsbiology_sbml_egli2004_prolactinrhythmicsecretion_model0912452142_model.initial_model_state_ot
+    label: Initial Model State Ot
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `OT`.
+  - name: initial_model_state_da
+    maps_to: systemsbiology_sbml_egli2004_prolactinrhythmicsecretion_model0912452142_model.initial_model_state_da
+    label: Initial Model State Da
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `DA`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_egli2004_prolactinrhythmicsecretion_model0912452142_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_egli2004_prolactinrhythmicsecretion_model0912452142_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_egli2004_prolactinrhythmicsecretion_model0912452142_model.species_labels
+  - name: prl
+    maps_to: systemsbiology_sbml_egli2004_prolactinrhythmicsecretion_model0912452142_model.prl
+  - name: model_state_ot
+    maps_to: systemsbiology_sbml_egli2004_prolactinrhythmicsecretion_model0912452142_model.model_state_ot
+  - name: model_state_da
+    maps_to: systemsbiology_sbml_egli2004_prolactinrhythmicsecretion_model0912452142_model.model_state_da

@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Friedland2009_Ara_RTC3_counter Visualisation
+description: Question-and-answer and dynamic visual summaries for Friedland2009_Ara_RTC3_counter.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Friedland2009 Ara Rtc3 Counter Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Friedland2009_Ara_RTC3_counter.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_friedland2009_ara_rtc3_counter_biomd0000000301_model
+      title: Friedland2009_Ara_RTC3_counter
+      observables:
+      - id: pGFP
+        port: pgfp
+        label: PGFP
+        group: gene_regulation
+      - id: mT7cr
+        port: mt7cr
+        label: MT7cr
+        group: gene_regulation
+      - id: mGFPcr
+        port: mgf_pcr
+        label: MGFPcr
+        group: gene_regulation
+      - id: pT7
+        port: pt7
+        label: PT7
+        group: gene_regulation
+      - id: taRNA
+        port: ta_rna
+        label: TaRNA
+        group: gene_regulation
+      - id: mT3cr
+        port: mt3cr
+        label: MT3cr
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

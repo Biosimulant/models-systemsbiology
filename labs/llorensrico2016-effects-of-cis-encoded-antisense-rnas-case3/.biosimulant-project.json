@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "09a2525c-4824-4a4b-84c5-b52aae733933",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "09fe7c17-e283-44f2-8b98-fcc378e2103f",
+  "created_at": "2026-05-16T05:46:45.642095529+00:00",
+  "last_synced_at": "2026-05-17T04:35:44.458155+00:00",
+  "hub_manifest_hash": "08bc45fce22b7e1932fe711fc90a779c34cdfc862a9c2f812c507927fabe51e1",
+  "package_name": "llorensrico2016-effects-of-cis-encoded-antisense-rnas-case3-lab"
+}

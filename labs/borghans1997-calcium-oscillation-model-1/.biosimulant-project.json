@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "4ee1e9de-ecc8-4cf7-832a-e19292c94b0b",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "5d3fc7db-503b-4164-9e6a-fe1fb77dbdf0",
+  "created_at": "2026-05-16T05:46:41.802714383+00:00",
+  "last_synced_at": "2026-05-17T02:14:36.237383+00:00",
+  "hub_manifest_hash": "0deba2155f4d045daa352e3b4929d37c18aea012ff894cfb4d9890a2caee9e95",
+  "package_name": "borghans1997-calcium-oscillation-model-1-lab"
+}

@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Schliemann2011_TNF_ProAntiApoptosis Visualisation
+description: Question-and-answer and dynamic visual summaries for Schliemann2011_TNF_ProAntiApoptosis.
+standard: other
+tags:
+- generegulation
+- immunology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Schliemann2011 Tnf Proantiapoptosis Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Schliemann2011_TNF_ProAntiApoptosis.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_schliemann2011_tnf_proantiapoptosis_biomd0000000407_model
+      title: Schliemann2011_TNF_ProAntiApoptosis
+      observables:
+      - id: pCasp8
+        port: p_casp8
+        label: pCasp8
+        group: signaling
+      - id: pCasp3
+        port: p_casp3
+        label: pCasp3
+        group: signaling
+      - id: TNF_E
+        port: tnf_e
+        label: TNF_E
+        group: signaling
+      - id: pCasp6
+        port: p_casp6
+        label: pCasp6
+        group: signaling
+      - id: IkBa_NFkB
+        port: ik_ba_n_fk_b
+        label: IkBa:NFkB
+        group: signaling
+      - id: TNFR_E
+        port: tnfr_e
+        label: TNFR_E
+        group: signaling
+io:
+  inputs: []
+  outputs: []

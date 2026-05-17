@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "64d1865a-e454-4229-b7ba-6a1203e83ad0",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "42c61c8a-a8d6-4f94-b375-cf06fc317cc8",
+  "created_at": "2026-05-16T05:46:52.978926115+00:00",
+  "last_synced_at": "2026-05-17T06:45:02.446719+00:00",
+  "hub_manifest_hash": "4cf851d601f9c90067f1b2ae9499bf56744c472b2d03bc3168e10f062f36af2a",
+  "package_name": "warren2009-calciumwavepropagation-lab"
+}

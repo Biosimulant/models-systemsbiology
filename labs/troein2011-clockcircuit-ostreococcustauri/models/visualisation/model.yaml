@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Troein2011_ClockCircuit_OstreococcusTauri Visualisation
+description: Question-and-answer and dynamic visual summaries for Troein2011_ClockCircuit_OstreococcusTauri.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Troein2011 Clockcircuit Ostreococcustauri Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Troein2011_ClockCircuit_OstreococcusTauri.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_troein2011_clockcircuit_ostreococcustauri_biomd0000000350_model
+      title: Troein2011_ClockCircuit_OstreococcusTauri
+      observables:
+      - id: cca1_mrna
+        port: cca1_mrna
+        label: cca1_mrna
+        group: gene_regulation
+      - id: toc1_mrna
+        port: toc1_mrna
+        label: toc1_mrna
+        group: gene_regulation
+      - id: toc1luc_mrna
+        port: toc1luc_mrna
+        label: toc1luc_mrna
+        group: gene_regulation
+      - id: luc_mrna
+        port: luc_mrna
+        label: luc_mrna
+        group: gene_regulation
+      - id: cca1luc_mrna
+        port: cca1luc_mrna
+        label: cca1luc_mrna
+        group: gene_regulation
+      - id: cca1_n
+        port: cca1_n
+        label: cca1_n
+        group: physiology
+io:
+  inputs: []
+  outputs: []

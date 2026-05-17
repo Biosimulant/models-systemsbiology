@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "eee4d549-9fe7-4c88-9bda-e3546d5bcef3",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "1412912b-a986-4c86-a683-2bb5cfa5bcf4",
+  "created_at": "2026-05-16T05:46:48.674914460+00:00",
+  "last_synced_at": "2026-05-17T05:12:40.369794+00:00",
+  "hub_manifest_hash": "3f37e882da782522fc37a3213062d7c12dbb58008ecbd0c946c15eeb5850e92c",
+  "package_name": "nelson2000-hiv-1-general-model-1-lab"
+}

@@ -1,0 +1,65 @@
+schema_version: '2.0'
+title: Peterson2010 Integrated Calcium Homeostasis And Bone Remodelling Lab
+description: '&lt;notes xmlns=&quot;http://www.sbml.org/sbml/level3/version1/core&quot;&gt;
+  &lt;body xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt; &lt;div class=&quot;dc:title&quot;&gt;Peterson2010
+  - integrate. It can be used to explore systemsbiology peterson2010 integrated calcium
+  homeostasis and dynamics and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_peterson2010_integrated_calcium_homeostasis_and_biomd0000000613_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_peterson2010_integrated_calcium_homeostasis_and_biomd0000000613_model.state
+  to:
+  - visualisation.systemsbiology_sbml_peterson2010_integrated_calcium_homeostasis_and_biomd0000000613_model_state
+- from: systemsbiology_sbml_peterson2010_integrated_calcium_homeostasis_and_biomd0000000613_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_peterson2010_integrated_calcium_homeostasis_and_biomd0000000613_model_summary
+- from: systemsbiology_sbml_peterson2010_integrated_calcium_homeostasis_and_biomd0000000613_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_peterson2010_integrated_calcium_homeostasis_and_biomd0000000613_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: teri_dose_mcg
+    maps_to: systemsbiology_sbml_peterson2010_integrated_calcium_homeostasis_and_biomd0000000613_model.teri_dose_mcg
+    label: Teri Dose Mcg
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `teri_dose_mcg`.
+  - name: teri_number_of_doses
+    maps_to: systemsbiology_sbml_peterson2010_integrated_calcium_homeostasis_and_biomd0000000613_model.teri_number_of_doses
+    label: Teri Number Of Doses
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `teri_number_of_doses`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_peterson2010_integrated_calcium_homeostasis_and_biomd0000000613_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_peterson2010_integrated_calcium_homeostasis_and_biomd0000000613_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_peterson2010_integrated_calcium_homeostasis_and_biomd0000000613_model.species_labels
+  - name: tgf_bact
+    maps_to: systemsbiology_sbml_peterson2010_integrated_calcium_homeostasis_and_biomd0000000613_model.tgf_bact
+  - name: tgfb
+    maps_to: systemsbiology_sbml_peterson2010_integrated_calcium_homeostasis_and_biomd0000000613_model.tgfb
+  - name: qbone
+    maps_to: systemsbiology_sbml_peterson2010_integrated_calcium_homeostasis_and_biomd0000000613_model.qbone
+  - name: intra_po
+    maps_to: systemsbiology_sbml_peterson2010_integrated_calcium_homeostasis_and_biomd0000000613_model.intra_po
+  - name: bcl2
+    maps_to: systemsbiology_sbml_peterson2010_integrated_calcium_homeostasis_and_biomd0000000613_model.bcl2
+  - name: pth
+    maps_to: systemsbiology_sbml_peterson2010_integrated_calcium_homeostasis_and_biomd0000000613_model.pth

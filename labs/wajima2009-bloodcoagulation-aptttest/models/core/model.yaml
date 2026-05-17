@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Wajima2009_BloodCoagulation_aPTTtest
+description: 'This model is from the article: A comprehensive model for the humoral
+  coagulation network in humans. It can be used to explore systemsbiology wajima2009
+  bloodcoagulation aptttest BioModels0000000338 dynamics and compare simulation behavior
+  across conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- T Wajima
+- G K Isbister
+- S B Duffull
+upstream:
+  id: biomodels_ebi:BIOMD0000000338
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000338
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000338
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000338?filename=BIOMD0000000338_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.wajima2009_bloodcoagulation_aptttest_biomd0000000338_model:Wajima2009BloodcoagulationAptttestBiomd0000000338Model
+  init_kwargs:
+    model_path: data/BIOMD0000000338.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_xa_tfpi
+    maps_to: Xa_TFPI
+    label: Initial Xa Tfpi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_TFPI`.
+  - name: initial_xa_atiii_heparin
+    maps_to: Xa_ATIII_Heparin
+    label: Initial Xa Atiii Heparin
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_ATIII_Heparin`.
+  - name: initial_va_xa
+    maps_to: Va_Xa
+    label: Initial Va Xa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Va_Xa`.
+  - name: initial_vk_p
+    maps_to: VK_p
+    label: Initial Vk P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VK_p`.
+  - name: initial_vi_ia_tf_xa_tfpi
+    maps_to: VIIa_TF_Xa_TFPI
+    label: Initial Vi Ia Tf Xa Tfpi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VIIa_TF_Xa_TFPI`.
+  - name: initial_vi_ia_tf
+    maps_to: VIIa_TF
+    label: Initial Vi Ia Tf
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VIIa_TF`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: xa_tfpi
+    maps_to: Xa_TFPI
+    label: Xa_TFPI
+    description: Xa_TFPI. Maps to SBML symbol `Xa_TFPI`.
+  - name: xa_atiii_heparin
+    maps_to: Xa_ATIII_Heparin
+    label: Xa_ATIII_Heparin
+    description: Xa_ATIII_Heparin. Maps to SBML symbol `Xa_ATIII_Heparin`.
+  - name: va_xa
+    maps_to: Va_Xa
+    label: Va_Xa
+    description: Va_Xa. Maps to SBML symbol `Va_Xa`.
+  - name: vk_p
+    maps_to: VK_p
+    label: VK_p
+    description: VK_p. Maps to SBML symbol `VK_p`.
+  - name: vi_ia_tf_xa_tfpi
+    maps_to: VIIa_TF_Xa_TFPI
+    label: VIIa_TF_Xa_TFPI
+    description: VIIa_TF_Xa_TFPI. Maps to SBML symbol `VIIa_TF_Xa_TFPI`.
+  - name: vi_ia_tf
+    maps_to: VIIa_TF
+    label: VIIa_TF
+    description: VIIa_TF. Maps to SBML symbol `VIIa_TF`.

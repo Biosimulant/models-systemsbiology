@@ -1,0 +1,40 @@
+schema_version: '2.0'
+title: Goldbeter1990_CalciumSpike_CICR Visualisation
+description: Question-and-answer and dynamic visual summaries for Goldbeter1990_CalciumSpike_CICR.
+standard: other
+tags:
+- generegulation
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Goldbeter1990 Calciumspike Cicr Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Goldbeter1990_CalciumSpike_CICR.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_goldbeter1990_calciumspike_cicr_biomd0000000098_model
+      title: Goldbeter1990_CalciumSpike_CICR
+      observables:
+      - id: Y
+        port: model_state_y
+        label: Y
+        group: gene_regulation
+      - id: Z
+        port: model_state_z
+        label: Z
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "7541e0e7-a2e6-4acf-aba0-32b44a531b4a",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "df644152-d859-4329-b457-24c1e7e01a06",
+  "created_at": "2026-05-16T05:46:51.338469693+00:00",
+  "last_synced_at": "2026-05-17T05:56:24.067191+00:00",
+  "hub_manifest_hash": "acd0c8b2214d00ee06f190f2c27a58cbd9a6cd9c8ac39f9aac914a7c40c267c7",
+  "package_name": "reed2004-methionine-cycle-lab"
+}

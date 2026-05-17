@@ -1,0 +1,76 @@
+schema_version: '2.0'
+title: Razumova2000_MyofilamentContractileBehaviour
+description: 'This a model from the article: Different myofilament nearest-neighbor
+  interactions have distinctive effects on contractile behavior. It can be used to
+  explore systemsbiology razumova2000 myofilamentcontractilebe model7909395757 dynamics
+  and compare simulation behavior across conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- M V Razumova
+- A E Bukatina
+- K B Campbell
+upstream:
+  id: biomodels_ebi:MODEL7909395757
+  source_db: biomodels_ebi
+  source_id: MODEL7909395757
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL7909395757
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL7909395757?filename=MODEL7909395757_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.razumova2000_myofilamentcontractilebehaviour_model7909395757_model:Razumova2000MyofilamentcontractilebehaviourModel7909395757Model
+  init_kwargs:
+    model_path: data/MODEL7909395757.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_a_2
+    maps_to: A_2
+    label: Initial Model State A 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `A_2`.
+  - name: initial_model_state_a_1
+    maps_to: A_1
+    label: Initial Model State A 1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `A_1`.
+  - name: initial_model_state_d
+    maps_to: D
+    label: Initial Model State D
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `D`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: a_2
+    maps_to: A_2
+    label: A 2
+    description: A 2. Maps to SBML symbol `A_2`.
+  - name: a_1
+    maps_to: A_1
+    label: A 1
+    description: A 1. Maps to SBML symbol `A_1`.
+  - name: model_state_d
+    maps_to: D
+    label: D
+    description: D. Maps to SBML symbol `D`.

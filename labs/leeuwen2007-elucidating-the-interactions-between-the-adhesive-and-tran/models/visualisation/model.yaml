@@ -1,0 +1,62 @@
+schema_version: '2.0'
+title: Leeuwen2007 - Elucidating the interactions between the adhesive and transcriptional
+  functions of beta-catenin in normal and cancerous cells Visualisation
+description: Question-and-answer and dynamic visual summaries for Leeuwen2007 - Elucidating
+  the interactions between the adhesive and transcriptional functions of beta-catenin
+  in normal and cancerous cells.
+standard: other
+tags:
+- generegulation
+- oncology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Leeuwen2007 Elucidating The Interactions Between The Adhesive And Tran
+      Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Leeuwen2007 - Elucidating the interactions between the adhesive
+      and transcriptional functions of beta-catenin in normal and cancerous cells.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_leeuwen2007_elucidating_the_interactions_between_model2001090001_model
+      title: Leeuwen2007 - Elucidating the interactions between the adhesive and transcriptional
+        functions of beta-catenin in normal and cancerous cells
+      observables:
+      - id: CA
+        port: model_state_ca
+        label: CA
+        group: gene_regulation
+      - id: C0T
+        port: c0_t
+        label: C0T
+        group: gene_regulation
+      - id: C0
+        port: model_state_c0
+        label: C0
+        group: gene_regulation
+      - id: Cu
+        port: model_state_cu
+        label: Cu
+        group: gene_regulation
+      - id: CcT
+        port: cc_t
+        label: CcT
+        group: gene_regulation
+      - id: Cc
+        port: model_state_cc
+        label: Cc
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

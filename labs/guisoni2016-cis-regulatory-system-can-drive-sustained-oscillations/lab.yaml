@@ -1,0 +1,82 @@
+schema_version: '2.0'
+title: Guisoni2016 Cis Regulatory System Can Drive Sustained Oscillations Lab
+description: 'Guisoni2016 - Cis-regulatory system (CRS) candrive sustained oscillations
+  This model is described in the article: Promoters Architecture-Based Mechanism for
+  Noise-Induced Oscillations in a Single-Gene. It can be used to explore systemsbiology
+  guisoni2016 cis regulatory system crs dynamics and compare simulation behavior across
+  conditions.'
+models:
+- alias: systemsbiology_sbml_guisoni2016_cis_regulatory_system_crs_can_drive_model1611030000_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_guisoni2016_cis_regulatory_system_crs_can_drive_model1611030000_model.state
+  to:
+  - visualisation.systemsbiology_sbml_guisoni2016_cis_regulatory_system_crs_can_drive_model1611030000_model_state
+- from: systemsbiology_sbml_guisoni2016_cis_regulatory_system_crs_can_drive_model1611030000_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_guisoni2016_cis_regulatory_system_crs_can_drive_model1611030000_model_summary
+- from: systemsbiology_sbml_guisoni2016_cis_regulatory_system_crs_can_drive_model1611030000_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_guisoni2016_cis_regulatory_system_crs_can_drive_model1611030000_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_ft
+    maps_to: systemsbiology_sbml_guisoni2016_cis_regulatory_system_crs_can_drive_model1611030000_model.initial_model_state_ft
+    label: Initial Model State Ft
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ft`.
+  - name: initial_model_state_r3
+    maps_to: systemsbiology_sbml_guisoni2016_cis_regulatory_system_crs_can_drive_model1611030000_model.initial_model_state_r3
+    label: Initial Model State R3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `r3`.
+  - name: initial_model_state_r2
+    maps_to: systemsbiology_sbml_guisoni2016_cis_regulatory_system_crs_can_drive_model1611030000_model.initial_model_state_r2
+    label: Initial Model State R2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `r2`.
+  - name: initial_model_state_r1
+    maps_to: systemsbiology_sbml_guisoni2016_cis_regulatory_system_crs_can_drive_model1611030000_model.initial_model_state_r1
+    label: Initial Model State R1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `r1`.
+  - name: initial_model_state_r0
+    maps_to: systemsbiology_sbml_guisoni2016_cis_regulatory_system_crs_can_drive_model1611030000_model.initial_model_state_r0
+    label: Initial Model State R0
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `r0`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_guisoni2016_cis_regulatory_system_crs_can_drive_model1611030000_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_guisoni2016_cis_regulatory_system_crs_can_drive_model1611030000_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_guisoni2016_cis_regulatory_system_crs_can_drive_model1611030000_model.species_labels
+  - name: model_state_ft
+    maps_to: systemsbiology_sbml_guisoni2016_cis_regulatory_system_crs_can_drive_model1611030000_model.model_state_ft
+  - name: model_state_r3
+    maps_to: systemsbiology_sbml_guisoni2016_cis_regulatory_system_crs_can_drive_model1611030000_model.model_state_r3
+  - name: model_state_r2
+    maps_to: systemsbiology_sbml_guisoni2016_cis_regulatory_system_crs_can_drive_model1611030000_model.model_state_r2
+  - name: model_state_r1
+    maps_to: systemsbiology_sbml_guisoni2016_cis_regulatory_system_crs_can_drive_model1611030000_model.model_state_r1
+  - name: model_state_r0
+    maps_to: systemsbiology_sbml_guisoni2016_cis_regulatory_system_crs_can_drive_model1611030000_model.model_state_r0

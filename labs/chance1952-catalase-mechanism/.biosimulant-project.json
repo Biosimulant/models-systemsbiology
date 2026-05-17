@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "39c54e3d-782e-42ed-9608-db0bdffdca6a",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "51a28764-af60-4fe3-9838-fe2c25faf5f9",
+  "created_at": "2026-05-16T05:46:42.294956300+00:00",
+  "last_synced_at": "2026-05-17T02:31:52.019474+00:00",
+  "hub_manifest_hash": "9ce78e5b35a8d43968dc6b0c0701a66220cbe53ce339493e1b6b04dcdb9cd66c",
+  "package_name": "chance1952-catalase-mechanism-lab"
+}

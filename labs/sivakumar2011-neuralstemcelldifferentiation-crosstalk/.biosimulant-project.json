@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "3b3eda19-afc6-43fe-a336-2bad60afb23d",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "a7702b86-68ac-4e44-af5b-d69abb230c2a",
+  "created_at": "2026-05-16T05:46:51.929739753+00:00",
+  "last_synced_at": "2026-05-17T06:13:22.333759+00:00",
+  "hub_manifest_hash": "fbd5cbd9f921a0199124bcd758ca54d7e16d6b43e0c9a1ae2b7848c534c13b34",
+  "package_name": "sivakumar2011-neuralstemcelldifferentiation-crosstalk-lab"
+}

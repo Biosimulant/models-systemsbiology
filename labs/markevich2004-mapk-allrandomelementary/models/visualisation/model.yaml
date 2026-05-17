@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Markevich2004_MAPK_AllRandomElementary Visualisation
+description: Question-and-answer and dynamic visual summaries for Markevich2004_MAPK_AllRandomElementary.
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Markevich2004 Mapk Allrandomelementary Lab
+    question: 'Which signalling variables dominate the simulated network response?
+      Source model: Markevich2004_MAPK_AllRandomElementary.'
+    answer_focus: Q/A table plus signaling timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_markevich2004_mapk_allrandomelementary_biomd0000000030_model
+      title: Markevich2004_MAPK_AllRandomElementary
+      observables:
+      - id: M_MKP_Y
+        port: mapk_mkp_y
+        label: MAPK_MKP_Y
+        group: signaling
+      - id: M_MKP_T
+        port: mapk_mkp_t
+        label: MAPK_MKP_T
+        group: signaling
+      - id: M_MAPKK_Y
+        port: mapk_mapkk_y
+        label: MAPK_MAPKK_Y
+        group: signaling
+      - id: M_MAPKK_T
+        port: mapk_mapkk_t
+        label: MAPK_MAPKK_T
+        group: signaling
+      - id: MpY_MKP_Y
+        port: mapk_py_mkp_y
+        label: MAPK-PY_MKP_Y
+        group: signaling
+      - id: MpY_MKP_T
+        port: mapk_py_mkp_t
+        label: MAPK-PY_MKP_T
+        group: signaling
+io:
+  inputs: []
+  outputs: []

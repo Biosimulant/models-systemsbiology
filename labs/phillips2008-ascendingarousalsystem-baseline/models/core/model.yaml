@@ -1,0 +1,75 @@
+schema_version: '2.0'
+title: Phillips2008_AscendingArousalSystem_Baseline
+description: 'This a model from the article: Sleep deprivation in a quantitative physiologically
+  based model of the ascendingarousal system. It can be used to explore systemsbiology
+  phillips2008 ascendingarousalsystem baseline model1006230110 dynamics and compare
+  simulation behavior across conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- A J K Phillips
+- Robinson PA
+upstream:
+  id: biomodels_ebi:MODEL1006230110
+  source_db: biomodels_ebi
+  source_id: MODEL1006230110
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1006230110
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1006230110?filename=MODEL1006230110_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.phillips2008_ascendingarousalsystem_baseline_model1006230110_model:Phillips2008AscendingarousalsystemBaselineModel1006230110Model
+  init_kwargs:
+    model_path: data/MODEL1006230110.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_vv
+    maps_to: Vv
+    label: Initial Model State Vv
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Vv`.
+  - name: initial_model_state_vm
+    maps_to: Vm
+    label: Initial Model State Vm
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Vm`.
+  - name: initial_model_state_h
+    maps_to: H
+    label: Initial Model State H
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `H`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_vv
+    maps_to: Vv
+    label: Vv
+    description: Vv. Maps to SBML symbol `Vv`.
+  - name: model_state_vm
+    maps_to: Vm
+    label: Vm
+    description: Vm. Maps to SBML symbol `Vm`.
+  - name: model_state_h
+    maps_to: H
+    label: H
+    description: H. Maps to SBML symbol `H`.

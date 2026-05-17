@@ -1,0 +1,86 @@
+schema_version: '2.0'
+title: Suh2004 Kcnq Regulation Lab
+description: The model reproduces FIG 11A and FIG 11B of the paper. However, please
+  note that FIG 11B is a plot of normalised amounts versus time.
+models:
+- alias: systemsbiology_sbml_suh2004_kcnq_regulation_biomd0000000081_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_suh2004_kcnq_regulation_biomd0000000081_model.state
+  to:
+  - visualisation.systemsbiology_sbml_suh2004_kcnq_regulation_biomd0000000081_model_state
+- from: systemsbiology_sbml_suh2004_kcnq_regulation_biomd0000000081_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_suh2004_kcnq_regulation_biomd0000000081_model_summary
+- from: systemsbiology_sbml_suh2004_kcnq_regulation_biomd0000000081_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_suh2004_kcnq_regulation_biomd0000000081_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_atp_c
+    maps_to: systemsbiology_sbml_suh2004_kcnq_regulation_biomd0000000081_model.initial_atp_c
+    label: Initial ATP C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATP_C`.
+  - name: initial_pi_m
+    maps_to: systemsbiology_sbml_suh2004_kcnq_regulation_biomd0000000081_model.initial_pi_m
+    label: Initial Pi M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PI_M`.
+  - name: initial_pip2_m
+    maps_to: systemsbiology_sbml_suh2004_kcnq_regulation_biomd0000000081_model.initial_pip2_m
+    label: Initial Pip2 M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PIP2_M`.
+  - name: initial_mg2_c
+    maps_to: systemsbiology_sbml_suh2004_kcnq_regulation_biomd0000000081_model.initial_mg2_c
+    label: Initial MG2 C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Mg2_C`.
+  - name: initial_pip_m
+    maps_to: systemsbiology_sbml_suh2004_kcnq_regulation_biomd0000000081_model.initial_pip_m
+    label: Initial Pip M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PIP_M`.
+  - name: initial_ggdp_m
+    maps_to: systemsbiology_sbml_suh2004_kcnq_regulation_biomd0000000081_model.initial_ggdp_m
+    label: Initial Ggdp M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `GGDP_M`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_suh2004_kcnq_regulation_biomd0000000081_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_suh2004_kcnq_regulation_biomd0000000081_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_suh2004_kcnq_regulation_biomd0000000081_model.species_labels
+  - name: atp_c
+    maps_to: systemsbiology_sbml_suh2004_kcnq_regulation_biomd0000000081_model.atp_c
+  - name: pi_m
+    maps_to: systemsbiology_sbml_suh2004_kcnq_regulation_biomd0000000081_model.pi_m
+  - name: pip2_m
+    maps_to: systemsbiology_sbml_suh2004_kcnq_regulation_biomd0000000081_model.pip2_m
+  - name: mg2_c
+    maps_to: systemsbiology_sbml_suh2004_kcnq_regulation_biomd0000000081_model.mg2_c
+  - name: pip_m
+    maps_to: systemsbiology_sbml_suh2004_kcnq_regulation_biomd0000000081_model.pip_m
+  - name: ggdp_m
+    maps_to: systemsbiology_sbml_suh2004_kcnq_regulation_biomd0000000081_model.ggdp_m

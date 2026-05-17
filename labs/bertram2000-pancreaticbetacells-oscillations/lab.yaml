@@ -1,0 +1,71 @@
+schema_version: '2.0'
+title: Bertram2000 Pancreaticbetacells Oscillations Lab
+description: 'This a model from the article: The phantom burster model for pancreatic
+  beta-cells. Bertram R, Previte J, Sherman A, Kinard TA, Satin LS.'
+models:
+- alias: systemsbiology_sbml_bertram2000_pancreaticbetacells_oscillations_biomd0000000377_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_bertram2000_pancreaticbetacells_oscillations_biomd0000000377_model.state
+  to:
+  - visualisation.systemsbiology_sbml_bertram2000_pancreaticbetacells_oscillations_biomd0000000377_model_state
+- from: systemsbiology_sbml_bertram2000_pancreaticbetacells_oscillations_biomd0000000377_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_bertram2000_pancreaticbetacells_oscillations_biomd0000000377_model_summary
+- from: systemsbiology_sbml_bertram2000_pancreaticbetacells_oscillations_biomd0000000377_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_bertram2000_pancreaticbetacells_oscillations_biomd0000000377_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_s2
+    maps_to: systemsbiology_sbml_bertram2000_pancreaticbetacells_oscillations_biomd0000000377_model.initial_model_state_s2
+    label: Initial Model State S2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s2`.
+  - name: initial_model_state_s1
+    maps_to: systemsbiology_sbml_bertram2000_pancreaticbetacells_oscillations_biomd0000000377_model.initial_model_state_s1
+    label: Initial Model State S1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s1`.
+  - name: initial_model_state_n
+    maps_to: systemsbiology_sbml_bertram2000_pancreaticbetacells_oscillations_biomd0000000377_model.initial_model_state_n
+    label: Initial Model State N
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `n`.
+  - name: initial_model_state_v
+    maps_to: systemsbiology_sbml_bertram2000_pancreaticbetacells_oscillations_biomd0000000377_model.initial_model_state_v
+    label: Initial Model State V
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `V`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_bertram2000_pancreaticbetacells_oscillations_biomd0000000377_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_bertram2000_pancreaticbetacells_oscillations_biomd0000000377_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_bertram2000_pancreaticbetacells_oscillations_biomd0000000377_model.species_labels
+  - name: model_state_s2
+    maps_to: systemsbiology_sbml_bertram2000_pancreaticbetacells_oscillations_biomd0000000377_model.model_state_s2
+  - name: model_state_s1
+    maps_to: systemsbiology_sbml_bertram2000_pancreaticbetacells_oscillations_biomd0000000377_model.model_state_s1
+  - name: model_state_n
+    maps_to: systemsbiology_sbml_bertram2000_pancreaticbetacells_oscillations_biomd0000000377_model.model_state_n
+  - name: model_state_v
+    maps_to: systemsbiology_sbml_bertram2000_pancreaticbetacells_oscillations_biomd0000000377_model.model_state_v

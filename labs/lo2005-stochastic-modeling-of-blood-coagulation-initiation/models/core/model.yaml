@@ -1,0 +1,105 @@
+schema_version: '2.0'
+title: Lo2005 - Stochastic Modeling of Blood Coagulation Initiation
+description: Simulation results using a stochastic approach to Hockin et al. (2002)
+  mathematical model of the blood coagulation cascade that had been previously simulated
+  using a deterministic method.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Ken Lo
+- William S Denney
+- Scott L Diamond
+upstream:
+  id: biomodels_ebi:MODEL1805160001
+  source_db: biomodels_ebi
+  source_id: MODEL1805160001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1805160001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1805160001?filename=Lo2005.xml
+  license: CC0
+biosim:
+  entrypoint: src.lo2005_stochastic_modeling_of_blood_coagulation_model1805160001_model:Lo2005StochasticModelingOfBloodCoagulationModel1805160001Model
+  init_kwargs:
+    model_path: data/MODEL1805160001.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_m_i_ia_atiii
+    maps_to: mIIa_ATIII
+    label: Initial M I Ia Atiii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mIIa_ATIII`.
+  - name: initial_m_i_ia
+    maps_to: mIIa
+    label: Initial M I Ia
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mIIa`.
+  - name: initial_xa_va_ii
+    maps_to: Xa_Va_II
+    label: Initial Xa Va Ii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_Va_II`.
+  - name: initial_xa_va
+    maps_to: Xa_Va
+    label: Initial Xa Va
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_Va`.
+  - name: initial_xa_tfpi
+    maps_to: Xa_TFPI
+    label: Initial Xa Tfpi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_TFPI`.
+  - name: initial_xa_atiii
+    maps_to: Xa_ATIII
+    label: Initial Xa Atiii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_ATIII`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: m_i_ia_atiii
+    maps_to: mIIa_ATIII
+    label: mIIa-ATIII
+    description: mIIa-ATIII. Maps to SBML symbol `mIIa_ATIII`.
+  - name: m_i_ia
+    maps_to: mIIa
+    label: mIIa
+    description: mIIa. Maps to SBML symbol `mIIa`.
+  - name: xa_va_ii
+    maps_to: Xa_Va_II
+    label: Xa-Va-II
+    description: Xa-Va-II. Maps to SBML symbol `Xa_Va_II`.
+  - name: xa_va
+    maps_to: Xa_Va
+    label: Xa-Va
+    description: Xa-Va. Maps to SBML symbol `Xa_Va`.
+  - name: xa_tfpi
+    maps_to: Xa_TFPI
+    label: Xa-TFPI
+    description: Xa-TFPI. Maps to SBML symbol `Xa_TFPI`.
+  - name: xa_atiii
+    maps_to: Xa_ATIII
+    label: Xa-ATIII
+    description: Xa-ATIII. Maps to SBML symbol `Xa_ATIII`.

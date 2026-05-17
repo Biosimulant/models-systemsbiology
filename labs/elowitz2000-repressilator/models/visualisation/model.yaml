@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Elowitz2000 - Repressilator Visualisation
+description: Question-and-answer and dynamic visual summaries for Elowitz2000 - Repressilator.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Elowitz2000 Repressilator Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Elowitz2000 - Repressilator.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_elowitz2000_repressilator_biomd0000000012_model
+      title: Elowitz2000 - Repressilator
+      observables:
+      - id: PZ
+        port: c_i_protein
+        label: cI protein
+        group: gene_regulation
+      - id: PY
+        port: tet_r_protein
+        label: TetR protein
+        group: gene_regulation
+      - id: PX
+        port: lac_i_protein
+        label: LacI protein
+        group: gene_regulation
+      - id: Y
+        port: tet_r_mrna
+        label: TetR mRNA
+        group: gene_regulation
+      - id: Z
+        port: c_i_mrna
+        label: cI mRNA
+        group: gene_regulation
+      - id: X
+        port: lac_i_mrna
+        label: LacI mRNA
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

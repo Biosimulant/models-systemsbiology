@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "f63dd8ee-42f8-49d8-9c2f-bd72a7c1cc12",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "fb75f86e-977f-460e-ac31-5238c8032d3a",
+  "created_at": "2026-05-16T05:46:53.515969892+00:00",
+  "last_synced_at": "2026-05-17T07:06:00.361632+00:00",
+  "hub_manifest_hash": "53396ce8e71b0a126abba127685e4864e7997f0ad0aaf2abd075dc7b5c62e12d",
+  "package_name": "zager2007-genistein-biliary-excretion-lab"
+}

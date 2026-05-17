@@ -1,0 +1,86 @@
+schema_version: '2.0'
+title: Olsen2003 Peroxidase Lab
+description: 'Notes of the BioModels curators: The current model reproduce the figure
+  7, panel B of the paper. Note that there is a typo in the figure.'
+models:
+- alias: systemsbiology_sbml_olsen2003_peroxidase_biomd0000000046_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_olsen2003_peroxidase_biomd0000000046_model.state
+  to:
+  - visualisation.systemsbiology_sbml_olsen2003_peroxidase_biomd0000000046_model_state
+- from: systemsbiology_sbml_olsen2003_peroxidase_biomd0000000046_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_olsen2003_peroxidase_biomd0000000046_model_summary
+- from: systemsbiology_sbml_olsen2003_peroxidase_biomd0000000046_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_olsen2003_peroxidase_biomd0000000046_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_na_drad
+    maps_to: systemsbiology_sbml_olsen2003_peroxidase_biomd0000000046_model.initial_na_drad
+    label: Initial Na Drad
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NADrad`.
+  - name: initial_nad_hres
+    maps_to: systemsbiology_sbml_olsen2003_peroxidase_biomd0000000046_model.initial_nad_hres
+    label: Initial Nad Hres
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NADHres`.
+  - name: initial_nadh
+    maps_to: systemsbiology_sbml_olsen2003_peroxidase_biomd0000000046_model.initial_nadh
+    label: Initial Nadh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NADH`.
+  - name: initial_nad2
+    maps_to: systemsbiology_sbml_olsen2003_peroxidase_biomd0000000046_model.initial_nad2
+    label: Initial Nad2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NAD2`.
+  - name: initial_model_state_nad
+    maps_to: systemsbiology_sbml_olsen2003_peroxidase_biomd0000000046_model.initial_model_state_nad
+    label: Initial Model State Nad
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NAD`.
+  - name: initial_ar_h
+    maps_to: systemsbiology_sbml_olsen2003_peroxidase_biomd0000000046_model.initial_ar_h
+    label: Initial Ar H
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ArH`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_olsen2003_peroxidase_biomd0000000046_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_olsen2003_peroxidase_biomd0000000046_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_olsen2003_peroxidase_biomd0000000046_model.species_labels
+  - name: na_drad
+    maps_to: systemsbiology_sbml_olsen2003_peroxidase_biomd0000000046_model.na_drad
+  - name: nad_hres
+    maps_to: systemsbiology_sbml_olsen2003_peroxidase_biomd0000000046_model.nad_hres
+  - name: nadh
+    maps_to: systemsbiology_sbml_olsen2003_peroxidase_biomd0000000046_model.nadh
+  - name: nad2
+    maps_to: systemsbiology_sbml_olsen2003_peroxidase_biomd0000000046_model.nad2
+  - name: nad
+    maps_to: systemsbiology_sbml_olsen2003_peroxidase_biomd0000000046_model.nad
+  - name: ar_h
+    maps_to: systemsbiology_sbml_olsen2003_peroxidase_biomd0000000046_model.ar_h

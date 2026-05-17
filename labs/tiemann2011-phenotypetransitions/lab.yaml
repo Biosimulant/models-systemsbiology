@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Tiemann2011 Phenotypetransitions Lab
+description: To the extent possible under law, all copyright and related or neighbouring
+  rights to this encoded model have been dedicated to the public domain worldwide.
+  It can be used to explore systemsbiology tiemann2011 phenotypetransitions model1112150000
+  dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_tiemann2011_phenotypetransitions_model1112150000_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_tiemann2011_phenotypetransitions_model1112150000_model.state
+  to:
+  - visualisation.systemsbiology_sbml_tiemann2011_phenotypetransitions_model1112150000_model_state
+- from: systemsbiology_sbml_tiemann2011_phenotypetransitions_model1112150000_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_tiemann2011_phenotypetransitions_model1112150000_model_summary
+- from: systemsbiology_sbml_tiemann2011_phenotypetransitions_model1112150000_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_tiemann2011_phenotypetransitions_model1112150000_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_tg_cyt
+    maps_to: systemsbiology_sbml_tiemann2011_phenotypetransitions_model1112150000_model.initial_tg_cyt
+    label: Initial Tg Cyt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_4`.
+  - name: initial_model_state_fc
+    maps_to: systemsbiology_sbml_tiemann2011_phenotypetransitions_model1112150000_model.initial_model_state_fc
+    label: Initial Model State Fc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_1`.
+  - name: initial_ce_hdl
+    maps_to: systemsbiology_sbml_tiemann2011_phenotypetransitions_model1112150000_model.initial_ce_hdl
+    label: Initial Ce Hdl
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_8`.
+  - name: initial_ce_cyt
+    maps_to: systemsbiology_sbml_tiemann2011_phenotypetransitions_model1112150000_model.initial_ce_cyt
+    label: Initial Ce Cyt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_2`.
+  - name: initial_ce_plasma
+    maps_to: systemsbiology_sbml_tiemann2011_phenotypetransitions_model1112150000_model.initial_ce_plasma
+    label: Initial Ce Plasma
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_7`.
+  - name: initial_tg_plasma
+    maps_to: systemsbiology_sbml_tiemann2011_phenotypetransitions_model1112150000_model.initial_tg_plasma
+    label: Initial Tg Plasma
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_6`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_tiemann2011_phenotypetransitions_model1112150000_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_tiemann2011_phenotypetransitions_model1112150000_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_tiemann2011_phenotypetransitions_model1112150000_model.species_labels
+  - name: tg_cyt
+    maps_to: systemsbiology_sbml_tiemann2011_phenotypetransitions_model1112150000_model.tg_cyt
+  - name: model_state_fc
+    maps_to: systemsbiology_sbml_tiemann2011_phenotypetransitions_model1112150000_model.model_state_fc
+  - name: ce_hdl
+    maps_to: systemsbiology_sbml_tiemann2011_phenotypetransitions_model1112150000_model.ce_hdl
+  - name: ce_cyt
+    maps_to: systemsbiology_sbml_tiemann2011_phenotypetransitions_model1112150000_model.ce_cyt
+  - name: ce_plasma
+    maps_to: systemsbiology_sbml_tiemann2011_phenotypetransitions_model1112150000_model.ce_plasma
+  - name: tg_plasma
+    maps_to: systemsbiology_sbml_tiemann2011_phenotypetransitions_model1112150000_model.tg_plasma

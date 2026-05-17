@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "09db76af-f6e4-406c-98ba-d172c1bc22b3",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "1907f9c6-7401-43a2-80ba-a7c15887bc73",
+  "created_at": "2026-05-16T05:46:46.855522722+00:00",
+  "last_synced_at": "2026-05-17T04:51:49.435478+00:00",
+  "hub_manifest_hash": "af7badb8ab4af9e87c76ff03074aa43be1f96bbb1cd49d9a6fa1a7dad73ef3b9",
+  "package_name": "marwan2003-genetics-regulatory-hierarchy-between-genes-lab"
+}

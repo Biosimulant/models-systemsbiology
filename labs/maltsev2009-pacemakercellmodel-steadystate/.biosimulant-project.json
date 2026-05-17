@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "2623f85c-02a1-4d16-a340-915cd97dd61d",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "0f34ebc5-0ba5-4e8c-a9f3-0c0bea182e9d",
+  "created_at": "2026-05-16T05:46:46.368751321+00:00",
+  "last_synced_at": "2026-05-17T04:44:53.711680+00:00",
+  "hub_manifest_hash": "f120f32c44839d8819c0cdb2a65ccd75caca27cbf1f82d9f4db8dd57168a7663",
+  "package_name": "maltsev2009-pacemakercellmodel-steadystate-lab"
+}

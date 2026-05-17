@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Fridlyand2003_Calcium_flux
+description: The model reproduces block A of Fig 5 and also Fig 3 (without the inclusion
+  of Tg action). The model was successfully tested on MathSBML To the extent possible
+  under law, all copyright and related or.
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Leonid E Fridlyand
+- Natalia Tamarina
+- Louis H Philipson
+upstream:
+  id: biomodels_ebi:BIOMD0000000059
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000059
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000059
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000059?filename=BIOMD0000000059_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.fridlyand2003_calcium_flux_biomd0000000059_model:Fridlyand2003CalciumFluxBiomd0000000059Model
+  init_kwargs:
+    model_path: data/BIOMD0000000059.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_cytosolic_adp
+    maps_to: ADP_cyt
+    label: Initial Cytosolic ADP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ADP_cyt`.
+  - name: initial_cytosolic_atp
+    maps_to: ATP_cyt
+    label: Initial Cytosolic ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATP_cyt`.
+  - name: initial_cytosolic_sodium
+    maps_to: Na_cyt
+    label: Initial Cytosolic Sodium
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Na_cyt`.
+  - name: initial_er_calcium
+    maps_to: Ca_er
+    label: Initial Er Calcium
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_er`.
+  - name: initial_cytosolic_ip3
+    maps_to: IP3_cyt
+    label: Initial Cytosolic IP3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IP3_cyt`.
+  - name: initial_cytosolic_calcium
+    maps_to: Ca_cyt
+    label: Initial Cytosolic Calcium
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_cyt`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: cytosolic_adp
+    maps_to: ADP_cyt
+    label: Cytosolic ADP
+    description: Cytosolic ADP. Maps to SBML symbol `ADP_cyt`.
+  - name: cytosolic_atp
+    maps_to: ATP_cyt
+    label: Cytosolic ATP
+    description: Cytosolic ATP. Maps to SBML symbol `ATP_cyt`.
+  - name: cytosolic_sodium
+    maps_to: Na_cyt
+    label: Cytosolic Sodium
+    description: Cytosolic Sodium. Maps to SBML symbol `Na_cyt`.
+  - name: er_calcium
+    maps_to: Ca_er
+    label: ER Calcium
+    description: ER Calcium. Maps to SBML symbol `Ca_er`.
+  - name: cytosolic_ip3
+    maps_to: IP3_cyt
+    label: Cytosolic IP3
+    description: Cytosolic IP3. Maps to SBML symbol `IP3_cyt`.
+  - name: cytosolic_calcium
+    maps_to: Ca_cyt
+    label: Cytosolic Calcium
+    description: Cytosolic Calcium. Maps to SBML symbol `Ca_cyt`.

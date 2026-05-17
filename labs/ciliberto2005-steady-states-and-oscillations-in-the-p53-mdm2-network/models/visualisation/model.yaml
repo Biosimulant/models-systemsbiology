@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: Ciliberto2005 - Steady states and oscillations in the p53/Mdm2 network Visualisation
+description: Question-and-answer and dynamic visual summaries for Ciliberto2005 -
+  Steady states and oscillations in the p53/Mdm2 network.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Ciliberto2005 Steady States And Oscillations In The P53 Mdm2 Network
+      Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Ciliberto2005 - Steady states and oscillations in the p53/Mdm2
+      network.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_ciliberto2005_steady_states_and_oscillations_in_biomd0000001006_model
+      title: Ciliberto2005 - Steady states and oscillations in the p53/Mdm2 network
+      observables:
+      - id: Mdm2_p_nuc
+        port: mdm2_p_nuc
+        label: Mdm2_p_nuc
+        group: signaling
+      - id: MDM2_total
+        port: mdm2_total
+        label: MDM2_total
+        group: signaling
+      - id: Mdm2_cyt
+        port: mdm2_cyt
+        label: Mdm2_cyt
+        group: signaling
+      - id: p53_total
+        port: p53_total
+        label: p53_total
+        group: signaling
+      - id: p53
+        port: p53
+        label: p53
+        group: signaling
+      - id: p53_ub
+        port: p53_ub
+        label: p53_ub
+        group: signaling
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,92 @@
+schema_version: '2.0'
+title: Wang2007 Atp Induced Intracellular Calcium Oscillation Lab
+description: Wang2007 - ATP induced intracellular Calicum Oscillation The model simulate
+  the ATP-induced intracellular Ca 2+ oscillations and the quantitative effect of
+  ATP concentration on the oscillation charact. It can be used to explore systemsbiology
+  wang2007 atp induced intracellular calcium dynamics and compare simulation behavior
+  across conditions.
+models:
+- alias: systemsbiology_sbml_wang2007_atp_induced_intracellular_calcium_oscil_biomd0000000145_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_wang2007_atp_induced_intracellular_calcium_oscil_biomd0000000145_model.state
+  to:
+  - visualisation.systemsbiology_sbml_wang2007_atp_induced_intracellular_calcium_oscil_biomd0000000145_model_state
+- from: systemsbiology_sbml_wang2007_atp_induced_intracellular_calcium_oscil_biomd0000000145_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_wang2007_atp_induced_intracellular_calcium_oscil_biomd0000000145_model_summary
+- from: systemsbiology_sbml_wang2007_atp_induced_intracellular_calcium_oscil_biomd0000000145_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_wang2007_atp_induced_intracellular_calcium_oscil_biomd0000000145_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- cellcycle
+- metabolism
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_calcium
+    maps_to: systemsbiology_sbml_wang2007_atp_induced_intracellular_calcium_oscil_biomd0000000145_model.initial_calcium
+    label: Initial Calcium
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_ER`.
+  - name: initial_calcium_2
+    maps_to: systemsbiology_sbml_wang2007_atp_induced_intracellular_calcium_oscil_biomd0000000145_model.initial_calcium_2
+    label: Initial Calcium 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_Cyt`.
+  - name: initial_galpha_gtp
+    maps_to: systemsbiology_sbml_wang2007_atp_induced_intracellular_calcium_oscil_biomd0000000145_model.initial_galpha_gtp
+    label: Initial Galpha Gtp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Galpha_GTP`.
+  - name: initial_diacylglycerol
+    maps_to: systemsbiology_sbml_wang2007_atp_induced_intracellular_calcium_oscil_biomd0000000145_model.initial_diacylglycerol
+    label: Initial Diacylglycerol
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `DG`.
+  - name: initial_aplc
+    maps_to: systemsbiology_sbml_wang2007_atp_induced_intracellular_calcium_oscil_biomd0000000145_model.initial_aplc
+    label: Initial Aplc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `APLC`.
+  - name: initial_model_state_plc
+    maps_to: systemsbiology_sbml_wang2007_atp_induced_intracellular_calcium_oscil_biomd0000000145_model.initial_model_state_plc
+    label: Initial Model State Plc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PLC`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_wang2007_atp_induced_intracellular_calcium_oscil_biomd0000000145_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_wang2007_atp_induced_intracellular_calcium_oscil_biomd0000000145_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_wang2007_atp_induced_intracellular_calcium_oscil_biomd0000000145_model.species_labels
+  - name: calcium
+    maps_to: systemsbiology_sbml_wang2007_atp_induced_intracellular_calcium_oscil_biomd0000000145_model.calcium
+  - name: calcium_2
+    maps_to: systemsbiology_sbml_wang2007_atp_induced_intracellular_calcium_oscil_biomd0000000145_model.calcium_2
+  - name: galpha_gtp
+    maps_to: systemsbiology_sbml_wang2007_atp_induced_intracellular_calcium_oscil_biomd0000000145_model.galpha_gtp
+  - name: diacylglycerol
+    maps_to: systemsbiology_sbml_wang2007_atp_induced_intracellular_calcium_oscil_biomd0000000145_model.diacylglycerol
+  - name: aplc
+    maps_to: systemsbiology_sbml_wang2007_atp_induced_intracellular_calcium_oscil_biomd0000000145_model.aplc
+  - name: plc
+    maps_to: systemsbiology_sbml_wang2007_atp_induced_intracellular_calcium_oscil_biomd0000000145_model.plc

@@ -1,0 +1,65 @@
+schema_version: '2.0'
+title: Wu2006_K+Channel
+description: The model is described in the paper by Wu and Chang (2006). Diethyl pyrocarbonate,
+  a histidine-modifying agent, directly stimulates activity of ATP-sensitive potassium
+  channels in pituitary GH3 cells.
+standard: other
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Sheng-Nan Wu
+- Han-Dong Chang
+upstream:
+  id: biomodels_ebi:BIOMD0000000124
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000124
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000124
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000124?filename=BIOMD0000000124_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.wu2006_k_channel_biomd0000000124_model:Wu2006KChannelBiomd0000000124Model
+  init_kwargs:
+    model_path: data/BIOMD0000000124.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_er_ca_concentration
+    maps_to: cer
+    label: Initial Er Ca Concentration
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cer`.
+  - name: initial_cytosolic_free_ca_concentration
+    maps_to: c
+    label: Initial Cytosolic Free Ca Concentration
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `c`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: er_ca_concentration
+    maps_to: cer
+    label: ER ca concentration
+    description: ER ca concentration. Maps to SBML symbol `cer`.
+  - name: cytosolic_free_ca_concentration
+    maps_to: c
+    label: cytosolic free ca concentration
+    description: cytosolic free ca concentration. Maps to SBML symbol `c`.

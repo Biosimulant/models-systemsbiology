@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "dca9a6d1-ad76-4a18-8eb8-475273cbdc81",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "dde87942-78b5-4ac2-8135-7425efe63e1d",
+  "created_at": "2026-05-16T05:46:50.825432785+00:00",
+  "last_synced_at": "2026-05-17T09:38:12.621526+00:00",
+  "hub_manifest_hash": "176e07ae8e9382e347b69c6f55fe165df84f80a5f0544bc4efa8a15a7836e3c2",
+  "package_name": "model1704110000-proctor2017-identifying-microrna-for-muscle-rege"
+}

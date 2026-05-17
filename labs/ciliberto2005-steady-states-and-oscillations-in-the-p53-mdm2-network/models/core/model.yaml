@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Ciliberto2005 - Steady states and oscillations in the p53/Mdm2 network
+description: Its a mathematial model studying steady state and oscialltions in p53-MDM2
+  network triggered by IR induced DNA Damage. It can be used to explore systemsbiology
+  ciliberto2005 steady states and oscillations dynamics and compare simulation behavior
+  across conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Andrea Ciliberto
+- Béla Novak
+- John J Tyson
+upstream:
+  id: biomodels_ebi:BIOMD0000001006
+  source_db: biomodels_ebi
+  source_id: BIOMD0000001006
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001006
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001006?filename=Ciliberto2005.xml
+  license: CC0
+biosim:
+  entrypoint: src.ciliberto2005_steady_states_and_oscillations_in_biomd0000001006_model:Ciliberto2005SteadyStatesAndOscillationsInBiomd0000001006Model
+  init_kwargs:
+    model_path: data/BIOMD0000001006.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_mdm2_p_nuc
+    maps_to: Mdm2_p_nuc
+    label: Initial Mdm2 P Nuc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Mdm2_p_nuc`.
+  - name: initial_mdm2_total
+    maps_to: MDM2_total
+    label: Initial Mdm2 Total
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MDM2_total`.
+  - name: initial_mdm2_cyt
+    maps_to: Mdm2_cyt
+    label: Initial Mdm2 Cyt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Mdm2_cyt`.
+  - name: initial_p53_total
+    maps_to: p53_total
+    label: Initial P53 Total
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `p53_total`.
+  - name: initial_model_state_p53
+    maps_to: p53
+    label: Initial Model State P53
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `p53`.
+  - name: initial_p53_ub
+    maps_to: p53_ub
+    label: Initial P53 Ub
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `p53_ub`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: mdm2_p_nuc
+    maps_to: Mdm2_p_nuc
+    label: Mdm2_p_nuc
+    description: Mdm2_p_nuc. Maps to SBML symbol `Mdm2_p_nuc`.
+  - name: mdm2_total
+    maps_to: MDM2_total
+    label: MDM2_total
+    description: MDM2_total. Maps to SBML symbol `MDM2_total`.
+  - name: mdm2_cyt
+    maps_to: Mdm2_cyt
+    label: Mdm2_cyt
+    description: Mdm2_cyt. Maps to SBML symbol `Mdm2_cyt`.
+  - name: p53_total
+    maps_to: p53_total
+    label: p53_total
+    description: p53_total. Maps to SBML symbol `p53_total`.
+  - name: p53
+    maps_to: p53
+    label: p53
+    description: p53. Maps to SBML symbol `p53`.
+  - name: p53_ub
+    maps_to: p53_ub
+    label: p53_ub
+    description: p53_ub. Maps to SBML symbol `p53_ub`.

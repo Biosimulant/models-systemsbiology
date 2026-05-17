@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Smallbone2011 Trehalosebiosynthesis Lab
+description: 'This model is from the article: Building a Kinetic Model of Trehalose
+  Biosynthesis in Saccharomyces cerevisiae. Smallbone K, Malys N, Messiha HL, Wishart
+  JA, Simeonidis E.'
+models:
+- alias: systemsbiology_sbml_smallbone2011_trehalosebiosynthesis_biomd0000000380_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_smallbone2011_trehalosebiosynthesis_biomd0000000380_model.state
+  to:
+  - visualisation.systemsbiology_sbml_smallbone2011_trehalosebiosynthesis_biomd0000000380_model_state
+- from: systemsbiology_sbml_smallbone2011_trehalosebiosynthesis_biomd0000000380_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_smallbone2011_trehalosebiosynthesis_biomd0000000380_model_summary
+- from: systemsbiology_sbml_smallbone2011_trehalosebiosynthesis_biomd0000000380_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_smallbone2011_trehalosebiosynthesis_biomd0000000380_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_glucose
+    maps_to: systemsbiology_sbml_smallbone2011_trehalosebiosynthesis_biomd0000000380_model.initial_glucose
+    label: Initial Glucose
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `glx`.
+  - name: initial_glucose_6_phosphate
+    maps_to: systemsbiology_sbml_smallbone2011_trehalosebiosynthesis_biomd0000000380_model.initial_glucose_6_phosphate
+    label: Initial Glucose 6 Phosphate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `g6p`.
+  - name: initial_udp_glucose
+    maps_to: systemsbiology_sbml_smallbone2011_trehalosebiosynthesis_biomd0000000380_model.initial_udp_glucose
+    label: Initial Udp Glucose
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `udg`.
+  - name: initial_glucose_1_phosphate
+    maps_to: systemsbiology_sbml_smallbone2011_trehalosebiosynthesis_biomd0000000380_model.initial_glucose_1_phosphate
+    label: Initial Glucose 1 Phosphate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `g1p`.
+  - name: initial_glucose_2
+    maps_to: systemsbiology_sbml_smallbone2011_trehalosebiosynthesis_biomd0000000380_model.initial_glucose_2
+    label: Initial Glucose 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `glc`.
+  - name: initial_model_state_atp
+    maps_to: systemsbiology_sbml_smallbone2011_trehalosebiosynthesis_biomd0000000380_model.initial_model_state_atp
+    label: Initial Model State ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `atp`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_smallbone2011_trehalosebiosynthesis_biomd0000000380_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_smallbone2011_trehalosebiosynthesis_biomd0000000380_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_smallbone2011_trehalosebiosynthesis_biomd0000000380_model.species_labels
+  - name: glucose
+    maps_to: systemsbiology_sbml_smallbone2011_trehalosebiosynthesis_biomd0000000380_model.glucose
+  - name: glucose_6_phosphate
+    maps_to: systemsbiology_sbml_smallbone2011_trehalosebiosynthesis_biomd0000000380_model.glucose_6_phosphate
+  - name: udp_glucose
+    maps_to: systemsbiology_sbml_smallbone2011_trehalosebiosynthesis_biomd0000000380_model.udp_glucose
+  - name: glucose_1_phosphate
+    maps_to: systemsbiology_sbml_smallbone2011_trehalosebiosynthesis_biomd0000000380_model.glucose_1_phosphate
+  - name: glucose_2
+    maps_to: systemsbiology_sbml_smallbone2011_trehalosebiosynthesis_biomd0000000380_model.glucose_2
+  - name: atp
+    maps_to: systemsbiology_sbml_smallbone2011_trehalosebiosynthesis_biomd0000000380_model.atp

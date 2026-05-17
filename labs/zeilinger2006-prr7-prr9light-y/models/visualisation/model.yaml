@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Zeilinger2006_PRR7-PRR9light-Y Visualisation
+description: Question-and-answer and dynamic visual summaries for Zeilinger2006_PRR7-PRR9light-Y.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Zeilinger2006 Prr7 Prr9light Y Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Zeilinger2006_PRR7-PRR9light-Y.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_zeilinger2006_prr7_prr9light_y_biomd0000000096_model
+      title: Zeilinger2006_PRR7-PRR9light-Y
+      observables:
+      - id: cYc
+        port: c_yc
+        label: cYc
+        group: growth_fate
+      - id: cYn
+        port: c_yn
+        label: cYn
+        group: growth_fate
+      - id: cXn
+        port: c_xn
+        label: cXn
+        group: growth_fate
+      - id: cTc
+        port: c_tc
+        label: cTc
+        group: growth_fate
+      - id: cTn
+        port: c_tn
+        label: cTn
+        group: growth_fate
+      - id: cTm
+        port: c_tm
+        label: cTm
+        group: growth_fate
+io:
+  inputs: []
+  outputs: []

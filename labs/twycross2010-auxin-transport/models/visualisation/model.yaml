@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Twycross2010_Auxin_Transport Visualisation
+description: Question-and-answer and dynamic visual summaries for Twycross2010_Auxin_Transport.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Twycross2010 Auxin Transport Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Twycross2010_Auxin_Transport.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_twycross2010_auxin_transport_model1005200000_model
+      title: Twycross2010_Auxin_Transport
+      observables:
+      - id: ext
+        port: ext
+        label: ext
+        group: physiology
+      - id: c9
+        port: model_state_c9
+        label: c9
+        group: physiology
+      - id: c8
+        port: model_state_c8
+        label: c8
+        group: physiology
+      - id: c7
+        port: model_state_c7
+        label: c7
+        group: physiology
+      - id: c6
+        port: model_state_c6
+        label: c6
+        group: physiology
+      - id: c5
+        port: model_state_c5
+        label: c5
+        group: physiology
+io:
+  inputs: []
+  outputs: []

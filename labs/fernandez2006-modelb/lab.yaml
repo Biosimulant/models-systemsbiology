@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Fernandez2006 Modelb Lab
+description: To the extent possible under law, all copyright and related or neighbouring
+  rights to this encoded model have been dedicated to the public domain worldwide.
+  It can be used to explore systemsbiology fernandez2006 modelb BioModels0000000153
+  dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_fernandez2006_modelb_biomd0000000153_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_fernandez2006_modelb_biomd0000000153_model.state
+  to:
+  - visualisation.systemsbiology_sbml_fernandez2006_modelb_biomd0000000153_model_state
+- from: systemsbiology_sbml_fernandez2006_modelb_biomd0000000153_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_fernandez2006_modelb_biomd0000000153_model_summary
+- from: systemsbiology_sbml_fernandez2006_modelb_biomd0000000153_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_fernandez2006_modelb_biomd0000000153_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_camp_r2_c2
+    maps_to: systemsbiology_sbml_fernandez2006_modelb_biomd0000000153_model.initial_camp_r2_c2
+    label: Initial CAMP R2 C2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cAMP_R2C2`.
+  - name: initial_camp_pdep
+    maps_to: systemsbiology_sbml_fernandez2006_modelb_biomd0000000153_model.initial_camp_pdep
+    label: Initial CAMP Pdep
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cAMP_PDEP`.
+  - name: initial_camp_pde
+    maps_to: systemsbiology_sbml_fernandez2006_modelb_biomd0000000153_model.initial_camp_pde
+    label: Initial CAMP Pde
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cAMP_PDE`.
+  - name: initial_camp4_r2_c2
+    maps_to: systemsbiology_sbml_fernandez2006_modelb_biomd0000000153_model.initial_camp4_r2_c2
+    label: Initial Camp4 R2 C2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cAMP4_R2C2`.
+  - name: initial_camp4_r2_c
+    maps_to: systemsbiology_sbml_fernandez2006_modelb_biomd0000000153_model.initial_camp4_r2_c
+    label: Initial Camp4 R2 C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cAMP4_R2C`.
+  - name: initial_camp4_r2
+    maps_to: systemsbiology_sbml_fernandez2006_modelb_biomd0000000153_model.initial_camp4_r2
+    label: Initial Camp4 R2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cAMP4_R2`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_fernandez2006_modelb_biomd0000000153_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_fernandez2006_modelb_biomd0000000153_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_fernandez2006_modelb_biomd0000000153_model.species_labels
+  - name: camp_r2_c2
+    maps_to: systemsbiology_sbml_fernandez2006_modelb_biomd0000000153_model.camp_r2_c2
+  - name: camp_pdep
+    maps_to: systemsbiology_sbml_fernandez2006_modelb_biomd0000000153_model.camp_pdep
+  - name: camp_pde
+    maps_to: systemsbiology_sbml_fernandez2006_modelb_biomd0000000153_model.camp_pde
+  - name: camp4_r2_c2
+    maps_to: systemsbiology_sbml_fernandez2006_modelb_biomd0000000153_model.camp4_r2_c2
+  - name: camp4_r2_c
+    maps_to: systemsbiology_sbml_fernandez2006_modelb_biomd0000000153_model.camp4_r2_c
+  - name: camp4_r2
+    maps_to: systemsbiology_sbml_fernandez2006_modelb_biomd0000000153_model.camp4_r2

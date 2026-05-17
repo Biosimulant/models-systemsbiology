@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Arnold2011 Laisk2006 Calvincycle Starch Sucrose Lab
+description: 'This model is from the article: A quantitative comparison of Calvin–Benson
+  cycle models Anne Arnold, Zoran Nikoloski Trends in Plant Science 2011 Oct 14. It
+  can be used to explore systemsbiology arnold2011 laisk2006 calvincycle starch sucrose
+  dynamics and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_arnold2011_laisk2006_calvincycle_starch_sucrose_biomd0000000392_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_arnold2011_laisk2006_calvincycle_starch_sucrose_biomd0000000392_model.state
+  to:
+  - visualisation.systemsbiology_sbml_arnold2011_laisk2006_calvincycle_starch_sucrose_biomd0000000392_model_state
+- from: systemsbiology_sbml_arnold2011_laisk2006_calvincycle_starch_sucrose_biomd0000000392_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_arnold2011_laisk2006_calvincycle_starch_sucrose_biomd0000000392_model_summary
+- from: systemsbiology_sbml_arnold2011_laisk2006_calvincycle_starch_sucrose_biomd0000000392_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_arnold2011_laisk2006_calvincycle_starch_sucrose_biomd0000000392_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_hc
+    maps_to: systemsbiology_sbml_arnold2011_laisk2006_calvincycle_starch_sucrose_biomd0000000392_model.initial_model_state_hc
+    label: Initial Model State Hc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Hc`.
+  - name: initial_model_state_pi
+    maps_to: systemsbiology_sbml_arnold2011_laisk2006_calvincycle_starch_sucrose_biomd0000000392_model.initial_model_state_pi
+    label: Initial Model State Pi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pi`.
+  - name: initial_he_pc
+    maps_to: systemsbiology_sbml_arnold2011_laisk2006_calvincycle_starch_sucrose_biomd0000000392_model.initial_he_pc
+    label: Initial He Pc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `HePc`.
+  - name: initial_model_state_pga
+    maps_to: systemsbiology_sbml_arnold2011_laisk2006_calvincycle_starch_sucrose_biomd0000000392_model.initial_model_state_pga
+    label: Initial Model State Pga
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PGA`.
+  - name: initial_t_pc
+    maps_to: systemsbiology_sbml_arnold2011_laisk2006_calvincycle_starch_sucrose_biomd0000000392_model.initial_t_pc
+    label: Initial T Pc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TPc`.
+  - name: initial_he_p
+    maps_to: systemsbiology_sbml_arnold2011_laisk2006_calvincycle_starch_sucrose_biomd0000000392_model.initial_he_p
+    label: Initial He P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `HeP`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_arnold2011_laisk2006_calvincycle_starch_sucrose_biomd0000000392_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_arnold2011_laisk2006_calvincycle_starch_sucrose_biomd0000000392_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_arnold2011_laisk2006_calvincycle_starch_sucrose_biomd0000000392_model.species_labels
+  - name: model_state_hc
+    maps_to: systemsbiology_sbml_arnold2011_laisk2006_calvincycle_starch_sucrose_biomd0000000392_model.model_state_hc
+  - name: model_state_pi
+    maps_to: systemsbiology_sbml_arnold2011_laisk2006_calvincycle_starch_sucrose_biomd0000000392_model.model_state_pi
+  - name: he_pc
+    maps_to: systemsbiology_sbml_arnold2011_laisk2006_calvincycle_starch_sucrose_biomd0000000392_model.he_pc
+  - name: pga
+    maps_to: systemsbiology_sbml_arnold2011_laisk2006_calvincycle_starch_sucrose_biomd0000000392_model.pga
+  - name: t_pc
+    maps_to: systemsbiology_sbml_arnold2011_laisk2006_calvincycle_starch_sucrose_biomd0000000392_model.t_pc
+  - name: he_p
+    maps_to: systemsbiology_sbml_arnold2011_laisk2006_calvincycle_starch_sucrose_biomd0000000392_model.he_p

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "2b340ac4-771f-4061-bb00-490d67f0b5b5",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "0c5d3d9e-e24c-47a2-b674-c015e6eb8741",
+  "created_at": "2026-05-16T05:46:52.786515259+00:00",
+  "last_synced_at": "2026-05-17T06:38:22.985454+00:00",
+  "hub_manifest_hash": "ee109400fba5675a0e20988824d2d7a17601e85e079a3bcd98948396e305d03f",
+  "package_name": "vilar2006-tgfbeta-lab"
+}

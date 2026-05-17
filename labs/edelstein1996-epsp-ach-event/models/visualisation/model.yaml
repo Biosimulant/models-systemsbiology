@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Edelstein1996 - EPSP ACh event Visualisation
+description: Question-and-answer and dynamic visual summaries for Edelstein1996 -
+  EPSP ACh event.
+standard: other
+tags:
+- neuroscience
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Edelstein1996 Epsp Ach Event Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Edelstein1996 - EPSP ACh event.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_edelstein1996_epsp_ach_event_biomd0000000001_model
+      title: Edelstein1996 - EPSP ACh event
+      observables:
+      - id: ILL
+        port: intermediate_a_ch2
+        label: IntermediateACh2
+        group: core_system_state
+      - id: IL
+        port: intermediate_a_ch
+        label: IntermediateACh
+        group: core_system_state
+      - id: DLL
+        port: desensitised_a_ch2
+        label: DesensitisedACh2
+        group: core_system_state
+      - id: DL
+        port: desensitised_a_ch
+        label: DesensitisedACh
+        group: core_system_state
+      - id: BLL
+        port: basal_a_ch2
+        label: BasalACh2
+        group: core_system_state
+      - id: BL
+        port: basal_a_ch
+        label: BasalACh
+        group: core_system_state
+io:
+  inputs: []
+  outputs: []

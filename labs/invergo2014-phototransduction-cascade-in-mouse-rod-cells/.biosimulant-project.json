@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "b9132e9c-f5e2-4a68-9c0b-69abb5b099fb",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "b3cb8af3-9ca4-4173-8b05-e101778a53f1",
+  "created_at": "2026-05-16T05:46:44.259788103+00:00",
+  "last_synced_at": "2026-05-17T03:49:52.030422+00:00",
+  "hub_manifest_hash": "7bc97aacf7c4576fb63fd441bcb7548b0e9c3ef4f671ad916ac53fca02424556",
+  "package_name": "invergo2014-phototransduction-cascade-in-mouse-rod-cells-lab"
+}

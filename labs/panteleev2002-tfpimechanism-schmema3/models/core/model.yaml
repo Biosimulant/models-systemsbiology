@@ -1,0 +1,105 @@
+schema_version: '2.0'
+title: Panteleev2002_TFPImechanism_schmema3
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models (http://www.ebi.ac.uk/biomodels/). It is copyright (c) 2005-2011
+  The BioModels.net Team.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Mikhail A Panteleev
+- Veronica I Zarnitsina
+- Fazoil I Ataullakhanov
+upstream:
+  id: biomodels_ebi:BIOMD0000000359
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000359
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000359
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000359?filename=BIOMD0000000359_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.panteleev2002_tfpimechanism_schmema3_biomd0000000359_model:Panteleev2002TfpimechanismSchmema3Biomd0000000359Model
+  init_kwargs:
+    model_path: data/BIOMD0000000359.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_vi_ia_tf
+    maps_to: VIIa_TF
+    label: Initial Vi Ia Tf
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VIIa_TF`.
+  - name: initial_xa_tfpi_vi_ia_tf
+    maps_to: Xa_TFPI_VIIa_TF
+    label: Initial Xa Tfpi Vi Ia Tf
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_TFPI_VIIa_TF`.
+  - name: initial_xa_tfpi
+    maps_to: Xa_TFPI
+    label: Initial Xa Tfpi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_TFPI`.
+  - name: initial_vi_ia_tf_xa_tfpi
+    maps_to: VIIa_TF_Xa_TFPI
+    label: Initial Vi Ia Tf Xa Tfpi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VIIa_TF_Xa_TFPI`.
+  - name: initial_vi_ia_tf_xa
+    maps_to: VIIa_TF_Xa
+    label: Initial Vi Ia Tf Xa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VIIa_TF_Xa`.
+  - name: initial_vi_ia_tf_x
+    maps_to: VIIa_TF_X
+    label: Initial Vi Ia Tf X
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VIIa_TF_X`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: vi_ia_tf
+    maps_to: VIIa_TF
+    label: VIIa_TF
+    description: VIIa_TF. Maps to SBML symbol `VIIa_TF`.
+  - name: xa_tfpi_vi_ia_tf
+    maps_to: Xa_TFPI_VIIa_TF
+    label: Xa_TFPI_VIIa_TF
+    description: Xa_TFPI_VIIa_TF. Maps to SBML symbol `Xa_TFPI_VIIa_TF`.
+  - name: xa_tfpi
+    maps_to: Xa_TFPI
+    label: Xa_TFPI
+    description: Xa_TFPI. Maps to SBML symbol `Xa_TFPI`.
+  - name: vi_ia_tf_xa_tfpi
+    maps_to: VIIa_TF_Xa_TFPI
+    label: VIIa_TF_Xa_TFPI
+    description: VIIa_TF_Xa_TFPI. Maps to SBML symbol `VIIa_TF_Xa_TFPI`.
+  - name: vi_ia_tf_xa
+    maps_to: VIIa_TF_Xa
+    label: VIIa_TF_Xa
+    description: VIIa_TF_Xa. Maps to SBML symbol `VIIa_TF_Xa`.
+  - name: vi_ia_tf_x
+    maps_to: VIIa_TF_X
+    label: VIIa_TF_X
+    description: VIIa_TF_X. Maps to SBML symbol `VIIa_TF_X`.

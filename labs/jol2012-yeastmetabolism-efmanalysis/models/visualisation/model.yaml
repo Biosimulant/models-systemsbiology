@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Jol2012_YeastMetabolism_EFManalysis Visualisation
+description: Question-and-answer and dynamic visual summaries for Jol2012_YeastMetabolism_EFManalysis.
+standard: other
+tags:
+- metabolism
+- microbiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Jol2012 Yeastmetabolism Efmanalysis Lab
+    question: 'Which metabolic pools or flux-linked states show the strongest simulated
+      change? Source model: Jol2012_YeastMetabolism_EFManalysis.'
+    answer_focus: Q/A table plus metabolism timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_jol2012_yeastmetabolism_efmanalysis_model1201230000_model
+      title: Jol2012_YeastMetabolism_EFManalysis
+      observables:
+      - id: M_zymst_c
+        port: zymst_c
+        label: zymst[c]
+        group: metabolism
+      - id: M_xu5p_DASH_D_c
+        port: xu5p_d_c
+        label: xu5p-D[c]
+        group: metabolism
+      - id: M_val_DASH_L_c
+        port: val_l_c
+        label: val-L[c]
+        group: metabolism
+      - id: M_ump_c
+        port: ump_c
+        label: ump[c]
+        group: metabolism
+      - id: M_tyr_DASH_L_c
+        port: tyr_l_c
+        label: tyr-L[c]
+        group: metabolism
+      - id: M_trp_DASH_L_c
+        port: trp_l_c
+        label: trp-L[c]
+        group: metabolism
+io:
+  inputs: []
+  outputs: []

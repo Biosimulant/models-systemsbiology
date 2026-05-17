@@ -1,0 +1,103 @@
+schema_version: '2.0'
+title: Holzhutter2004_Erythrocyte_Metabolism
+description: . It can be used to explore systemsbiology holzhutter2004 erythrocyte
+  metabolism BioModels0000000070 dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Hermann-Georg Holzhütter
+upstream:
+  id: biomodels_ebi:BIOMD0000000070
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000070
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000070
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000070?filename=BIOMD0000000070_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.holzhutter2004_erythrocyte_metabolism_biomd0000000070_model:Holzhutter2004ErythrocyteMetabolismBiomd0000000070Model
+  init_kwargs:
+    model_path: data/BIOMD0000000070.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_external_lactate
+    maps_to: Lacex
+    label: Initial External Lactate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Lacex`.
+  - name: initial_phosphate_external
+    maps_to: Phiex
+    label: Initial Phosphate External
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Phiex`.
+  - name: initial_external_pyruvate
+    maps_to: Pyrex
+    label: Initial External Pyruvate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pyrex`.
+  - name: initial_protein2_bound_nadph
+    maps_to: P2NADPH
+    label: Initial Protein2 Bound Nadph
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P2NADPH`.
+  - name: initial_protein1_bound_nadph
+    maps_to: P1NADPH
+    label: Initial Protein1 Bound Nadph
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P1NADPH`.
+  - name: initial_protein2_bound_nadp
+    maps_to: P2NADP
+    label: Initial Protein2 Bound Nadp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P2NADP`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: external_lactate
+    maps_to: Lacex
+    label: External Lactate
+    description: External Lactate. Maps to SBML symbol `Lacex`.
+  - name: phosphate_external
+    maps_to: Phiex
+    label: Phosphate external
+    description: Phosphate external. Maps to SBML symbol `Phiex`.
+  - name: external_pyruvate
+    maps_to: Pyrex
+    label: External Pyruvate
+    description: External Pyruvate. Maps to SBML symbol `Pyrex`.
+  - name: protein2_bound_nadph
+    maps_to: P2NADPH
+    label: Protein2 bound NADPH
+    description: Protein2 bound NADPH. Maps to SBML symbol `P2NADPH`.
+  - name: protein1_bound_nadph
+    maps_to: P1NADPH
+    label: Protein1 bound NADPH
+    description: Protein1 bound NADPH. Maps to SBML symbol `P1NADPH`.
+  - name: protein2_bound_nadp
+    maps_to: P2NADP
+    label: Protein2 bound NADP
+    description: Protein2 bound NADP. Maps to SBML symbol `P2NADP`.

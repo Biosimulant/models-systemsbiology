@@ -1,0 +1,90 @@
+schema_version: '2.0'
+title: Adams2012 - Locke2006 Circadian Rhythm model refined with Input Signal Light
+  Function
+description: As per BIO0000000089.xml but including a functional light. It can be
+  used to explore systemsbiology adams2012 locke2006 circadian rhythm refin dynamics
+  and compare simulation behavior across conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- R R Adams
+- N Tsorman
+- K Stratford
+- O E Akman
+- S Gilmore
+upstream:
+  id: biomodels_ebi:BIOMD0000000476
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000476
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000476
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000476?filename=BIOMD0000000476_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.adams2012_locke2006_circadian_rhythm_model_refin_biomd0000000476_model:Adams2012Locke2006CircadianRhythmModelRefinBiomd0000000476Model
+  init_kwargs:
+    model_path: data/BIOMD0000000476.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: light_amplitude
+    maps_to: lightAmplitude
+    label: Light Amplitude
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `lightAmplitude`.
+  - name: light_offset
+    maps_to: lightOffset
+    label: Light Offset
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `lightOffset`.
+  - name: twilight_period
+    maps_to: twilightPeriod
+    label: Twilight Period
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `twilightPeriod`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: ppr7_9_mrna
+    maps_to: cAm
+    label: PPR7/9 mRNA
+    description: PPR7/9 mRNA. Maps to SBML symbol `cAm`.
+  - name: toc1_protein_in_cytoplasm
+    maps_to: cTc
+    label: TOC1 protein  in cytoplasm
+    description: TOC1 protein  in cytoplasm. Maps to SBML symbol `cTc`.
+  - name: x_protein_in_cytoplasm
+    maps_to: cXc
+    label: X protein in cytoplasm
+    description: X protein in cytoplasm. Maps to SBML symbol `cXc`.
+  - name: ppr7_9_protein_in_nucleus
+    maps_to: cAn
+    label: PPR7/9 protein in nucleus
+    description: PPR7/9 protein in nucleus. Maps to SBML symbol `cAn`.
+  - name: light_sensitive_protein_p
+    maps_to: cPn
+    label: light sensitive protein P
+    description: light sensitive protein P. Maps to SBML symbol `cPn`.
+  - name: ppr7_9_protein_in_cytoplasm
+    maps_to: cAc
+    label: PPR7/9 protein in cytoplasm
+    description: PPR7/9 protein in cytoplasm. Maps to SBML symbol `cAc`.

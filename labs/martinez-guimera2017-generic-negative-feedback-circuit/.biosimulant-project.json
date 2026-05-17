@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "5e729afb-4b1c-4d73-9196-789e307fe131",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "8876a93c-2ec8-41cd-99e6-be5a15153dff",
+  "created_at": "2026-05-16T05:46:46.584654593+00:00",
+  "last_synced_at": "2026-05-17T04:48:38.903060+00:00",
+  "hub_manifest_hash": "27f0400635055cdc64e4f939d5f57abd6398c04f88035765a03db8cf7a448bf8",
+  "package_name": "martinez-guimera2017-generic-negative-feedback-circuit-lab"
+}

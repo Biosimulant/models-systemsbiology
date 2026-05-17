@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "731055b1-7062-4a72-9756-d950c2f6ec67",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "b408ab97-eb7c-4d0e-ad0e-768aa4562692",
+  "created_at": "2026-05-16T05:46:47.149557980+00:00",
+  "last_synced_at": "2026-05-17T04:54:45.777821+00:00",
+  "hub_manifest_hash": "601bd4c4cc2583ee4053630f85f7880d2af143f98f023f9d540a14593d5bd8ed",
+  "package_name": "mears1997-crac-pancreaticbetacells-lab"
+}

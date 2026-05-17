@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "c77e7fe4-8e95-4763-970e-5ec736282803",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "c91b78f9-5885-4c04-805c-dcf089923bd3",
+  "created_at": "2026-05-16T05:46:44.404242597+00:00",
+  "last_synced_at": "2026-05-17T09:34:03.785058+00:00",
+  "hub_manifest_hash": "078e31ced6a214085b3e365072db337f0bf73cdc5f46323083193e2e804b42c2",
+  "package_name": "biomd0000000526-kallenberger2014-cd95l-induced-apoptosis-initiat"
+}

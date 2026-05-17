@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Nikolaev2005_AlbuminBilirubinAdsorption
+description: 'This a model from the article: Mathematical model of binding of albumin-bilirubin
+  complex to the surface of carbon pyropolymer. Nikolaev AV, Rozhilo YA, Starozhilova
+  TK, Sarnatskaya VV, Yushko LA, Mik.'
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- A V Nikolaev
+- Ya A Rozhilo
+- T K Starozhilova
+- V V Sarnatskaya
+- L A Yushko
+upstream:
+  id: biomodels_ebi:BIOMD0000000291
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000291
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000291
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000291?filename=BIOMD0000000291_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.nikolaev2005_albuminbilirubinadsorption_biomd0000000291_model:Nikolaev2005AlbuminbilirubinadsorptionBiomd0000000291Model
+  init_kwargs:
+    model_path: data/BIOMD0000000291.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_c
+    maps_to: x7
+    label: Initial Model State C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x7`.
+  - name: initial_model_state_al
+    maps_to: x5
+    label: Initial Model State Al
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x5`.
+  - name: initial_model_state_b
+    maps_to: x6
+    label: Initial Model State B
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x6`.
+  - name: initial_model_state_bc
+    maps_to: x2
+    label: Initial Model State Bc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x2`.
+  - name: initial_al_cn
+    maps_to: x3
+    label: Initial Al Cn
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x3`.
+  - name: initial_al_b2
+    maps_to: x4
+    label: Initial Al B2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x4`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_c
+    maps_to: x7
+    label: C
+    description: C. Maps to SBML symbol `x7`.
+  - name: model_state_al
+    maps_to: x5
+    label: Al
+    description: Al. Maps to SBML symbol `x5`.
+  - name: model_state_b
+    maps_to: x6
+    label: B
+    description: B. Maps to SBML symbol `x6`.
+  - name: model_state_bc
+    maps_to: x2
+    label: BC
+    description: BC. Maps to SBML symbol `x2`.
+  - name: al_cn
+    maps_to: x3
+    label: AlCn
+    description: AlCn. Maps to SBML symbol `x3`.
+  - name: al_b2
+    maps_to: x4
+    label: AlB2
+    description: AlB2. Maps to SBML symbol `x4`.

@@ -1,0 +1,47 @@
+schema_version: '2.0'
+title: Masison2022 - Cellular ferritin iron storage Visualisation
+description: Question-and-answer and dynamic visual summaries for Masison2022 - Cellular
+  ferritin iron storage.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Masison2022 Cellular Ferritin Iron Storage Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Masison2022 - Cellular ferritin iron storage.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_masison2022_cellular_ferritin_iron_storage_model2211030001_model
+      title: Masison2022 - Cellular ferritin iron storage
+      observables:
+      - id: core
+        port: core
+        label: core
+        group: physiology
+      - id: FT_cage
+        port: ft_cage
+        label: FT-cage
+        group: physiology
+      - id: LIP
+        port: lip
+        label: LIP
+        group: physiology
+      - id: DFP
+        port: dfp
+        label: DFP
+        group: physiology
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "1abdd430-9d44-4217-ac46-e7bbc199997e",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "c1569c3d-c3d1-4b07-b02c-3216dced0946",
+  "created_at": "2026-05-16T05:46:43.575555450+00:00",
+  "last_synced_at": "2026-05-17T03:18:26.513242+00:00",
+  "hub_manifest_hash": "3c4a0946469d56e7eae38ee3f05b5b180d6c0399fad68623d613cf9153fdd58a",
+  "package_name": "gidvani2012-dna-replication-initiation-model-in-s-cevevisiae-lab"
+}

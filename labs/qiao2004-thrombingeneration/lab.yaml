@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Qiao2004 Thrombingeneration Lab
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models (http://www.ebi.ac.uk/biomodels/). It is copyright (c) 2005-2011
+  The BioModels.net Team.'
+models:
+- alias: systemsbiology_sbml_qiao2004_thrombingeneration_model1108260015_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_qiao2004_thrombingeneration_model1108260015_model.state
+  to:
+  - visualisation.systemsbiology_sbml_qiao2004_thrombingeneration_model1108260015_model_state
+- from: systemsbiology_sbml_qiao2004_thrombingeneration_model1108260015_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_qiao2004_thrombingeneration_model1108260015_model_summary
+- from: systemsbiology_sbml_qiao2004_thrombingeneration_model1108260015_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_qiao2004_thrombingeneration_model1108260015_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_xa
+    maps_to: systemsbiology_sbml_qiao2004_thrombingeneration_model1108260015_model.initial_model_state_xa
+    label: Initial Model State Xa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa`.
+  - name: initial_model_state_va
+    maps_to: systemsbiology_sbml_qiao2004_thrombingeneration_model1108260015_model.initial_model_state_va
+    label: Initial Model State Va
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Va`.
+  - name: initial_vii_ia
+    maps_to: systemsbiology_sbml_qiao2004_thrombingeneration_model1108260015_model.initial_vii_ia
+    label: Initial Vii Ia
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VIIIa`.
+  - name: initial_i_xa
+    maps_to: systemsbiology_sbml_qiao2004_thrombingeneration_model1108260015_model.initial_i_xa
+    label: Initial I Xa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IXa`.
+  - name: initial_i_ia
+    maps_to: systemsbiology_sbml_qiao2004_thrombingeneration_model1108260015_model.initial_i_ia
+    label: Initial I Ia
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IIa`.
+  - name: initial_model_state_apc
+    maps_to: systemsbiology_sbml_qiao2004_thrombingeneration_model1108260015_model.initial_model_state_apc
+    label: Initial Model State Apc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `APC`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_qiao2004_thrombingeneration_model1108260015_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_qiao2004_thrombingeneration_model1108260015_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_qiao2004_thrombingeneration_model1108260015_model.species_labels
+  - name: model_state_xa
+    maps_to: systemsbiology_sbml_qiao2004_thrombingeneration_model1108260015_model.model_state_xa
+  - name: model_state_va
+    maps_to: systemsbiology_sbml_qiao2004_thrombingeneration_model1108260015_model.model_state_va
+  - name: vii_ia
+    maps_to: systemsbiology_sbml_qiao2004_thrombingeneration_model1108260015_model.vii_ia
+  - name: i_xa
+    maps_to: systemsbiology_sbml_qiao2004_thrombingeneration_model1108260015_model.i_xa
+  - name: i_ia
+    maps_to: systemsbiology_sbml_qiao2004_thrombingeneration_model1108260015_model.i_ia
+  - name: apc
+    maps_to: systemsbiology_sbml_qiao2004_thrombingeneration_model1108260015_model.apc

@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Proctor2017- Role of microRNAs in osteoarthritis (Positive Feedforward Coherent
+  By MicroRNA)
+description: 'Proctor2017- Role of microRNAs inosteoarthritis (Positive Feedforward
+  Coherent By MicroRNA) This model is described in the article: Computer simulation
+  models as a tool to investigate the role of micr. It can be used to explore systemsbiology
+  proctor2017 role of micrornas in dynamics and compare simulation behavior across
+  conditions.'
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Carole J Proctor
+- Graham R Smith
+upstream:
+  id: biomodels_ebi:MODEL1610100003
+  source_db: biomodels_ebi
+  source_id: MODEL1610100003
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1610100003
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1610100003?filename=MODEL1610100003_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.proctor2017_role_of_micrornas_in_osteoarthritis_model1610100003_model:Proctor2017RoleOfMicrornasInOsteoarthritisModel1610100003Model
+  init_kwargs:
+    model_path: data/MODEL1610100003.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_tf2target_mrna
+    maps_to: TF2target_mRNA
+    label: Initial Tf2target MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TF2target_mRNA`.
+  - name: initial_model_state_tf2
+    maps_to: TF2
+    label: Initial Model State TF2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TF2`.
+  - name: initial_tf2target_gene
+    maps_to: TF2target_gene
+    label: Initial Tf2target Gene
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TF2target_gene`.
+  - name: initial_tf2_tf2target_gene
+    maps_to: TF2_TF2target_gene
+    label: Initial TF2 Tf2target Gene
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TF2_TF2target_gene`.
+  - name: initial_tf1_tf2target_gene
+    maps_to: TF1_TF2target_gene
+    label: Initial TF1 Tf2target Gene
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TF1_TF2target_gene`.
+  - name: initial_model_state_tf1
+    maps_to: TF1
+    label: Initial Model State TF1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TF1`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: tf2target_mrna
+    maps_to: TF2target_mRNA
+    label: TF2target MRNA
+    description: TF2target MRNA. Maps to SBML symbol `TF2target_mRNA`.
+  - name: tf2
+    maps_to: TF2
+    label: TF2
+    description: TF2. Maps to SBML symbol `TF2`.
+  - name: tf2target_gene
+    maps_to: TF2target_gene
+    label: TF2target Gene
+    description: TF2target Gene. Maps to SBML symbol `TF2target_gene`.
+  - name: tf2_tf2target_gene
+    maps_to: TF2_TF2target_gene
+    label: TF2 TF2target Gene
+    description: TF2 TF2target Gene. Maps to SBML symbol `TF2_TF2target_gene`.
+  - name: tf1_tf2target_gene
+    maps_to: TF1_TF2target_gene
+    label: TF1 TF2target Gene
+    description: TF1 TF2target Gene. Maps to SBML symbol `TF1_TF2target_gene`.
+  - name: tf1
+    maps_to: TF1
+    label: TF1
+    description: TF1. Maps to SBML symbol `TF1`.

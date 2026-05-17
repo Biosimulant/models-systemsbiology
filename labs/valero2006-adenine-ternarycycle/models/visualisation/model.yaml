@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Valero2006_Adenine_TernaryCycle Visualisation
+description: Question-and-answer and dynamic visual summaries for Valero2006_Adenine_TernaryCycle.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Valero2006 Adenine Ternarycycle Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Valero2006_Adenine_TernaryCycle.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_valero2006_adenine_ternarycycle_biomd0000000231_model
+      title: Valero2006_Adenine_TernaryCycle
+      observables:
+      - id: NADH
+        port: nadh
+        label: NADH
+        group: metabolism
+      - id: ATP
+        port: atp
+        label: ATP
+        group: metabolism
+      - id: ADP
+        port: adp
+        label: ADP
+        group: metabolism
+      - id: Pyr
+        port: pyr
+        label: Pyr
+        group: gene_regulation
+      - id: Lac
+        port: lac
+        label: Lac
+        group: gene_regulation
+      - id: AMP
+        port: amp
+        label: AMP
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

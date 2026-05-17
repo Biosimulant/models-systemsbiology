@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "f9d4ab09-4581-4257-9bea-dc9586f7d337",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "99f6da1e-9405-4287-9713-31b5a8dfa8f4",
+  "created_at": "2026-05-16T05:46:53.307983646+00:00",
+  "last_synced_at": "2026-05-17T09:47:31.808927+00:00",
+  "hub_manifest_hash": "c29c23ff6939be8e02c05cb94f50c9848cac73a3ca25efce9c05e56e6274f1d0",
+  "package_name": "biomd0000000688-variant-wodarz2007-cytomegalovirus-infection-mod"
+}

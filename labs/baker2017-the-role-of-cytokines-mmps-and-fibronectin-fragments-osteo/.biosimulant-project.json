@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "eff86959-9d0f-407d-ad6e-22a9599c5111",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "10484c4e-3f48-4d7d-9fe9-94fb62798236",
+  "created_at": "2026-05-16T05:46:41.222049483+00:00",
+  "last_synced_at": "2026-05-17T01:52:24.343637+00:00",
+  "hub_manifest_hash": "aaa84f49d6e225fa82f11cd12eafde65ab997b1668bc80fe69169ae1dec3b3c8",
+  "package_name": "baker2017-the-role-of-cytokines-mmps-and-fibronectin-fragments-o"
+}

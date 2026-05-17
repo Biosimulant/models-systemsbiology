@@ -1,0 +1,91 @@
+schema_version: '2.0'
+title: Singh2006 Tca Ecoli Glucose Lab
+description: 'This a model from the article: Kinetic modeling of tricarboxylic acid
+  cycle and glyoxylate bypass in Mycobacterium tuberculosis, and its application to
+  assessment of drugtargets. It can be used to explore systemsbiology singh2006 tca
+  ecoli glucose BioModels0000000222 dynamics and compare simulation behavior across
+  conditions.'
+models:
+- alias: systemsbiology_sbml_singh2006_tca_ecoli_glucose_biomd0000000222_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_singh2006_tca_ecoli_glucose_biomd0000000222_model.state
+  to:
+  - visualisation.systemsbiology_sbml_singh2006_tca_ecoli_glucose_biomd0000000222_model_state
+- from: systemsbiology_sbml_singh2006_tca_ecoli_glucose_biomd0000000222_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_singh2006_tca_ecoli_glucose_biomd0000000222_model_summary
+- from: systemsbiology_sbml_singh2006_tca_ecoli_glucose_biomd0000000222_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_singh2006_tca_ecoli_glucose_biomd0000000222_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- metabolism
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_gly
+    maps_to: systemsbiology_sbml_singh2006_tca_ecoli_glucose_biomd0000000222_model.initial_model_state_gly
+    label: Initial Model State Gly
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `gly`.
+  - name: initial_model_state_cit
+    maps_to: systemsbiology_sbml_singh2006_tca_ecoli_glucose_biomd0000000222_model.initial_model_state_cit
+    label: Initial Model State Cit
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cit`.
+  - name: initial_model_state_mal
+    maps_to: systemsbiology_sbml_singh2006_tca_ecoli_glucose_biomd0000000222_model.initial_model_state_mal
+    label: Initial Model State Mal
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mal`.
+  - name: initial_model_state_suc
+    maps_to: systemsbiology_sbml_singh2006_tca_ecoli_glucose_biomd0000000222_model.initial_model_state_suc
+    label: Initial Model State Suc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `suc`.
+  - name: initial_model_state_aca
+    maps_to: systemsbiology_sbml_singh2006_tca_ecoli_glucose_biomd0000000222_model.initial_model_state_aca
+    label: Initial Model State Aca
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `aca`.
+  - name: initial_model_state_fa
+    maps_to: systemsbiology_sbml_singh2006_tca_ecoli_glucose_biomd0000000222_model.initial_model_state_fa
+    label: Initial Model State Fa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `fa`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_singh2006_tca_ecoli_glucose_biomd0000000222_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_singh2006_tca_ecoli_glucose_biomd0000000222_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_singh2006_tca_ecoli_glucose_biomd0000000222_model.species_labels
+  - name: gly
+    maps_to: systemsbiology_sbml_singh2006_tca_ecoli_glucose_biomd0000000222_model.gly
+  - name: cit
+    maps_to: systemsbiology_sbml_singh2006_tca_ecoli_glucose_biomd0000000222_model.cit
+  - name: mal
+    maps_to: systemsbiology_sbml_singh2006_tca_ecoli_glucose_biomd0000000222_model.mal
+  - name: suc
+    maps_to: systemsbiology_sbml_singh2006_tca_ecoli_glucose_biomd0000000222_model.suc
+  - name: aca
+    maps_to: systemsbiology_sbml_singh2006_tca_ecoli_glucose_biomd0000000222_model.aca
+  - name: model_state_fa
+    maps_to: systemsbiology_sbml_singh2006_tca_ecoli_glucose_biomd0000000222_model.model_state_fa

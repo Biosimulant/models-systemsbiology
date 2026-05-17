@@ -1,0 +1,78 @@
+schema_version: '2.0'
+title: Cortes2019 - Optimality of the spontaneous prophage induction rate.
+description: Optimality of the spontaneous prophage induction rate.Cortes MG1, Krog
+  J2, Balázsi G3.1 Department of Applied Mathematics and Statistics, Stony Brook University,
+  Stony Brook, NY 11794, USA.2 The Louis. It can be used to explore systemsbiology
+  cortes2019 optimality of the spontaneous dynamics and compare simulation behavior
+  across conditions.
+standard: other
+tags:
+- cellcycle
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Michael G Cortes
+- Jonathan Krog
+- Gábor Balázsi
+upstream:
+  id: biomodels_ebi:BIOMD0000000884
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000884
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000884
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000884?filename=Cortes2019.xml
+  license: CC0
+biosim:
+  entrypoint: src.cortes2019_optimality_of_the_spontaneous_prophag_biomd0000000884_model:Cortes2019OptimalityOfTheSpontaneousProphagBiomd0000000884Model
+  init_kwargs:
+    model_path: data/BIOMD0000000884.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_u
+    maps_to: U
+    label: Initial Model State U
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `U`.
+  - name: initial_model_state_l
+    maps_to: L
+    label: Initial Model State L
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `L`.
+  - name: initial_model_state_v
+    maps_to: V
+    label: Initial Model State V
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `V`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_u
+    maps_to: U
+    label: U
+    description: U. Maps to SBML symbol `U`.
+  - name: model_state_l
+    maps_to: L
+    label: L
+    description: L. Maps to SBML symbol `L`.
+  - name: model_state_v
+    maps_to: V
+    label: V
+    description: V. Maps to SBML symbol `V`.

@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Gomez-Cabrero2011_Atherogenesis Visualisation
+description: Question-and-answer and dynamic visual summaries for Gomez-Cabrero2011_Atherogenesis.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Gomez Cabrero2011 Atherogenesis Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Gomez-Cabrero2011_Atherogenesis.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_gomez_cabrero2011_atherogenesis_model1002160000_model
+      title: Gomez-Cabrero2011_Atherogenesis
+      observables:
+      - id: species_14
+        port: sum_rec_bcells
+        label: SUMRecBcells
+        group: gene_regulation
+      - id: species_8
+        port: bcells
+        label: Bcells
+        group: gene_regulation
+      - id: species_16
+        port: ldl_blood
+        label: LDL_blood
+        group: gene_regulation
+      - id: species_15
+        port: hdl_blood
+        label: HDL_blood
+        group: gene_regulation
+      - id: species_19
+        port: sigmoid_acten_dinh
+        label: SIGMOID_ACTENDinh
+        group: gene_regulation
+      - id: species_18
+        port: sigmoid_acten_dstim
+        label: SIGMOID_ACTENDstim
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

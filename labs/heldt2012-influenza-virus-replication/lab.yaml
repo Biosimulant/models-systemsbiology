@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Heldt2012 Influenza Virus Replication Lab
+description: 'Heldt2012 - Influenza Virus Replication The model describes the life
+  cycle of influenza A virus in a mammalian cell including the following steps: attachment
+  of parental virions to the cell membrane,. It can be used to explore systemsbiology
+  heldt2012 influenza virus replication BioModels0000000463 dynamics and compare simulation
+  behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_heldt2012_influenza_virus_replication_biomd0000000463_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_heldt2012_influenza_virus_replication_biomd0000000463_model.state
+  to:
+  - visualisation.systemsbiology_sbml_heldt2012_influenza_virus_replication_biomd0000000463_model_state
+- from: systemsbiology_sbml_heldt2012_influenza_virus_replication_biomd0000000463_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_heldt2012_influenza_virus_replication_biomd0000000463_model_summary
+- from: systemsbiology_sbml_heldt2012_influenza_virus_replication_biomd0000000463_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_heldt2012_influenza_virus_replication_biomd0000000463_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_total_v_rna_of_a_segment
+    maps_to: systemsbiology_sbml_heldt2012_influenza_virus_replication_biomd0000000463_model.initial_total_v_rna_of_a_segment
+    label: Initial Total V RNA Of A Segment
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_39`.
+  - name: initial_total_v_rna
+    maps_to: systemsbiology_sbml_heldt2012_influenza_virus_replication_biomd0000000463_model.initial_total_v_rna
+    label: Initial Total V RNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_38`.
+  - name: initial_total_c_rna_of_a_segment
+    maps_to: systemsbiology_sbml_heldt2012_influenza_virus_replication_biomd0000000463_model.initial_total_c_rna_of_a_segment
+    label: Initial Total C RNA Of A Segment
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_37`.
+  - name: initial_total_c_rna
+    maps_to: systemsbiology_sbml_heldt2012_influenza_virus_replication_biomd0000000463_model.initial_total_c_rna
+    label: Initial Total C RNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_36`.
+  - name: initial_model_state_blo
+    maps_to: systemsbiology_sbml_heldt2012_influenza_virus_replication_biomd0000000463_model.initial_model_state_blo
+    label: Initial Model State Blo
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_4`.
+  - name: initial_model_state_bhi
+    maps_to: systemsbiology_sbml_heldt2012_influenza_virus_replication_biomd0000000463_model.initial_model_state_bhi
+    label: Initial Model State Bhi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_1`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_heldt2012_influenza_virus_replication_biomd0000000463_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_heldt2012_influenza_virus_replication_biomd0000000463_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_heldt2012_influenza_virus_replication_biomd0000000463_model.species_labels
+  - name: total_v_rna_of_a_segment
+    maps_to: systemsbiology_sbml_heldt2012_influenza_virus_replication_biomd0000000463_model.total_v_rna_of_a_segment
+  - name: total_v_rna
+    maps_to: systemsbiology_sbml_heldt2012_influenza_virus_replication_biomd0000000463_model.total_v_rna
+  - name: total_c_rna_of_a_segment
+    maps_to: systemsbiology_sbml_heldt2012_influenza_virus_replication_biomd0000000463_model.total_c_rna_of_a_segment
+  - name: total_c_rna
+    maps_to: systemsbiology_sbml_heldt2012_influenza_virus_replication_biomd0000000463_model.total_c_rna
+  - name: blo
+    maps_to: systemsbiology_sbml_heldt2012_influenza_virus_replication_biomd0000000463_model.blo
+  - name: bhi
+    maps_to: systemsbiology_sbml_heldt2012_influenza_virus_replication_biomd0000000463_model.bhi

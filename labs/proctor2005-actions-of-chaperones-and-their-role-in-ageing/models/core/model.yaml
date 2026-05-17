@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Proctor2005 - Actions of chaperones and their role in ageing
+description: 'Proctor2005 - Actions of chaperones and theirrole in ageing This model
+  is described in the article: Modelling the actions of chaperones and their role
+  in ageing. It can be used to explore systemsbiology proctor2005 actions of chaperones
+  and dynamics and compare simulation behavior across conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Carole J Proctor
+- Csaba Soti
+- Richard J Boys
+- Colin S Gillespie
+- Daryl P Shanley
+upstream:
+  id: biomodels_ebi:BIOMD0000000091
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000091
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000091
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000091?filename=BIOMD0000000091_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.proctor2005_actions_of_chaperones_and_their_role_biomd0000000091_model:Proctor2005ActionsOfChaperonesAndTheirRoleBiomd0000000091Model
+  init_kwargs:
+    model_path: data/BIOMD0000000091.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_nat_p
+    maps_to: NatP
+    label: Initial Nat P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NatP`.
+  - name: initial_model_state_atp
+    maps_to: ATP
+    label: Initial Model State ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATP`.
+  - name: initial_model_state_adp
+    maps_to: ADP
+    label: Initial Model State ADP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ADP`.
+  - name: initial_source
+    maps_to: source
+    label: Initial Source
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `source`.
+  - name: initial_hsp90
+    maps_to: Hsp90
+    label: Initial Hsp90
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Hsp90`.
+  - name: initial_h_com
+    maps_to: HCom
+    label: Initial H Com
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `HCom`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: nat_p
+    maps_to: NatP
+    label: NatP
+    description: NatP. Maps to SBML symbol `NatP`.
+  - name: atp
+    maps_to: ATP
+    label: ATP
+    description: ATP. Maps to SBML symbol `ATP`.
+  - name: adp
+    maps_to: ADP
+    label: ADP
+    description: ADP. Maps to SBML symbol `ADP`.
+  - name: source
+    maps_to: source
+    label: source
+    description: source. Maps to SBML symbol `source`.
+  - name: hsp90
+    maps_to: Hsp90
+    label: Hsp90
+    description: Hsp90. Maps to SBML symbol `Hsp90`.
+  - name: h_com
+    maps_to: HCom
+    label: HCom
+    description: HCom. Maps to SBML symbol `HCom`.

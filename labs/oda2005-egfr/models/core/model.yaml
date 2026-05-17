@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Oda2005_EGFR
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models (http://www.ebi.ac.uk/biomodels/). It is copyright (c) 2005-2011
+  The BioModels.net Team.'
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Kanae Oda
+- Yukiko Matsuoka
+- Akira Funahashi
+- Hiroaki Kitano
+upstream:
+  id: biomodels_ebi:MODEL2463576061
+  source_db: biomodels_ebi
+  source_id: MODEL2463576061
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2463576061
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2463576061?filename=MODEL2463576061_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.oda2005_egfr_model2463576061_model:Oda2005EgfrModel2463576061Model
+  init_kwargs:
+    model_path: data/MODEL2463576061.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_tumorigenesis
+    maps_to: s412
+    label: Initial Tumorigenesis
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s412`.
+  - name: initial_cell_cycle_br_progression
+    maps_to: s357
+    label: Initial Cell Cycle Br Progression
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s357`.
+  - name: initial_c_adpr
+    maps_to: s260
+    label: Initial C Adpr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s260`.
+  - name: initial_complex_c_adpr_fkbp
+    maps_to: s261
+    label: Initial Complex C Adpr Fkbp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s261`.
+  - name: initial_truncated_br_plc_beta
+    maps_to: s299
+    label: Initial Truncated Br Plc Beta
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s299`.
+  - name: initial_truncated_br_plc_beta_2
+    maps_to: s306
+    label: Initial Truncated Br Plc Beta 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s306`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: tumorigenesis
+    maps_to: s412
+    label: tumorigenesis
+    description: tumorigenesis. Maps to SBML symbol `s412`.
+  - name: cell_cycle_br_progression
+    maps_to: s357
+    label: cell cycle_br_progression
+    description: cell cycle_br_progression. Maps to SBML symbol `s357`.
+  - name: c_adpr
+    maps_to: s260
+    label: cADPR
+    description: cADPR. Maps to SBML symbol `s260`.
+  - name: complex_c_adpr_fkbp
+    maps_to: s261
+    label: Complex(cADPR/FKBP)
+    description: Complex(cADPR/FKBP). Maps to SBML symbol `s261`.
+  - name: truncated_br_plc_beta
+    maps_to: s299
+    label: truncated_br_PLC_beta
+    description: truncated_br_PLC_beta. Maps to SBML symbol `s299`.
+  - name: truncated_br_plc_beta_2
+    maps_to: s306
+    label: truncated_br_PLC_beta
+    description: truncated_br_PLC_beta. Maps to SBML symbol `s306`.

@@ -1,0 +1,74 @@
+schema_version: '2.0'
+title: Tomida2003 Calcium Oscillatory Induced Translocation Of Nuclear Facto Lab
+description: 'Tomida2003 - NFAT functions CalciumOscillation This model is described
+  in the article: NFAT functions as a working memory of Ca2+ signals in decoding Ca2+
+  oscillation. It can be used to explore systemsbiology tomida2003 calcium oscillatory
+  induced transloca dynamics and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_tomida2003_calcium_oscillatory_induced_transloca_biomd0000000678_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_tomida2003_calcium_oscillatory_induced_transloca_biomd0000000678_model.state
+  to:
+  - visualisation.systemsbiology_sbml_tomida2003_calcium_oscillatory_induced_transloca_biomd0000000678_model_state
+- from: systemsbiology_sbml_tomida2003_calcium_oscillatory_induced_transloca_biomd0000000678_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_tomida2003_calcium_oscillatory_induced_transloca_biomd0000000678_model_summary
+- from: systemsbiology_sbml_tomida2003_calcium_oscillatory_induced_transloca_biomd0000000678_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_tomida2003_calcium_oscillatory_induced_transloca_biomd0000000678_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- immunology
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_stimulus
+    maps_to: systemsbiology_sbml_tomida2003_calcium_oscillatory_induced_transloca_biomd0000000678_model.initial_stimulus
+    label: Initial Stimulus
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `stimulus`.
+  - name: initial_nfat_phosphorylated
+    maps_to: systemsbiology_sbml_tomida2003_calcium_oscillatory_induced_transloca_biomd0000000678_model.initial_nfat_phosphorylated
+    label: Initial Nfat Phosphorylated
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NFAT_phosphorylated`.
+  - name: initial_nfat_transported
+    maps_to: systemsbiology_sbml_tomida2003_calcium_oscillatory_induced_transloca_biomd0000000678_model.initial_nfat_transported
+    label: Initial Nfat Transported
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NFAT_transported`.
+  - name: initial_nfat_dephosphorylated
+    maps_to: systemsbiology_sbml_tomida2003_calcium_oscillatory_induced_transloca_biomd0000000678_model.initial_nfat_dephosphorylated
+    label: Initial Nfat Dephosphorylated
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NFAT_dephosphorylated`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_tomida2003_calcium_oscillatory_induced_transloca_biomd0000000678_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_tomida2003_calcium_oscillatory_induced_transloca_biomd0000000678_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_tomida2003_calcium_oscillatory_induced_transloca_biomd0000000678_model.species_labels
+  - name: stimulus
+    maps_to: systemsbiology_sbml_tomida2003_calcium_oscillatory_induced_transloca_biomd0000000678_model.stimulus
+  - name: nfat_phosphorylated
+    maps_to: systemsbiology_sbml_tomida2003_calcium_oscillatory_induced_transloca_biomd0000000678_model.nfat_phosphorylated
+  - name: nfat_transported
+    maps_to: systemsbiology_sbml_tomida2003_calcium_oscillatory_induced_transloca_biomd0000000678_model.nfat_transported
+  - name: nfat_dephosphorylated
+    maps_to: systemsbiology_sbml_tomida2003_calcium_oscillatory_induced_transloca_biomd0000000678_model.nfat_dephosphorylated

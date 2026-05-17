@@ -1,0 +1,110 @@
+schema_version: '2.0'
+title: Jol2012_YeastMetabolism_EFManalysis
+description: To the extent possible under law, all copyright and related or neighbouring
+  rights to this encoded model have been dedicated to the public domain worldwide.
+  It can be used to explore systemsbiology jol2012 yeastmetabolism efmanalysis model1201230000
+  dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- metabolism
+- microbiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Stefan J Jol
+- Anne Kümmel
+- Marco Terzer
+- Jörg Stelling
+- Matthias Heinemann
+upstream:
+  id: biomodels_ebi:MODEL1201230000
+  source_db: biomodels_ebi
+  source_id: MODEL1201230000
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1201230000
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1201230000?filename=MODEL1201230000_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.jol2012_yeastmetabolism_efmanalysis_model1201230000_model:Jol2012YeastmetabolismEfmanalysisModel1201230000Model
+  init_kwargs:
+    model_path: data/MODEL1201230000.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_zymst_c
+    maps_to: M_zymst_c
+    label: Initial Zymst C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_zymst_c`.
+  - name: initial_xu5p_d_c
+    maps_to: M_xu5p_DASH_D_c
+    label: Initial Xu5p D C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_xu5p_DASH_D_c`.
+  - name: initial_val_l_c
+    maps_to: M_val_DASH_L_c
+    label: Initial Val L C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_val_DASH_L_c`.
+  - name: initial_ump_c
+    maps_to: M_ump_c
+    label: Initial Ump C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_ump_c`.
+  - name: initial_tyr_l_c
+    maps_to: M_tyr_DASH_L_c
+    label: Initial Tyr L C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_tyr_DASH_L_c`.
+  - name: initial_trp_l_c
+    maps_to: M_trp_DASH_L_c
+    label: Initial Trp L C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_trp_DASH_L_c`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: zymst_c
+    maps_to: M_zymst_c
+    label: zymst[c]
+    description: zymst[c]. Maps to SBML symbol `M_zymst_c`.
+  - name: xu5p_d_c
+    maps_to: M_xu5p_DASH_D_c
+    label: xu5p-D[c]
+    description: xu5p-D[c]. Maps to SBML symbol `M_xu5p_DASH_D_c`.
+  - name: val_l_c
+    maps_to: M_val_DASH_L_c
+    label: val-L[c]
+    description: val-L[c]. Maps to SBML symbol `M_val_DASH_L_c`.
+  - name: ump_c
+    maps_to: M_ump_c
+    label: ump[c]
+    description: ump[c]. Maps to SBML symbol `M_ump_c`.
+  - name: tyr_l_c
+    maps_to: M_tyr_DASH_L_c
+    label: tyr-L[c]
+    description: tyr-L[c]. Maps to SBML symbol `M_tyr_DASH_L_c`.
+  - name: trp_l_c
+    maps_to: M_trp_DASH_L_c
+    label: trp-L[c]
+    description: trp-L[c]. Maps to SBML symbol `M_trp_DASH_L_c`.

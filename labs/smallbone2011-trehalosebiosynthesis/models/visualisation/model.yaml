@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Smallbone2011_TrehaloseBiosynthesis Visualisation
+description: Question-and-answer and dynamic visual summaries for Smallbone2011_TrehaloseBiosynthesis.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Smallbone2011 Trehalosebiosynthesis Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Smallbone2011_TrehaloseBiosynthesis.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_smallbone2011_trehalosebiosynthesis_biomd0000000380_model
+      title: Smallbone2011_TrehaloseBiosynthesis
+      observables:
+      - id: glx
+        port: glucose
+        label: glucose
+        group: metabolism
+      - id: g6p
+        port: glucose_6_phosphate
+        label: glucose 6-phosphate
+        group: metabolism
+      - id: udg
+        port: udp_glucose
+        label: UDP glucose
+        group: metabolism
+      - id: g1p
+        port: glucose_1_phosphate
+        label: glucose 1-phosphate
+        group: metabolism
+      - id: glc
+        port: glucose_2
+        label: glucose
+        group: metabolism
+      - id: atp
+        port: atp
+        label: ATP
+        group: metabolism
+io:
+  inputs: []
+  outputs: []

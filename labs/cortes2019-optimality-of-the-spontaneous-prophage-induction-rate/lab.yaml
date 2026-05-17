@@ -1,0 +1,66 @@
+schema_version: '2.0'
+title: Cortes2019 Optimality Of The Spontaneous Prophage Induction Rate Lab
+description: Optimality of the spontaneous prophage induction rate.Cortes MG1, Krog
+  J2, Balázsi G3.1 Department of Applied Mathematics and Statistics, Stony Brook University,
+  Stony Brook, NY 11794, USA.2 The Louis. It can be used to explore systemsbiology
+  cortes2019 optimality of the spontaneous dynamics and compare simulation behavior
+  across conditions.
+models:
+- alias: systemsbiology_sbml_cortes2019_optimality_of_the_spontaneous_prophag_biomd0000000884_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_cortes2019_optimality_of_the_spontaneous_prophag_biomd0000000884_model.state
+  to:
+  - visualisation.systemsbiology_sbml_cortes2019_optimality_of_the_spontaneous_prophag_biomd0000000884_model_state
+- from: systemsbiology_sbml_cortes2019_optimality_of_the_spontaneous_prophag_biomd0000000884_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_cortes2019_optimality_of_the_spontaneous_prophag_biomd0000000884_model_summary
+- from: systemsbiology_sbml_cortes2019_optimality_of_the_spontaneous_prophag_biomd0000000884_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_cortes2019_optimality_of_the_spontaneous_prophag_biomd0000000884_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- cellcycle
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_u
+    maps_to: systemsbiology_sbml_cortes2019_optimality_of_the_spontaneous_prophag_biomd0000000884_model.initial_model_state_u
+    label: Initial Model State U
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `U`.
+  - name: initial_model_state_l
+    maps_to: systemsbiology_sbml_cortes2019_optimality_of_the_spontaneous_prophag_biomd0000000884_model.initial_model_state_l
+    label: Initial Model State L
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `L`.
+  - name: initial_model_state_v
+    maps_to: systemsbiology_sbml_cortes2019_optimality_of_the_spontaneous_prophag_biomd0000000884_model.initial_model_state_v
+    label: Initial Model State V
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `V`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_cortes2019_optimality_of_the_spontaneous_prophag_biomd0000000884_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_cortes2019_optimality_of_the_spontaneous_prophag_biomd0000000884_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_cortes2019_optimality_of_the_spontaneous_prophag_biomd0000000884_model.species_labels
+  - name: model_state_u
+    maps_to: systemsbiology_sbml_cortes2019_optimality_of_the_spontaneous_prophag_biomd0000000884_model.model_state_u
+  - name: model_state_l
+    maps_to: systemsbiology_sbml_cortes2019_optimality_of_the_spontaneous_prophag_biomd0000000884_model.model_state_l
+  - name: model_state_v
+    maps_to: systemsbiology_sbml_cortes2019_optimality_of_the_spontaneous_prophag_biomd0000000884_model.model_state_v

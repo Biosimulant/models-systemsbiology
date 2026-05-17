@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Nijhout2004_Folate_Cycle Visualisation
+description: Question-and-answer and dynamic visual summaries for Nijhout2004_Folate_Cycle.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Nijhout2004 Folate Cycle Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Nijhout2004_Folate_Cycle.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_nijhout2004_folate_cycle_biomd0000000213_model
+      title: Nijhout2004_Folate_Cycle
+      observables:
+      - id: NADPH
+        port: nadph
+        label: NADPH
+        group: metabolism
+      - id: Gly
+        port: gly
+        label: Gly
+        group: physiology
+      - id: HCOOH
+        port: hcooh
+        label: HCOOH
+        group: physiology
+      - id: Ser
+        port: ser
+        label: Ser
+        group: physiology
+      - id: dUMP
+        port: dump
+        label: DUMP
+        group: physiology
+      - id: GAR
+        port: gar
+        label: GAR
+        group: physiology
+io:
+  inputs: []
+  outputs: []

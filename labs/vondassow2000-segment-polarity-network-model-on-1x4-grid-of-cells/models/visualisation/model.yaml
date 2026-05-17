@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: vonDassow2000 - Segment Polarity Network model on 1x4 grid of cells Visualisation
+description: Question-and-answer and dynamic visual summaries for vonDassow2000 -
+  Segment Polarity Network model on 1x4 grid of cells.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Vondassow2000 Segment Polarity Network Model On 1x4 Grid Of Cells Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: vonDassow2000 - Segment Polarity Network model on 1x4 grid of
+      cells.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_vondassow2000_segment_polarity_network_model_on_biomd0000001065_model
+      title: vonDassow2000 - Segment Polarity Network model on 1x4 grid of cells
+      observables:
+      - id: EWG_T_0_1
+        port: ewg_t_0_1
+        label: EWG_T_0,1
+        group: physiology
+      - id: EWG_T_0_2
+        port: ewg_t_0_2
+        label: EWG_T_0,2
+        group: physiology
+      - id: EWG_T_0_0
+        port: ewg_t_0_0
+        label: EWG_T_0,0
+        group: physiology
+      - id: EWG_T_0_3
+        port: ewg_t_0_3
+        label: EWG_T_0,3
+        group: physiology
+      - id: en_0_2
+        port: en_0_2
+        label: en_0,2
+        group: physiology
+      - id: EN_0_2
+        port: en_0_2_2
+        label: EN_0,2
+        group: physiology
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "29c3f266-9346-4890-966a-450f35c7e3bb",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "b910c1c0-d188-4ff0-af27-b5fcf15c6f89",
+  "created_at": "2026-05-16T05:46:44.056210594+00:00",
+  "last_synced_at": "2026-05-17T03:39:09.418809+00:00",
+  "hub_manifest_hash": "f3684907400c9ef5d86b978ddb37234d63311168f4a45384c619ff28c24dc107",
+  "package_name": "heldt2012-influenza-virus-replication-lab"
+}

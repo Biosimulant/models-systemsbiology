@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Orfao2008_ThrombinGeneration_AmidolyticActivity
+description: S. It can be used to explore systemsbiology orfao2008 thrombingeneration
+  amidolyticactivity BioModels0000000366 dynamics and compare simulation behavior
+  across conditions.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Cunha Orfaoa S
+- Jank G
+- Mottaghy K
+- Walcher S
+- Zerz E.
+upstream:
+  id: biomodels_ebi:BIOMD0000000366
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000366
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000366
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000366?filename=BIOMD0000000366_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.orfao2008_thrombingeneration_amidolyticactivity_biomd0000000366_model:Orfao2008ThrombingenerationAmidolyticactivityBiomd0000000366Model
+  init_kwargs:
+    model_path: data/BIOMD0000000366.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_xa_atiii
+    maps_to: Xa_ATIII
+    label: Initial Xa Atiii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_ATIII`.
+  - name: initial_i_ia_alpha2_m
+    maps_to: IIa_alpha2M
+    label: Initial I Ia Alpha2 M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IIa_alpha2M`.
+  - name: initial_i_ia_atiii
+    maps_to: IIa_ATIII
+    label: Initial I Ia Atiii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IIa_ATIII`.
+  - name: initial_model_state_ii
+    maps_to: II
+    label: Initial Model State Ii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `II`.
+  - name: initial_model_state_pl
+    maps_to: PL
+    label: Initial Model State Pl
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PL`.
+  - name: initial_model_state_rvv
+    maps_to: RVV
+    label: Initial Model State Rvv
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RVV`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: xa_atiii
+    maps_to: Xa_ATIII
+    label: Xa_ATIII
+    description: Xa_ATIII. Maps to SBML symbol `Xa_ATIII`.
+  - name: i_ia_alpha2_m
+    maps_to: IIa_alpha2M
+    label: IIa_alpha2M
+    description: IIa_alpha2M. Maps to SBML symbol `IIa_alpha2M`.
+  - name: i_ia_atiii
+    maps_to: IIa_ATIII
+    label: IIa_ATIII
+    description: IIa_ATIII. Maps to SBML symbol `IIa_ATIII`.
+  - name: model_state_ii
+    maps_to: II
+    label: II
+    description: II. Maps to SBML symbol `II`.
+  - name: model_state_pl
+    maps_to: PL
+    label: PL
+    description: PL. Maps to SBML symbol `PL`.
+  - name: rvv
+    maps_to: RVV
+    label: RVV
+    description: RVV. Maps to SBML symbol `RVV`.

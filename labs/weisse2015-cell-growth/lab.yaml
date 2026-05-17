@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Weisse2015 Cell Growth Lab
+description: Systems Biology Weisse2015Cell Growth Model1502270000Model captures systemsbiology
+  weisse2015 cell growth model1502270000 behavior in the context of systemsbiology,
+  sbml, biomodels_ebi using a biomodels_ebi-sou. When you run it, you can observe
+  state and evaluate how the modeled system changes across runs.
+models:
+- alias: systemsbiology_sbml_weisse2015_cell_growth_model1502270000_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_weisse2015_cell_growth_model1502270000_model.state
+  to:
+  - visualisation.systemsbiology_sbml_weisse2015_cell_growth_model1502270000_model_state
+- from: systemsbiology_sbml_weisse2015_cell_growth_model1502270000_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_weisse2015_cell_growth_model1502270000_model_summary
+- from: systemsbiology_sbml_weisse2015_cell_growth_model1502270000_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_weisse2015_cell_growth_model1502270000_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_zmt
+    maps_to: systemsbiology_sbml_weisse2015_cell_growth_model1502270000_model.initial_model_state_zmt
+    label: Initial Model State Zmt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `zmt`.
+  - name: initial_model_state_zmr
+    maps_to: systemsbiology_sbml_weisse2015_cell_growth_model1502270000_model.initial_model_state_zmr
+    label: Initial Model State Zmr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `zmr`.
+  - name: initial_model_state_zmq
+    maps_to: systemsbiology_sbml_weisse2015_cell_growth_model1502270000_model.initial_model_state_zmq
+    label: Initial Model State Zmq
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `zmq`.
+  - name: initial_model_state_zmp
+    maps_to: systemsbiology_sbml_weisse2015_cell_growth_model1502270000_model.initial_model_state_zmp
+    label: Initial Model State Zmp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `zmp`.
+  - name: initial_model_state_zmm
+    maps_to: systemsbiology_sbml_weisse2015_cell_growth_model1502270000_model.initial_model_state_zmm
+    label: Initial Model State Zmm
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `zmm`.
+  - name: initial_model_state_si
+    maps_to: systemsbiology_sbml_weisse2015_cell_growth_model1502270000_model.initial_model_state_si
+    label: Initial Model State Si
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `si`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_weisse2015_cell_growth_model1502270000_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_weisse2015_cell_growth_model1502270000_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_weisse2015_cell_growth_model1502270000_model.species_labels
+  - name: zmt
+    maps_to: systemsbiology_sbml_weisse2015_cell_growth_model1502270000_model.zmt
+  - name: zmr
+    maps_to: systemsbiology_sbml_weisse2015_cell_growth_model1502270000_model.zmr
+  - name: zmq
+    maps_to: systemsbiology_sbml_weisse2015_cell_growth_model1502270000_model.zmq
+  - name: zmp
+    maps_to: systemsbiology_sbml_weisse2015_cell_growth_model1502270000_model.zmp
+  - name: zmm
+    maps_to: systemsbiology_sbml_weisse2015_cell_growth_model1502270000_model.zmm
+  - name: model_state_si
+    maps_to: systemsbiology_sbml_weisse2015_cell_growth_model1502270000_model.model_state_si

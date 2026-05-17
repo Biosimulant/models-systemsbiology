@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Cao2008 Network Of A Toggle Switch Lab
+description: Youfang Cao & Jie Liang. Optimal enumeration of state space of finitely
+  buffered stochastic molecular networks and exact computation of steady state landscape
+  probability.
+models:
+- alias: systemsbiology_sbml_cao2008_network_of_a_toggle_switch_biomd0000000483_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_cao2008_network_of_a_toggle_switch_biomd0000000483_model.state
+  to:
+  - visualisation.systemsbiology_sbml_cao2008_network_of_a_toggle_switch_biomd0000000483_model_state
+- from: systemsbiology_sbml_cao2008_network_of_a_toggle_switch_biomd0000000483_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_cao2008_network_of_a_toggle_switch_biomd0000000483_model_summary
+- from: systemsbiology_sbml_cao2008_network_of_a_toggle_switch_biomd0000000483_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_cao2008_network_of_a_toggle_switch_biomd0000000483_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_pb
+    maps_to: systemsbiology_sbml_cao2008_network_of_a_toggle_switch_biomd0000000483_model.initial_model_state_pb
+    label: Initial Model State Pb
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pb`.
+  - name: initial_model_state_pa
+    maps_to: systemsbiology_sbml_cao2008_network_of_a_toggle_switch_biomd0000000483_model.initial_model_state_pa
+    label: Initial Model State Pa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pa`.
+  - name: initial_model_state_db
+    maps_to: systemsbiology_sbml_cao2008_network_of_a_toggle_switch_biomd0000000483_model.initial_model_state_db
+    label: Initial Model State Db
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Db`.
+  - name: initial_model_state_da
+    maps_to: systemsbiology_sbml_cao2008_network_of_a_toggle_switch_biomd0000000483_model.initial_model_state_da
+    label: Initial Model State Da
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Da`.
+  - name: initial_b_db
+    maps_to: systemsbiology_sbml_cao2008_network_of_a_toggle_switch_biomd0000000483_model.initial_b_db
+    label: Initial B Db
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `BDb`.
+  - name: initial_b_da
+    maps_to: systemsbiology_sbml_cao2008_network_of_a_toggle_switch_biomd0000000483_model.initial_b_da
+    label: Initial B Da
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `BDa`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_cao2008_network_of_a_toggle_switch_biomd0000000483_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_cao2008_network_of_a_toggle_switch_biomd0000000483_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_cao2008_network_of_a_toggle_switch_biomd0000000483_model.species_labels
+  - name: model_state_pb
+    maps_to: systemsbiology_sbml_cao2008_network_of_a_toggle_switch_biomd0000000483_model.model_state_pb
+  - name: model_state_pa
+    maps_to: systemsbiology_sbml_cao2008_network_of_a_toggle_switch_biomd0000000483_model.model_state_pa
+  - name: model_state_db
+    maps_to: systemsbiology_sbml_cao2008_network_of_a_toggle_switch_biomd0000000483_model.model_state_db
+  - name: model_state_da
+    maps_to: systemsbiology_sbml_cao2008_network_of_a_toggle_switch_biomd0000000483_model.model_state_da
+  - name: b_db
+    maps_to: systemsbiology_sbml_cao2008_network_of_a_toggle_switch_biomd0000000483_model.b_db
+  - name: b_da
+    maps_to: systemsbiology_sbml_cao2008_network_of_a_toggle_switch_biomd0000000483_model.b_da

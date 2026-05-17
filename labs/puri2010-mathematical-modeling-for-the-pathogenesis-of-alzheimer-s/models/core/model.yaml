@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Puri2010 - Mathematical Modeling for the Pathogenesis of Alzheimer's Disease
+description: Puri2010 - Mathematical Modeling for thePathogenesis of Alzheimer's Disease
+  Puri2010 - Mathematical Modeling for the Pathogenesis of Alzheimer's Disease Encoded
+  non-curated model. It can be used to explore systemsbiology puri2010 mathematical
+  modeling for the dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- generegulation
+- neuroscience
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Ishwar K Puri
+- Ishwar K Puri
+- Liwu Li
+upstream:
+  id: biomodels_ebi:MODEL1409240001
+  source_db: biomodels_ebi
+  source_id: MODEL1409240001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1409240001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1409240001?filename=MODEL1409240001_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.puri2010_mathematical_modeling_for_the_pathogene_model1409240001_model:Puri2010MathematicalModelingForThePathogeneModel1409240001Model
+  init_kwargs:
+    model_path: data/MODEL1409240001.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_m2
+    maps_to: M2
+    label: Initial Model State M2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M2`.
+  - name: initial_model_state_aq
+    maps_to: Aq
+    label: Initial Model State Aq
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Aq`.
+  - name: initial_model_state_ns
+    maps_to: Ns
+    label: Initial Model State Ns
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ns`.
+  - name: initial_model_state_m1
+    maps_to: M1
+    label: Initial Model State M1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M1`.
+  - name: initial_model_state_ap
+    maps_to: Ap
+    label: Initial Model State Ap
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ap`.
+  - name: initial_abeta
+    maps_to: Abeta
+    label: Initial Abeta
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Abeta`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_m2
+    maps_to: M2
+    label: M2
+    description: M2. Maps to SBML symbol `M2`.
+  - name: model_state_aq
+    maps_to: Aq
+    label: Aq
+    description: Aq. Maps to SBML symbol `Aq`.
+  - name: model_state_ns
+    maps_to: Ns
+    label: Ns
+    description: Ns. Maps to SBML symbol `Ns`.
+  - name: model_state_m1
+    maps_to: M1
+    label: M1
+    description: M1. Maps to SBML symbol `M1`.
+  - name: model_state_ap
+    maps_to: Ap
+    label: Ap
+    description: Ap. Maps to SBML symbol `Ap`.
+  - name: abeta
+    maps_to: Abeta
+    label: Abeta
+    description: Abeta. Maps to SBML symbol `Abeta`.

@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Bertram2006_ATPproduction_Mitochondrial
+description: 'This a model from the article: A simplified model for mitochondrial
+  ATP production. Bertram R, Gram Pedersen M, Luciani DS, Sherman A.'
+standard: other
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Richard Bertram
+- Morten Gram Pedersen
+- Dan S Luciani
+- Arthur Sherman
+upstream:
+  id: biomodels_ebi:MODEL1006230114
+  source_db: biomodels_ebi
+  source_id: MODEL1006230114
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1006230114
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1006230114?filename=MODEL1006230114_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.bertram2006_atpproduction_mitochondrial_model1006230114_model:Bertram2006AtpproductionMitochondrialModel1006230114Model
+  init_kwargs:
+    model_path: data/MODEL1006230114.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_cam
+    maps_to: Cam
+    label: Initial Model State Cam
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Cam`.
+  - name: initial_ps_im
+    maps_to: PSIm
+    label: Initial Ps Im
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PSIm`.
+  - name: initial_nad_hm
+    maps_to: NADHm
+    label: Initial Nad Hm
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NADHm`.
+  - name: initial_model_state_fbp
+    maps_to: FBP
+    label: Initial Model State Fbp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `FBP`.
+  - name: initial_ad_pm
+    maps_to: ADPm
+    label: Initial Ad Pm
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ADPm`.
+  - name: initial_ad_pc
+    maps_to: ADPc
+    label: Initial Ad Pc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ADPc`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: cam
+    maps_to: Cam
+    label: Cam
+    description: Cam. Maps to SBML symbol `Cam`.
+  - name: ps_im
+    maps_to: PSIm
+    label: PSIm
+    description: PSIm. Maps to SBML symbol `PSIm`.
+  - name: nad_hm
+    maps_to: NADHm
+    label: NADHm
+    description: NADHm. Maps to SBML symbol `NADHm`.
+  - name: fbp
+    maps_to: FBP
+    label: FBP
+    description: FBP. Maps to SBML symbol `FBP`.
+  - name: ad_pm
+    maps_to: ADPm
+    label: ADPm
+    description: ADPm. Maps to SBML symbol `ADPm`.
+  - name: ad_pc
+    maps_to: ADPc
+    label: ADPc
+    description: ADPc. Maps to SBML symbol `ADPc`.

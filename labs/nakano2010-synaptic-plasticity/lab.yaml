@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Nakano2010 Synaptic Plasticity Lab
+description: 'This is an SBML version of the model described in: A kinetic model of
+  dopamine- and calcium-dependent striatal synaptic plasticity. Nakano T, Doi T, Yoshimoto
+  J, Doya K.'
+models:
+- alias: systemsbiology_sbml_nakano2010_synaptic_plasticity_model1101170000_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_nakano2010_synaptic_plasticity_model1101170000_model.state
+  to:
+  - visualisation.systemsbiology_sbml_nakano2010_synaptic_plasticity_model1101170000_model_state
+- from: systemsbiology_sbml_nakano2010_synaptic_plasticity_model1101170000_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_nakano2010_synaptic_plasticity_model1101170000_model_summary
+- from: systemsbiology_sbml_nakano2010_synaptic_plasticity_model1101170000_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_nakano2010_synaptic_plasticity_model1101170000_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- neuroscience
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_atp
+    maps_to: systemsbiology_sbml_nakano2010_synaptic_plasticity_model1101170000_model.initial_model_state_atp
+    label: Initial Model State ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATP`.
+  - name: initial_ac_gsa_atp
+    maps_to: systemsbiology_sbml_nakano2010_synaptic_plasticity_model1101170000_model.initial_ac_gsa_atp
+    label: Initial Ac Gsa ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `AC_Gsa_ATP`.
+  - name: initial_ac_gsa_ca_atp
+    maps_to: systemsbiology_sbml_nakano2010_synaptic_plasticity_model1101170000_model.initial_ac_gsa_ca_atp
+    label: Initial Ac Gsa Ca ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ACGsa_Ca_ATP`.
+  - name: initial_cam_total
+    maps_to: systemsbiology_sbml_nakano2010_synaptic_plasticity_model1101170000_model.initial_cam_total
+    label: Initial Cam Total
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Cam_total`.
+  - name: initial_ca_m
+    maps_to: systemsbiology_sbml_nakano2010_synaptic_plasticity_model1101170000_model.initial_ca_m
+    label: Initial Ca M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaM`.
+  - name: initial_ca_mkii
+    maps_to: systemsbiology_sbml_nakano2010_synaptic_plasticity_model1101170000_model.initial_ca_mkii
+    label: Initial Ca Mkii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaMKII`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_nakano2010_synaptic_plasticity_model1101170000_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_nakano2010_synaptic_plasticity_model1101170000_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_nakano2010_synaptic_plasticity_model1101170000_model.species_labels
+  - name: atp
+    maps_to: systemsbiology_sbml_nakano2010_synaptic_plasticity_model1101170000_model.atp
+  - name: ac_gsa_atp
+    maps_to: systemsbiology_sbml_nakano2010_synaptic_plasticity_model1101170000_model.ac_gsa_atp
+  - name: ac_gsa_ca_atp
+    maps_to: systemsbiology_sbml_nakano2010_synaptic_plasticity_model1101170000_model.ac_gsa_ca_atp
+  - name: cam_total
+    maps_to: systemsbiology_sbml_nakano2010_synaptic_plasticity_model1101170000_model.cam_total
+  - name: ca_m
+    maps_to: systemsbiology_sbml_nakano2010_synaptic_plasticity_model1101170000_model.ca_m
+  - name: ca_mkii
+    maps_to: systemsbiology_sbml_nakano2010_synaptic_plasticity_model1101170000_model.ca_mkii

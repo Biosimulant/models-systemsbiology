@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Farhy2007 Hghregulation Lab
+description: 'This a model from the article: Model-projected mechanistic bases for
+  sex differences in growth hormoneregulation in humans. It can be used to explore
+  systemsbiology farhy2007 hghregulation model0912096133 dynamics and compare simulation
+  behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_farhy2007_hghregulation_model0912096133_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_farhy2007_hghregulation_model0912096133_model.state
+  to:
+  - visualisation.systemsbiology_sbml_farhy2007_hghregulation_model0912096133_model_state
+- from: systemsbiology_sbml_farhy2007_hghregulation_model0912096133_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_farhy2007_hghregulation_model0912096133_model_summary
+- from: systemsbiology_sbml_farhy2007_hghregulation_model0912096133_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_farhy2007_hghregulation_model0912096133_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_srif_pe_v
+    maps_to: systemsbiology_sbml_farhy2007_hghregulation_model0912096133_model.initial_srif_pe_v
+    label: Initial Srif Pe V
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `SRIF_PeV`.
+  - name: initial_srif_ar_c
+    maps_to: systemsbiology_sbml_farhy2007_hghregulation_model0912096133_model.initial_srif_ar_c
+    label: Initial Srif Ar C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `SRIF_ArC`.
+  - name: initial_ghr_ghrh
+    maps_to: systemsbiology_sbml_farhy2007_hghregulation_model0912096133_model.initial_ghr_ghrh
+    label: Initial Ghr Ghrh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ghr_GHRH`.
+  - name: initial_ghrh
+    maps_to: systemsbiology_sbml_farhy2007_hghregulation_model0912096133_model.initial_ghrh
+    label: Initial Ghrh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `GHRH`.
+  - name: initial_model_state_gh
+    maps_to: systemsbiology_sbml_farhy2007_hghregulation_model0912096133_model.initial_model_state_gh
+    label: Initial Model State Gh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `GH`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_farhy2007_hghregulation_model0912096133_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_farhy2007_hghregulation_model0912096133_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_farhy2007_hghregulation_model0912096133_model.species_labels
+  - name: srif_pe_v
+    maps_to: systemsbiology_sbml_farhy2007_hghregulation_model0912096133_model.srif_pe_v
+  - name: srif_ar_c
+    maps_to: systemsbiology_sbml_farhy2007_hghregulation_model0912096133_model.srif_ar_c
+  - name: ghr_ghrh
+    maps_to: systemsbiology_sbml_farhy2007_hghregulation_model0912096133_model.ghr_ghrh
+  - name: ghrh
+    maps_to: systemsbiology_sbml_farhy2007_hghregulation_model0912096133_model.ghrh
+  - name: model_state_gh
+    maps_to: systemsbiology_sbml_farhy2007_hghregulation_model0912096133_model.model_state_gh

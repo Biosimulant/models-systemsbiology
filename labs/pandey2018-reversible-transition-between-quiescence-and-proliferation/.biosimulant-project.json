@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "451d22d5-388e-4f32-9092-59526dd4e835",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "6ac277af-fa72-4d9c-9690-10a000c1486d",
+  "created_at": "2026-05-16T05:46:49.765569472+00:00",
+  "last_synced_at": "2026-05-17T05:23:56.013338+00:00",
+  "hub_manifest_hash": "661379329701ed026bf8b2140e54d945588bf1fea8fb156415c9e9e119d93267",
+  "package_name": "pandey2018-reversible-transition-between-quiescence-and-prolifer"
+}

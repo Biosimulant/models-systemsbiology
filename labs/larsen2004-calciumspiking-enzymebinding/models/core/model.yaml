@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Larsen2004_CalciumSpiking_EnzymeBinding
+description: 'This a model from the article: On the encoding and decoding of calcium
+  signals in hepatocytes Ann Zahle Larsen, Lars Folke Olsen and Ursula Kummera Biophysical
+  Chemistry Volume 107, Issue 1, 1 January. It can be used to explore systemsbiology
+  larsen2004 calciumspiking enzymebinding BioModels0000000331 dynamics and compare
+  simulation behavior across conditions.'
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Ann Zahle Larsen
+- L F Olsen
+- Ursula Kummer
+upstream:
+  id: biomodels_ebi:BIOMD0000000331
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000331
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000331
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000331?filename=BIOMD0000000331_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.larsen2004_calciumspiking_enzymebinding_biomd0000000331_model:Larsen2004CalciumspikingEnzymebindingBiomd0000000331Model
+  init_kwargs:
+    model_path: data/BIOMD0000000331.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_calcium_er
+    maps_to: Ca_ER
+    label: Initial Calcium Er
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_ER`.
+  - name: initial_g_alpha
+    maps_to: G_alpha
+    label: Initial G Alpha
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `G_alpha`.
+  - name: initial_calcium_cyt
+    maps_to: Ca_cyt
+    label: Initial Calcium Cyt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_cyt`.
+  - name: initial_calcium_mit
+    maps_to: Ca_mit
+    label: Initial Calcium Mit
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_mit`.
+  - name: initial_enzyme
+    maps_to: Enz
+    label: Initial Enzyme
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Enz`.
+  - name: initial_enz_catlysed_product
+    maps_to: Product
+    label: Initial Enz Catlysed Product
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Product`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: calcium_er
+    maps_to: Ca_ER
+    label: Calcium-ER
+    description: Calcium-ER. Maps to SBML symbol `Ca_ER`.
+  - name: g_alpha
+    maps_to: G_alpha
+    label: G-alpha
+    description: G-alpha. Maps to SBML symbol `G_alpha`.
+  - name: calcium_cyt
+    maps_to: Ca_cyt
+    label: Calcium-Cyt
+    description: Calcium-Cyt. Maps to SBML symbol `Ca_cyt`.
+  - name: calcium_mit
+    maps_to: Ca_mit
+    label: Calcium-mit
+    description: Calcium-mit. Maps to SBML symbol `Ca_mit`.
+  - name: enzyme
+    maps_to: Enz
+    label: Enzyme
+    description: Enzyme. Maps to SBML symbol `Enz`.
+  - name: enz_catlysed_product
+    maps_to: Product
+    label: EnzCatlysedProduct
+    description: EnzCatlysedProduct. Maps to SBML symbol `Product`.

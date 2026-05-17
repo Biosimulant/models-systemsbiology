@@ -1,0 +1,68 @@
+schema_version: '2.0'
+title: Cloutier2012 - Feedback motif for Parkinson's disease
+description: 'Cloutier2012 - Feedback motif for Parkinson''sdisease This model is
+  described in the article: Feedback motif for the pathogenesis of Parkinson''s disease.
+  It can be used to explore systemsbiology cloutier2012 feedback motif for parkinson
+  dynamics and compare simulation behavior across conditions.'
+standard: other
+tags:
+- generegulation
+- neuroscience
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- M Cloutier
+- R Middleton
+- P Wellstead
+upstream:
+  id: biomodels_ebi:BIOMD0000000558
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000558
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000558
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000558?filename=BIOMD0000000558_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.cloutier2012_feedback_motif_for_parkinson_s_dise_biomd0000000558_model:Cloutier2012FeedbackMotifForParkinsonSDiseBiomd0000000558Model
+  init_kwargs:
+    model_path: data/BIOMD0000000558.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_alpha_syn
+    maps_to: alpha_syn
+    label: Initial Alpha Syn
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `alpha_syn`.
+  - name: initial_model_state_ros
+    maps_to: ROS
+    label: Initial Model State Ros
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ROS`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: alpha_syn
+    maps_to: alpha_syn
+    label: alpha-syn
+    description: alpha-syn. Maps to SBML symbol `alpha_syn`.
+  - name: ros
+    maps_to: ROS
+    label: ROS
+    description: ROS. Maps to SBML symbol `ROS`.

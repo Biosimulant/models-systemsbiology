@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Clarke2006 Smad Signalling Lab
+description: The model reproduces the temporal evolution of four variables depicted
+  in Fig 2a. It can be used to explore systemsbiology clarke2006 smad signalling BioModels0000000112
+  dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_clarke2006_smad_signalling_biomd0000000112_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_clarke2006_smad_signalling_biomd0000000112_model.state
+  to:
+  - visualisation.systemsbiology_sbml_clarke2006_smad_signalling_biomd0000000112_model_state
+- from: systemsbiology_sbml_clarke2006_smad_signalling_biomd0000000112_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_clarke2006_smad_signalling_biomd0000000112_model_summary
+- from: systemsbiology_sbml_clarke2006_smad_signalling_biomd0000000112_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_clarke2006_smad_signalling_biomd0000000112_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_r_smad_cyt
+    maps_to: systemsbiology_sbml_clarke2006_smad_signalling_biomd0000000112_model.initial_r_smad_cyt
+    label: Initial R Smad Cyt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `R_smad_cyt`.
+  - name: initial_smad4_cyt
+    maps_to: systemsbiology_sbml_clarke2006_smad_signalling_biomd0000000112_model.initial_smad4_cyt
+    label: Initial Smad4 Cyt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `smad4_cyt`.
+  - name: initial_smad4_nuc
+    maps_to: systemsbiology_sbml_clarke2006_smad_signalling_biomd0000000112_model.initial_smad4_nuc
+    label: Initial Smad4 Nuc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `smad4_nuc`.
+  - name: initial_r_smad_nuc
+    maps_to: systemsbiology_sbml_clarke2006_smad_signalling_biomd0000000112_model.initial_r_smad_nuc
+    label: Initial R Smad Nuc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `R_smad_nuc`.
+  - name: initial_receptors
+    maps_to: systemsbiology_sbml_clarke2006_smad_signalling_biomd0000000112_model.initial_receptors
+    label: Initial Receptors
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `receptor`.
+  - name: initial_r_smad_p_nuc
+    maps_to: systemsbiology_sbml_clarke2006_smad_signalling_biomd0000000112_model.initial_r_smad_p_nuc
+    label: Initial R Smad P Nuc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `R_smad_P_nuc`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_clarke2006_smad_signalling_biomd0000000112_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_clarke2006_smad_signalling_biomd0000000112_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_clarke2006_smad_signalling_biomd0000000112_model.species_labels
+  - name: r_smad_cyt
+    maps_to: systemsbiology_sbml_clarke2006_smad_signalling_biomd0000000112_model.r_smad_cyt
+  - name: smad4_cyt
+    maps_to: systemsbiology_sbml_clarke2006_smad_signalling_biomd0000000112_model.smad4_cyt
+  - name: smad4_nuc
+    maps_to: systemsbiology_sbml_clarke2006_smad_signalling_biomd0000000112_model.smad4_nuc
+  - name: r_smad_nuc
+    maps_to: systemsbiology_sbml_clarke2006_smad_signalling_biomd0000000112_model.r_smad_nuc
+  - name: receptors
+    maps_to: systemsbiology_sbml_clarke2006_smad_signalling_biomd0000000112_model.receptors
+  - name: r_smad_p_nuc
+    maps_to: systemsbiology_sbml_clarke2006_smad_signalling_biomd0000000112_model.r_smad_p_nuc

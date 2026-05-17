@@ -1,0 +1,82 @@
+schema_version: '2.0'
+title: Masison2024 - Enterocyte Iron Mucosal Block
+description: Enterocyte Iron Mucosal Block This is a model of enterocyte iron absorption,
+  consisting of iron uptake (movement of iron from intestinal lumen into cytplasm),
+  and transfer (transport of iron from cyto. It can be used to explore systemsbiology
+  masison2024 enterocyte iron mucosal block dynamics and compare simulation behavior
+  across conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Joseph Masison
+- Pedro Mendes
+upstream:
+  id: biomodels_ebi:MODEL2405170001
+  source_db: biomodels_ebi
+  source_id: MODEL2405170001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2405170001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2405170001?filename=Masison2024_EnterocyteIronMucosalBlock.xml
+  license: CC0
+biosim:
+  entrypoint: src.masison2024_enterocyte_iron_mucosal_block_model2405170001_model:Masison2024EnterocyteIronMucosalBlockModel2405170001Model
+  init_kwargs:
+    model_path: data/MODEL2405170001.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: dose_0
+    maps_to: dose_0
+    label: Dose 0
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `dose_0`.
+  - name: dose_fe
+    maps_to: dose_fe
+    label: Dose Fe
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `dose_fe`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: fpn_internalized
+    maps_to: FPN_internalized
+    label: FPN_internalized
+    description: FPN_internalized. Maps to SBML symbol `FPN_internalized`.
+  - name: core
+    maps_to: core
+    label: core
+    description: core. Maps to SBML symbol `core`.
+  - name: fe_lumen
+    maps_to: Fe_lumen
+    label: Fe_lumen
+    description: Fe_lumen. Maps to SBML symbol `Fe_lumen`.
+  - name: fe_blood
+    maps_to: Fe_blood
+    label: Fe_blood
+    description: Fe_blood. Maps to SBML symbol `Fe_blood`.
+  - name: ft_cage
+    maps_to: FT_cage
+    label: FT-cage
+    description: FT-cage. Maps to SBML symbol `FT_cage`.
+  - name: ir_ps_active
+    maps_to: IRPs_active
+    label: IRPs_active
+    description: IRPs_active. Maps to SBML symbol `IRPs_active`.

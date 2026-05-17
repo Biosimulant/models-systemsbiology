@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Lever2014 - Phenotypic models of T cell activation. Visualisation
+description: Question-and-answer and dynamic visual summaries for Lever2014 - Phenotypic
+  models of T cell activation..
+standard: other
+tags:
+- immunology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Lever2014 Phenotypic Models Of T Cell Activation Lab
+    question: 'Which immune or inflammatory states dominate the simulated response?
+      Source model: Lever2014 - Phenotypic models of T cell activation..'
+    answer_focus: Q/A table plus immunology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_lever2014_phenotypic_models_of_t_cell_activation_model1907260003_model
+      title: Lever2014 - Phenotypic models of T cell activation.
+      observables:
+      - id: C0
+        port: model_state_c0
+        label: C0
+        group: physiology
+      - id: C9
+        port: model_state_c9
+        label: C9
+        group: physiology
+      - id: C8
+        port: model_state_c8
+        label: C8
+        group: physiology
+      - id: C7
+        port: model_state_c7
+        label: C7
+        group: physiology
+      - id: C6
+        port: model_state_c6
+        label: C6
+        group: physiology
+      - id: C5
+        port: model_state_c5
+        label: C5
+        group: physiology
+io:
+  inputs: []
+  outputs: []

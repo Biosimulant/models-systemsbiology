@@ -1,0 +1,111 @@
+schema_version: '2.0'
+title: Banaji2005_Brain_Cell_Metabolism
+description: 'This is a part of the model described in: A physiological model of cerebral
+  blood flow control Murad Banaji, Ilias Tachtsidis, David Delpy, Stephen Baigent,
+  Mathematical biosciences 2005 194:125-173;. It can be used to explore systemsbiology
+  banaji2005 brain cell metabolism model4992089662 dynamics and compare simulation
+  behavior across conditions.'
+standard: other
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Murad Banaji
+- Ilias Tachtsidis
+- David Delpy
+- Stephen Baigent
+upstream:
+  id: biomodels_ebi:MODEL4992089662
+  source_db: biomodels_ebi
+  source_id: MODEL4992089662
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL4992089662
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL4992089662?filename=MODEL4992089662_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.banaji2005_brain_cell_metabolism_model4992089662_model:Banaji2005BrainCellMetabolismModel4992089662Model
+  init_kwargs:
+    model_path: data/MODEL4992089662.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_sites_on_cellular_proteins_capable_of_binding_protons
+    maps_to: Pbuf
+    label: Initial Sites On Cellular Proteins Capable Of Binding Protons
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pbuf`.
+  - name: initial_sites_on_cellular_proteins_bound_to_protons
+    maps_to: PbufH
+    label: Initial Sites On Cellular Proteins Bound To Protons
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PbufH`.
+  - name: initial_potassium_ion
+    maps_to: _K
+    label: Initial Potassium Ion
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `_K`.
+  - name: initial_sodium_ion
+    maps_to: _eNa
+    label: Initial Sodium Ion
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `_eNa`.
+  - name: initial_bicarbonate_ion
+    maps_to: _mBiC
+    label: Initial Bicarbonate Ion
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `_mBiC`.
+  - name: initial_bicarbonate_ion_2
+    maps_to: _eBiC
+    label: Initial Bicarbonate Ion 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `_eBiC`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: sites_on_cellular_proteins_capable_of_binding_protons
+    maps_to: Pbuf
+    label: sites on cellular proteins capable of binding protons
+    description: sites on cellular proteins capable of binding protons. Maps to SBML
+      symbol `Pbuf`.
+  - name: sites_on_cellular_proteins_bound_to_protons
+    maps_to: PbufH
+    label: sites on cellular proteins bound to protons
+    description: sites on cellular proteins bound to protons. Maps to SBML symbol
+      `PbufH`.
+  - name: potassium_ion
+    maps_to: _K
+    label: potassium ion
+    description: potassium ion. Maps to SBML symbol `_K`.
+  - name: sodium_ion
+    maps_to: _eNa
+    label: sodium ion
+    description: sodium ion. Maps to SBML symbol `_eNa`.
+  - name: bicarbonate_ion
+    maps_to: _mBiC
+    label: bicarbonate ion
+    description: bicarbonate ion. Maps to SBML symbol `_mBiC`.
+  - name: bicarbonate_ion_2
+    maps_to: _eBiC
+    label: bicarbonate ion
+    description: bicarbonate ion. Maps to SBML symbol `_eBiC`.

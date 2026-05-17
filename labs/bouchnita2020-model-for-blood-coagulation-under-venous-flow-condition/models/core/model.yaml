@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Bouchnita2020 - Model for blood coagulation under venous flow condition
+description: A numerical simulation model to reproduce in vitro experiments of blood
+  coagulation in microfluidic capillaries. A reduced one-equation model of thrombin
+  distribution from the previous model under sim.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Anass Bouchnita
+- Kirill Terekhov
+- Patrice Nony
+- Yuri Vassilevski
+- Vitaly Volpert
+upstream:
+  id: biomodels_ebi:MODEL2011030003
+  source_db: biomodels_ebi
+  source_id: MODEL2011030003
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2011030003
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2011030003?filename=Bouchnita2020.xml
+  license: CC0
+biosim:
+  entrypoint: src.bouchnita2020_model_for_blood_coagulation_under_model2011030003_model:Bouchnita2020ModelForBloodCoagulationUnderModel2011030003Model
+  init_kwargs:
+    model_path: data/MODEL2011030003.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_atiii
+    maps_to: ATIII
+    label: Initial Atiii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATIII`.
+  - name: initial_model_state_ii
+    maps_to: II
+    label: Initial Model State Ii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `II`.
+  - name: initial_vi_ia
+    maps_to: VIIa
+    label: Initial Vi Ia
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VIIa`.
+  - name: initial_model_state_tf
+    maps_to: TF
+    label: Initial Model State Tf
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TF`.
+  - name: initial_model_state_xa
+    maps_to: Xa
+    label: Initial Model State Xa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa`.
+  - name: initial_i_ia
+    maps_to: IIa
+    label: Initial I Ia
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IIa`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: atiii
+    maps_to: ATIII
+    label: ATIII
+    description: ATIII. Maps to SBML symbol `ATIII`.
+  - name: model_state_ii
+    maps_to: II
+    label: II
+    description: II. Maps to SBML symbol `II`.
+  - name: vi_ia
+    maps_to: VIIa
+    label: VIIa
+    description: VIIa. Maps to SBML symbol `VIIa`.
+  - name: model_state_tf
+    maps_to: TF
+    label: TF
+    description: TF. Maps to SBML symbol `TF`.
+  - name: model_state_xa
+    maps_to: Xa
+    label: Xa
+    description: Xa. Maps to SBML symbol `Xa`.
+  - name: i_ia
+    maps_to: IIa
+    label: IIa
+    description: IIa. Maps to SBML symbol `IIa`.

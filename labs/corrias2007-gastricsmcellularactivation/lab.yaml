@@ -1,0 +1,59 @@
+schema_version: '2.0'
+title: Corrias2007 Gastricsmcellularactivation Lab
+description: 'This a model from the article: A quantitative model of gastric smooth
+  muscle cellular activation. It can be used to explore systemsbiology corrias2007
+  gastricsmcellularactivat model0913145131 dynamics and compare simulation behavior
+  across conditions.'
+models:
+- alias: systemsbiology_sbml_corrias2007_gastricsmcellularactivation_model0913145131_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_corrias2007_gastricsmcellularactivation_model0913145131_model.state
+  to:
+  - visualisation.systemsbiology_sbml_corrias2007_gastricsmcellularactivation_model0913145131_model_state
+- from: systemsbiology_sbml_corrias2007_gastricsmcellularactivation_model0913145131_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_corrias2007_gastricsmcellularactivation_model0913145131_model_summary
+- from: systemsbiology_sbml_corrias2007_gastricsmcellularactivation_model0913145131_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_corrias2007_gastricsmcellularactivation_model0913145131_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: t_icc_stimulus
+    maps_to: systemsbiology_sbml_corrias2007_gastricsmcellularactivation_model0913145131_model.t_icc_stimulus
+    label: T Icc Stimulus
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `t_ICC_stimulus`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_corrias2007_gastricsmcellularactivation_model0913145131_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_corrias2007_gastricsmcellularactivation_model0913145131_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_corrias2007_gastricsmcellularactivation_model0913145131_model.species_labels
+  - name: xr2_sm
+    maps_to: systemsbiology_sbml_corrias2007_gastricsmcellularactivation_model0913145131_model.xr2_sm
+  - name: xr1_sm
+    maps_to: systemsbiology_sbml_corrias2007_gastricsmcellularactivation_model0913145131_model.xr1_sm
+  - name: xa2_sm
+    maps_to: systemsbiology_sbml_corrias2007_gastricsmcellularactivation_model0913145131_model.xa2_sm
+  - name: xa1_sm
+    maps_to: systemsbiology_sbml_corrias2007_gastricsmcellularactivation_model0913145131_model.xa1_sm
+  - name: vm_sm
+    maps_to: systemsbiology_sbml_corrias2007_gastricsmcellularactivation_model0913145131_model.vm_sm
+  - name: m_na_sm
+    maps_to: systemsbiology_sbml_corrias2007_gastricsmcellularactivation_model0913145131_model.m_na_sm

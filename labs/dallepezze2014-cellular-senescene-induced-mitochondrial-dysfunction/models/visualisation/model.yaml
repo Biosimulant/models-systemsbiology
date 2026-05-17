@@ -1,0 +1,58 @@
+schema_version: '2.0'
+title: DallePezze2014 - Cellular senescene-induced mitochondrial dysfunction Visualisation
+description: Question-and-answer and dynamic visual summaries for DallePezze2014 -
+  Cellular senescene-induced mitochondrial dysfunction.
+standard: other
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Dallepezze2014 Cellular Senescene Induced Mitochondrial Dysfunction
+      Lab
+    question: 'Which metabolic pools or flux-linked states show the strongest simulated
+      change? Source model: DallePezze2014 - Cellular senescene-induced mitochondrial
+      dysfunction.'
+    answer_focus: Q/A table plus metabolism timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_dallepezze2014_cellular_senescene_induced_mitoch_biomd0000000582_model
+      title: DallePezze2014 - Cellular senescene-induced mitochondrial dysfunction
+      observables:
+      - id: mTOR_pS2448_obs
+        port: m_tor_p_s2448_obs
+        label: mTOR_pS2448_obs
+        group: signaling
+      - id: mTORC1_pS2448
+        port: m_torc1_p_s2448
+        label: mTORC1_pS2448
+        group: signaling
+      - id: mTORC1
+        port: m_torc1
+        label: mTORC1
+        group: signaling
+      - id: Mito_mass_turnover
+        port: mito_mass_turnover
+        label: Mito_mass_turnover
+        group: metabolism
+      - id: FoxO3a_total_obs
+        port: fox_o3a_total_obs
+        label: FoxO3a_total_obs
+        group: metabolism
+      - id: Mito_membr_pot_new
+        port: mito_membr_pot_new
+        label: Mito_membr_pot_new
+        group: metabolism
+io:
+  inputs: []
+  outputs: []

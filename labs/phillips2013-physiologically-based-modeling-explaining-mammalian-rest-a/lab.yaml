@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Phillips2013 Physiologically Based Modeling Explaining Mammalian Rest A Lab
+description: The model provides a framework for understanding rest/activity patterns
+  effected by the circadian rhythm and relating them to underlying diverse phenotypes.
+  It can be used to explore systemsbiology phillips2013 physiologically based modeling
+  expl dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_phillips2013_physiologically_based_modeling_expl_biomd0000001072_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_phillips2013_physiologically_based_modeling_expl_biomd0000001072_model.state
+  to:
+  - visualisation.systemsbiology_sbml_phillips2013_physiologically_based_modeling_expl_biomd0000001072_model_state
+- from: systemsbiology_sbml_phillips2013_physiologically_based_modeling_expl_biomd0000001072_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_phillips2013_physiologically_based_modeling_expl_biomd0000001072_model_summary
+- from: systemsbiology_sbml_phillips2013_physiologically_based_modeling_expl_biomd0000001072_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_phillips2013_physiologically_based_modeling_expl_biomd0000001072_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_h_sleep_homeostatic_drive
+    maps_to: systemsbiology_sbml_phillips2013_physiologically_based_modeling_expl_biomd0000001072_model.initial_h_sleep_homeostatic_drive
+    label: Initial H Sleep Homeostatic Drive
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `H`.
+  - name: initial_v_m_mean_cell_body_potential_ma
+    maps_to: systemsbiology_sbml_phillips2013_physiologically_based_modeling_expl_biomd0000001072_model.initial_v_m_mean_cell_body_potential_ma
+    label: Initial V M Mean Cell Body Potential Ma
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `V_m`.
+  - name: initial_v_v_mean_cell_body_potential_vlpo
+    maps_to: systemsbiology_sbml_phillips2013_physiologically_based_modeling_expl_biomd0000001072_model.initial_v_v_mean_cell_body_potential_vlpo
+    label: Initial V V Mean Cell Body Potential Vlpo
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `V_v`.
+  - name: initial_y_complement_of_x
+    maps_to: systemsbiology_sbml_phillips2013_physiologically_based_modeling_expl_biomd0000001072_model.initial_y_complement_of_x
+    label: Initial Y Complement Of X
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Y`.
+  - name: initial_x_scn_activity
+    maps_to: systemsbiology_sbml_phillips2013_physiologically_based_modeling_expl_biomd0000001072_model.initial_x_scn_activity
+    label: Initial X Scn Activity
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X`.
+  - name: initial_n_fraction_of_photoreceptors_that_are_activated
+    maps_to: systemsbiology_sbml_phillips2013_physiologically_based_modeling_expl_biomd0000001072_model.initial_n_fraction_of_photoreceptors_that_are_activated
+    label: Initial N Fraction Of Photoreceptors That Are Activated
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `n`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_phillips2013_physiologically_based_modeling_expl_biomd0000001072_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_phillips2013_physiologically_based_modeling_expl_biomd0000001072_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_phillips2013_physiologically_based_modeling_expl_biomd0000001072_model.species_labels
+  - name: h_sleep_homeostatic_drive
+    maps_to: systemsbiology_sbml_phillips2013_physiologically_based_modeling_expl_biomd0000001072_model.h_sleep_homeostatic_drive
+  - name: v_m_mean_cell_body_potential_ma
+    maps_to: systemsbiology_sbml_phillips2013_physiologically_based_modeling_expl_biomd0000001072_model.v_m_mean_cell_body_potential_ma
+  - name: v_v_mean_cell_body_potential_vlpo
+    maps_to: systemsbiology_sbml_phillips2013_physiologically_based_modeling_expl_biomd0000001072_model.v_v_mean_cell_body_potential_vlpo
+  - name: y_complement_of_x
+    maps_to: systemsbiology_sbml_phillips2013_physiologically_based_modeling_expl_biomd0000001072_model.y_complement_of_x
+  - name: x_scn_activity
+    maps_to: systemsbiology_sbml_phillips2013_physiologically_based_modeling_expl_biomd0000001072_model.x_scn_activity
+  - name: n_fraction_of_photoreceptors_that_are_activated
+    maps_to: systemsbiology_sbml_phillips2013_physiologically_based_modeling_expl_biomd0000001072_model.n_fraction_of_photoreceptors_that_are_activated

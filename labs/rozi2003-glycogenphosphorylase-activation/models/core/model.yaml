@@ -1,0 +1,95 @@
+schema_version: '2.0'
+title: Rozi2003_GlycogenPhosphorylase_Activation
+description: The model reproduces the temporal evolution of Glycogen phosphorylase
+  for a vale of Vm5=30 as depicted in Fig 1a of the paper. The model makes use of
+  calcium oscillations from the Borghans model to st.
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Anvar Rozi
+- Ya Jia
+upstream:
+  id: biomodels_ebi:BIOMD0000000100
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000100
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000100
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000100?filename=BIOMD0000000100_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.rozi2003_glycogenphosphorylase_activation_biomd0000000100_model:Rozi2003GlycogenphosphorylaseActivationBiomd0000000100Model
+  init_kwargs:
+    model_path: data/BIOMD0000000100.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_extracellular_calcium
+    maps_to: EC
+    label: Initial Extracellular Calcium
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `EC`.
+  - name: initial_glycogen_phosphorylase
+    maps_to: GP
+    label: Initial Glycogen Phosphorylase
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `GP`.
+  - name: initial_model_state_ip3
+    maps_to: A
+    label: Initial Model State IP3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `A`.
+  - name: initial_intravesicular_calcium
+    maps_to: Y
+    label: Initial Intravesicular Calcium
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Y`.
+  - name: initial_cytosolic_calcium
+    maps_to: Z
+    label: Initial Cytosolic Calcium
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Z`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: extracellular_calcium
+    maps_to: EC
+    label: Extracellular Calcium
+    description: Extracellular Calcium. Maps to SBML symbol `EC`.
+  - name: glycogen_phosphorylase
+    maps_to: GP
+    label: Glycogen Phosphorylase
+    description: Glycogen Phosphorylase. Maps to SBML symbol `GP`.
+  - name: ip3
+    maps_to: A
+    label: IP3
+    description: IP3. Maps to SBML symbol `A`.
+  - name: intravesicular_calcium
+    maps_to: Y
+    label: Intravesicular Calcium
+    description: Intravesicular Calcium. Maps to SBML symbol `Y`.
+  - name: cytosolic_calcium
+    maps_to: Z
+    label: Cytosolic Calcium
+    description: Cytosolic Calcium. Maps to SBML symbol `Z`.

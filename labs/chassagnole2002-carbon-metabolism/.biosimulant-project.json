@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "d94d1bca-0363-4054-b2f5-db16e4b5ffa2",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "b87e3818-44e0-4842-88f3-1843cf48d764",
+  "created_at": "2026-05-16T05:46:42.324404267+00:00",
+  "last_synced_at": "2026-05-17T02:33:08.645302+00:00",
+  "hub_manifest_hash": "c346a8997f0adef4bcdd99f84875d27f4d852b1d58b58811ca814ed03a3b75c8",
+  "package_name": "chassagnole2002-carbon-metabolism-lab"
+}

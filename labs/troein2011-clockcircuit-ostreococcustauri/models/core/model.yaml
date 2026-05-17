@@ -1,0 +1,109 @@
+schema_version: '2.0'
+title: Troein2011_ClockCircuit_OstreococcusTauri
+description: 'This model is from the article: Multiple light inputs to a simple clock
+  circuit allow complex biological rhythms Troein C, Corellou F, Dixon LE, van Ooijen
+  G, O''Neill JS, Bouget FY, Millar AJ. It can be used to explore systemsbiology troein2011
+  clockcircuit ostreococcustauri BioModels0000000350 dynamics and compare simulation
+  behavior across conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Carl Troein
+- Florence Corellou
+- Laura E Dixon
+- Gerben van Ooijen
+- John S O'Neill
+upstream:
+  id: biomodels_ebi:BIOMD0000000350
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000350
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000350
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000350?filename=BIOMD0000000350_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.troein2011_clockcircuit_ostreococcustauri_biomd0000000350_model:Troein2011ClockcircuitOstreococcustauriBiomd0000000350Model
+  init_kwargs:
+    model_path: data/BIOMD0000000350.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_cca1_mrna
+    maps_to: cca1_mrna
+    label: Initial Cca1 MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cca1_mrna`.
+  - name: initial_toc1_mrna
+    maps_to: toc1_mrna
+    label: Initial Toc1 MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `toc1_mrna`.
+  - name: initial_toc1luc_mrna
+    maps_to: toc1luc_mrna
+    label: Initial Toc1luc MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `toc1luc_mrna`.
+  - name: initial_luc_mrna
+    maps_to: luc_mrna
+    label: Initial Luc MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `luc_mrna`.
+  - name: initial_cca1luc_mrna
+    maps_to: cca1luc_mrna
+    label: Initial Cca1luc MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cca1luc_mrna`.
+  - name: initial_cca1_n
+    maps_to: cca1_n
+    label: Initial Cca1 N
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cca1_n`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: cca1_mrna
+    maps_to: cca1_mrna
+    label: cca1_mrna
+    description: cca1_mrna. Maps to SBML symbol `cca1_mrna`.
+  - name: toc1_mrna
+    maps_to: toc1_mrna
+    label: toc1_mrna
+    description: toc1_mrna. Maps to SBML symbol `toc1_mrna`.
+  - name: toc1luc_mrna
+    maps_to: toc1luc_mrna
+    label: toc1luc_mrna
+    description: toc1luc_mrna. Maps to SBML symbol `toc1luc_mrna`.
+  - name: luc_mrna
+    maps_to: luc_mrna
+    label: luc_mrna
+    description: luc_mrna. Maps to SBML symbol `luc_mrna`.
+  - name: cca1luc_mrna
+    maps_to: cca1luc_mrna
+    label: cca1luc_mrna
+    description: cca1luc_mrna. Maps to SBML symbol `cca1luc_mrna`.
+  - name: cca1_n
+    maps_to: cca1_n
+    label: cca1_n
+    description: cca1_n. Maps to SBML symbol `cca1_n`.

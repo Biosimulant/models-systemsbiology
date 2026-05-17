@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Mandlik2015 - Tristable genetic circuit of Leishmania Visualisation
+description: Question-and-answer and dynamic visual summaries for Mandlik2015 - Tristable
+  genetic circuit of Leishmania.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Mandlik2015 Tristable Genetic Circuit Of Leishmania Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Mandlik2015 - Tristable genetic circuit of Leishmania.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_mandlik2015_tristable_genetic_circuit_of_leishma_biomd0000000584_model
+      title: Mandlik2015 - Tristable genetic circuit of Leishmania
+      observables:
+      - id: ia1_InactiveTF
+        port: ia1_inactive_tf
+        label: ia1_InactiveTF
+        group: gene_regulation
+      - id: ia1_ActiveTF
+        port: ia1_active_tf
+        label: ia1_ActiveTF
+        group: gene_regulation
+      - id: ter6
+        port: ter6
+        label: ter6
+        group: gene_regulation
+      - id: ter5
+        port: ter5
+        label: ter5
+        group: gene_regulation
+      - id: ter4
+        port: ter4
+        label: ter4
+        group: gene_regulation
+      - id: ter3
+        port: ter3
+        label: ter3
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

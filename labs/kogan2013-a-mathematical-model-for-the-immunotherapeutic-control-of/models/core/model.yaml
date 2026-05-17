@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Kogan2013 - A mathematical model for the immunotherapeutic control of the TH1
+  TH2 imbalance in melanoma
+description: This is a mathematical model describing the imbalance between T helper
+  (Th1/Th2) cell types in melanome patients, together with its regulation via IL-12
+  treatment. It can be used to explore systemsbiology kogan2013 a mathematical for
+  the dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- oncology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Kogan, Y.
+- Agur, Z.
+- Elishmereni, M.
+upstream:
+  id: biomodels_ebi:BIOMD0000000881
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000881
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000881
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000881?filename=Kogan2013.xml
+  license: CC0
+biosim:
+  entrypoint: src.kogan2013_a_mathematical_model_for_the_immunothe_biomd0000000881_model:Kogan2013AMathematicalModelForTheImmunotheBiomd0000000881Model
+  init_kwargs:
+    model_path: data/BIOMD0000000881.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_t_2
+    maps_to: T_2
+    label: Initial Model State T 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `T_2`.
+  - name: initial_model_state_t_1
+    maps_to: T_1
+    label: Initial Model State T 1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `T_1`.
+  - name: initial_model_state_i
+    maps_to: I
+    label: Initial Model State I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `I`.
+  - name: initial_model_state_g
+    maps_to: G
+    label: Initial Model State G
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `G`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: t_2
+    maps_to: T_2
+    label: T_2
+    description: T_2. Maps to SBML symbol `T_2`.
+  - name: t_1
+    maps_to: T_1
+    label: T_1
+    description: T_1. Maps to SBML symbol `T_1`.
+  - name: model_state_i
+    maps_to: I
+    label: I
+    description: I. Maps to SBML symbol `I`.
+  - name: model_state_g
+    maps_to: G
+    label: G
+    description: G. Maps to SBML symbol `G`.

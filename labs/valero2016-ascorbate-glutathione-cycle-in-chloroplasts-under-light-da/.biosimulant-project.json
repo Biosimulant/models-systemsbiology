@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "ff2a50b6-34d0-4296-a41c-aca49211e163",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "e11bf078-a7b1-41ef-8859-3d713fab86fc",
+  "created_at": "2026-05-16T05:46:52.657372575+00:00",
+  "last_synced_at": "2026-05-17T06:34:59.754976+00:00",
+  "hub_manifest_hash": "c1a8f408d0908f2cb3d5979913f99b9330c8140a256914ee8a771b08469e92bb",
+  "package_name": "valero2016-ascorbate-glutathione-cycle-in-chloroplasts-under-lig"
+}

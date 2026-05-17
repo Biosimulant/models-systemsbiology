@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "91b27b77-453f-4843-8a16-276872c51f14",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "262cf15a-4d55-49c7-9275-f7043a6b1a11",
+  "created_at": "2026-05-16T05:46:42.356755740+00:00",
+  "last_synced_at": "2026-05-17T02:34:19.091805+00:00",
+  "hub_manifest_hash": "5030f2a7be92f5046232e1fdab2845e273b55215433a3ca31e53c58fe96b3464",
+  "package_name": "chenxf2008-cicr-lab"
+}

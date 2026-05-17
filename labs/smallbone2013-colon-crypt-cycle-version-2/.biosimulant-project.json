@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "6b8f3211-3698-4471-bc2d-0e73fe261379",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "2cecbbfa-2ae2-42e3-9ef9-cfa2108b20d9",
+  "created_at": "2026-05-16T05:46:51.996603088+00:00",
+  "last_synced_at": "2026-05-17T06:15:28.708291+00:00",
+  "hub_manifest_hash": "e186e201265856eafc13f5d5f4854e9750f68c76ef6c98601473237351863916",
+  "package_name": "smallbone2013-colon-crypt-cycle-version-2-lab"
+}

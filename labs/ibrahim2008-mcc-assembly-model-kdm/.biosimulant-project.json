@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "b63fcc67-34da-4327-affa-b221d57353b8",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "880b8e42-7b44-4681-a68c-7296d8d4a457",
+  "created_at": "2026-05-16T05:46:44.229814518+00:00",
+  "last_synced_at": "2026-05-17T03:48:45.293417+00:00",
+  "hub_manifest_hash": "195feaf587d871a1143de80fea51ed9de4facd3877d88f82571d3db3fcd2d2c0",
+  "package_name": "ibrahim2008-mcc-assembly-model-kdm-lab"
+}

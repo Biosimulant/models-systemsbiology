@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Ung2008_EGFR_Endocytosis Visualisation
+description: Question-and-answer and dynamic visual summaries for Ung2008_EGFR_Endocytosis.
+standard: other
+tags:
+- cellcycle
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Ung2008 Egfr Endocytosis Lab
+    question: 'Which cell-cycle control states dominate the simulated progression?
+      Source model: Ung2008_EGFR_Endocytosis.'
+    answer_focus: Q/A table plus cellcycle timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_ung2008_egfr_endocytosis_biomd0000000205_model
+      title: Ung2008_EGFR_Endocytosis
+      observables:
+      - id: species_122
+        port: pro_egfr
+        label: Pro-EGFR
+        group: signaling
+      - id: species_7
+        port: shc
+        label: Shc
+        group: signaling
+      - id: species_125
+        port: m_pase
+        label: MPase
+        group: signaling
+      - id: species_12
+        port: grb2
+        label: Grb2
+        group: signaling
+      - id: species_114
+        port: cbl_cin85
+        label: Cbl-CIN85
+        group: signaling
+      - id: species_105
+        port: rok
+        label: ROK
+        group: signaling
+io:
+  inputs: []
+  outputs: []

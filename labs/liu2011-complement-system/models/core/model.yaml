@@ -1,0 +1,109 @@
+schema_version: '2.0'
+title: Liu2011_Complement_System
+description: 'Model of the Complement System This is the continuous deterministic
+  (ODE) model of the complement system described in the article: Computational and
+  Experimental Study of the Regulatory Mechanisms of. It can be used to explore systemsbiology
+  liu2011 complement system BioModels0000000303 dynamics and compare simulation behavior
+  across conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Bing Liu
+- Jing Zhang
+- Pei Yi Tan
+- David Hsu
+- Anna M Blom
+upstream:
+  id: biomodels_ebi:BIOMD0000000303
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000303
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000303
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000303?filename=BIOMD0000000303_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.liu2011_complement_system_biomd0000000303_model:Liu2011ComplementSystemBiomd0000000303Model
+  init_kwargs:
+    model_path: data/BIOMD0000000303.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_i_c4b_c2a
+    maps_to: iC4b_C2a
+    label: Initial I C4B C2A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `iC4b_C2a`.
+  - name: initial_d_c4b_c2a_c4_bp
+    maps_to: dC4b_C2a_C4BP
+    label: Initial D C4B C2A C4 Bp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `dC4b_C2a_C4BP`.
+  - name: initial_d_c4b_c2a
+    maps_to: dC4b_C2a
+    label: Initial D C4B C2A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `dC4b_C2a`.
+  - name: initial_d_c3b
+    maps_to: dC3b
+    label: Initial D C3B
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `dC3b`.
+  - name: initial_pc_crp_lf_masp
+    maps_to: PC_CRP_LF_MASP
+    label: Initial Pc Crp Lf Masp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PC_CRP_LF_MASP`.
+  - name: initial_pc_crp_lf_c1_masp
+    maps_to: PC_CRP_LF_C1_MASP
+    label: Initial Pc Crp Lf C1 Masp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PC_CRP_LF_C1_MASP`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: i_c4b_c2a
+    maps_to: iC4b_C2a
+    label: iC4b/C2a
+    description: iC4b/C2a. Maps to SBML symbol `iC4b_C2a`.
+  - name: d_c4b_c2a_c4_bp
+    maps_to: dC4b_C2a_C4BP
+    label: dC4b/C2a/C4BP
+    description: dC4b/C2a/C4BP. Maps to SBML symbol `dC4b_C2a_C4BP`.
+  - name: d_c4b_c2a
+    maps_to: dC4b_C2a
+    label: dC4b/C2a
+    description: dC4b/C2a. Maps to SBML symbol `dC4b_C2a`.
+  - name: d_c3b
+    maps_to: dC3b
+    label: dC3b
+    description: dC3b. Maps to SBML symbol `dC3b`.
+  - name: pc_crp_lf_masp
+    maps_to: PC_CRP_LF_MASP
+    label: PC/CRP/LF/MASP
+    description: PC/CRP/LF/MASP. Maps to SBML symbol `PC_CRP_LF_MASP`.
+  - name: pc_crp_lf_c1_masp
+    maps_to: PC_CRP_LF_C1_MASP
+    label: PC/CRP/LF/C1/MASP
+    description: PC/CRP/LF/C1/MASP. Maps to SBML symbol `PC_CRP_LF_C1_MASP`.

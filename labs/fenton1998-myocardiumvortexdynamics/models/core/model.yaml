@@ -1,0 +1,75 @@
+schema_version: '2.0'
+title: Fenton1998_MyocardiumVortexDynamics
+description: 'This a model from the article: Vortex dynamics in three-dimensional
+  continuous myocardium with fiber rotation:Filament instability and fibrillation.
+  It can be used to explore systemsbiology fenton1998 myocardiumvortexdynamics model0911989198
+  dynamics and compare simulation behavior across conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Flavio Fenton
+- Alain Karma
+upstream:
+  id: biomodels_ebi:MODEL0911989198
+  source_db: biomodels_ebi
+  source_id: MODEL0911989198
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL0911989198
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0911989198?filename=MODEL0911989198_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.fenton1998_myocardiumvortexdynamics_model0911989198_model:Fenton1998MyocardiumvortexdynamicsModel0911989198Model
+  init_kwargs:
+    model_path: data/MODEL0911989198.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_u_membrane
+    maps_to: u_membrane
+    label: Initial U Membrane
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `u_membrane`.
+  - name: initial_model_state_w
+    maps_to: w
+    label: Initial Model State W
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `w`.
+  - name: initial_model_state_v
+    maps_to: v
+    label: Initial Model State V
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `v`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: u_membrane
+    maps_to: u_membrane
+    label: U Membrane
+    description: U Membrane. Maps to SBML symbol `u_membrane`.
+  - name: model_state_w
+    maps_to: w
+    label: W
+    description: W. Maps to SBML symbol `w`.
+  - name: model_state_v
+    maps_to: v
+    label: V
+    description: V. Maps to SBML symbol `v`.

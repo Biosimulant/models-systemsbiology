@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Bagci2006 Apoptoticstimuli Lab
+description: 'This a model from the article: Bistability in apoptosis: roles of bax,
+  bcl-2, and mitochondrial permeabilitytransition pores. Bagci EZ, Vodovotz Y, Billiar
+  TR, Ermentrout GB, Bahar I.'
+models:
+- alias: systemsbiology_sbml_bagci2006_apoptoticstimuli_model1006230056_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_bagci2006_apoptoticstimuli_model1006230056_model.state
+  to:
+  - visualisation.systemsbiology_sbml_bagci2006_apoptoticstimuli_model1006230056_model_state
+- from: systemsbiology_sbml_bagci2006_apoptoticstimuli_model1006230056_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_bagci2006_apoptoticstimuli_model1006230056_model_summary
+- from: systemsbiology_sbml_bagci2006_apoptoticstimuli_model1006230056_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_bagci2006_apoptoticstimuli_model1006230056_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_cytc_apaf_1
+    maps_to: systemsbiology_sbml_bagci2006_apoptoticstimuli_model1006230056_model.initial_cytc_apaf_1
+    label: Initial Cytc Apaf 1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CytcApaf_1`.
+  - name: initial_casp9_pro3
+    maps_to: systemsbiology_sbml_bagci2006_apoptoticstimuli_model1006230056_model.initial_casp9_pro3
+    label: Initial Casp9 Pro3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Casp9Pro3`.
+  - name: initial_casp9_iap
+    maps_to: systemsbiology_sbml_bagci2006_apoptoticstimuli_model1006230056_model.initial_casp9_iap
+    label: Initial Casp9 Iap
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Casp9IAP`.
+  - name: initial_casp9
+    maps_to: systemsbiology_sbml_bagci2006_apoptoticstimuli_model1006230056_model.initial_casp9
+    label: Initial Casp9
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Casp9`.
+  - name: initial_casp8_bid
+    maps_to: systemsbiology_sbml_bagci2006_apoptoticstimuli_model1006230056_model.initial_casp8_bid
+    label: Initial Casp8 Bid
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Casp8Bid`.
+  - name: initial_casp8
+    maps_to: systemsbiology_sbml_bagci2006_apoptoticstimuli_model1006230056_model.initial_casp8
+    label: Initial Casp8
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Casp8`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_bagci2006_apoptoticstimuli_model1006230056_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_bagci2006_apoptoticstimuli_model1006230056_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_bagci2006_apoptoticstimuli_model1006230056_model.species_labels
+  - name: cytc_apaf_1
+    maps_to: systemsbiology_sbml_bagci2006_apoptoticstimuli_model1006230056_model.cytc_apaf_1
+  - name: casp9_pro3
+    maps_to: systemsbiology_sbml_bagci2006_apoptoticstimuli_model1006230056_model.casp9_pro3
+  - name: casp9_iap
+    maps_to: systemsbiology_sbml_bagci2006_apoptoticstimuli_model1006230056_model.casp9_iap
+  - name: casp9
+    maps_to: systemsbiology_sbml_bagci2006_apoptoticstimuli_model1006230056_model.casp9
+  - name: casp8_bid
+    maps_to: systemsbiology_sbml_bagci2006_apoptoticstimuli_model1006230056_model.casp8_bid
+  - name: casp8
+    maps_to: systemsbiology_sbml_bagci2006_apoptoticstimuli_model1006230056_model.casp8

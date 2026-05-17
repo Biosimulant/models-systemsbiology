@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Kolomeisky2003_MyosinV_Processivity Visualisation
+description: Question-and-answer and dynamic visual summaries for Kolomeisky2003_MyosinV_Processivity.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Kolomeisky2003 Myosinv Processivity Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Kolomeisky2003_MyosinV_Processivity.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_kolomeisky2003_myosinv_processivity_biomd0000000305_model
+      title: Kolomeisky2003_MyosinV_Processivity
+      observables:
+      - id: ATP
+        port: atp
+        label: ATP
+        group: signaling
+      - id: ADP
+        port: adp
+        label: ADP
+        group: signaling
+      - id: S0
+        port: model_state_s0
+        label: S0
+        group: signaling
+      - id: S1
+        port: model_state_s1
+        label: S1
+        group: signaling
+      - id: Pi_
+        port: model_state_pi
+        label: Pi
+        group: signaling
+      - id: fwd_step2
+        port: fwd_step2
+        label: Fwd Step2
+        group: signaling
+io:
+  inputs: []
+  outputs: []

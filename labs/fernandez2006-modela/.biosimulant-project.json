@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "577d9ab0-4985-4564-bd45-e4735006002e",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "aad075ea-017b-4e81-b97a-293787e2473c",
+  "created_at": "2026-05-16T05:46:43.197127783+00:00",
+  "last_synced_at": "2026-05-17T03:08:08.196395+00:00",
+  "hub_manifest_hash": "8a09f8a8a0492da62f92bfc30cb9b44c7618464abf7a733a54793e4fea9b1065",
+  "package_name": "fernandez2006-modela-lab"
+}

@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Nikolaev2005 Albuminbilirubinadsorption Lab
+description: 'This a model from the article: Mathematical model of binding of albumin-bilirubin
+  complex to the surface of carbon pyropolymer. Nikolaev AV, Rozhilo YA, Starozhilova
+  TK, Sarnatskaya VV, Yushko LA, Mik.'
+models:
+- alias: systemsbiology_sbml_nikolaev2005_albuminbilirubinadsorption_biomd0000000291_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_nikolaev2005_albuminbilirubinadsorption_biomd0000000291_model.state
+  to:
+  - visualisation.systemsbiology_sbml_nikolaev2005_albuminbilirubinadsorption_biomd0000000291_model_state
+- from: systemsbiology_sbml_nikolaev2005_albuminbilirubinadsorption_biomd0000000291_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_nikolaev2005_albuminbilirubinadsorption_biomd0000000291_model_summary
+- from: systemsbiology_sbml_nikolaev2005_albuminbilirubinadsorption_biomd0000000291_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_nikolaev2005_albuminbilirubinadsorption_biomd0000000291_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_c
+    maps_to: systemsbiology_sbml_nikolaev2005_albuminbilirubinadsorption_biomd0000000291_model.initial_model_state_c
+    label: Initial Model State C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x7`.
+  - name: initial_model_state_al
+    maps_to: systemsbiology_sbml_nikolaev2005_albuminbilirubinadsorption_biomd0000000291_model.initial_model_state_al
+    label: Initial Model State Al
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x5`.
+  - name: initial_model_state_b
+    maps_to: systemsbiology_sbml_nikolaev2005_albuminbilirubinadsorption_biomd0000000291_model.initial_model_state_b
+    label: Initial Model State B
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x6`.
+  - name: initial_model_state_bc
+    maps_to: systemsbiology_sbml_nikolaev2005_albuminbilirubinadsorption_biomd0000000291_model.initial_model_state_bc
+    label: Initial Model State Bc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x2`.
+  - name: initial_al_cn
+    maps_to: systemsbiology_sbml_nikolaev2005_albuminbilirubinadsorption_biomd0000000291_model.initial_al_cn
+    label: Initial Al Cn
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x3`.
+  - name: initial_al_b2
+    maps_to: systemsbiology_sbml_nikolaev2005_albuminbilirubinadsorption_biomd0000000291_model.initial_al_b2
+    label: Initial Al B2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x4`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_nikolaev2005_albuminbilirubinadsorption_biomd0000000291_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_nikolaev2005_albuminbilirubinadsorption_biomd0000000291_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_nikolaev2005_albuminbilirubinadsorption_biomd0000000291_model.species_labels
+  - name: model_state_c
+    maps_to: systemsbiology_sbml_nikolaev2005_albuminbilirubinadsorption_biomd0000000291_model.model_state_c
+  - name: model_state_al
+    maps_to: systemsbiology_sbml_nikolaev2005_albuminbilirubinadsorption_biomd0000000291_model.model_state_al
+  - name: model_state_b
+    maps_to: systemsbiology_sbml_nikolaev2005_albuminbilirubinadsorption_biomd0000000291_model.model_state_b
+  - name: model_state_bc
+    maps_to: systemsbiology_sbml_nikolaev2005_albuminbilirubinadsorption_biomd0000000291_model.model_state_bc
+  - name: al_cn
+    maps_to: systemsbiology_sbml_nikolaev2005_albuminbilirubinadsorption_biomd0000000291_model.al_cn
+  - name: al_b2
+    maps_to: systemsbiology_sbml_nikolaev2005_albuminbilirubinadsorption_biomd0000000291_model.al_b2

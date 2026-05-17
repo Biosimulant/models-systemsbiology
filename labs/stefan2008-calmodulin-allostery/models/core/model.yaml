@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Stefan2008 - calmodulin allostery
+description: Stefan2008 - calmodulin allostery An allosteric model for calmodulin
+  activation, in which binding to calcium facilitates the transition between a low-affinity
+  [tense (T)] and a high-affinity [relaxed. It can be used to explore systemsbiology
+  stefan2008 calmodulin allostery BioModels0000000183 dynamics and compare simulation
+  behavior across conditions.
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Melanie I Stefan
+- Stuart J Edelstein
+- Nicolas Le Novère
+upstream:
+  id: biomodels_ebi:BIOMD0000000183
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000183
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000183
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000183?filename=BIOMD0000000183_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.stefan2008_calmodulin_allostery_biomd0000000183_model:Stefan2008CalmodulinAllosteryBiomd0000000183Model
+  init_kwargs:
+    model_path: data/BIOMD0000000183.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_ca_mkii
+    maps_to: species_33
+    label: Initial Ca Mkii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_33`.
+  - name: initial_model_state_ca
+    maps_to: species_1
+    label: Initial Model State Ca
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_1`.
+  - name: initial_pp2_b
+    maps_to: species_50
+    label: Initial PP2 B
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_50`.
+  - name: initial_cam_t
+    maps_to: species_17
+    label: Initial Cam T
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_17`.
+  - name: initial_cam_r
+    maps_to: species_0
+    label: Initial Cam R
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_0`.
+  - name: initial_cam_t_ca4_abcd
+    maps_to: species_32
+    label: Initial Cam T CA4 Abcd
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_32`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: ca_mkii
+    maps_to: species_33
+    label: CaMKII
+    description: CaMKII. Maps to SBML symbol `species_33`.
+  - name: model_state_ca
+    maps_to: species_1
+    label: ca
+    description: ca. Maps to SBML symbol `species_1`.
+  - name: pp2_b
+    maps_to: species_50
+    label: PP2B
+    description: PP2B. Maps to SBML symbol `species_50`.
+  - name: cam_t
+    maps_to: species_17
+    label: camT
+    description: camT. Maps to SBML symbol `species_17`.
+  - name: cam_r
+    maps_to: species_0
+    label: camR
+    description: camR. Maps to SBML symbol `species_0`.
+  - name: cam_t_ca4_abcd
+    maps_to: species_32
+    label: camT_ca4_ABCD
+    description: camT_ca4_ABCD. Maps to SBML symbol `species_32`.

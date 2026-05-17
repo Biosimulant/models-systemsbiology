@@ -1,0 +1,61 @@
+schema_version: '2.0'
+title: Wodarz2007 - Cytomegalovirus infection model with cytotoxic T lymphocyte and
+  natural killer cell response Visualisation
+description: Question-and-answer and dynamic visual summaries for Wodarz2007 - Cytomegalovirus
+  infection model with cytotoxic T lymphocyte and natural killer cell response.
+standard: other
+tags:
+- epidemiology
+- immunology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Wodarz2007 Cytomegalovirus Infection Model With Cytotoxic T Lymphocyt
+      2 Lab
+    question: 'Which infection or population states dominate the simulated trajectory?
+      Source model: Wodarz2007 - Cytomegalovirus infection model with cytotoxic T
+      lymphocyte and natural killer cell response.'
+    answer_focus: Q/A table plus epidemiology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_wodarz2007_cytomegalovirus_infection_model_with_biomd0000000688_model
+      title: Wodarz2007 - Cytomegalovirus infection model with cytotoxic T lymphocyte
+        and natural killer cell response
+      observables:
+      - id: z_a
+        port: z_a
+        label: z_a
+        group: physiology
+      - id: z_i
+        port: z_i
+        label: z_i
+        group: physiology
+      - id: y_1
+        port: y_1
+        label: y_1
+        group: physiology
+      - id: y_0
+        port: y_0
+        label: y_0
+        group: physiology
+      - id: m_8
+        port: m_8
+        label: m_8
+        group: physiology
+      - id: m_7
+        port: m_7
+        label: m_7
+        group: physiology
+io:
+  inputs: []
+  outputs: []

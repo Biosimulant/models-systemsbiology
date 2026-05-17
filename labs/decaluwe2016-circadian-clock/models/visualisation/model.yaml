@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: DeCaluwe2016 - Circadian Clock Visualisation
+description: Question-and-answer and dynamic visual summaries for DeCaluwe2016 - Circadian
+  Clock.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Decaluwe2016 Circadian Clock Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: DeCaluwe2016 - Circadian Clock.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_decaluwe2016_circadian_clock_biomd0000000631_model
+      title: DeCaluwe2016 - Circadian Clock
+      observables:
+      - id: P97_p
+        port: prr9_prr7_protein
+        label: PRR9/PRR7 protein
+        group: gene_regulation
+      - id: P97_m
+        port: prr9_prr7_mrna
+        label: PRR9/PRR7 mRNA
+        group: gene_regulation
+      - id: P51_p
+        port: prr5_toc1_protein
+        label: PRR5/TOC1 protein
+        group: gene_regulation
+      - id: P51_m
+        port: prr5_toc1_mrna
+        label: PRR5/TOC1 mRNA
+        group: gene_regulation
+      - id: PIF_p
+        port: pif4_pif5_protein
+        label: PIF4/PIF5 protein
+        group: gene_regulation
+      - id: PIF_m
+        port: pif4_pif5_mrna
+        label: PIF4/PIF5 mRNA
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

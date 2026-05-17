@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "34baa9ed-efb1-4591-b6ce-7ca006f3b737",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "230e801a-d082-4fb7-8d78-63e9bca1e194",
+  "created_at": "2026-05-16T05:46:52.455771417+00:00",
+  "last_synced_at": "2026-05-17T06:28:45.646661+00:00",
+  "hub_manifest_hash": "94b6ffe452b1aa80e8575cd4e7be8fd85e32666db94db8736ca2eb68cd557111",
+  "package_name": "troein2011-clockcircuit-ostreococcustauri-lab"
+}

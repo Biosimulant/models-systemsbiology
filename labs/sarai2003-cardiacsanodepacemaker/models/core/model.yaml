@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Sarai2003_CardiacSAnodePacemaker
+description: 'This a model from the article: Role of individual ionic current systems
+  in the SA node hypothesized by a modelstudy. Sarai N, Matsuoka S, Kuratomi S, Ono
+  K, Noma A.'
+standard: other
+tags:
+- cardiovascular
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Nobuaki Sarai
+- Satoshi Matsuoka
+- Shinobu Kuratomi
+- Kyoichi Ono
+- Akinori Noma
+upstream:
+  id: biomodels_ebi:MODEL1006230108
+  source_db: biomodels_ebi
+  source_id: MODEL1006230108
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1006230108
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1006230108?filename=MODEL1006230108_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.sarai2003_cardiacsanodepacemaker_model1006230108_model:Sarai2003CardiacsanodepacemakerModel1006230108Model
+  init_kwargs:
+    model_path: data/MODEL1006230108.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_at_pi
+    maps_to: ATPi
+    label: Initial At Pi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATPi`.
+  - name: initial_ca_total_internal_ion_concentrations
+    maps_to: Ca_Total_internal_ion_concentrations
+    label: Initial Ca Total Internal Ion Concentrations
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_Total_internal_ion_concentrations`.
+  - name: initial_y3_st_channel_y3_gate
+    maps_to: y3_st_channel_y3_gate
+    label: Initial Y3 St Channel Y3 Gate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `y3_st_channel_y3_gate`.
+  - name: initial_y2_st_channel_y2_gate
+    maps_to: y2_st_channel_y2_gate
+    label: Initial Y2 St Channel Y2 Gate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `y2_st_channel_y2_gate`.
+  - name: initial_y1_st_channel_y1_gate
+    maps_to: y1_st_channel_y1_gate
+    label: Initial Y1 St Channel Y1 Gate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `y1_st_channel_y1_gate`.
+  - name: initial_y_sr_calcium_pump_y_gate
+    maps_to: y_SR_calcium_pump_y_gate
+    label: Initial Y Sr Calcium Pump Y Gate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `y_SR_calcium_pump_y_gate`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: at_pi
+    maps_to: ATPi
+    label: ATPi
+    description: ATPi. Maps to SBML symbol `ATPi`.
+  - name: ca_total_internal_ion_concentrations
+    maps_to: Ca_Total_internal_ion_concentrations
+    label: Ca Total Internal Ion Concentrations
+    description: Ca Total Internal Ion Concentrations. Maps to SBML symbol `Ca_Total_internal_ion_concentrations`.
+  - name: y3_st_channel_y3_gate
+    maps_to: y3_st_channel_y3_gate
+    label: Y3 St Channel Y3 Gate
+    description: Y3 St Channel Y3 Gate. Maps to SBML symbol `y3_st_channel_y3_gate`.
+  - name: y2_st_channel_y2_gate
+    maps_to: y2_st_channel_y2_gate
+    label: Y2 St Channel Y2 Gate
+    description: Y2 St Channel Y2 Gate. Maps to SBML symbol `y2_st_channel_y2_gate`.
+  - name: y1_st_channel_y1_gate
+    maps_to: y1_st_channel_y1_gate
+    label: Y1 St Channel Y1 Gate
+    description: Y1 St Channel Y1 Gate. Maps to SBML symbol `y1_st_channel_y1_gate`.
+  - name: y_sr_calcium_pump_y_gate
+    maps_to: y_SR_calcium_pump_y_gate
+    label: Y SR Calcium Pump Y Gate
+    description: Y SR Calcium Pump Y Gate. Maps to SBML symbol `y_SR_calcium_pump_y_gate`.

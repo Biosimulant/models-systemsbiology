@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "8c696470-658e-4c07-acac-3667d1c057ba",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "3d7ec71c-35ef-445c-84ea-3a997a2ae6a2",
+  "created_at": "2026-05-16T05:46:51.654269098+00:00",
+  "last_synced_at": "2026-05-17T06:05:00.170973+00:00",
+  "hub_manifest_hash": "32587d39e71fca68ef5ab0d7e4e6d9b1a1d46445c4771e5852c7b79c6c883767",
+  "package_name": "sarai2003-cardiacsanodepacemaker-lab"
+}

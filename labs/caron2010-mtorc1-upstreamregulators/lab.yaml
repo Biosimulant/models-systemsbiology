@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Caron2010 Mtorc1 Upstreamregulators Lab
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models (http://www.ebi.ac.uk/biomodels/). It is copyright (c) 2005-2011
+  The BioModels.net Team.'
+models:
+- alias: systemsbiology_sbml_caron2010_mtorc1_upstreamregulators_model1012220003_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_caron2010_mtorc1_upstreamregulators_model1012220003_model.state
+  to:
+  - visualisation.systemsbiology_sbml_caron2010_mtorc1_upstreamregulators_model1012220003_model_state
+- from: systemsbiology_sbml_caron2010_mtorc1_upstreamregulators_model1012220003_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_caron2010_mtorc1_upstreamregulators_model1012220003_model_summary
+- from: systemsbiology_sbml_caron2010_mtorc1_upstreamregulators_model1012220003_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_caron2010_mtorc1_upstreamregulators_model1012220003_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_protein_synthesis
+    maps_to: systemsbiology_sbml_caron2010_mtorc1_upstreamregulators_model1012220003_model.initial_protein_synthesis
+    label: Initial Protein Synthesis
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s3574`.
+  - name: initial_growth_factor
+    maps_to: systemsbiology_sbml_caron2010_mtorc1_upstreamregulators_model1012220003_model.initial_growth_factor
+    label: Initial Growth Factor
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s79`.
+  - name: initial_sa11_degraded
+    maps_to: systemsbiology_sbml_caron2010_mtorc1_upstreamregulators_model1012220003_model.initial_sa11_degraded
+    label: Initial Sa11 Degraded
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s3447`.
+  - name: initial_s3560
+    maps_to: systemsbiology_sbml_caron2010_mtorc1_upstreamregulators_model1012220003_model.initial_s3560
+    label: Initial S3560
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s3560`.
+  - name: initial_model_state_s16
+    maps_to: systemsbiology_sbml_caron2010_mtorc1_upstreamregulators_model1012220003_model.initial_model_state_s16
+    label: Initial Model State S16
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s117`.
+  - name: initial_s149
+    maps_to: systemsbiology_sbml_caron2010_mtorc1_upstreamregulators_model1012220003_model.initial_s149
+    label: Initial S149
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s149`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_caron2010_mtorc1_upstreamregulators_model1012220003_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_caron2010_mtorc1_upstreamregulators_model1012220003_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_caron2010_mtorc1_upstreamregulators_model1012220003_model.species_labels
+  - name: protein_synthesis
+    maps_to: systemsbiology_sbml_caron2010_mtorc1_upstreamregulators_model1012220003_model.protein_synthesis
+  - name: growth_factor
+    maps_to: systemsbiology_sbml_caron2010_mtorc1_upstreamregulators_model1012220003_model.growth_factor
+  - name: sa11_degraded
+    maps_to: systemsbiology_sbml_caron2010_mtorc1_upstreamregulators_model1012220003_model.sa11_degraded
+  - name: s3560
+    maps_to: systemsbiology_sbml_caron2010_mtorc1_upstreamregulators_model1012220003_model.s3560
+  - name: s16
+    maps_to: systemsbiology_sbml_caron2010_mtorc1_upstreamregulators_model1012220003_model.s16
+  - name: s149
+    maps_to: systemsbiology_sbml_caron2010_mtorc1_upstreamregulators_model1012220003_model.s149

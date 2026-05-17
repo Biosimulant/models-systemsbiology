@@ -1,0 +1,52 @@
+schema_version: '2.0'
+title: Back2018 - Mechanistic PK model of Fenofibrate Visualisation
+description: Question-and-answer and dynamic visual summaries for Back2018 - Mechanistic
+  PK model of Fenofibrate.
+standard: other
+tags:
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Back2018 Mechanistic Pk Model Of Fenofibrate Lab
+    question: 'Which drug, dose, or target-linked model states drive the simulated
+      profile? Source model: Back2018 - Mechanistic PK model of Fenofibrate.'
+    answer_focus: Q/A table plus pharmacology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_back2018_mechanistic_pk_model_of_fenofibrate_model2003030002_model
+      title: Back2018 - Mechanistic PK model of Fenofibrate
+      observables:
+      - id: X1
+        port: model_state_x1
+        label: X1
+        group: physiology
+      - id: X3
+        port: model_state_x3
+        label: X3
+        group: physiology
+      - id: X2
+        port: model_state_x2
+        label: X2
+        group: physiology
+      - id: X5
+        port: model_state_x5
+        label: X5
+        group: physiology
+      - id: X4
+        port: model_state_x4
+        label: X4
+        group: physiology
+io:
+  inputs: []
+  outputs: []

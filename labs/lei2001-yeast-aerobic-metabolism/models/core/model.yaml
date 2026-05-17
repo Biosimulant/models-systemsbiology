@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Lei2001_Yeast_Aerobic_Metabolism
+description: 'This the model from the article: A biochemically structured model for
+  Saccharomyces cerevisiae. It can be used to explore systemsbiology lei2001 yeast
+  aerobic metabolism BioModels0000000245 dynamics and compare simulation behavior
+  across conditions.'
+standard: other
+tags:
+- metabolism
+- microbiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- F Lei
+- M Rotbøll
+- S B Jørgensen
+upstream:
+  id: biomodels_ebi:BIOMD0000000245
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000245
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000245
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000245?filename=BIOMD0000000245_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.lei2001_yeast_aerobic_metabolism_biomd0000000245_model:Lei2001YeastAerobicMetabolismBiomd0000000245Model
+  init_kwargs:
+    model_path: data/BIOMD0000000245.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_glucose_feed
+    maps_to: S_f
+    label: Initial Glucose Feed
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S_f`.
+  - name: initial_glucose
+    maps_to: s_glu
+    label: Initial Glucose
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s_glu`.
+  - name: initial_red_equ_nadh
+    maps_to: Red
+    label: Initial Red Equ Nadh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Red`.
+  - name: initial_pyruvate
+    maps_to: s_pyr
+    label: Initial Pyruvate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s_pyr`.
+  - name: initial_et_oh
+    maps_to: s_EtOH
+    label: Initial Et Oh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s_EtOH`.
+  - name: initial_bm_ac_dh
+    maps_to: AcDH
+    label: Initial Bm Ac Dh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `AcDH`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: glucose_feed
+    maps_to: S_f
+    label: Glucose(feed)
+    description: Glucose(feed). Maps to SBML symbol `S_f`.
+  - name: glucose
+    maps_to: s_glu
+    label: Glucose
+    description: Glucose. Maps to SBML symbol `s_glu`.
+  - name: red_equ_nadh
+    maps_to: Red
+    label: Red. Equ. (NADH)
+    description: Red. Equ. (NADH). Maps to SBML symbol `Red`.
+  - name: pyruvate
+    maps_to: s_pyr
+    label: Pyruvate
+    description: Pyruvate. Maps to SBML symbol `s_pyr`.
+  - name: et_oh
+    maps_to: s_EtOH
+    label: EtOH
+    description: EtOH. Maps to SBML symbol `s_EtOH`.
+  - name: bm_ac_dh
+    maps_to: AcDH
+    label: BM(AcDH)
+    description: BM(AcDH). Maps to SBML symbol `AcDH`.

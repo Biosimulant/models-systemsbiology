@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Panteleev2002_TFPImechanism_schmema3 Visualisation
+description: Question-and-answer and dynamic visual summaries for Panteleev2002_TFPImechanism_schmema3.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Panteleev2002 Tfpimechanism Schmema3 Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Panteleev2002_TFPImechanism_schmema3.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_panteleev2002_tfpimechanism_schmema3_biomd0000000359_model
+      title: Panteleev2002_TFPImechanism_schmema3
+      observables:
+      - id: VIIa_TF
+        port: vi_ia_tf
+        label: VIIa_TF
+        group: core_system_state
+      - id: Xa_TFPI_VIIa_TF
+        port: xa_tfpi_vi_ia_tf
+        label: Xa_TFPI_VIIa_TF
+        group: core_system_state
+      - id: Xa_TFPI
+        port: xa_tfpi
+        label: Xa_TFPI
+        group: core_system_state
+      - id: VIIa_TF_Xa_TFPI
+        port: vi_ia_tf_xa_tfpi
+        label: VIIa_TF_Xa_TFPI
+        group: core_system_state
+      - id: VIIa_TF_Xa
+        port: vi_ia_tf_xa
+        label: VIIa_TF_Xa
+        group: core_system_state
+      - id: VIIa_TF_X
+        port: vi_ia_tf_x
+        label: VIIa_TF_X
+        group: core_system_state
+io:
+  inputs: []
+  outputs: []

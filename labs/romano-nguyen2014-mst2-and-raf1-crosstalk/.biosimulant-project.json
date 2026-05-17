@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "3d63a160-f346-47e8-aaa3-fac92e99da41",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "e4e5cec4-908f-4c33-b3f9-5e77369122e9",
+  "created_at": "2026-05-16T05:46:51.513296643+00:00",
+  "last_synced_at": "2026-05-17T06:01:05.093275+00:00",
+  "hub_manifest_hash": "5d4e614463b6000d3b230128bfb893e70b89c917492a6210b5a87e469ac1dd48",
+  "package_name": "romano-nguyen2014-mst2-and-raf1-crosstalk-lab"
+}

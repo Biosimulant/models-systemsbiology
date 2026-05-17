@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "149d5152-2baf-4510-9b6d-21ce68fddf65",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "cefdc659-a049-45fc-834a-6897225e46a6",
+  "created_at": "2026-05-16T05:46:45.512250686+00:00",
+  "last_synced_at": "2026-05-17T04:31:48.178807+00:00",
+  "hub_manifest_hash": "84835027114a6953dc26f5117dabee7131915fe1d1653a5b4073357db7ac424e",
+  "package_name": "liu1999-pulsatilesecretion-lab"
+}

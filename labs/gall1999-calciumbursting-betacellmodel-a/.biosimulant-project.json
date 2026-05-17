@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "0b907fc1-e39e-441c-afdc-e63db3073d0b",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "8b01a8a9-1cda-4052-8d4d-f71f61ca061d",
+  "created_at": "2026-05-16T05:46:43.485220699+00:00",
+  "last_synced_at": "2026-05-17T03:16:08.365453+00:00",
+  "hub_manifest_hash": "14ca2e7ab66871cfefae4633dfefa2152fe50152f2b390790953e1ba39856144",
+  "package_name": "gall1999-calciumbursting-betacellmodel-a-lab"
+}

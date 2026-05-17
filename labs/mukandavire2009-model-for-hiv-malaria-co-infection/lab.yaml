@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Mukandavire2009 Model For Hiv Malaria Co Infection Lab
+description: Mathematical model for HIV, malaria and HIV-malaria co-infection. It
+  can be used to explore systemsbiology mukandavire2009 for hiv malaria co dynamics
+  and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_mukandavire2009_model_for_hiv_malaria_co_infecti_model1805230001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_mukandavire2009_model_for_hiv_malaria_co_infecti_model1805230001_model.state
+  to:
+  - visualisation.systemsbiology_sbml_mukandavire2009_model_for_hiv_malaria_co_infecti_model1805230001_model_state
+- from: systemsbiology_sbml_mukandavire2009_model_for_hiv_malaria_co_infecti_model1805230001_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_mukandavire2009_model_for_hiv_malaria_co_infecti_model1805230001_model_summary
+- from: systemsbiology_sbml_mukandavire2009_model_for_hiv_malaria_co_infecti_model1805230001_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_mukandavire2009_model_for_hiv_malaria_co_infecti_model1805230001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- epidemiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_s_v
+    maps_to: systemsbiology_sbml_mukandavire2009_model_for_hiv_malaria_co_infecti_model1805230001_model.initial_model_state_s_v
+    label: Initial Model State S V
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S_V`.
+  - name: initial_model_state_s_h
+    maps_to: systemsbiology_sbml_mukandavire2009_model_for_hiv_malaria_co_infecti_model1805230001_model.initial_model_state_s_h
+    label: Initial Model State S H
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S_H`.
+  - name: initial_model_state_e_v
+    maps_to: systemsbiology_sbml_mukandavire2009_model_for_hiv_malaria_co_infecti_model1805230001_model.initial_model_state_e_v
+    label: Initial Model State E V
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `E_V`.
+  - name: initial_model_state_e_m
+    maps_to: systemsbiology_sbml_mukandavire2009_model_for_hiv_malaria_co_infecti_model1805230001_model.initial_model_state_e_m
+    label: Initial Model State E M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `E_M`.
+  - name: initial_model_state_i_v
+    maps_to: systemsbiology_sbml_mukandavire2009_model_for_hiv_malaria_co_infecti_model1805230001_model.initial_model_state_i_v
+    label: Initial Model State I V
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `I_V`.
+  - name: initial_model_state_i_m
+    maps_to: systemsbiology_sbml_mukandavire2009_model_for_hiv_malaria_co_infecti_model1805230001_model.initial_model_state_i_m
+    label: Initial Model State I M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `I_M`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_mukandavire2009_model_for_hiv_malaria_co_infecti_model1805230001_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_mukandavire2009_model_for_hiv_malaria_co_infecti_model1805230001_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_mukandavire2009_model_for_hiv_malaria_co_infecti_model1805230001_model.species_labels
+  - name: s_v
+    maps_to: systemsbiology_sbml_mukandavire2009_model_for_hiv_malaria_co_infecti_model1805230001_model.s_v
+  - name: s_h
+    maps_to: systemsbiology_sbml_mukandavire2009_model_for_hiv_malaria_co_infecti_model1805230001_model.s_h
+  - name: e_v
+    maps_to: systemsbiology_sbml_mukandavire2009_model_for_hiv_malaria_co_infecti_model1805230001_model.e_v
+  - name: e_m
+    maps_to: systemsbiology_sbml_mukandavire2009_model_for_hiv_malaria_co_infecti_model1805230001_model.e_m
+  - name: i_v
+    maps_to: systemsbiology_sbml_mukandavire2009_model_for_hiv_malaria_co_infecti_model1805230001_model.i_v
+  - name: i_m
+    maps_to: systemsbiology_sbml_mukandavire2009_model_for_hiv_malaria_co_infecti_model1805230001_model.i_m

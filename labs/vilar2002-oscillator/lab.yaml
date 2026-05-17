@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Vilar2002 Oscillator Lab
+description: Minimal Model for Circadian Oscillations Citation Vilar JMG, Kueh HY,
+  Barkai N, Leibler S, (2002) . It can be used to explore systemsbiology vilar2002
+  oscillator BioModels0000000035 dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_vilar2002_oscillator_biomd0000000035_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_vilar2002_oscillator_biomd0000000035_model.state
+  to:
+  - visualisation.systemsbiology_sbml_vilar2002_oscillator_biomd0000000035_model_state
+- from: systemsbiology_sbml_vilar2002_oscillator_biomd0000000035_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_vilar2002_oscillator_biomd0000000035_model_summary
+- from: systemsbiology_sbml_vilar2002_oscillator_biomd0000000035_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_vilar2002_oscillator_biomd0000000035_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_dr
+    maps_to: systemsbiology_sbml_vilar2002_oscillator_biomd0000000035_model.initial_model_state_dr
+    label: Initial Model State Dr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `DR`.
+  - name: initial_model_state_da
+    maps_to: systemsbiology_sbml_vilar2002_oscillator_biomd0000000035_model.initial_model_state_da
+    label: Initial Model State Da
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `DA`.
+  - name: initial_model_state_mr
+    maps_to: systemsbiology_sbml_vilar2002_oscillator_biomd0000000035_model.initial_model_state_mr
+    label: Initial Model State Mr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MR`.
+  - name: initial_model_state_ma
+    maps_to: systemsbiology_sbml_vilar2002_oscillator_biomd0000000035_model.initial_model_state_ma
+    label: Initial Model State Ma
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MA`.
+  - name: initial_empty_set
+    maps_to: systemsbiology_sbml_vilar2002_oscillator_biomd0000000035_model.initial_empty_set
+    label: Initial Empty Set
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `EmptySet`.
+  - name: initial_d_rp
+    maps_to: systemsbiology_sbml_vilar2002_oscillator_biomd0000000035_model.initial_d_rp
+    label: Initial D Rp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `DRp`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_vilar2002_oscillator_biomd0000000035_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_vilar2002_oscillator_biomd0000000035_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_vilar2002_oscillator_biomd0000000035_model.species_labels
+  - name: model_state_dr
+    maps_to: systemsbiology_sbml_vilar2002_oscillator_biomd0000000035_model.model_state_dr
+  - name: model_state_da
+    maps_to: systemsbiology_sbml_vilar2002_oscillator_biomd0000000035_model.model_state_da
+  - name: model_state_mr
+    maps_to: systemsbiology_sbml_vilar2002_oscillator_biomd0000000035_model.model_state_mr
+  - name: model_state_ma
+    maps_to: systemsbiology_sbml_vilar2002_oscillator_biomd0000000035_model.model_state_ma
+  - name: empty_set
+    maps_to: systemsbiology_sbml_vilar2002_oscillator_biomd0000000035_model.empty_set
+  - name: d_rp
+    maps_to: systemsbiology_sbml_vilar2002_oscillator_biomd0000000035_model.d_rp

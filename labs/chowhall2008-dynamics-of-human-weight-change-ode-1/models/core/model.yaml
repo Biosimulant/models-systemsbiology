@@ -1,0 +1,75 @@
+schema_version: '2.0'
+title: ChowHall2008 Dynamics of Human Weight Change_ODE_1
+description: This ODE model is a representation of the two compartment macronutrient
+  partition model that Chow and Hall outlined in their 2008 publication. It is one
+  of three models that they outlined in that publ.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Carson C Chow
+- Kevin D Hall
+upstream:
+  id: biomodels_ebi:BIOMD0000000901
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000901
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000901
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000901?filename=ChowHall2008
+    - Dynamics of Human Weight Change.xml
+  license: CC0
+biosim:
+  entrypoint: src.chowhall2008_dynamics_of_human_weight_change_ode_biomd0000000901_model:Chowhall2008DynamicsOfHumanWeightChangeOdeBiomd0000000901Model
+  init_kwargs:
+    model_path: data/BIOMD0000000901.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_body_mass
+    maps_to: Body_Mass
+    label: Initial Body Mass
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Body_Mass`.
+  - name: initial_lean_mass
+    maps_to: Lean_Mass
+    label: Initial Lean Mass
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Lean_Mass`.
+  - name: initial_fat_mass
+    maps_to: Fat_Mass
+    label: Initial Fat Mass
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Fat_Mass`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: body_mass
+    maps_to: Body_Mass
+    label: Body Mass
+    description: Body Mass. Maps to SBML symbol `Body_Mass`.
+  - name: lean_mass
+    maps_to: Lean_Mass
+    label: Lean Mass
+    description: Lean Mass. Maps to SBML symbol `Lean_Mass`.
+  - name: fat_mass
+    maps_to: Fat_Mass
+    label: Fat Mass
+    description: Fat Mass. Maps to SBML symbol `Fat_Mass`.

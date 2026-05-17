@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "eae68ea1-c7fc-4449-bd5c-27b75995b97f",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "53d682a4-4937-4b27-9700-3a5dbd827eee",
+  "created_at": "2026-05-16T05:46:50.323860859+00:00",
+  "last_synced_at": "2026-05-17T05:28:37.280106+00:00",
+  "hub_manifest_hash": "587be81c460a1348d79919762b49d1d6eb29959159d493b166aad87f55010522",
+  "package_name": "phillips2007-ascendingarousalsystem-sleepwakedynamics-lab"
+}

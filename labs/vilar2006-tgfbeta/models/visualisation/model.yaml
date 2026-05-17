@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Vilar2006_TGFbeta Visualisation
+description: Question-and-answer and dynamic visual summaries for Vilar2006_TGFbeta.
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Vilar2006 Tgfbeta Lab
+    question: 'Which signalling variables dominate the simulated network response?
+      Source model: Vilar2006_TGFbeta.'
+    answer_focus: Q/A table plus signaling timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_vilar2006_tgfbeta_biomd0000000101_model
+      title: Vilar2006_TGFbeta
+      observables:
+      - id: lRIRII_endo
+        port: ligand_receptor_complex_endosome
+        label: ligand receptor complex-endosome
+        group: signaling
+      - id: RII
+        port: receptor_2
+        label: Receptor 2
+        group: signaling
+      - id: RI
+        port: receptor_1
+        label: Receptor 1
+        group: signaling
+      - id: lRIRII
+        port: ligand_receptor_complex_plasma_membrane
+        label: ligand receptor complex-plasma membrane
+        group: signaling
+      - id: RII_endo
+        port: receptor_2_endosome
+        label: Receptor 2 endosome
+        group: signaling
+      - id: RI_endo
+        port: receptor_1_endosome
+        label: Receptor 1-endosome
+        group: signaling
+io:
+  inputs: []
+  outputs: []

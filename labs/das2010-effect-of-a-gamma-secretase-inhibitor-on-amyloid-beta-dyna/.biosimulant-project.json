@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "18aa4999-e9db-43ea-b01c-6aa015dc7cf1",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "6ad70c56-1bce-4495-aa5d-ef11f91e031d",
+  "created_at": "2026-05-16T05:46:42.708950191+00:00",
+  "last_synced_at": "2026-05-17T02:49:35.035460+00:00",
+  "hub_manifest_hash": "f7afcabe54e67e16bd757bfb606a6dcc38c6fc94f183ca6020b6040edf06c7c6",
+  "package_name": "das2010-effect-of-a-gamma-secretase-inhibitor-on-amyloid-beta-dy"
+}

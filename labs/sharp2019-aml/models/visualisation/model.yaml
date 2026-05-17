@@ -1,0 +1,50 @@
+schema_version: '2.0'
+title: Sharp2019 - AML Visualisation
+description: Question-and-answer and dynamic visual summaries for Sharp2019 - AML.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Sharp2019 Aml Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Sharp2019 - AML.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_sharp2019_aml_biomd0000000798_model
+      title: Sharp2019 - AML
+      observables:
+      - id: S
+        port: model_state_s
+        label: S
+        group: core_system_state
+      - id: L
+        port: model_state_l
+        label: L
+        group: core_system_state
+      - id: T
+        port: model_state_t
+        label: T
+        group: core_system_state
+      - id: D
+        port: model_state_d
+        label: D
+        group: core_system_state
+      - id: A
+        port: model_state_a
+        label: A
+        group: core_system_state
+io:
+  inputs: []
+  outputs: []

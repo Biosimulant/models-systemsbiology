@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Jenkinson2011_EGF_MAPK
+description: 'This is a model described in the article: Thermodynamically Consistent
+  Model Calibration in Chemical Kinetics. It can be used to explore systemsbiology
+  jenkinson2011 egf mapk BioModels0000000399 dynamics and compare simulation behavior
+  across conditions.'
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Garrett Jenkinson
+- John Goutsias
+upstream:
+  id: biomodels_ebi:BIOMD0000000399
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000399
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000399
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000399?filename=BIOMD0000000399_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.jenkinson2011_egf_mapk_biomd0000000399_model:Jenkinson2011EgfMapkBiomd0000000399Model
+  init_kwargs:
+    model_path: data/BIOMD0000000399.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_mek
+    maps_to: x47
+    label: Initial Model State Mek
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x47`.
+  - name: initial_model_state_erk
+    maps_to: x55
+    label: Initial Model State ERK
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x55`.
+  - name: initial_phosphotase3
+    maps_to: x60
+    label: Initial Phosphotase3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x60`.
+  - name: initial_model_state_shc
+    maps_to: x31
+    label: Initial Model State Shc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x31`.
+  - name: initial_prot
+    maps_to: x12
+    label: Initial Prot
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x12`.
+  - name: initial_ras_gdp
+    maps_to: x26
+    label: Initial RAS Gdp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x26`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: mek
+    maps_to: x47
+    label: MEK
+    description: MEK. Maps to SBML symbol `x47`.
+  - name: erk
+    maps_to: x55
+    label: ERK
+    description: ERK. Maps to SBML symbol `x55`.
+  - name: phosphotase3
+    maps_to: x60
+    label: Phosphotase3
+    description: Phosphotase3. Maps to SBML symbol `x60`.
+  - name: shc
+    maps_to: x31
+    label: Shc
+    description: Shc. Maps to SBML symbol `x31`.
+  - name: prot
+    maps_to: x12
+    label: Prot
+    description: Prot. Maps to SBML symbol `x12`.
+  - name: ras_gdp
+    maps_to: x26
+    label: Ras-GDP
+    description: Ras-GDP. Maps to SBML symbol `x26`.

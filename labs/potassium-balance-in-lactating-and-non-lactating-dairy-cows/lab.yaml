@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Potassium Balance In Lactating And Non Lactating Dairy Cows Lab
+description: M. It can be used to explore systemsbiology potassium balance in lactating
+  and dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_potassium_balance_in_lactating_and_non_lactating_biomd0000000849_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_potassium_balance_in_lactating_and_non_lactating_biomd0000000849_model.state
+  to:
+  - visualisation.systemsbiology_sbml_potassium_balance_in_lactating_and_non_lactating_biomd0000000849_model_state
+- from: systemsbiology_sbml_potassium_balance_in_lactating_and_non_lactating_biomd0000000849_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_potassium_balance_in_lactating_and_non_lactating_biomd0000000849_model_summary
+- from: systemsbiology_sbml_potassium_balance_in_lactating_and_non_lactating_biomd0000000849_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_potassium_balance_in_lactating_and_non_lactating_biomd0000000849_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: src_glucfeed
+    maps_to: systemsbiology_sbml_potassium_balance_in_lactating_and_non_lactating_biomd0000000849_model.src_glucfeed
+    label: Src Glucfeed
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `p46`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_potassium_balance_in_lactating_and_non_lactating_biomd0000000849_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_potassium_balance_in_lactating_and_non_lactating_biomd0000000849_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_potassium_balance_in_lactating_and_non_lactating_biomd0000000849_model.species_labels
+  - name: gluc_stor
+    maps_to: systemsbiology_sbml_potassium_balance_in_lactating_and_non_lactating_biomd0000000849_model.gluc_stor
+  - name: k_tiss
+    maps_to: systemsbiology_sbml_potassium_balance_in_lactating_and_non_lactating_biomd0000000849_model.k_tiss
+  - name: k_git
+    maps_to: systemsbiology_sbml_potassium_balance_in_lactating_and_non_lactating_biomd0000000849_model.k_git
+  - name: gluc_prod
+    maps_to: systemsbiology_sbml_potassium_balance_in_lactating_and_non_lactating_biomd0000000849_model.gluc_prod
+  - name: k_icf_mmol
+    maps_to: systemsbiology_sbml_potassium_balance_in_lactating_and_non_lactating_biomd0000000849_model.k_icf_mmol
+  - name: ins_b
+    maps_to: systemsbiology_sbml_potassium_balance_in_lactating_and_non_lactating_biomd0000000849_model.ins_b

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "225b417b-dc16-4cd7-9889-92e35dcd35d6",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "2a8d00f3-6820-4ad7-bcae-1a90eb60c7cd",
+  "created_at": "2026-05-16T05:46:48.091018141+00:00",
+  "last_synced_at": "2026-05-17T09:34:54.988595+00:00",
+  "hub_manifest_hash": "6ab112889eb9f2fd9e7169a90a435e75e194f4050ef97f4aba2f44cf6aa22117",
+  "package_name": "biomd0000000643-musante2017-switching-behaviour-of-pp2a-inhibiti"
+}

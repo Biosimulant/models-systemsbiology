@@ -1,0 +1,98 @@
+schema_version: '2.0'
+title: Guisoni2016 - Cis-regulatory system (CRS) can drive sustained oscillations
+description: 'Guisoni2016 - Cis-regulatory system (CRS) candrive sustained oscillations
+  This model is described in the article: Promoters Architecture-Based Mechanism for
+  Noise-Induced Oscillations in a Single-Gene. It can be used to explore systemsbiology
+  guisoni2016 cis regulatory system crs dynamics and compare simulation behavior across
+  conditions.'
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- N Guisoni
+- D Monteoliva
+- L Diambra
+upstream:
+  id: biomodels_ebi:MODEL1611030000
+  source_db: biomodels_ebi
+  source_id: MODEL1611030000
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1611030000
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1611030000?filename=MODEL1611030000_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.guisoni2016_cis_regulatory_system_crs_can_drive_model1611030000_model:Guisoni2016CisRegulatorySystemCrsCanDriveModel1611030000Model
+  init_kwargs:
+    model_path: data/MODEL1611030000.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_ft
+    maps_to: ft
+    label: Initial Model State Ft
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ft`.
+  - name: initial_model_state_r3
+    maps_to: r3
+    label: Initial Model State R3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `r3`.
+  - name: initial_model_state_r2
+    maps_to: r2
+    label: Initial Model State R2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `r2`.
+  - name: initial_model_state_r1
+    maps_to: r1
+    label: Initial Model State R1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `r1`.
+  - name: initial_model_state_r0
+    maps_to: r0
+    label: Initial Model State R0
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `r0`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_ft
+    maps_to: ft
+    label: ft
+    description: ft. Maps to SBML symbol `ft`.
+  - name: model_state_r3
+    maps_to: r3
+    label: r3
+    description: r3. Maps to SBML symbol `r3`.
+  - name: model_state_r2
+    maps_to: r2
+    label: r2
+    description: r2. Maps to SBML symbol `r2`.
+  - name: model_state_r1
+    maps_to: r1
+    label: r1
+    description: r1. Maps to SBML symbol `r1`.
+  - name: model_state_r0
+    maps_to: r0
+    label: r0
+    description: r0. Maps to SBML symbol `r0`.

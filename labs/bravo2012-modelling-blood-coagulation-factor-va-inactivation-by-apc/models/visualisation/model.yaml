@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: Bravo2012 - Modelling blood coagulation factor Va inactivation by APC Visualisation
+description: Question-and-answer and dynamic visual summaries for Bravo2012 - Modelling
+  blood coagulation factor Va inactivation by APC.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Bravo2012 Modelling Blood Coagulation Factor Va Inactivation By Apc
+      Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Bravo2012 - Modelling blood coagulation factor Va inactivation
+      by APC.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_bravo2012_modelling_blood_coagulation_factor_va_biomd0000000739_model
+      title: Bravo2012 - Modelling blood coagulation factor Va inactivation by APC
+      observables:
+      - id: Xa_Va_i_506_PT
+        port: xa_va_i_506_pt
+        label: Xa:Va_i_506:PT
+        group: physiology
+      - id: Xa_Va_i_506
+        port: xa_va_i_506
+        label: Xa:Va_i_506
+        group: physiology
+      - id: Xa_Va_i_306_PT
+        port: xa_va_i_306_pt
+        label: Xa:Va_i_306:PT
+        group: physiology
+      - id: Xa_Va_i_306_506_PT
+        port: xa_va_i_306_506_pt
+        label: Xa:Va_i_306/506:PT
+        group: physiology
+      - id: Xa_Va_i_306_506
+        port: xa_va_i_306_506
+        label: Xa:Va_i_306/506
+        group: physiology
+      - id: Xa_Va_i_306
+        port: xa_va_i_306
+        label: Xa:Va_i_306
+        group: physiology
+io:
+  inputs: []
+  outputs: []

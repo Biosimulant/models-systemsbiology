@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Hartmann2016 - Blood coagulation model for simulating anticoagulants Visualisation
+description: Question-and-answer and dynamic visual summaries for Hartmann2016 - Blood
+  coagulation model for simulating anticoagulants.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Hartmann2016 Blood Coagulation Model For Simulating Anticoagulants
+      Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Hartmann2016 - Blood coagulation model for simulating anticoagulants.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_hartmann2016_blood_coagulation_model_for_simulat_model1807180004_model
+      title: Hartmann2016 - Blood coagulation model for simulating anticoagulants
+      observables:
+      - id: VK_p
+        port: vk_p
+        label: VK_p
+        group: physiology
+      - id: A_riva
+        port: a_riva
+        label: A_riva
+        group: physiology
+      - id: Xa_TFPI
+        port: xa_tfpi
+        label: Xa_TFPI
+        group: physiology
+      - id: Xa_ATIII_Heparin
+        port: xa_atiii_heparin
+        label: Xa_ATIII_Heparin
+        group: physiology
+      - id: Va_Xa
+        port: va_xa
+        label: Va_Xa
+        group: physiology
+      - id: VIIa_TF_Xa_TFPI
+        port: vi_ia_tf_xa_tfpi
+        label: VIIa_TF_Xa_TFPI
+        group: physiology
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Goldbeter2008_Somite_Segmentation_Clock_Notch_Wnt_FGF Visualisation
+description: Question-and-answer and dynamic visual summaries for Goldbeter2008_Somite_Segmentation_Clock_Notch_Wnt_FGF.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Goldbeter2008 Somite Segmentation Clock Notch Wnt Fgf Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Goldbeter2008_Somite_Segmentation_Clock_Notch_Wnt_FGF.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_goldbeter2008_somite_segmentation_clock_notch_wn_biomd0000000201_model
+      title: Goldbeter2008_Somite_Segmentation_Clock_Notch_Wnt_FGF
+      observables:
+      - id: Rast
+        port: ras_total
+        label: Ras total
+        group: signaling
+      - id: ERKt
+        port: erk_total
+        label: ERK total
+        group: signaling
+      - id: Rasa
+        port: active_ras
+        label: active Ras
+        group: signaling
+      - id: ERKa
+        port: active_erk
+        label: active ERK
+        group: signaling
+      - id: MF
+        port: lunatic_fringe_mrna
+        label: Lunatic fringe mRNA
+        group: gene_regulation
+      - id: Dusp
+        port: dusp6_protein
+        label: Dusp6 protein
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

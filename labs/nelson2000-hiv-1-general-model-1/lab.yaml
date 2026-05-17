@@ -1,0 +1,73 @@
+schema_version: '2.0'
+title: Nelson2000 Hiv 1 General Model 1 Lab
+description: 'This is the general model without delay described by the equation system
+  (1) in: A model of HIV-1 pathogenesis that includes an intracellular delay. Nelson
+  PW, Murray JD, Perelson AS; Math Biosci.'
+models:
+- alias: systemsbiology_sbml_nelson2000_hiv_1_general_model_1_biomd0000000875_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_nelson2000_hiv_1_general_model_1_biomd0000000875_model.state
+  to:
+  - visualisation.systemsbiology_sbml_nelson2000_hiv_1_general_model_1_biomd0000000875_model_state
+- from: systemsbiology_sbml_nelson2000_hiv_1_general_model_1_biomd0000000875_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_nelson2000_hiv_1_general_model_1_biomd0000000875_model_summary
+- from: systemsbiology_sbml_nelson2000_hiv_1_general_model_1_biomd0000000875_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_nelson2000_hiv_1_general_model_1_biomd0000000875_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- epidemiology
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_v_i
+    maps_to: systemsbiology_sbml_nelson2000_hiv_1_general_model_1_biomd0000000875_model.initial_model_state_v_i
+    label: Initial Model State V I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `V_I`.
+  - name: initial_model_state_t
+    maps_to: systemsbiology_sbml_nelson2000_hiv_1_general_model_1_biomd0000000875_model.initial_model_state_t
+    label: Initial Model State T
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `T_i`.
+  - name: initial_v_ni
+    maps_to: systemsbiology_sbml_nelson2000_hiv_1_general_model_1_biomd0000000875_model.initial_v_ni
+    label: Initial V Ni
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `V_NI`.
+  - name: initial_model_state_t_2
+    maps_to: systemsbiology_sbml_nelson2000_hiv_1_general_model_1_biomd0000000875_model.initial_model_state_t_2
+    label: Initial Model State T 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `T`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_nelson2000_hiv_1_general_model_1_biomd0000000875_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_nelson2000_hiv_1_general_model_1_biomd0000000875_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_nelson2000_hiv_1_general_model_1_biomd0000000875_model.species_labels
+  - name: v_i
+    maps_to: systemsbiology_sbml_nelson2000_hiv_1_general_model_1_biomd0000000875_model.v_i
+  - name: model_state_t
+    maps_to: systemsbiology_sbml_nelson2000_hiv_1_general_model_1_biomd0000000875_model.model_state_t
+  - name: v_ni
+    maps_to: systemsbiology_sbml_nelson2000_hiv_1_general_model_1_biomd0000000875_model.v_ni
+  - name: model_state_t_2
+    maps_to: systemsbiology_sbml_nelson2000_hiv_1_general_model_1_biomd0000000875_model.model_state_t_2

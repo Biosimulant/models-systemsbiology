@@ -1,0 +1,91 @@
+schema_version: '2.0'
+title: MODEL1704110003 Variant Proctor2017 Identifying Microrna For Muscle Regeneration During Ageing 3 Lab
+description: 'Proctor2017 - Identifying microRNA for muscleregeneration during ageing
+  (Mir143_in_muscle) This model is described in the article: Using computer simulation
+  models to investigate the most promising mi. It can be used to explore systemsbiology
+  proctor2017 identifying microrna for muscle dynamics and compare simulation behavior
+  across conditions.'
+models:
+- alias: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110003_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110003_model.state
+  to:
+  - visualisation.systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110003_model_state
+- from: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110003_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110003_model_summary
+- from: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110003_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110003_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_myo_d
+    maps_to: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110003_model.initial_myo_d
+    label: Initial Myo D
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MyoD`.
+  - name: initial_igf2
+    maps_to: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110003_model.initial_igf2
+    label: Initial Igf2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Igf2`.
+  - name: initial_model_state_il6
+    maps_to: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110003_model.initial_model_state_il6
+    label: Initial Model State IL6
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IL6`.
+  - name: initial_mi_r143
+    maps_to: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110003_model.initial_mi_r143
+    label: Initial Mi R143
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `miR143`.
+  - name: initial_igfbp5
+    maps_to: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110003_model.initial_igfbp5
+    label: Initial Igfbp5
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Igfbp5`.
+  - name: initial_model_state_akt
+    maps_to: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110003_model.initial_model_state_akt
+    label: Initial Model State Akt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Akt`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110003_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110003_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110003_model.species_labels
+  - name: myo_d
+    maps_to: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110003_model.myo_d
+  - name: igf2
+    maps_to: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110003_model.igf2
+  - name: il6
+    maps_to: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110003_model.il6
+  - name: mi_r143
+    maps_to: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110003_model.mi_r143
+  - name: igfbp5
+    maps_to: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110003_model.igfbp5
+  - name: akt
+    maps_to: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110003_model.akt

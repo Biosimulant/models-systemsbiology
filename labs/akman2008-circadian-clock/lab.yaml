@@ -1,0 +1,86 @@
+schema_version: '2.0'
+title: Akman2008 Circadian Clock Lab
+description: This model 2 described in the supplement of the article below. It is
+  parameterized for the WT at 24°C.
+models:
+- alias: systemsbiology_sbml_akman2008_circadian_clock_model2_biomd0000000214_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_akman2008_circadian_clock_model2_biomd0000000214_model.state
+  to:
+  - visualisation.systemsbiology_sbml_akman2008_circadian_clock_model2_biomd0000000214_model_state
+- from: systemsbiology_sbml_akman2008_circadian_clock_model2_biomd0000000214_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_akman2008_circadian_clock_model2_biomd0000000214_model_summary
+- from: systemsbiology_sbml_akman2008_circadian_clock_model2_biomd0000000214_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_akman2008_circadian_clock_model2_biomd0000000214_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_wc_1_mrna
+    maps_to: systemsbiology_sbml_akman2008_circadian_clock_model2_biomd0000000214_model.initial_wc_1_mrna
+    label: Initial Wc 1 MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MW`.
+  - name: initial_frq_mrna
+    maps_to: systemsbiology_sbml_akman2008_circadian_clock_model2_biomd0000000214_model.initial_frq_mrna
+    label: Initial Frq MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MF`.
+  - name: initial_wc_1
+    maps_to: systemsbiology_sbml_akman2008_circadian_clock_model2_biomd0000000214_model.initial_wc_1
+    label: Initial Wc 1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PW`.
+  - name: initial_wc_1_1
+    maps_to: systemsbiology_sbml_akman2008_circadian_clock_model2_biomd0000000214_model.initial_wc_1_1
+    label: Initial Wc 1 1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `E1W`.
+  - name: initial_wc_1_2
+    maps_to: systemsbiology_sbml_akman2008_circadian_clock_model2_biomd0000000214_model.initial_wc_1_2
+    label: Initial Wc 1 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `E2W`.
+  - name: initial_l_frq_1
+    maps_to: systemsbiology_sbml_akman2008_circadian_clock_model2_biomd0000000214_model.initial_l_frq_1
+    label: Initial L Frq 1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `E1Fp`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_akman2008_circadian_clock_model2_biomd0000000214_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_akman2008_circadian_clock_model2_biomd0000000214_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_akman2008_circadian_clock_model2_biomd0000000214_model.species_labels
+  - name: wc_1_mrna
+    maps_to: systemsbiology_sbml_akman2008_circadian_clock_model2_biomd0000000214_model.wc_1_mrna
+  - name: frq_mrna
+    maps_to: systemsbiology_sbml_akman2008_circadian_clock_model2_biomd0000000214_model.frq_mrna
+  - name: wc_1
+    maps_to: systemsbiology_sbml_akman2008_circadian_clock_model2_biomd0000000214_model.wc_1
+  - name: wc_1_1
+    maps_to: systemsbiology_sbml_akman2008_circadian_clock_model2_biomd0000000214_model.wc_1_1
+  - name: wc_1_2
+    maps_to: systemsbiology_sbml_akman2008_circadian_clock_model2_biomd0000000214_model.wc_1_2
+  - name: l_frq_1
+    maps_to: systemsbiology_sbml_akman2008_circadian_clock_model2_biomd0000000214_model.l_frq_1

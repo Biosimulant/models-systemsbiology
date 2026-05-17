@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Kremers2015 - Thrombin Inhibitor Kinetics Visualisation
+description: Question-and-answer and dynamic visual summaries for Kremers2015 - Thrombin
+  Inhibitor Kinetics.
+standard: other
+tags:
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Kremers2015 Thrombin Inhibitor Kinetics Lab
+    question: 'Which drug, dose, or target-linked model states drive the simulated
+      profile? Source model: Kremers2015 - Thrombin Inhibitor Kinetics.'
+    answer_focus: Q/A table plus pharmacology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_kremers2015_thrombin_inhibitor_kinetics_model1808210001_model
+      title: Kremers2015 - Thrombin Inhibitor Kinetics
+      observables:
+      - id: a2M
+        port: a2_m
+        label: a2M
+        group: gene_regulation
+      - id: T_a2M
+        port: t_a2_m
+        label: T:a2M
+        group: gene_regulation
+      - id: T_MS
+        port: t_ms
+        label: T:MS
+        group: gene_regulation
+      - id: T_AT
+        port: t_at
+        label: T:AT
+        group: gene_regulation
+      - id: AT
+        port: model_state_at
+        label: AT
+        group: gene_regulation
+      - id: MS
+        port: model_state_ms
+        label: MS
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

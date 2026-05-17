@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Pokhilko2010_CircClock Visualisation
+description: Question-and-answer and dynamic visual summaries for Pokhilko2010_CircClock.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Pokhilko2010 Circclock Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Pokhilko2010_CircClock.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_pokhilko2010_circclock_biomd0000000273_model
+      title: Pokhilko2010_CircClock
+      observables:
+      - id: cL_m
+        port: c_l_m
+        label: cL_m
+        group: physiology
+      - id: cP
+        port: c_p
+        label: cP
+        group: physiology
+      - id: cL
+        port: c_l
+        label: cL
+        group: physiology
+      - id: cT
+        port: c_t
+        label: cT
+        group: physiology
+      - id: cP9_m
+        port: c_p9_m
+        label: cP9_m
+        group: physiology
+      - id: cZTL
+        port: c_ztl
+        label: cZTL
+        group: physiology
+io:
+  inputs: []
+  outputs: []

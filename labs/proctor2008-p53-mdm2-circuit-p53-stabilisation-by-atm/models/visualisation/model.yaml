@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Proctor2008 - p53/Mdm2 circuit - p53 stabilisation by ATM Visualisation
+description: Question-and-answer and dynamic visual summaries for Proctor2008 - p53/Mdm2
+  circuit - p53 stabilisation by ATM.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Proctor2008 P53 Mdm2 Circuit P53 Stabilisation By Atm Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Proctor2008 - p53/Mdm2 circuit - p53 stabilisation by ATM.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_proctor2008_p53_mdm2_circuit_p53_stabilisation_b_biomd0000000188_model
+      title: Proctor2008 - p53/Mdm2 circuit - p53 stabilisation by ATM
+      observables:
+      - id: p53_mRNA
+        port: p53_mrna
+        label: P53 MRNA
+        group: gene_regulation
+      - id: Mdm2_mRNA
+        port: mdm2_mrna
+        label: Mdm2 MRNA
+        group: gene_regulation
+      - id: ATMI
+        port: atmi
+        label: ATMI
+        group: physiology
+      - id: Mdm2_p53
+        port: mdm2_p53
+        label: Mdm2 P53
+        group: physiology
+      - id: p53
+        port: p53
+        label: P53
+        group: physiology
+      - id: Mdm2
+        port: mdm2
+        label: Mdm2
+        group: physiology
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "3906dd60-996d-4a62-ad5b-e90b10df5194",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "1908267e-0d61-4394-8075-6c90b04df5b7",
+  "created_at": "2026-05-16T05:46:49.613221577+00:00",
+  "last_synced_at": "2026-05-17T05:21:45.555299+00:00",
+  "hub_manifest_hash": "2bafa106f9cddc103c25265e63ecbb47f78f8848074440f386f4d63b0872aa3d",
+  "package_name": "oxhamre2005-ca-oscillation-lab"
+}

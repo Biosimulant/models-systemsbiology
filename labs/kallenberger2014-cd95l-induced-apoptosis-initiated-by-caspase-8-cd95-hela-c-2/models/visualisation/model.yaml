@@ -1,0 +1,60 @@
+schema_version: '2.0'
+title: Kallenberger2014 - CD95L induced apoptosis initiated by caspase-8, CD95 HeLa
+  cells (cis/trans-cis/trans variant) Visualisation
+description: Question-and-answer and dynamic visual summaries for Kallenberger2014
+  - CD95L induced apoptosis initiated by caspase-8, CD95 HeLa cells (cis/trans-cis/trans
+  variant).
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Kallenberger2014 Cd95l Induced Apoptosis Initiated By Caspase 8 Cd95
+      Hela C 2 Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Kallenberger2014 - CD95L induced apoptosis initiated by caspase-8,
+      CD95 HeLa cells (cis/trans-cis/trans variant).'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_kallenberger2014_cd95l_induced_apoptosis_initiat_biomd0000000525_model
+      title: Kallenberger2014 - CD95L induced apoptosis initiated by caspase-8, CD95
+        HeLa cells (cis/trans-cis/trans variant)
+      observables:
+      - id: PrER_mGFP
+        port: pr_er_m_gfp
+        label: PrER_mGFP
+        group: physiology
+      - id: PrNES_mCherry
+        port: pr_nes_m_cherry
+        label: PrNES_mCherry
+        group: physiology
+      - id: p55free
+        port: p55free
+        label: p55free
+        group: physiology
+      - id: tBid
+        port: t_bid
+        label: tBid
+        group: physiology
+      - id: p43
+        port: p43
+        label: p43
+        group: physiology
+      - id: p30
+        port: p30
+        label: p30
+        group: physiology
+io:
+  inputs: []
+  outputs: []

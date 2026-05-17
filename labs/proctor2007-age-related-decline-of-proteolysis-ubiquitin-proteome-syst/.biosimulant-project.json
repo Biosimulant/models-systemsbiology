@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "6ab67425-bd4c-462a-982f-fc8ad0c871b4",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "c3450170-740b-4813-b8e4-2da030787faf",
+  "created_at": "2026-05-16T05:46:50.642448937+00:00",
+  "last_synced_at": "2026-05-17T05:34:33.641754+00:00",
+  "hub_manifest_hash": "6ede225c65b64ab5d79f0c33a6a12ee5d575af4e818314de91f3553c4f8c01e0",
+  "package_name": "proctor2007-age-related-decline-of-proteolysis-ubiquitin-proteom"
+}

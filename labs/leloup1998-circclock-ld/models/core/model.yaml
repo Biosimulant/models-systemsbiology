@@ -1,0 +1,83 @@
+schema_version: '2.0'
+title: Leloup1998_CircClock_LD
+description: 'Leloup and Goldbeter, 1998 This model was created after the article
+  by Leloup and Goldbeter, J Biol Rhythms 1998, Vol:13(1),pp70-87, pubmedID: 9486845
+  A Model for Circadian Rhythms in Drosophila Incor. It can be used to explore systemsbiology
+  leloup1998 circclock ld BioModels0000000171 dynamics and compare simulation behavior
+  across conditions.'
+standard: other
+tags:
+- development
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Jean-Christophe Leloup
+- A Goldbeter
+upstream:
+  id: biomodels_ebi:BIOMD0000000171
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000171
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000171
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000171?filename=BIOMD0000000171_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.leloup1998_circclock_ld_biomd0000000171_model:Leloup1998CircclockLdBiomd0000000171Model
+  init_kwargs:
+    model_path: data/BIOMD0000000171.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: light_dark_period
+    maps_to: l_d
+    label: Light Dark Period
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `l_d`.
+  - name: v_d_t_fold_incr_during_light
+    maps_to: v_dT_fac
+    label: V D T Fold Incr During Light
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `v_dT_fac`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: tim_mrna
+    maps_to: M_T
+    label: tim mRNA
+    description: tim mRNA. Maps to SBML symbol `M_T`.
+  - name: per_mrna
+    maps_to: M_P
+    label: per mRNA
+    description: per mRNA. Maps to SBML symbol `M_P`.
+  - name: tim_pp
+    maps_to: T2
+    label: TIM-pp
+    description: TIM-pp. Maps to SBML symbol `T2`.
+  - name: per_tim_complex_nuclear
+    maps_to: CN
+    label: PER_TIM complex nuclear
+    description: PER_TIM complex nuclear. Maps to SBML symbol `CN`.
+  - name: tim_p
+    maps_to: T1
+    label: TIM-p
+    description: TIM-p. Maps to SBML symbol `T1`.
+  - name: tim
+    maps_to: T0
+    label: TIM
+    description: TIM. Maps to SBML symbol `T0`.

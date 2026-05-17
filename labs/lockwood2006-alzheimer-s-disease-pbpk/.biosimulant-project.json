@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "2c94545c-c283-43e3-a000-039bfb71230e",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "b809e4a6-a741-457b-894b-a99bb8247f86",
+  "created_at": "2026-05-16T05:46:46.000013409+00:00",
+  "last_synced_at": "2026-05-17T04:40:13.594626+00:00",
+  "hub_manifest_hash": "b6807d71b8947ee9661ac470c01245d1ec9ff008b07c58231f388c1c653a6583",
+  "package_name": "lockwood2006-alzheimer-s-disease-pbpk-lab"
+}

@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Schmierer2010_FIH_Ankyrins Visualisation
+description: Question-and-answer and dynamic visual summaries for Schmierer2010_FIH_Ankyrins.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Schmierer2010 Fih Ankyrins Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Schmierer2010_FIH_Ankyrins.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_schmierer2010_fih_ankyrins_biomd0000000300_model
+      title: Schmierer2010_FIH_Ankyrins
+      observables:
+      - id: species_5
+        port: atot
+        label: Atot
+        group: metabolism
+      - id: species_3
+        port: model_state_a
+        label: A
+        group: metabolism
+      - id: species_7
+        port: ftot
+        label: Ftot
+        group: metabolism
+      - id: species_16
+        port: a_for_plotting
+        label: A for plotting
+        group: metabolism
+      - id: species_8
+        port: ptot
+        label: Ptot
+        group: metabolism
+      - id: species_12
+        port: fi_hfree
+        label: FIHfree
+        group: metabolism
+io:
+  inputs: []
+  outputs: []

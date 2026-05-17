@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Locke2005 - Circadian Clock
+description: Locke2005 - Circadian Clock SBML model of the interlocked feedback loop
+  network The model describes the circuit depicted in Fig. 4 and reproduces the simulations
+  in Figure 5A and 5B.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- James C W Locke
+- Megan M Southern
+- László Kozma-Bognár
+- Victoria Hibberd
+- Paul E Brown
+upstream:
+  id: biomodels_ebi:BIOMD0000000055
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000055
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000055
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000055?filename=BIOMD0000000055_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.locke2005_circadian_clock_biomd0000000055_model:Locke2005CircadianClockBiomd0000000055Model
+  init_kwargs:
+    model_path: data/BIOMD0000000055.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_toc1_protein_in_cytoplasm
+    maps_to: cTc
+    label: Initial Toc1 Protein In Cytoplasm
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cTc`.
+  - name: initial_x_protein_in_cytoplasm
+    maps_to: cXc
+    label: Initial X Protein In Cytoplasm
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cXc`.
+  - name: initial_light_sensitive_protein_p
+    maps_to: cPn
+    label: Initial Light Sensitive Protein P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cPn`.
+  - name: initial_lhy_mrna
+    maps_to: cLm
+    label: Initial Lhy MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cLm`.
+  - name: initial_toc1_mrna
+    maps_to: cTm
+    label: Initial Toc1 MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cTm`.
+  - name: initial_x_protein_in_nucleus
+    maps_to: cXn
+    label: Initial X Protein In Nucleus
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cXn`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: toc1_protein_in_cytoplasm
+    maps_to: cTc
+    label: TOC1 protein in cytoplasm
+    description: TOC1 protein in cytoplasm. Maps to SBML symbol `cTc`.
+  - name: x_protein_in_cytoplasm
+    maps_to: cXc
+    label: X protein in cytoplasm
+    description: X protein in cytoplasm. Maps to SBML symbol `cXc`.
+  - name: light_sensitive_protein_p
+    maps_to: cPn
+    label: light sensitive protein P
+    description: light sensitive protein P. Maps to SBML symbol `cPn`.
+  - name: lhy_mrna
+    maps_to: cLm
+    label: LHY mRNA
+    description: LHY mRNA. Maps to SBML symbol `cLm`.
+  - name: toc1_mrna
+    maps_to: cTm
+    label: TOC1 mRNA
+    description: TOC1 mRNA. Maps to SBML symbol `cTm`.
+  - name: x_protein_in_nucleus
+    maps_to: cXn
+    label: X protein in nucleus
+    description: X protein in nucleus. Maps to SBML symbol `cXn`.

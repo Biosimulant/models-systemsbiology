@@ -1,0 +1,71 @@
+schema_version: '2.0'
+title: Proctor2012 Role Of Amyloid Beta Dimers In Aggregation Formation Lab
+description: 'Proctor2012 - Amyloid-beta aggregation This model supports the current
+  thinking that levels of dimers are important in initiating the aggregation process.
+  This model is described in the article: Aggre.'
+models:
+- alias: systemsbiology_sbml_proctor2012_role_of_amyloid_beta_dimers_in_aggre_biomd0000000462_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_proctor2012_role_of_amyloid_beta_dimers_in_aggre_biomd0000000462_model.state
+  to:
+  - visualisation.systemsbiology_sbml_proctor2012_role_of_amyloid_beta_dimers_in_aggre_biomd0000000462_model_state
+- from: systemsbiology_sbml_proctor2012_role_of_amyloid_beta_dimers_in_aggre_biomd0000000462_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_proctor2012_role_of_amyloid_beta_dimers_in_aggre_biomd0000000462_model_summary
+- from: systemsbiology_sbml_proctor2012_role_of_amyloid_beta_dimers_in_aggre_biomd0000000462_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_proctor2012_role_of_amyloid_beta_dimers_in_aggre_biomd0000000462_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_neprilysin
+    maps_to: systemsbiology_sbml_proctor2012_role_of_amyloid_beta_dimers_in_aggre_biomd0000000462_model.initial_neprilysin
+    label: Initial Neprilysin
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Nep`.
+  - name: initial_abeta_plaque
+    maps_to: systemsbiology_sbml_proctor2012_role_of_amyloid_beta_dimers_in_aggre_biomd0000000462_model.initial_abeta_plaque
+    label: Initial Abeta Plaque
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `AbP`.
+  - name: initial_abeta_monomer
+    maps_to: systemsbiology_sbml_proctor2012_role_of_amyloid_beta_dimers_in_aggre_biomd0000000462_model.initial_abeta_monomer
+    label: Initial Abeta Monomer
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Abeta`.
+  - name: initial_abeta_dimer
+    maps_to: systemsbiology_sbml_proctor2012_role_of_amyloid_beta_dimers_in_aggre_biomd0000000462_model.initial_abeta_dimer
+    label: Initial Abeta Dimer
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `AbDim`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_proctor2012_role_of_amyloid_beta_dimers_in_aggre_biomd0000000462_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_proctor2012_role_of_amyloid_beta_dimers_in_aggre_biomd0000000462_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_proctor2012_role_of_amyloid_beta_dimers_in_aggre_biomd0000000462_model.species_labels
+  - name: neprilysin
+    maps_to: systemsbiology_sbml_proctor2012_role_of_amyloid_beta_dimers_in_aggre_biomd0000000462_model.neprilysin
+  - name: abeta_plaque
+    maps_to: systemsbiology_sbml_proctor2012_role_of_amyloid_beta_dimers_in_aggre_biomd0000000462_model.abeta_plaque
+  - name: abeta_monomer
+    maps_to: systemsbiology_sbml_proctor2012_role_of_amyloid_beta_dimers_in_aggre_biomd0000000462_model.abeta_monomer
+  - name: abeta_dimer
+    maps_to: systemsbiology_sbml_proctor2012_role_of_amyloid_beta_dimers_in_aggre_biomd0000000462_model.abeta_dimer

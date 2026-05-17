@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "8cdba93f-fa0d-4f01-bb19-93fb8a354994",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "9b49b864-2ef4-428b-a795-a1c47ad4708f",
+  "created_at": "2026-05-16T05:46:40.873570111+00:00",
+  "last_synced_at": "2026-05-17T01:38:39.192002+00:00",
+  "hub_manifest_hash": "35fc95ca0524a4920ad33c0f63fe23c637394a15a96de3471c3a5c3c9a9dcf78",
+  "package_name": "arnold2011-hahn1986-calvincycle-starch-sucrose-lab"
+}

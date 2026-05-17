@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Rodriguez-Caso2006_Polyamine_Metabolism Visualisation
+description: Question-and-answer and dynamic visual summaries for Rodriguez-Caso2006_Polyamine_Metabolism.
+standard: other
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Rodriguez Caso2006 Polyamine Metabolism Lab
+    question: 'Which metabolic pools or flux-linked states show the strongest simulated
+      change? Source model: Rodriguez-Caso2006_Polyamine_Metabolism.'
+    answer_focus: Q/A table plus metabolism timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_rodriguez_caso2006_polyamine_metabolism_biomd0000000190_model
+      title: Rodriguez-Caso2006_Polyamine_Metabolism
+      observables:
+      - id: ORN
+        port: l_ornithine
+        label: L-Ornithine
+        group: metabolism
+      - id: Met
+        port: methionine
+        label: Methionine
+        group: metabolism
+      - id: AcCoA
+        port: acetyl_co_a
+        label: Acetyl-CoA
+        group: metabolism
+      - id: SAM
+        port: s_adenosyl_l_methionine
+        label: S-adenosyl-L-methionine
+        group: metabolism
+      - id: aS
+        port: n1_acetylspermine
+        label: N1-Acetylspermine
+        group: metabolism
+      - id: aD
+        port: n1_acetylspermidine
+        label: N1-Acetylspermidine
+        group: metabolism
+io:
+  inputs: []
+  outputs: []

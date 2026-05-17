@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "8cf4fd4e-ca17-4570-9583-755400fb5f29",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "c90c25b2-22fc-4e1b-9d83-0d06ebbc8502",
+  "created_at": "2026-05-16T05:46:41.435026042+00:00",
+  "last_synced_at": "2026-05-17T02:01:33.813722+00:00",
+  "hub_manifest_hash": "2025fe1a86c743023333af464c44f6cf638052c61a9e84b0552087db559367c4",
+  "package_name": "beltrami1995-thrombingeneration-d-lab"
+}

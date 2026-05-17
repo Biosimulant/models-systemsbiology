@@ -1,0 +1,43 @@
+schema_version: '2.0'
+title: Ma2005-digital response of p53 to DNA damage-ATM Activation Module Visualisation
+description: Question-and-answer and dynamic visual summaries for Ma2005-digital response
+  of p53 to DNA damage-ATM Activation Module.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Ma2005 Digital Response Of P53 To Dna Damage Atm Activation Modul Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Ma2005-digital response of p53 to DNA damage-ATM Activation Module.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_ma2005_digital_response_of_p53_to_dna_damage_atm_model2005130001_model
+      title: Ma2005-digital response of p53 to DNA damage-ATM Activation Module
+      observables:
+      - id: ATM_star
+        port: atm_star
+        label: ATM_star
+        group: physiology
+      - id: ATM_D
+        port: atm_d
+        label: ATM_D
+        group: physiology
+      - id: ATM
+        port: atm
+        label: ATM
+        group: physiology
+io:
+  inputs: []
+  outputs: []

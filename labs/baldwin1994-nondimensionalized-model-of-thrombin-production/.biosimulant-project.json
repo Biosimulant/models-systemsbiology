@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "25930e7f-af60-4293-8d4b-64d816e0e181",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "67733130-6728-411b-9da2-125cec1d943f",
+  "created_at": "2026-05-16T05:46:41.283399970+00:00",
+  "last_synced_at": "2026-05-17T01:53:45.888388+00:00",
+  "hub_manifest_hash": "360448b88686503b6db0a680f1474161c369b5cca76207a7b8203223795f7f11",
+  "package_name": "baldwin1994-nondimensionalized-model-of-thrombin-production-lab"
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "573620e7-5d32-4739-ae6b-b34ab9b4e734",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "bafd4ec1-7378-4e55-8b0e-aab67e1cfef1",
+  "created_at": "2026-05-16T05:46:45.258141306+00:00",
+  "last_synced_at": "2026-05-17T04:24:17.697826+00:00",
+  "hub_manifest_hash": "1bfd8b124b4f7d0ff35a73c19a545f72c77d0d663e75d5bcb7e5182ad537d0fa",
+  "package_name": "leipold1995-thrombinformation-inhibitors-lab"
+}

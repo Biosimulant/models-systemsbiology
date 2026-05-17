@@ -1,0 +1,91 @@
+schema_version: '2.0'
+title: Martins2004 Yeast Glycolysis Glycerolsynthesis Lab
+description: A systems biology study of two distinct growth phases of Saccharomyces
+  cerevisiae cultures AM Martins, D Camacho, J Shuman, W Sha, P Mendes, V Shulaev,
+  Current Genomics 2004 5:649-663 This is a model. It can be used to explore systemsbiology
+  martins2004 yeast glycolysis glycerolsynthesis model1009220000 dynamics and compare
+  simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_martins2004_yeast_glycolysis_glycerolsynthesis_model1009220000_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_martins2004_yeast_glycolysis_glycerolsynthesis_model1009220000_model.state
+  to:
+  - visualisation.systemsbiology_sbml_martins2004_yeast_glycolysis_glycerolsynthesis_model1009220000_model_state
+- from: systemsbiology_sbml_martins2004_yeast_glycolysis_glycerolsynthesis_model1009220000_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_martins2004_yeast_glycolysis_glycerolsynthesis_model1009220000_model_summary
+- from: systemsbiology_sbml_martins2004_yeast_glycolysis_glycerolsynthesis_model1009220000_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_martins2004_yeast_glycolysis_glycerolsynthesis_model1009220000_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- metabolism
+- microbiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_glucose
+    maps_to: systemsbiology_sbml_martins2004_yeast_glycolysis_glycerolsynthesis_model1009220000_model.initial_glucose
+    label: Initial Glucose
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `GLCx`.
+  - name: initial_ethanol
+    maps_to: systemsbiology_sbml_martins2004_yeast_glycolysis_glycerolsynthesis_model1009220000_model.initial_ethanol
+    label: Initial Ethanol
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `EtOH`.
+  - name: initial_glycerol
+    maps_to: systemsbiology_sbml_martins2004_yeast_glycolysis_glycerolsynthesis_model1009220000_model.initial_glycerol
+    label: Initial Glycerol
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `GLY`.
+  - name: initial_fructose_1_6_bisphosphate
+    maps_to: systemsbiology_sbml_martins2004_yeast_glycolysis_glycerolsynthesis_model1009220000_model.initial_fructose_1_6_bisphosphate
+    label: Initial Fructose 1 6 Bisphosphate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `F16bP`.
+  - name: initial_glucose_6_phosphate
+    maps_to: systemsbiology_sbml_martins2004_yeast_glycolysis_glycerolsynthesis_model1009220000_model.initial_glucose_6_phosphate
+    label: Initial Glucose 6 Phosphate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `G6P`.
+  - name: initial_dihydroxyacetone_phosphate
+    maps_to: systemsbiology_sbml_martins2004_yeast_glycolysis_glycerolsynthesis_model1009220000_model.initial_dihydroxyacetone_phosphate
+    label: Initial Dihydroxyacetone Phosphate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `DHAP`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_martins2004_yeast_glycolysis_glycerolsynthesis_model1009220000_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_martins2004_yeast_glycolysis_glycerolsynthesis_model1009220000_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_martins2004_yeast_glycolysis_glycerolsynthesis_model1009220000_model.species_labels
+  - name: glucose
+    maps_to: systemsbiology_sbml_martins2004_yeast_glycolysis_glycerolsynthesis_model1009220000_model.glucose
+  - name: ethanol
+    maps_to: systemsbiology_sbml_martins2004_yeast_glycolysis_glycerolsynthesis_model1009220000_model.ethanol
+  - name: glycerol
+    maps_to: systemsbiology_sbml_martins2004_yeast_glycolysis_glycerolsynthesis_model1009220000_model.glycerol
+  - name: fructose_1_6_bisphosphate
+    maps_to: systemsbiology_sbml_martins2004_yeast_glycolysis_glycerolsynthesis_model1009220000_model.fructose_1_6_bisphosphate
+  - name: glucose_6_phosphate
+    maps_to: systemsbiology_sbml_martins2004_yeast_glycolysis_glycerolsynthesis_model1009220000_model.glucose_6_phosphate
+  - name: dihydroxyacetone_phosphate
+    maps_to: systemsbiology_sbml_martins2004_yeast_glycolysis_glycerolsynthesis_model1009220000_model.dihydroxyacetone_phosphate

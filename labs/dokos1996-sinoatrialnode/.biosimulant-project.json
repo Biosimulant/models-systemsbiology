@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "9b8d05f0-0d05-4026-82ff-48b3142eb4f1",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "209bfbe0-1e93-44ed-b96c-eed3e6d40df8",
+  "created_at": "2026-05-16T05:46:42.850157392+00:00",
+  "last_synced_at": "2026-05-17T02:54:20.693300+00:00",
+  "hub_manifest_hash": "4c7fb42a3a3639bb6384027707289fe5280d91006ac3bd388b4e52e75081da7c",
+  "package_name": "dokos1996-sinoatrialnode-lab"
+}

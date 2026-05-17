@@ -1,0 +1,38 @@
+schema_version: '2.0'
+title: Jelic2005_HypothalamicPituitaryAdrenal Visualisation
+description: Question-and-answer and dynamic visual summaries for Jelic2005_HypothalamicPituitaryAdrenal.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Jelic2005 Hypothalamicpituitaryadrenal Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Jelic2005_HypothalamicPituitaryAdrenal.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_jelic2005_hypothalamicpituitaryadrenal_model1006230013_model
+      title: Jelic2005_HypothalamicPituitaryAdrenal
+      observables:
+      - id: g
+        port: model_state_g
+        label: G
+        group: physiology
+      - id: a
+        port: model_state_a
+        label: A
+        group: physiology
+io:
+  inputs: []
+  outputs: []

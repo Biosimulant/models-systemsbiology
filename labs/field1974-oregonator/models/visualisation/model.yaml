@@ -1,0 +1,50 @@
+schema_version: '2.0'
+title: Field1974_Oregonator Visualisation
+description: Question-and-answer and dynamic visual summaries for Field1974_Oregonator.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Field1974 Oregonator Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Field1974_Oregonator.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_field1974_oregonator_biomd0000000040_model
+      title: Field1974_Oregonator
+      observables:
+      - id: BrO3
+        port: br_o3
+        label: BrO3-
+        group: physiology
+      - id: Ce
+        port: ce4
+        label: Ce4+
+        group: physiology
+      - id: Br
+        port: model_state_br
+        label: Br-
+        group: physiology
+      - id: HBrO2
+        port: h_br_o2
+        label: HBrO2
+        group: physiology
+      - id: HOBr
+        port: ho_br
+        label: HOBr
+        group: physiology
+io:
+  inputs: []
+  outputs: []

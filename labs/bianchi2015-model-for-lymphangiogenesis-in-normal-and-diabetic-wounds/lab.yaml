@@ -1,0 +1,80 @@
+schema_version: '2.0'
+title: Bianchi2015 Model For Lymphangiogenesis In Normal And Diabetic Wounds Lab
+description: Arianna Bianchi, Kevin J. It can be used to explore systemsbiology bianchi2015
+  for lymphangiogenesis in norma dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_bianchi2015_model_for_lymphangiogenesis_in_norma_biomd0000000722_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_bianchi2015_model_for_lymphangiogenesis_in_norma_biomd0000000722_model.state
+  to:
+  - visualisation.systemsbiology_sbml_bianchi2015_model_for_lymphangiogenesis_in_norma_biomd0000000722_model_state
+- from: systemsbiology_sbml_bianchi2015_model_for_lymphangiogenesis_in_norma_biomd0000000722_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_bianchi2015_model_for_lymphangiogenesis_in_norma_biomd0000000722_model_summary
+- from: systemsbiology_sbml_bianchi2015_model_for_lymphangiogenesis_in_norma_biomd0000000722_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_bianchi2015_model_for_lymphangiogenesis_in_norma_biomd0000000722_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_active_tgf_beta
+    maps_to: systemsbiology_sbml_bianchi2015_model_for_lymphangiogenesis_in_norma_biomd0000000722_model.initial_active_tgf_beta
+    label: Initial Active Tgf Beta
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Active_TGF_beta`.
+  - name: initial_macrophages
+    maps_to: systemsbiology_sbml_bianchi2015_model_for_lymphangiogenesis_in_norma_biomd0000000722_model.initial_macrophages
+    label: Initial Macrophages
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Macrophages`.
+  - name: initial_vegf
+    maps_to: systemsbiology_sbml_bianchi2015_model_for_lymphangiogenesis_in_norma_biomd0000000722_model.initial_vegf
+    label: Initial Vegf
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VEGF`.
+  - name: initial_le_cs
+    maps_to: systemsbiology_sbml_bianchi2015_model_for_lymphangiogenesis_in_norma_biomd0000000722_model.initial_le_cs
+    label: Initial Le Cs
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `LECs`.
+  - name: initial_capillaries
+    maps_to: systemsbiology_sbml_bianchi2015_model_for_lymphangiogenesis_in_norma_biomd0000000722_model.initial_capillaries
+    label: Initial Capillaries
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Capillaries`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_bianchi2015_model_for_lymphangiogenesis_in_norma_biomd0000000722_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_bianchi2015_model_for_lymphangiogenesis_in_norma_biomd0000000722_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_bianchi2015_model_for_lymphangiogenesis_in_norma_biomd0000000722_model.species_labels
+  - name: active_tgf_beta
+    maps_to: systemsbiology_sbml_bianchi2015_model_for_lymphangiogenesis_in_norma_biomd0000000722_model.active_tgf_beta
+  - name: macrophages
+    maps_to: systemsbiology_sbml_bianchi2015_model_for_lymphangiogenesis_in_norma_biomd0000000722_model.macrophages
+  - name: vegf
+    maps_to: systemsbiology_sbml_bianchi2015_model_for_lymphangiogenesis_in_norma_biomd0000000722_model.vegf
+  - name: le_cs
+    maps_to: systemsbiology_sbml_bianchi2015_model_for_lymphangiogenesis_in_norma_biomd0000000722_model.le_cs
+  - name: capillaries
+    maps_to: systemsbiology_sbml_bianchi2015_model_for_lymphangiogenesis_in_norma_biomd0000000722_model.capillaries

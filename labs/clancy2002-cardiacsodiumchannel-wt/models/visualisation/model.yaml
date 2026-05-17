@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Clancy2002_CardiacSodiumChannel_WT Visualisation
+description: Question-and-answer and dynamic visual summaries for Clancy2002_CardiacSodiumChannel_WT.
+standard: other
+tags:
+- cardiovascular
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Clancy2002 Cardiacsodiumchannel Wt Lab
+    question: 'Which cardiovascular or blood-state variables dominate the simulated
+      response? Source model: Clancy2002_CardiacSodiumChannel_WT.'
+    answer_focus: Q/A table plus cardiovascular timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_clancy2002_cardiacsodiumchannel_wt_biomd0000000126_model
+      title: Clancy2002_CardiacSodiumChannel_WT
+      observables:
+      - id: O
+        port: open_states
+        label: open states
+        group: signaling
+      - id: C3
+        port: model_state_c3
+        label: C3
+        group: physiology
+      - id: IM2
+        port: im2
+        label: IM2
+        group: physiology
+      - id: IM1
+        port: im1
+        label: IM1
+        group: physiology
+      - id: IF
+        port: if_value
+        label: IF
+        group: physiology
+      - id: IC3
+        port: ic3
+        label: IC3
+        group: physiology
+io:
+  inputs: []
+  outputs: []

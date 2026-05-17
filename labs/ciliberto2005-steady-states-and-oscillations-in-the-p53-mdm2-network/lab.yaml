@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Ciliberto2005 Steady States And Oscillations In The P53 Mdm2 Network Lab
+description: Its a mathematial model studying steady state and oscialltions in p53-MDM2
+  network triggered by IR induced DNA Damage. It can be used to explore systemsbiology
+  ciliberto2005 steady states and oscillations dynamics and compare simulation behavior
+  across conditions.
+models:
+- alias: systemsbiology_sbml_ciliberto2005_steady_states_and_oscillations_in_biomd0000001006_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_ciliberto2005_steady_states_and_oscillations_in_biomd0000001006_model.state
+  to:
+  - visualisation.systemsbiology_sbml_ciliberto2005_steady_states_and_oscillations_in_biomd0000001006_model_state
+- from: systemsbiology_sbml_ciliberto2005_steady_states_and_oscillations_in_biomd0000001006_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_ciliberto2005_steady_states_and_oscillations_in_biomd0000001006_model_summary
+- from: systemsbiology_sbml_ciliberto2005_steady_states_and_oscillations_in_biomd0000001006_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_ciliberto2005_steady_states_and_oscillations_in_biomd0000001006_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_mdm2_p_nuc
+    maps_to: systemsbiology_sbml_ciliberto2005_steady_states_and_oscillations_in_biomd0000001006_model.initial_mdm2_p_nuc
+    label: Initial Mdm2 P Nuc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Mdm2_p_nuc`.
+  - name: initial_mdm2_total
+    maps_to: systemsbiology_sbml_ciliberto2005_steady_states_and_oscillations_in_biomd0000001006_model.initial_mdm2_total
+    label: Initial Mdm2 Total
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MDM2_total`.
+  - name: initial_mdm2_cyt
+    maps_to: systemsbiology_sbml_ciliberto2005_steady_states_and_oscillations_in_biomd0000001006_model.initial_mdm2_cyt
+    label: Initial Mdm2 Cyt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Mdm2_cyt`.
+  - name: initial_p53_total
+    maps_to: systemsbiology_sbml_ciliberto2005_steady_states_and_oscillations_in_biomd0000001006_model.initial_p53_total
+    label: Initial P53 Total
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `p53_total`.
+  - name: initial_model_state_p53
+    maps_to: systemsbiology_sbml_ciliberto2005_steady_states_and_oscillations_in_biomd0000001006_model.initial_model_state_p53
+    label: Initial Model State P53
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `p53`.
+  - name: initial_p53_ub
+    maps_to: systemsbiology_sbml_ciliberto2005_steady_states_and_oscillations_in_biomd0000001006_model.initial_p53_ub
+    label: Initial P53 Ub
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `p53_ub`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_ciliberto2005_steady_states_and_oscillations_in_biomd0000001006_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_ciliberto2005_steady_states_and_oscillations_in_biomd0000001006_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_ciliberto2005_steady_states_and_oscillations_in_biomd0000001006_model.species_labels
+  - name: mdm2_p_nuc
+    maps_to: systemsbiology_sbml_ciliberto2005_steady_states_and_oscillations_in_biomd0000001006_model.mdm2_p_nuc
+  - name: mdm2_total
+    maps_to: systemsbiology_sbml_ciliberto2005_steady_states_and_oscillations_in_biomd0000001006_model.mdm2_total
+  - name: mdm2_cyt
+    maps_to: systemsbiology_sbml_ciliberto2005_steady_states_and_oscillations_in_biomd0000001006_model.mdm2_cyt
+  - name: p53_total
+    maps_to: systemsbiology_sbml_ciliberto2005_steady_states_and_oscillations_in_biomd0000001006_model.p53_total
+  - name: p53
+    maps_to: systemsbiology_sbml_ciliberto2005_steady_states_and_oscillations_in_biomd0000001006_model.p53
+  - name: p53_ub
+    maps_to: systemsbiology_sbml_ciliberto2005_steady_states_and_oscillations_in_biomd0000001006_model.p53_ub

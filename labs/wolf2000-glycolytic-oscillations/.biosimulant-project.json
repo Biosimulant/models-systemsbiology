@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "a7f12e5b-95bd-4193-909d-519d1de84cfb",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "29b2eb00-514d-43e5-943c-01a1172ffc4a",
+  "created_at": "2026-05-16T05:46:53.323952406+00:00",
+  "last_synced_at": "2026-05-17T06:56:49.088134+00:00",
+  "hub_manifest_hash": "71822607ed63cf222f1ab028244c0f8a29357c0e0f8a0f7b6e9f5b3cde443c87",
+  "package_name": "wolf2000-glycolytic-oscillations-lab"
+}

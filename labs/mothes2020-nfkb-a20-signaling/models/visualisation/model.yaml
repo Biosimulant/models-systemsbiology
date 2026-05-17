@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Mothes2020_NFkB_A20_signaling Visualisation
+description: Question-and-answer and dynamic visual summaries for Mothes2020_NFkB_A20_signaling.
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Mothes2020 Nfkb A20 Signaling Lab
+    question: 'Which signalling variables dominate the simulated network response?
+      Source model: Mothes2020_NFkB_A20_signaling.'
+    answer_focus: Q/A table plus signaling timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_mothes2020_nfkb_a20_signaling_model2307110001_model
+      title: Mothes2020_NFkB_A20_signaling
+      observables:
+      - id: A20_mRNA
+        port: a20_mrna
+        label: A20 MRNA
+        group: signaling
+      - id: IkBa_mRNA
+        port: ik_ba_mrna
+        label: IkBa MRNA
+        group: signaling
+      - id: NFkB_IkBa
+        port: n_fk_b_ik_ba
+        label: NFkB IkBa
+        group: signaling
+      - id: IkBa
+        port: ik_ba
+        label: IkBa
+        group: signaling
+      - id: A20
+        port: a20
+        label: A20
+        group: signaling
+      - id: IKK_active
+        port: ikk_active
+        label: IKK Active
+        group: signaling
+io:
+  inputs: []
+  outputs: []

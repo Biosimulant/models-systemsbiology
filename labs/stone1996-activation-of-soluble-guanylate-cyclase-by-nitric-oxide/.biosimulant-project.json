@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "5314e127-4438-4e6c-8ffc-708caf24e086",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "50ae2656-1ec3-4e1e-a1c6-0114ad4bccbd",
+  "created_at": "2026-05-16T05:46:52.177805042+00:00",
+  "last_synced_at": "2026-05-17T06:20:26.104246+00:00",
+  "hub_manifest_hash": "bd32edc4cb369dd2f5e14d3d419bef05be1376beff1a11b33dc86de0770f8411",
+  "package_name": "stone1996-activation-of-soluble-guanylate-cyclase-by-nitric-oxid"
+}

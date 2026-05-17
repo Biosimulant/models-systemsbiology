@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "57163a1b-5338-4a22-85a5-63ebdf4d52bb",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "39cac95a-37a2-4669-8f2a-bc05269749ca",
+  "created_at": "2026-05-16T05:46:46.243552462+00:00",
+  "last_synced_at": "2026-05-17T04:43:31.423124+00:00",
+  "hub_manifest_hash": "b65463c6c066aad88a24288410acb33e8827902bef055e0639d93bc61002b0d9",
+  "package_name": "mahaney2000-sercaregulation-lab"
+}

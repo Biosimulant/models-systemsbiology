@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "a9776b29-33c1-4464-98be-09d6caa67b09",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "c7d7b363-9bea-4256-8ffd-431652cde20b",
+  "created_at": "2026-05-16T05:46:44.072889470+00:00",
+  "last_synced_at": "2026-05-17T03:39:45.399193+00:00",
+  "hub_manifest_hash": "3fa7cc30ddc58900a8d89944a956e206a23af3b19d37cc10360af9b6734abc1e",
+  "package_name": "heldt2018-proliferation-quiescence-decision-in-response-to-dna-d"
+}

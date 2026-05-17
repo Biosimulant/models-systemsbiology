@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "1f73a2fc-75b4-4255-afcc-606335f48025",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "8da49541-477d-421f-808e-b9d20a9eae19",
+  "created_at": "2026-05-16T05:46:46.772717128+00:00",
+  "last_synced_at": "2026-05-17T04:51:20.101735+00:00",
+  "hub_manifest_hash": "5336f0ff3f16c385d02442220adb3427bdc4b11c56548a6a14282c9cf4cf47c0",
+  "package_name": "martins2013-true-and-apparent-inhibition-of-amyloid-fribril-form"
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "4488319a-1c3d-45e6-87d4-31e25291e18b",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "ea54a468-c13d-4b8e-b877-ab27adb61444",
+  "created_at": "2026-05-16T05:46:48.814648929+00:00",
+  "last_synced_at": "2026-05-17T05:14:02.920448+00:00",
+  "hub_manifest_hash": "fb468ffcf6bb09f4b74652e562f6cce9bb1b881d4cd5be7ae8322608ed014d7c",
+  "package_name": "nguyen2013-dynamic-model-of-hif-regulation-in-hypoxia-2-lab"
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "cd1e9571-4fdf-4128-b55b-d7454c0649d0",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "c2ec6409-c257-469f-92e1-2489b87d2476",
+  "created_at": "2026-05-16T05:46:45.084211345+00:00",
+  "last_synced_at": "2026-05-17T04:17:56.315921+00:00",
+  "hub_manifest_hash": "aa91a032abc19ae2dfd082bd5434be66a3c031e8f6886a49dc29659acb0ec94a",
+  "package_name": "larsen2004-calciumspiking-enzymebinding-lab"
+}

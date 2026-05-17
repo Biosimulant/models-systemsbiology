@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Llorensrico2016 Effects Of Cis Encoded Antisense Rnas Case2 Lab
+description: 'LlorénsRico2016 - Effects of cis-Encodedantisense RNAs (asRNAs) - Case1
+  Three putative effects of the asRNAs were considered in this study: in case 1 ,
+  the binding of the asRNA to the corresponding mR. It can be used to explore systemsbiology
+  llor nsrico2016 effects of cis dynamics and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_llor_nsrico2016_effects_of_cis_encoded_antisense_model1511170001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_llor_nsrico2016_effects_of_cis_encoded_antisense_model1511170001_model.state
+  to:
+  - visualisation.systemsbiology_sbml_llor_nsrico2016_effects_of_cis_encoded_antisense_model1511170001_model_state
+- from: systemsbiology_sbml_llor_nsrico2016_effects_of_cis_encoded_antisense_model1511170001_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_llor_nsrico2016_effects_of_cis_encoded_antisense_model1511170001_model_summary
+- from: systemsbiology_sbml_llor_nsrico2016_effects_of_cis_encoded_antisense_model1511170001_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_llor_nsrico2016_effects_of_cis_encoded_antisense_model1511170001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_rib
+    maps_to: systemsbiology_sbml_llor_nsrico2016_effects_of_cis_encoded_antisense_model1511170001_model.initial_model_state_rib
+    label: Initial Model State Rib
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `rib`.
+  - name: initial_protein
+    maps_to: systemsbiology_sbml_llor_nsrico2016_effects_of_cis_encoded_antisense_model1511170001_model.initial_protein
+    label: Initial Protein
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `protein`.
+  - name: initial_mrna
+    maps_to: systemsbiology_sbml_llor_nsrico2016_effects_of_cis_encoded_antisense_model1511170001_model.initial_mrna
+    label: Initial MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mrna`.
+  - name: initial_asrna
+    maps_to: systemsbiology_sbml_llor_nsrico2016_effects_of_cis_encoded_antisense_model1511170001_model.initial_asrna
+    label: Initial Asrna
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `asrna`.
+  - name: initial_mrnarib
+    maps_to: systemsbiology_sbml_llor_nsrico2016_effects_of_cis_encoded_antisense_model1511170001_model.initial_mrnarib
+    label: Initial Mrnarib
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mrnarib`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_llor_nsrico2016_effects_of_cis_encoded_antisense_model1511170001_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_llor_nsrico2016_effects_of_cis_encoded_antisense_model1511170001_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_llor_nsrico2016_effects_of_cis_encoded_antisense_model1511170001_model.species_labels
+  - name: rib
+    maps_to: systemsbiology_sbml_llor_nsrico2016_effects_of_cis_encoded_antisense_model1511170001_model.rib
+  - name: protein
+    maps_to: systemsbiology_sbml_llor_nsrico2016_effects_of_cis_encoded_antisense_model1511170001_model.protein
+  - name: mrna
+    maps_to: systemsbiology_sbml_llor_nsrico2016_effects_of_cis_encoded_antisense_model1511170001_model.mrna
+  - name: asrna
+    maps_to: systemsbiology_sbml_llor_nsrico2016_effects_of_cis_encoded_antisense_model1511170001_model.asrna
+  - name: mrnarib
+    maps_to: systemsbiology_sbml_llor_nsrico2016_effects_of_cis_encoded_antisense_model1511170001_model.mrnarib

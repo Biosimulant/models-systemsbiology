@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Maltsev2009 Pacemakercellmodel Nonsteadystate Lab
+description: 'This a model from the article: Synergism of coupled subsarcolemmal Ca2+
+  clocks and sarcolemmal voltage clocksconfers robust and flexible pacemaker function
+  in a novel pacemaker cell model. It can be used to explore systemsbiology maltsev2009
+  pacemakercellmodel nonsteadystate model1006230069 dynamics and compare simulation
+  behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_maltsev2009_pacemakercellmodel_nonsteadystate_model1006230069_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_maltsev2009_pacemakercellmodel_nonsteadystate_model1006230069_model.state
+  to:
+  - visualisation.systemsbiology_sbml_maltsev2009_pacemakercellmodel_nonsteadystate_model1006230069_model_state
+- from: systemsbiology_sbml_maltsev2009_pacemakercellmodel_nonsteadystate_model1006230069_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_maltsev2009_pacemakercellmodel_nonsteadystate_model1006230069_model_summary
+- from: systemsbiology_sbml_maltsev2009_pacemakercellmodel_nonsteadystate_model1006230069_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_maltsev2009_pacemakercellmodel_nonsteadystate_model1006230069_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_vm_vm
+    maps_to: systemsbiology_sbml_maltsev2009_pacemakercellmodel_nonsteadystate_model1006230069_model.initial_vm_vm
+    label: Initial Vm Vm
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Vm_Vm`.
+  - name: initial_model_state_ri
+    maps_to: systemsbiology_sbml_maltsev2009_pacemakercellmodel_nonsteadystate_model1006230069_model.initial_model_state_ri
+    label: Initial Model State Ri
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RI`.
+  - name: initial_r_j_sr_carel
+    maps_to: systemsbiology_sbml_maltsev2009_pacemakercellmodel_nonsteadystate_model1006230069_model.initial_r_j_sr_carel
+    label: Initial R J Sr Carel
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `R_j_SRCarel`.
+  - name: initial_model_state_qi
+    maps_to: systemsbiology_sbml_maltsev2009_pacemakercellmodel_nonsteadystate_model1006230069_model.initial_model_state_qi
+    label: Initial Model State Qi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `qi`.
+  - name: initial_model_state_qa
+    maps_to: systemsbiology_sbml_maltsev2009_pacemakercellmodel_nonsteadystate_model1006230069_model.initial_model_state_qa
+    label: Initial Model State Qa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `qa`.
+  - name: initial_model_state_pi
+    maps_to: systemsbiology_sbml_maltsev2009_pacemakercellmodel_nonsteadystate_model1006230069_model.initial_model_state_pi
+    label: Initial Model State Pi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `pi_`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_maltsev2009_pacemakercellmodel_nonsteadystate_model1006230069_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_maltsev2009_pacemakercellmodel_nonsteadystate_model1006230069_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_maltsev2009_pacemakercellmodel_nonsteadystate_model1006230069_model.species_labels
+  - name: vm_vm
+    maps_to: systemsbiology_sbml_maltsev2009_pacemakercellmodel_nonsteadystate_model1006230069_model.vm_vm
+  - name: model_state_ri
+    maps_to: systemsbiology_sbml_maltsev2009_pacemakercellmodel_nonsteadystate_model1006230069_model.model_state_ri
+  - name: r_j_sr_carel
+    maps_to: systemsbiology_sbml_maltsev2009_pacemakercellmodel_nonsteadystate_model1006230069_model.r_j_sr_carel
+  - name: model_state_qi
+    maps_to: systemsbiology_sbml_maltsev2009_pacemakercellmodel_nonsteadystate_model1006230069_model.model_state_qi
+  - name: model_state_qa
+    maps_to: systemsbiology_sbml_maltsev2009_pacemakercellmodel_nonsteadystate_model1006230069_model.model_state_qa
+  - name: model_state_pi
+    maps_to: systemsbiology_sbml_maltsev2009_pacemakercellmodel_nonsteadystate_model1006230069_model.model_state_pi

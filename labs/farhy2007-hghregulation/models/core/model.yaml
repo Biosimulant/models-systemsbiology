@@ -1,0 +1,97 @@
+schema_version: '2.0'
+title: Farhy2007_hGHregulation
+description: 'This a model from the article: Model-projected mechanistic bases for
+  sex differences in growth hormoneregulation in humans. It can be used to explore
+  systemsbiology farhy2007 hghregulation model0912096133 dynamics and compare simulation
+  behavior across conditions.'
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Leon S Farhy
+- Cyril Y Bowers
+- Johannes D Veldhuis
+upstream:
+  id: biomodels_ebi:MODEL0912096133
+  source_db: biomodels_ebi
+  source_id: MODEL0912096133
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL0912096133
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0912096133?filename=MODEL0912096133_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.farhy2007_hghregulation_model0912096133_model:Farhy2007HghregulationModel0912096133Model
+  init_kwargs:
+    model_path: data/MODEL0912096133.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_srif_pe_v
+    maps_to: SRIF_PeV
+    label: Initial Srif Pe V
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `SRIF_PeV`.
+  - name: initial_srif_ar_c
+    maps_to: SRIF_ArC
+    label: Initial Srif Ar C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `SRIF_ArC`.
+  - name: initial_ghr_ghrh
+    maps_to: ghr_GHRH
+    label: Initial Ghr Ghrh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ghr_GHRH`.
+  - name: initial_ghrh
+    maps_to: GHRH
+    label: Initial Ghrh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `GHRH`.
+  - name: initial_model_state_gh
+    maps_to: GH
+    label: Initial Model State Gh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `GH`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: srif_pe_v
+    maps_to: SRIF_PeV
+    label: SRIF PeV
+    description: SRIF PeV. Maps to SBML symbol `SRIF_PeV`.
+  - name: srif_ar_c
+    maps_to: SRIF_ArC
+    label: SRIF ArC
+    description: SRIF ArC. Maps to SBML symbol `SRIF_ArC`.
+  - name: ghr_ghrh
+    maps_to: ghr_GHRH
+    label: Ghr GHRH
+    description: Ghr GHRH. Maps to SBML symbol `ghr_GHRH`.
+  - name: ghrh
+    maps_to: GHRH
+    label: GHRH
+    description: GHRH. Maps to SBML symbol `GHRH`.
+  - name: model_state_gh
+    maps_to: GH
+    label: GH
+    description: GH. Maps to SBML symbol `GH`.

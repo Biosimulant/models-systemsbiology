@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Keating2019 - Minimal model demonstrating SBML Level 3 packages. Visualisation
+description: Question-and-answer and dynamic visual summaries for Keating2019 - Minimal
+  model demonstrating SBML Level 3 packages..
+standard: other
+tags:
+- cellcycle
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Keating2019 Minimal Model Demonstrating Sbml Level 3 Packages Lab
+    question: 'Which cell-cycle control states dominate the simulated progression?
+      Source model: Keating2019 - Minimal model demonstrating SBML Level 3 packages..'
+    answer_focus: Q/A table plus cellcycle timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_keating2019_minimal_model_demonstrating_sbml_lev_model1904090001_model
+      title: Keating2019 - Minimal model demonstrating SBML Level 3 packages.
+      observables:
+      - id: glc
+        port: glucose
+        label: glucose
+        group: metabolism
+      - id: g6p
+        port: glucose_6_phosphate
+        label: glucose-6-phosphate
+        group: metabolism
+      - id: atp
+        port: atp
+        label: ATP
+        group: metabolism
+      - id: adp
+        port: adp
+        label: ADP
+        group: metabolism
+      - id: phos
+        port: model_state_p
+        label: P
+        group: physiology
+      - id: hydron
+        port: model_state_h
+        label: H+
+        group: physiology
+io:
+  inputs: []
+  outputs: []

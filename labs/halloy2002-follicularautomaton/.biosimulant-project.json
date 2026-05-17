@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "051deaeb-e550-41ae-9615-f4c323c99a9a",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "1c95e6c8-5a6f-459b-90e2-2407acc98d40",
+  "created_at": "2026-05-16T05:46:43.825050887+00:00",
+  "last_synced_at": "2026-05-17T03:29:31.570238+00:00",
+  "hub_manifest_hash": "d046d9781068de73a62e536ab107a2f078050c5074571355bde0ced40e68158b",
+  "package_name": "halloy2002-follicularautomaton-lab"
+}

@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Mwasa2011 - Cholera model with public health interventions Visualisation
+description: Question-and-answer and dynamic visual summaries for Mwasa2011 - Cholera
+  model with public health interventions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Mwasa2011 Cholera Model With Public Health Interventions Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Mwasa2011 - Cholera model with public health interventions.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_mwasa2011_cholera_model_with_public_health_inter_model1812040007_model
+      title: Mwasa2011 - Cholera model with public health interventions
+      observables:
+      - id: B
+        port: model_state_b
+        label: B
+        group: physiology
+      - id: S
+        port: model_state_s
+        label: S
+        group: physiology
+      - id: E
+        port: model_state_e
+        label: E
+        group: physiology
+      - id: V
+        port: model_state_v
+        label: V
+        group: physiology
+      - id: I
+        port: model_state_i
+        label: I
+        group: physiology
+      - id: Q
+        port: model_state_q
+        label: Q
+        group: physiology
+io:
+  inputs: []
+  outputs: []

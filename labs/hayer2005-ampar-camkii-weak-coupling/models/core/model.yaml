@@ -1,0 +1,117 @@
+schema_version: '2.0'
+title: Hayer2005_AMPAR_CaMKII_weak_coupling
+description: This is a model of weak coupling between the AMPAR traffikcing bistability,
+  and the CaMKII autophosphorylation bistability. It can be used to explore systemsbiology
+  hayer2005 ampar camkii weak coupling dynamics and compare simulation behavior across
+  conditions.
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Arnold Hayer
+- Upinder S Bhalla
+upstream:
+  id: biomodels_ebi:MODEL9087474843
+  source_db: biomodels_ebi
+  source_id: MODEL9087474843
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL9087474843
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL9087474843?filename=MODEL9087474843_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.hayer2005_ampar_camkii_weak_coupling_model9087474843_model:Hayer2005AmparCamkiiWeakCouplingModel9087474843Model
+  init_kwargs:
+    model_path: data/MODEL9087474843.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_ac_slash_atp
+    maps_to: AC_slash_ATP
+    label: Initial Ac Slash ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `AC_slash_ATP`.
+  - name: initial_ca_mkii_psd_slash_act_ca_mkii_minus_psd
+    maps_to: CaMKII_PSD_slash_actCaMKII_minus_PSD
+    label: Initial Ca Mkii Psd Slash Act Ca Mkii Minus Psd
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaMKII_PSD_slash_actCaMKII_minus_PSD`.
+  - name: initial_ca_mkii_psd_slash_act_ca_mkii_minus_psd_slash_ca_mkii_slash_ca_mkii_cplx
+    maps_to: CaMKII_PSD_slash_actCaMKII_minus_PSD_slash_CaMKII_slash_CaMKII_cplx
+    label: Initial Ca Mkii Psd Slash Act Ca Mkii Minus Psd Slash Ca Mkii Slash Ca
+      Mkii Cplx
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaMKII_PSD_slash_actCaMKII_minus_PSD_slash_CaMKII_slash_CaMKII_cplx`.
+  - name: initial_ca_mkii_psd_slash_act_ca_mkii_minus_psd_slash_ca_mkii_sbo_4_sbc_slash_ca_mkii_sbo_4_sbc_cplx
+    maps_to: CaMKII_PSD_slash_actCaMKII_minus_PSD_slash_CaMKII_sbo_4_sbc__slash_CaMKII_sbo_4_sbc__cplx
+    label: Initial Ca Mkii Psd Slash Act Ca Mkii Minus Psd Slash Ca Mkii Sbo 4 Sbc
+      Slash Ca Mkii Sbo 4 Sbc Cplx
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaMKII_PSD_slash_actCaMKII_minus_PSD_slash_CaMKII_sbo_4_sbc__slash_CaMKII_sbo_4_sbc__cplx`.
+  - name: initial_ca_mkii_psd_slash_act_ca_mkii_minus_psd_slash_ca_mkii_sbo_8_sbc_slash_ca_mkii_sbo_8_sbc_cplx
+    maps_to: CaMKII_PSD_slash_actCaMKII_minus_PSD_slash_CaMKII_sbo_8_sbc__slash_CaMKII_sbo_8_sbc__cplx
+    label: Initial Ca Mkii Psd Slash Act Ca Mkii Minus Psd Slash Ca Mkii Sbo 8 Sbc
+      Slash Ca Mkii Sbo 8 Sbc Cplx
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaMKII_PSD_slash_actCaMKII_minus_PSD_slash_CaMKII_sbo_8_sbc__slash_CaMKII_sbo_8_sbc__cplx`.
+  - name: initial_ca_mkii_psd_slash_act_ca_mkii_minus_psd_slash_ca_mkii_sbo_12_sbc_slash_ca_mkii_sbo_12_sbc_cplx
+    maps_to: CaMKII_PSD_slash_actCaMKII_minus_PSD_slash_CaMKII_sbo_12_sbc__slash_CaMKII_sbo_12_sbc__cplx
+    label: Initial Ca Mkii Psd Slash Act Ca Mkii Minus Psd Slash Ca Mkii Sbo 12 Sbc
+      Slash Ca Mkii Sbo 12 Sbc Cplx
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaMKII_PSD_slash_actCaMKII_minus_PSD_slash_CaMKII_sbo_12_sbc__slash_CaMKII_sbo_12_sbc__cplx`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: ac_slash_atp
+    maps_to: AC_slash_ATP
+    label: AC Slash ATP
+    description: AC Slash ATP. Maps to SBML symbol `AC_slash_ATP`.
+  - name: ca_mkii_psd_slash_act_ca_mkii_minus_psd
+    maps_to: CaMKII_PSD_slash_actCaMKII_minus_PSD
+    label: CaMKII PSD Slash ActCaMKII Minus PSD
+    description: CaMKII PSD Slash ActCaMKII Minus PSD. Maps to SBML symbol `CaMKII_PSD_slash_actCaMKII_minus_PSD`.
+  - name: ca_mkii_psd_slash_act_ca_mkii_minus_psd_slash_ca_mkii_slash_ca_mkii_cplx
+    maps_to: CaMKII_PSD_slash_actCaMKII_minus_PSD_slash_CaMKII_slash_CaMKII_cplx
+    label: CaMKII PSD Slash ActCaMKII Minus PSD Slash CaMKII Slash CaMKII Cplx
+    description: CaMKII PSD Slash ActCaMKII Minus PSD Slash CaMKII Slash CaMKII Cplx.
+      Maps to SBML symbol `CaMKII_PSD_slash_actCaMKII_minus_PSD_slash_CaMKII_slash_CaMKII_cplx`.
+  - name: ca_mkii_psd_slash_act_ca_mkii_minus_psd_slash_ca_mkii_sbo_4_sbc_slash_ca_mkii_sbo_4_sbc_cplx
+    maps_to: CaMKII_PSD_slash_actCaMKII_minus_PSD_slash_CaMKII_sbo_4_sbc__slash_CaMKII_sbo_4_sbc__cplx
+    label: CaMKII PSD Slash ActCaMKII Minus PSD Slash CaMKII Sbo 4 Sbc Slash CaMKII
+      Sbo 4 Sbc Cplx
+    description: CaMKII PSD Slash ActCaMKII Minus PSD Slash CaMKII Sbo 4 Sbc Slash
+      CaMKII Sbo 4 Sbc Cplx. Maps to SBML symbol `CaMKII_PSD_slash_actCaMKII_minus_PSD_slash_CaMKII_sbo_4_sbc__slash_CaMKII_sbo_4_sbc__cplx`.
+  - name: ca_mkii_psd_slash_act_ca_mkii_minus_psd_slash_ca_mkii_sbo_8_sbc_slash_ca_mkii_sbo_8_sbc_cplx
+    maps_to: CaMKII_PSD_slash_actCaMKII_minus_PSD_slash_CaMKII_sbo_8_sbc__slash_CaMKII_sbo_8_sbc__cplx
+    label: CaMKII PSD Slash ActCaMKII Minus PSD Slash CaMKII Sbo 8 Sbc Slash CaMKII
+      Sbo 8 Sbc Cplx
+    description: CaMKII PSD Slash ActCaMKII Minus PSD Slash CaMKII Sbo 8 Sbc Slash
+      CaMKII Sbo 8 Sbc Cplx. Maps to SBML symbol `CaMKII_PSD_slash_actCaMKII_minus_PSD_slash_CaMKII_sbo_8_sbc__slash_CaMKII_sbo_8_sbc__cplx`.
+  - name: ca_mkii_psd_slash_act_ca_mkii_minus_psd_slash_ca_mkii_sbo_12_sbc_slash_ca_mkii_sbo_12_sbc_cplx
+    maps_to: CaMKII_PSD_slash_actCaMKII_minus_PSD_slash_CaMKII_sbo_12_sbc__slash_CaMKII_sbo_12_sbc__cplx
+    label: CaMKII PSD Slash ActCaMKII Minus PSD Slash CaMKII Sbo 12 Sbc Slash CaMKII
+      Sbo 12 Sbc Cplx
+    description: CaMKII PSD Slash ActCaMKII Minus PSD Slash CaMKII Sbo 12 Sbc Slash
+      CaMKII Sbo 12 Sbc Cplx. Maps to SBML symbol `CaMKII_PSD_slash_actCaMKII_minus_PSD_slash_CaMKII_sbo_12_sbc__slash_CaMKII_sbo_12_sbc__cplx`.

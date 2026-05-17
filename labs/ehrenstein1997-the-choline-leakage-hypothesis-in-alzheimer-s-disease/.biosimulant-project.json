@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "4c579d8a-4180-4f9d-b5c2-43a71e51cac1",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "1f84c467-d303-42a5-be43-de52982984b6",
+  "created_at": "2026-05-16T05:46:42.952049458+00:00",
+  "last_synced_at": "2026-05-17T02:58:52.258766+00:00",
+  "hub_manifest_hash": "6d364c20c27ec4813a736575a45ff7c11f547a3f57c3b40f332efe827f9fa8b5",
+  "package_name": "ehrenstein1997-the-choline-leakage-hypothesis-in-alzheimer-s-dis"
+}

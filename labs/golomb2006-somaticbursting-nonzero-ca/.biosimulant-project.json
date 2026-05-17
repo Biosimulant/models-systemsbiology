@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "af46f24d-0f57-4072-943d-d1471c0219ed",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "9662910a-c0d6-459f-8219-1355104c3898",
+  "created_at": "2026-05-16T05:46:43.674213889+00:00",
+  "last_synced_at": "2026-05-17T03:21:31.109960+00:00",
+  "hub_manifest_hash": "b8aac35d406d8a0d09fd802949d510fa90e6de1d0c6c2c202b7bdcff466eafe3",
+  "package_name": "golomb2006-somaticbursting-nonzero-ca-lab"
+}

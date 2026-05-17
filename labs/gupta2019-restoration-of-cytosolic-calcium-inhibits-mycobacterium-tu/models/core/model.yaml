@@ -1,0 +1,90 @@
+schema_version: '2.0'
+title: Gupta2019 - Restoration of cytosolic calcium inhibits Mycobacterium tuberculosis
+  intracellular growth
+description: This is a four dimensionsal ordinary differential equation mathematical
+  model that explores the contribution of PI3P during Mycobacterium tuberculosis (Mtb)
+  phagocytosis. It can be used to explore systemsbiology gupta2019 restoration of
+  cytosolic calcium dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Ankur Gupta
+- Phonindra Nath Das
+- Rania Bouzeyen
+- Sonali Porey Karmakar
+- Ramandeep Singh
+upstream:
+  id: biomodels_ebi:MODEL1911120004
+  source_db: biomodels_ebi
+  source_id: MODEL1911120004
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1911120004
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1911120004?filename=Gupta2019.xml
+  license: CC0
+biosim:
+  entrypoint: src.gupta2019_restoration_of_cytosolic_calcium_inhib_model1911120004_model:Gupta2019RestorationOfCytosolicCalciumInhibModel1911120004Model
+  init_kwargs:
+    model_path: data/MODEL1911120004.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_ci
+    maps_to: Ci
+    label: Initial Model State Ci
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ci`.
+  - name: initial_model_state_ce
+    maps_to: Ce
+    label: Initial Model State Ce
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ce`.
+  - name: initial_model_state_k
+    maps_to: K
+    label: Initial Model State K
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `K`.
+  - name: initial_model_state_p
+    maps_to: P
+    label: Initial Model State P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_ci
+    maps_to: Ci
+    label: Ci
+    description: Ci. Maps to SBML symbol `Ci`.
+  - name: model_state_ce
+    maps_to: Ce
+    label: Ce
+    description: Ce. Maps to SBML symbol `Ce`.
+  - name: model_state_k
+    maps_to: K
+    label: K
+    description: K. Maps to SBML symbol `K`.
+  - name: model_state_p
+    maps_to: P
+    label: P
+    description: P. Maps to SBML symbol `P`.

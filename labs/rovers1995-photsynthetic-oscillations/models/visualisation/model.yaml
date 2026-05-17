@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Rovers1995_Photsynthetic_Oscillations Visualisation
+description: Question-and-answer and dynamic visual summaries for Rovers1995_Photsynthetic_Oscillations.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Rovers1995 Photsynthetic Oscillations Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Rovers1995_Photsynthetic_Oscillations.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_rovers1995_photsynthetic_oscillations_biomd0000000292_model
+      title: Rovers1995_Photsynthetic_Oscillations
+      observables:
+      - id: NADP
+        port: nadp_super
+        label: NADP_super_+
+        group: metabolism
+      - id: ADP
+        port: adp
+        label: ADP
+        group: metabolism
+      - id: NADPH
+        port: nadph
+        label: NADPH
+        group: metabolism
+      - id: ATP
+        port: atp
+        label: ATP
+        group: metabolism
+      - id: X
+        port: model_state_x
+        label: X
+        group: physiology
+      - id: Y
+        port: model_state_y
+        label: Y
+        group: physiology
+io:
+  inputs: []
+  outputs: []

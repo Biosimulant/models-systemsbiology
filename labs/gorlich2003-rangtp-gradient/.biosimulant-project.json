@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "20b83b4f-0766-4175-ba25-c7cbed2fa77d",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "827e9564-b32c-4447-8e70-feccf2043a5a",
+  "created_at": "2026-05-16T05:46:43.733308904+00:00",
+  "last_synced_at": "2026-05-17T03:23:52.681006+00:00",
+  "hub_manifest_hash": "26255ff287e7ac676cef1719829a645fd7e97913f5ce3181798c18a953fc0f31",
+  "package_name": "gorlich2003-rangtp-gradient-lab"
+}

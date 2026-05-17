@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Legewie2006_apoptosis_WT
+description: The model reproduces active Caspase-3 time profile corresponding to the
+  total Apaf-1 value of 20 nM as depicted in Fig 2-A . It can be used to explore systemsbiology
+  legewie2006 apoptosis wt BioModels0000000102 dynamics and compare simulation behavior
+  across conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Stefan Legewie
+- Nils Blüthgen
+- Hanspeter Herzel
+upstream:
+  id: biomodels_ebi:BIOMD0000000102
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000102
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000102
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000102?filename=BIOMD0000000102_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.legewie2006_apoptosis_wt_biomd0000000102_model:Legewie2006ApoptosisWtBiomd0000000102Model
+  init_kwargs:
+    model_path: data/BIOMD0000000102.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_caspase_3
+    maps_to: C3
+    label: Initial Caspase 3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C3`.
+  - name: initial_caspase_9
+    maps_to: C9
+    label: Initial Caspase 9
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C9`.
+  - name: initial_caspase_9_xiap_complex
+    maps_to: C9X
+    label: Initial Caspase 9 Xiap Complex
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C9X`.
+  - name: initial_caspase_9_cleaved_xiap_complex
+    maps_to: C9_starX
+    label: Initial Caspase 9 Cleaved Xiap Complex
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C9_starX`.
+  - name: initial_caspase_9_cleaved
+    maps_to: C9_star
+    label: Initial Caspase 9 Cleaved
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C9_star`.
+  - name: initial_caspase_3_cleaved_xiap_complex
+    maps_to: C3_starX
+    label: Initial Caspase 3 Cleaved Xiap Complex
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C3_starX`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: caspase_3
+    maps_to: C3
+    label: Caspase 3
+    description: Caspase 3. Maps to SBML symbol `C3`.
+  - name: caspase_9
+    maps_to: C9
+    label: Caspase 9
+    description: Caspase 9. Maps to SBML symbol `C9`.
+  - name: caspase_9_xiap_complex
+    maps_to: C9X
+    label: Caspase 9-XIAP complex
+    description: Caspase 9-XIAP complex. Maps to SBML symbol `C9X`.
+  - name: caspase_9_cleaved_xiap_complex
+    maps_to: C9_starX
+    label: Caspase 9 cleaved-XIAP complex
+    description: Caspase 9 cleaved-XIAP complex. Maps to SBML symbol `C9_starX`.
+  - name: caspase_9_cleaved
+    maps_to: C9_star
+    label: Caspase 9 cleaved
+    description: Caspase 9 cleaved. Maps to SBML symbol `C9_star`.
+  - name: caspase_3_cleaved_xiap_complex
+    maps_to: C3_starX
+    label: Caspase 3 cleaved - XIAP complex
+    description: Caspase 3 cleaved - XIAP complex. Maps to SBML symbol `C3_starX`.

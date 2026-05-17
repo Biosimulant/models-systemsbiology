@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "786c7791-cf21-4824-8201-a2869ded7b64",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "3b013f08-77c1-4f8e-a04f-510dcb371fed",
+  "created_at": "2026-05-16T05:46:41.992585062+00:00",
+  "last_synced_at": "2026-05-17T02:20:39.488119+00:00",
+  "hub_manifest_hash": "7f005cd3617b6984f4418d3c00072edacc107f8cf0e0f8354be02ded41e85486",
+  "package_name": "bungay2006-follicularfluid-lab"
+}

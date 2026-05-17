@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Tiemann2011_PhenotypeTransitions
+description: To the extent possible under law, all copyright and related or neighbouring
+  rights to this encoded model have been dedicated to the public domain worldwide.
+  It can be used to explore systemsbiology tiemann2011 phenotypetransitions model1112150000
+  dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Christian A Tiemann
+- Joep Vanlier
+- Peter A J Hilbers
+- Natal A W van Riel
+upstream:
+  id: biomodels_ebi:MODEL1112150000
+  source_db: biomodels_ebi
+  source_id: MODEL1112150000
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1112150000
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1112150000?filename=MODEL1112150000_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.tiemann2011_phenotypetransitions_model1112150000_model:Tiemann2011PhenotypetransitionsModel1112150000Model
+  init_kwargs:
+    model_path: data/MODEL1112150000.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_tg_cyt
+    maps_to: species_4
+    label: Initial Tg Cyt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_4`.
+  - name: initial_model_state_fc
+    maps_to: species_1
+    label: Initial Model State Fc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_1`.
+  - name: initial_ce_hdl
+    maps_to: species_8
+    label: Initial Ce Hdl
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_8`.
+  - name: initial_ce_cyt
+    maps_to: species_2
+    label: Initial Ce Cyt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_2`.
+  - name: initial_ce_plasma
+    maps_to: species_7
+    label: Initial Ce Plasma
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_7`.
+  - name: initial_tg_plasma
+    maps_to: species_6
+    label: Initial Tg Plasma
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_6`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: tg_cyt
+    maps_to: species_4
+    label: TG_cyt
+    description: TG_cyt. Maps to SBML symbol `species_4`.
+  - name: model_state_fc
+    maps_to: species_1
+    label: FC
+    description: FC. Maps to SBML symbol `species_1`.
+  - name: ce_hdl
+    maps_to: species_8
+    label: CE_HDL
+    description: CE_HDL. Maps to SBML symbol `species_8`.
+  - name: ce_cyt
+    maps_to: species_2
+    label: CE_cyt
+    description: CE_cyt. Maps to SBML symbol `species_2`.
+  - name: ce_plasma
+    maps_to: species_7
+    label: CE_plasma
+    description: CE_plasma. Maps to SBML symbol `species_7`.
+  - name: tg_plasma
+    maps_to: species_6
+    label: TG_plasma
+    description: TG_plasma. Maps to SBML symbol `species_6`.

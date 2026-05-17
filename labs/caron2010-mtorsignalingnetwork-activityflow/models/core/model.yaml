@@ -1,0 +1,109 @@
+schema_version: '2.0'
+title: Caron2010_mTORsignalingNetwork_ActivityFlow
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models (http://www.ebi.ac.uk/biomodels/). It is copyright (c) 2005-2011
+  The BioModels.net Team.'
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Etienne Caron
+- Samik Ghosh
+- Yukiko Matsuoka
+- Dariel Ashton-Beaucage
+- Marc Therrien
+upstream:
+  id: biomodels_ebi:MODEL1012220004
+  source_db: biomodels_ebi
+  source_id: MODEL1012220004
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1012220004
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1012220004?filename=MODEL1012220004_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.caron2010_mtorsignalingnetwork_activityflow_model1012220004_model:Caron2010MtorsignalingnetworkActivityflowModel1012220004Model
+  init_kwargs:
+    model_path: data/MODEL1012220004.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_metabolism_br_stress_resistance_br_apoptosis
+    maps_to: s147
+    label: Initial Metabolism Br Stress Resistance Br Apoptosis
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s147`.
+  - name: initial_r_rna_synthesis
+    maps_to: s149
+    label: Initial R RNA Synthesis
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s149`.
+  - name: initial_mrna_br_biogenesis
+    maps_to: s74
+    label: Initial MRNA Br Biogenesis
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s74`.
+  - name: initial_survival_br_apoptosis
+    maps_to: s212
+    label: Initial Survival Br Apoptosis
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s212`.
+  - name: initial_mitochondrial_br_metabolism
+    maps_to: s223
+    label: Initial Mitochondrial Br Metabolism
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s223`.
+  - name: initial_growth_factor
+    maps_to: s167
+    label: Initial Growth Factor
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s167`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: metabolism_br_stress_resistance_br_apoptosis
+    maps_to: s147
+    label: Metabolism_br_Stress resistance_br_Apoptosis
+    description: Metabolism_br_Stress resistance_br_Apoptosis. Maps to SBML symbol
+      `s147`.
+  - name: r_rna_synthesis
+    maps_to: s149
+    label: rRNA synthesis
+    description: rRNA synthesis. Maps to SBML symbol `s149`.
+  - name: mrna_br_biogenesis
+    maps_to: s74
+    label: mRNA_br_biogenesis
+    description: mRNA_br_biogenesis. Maps to SBML symbol `s74`.
+  - name: survival_br_apoptosis
+    maps_to: s212
+    label: Survival_br_Apoptosis
+    description: Survival_br_Apoptosis. Maps to SBML symbol `s212`.
+  - name: mitochondrial_br_metabolism
+    maps_to: s223
+    label: Mitochondrial_br_metabolism
+    description: Mitochondrial_br_metabolism. Maps to SBML symbol `s223`.
+  - name: growth_factor
+    maps_to: s167
+    label: Growth factor
+    description: Growth factor. Maps to SBML symbol `s167`.

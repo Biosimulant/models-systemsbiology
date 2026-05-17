@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Beltrami1995_ThrombinGeneration_C Visualisation
+description: Question-and-answer and dynamic visual summaries for Beltrami1995_ThrombinGeneration_C.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Beltrami1995 Thrombingeneration C Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Beltrami1995_ThrombinGeneration_C.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_beltrami1995_thrombingeneration_c_biomd0000000368_model
+      title: Beltrami1995_ThrombinGeneration_C
+      observables:
+      - id: Z4
+        port: model_state_z4
+        label: Z4
+        group: gene_regulation
+      - id: Z3
+        port: model_state_z3
+        label: Z3
+        group: gene_regulation
+      - id: Z2
+        port: model_state_z2
+        label: Z2
+        group: gene_regulation
+      - id: Z1
+        port: model_state_z1
+        label: Z1
+        group: gene_regulation
+      - id: E4
+        port: model_state_e4
+        label: E4
+        group: gene_regulation
+      - id: E3
+        port: model_state_e3
+        label: E3
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

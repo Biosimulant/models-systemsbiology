@@ -1,0 +1,90 @@
+schema_version: '2.0'
+title: Wu2006 Atpsynthesis Skeletalmuscle Lab
+description: 'This a model from the article: Oxidative ATP synthesis in skeletal muscle
+  is controlled by substrate feedback. It can be used to explore systemsbiology wu2006
+  atpsynthesis skeletalmuscle model1006230034 dynamics and compare simulation behavior
+  across conditions.'
+models:
+- alias: systemsbiology_sbml_wu2006_atpsynthesis_skeletalmuscle_model1006230034_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_wu2006_atpsynthesis_skeletalmuscle_model1006230034_model.state
+  to:
+  - visualisation.systemsbiology_sbml_wu2006_atpsynthesis_skeletalmuscle_model1006230034_model_state
+- from: systemsbiology_sbml_wu2006_atpsynthesis_skeletalmuscle_model1006230034_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_wu2006_atpsynthesis_skeletalmuscle_model1006230034_model_summary
+- from: systemsbiology_sbml_wu2006_atpsynthesis_skeletalmuscle_model1006230034_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_wu2006_atpsynthesis_skeletalmuscle_model1006230034_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- metabolism
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_q_x
+    maps_to: systemsbiology_sbml_wu2006_atpsynthesis_skeletalmuscle_model1006230034_model.initial_model_state_q_x
+    label: Initial Model State Q X
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Q_x`.
+  - name: initial_pi_x
+    maps_to: systemsbiology_sbml_wu2006_atpsynthesis_skeletalmuscle_model1006230034_model.initial_pi_x
+    label: Initial Pi X
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PI_x`.
+  - name: initial_pi_i
+    maps_to: systemsbiology_sbml_wu2006_atpsynthesis_skeletalmuscle_model1006230034_model.initial_pi_i
+    label: Initial Pi I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PI_i`.
+  - name: initial_pi_c
+    maps_to: systemsbiology_sbml_wu2006_atpsynthesis_skeletalmuscle_model1006230034_model.initial_pi_c
+    label: Initial Pi C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PI_c`.
+  - name: initial_ph_x
+    maps_to: systemsbiology_sbml_wu2006_atpsynthesis_skeletalmuscle_model1006230034_model.initial_ph_x
+    label: Initial Ph X
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `pH_x`.
+  - name: initial_p_cr_c
+    maps_to: systemsbiology_sbml_wu2006_atpsynthesis_skeletalmuscle_model1006230034_model.initial_p_cr_c
+    label: Initial P Cr C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PCr_c`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_wu2006_atpsynthesis_skeletalmuscle_model1006230034_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_wu2006_atpsynthesis_skeletalmuscle_model1006230034_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_wu2006_atpsynthesis_skeletalmuscle_model1006230034_model.species_labels
+  - name: q_x
+    maps_to: systemsbiology_sbml_wu2006_atpsynthesis_skeletalmuscle_model1006230034_model.q_x
+  - name: pi_x
+    maps_to: systemsbiology_sbml_wu2006_atpsynthesis_skeletalmuscle_model1006230034_model.pi_x
+  - name: pi_i
+    maps_to: systemsbiology_sbml_wu2006_atpsynthesis_skeletalmuscle_model1006230034_model.pi_i
+  - name: pi_c
+    maps_to: systemsbiology_sbml_wu2006_atpsynthesis_skeletalmuscle_model1006230034_model.pi_c
+  - name: ph_x
+    maps_to: systemsbiology_sbml_wu2006_atpsynthesis_skeletalmuscle_model1006230034_model.ph_x
+  - name: p_cr_c
+    maps_to: systemsbiology_sbml_wu2006_atpsynthesis_skeletalmuscle_model1006230034_model.p_cr_c

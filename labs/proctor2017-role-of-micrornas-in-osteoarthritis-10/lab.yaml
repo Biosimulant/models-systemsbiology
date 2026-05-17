@@ -1,0 +1,90 @@
+schema_version: '2.0'
+title: Proctor2017 Role Of Micrornas In Osteoarthritis 10 Lab
+description: 'Proctor2017- Role of microRNAs inosteoarthritis (Negative Feedback By
+  MicroRNA) This model is described in the article: Computer simulation models as
+  a tool to investigate the role of microRNAs in ost. It can be used to explore systemsbiology
+  proctor2017 role of micrornas in dynamics and compare simulation behavior across
+  conditions.'
+models:
+- alias: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_biomd0000000864_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_biomd0000000864_model.state
+  to:
+  - visualisation.systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_biomd0000000864_model_state
+- from: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_biomd0000000864_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_biomd0000000864_model_summary
+- from: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_biomd0000000864_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_biomd0000000864_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_signal
+    maps_to: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_biomd0000000864_model.initial_signal
+    label: Initial Signal
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Signal`.
+  - name: initial_mi_r_gene
+    maps_to: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_biomd0000000864_model.initial_mi_r_gene
+    label: Initial Mi R Gene
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `miR_gene`.
+  - name: initial_mi_r_gene_tf1
+    maps_to: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_biomd0000000864_model.initial_mi_r_gene_tf1
+    label: Initial Mi R Gene TF1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `miR_gene_TF1`.
+  - name: initial_mi_r
+    maps_to: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_biomd0000000864_model.initial_mi_r
+    label: Initial Mi R
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `miR`.
+  - name: initial_tf1_mrna
+    maps_to: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_biomd0000000864_model.initial_tf1_mrna
+    label: Initial TF1 MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TF1_mRNA`.
+  - name: initial_model_state_tf1
+    maps_to: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_biomd0000000864_model.initial_model_state_tf1
+    label: Initial Model State TF1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TF1`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_biomd0000000864_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_biomd0000000864_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_biomd0000000864_model.species_labels
+  - name: signal
+    maps_to: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_biomd0000000864_model.signal
+  - name: mi_r_gene
+    maps_to: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_biomd0000000864_model.mi_r_gene
+  - name: mi_r_gene_tf1
+    maps_to: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_biomd0000000864_model.mi_r_gene_tf1
+  - name: mi_r
+    maps_to: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_biomd0000000864_model.mi_r
+  - name: tf1_mrna
+    maps_to: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_biomd0000000864_model.tf1_mrna
+  - name: tf1
+    maps_to: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_biomd0000000864_model.tf1

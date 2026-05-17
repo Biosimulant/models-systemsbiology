@@ -1,0 +1,105 @@
+schema_version: '2.0'
+title: Proctor2008 - p53/Mdm2 circuit - p53 stablisation by p14ARF
+description: 'Proctor2008 - p53/Mdm2 circuit - p53 stabilisation by p14ARF This model
+  is described in the article: Explaining oscillations and variability in the p53-Mdm2
+  system. It can be used to explore systemsbiology proctor2008 p53 mdm2 circuit p53
+  dynamics and compare simulation behavior across conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Carole J Proctor
+- Douglas A Gray
+upstream:
+  id: biomodels_ebi:BIOMD0000000189
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000189
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000189
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000189?filename=BIOMD0000000189_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.proctor2008_p53_mdm2_circuit_p53_stablisation_by_biomd0000000189_model:Proctor2008P53Mdm2CircuitP53StablisationByBiomd0000000189Model
+  init_kwargs:
+    model_path: data/BIOMD0000000189.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_mdm2m_rn_adeg
+    maps_to: Mdm2mRNAdeg
+    label: Initial Mdm2m Rn Adeg
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Mdm2mRNAdeg`.
+  - name: initial_mdm2m_rn_asyn
+    maps_to: Mdm2mRNAsyn
+    label: Initial Mdm2m Rn Asyn
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Mdm2mRNAsyn`.
+  - name: initial_mdm2_mrna
+    maps_to: Mdm2_mRNA
+    label: Initial Mdm2 MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Mdm2_mRNA`.
+  - name: initial_mdm2_p53
+    maps_to: Mdm2_p53
+    label: Initial Mdm2 P53
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Mdm2_p53`.
+  - name: initial_model_state_p53
+    maps_to: p53
+    label: Initial Model State P53
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `p53`.
+  - name: initial_mdm2
+    maps_to: Mdm2
+    label: Initial Mdm2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Mdm2`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: mdm2m_rn_adeg
+    maps_to: Mdm2mRNAdeg
+    label: Mdm2mRNAdeg
+    description: Mdm2mRNAdeg. Maps to SBML symbol `Mdm2mRNAdeg`.
+  - name: mdm2m_rn_asyn
+    maps_to: Mdm2mRNAsyn
+    label: Mdm2mRNAsyn
+    description: Mdm2mRNAsyn. Maps to SBML symbol `Mdm2mRNAsyn`.
+  - name: mdm2_mrna
+    maps_to: Mdm2_mRNA
+    label: Mdm2 MRNA
+    description: Mdm2 MRNA. Maps to SBML symbol `Mdm2_mRNA`.
+  - name: mdm2_p53
+    maps_to: Mdm2_p53
+    label: Mdm2 P53
+    description: Mdm2 P53. Maps to SBML symbol `Mdm2_p53`.
+  - name: p53
+    maps_to: p53
+    label: P53
+    description: P53. Maps to SBML symbol `p53`.
+  - name: mdm2
+    maps_to: Mdm2
+    label: Mdm2
+    description: Mdm2. Maps to SBML symbol `Mdm2`.

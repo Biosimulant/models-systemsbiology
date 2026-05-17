@@ -1,0 +1,114 @@
+schema_version: '2.0'
+title: Verma2016 - Ca(2+) Signal Propagation Along Hepatocyte Cords
+description: 'Verma2016 - Ca(2+) Signal Propagation Along Hepatocyte Cords This model
+  is described in the article: Computational Modeling of Spatiotemporal Ca(2+) Signal
+  Propagation Along Hepatocyte Cords. It can be used to explore systemsbiology verma2016
+  ca 2 signal propagation dynamics and compare simulation behavior across conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Aalap Verma
+- Hirenkumar Makadia
+- Jan B Hoek
+- Babatunde A Ogunnaike
+- Rajanikanth Vadigepalli
+upstream:
+  id: biomodels_ebi:BIOMD0000000834
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000834
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000834
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000834?filename=Verma2016.xml
+  license: CC0
+biosim:
+  entrypoint: src.verma2016_ca_2_signal_propagation_along_hepatocy_biomd0000000834_model:Verma2016Ca2SignalPropagationAlongHepatocyBiomd0000000834Model
+  init_kwargs:
+    model_path: data/BIOMD0000000834.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_total_intracellular_store_ca2_content_ca_t_9
+    maps_to: CaT_9
+    label: Initial Total Intracellular Store CA2 Content Ca T 9
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaT_9`.
+  - name: initial_total_intracellular_store_ca2_content_ca_t_8
+    maps_to: CaT_8
+    label: Initial Total Intracellular Store CA2 Content Ca T 8
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaT_8`.
+  - name: initial_total_intracellular_store_ca2_content_ca_t_7
+    maps_to: CaT_7
+    label: Initial Total Intracellular Store CA2 Content Ca T 7
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaT_7`.
+  - name: initial_total_intracellular_store_ca2_content_ca_t_6
+    maps_to: CaT_6
+    label: Initial Total Intracellular Store CA2 Content Ca T 6
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaT_6`.
+  - name: initial_total_intracellular_store_ca2_content_ca_t_5
+    maps_to: CaT_5
+    label: Initial Total Intracellular Store CA2 Content Ca T 5
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaT_5`.
+  - name: initial_total_intracellular_store_ca2_content_ca_t_4
+    maps_to: CaT_4
+    label: Initial Total Intracellular Store CA2 Content Ca T 4
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaT_4`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: total_intracellular_store_ca2_content_ca_t_9
+    maps_to: CaT_9
+    label: total intracellular store Ca2+ content_CaT_9
+    description: total intracellular store Ca2+ content_CaT_9. Maps to SBML symbol
+      `CaT_9`.
+  - name: total_intracellular_store_ca2_content_ca_t_8
+    maps_to: CaT_8
+    label: total intracellular store Ca2+ content_CaT_8
+    description: total intracellular store Ca2+ content_CaT_8. Maps to SBML symbol
+      `CaT_8`.
+  - name: total_intracellular_store_ca2_content_ca_t_7
+    maps_to: CaT_7
+    label: total intracellular store Ca2+ content_CaT_7
+    description: total intracellular store Ca2+ content_CaT_7. Maps to SBML symbol
+      `CaT_7`.
+  - name: total_intracellular_store_ca2_content_ca_t_6
+    maps_to: CaT_6
+    label: total intracellular store Ca2+ content_CaT_6
+    description: total intracellular store Ca2+ content_CaT_6. Maps to SBML symbol
+      `CaT_6`.
+  - name: total_intracellular_store_ca2_content_ca_t_5
+    maps_to: CaT_5
+    label: total intracellular store Ca2+ content_CaT_5
+    description: total intracellular store Ca2+ content_CaT_5. Maps to SBML symbol
+      `CaT_5`.
+  - name: total_intracellular_store_ca2_content_ca_t_4
+    maps_to: CaT_4
+    label: total intracellular store Ca2+ content_CaT_4
+    description: total intracellular store Ca2+ content_CaT_4. Maps to SBML symbol
+      `CaT_4`.

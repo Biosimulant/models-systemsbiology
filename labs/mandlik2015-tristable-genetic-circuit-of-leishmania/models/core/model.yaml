@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Mandlik2015 - Tristable genetic circuit of Leishmania
+description: 'Vineetha Mandlik, Mayuri Gurav & Shailza Singh. Regulatory dynamics
+  of network architecture and function in tristable genetic circuit of Leishmania:
+  a mathematical biology approach.'
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Vineetha Mandlik
+- Mayuri Gurav
+- Shailza Singh
+upstream:
+  id: biomodels_ebi:BIOMD0000000584
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000584
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000584
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000584?filename=BIOMD0000000584_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.mandlik2015_tristable_genetic_circuit_of_leishma_biomd0000000584_model:Mandlik2015TristableGeneticCircuitOfLeishmaBiomd0000000584Model
+  init_kwargs:
+    model_path: data/BIOMD0000000584.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_ia1_inactive_tf
+    maps_to: ia1_InactiveTF
+    label: Initial IA1 Inactive Tf
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ia1_InactiveTF`.
+  - name: initial_ia1_active_tf
+    maps_to: ia1_ActiveTF
+    label: Initial IA1 Active Tf
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ia1_ActiveTF`.
+  - name: initial_ter6
+    maps_to: ter6
+    label: Initial Ter6
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ter6`.
+  - name: initial_ter5
+    maps_to: ter5
+    label: Initial Ter5
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ter5`.
+  - name: initial_ter4
+    maps_to: ter4
+    label: Initial Ter4
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ter4`.
+  - name: initial_ter3
+    maps_to: ter3
+    label: Initial Ter3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ter3`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: ia1_inactive_tf
+    maps_to: ia1_InactiveTF
+    label: ia1_InactiveTF
+    description: ia1_InactiveTF. Maps to SBML symbol `ia1_InactiveTF`.
+  - name: ia1_active_tf
+    maps_to: ia1_ActiveTF
+    label: ia1_ActiveTF
+    description: ia1_ActiveTF. Maps to SBML symbol `ia1_ActiveTF`.
+  - name: ter6
+    maps_to: ter6
+    label: ter6
+    description: ter6. Maps to SBML symbol `ter6`.
+  - name: ter5
+    maps_to: ter5
+    label: ter5
+    description: ter5. Maps to SBML symbol `ter5`.
+  - name: ter4
+    maps_to: ter4
+    label: ter4
+    description: ter4. Maps to SBML symbol `ter4`.
+  - name: ter3
+    maps_to: ter3
+    label: ter3
+    description: ter3. Maps to SBML symbol `ter3`.

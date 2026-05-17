@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "26d4f3f9-5aec-424f-b24c-4db3b50f50ee",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "9c024a4c-679e-47f7-8489-4a03fc6a7562",
+  "created_at": "2026-05-16T05:46:41.733661701+00:00",
+  "last_synced_at": "2026-05-17T02:12:15.267423+00:00",
+  "hub_manifest_hash": "e37a47d88ffd3db1abd4eb4aeae97b2d916c915c520862aa061cdb49103fb94b",
+  "package_name": "bingzheng1990-glucocorticoidssecretion-lab"
+}

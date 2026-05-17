@@ -1,0 +1,38 @@
+schema_version: '2.0'
+title: Goodwin1965_EnzymeControlProcess Visualisation
+description: Question-and-answer and dynamic visual summaries for Goodwin1965_EnzymeControlProcess.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Goodwin1965 Enzymecontrolprocess Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Goodwin1965_EnzymeControlProcess.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_goodwin1965_enzymecontrolprocess_model0911532520_model
+      title: Goodwin1965_EnzymeControlProcess
+      observables:
+      - id: Yi
+        port: model_state_yi
+        label: Yi
+        group: physiology
+      - id: Xi
+        port: model_state_xi
+        label: Xi
+        group: physiology
+io:
+  inputs: []
+  outputs: []

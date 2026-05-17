@@ -1,0 +1,59 @@
+schema_version: '2.0'
+title: Viertel2019 - A Computational model of the mammalian external tufted cell Visualisation
+description: Question-and-answer and dynamic visual summaries for Viertel2019 - A
+  Computational model of the mammalian external tufted cell.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Viertel2019 A Computational Model Of The Mammalian External Tufted
+      Cel Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Viertel2019 - A Computational model of the mammalian external
+      tufted cell.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_viertel2019_a_computational_model_of_the_mammali_biomd0000000844_model
+      title: Viertel2019 - A Computational model of the mammalian external tufted
+        cell
+      observables:
+      - id: hLVA
+        port: h_lva
+        label: hLVA
+        group: gene_regulation
+      - id: hH
+        port: h_h
+        label: hH
+        group: gene_regulation
+      - id: hNaP
+        port: h_na_p
+        label: hNaP
+        group: gene_regulation
+      - id: mBK
+        port: m_bk
+        label: mBK
+        group: gene_regulation
+      - id: nK
+        port: n_k
+        label: nK
+        group: gene_regulation
+      - id: nHVK
+        port: n_hvk
+        label: nHVK
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

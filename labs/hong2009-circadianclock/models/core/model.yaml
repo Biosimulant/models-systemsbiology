@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Hong2009_CircadianClock
+description: 'This a model from the article: Minimum criteria for DNA damage-induced
+  phase advances in circadian rhythms. It can be used to explore systemsbiology hong2009
+  circadianclock BioModels0000000216 dynamics and compare simulation behavior across
+  conditions.'
+standard: other
+tags:
+- cellcycle
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Christian I Hong
+- Judit Zámborszky
+- Attila Csikász-Nagy
+upstream:
+  id: biomodels_ebi:BIOMD0000000216
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000216
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000216
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000216?filename=BIOMD0000000216_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.hong2009_circadianclock_biomd0000000216_model:Hong2009CircadianclockBiomd0000000216Model
+  init_kwargs:
+    model_path: data/BIOMD0000000216.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_ic
+    maps_to: IC
+    label: Initial Model State Ic
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IC`.
+  - name: initial_model_state_tf
+    maps_to: TF
+    label: Initial Model State Tf
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TF`.
+  - name: initial_model_state_cp2
+    maps_to: CP2
+    label: Initial Model State CP2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CP2`.
+  - name: initial_model_state_cp
+    maps_to: CP
+    label: Initial Model State Cp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CP`.
+  - name: initial_c_ptot
+    maps_to: CPtot
+    label: Initial C Ptot
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CPtot`.
+  - name: initial_model_state_m
+    maps_to: M
+    label: Initial Model State M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_ic
+    maps_to: IC
+    label: IC
+    description: IC. Maps to SBML symbol `IC`.
+  - name: model_state_tf
+    maps_to: TF
+    label: TF
+    description: TF. Maps to SBML symbol `TF`.
+  - name: cp2
+    maps_to: CP2
+    label: CP2
+    description: CP2. Maps to SBML symbol `CP2`.
+  - name: model_state_cp
+    maps_to: CP
+    label: CP
+    description: CP. Maps to SBML symbol `CP`.
+  - name: c_ptot
+    maps_to: CPtot
+    label: CPtot
+    description: CPtot. Maps to SBML symbol `CPtot`.
+  - name: model_state_m
+    maps_to: M
+    label: M
+    description: M. Maps to SBML symbol `M`.

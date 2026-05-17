@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Dalcantara2003 Synapticplasticity Lab
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models (http://www.ebi.ac.uk/biomodels/). It is copyright (c) 2005-2011
+  The BioModels.net Team.'
+models:
+- alias: systemsbiology_sbml_dalcantara2003_synapticplasticity_model8938094216_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_dalcantara2003_synapticplasticity_model8938094216_model.state
+  to:
+  - visualisation.systemsbiology_sbml_dalcantara2003_synapticplasticity_model8938094216_model_state
+- from: systemsbiology_sbml_dalcantara2003_synapticplasticity_model8938094216_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_dalcantara2003_synapticplasticity_model8938094216_model_summary
+- from: systemsbiology_sbml_dalcantara2003_synapticplasticity_model8938094216_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_dalcantara2003_synapticplasticity_model8938094216_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- neuroscience
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_s_total
+    maps_to: systemsbiology_sbml_dalcantara2003_synapticplasticity_model8938094216_model.initial_s_total
+    label: Initial S Total
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Stotal`.
+  - name: initial_model_state_p
+    maps_to: systemsbiology_sbml_dalcantara2003_synapticplasticity_model8938094216_model.initial_model_state_p
+    label: Initial Model State P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pstar`.
+  - name: initial_model_state_s
+    maps_to: systemsbiology_sbml_dalcantara2003_synapticplasticity_model8938094216_model.initial_model_state_s
+    label: Initial Model State S
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Sstar`.
+  - name: initial_model_state_r
+    maps_to: systemsbiology_sbml_dalcantara2003_synapticplasticity_model8938094216_model.initial_model_state_r
+    label: Initial Model State R
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Rstar`.
+  - name: initial_model_state_r_2
+    maps_to: systemsbiology_sbml_dalcantara2003_synapticplasticity_model8938094216_model.initial_model_state_r_2
+    label: Initial Model State R 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Rprime`.
+  - name: initial_model_state_n
+    maps_to: systemsbiology_sbml_dalcantara2003_synapticplasticity_model8938094216_model.initial_model_state_n
+    label: Initial Model State N
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Nstar`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_dalcantara2003_synapticplasticity_model8938094216_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_dalcantara2003_synapticplasticity_model8938094216_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_dalcantara2003_synapticplasticity_model8938094216_model.species_labels
+  - name: s_total
+    maps_to: systemsbiology_sbml_dalcantara2003_synapticplasticity_model8938094216_model.s_total
+  - name: model_state_p
+    maps_to: systemsbiology_sbml_dalcantara2003_synapticplasticity_model8938094216_model.model_state_p
+  - name: model_state_s
+    maps_to: systemsbiology_sbml_dalcantara2003_synapticplasticity_model8938094216_model.model_state_s
+  - name: model_state_r
+    maps_to: systemsbiology_sbml_dalcantara2003_synapticplasticity_model8938094216_model.model_state_r
+  - name: model_state_r_2
+    maps_to: systemsbiology_sbml_dalcantara2003_synapticplasticity_model8938094216_model.model_state_r_2
+  - name: model_state_n
+    maps_to: systemsbiology_sbml_dalcantara2003_synapticplasticity_model8938094216_model.model_state_n

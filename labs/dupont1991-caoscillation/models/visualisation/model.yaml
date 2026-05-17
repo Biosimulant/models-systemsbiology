@@ -1,0 +1,38 @@
+schema_version: '2.0'
+title: Dupont1991_CaOscillation Visualisation
+description: Question-and-answer and dynamic visual summaries for Dupont1991_CaOscillation.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Dupont1991 Caoscillation Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Dupont1991_CaOscillation.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_dupont1991_caoscillation_biomd0000000117_model
+      title: Dupont1991_CaOscillation
+      observables:
+      - id: y
+        port: ca_in_the_ins_p3_insensitive_pool
+        label: Ca in the InsP3-insensitive pool
+        group: signaling
+      - id: z
+        port: ca_in_the_cytosol
+        label: Ca in the cytosol
+        group: signaling
+io:
+  inputs: []
+  outputs: []

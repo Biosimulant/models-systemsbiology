@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Eungdamrong2007_Ras_Activation
+description: The model reproduces the time profiles of Golgi Ras-GTP and plasma membrane
+  Ras-GTP, subjected to a palmitoylation rate of 0.00015849 second inverse. This is
+  depicted in Fig 5a and 5b for various palm.
+standard: other
+tags:
+- cellcycle
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Narat J Eungdamrong
+- Ravi Iyengar
+upstream:
+  id: biomodels_ebi:BIOMD0000000161
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000161
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000161
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000161?filename=BIOMD0000000161_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.eungdamrong2007_ras_activation_biomd0000000161_model:Eungdamrong2007RasActivationBiomd0000000161Model
+  init_kwargs:
+    model_path: data/BIOMD0000000161.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_ract_ca
+    maps_to: RactCa
+    label: Initial Ract Ca
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RactCa`.
+  - name: initial_ca_er
+    maps_to: Ca_ER
+    label: Initial Ca Er
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_ER`.
+  - name: initial_serca
+    maps_to: serca
+    label: Initial Serca
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `serca`.
+  - name: initial_capri_cyt
+    maps_to: CAPRI_cyt
+    label: Initial Capri Cyt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CAPRI_cyt`.
+  - name: initial_rinh_ca
+    maps_to: RinhCa
+    label: Initial Rinh Ca
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RinhCa`.
+  - name: initial_ras_ca_pl_ce_gm
+    maps_to: Ras_CaPLCe_GM
+    label: Initial RAS Ca Pl Ce Gm
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ras_CaPLCe_GM`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: ract_ca
+    maps_to: RactCa
+    label: RactCa
+    description: RactCa. Maps to SBML symbol `RactCa`.
+  - name: ca_er
+    maps_to: Ca_ER
+    label: Ca ER
+    description: Ca ER. Maps to SBML symbol `Ca_ER`.
+  - name: serca
+    maps_to: serca
+    label: Serca
+    description: Serca. Maps to SBML symbol `serca`.
+  - name: capri_cyt
+    maps_to: CAPRI_cyt
+    label: CAPRI Cyt
+    description: CAPRI Cyt. Maps to SBML symbol `CAPRI_cyt`.
+  - name: rinh_ca
+    maps_to: RinhCa
+    label: RinhCa
+    description: RinhCa. Maps to SBML symbol `RinhCa`.
+  - name: ras_ca_pl_ce_gm
+    maps_to: Ras_CaPLCe_GM
+    label: RAS CaPLCe GM
+    description: RAS CaPLCe GM. Maps to SBML symbol `Ras_CaPLCe_GM`.

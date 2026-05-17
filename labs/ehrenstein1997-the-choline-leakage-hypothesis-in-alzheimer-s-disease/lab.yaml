@@ -1,0 +1,66 @@
+schema_version: '2.0'
+title: Ehrenstein1997 The Choline Leakage Hypothesis In Alzheimer S Disease Lab
+description: 'Ehrenstein1997 - The choline-leakagehypothesis in Alzheimer''s disease
+  This model is described in the article: The choline-leakage hypothesis for the loss
+  of acetylcholine in Alzheimer''s disease. It can be used to explore systemsbiology
+  ehrenstein1997 the choline leakage hypothesis dynamics and compare simulation behavior
+  across conditions.'
+models:
+- alias: systemsbiology_sbml_ehrenstein1997_the_choline_leakage_hypothesis_in_biomd0000000553_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_ehrenstein1997_the_choline_leakage_hypothesis_in_biomd0000000553_model.state
+  to:
+  - visualisation.systemsbiology_sbml_ehrenstein1997_the_choline_leakage_hypothesis_in_biomd0000000553_model_state
+- from: systemsbiology_sbml_ehrenstein1997_the_choline_leakage_hypothesis_in_biomd0000000553_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_ehrenstein1997_the_choline_leakage_hypothesis_in_biomd0000000553_model_summary
+- from: systemsbiology_sbml_ehrenstein1997_the_choline_leakage_hypothesis_in_biomd0000000553_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_ehrenstein1997_the_choline_leakage_hypothesis_in_biomd0000000553_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- neuroscience
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_a_rel
+    maps_to: systemsbiology_sbml_ehrenstein1997_the_choline_leakage_hypothesis_in_biomd0000000553_model.initial_a_rel
+    label: Initial A Rel
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `aRel`.
+  - name: initial_model_state_a
+    maps_to: systemsbiology_sbml_ehrenstein1997_the_choline_leakage_hypothesis_in_biomd0000000553_model.initial_model_state_a
+    label: Initial Model State A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `a`.
+  - name: initial_model_state_b
+    maps_to: systemsbiology_sbml_ehrenstein1997_the_choline_leakage_hypothesis_in_biomd0000000553_model.initial_model_state_b
+    label: Initial Model State B
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `b`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_ehrenstein1997_the_choline_leakage_hypothesis_in_biomd0000000553_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_ehrenstein1997_the_choline_leakage_hypothesis_in_biomd0000000553_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_ehrenstein1997_the_choline_leakage_hypothesis_in_biomd0000000553_model.species_labels
+  - name: a_rel
+    maps_to: systemsbiology_sbml_ehrenstein1997_the_choline_leakage_hypothesis_in_biomd0000000553_model.a_rel
+  - name: model_state_a
+    maps_to: systemsbiology_sbml_ehrenstein1997_the_choline_leakage_hypothesis_in_biomd0000000553_model.model_state_a
+  - name: model_state_b
+    maps_to: systemsbiology_sbml_ehrenstein1997_the_choline_leakage_hypothesis_in_biomd0000000553_model.model_state_b

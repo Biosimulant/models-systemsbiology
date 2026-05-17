@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Tyson2003_NegFB_Oscillator
+description: 'Originally created by libAntimony v1.4 (using libSBML 3.4.1) This is
+  an SBML implementation the model of negative feedback oscillator (figure 2a) described
+  in the article: Sniffers, buzzers, toggles a. It can be used to explore systemsbiology
+  tyson2003 negfb oscillator BioModels0000000308 dynamics and compare simulation behavior
+  across conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- John J Tyson
+- Katherine C Chen
+- Bela Novak
+upstream:
+  id: biomodels_ebi:BIOMD0000000308
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000308
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000308
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000308?filename=BIOMD0000000308_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.tyson2003_negfb_oscillator_biomd0000000308_model:Tyson2003NegfbOscillatorBiomd0000000308Model
+  init_kwargs:
+    model_path: data/BIOMD0000000308.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_yp
+    maps_to: Yp
+    label: Initial Model State Yp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Yp`.
+  - name: initial_model_state_rp
+    maps_to: Rp
+    label: Initial Model State Rp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Rp`.
+  - name: initial_model_state_y
+    maps_to: Y
+    label: Initial Model State Y
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Y`.
+  - name: initial_model_state_x
+    maps_to: X
+    label: Initial Model State X
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X`.
+  - name: initial_model_state_s
+    maps_to: S
+    label: Initial Model State S
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S`.
+  - name: initial_model_state_r
+    maps_to: R
+    label: Initial Model State R
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `R`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_yp
+    maps_to: Yp
+    label: Yp
+    description: Yp. Maps to SBML symbol `Yp`.
+  - name: model_state_rp
+    maps_to: Rp
+    label: Rp
+    description: Rp. Maps to SBML symbol `Rp`.
+  - name: model_state_y
+    maps_to: Y
+    label: Y
+    description: Y. Maps to SBML symbol `Y`.
+  - name: model_state_x
+    maps_to: X
+    label: X
+    description: X. Maps to SBML symbol `X`.
+  - name: model_state_s
+    maps_to: S
+    label: S
+    description: S. Maps to SBML symbol `S`.
+  - name: model_state_r
+    maps_to: R
+    label: R
+    description: R. Maps to SBML symbol `R`.

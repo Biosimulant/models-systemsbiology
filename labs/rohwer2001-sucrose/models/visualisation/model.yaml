@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Rohwer2001_Sucrose Visualisation
+description: Question-and-answer and dynamic visual summaries for Rohwer2001_Sucrose.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Rohwer2001 Sucrose Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Rohwer2001_Sucrose.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_rohwer2001_sucrose_biomd0000000023_model
+      title: Rohwer2001_Sucrose
+      observables:
+      - id: ATP
+        port: atp
+        label: ATP
+        group: metabolism
+      - id: ADP
+        port: adp
+        label: ADP
+        group: metabolism
+      - id: glycolysis
+        port: glycolysis
+        label: Glycolysis
+        group: metabolism
+      - id: phos
+        port: phos
+        label: Phos
+        group: gene_regulation
+      - id: Glcex
+        port: glcex
+        label: Glcex
+        group: gene_regulation
+      - id: Fruex
+        port: fruex
+        label: Fruex
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,90 @@
+schema_version: '2.0'
+title: Ayati2010_BoneRemodelingDynamics_WithTumour+DrugTreatment
+description: 'This a model from the article: A mathematical model of bone remodeling
+  dynamics for normal bone cell populations and myeloma bone disease Bruce P Ayati,
+  Claire M Edwards, Glenn F Webb and John P Wiksw. It can be used to explore systemsbiology
+  ayati2010 boneremodelingdynamics withtumour drug BioModels0000000403 dynamics and
+  compare simulation behavior across conditions.'
+standard: other
+tags:
+- oncology
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Bruce P Ayati
+- Claire M Edwards
+- Glenn F Webb
+- John P Wikswo
+upstream:
+  id: biomodels_ebi:BIOMD0000000403
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000403
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000403
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000403?filename=BIOMD0000000403_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.ayati2010_boneremodelingdynamics_withtumour_drug_biomd0000000403_model:Ayati2010BoneremodelingdynamicsWithtumourDrugBiomd0000000403Model
+  init_kwargs:
+    model_path: data/BIOMD0000000403.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_osteoblasts
+    maps_to: B
+    label: Initial Osteoblasts
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `B`.
+  - name: initial_bone_mass
+    maps_to: z
+    label: Initial Bone Mass
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `z`.
+  - name: initial_osteoclasts
+    maps_to: C
+    label: Initial Osteoclasts
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C`.
+  - name: initial_tumour
+    maps_to: Tumour
+    label: Initial Tumour
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Tumour`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: osteoblasts
+    maps_to: B
+    label: Osteoblasts
+    description: Osteoblasts. Maps to SBML symbol `B`.
+  - name: bone_mass
+    maps_to: z
+    label: BoneMass
+    description: BoneMass. Maps to SBML symbol `z`.
+  - name: osteoclasts
+    maps_to: C
+    label: Osteoclasts
+    description: Osteoclasts. Maps to SBML symbol `C`.
+  - name: tumour
+    maps_to: Tumour
+    label: Tumour
+    description: Tumour. Maps to SBML symbol `Tumour`.

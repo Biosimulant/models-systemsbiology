@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "041010ba-ee27-480b-8368-debadb4cfc3c",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "cfe97921-bd1d-4013-b750-a5a5432aba8a",
+  "created_at": "2026-05-16T05:46:48.587196343+00:00",
+  "last_synced_at": "2026-05-17T05:11:35.985512+00:00",
+  "hub_manifest_hash": "ccf95ec12db4ae0b40b58b0394eb3b77ca5d2a87e4567d25cf5d4bcab45119f7",
+  "package_name": "nelson1995-hiv1therapy-divadministraion-modelb-lab"
+}

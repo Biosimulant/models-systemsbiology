@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "9f2b4bc8-8d19-45e3-ad5b-9dce352e3164",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "06e1248c-3afc-4b05-bf09-a0918e93a44d",
+  "created_at": "2026-05-16T05:46:40.823279778+00:00",
+  "last_synced_at": "2026-05-17T01:37:41.638317+00:00",
+  "hub_manifest_hash": "1043cfa0812714a0dfeeda19f7b777a09c0f75efead5c11dfcdbff2c9266f6f9",
+  "package_name": "arnold2011-farquhar1980-rubisco-calvincycle-lab"
+}

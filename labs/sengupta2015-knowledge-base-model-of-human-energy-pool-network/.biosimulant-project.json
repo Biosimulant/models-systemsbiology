@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "3cd7ce64-d103-4e64-8da9-95485051b716",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "c7ddea77-dfd1-4dc4-95e4-c69f00e88e75",
+  "created_at": "2026-05-16T05:46:51.814080067+00:00",
+  "last_synced_at": "2026-05-17T06:10:12.567788+00:00",
+  "hub_manifest_hash": "562c3d4d3093c97d6966eb9118d8e909345bd977e95637dcab0af264583962f6",
+  "package_name": "sengupta2015-knowledge-base-model-of-human-energy-pool-network-l"
+}

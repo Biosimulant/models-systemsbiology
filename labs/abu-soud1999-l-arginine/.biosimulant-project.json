@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "b32a9cc2-38e9-4a08-a49b-ffcdf6be965a",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "4a73d8a9-e114-478b-b3b6-5a77097a3228",
+  "created_at": "2026-05-16T05:46:40.612629316+00:00",
+  "last_synced_at": "2026-05-17T01:31:44.088134+00:00",
+  "hub_manifest_hash": "06d712bf9a3540091dc88fa00ee03c20d62284d1ec83fefc4a3b59b308072134",
+  "package_name": "abu-soud1999-l-arginine-lab"
+}

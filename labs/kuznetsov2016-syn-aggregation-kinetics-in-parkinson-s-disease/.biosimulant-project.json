@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "e89d0a4e-52e8-4b51-95aa-d3c2e6c472c4",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "abf6e5d9-5876-40f4-81ff-a290e3464a76",
+  "created_at": "2026-05-16T05:46:44.991269210+00:00",
+  "last_synced_at": "2026-05-17T04:14:17.262756+00:00",
+  "hub_manifest_hash": "ea1319ebf09d17c487e877daf88be7ed216a102833eafd196898de8ad59551ce",
+  "package_name": "kuznetsov2016-syn-aggregation-kinetics-in-parkinson-s-disease-la"
+}

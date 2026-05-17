@@ -1,0 +1,49 @@
+schema_version: '2.0'
+title: Kurlovics2021 Metformin Partitioning Between Plasma And Rbc With Indepen Lab
+description: This model is a supplementary material of a manuscript'Diffusion driven
+  metformin exchange transport rates between plasma and red blood cells'by Janis Kurlovics,
+  Darta Maija Zake, Linda Zaharenko, Kri. It can be used to explore systemsbiology
+  kurlovics2021 metformin partitioning between pla dynamics and compare simulation
+  behavior across conditions.
+models:
+- alias: systemsbiology_sbml_kurlovics2021_metformin_partitioning_between_pla_biomd0000001026_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_kurlovics2021_metformin_partitioning_between_pla_biomd0000001026_model.state
+  to:
+  - visualisation.systemsbiology_sbml_kurlovics2021_metformin_partitioning_between_pla_biomd0000001026_model_state
+- from: systemsbiology_sbml_kurlovics2021_metformin_partitioning_between_pla_biomd0000001026_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_kurlovics2021_metformin_partitioning_between_pla_biomd0000001026_model_summary
+- from: systemsbiology_sbml_kurlovics2021_metformin_partitioning_between_pla_biomd0000001026_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_kurlovics2021_metformin_partitioning_between_pla_biomd0000001026_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_mrbc
+    maps_to: systemsbiology_sbml_kurlovics2021_metformin_partitioning_between_pla_biomd0000001026_model.initial_mrbc
+    label: Initial Mrbc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Mrbc`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_kurlovics2021_metformin_partitioning_between_pla_biomd0000001026_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_kurlovics2021_metformin_partitioning_between_pla_biomd0000001026_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_kurlovics2021_metformin_partitioning_between_pla_biomd0000001026_model.species_labels
+  - name: mrbc
+    maps_to: systemsbiology_sbml_kurlovics2021_metformin_partitioning_between_pla_biomd0000001026_model.mrbc

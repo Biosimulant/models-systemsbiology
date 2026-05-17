@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Nijhout2004 Folatecycle Lab
+description: 'This is an SBML version of the folate cycle model model from: A mathematical
+  model of the folate cycle: new insights into folate homeostasis. Nijhout HF, Reed
+  MC, Budu P, Ulrich CM J.'
+models:
+- alias: systemsbiology_sbml_nijhout2004_folatecycle_model6655501972_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_nijhout2004_folatecycle_model6655501972_model.state
+  to:
+  - visualisation.systemsbiology_sbml_nijhout2004_folatecycle_model6655501972_model_state
+- from: systemsbiology_sbml_nijhout2004_folatecycle_model6655501972_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_nijhout2004_folatecycle_model6655501972_model_summary
+- from: systemsbiology_sbml_nijhout2004_folatecycle_model6655501972_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_nijhout2004_folatecycle_model6655501972_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_nadph
+    maps_to: systemsbiology_sbml_nijhout2004_folatecycle_model6655501972_model.initial_nadph
+    label: Initial Nadph
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NADPH`.
+  - name: initial_nadp
+    maps_to: systemsbiology_sbml_nijhout2004_folatecycle_model6655501972_model.initial_nadp
+    label: Initial Nadp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NADP`.
+  - name: initial_model_state_gly
+    maps_to: systemsbiology_sbml_nijhout2004_folatecycle_model6655501972_model.initial_model_state_gly
+    label: Initial Model State Gly
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Gly`.
+  - name: initial_hcooh
+    maps_to: systemsbiology_sbml_nijhout2004_folatecycle_model6655501972_model.initial_hcooh
+    label: Initial Hcooh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `HCOOH`.
+  - name: initial_model_state_ser
+    maps_to: systemsbiology_sbml_nijhout2004_folatecycle_model6655501972_model.initial_model_state_ser
+    label: Initial Model State Ser
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ser`.
+  - name: initial_dump
+    maps_to: systemsbiology_sbml_nijhout2004_folatecycle_model6655501972_model.initial_dump
+    label: Initial Dump
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `dUMP`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_nijhout2004_folatecycle_model6655501972_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_nijhout2004_folatecycle_model6655501972_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_nijhout2004_folatecycle_model6655501972_model.species_labels
+  - name: nadph
+    maps_to: systemsbiology_sbml_nijhout2004_folatecycle_model6655501972_model.nadph
+  - name: nadp
+    maps_to: systemsbiology_sbml_nijhout2004_folatecycle_model6655501972_model.nadp
+  - name: gly
+    maps_to: systemsbiology_sbml_nijhout2004_folatecycle_model6655501972_model.gly
+  - name: hcooh
+    maps_to: systemsbiology_sbml_nijhout2004_folatecycle_model6655501972_model.hcooh
+  - name: ser
+    maps_to: systemsbiology_sbml_nijhout2004_folatecycle_model6655501972_model.ser
+  - name: dump
+    maps_to: systemsbiology_sbml_nijhout2004_folatecycle_model6655501972_model.dump

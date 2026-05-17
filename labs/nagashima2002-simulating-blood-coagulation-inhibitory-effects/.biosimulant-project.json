@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "4c68ceef-58a8-43d8-b178-325c3d967d03",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "f42f738f-891d-4230-98ec-3b7c7d591d59",
+  "created_at": "2026-05-16T05:46:48.381295030+00:00",
+  "last_synced_at": "2026-05-17T05:09:52.453379+00:00",
+  "hub_manifest_hash": "3a8a30ad82ae2f4e0cf087d9c751dc197d3e58304f1275b003c0b9276521d7f8",
+  "package_name": "nagashima2002-simulating-blood-coagulation-inhibitory-effects-la"
+}

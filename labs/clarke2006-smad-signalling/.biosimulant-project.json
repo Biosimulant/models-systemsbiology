@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "a36749d3-71e6-4340-ae7a-79a38125e9e8",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "4e5d45ce-f1c2-4712-b3b5-fe139c104e29",
+  "created_at": "2026-05-16T05:46:42.456390167+00:00",
+  "last_synced_at": "2026-05-17T02:38:40.622996+00:00",
+  "hub_manifest_hash": "0639fc3801e2c74048b78e4b2a666b75f6182ab345fd2a08bbc89c37d07d7092",
+  "package_name": "clarke2006-smad-signalling-lab"
+}

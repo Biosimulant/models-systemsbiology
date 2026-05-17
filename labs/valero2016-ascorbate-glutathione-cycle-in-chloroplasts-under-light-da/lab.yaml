@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Valero2016 Ascorbate Glutathione Cycle In Chloroplasts Under Light Da Lab
+description: 'Valero2016 - Ascorbate-Glutathione cycle in chloroplasts under light/dark
+  conditions This model is described in the article: Modeling the ascorbate-glutathione
+  cycle in chloroplasts under light/dark c. It can be used to explore systemsbiology
+  valero2016 ascorbate glutathione cycle in dynamics and compare simulation behavior
+  across conditions.'
+models:
+- alias: systemsbiology_sbml_valero2016_ascorbate_glutathione_cycle_in_chloro_biomd0000000589_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_valero2016_ascorbate_glutathione_cycle_in_chloro_biomd0000000589_model.state
+  to:
+  - visualisation.systemsbiology_sbml_valero2016_ascorbate_glutathione_cycle_in_chloro_biomd0000000589_model_state
+- from: systemsbiology_sbml_valero2016_ascorbate_glutathione_cycle_in_chloro_biomd0000000589_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_valero2016_ascorbate_glutathione_cycle_in_chloro_biomd0000000589_model_summary
+- from: systemsbiology_sbml_valero2016_ascorbate_glutathione_cycle_in_chloro_biomd0000000589_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_valero2016_ascorbate_glutathione_cycle_in_chloro_biomd0000000589_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_nadph
+    maps_to: systemsbiology_sbml_valero2016_ascorbate_glutathione_cycle_in_chloro_biomd0000000589_model.initial_nadph
+    label: Initial Nadph
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NADPH`.
+  - name: initial_nad_pplus
+    maps_to: systemsbiology_sbml_valero2016_ascorbate_glutathione_cycle_in_chloro_biomd0000000589_model.initial_nad_pplus
+    label: Initial Nad Pplus
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NADPplus`.
+  - name: initial_model_state_asc
+    maps_to: systemsbiology_sbml_valero2016_ascorbate_glutathione_cycle_in_chloro_biomd0000000589_model.initial_model_state_asc
+    label: Initial Model State Asc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ASC`.
+  - name: initial_model_state_gsh
+    maps_to: systemsbiology_sbml_valero2016_ascorbate_glutathione_cycle_in_chloro_biomd0000000589_model.initial_model_state_gsh
+    label: Initial Model State Gsh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `GSH`.
+  - name: initial_model_state_apx
+    maps_to: systemsbiology_sbml_valero2016_ascorbate_glutathione_cycle_in_chloro_biomd0000000589_model.initial_model_state_apx
+    label: Initial Model State Apx
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `APX`.
+  - name: initial_o2neg
+    maps_to: systemsbiology_sbml_valero2016_ascorbate_glutathione_cycle_in_chloro_biomd0000000589_model.initial_o2neg
+    label: Initial O2neg
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `O2neg`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_valero2016_ascorbate_glutathione_cycle_in_chloro_biomd0000000589_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_valero2016_ascorbate_glutathione_cycle_in_chloro_biomd0000000589_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_valero2016_ascorbate_glutathione_cycle_in_chloro_biomd0000000589_model.species_labels
+  - name: nadph
+    maps_to: systemsbiology_sbml_valero2016_ascorbate_glutathione_cycle_in_chloro_biomd0000000589_model.nadph
+  - name: nad_pplus
+    maps_to: systemsbiology_sbml_valero2016_ascorbate_glutathione_cycle_in_chloro_biomd0000000589_model.nad_pplus
+  - name: asc
+    maps_to: systemsbiology_sbml_valero2016_ascorbate_glutathione_cycle_in_chloro_biomd0000000589_model.asc
+  - name: gsh
+    maps_to: systemsbiology_sbml_valero2016_ascorbate_glutathione_cycle_in_chloro_biomd0000000589_model.gsh
+  - name: apx
+    maps_to: systemsbiology_sbml_valero2016_ascorbate_glutathione_cycle_in_chloro_biomd0000000589_model.apx
+  - name: o2neg
+    maps_to: systemsbiology_sbml_valero2016_ascorbate_glutathione_cycle_in_chloro_biomd0000000589_model.o2neg

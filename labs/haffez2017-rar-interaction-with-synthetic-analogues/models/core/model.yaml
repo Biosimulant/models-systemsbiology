@@ -1,0 +1,99 @@
+schema_version: '2.0'
+title: Haffez2017 - RAR interaction with synthetic analogues
+description: 'Haffez2017 - RAR interaction with syntheticanalogues This model is described
+  in the article: The molecular basis of the interactions between synthetic retinoic
+  acid analogues and the retinoic acid rec. It can be used to explore systemsbiology
+  haffez2017 rar interaction with synthetic dynamics and compare simulation behavior
+  across conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Hesham Haffez
+- David R. Chisholm
+- Roy Valentine
+- Ehmke Pohl
+- Christopher Redfern and Andrew Whiting
+upstream:
+  id: biomodels_ebi:BIOMD0000000629
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000629
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000629
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000629?filename=BIOMD0000000629_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.haffez2017_rar_interaction_with_synthetic_analog_biomd0000000629_model:Haffez2017RarInteractionWithSyntheticAnalogBiomd0000000629Model
+  init_kwargs:
+    model_path: data/BIOMD0000000629.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_co_activator
+    maps_to: CA
+    label: Initial Co Activator
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CA`.
+  - name: initial_ligand_receptor_co_activator
+    maps_to: LRCA
+    label: Initial Ligand Receptor Co Activator
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `LRCA`.
+  - name: initial_ligand_receptor
+    maps_to: LR
+    label: Initial Ligand Receptor
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `LR`.
+  - name: initial_receptor
+    maps_to: R
+    label: Initial Receptor
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `R`.
+  - name: initial_ligand
+    maps_to: L
+    label: Initial Ligand
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `L`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: co_activator
+    maps_to: CA
+    label: CoActivator
+    description: CoActivator. Maps to SBML symbol `CA`.
+  - name: ligand_receptor_co_activator
+    maps_to: LRCA
+    label: Ligand-Receptor-CoActivator
+    description: Ligand-Receptor-CoActivator. Maps to SBML symbol `LRCA`.
+  - name: ligand_receptor
+    maps_to: LR
+    label: Ligand-Receptor
+    description: Ligand-Receptor. Maps to SBML symbol `LR`.
+  - name: receptor
+    maps_to: R
+    label: Receptor
+    description: Receptor. Maps to SBML symbol `R`.
+  - name: ligand
+    maps_to: L
+    label: Ligand
+    description: Ligand. Maps to SBML symbol `L`.

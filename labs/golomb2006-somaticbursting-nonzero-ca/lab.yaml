@@ -1,0 +1,47 @@
+schema_version: '2.0'
+title: Golomb2006 Somaticbursting Nonzero Ca Lab
+description: 'Model is according to the paper Contribution of Persistent Na+ Current
+  and M-Type K+ Current to Somatic Bursting in CA1 Pyramidal Cell: Combined Experimental.
+  This is the second model from this paper.'
+models:
+- alias: systemsbiology_sbml_golomb2006_somaticbursting_nonzero_ca_biomd0000000119_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_golomb2006_somaticbursting_nonzero_ca_biomd0000000119_model.state
+  to:
+  - visualisation.systemsbiology_sbml_golomb2006_somaticbursting_nonzero_ca_biomd0000000119_model_state
+- from: systemsbiology_sbml_golomb2006_somaticbursting_nonzero_ca_biomd0000000119_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_golomb2006_somaticbursting_nonzero_ca_biomd0000000119_model_summary
+- from: systemsbiology_sbml_golomb2006_somaticbursting_nonzero_ca_biomd0000000119_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_golomb2006_somaticbursting_nonzero_ca_biomd0000000119_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_ca
+    maps_to: systemsbiology_sbml_golomb2006_somaticbursting_nonzero_ca_biomd0000000119_model.initial_model_state_ca
+    label: Initial Model State Ca
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_golomb2006_somaticbursting_nonzero_ca_biomd0000000119_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_golomb2006_somaticbursting_nonzero_ca_biomd0000000119_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_golomb2006_somaticbursting_nonzero_ca_biomd0000000119_model.species_labels
+  - name: model_state_ca
+    maps_to: systemsbiology_sbml_golomb2006_somaticbursting_nonzero_ca_biomd0000000119_model.model_state_ca

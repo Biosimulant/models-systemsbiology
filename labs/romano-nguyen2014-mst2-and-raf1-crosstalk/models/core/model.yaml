@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Romano-Nguyen2014 - MST2 and Raf1 Crosstalk
+description: Originally created by libAntimony v1.3 (using libSBML 4.1.0-b2). It can
+  be used to explore systemsbiology romano nguyen2014 mst2 and raf1 dynamics and compare
+  simulation behavior across conditions.
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- David Romano
+- Lan K Nguyen
+- David Matallanas
+- Melinda Halasz
+- Carolanne Doherty
+upstream:
+  id: biomodels_ebi:MODEL1506070001
+  source_db: biomodels_ebi
+  source_id: MODEL1506070001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1506070001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1506070001?filename=MODEL1506070001_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.romano_nguyen2014_mst2_and_raf1_crosstalk_model1506070001_model:RomanoNguyen2014Mst2AndRaf1CrosstalkModel1506070001Model
+  init_kwargs:
+    model_path: data/MODEL1506070001.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_erk
+    maps_to: ERK
+    label: Initial Model State ERK
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ERK`.
+  - name: initial_model_state_mek
+    maps_to: MEK
+    label: Initial Model State Mek
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MEK`.
+  - name: initial_mst2
+    maps_to: MST2
+    label: Initial Mst2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MST2`.
+  - name: initial_p_raf_1_i
+    maps_to: pRaf_1i
+    label: Initial P RAF 1 I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `pRaf_1i`.
+  - name: initial_lats1
+    maps_to: LATS1
+    label: Initial Lats1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `LATS1`.
+  - name: initial_f1_a
+    maps_to: F1A
+    label: Initial F1 A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `F1A`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: erk
+    maps_to: ERK
+    label: ERK
+    description: ERK. Maps to SBML symbol `ERK`.
+  - name: mek
+    maps_to: MEK
+    label: MEK
+    description: MEK. Maps to SBML symbol `MEK`.
+  - name: mst2
+    maps_to: MST2
+    label: MST2
+    description: MST2. Maps to SBML symbol `MST2`.
+  - name: p_raf_1_i
+    maps_to: pRaf_1i
+    label: PRaf 1I
+    description: PRaf 1I. Maps to SBML symbol `pRaf_1i`.
+  - name: lats1
+    maps_to: LATS1
+    label: LATS1
+    description: LATS1. Maps to SBML symbol `LATS1`.
+  - name: f1_a
+    maps_to: F1A
+    label: F1A
+    description: F1A. Maps to SBML symbol `F1A`.

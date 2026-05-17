@@ -1,0 +1,91 @@
+schema_version: '2.0'
+title: MODEL1704110001 Variant Proctor2017 Identifying Microrna For Muscle Regeneration During Ageing 5 Lab
+description: 'Proctor2017 - Identifying microRNA for muscleregeneration during ageing
+  (Mir181_in_muscle) This model is described in the article: Using computer simulation
+  models to investigate the most promising mi. It can be used to explore systemsbiology
+  proctor2017 identifying microrna for muscle dynamics and compare simulation behavior
+  across conditions.'
+models:
+- alias: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110001_model.state
+  to:
+  - visualisation.systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110001_model_state
+- from: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110001_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110001_model_summary
+- from: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110001_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_hox_a11
+    maps_to: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110001_model.initial_hox_a11
+    label: Initial Hox A11
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `HoxA11`.
+  - name: initial_sirt1
+    maps_to: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110001_model.initial_sirt1
+    label: Initial Sirt1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Sirt1`.
+  - name: initial_fox_o3
+    maps_to: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110001_model.initial_fox_o3
+    label: Initial Fox O3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `FoxO3`.
+  - name: initial_sirt1_mrna
+    maps_to: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110001_model.initial_sirt1_mrna
+    label: Initial Sirt1 MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Sirt1_mRNA`.
+  - name: initial_hox_a11_mrna
+    maps_to: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110001_model.initial_hox_a11_mrna
+    label: Initial Hox A11 MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `HoxA11_mRNA`.
+  - name: initial_fox_o3_sirt1
+    maps_to: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110001_model.initial_fox_o3_sirt1
+    label: Initial Fox O3 Sirt1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `FoxO3_Sirt1`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110001_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110001_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110001_model.species_labels
+  - name: hox_a11
+    maps_to: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110001_model.hox_a11
+  - name: sirt1
+    maps_to: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110001_model.sirt1
+  - name: fox_o3
+    maps_to: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110001_model.fox_o3
+  - name: sirt1_mrna
+    maps_to: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110001_model.sirt1_mrna
+  - name: hox_a11_mrna
+    maps_to: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110001_model.hox_a11_mrna
+  - name: fox_o3_sirt1
+    maps_to: systemsbiology_sbml_proctor2017_identifying_microrna_for_muscle_rege_model1704110001_model.fox_o3_sirt1

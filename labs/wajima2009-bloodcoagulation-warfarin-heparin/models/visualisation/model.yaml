@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Wajima2009_BloodCoagulation_warfarin_heparin Visualisation
+description: Question-and-answer and dynamic visual summaries for Wajima2009_BloodCoagulation_warfarin_heparin.
+standard: other
+tags:
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Wajima2009 Bloodcoagulation Warfarin Heparin Lab
+    question: 'Which drug, dose, or target-linked model states drive the simulated
+      profile? Source model: Wajima2009_BloodCoagulation_warfarin_heparin.'
+    answer_focus: Q/A table plus pharmacology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_wajima2009_bloodcoagulation_warfarin_heparin_biomd0000000340_model
+      title: Wajima2009_BloodCoagulation_warfarin_heparin
+      observables:
+      - id: VK_p
+        port: vk_p
+        label: VK_p
+        group: physiology
+      - id: Xa_TFPI
+        port: xa_tfpi
+        label: Xa_TFPI
+        group: physiology
+      - id: Xa_ATIII_Heparin
+        port: xa_atiii_heparin
+        label: Xa_ATIII_Heparin
+        group: physiology
+      - id: Va_Xa
+        port: va_xa
+        label: Va_Xa
+        group: physiology
+      - id: VIIa_TF_Xa_TFPI
+        port: vi_ia_tf_xa_tfpi
+        label: VIIa_TF_Xa_TFPI
+        group: physiology
+      - id: VIIa_TF
+        port: vi_ia_tf
+        label: VIIa_TF
+        group: physiology
+io:
+  inputs: []
+  outputs: []

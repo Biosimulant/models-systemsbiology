@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "5e25b74f-121f-4da5-8a78-0a8be0a1bb93",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "a8a45f35-5a48-4837-9921-07923a685a73",
+  "created_at": "2026-05-16T05:46:45.422110641+00:00",
+  "last_synced_at": "2026-05-17T04:28:53.977668+00:00",
+  "hub_manifest_hash": "1df361a811f10992f64204d1128a642927ddbbb6dec8882ffb602c7259e59816",
+  "package_name": "leloup2004-mammalian-circadian-rhythm-models-for-23-8-and-24-2-h"
+}

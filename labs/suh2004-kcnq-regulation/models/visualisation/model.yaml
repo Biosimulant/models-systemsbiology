@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Suh2004_KCNQ_Regulation Visualisation
+description: Question-and-answer and dynamic visual summaries for Suh2004_KCNQ_Regulation.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Suh2004 Kcnq Regulation Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Suh2004_KCNQ_Regulation.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_suh2004_kcnq_regulation_biomd0000000081_model
+      title: Suh2004_KCNQ_Regulation
+      observables:
+      - id: ATP_C
+        port: atp_c
+        label: ATP_C
+        group: metabolism
+      - id: PI_M
+        port: pi_m
+        label: PI_M
+        group: core_system_state
+      - id: PIP2_M
+        port: pip2_m
+        label: PIP2_M
+        group: core_system_state
+      - id: Mg2_C
+        port: mg2_c
+        label: Mg2_C
+        group: core_system_state
+      - id: PIP_M
+        port: pip_m
+        label: PIP_M
+        group: core_system_state
+      - id: GGDP_M
+        port: ggdp_m
+        label: GGDP_M
+        group: core_system_state
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "049ed958-2b32-4366-b25c-f0ec1aa25c4b",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "c546c03f-8354-41bb-89a3-8164d1bfef52",
+  "created_at": "2026-05-16T05:46:43.703441567+00:00",
+  "last_synced_at": "2026-05-17T03:22:34.695602+00:00",
+  "hub_manifest_hash": "a7495ea7ca60a54e73dc0e614845295e8fe789d7cad047acd9183ffe84a44330",
+  "package_name": "gonzalezheydrich1994-hpaaxisregulation-cortisolproduction-lab"
+}

@@ -1,0 +1,110 @@
+schema_version: '2.0'
+title: Steckmann2012 - Amyloid beta-protein fibrillogenesis (kinetics of secondary
+  structure conversion)
+description: 'Steckmann2012 - Amyloid beta-proteinfibrillogenesis (kinetics of secondary
+  structure conversion) This model is described in the article: Kinetics of peptide
+  secondary structure conversion during amylo. It can be used to explore systemsbiology
+  steckmann2012 amyloid beta protein fibrillogenes dynamics and compare simulation
+  behavior across conditions.'
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Timothy Steckmann
+- Zubair Awan
+- Bernard S Gerstman
+- Prem P Chapagain
+upstream:
+  id: biomodels_ebi:BIOMD0000000533
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000533
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000533
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000533?filename=BIOMD0000000533_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.steckmann2012_amyloid_beta_protein_fibrillogenes_biomd0000000533_model:Steckmann2012AmyloidBetaProteinFibrillogenesBiomd0000000533Model
+  init_kwargs:
+    model_path: data/BIOMD0000000533.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_beta
+    maps_to: beta
+    label: Initial Beta
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `beta`.
+  - name: initial_alpha
+    maps_to: alpha
+    label: Initial Alpha
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `alpha`.
+  - name: initial_rct0
+    maps_to: RCT0
+    label: Initial Rct0
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RCT0`.
+  - name: initial_model_state_rc
+    maps_to: RC
+    label: Initial Model State Rc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RC`.
+  - name: initial_model_state_bn1
+    maps_to: BN1
+    label: Initial Model State BN1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `BN1`.
+  - name: initial_rct1
+    maps_to: RCT1
+    label: Initial Rct1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RCT1`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: beta
+    maps_to: beta
+    label: beta
+    description: beta. Maps to SBML symbol `beta`.
+  - name: alpha
+    maps_to: alpha
+    label: alpha
+    description: alpha. Maps to SBML symbol `alpha`.
+  - name: rct0
+    maps_to: RCT0
+    label: RCT0
+    description: RCT0. Maps to SBML symbol `RCT0`.
+  - name: model_state_rc
+    maps_to: RC
+    label: RC
+    description: RC. Maps to SBML symbol `RC`.
+  - name: bn1
+    maps_to: BN1
+    label: BN1
+    description: BN1. Maps to SBML symbol `BN1`.
+  - name: rct1
+    maps_to: RCT1
+    label: RCT1
+    description: RCT1. Maps to SBML symbol `RCT1`.

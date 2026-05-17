@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Bialik2010 Apoptosis Spikemodel Lab
+description: 'This model is from the article: Systems biology analysis of programmed
+  cell death Shani Bialik, Einat Zalckvar, Yaara Ber, Assaf D. Rubinstein, Adi Kimchi
+  Trends in Biochemical Sciences Volume 35, Iss.'
+models:
+- alias: systemsbiology_sbml_bialik2010_apoptosis_spikemodel_model1107050000_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_bialik2010_apoptosis_spikemodel_model1107050000_model.state
+  to:
+  - visualisation.systemsbiology_sbml_bialik2010_apoptosis_spikemodel_model1107050000_model_state
+- from: systemsbiology_sbml_bialik2010_apoptosis_spikemodel_model1107050000_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_bialik2010_apoptosis_spikemodel_model1107050000_model_summary
+- from: systemsbiology_sbml_bialik2010_apoptosis_spikemodel_model1107050000_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_bialik2010_apoptosis_spikemodel_model1107050000_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_mrna_xiap
+    maps_to: systemsbiology_sbml_bialik2010_apoptosis_spikemodel_model1107050000_model.initial_mrna_xiap
+    label: Initial MRNA Xiap
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mRNA_XIAP`.
+  - name: initial_mrna_eif4_g2
+    maps_to: systemsbiology_sbml_bialik2010_apoptosis_spikemodel_model1107050000_model.initial_mrna_eif4_g2
+    label: Initial MRNA Eif4 G2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mRNA_EIF4G2`.
+  - name: initial_mrna_cdk1
+    maps_to: systemsbiology_sbml_bialik2010_apoptosis_spikemodel_model1107050000_model.initial_mrna_cdk1
+    label: Initial MRNA Cdk1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mRNA_CDK1`.
+  - name: initial_mrna_birc2
+    maps_to: systemsbiology_sbml_bialik2010_apoptosis_spikemodel_model1107050000_model.initial_mrna_birc2
+    label: Initial MRNA Birc2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mRNA_BIRC2`.
+  - name: initial_mrna_bcl2
+    maps_to: systemsbiology_sbml_bialik2010_apoptosis_spikemodel_model1107050000_model.initial_mrna_bcl2
+    label: Initial MRNA Bcl2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mRNA_BCL2`.
+  - name: initial_mrna_apaf1
+    maps_to: systemsbiology_sbml_bialik2010_apoptosis_spikemodel_model1107050000_model.initial_mrna_apaf1
+    label: Initial MRNA Apaf1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mRNA_APAF1`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_bialik2010_apoptosis_spikemodel_model1107050000_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_bialik2010_apoptosis_spikemodel_model1107050000_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_bialik2010_apoptosis_spikemodel_model1107050000_model.species_labels
+  - name: mrna_xiap
+    maps_to: systemsbiology_sbml_bialik2010_apoptosis_spikemodel_model1107050000_model.mrna_xiap
+  - name: mrna_eif4_g2
+    maps_to: systemsbiology_sbml_bialik2010_apoptosis_spikemodel_model1107050000_model.mrna_eif4_g2
+  - name: mrna_cdk1
+    maps_to: systemsbiology_sbml_bialik2010_apoptosis_spikemodel_model1107050000_model.mrna_cdk1
+  - name: mrna_birc2
+    maps_to: systemsbiology_sbml_bialik2010_apoptosis_spikemodel_model1107050000_model.mrna_birc2
+  - name: mrna_bcl2
+    maps_to: systemsbiology_sbml_bialik2010_apoptosis_spikemodel_model1107050000_model.mrna_bcl2
+  - name: mrna_apaf1
+    maps_to: systemsbiology_sbml_bialik2010_apoptosis_spikemodel_model1107050000_model.mrna_apaf1

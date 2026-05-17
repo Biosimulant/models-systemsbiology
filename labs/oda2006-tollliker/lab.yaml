@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Oda2006 Tollliker Lab
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models (http://www.ebi.ac.uk/biomodels/). It is copyright (c) 2005-2011
+  The BioModels.net Team.'
+models:
+- alias: systemsbiology_sbml_oda2006_tollliker_model2463683119_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_oda2006_tollliker_model2463683119_model.state
+  to:
+  - visualisation.systemsbiology_sbml_oda2006_tollliker_model2463683119_model_state
+- from: systemsbiology_sbml_oda2006_tollliker_model2463683119_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_oda2006_tollliker_model2463683119_model_summary
+- from: systemsbiology_sbml_oda2006_tollliker_model2463683119_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_oda2006_tollliker_model2463683119_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_target_genes_br_ex_il_1_il_8_il_6_tnf_alpha_ifn_gamma_gm_csf_m_csf_br_i_nos_cox2_mhc_class_i_ii_e_selectin_beta_defensin2
+    maps_to: systemsbiology_sbml_oda2006_tollliker_model2463683119_model.initial_target_genes_br_ex_il_1_il_8_il_6_tnf_alpha_ifn_gamma_gm_csf_m_csf_br_i_nos_cox2_mhc_class_i_ii_e_selectin_beta_defensin2
+    label: Initial Target Genes Br Ex Il 1 Il 8 Il 6 TNF Alpha Ifn Gamma Gm Csf M
+      Csf Br I Nos Cox2 Mhc Class I Ii E Selectin Beta Defensin2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s1290`.
+  - name: initial_target_genes_br_ex_cyclin_d1
+    maps_to: systemsbiology_sbml_oda2006_tollliker_model2463683119_model.initial_target_genes_br_ex_cyclin_d1
+    label: Initial Target Genes Br Ex Cyclin D1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s1304`.
+  - name: initial_cell_cycle
+    maps_to: systemsbiology_sbml_oda2006_tollliker_model2463683119_model.initial_cell_cycle
+    label: Initial Cell Cycle
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s1138`.
+  - name: initial_rna_br_metabolism
+    maps_to: systemsbiology_sbml_oda2006_tollliker_model2463683119_model.initial_rna_br_metabolism
+    label: Initial RNA Br Metabolism
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s805`.
+  - name: initial_complex_rip1_traf6_ticam1
+    maps_to: systemsbiology_sbml_oda2006_tollliker_model2463683119_model.initial_complex_rip1_traf6_ticam1
+    label: Initial Complex Rip1 Traf6 Ticam1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s288`.
+  - name: initial_transcription
+    maps_to: systemsbiology_sbml_oda2006_tollliker_model2463683119_model.initial_transcription
+    label: Initial Transcription
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s1184`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_oda2006_tollliker_model2463683119_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_oda2006_tollliker_model2463683119_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_oda2006_tollliker_model2463683119_model.species_labels
+  - name: target_genes_br_ex_il_1_il_8_il_6_tnf_alpha_ifn_gamma_gm_csf_m_csf_br_i_nos_cox2_mhc_class_i_ii_e_selectin_beta_defensin2
+    maps_to: systemsbiology_sbml_oda2006_tollliker_model2463683119_model.target_genes_br_ex_il_1_il_8_il_6_tnf_alpha_ifn_gamma_gm_csf_m_csf_br_i_nos_cox2_mhc_class_i_ii_e_selectin_beta_defensin2
+  - name: target_genes_br_ex_cyclin_d1
+    maps_to: systemsbiology_sbml_oda2006_tollliker_model2463683119_model.target_genes_br_ex_cyclin_d1
+  - name: cell_cycle
+    maps_to: systemsbiology_sbml_oda2006_tollliker_model2463683119_model.cell_cycle
+  - name: rna_br_metabolism
+    maps_to: systemsbiology_sbml_oda2006_tollliker_model2463683119_model.rna_br_metabolism
+  - name: complex_rip1_traf6_ticam1
+    maps_to: systemsbiology_sbml_oda2006_tollliker_model2463683119_model.complex_rip1_traf6_ticam1
+  - name: transcription
+    maps_to: systemsbiology_sbml_oda2006_tollliker_model2463683119_model.transcription

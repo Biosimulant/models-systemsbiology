@@ -1,0 +1,78 @@
+schema_version: '2.0'
+title: Nielsen1998_Glycolysis
+description: This model was automatically converted from model BIOMD0000000042 by
+  using libSBML . According to the BioModels Database terms of use , this generated
+  model is not related with model BIOMD0000000042 a.
+standard: other
+tags:
+- generegulation
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- K Nielsen
+- P G Sørensen
+- F Hynne
+- H G Busse
+upstream:
+  id: biomodels_ebi:BIOMD0000000042
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000042
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000042
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000042?filename=BIOMD0000000042_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.nielsen1998_glycolysis_biomd0000000042_model:Nielsen1998GlycolysisBiomd0000000042Model
+  init_kwargs:
+    model_path: data/BIOMD0000000042.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: flow
+    maps_to: flow
+    label: Flow
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `flow`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: atp
+    maps_to: ATP
+    label: ATP
+    description: ATP. Maps to SBML symbol `ATP`.
+  - name: nad
+    maps_to: NAD
+    label: NAD
+    description: NAD. Maps to SBML symbol `NAD`.
+  - name: f6_p
+    maps_to: F6P
+    label: F6P
+    description: F6P. Maps to SBML symbol `F6P`.
+  - name: nadh
+    maps_to: NADH
+    label: NADH
+    description: NADH. Maps to SBML symbol `NADH`.
+  - name: et_oh
+    maps_to: EtOH
+    label: EtOH
+    description: EtOH. Maps to SBML symbol `EtOH`.
+  - name: dpg
+    maps_to: DPG
+    label: DPG
+    description: DPG. Maps to SBML symbol `DPG`.

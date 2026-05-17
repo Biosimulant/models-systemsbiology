@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Gould2013 - Temperature Sensitive Circadian Clock Visualisation
+description: Question-and-answer and dynamic visual summaries for Gould2013 - Temperature
+  Sensitive Circadian Clock.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Gould2013 Temperature Sensitive Circadian Clock Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Gould2013 - Temperature Sensitive Circadian Clock.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_gould2013_temperature_sensitive_circadian_clock_biomd0000000564_model
+      title: Gould2013 - Temperature Sensitive Circadian Clock
+      observables:
+      - id: cL_m
+        port: c_l_m
+        label: cL_m
+        group: physiology
+      - id: cP
+        port: c_p
+        label: cP
+        group: physiology
+      - id: cL
+        port: c_l
+        label: cL
+        group: physiology
+      - id: cT
+        port: c_t
+        label: cT
+        group: physiology
+      - id: cP9_m
+        port: c_p9_m
+        label: cP9_m
+        group: physiology
+      - id: cZTL
+        port: c_ztl
+        label: cZTL
+        group: physiology
+io:
+  inputs: []
+  outputs: []

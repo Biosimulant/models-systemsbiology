@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Sarai2003_CardiacSAnodePacemaker Visualisation
+description: Question-and-answer and dynamic visual summaries for Sarai2003_CardiacSAnodePacemaker.
+standard: other
+tags:
+- cardiovascular
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Sarai2003 Cardiacsanodepacemaker Lab
+    question: 'Which cardiovascular or blood-state variables dominate the simulated
+      response? Source model: Sarai2003_CardiacSAnodePacemaker.'
+    answer_focus: Q/A table plus cardiovascular timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_sarai2003_cardiacsanodepacemaker_model1006230108_model
+      title: Sarai2003_CardiacSAnodePacemaker
+      observables:
+      - id: ATPi
+        port: at_pi
+        label: ATPi
+        group: metabolism
+      - id: Ca_Total_internal_ion_concentrations
+        port: ca_total_internal_ion_concentrations
+        label: Ca Total Internal Ion Concentrations
+        group: gene_regulation
+      - id: y3_st_channel_y3_gate
+        port: y3_st_channel_y3_gate
+        label: Y3 St Channel Y3 Gate
+        group: physiology
+      - id: y2_st_channel_y2_gate
+        port: y2_st_channel_y2_gate
+        label: Y2 St Channel Y2 Gate
+        group: physiology
+      - id: y1_st_channel_y1_gate
+        port: y1_st_channel_y1_gate
+        label: Y1 St Channel Y1 Gate
+        group: physiology
+      - id: y_SR_calcium_pump_y_gate
+        port: y_sr_calcium_pump_y_gate
+        label: Y SR Calcium Pump Y Gate
+        group: physiology
+io:
+  inputs: []
+  outputs: []

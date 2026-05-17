@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "e7fe99e6-2827-46f5-baed-a04425fcb3df",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "3d798428-a77f-462c-9356-824e25dd5482",
+  "created_at": "2026-05-16T05:46:42.696390014+00:00",
+  "last_synced_at": "2026-05-17T02:47:56.444883+00:00",
+  "hub_manifest_hash": "339686b6994af75b721350e2f0d1b8238ea8ecab2a79e1c54dc5eac522137238",
+  "package_name": "dan2006-glycolysis-reduction-lab"
+}

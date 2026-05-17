@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "66d79ed4-d67c-4864-82a9-c53f9dea4950",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "19f67c4e-2c6a-451f-83ec-3b4ce0cb325b",
+  "created_at": "2026-05-16T05:46:43.062767663+00:00",
+  "last_synced_at": "2026-05-17T03:03:05.231472+00:00",
+  "hub_manifest_hash": "34718342117f878deba4bfc714920c34c1be2787a8ec3b37f84098831ff174c3",
+  "package_name": "farhy2009-glucagoncounterregulationmodel-lab"
+}

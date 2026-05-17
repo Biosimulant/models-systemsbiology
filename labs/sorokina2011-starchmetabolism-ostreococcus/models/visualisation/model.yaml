@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Sorokina2011_StarchMetabolism_Ostreococcus Visualisation
+description: Question-and-answer and dynamic visual summaries for Sorokina2011_StarchMetabolism_Ostreococcus.
+standard: other
+tags:
+- generegulation
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Sorokina2011 Starchmetabolism Ostreococcus Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Sorokina2011_StarchMetabolism_Ostreococcus.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_sorokina2011_starchmetabolism_ostreococcus_model1204240000_model
+      title: Sorokina2011_StarchMetabolism_Ostreococcus
+      observables:
+      - id: species_16
+        port: maltotriose
+        label: maltotriose
+        group: metabolism
+      - id: species_37
+        port: maltose
+        label: maltose
+        group: metabolism
+      - id: species_39
+        port: glu
+        label: glu
+        group: metabolism
+      - id: species_13
+        port: p_pi
+        label: PPi
+        group: metabolism
+      - id: species_7
+        port: model_state_p
+        label: P
+        group: metabolism
+      - id: species_3
+        port: nadph
+        label: NADPH
+        group: metabolism
+io:
+  inputs: []
+  outputs: []

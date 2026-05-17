@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "0de09d35-26b8-4dcd-b8f4-ad6350b9d269",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "64fee89c-127c-41ba-b9d0-2aa68bc20f64",
+  "created_at": "2026-05-16T05:46:44.176024062+00:00",
+  "last_synced_at": "2026-05-17T03:44:34.496168+00:00",
+  "hub_manifest_hash": "b8b45a00bb26b344d42c59dab685ab6dfca610127cd2482f4037104f217a898a",
+  "package_name": "hong2009-circadianclock-lab"
+}

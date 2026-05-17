@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Rodriguez2005_denovo_pyrimidine_biosynthesis
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models. It is copyright (c) 2005-2011 The BioModels.net Team.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Mauricio Rodríguez
+- Theresa A Good
+- Melinda E Wales
+- Jean P Hua
+- James R Wild
+upstream:
+  id: biomodels_ebi:MODEL0995500644
+  source_db: biomodels_ebi
+  source_id: MODEL0995500644
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL0995500644
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0995500644?filename=MODEL0995500644_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.rodriguez2005_denovo_pyrimidine_biosynthesis_model0995500644_model:Rodriguez2005DenovoPyrimidineBiosynthesisModel0995500644Model
+  init_kwargs:
+    model_path: data/MODEL0995500644.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_atp
+    maps_to: atp
+    label: Initial Model State ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `atp`.
+  - name: initial_model_state_ca
+    maps_to: ca
+    label: Initial Model State Ca
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ca`.
+  - name: initial_model_state_e2
+    maps_to: E2
+    label: Initial Model State E2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `E2`.
+  - name: initial_model_state_oro
+    maps_to: oro
+    label: Initial Model State Oro
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `oro`.
+  - name: initial_model_state_omp
+    maps_to: omp
+    label: Initial Model State Omp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `omp`.
+  - name: initial_model_state_dho
+    maps_to: dho
+    label: Initial Model State Dho
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `dho`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: atp
+    maps_to: atp
+    label: atp
+    description: atp. Maps to SBML symbol `atp`.
+  - name: model_state_ca
+    maps_to: ca
+    label: Ca
+    description: Ca. Maps to SBML symbol `ca`.
+  - name: model_state_e2
+    maps_to: E2
+    label: E2
+    description: E2. Maps to SBML symbol `E2`.
+  - name: oro
+    maps_to: oro
+    label: Oro
+    description: Oro. Maps to SBML symbol `oro`.
+  - name: omp
+    maps_to: omp
+    label: Omp
+    description: Omp. Maps to SBML symbol `omp`.
+  - name: dho
+    maps_to: dho
+    label: Dho
+    description: Dho. Maps to SBML symbol `dho`.

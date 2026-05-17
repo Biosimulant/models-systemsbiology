@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Görlich2003_RanGTP_gradient Visualisation
+description: Question-and-answer and dynamic visual summaries for Görlich2003_RanGTP_gradient.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Gorlich2003 Rangtp Gradient Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Görlich2003_RanGTP_gradient.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_g_rlich2003_rangtp_gradient_biomd0000000192_model
+      title: Görlich2003_RanGTP_gradient
+      observables:
+      - id: GTP
+        port: gtp
+        label: GTP
+        group: gene_regulation
+      - id: RanGDP_cy
+        port: ran_gdp_cy
+        label: RanGDP Cy
+        group: gene_regulation
+      - id: RanBP1
+        port: ran_bp1
+        label: RanBP1
+        group: gene_regulation
+      - id: GDP
+        port: gdp
+        label: GDP
+        group: gene_regulation
+      - id: RanGAP
+        port: ran_gap
+        label: RanGAP
+        group: gene_regulation
+      - id: RCC1
+        port: rcc1
+        label: RCC1
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

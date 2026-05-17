@@ -1,0 +1,80 @@
+schema_version: '2.0'
+title: Diedrichs2018 - A data-entrained computational model for testing the regulatory
+  logic of the vertebrate unfolded protein response
+description: 'A data-entrained computational model fortesting the regulatory logic
+  of the vertebrate unfolded proteinresponse This model is described in the article:
+  A data-entrained computational model for testing. It can be used to explore systemsbiology
+  diedrichs2018 a data entrained computational dynamics and compare simulation behavior
+  across conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Danilo R Diedrichs
+- Javier A Gomez
+- Chun-Sing Huang
+- D Thomas Rutkowski
+- Rodica Curtu
+upstream:
+  id: biomodels_ebi:BIOMD0000000703
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000703
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000703
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000703?filename=BIOMD0000000703_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.diedrichs2018_a_data_entrained_computational_mod_biomd0000000703_model:Diedrichs2018ADataEntrainedComputationalModBiomd0000000703Model
+  init_kwargs:
+    model_path: data/BIOMD0000000703.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: stress
+    maps_to: Stress
+    label: Stress
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `Stress`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_x
+    maps_to: x
+    label: x
+    description: x. Maps to SBML symbol `x`.
+  - name: model_state_g
+    maps_to: g
+    label: g
+    description: g. Maps to SBML symbol `g`.
+  - name: model_state_c
+    maps_to: c
+    label: c
+    description: c. Maps to SBML symbol `c`.
+  - name: model_state_b
+    maps_to: b
+    label: b
+    description: b. Maps to SBML symbol `b`.
+  - name: model_state_ep
+    maps_to: Ep
+    label: Ep
+    description: Ep. Maps to SBML symbol `Ep`.
+  - name: btot
+    maps_to: Btot
+    label: Btot
+    description: Btot. Maps to SBML symbol `Btot`.

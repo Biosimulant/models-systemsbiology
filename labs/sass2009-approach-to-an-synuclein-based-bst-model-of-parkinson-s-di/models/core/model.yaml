@@ -1,0 +1,109 @@
+schema_version: '2.0'
+title: Sass2009 - Approach to an α-synuclein-based BST model of Parkinson's disease
+description: 'Sass2009 - Approach to anα-synuclein-based BST model of Parkinson''s
+  disease This model is described in the article: A pragmatic approach to biochemical
+  systems theory applied to an alpha-synuclein-bas. It can be used to explore systemsbiology
+  sass2009 approach to an synuclein dynamics and compare simulation behavior across
+  conditions.'
+standard: other
+tags:
+- neuroscience
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Matthew B Sass
+- Alyson N Lorenz
+- Robert L Green
+- Randolph A Coleman
+upstream:
+  id: biomodels_ebi:BIOMD0000000575
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000575
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000575
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000575?filename=BIOMD0000000575_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.sass2009_approach_to_an_synuclein_based_bst_mode_biomd0000000575_model:Sass2009ApproachToAnSynucleinBasedBstModeBiomd0000000575Model
+  init_kwargs:
+    model_path: data/BIOMD0000000575.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_nad
+    maps_to: NAD
+    label: Initial Model State Nad
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NAD`.
+  - name: initial_model_state_atp
+    maps_to: ATP
+    label: Initial Model State ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATP`.
+  - name: initial_nadh
+    maps_to: NADH
+    label: Initial Nadh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NADH`.
+  - name: initial_v_da
+    maps_to: V_DA
+    label: Initial V Da
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `V_DA`.
+  - name: initial_l_tyr
+    maps_to: L_Tyr
+    label: Initial L Tyr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `L_Tyr`.
+  - name: initial_parkin_synphilin_1_ub
+    maps_to: Parkin_synphilin_1_ub
+    label: Initial Parkin Synphilin 1 Ub
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Parkin_synphilin_1_ub`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: nad
+    maps_to: NAD
+    label: NAD+
+    description: NAD+. Maps to SBML symbol `NAD`.
+  - name: atp
+    maps_to: ATP
+    label: ATP
+    description: ATP. Maps to SBML symbol `ATP`.
+  - name: nadh
+    maps_to: NADH
+    label: NADH
+    description: NADH. Maps to SBML symbol `NADH`.
+  - name: v_da
+    maps_to: V_DA
+    label: V-DA
+    description: V-DA. Maps to SBML symbol `V_DA`.
+  - name: l_tyr
+    maps_to: L_Tyr
+    label: L-Tyr
+    description: L-Tyr. Maps to SBML symbol `L_Tyr`.
+  - name: parkin_synphilin_1_ub
+    maps_to: Parkin_synphilin_1_ub
+    label: Parkin-synphilin-1-ub
+    description: Parkin-synphilin-1-ub. Maps to SBML symbol `Parkin_synphilin_1_ub`.

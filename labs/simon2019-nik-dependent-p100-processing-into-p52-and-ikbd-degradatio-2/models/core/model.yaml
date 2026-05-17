@@ -1,0 +1,105 @@
+schema_version: '2.0'
+title: Simon2019 - NIK-dependent p100 processing into p52 and IkBd degradation, mass
+  action, SBML 2v4
+description: This model represents NIK-dependent p100 processing into p52 and NIK-dependent
+  IkBd degradation with mass action kinetics. Compare this mass action representation
+  to the Michaelis-Menten model.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Simon Mitchell
+- Alexander Hoffmann
+upstream:
+  id: biomodels_ebi:BIOMD0000000870
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000870
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000870
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000870?filename=Simon2019_model4.xml
+  license: CC0
+biosim:
+  entrypoint: src.simon2019_nik_dependent_p100_processing_into_p52_biomd0000000870_model:Simon2019NikDependentP100ProcessingIntoP52Biomd0000000870Model
+  init_kwargs:
+    model_path: data/BIOMD0000000870.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_p100t
+    maps_to: p100t
+    label: Initial P100t
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `p100t`.
+  - name: initial_model_state_p52
+    maps_to: p52
+    label: Initial Model State P52
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `p52`.
+  - name: initial_p100_nik
+    maps_to: p100_NIK
+    label: Initial P100 Nik
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `p100_NIK`.
+  - name: initial_p100
+    maps_to: p100
+    label: Initial P100
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `p100`.
+  - name: initial_ik_bd_nik
+    maps_to: IkBd_NIK
+    label: Initial Ik Bd Nik
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IkBd_NIK`.
+  - name: initial_model_state_nik
+    maps_to: NIK
+    label: Initial Model State Nik
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NIK`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: p100t
+    maps_to: p100t
+    label: p100t
+    description: p100t. Maps to SBML symbol `p100t`.
+  - name: p52
+    maps_to: p52
+    label: p52
+    description: p52. Maps to SBML symbol `p52`.
+  - name: p100_nik
+    maps_to: p100_NIK
+    label: p100:NIK
+    description: p100:NIK. Maps to SBML symbol `p100_NIK`.
+  - name: p100
+    maps_to: p100
+    label: p100
+    description: p100. Maps to SBML symbol `p100`.
+  - name: ik_bd_nik
+    maps_to: IkBd_NIK
+    label: IkBd:NIK
+    description: IkBd:NIK. Maps to SBML symbol `IkBd_NIK`.
+  - name: nik
+    maps_to: NIK
+    label: NIK
+    description: NIK. Maps to SBML symbol `NIK`.

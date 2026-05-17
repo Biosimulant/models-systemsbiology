@@ -1,0 +1,80 @@
+schema_version: '2.0'
+title: Precup2012 - Mathematical modeling of cell dynamics after allogeneic bone marrow
+  transplantation
+description: This is a basic mathematical model describing the dynamics of three cell
+  lines (normal host cells, leukemic host cells and donor cells) after allogeneic
+  stem cell transplantation. It can be used to explore systemsbiology precup2012 mathematical
+  modeling of cell dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- generegulation
+- immunology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Precup, R.
+- Arghirescu, S.
+- Cucuianu, A.
+- Erban, M.
+upstream:
+  id: biomodels_ebi:BIOMD0000000800
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000800
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000800
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000800?filename=Precup2012.xml
+  license: CC0
+biosim:
+  entrypoint: src.precup2012_mathematical_modeling_of_cell_dynamic_biomd0000000800_model:Precup2012MathematicalModelingOfCellDynamicBiomd0000000800Model
+  init_kwargs:
+    model_path: data/BIOMD0000000800.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_z
+    maps_to: z
+    label: Initial Model State Z
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `z`.
+  - name: initial_model_state_x
+    maps_to: x
+    label: Initial Model State X
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x`.
+  - name: initial_model_state_y
+    maps_to: y
+    label: Initial Model State Y
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `y`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_z
+    maps_to: z
+    label: z
+    description: z. Maps to SBML symbol `z`.
+  - name: model_state_x
+    maps_to: x
+    label: x
+    description: x. Maps to SBML symbol `x`.
+  - name: model_state_y
+    maps_to: y
+    label: y
+    description: y. Maps to SBML symbol `y`.

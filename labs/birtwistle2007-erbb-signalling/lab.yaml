@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Birtwistle2007 Erbb Signalling Lab
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models. It is copyright (c) 2005-2009 The BioModels Team.'
+models:
+- alias: systemsbiology_sbml_birtwistle2007_erbb_signalling_biomd0000000175_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_birtwistle2007_erbb_signalling_biomd0000000175_model.state
+  to:
+  - visualisation.systemsbiology_sbml_birtwistle2007_erbb_signalling_biomd0000000175_model_state
+- from: systemsbiology_sbml_birtwistle2007_erbb_signalling_biomd0000000175_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_birtwistle2007_erbb_signalling_biomd0000000175_model_summary
+- from: systemsbiology_sbml_birtwistle2007_erbb_signalling_biomd0000000175_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_birtwistle2007_erbb_signalling_biomd0000000175_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_raf
+    maps_to: systemsbiology_sbml_birtwistle2007_erbb_signalling_biomd0000000175_model.initial_model_state_raf
+    label: Initial Model State RAF
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Raf`.
+  - name: initial_erb_b4
+    maps_to: systemsbiology_sbml_birtwistle2007_erbb_signalling_biomd0000000175_model.initial_erb_b4
+    label: Initial Erb B4
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `E4`.
+  - name: initial_erb_b3
+    maps_to: systemsbiology_sbml_birtwistle2007_erbb_signalling_biomd0000000175_model.initial_erb_b3
+    label: Initial Erb B3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `E3`.
+  - name: initial_erb_b1
+    maps_to: systemsbiology_sbml_birtwistle2007_erbb_signalling_biomd0000000175_model.initial_erb_b1
+    label: Initial Erb B1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `E1`.
+  - name: initial_pip2
+    maps_to: systemsbiology_sbml_birtwistle2007_erbb_signalling_biomd0000000175_model.initial_pip2
+    label: Initial Pip2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P2`.
+  - name: initial_erb_b2
+    maps_to: systemsbiology_sbml_birtwistle2007_erbb_signalling_biomd0000000175_model.initial_erb_b2
+    label: Initial Erb B2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `E2`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_birtwistle2007_erbb_signalling_biomd0000000175_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_birtwistle2007_erbb_signalling_biomd0000000175_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_birtwistle2007_erbb_signalling_biomd0000000175_model.species_labels
+  - name: raf
+    maps_to: systemsbiology_sbml_birtwistle2007_erbb_signalling_biomd0000000175_model.raf
+  - name: erb_b4
+    maps_to: systemsbiology_sbml_birtwistle2007_erbb_signalling_biomd0000000175_model.erb_b4
+  - name: erb_b3
+    maps_to: systemsbiology_sbml_birtwistle2007_erbb_signalling_biomd0000000175_model.erb_b3
+  - name: erb_b1
+    maps_to: systemsbiology_sbml_birtwistle2007_erbb_signalling_biomd0000000175_model.erb_b1
+  - name: pip2
+    maps_to: systemsbiology_sbml_birtwistle2007_erbb_signalling_biomd0000000175_model.pip2
+  - name: erb_b2
+    maps_to: systemsbiology_sbml_birtwistle2007_erbb_signalling_biomd0000000175_model.erb_b2

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "0d1a8dec-e878-4cd0-ac4b-16b4635f9193",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "5235297e-490c-47f0-a703-7b32a096c152",
+  "created_at": "2026-05-16T05:46:42.064601833+00:00",
+  "last_synced_at": "2026-05-17T02:22:53.617543+00:00",
+  "hub_manifest_hash": "39f0eb5bfd292e2706dbb642ba8b2052ccd32a2b46d694ce4b7c9fb552b8d2b2",
+  "package_name": "butenas2004-bloodcoagulation-lab"
+}

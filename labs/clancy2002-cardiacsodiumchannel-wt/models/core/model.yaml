@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Clancy2002_CardiacSodiumChannel_WT
+description: 'The model is according to the paper Na+ Channel Mutation That Causes
+  Both Brugada and Long-QT Syndrome Phenotypes: A Simulation Study of Mechanism Original
+  model comes from ModelDB with accession numb. It can be used to explore systemsbiology
+  clancy2002 cardiacsodiumchannel wt BioModels0000000126 dynamics and compare simulation
+  behavior across conditions.'
+standard: other
+tags:
+- cardiovascular
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Colleen E Clancy
+- Yoram Rudy
+upstream:
+  id: biomodels_ebi:BIOMD0000000126
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000126
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000126
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000126?filename=BIOMD0000000126_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.clancy2002_cardiacsodiumchannel_wt_biomd0000000126_model:Clancy2002CardiacsodiumchannelWtBiomd0000000126Model
+  init_kwargs:
+    model_path: data/BIOMD0000000126.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_open_states
+    maps_to: O
+    label: Initial Open States
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `O`.
+  - name: initial_model_state_c3
+    maps_to: C3
+    label: Initial Model State C3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C3`.
+  - name: initial_model_state_im2
+    maps_to: IM2
+    label: Initial Model State IM2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IM2`.
+  - name: initial_model_state_im1
+    maps_to: IM1
+    label: Initial Model State IM1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IM1`.
+  - name: initial_if_value
+    maps_to: IF
+    label: Initial If Value
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IF`.
+  - name: initial_model_state_ic3
+    maps_to: IC3
+    label: Initial Model State IC3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IC3`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: open_states
+    maps_to: O
+    label: open states
+    description: open states. Maps to SBML symbol `O`.
+  - name: model_state_c3
+    maps_to: C3
+    label: C3
+    description: C3. Maps to SBML symbol `C3`.
+  - name: im2
+    maps_to: IM2
+    label: IM2
+    description: IM2. Maps to SBML symbol `IM2`.
+  - name: im1
+    maps_to: IM1
+    label: IM1
+    description: IM1. Maps to SBML symbol `IM1`.
+  - name: if_value
+    maps_to: IF
+    label: IF
+    description: IF. Maps to SBML symbol `IF`.
+  - name: ic3
+    maps_to: IC3
+    label: IC3
+    description: IC3. Maps to SBML symbol `IC3`.

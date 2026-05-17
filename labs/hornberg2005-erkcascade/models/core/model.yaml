@@ -1,0 +1,111 @@
+schema_version: '2.0'
+title: Hornberg2005_ERKcascade
+description: 'SBML level 2 code generated for the JWS Online project by Jacky Snoep
+  using PySCeS Run this model online at http://jjj.biochem.sun.ac.za To cite JWS Online
+  please refer to: Olivier, B.G. It can be used to explore systemsbiology hornberg2005
+  erkcascade BioModels0000000084 dynamics and compare simulation behavior across conditions.'
+standard: other
+tags:
+- cellcycle
+- generegulation
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Jorrit J Hornberg
+- Frank J Bruggeman
+- Bernd Binder
+- Christian R Geest
+- A J Marjolein Bij de Vaate
+upstream:
+  id: biomodels_ebi:BIOMD0000000084
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000084
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000084
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000084?filename=BIOMD0000000084_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.hornberg2005_erkcascade_biomd0000000084_model:Hornberg2005ErkcascadeBiomd0000000084Model
+  init_kwargs:
+    model_path: data/BIOMD0000000084.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_x3
+    maps_to: x3
+    label: Initial Model State X3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x3`.
+  - name: initial_model_state_x2
+    maps_to: x2
+    label: Initial Model State X2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x2`.
+  - name: initial_model_state_x1
+    maps_to: x1
+    label: Initial Model State X1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x1`.
+  - name: initial_x3_p
+    maps_to: x3p
+    label: Initial X3 P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x3p`.
+  - name: initial_x2_p
+    maps_to: x2p
+    label: Initial X2 P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x2p`.
+  - name: initial_x1_p
+    maps_to: x1p
+    label: Initial X1 P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x1p`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_x3
+    maps_to: x3
+    label: X3
+    description: X3. Maps to SBML symbol `x3`.
+  - name: model_state_x2
+    maps_to: x2
+    label: X2
+    description: X2. Maps to SBML symbol `x2`.
+  - name: model_state_x1
+    maps_to: x1
+    label: X1
+    description: X1. Maps to SBML symbol `x1`.
+  - name: x3_p
+    maps_to: x3p
+    label: X3P
+    description: X3P. Maps to SBML symbol `x3p`.
+  - name: x2_p
+    maps_to: x2p
+    label: X2P
+    description: X2P. Maps to SBML symbol `x2p`.
+  - name: x1_p
+    maps_to: x1p
+    label: X1P
+    description: X1P. Maps to SBML symbol `x1p`.

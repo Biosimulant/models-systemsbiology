@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Patel2023 Mirna 199a B 5p Regionation Of Chondrogenesis Enchanced Lab
+description: From a previous microarray study we developed a small chondrogenesis
+  model. We performed qPCR and measured how knockdown of miR-199a-5p or miR-199b-5p
+  could modulate chondrogenesis.
+models:
+- alias: systemsbiology_sbml_patel2023_mirna_199a_b_5p_regionation_of_chondro_model2305010001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_patel2023_mirna_199a_b_5p_regionation_of_chondro_model2305010001_model.state
+  to:
+  - visualisation.systemsbiology_sbml_patel2023_mirna_199a_b_5p_regionation_of_chondro_model2305010001_model_state
+- from: systemsbiology_sbml_patel2023_mirna_199a_b_5p_regionation_of_chondro_model2305010001_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_patel2023_mirna_199a_b_5p_regionation_of_chondro_model2305010001_model_summary
+- from: systemsbiology_sbml_patel2023_mirna_199a_b_5p_regionation_of_chondro_model2305010001_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_patel2023_mirna_199a_b_5p_regionation_of_chondro_model2305010001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_cav1
+    maps_to: systemsbiology_sbml_patel2023_mirna_199a_b_5p_regionation_of_chondro_model2305010001_model.initial_cav1
+    label: Initial Cav1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Cav1`.
+  - name: initial_acan
+    maps_to: systemsbiology_sbml_patel2023_mirna_199a_b_5p_regionation_of_chondro_model2305010001_model.initial_acan
+    label: Initial Acan
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Acan`.
+  - name: initial_tgfb3
+    maps_to: systemsbiology_sbml_patel2023_mirna_199a_b_5p_regionation_of_chondro_model2305010001_model.initial_tgfb3
+    label: Initial Tgfb3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TGFB3`.
+  - name: initial_mir199a_5p
+    maps_to: systemsbiology_sbml_patel2023_mirna_199a_b_5p_regionation_of_chondro_model2305010001_model.initial_mir199a_5p
+    label: Initial Mir199a 5P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MIR199a_5p`.
+  - name: initial_sox9mrna
+    maps_to: systemsbiology_sbml_patel2023_mirna_199a_b_5p_regionation_of_chondro_model2305010001_model.initial_sox9mrna
+    label: Initial Sox9mrna
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Sox9mRNA`.
+  - name: initial_mir140_5p
+    maps_to: systemsbiology_sbml_patel2023_mirna_199a_b_5p_regionation_of_chondro_model2305010001_model.initial_mir140_5p
+    label: Initial Mir140 5P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MIR140_5p`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_patel2023_mirna_199a_b_5p_regionation_of_chondro_model2305010001_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_patel2023_mirna_199a_b_5p_regionation_of_chondro_model2305010001_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_patel2023_mirna_199a_b_5p_regionation_of_chondro_model2305010001_model.species_labels
+  - name: cav1
+    maps_to: systemsbiology_sbml_patel2023_mirna_199a_b_5p_regionation_of_chondro_model2305010001_model.cav1
+  - name: acan
+    maps_to: systemsbiology_sbml_patel2023_mirna_199a_b_5p_regionation_of_chondro_model2305010001_model.acan
+  - name: tgfb3
+    maps_to: systemsbiology_sbml_patel2023_mirna_199a_b_5p_regionation_of_chondro_model2305010001_model.tgfb3
+  - name: mir199a_5p
+    maps_to: systemsbiology_sbml_patel2023_mirna_199a_b_5p_regionation_of_chondro_model2305010001_model.mir199a_5p
+  - name: sox9mrna
+    maps_to: systemsbiology_sbml_patel2023_mirna_199a_b_5p_regionation_of_chondro_model2305010001_model.sox9mrna
+  - name: mir140_5p
+    maps_to: systemsbiology_sbml_patel2023_mirna_199a_b_5p_regionation_of_chondro_model2305010001_model.mir140_5p

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "51122974-db7e-49fd-afe7-33cdbdb5760f",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "bff65bc7-6661-4195-927b-42ca6c5d745b",
+  "created_at": "2026-05-16T05:46:52.763548087+00:00",
+  "last_synced_at": "2026-05-17T06:37:55.733772+00:00",
+  "hub_manifest_hash": "62f47fda8c5f02d3b0be4c7d240c4cd7de180ac0b757e7785ca0bd4a31150190",
+  "package_name": "vilar2002-oscillator-lab"
+}

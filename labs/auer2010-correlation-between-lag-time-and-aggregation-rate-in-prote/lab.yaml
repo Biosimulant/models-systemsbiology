@@ -1,0 +1,49 @@
+schema_version: '2.0'
+title: Auer2010 Correlation Between Lag Time And Aggregation Rate In Prote Lab
+description: 'Auer2010 - Correlation between lag time andaggregation rate in protein
+  aggregation This model is described in the article: Insight into the correlation
+  between lag time and aggregation rate in the kin. It can be used to explore systemsbiology
+  auer2010 correlation between lag time dynamics and compare simulation behavior across
+  conditions.'
+models:
+- alias: systemsbiology_sbml_auer2010_correlation_between_lag_time_and_aggreg_biomd0000000555_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_auer2010_correlation_between_lag_time_and_aggreg_biomd0000000555_model.state
+  to:
+  - visualisation.systemsbiology_sbml_auer2010_correlation_between_lag_time_and_aggreg_biomd0000000555_model_state
+- from: systemsbiology_sbml_auer2010_correlation_between_lag_time_and_aggreg_biomd0000000555_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_auer2010_correlation_between_lag_time_and_aggreg_biomd0000000555_model_summary
+- from: systemsbiology_sbml_auer2010_correlation_between_lag_time_and_aggreg_biomd0000000555_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_auer2010_correlation_between_lag_time_and_aggreg_biomd0000000555_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_amyloid
+    maps_to: systemsbiology_sbml_auer2010_correlation_between_lag_time_and_aggreg_biomd0000000555_model.initial_amyloid
+    label: Initial Amyloid
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Amyloid`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_auer2010_correlation_between_lag_time_and_aggreg_biomd0000000555_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_auer2010_correlation_between_lag_time_and_aggreg_biomd0000000555_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_auer2010_correlation_between_lag_time_and_aggreg_biomd0000000555_model.species_labels
+  - name: amyloid
+    maps_to: systemsbiology_sbml_auer2010_correlation_between_lag_time_and_aggreg_biomd0000000555_model.amyloid

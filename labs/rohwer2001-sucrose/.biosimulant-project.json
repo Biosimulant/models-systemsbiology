@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "fe2c2be0-55b3-4427-be86-c2bd5983346a",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "0378c1d2-8879-41d6-9c6b-900f1852c7f8",
+  "created_at": "2026-05-16T05:46:51.496104066+00:00",
+  "last_synced_at": "2026-05-17T06:00:38.472513+00:00",
+  "hub_manifest_hash": "a1e14e0730e98bfa74ed3c668ef61e4fabe53eaf2a7343aaaf39e4e6567e9ccb",
+  "package_name": "rohwer2001-sucrose-lab"
+}

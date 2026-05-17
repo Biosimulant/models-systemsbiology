@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "a9313490-e109-48e9-97f5-183a6367a656",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "584977ae-1b7f-4a8e-b8e0-1481ec649209",
+  "created_at": "2026-05-16T05:46:51.723942064+00:00",
+  "last_synced_at": "2026-05-17T06:06:45.037798+00:00",
+  "hub_manifest_hash": "073dc5ee05d6ed275f0d5c87aa71950bf8b2d60ac7c2ecf055bfcb7fc61a4b05",
+  "package_name": "schliemann2011-tnf-proantiapoptosis-lab"
+}

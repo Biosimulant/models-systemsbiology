@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Shibeko2012 - Model of IIa generation Visualisation
+description: Question-and-answer and dynamic visual summaries for Shibeko2012 - Model
+  of IIa generation.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Shibeko2012 Model Of Iia Generation Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Shibeko2012 - Model of IIa generation.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_shibeko2012_model_of_iia_generation_model1808150001_model
+      title: Shibeko2012 - Model of IIa generation
+      observables:
+      - id: Xa_Va
+        port: xa_va
+        label: Xa:Va
+        group: gene_regulation
+      - id: Xa_TFPI
+        port: xa_tfpi
+        label: Xa:TFPI
+        group: gene_regulation
+      - id: VIIa_i_TF_Xa_TFPI
+        port: vi_ia_i_tf_xa_tfpi
+        label: VIIa_i:TF:Xa:TFPI
+        group: gene_regulation
+      - id: VIIa_i_TF
+        port: vi_ia_i_tf
+        label: VIIa_i:TF
+        group: gene_regulation
+      - id: VIIa_i
+        port: vi_ia_i
+        label: VIIa_i
+        group: gene_regulation
+      - id: VIIa_TF_Xa_TFPI
+        port: vi_ia_tf_xa_tfpi
+        label: VIIa:TF:Xa:TFPI
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

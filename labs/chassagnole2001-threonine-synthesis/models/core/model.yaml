@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Chassagnole2001_Threonine Synthesis
+description: . It can be used to explore systemsbiology chassagnole2001 threonine
+  synthesis BioModels0000000066 dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- C Chassagnole
+- D A Fell
+- B Raïs
+- B Kudla
+- J P Mazat
+upstream:
+  id: biomodels_ebi:BIOMD0000000066
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000066
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000066
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000066?filename=BIOMD0000000066_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.chassagnole2001_threonine_synthesis_biomd0000000066_model:Chassagnole2001ThreonineSynthesisBiomd0000000066Model
+  init_kwargs:
+    model_path: data/BIOMD0000000066.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_nadph
+    maps_to: nadph
+    label: Initial Nadph
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `nadph`.
+  - name: initial_nadp
+    maps_to: nadp
+    label: Initial Nadp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `nadp`.
+  - name: initial_model_state_atp
+    maps_to: atp
+    label: Initial Model State ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `atp`.
+  - name: initial_model_state_adp
+    maps_to: adp
+    label: Initial Model State ADP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `adp`.
+  - name: initial_threonine
+    maps_to: thr
+    label: Initial Threonine
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `thr`.
+  - name: initial_aspartate
+    maps_to: asp
+    label: Initial Aspartate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `asp`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: nadph
+    maps_to: nadph
+    label: NADPH
+    description: NADPH. Maps to SBML symbol `nadph`.
+  - name: nadp
+    maps_to: nadp
+    label: NADP
+    description: NADP. Maps to SBML symbol `nadp`.
+  - name: atp
+    maps_to: atp
+    label: ATP
+    description: ATP. Maps to SBML symbol `atp`.
+  - name: adp
+    maps_to: adp
+    label: ADP
+    description: ADP. Maps to SBML symbol `adp`.
+  - name: threonine
+    maps_to: thr
+    label: Threonine
+    description: Threonine. Maps to SBML symbol `thr`.
+  - name: aspartate
+    maps_to: asp
+    label: Aspartate
+    description: Aspartate. Maps to SBML symbol `asp`.

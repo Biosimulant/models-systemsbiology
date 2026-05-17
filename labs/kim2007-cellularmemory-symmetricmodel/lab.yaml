@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Kim2007 Cellularmemory Symmetricmodel Lab
+description: 'This model is from the article: Interlinked mutual inhibitory positive
+  feedbacks induce robust cellular memory effects. Kim TH, Jung SH, Cho KH FEBS Lett.'
+models:
+- alias: systemsbiology_sbml_kim2007_cellularmemory_symmetricmodel_biomd0000000180_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_kim2007_cellularmemory_symmetricmodel_biomd0000000180_model.state
+  to:
+  - visualisation.systemsbiology_sbml_kim2007_cellularmemory_symmetricmodel_biomd0000000180_model_state
+- from: systemsbiology_sbml_kim2007_cellularmemory_symmetricmodel_biomd0000000180_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_kim2007_cellularmemory_symmetricmodel_biomd0000000180_model_summary
+- from: systemsbiology_sbml_kim2007_cellularmemory_symmetricmodel_biomd0000000180_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_kim2007_cellularmemory_symmetricmodel_biomd0000000180_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- immunology
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_p2_prime
+    maps_to: systemsbiology_sbml_kim2007_cellularmemory_symmetricmodel_biomd0000000180_model.initial_p2_prime
+    label: Initial P2 Prime
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P2_prime`.
+  - name: initial_model_state_p2
+    maps_to: systemsbiology_sbml_kim2007_cellularmemory_symmetricmodel_biomd0000000180_model.initial_model_state_p2
+    label: Initial Model State P2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P2`.
+  - name: initial_model_state_r2
+    maps_to: systemsbiology_sbml_kim2007_cellularmemory_symmetricmodel_biomd0000000180_model.initial_model_state_r2
+    label: Initial Model State R2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `R2`.
+  - name: initial_p4_prime
+    maps_to: systemsbiology_sbml_kim2007_cellularmemory_symmetricmodel_biomd0000000180_model.initial_p4_prime
+    label: Initial P4 Prime
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P4_prime`.
+  - name: initial_p3_prime
+    maps_to: systemsbiology_sbml_kim2007_cellularmemory_symmetricmodel_biomd0000000180_model.initial_p3_prime
+    label: Initial P3 Prime
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P3_prime`.
+  - name: initial_p1_prime
+    maps_to: systemsbiology_sbml_kim2007_cellularmemory_symmetricmodel_biomd0000000180_model.initial_p1_prime
+    label: Initial P1 Prime
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P1_prime`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_kim2007_cellularmemory_symmetricmodel_biomd0000000180_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_kim2007_cellularmemory_symmetricmodel_biomd0000000180_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_kim2007_cellularmemory_symmetricmodel_biomd0000000180_model.species_labels
+  - name: p2_prime
+    maps_to: systemsbiology_sbml_kim2007_cellularmemory_symmetricmodel_biomd0000000180_model.p2_prime
+  - name: model_state_p2
+    maps_to: systemsbiology_sbml_kim2007_cellularmemory_symmetricmodel_biomd0000000180_model.model_state_p2
+  - name: model_state_r2
+    maps_to: systemsbiology_sbml_kim2007_cellularmemory_symmetricmodel_biomd0000000180_model.model_state_r2
+  - name: p4_prime
+    maps_to: systemsbiology_sbml_kim2007_cellularmemory_symmetricmodel_biomd0000000180_model.p4_prime
+  - name: p3_prime
+    maps_to: systemsbiology_sbml_kim2007_cellularmemory_symmetricmodel_biomd0000000180_model.p3_prime
+  - name: p1_prime
+    maps_to: systemsbiology_sbml_kim2007_cellularmemory_symmetricmodel_biomd0000000180_model.p1_prime

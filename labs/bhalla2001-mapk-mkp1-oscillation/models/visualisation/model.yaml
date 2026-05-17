@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Bhalla2001_MAPK_MKP1_oscillation Visualisation
+description: Question-and-answer and dynamic visual summaries for Bhalla2001_MAPK_MKP1_oscillation.
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Bhalla2001 Mapk Mkp1 Oscillation Lab
+    question: 'Which signalling variables dominate the simulated network response?
+      Source model: Bhalla2001_MAPK_MKP1_oscillation.'
+    answer_focus: Q/A table plus signaling timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_bhalla2001_mapk_mkp1_oscillation_model9071773985_model
+      title: Bhalla2001_MAPK_MKP1_oscillation
+      observables:
+      - id: MAPK_slash_MKP_minus_1_minus_gene
+        port: mapk_slash_mkp_minus_1_minus_gene
+        label: MAPK Slash MKP Minus 1 Minus Gene
+        group: signaling
+      - id: PLA2_slash_APC
+        port: pla2_slash_apc
+        label: PLA2 Slash APC
+        group: signaling
+      - id: DAG
+        port: dag
+        label: DAG
+        group: signaling
+      - id: AA
+        port: model_state_aa
+        label: AA
+        group: signaling
+      - id: temp_minus_PIP2
+        port: temp_minus_pip2
+        label: Temp Minus PIP2
+        group: signaling
+      - id: MAPK_slash_MAPK
+        port: mapk_slash_mapk
+        label: MAPK Slash MAPK
+        group: signaling
+io:
+  inputs: []
+  outputs: []

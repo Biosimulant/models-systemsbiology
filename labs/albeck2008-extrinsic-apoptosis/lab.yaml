@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Albeck2008 Extrinsic Apoptosis Lab
+description: 'This the model used in the article: Quantitative analysis of pathways
+  controlling extrinsic apoptosis in single cells. Albeck JG, Burke JM, Aldridge BB,
+  Zhang M, Lauffenburger DA, Sorger PK.'
+models:
+- alias: systemsbiology_sbml_albeck2008_extrinsic_apoptosis_biomd0000000220_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_albeck2008_extrinsic_apoptosis_biomd0000000220_model.state
+  to:
+  - visualisation.systemsbiology_sbml_albeck2008_extrinsic_apoptosis_biomd0000000220_model_state
+- from: systemsbiology_sbml_albeck2008_extrinsic_apoptosis_biomd0000000220_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_albeck2008_extrinsic_apoptosis_biomd0000000220_model_summary
+- from: systemsbiology_sbml_albeck2008_extrinsic_apoptosis_biomd0000000220_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_albeck2008_extrinsic_apoptosis_biomd0000000220_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_cyto_c_m
+    maps_to: systemsbiology_sbml_albeck2008_extrinsic_apoptosis_biomd0000000220_model.initial_cyto_c_m
+    label: Initial Cyto C M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CytoCm`.
+  - name: initial_pro_c9
+    maps_to: systemsbiology_sbml_albeck2008_extrinsic_apoptosis_biomd0000000220_model.initial_pro_c9
+    label: Initial Pro C9
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `pC9`.
+  - name: initial_smac_m
+    maps_to: systemsbiology_sbml_albeck2008_extrinsic_apoptosis_biomd0000000220_model.initial_smac_m
+    label: Initial Smac M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Smacm`.
+  - name: initial_pro_c8
+    maps_to: systemsbiology_sbml_albeck2008_extrinsic_apoptosis_biomd0000000220_model.initial_pro_c8
+    label: Initial Pro C8
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `pC8`.
+  - name: initial_cytosolic_bcl_2
+    maps_to: systemsbiology_sbml_albeck2008_extrinsic_apoptosis_biomd0000000220_model.initial_cytosolic_bcl_2
+    label: Initial Cytosolic Bcl 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Bcl2c`.
+  - name: initial_bcl_2
+    maps_to: systemsbiology_sbml_albeck2008_extrinsic_apoptosis_biomd0000000220_model.initial_bcl_2
+    label: Initial Bcl 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Bcl2`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_albeck2008_extrinsic_apoptosis_biomd0000000220_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_albeck2008_extrinsic_apoptosis_biomd0000000220_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_albeck2008_extrinsic_apoptosis_biomd0000000220_model.species_labels
+  - name: cyto_c_m
+    maps_to: systemsbiology_sbml_albeck2008_extrinsic_apoptosis_biomd0000000220_model.cyto_c_m
+  - name: pro_c9
+    maps_to: systemsbiology_sbml_albeck2008_extrinsic_apoptosis_biomd0000000220_model.pro_c9
+  - name: smac_m
+    maps_to: systemsbiology_sbml_albeck2008_extrinsic_apoptosis_biomd0000000220_model.smac_m
+  - name: pro_c8
+    maps_to: systemsbiology_sbml_albeck2008_extrinsic_apoptosis_biomd0000000220_model.pro_c8
+  - name: cytosolic_bcl_2
+    maps_to: systemsbiology_sbml_albeck2008_extrinsic_apoptosis_biomd0000000220_model.cytosolic_bcl_2
+  - name: bcl_2
+    maps_to: systemsbiology_sbml_albeck2008_extrinsic_apoptosis_biomd0000000220_model.bcl_2

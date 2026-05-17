@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Marhl2000 Caoscillations Lab
+description: In order to reproduce the model, the volume of all compartment is set
+  to 1, and the stoichiometry of CaER and CaM has been set to 0.25, corresponding
+  to betaER/rhoER and betaM/rhoM described in the pa. It can be used to explore systemsbiology
+  marhl2000 caoscillations BioModels0000000039 dynamics and compare simulation behavior
+  across conditions.
+models:
+- alias: systemsbiology_sbml_marhl2000_caoscillations_biomd0000000039_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_marhl2000_caoscillations_biomd0000000039_model.state
+  to:
+  - visualisation.systemsbiology_sbml_marhl2000_caoscillations_biomd0000000039_model_state
+- from: systemsbiology_sbml_marhl2000_caoscillations_biomd0000000039_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_marhl2000_caoscillations_biomd0000000039_model_summary
+- from: systemsbiology_sbml_marhl2000_caoscillations_biomd0000000039_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_marhl2000_caoscillations_biomd0000000039_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_ca_pr
+    maps_to: systemsbiology_sbml_marhl2000_caoscillations_biomd0000000039_model.initial_ca_pr
+    label: Initial Ca Pr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaPr`.
+  - name: initial_model_state_pr
+    maps_to: systemsbiology_sbml_marhl2000_caoscillations_biomd0000000039_model.initial_model_state_pr
+    label: Initial Model State Pr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pr`.
+  - name: initial_ca_er
+    maps_to: systemsbiology_sbml_marhl2000_caoscillations_biomd0000000039_model.initial_ca_er
+    label: Initial Ca Er
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaER`.
+  - name: initial_ca_cyt
+    maps_to: systemsbiology_sbml_marhl2000_caoscillations_biomd0000000039_model.initial_ca_cyt
+    label: Initial Ca Cyt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_cyt`.
+  - name: initial_ca_m
+    maps_to: systemsbiology_sbml_marhl2000_caoscillations_biomd0000000039_model.initial_ca_m
+    label: Initial Ca M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaM`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_marhl2000_caoscillations_biomd0000000039_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_marhl2000_caoscillations_biomd0000000039_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_marhl2000_caoscillations_biomd0000000039_model.species_labels
+  - name: ca_pr
+    maps_to: systemsbiology_sbml_marhl2000_caoscillations_biomd0000000039_model.ca_pr
+  - name: model_state_pr
+    maps_to: systemsbiology_sbml_marhl2000_caoscillations_biomd0000000039_model.model_state_pr
+  - name: ca_er
+    maps_to: systemsbiology_sbml_marhl2000_caoscillations_biomd0000000039_model.ca_er
+  - name: ca_cyt
+    maps_to: systemsbiology_sbml_marhl2000_caoscillations_biomd0000000039_model.ca_cyt
+  - name: ca_m
+    maps_to: systemsbiology_sbml_marhl2000_caoscillations_biomd0000000039_model.ca_m

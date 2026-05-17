@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "14ca67af-aa9a-46c4-a032-3cd8b65aef1c",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "f36fb343-4d15-46cb-b34e-831808fd1d7b",
+  "created_at": "2026-05-16T05:46:42.653074719+00:00",
+  "last_synced_at": "2026-05-17T02:45:17.093048+00:00",
+  "hub_manifest_hash": "812faf77767a932286c37ba6af02920a6c733f4431ac355c00a185ae0a2ab47a",
+  "package_name": "dallepezze2016-activation-of-ampk-and-mtor-by-amino-acids-lab"
+}

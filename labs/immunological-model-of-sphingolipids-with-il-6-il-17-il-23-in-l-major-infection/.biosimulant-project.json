@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "c0e58474-e2e1-4b11-8494-193b4a50583c",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "d70c50ff-8b64-4895-986a-71e59d0497ce",
+  "created_at": "2026-05-16T05:46:44.246566434+00:00",
+  "last_synced_at": "2026-05-17T03:49:16.945444+00:00",
+  "hub_manifest_hash": "938665abf68ec84b7ff52ee5e0668421f943def53f86b2096d2ee9035ba8f3c5",
+  "package_name": "immunological-model-of-sphingolipids-with-il-6-il-17-il-23-in-l"
+}

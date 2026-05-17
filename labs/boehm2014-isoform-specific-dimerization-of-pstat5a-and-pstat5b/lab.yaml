@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Boehm2014 Isoform Specific Dimerization Of Pstat5a And Pstat5b Lab
+description: Boehm2014 - isoform-specific dimerization of pSTAT5A and pSTAT5B To study
+  STAT5 activation, the authors build a dynamic model of pSTAT5 isoform dimerization.
+  It can be used to explore systemsbiology boehm2014 isoform specific dimerization
+  of dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_boehm2014_isoform_specific_dimerization_of_pstat_biomd0000000591_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_boehm2014_isoform_specific_dimerization_of_pstat_biomd0000000591_model.state
+  to:
+  - visualisation.systemsbiology_sbml_boehm2014_isoform_specific_dimerization_of_pstat_biomd0000000591_model_state
+- from: systemsbiology_sbml_boehm2014_isoform_specific_dimerization_of_pstat_biomd0000000591_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_boehm2014_isoform_specific_dimerization_of_pstat_biomd0000000591_model_summary
+- from: systemsbiology_sbml_boehm2014_isoform_specific_dimerization_of_pstat_biomd0000000591_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_boehm2014_isoform_specific_dimerization_of_pstat_biomd0000000591_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_stat5_b
+    maps_to: systemsbiology_sbml_boehm2014_isoform_specific_dimerization_of_pstat_biomd0000000591_model.initial_stat5_b
+    label: Initial Stat5 B
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `STAT5B`.
+  - name: initial_stat5_a
+    maps_to: systemsbiology_sbml_boehm2014_isoform_specific_dimerization_of_pstat_biomd0000000591_model.initial_stat5_a
+    label: Initial Stat5 A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `STAT5A`.
+  - name: initial_p_bp_b
+    maps_to: systemsbiology_sbml_boehm2014_isoform_specific_dimerization_of_pstat_biomd0000000591_model.initial_p_bp_b
+    label: Initial P Bp B
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `pBpB`.
+  - name: initial_p_ap_b
+    maps_to: systemsbiology_sbml_boehm2014_isoform_specific_dimerization_of_pstat_biomd0000000591_model.initial_p_ap_b
+    label: Initial P Ap B
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `pApB`.
+  - name: initial_p_ap_a
+    maps_to: systemsbiology_sbml_boehm2014_isoform_specific_dimerization_of_pstat_biomd0000000591_model.initial_p_ap_a
+    label: Initial P Ap A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `pApA`.
+  - name: initial_nucp_bp_b
+    maps_to: systemsbiology_sbml_boehm2014_isoform_specific_dimerization_of_pstat_biomd0000000591_model.initial_nucp_bp_b
+    label: Initial Nucp Bp B
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `nucpBpB`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_boehm2014_isoform_specific_dimerization_of_pstat_biomd0000000591_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_boehm2014_isoform_specific_dimerization_of_pstat_biomd0000000591_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_boehm2014_isoform_specific_dimerization_of_pstat_biomd0000000591_model.species_labels
+  - name: stat5_b
+    maps_to: systemsbiology_sbml_boehm2014_isoform_specific_dimerization_of_pstat_biomd0000000591_model.stat5_b
+  - name: stat5_a
+    maps_to: systemsbiology_sbml_boehm2014_isoform_specific_dimerization_of_pstat_biomd0000000591_model.stat5_a
+  - name: p_bp_b
+    maps_to: systemsbiology_sbml_boehm2014_isoform_specific_dimerization_of_pstat_biomd0000000591_model.p_bp_b
+  - name: p_ap_b
+    maps_to: systemsbiology_sbml_boehm2014_isoform_specific_dimerization_of_pstat_biomd0000000591_model.p_ap_b
+  - name: p_ap_a
+    maps_to: systemsbiology_sbml_boehm2014_isoform_specific_dimerization_of_pstat_biomd0000000591_model.p_ap_a
+  - name: nucp_bp_b
+    maps_to: systemsbiology_sbml_boehm2014_isoform_specific_dimerization_of_pstat_biomd0000000591_model.nucp_bp_b

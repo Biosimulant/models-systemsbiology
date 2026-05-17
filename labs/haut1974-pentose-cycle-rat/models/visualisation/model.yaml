@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Haut1974_Pentose_Cycle_Rat Visualisation
+description: Question-and-answer and dynamic visual summaries for Haut1974_Pentose_Cycle_Rat.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Haut1974 Pentose Cycle Rat Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Haut1974_Pentose_Cycle_Rat.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_haut1974_pentose_cycle_rat_model1004070000_model
+      title: Haut1974_Pentose_Cycle_Rat
+      observables:
+      - id: glucose_outside_cell
+        port: glucose_outside_cell
+        label: glucose (outside cell)
+        group: metabolism
+      - id: glucose_6_phosphate
+        port: glucose_6_phosphate
+        label: glucose 6-phosphate
+        group: metabolism
+      - id: NADP
+        port: nadp
+        label: NADP+
+        group: metabolism
+      - id: glucose_hexokinase
+        port: glucose_hexokinase
+        label: glucose-hexokinase
+        group: metabolism
+      - id: glucose_inside_cell
+        port: glucose_inside_cell
+        label: glucose (inside cell)
+        group: metabolism
+      - id: NADPH
+        port: nadph
+        label: NADPH
+        group: metabolism
+io:
+  inputs: []
+  outputs: []

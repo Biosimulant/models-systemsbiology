@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: Nagashima2002 - Simulating blood coagulation inhibitory effects Visualisation
+description: Question-and-answer and dynamic visual summaries for Nagashima2002 -
+  Simulating blood coagulation inhibitory effects.
+standard: other
+tags:
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Nagashima2002 Simulating Blood Coagulation Inhibitory Effects Lab
+    question: 'Which drug, dose, or target-linked model states drive the simulated
+      profile? Source model: Nagashima2002 - Simulating blood coagulation inhibitory
+      effects.'
+    answer_focus: Q/A table plus pharmacology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_nagashima2002_simulating_blood_coagulation_inhib_biomd0000000747_model
+      title: Nagashima2002 - Simulating blood coagulation inhibitory effects
+      observables:
+      - id: TF_VIIa
+        port: tf_vi_ia
+        label: TF:VIIa
+        group: physiology
+      - id: Xa_inact
+        port: xa_inact
+        label: Xa_inact
+        group: physiology
+      - id: Xa_Inhibitor
+        port: xa_inhibitor
+        label: Xa_Inhibitor
+        group: physiology
+      - id: Xa_Xa_Inhibitor
+        port: xa_xa_inhibitor
+        label: Xa:Xa_Inhibitor
+        group: physiology
+      - id: Xa_VIII
+        port: xa_viii
+        label: Xa:VIII
+        group: physiology
+      - id: Xa_V
+        port: xa_v
+        label: Xa:V
+        group: physiology
+io:
+  inputs: []
+  outputs: []

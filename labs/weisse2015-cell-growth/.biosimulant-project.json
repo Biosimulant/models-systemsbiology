@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "ba7ff65c-c488-43d8-a645-18b8ecd03dc8",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "d151d4eb-8d25-4a33-b422-538480802b97",
+  "created_at": "2026-05-16T05:46:53.103669813+00:00",
+  "last_synced_at": "2026-05-17T06:48:07.290863+00:00",
+  "hub_manifest_hash": "c01978f497f889f5811733dc0de9bd8ea3dce9f6d6a0dabcefc12fba34c2e700",
+  "package_name": "weisse2015-cell-growth-lab"
+}

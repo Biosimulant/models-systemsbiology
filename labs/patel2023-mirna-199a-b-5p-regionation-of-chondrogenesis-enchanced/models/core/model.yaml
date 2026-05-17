@@ -1,0 +1,109 @@
+schema_version: '2.0'
+title: Patel2023 - miRNA-199a/b-5p regionation of chondrogenesis - enchanced
+description: From a previous microarray study we developed a small chondrogenesis
+  model. We performed qPCR and measured how knockdown of miR-199a-5p or miR-199b-5p
+  could modulate chondrogenesis.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- K Patel
+- MJ Barter
+- J Soul
+- CJ Proctor
+- IM Clark
+upstream:
+  id: biomodels_ebi:MODEL2305010001
+  source_db: biomodels_ebi
+  source_id: MODEL2305010001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2305010001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2305010001?filename=Patel2023
+    - miRNA-199ab-5p regulation of chondrogenesis - enhanced.xml
+  license: CC0
+biosim:
+  entrypoint: src.patel2023_mirna_199a_b_5p_regionation_of_chondro_model2305010001_model:Patel2023Mirna199aB5pRegionationOfChondroModel2305010001Model
+  init_kwargs:
+    model_path: data/MODEL2305010001.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_cav1
+    maps_to: Cav1
+    label: Initial Cav1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Cav1`.
+  - name: initial_acan
+    maps_to: Acan
+    label: Initial Acan
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Acan`.
+  - name: initial_tgfb3
+    maps_to: TGFB3
+    label: Initial Tgfb3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TGFB3`.
+  - name: initial_mir199a_5p
+    maps_to: MIR199a_5p
+    label: Initial Mir199a 5P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MIR199a_5p`.
+  - name: initial_sox9mrna
+    maps_to: Sox9mRNA
+    label: Initial Sox9mrna
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Sox9mRNA`.
+  - name: initial_mir140_5p
+    maps_to: MIR140_5p
+    label: Initial Mir140 5P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MIR140_5p`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: cav1
+    maps_to: Cav1
+    label: CAV1
+    description: CAV1. Maps to SBML symbol `Cav1`.
+  - name: acan
+    maps_to: Acan
+    label: ACAN
+    description: ACAN. Maps to SBML symbol `Acan`.
+  - name: tgfb3
+    maps_to: TGFB3
+    label: TGFB3
+    description: TGFB3. Maps to SBML symbol `TGFB3`.
+  - name: mir199a_5p
+    maps_to: MIR199a_5p
+    label: MIR199a_5p
+    description: MIR199a_5p. Maps to SBML symbol `MIR199a_5p`.
+  - name: sox9mrna
+    maps_to: Sox9mRNA
+    label: SOX9mRNA
+    description: SOX9mRNA. Maps to SBML symbol `Sox9mRNA`.
+  - name: mir140_5p
+    maps_to: MIR140_5p
+    label: MIR140_5p
+    description: MIR140_5p. Maps to SBML symbol `MIR140_5p`.

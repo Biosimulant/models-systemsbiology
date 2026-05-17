@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "a19c36c5-4cf3-4eb4-81ff-b5c0868c1df1",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "38436ac4-3e37-41df-8d1e-d81993352d1b",
+  "created_at": "2026-05-16T05:46:43.908480474+00:00",
+  "last_synced_at": "2026-05-17T03:33:04.465889+00:00",
+  "hub_manifest_hash": "c75493305d7467a18bf828fb3baefb985a140115fb04626b835acaf38e423cc0",
+  "package_name": "hayer2005-ampar-camkii-weak-coupling-lab"
+}

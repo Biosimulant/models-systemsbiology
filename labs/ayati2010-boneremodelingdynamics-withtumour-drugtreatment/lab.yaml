@@ -1,0 +1,75 @@
+schema_version: '2.0'
+title: Ayati2010 Boneremodelingdynamics Withtumour Drugtreatment Lab
+description: 'This a model from the article: A mathematical model of bone remodeling
+  dynamics for normal bone cell populations and myeloma bone disease Bruce P Ayati,
+  Claire M Edwards, Glenn F Webb and John P Wiksw. It can be used to explore systemsbiology
+  ayati2010 boneremodelingdynamics withtumour drug BioModels0000000403 dynamics and
+  compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_ayati2010_boneremodelingdynamics_withtumour_drug_biomd0000000403_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_ayati2010_boneremodelingdynamics_withtumour_drug_biomd0000000403_model.state
+  to:
+  - visualisation.systemsbiology_sbml_ayati2010_boneremodelingdynamics_withtumour_drug_biomd0000000403_model_state
+- from: systemsbiology_sbml_ayati2010_boneremodelingdynamics_withtumour_drug_biomd0000000403_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_ayati2010_boneremodelingdynamics_withtumour_drug_biomd0000000403_model_summary
+- from: systemsbiology_sbml_ayati2010_boneremodelingdynamics_withtumour_drug_biomd0000000403_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_ayati2010_boneremodelingdynamics_withtumour_drug_biomd0000000403_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- oncology
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_osteoblasts
+    maps_to: systemsbiology_sbml_ayati2010_boneremodelingdynamics_withtumour_drug_biomd0000000403_model.initial_osteoblasts
+    label: Initial Osteoblasts
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `B`.
+  - name: initial_bone_mass
+    maps_to: systemsbiology_sbml_ayati2010_boneremodelingdynamics_withtumour_drug_biomd0000000403_model.initial_bone_mass
+    label: Initial Bone Mass
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `z`.
+  - name: initial_osteoclasts
+    maps_to: systemsbiology_sbml_ayati2010_boneremodelingdynamics_withtumour_drug_biomd0000000403_model.initial_osteoclasts
+    label: Initial Osteoclasts
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C`.
+  - name: initial_tumour
+    maps_to: systemsbiology_sbml_ayati2010_boneremodelingdynamics_withtumour_drug_biomd0000000403_model.initial_tumour
+    label: Initial Tumour
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Tumour`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_ayati2010_boneremodelingdynamics_withtumour_drug_biomd0000000403_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_ayati2010_boneremodelingdynamics_withtumour_drug_biomd0000000403_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_ayati2010_boneremodelingdynamics_withtumour_drug_biomd0000000403_model.species_labels
+  - name: osteoblasts
+    maps_to: systemsbiology_sbml_ayati2010_boneremodelingdynamics_withtumour_drug_biomd0000000403_model.osteoblasts
+  - name: bone_mass
+    maps_to: systemsbiology_sbml_ayati2010_boneremodelingdynamics_withtumour_drug_biomd0000000403_model.bone_mass
+  - name: osteoclasts
+    maps_to: systemsbiology_sbml_ayati2010_boneremodelingdynamics_withtumour_drug_biomd0000000403_model.osteoclasts
+  - name: tumour
+    maps_to: systemsbiology_sbml_ayati2010_boneremodelingdynamics_withtumour_drug_biomd0000000403_model.tumour

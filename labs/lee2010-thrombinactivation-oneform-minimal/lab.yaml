@@ -1,0 +1,71 @@
+schema_version: '2.0'
+title: Lee2010 Thrombinactivation Oneform Minimal Lab
+description: Chang Jun Lee, Sangwook Wu, Changsun Eun & Lee G. It can be used to explore
+  systemsbiology lee2010 thrombinactivation oneform minimal BioModels0000000363 dynamics
+  and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_lee2010_thrombinactivation_oneform_minimal_biomd0000000363_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_lee2010_thrombinactivation_oneform_minimal_biomd0000000363_model.state
+  to:
+  - visualisation.systemsbiology_sbml_lee2010_thrombinactivation_oneform_minimal_biomd0000000363_model_state
+- from: systemsbiology_sbml_lee2010_thrombinactivation_oneform_minimal_biomd0000000363_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_lee2010_thrombinactivation_oneform_minimal_biomd0000000363_model_summary
+- from: systemsbiology_sbml_lee2010_thrombinactivation_oneform_minimal_biomd0000000363_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_lee2010_thrombinactivation_oneform_minimal_biomd0000000363_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_ii
+    maps_to: systemsbiology_sbml_lee2010_thrombinactivation_oneform_minimal_biomd0000000363_model.initial_model_state_ii
+    label: Initial Model State Ii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `II`.
+  - name: initial_model_state_p2
+    maps_to: systemsbiology_sbml_lee2010_thrombinactivation_oneform_minimal_biomd0000000363_model.initial_model_state_p2
+    label: Initial Model State P2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P2`.
+  - name: initial_i_ia
+    maps_to: systemsbiology_sbml_lee2010_thrombinactivation_oneform_minimal_biomd0000000363_model.initial_i_ia
+    label: Initial I Ia
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IIa`.
+  - name: initial_model_state_m
+    maps_to: systemsbiology_sbml_lee2010_thrombinactivation_oneform_minimal_biomd0000000363_model.initial_model_state_m
+    label: Initial Model State M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_lee2010_thrombinactivation_oneform_minimal_biomd0000000363_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_lee2010_thrombinactivation_oneform_minimal_biomd0000000363_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_lee2010_thrombinactivation_oneform_minimal_biomd0000000363_model.species_labels
+  - name: model_state_ii
+    maps_to: systemsbiology_sbml_lee2010_thrombinactivation_oneform_minimal_biomd0000000363_model.model_state_ii
+  - name: model_state_p2
+    maps_to: systemsbiology_sbml_lee2010_thrombinactivation_oneform_minimal_biomd0000000363_model.model_state_p2
+  - name: i_ia
+    maps_to: systemsbiology_sbml_lee2010_thrombinactivation_oneform_minimal_biomd0000000363_model.i_ia
+  - name: model_state_m
+    maps_to: systemsbiology_sbml_lee2010_thrombinactivation_oneform_minimal_biomd0000000363_model.model_state_m

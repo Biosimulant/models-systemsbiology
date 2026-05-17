@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Chance1952 Catalase Mechanism Lab
+description: 'This model is described in the article: The mechanism of catalase action.
+  It can be used to explore systemsbiology chance1952 catalase mechanism BioModels0000000282
+  dynamics and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_chance1952_catalase_mechanism_biomd0000000282_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_chance1952_catalase_mechanism_biomd0000000282_model.state
+  to:
+  - visualisation.systemsbiology_sbml_chance1952_catalase_mechanism_biomd0000000282_model_state
+- from: systemsbiology_sbml_chance1952_catalase_mechanism_biomd0000000282_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_chance1952_catalase_mechanism_biomd0000000282_model_summary
+- from: systemsbiology_sbml_chance1952_catalase_mechanism_biomd0000000282_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_chance1952_catalase_mechanism_biomd0000000282_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_product_2
+    maps_to: systemsbiology_sbml_chance1952_catalase_mechanism_biomd0000000282_model.initial_product_2
+    label: Initial Product 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `p2`.
+  - name: initial_product_1
+    maps_to: systemsbiology_sbml_chance1952_catalase_mechanism_biomd0000000282_model.initial_product_1
+    label: Initial Product 1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `p1`.
+  - name: initial_substrate_s_hydrogen_peroxide
+    maps_to: systemsbiology_sbml_chance1952_catalase_mechanism_biomd0000000282_model.initial_substrate_s_hydrogen_peroxide
+    label: Initial Substrate S Hydrogen Peroxide
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x`.
+  - name: initial_enzyme_e_catalase
+    maps_to: systemsbiology_sbml_chance1952_catalase_mechanism_biomd0000000282_model.initial_enzyme_e_catalase
+    label: Initial Enzyme E Catalase
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `e`.
+  - name: initial_enzyme_substrate_complex_es_catalase_hydrogen_peroxide
+    maps_to: systemsbiology_sbml_chance1952_catalase_mechanism_biomd0000000282_model.initial_enzyme_substrate_complex_es_catalase_hydrogen_peroxide
+    label: Initial Enzyme Substrate Complex Es Catalase Hydrogen Peroxide
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `p`.
+  - name: initial_donor_ah2
+    maps_to: systemsbiology_sbml_chance1952_catalase_mechanism_biomd0000000282_model.initial_donor_ah2
+    label: Initial Donor AH2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `a`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_chance1952_catalase_mechanism_biomd0000000282_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_chance1952_catalase_mechanism_biomd0000000282_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_chance1952_catalase_mechanism_biomd0000000282_model.species_labels
+  - name: product_2
+    maps_to: systemsbiology_sbml_chance1952_catalase_mechanism_biomd0000000282_model.product_2
+  - name: product_1
+    maps_to: systemsbiology_sbml_chance1952_catalase_mechanism_biomd0000000282_model.product_1
+  - name: substrate_s_hydrogen_peroxide
+    maps_to: systemsbiology_sbml_chance1952_catalase_mechanism_biomd0000000282_model.substrate_s_hydrogen_peroxide
+  - name: enzyme_e_catalase
+    maps_to: systemsbiology_sbml_chance1952_catalase_mechanism_biomd0000000282_model.enzyme_e_catalase
+  - name: enzyme_substrate_complex_es_catalase_hydrogen_peroxide
+    maps_to: systemsbiology_sbml_chance1952_catalase_mechanism_biomd0000000282_model.enzyme_substrate_complex_es_catalase_hydrogen_peroxide
+  - name: donor_ah2
+    maps_to: systemsbiology_sbml_chance1952_catalase_mechanism_biomd0000000282_model.donor_ah2

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "ddb250f9-f363-47fa-9eb8-c18720ac3c6a",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "2d1836ce-a821-437a-a443-ff0c9b82bd1f",
+  "created_at": "2026-05-16T05:46:51.294588281+00:00",
+  "last_synced_at": "2026-05-17T05:55:30.634658+00:00",
+  "hub_manifest_hash": "91d5b6571a3a780fa79d0577b85a5cd88612c46c0c61f9ea4cabb96da16e9c50",
+  "package_name": "razumova2000-myofilamentcontractilebehaviour-lab"
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "4f30757d-f1ea-44c3-a7ca-38455598e3d2",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "5620ad34-1a74-4228-9a23-d94bbe3c8198",
+  "created_at": "2026-05-16T05:46:40.647321259+00:00",
+  "last_synced_at": "2026-05-17T01:32:36.075069+00:00",
+  "hub_manifest_hash": "7ad450455d91686050cb0cefb9b21bf56d997af23f6a3ebf580d53979bba0789",
+  "package_name": "abu-soud1999-noharginine-lab"
+}

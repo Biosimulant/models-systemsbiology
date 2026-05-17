@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "8c343d5f-3e6c-43e7-ab79-4a2c34d1b6a9",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "85797a7d-d883-407d-b5ce-2901112b349e",
+  "created_at": "2026-05-16T05:46:52.025166149+00:00",
+  "last_synced_at": "2026-05-17T06:16:28.959820+00:00",
+  "hub_manifest_hash": "32a8299bad53cf7e5809826aaa95cfc0e39ec275ff45d0aa99a20b63cc5a1ad3",
+  "package_name": "smallbone2015-michaelis-menten-lab"
+}

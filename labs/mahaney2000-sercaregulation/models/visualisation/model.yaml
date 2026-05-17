@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: mahaney2000_SERCAregulation Visualisation
+description: Question-and-answer and dynamic visual summaries for mahaney2000_SERCAregulation.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Mahaney2000 Sercaregulation Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: mahaney2000_SERCAregulation.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_mahaney2000_sercaregulation_model4816599063_model
+      title: mahaney2000_SERCAregulation
+      observables:
+      - id: ATP_Ca2_E1prime
+        port: atp_ca2_e1prime
+        label: ATP_Ca2_E1prime
+        group: metabolism
+      - id: ATP
+        port: atp
+        label: ATP
+        group: metabolism
+      - id: ADP
+        port: adp
+        label: ADP
+        group: metabolism
+      - id: Ca_E1prime
+        port: ca_e1prime
+        label: Ca_E1prime
+        group: physiology
+      - id: Ca_E1
+        port: ca_e1
+        label: Ca_E1
+        group: physiology
+      - id: Ca2_E1prime
+        port: ca2_e1prime
+        label: Ca2_E1prime
+        group: physiology
+io:
+  inputs: []
+  outputs: []

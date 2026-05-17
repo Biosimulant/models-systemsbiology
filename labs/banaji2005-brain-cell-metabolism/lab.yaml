@@ -1,0 +1,90 @@
+schema_version: '2.0'
+title: Banaji2005 Brain Cell Metabolism Lab
+description: 'This is a part of the model described in: A physiological model of cerebral
+  blood flow control Murad Banaji, Ilias Tachtsidis, David Delpy, Stephen Baigent,
+  Mathematical biosciences 2005 194:125-173;. It can be used to explore systemsbiology
+  banaji2005 brain cell metabolism model4992089662 dynamics and compare simulation
+  behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_banaji2005_brain_cell_metabolism_model4992089662_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_banaji2005_brain_cell_metabolism_model4992089662_model.state
+  to:
+  - visualisation.systemsbiology_sbml_banaji2005_brain_cell_metabolism_model4992089662_model_state
+- from: systemsbiology_sbml_banaji2005_brain_cell_metabolism_model4992089662_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_banaji2005_brain_cell_metabolism_model4992089662_model_summary
+- from: systemsbiology_sbml_banaji2005_brain_cell_metabolism_model4992089662_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_banaji2005_brain_cell_metabolism_model4992089662_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_sites_on_cellular_proteins_capable_of_binding_protons
+    maps_to: systemsbiology_sbml_banaji2005_brain_cell_metabolism_model4992089662_model.initial_sites_on_cellular_proteins_capable_of_binding_protons
+    label: Initial Sites On Cellular Proteins Capable Of Binding Protons
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pbuf`.
+  - name: initial_sites_on_cellular_proteins_bound_to_protons
+    maps_to: systemsbiology_sbml_banaji2005_brain_cell_metabolism_model4992089662_model.initial_sites_on_cellular_proteins_bound_to_protons
+    label: Initial Sites On Cellular Proteins Bound To Protons
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PbufH`.
+  - name: initial_potassium_ion
+    maps_to: systemsbiology_sbml_banaji2005_brain_cell_metabolism_model4992089662_model.initial_potassium_ion
+    label: Initial Potassium Ion
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `_K`.
+  - name: initial_sodium_ion
+    maps_to: systemsbiology_sbml_banaji2005_brain_cell_metabolism_model4992089662_model.initial_sodium_ion
+    label: Initial Sodium Ion
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `_eNa`.
+  - name: initial_bicarbonate_ion
+    maps_to: systemsbiology_sbml_banaji2005_brain_cell_metabolism_model4992089662_model.initial_bicarbonate_ion
+    label: Initial Bicarbonate Ion
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `_mBiC`.
+  - name: initial_bicarbonate_ion_2
+    maps_to: systemsbiology_sbml_banaji2005_brain_cell_metabolism_model4992089662_model.initial_bicarbonate_ion_2
+    label: Initial Bicarbonate Ion 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `_eBiC`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_banaji2005_brain_cell_metabolism_model4992089662_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_banaji2005_brain_cell_metabolism_model4992089662_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_banaji2005_brain_cell_metabolism_model4992089662_model.species_labels
+  - name: sites_on_cellular_proteins_capable_of_binding_protons
+    maps_to: systemsbiology_sbml_banaji2005_brain_cell_metabolism_model4992089662_model.sites_on_cellular_proteins_capable_of_binding_protons
+  - name: sites_on_cellular_proteins_bound_to_protons
+    maps_to: systemsbiology_sbml_banaji2005_brain_cell_metabolism_model4992089662_model.sites_on_cellular_proteins_bound_to_protons
+  - name: potassium_ion
+    maps_to: systemsbiology_sbml_banaji2005_brain_cell_metabolism_model4992089662_model.potassium_ion
+  - name: sodium_ion
+    maps_to: systemsbiology_sbml_banaji2005_brain_cell_metabolism_model4992089662_model.sodium_ion
+  - name: bicarbonate_ion
+    maps_to: systemsbiology_sbml_banaji2005_brain_cell_metabolism_model4992089662_model.bicarbonate_ion
+  - name: bicarbonate_ion_2
+    maps_to: systemsbiology_sbml_banaji2005_brain_cell_metabolism_model4992089662_model.bicarbonate_ion_2

@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Proctor2017- Role of microRNAs in osteoarthritis (Negative Feedback By MicroRNA
+  with Delay)
+description: 'Proctor2017- Role of microRNAs inosteoarthritis (Negative Feedback By
+  MicroRNA with Delay) This model is described in the article: Computer simulation
+  models as a tool to investigate the role of micro. It can be used to explore systemsbiology
+  proctor2017 role of micrornas in dynamics and compare simulation behavior across
+  conditions.'
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Carole J Proctor
+- Graham R Smith
+upstream:
+  id: biomodels_ebi:MODEL1610100002
+  source_db: biomodels_ebi
+  source_id: MODEL1610100002
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1610100002
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1610100002?filename=MODEL1610100002_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.proctor2017_role_of_micrornas_in_osteoarthritis_model1610100002_model:Proctor2017RoleOfMicrornasInOsteoarthritisModel1610100002Model
+  init_kwargs:
+    model_path: data/MODEL1610100002.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_signal
+    maps_to: Signal
+    label: Initial Signal
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Signal`.
+  - name: initial_mi_r_gene
+    maps_to: miR_gene
+    label: Initial Mi R Gene
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `miR_gene`.
+  - name: initial_tf1_nuc
+    maps_to: TF1_nuc
+    label: Initial TF1 Nuc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TF1_nuc`.
+  - name: initial_tf1_mrna
+    maps_to: TF1_mRNA
+    label: Initial TF1 MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TF1_mRNA`.
+  - name: initial_tf1_cyt
+    maps_to: TF1_cyt
+    label: Initial TF1 Cyt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TF1_cyt`.
+  - name: initial_sink
+    maps_to: Sink
+    label: Initial Sink
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Sink`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: signal
+    maps_to: Signal
+    label: Signal
+    description: Signal. Maps to SBML symbol `Signal`.
+  - name: mi_r_gene
+    maps_to: miR_gene
+    label: MiR Gene
+    description: MiR Gene. Maps to SBML symbol `miR_gene`.
+  - name: tf1_nuc
+    maps_to: TF1_nuc
+    label: TF1 Nuc
+    description: TF1 Nuc. Maps to SBML symbol `TF1_nuc`.
+  - name: tf1_mrna
+    maps_to: TF1_mRNA
+    label: TF1 MRNA
+    description: TF1 MRNA. Maps to SBML symbol `TF1_mRNA`.
+  - name: tf1_cyt
+    maps_to: TF1_cyt
+    label: TF1 Cyt
+    description: TF1 Cyt. Maps to SBML symbol `TF1_cyt`.
+  - name: sink
+    maps_to: Sink
+    label: Sink
+    description: Sink. Maps to SBML symbol `Sink`.

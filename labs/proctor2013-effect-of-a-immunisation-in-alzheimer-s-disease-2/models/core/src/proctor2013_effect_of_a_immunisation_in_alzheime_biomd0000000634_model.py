@@ -1,0 +1,27 @@
+# SPDX-FileCopyrightText: 2025-present Demi <bjaiye1@gmail.com>
+#
+# SPDX-License-Identifier: MIT
+"""Tellurium-backed SBML BioModule wrapper for Proctor2013 - Effect of Aβ immunisation in Alzheimer's disease (stochastic version)."""
+from __future__ import annotations
+
+from biosim.contrib.sbml import TelluriumSBMLBioModule
+
+
+class Proctor2013EffectOfAImmunisationInAlzheimeBiomd0000000634Model(TelluriumSBMLBioModule):
+    """Faithful SBML execution wrapper for Proctor2013 - Effect of Aβ immunisation in Alzheimer's disease (stochastic version)."""
+
+    _SBML_ID = 'BIOMD0000000634'
+    _TITLE = "Proctor2013 - Effect of Aβ immunisation in Alzheimer's disease (stochastic version)"
+    _TIME_UNIT = "model_time"
+    _OBSERVABLE_STRATEGY = 'species'
+    _OBSERVABLES = ['Mdm2', 'p53', 'Mdm2_p53', 'Mdm2_mRNA', 'p53_mRNA', 'ATMA', 'ATMI', 'p53_P', 'Mdm2_P', 'IR', 'ROS', 'damDNA', 'E1', 'E2', 'E1_Ub', 'E2_Ub', 'Proteasome', 'Ub', 'p53DUB', 'Mdm2DUB', 'DUB', 'Mdm2_p53_Ub', 'Mdm2_p53_Ub2', 'Mdm2_p53_Ub3', 'Mdm2_p53_Ub4', 'Mdm2_P1_p53_Ub4', 'Mdm2_Ub', 'Mdm2_Ub2', 'Mdm2_Ub3', 'Mdm2_Ub4', 'Mdm2_P_Ub', 'Mdm2_P_Ub2', 'Mdm2_P_Ub3', 'Mdm2_P_Ub4', 'p53_Ub4_Proteasome', 'Mdm2_Ub4_Proteasome', 'Mdm2_P_Ub4_Proteasome', 'GSK3b', 'GSK3b_p53', 'GSK3b_p53_P', 'Abeta', 'AggAbeta_Proteasome', 'AbetaPlaque', 'Tau', 'Tau_P1', 'Tau_P2', 'MT_Tau', 'AggTau', 'AggTau_Proteasome', 'Proteasome_Tau', 'PP1', 'NFT', 'ATP', 'ADP', 'AMP', 'AbetaDimer', 'AbetaPlaque_GliaA', 'GliaI', 'GliaM1', 'GliaM2', 'GliaA', 'antiAb', 'Abeta_antiAb', 'AbetaDimer_antiAb', 'degAbetaGlia', 'disaggPlaque1', 'disaggPlaque2']
+    _SPECIES_LABELS = {'Mdm2': 'Mdm2', 'p53': 'P53', 'Mdm2_p53': 'Mdm2 P53', 'Mdm2_mRNA': 'Mdm2 MRNA', 'p53_mRNA': 'P53 MRNA', 'ATMA': 'ATMA', 'ATMI': 'ATMI', 'p53_P': 'P53 P', 'Mdm2_P': 'Mdm2 P', 'IR': 'IR', 'ROS': 'ROS', 'damDNA': 'DamDNA', 'E1': 'E1', 'E2': 'E2', 'E1_Ub': 'E1 Ub', 'E2_Ub': 'E2 Ub', 'Proteasome': 'Proteasome', 'Ub': 'Ub', 'p53DUB': 'P53DUB', 'Mdm2DUB': 'Mdm2DUB', 'DUB': 'DUB', 'Mdm2_p53_Ub': 'Mdm2 P53 Ub', 'Mdm2_p53_Ub2': 'Mdm2 P53 UB2', 'Mdm2_p53_Ub3': 'Mdm2 P53 UB3', 'Mdm2_p53_Ub4': 'Mdm2 P53 UB4', 'Mdm2_P1_p53_Ub4': 'Mdm2 P1 P53 UB4', 'Mdm2_Ub': 'Mdm2 Ub', 'Mdm2_Ub2': 'Mdm2 UB2', 'Mdm2_Ub3': 'Mdm2 UB3', 'Mdm2_Ub4': 'Mdm2 UB4', 'Mdm2_P_Ub': 'Mdm2 P Ub', 'Mdm2_P_Ub2': 'Mdm2 P UB2', 'Mdm2_P_Ub3': 'Mdm2 P UB3', 'Mdm2_P_Ub4': 'Mdm2 P UB4', 'p53_Ub4_Proteasome': 'P53 UB4 Proteasome', 'Mdm2_Ub4_Proteasome': 'Mdm2 UB4 Proteasome', 'Mdm2_P_Ub4_Proteasome': 'Mdm2 P UB4 Proteasome', 'GSK3b': 'GSK3b', 'GSK3b_p53': 'GSK3b P53', 'GSK3b_p53_P': 'GSK3b P53 P', 'Abeta': 'Abeta', 'AggAbeta_Proteasome': 'AggAbeta Proteasome', 'AbetaPlaque': 'AbetaPlaque', 'Tau': 'Tau', 'Tau_P1': 'Tau P1', 'Tau_P2': 'Tau P2', 'MT_Tau': 'MT Tau', 'AggTau': 'AggTau', 'AggTau_Proteasome': 'AggTau Proteasome', 'Proteasome_Tau': 'Proteasome Tau', 'PP1': 'PP1', 'NFT': 'NFT', 'ATP': 'ATP', 'ADP': 'ADP', 'AMP': 'AMP', 'AbetaDimer': 'AbetaDimer', 'AbetaPlaque_GliaA': 'AbetaPlaque GliaA', 'GliaI': 'GliaI', 'GliaM1': 'GliaM1', 'GliaM2': 'GliaM2', 'GliaA': 'GliaA', 'antiAb': 'AntiAb', 'Abeta_antiAb': 'Abeta AntiAb', 'AbetaDimer_antiAb': 'AbetaDimer AntiAb', 'degAbetaGlia': 'DegAbetaGlia', 'disaggPlaque1': 'DisaggPlaque1', 'disaggPlaque2': 'DisaggPlaque2'}
+    _PARAMETER_INPUTS = {}
+    _INITIAL_CONDITION_INPUTS = {'initial_model_state_atp': ('ATP', 10000.0, 'native SBML value', 'Source state initial condition exposed as a model-specific control because no explicit intervention parameter is identifiable. Maps to SBML symbol `ATP`.'), 'initial_model_state_adp': ('ADP', 1000.0, 'native SBML value', 'Source state initial condition exposed as a model-specific control because no explicit intervention parameter is identifiable. Maps to SBML symbol `ADP`.'), 'initial_p53_mrna': ('p53_mRNA', 10.0, 'native SBML value', 'Source state initial condition exposed as a model-specific control because no explicit intervention parameter is identifiable. Maps to SBML symbol `p53_mRNA`.'), 'initial_mdm2_mrna': ('Mdm2_mRNA', 10.0, 'native SBML value', 'Source state initial condition exposed as a model-specific control because no explicit intervention parameter is identifiable. Maps to SBML symbol `Mdm2_mRNA`.'), 'initial_model_state_ub': ('Ub', 4000.0, 'native SBML value', 'Source state initial condition exposed as a model-specific control because no explicit intervention parameter is identifiable. Maps to SBML symbol `Ub`.'), 'initial_model_state_amp': ('AMP', 1000.0, 'native SBML value', 'Source state initial condition exposed as a model-specific control because no explicit intervention parameter is identifiable. Maps to SBML symbol `AMP`.')}
+    _HEADLINE_OUTPUTS = {'atp': ('ATP', 'native SBML value', 'ATP. Maps to SBML symbol `ATP`.'), 'adp': ('ADP', 'native SBML value', 'ADP. Maps to SBML symbol `ADP`.'), 'p53_mrna': ('p53_mRNA', 'native SBML value', 'P53 MRNA. Maps to SBML symbol `p53_mRNA`.'), 'mdm2_mrna': ('Mdm2_mRNA', 'native SBML value', 'Mdm2 MRNA. Maps to SBML symbol `Mdm2_mRNA`.'), 'model_state_ub': ('Ub', 'native SBML value', 'Ub. Maps to SBML symbol `Ub`.'), 'amp': ('AMP', 'native SBML value', 'AMP. Maps to SBML symbol `AMP`.')}
+    _STATE_OUTPUT_AS_PAYLOAD = True
+    _SPECIES_LABELS_OUTPUT_AS_PAYLOAD = True
+    _EXPOSE_INTEGRATION_STEP_INPUT = False
+
+    def __init__(self, model_path: str = 'data/BIOMD0000000634.xml', integration_step: float = 0.1) -> None:
+        super().__init__(model_path=model_path, integration_step=integration_step)

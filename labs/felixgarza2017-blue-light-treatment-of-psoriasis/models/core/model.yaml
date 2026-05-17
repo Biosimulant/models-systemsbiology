@@ -1,0 +1,78 @@
+schema_version: '2.0'
+title: FelixGarza2017 - Blue Light Treatment of Psoriasis (simplified)
+description: 'FelixGarza2017 - Blue Light Treatment ofPsoriasis (simplified) This
+  model is described in the article: A Dynamic Model for Prediction of Psoriasis Management
+  by Blue Light Irradiation. It can be used to explore systemsbiology felixgarza2017
+  blue light treatment of dynamics and compare simulation behavior across conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Zandra C Félix Garza
+- Joerg Liebmann
+- Matthias Born
+- Peter A J Hilbers
+- Natal A W van Riel
+upstream:
+  id: biomodels_ebi:BIOMD0000000695
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000695
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000695
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000695?filename=BIOMD0000000695_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.felixgarza2017_blue_light_treatment_of_psoriasis_biomd0000000695_model:Felixgarza2017BlueLightTreatmentOfPsoriasisBiomd0000000695Model
+  init_kwargs:
+    model_path: data/BIOMD0000000695.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: treatment_duration
+    maps_to: Treatment_Duration
+    label: Treatment Duration
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `Treatment_Duration`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: growth_arrested_cells
+    maps_to: xFinal_9
+    label: Growth Arrested Cells
+    description: Growth Arrested Cells. Maps to SBML symbol `xFinal_9`.
+  - name: growth_arrested_cells_2
+    maps_to: xFinal_3
+    label: Growth Arrested Cells
+    description: Growth Arrested Cells. Maps to SBML symbol `xFinal_3`.
+  - name: spinous_cells
+    maps_to: xFinal_10
+    label: Spinous cells
+    description: Spinous cells. Maps to SBML symbol `xFinal_10`.
+  - name: corneocytes
+    maps_to: xFinal_12
+    label: Corneocytes
+    description: Corneocytes. Maps to SBML symbol `xFinal_12`.
+  - name: transit_amplifying_cells
+    maps_to: xFinal_8
+    label: Transit Amplifying Cells
+    description: Transit Amplifying Cells. Maps to SBML symbol `xFinal_8`.
+  - name: stem_cells
+    maps_to: xFinal_7
+    label: Stem Cells
+    description: Stem Cells. Maps to SBML symbol `xFinal_7`.

@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Proctor2008 P53 Mdm2 Circuit P53 Stablisation By P14arf Lab
+description: 'Proctor2008 - p53/Mdm2 circuit - p53 stabilisation by p14ARF This model
+  is described in the article: Explaining oscillations and variability in the p53-Mdm2
+  system. It can be used to explore systemsbiology proctor2008 p53 mdm2 circuit p53
+  dynamics and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_proctor2008_p53_mdm2_circuit_p53_stablisation_by_biomd0000000189_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_proctor2008_p53_mdm2_circuit_p53_stablisation_by_biomd0000000189_model.state
+  to:
+  - visualisation.systemsbiology_sbml_proctor2008_p53_mdm2_circuit_p53_stablisation_by_biomd0000000189_model_state
+- from: systemsbiology_sbml_proctor2008_p53_mdm2_circuit_p53_stablisation_by_biomd0000000189_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_proctor2008_p53_mdm2_circuit_p53_stablisation_by_biomd0000000189_model_summary
+- from: systemsbiology_sbml_proctor2008_p53_mdm2_circuit_p53_stablisation_by_biomd0000000189_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_proctor2008_p53_mdm2_circuit_p53_stablisation_by_biomd0000000189_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_mdm2m_rn_adeg
+    maps_to: systemsbiology_sbml_proctor2008_p53_mdm2_circuit_p53_stablisation_by_biomd0000000189_model.initial_mdm2m_rn_adeg
+    label: Initial Mdm2m Rn Adeg
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Mdm2mRNAdeg`.
+  - name: initial_mdm2m_rn_asyn
+    maps_to: systemsbiology_sbml_proctor2008_p53_mdm2_circuit_p53_stablisation_by_biomd0000000189_model.initial_mdm2m_rn_asyn
+    label: Initial Mdm2m Rn Asyn
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Mdm2mRNAsyn`.
+  - name: initial_mdm2_mrna
+    maps_to: systemsbiology_sbml_proctor2008_p53_mdm2_circuit_p53_stablisation_by_biomd0000000189_model.initial_mdm2_mrna
+    label: Initial Mdm2 MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Mdm2_mRNA`.
+  - name: initial_mdm2_p53
+    maps_to: systemsbiology_sbml_proctor2008_p53_mdm2_circuit_p53_stablisation_by_biomd0000000189_model.initial_mdm2_p53
+    label: Initial Mdm2 P53
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Mdm2_p53`.
+  - name: initial_model_state_p53
+    maps_to: systemsbiology_sbml_proctor2008_p53_mdm2_circuit_p53_stablisation_by_biomd0000000189_model.initial_model_state_p53
+    label: Initial Model State P53
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `p53`.
+  - name: initial_mdm2
+    maps_to: systemsbiology_sbml_proctor2008_p53_mdm2_circuit_p53_stablisation_by_biomd0000000189_model.initial_mdm2
+    label: Initial Mdm2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Mdm2`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_proctor2008_p53_mdm2_circuit_p53_stablisation_by_biomd0000000189_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_proctor2008_p53_mdm2_circuit_p53_stablisation_by_biomd0000000189_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_proctor2008_p53_mdm2_circuit_p53_stablisation_by_biomd0000000189_model.species_labels
+  - name: mdm2m_rn_adeg
+    maps_to: systemsbiology_sbml_proctor2008_p53_mdm2_circuit_p53_stablisation_by_biomd0000000189_model.mdm2m_rn_adeg
+  - name: mdm2m_rn_asyn
+    maps_to: systemsbiology_sbml_proctor2008_p53_mdm2_circuit_p53_stablisation_by_biomd0000000189_model.mdm2m_rn_asyn
+  - name: mdm2_mrna
+    maps_to: systemsbiology_sbml_proctor2008_p53_mdm2_circuit_p53_stablisation_by_biomd0000000189_model.mdm2_mrna
+  - name: mdm2_p53
+    maps_to: systemsbiology_sbml_proctor2008_p53_mdm2_circuit_p53_stablisation_by_biomd0000000189_model.mdm2_p53
+  - name: p53
+    maps_to: systemsbiology_sbml_proctor2008_p53_mdm2_circuit_p53_stablisation_by_biomd0000000189_model.p53
+  - name: mdm2
+    maps_to: systemsbiology_sbml_proctor2008_p53_mdm2_circuit_p53_stablisation_by_biomd0000000189_model.mdm2

@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Hayer2005 Camkii Lab
+description: This is the complete model of CaMKII bistability, model 3. It exhibits
+  bistability in CaMKII activation due to autophosphorylation at the PSD and local
+  saturation of PP1.
+models:
+- alias: systemsbiology_sbml_hayer2005_camkii_model3_model9086953089_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_hayer2005_camkii_model3_model9086953089_model.state
+  to:
+  - visualisation.systemsbiology_sbml_hayer2005_camkii_model3_model9086953089_model_state
+- from: systemsbiology_sbml_hayer2005_camkii_model3_model9086953089_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_hayer2005_camkii_model3_model9086953089_model_summary
+- from: systemsbiology_sbml_hayer2005_camkii_model3_model9086953089_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_hayer2005_camkii_model3_model9086953089_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_ac_slash_atp
+    maps_to: systemsbiology_sbml_hayer2005_camkii_model3_model9086953089_model.initial_ac_slash_atp
+    label: Initial Ac Slash ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `AC_slash_ATP`.
+  - name: initial_act_ca_mkii_minus_psd
+    maps_to: systemsbiology_sbml_hayer2005_camkii_model3_model9086953089_model.initial_act_ca_mkii_minus_psd
+    label: Initial Act Ca Mkii Minus Psd
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `actCaMKII_minus_PSD`.
+  - name: initial_nmdar
+    maps_to: systemsbiology_sbml_hayer2005_camkii_model3_model9086953089_model.initial_nmdar
+    label: Initial Nmdar
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NMDAR`.
+  - name: initial_ca_m_slash_ca_m_minus_psd
+    maps_to: systemsbiology_sbml_hayer2005_camkii_model3_model9086953089_model.initial_ca_m_slash_ca_m_minus_psd
+    label: Initial Ca M Slash Ca M Minus Psd
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaM_slash_CaM_minus_PSD`.
+  - name: initial_ca_m_slash_ca_m
+    maps_to: systemsbiology_sbml_hayer2005_camkii_model3_model9086953089_model.initial_ca_m_slash_ca_m
+    label: Initial Ca M Slash Ca M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaM_slash_CaM`.
+  - name: initial_tot_ca_mkii_cyt
+    maps_to: systemsbiology_sbml_hayer2005_camkii_model3_model9086953089_model.initial_tot_ca_mkii_cyt
+    label: Initial Tot Ca Mkii Cyt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `tot_CaMKII_cyt`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_hayer2005_camkii_model3_model9086953089_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_hayer2005_camkii_model3_model9086953089_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_hayer2005_camkii_model3_model9086953089_model.species_labels
+  - name: ac_slash_atp
+    maps_to: systemsbiology_sbml_hayer2005_camkii_model3_model9086953089_model.ac_slash_atp
+  - name: act_ca_mkii_minus_psd
+    maps_to: systemsbiology_sbml_hayer2005_camkii_model3_model9086953089_model.act_ca_mkii_minus_psd
+  - name: nmdar
+    maps_to: systemsbiology_sbml_hayer2005_camkii_model3_model9086953089_model.nmdar
+  - name: ca_m_slash_ca_m_minus_psd
+    maps_to: systemsbiology_sbml_hayer2005_camkii_model3_model9086953089_model.ca_m_slash_ca_m_minus_psd
+  - name: ca_m_slash_ca_m
+    maps_to: systemsbiology_sbml_hayer2005_camkii_model3_model9086953089_model.ca_m_slash_ca_m
+  - name: tot_ca_mkii_cyt
+    maps_to: systemsbiology_sbml_hayer2005_camkii_model3_model9086953089_model.tot_ca_mkii_cyt

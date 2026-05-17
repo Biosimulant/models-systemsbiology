@@ -1,0 +1,80 @@
+schema_version: '2.0'
+title: DallePezze2014 - Cellular senescene-induced mitochondrial dysfunction
+description: 'DallePazze2014 - Cellular senescene-inducedmitochondrial dysfunction
+  This model is described in the article: Dynamic modelling of pathways to cellular
+  senescence reveals strategies for targeted interv. It can be used to explore systemsbiology
+  dallepezze2014 cellular senescene induced mitoch dynamics and compare simulation
+  behavior across conditions.'
+standard: other
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Piero Dalle Pezze
+- Glyn Nelson
+- Elsje G Otten
+- Viktor I Korolchuk
+- Thomas B L Kirkwood
+upstream:
+  id: biomodels_ebi:BIOMD0000000582
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000582
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000582
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000582?filename=BIOMD0000000582_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.dallepezze2014_cellular_senescene_induced_mitoch_biomd0000000582_model:Dallepezze2014CellularSenesceneInducedMitochBiomd0000000582Model
+  init_kwargs:
+    model_path: data/BIOMD0000000582.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: akt_s473_phos_by_insulin
+    maps_to: Akt_S473_phos_by_insulin
+    label: Akt S473 Phos By Insulin
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `Akt_S473_phos_by_insulin`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: m_tor_p_s2448_obs
+    maps_to: mTOR_pS2448_obs
+    label: mTOR_pS2448_obs
+    description: mTOR_pS2448_obs. Maps to SBML symbol `mTOR_pS2448_obs`.
+  - name: m_torc1_p_s2448
+    maps_to: mTORC1_pS2448
+    label: mTORC1_pS2448
+    description: mTORC1_pS2448. Maps to SBML symbol `mTORC1_pS2448`.
+  - name: m_torc1
+    maps_to: mTORC1
+    label: mTORC1
+    description: mTORC1. Maps to SBML symbol `mTORC1`.
+  - name: mito_mass_turnover
+    maps_to: Mito_mass_turnover
+    label: Mito_mass_turnover
+    description: Mito_mass_turnover. Maps to SBML symbol `Mito_mass_turnover`.
+  - name: fox_o3a_total_obs
+    maps_to: FoxO3a_total_obs
+    label: FoxO3a_total_obs
+    description: FoxO3a_total_obs. Maps to SBML symbol `FoxO3a_total_obs`.
+  - name: mito_membr_pot_new
+    maps_to: Mito_membr_pot_new
+    label: Mito_membr_pot_new
+    description: Mito_membr_pot_new. Maps to SBML symbol `Mito_membr_pot_new`.

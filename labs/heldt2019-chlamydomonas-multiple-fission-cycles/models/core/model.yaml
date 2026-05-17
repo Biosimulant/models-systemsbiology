@@ -1,0 +1,77 @@
+schema_version: '2.0'
+title: Heldt2019 - Chlamydomonas multiple-fission cycles
+description: This model is described in the article:A single light-responsive sizer
+  can control multiple-fission cycles in ChlamydomonasFrank S. It can be used to explore
+  systemsbiology heldt2019 chlamydomonas multiple fission cycles dynamics and compare
+  simulation behavior across conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Frank Stefan Heldt
+- Bela Novak
+- Tyson JJ
+- Frederick R. Cross
+upstream:
+  id: biomodels_ebi:MODEL1904020001
+  source_db: biomodels_ebi
+  source_id: MODEL1904020001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1904020001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1904020001?filename=Heldt2019_ChlamydomonasMultipleFission.xml
+  license: CC0
+biosim:
+  entrypoint: src.heldt2019_chlamydomonas_multiple_fission_cycles_model1904020001_model:Heldt2019ChlamydomonasMultipleFissionCyclesModel1904020001Model
+  init_kwargs:
+    model_path: data/MODEL1904020001.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: light
+    maps_to: Light
+    label: Light
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `Light`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: i_nt
+    maps_to: INt
+    label: INt
+    description: INt. Maps to SBML symbol `INt`.
+  - name: model_state_ip
+    maps_to: IP
+    label: IP
+    description: IP. Maps to SBML symbol `IP`.
+  - name: in_value
+    maps_to: IN
+    label: IN
+    description: IN. Maps to SBML symbol `IN`.
+  - name: t_ft
+    maps_to: TFt
+    label: TFt
+    description: TFt. Maps to SBML symbol `TFt`.
+  - name: model_state_sk
+    maps_to: SK
+    label: SK
+    description: SK. Maps to SBML symbol `SK`.
+  - name: intf
+    maps_to: INTF
+    label: INTF
+    description: INTF. Maps to SBML symbol `INTF`.

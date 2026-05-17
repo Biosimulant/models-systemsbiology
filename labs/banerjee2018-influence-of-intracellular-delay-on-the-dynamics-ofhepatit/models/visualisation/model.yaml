@@ -1,0 +1,52 @@
+schema_version: '2.0'
+title: Banerjee2018 - Influence of Intracellular Delay on the Dynamics ofHepatitis
+  C Virus Visualisation
+description: Question-and-answer and dynamic visual summaries for Banerjee2018 - Influence
+  of Intracellular Delay on the Dynamics ofHepatitis C Virus.
+standard: other
+tags:
+- epidemiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Banerjee2018 Influence Of Intracellular Delay On The Dynamics Ofhepatit
+      Lab
+    question: 'Which infection or population states dominate the simulated trajectory?
+      Source model: Banerjee2018 - Influence of Intracellular Delay on the Dynamics
+      ofHepatitis C Virus.'
+    answer_focus: Q/A table plus epidemiology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_banerjee2018_influence_of_intracellular_delay_on_model2001300001_model
+      title: Banerjee2018 - Influence of Intracellular Delay on the Dynamics ofHepatitis
+        C Virus
+      observables:
+      - id: V_NI
+        port: v_ni
+        label: V_NI
+        group: physiology
+      - id: V_I
+        port: v_i
+        label: V_I
+        group: physiology
+      - id: T
+        port: model_state_t
+        label: T
+        group: physiology
+      - id: I
+        port: model_state_i
+        label: I
+        group: physiology
+io:
+  inputs: []
+  outputs: []

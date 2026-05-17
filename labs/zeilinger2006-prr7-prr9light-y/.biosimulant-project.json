@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "84cd6b22-1431-415e-9697-4c705f2c4d5d",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "7addb45c-0710-4a53-a60b-00699816629f",
+  "created_at": "2026-05-16T05:46:53.618087996+00:00",
+  "last_synced_at": "2026-05-17T07:09:09.167722+00:00",
+  "hub_manifest_hash": "fe04e7ed673db5376d9c1b2d55555e030e1e144dd195025d02158743d8121c6c",
+  "package_name": "zeilinger2006-prr7-prr9light-y-lab"
+}

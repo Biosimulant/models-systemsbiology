@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "354629b3-105b-40ff-a315-759594b50e46",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "3dfb3c2d-4b3b-4131-ba50-16836166e3d8",
+  "created_at": "2026-05-16T05:46:42.045264490+00:00",
+  "last_synced_at": "2026-05-17T02:22:21.671023+00:00",
+  "hub_manifest_hash": "25d77dbfbf7155ce367dee96d754e8a37aa515bda25891a99c8337e4f78ac806",
+  "package_name": "burghaus2014-simulating-blood-coagulation-factor-xa-inhibitors-l"
+}

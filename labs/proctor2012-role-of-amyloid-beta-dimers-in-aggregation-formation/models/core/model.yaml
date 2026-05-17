@@ -1,0 +1,86 @@
+schema_version: '2.0'
+title: Proctor2012 - Role of Amyloid-beta dimers in aggregation formation
+description: 'Proctor2012 - Amyloid-beta aggregation This model supports the current
+  thinking that levels of dimers are important in initiating the aggregation process.
+  This model is described in the article: Aggre.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Carole J Proctor
+- Ilse Sanet Pienaar
+- Joanna L Elson
+- Thomas B L Kirkwood
+upstream:
+  id: biomodels_ebi:BIOMD0000000462
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000462
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000462
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000462?filename=BIOMD0000000462_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.proctor2012_role_of_amyloid_beta_dimers_in_aggre_biomd0000000462_model:Proctor2012RoleOfAmyloidBetaDimersInAggreBiomd0000000462Model
+  init_kwargs:
+    model_path: data/BIOMD0000000462.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_neprilysin
+    maps_to: Nep
+    label: Initial Neprilysin
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Nep`.
+  - name: initial_abeta_plaque
+    maps_to: AbP
+    label: Initial Abeta Plaque
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `AbP`.
+  - name: initial_abeta_monomer
+    maps_to: Abeta
+    label: Initial Abeta Monomer
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Abeta`.
+  - name: initial_abeta_dimer
+    maps_to: AbDim
+    label: Initial Abeta Dimer
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `AbDim`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: neprilysin
+    maps_to: Nep
+    label: Neprilysin
+    description: Neprilysin. Maps to SBML symbol `Nep`.
+  - name: abeta_plaque
+    maps_to: AbP
+    label: AbetaPlaque
+    description: AbetaPlaque. Maps to SBML symbol `AbP`.
+  - name: abeta_monomer
+    maps_to: Abeta
+    label: AbetaMonomer
+    description: AbetaMonomer. Maps to SBML symbol `Abeta`.
+  - name: abeta_dimer
+    maps_to: AbDim
+    label: AbetaDimer
+    description: AbetaDimer. Maps to SBML symbol `AbDim`.

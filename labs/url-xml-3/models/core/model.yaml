@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: MODEL8262229752_url.xml
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models. It is copyright (c) 2005-2011 The BioModels.net Team.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Jun Li
+- Liang Wang
+- Yoshifumi Hashimoto
+- Chen-Yu Tsao
+- Thomas K Wood
+upstream:
+  id: biomodels_ebi:MODEL8262229752
+  source_db: biomodels_ebi
+  source_id: MODEL8262229752
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL8262229752
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL8262229752?filename=MODEL8262229752_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.model8262229752_url_xml_model8262229752_model:Model8262229752UrlXmlModel8262229752Model
+  init_kwargs:
+    model_path: data/MODEL8262229752.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_decarb_sam
+    maps_to: Decarb_SAM
+    label: Initial Decarb Sam
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Decarb_SAM`.
+  - name: initial_pfs_mrna
+    maps_to: Pfs_mRNA
+    label: Initial Pfs MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pfs_mRNA`.
+  - name: initial_lux_s_mrna
+    maps_to: LuxS_mRNA
+    label: Initial Lux S MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `LuxS_mRNA`.
+  - name: initial_pfs_gene
+    maps_to: pfs_gene
+    label: Initial Pfs Gene
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `pfs_gene`.
+  - name: initial_lux_s_gene
+    maps_to: LuxS_gene
+    label: Initial Lux S Gene
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `LuxS_gene`.
+  - name: initial_nutrients
+    maps_to: Nutrients
+    label: Initial Nutrients
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Nutrients`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: decarb_sam
+    maps_to: Decarb_SAM
+    label: Decarb SAM
+    description: Decarb SAM. Maps to SBML symbol `Decarb_SAM`.
+  - name: pfs_mrna
+    maps_to: Pfs_mRNA
+    label: Pfs MRNA
+    description: Pfs MRNA. Maps to SBML symbol `Pfs_mRNA`.
+  - name: lux_s_mrna
+    maps_to: LuxS_mRNA
+    label: LuxS MRNA
+    description: LuxS MRNA. Maps to SBML symbol `LuxS_mRNA`.
+  - name: pfs_gene
+    maps_to: pfs_gene
+    label: Pfs Gene
+    description: Pfs Gene. Maps to SBML symbol `pfs_gene`.
+  - name: lux_s_gene
+    maps_to: LuxS_gene
+    label: LuxS Gene
+    description: LuxS Gene. Maps to SBML symbol `LuxS_gene`.
+  - name: nutrients
+    maps_to: Nutrients
+    label: Nutrients
+    description: Nutrients. Maps to SBML symbol `Nutrients`.

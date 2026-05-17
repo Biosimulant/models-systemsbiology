@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "90931594-582b-473b-a7de-515669a44899",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "6e0d40f0-42ae-4449-9e46-b3fd9fc59984",
+  "created_at": "2026-05-16T05:46:51.223952577+00:00",
+  "last_synced_at": "2026-05-17T05:52:30.900936+00:00",
+  "hub_manifest_hash": "7ad9bf44b5cf7fc3c2f6f931b44719ff8bbf4ef583a9ec902842b4245c8a59c4",
+  "package_name": "radosavljevic2009-bioterroristattack-panicprotection-1-lab"
+}

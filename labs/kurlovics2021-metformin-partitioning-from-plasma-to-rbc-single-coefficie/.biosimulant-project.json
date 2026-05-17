@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "754184e4-5773-4a25-b807-a1ae6a13fc3b",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "fc5058d5-bcf7-48f5-af90-67d34bec695c",
+  "created_at": "2026-05-16T05:46:44.977712587+00:00",
+  "last_synced_at": "2026-05-17T04:13:51.934799+00:00",
+  "hub_manifest_hash": "7bb6e9405e32c960c4353f393a59d57d29b8707229f683cfa36816d30e0ba7ef",
+  "package_name": "kurlovics2021-metformin-partitioning-from-plasma-to-rbc-single-c"
+}

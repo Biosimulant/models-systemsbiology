@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "bdb1477d-accb-465c-845c-e4534baea9de",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "334fdb8f-b08c-4aa6-982d-d80d713577e9",
+  "created_at": "2026-05-16T05:46:45.733228020+00:00",
+  "last_synced_at": "2026-05-17T04:36:15.813275+00:00",
+  "hub_manifest_hash": "5e1288d4b74d205660462b5850bb68c07ce2ef9b97e83e665b85d5019307d7ea",
+  "package_name": "lo2005-stochastic-modeling-of-blood-coagulation-initiation-lab"
+}

@@ -1,0 +1,105 @@
+schema_version: '2.0'
+title: Kierzek2001_LacZ
+description: An approximation to the &lt;a href = 'http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=pubmed&amp;dopt=Abstract&amp;list_uids=11062240
+  '&gt;Kierzek AM. It can be used to explore systemsbiology kierzek2001 lacz model4821294342
+  dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- A M Kierzek
+- J Zaim
+- P Zielenkiewicz
+upstream:
+  id: biomodels_ebi:MODEL4821294342
+  source_db: biomodels_ebi
+  source_id: MODEL4821294342
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL4821294342
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL4821294342?filename=MODEL4821294342_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.kierzek2001_lacz_model4821294342_model:Kierzek2001LaczModel4821294342Model
+  init_kwargs:
+    model_path: data/MODEL4821294342.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_lac_z_slash_rnap
+    maps_to: LacZ_slash_RNAP
+    label: Initial Lac Z Slash Rnap
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `LacZ_slash_RNAP`.
+  - name: initial_lac_z_slash_tr_rnap
+    maps_to: LacZ_slash_TrRNAP
+    label: Initial Lac Z Slash Tr Rnap
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `LacZ_slash_TrRNAP`.
+  - name: initial_lac_z_slash_protein
+    maps_to: LacZ_slash_Protein
+    label: Initial Lac Z Slash Protein
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `LacZ_slash_Protein`.
+  - name: initial_lac_z_slash_p_rnap
+    maps_to: LacZ_slash_P_RNAP
+    label: Initial Lac Z Slash P Rnap
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `LacZ_slash_P_RNAP`.
+  - name: initial_lac_z_slash_el_rnap
+    maps_to: LacZ_slash_ElRNAP
+    label: Initial Lac Z Slash El Rnap
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `LacZ_slash_ElRNAP`.
+  - name: initial_lac_z_slash_ribosome
+    maps_to: LacZ_slash_Ribosome
+    label: Initial Lac Z Slash Ribosome
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `LacZ_slash_Ribosome`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: lac_z_slash_rnap
+    maps_to: LacZ_slash_RNAP
+    label: LacZ Slash RNAP
+    description: LacZ Slash RNAP. Maps to SBML symbol `LacZ_slash_RNAP`.
+  - name: lac_z_slash_tr_rnap
+    maps_to: LacZ_slash_TrRNAP
+    label: LacZ Slash TrRNAP
+    description: LacZ Slash TrRNAP. Maps to SBML symbol `LacZ_slash_TrRNAP`.
+  - name: lac_z_slash_protein
+    maps_to: LacZ_slash_Protein
+    label: LacZ Slash Protein
+    description: LacZ Slash Protein. Maps to SBML symbol `LacZ_slash_Protein`.
+  - name: lac_z_slash_p_rnap
+    maps_to: LacZ_slash_P_RNAP
+    label: LacZ Slash P RNAP
+    description: LacZ Slash P RNAP. Maps to SBML symbol `LacZ_slash_P_RNAP`.
+  - name: lac_z_slash_el_rnap
+    maps_to: LacZ_slash_ElRNAP
+    label: LacZ Slash ElRNAP
+    description: LacZ Slash ElRNAP. Maps to SBML symbol `LacZ_slash_ElRNAP`.
+  - name: lac_z_slash_ribosome
+    maps_to: LacZ_slash_Ribosome
+    label: LacZ Slash Ribosome
+    description: LacZ Slash Ribosome. Maps to SBML symbol `LacZ_slash_Ribosome`.

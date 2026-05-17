@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "924f0357-9724-487d-ab51-6e1ac3d50f86",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "4b4a3ee1-305c-4699-a3f0-f77010a0e19c",
+  "created_at": "2026-05-16T05:46:49.877886700+00:00",
+  "last_synced_at": "2026-05-17T05:24:47.393324+00:00",
+  "hub_manifest_hash": "e3be824e0c516ecbed3fc2154ae7cc4f6229ddb00f34302184fa15f01a32fac9",
+  "package_name": "panteleev2010-blood-coagulation-full-lab"
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "852f6217-ba0c-42d8-8459-7bf8125fe74d",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "5e0dfbdc-0c7f-4cf0-a621-1d044c6eacbd",
+  "created_at": "2026-05-16T05:46:43.147330403+00:00",
+  "last_synced_at": "2026-05-17T03:06:03.499819+00:00",
+  "hub_manifest_hash": "d92598b0384e1147f2f57eca347df20b6d1e8e165260d197c3d3d32142997d44",
+  "package_name": "feist2006-methanogenesis-optipyruvate-lab"
+}

@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Bravo2012 Modelling Blood Coagulation Factor Va Inactivation By Apc Lab
+description: Mathematical model of blood coagulation factor Va and Va fragment inactivation
+  by APC, reactions with Xa and prothrombinase-prothrombin complex formation. It can
+  be used to explore systemsbiology bravo2012 modelling blood coagulation factor dynamics
+  and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_bravo2012_modelling_blood_coagulation_factor_va_biomd0000000739_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_bravo2012_modelling_blood_coagulation_factor_va_biomd0000000739_model.state
+  to:
+  - visualisation.systemsbiology_sbml_bravo2012_modelling_blood_coagulation_factor_va_biomd0000000739_model_state
+- from: systemsbiology_sbml_bravo2012_modelling_blood_coagulation_factor_va_biomd0000000739_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_bravo2012_modelling_blood_coagulation_factor_va_biomd0000000739_model_summary
+- from: systemsbiology_sbml_bravo2012_modelling_blood_coagulation_factor_va_biomd0000000739_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_bravo2012_modelling_blood_coagulation_factor_va_biomd0000000739_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_xa_va_i_506_pt
+    maps_to: systemsbiology_sbml_bravo2012_modelling_blood_coagulation_factor_va_biomd0000000739_model.initial_xa_va_i_506_pt
+    label: Initial Xa Va I 506 Pt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_Va_i_506_PT`.
+  - name: initial_xa_va_i_506
+    maps_to: systemsbiology_sbml_bravo2012_modelling_blood_coagulation_factor_va_biomd0000000739_model.initial_xa_va_i_506
+    label: Initial Xa Va I 506
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_Va_i_506`.
+  - name: initial_xa_va_i_306_pt
+    maps_to: systemsbiology_sbml_bravo2012_modelling_blood_coagulation_factor_va_biomd0000000739_model.initial_xa_va_i_306_pt
+    label: Initial Xa Va I 306 Pt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_Va_i_306_PT`.
+  - name: initial_xa_va_i_306_506_pt
+    maps_to: systemsbiology_sbml_bravo2012_modelling_blood_coagulation_factor_va_biomd0000000739_model.initial_xa_va_i_306_506_pt
+    label: Initial Xa Va I 306 506 Pt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_Va_i_306_506_PT`.
+  - name: initial_xa_va_i_306_506
+    maps_to: systemsbiology_sbml_bravo2012_modelling_blood_coagulation_factor_va_biomd0000000739_model.initial_xa_va_i_306_506
+    label: Initial Xa Va I 306 506
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_Va_i_306_506`.
+  - name: initial_xa_va_i_306
+    maps_to: systemsbiology_sbml_bravo2012_modelling_blood_coagulation_factor_va_biomd0000000739_model.initial_xa_va_i_306
+    label: Initial Xa Va I 306
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_Va_i_306`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_bravo2012_modelling_blood_coagulation_factor_va_biomd0000000739_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_bravo2012_modelling_blood_coagulation_factor_va_biomd0000000739_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_bravo2012_modelling_blood_coagulation_factor_va_biomd0000000739_model.species_labels
+  - name: xa_va_i_506_pt
+    maps_to: systemsbiology_sbml_bravo2012_modelling_blood_coagulation_factor_va_biomd0000000739_model.xa_va_i_506_pt
+  - name: xa_va_i_506
+    maps_to: systemsbiology_sbml_bravo2012_modelling_blood_coagulation_factor_va_biomd0000000739_model.xa_va_i_506
+  - name: xa_va_i_306_pt
+    maps_to: systemsbiology_sbml_bravo2012_modelling_blood_coagulation_factor_va_biomd0000000739_model.xa_va_i_306_pt
+  - name: xa_va_i_306_506_pt
+    maps_to: systemsbiology_sbml_bravo2012_modelling_blood_coagulation_factor_va_biomd0000000739_model.xa_va_i_306_506_pt
+  - name: xa_va_i_306_506
+    maps_to: systemsbiology_sbml_bravo2012_modelling_blood_coagulation_factor_va_biomd0000000739_model.xa_va_i_306_506
+  - name: xa_va_i_306
+    maps_to: systemsbiology_sbml_bravo2012_modelling_blood_coagulation_factor_va_biomd0000000739_model.xa_va_i_306

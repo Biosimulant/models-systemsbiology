@@ -1,0 +1,46 @@
+schema_version: '2.0'
+title: Wilhelm2009_BistableReaction Visualisation
+description: Question-and-answer and dynamic visual summaries for Wilhelm2009_BistableReaction.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Wilhelm2009 Bistablereaction Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Wilhelm2009_BistableReaction.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_wilhelm2009_bistablereaction_biomd0000000233_model
+      title: Wilhelm2009_BistableReaction
+      observables:
+      - id: Y
+        port: model_state_y
+        label: Y
+        group: physiology
+      - id: X
+        port: model_state_x
+        label: X
+        group: physiology
+      - id: S
+        port: model_state_s
+        label: S
+        group: physiology
+      - id: P
+        port: model_state_p
+        label: P
+        group: physiology
+io:
+  inputs: []
+  outputs: []

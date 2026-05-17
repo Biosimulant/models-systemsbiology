@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Locke2006_CircClock_LL Visualisation
+description: Question-and-answer and dynamic visual summaries for Locke2006_CircClock_LL.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Locke2006 Circclock Ll Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Locke2006_CircClock_LL.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_locke2006_circclock_ll_biomd0000000089_model
+      title: Locke2006_CircClock_LL
+      observables:
+      - id: cAm
+        port: ppr7_9_mrna
+        label: PPR7/9 mRNA
+        group: gene_regulation
+      - id: cAn
+        port: ppr7_9_protein_in_nucleus
+        label: PPR7/9 protein in nucleus
+        group: gene_regulation
+      - id: cAc
+        port: ppr7_9_protein_in_cytoplasm
+        label: PPR7/9 protein in cytoplasm
+        group: gene_regulation
+      - id: cTc
+        port: toc1_protein_in_cytoplasm
+        label: TOC1 protein  in cytoplasm
+        group: gene_regulation
+      - id: cXc
+        port: x_protein_in_cytoplasm
+        label: X protein in cytoplasm
+        group: gene_regulation
+      - id: cPn
+        port: light_sensitive_protein_p
+        label: light sensitive protein P
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

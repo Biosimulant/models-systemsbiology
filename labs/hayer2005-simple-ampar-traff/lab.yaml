@@ -1,0 +1,90 @@
+schema_version: '2.0'
+title: Hayer2005 Simple Ampar Traff Lab
+description: This is a highly simplified model of the AMPAR trafficking cycle that
+  exhibits bistability. It can be used to explore systemsbiology hayer2005 simple
+  ampar traff model2 dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_hayer2005_simple_ampar_traff_model2_model9086628127_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_hayer2005_simple_ampar_traff_model2_model9086628127_model.state
+  to:
+  - visualisation.systemsbiology_sbml_hayer2005_simple_ampar_traff_model2_model9086628127_model_state
+- from: systemsbiology_sbml_hayer2005_simple_ampar_traff_model2_model9086628127_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_hayer2005_simple_ampar_traff_model2_model9086628127_model_summary
+- from: systemsbiology_sbml_hayer2005_simple_ampar_traff_model2_model9086628127_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_hayer2005_simple_ampar_traff_model2_model9086628127_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_internal_slash_ir_star
+    maps_to: systemsbiology_sbml_hayer2005_simple_ampar_traff_model2_model9086628127_model.initial_internal_slash_ir_star
+    label: Initial Internal Slash Ir Star
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Internal_slash_IR_star_`.
+  - name: initial_internal_slash_ir
+    maps_to: systemsbiology_sbml_hayer2005_simple_ampar_traff_model2_model9086628127_model.initial_internal_slash_ir
+    label: Initial Internal Slash Ir
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Internal_slash_IR`.
+  - name: initial_pka_minus_active_slash_internal_minus_pka_minus_act_slash_internal_minus_pka_minus_act_cplx
+    maps_to: systemsbiology_sbml_hayer2005_simple_ampar_traff_model2_model9086628127_model.initial_pka_minus_active_slash_internal_minus_pka_minus_act_slash_internal_minus_pka_minus_act_cplx
+    label: Initial Pka Minus Active Slash Internal Minus Pka Minus Act Slash Internal
+      Minus Pka Minus Act Cplx
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PKA_minus_active_slash_internal_minus_PKA_minus_act_slash_internal_minus_PKA_minus_act_cplx`.
+  - name: initial_pka_minus_active_slash_internal_minus_pka_minus_act_sbo_1_sbc_slash_internal_minus_pka_minus_act_sbo_1_sbc_cplx
+    maps_to: systemsbiology_sbml_hayer2005_simple_ampar_traff_model2_model9086628127_model.initial_pka_minus_active_slash_internal_minus_pka_minus_act_sbo_1_sbc_slash_internal_minus_pka_minus_act_sbo_1_sbc_cplx
+    label: Initial Pka Minus Active Slash Internal Minus Pka Minus Act Sbo 1 Sbc Slash
+      Internal Minus Pka Minus Act Sbo 1 Sbc Cplx
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PKA_minus_active_slash_internal_minus_PKA_minus_act_sbo_1_sbc__slash_internal_minus_PKA_minus_act_sbo_1_sbc__cplx`.
+  - name: initial_internal_slash_ir_star_star
+    maps_to: systemsbiology_sbml_hayer2005_simple_ampar_traff_model2_model9086628127_model.initial_internal_slash_ir_star_star
+    label: Initial Internal Slash Ir Star Star
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Internal_slash_IR_star__star_`.
+  - name: initial_anchor
+    maps_to: systemsbiology_sbml_hayer2005_simple_ampar_traff_model2_model9086628127_model.initial_anchor
+    label: Initial Anchor
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Anchor`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_hayer2005_simple_ampar_traff_model2_model9086628127_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_hayer2005_simple_ampar_traff_model2_model9086628127_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_hayer2005_simple_ampar_traff_model2_model9086628127_model.species_labels
+  - name: internal_slash_ir_star
+    maps_to: systemsbiology_sbml_hayer2005_simple_ampar_traff_model2_model9086628127_model.internal_slash_ir_star
+  - name: internal_slash_ir
+    maps_to: systemsbiology_sbml_hayer2005_simple_ampar_traff_model2_model9086628127_model.internal_slash_ir
+  - name: pka_minus_active_slash_internal_minus_pka_minus_act_slash_internal_minus_pka_minus_act_cplx
+    maps_to: systemsbiology_sbml_hayer2005_simple_ampar_traff_model2_model9086628127_model.pka_minus_active_slash_internal_minus_pka_minus_act_slash_internal_minus_pka_minus_act_cplx
+  - name: pka_minus_active_slash_internal_minus_pka_minus_act_sbo_1_sbc_slash_internal_minus_pka_minus_act_sbo_1_sbc_cplx
+    maps_to: systemsbiology_sbml_hayer2005_simple_ampar_traff_model2_model9086628127_model.pka_minus_active_slash_internal_minus_pka_minus_act_sbo_1_sbc_slash_internal_minus_pka_minus_act_sbo_1_sbc_cplx
+  - name: internal_slash_ir_star_star
+    maps_to: systemsbiology_sbml_hayer2005_simple_ampar_traff_model2_model9086628127_model.internal_slash_ir_star_star
+  - name: anchor
+    maps_to: systemsbiology_sbml_hayer2005_simple_ampar_traff_model2_model9086628127_model.anchor

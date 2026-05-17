@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "0cc13872-8680-4664-9885-b00f79a89fe5",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "a62d11bb-c284-4e4a-8757-0603dca49501",
+  "created_at": "2026-05-16T05:46:49.560955143+00:00",
+  "last_synced_at": "2026-05-17T05:21:18.830160+00:00",
+  "hub_manifest_hash": "e273875942345a02f325131b3b6be9b5fcd23cb93668eb5fe5c4d3cbcee33859",
+  "package_name": "ota2015-positive-regulation-of-rho-gtpase-activity-by-rhogdis-as"
+}

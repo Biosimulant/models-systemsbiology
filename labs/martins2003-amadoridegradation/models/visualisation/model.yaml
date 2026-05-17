@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Martins2003_AmadoriDegradation Visualisation
+description: Question-and-answer and dynamic visual summaries for Martins2003_AmadoriDegradation.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Martins2003 Amadoridegradation Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Martins2003_AmadoriDegradation.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_martins2003_amadoridegradation_biomd0000000050_model
+      title: Martins2003_AmadoriDegradation
+      observables:
+      - id: DFG
+        port: dfg
+        label: DFG
+        group: physiology
+      - id: Mel
+        port: mel
+        label: Mel
+        group: physiology
+      - id: Man
+        port: man
+        label: Man
+        group: physiology
+      - id: MG
+        port: model_state_mg
+        label: MG
+        group: physiology
+      - id: Gly
+        port: gly
+        label: Gly
+        group: physiology
+      - id: Glu
+        port: glu
+        label: Glu
+        group: physiology
+io:
+  inputs: []
+  outputs: []

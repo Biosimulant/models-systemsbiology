@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Ferreira2003 Cml Generation2 Lab
+description: The model should reproduce the figure 2F of the article. The equation
+  7 has been split into equations 7a-7c, in order to take into account the different
+  flux rates of Lysine and CML formation from Sch.
+models:
+- alias: systemsbiology_sbml_ferreira2003_cml_generation2_biomd0000000053_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_ferreira2003_cml_generation2_biomd0000000053_model.state
+  to:
+  - visualisation.systemsbiology_sbml_ferreira2003_cml_generation2_biomd0000000053_model_state
+- from: systemsbiology_sbml_ferreira2003_cml_generation2_biomd0000000053_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_ferreira2003_cml_generation2_biomd0000000053_model_summary
+- from: systemsbiology_sbml_ferreira2003_cml_generation2_biomd0000000053_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_ferreira2003_cml_generation2_biomd0000000053_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_glucose
+    maps_to: systemsbiology_sbml_ferreira2003_cml_generation2_biomd0000000053_model.initial_glucose
+    label: Initial Glucose
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Glucose`.
+  - name: initial_lysine
+    maps_to: systemsbiology_sbml_ferreira2003_cml_generation2_biomd0000000053_model.initial_lysine
+    label: Initial Lysine
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Lysine`.
+  - name: initial_schiff
+    maps_to: systemsbiology_sbml_ferreira2003_cml_generation2_biomd0000000053_model.initial_schiff
+    label: Initial Schiff
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Schiff`.
+  - name: initial_glyoxal
+    maps_to: systemsbiology_sbml_ferreira2003_cml_generation2_biomd0000000053_model.initial_glyoxal
+    label: Initial Glyoxal
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Glyoxal`.
+  - name: initial_model_state_cml
+    maps_to: systemsbiology_sbml_ferreira2003_cml_generation2_biomd0000000053_model.initial_model_state_cml
+    label: Initial Model State Cml
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CML`.
+  - name: initial_amadori
+    maps_to: systemsbiology_sbml_ferreira2003_cml_generation2_biomd0000000053_model.initial_amadori
+    label: Initial Amadori
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Amadori`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_ferreira2003_cml_generation2_biomd0000000053_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_ferreira2003_cml_generation2_biomd0000000053_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_ferreira2003_cml_generation2_biomd0000000053_model.species_labels
+  - name: glucose
+    maps_to: systemsbiology_sbml_ferreira2003_cml_generation2_biomd0000000053_model.glucose
+  - name: lysine
+    maps_to: systemsbiology_sbml_ferreira2003_cml_generation2_biomd0000000053_model.lysine
+  - name: schiff
+    maps_to: systemsbiology_sbml_ferreira2003_cml_generation2_biomd0000000053_model.schiff
+  - name: glyoxal
+    maps_to: systemsbiology_sbml_ferreira2003_cml_generation2_biomd0000000053_model.glyoxal
+  - name: cml
+    maps_to: systemsbiology_sbml_ferreira2003_cml_generation2_biomd0000000053_model.cml
+  - name: amadori
+    maps_to: systemsbiology_sbml_ferreira2003_cml_generation2_biomd0000000053_model.amadori

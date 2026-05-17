@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "f4a9eff9-1e83-4a33-bce7-2a3e12797a52",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "2751b22c-bb57-4555-9441-c53408a2defb",
+  "created_at": "2026-05-16T05:46:51.258378732+00:00",
+  "last_synced_at": "2026-05-17T05:53:51.161831+00:00",
+  "hub_manifest_hash": "65af94b8daeaf75a92aa022c58d16693a78af6d1b0a6e69ab9b5229c8f7d4e51",
+  "package_name": "ratushny2012-nf-lab"
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "14c6d65d-0c6a-4dee-bfe5-8e88cb59749b",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "0338b561-585f-46c4-a3d7-3f472769b0f9",
+  "created_at": "2026-05-16T05:46:45.242116297+00:00",
+  "last_synced_at": "2026-05-17T04:23:41.344832+00:00",
+  "hub_manifest_hash": "b4097c0414b6ad701fb793e558a89d827f7c512aaaedbaa6360604e5bcf81cc4",
+  "package_name": "lei2001-yeast-aerobic-metabolism-lab"
+}

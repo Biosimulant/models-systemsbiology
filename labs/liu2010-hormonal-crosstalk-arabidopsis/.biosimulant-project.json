@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "dd8bc8a4-ed23-4f4f-87b5-769ed075be2f",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "16364ce7-c209-4fc9-ac96-75af68c72f0a",
+  "created_at": "2026-05-16T05:46:45.528649607+00:00",
+  "last_synced_at": "2026-05-17T04:33:29.730836+00:00",
+  "hub_manifest_hash": "dce9bd14415c297cb00113b2d37be0331be748537461bba0d40817d78fd1b0b6",
+  "package_name": "liu2010-hormonal-crosstalk-arabidopsis-lab"
+}

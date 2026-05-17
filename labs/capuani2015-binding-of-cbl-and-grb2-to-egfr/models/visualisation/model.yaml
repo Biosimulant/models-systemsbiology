@@ -1,0 +1,59 @@
+schema_version: '2.0'
+title: Capuani2015 - Binding of Cbl and Grb2 to EGFR (Early Activation Model - EAM)
+  Visualisation
+description: Question-and-answer and dynamic visual summaries for Capuani2015 - Binding
+  of Cbl and Grb2 to EGFR (Early Activation Model - EAM).
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Capuani2015 Binding Of Cbl And Grb2 To Egfr Lab
+    question: 'Which signalling variables dominate the simulated network response?
+      Source model: Capuani2015 - Binding of Cbl and Grb2 to EGFR (Early Activation
+      Model - EAM).'
+    answer_focus: Q/A table plus signaling timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_capuani2015_binding_of_cbl_and_grb2_to_egfr_earl_biomd0000000595_model
+      title: Capuani2015 - Binding of Cbl and Grb2 to EGFR (Early Activation Model
+        - EAM)
+      observables:
+      - id: Grb2
+        port: grb2
+        label: Grb2
+        group: signaling
+      - id: Rc00UU
+        port: rc00_uu
+        label: Rc00UU
+        group: signaling
+      - id: Di00UU
+        port: di00_uu
+        label: Di00UU
+        group: signaling
+      - id: R00UU
+        port: r00_uu
+        label: R00UU
+        group: signaling
+      - id: CG
+        port: model_state_cg
+        label: CG
+        group: signaling
+      - id: Cbl
+        port: cbl
+        label: Cbl
+        group: signaling
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Venkatraman2012 Interplay Between Pls And Tsp1 In Tgf 1 Activation Lab
+description: Venkatraman2012 - Interplay between PLS and TSP1 in TGF-β1 activation
+  The interplay between PLS (Plasmin) and TSP1 (Thrombospondin-1) in TGF-β1 (Transforming
+  growth factor-β1)is shown using mathematic. It can be used to explore systemsbiology
+  venkatraman2012 interplay between pls and dynamics and compare simulation behavior
+  across conditions.
+models:
+- alias: systemsbiology_sbml_venkatraman2012_interplay_between_pls_and_tsp1_i_biomd0000000447_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_venkatraman2012_interplay_between_pls_and_tsp1_i_biomd0000000447_model.state
+  to:
+  - visualisation.systemsbiology_sbml_venkatraman2012_interplay_between_pls_and_tsp1_i_biomd0000000447_model_state
+- from: systemsbiology_sbml_venkatraman2012_interplay_between_pls_and_tsp1_i_biomd0000000447_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_venkatraman2012_interplay_between_pls_and_tsp1_i_biomd0000000447_model_summary
+- from: systemsbiology_sbml_venkatraman2012_interplay_between_pls_and_tsp1_i_biomd0000000447_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_venkatraman2012_interplay_between_pls_and_tsp1_i_biomd0000000447_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_ltg_fb1
+    maps_to: systemsbiology_sbml_venkatraman2012_interplay_between_pls_and_tsp1_i_biomd0000000447_model.initial_ltg_fb1
+    label: Initial Ltg FB1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_5`.
+  - name: initial_tg_fb1
+    maps_to: systemsbiology_sbml_venkatraman2012_interplay_between_pls_and_tsp1_i_biomd0000000447_model.initial_tg_fb1
+    label: Initial Tg FB1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_6`.
+  - name: initial_a2_m
+    maps_to: systemsbiology_sbml_venkatraman2012_interplay_between_pls_and_tsp1_i_biomd0000000447_model.initial_a2_m
+    label: Initial A2 M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_10`.
+  - name: initial_model_state_plg
+    maps_to: systemsbiology_sbml_venkatraman2012_interplay_between_pls_and_tsp1_i_biomd0000000447_model.initial_model_state_plg
+    label: Initial Model State Plg
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_1`.
+  - name: initial_sc_upa
+    maps_to: systemsbiology_sbml_venkatraman2012_interplay_between_pls_and_tsp1_i_biomd0000000447_model.initial_sc_upa
+    label: Initial Sc Upa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_3`.
+  - name: initial_tc_upa
+    maps_to: systemsbiology_sbml_venkatraman2012_interplay_between_pls_and_tsp1_i_biomd0000000447_model.initial_tc_upa
+    label: Initial Tc Upa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_4`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_venkatraman2012_interplay_between_pls_and_tsp1_i_biomd0000000447_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_venkatraman2012_interplay_between_pls_and_tsp1_i_biomd0000000447_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_venkatraman2012_interplay_between_pls_and_tsp1_i_biomd0000000447_model.species_labels
+  - name: ltg_fb1
+    maps_to: systemsbiology_sbml_venkatraman2012_interplay_between_pls_and_tsp1_i_biomd0000000447_model.ltg_fb1
+  - name: tg_fb1
+    maps_to: systemsbiology_sbml_venkatraman2012_interplay_between_pls_and_tsp1_i_biomd0000000447_model.tg_fb1
+  - name: a2_m
+    maps_to: systemsbiology_sbml_venkatraman2012_interplay_between_pls_and_tsp1_i_biomd0000000447_model.a2_m
+  - name: plg
+    maps_to: systemsbiology_sbml_venkatraman2012_interplay_between_pls_and_tsp1_i_biomd0000000447_model.plg
+  - name: sc_upa
+    maps_to: systemsbiology_sbml_venkatraman2012_interplay_between_pls_and_tsp1_i_biomd0000000447_model.sc_upa
+  - name: tc_upa
+    maps_to: systemsbiology_sbml_venkatraman2012_interplay_between_pls_and_tsp1_i_biomd0000000447_model.tc_upa

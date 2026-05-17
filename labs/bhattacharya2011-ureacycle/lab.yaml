@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Bhattacharya2011 Ureacycle Lab
+description: 'This model is from the article: Time Scale Simulation of Vmax of Urea
+  Cycle Enzymes. Pradip Bhattacharya, Alok Srivastava, Sarbashish Das, Samiyadeep
+  Nandi, Ganeshan Tamil, Ashutosh Viswabandhu, Heman.'
+models:
+- alias: systemsbiology_sbml_bhattacharya2011_ureacycle_model0318212660_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_bhattacharya2011_ureacycle_model0318212660_model.state
+  to:
+  - visualisation.systemsbiology_sbml_bhattacharya2011_ureacycle_model0318212660_model_state
+- from: systemsbiology_sbml_bhattacharya2011_ureacycle_model0318212660_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_bhattacharya2011_ureacycle_model0318212660_model_summary
+- from: systemsbiology_sbml_bhattacharya2011_ureacycle_model0318212660_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_bhattacharya2011_ureacycle_model0318212660_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_node9
+    maps_to: systemsbiology_sbml_bhattacharya2011_ureacycle_model0318212660_model.initial_node9
+    label: Initial Node9
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Node9`.
+  - name: initial_node8
+    maps_to: systemsbiology_sbml_bhattacharya2011_ureacycle_model0318212660_model.initial_node8
+    label: Initial Node8
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Node8`.
+  - name: initial_node7
+    maps_to: systemsbiology_sbml_bhattacharya2011_ureacycle_model0318212660_model.initial_node7
+    label: Initial Node7
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Node7`.
+  - name: initial_node6
+    maps_to: systemsbiology_sbml_bhattacharya2011_ureacycle_model0318212660_model.initial_node6
+    label: Initial Node6
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Node6`.
+  - name: initial_node4
+    maps_to: systemsbiology_sbml_bhattacharya2011_ureacycle_model0318212660_model.initial_node4
+    label: Initial Node4
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Node4`.
+  - name: initial_node3
+    maps_to: systemsbiology_sbml_bhattacharya2011_ureacycle_model0318212660_model.initial_node3
+    label: Initial Node3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Node3`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_bhattacharya2011_ureacycle_model0318212660_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_bhattacharya2011_ureacycle_model0318212660_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_bhattacharya2011_ureacycle_model0318212660_model.species_labels
+  - name: node9
+    maps_to: systemsbiology_sbml_bhattacharya2011_ureacycle_model0318212660_model.node9
+  - name: node8
+    maps_to: systemsbiology_sbml_bhattacharya2011_ureacycle_model0318212660_model.node8
+  - name: node7
+    maps_to: systemsbiology_sbml_bhattacharya2011_ureacycle_model0318212660_model.node7
+  - name: node6
+    maps_to: systemsbiology_sbml_bhattacharya2011_ureacycle_model0318212660_model.node6
+  - name: node4
+    maps_to: systemsbiology_sbml_bhattacharya2011_ureacycle_model0318212660_model.node4
+  - name: node3
+    maps_to: systemsbiology_sbml_bhattacharya2011_ureacycle_model0318212660_model.node3

@@ -1,0 +1,74 @@
+schema_version: '2.0'
+title: Borghans1997 Calcium Oscillation Model 2 Lab
+description: Borghans1997 - Calcium Oscillation - Model 2 A theoretical expoloration
+  of possible mechanisms of intracellular calcium oscillations has been studied, considering
+  three hypothesis (see below). It can be used to explore systemsbiology borghans1997
+  calcium oscillation 2 BioModels0000000044 dynamics and compare simulation behavior
+  across conditions.
+models:
+- alias: systemsbiology_sbml_borghans1997_calcium_oscillation_model_2_biomd0000000044_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_borghans1997_calcium_oscillation_model_2_biomd0000000044_model.state
+  to:
+  - visualisation.systemsbiology_sbml_borghans1997_calcium_oscillation_model_2_biomd0000000044_model_state
+- from: systemsbiology_sbml_borghans1997_calcium_oscillation_model_2_biomd0000000044_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_borghans1997_calcium_oscillation_model_2_biomd0000000044_model_summary
+- from: systemsbiology_sbml_borghans1997_calcium_oscillation_model_2_biomd0000000044_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_borghans1997_calcium_oscillation_model_2_biomd0000000044_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_ec
+    maps_to: systemsbiology_sbml_borghans1997_calcium_oscillation_model_2_biomd0000000044_model.initial_model_state_ec
+    label: Initial Model State Ec
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `EC`.
+  - name: initial_model_state_a
+    maps_to: systemsbiology_sbml_borghans1997_calcium_oscillation_model_2_biomd0000000044_model.initial_model_state_a
+    label: Initial Model State A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `A`.
+  - name: initial_model_state_y
+    maps_to: systemsbiology_sbml_borghans1997_calcium_oscillation_model_2_biomd0000000044_model.initial_model_state_y
+    label: Initial Model State Y
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Y`.
+  - name: initial_model_state_z
+    maps_to: systemsbiology_sbml_borghans1997_calcium_oscillation_model_2_biomd0000000044_model.initial_model_state_z
+    label: Initial Model State Z
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Z`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_borghans1997_calcium_oscillation_model_2_biomd0000000044_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_borghans1997_calcium_oscillation_model_2_biomd0000000044_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_borghans1997_calcium_oscillation_model_2_biomd0000000044_model.species_labels
+  - name: model_state_ec
+    maps_to: systemsbiology_sbml_borghans1997_calcium_oscillation_model_2_biomd0000000044_model.model_state_ec
+  - name: model_state_a
+    maps_to: systemsbiology_sbml_borghans1997_calcium_oscillation_model_2_biomd0000000044_model.model_state_a
+  - name: model_state_y
+    maps_to: systemsbiology_sbml_borghans1997_calcium_oscillation_model_2_biomd0000000044_model.model_state_y
+  - name: model_state_z
+    maps_to: systemsbiology_sbml_borghans1997_calcium_oscillation_model_2_biomd0000000044_model.model_state_z

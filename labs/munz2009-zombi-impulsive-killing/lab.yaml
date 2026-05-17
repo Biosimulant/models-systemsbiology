@@ -1,0 +1,64 @@
+schema_version: '2.0'
+title: Munz2009 Zombi Impulsive Killing Lab
+description: Munz2009 - Zombie Impulsive Killing This is the basic SZR model with
+  impulsive killing described in the article. It can be used to explore systemsbiology
+  munz2009 zombi impulsive killing model1008060000 dynamics and compare simulation
+  behavior across conditions.
+models:
+- alias: systemsbiology_sbml_munz2009_zombi_impulsive_killing_model1008060000_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_munz2009_zombi_impulsive_killing_model1008060000_model.state
+  to:
+  - visualisation.systemsbiology_sbml_munz2009_zombi_impulsive_killing_model1008060000_model_state
+- from: systemsbiology_sbml_munz2009_zombi_impulsive_killing_model1008060000_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_munz2009_zombi_impulsive_killing_model1008060000_model_summary
+- from: systemsbiology_sbml_munz2009_zombi_impulsive_killing_model1008060000_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_munz2009_zombi_impulsive_killing_model1008060000_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_zombie
+    maps_to: systemsbiology_sbml_munz2009_zombi_impulsive_killing_model1008060000_model.initial_zombie
+    label: Initial Zombie
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Z`.
+  - name: initial_susceptible
+    maps_to: systemsbiology_sbml_munz2009_zombi_impulsive_killing_model1008060000_model.initial_susceptible
+    label: Initial Susceptible
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S`.
+  - name: initial_removed
+    maps_to: systemsbiology_sbml_munz2009_zombi_impulsive_killing_model1008060000_model.initial_removed
+    label: Initial Removed
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `R`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_munz2009_zombi_impulsive_killing_model1008060000_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_munz2009_zombi_impulsive_killing_model1008060000_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_munz2009_zombi_impulsive_killing_model1008060000_model.species_labels
+  - name: zombie
+    maps_to: systemsbiology_sbml_munz2009_zombi_impulsive_killing_model1008060000_model.zombie
+  - name: susceptible
+    maps_to: systemsbiology_sbml_munz2009_zombi_impulsive_killing_model1008060000_model.susceptible
+  - name: removed
+    maps_to: systemsbiology_sbml_munz2009_zombi_impulsive_killing_model1008060000_model.removed

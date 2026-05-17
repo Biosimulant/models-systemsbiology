@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Kuhn2009_EndoMesodermNetwork
+description: 'This a model from the article: Monte Carlo analysis of an ODE Model
+  of the Sea Urchin Endomesoderm Network. Kühn C, Wierling C, Kühn A, Klipp E, Panopoulou
+  G, Lehrach H, Poustka AJ.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Clemens Kühn
+- Christoph Wierling
+- Alexander Kühn
+- Edda Klipp
+- Georgia Panopoulou
+upstream:
+  id: biomodels_ebi:BIOMD0000000235
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000235
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000235
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000235?filename=BIOMD0000000235_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.kuhn2009_endomesodermnetwork_biomd0000000235_model:Kuhn2009EndomesodermnetworkBiomd0000000235Model
+  init_kwargs:
+    model_path: data/BIOMD0000000235.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_mrna_p_vegfr
+    maps_to: mRNA_P_VEGFR
+    label: Initial MRNA P Vegfr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mRNA_P_VEGFR`.
+  - name: initial_mrna_m_vegfr
+    maps_to: mRNA_M_VEGFR
+    label: Initial MRNA M Vegfr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mRNA_M_VEGFR`.
+  - name: initial_mrna_e_vegfr
+    maps_to: mRNA_E_VEGFR
+    label: Initial MRNA E Vegfr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mRNA_E_VEGFR`.
+  - name: initial_protein_p_vegf_signal
+    maps_to: PROTEIN_P_VEGFSignal
+    label: Initial Protein P Vegf Signal
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PROTEIN_P_VEGFSignal`.
+  - name: initial_protein_p_vegfr
+    maps_to: PROTEIN_P_VEGFR
+    label: Initial Protein P Vegfr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PROTEIN_P_VEGFR`.
+  - name: initial_protein_m_vegf_signal
+    maps_to: PROTEIN_M_VEGFSignal
+    label: Initial Protein M Vegf Signal
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PROTEIN_M_VEGFSignal`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: mrna_p_vegfr
+    maps_to: mRNA_P_VEGFR
+    label: mRNA_P_VEGFR
+    description: mRNA_P_VEGFR. Maps to SBML symbol `mRNA_P_VEGFR`.
+  - name: mrna_m_vegfr
+    maps_to: mRNA_M_VEGFR
+    label: mRNA_M_VEGFR
+    description: mRNA_M_VEGFR. Maps to SBML symbol `mRNA_M_VEGFR`.
+  - name: mrna_e_vegfr
+    maps_to: mRNA_E_VEGFR
+    label: mRNA_E_VEGFR
+    description: mRNA_E_VEGFR. Maps to SBML symbol `mRNA_E_VEGFR`.
+  - name: protein_p_vegf_signal
+    maps_to: PROTEIN_P_VEGFSignal
+    label: PROTEIN_P_VEGFSignal
+    description: PROTEIN_P_VEGFSignal. Maps to SBML symbol `PROTEIN_P_VEGFSignal`.
+  - name: protein_p_vegfr
+    maps_to: PROTEIN_P_VEGFR
+    label: PROTEIN_P_VEGFR
+    description: PROTEIN_P_VEGFR. Maps to SBML symbol `PROTEIN_P_VEGFR`.
+  - name: protein_m_vegf_signal
+    maps_to: PROTEIN_M_VEGFSignal
+    label: PROTEIN_M_VEGFSignal
+    description: PROTEIN_M_VEGFSignal. Maps to SBML symbol `PROTEIN_M_VEGFSignal`.

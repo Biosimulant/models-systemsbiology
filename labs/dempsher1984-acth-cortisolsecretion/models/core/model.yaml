@@ -1,0 +1,105 @@
+schema_version: '2.0'
+title: Dempsher1984_ACTH_CortisolSecretion
+description: 'This a model from the article: A mechanistic model of ACTH-stimulated
+  cortisol secretion. It can be used to explore systemsbiology dempsher1984 acth cortisolsecretion
+  model0912835813 dynamics and compare simulation behavior across conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- D P Dempsher
+- D S Gann
+- R D Phair
+upstream:
+  id: biomodels_ebi:MODEL0912835813
+  source_db: biomodels_ebi
+  source_id: MODEL0912835813
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL0912835813
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0912835813?filename=MODEL0912835813_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.dempsher1984_acth_cortisolsecretion_model0912835813_model:Dempsher1984ActhCortisolsecretionModel0912835813Model
+  init_kwargs:
+    model_path: data/MODEL0912835813.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_pro
+    maps_to: PRO
+    label: Initial Model State Pro
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PRO`.
+  - name: initial_preg
+    maps_to: PREG
+    label: Initial Preg
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PREG`.
+  - name: initial_kmtr
+    maps_to: Kmtr
+    label: Initial Kmtr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Kmtr`.
+  - name: initial_kfor
+    maps_to: Kfor
+    label: Initial Kfor
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Kfor`.
+  - name: initial_hypr
+    maps_to: HYPR
+    label: Initial Hypr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `HYPR`.
+  - name: initial_cort
+    maps_to: CORT
+    label: Initial Cort
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CORT`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: pro
+    maps_to: PRO
+    label: PRO
+    description: PRO. Maps to SBML symbol `PRO`.
+  - name: preg
+    maps_to: PREG
+    label: PREG
+    description: PREG. Maps to SBML symbol `PREG`.
+  - name: kmtr
+    maps_to: Kmtr
+    label: Kmtr
+    description: Kmtr. Maps to SBML symbol `Kmtr`.
+  - name: kfor
+    maps_to: Kfor
+    label: Kfor
+    description: Kfor. Maps to SBML symbol `Kfor`.
+  - name: hypr
+    maps_to: HYPR
+    label: HYPR
+    description: HYPR. Maps to SBML symbol `HYPR`.
+  - name: cort
+    maps_to: CORT
+    label: CORT
+    description: CORT. Maps to SBML symbol `CORT`.

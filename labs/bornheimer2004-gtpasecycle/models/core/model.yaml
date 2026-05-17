@@ -1,0 +1,109 @@
+schema_version: '2.0'
+title: Bornheimer2004_GTPaseCycle
+description: This model is according to the paper Computational modeling reveals how
+  interplay between components of a GTPase-cycle module regulates signal transduction
+  by Bornheimer et al 2004.The figure 3 is rep. It can be used to explore systemsbiology
+  bornheimer2004 gtpasecycle BioModels0000000086 dynamics and compare simulation behavior
+  across conditions.
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Scott J Bornheimer
+- Mano R Maurya
+- Marilyn Gist Farquhar
+- Shankar Subramaniam
+upstream:
+  id: biomodels_ebi:BIOMD0000000086
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000086
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000086
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000086?filename=BIOMD0000000086_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.bornheimer2004_gtpasecycle_biomd0000000086_model:Bornheimer2004GtpasecycleBiomd0000000086Model
+  init_kwargs:
+    model_path: data/BIOMD0000000086.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_pi
+    maps_to: species_7
+    label: Initial Model State Pi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_7`.
+  - name: initial_model_state_t
+    maps_to: species_3
+    label: Initial Model State T
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_3`.
+  - name: initial_model_state_d
+    maps_to: species_8
+    label: Initial Model State D
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_8`.
+  - name: initial_model_state_r
+    maps_to: species_4
+    label: Initial Model State R
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_4`.
+  - name: initial_model_state_g
+    maps_to: species_1
+    label: Initial Model State G
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_1`.
+  - name: initial_model_state_rgd
+    maps_to: species_13
+    label: Initial Model State Rgd
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_13`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_pi
+    maps_to: species_7
+    label: Pi
+    description: Pi. Maps to SBML symbol `species_7`.
+  - name: model_state_t
+    maps_to: species_3
+    label: T
+    description: T. Maps to SBML symbol `species_3`.
+  - name: model_state_d
+    maps_to: species_8
+    label: D
+    description: D. Maps to SBML symbol `species_8`.
+  - name: model_state_r
+    maps_to: species_4
+    label: R
+    description: R. Maps to SBML symbol `species_4`.
+  - name: model_state_g
+    maps_to: species_1
+    label: G
+    description: G. Maps to SBML symbol `species_1`.
+  - name: rgd
+    maps_to: species_13
+    label: RGD
+    description: RGD. Maps to SBML symbol `species_13`.

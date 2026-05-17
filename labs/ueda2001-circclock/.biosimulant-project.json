@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "0379a336-f36f-4b78-be23-39584df7f8ed",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "3f2ce131-28b3-4a7b-b822-70a074e90c33",
+  "created_at": "2026-05-16T05:46:52.521246977+00:00",
+  "last_synced_at": "2026-05-17T06:30:31.514678+00:00",
+  "hub_manifest_hash": "9a52eea286e1628f6d7d121afa0505a771388751217d7d47053d68c90694cdc2",
+  "package_name": "ueda2001-circclock-lab"
+}

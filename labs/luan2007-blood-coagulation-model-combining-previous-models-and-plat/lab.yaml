@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Luan2007 Blood Coagulation Model Combining Previous Models And Plat Lab
+description: Mathematical model combining previous models (Jones1994, Leipoldt1995,
+  Kuhursky2001, Hockin2002) into one model with platelet activation. It can be used
+  to explore systemsbiology luan2007 blood coagulation combining previ dynamics and
+  compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_luan2007_blood_coagulation_model_combining_previ_model1806050001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_luan2007_blood_coagulation_model_combining_previ_model1806050001_model.state
+  to:
+  - visualisation.systemsbiology_sbml_luan2007_blood_coagulation_model_combining_previ_model1806050001_model_state
+- from: systemsbiology_sbml_luan2007_blood_coagulation_model_combining_previ_model1806050001_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_luan2007_blood_coagulation_model_combining_previ_model1806050001_model_summary
+- from: systemsbiology_sbml_luan2007_blood_coagulation_model_combining_previ_model1806050001_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_luan2007_blood_coagulation_model_combining_previ_model1806050001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_p5s
+    maps_to: systemsbiology_sbml_luan2007_blood_coagulation_model_combining_previ_model1806050001_model.initial_model_state_p5s
+    label: Initial Model State P5S
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P5s`.
+  - name: initial_model_state_p2s
+    maps_to: systemsbiology_sbml_luan2007_blood_coagulation_model_combining_previ_model1806050001_model.initial_model_state_p2s
+    label: Initial Model State P2S
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P2s`.
+  - name: initial_model_state_p8s
+    maps_to: systemsbiology_sbml_luan2007_blood_coagulation_model_combining_previ_model1806050001_model.initial_model_state_p8s
+    label: Initial Model State P8S
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P8s`.
+  - name: initial_model_state_p9s
+    maps_to: systemsbiology_sbml_luan2007_blood_coagulation_model_combining_previ_model1806050001_model.initial_model_state_p9s
+    label: Initial Model State P9S
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P9s_0`.
+  - name: initial_model_state_p9s_2
+    maps_to: systemsbiology_sbml_luan2007_blood_coagulation_model_combining_previ_model1806050001_model.initial_model_state_p9s_2
+    label: Initial Model State P9S 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P9s`.
+  - name: initial_xa_i
+    maps_to: systemsbiology_sbml_luan2007_blood_coagulation_model_combining_previ_model1806050001_model.initial_xa_i
+    label: Initial Xa I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_i`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_luan2007_blood_coagulation_model_combining_previ_model1806050001_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_luan2007_blood_coagulation_model_combining_previ_model1806050001_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_luan2007_blood_coagulation_model_combining_previ_model1806050001_model.species_labels
+  - name: p5s
+    maps_to: systemsbiology_sbml_luan2007_blood_coagulation_model_combining_previ_model1806050001_model.p5s
+  - name: p2s
+    maps_to: systemsbiology_sbml_luan2007_blood_coagulation_model_combining_previ_model1806050001_model.p2s
+  - name: p8s
+    maps_to: systemsbiology_sbml_luan2007_blood_coagulation_model_combining_previ_model1806050001_model.p8s
+  - name: p9s
+    maps_to: systemsbiology_sbml_luan2007_blood_coagulation_model_combining_previ_model1806050001_model.p9s
+  - name: p9s_2
+    maps_to: systemsbiology_sbml_luan2007_blood_coagulation_model_combining_previ_model1806050001_model.p9s_2
+  - name: xa_i
+    maps_to: systemsbiology_sbml_luan2007_blood_coagulation_model_combining_previ_model1806050001_model.xa_i

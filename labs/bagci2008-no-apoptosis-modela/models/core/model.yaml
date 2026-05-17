@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Bagci2008_NO_Apoptosis_modelA
+description: 'This a model from the article: Computational insights on the competing
+  effects of nitric oxide in regulatingapoptosis. Bagci EZ, Vodovotz Y, Billiar TR,
+  Ermentrout B, Bahar I.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- E Z Bagci
+- Yoram Vodovotz
+- Timothy R Billiar
+- Bard Ermentrout
+- Ivet Bahar
+upstream:
+  id: biomodels_ebi:MODEL1006230064
+  source_db: biomodels_ebi
+  source_id: MODEL1006230064
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1006230064
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1006230064?filename=MODEL1006230064_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.bagci2008_no_apoptosis_modela_model1006230064_model:Bagci2008NoApoptosisModelaModel1006230064Model
+  init_kwargs:
+    model_path: data/MODEL1006230064.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_onoo_m
+    maps_to: ONOO_m
+    label: Initial Onoo M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ONOO_m`.
+  - name: initial_o_2_m
+    maps_to: O_2m
+    label: Initial O 2 M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `O_2m`.
+  - name: initial_no_2
+    maps_to: NO_2
+    label: Initial No 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NO_2`.
+  - name: initial_model_state_no
+    maps_to: 'NO'
+    label: Initial Model State No
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NO`.
+  - name: initial_n2_o3
+    maps_to: N2O3
+    label: Initial N2 O3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `N2O3`.
+  - name: initial_gsno
+    maps_to: GSNO
+    label: Initial Gsno
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `GSNO`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: onoo_m
+    maps_to: ONOO_m
+    label: ONOO M
+    description: ONOO M. Maps to SBML symbol `ONOO_m`.
+  - name: o_2_m
+    maps_to: O_2m
+    label: O 2M
+    description: O 2M. Maps to SBML symbol `O_2m`.
+  - name: no_2
+    maps_to: NO_2
+    label: NO 2
+    description: NO 2. Maps to SBML symbol `NO_2`.
+  - name: model_state_no
+    maps_to: 'NO'
+    label: 'NO'
+    description: NO. Maps to SBML symbol `NO`.
+  - name: n2_o3
+    maps_to: N2O3
+    label: N2O3
+    description: N2O3. Maps to SBML symbol `N2O3`.
+  - name: gsno
+    maps_to: GSNO
+    label: GSNO
+    description: GSNO. Maps to SBML symbol `GSNO`.

@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Luan2010 Blood Coagulation Lab
+description: Mathematical model of blood coagulation. It can be used to explore systemsbiology
+  luan2010 blood coagulation extension of dynamics and compare simulation behavior
+  across conditions.
+models:
+- alias: systemsbiology_sbml_luan2010_blood_coagulation_model_extension_of_lu_model1806250001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_luan2010_blood_coagulation_model_extension_of_lu_model1806250001_model.state
+  to:
+  - visualisation.systemsbiology_sbml_luan2010_blood_coagulation_model_extension_of_lu_model1806250001_model_state
+- from: systemsbiology_sbml_luan2010_blood_coagulation_model_extension_of_lu_model1806250001_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_luan2010_blood_coagulation_model_extension_of_lu_model1806250001_model_summary
+- from: systemsbiology_sbml_luan2010_blood_coagulation_model_extension_of_lu_model1806250001_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_luan2010_blood_coagulation_model_extension_of_lu_model1806250001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_adp_pl_psub
+    maps_to: systemsbiology_sbml_luan2010_blood_coagulation_model_extension_of_lu_model1806250001_model.initial_adp_pl_psub
+    label: Initial ADP Pl Psub
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ADP_PL_Psub`.
+  - name: initial_adp_pl
+    maps_to: systemsbiology_sbml_luan2010_blood_coagulation_model_extension_of_lu_model1806250001_model.initial_adp_pl
+    label: Initial ADP Pl
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ADP_PL`.
+  - name: initial_model_state_adp
+    maps_to: systemsbiology_sbml_luan2010_blood_coagulation_model_extension_of_lu_model1806250001_model.initial_model_state_adp
+    label: Initial Model State ADP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ADP`.
+  - name: initial_u_pa_pci
+    maps_to: systemsbiology_sbml_luan2010_blood_coagulation_model_extension_of_lu_model1806250001_model.initial_u_pa_pci
+    label: Initial U Pa Pci
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `uPA_PCI`.
+  - name: initial_u_pa_pai2
+    maps_to: systemsbiology_sbml_luan2010_blood_coagulation_model_extension_of_lu_model1806250001_model.initial_u_pa_pai2
+    label: Initial U Pa Pai2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `uPA_PAI2`.
+  - name: initial_u_pa_pai1
+    maps_to: systemsbiology_sbml_luan2010_blood_coagulation_model_extension_of_lu_model1806250001_model.initial_u_pa_pai1
+    label: Initial U Pa Pai1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `uPA_PAI1`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_luan2010_blood_coagulation_model_extension_of_lu_model1806250001_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_luan2010_blood_coagulation_model_extension_of_lu_model1806250001_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_luan2010_blood_coagulation_model_extension_of_lu_model1806250001_model.species_labels
+  - name: adp_pl_psub
+    maps_to: systemsbiology_sbml_luan2010_blood_coagulation_model_extension_of_lu_model1806250001_model.adp_pl_psub
+  - name: adp_pl
+    maps_to: systemsbiology_sbml_luan2010_blood_coagulation_model_extension_of_lu_model1806250001_model.adp_pl
+  - name: adp
+    maps_to: systemsbiology_sbml_luan2010_blood_coagulation_model_extension_of_lu_model1806250001_model.adp
+  - name: u_pa_pci
+    maps_to: systemsbiology_sbml_luan2010_blood_coagulation_model_extension_of_lu_model1806250001_model.u_pa_pci
+  - name: u_pa_pai2
+    maps_to: systemsbiology_sbml_luan2010_blood_coagulation_model_extension_of_lu_model1806250001_model.u_pa_pai2
+  - name: u_pa_pai1
+    maps_to: systemsbiology_sbml_luan2010_blood_coagulation_model_extension_of_lu_model1806250001_model.u_pa_pai1

@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Qiao2004_ThrombinGeneration Visualisation
+description: Question-and-answer and dynamic visual summaries for Qiao2004_ThrombinGeneration.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Qiao2004 Thrombingeneration Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Qiao2004_ThrombinGeneration.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_qiao2004_thrombingeneration_model1108260015_model
+      title: Qiao2004_ThrombinGeneration
+      observables:
+      - id: Xa
+        port: model_state_xa
+        label: Xa
+        group: gene_regulation
+      - id: Va
+        port: model_state_va
+        label: Va
+        group: gene_regulation
+      - id: VIIIa
+        port: vii_ia
+        label: VIIIa
+        group: gene_regulation
+      - id: IXa
+        port: i_xa
+        label: IXa
+        group: gene_regulation
+      - id: IIa
+        port: i_ia
+        label: IIa
+        group: gene_regulation
+      - id: APC
+        port: apc
+        label: APC
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

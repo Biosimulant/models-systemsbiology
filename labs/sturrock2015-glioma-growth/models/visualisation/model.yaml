@@ -1,0 +1,47 @@
+schema_version: '2.0'
+title: Sturrock2015 - glioma growth Visualisation
+description: Question-and-answer and dynamic visual summaries for Sturrock2015 - glioma
+  growth.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Sturrock2015 Glioma Growth Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Sturrock2015 - glioma growth.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_sturrock2015_glioma_growth_biomd0000000801_model
+      title: Sturrock2015 - glioma growth
+      observables:
+      - id: T
+        port: model_state_t
+        label: T
+        group: physiology
+      - id: S
+        port: model_state_s
+        label: S
+        group: physiology
+      - id: B
+        port: model_state_b
+        label: B
+        group: physiology
+      - id: I
+        port: model_state_i
+        label: I
+        group: physiology
+io:
+  inputs: []
+  outputs: []

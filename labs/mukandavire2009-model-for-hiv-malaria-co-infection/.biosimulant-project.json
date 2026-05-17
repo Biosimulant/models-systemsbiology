@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "9c9a8a82-7fc3-428c-8e56-4c20c9900cfe",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "6a09f76b-8fd7-4e36-ad3d-5f94430cbdc1",
+  "created_at": "2026-05-16T05:46:47.945916655+00:00",
+  "last_synced_at": "2026-05-17T05:04:31.640496+00:00",
+  "hub_manifest_hash": "d09fcd415fcd02e72a7393c246b3bafb5810c502040cb028849e9103c4b3b2fc",
+  "package_name": "mukandavire2009-model-for-hiv-malaria-co-infection-lab"
+}

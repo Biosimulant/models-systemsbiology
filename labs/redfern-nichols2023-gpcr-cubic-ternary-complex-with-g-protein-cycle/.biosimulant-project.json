@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "461458da-5642-42b2-b4a5-818cd61049a4",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "5192a318-7a57-420e-a103-4603ee6517cb",
+  "created_at": "2026-05-16T05:46:51.310176712+00:00",
+  "last_synced_at": "2026-05-17T05:55:56.996537+00:00",
+  "hub_manifest_hash": "fcebecae3254a2e90e621ba426149e290a7a8647e70489661dd9e54fa3057c1c",
+  "package_name": "redfern-nichols2023-gpcr-cubic-ternary-complex-with-g-protein-cy"
+}

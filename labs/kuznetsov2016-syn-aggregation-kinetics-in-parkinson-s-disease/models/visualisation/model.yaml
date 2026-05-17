@@ -1,0 +1,49 @@
+schema_version: '2.0'
+title: Kuznetsov2016(II) - α-syn aggregation kinetics in Parkinson's Disease Visualisation
+description: Question-and-answer and dynamic visual summaries for Kuznetsov2016(II)
+  - α-syn aggregation kinetics in Parkinson's Disease.
+standard: other
+tags:
+- neuroscience
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Kuznetsov2016 Syn Aggregation Kinetics In Parkinson S Disease Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Kuznetsov2016(II) - α-syn aggregation kinetics in Parkinson''s
+      Disease.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_kuznetsov2016_ii_syn_aggregation_kinetics_in_par_biomd0000000615_model
+      title: Kuznetsov2016(II) - α-syn aggregation kinetics in Parkinson's Disease
+      observables:
+      - id: As
+        port: as_value
+        label: As
+        group: physiology
+      - id: Bsyn
+        port: bsyn
+        label: Bsyn
+        group: physiology
+      - id: Bs
+        port: model_state_bs
+        label: Bs
+        group: physiology
+      - id: Asyn
+        port: asyn
+        label: Asyn
+        group: physiology
+io:
+  inputs: []
+  outputs: []

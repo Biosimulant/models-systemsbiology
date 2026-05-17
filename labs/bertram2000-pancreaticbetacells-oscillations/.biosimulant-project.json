@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "898b5276-fd62-4131-97a8-276b19faadbe",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "00375596-0731-4394-a75d-7e127e851163",
+  "created_at": "2026-05-16T05:46:41.467202600+00:00",
+  "last_synced_at": "2026-05-17T02:02:44.699682+00:00",
+  "hub_manifest_hash": "28e0fffc8f6e561705eb5d776719b7965ab33491afdb43fbbc370b6a39e8476a",
+  "package_name": "bertram2000-pancreaticbetacells-oscillations-lab"
+}

@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Birtwistle2007_ErbB_Signalling Visualisation
+description: Question-and-answer and dynamic visual summaries for Birtwistle2007_ErbB_Signalling.
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Birtwistle2007 Erbb Signalling Lab
+    question: 'Which signalling variables dominate the simulated network response?
+      Source model: Birtwistle2007_ErbB_Signalling.'
+    answer_focus: Q/A table plus signaling timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_birtwistle2007_erbb_signalling_biomd0000000175_model
+      title: Birtwistle2007_ErbB_Signalling
+      observables:
+      - id: Raf
+        port: raf
+        label: Raf
+        group: signaling
+      - id: E4
+        port: erb_b4
+        label: ErbB4
+        group: signaling
+      - id: E3
+        port: erb_b3
+        label: ErbB3
+        group: signaling
+      - id: E1
+        port: erb_b1
+        label: ErbB1
+        group: signaling
+      - id: P2
+        port: pip2
+        label: PIP2
+        group: signaling
+      - id: E2
+        port: erb_b2
+        label: ErbB2
+        group: signaling
+io:
+  inputs: []
+  outputs: []

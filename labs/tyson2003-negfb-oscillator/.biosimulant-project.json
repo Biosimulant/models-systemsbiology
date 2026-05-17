@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "95a0f9e1-9788-42b0-8fab-4ac2a2b9b05f",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "36f49a61-4c5c-4ab3-94f3-c6cfbec182da",
+  "created_at": "2026-05-16T05:46:52.504107190+00:00",
+  "last_synced_at": "2026-05-17T06:30:03.031848+00:00",
+  "hub_manifest_hash": "d78407d8a637f224914d2884cb6135ceac550e937e8e1a8810b0f58a32cf53a0",
+  "package_name": "tyson2003-negfb-oscillator-lab"
+}

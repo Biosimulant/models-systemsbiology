@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Gomez-Cabrero2011_Atherogenesis
+description: 'This model is from the article: Workflow for generating competing hypothesis
+  from models with parameter uncertainty. David Gomez-Cabrero, Albert Compte and Jesper
+  Tegner Interface Focus 6 June 2011 vo.'
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- David Gomez-Cabrero
+- Albert Compte
+- Jesper Tegner
+upstream:
+  id: biomodels_ebi:MODEL1002160000
+  source_db: biomodels_ebi
+  source_id: MODEL1002160000
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1002160000
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1002160000?filename=MODEL1002160000_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.gomez_cabrero2011_atherogenesis_model1002160000_model:GomezCabrero2011AtherogenesisModel1002160000Model
+  init_kwargs:
+    model_path: data/MODEL1002160000.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_sum_rec_bcells
+    maps_to: species_14
+    label: Initial Sum Rec Bcells
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_14`.
+  - name: initial_bcells
+    maps_to: species_8
+    label: Initial Bcells
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_8`.
+  - name: initial_ldl_blood
+    maps_to: species_16
+    label: Initial Ldl Blood
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_16`.
+  - name: initial_hdl_blood
+    maps_to: species_15
+    label: Initial Hdl Blood
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_15`.
+  - name: initial_sigmoid_acten_dinh
+    maps_to: species_19
+    label: Initial Sigmoid Acten Dinh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_19`.
+  - name: initial_sigmoid_acten_dstim
+    maps_to: species_18
+    label: Initial Sigmoid Acten Dstim
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_18`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: sum_rec_bcells
+    maps_to: species_14
+    label: SUMRecBcells
+    description: SUMRecBcells. Maps to SBML symbol `species_14`.
+  - name: bcells
+    maps_to: species_8
+    label: Bcells
+    description: Bcells. Maps to SBML symbol `species_8`.
+  - name: ldl_blood
+    maps_to: species_16
+    label: LDL_blood
+    description: LDL_blood. Maps to SBML symbol `species_16`.
+  - name: hdl_blood
+    maps_to: species_15
+    label: HDL_blood
+    description: HDL_blood. Maps to SBML symbol `species_15`.
+  - name: sigmoid_acten_dinh
+    maps_to: species_19
+    label: SIGMOID_ACTENDinh
+    description: SIGMOID_ACTENDinh. Maps to SBML symbol `species_19`.
+  - name: sigmoid_acten_dstim
+    maps_to: species_18
+    label: SIGMOID_ACTENDstim
+    description: SIGMOID_ACTENDstim. Maps to SBML symbol `species_18`.

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "b1552c0b-d519-405d-90d5-033283fbd08e",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "711d249a-8cea-41a3-994b-3b3145903854",
+  "created_at": "2026-05-16T05:46:42.008893235+00:00",
+  "last_synced_at": "2026-05-17T02:21:23.774178+00:00",
+  "hub_manifest_hash": "f7e3a2d8be0218f06f23a8aa954585e731424b36c9131858914a1f513649253e",
+  "package_name": "bungay2006-plasma-lab"
+}

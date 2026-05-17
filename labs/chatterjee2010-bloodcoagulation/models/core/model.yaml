@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Chatterjee2010_BloodCoagulation
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models (http://www.ebi.ac.uk/biomodels/). It is copyright (c) 2005-2011
+  The BioModels.net Team.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Manash S Chatterjee
+- William S Denney
+- Huiyan Jing
+- Scott L Diamond
+upstream:
+  id: biomodels_ebi:MODEL1108260014
+  source_db: biomodels_ebi
+  source_id: MODEL1108260014
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1108260014
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1108260014?filename=MODEL1108260014_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.chatterjee2010_bloodcoagulation_model1108260014_model:Chatterjee2010BloodcoagulationModel1108260014Model
+  init_kwargs:
+    model_path: data/MODEL1108260014.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_alpha1_at
+    maps_to: species_57
+    label: Initial Alpha1 At
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_57`.
+  - name: initial_boc_vpr_mca
+    maps_to: species_36
+    label: Initial Boc Vpr Mca
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_36`.
+  - name: initial_model_state_fbg
+    maps_to: species_65
+    label: Initial Model State Fbg
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_65`.
+  - name: initial_model_state_cti
+    maps_to: species_47
+    label: Initial Model State Cti
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_47`.
+  - name: initial_atiii
+    maps_to: species_29
+    label: Initial Atiii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_29`.
+  - name: initial_c1inh
+    maps_to: species_49
+    label: Initial C1inh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_49`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: alpha1_at
+    maps_to: species_57
+    label: alpha1AT
+    description: alpha1AT. Maps to SBML symbol `species_57`.
+  - name: boc_vpr_mca
+    maps_to: species_36
+    label: Boc_VPR_MCA
+    description: Boc_VPR_MCA. Maps to SBML symbol `species_36`.
+  - name: fbg
+    maps_to: species_65
+    label: Fbg
+    description: Fbg. Maps to SBML symbol `species_65`.
+  - name: cti
+    maps_to: species_47
+    label: CTI
+    description: CTI. Maps to SBML symbol `species_47`.
+  - name: atiii
+    maps_to: species_29
+    label: ATIII
+    description: ATIII. Maps to SBML symbol `species_29`.
+  - name: c1inh
+    maps_to: species_49
+    label: C1inh
+    description: C1inh. Maps to SBML symbol `species_49`.

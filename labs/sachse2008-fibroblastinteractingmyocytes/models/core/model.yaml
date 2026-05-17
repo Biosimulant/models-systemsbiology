@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Sachse2008_FibroblastInteractingMyocytes
+description: 'This a model from the article: Electrophysiological modeling of fibroblasts
+  and their interaction with myocytes. It can be used to explore systemsbiology sachse2008
+  fibroblastinteractingmyo model7914759868 dynamics and compare simulation behavior
+  across conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Frank B Sachse
+- Alonso P Moreno
+- J A Abildskov
+upstream:
+  id: biomodels_ebi:MODEL7914759868
+  source_db: biomodels_ebi
+  source_id: MODEL7914759868
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL7914759868
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL7914759868?filename=MODEL7914759868_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.sachse2008_fibroblastinteractingmyocytes_model7914759868_model:Sachse2008FibroblastinteractingmyocytesModel7914759868Model
+  init_kwargs:
+    model_path: data/MODEL7914759868.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_vm_real
+    maps_to: VmReal
+    label: Initial Vm Real
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VmReal`.
+  - name: initial_v_membrane
+    maps_to: V_membrane
+    label: Initial V Membrane
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `V_membrane`.
+  - name: initial_s_ss
+    maps_to: s_ss
+    label: Initial S Ss
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s_ss`.
+  - name: initial_s_slow
+    maps_to: s_slow
+    label: Initial S Slow
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s_slow`.
+  - name: initial_r_ss
+    maps_to: r_ss
+    label: Initial R Ss
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `r_ss`.
+  - name: initial_p_o2
+    maps_to: P_O2
+    label: Initial P O2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P_O2`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: vm_real
+    maps_to: VmReal
+    label: VmReal
+    description: VmReal. Maps to SBML symbol `VmReal`.
+  - name: v_membrane
+    maps_to: V_membrane
+    label: V Membrane
+    description: V Membrane. Maps to SBML symbol `V_membrane`.
+  - name: s_ss
+    maps_to: s_ss
+    label: S Ss
+    description: S Ss. Maps to SBML symbol `s_ss`.
+  - name: s_slow
+    maps_to: s_slow
+    label: S Slow
+    description: S Slow. Maps to SBML symbol `s_slow`.
+  - name: r_ss
+    maps_to: r_ss
+    label: R Ss
+    description: R Ss. Maps to SBML symbol `r_ss`.
+  - name: p_o2
+    maps_to: P_O2
+    label: P O2
+    description: P O2. Maps to SBML symbol `P_O2`.

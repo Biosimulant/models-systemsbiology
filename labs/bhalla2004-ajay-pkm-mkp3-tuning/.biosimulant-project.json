@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "7910b2e2-349d-41f1-9131-24f9cb1621c4",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "fc45e157-f787-4cbd-b1aa-69997f19dbda",
+  "created_at": "2026-05-16T05:46:41.596409534+00:00",
+  "last_synced_at": "2026-05-17T02:07:47.919860+00:00",
+  "hub_manifest_hash": "cda3dcf397ce13aa5a25c6ef855f24050c7acdb75913746dcbc58ace51392e34",
+  "package_name": "bhalla2004-ajay-pkm-mkp3-tuning-lab"
+}

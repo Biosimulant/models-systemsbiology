@@ -1,0 +1,104 @@
+schema_version: '2.0'
+title: Kim2011_Oscillator_DetailedIII
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models (http://www.ebi.ac.uk/biomodels/). It is copyright (c) 2005-2011
+  The BioModels.net Team.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Jongmin Kim
+- Erik Winfree
+upstream:
+  id: biomodels_ebi:MODEL1012090004
+  source_db: biomodels_ebi
+  source_id: MODEL1012090004
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1012090004
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1012090004?filename=MODEL1012090004_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.kim2011_oscillator_detailediii_model1012090004_model:Kim2011OscillatorDetailediiiModel1012090004Model
+  init_kwargs:
+    model_path: data/MODEL1012090004.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_rnap
+    maps_to: species_13
+    label: Initial Rnap
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_13`.
+  - name: initial_r_nase_h
+    maps_to: species_14
+    label: Initial R Nase H
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_14`.
+  - name: initial_r_nase_ha3r_i3
+    maps_to: species_26
+    label: Initial R Nase Ha3r I3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_26`.
+  - name: initial_r_nase_ha2r_i2
+    maps_to: species_20
+    label: Initial R Nase Ha2r I2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_20`.
+  - name: initial_r_nase_ha1r_i1
+    maps_to: species_19
+    label: Initial R Nase Ha1r I1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_19`.
+  - name: initial_rnapt31_a1
+    maps_to: species_23
+    label: Initial Rnapt31 A1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_23`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: rnap
+    maps_to: species_13
+    label: RNAP
+    description: RNAP. Maps to SBML symbol `species_13`.
+  - name: r_nase_h
+    maps_to: species_14
+    label: RNaseH
+    description: RNaseH. Maps to SBML symbol `species_14`.
+  - name: r_nase_ha3r_i3
+    maps_to: species_26
+    label: RNaseHA3rI3
+    description: RNaseHA3rI3. Maps to SBML symbol `species_26`.
+  - name: r_nase_ha2r_i2
+    maps_to: species_20
+    label: RNaseHA2rI2
+    description: RNaseHA2rI2. Maps to SBML symbol `species_20`.
+  - name: r_nase_ha1r_i1
+    maps_to: species_19
+    label: RNaseHA1rI1
+    description: RNaseHA1rI1. Maps to SBML symbol `species_19`.
+  - name: rnapt31_a1
+    maps_to: species_23
+    label: RNAPT31A1
+    description: RNAPT31A1. Maps to SBML symbol `species_23`.

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "5a2510eb-10c9-484d-bbdf-02d61c71f524",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "e815caaa-878b-48c6-8c98-775102135a1a",
+  "created_at": "2026-05-16T05:46:52.861444910+00:00",
+  "last_synced_at": "2026-05-17T06:40:53.636121+00:00",
+  "hub_manifest_hash": "2313b5fd4407bbffbf6fc48b8914e58b0891a9f4c777b864e70892d514eff23c",
+  "package_name": "wang2007-atp-induced-intracellular-calcium-oscillation-lab"
+}

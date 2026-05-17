@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Buchel2013 Dopaminergic Nerve Cell Lab
+description: Systems Biology BChel2013Dopaminergic Nerve Cell Model Model1302200000Model
+  models core biological dynamics as a OTHER simulation curated from biomodels_ebi
+  (biomodels_ebi:MODEL1302200000), focused on systemsbi. When you run it, you can
+  track state over time and compare response patterns across parameter settings.
+models:
+- alias: systemsbiology_sbml_b_chel2013_dopaminergic_nerve_cell_model_model1302200000_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_b_chel2013_dopaminergic_nerve_cell_model_model1302200000_model.state
+  to:
+  - visualisation.systemsbiology_sbml_b_chel2013_dopaminergic_nerve_cell_model_model1302200000_model_state
+- from: systemsbiology_sbml_b_chel2013_dopaminergic_nerve_cell_model_model1302200000_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_b_chel2013_dopaminergic_nerve_cell_model_model1302200000_model_summary
+- from: systemsbiology_sbml_b_chel2013_dopaminergic_nerve_cell_model_model1302200000_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_b_chel2013_dopaminergic_nerve_cell_model_model1302200000_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- neuroscience
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_biogenesis_mitochondria
+    maps_to: systemsbiology_sbml_b_chel2013_dopaminergic_nerve_cell_model_model1302200000_model.initial_biogenesis_mitochondria
+    label: Initial Biogenesis Mitochondria
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `BiogenesisMitochondria`.
+  - name: initial_mt_dna_defect
+    maps_to: systemsbiology_sbml_b_chel2013_dopaminergic_nerve_cell_model_model1302200000_model.initial_mt_dna_defect
+    label: Initial Mt DNA Defect
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mtDNADefect`.
+  - name: initial_damaged_protein
+    maps_to: systemsbiology_sbml_b_chel2013_dopaminergic_nerve_cell_model_model1302200000_model.initial_damaged_protein
+    label: Initial Damaged Protein
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `damagedProtein`.
+  - name: initial_model_state_nad
+    maps_to: systemsbiology_sbml_b_chel2013_dopaminergic_nerve_cell_model_model1302200000_model.initial_model_state_nad
+    label: Initial Model State Nad
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NAD`.
+  - name: initial_adp_pi
+    maps_to: systemsbiology_sbml_b_chel2013_dopaminergic_nerve_cell_model_model1302200000_model.initial_adp_pi
+    label: Initial ADP Pi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ADP_P`.
+  - name: initial_complex_damaged_protein_trap1_p
+    maps_to: systemsbiology_sbml_b_chel2013_dopaminergic_nerve_cell_model_model1302200000_model.initial_complex_damaged_protein_trap1_p
+    label: Initial Complex Damaged Protein Trap1 P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Complex_damagedProtein_TRAP1P`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_b_chel2013_dopaminergic_nerve_cell_model_model1302200000_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_b_chel2013_dopaminergic_nerve_cell_model_model1302200000_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_b_chel2013_dopaminergic_nerve_cell_model_model1302200000_model.species_labels
+  - name: biogenesis_mitochondria
+    maps_to: systemsbiology_sbml_b_chel2013_dopaminergic_nerve_cell_model_model1302200000_model.biogenesis_mitochondria
+  - name: mt_dna_defect
+    maps_to: systemsbiology_sbml_b_chel2013_dopaminergic_nerve_cell_model_model1302200000_model.mt_dna_defect
+  - name: damaged_protein
+    maps_to: systemsbiology_sbml_b_chel2013_dopaminergic_nerve_cell_model_model1302200000_model.damaged_protein
+  - name: nad
+    maps_to: systemsbiology_sbml_b_chel2013_dopaminergic_nerve_cell_model_model1302200000_model.nad
+  - name: adp_pi
+    maps_to: systemsbiology_sbml_b_chel2013_dopaminergic_nerve_cell_model_model1302200000_model.adp_pi
+  - name: complex_damaged_protein_trap1_p
+    maps_to: systemsbiology_sbml_b_chel2013_dopaminergic_nerve_cell_model_model1302200000_model.complex_damaged_protein_trap1_p

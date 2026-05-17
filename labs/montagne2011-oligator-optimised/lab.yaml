@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Montagne2011 Oligator Optimised Lab
+description: 'This is the model of the in vitro DNA oscillator called oligator with
+  the optmized set of parameters described in the article: Programming an in vitro
+  DNA oscillator using a molecular networking strat. It can be used to explore systemsbiology
+  montagne2011 oligator optimised BioModels0000000315 dynamics and compare simulation
+  behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_montagne2011_oligator_optimised_biomd0000000315_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_montagne2011_oligator_optimised_biomd0000000315_model.state
+  to:
+  - visualisation.systemsbiology_sbml_montagne2011_oligator_optimised_biomd0000000315_model_state
+- from: systemsbiology_sbml_montagne2011_oligator_optimised_biomd0000000315_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_montagne2011_oligator_optimised_biomd0000000315_model_summary
+- from: systemsbiology_sbml_montagne2011_oligator_optimised_biomd0000000315_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_montagne2011_oligator_optimised_biomd0000000315_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_alpha
+    maps_to: systemsbiology_sbml_montagne2011_oligator_optimised_biomd0000000315_model.initial_alpha
+    label: Initial Alpha
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `alpha`.
+  - name: initial_beta_t3_inh
+    maps_to: systemsbiology_sbml_montagne2011_oligator_optimised_biomd0000000315_model.initial_beta_t3_inh
+    label: Initial Beta T3 Inh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `beta_T3_Inh`.
+  - name: initial_beta_t3
+    maps_to: systemsbiology_sbml_montagne2011_oligator_optimised_biomd0000000315_model.initial_beta_t3
+    label: Initial Beta T3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `beta_T3`.
+  - name: initial_beta_inh_t3
+    maps_to: systemsbiology_sbml_montagne2011_oligator_optimised_biomd0000000315_model.initial_beta_inh_t3
+    label: Initial Beta Inh T3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `beta_Inh_T3`.
+  - name: initial_beta
+    maps_to: systemsbiology_sbml_montagne2011_oligator_optimised_biomd0000000315_model.initial_beta
+    label: Initial Beta
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `beta`.
+  - name: initial_alpha_beta_t2
+    maps_to: systemsbiology_sbml_montagne2011_oligator_optimised_biomd0000000315_model.initial_alpha_beta_t2
+    label: Initial Alpha Beta T2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `alpha_beta_T2`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_montagne2011_oligator_optimised_biomd0000000315_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_montagne2011_oligator_optimised_biomd0000000315_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_montagne2011_oligator_optimised_biomd0000000315_model.species_labels
+  - name: alpha
+    maps_to: systemsbiology_sbml_montagne2011_oligator_optimised_biomd0000000315_model.alpha
+  - name: beta_t3_inh
+    maps_to: systemsbiology_sbml_montagne2011_oligator_optimised_biomd0000000315_model.beta_t3_inh
+  - name: beta_t3
+    maps_to: systemsbiology_sbml_montagne2011_oligator_optimised_biomd0000000315_model.beta_t3
+  - name: beta_inh_t3
+    maps_to: systemsbiology_sbml_montagne2011_oligator_optimised_biomd0000000315_model.beta_inh_t3
+  - name: beta
+    maps_to: systemsbiology_sbml_montagne2011_oligator_optimised_biomd0000000315_model.beta
+  - name: alpha_beta_t2
+    maps_to: systemsbiology_sbml_montagne2011_oligator_optimised_biomd0000000315_model.alpha_beta_t2

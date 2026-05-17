@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Rodriguez2005_denovo_pyrimidine_biosynthesis Visualisation
+description: Question-and-answer and dynamic visual summaries for Rodriguez2005_denovo_pyrimidine_biosynthesis.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Rodriguez2005 Denovo Pyrimidine Biosynthesis Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Rodriguez2005_denovo_pyrimidine_biosynthesis.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_rodriguez2005_denovo_pyrimidine_biosynthesis_model0995500644_model
+      title: Rodriguez2005_denovo_pyrimidine_biosynthesis
+      observables:
+      - id: atp
+        port: atp
+        label: atp
+        group: metabolism
+      - id: ca
+        port: model_state_ca
+        label: Ca
+        group: physiology
+      - id: E2
+        port: model_state_e2
+        label: E2
+        group: core_system_state
+      - id: oro
+        port: oro
+        label: Oro
+        group: core_system_state
+      - id: omp
+        port: omp
+        label: Omp
+        group: core_system_state
+      - id: dho
+        port: dho
+        label: Dho
+        group: core_system_state
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Vondassow2000 Segment Polarity Network Model On 1x4 Grid Of Cells Lab
+description: This is the segment polarity network model described by von Dassow et
+  al. It can be used to explore systemsbiology vondassow2000 segment polarity network
+  on dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_vondassow2000_segment_polarity_network_model_on_biomd0000001065_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_vondassow2000_segment_polarity_network_model_on_biomd0000001065_model.state
+  to:
+  - visualisation.systemsbiology_sbml_vondassow2000_segment_polarity_network_model_on_biomd0000001065_model_state
+- from: systemsbiology_sbml_vondassow2000_segment_polarity_network_model_on_biomd0000001065_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_vondassow2000_segment_polarity_network_model_on_biomd0000001065_model_summary
+- from: systemsbiology_sbml_vondassow2000_segment_polarity_network_model_on_biomd0000001065_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_vondassow2000_segment_polarity_network_model_on_biomd0000001065_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_ewg_t_0_1
+    maps_to: systemsbiology_sbml_vondassow2000_segment_polarity_network_model_on_biomd0000001065_model.initial_ewg_t_0_1
+    label: Initial Ewg T 0 1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `EWG_T_0_1`.
+  - name: initial_ewg_t_0_2
+    maps_to: systemsbiology_sbml_vondassow2000_segment_polarity_network_model_on_biomd0000001065_model.initial_ewg_t_0_2
+    label: Initial Ewg T 0 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `EWG_T_0_2`.
+  - name: initial_ewg_t_0_0
+    maps_to: systemsbiology_sbml_vondassow2000_segment_polarity_network_model_on_biomd0000001065_model.initial_ewg_t_0_0
+    label: Initial Ewg T 0 0
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `EWG_T_0_0`.
+  - name: initial_ewg_t_0_3
+    maps_to: systemsbiology_sbml_vondassow2000_segment_polarity_network_model_on_biomd0000001065_model.initial_ewg_t_0_3
+    label: Initial Ewg T 0 3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `EWG_T_0_3`.
+  - name: initial_en_0_2
+    maps_to: systemsbiology_sbml_vondassow2000_segment_polarity_network_model_on_biomd0000001065_model.initial_en_0_2
+    label: Initial En 0 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `en_0_2`.
+  - name: initial_en_0_2_2
+    maps_to: systemsbiology_sbml_vondassow2000_segment_polarity_network_model_on_biomd0000001065_model.initial_en_0_2_2
+    label: Initial En 0 2 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `EN_0_2`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_vondassow2000_segment_polarity_network_model_on_biomd0000001065_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_vondassow2000_segment_polarity_network_model_on_biomd0000001065_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_vondassow2000_segment_polarity_network_model_on_biomd0000001065_model.species_labels
+  - name: ewg_t_0_1
+    maps_to: systemsbiology_sbml_vondassow2000_segment_polarity_network_model_on_biomd0000001065_model.ewg_t_0_1
+  - name: ewg_t_0_2
+    maps_to: systemsbiology_sbml_vondassow2000_segment_polarity_network_model_on_biomd0000001065_model.ewg_t_0_2
+  - name: ewg_t_0_0
+    maps_to: systemsbiology_sbml_vondassow2000_segment_polarity_network_model_on_biomd0000001065_model.ewg_t_0_0
+  - name: ewg_t_0_3
+    maps_to: systemsbiology_sbml_vondassow2000_segment_polarity_network_model_on_biomd0000001065_model.ewg_t_0_3
+  - name: en_0_2
+    maps_to: systemsbiology_sbml_vondassow2000_segment_polarity_network_model_on_biomd0000001065_model.en_0_2
+  - name: en_0_2_2
+    maps_to: systemsbiology_sbml_vondassow2000_segment_polarity_network_model_on_biomd0000001065_model.en_0_2_2

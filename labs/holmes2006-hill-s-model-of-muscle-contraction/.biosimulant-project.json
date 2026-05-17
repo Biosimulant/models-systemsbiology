@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "ffecf128-75e4-4e08-9ae9-f94ccf206148",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "e6af0cfb-8ee6-4e26-8939-a0fe07d00fca",
+  "created_at": "2026-05-16T05:46:44.142895349+00:00",
+  "last_synced_at": "2026-05-17T03:42:49.492236+00:00",
+  "hub_manifest_hash": "01bc50d9aa073027d00b425270bcf2276ff665071b224c76ebc5de2d1d89eeac",
+  "package_name": "holmes2006-hill-s-model-of-muscle-contraction-lab"
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "873dffce-b23d-4101-9af8-5dbf33bc0f33",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "232607cb-b834-4df2-b3d1-10a3924f01cd",
+  "created_at": "2026-05-16T05:46:45.478356441+00:00",
+  "last_synced_at": "2026-05-17T04:30:23.345480+00:00",
+  "hub_manifest_hash": "d89f290cdde92604ced857d7ccf91b1f3d4ad0175f434ca5b18632f0f202626b",
+  "package_name": "li2012-calcium-mediated-synaptic-plasticity-lab"
+}

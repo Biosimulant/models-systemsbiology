@@ -1,0 +1,58 @@
+schema_version: '2.0'
+title: Dellorco2009 Phototransduction Lab
+description: 'This a model from the article: Network-level analysis of light adaptation
+  in rod cells under normal and altered conditions. It can be used to explore systemsbiology
+  dellorco2009 phototransduction BioModels0000000326 dynamics and compare simulation
+  behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_dellorco2009_phototransduction_biomd0000000326_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_dellorco2009_phototransduction_biomd0000000326_model.state
+  to:
+  - visualisation.systemsbiology_sbml_dellorco2009_phototransduction_biomd0000000326_model_state
+- from: systemsbiology_sbml_dellorco2009_phototransduction_biomd0000000326_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_dellorco2009_phototransduction_biomd0000000326_model_summary
+- from: systemsbiology_sbml_dellorco2009_phototransduction_biomd0000000326_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_dellorco2009_phototransduction_biomd0000000326_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: otherstimulus
+    maps_to: systemsbiology_sbml_dellorco2009_phototransduction_biomd0000000326_model.otherstimulus
+    label: Otherstimulus
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `otherstimulus`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_dellorco2009_phototransduction_biomd0000000326_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_dellorco2009_phototransduction_biomd0000000326_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_dellorco2009_phototransduction_biomd0000000326_model.species_labels
+  - name: rec_w_ca2_rk
+    maps_to: systemsbiology_sbml_dellorco2009_phototransduction_biomd0000000326_model.rec_w_ca2_rk
+  - name: ca2_buff
+    maps_to: systemsbiology_sbml_dellorco2009_phototransduction_biomd0000000326_model.ca2_buff
+  - name: c_gmp
+    maps_to: systemsbiology_sbml_dellorco2009_phototransduction_biomd0000000326_model.c_gmp
+  - name: ca2_free
+    maps_to: systemsbiology_sbml_dellorco2009_phototransduction_biomd0000000326_model.ca2_free
+  - name: rgs_pde_a_ga_gtp
+    maps_to: systemsbiology_sbml_dellorco2009_phototransduction_biomd0000000326_model.rgs_pde_a_ga_gtp
+  - name: r6_r_kpre
+    maps_to: systemsbiology_sbml_dellorco2009_phototransduction_biomd0000000326_model.r6_r_kpre

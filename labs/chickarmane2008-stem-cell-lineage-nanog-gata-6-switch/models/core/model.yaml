@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Chickarmane2008 - Stem cell lineage - NANOG GATA-6 switch
+description: 'Chickarmane2008 - Stem cell lineage - NANOG GATA-6 switch In this work,
+  a dynamical model of lineage determination based upon a minimal circuit, as discussed
+  in PMID: 17215298 , which contains the Oct. It can be used to explore systemsbiology
+  chickarmane2008 stem cell lineage nanog dynamics and compare simulation behavior
+  across conditions.'
+standard: other
+tags:
+- development
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Vijay Chickarmane
+- Carsten Peterson
+upstream:
+  id: biomodels_ebi:BIOMD0000000210
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000210
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000210
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000210?filename=BIOMD0000000210_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.chickarmane2008_stem_cell_lineage_nanog_gata_6_s_biomd0000000210_model:Chickarmane2008StemCellLineageNanogGata6SBiomd0000000210Model
+  init_kwargs:
+    model_path: data/BIOMD0000000210.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_target_gene
+    maps_to: targetGene
+    label: Initial Target Gene
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `targetGene`.
+  - name: initial_sox2_gene
+    maps_to: SOX2_Gene
+    label: Initial Sox2 Gene
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `SOX2_Gene`.
+  - name: initial_protein
+    maps_to: Protein
+    label: Initial Protein
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Protein`.
+  - name: initial_oct4_gene
+    maps_to: OCT4_Gene
+    label: Initial Oct4 Gene
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `OCT4_Gene`.
+  - name: initial_nanog_gene
+    maps_to: NANOG_Gene
+    label: Initial Nanog Gene
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NANOG_Gene`.
+  - name: initial_gcnf_gene
+    maps_to: GCNF_Gene
+    label: Initial Gcnf Gene
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `GCNF_Gene`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: target_gene
+    maps_to: targetGene
+    label: TargetGene
+    description: TargetGene. Maps to SBML symbol `targetGene`.
+  - name: sox2_gene
+    maps_to: SOX2_Gene
+    label: SOX2 Gene
+    description: SOX2 Gene. Maps to SBML symbol `SOX2_Gene`.
+  - name: protein
+    maps_to: Protein
+    label: Protein
+    description: Protein. Maps to SBML symbol `Protein`.
+  - name: oct4_gene
+    maps_to: OCT4_Gene
+    label: OCT4 Gene
+    description: OCT4 Gene. Maps to SBML symbol `OCT4_Gene`.
+  - name: nanog_gene
+    maps_to: NANOG_Gene
+    label: NANOG Gene
+    description: NANOG Gene. Maps to SBML symbol `NANOG_Gene`.
+  - name: gcnf_gene
+    maps_to: GCNF_Gene
+    label: GCNF Gene
+    description: GCNF Gene. Maps to SBML symbol `GCNF_Gene`.

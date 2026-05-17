@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "c9c167fe-9124-4b22-a5ce-28b4d810dc20",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "92a0bef9-b566-4523-b21d-7c4ec6660b4a",
+  "created_at": "2026-05-16T05:46:52.402120001+00:00",
+  "last_synced_at": "2026-05-17T06:26:56.503992+00:00",
+  "hub_manifest_hash": "0b9f734a745f438f1dc0ab357f9598648b7b8783aeffa8a6547daf479075e8df",
+  "package_name": "tiemann2011-phenotypetransitions-lab"
+}

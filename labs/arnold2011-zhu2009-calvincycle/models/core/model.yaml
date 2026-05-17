@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Arnold2011_Zhu2009_CalvinCycle
+description: 'This model is from the article: A quantitative comparison of Calvin–Benson
+  cycle models Anne Arnold, Zoran Nikoloski Trends in Plant Science 2011 Oct 14. It
+  can be used to explore systemsbiology arnold2011 zhu2009 calvincycle BioModels0000000388
+  dynamics and compare simulation behavior across conditions.'
+standard: other
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Anne Arnold
+- Zoran Nikoloski
+upstream:
+  id: biomodels_ebi:BIOMD0000000388
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000388
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000388
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000388?filename=BIOMD0000000388_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.arnold2011_zhu2009_calvincycle_biomd0000000388_model:Arnold2011Zhu2009CalvincycleBiomd0000000388Model
+  init_kwargs:
+    model_path: data/BIOMD0000000388.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_pi
+    maps_to: Pi
+    label: Initial Model State Pi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pi`.
+  - name: initial_model_state_pga
+    maps_to: PGA
+    label: Initial Model State Pga
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PGA`.
+  - name: initial_ru_bp
+    maps_to: RuBP
+    label: Initial Ru Bp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RuBP`.
+  - name: initial_model_state_adp
+    maps_to: ADP
+    label: Initial Model State ADP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ADP`.
+  - name: initial_model_state_atp
+    maps_to: ATP
+    label: Initial Model State ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATP`.
+  - name: initial_ru5_p
+    maps_to: Ru5P
+    label: Initial RU5 P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ru5P`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_pi
+    maps_to: Pi
+    label: Pi
+    description: Pi. Maps to SBML symbol `Pi`.
+  - name: pga
+    maps_to: PGA
+    label: PGA
+    description: PGA. Maps to SBML symbol `PGA`.
+  - name: ru_bp
+    maps_to: RuBP
+    label: RuBP
+    description: RuBP. Maps to SBML symbol `RuBP`.
+  - name: adp
+    maps_to: ADP
+    label: ADP
+    description: ADP. Maps to SBML symbol `ADP`.
+  - name: atp
+    maps_to: ATP
+    label: ATP
+    description: ATP. Maps to SBML symbol `ATP`.
+  - name: ru5_p
+    maps_to: Ru5P
+    label: Ru5P
+    description: Ru5P. Maps to SBML symbol `Ru5P`.

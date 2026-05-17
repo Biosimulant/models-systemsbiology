@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: DellOrco2009_phototransduction Visualisation
+description: Question-and-answer and dynamic visual summaries for DellOrco2009_phototransduction.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Dellorco2009 Phototransduction Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: DellOrco2009_phototransduction.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_dellorco2009_phototransduction_biomd0000000326_model
+      title: DellOrco2009_phototransduction
+      observables:
+      - id: Rec_wCa2_RK
+        port: rec_w_ca2_rk
+        label: Rec_wCa2_RK
+        group: physiology
+      - id: Ca2_buff
+        port: ca2_buff
+        label: Ca2_buff
+        group: physiology
+      - id: cGMP
+        port: c_gmp
+        label: cGMP
+        group: physiology
+      - id: Ca2_free
+        port: ca2_free
+        label: Ca2_free
+        group: physiology
+      - id: RGS_PDE_a_Ga_GTP
+        port: rgs_pde_a_ga_gtp
+        label: RGS_PDE_a_Ga_GTP
+        group: physiology
+      - id: R6_RKpre
+        port: r6_r_kpre
+        label: R6_RKpre
+        group: physiology
+io:
+  inputs: []
+  outputs: []

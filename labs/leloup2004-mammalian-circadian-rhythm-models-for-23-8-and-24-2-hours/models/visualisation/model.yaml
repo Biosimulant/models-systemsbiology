@@ -1,0 +1,59 @@
+schema_version: '2.0'
+title: Leloup2004 - Mammalian Circadian Rhythm models for 23.8 and 24.2 hours timeperiod
+  Visualisation
+description: Question-and-answer and dynamic visual summaries for Leloup2004 - Mammalian
+  Circadian Rhythm models for 23.8 and 24.2 hours timeperiod.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Leloup2004 Mammalian Circadian Rhythm Models For 23 8 And 24 2 Hours
+      Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Leloup2004 - Mammalian Circadian Rhythm models for 23.8 and 24.2
+      hours timeperiod.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_leloup2004_mammalian_circadian_rhythm_models_for_biomd0000000975_model
+      title: Leloup2004 - Mammalian Circadian Rhythm models for 23.8 and 24.2 hours
+        timeperiod
+      observables:
+      - id: MB_0
+        port: model_state_mb
+        label: MB
+        group: physiology
+      - id: PCP_0
+        port: pcp
+        label: PCP
+        group: physiology
+      - id: PCNP_0
+        port: pcnp
+        label: PCNP
+        group: physiology
+      - id: PCN_0
+        port: pcn
+        label: PCN
+        group: physiology
+      - id: PCCP_0
+        port: pccp
+        label: PCCP
+        group: physiology
+      - id: PCC_0
+        port: pcc
+        label: PCC
+        group: physiology
+io:
+  inputs: []
+  outputs: []

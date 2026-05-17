@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: Ratushny2012 Assure Ii Lab
+description: 'This model is from the article: Asymmetric positive feedback loops reliably
+  control biological responses Alexander V Ratushny, Ramsey A Saleem, Katherine Sitko,
+  Stephen A Ramsey &amp; John D Aitchison. It can be used to explore systemsbiology
+  ratushny2012 assure ii BioModels0000000421 dynamics and compare simulation behavior
+  across conditions.'
+models:
+- alias: systemsbiology_sbml_ratushny2012_assure_ii_biomd0000000421_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_ratushny2012_assure_ii_biomd0000000421_model.state
+  to:
+  - visualisation.systemsbiology_sbml_ratushny2012_assure_ii_biomd0000000421_model_state
+- from: systemsbiology_sbml_ratushny2012_assure_ii_biomd0000000421_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_ratushny2012_assure_ii_biomd0000000421_model_summary
+- from: systemsbiology_sbml_ratushny2012_assure_ii_biomd0000000421_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_ratushny2012_assure_ii_biomd0000000421_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_target
+    maps_to: systemsbiology_sbml_ratushny2012_assure_ii_biomd0000000421_model.initial_target
+    label: Initial Target
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Target`.
+  - name: initial_model_state_p1
+    maps_to: systemsbiology_sbml_ratushny2012_assure_ii_biomd0000000421_model.initial_model_state_p1
+    label: Initial Model State P1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P1`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_ratushny2012_assure_ii_biomd0000000421_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_ratushny2012_assure_ii_biomd0000000421_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_ratushny2012_assure_ii_biomd0000000421_model.species_labels
+  - name: target
+    maps_to: systemsbiology_sbml_ratushny2012_assure_ii_biomd0000000421_model.target
+  - name: model_state_p1
+    maps_to: systemsbiology_sbml_ratushny2012_assure_ii_biomd0000000421_model.model_state_p1

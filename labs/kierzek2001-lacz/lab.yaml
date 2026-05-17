@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Kierzek2001 Lacz Lab
+description: An approximation to the &lt;a href = 'http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=pubmed&amp;dopt=Abstract&amp;list_uids=11062240
+  '&gt;Kierzek AM. It can be used to explore systemsbiology kierzek2001 lacz model4821294342
+  dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_kierzek2001_lacz_model4821294342_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_kierzek2001_lacz_model4821294342_model.state
+  to:
+  - visualisation.systemsbiology_sbml_kierzek2001_lacz_model4821294342_model_state
+- from: systemsbiology_sbml_kierzek2001_lacz_model4821294342_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_kierzek2001_lacz_model4821294342_model_summary
+- from: systemsbiology_sbml_kierzek2001_lacz_model4821294342_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_kierzek2001_lacz_model4821294342_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_lac_z_slash_rnap
+    maps_to: systemsbiology_sbml_kierzek2001_lacz_model4821294342_model.initial_lac_z_slash_rnap
+    label: Initial Lac Z Slash Rnap
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `LacZ_slash_RNAP`.
+  - name: initial_lac_z_slash_tr_rnap
+    maps_to: systemsbiology_sbml_kierzek2001_lacz_model4821294342_model.initial_lac_z_slash_tr_rnap
+    label: Initial Lac Z Slash Tr Rnap
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `LacZ_slash_TrRNAP`.
+  - name: initial_lac_z_slash_protein
+    maps_to: systemsbiology_sbml_kierzek2001_lacz_model4821294342_model.initial_lac_z_slash_protein
+    label: Initial Lac Z Slash Protein
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `LacZ_slash_Protein`.
+  - name: initial_lac_z_slash_p_rnap
+    maps_to: systemsbiology_sbml_kierzek2001_lacz_model4821294342_model.initial_lac_z_slash_p_rnap
+    label: Initial Lac Z Slash P Rnap
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `LacZ_slash_P_RNAP`.
+  - name: initial_lac_z_slash_el_rnap
+    maps_to: systemsbiology_sbml_kierzek2001_lacz_model4821294342_model.initial_lac_z_slash_el_rnap
+    label: Initial Lac Z Slash El Rnap
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `LacZ_slash_ElRNAP`.
+  - name: initial_lac_z_slash_ribosome
+    maps_to: systemsbiology_sbml_kierzek2001_lacz_model4821294342_model.initial_lac_z_slash_ribosome
+    label: Initial Lac Z Slash Ribosome
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `LacZ_slash_Ribosome`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_kierzek2001_lacz_model4821294342_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_kierzek2001_lacz_model4821294342_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_kierzek2001_lacz_model4821294342_model.species_labels
+  - name: lac_z_slash_rnap
+    maps_to: systemsbiology_sbml_kierzek2001_lacz_model4821294342_model.lac_z_slash_rnap
+  - name: lac_z_slash_tr_rnap
+    maps_to: systemsbiology_sbml_kierzek2001_lacz_model4821294342_model.lac_z_slash_tr_rnap
+  - name: lac_z_slash_protein
+    maps_to: systemsbiology_sbml_kierzek2001_lacz_model4821294342_model.lac_z_slash_protein
+  - name: lac_z_slash_p_rnap
+    maps_to: systemsbiology_sbml_kierzek2001_lacz_model4821294342_model.lac_z_slash_p_rnap
+  - name: lac_z_slash_el_rnap
+    maps_to: systemsbiology_sbml_kierzek2001_lacz_model4821294342_model.lac_z_slash_el_rnap
+  - name: lac_z_slash_ribosome
+    maps_to: systemsbiology_sbml_kierzek2001_lacz_model4821294342_model.lac_z_slash_ribosome

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "00b902f9-b5b9-4236-a0df-a90ccd657f54",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "e7470468-40aa-4674-a9c9-e4cf20045d8e",
+  "created_at": "2026-05-16T05:46:51.282134311+00:00",
+  "last_synced_at": "2026-05-17T05:54:41.685863+00:00",
+  "hub_manifest_hash": "9ad4db2ee1a920d896ea60a3f3f15edb17fcbb26a91e0b2cf2fc2dddc642f0ff",
+  "package_name": "ratushny2012-spf-i-lab"
+}

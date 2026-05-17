@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "d2ca63ae-9ba2-4cd2-b4a4-e3bdd2563c2e",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "42913984-c9dd-420a-81ba-ae2599f33700",
+  "created_at": "2026-05-16T05:46:53.201696719+00:00",
+  "last_synced_at": "2026-05-17T06:50:42.845793+00:00",
+  "hub_manifest_hash": "070829d3db9c37e09592d75cff81e4ea3f98d840a98cdd5232355a25249f89dc",
+  "package_name": "wilhelm2009-bistablereaction-lab"
+}

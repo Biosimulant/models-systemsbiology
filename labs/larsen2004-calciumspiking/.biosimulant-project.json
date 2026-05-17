@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "8f478ffa-6301-4f29-a825-5be74a0a29e5",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "38cf5b8c-7468-4584-96c1-2235f9610585",
+  "created_at": "2026-05-16T05:46:45.067773550+00:00",
+  "last_synced_at": "2026-05-17T04:16:45.848158+00:00",
+  "hub_manifest_hash": "487d3119fb6cb3a7f0418f26a82c050d94b8af12938e135a0244982c533b1edf",
+  "package_name": "larsen2004-calciumspiking-lab"
+}

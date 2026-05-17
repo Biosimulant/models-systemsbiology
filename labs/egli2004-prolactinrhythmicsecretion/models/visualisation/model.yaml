@@ -1,0 +1,42 @@
+schema_version: '2.0'
+title: Egli2004_ProlactinRhythmicSecretion Visualisation
+description: Question-and-answer and dynamic visual summaries for Egli2004_ProlactinRhythmicSecretion.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Egli2004 Prolactinrhythmicsecretion Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Egli2004_ProlactinRhythmicSecretion.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_egli2004_prolactinrhythmicsecretion_model0912452142_model
+      title: Egli2004_ProlactinRhythmicSecretion
+      observables:
+      - id: PRL
+        port: prl
+        label: PRL
+        group: physiology
+      - id: OT
+        port: model_state_ot
+        label: OT
+        group: physiology
+      - id: DA
+        port: model_state_da
+        label: DA
+        group: physiology
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,59 @@
+schema_version: '2.0'
+title: Valero2016 - Ascorbate-Glutathione cycle in chloroplasts under light/dark conditions
+  Visualisation
+description: Question-and-answer and dynamic visual summaries for Valero2016 - Ascorbate-Glutathione
+  cycle in chloroplasts under light/dark conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Valero2016 Ascorbate Glutathione Cycle In Chloroplasts Under Light
+      Da Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Valero2016 - Ascorbate-Glutathione cycle in chloroplasts under
+      light/dark conditions.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_valero2016_ascorbate_glutathione_cycle_in_chloro_biomd0000000589_model
+      title: Valero2016 - Ascorbate-Glutathione cycle in chloroplasts under light/dark
+        conditions
+      observables:
+      - id: NADPH
+        port: nadph
+        label: NADPH
+        group: metabolism
+      - id: NADPplus
+        port: nad_pplus
+        label: NADPplus
+        group: metabolism
+      - id: ASC
+        port: asc
+        label: ASC
+        group: physiology
+      - id: GSH
+        port: gsh
+        label: GSH
+        group: physiology
+      - id: APX
+        port: apx
+        label: APX
+        group: physiology
+      - id: O2neg
+        port: o2neg
+        label: O2neg
+        group: physiology
+io:
+  inputs: []
+  outputs: []

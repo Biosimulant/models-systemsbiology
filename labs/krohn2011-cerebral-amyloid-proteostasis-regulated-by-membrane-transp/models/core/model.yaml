@@ -1,0 +1,110 @@
+schema_version: '2.0'
+title: Krohn2011 - Cerebral amyloid-β proteostasis regulated by membrane transport
+  protein ABCC1
+description: 'Krohn2011 - Cerebral amyloid-βproteostasis regulated by membrane transport
+  protein ABCC1 This model is described in the article: Cerebral amyloid-β proteostasis
+  is regulated by the membrane transport. It can be used to explore systemsbiology
+  krohn2011 cerebral amyloid proteostasis regulate dynamics and compare simulation
+  behavior across conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Markus Krohn
+- Cathleen Lange
+- Jacqueline Hofrichter
+- Katja Scheffler
+- Jan Stenzel
+upstream:
+  id: biomodels_ebi:BIOMD0000000618
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000618
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000618
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000618?filename=BIOMD0000000618_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.krohn2011_cerebral_amyloid_proteostasis_regulate_biomd0000000618_model:Krohn2011CerebralAmyloidProteostasisRegulateBiomd0000000618Model
+  init_kwargs:
+    model_path: data/BIOMD0000000618.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_soluble_obs
+    maps_to: soluble_obs
+    label: Initial Soluble Obs
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `soluble_obs`.
+  - name: initial_insoluble_obs
+    maps_to: insoluble_obs
+    label: Initial Insoluble Obs
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `insoluble_obs`.
+  - name: initial_model_state_a9
+    maps_to: A9
+    label: Initial Model State A9
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `A9`.
+  - name: initial_model_state_a8
+    maps_to: A8
+    label: Initial Model State A8
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `A8`.
+  - name: initial_model_state_a7
+    maps_to: A7
+    label: Initial Model State A7
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `A7`.
+  - name: initial_model_state_a54
+    maps_to: A54
+    label: Initial Model State A54
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `A54`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: soluble_obs
+    maps_to: soluble_obs
+    label: soluble_obs
+    description: soluble_obs. Maps to SBML symbol `soluble_obs`.
+  - name: insoluble_obs
+    maps_to: insoluble_obs
+    label: insoluble_obs
+    description: insoluble_obs. Maps to SBML symbol `insoluble_obs`.
+  - name: model_state_a9
+    maps_to: A9
+    label: A9
+    description: A9. Maps to SBML symbol `A9`.
+  - name: model_state_a8
+    maps_to: A8
+    label: A8
+    description: A8. Maps to SBML symbol `A8`.
+  - name: model_state_a7
+    maps_to: A7
+    label: A7
+    description: A7. Maps to SBML symbol `A7`.
+  - name: a54
+    maps_to: A54
+    label: A54
+    description: A54. Maps to SBML symbol `A54`.

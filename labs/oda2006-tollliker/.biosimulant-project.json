@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "50a45ac5-efa7-4aba-a120-5bd6cb6ab7af",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "f405aac8-79c0-46a9-abf5-0c22687bf0f3",
+  "created_at": "2026-05-16T05:46:49.325650488+00:00",
+  "last_synced_at": "2026-05-17T05:19:02.637515+00:00",
+  "hub_manifest_hash": "bbb0fdc7bb54de95edd62cc0062c00315601f539ecb6bb80616e5bc31de11cb2",
+  "package_name": "oda2006-tollliker-lab"
+}

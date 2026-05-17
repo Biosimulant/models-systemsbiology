@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Bagci2006_ApoptoticStimuli Visualisation
+description: Question-and-answer and dynamic visual summaries for Bagci2006_ApoptoticStimuli.
+standard: other
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Bagci2006 Apoptoticstimuli Lab
+    question: 'Which metabolic pools or flux-linked states show the strongest simulated
+      change? Source model: Bagci2006_ApoptoticStimuli.'
+    answer_focus: Q/A table plus metabolism timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_bagci2006_apoptoticstimuli_model1006230056_model
+      title: Bagci2006_ApoptoticStimuli
+      observables:
+      - id: CytcApaf_1
+        port: cytc_apaf_1
+        label: CytcApaf 1
+        group: metabolism
+      - id: Casp9Pro3
+        port: casp9_pro3
+        label: Casp9Pro3
+        group: metabolism
+      - id: Casp9IAP
+        port: casp9_iap
+        label: Casp9IAP
+        group: metabolism
+      - id: Casp9
+        port: casp9
+        label: Casp9
+        group: metabolism
+      - id: Casp8Bid
+        port: casp8_bid
+        label: Casp8Bid
+        group: metabolism
+      - id: Casp8
+        port: casp8
+        label: Casp8
+        group: metabolism
+io:
+  inputs: []
+  outputs: []

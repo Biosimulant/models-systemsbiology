@@ -1,0 +1,43 @@
+schema_version: '2.0'
+title: Phillips2007_AscendingArousalSystem_SleepWakeDynamics Visualisation
+description: Question-and-answer and dynamic visual summaries for Phillips2007_AscendingArousalSystem_SleepWakeDynamics.
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Phillips2007 Ascendingarousalsystem Sleepwakedynamics Lab
+    question: 'Which physiological state variables carry the strongest baseline response?
+      Source model: Phillips2007_AscendingArousalSystem_SleepWakeDynamics.'
+    answer_focus: Q/A table plus physiology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_phillips2007_ascendingarousalsystem_sleepwakedyn_biomd0000000917_model
+      title: Phillips2007_AscendingArousalSystem_SleepWakeDynamics
+      observables:
+      - id: Somnogen_level_H
+        port: somnogen_level_h
+        label: Somnogen level H
+        group: physiology
+      - id: Ventrolateral_preopticarea__VLPO__voltage
+        port: ventrolateral_preopticarea_vlpo_voltage
+        label: Ventrolateral preopticarea (VLPO) voltage
+        group: physiology
+      - id: Monoaminergic__MA__voltage
+        port: monoaminergic_ma_voltage
+        label: Monoaminergic (MA) voltage
+        group: physiology
+io:
+  inputs: []
+  outputs: []

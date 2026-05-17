@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "9ae1d58e-f6c7-4715-a894-f48e288eec5a",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "f32a3f53-2321-4ddd-ab1e-299fefda4851",
+  "created_at": "2026-05-16T05:46:42.570005003+00:00",
+  "last_synced_at": "2026-05-17T02:42:59.527374+00:00",
+  "hub_manifest_hash": "a0f1323a23a6e806725e17330955773212e30314c5e3e2a656f5fe0324732386",
+  "package_name": "cronwright2002-glycerol-synthesis-lab"
+}

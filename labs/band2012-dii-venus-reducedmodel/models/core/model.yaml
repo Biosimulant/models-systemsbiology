@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: Band2012_DII-Venus_ReducedModel
+description: 'This model is from the article: Root gravitropism is regulated by a
+  transient lateral auxin gradient controlled by a tipping-point mechanism. Band LR,
+  Wells DM, Larrieu A, Sun J, Middleton AM, French.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Leah R Band
+- Darren M Wells
+- Antoine Larrieu
+- Jianyong Sun
+- Alistair M Middleton
+upstream:
+  id: biomodels_ebi:BIOMD0000000414
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000414
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000414
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000414?filename=BIOMD0000000414_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.band2012_dii_venus_reducedmodel_biomd0000000414_model:Band2012DiiVenusReducedmodelBiomd0000000414Model
+  init_kwargs:
+    model_path: data/BIOMD0000000414.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_venus
+    maps_to: VENUS
+    label: Initial Venus
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VENUS`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: venus
+    maps_to: VENUS
+    label: VENUS
+    description: VENUS. Maps to SBML symbol `VENUS`.

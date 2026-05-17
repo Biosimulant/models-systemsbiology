@@ -1,0 +1,92 @@
+schema_version: '2.0'
+title: Hayer2005 Ampar Traff 2 Lab
+description: This is the basic model of AMPAR trafficking bistability. It is based
+  on Hayer and Bhalla, PLoS Comput.
+models:
+- alias: systemsbiology_sbml_hayer2005_ampar_traff_model1_model9086518048_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_hayer2005_ampar_traff_model1_model9086518048_model.state
+  to:
+  - visualisation.systemsbiology_sbml_hayer2005_ampar_traff_model1_model9086518048_model_state
+- from: systemsbiology_sbml_hayer2005_ampar_traff_model1_model9086518048_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_hayer2005_ampar_traff_model1_model9086518048_model_summary
+- from: systemsbiology_sbml_hayer2005_ampar_traff_model1_model9086518048_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_hayer2005_ampar_traff_model1_model9086518048_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_ca_mkii_slash_act_ca_mkii_minus_psd
+    maps_to: systemsbiology_sbml_hayer2005_ampar_traff_model1_model9086518048_model.initial_ca_mkii_slash_act_ca_mkii_minus_psd
+    label: Initial Ca Mkii Slash Act Ca Mkii Minus Psd
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaMKII_slash_actCaMKII_minus_PSD`.
+  - name: initial_ca_mkii_slash_act_ca_mkii_minus_psd_slash_ca_mkii_slash_ca_mkii_cplx
+    maps_to: systemsbiology_sbml_hayer2005_ampar_traff_model1_model9086518048_model.initial_ca_mkii_slash_act_ca_mkii_minus_psd_slash_ca_mkii_slash_ca_mkii_cplx
+    label: Initial Ca Mkii Slash Act Ca Mkii Minus Psd Slash Ca Mkii Slash Ca Mkii
+      Cplx
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaMKII_slash_actCaMKII_minus_PSD_slash_CaMKII_slash_CaMKII_cplx`.
+  - name: initial_ca_mkii_slash_act_ca_mkii_minus_psd_slash_ca_mkii_sbo_4_sbc_slash_ca_mkii_sbo_4_sbc_cplx
+    maps_to: systemsbiology_sbml_hayer2005_ampar_traff_model1_model9086518048_model.initial_ca_mkii_slash_act_ca_mkii_minus_psd_slash_ca_mkii_sbo_4_sbc_slash_ca_mkii_sbo_4_sbc_cplx
+    label: Initial Ca Mkii Slash Act Ca Mkii Minus Psd Slash Ca Mkii Sbo 4 Sbc Slash
+      Ca Mkii Sbo 4 Sbc Cplx
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaMKII_slash_actCaMKII_minus_PSD_slash_CaMKII_sbo_4_sbc__slash_CaMKII_sbo_4_sbc__cplx`.
+  - name: initial_ca_mkii_slash_act_ca_mkii_minus_psd_slash_ca_mkii_sbo_8_sbc_slash_ca_mkii_sbo_8_sbc_cplx
+    maps_to: systemsbiology_sbml_hayer2005_ampar_traff_model1_model9086518048_model.initial_ca_mkii_slash_act_ca_mkii_minus_psd_slash_ca_mkii_sbo_8_sbc_slash_ca_mkii_sbo_8_sbc_cplx
+    label: Initial Ca Mkii Slash Act Ca Mkii Minus Psd Slash Ca Mkii Sbo 8 Sbc Slash
+      Ca Mkii Sbo 8 Sbc Cplx
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaMKII_slash_actCaMKII_minus_PSD_slash_CaMKII_sbo_8_sbc__slash_CaMKII_sbo_8_sbc__cplx`.
+  - name: initial_ca_mkii_slash_act_ca_mkii_minus_psd_slash_ca_mkii_sbo_12_sbc_slash_ca_mkii_sbo_12_sbc_cplx
+    maps_to: systemsbiology_sbml_hayer2005_ampar_traff_model1_model9086518048_model.initial_ca_mkii_slash_act_ca_mkii_minus_psd_slash_ca_mkii_sbo_12_sbc_slash_ca_mkii_sbo_12_sbc_cplx
+    label: Initial Ca Mkii Slash Act Ca Mkii Minus Psd Slash Ca Mkii Sbo 12 Sbc Slash
+      Ca Mkii Sbo 12 Sbc Cplx
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaMKII_slash_actCaMKII_minus_PSD_slash_CaMKII_sbo_12_sbc__slash_CaMKII_sbo_12_sbc__cplx`.
+  - name: initial_ca_mkii_slash_act_ca_mkii_minus_psd_slash_ca_mkii_sbo_6_sbc_slash_ca_mkii_sbo_6_sbc_cplx
+    maps_to: systemsbiology_sbml_hayer2005_ampar_traff_model1_model9086518048_model.initial_ca_mkii_slash_act_ca_mkii_minus_psd_slash_ca_mkii_sbo_6_sbc_slash_ca_mkii_sbo_6_sbc_cplx
+    label: Initial Ca Mkii Slash Act Ca Mkii Minus Psd Slash Ca Mkii Sbo 6 Sbc Slash
+      Ca Mkii Sbo 6 Sbc Cplx
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaMKII_slash_actCaMKII_minus_PSD_slash_CaMKII_sbo_6_sbc__slash_CaMKII_sbo_6_sbc__cplx`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_hayer2005_ampar_traff_model1_model9086518048_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_hayer2005_ampar_traff_model1_model9086518048_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_hayer2005_ampar_traff_model1_model9086518048_model.species_labels
+  - name: ca_mkii_slash_act_ca_mkii_minus_psd
+    maps_to: systemsbiology_sbml_hayer2005_ampar_traff_model1_model9086518048_model.ca_mkii_slash_act_ca_mkii_minus_psd
+  - name: ca_mkii_slash_act_ca_mkii_minus_psd_slash_ca_mkii_slash_ca_mkii_cplx
+    maps_to: systemsbiology_sbml_hayer2005_ampar_traff_model1_model9086518048_model.ca_mkii_slash_act_ca_mkii_minus_psd_slash_ca_mkii_slash_ca_mkii_cplx
+  - name: ca_mkii_slash_act_ca_mkii_minus_psd_slash_ca_mkii_sbo_4_sbc_slash_ca_mkii_sbo_4_sbc_cplx
+    maps_to: systemsbiology_sbml_hayer2005_ampar_traff_model1_model9086518048_model.ca_mkii_slash_act_ca_mkii_minus_psd_slash_ca_mkii_sbo_4_sbc_slash_ca_mkii_sbo_4_sbc_cplx
+  - name: ca_mkii_slash_act_ca_mkii_minus_psd_slash_ca_mkii_sbo_8_sbc_slash_ca_mkii_sbo_8_sbc_cplx
+    maps_to: systemsbiology_sbml_hayer2005_ampar_traff_model1_model9086518048_model.ca_mkii_slash_act_ca_mkii_minus_psd_slash_ca_mkii_sbo_8_sbc_slash_ca_mkii_sbo_8_sbc_cplx
+  - name: ca_mkii_slash_act_ca_mkii_minus_psd_slash_ca_mkii_sbo_12_sbc_slash_ca_mkii_sbo_12_sbc_cplx
+    maps_to: systemsbiology_sbml_hayer2005_ampar_traff_model1_model9086518048_model.ca_mkii_slash_act_ca_mkii_minus_psd_slash_ca_mkii_sbo_12_sbc_slash_ca_mkii_sbo_12_sbc_cplx
+  - name: ca_mkii_slash_act_ca_mkii_minus_psd_slash_ca_mkii_sbo_6_sbc_slash_ca_mkii_sbo_6_sbc_cplx
+    maps_to: systemsbiology_sbml_hayer2005_ampar_traff_model1_model9086518048_model.ca_mkii_slash_act_ca_mkii_minus_psd_slash_ca_mkii_sbo_6_sbc_slash_ca_mkii_sbo_6_sbc_cplx

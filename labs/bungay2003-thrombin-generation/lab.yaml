@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Bungay2003 Thrombin Generation Lab
+description: 'This model is from the article: A mathematical model of lipid-mediated
+  thrombin generation Bungay Sharene D., Gentry Patricia A., Gentry Rodney D. It can
+  be used to explore systemsbiology bungay2003 thrombin generation BioModels0000000334
+  dynamics and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_bungay2003_thrombin_generation_biomd0000000334_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_bungay2003_thrombin_generation_biomd0000000334_model.state
+  to:
+  - visualisation.systemsbiology_sbml_bungay2003_thrombin_generation_biomd0000000334_model_state
+- from: systemsbiology_sbml_bungay2003_thrombin_generation_biomd0000000334_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_bungay2003_thrombin_generation_biomd0000000334_model_summary
+- from: systemsbiology_sbml_bungay2003_thrombin_generation_biomd0000000334_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_bungay2003_thrombin_generation_biomd0000000334_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_at_f
+    maps_to: systemsbiology_sbml_bungay2003_thrombin_generation_biomd0000000334_model.initial_at_f
+    label: Initial At F
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `AT_f`.
+  - name: initial_ii_f
+    maps_to: systemsbiology_sbml_bungay2003_thrombin_generation_biomd0000000334_model.initial_ii_f
+    label: Initial Ii F
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `II_f`.
+  - name: initial_ps_f
+    maps_to: systemsbiology_sbml_bungay2003_thrombin_generation_biomd0000000334_model.initial_ps_f
+    label: Initial Ps F
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PS_f`.
+  - name: initial_model_state_x_f
+    maps_to: systemsbiology_sbml_bungay2003_thrombin_generation_biomd0000000334_model.initial_model_state_x_f
+    label: Initial Model State X F
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X_f`.
+  - name: initial_ix_f
+    maps_to: systemsbiology_sbml_bungay2003_thrombin_generation_biomd0000000334_model.initial_ix_f
+    label: Initial Ix F
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IX_f`.
+  - name: initial_pc_f
+    maps_to: systemsbiology_sbml_bungay2003_thrombin_generation_biomd0000000334_model.initial_pc_f
+    label: Initial Pc F
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PC_f`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_bungay2003_thrombin_generation_biomd0000000334_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_bungay2003_thrombin_generation_biomd0000000334_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_bungay2003_thrombin_generation_biomd0000000334_model.species_labels
+  - name: at_f
+    maps_to: systemsbiology_sbml_bungay2003_thrombin_generation_biomd0000000334_model.at_f
+  - name: ii_f
+    maps_to: systemsbiology_sbml_bungay2003_thrombin_generation_biomd0000000334_model.ii_f
+  - name: ps_f
+    maps_to: systemsbiology_sbml_bungay2003_thrombin_generation_biomd0000000334_model.ps_f
+  - name: x_f
+    maps_to: systemsbiology_sbml_bungay2003_thrombin_generation_biomd0000000334_model.x_f
+  - name: ix_f
+    maps_to: systemsbiology_sbml_bungay2003_thrombin_generation_biomd0000000334_model.ix_f
+  - name: pc_f
+    maps_to: systemsbiology_sbml_bungay2003_thrombin_generation_biomd0000000334_model.pc_f

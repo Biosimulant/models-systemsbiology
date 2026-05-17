@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Liu2011 Complement System Lab
+description: 'Model of the Complement System This is the continuous deterministic
+  (ODE) model of the complement system described in the article: Computational and
+  Experimental Study of the Regulatory Mechanisms of. It can be used to explore systemsbiology
+  liu2011 complement system BioModels0000000303 dynamics and compare simulation behavior
+  across conditions.'
+models:
+- alias: systemsbiology_sbml_liu2011_complement_system_biomd0000000303_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_liu2011_complement_system_biomd0000000303_model.state
+  to:
+  - visualisation.systemsbiology_sbml_liu2011_complement_system_biomd0000000303_model_state
+- from: systemsbiology_sbml_liu2011_complement_system_biomd0000000303_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_liu2011_complement_system_biomd0000000303_model_summary
+- from: systemsbiology_sbml_liu2011_complement_system_biomd0000000303_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_liu2011_complement_system_biomd0000000303_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_i_c4b_c2a
+    maps_to: systemsbiology_sbml_liu2011_complement_system_biomd0000000303_model.initial_i_c4b_c2a
+    label: Initial I C4B C2A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `iC4b_C2a`.
+  - name: initial_d_c4b_c2a_c4_bp
+    maps_to: systemsbiology_sbml_liu2011_complement_system_biomd0000000303_model.initial_d_c4b_c2a_c4_bp
+    label: Initial D C4B C2A C4 Bp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `dC4b_C2a_C4BP`.
+  - name: initial_d_c4b_c2a
+    maps_to: systemsbiology_sbml_liu2011_complement_system_biomd0000000303_model.initial_d_c4b_c2a
+    label: Initial D C4B C2A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `dC4b_C2a`.
+  - name: initial_d_c3b
+    maps_to: systemsbiology_sbml_liu2011_complement_system_biomd0000000303_model.initial_d_c3b
+    label: Initial D C3B
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `dC3b`.
+  - name: initial_pc_crp_lf_masp
+    maps_to: systemsbiology_sbml_liu2011_complement_system_biomd0000000303_model.initial_pc_crp_lf_masp
+    label: Initial Pc Crp Lf Masp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PC_CRP_LF_MASP`.
+  - name: initial_pc_crp_lf_c1_masp
+    maps_to: systemsbiology_sbml_liu2011_complement_system_biomd0000000303_model.initial_pc_crp_lf_c1_masp
+    label: Initial Pc Crp Lf C1 Masp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PC_CRP_LF_C1_MASP`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_liu2011_complement_system_biomd0000000303_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_liu2011_complement_system_biomd0000000303_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_liu2011_complement_system_biomd0000000303_model.species_labels
+  - name: i_c4b_c2a
+    maps_to: systemsbiology_sbml_liu2011_complement_system_biomd0000000303_model.i_c4b_c2a
+  - name: d_c4b_c2a_c4_bp
+    maps_to: systemsbiology_sbml_liu2011_complement_system_biomd0000000303_model.d_c4b_c2a_c4_bp
+  - name: d_c4b_c2a
+    maps_to: systemsbiology_sbml_liu2011_complement_system_biomd0000000303_model.d_c4b_c2a
+  - name: d_c3b
+    maps_to: systemsbiology_sbml_liu2011_complement_system_biomd0000000303_model.d_c3b
+  - name: pc_crp_lf_masp
+    maps_to: systemsbiology_sbml_liu2011_complement_system_biomd0000000303_model.pc_crp_lf_masp
+  - name: pc_crp_lf_c1_masp
+    maps_to: systemsbiology_sbml_liu2011_complement_system_biomd0000000303_model.pc_crp_lf_c1_masp

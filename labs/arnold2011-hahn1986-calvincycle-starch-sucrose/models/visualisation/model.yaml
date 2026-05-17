@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Arnold2011_Hahn1986_CalvinCycle_Starch_Sucrose Visualisation
+description: Question-and-answer and dynamic visual summaries for Arnold2011_Hahn1986_CalvinCycle_Starch_Sucrose.
+standard: other
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Arnold2011 Hahn1986 Calvincycle Starch Sucrose Lab
+    question: 'Which metabolic pools or flux-linked states show the strongest simulated
+      change? Source model: Arnold2011_Hahn1986_CalvinCycle_Starch_Sucrose.'
+    answer_focus: Q/A table plus metabolism timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_arnold2011_hahn1986_calvincycle_starch_sucrose_biomd0000000389_model
+      title: Arnold2011_Hahn1986_CalvinCycle_Starch_Sucrose
+      observables:
+      - id: GG
+        port: model_state_gg
+        label: GG
+        group: metabolism
+      - id: SucV
+        port: suc_v
+        label: SucV
+        group: metabolism
+      - id: Suc
+        port: suc
+        label: Suc
+        group: metabolism
+      - id: CO2
+        port: co2
+        label: CO2
+        group: metabolism
+      - id: ATP
+        port: atp
+        label: ATP
+        group: metabolism
+      - id: UTP
+        port: utp
+        label: UTP
+        group: metabolism
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Bartholome2007_MDCKII Visualisation
+description: Question-and-answer and dynamic visual summaries for Bartholome2007_MDCKII.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Bartholome2007 Mdckii Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Bartholome2007_MDCKII.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_bartholome2007_mdckii_biomd0000000197_model
+      title: Bartholome2007_MDCKII
+      observables:
+      - id: BSP_cell
+        port: intracellular_bsp
+        label: intracellular BSP
+        group: physiology
+      - id: x3
+        port: free_intracellular_bsp
+        label: free intracellular BSP
+        group: physiology
+      - id: x4
+        port: bound_intracellular_bsp
+        label: bound intracellular BSP
+        group: physiology
+      - id: x5
+        port: apical_bsp
+        label: apical BSP
+        group: physiology
+      - id: x1
+        port: free_basolateral_bsp
+        label: free basolateral BSP
+        group: core_system_state
+      - id: BSP_tot
+        port: total_bsp
+        label: total BSP
+        group: core_system_state
+io:
+  inputs: []
+  outputs: []

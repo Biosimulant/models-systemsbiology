@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Li2010_YeastGlycolysis Visualisation
+description: Question-and-answer and dynamic visual summaries for Li2010_YeastGlycolysis.
+standard: other
+tags:
+- metabolism
+- microbiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Li2010 Yeastglycolysis Lab
+    question: 'Which metabolic pools or flux-linked states show the strongest simulated
+      change? Source model: Li2010_YeastGlycolysis.'
+    answer_focus: Q/A table plus metabolism timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_li2010_yeastglycolysis_model1012110001_model
+      title: Li2010_YeastGlycolysis
+      observables:
+      - id: M_304
+        port: d_glucose
+        label: D-Glucose
+        group: metabolism
+      - id: M_454
+        port: phosphate
+        label: Phosphate
+        group: metabolism
+      - id: M_411
+        port: nicotinamide_adenine_dinucleotide
+        label: Nicotinamide adenine dinucleotide
+        group: metabolism
+      - id: M_329
+        port: model_state_h
+        label: H+
+        group: metabolism
+      - id: M_172
+        port: atp
+        label: ATP
+        group: metabolism
+      - id: E_726
+        port: yal038_w
+        label: YAL038W
+        group: metabolism
+io:
+  inputs: []
+  outputs: []

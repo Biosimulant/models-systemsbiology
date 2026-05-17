@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "c4bb57a2-5f59-4c87-b774-e19d89c5db96",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "998eab41-200d-4fc1-9b52-6c6dd7fb1c30",
+  "created_at": "2026-05-16T05:46:42.122759734+00:00",
+  "last_synced_at": "2026-05-17T02:25:22.914521+00:00",
+  "hub_manifest_hash": "309f6fe1074d2410354b0db7981b4ae8cd6f52c24a2fe711b8c1688bb4152a1a",
+  "package_name": "cao2013-application-of-absis-method-in-the-bistable-schlogl-lab"
+}

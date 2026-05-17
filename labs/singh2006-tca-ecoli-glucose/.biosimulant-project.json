@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "fccd81e9-dc20-4f7f-8470-7d122b39d0c5",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "a5b3e02c-2b85-45a8-9447-662a435b3827",
+  "created_at": "2026-05-16T05:46:51.912036640+00:00",
+  "last_synced_at": "2026-05-17T06:12:56.182075+00:00",
+  "hub_manifest_hash": "fd65900dd14f973555e04109bad92bc9af6b0ce335901c7ea43d81a689930915",
+  "package_name": "singh2006-tca-ecoli-glucose-lab"
+}

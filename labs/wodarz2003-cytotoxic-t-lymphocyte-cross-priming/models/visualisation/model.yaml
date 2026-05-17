@@ -1,0 +1,49 @@
+schema_version: '2.0'
+title: Wodarz2003 - Cytotoxic T lymphocyte cross-priming Visualisation
+description: Question-and-answer and dynamic visual summaries for Wodarz2003 - Cytotoxic
+  T lymphocyte cross-priming.
+standard: other
+tags:
+- immunology
+- oncology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Wodarz2003 Cytotoxic T Lymphocyte Cross Priming Lab
+    question: 'Which immune or inflammatory states dominate the simulated response?
+      Source model: Wodarz2003 - Cytotoxic T lymphocyte cross-priming.'
+    answer_focus: Q/A table plus immunology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_wodarz2003_cytotoxic_t_lymphocyte_cross_priming_biomd0000000685_model
+      title: Wodarz2003 - Cytotoxic T lymphocyte cross-priming
+      observables:
+      - id: A_star
+        port: a_star
+        label: A Star
+        group: physiology
+      - id: T
+        port: model_state_t
+        label: T
+        group: physiology
+      - id: C
+        port: model_state_c
+        label: C
+        group: physiology
+      - id: A
+        port: model_state_a
+        label: A
+        group: physiology
+io:
+  inputs: []
+  outputs: []

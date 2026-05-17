@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Lo2005 - Stochastic Modeling of Blood Coagulation Initiation Visualisation
+description: Question-and-answer and dynamic visual summaries for Lo2005 - Stochastic
+  Modeling of Blood Coagulation Initiation.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Lo2005 Stochastic Modeling Of Blood Coagulation Initiation Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Lo2005 - Stochastic Modeling of Blood Coagulation Initiation.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_lo2005_stochastic_modeling_of_blood_coagulation_model1805160001_model
+      title: Lo2005 - Stochastic Modeling of Blood Coagulation Initiation
+      observables:
+      - id: mIIa_ATIII
+        port: m_i_ia_atiii
+        label: mIIa-ATIII
+        group: physiology
+      - id: mIIa
+        port: m_i_ia
+        label: mIIa
+        group: physiology
+      - id: Xa_Va_II
+        port: xa_va_ii
+        label: Xa-Va-II
+        group: physiology
+      - id: Xa_Va
+        port: xa_va
+        label: Xa-Va
+        group: physiology
+      - id: Xa_TFPI
+        port: xa_tfpi
+        label: Xa-TFPI
+        group: physiology
+      - id: Xa_ATIII
+        port: xa_atiii
+        label: Xa-ATIII
+        group: physiology
+io:
+  inputs: []
+  outputs: []

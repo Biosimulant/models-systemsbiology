@@ -1,0 +1,90 @@
+schema_version: '2.0'
+title: Dunster2016 Nondimensional Coagulation Lab
+description: We undertake a mathematical investigation of a model for the generation
+  of thrombin, an enzyme central to haemostatic blood coagulation, as well as to thrombotic
+  disorders, that is the end product of. It can be used to explore systemsbiology
+  dunster2016 nondimensional coagulation BioModels0000000925 dynamics and compare
+  simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_dunster2016_nondimensional_coagulation_model_biomd0000000925_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_dunster2016_nondimensional_coagulation_model_biomd0000000925_model.state
+  to:
+  - visualisation.systemsbiology_sbml_dunster2016_nondimensional_coagulation_model_biomd0000000925_model_state
+- from: systemsbiology_sbml_dunster2016_nondimensional_coagulation_model_biomd0000000925_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_dunster2016_nondimensional_coagulation_model_biomd0000000925_model_summary
+- from: systemsbiology_sbml_dunster2016_nondimensional_coagulation_model_biomd0000000925_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_dunster2016_nondimensional_coagulation_model_biomd0000000925_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_prothrombin_ii
+    maps_to: systemsbiology_sbml_dunster2016_nondimensional_coagulation_model_biomd0000000925_model.initial_prothrombin_ii
+    label: Initial Prothrombin Ii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Prothrombin__II`.
+  - name: initial_xa_l
+    maps_to: systemsbiology_sbml_dunster2016_nondimensional_coagulation_model_biomd0000000925_model.initial_xa_l
+    label: Initial Xa L
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_L`.
+  - name: initial_va_xa_l
+    maps_to: systemsbiology_sbml_dunster2016_nondimensional_coagulation_model_biomd0000000925_model.initial_va_xa_l
+    label: Initial Va Xa L
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Va_Xa_L`.
+  - name: initial_thrombin_i_ia
+    maps_to: systemsbiology_sbml_dunster2016_nondimensional_coagulation_model_biomd0000000925_model.initial_thrombin_i_ia
+    label: Initial Thrombin I Ia
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Thrombin__IIa`.
+  - name: initial_prothrombinase_va_xa
+    maps_to: systemsbiology_sbml_dunster2016_nondimensional_coagulation_model_biomd0000000925_model.initial_prothrombinase_va_xa
+    label: Initial Prothrombinase Va Xa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Prothrombinase__Va_Xa`.
+  - name: initial_inactive_protein_c
+    maps_to: systemsbiology_sbml_dunster2016_nondimensional_coagulation_model_biomd0000000925_model.initial_inactive_protein_c
+    label: Initial Inactive Protein C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Inactive_protein_C`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_dunster2016_nondimensional_coagulation_model_biomd0000000925_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_dunster2016_nondimensional_coagulation_model_biomd0000000925_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_dunster2016_nondimensional_coagulation_model_biomd0000000925_model.species_labels
+  - name: prothrombin_ii
+    maps_to: systemsbiology_sbml_dunster2016_nondimensional_coagulation_model_biomd0000000925_model.prothrombin_ii
+  - name: xa_l
+    maps_to: systemsbiology_sbml_dunster2016_nondimensional_coagulation_model_biomd0000000925_model.xa_l
+  - name: va_xa_l
+    maps_to: systemsbiology_sbml_dunster2016_nondimensional_coagulation_model_biomd0000000925_model.va_xa_l
+  - name: thrombin_i_ia
+    maps_to: systemsbiology_sbml_dunster2016_nondimensional_coagulation_model_biomd0000000925_model.thrombin_i_ia
+  - name: prothrombinase_va_xa
+    maps_to: systemsbiology_sbml_dunster2016_nondimensional_coagulation_model_biomd0000000925_model.prothrombinase_va_xa
+  - name: inactive_protein_c
+    maps_to: systemsbiology_sbml_dunster2016_nondimensional_coagulation_model_biomd0000000925_model.inactive_protein_c

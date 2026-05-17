@@ -1,0 +1,86 @@
+schema_version: '2.0'
+title: Bray1995 Chemotaxis Receptorlinkedcomplex Lab
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models. It is copyright (c) 2005-2009 The BioModels Team.'
+models:
+- alias: systemsbiology_sbml_bray1995_chemotaxis_receptorlinkedcomplex_biomd0000000200_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_bray1995_chemotaxis_receptorlinkedcomplex_biomd0000000200_model.state
+  to:
+  - visualisation.systemsbiology_sbml_bray1995_chemotaxis_receptorlinkedcomplex_biomd0000000200_model_state
+- from: systemsbiology_sbml_bray1995_chemotaxis_receptorlinkedcomplex_biomd0000000200_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_bray1995_chemotaxis_receptorlinkedcomplex_biomd0000000200_model_summary
+- from: systemsbiology_sbml_bray1995_chemotaxis_receptorlinkedcomplex_biomd0000000200_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_bray1995_chemotaxis_receptorlinkedcomplex_biomd0000000200_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_set_yp
+    maps_to: systemsbiology_sbml_bray1995_chemotaxis_receptorlinkedcomplex_biomd0000000200_model.initial_set_yp
+    label: Initial Set Yp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `SetYp`.
+  - name: initial_model_state_tt
+    maps_to: systemsbiology_sbml_bray1995_chemotaxis_receptorlinkedcomplex_biomd0000000200_model.initial_model_state_tt
+    label: Initial Model State Tt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TT`.
+  - name: initial_model_state_aa
+    maps_to: systemsbiology_sbml_bray1995_chemotaxis_receptorlinkedcomplex_biomd0000000200_model.initial_model_state_aa
+    label: Initial Model State Aa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `AA`.
+  - name: initial_model_state_yp
+    maps_to: systemsbiology_sbml_bray1995_chemotaxis_receptorlinkedcomplex_biomd0000000200_model.initial_model_state_yp
+    label: Initial Model State Yp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Yp`.
+  - name: initial_wwa_ap
+    maps_to: systemsbiology_sbml_bray1995_chemotaxis_receptorlinkedcomplex_biomd0000000200_model.initial_wwa_ap
+    label: Initial Wwa Ap
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `WWAAp`.
+  - name: initial_wwaa
+    maps_to: systemsbiology_sbml_bray1995_chemotaxis_receptorlinkedcomplex_biomd0000000200_model.initial_wwaa
+    label: Initial Wwaa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `WWAA`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_bray1995_chemotaxis_receptorlinkedcomplex_biomd0000000200_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_bray1995_chemotaxis_receptorlinkedcomplex_biomd0000000200_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_bray1995_chemotaxis_receptorlinkedcomplex_biomd0000000200_model.species_labels
+  - name: set_yp
+    maps_to: systemsbiology_sbml_bray1995_chemotaxis_receptorlinkedcomplex_biomd0000000200_model.set_yp
+  - name: model_state_tt
+    maps_to: systemsbiology_sbml_bray1995_chemotaxis_receptorlinkedcomplex_biomd0000000200_model.model_state_tt
+  - name: model_state_aa
+    maps_to: systemsbiology_sbml_bray1995_chemotaxis_receptorlinkedcomplex_biomd0000000200_model.model_state_aa
+  - name: model_state_yp
+    maps_to: systemsbiology_sbml_bray1995_chemotaxis_receptorlinkedcomplex_biomd0000000200_model.model_state_yp
+  - name: wwa_ap
+    maps_to: systemsbiology_sbml_bray1995_chemotaxis_receptorlinkedcomplex_biomd0000000200_model.wwa_ap
+  - name: wwaa
+    maps_to: systemsbiology_sbml_bray1995_chemotaxis_receptorlinkedcomplex_biomd0000000200_model.wwaa

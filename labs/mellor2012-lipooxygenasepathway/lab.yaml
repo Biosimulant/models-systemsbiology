@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Mellor2012 Lipooxygenasepathway Lab
+description: 'This model is from the article: Reduction of off-flavor generation in
+  soybean homogenates: a mathematical model. Mellor N , Bligh F , Chandler I , Hodgman
+  C J.'
+models:
+- alias: systemsbiology_sbml_mellor2012_lipooxygenasepathway_biomd0000000415_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_mellor2012_lipooxygenasepathway_biomd0000000415_model.state
+  to:
+  - visualisation.systemsbiology_sbml_mellor2012_lipooxygenasepathway_biomd0000000415_model_state
+- from: systemsbiology_sbml_mellor2012_lipooxygenasepathway_biomd0000000415_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_mellor2012_lipooxygenasepathway_biomd0000000415_model_summary
+- from: systemsbiology_sbml_mellor2012_lipooxygenasepathway_biomd0000000415_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_mellor2012_lipooxygenasepathway_biomd0000000415_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_la
+    maps_to: systemsbiology_sbml_mellor2012_lipooxygenasepathway_biomd0000000415_model.initial_model_state_la
+    label: Initial Model State La
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_1`.
+  - name: initial_n_hexanal
+    maps_to: systemsbiology_sbml_mellor2012_lipooxygenasepathway_biomd0000000415_model.initial_n_hexanal
+    label: Initial N Hexanal
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_15`.
+  - name: initial_model_state_9_hod_s_z_e
+    maps_to: systemsbiology_sbml_mellor2012_lipooxygenasepathway_biomd0000000415_model.initial_model_state_9_hod_s_z_e
+    label: Initial Model State 9 Hod S Z E
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_11`.
+  - name: initial_model_state_9_hod_s_e_e
+    maps_to: systemsbiology_sbml_mellor2012_lipooxygenasepathway_biomd0000000415_model.initial_model_state_9_hod_s_e_e
+    label: Initial Model State 9 Hod S E E
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_13`.
+  - name: initial_model_state_9_hod_r_z_e
+    maps_to: systemsbiology_sbml_mellor2012_lipooxygenasepathway_biomd0000000415_model.initial_model_state_9_hod_r_z_e
+    label: Initial Model State 9 Hod R Z E
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_12`.
+  - name: initial_model_state_9_hod_r_e_e
+    maps_to: systemsbiology_sbml_mellor2012_lipooxygenasepathway_biomd0000000415_model.initial_model_state_9_hod_r_e_e
+    label: Initial Model State 9 Hod R E E
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_14`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_mellor2012_lipooxygenasepathway_biomd0000000415_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_mellor2012_lipooxygenasepathway_biomd0000000415_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_mellor2012_lipooxygenasepathway_biomd0000000415_model.species_labels
+  - name: model_state_la
+    maps_to: systemsbiology_sbml_mellor2012_lipooxygenasepathway_biomd0000000415_model.model_state_la
+  - name: n_hexanal
+    maps_to: systemsbiology_sbml_mellor2012_lipooxygenasepathway_biomd0000000415_model.n_hexanal
+  - name: model_state_9_hod_s_z_e
+    maps_to: systemsbiology_sbml_mellor2012_lipooxygenasepathway_biomd0000000415_model.model_state_9_hod_s_z_e
+  - name: model_state_9_hod_s_e_e
+    maps_to: systemsbiology_sbml_mellor2012_lipooxygenasepathway_biomd0000000415_model.model_state_9_hod_s_e_e
+  - name: model_state_9_hod_r_z_e
+    maps_to: systemsbiology_sbml_mellor2012_lipooxygenasepathway_biomd0000000415_model.model_state_9_hod_r_z_e
+  - name: model_state_9_hod_r_e_e
+    maps_to: systemsbiology_sbml_mellor2012_lipooxygenasepathway_biomd0000000415_model.model_state_9_hod_r_e_e

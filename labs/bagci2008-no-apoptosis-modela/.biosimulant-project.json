@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "f5ae7584-51dd-42eb-a3f7-5181f5322ca7",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "f2806347-612b-457f-b5e9-dc8380422483",
+  "created_at": "2026-05-16T05:46:41.182360227+00:00",
+  "last_synced_at": "2026-05-17T01:51:31.544015+00:00",
+  "hub_manifest_hash": "e38c7d4ff6d30c5a152b97186b6b95bfde9aa0b84deb4c42b230630df8eb3216",
+  "package_name": "bagci2008-no-apoptosis-modela-lab"
+}

@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Hockin1999_BloodCoagulation_VaInactivation Visualisation
+description: Question-and-answer and dynamic visual summaries for Hockin1999_BloodCoagulation_VaInactivation.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Hockin1999 Bloodcoagulation Vainactivation Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Hockin1999_BloodCoagulation_VaInactivation.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_hockin1999_bloodcoagulation_vainactivation_biomd0000000365_model
+      title: Hockin1999_BloodCoagulation_VaInactivation
+      observables:
+      - id: Va_APC
+        port: va_apc
+        label: Va_APC
+        group: physiology
+      - id: VaLCA1_APC
+        port: va_lca1_apc
+        label: VaLCA1_APC
+        group: physiology
+      - id: Va5_APC
+        port: va5_apc
+        label: Va5_APC
+        group: physiology
+      - id: Va56_APC
+        port: va56_apc
+        label: Va56_APC
+        group: physiology
+      - id: Va53_APC
+        port: va53_apc
+        label: Va53_APC
+        group: physiology
+      - id: Va536_APC
+        port: va536_apc
+        label: Va536_APC
+        group: physiology
+io:
+  inputs: []
+  outputs: []

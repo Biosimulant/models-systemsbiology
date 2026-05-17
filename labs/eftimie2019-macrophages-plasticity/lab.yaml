@@ -1,0 +1,91 @@
+schema_version: '2.0'
+title: Eftimie2019 Macrophages Plasticity Lab
+description: This paper describes the complex interactions between two extreme types
+  of macrophages (M1 and M2 cells), effector T cells and an oncolytic Vesicular Stomatitis
+  Virus (VSV), on the growth/elimination. It can be used to explore systemsbiology
+  eftimie2019 macrophages plasticity BioModels0000000806 dynamics and compare simulation
+  behavior across conditions.
+models:
+- alias: systemsbiology_sbml_eftimie2019_macrophages_plasticity_biomd0000000806_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_eftimie2019_macrophages_plasticity_biomd0000000806_model.state
+  to:
+  - visualisation.systemsbiology_sbml_eftimie2019_macrophages_plasticity_biomd0000000806_model_state
+- from: systemsbiology_sbml_eftimie2019_macrophages_plasticity_biomd0000000806_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_eftimie2019_macrophages_plasticity_biomd0000000806_model_summary
+- from: systemsbiology_sbml_eftimie2019_macrophages_plasticity_biomd0000000806_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_eftimie2019_macrophages_plasticity_biomd0000000806_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- immunology
+- oncology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_virus_xv
+    maps_to: systemsbiology_sbml_eftimie2019_macrophages_plasticity_biomd0000000806_model.initial_virus_xv
+    label: Initial Virus Xv
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Virus_Xv`.
+  - name: initial_m2_macrophage_xm2
+    maps_to: systemsbiology_sbml_eftimie2019_macrophages_plasticity_biomd0000000806_model.initial_m2_macrophage_xm2
+    label: Initial M2 Macrophage XM2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M2_Macrophage_Xm2`.
+  - name: initial_m1_macrophage_xm1
+    maps_to: systemsbiology_sbml_eftimie2019_macrophages_plasticity_biomd0000000806_model.initial_m1_macrophage_xm1
+    label: Initial M1 Macrophage XM1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M1_Macrophage_Xm1`.
+  - name: initial_infected_tumour_cells_xi
+    maps_to: systemsbiology_sbml_eftimie2019_macrophages_plasticity_biomd0000000806_model.initial_infected_tumour_cells_xi
+    label: Initial Infected Tumour Cells Xi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Infected_Tumour_Cells_Xi`.
+  - name: initial_un_infected_tumour_cells_xu
+    maps_to: systemsbiology_sbml_eftimie2019_macrophages_plasticity_biomd0000000806_model.initial_un_infected_tumour_cells_xu
+    label: Initial Un Infected Tumour Cells Xu
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `UnInfected_Tumour_Cells_Xu`.
+  - name: initial_effector_cytotoxic_cd8_t_cells_xe
+    maps_to: systemsbiology_sbml_eftimie2019_macrophages_plasticity_biomd0000000806_model.initial_effector_cytotoxic_cd8_t_cells_xe
+    label: Initial Effector Cytotoxic CD8 T Cells Xe
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Effector_Cytotoxic_CD8_TCells__Xe`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_eftimie2019_macrophages_plasticity_biomd0000000806_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_eftimie2019_macrophages_plasticity_biomd0000000806_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_eftimie2019_macrophages_plasticity_biomd0000000806_model.species_labels
+  - name: virus_xv
+    maps_to: systemsbiology_sbml_eftimie2019_macrophages_plasticity_biomd0000000806_model.virus_xv
+  - name: m2_macrophage_xm2
+    maps_to: systemsbiology_sbml_eftimie2019_macrophages_plasticity_biomd0000000806_model.m2_macrophage_xm2
+  - name: m1_macrophage_xm1
+    maps_to: systemsbiology_sbml_eftimie2019_macrophages_plasticity_biomd0000000806_model.m1_macrophage_xm1
+  - name: infected_tumour_cells_xi
+    maps_to: systemsbiology_sbml_eftimie2019_macrophages_plasticity_biomd0000000806_model.infected_tumour_cells_xi
+  - name: un_infected_tumour_cells_xu
+    maps_to: systemsbiology_sbml_eftimie2019_macrophages_plasticity_biomd0000000806_model.un_infected_tumour_cells_xu
+  - name: effector_cytotoxic_cd8_t_cells_xe
+    maps_to: systemsbiology_sbml_eftimie2019_macrophages_plasticity_biomd0000000806_model.effector_cytotoxic_cd8_t_cells_xe

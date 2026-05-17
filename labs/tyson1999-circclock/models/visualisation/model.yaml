@@ -1,0 +1,42 @@
+schema_version: '2.0'
+title: Tyson1999_CircClock Visualisation
+description: Question-and-answer and dynamic visual summaries for Tyson1999_CircClock.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Tyson1999 Circclock Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Tyson1999_CircClock.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_tyson1999_circclock_biomd0000000036_model
+      title: Tyson1999_CircClock
+      observables:
+      - id: P
+        port: model_state_pt
+        label: Pt
+        group: physiology
+      - id: EmptySet
+        port: empty_set
+        label: EmptySet
+        group: physiology
+      - id: M
+        port: model_state_m
+        label: M
+        group: physiology
+io:
+  inputs: []
+  outputs: []

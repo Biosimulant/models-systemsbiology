@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "24d30536-5968-4845-8a30-2abbbf18b578",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "c1bb9bee-ecbf-40bb-b57c-3dbf328457d8",
+  "created_at": "2026-05-16T05:46:53.151624425+00:00",
+  "last_synced_at": "2026-05-17T06:49:14.574432+00:00",
+  "hub_manifest_hash": "0c29a69e97fb186c18ff30c3bf36f16a57201ed51d5ff486836c59760e60c852",
+  "package_name": "westermark2003-pancreatic-glycosc-extended-lab"
+}

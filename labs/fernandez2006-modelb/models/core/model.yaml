@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Fernandez2006_ModelB
+description: To the extent possible under law, all copyright and related or neighbouring
+  rights to this encoded model have been dedicated to the public domain worldwide.
+  It can be used to explore systemsbiology fernandez2006 modelb BioModels0000000153
+  dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Eric Fernandez
+- Renaud Schiappa
+- Jean-Antoine Girault
+- Nicolas Le Novère
+upstream:
+  id: biomodels_ebi:BIOMD0000000153
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000153
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000153
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000153?filename=BIOMD0000000153_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.fernandez2006_modelb_biomd0000000153_model:Fernandez2006ModelbBiomd0000000153Model
+  init_kwargs:
+    model_path: data/BIOMD0000000153.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_camp_r2_c2
+    maps_to: cAMP_R2C2
+    label: Initial CAMP R2 C2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cAMP_R2C2`.
+  - name: initial_camp_pdep
+    maps_to: cAMP_PDEP
+    label: Initial CAMP Pdep
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cAMP_PDEP`.
+  - name: initial_camp_pde
+    maps_to: cAMP_PDE
+    label: Initial CAMP Pde
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cAMP_PDE`.
+  - name: initial_camp4_r2_c2
+    maps_to: cAMP4_R2C2
+    label: Initial Camp4 R2 C2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cAMP4_R2C2`.
+  - name: initial_camp4_r2_c
+    maps_to: cAMP4_R2C
+    label: Initial Camp4 R2 C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cAMP4_R2C`.
+  - name: initial_camp4_r2
+    maps_to: cAMP4_R2
+    label: Initial Camp4 R2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cAMP4_R2`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: camp_r2_c2
+    maps_to: cAMP_R2C2
+    label: cAMP_R2C2
+    description: cAMP_R2C2. Maps to SBML symbol `cAMP_R2C2`.
+  - name: camp_pdep
+    maps_to: cAMP_PDEP
+    label: cAMP_PDEP
+    description: cAMP_PDEP. Maps to SBML symbol `cAMP_PDEP`.
+  - name: camp_pde
+    maps_to: cAMP_PDE
+    label: cAMP_PDE
+    description: cAMP_PDE. Maps to SBML symbol `cAMP_PDE`.
+  - name: camp4_r2_c2
+    maps_to: cAMP4_R2C2
+    label: cAMP4_R2C2
+    description: cAMP4_R2C2. Maps to SBML symbol `cAMP4_R2C2`.
+  - name: camp4_r2_c
+    maps_to: cAMP4_R2C
+    label: cAMP4_R2C
+    description: cAMP4_R2C. Maps to SBML symbol `cAMP4_R2C`.
+  - name: camp4_r2
+    maps_to: cAMP4_R2
+    label: cAMP4_R2
+    description: cAMP4_R2. Maps to SBML symbol `cAMP4_R2`.

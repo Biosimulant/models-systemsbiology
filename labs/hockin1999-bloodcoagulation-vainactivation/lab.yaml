@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Hockin1999 Bloodcoagulation Vainactivation Lab
+description: Matthew F. It can be used to explore systemsbiology hockin1999 bloodcoagulation
+  vainactivation BioModels0000000365 dynamics and compare simulation behavior across
+  conditions.
+models:
+- alias: systemsbiology_sbml_hockin1999_bloodcoagulation_vainactivation_biomd0000000365_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_hockin1999_bloodcoagulation_vainactivation_biomd0000000365_model.state
+  to:
+  - visualisation.systemsbiology_sbml_hockin1999_bloodcoagulation_vainactivation_biomd0000000365_model_state
+- from: systemsbiology_sbml_hockin1999_bloodcoagulation_vainactivation_biomd0000000365_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_hockin1999_bloodcoagulation_vainactivation_biomd0000000365_model_summary
+- from: systemsbiology_sbml_hockin1999_bloodcoagulation_vainactivation_biomd0000000365_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_hockin1999_bloodcoagulation_vainactivation_biomd0000000365_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_va_apc
+    maps_to: systemsbiology_sbml_hockin1999_bloodcoagulation_vainactivation_biomd0000000365_model.initial_va_apc
+    label: Initial Va Apc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Va_APC`.
+  - name: initial_va_lca1_apc
+    maps_to: systemsbiology_sbml_hockin1999_bloodcoagulation_vainactivation_biomd0000000365_model.initial_va_lca1_apc
+    label: Initial Va Lca1 Apc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VaLCA1_APC`.
+  - name: initial_va5_apc
+    maps_to: systemsbiology_sbml_hockin1999_bloodcoagulation_vainactivation_biomd0000000365_model.initial_va5_apc
+    label: Initial VA5 Apc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Va5_APC`.
+  - name: initial_va56_apc
+    maps_to: systemsbiology_sbml_hockin1999_bloodcoagulation_vainactivation_biomd0000000365_model.initial_va56_apc
+    label: Initial Va56 Apc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Va56_APC`.
+  - name: initial_va53_apc
+    maps_to: systemsbiology_sbml_hockin1999_bloodcoagulation_vainactivation_biomd0000000365_model.initial_va53_apc
+    label: Initial Va53 Apc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Va53_APC`.
+  - name: initial_va536_apc
+    maps_to: systemsbiology_sbml_hockin1999_bloodcoagulation_vainactivation_biomd0000000365_model.initial_va536_apc
+    label: Initial Va536 Apc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Va536_APC`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_hockin1999_bloodcoagulation_vainactivation_biomd0000000365_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_hockin1999_bloodcoagulation_vainactivation_biomd0000000365_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_hockin1999_bloodcoagulation_vainactivation_biomd0000000365_model.species_labels
+  - name: va_apc
+    maps_to: systemsbiology_sbml_hockin1999_bloodcoagulation_vainactivation_biomd0000000365_model.va_apc
+  - name: va_lca1_apc
+    maps_to: systemsbiology_sbml_hockin1999_bloodcoagulation_vainactivation_biomd0000000365_model.va_lca1_apc
+  - name: va5_apc
+    maps_to: systemsbiology_sbml_hockin1999_bloodcoagulation_vainactivation_biomd0000000365_model.va5_apc
+  - name: va56_apc
+    maps_to: systemsbiology_sbml_hockin1999_bloodcoagulation_vainactivation_biomd0000000365_model.va56_apc
+  - name: va53_apc
+    maps_to: systemsbiology_sbml_hockin1999_bloodcoagulation_vainactivation_biomd0000000365_model.va53_apc
+  - name: va536_apc
+    maps_to: systemsbiology_sbml_hockin1999_bloodcoagulation_vainactivation_biomd0000000365_model.va536_apc

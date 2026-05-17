@@ -1,0 +1,59 @@
+schema_version: '2.0'
+title: Proctor2017- Role of microRNAs in osteoarthritis (Mir140-IGFBP5 incoherent
+  feed forward) Visualisation
+description: Question-and-answer and dynamic visual summaries for Proctor2017- Role
+  of microRNAs in osteoarthritis (Mir140-IGFBP5 incoherent feed forward).
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Proctor2017 Role Of Micrornas In Osteoarthritis Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Proctor2017- Role of microRNAs in osteoarthritis (Mir140-IGFBP5
+      incoherent feed forward).'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_proctor2017_role_of_micrornas_in_osteoarthritis_model1705170004_model
+      title: Proctor2017- Role of microRNAs in osteoarthritis (Mir140-IGFBP5 incoherent
+        feed forward)
+      observables:
+      - id: TNFa
+        port: tn_fa
+        label: TNFa
+        group: signaling
+      - id: IkB_NFkB
+        port: ik_b_n_fk_b
+        label: IkB NFkB
+        group: signaling
+      - id: NFkB
+        port: n_fk_b
+        label: NFkB
+        group: signaling
+      - id: miR140_gene_NFkB
+        port: mi_r140_gene_n_fk_b
+        label: MiR140 Gene NFkB
+        group: signaling
+      - id: IGF1
+        port: igf1
+        label: IGF1
+        group: gene_regulation
+      - id: miR140
+        port: mi_r140
+        label: MiR140
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

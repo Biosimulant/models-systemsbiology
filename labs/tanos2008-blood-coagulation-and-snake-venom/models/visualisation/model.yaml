@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Tanos2008 - Blood coagulation and Snake Venom Visualisation
+description: Question-and-answer and dynamic visual summaries for Tanos2008 - Blood
+  coagulation and Snake Venom.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Tanos2008 Blood Coagulation And Snake Venom Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Tanos2008 - Blood coagulation and Snake Venom.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_tanos2008_blood_coagulation_and_snake_venom_model1806150001_model
+      title: Tanos2008 - Blood coagulation and Snake Venom
+      observables:
+      - id: Va_Xa
+        port: va_xa
+        label: Va:Xa
+        group: physiology
+      - id: IXa_VIIIa
+        port: i_xa_vii_ia
+        label: IXa:VIIIa
+        group: physiology
+      - id: IIa_Tmod
+        port: i_ia_tmod
+        label: IIa:Tmod
+        group: physiology
+      - id: Fg
+        port: model_state_fg
+        label: Fg
+        group: physiology
+      - id: Pg
+        port: model_state_pg
+        label: Pg
+        group: physiology
+      - id: II
+        port: model_state_ii
+        label: II
+        group: physiology
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Simon2019 - NIK-dependent p100 processing into p52 and IkBd degradation, Michaelis-Menten,
+  SBML 2v4 Visualisation
+description: Question-and-answer and dynamic visual summaries for Simon2019 - NIK-dependent
+  p100 processing into p52 and IkBd degradation, Michaelis-Menten, SBML 2v4.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Simon2019 Nik Dependent P100 Processing Into P52 And Ikbd Degradatio
+      Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Simon2019 - NIK-dependent p100 processing into p52 and IkBd degradation,
+      Michaelis-Menten, SBML 2v4.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_simon2019_nik_dependent_p100_processing_into_p52_biomd0000000869_model
+      title: Simon2019 - NIK-dependent p100 processing into p52 and IkBd degradation,
+        Michaelis-Menten, SBML 2v4
+      observables:
+      - id: p100t
+        port: p100t
+        label: p100t
+        group: physiology
+      - id: p52
+        port: p52
+        label: p52
+        group: physiology
+      - id: p100
+        port: p100
+        label: p100
+        group: physiology
+      - id: NIK
+        port: nik
+        label: NIK
+        group: physiology
+      - id: IkBd
+        port: ik_bd
+        label: IkBd
+        group: physiology
+io:
+  inputs: []
+  outputs: []

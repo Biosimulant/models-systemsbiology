@@ -1,0 +1,78 @@
+schema_version: '2.0'
+title: Chassagnole2002_Carbon_Metabolism
+description: The model reproduces Figures 4,5 and 6 of the publication. The analytical
+  functions for cometabolites Catp, Camp, Cnadph, and Cnadp slightly differ from the
+  equations given in the paper.
+standard: other
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Christophe Chassagnole
+- Naruemol Noisommit-Rizzi
+- Joachim W Schmid
+- Klaus Mauch
+- Matthias Reuss
+upstream:
+  id: biomodels_ebi:BIOMD0000000051
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000051
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000051
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000051?filename=BIOMD0000000051_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.chassagnole2002_carbon_metabolism_biomd0000000051_model:Chassagnole2002CarbonMetabolismBiomd0000000051Model
+  init_kwargs:
+    model_path: data/BIOMD0000000051.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: cfeed
+    maps_to: cfeed
+    label: Cfeed
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `cfeed`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: glucose_6_phosphate
+    maps_to: cg6p
+    label: Glucose-6-Phosphate
+    description: Glucose-6-Phosphate. Maps to SBML symbol `cg6p`.
+  - name: pyruvate
+    maps_to: cpyr
+    label: Pyruvate
+    description: Pyruvate. Maps to SBML symbol `cpyr`.
+  - name: phosphoenol_pyruvate
+    maps_to: cpep
+    label: Phosphoenol pyruvate
+    description: Phosphoenol pyruvate. Maps to SBML symbol `cpep`.
+  - name: model_state_3_phosphoglycerate
+    maps_to: cpg3
+    label: 3-Phosphoglycerate
+    description: 3-Phosphoglycerate. Maps to SBML symbol `cpg3`.
+  - name: extracellular_glucose
+    maps_to: cglcex
+    label: Extracellular Glucose
+    description: Extracellular Glucose. Maps to SBML symbol `cglcex`.
+  - name: model_state_6_phosphogluconate
+    maps_to: cpg
+    label: 6-Phosphogluconate
+    description: 6-Phosphogluconate. Maps to SBML symbol `cpg`.

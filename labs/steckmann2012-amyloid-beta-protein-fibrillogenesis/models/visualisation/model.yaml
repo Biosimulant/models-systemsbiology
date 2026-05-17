@@ -1,0 +1,59 @@
+schema_version: '2.0'
+title: Steckmann2012 - Amyloid beta-protein fibrillogenesis (kinetics of secondary
+  structure conversion) Visualisation
+description: Question-and-answer and dynamic visual summaries for Steckmann2012 -
+  Amyloid beta-protein fibrillogenesis (kinetics of secondary structure conversion).
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Steckmann2012 Amyloid Beta Protein Fibrillogenesis Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Steckmann2012 - Amyloid beta-protein fibrillogenesis (kinetics
+      of secondary structure conversion).'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_steckmann2012_amyloid_beta_protein_fibrillogenes_biomd0000000533_model
+      title: Steckmann2012 - Amyloid beta-protein fibrillogenesis (kinetics of secondary
+        structure conversion)
+      observables:
+      - id: beta
+        port: beta
+        label: beta
+        group: gene_regulation
+      - id: alpha
+        port: alpha
+        label: alpha
+        group: gene_regulation
+      - id: RCT0
+        port: rct0
+        label: RCT0
+        group: gene_regulation
+      - id: RC
+        port: model_state_rc
+        label: RC
+        group: gene_regulation
+      - id: BN1
+        port: bn1
+        label: BN1
+        group: gene_regulation
+      - id: RCT1
+        port: rct1
+        label: RCT1
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

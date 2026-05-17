@@ -1,21 +1,20 @@
 # models-systemsbiology
 
-Curated collection of **systems biology** simulation models for the **biosim** platform. This repository contains 777 computational models representing integrative systems approaches, multi-scale modeling, and comprehensive biological systems analysis.
+Curated systems-biology model labs for Biosimulant.
 
-## What's Inside
+This repository contains 574 kept systems-biology labs using the standard Biosimulant layout:
 
-### Models (777 packages)
-
-**Systems Biology** — integrative models, multi-scale dynamics, and systems-level analysis:
-
-**Key Areas:** Integrated cellular systems, multi-pathway networks, genome-scale models, systems pharmacology, synthetic biology circuits, oscillatory systems, feedback networks, and cross-domain biological integration.
-
-This repository contains comprehensive systems-level models that integrate multiple biological processes. All models use SBML format with tellurium runtime.
-
-## Prerequisites
-```bash
-pip install "biosim @ git+https://github.com/BioSimulant/biosim.git@main"
+```text
+labs/<author><year>-<short-scientific-topic>/
+  lab.yaml
+  models/core/
+  models/visualisation/
 ```
 
-## License
-Dual-licensed: Apache-2.0 (code), CC BY 4.0 (content)
+Source model files remain the scientific source of truth. SBML-backed kept labs run through `biosim.contrib.sbml.TelluriumSBMLBioModule`; source-data cases that could not be parsed or validated as SBML were moved to `/Volumes/dem-ssd/imp/projects/Nitoons/Biosimulant/models/orphan` with README evidence and recommended next action.
+
+Cleanup summary:
+- Kept labs: 574
+- Orphaned systems-biology source-data/runtime cases: 203
+- Audit report: `SYSTEMSBIOLOGY_CLEANUP_AUDIT.md`
+- Temporary mapping used for migration: `.cleanup_tmp/systemsbiology_lab_mapping.tsv`

@@ -1,0 +1,105 @@
+schema_version: '2.0'
+title: François2005 - Mixed Feedback Loop (two-gene network)
+description: Paul François & Vincent Hakim. It can be used to explore systemsbiology
+  fran ois2005 mixed feedback loop dynamics and compare simulation behavior across
+  conditions.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Paul François
+- Vincent Hakim
+upstream:
+  id: biomodels_ebi:BIOMD0000000539
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000539
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000539
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000539?filename=BIOMD0000000539_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.fran_ois2005_mixed_feedback_loop_two_gene_networ_biomd0000000539_model:FranOis2005MixedFeedbackLoopTwoGeneNetworBiomd0000000539Model
+  init_kwargs:
+    model_path: data/BIOMD0000000539.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_g_b
+    maps_to: gB
+    label: Initial Model State G B
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `gB`.
+  - name: initial_model_state_r_b
+    maps_to: rB
+    label: Initial Model State R B
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `rB`.
+  - name: initial_ag_b
+    maps_to: AgB
+    label: Initial Ag B
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `AgB`.
+  - name: initial_model_state_ab
+    maps_to: AB
+    label: Initial Model State Ab
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `AB`.
+  - name: initial_model_state_a
+    maps_to: A
+    label: Initial Model State A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `A`.
+  - name: initial_model_state_b
+    maps_to: B
+    label: Initial Model State B
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `B`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: g_b
+    maps_to: gB
+    label: gB
+    description: gB. Maps to SBML symbol `gB`.
+  - name: r_b
+    maps_to: rB
+    label: rB
+    description: rB. Maps to SBML symbol `rB`.
+  - name: ag_b
+    maps_to: AgB
+    label: AgB
+    description: AgB. Maps to SBML symbol `AgB`.
+  - name: model_state_ab
+    maps_to: AB
+    label: AB
+    description: AB. Maps to SBML symbol `AB`.
+  - name: model_state_a
+    maps_to: A
+    label: A
+    description: A. Maps to SBML symbol `A`.
+  - name: model_state_b
+    maps_to: B
+    label: B
+    description: B. Maps to SBML symbol `B`.

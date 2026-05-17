@@ -1,0 +1,84 @@
+schema_version: '2.0'
+title: Masison2022 - Cellular ferritin iron storage
+description: This is a small model of ferritin iron sequestration kinetics. The model’s
+  parameter values were determined from published kinetic and binding experiments
+  and the model was validated against independe.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Joseph Masison
+- Mendes P
+upstream:
+  id: biomodels_ebi:MODEL2211030001
+  source_db: biomodels_ebi
+  source_id: MODEL2211030001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2211030001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2211030001?filename=FerritinIronStorage_sbml_l3v1.xml
+  license: CC0
+biosim:
+  entrypoint: src.masison2022_cellular_ferritin_iron_storage_model2211030001_model:Masison2022CellularFerritinIronStorageModel2211030001Model
+  init_kwargs:
+    model_path: data/MODEL2211030001.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_core
+    maps_to: core
+    label: Initial Core
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `core`.
+  - name: initial_ft_cage
+    maps_to: FT_cage
+    label: Initial Ft Cage
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `FT_cage`.
+  - name: initial_model_state_lip
+    maps_to: LIP
+    label: Initial Model State Lip
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `LIP`.
+  - name: initial_model_state_dfp
+    maps_to: DFP
+    label: Initial Model State Dfp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `DFP`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: core
+    maps_to: core
+    label: core
+    description: core. Maps to SBML symbol `core`.
+  - name: ft_cage
+    maps_to: FT_cage
+    label: FT-cage
+    description: FT-cage. Maps to SBML symbol `FT_cage`.
+  - name: lip
+    maps_to: LIP
+    label: LIP
+    description: LIP. Maps to SBML symbol `LIP`.
+  - name: dfp
+    maps_to: DFP
+    label: DFP
+    description: DFP. Maps to SBML symbol `DFP`.

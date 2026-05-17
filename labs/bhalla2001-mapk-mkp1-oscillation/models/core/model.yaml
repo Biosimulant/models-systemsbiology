@@ -1,0 +1,105 @@
+schema_version: '2.0'
+title: Bhalla2001_MAPK_MKP1_oscillation
+description: This model relates to figure 5 in &lt;a href = 'http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=pubmed&amp;dopt=Abstract&amp;list_uids=12779455'&gt;Bhalla
+  US, Iyengar R. It can be used to explore systemsbiology bhalla2001 mapk mkp1 oscillation
+  model9071773985 dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Upinder S. Bhalla
+- Ravi Iyengar
+upstream:
+  id: biomodels_ebi:MODEL9071773985
+  source_db: biomodels_ebi
+  source_id: MODEL9071773985
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL9071773985
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL9071773985?filename=MODEL9071773985_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.bhalla2001_mapk_mkp1_oscillation_model9071773985_model:Bhalla2001MapkMkp1OscillationModel9071773985Model
+  init_kwargs:
+    model_path: data/MODEL9071773985.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_mapk_slash_mkp_minus_1_minus_gene
+    maps_to: MAPK_slash_MKP_minus_1_minus_gene
+    label: Initial MAPK Slash Mkp Minus 1 Minus Gene
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MAPK_slash_MKP_minus_1_minus_gene`.
+  - name: initial_pla2_slash_apc
+    maps_to: PLA2_slash_APC
+    label: Initial Pla2 Slash Apc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PLA2_slash_APC`.
+  - name: initial_model_state_dag
+    maps_to: DAG
+    label: Initial Model State Dag
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `DAG`.
+  - name: initial_model_state_aa
+    maps_to: AA
+    label: Initial Model State Aa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `AA`.
+  - name: initial_temp_minus_pip2
+    maps_to: temp_minus_PIP2
+    label: Initial Temp Minus Pip2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `temp_minus_PIP2`.
+  - name: initial_mapk_slash_mapk
+    maps_to: MAPK_slash_MAPK
+    label: Initial MAPK Slash MAPK
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MAPK_slash_MAPK`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: mapk_slash_mkp_minus_1_minus_gene
+    maps_to: MAPK_slash_MKP_minus_1_minus_gene
+    label: MAPK Slash MKP Minus 1 Minus Gene
+    description: MAPK Slash MKP Minus 1 Minus Gene. Maps to SBML symbol `MAPK_slash_MKP_minus_1_minus_gene`.
+  - name: pla2_slash_apc
+    maps_to: PLA2_slash_APC
+    label: PLA2 Slash APC
+    description: PLA2 Slash APC. Maps to SBML symbol `PLA2_slash_APC`.
+  - name: dag
+    maps_to: DAG
+    label: DAG
+    description: DAG. Maps to SBML symbol `DAG`.
+  - name: model_state_aa
+    maps_to: AA
+    label: AA
+    description: AA. Maps to SBML symbol `AA`.
+  - name: temp_minus_pip2
+    maps_to: temp_minus_PIP2
+    label: Temp Minus PIP2
+    description: Temp Minus PIP2. Maps to SBML symbol `temp_minus_PIP2`.
+  - name: mapk_slash_mapk
+    maps_to: MAPK_slash_MAPK
+    label: MAPK Slash MAPK
+    description: MAPK Slash MAPK. Maps to SBML symbol `MAPK_slash_MAPK`.

@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Qiao2007_MAPK_Signaling_Bistable
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models (http://www.ebi.ac.uk/biomodels/). It is copyright (c) 2005-2011
+  The BioModels.net Team.'
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Liang Qiao
+- Robert B Nachbar
+- Ioannis G Kevrekidis
+- Stanislav Y Shvartsman
+upstream:
+  id: biomodels_ebi:MODEL6185511733
+  source_db: biomodels_ebi
+  source_id: MODEL6185511733
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL6185511733
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL6185511733?filename=MODEL6185511733_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.qiao2007_mapk_signaling_bistable_model6185511733_model:Qiao2007MapkSignalingBistableModel6185511733Model
+  init_kwargs:
+    model_path: data/MODEL6185511733.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_kpp
+    maps_to: KPP
+    label: Initial Model State Kpp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `KPP`.
+  - name: initial_kkpp
+    maps_to: KKPP
+    label: Initial Kkpp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `KKPP`.
+  - name: initial_k_pase
+    maps_to: KPase
+    label: Initial K Pase
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `KPase`.
+  - name: initial_kppk_pase
+    maps_to: KPPKPase
+    label: Initial Kppk Pase
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `KPPKPase`.
+  - name: initial_kpk_pase
+    maps_to: KPKPase
+    label: Initial Kpk Pase
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `KPKPase`.
+  - name: initial_kpkkpp
+    maps_to: KPKKPP
+    label: Initial Kpkkpp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `KPKKPP`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: kpp
+    maps_to: KPP
+    label: KPP
+    description: KPP. Maps to SBML symbol `KPP`.
+  - name: kkpp
+    maps_to: KKPP
+    label: KKPP
+    description: KKPP. Maps to SBML symbol `KKPP`.
+  - name: k_pase
+    maps_to: KPase
+    label: KPase
+    description: KPase. Maps to SBML symbol `KPase`.
+  - name: kppk_pase
+    maps_to: KPPKPase
+    label: KPPKPase
+    description: KPPKPase. Maps to SBML symbol `KPPKPase`.
+  - name: kpk_pase
+    maps_to: KPKPase
+    label: KPKPase
+    description: KPKPase. Maps to SBML symbol `KPKPase`.
+  - name: kpkkpp
+    maps_to: KPKKPP
+    label: KPKKPP
+    description: KPKKPP. Maps to SBML symbol `KPKKPP`.

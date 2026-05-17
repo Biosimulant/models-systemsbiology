@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Bouchnita2020 Model For Blood Coagulation Under Venous Flow Condition Lab
+description: A numerical simulation model to reproduce in vitro experiments of blood
+  coagulation in microfluidic capillaries. A reduced one-equation model of thrombin
+  distribution from the previous model under sim.
+models:
+- alias: systemsbiology_sbml_bouchnita2020_model_for_blood_coagulation_under_model2011030003_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_bouchnita2020_model_for_blood_coagulation_under_model2011030003_model.state
+  to:
+  - visualisation.systemsbiology_sbml_bouchnita2020_model_for_blood_coagulation_under_model2011030003_model_state
+- from: systemsbiology_sbml_bouchnita2020_model_for_blood_coagulation_under_model2011030003_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_bouchnita2020_model_for_blood_coagulation_under_model2011030003_model_summary
+- from: systemsbiology_sbml_bouchnita2020_model_for_blood_coagulation_under_model2011030003_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_bouchnita2020_model_for_blood_coagulation_under_model2011030003_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_atiii
+    maps_to: systemsbiology_sbml_bouchnita2020_model_for_blood_coagulation_under_model2011030003_model.initial_atiii
+    label: Initial Atiii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATIII`.
+  - name: initial_model_state_ii
+    maps_to: systemsbiology_sbml_bouchnita2020_model_for_blood_coagulation_under_model2011030003_model.initial_model_state_ii
+    label: Initial Model State Ii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `II`.
+  - name: initial_vi_ia
+    maps_to: systemsbiology_sbml_bouchnita2020_model_for_blood_coagulation_under_model2011030003_model.initial_vi_ia
+    label: Initial Vi Ia
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VIIa`.
+  - name: initial_model_state_tf
+    maps_to: systemsbiology_sbml_bouchnita2020_model_for_blood_coagulation_under_model2011030003_model.initial_model_state_tf
+    label: Initial Model State Tf
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TF`.
+  - name: initial_model_state_xa
+    maps_to: systemsbiology_sbml_bouchnita2020_model_for_blood_coagulation_under_model2011030003_model.initial_model_state_xa
+    label: Initial Model State Xa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa`.
+  - name: initial_i_ia
+    maps_to: systemsbiology_sbml_bouchnita2020_model_for_blood_coagulation_under_model2011030003_model.initial_i_ia
+    label: Initial I Ia
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IIa`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_bouchnita2020_model_for_blood_coagulation_under_model2011030003_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_bouchnita2020_model_for_blood_coagulation_under_model2011030003_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_bouchnita2020_model_for_blood_coagulation_under_model2011030003_model.species_labels
+  - name: atiii
+    maps_to: systemsbiology_sbml_bouchnita2020_model_for_blood_coagulation_under_model2011030003_model.atiii
+  - name: model_state_ii
+    maps_to: systemsbiology_sbml_bouchnita2020_model_for_blood_coagulation_under_model2011030003_model.model_state_ii
+  - name: vi_ia
+    maps_to: systemsbiology_sbml_bouchnita2020_model_for_blood_coagulation_under_model2011030003_model.vi_ia
+  - name: model_state_tf
+    maps_to: systemsbiology_sbml_bouchnita2020_model_for_blood_coagulation_under_model2011030003_model.model_state_tf
+  - name: model_state_xa
+    maps_to: systemsbiology_sbml_bouchnita2020_model_for_blood_coagulation_under_model2011030003_model.model_state_xa
+  - name: i_ia
+    maps_to: systemsbiology_sbml_bouchnita2020_model_for_blood_coagulation_under_model2011030003_model.i_ia

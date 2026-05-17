@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Lever2014 Phenotypic Models Of T Cell Activation Lab
+description: This is a phenotypic model of a kinetic proofreading mechanism used to
+  describe dynamics governing interactions between T cell receptors and peptide-MHC
+  complexes. It can be used to explore systemsbiology lever2014 phenotypic of t cell
+  dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_lever2014_phenotypic_models_of_t_cell_activation_model1907260003_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_lever2014_phenotypic_models_of_t_cell_activation_model1907260003_model.state
+  to:
+  - visualisation.systemsbiology_sbml_lever2014_phenotypic_models_of_t_cell_activation_model1907260003_model_state
+- from: systemsbiology_sbml_lever2014_phenotypic_models_of_t_cell_activation_model1907260003_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_lever2014_phenotypic_models_of_t_cell_activation_model1907260003_model_summary
+- from: systemsbiology_sbml_lever2014_phenotypic_models_of_t_cell_activation_model1907260003_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_lever2014_phenotypic_models_of_t_cell_activation_model1907260003_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- immunology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_c0
+    maps_to: systemsbiology_sbml_lever2014_phenotypic_models_of_t_cell_activation_model1907260003_model.initial_model_state_c0
+    label: Initial Model State C0
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C0`.
+  - name: initial_model_state_c9
+    maps_to: systemsbiology_sbml_lever2014_phenotypic_models_of_t_cell_activation_model1907260003_model.initial_model_state_c9
+    label: Initial Model State C9
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C9`.
+  - name: initial_model_state_c8
+    maps_to: systemsbiology_sbml_lever2014_phenotypic_models_of_t_cell_activation_model1907260003_model.initial_model_state_c8
+    label: Initial Model State C8
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C8`.
+  - name: initial_model_state_c7
+    maps_to: systemsbiology_sbml_lever2014_phenotypic_models_of_t_cell_activation_model1907260003_model.initial_model_state_c7
+    label: Initial Model State C7
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C7`.
+  - name: initial_model_state_c6
+    maps_to: systemsbiology_sbml_lever2014_phenotypic_models_of_t_cell_activation_model1907260003_model.initial_model_state_c6
+    label: Initial Model State C6
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C6`.
+  - name: initial_model_state_c5
+    maps_to: systemsbiology_sbml_lever2014_phenotypic_models_of_t_cell_activation_model1907260003_model.initial_model_state_c5
+    label: Initial Model State C5
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C5`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_lever2014_phenotypic_models_of_t_cell_activation_model1907260003_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_lever2014_phenotypic_models_of_t_cell_activation_model1907260003_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_lever2014_phenotypic_models_of_t_cell_activation_model1907260003_model.species_labels
+  - name: model_state_c0
+    maps_to: systemsbiology_sbml_lever2014_phenotypic_models_of_t_cell_activation_model1907260003_model.model_state_c0
+  - name: model_state_c9
+    maps_to: systemsbiology_sbml_lever2014_phenotypic_models_of_t_cell_activation_model1907260003_model.model_state_c9
+  - name: model_state_c8
+    maps_to: systemsbiology_sbml_lever2014_phenotypic_models_of_t_cell_activation_model1907260003_model.model_state_c8
+  - name: model_state_c7
+    maps_to: systemsbiology_sbml_lever2014_phenotypic_models_of_t_cell_activation_model1907260003_model.model_state_c7
+  - name: model_state_c6
+    maps_to: systemsbiology_sbml_lever2014_phenotypic_models_of_t_cell_activation_model1907260003_model.model_state_c6
+  - name: model_state_c5
+    maps_to: systemsbiology_sbml_lever2014_phenotypic_models_of_t_cell_activation_model1907260003_model.model_state_c5

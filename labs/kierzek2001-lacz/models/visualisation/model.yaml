@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Kierzek2001_LacZ Visualisation
+description: Question-and-answer and dynamic visual summaries for Kierzek2001_LacZ.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Kierzek2001 Lacz Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Kierzek2001_LacZ.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_kierzek2001_lacz_model4821294342_model
+      title: Kierzek2001_LacZ
+      observables:
+      - id: LacZ_slash_RNAP
+        port: lac_z_slash_rnap
+        label: LacZ Slash RNAP
+        group: gene_regulation
+      - id: LacZ_slash_TrRNAP
+        port: lac_z_slash_tr_rnap
+        label: LacZ Slash TrRNAP
+        group: gene_regulation
+      - id: LacZ_slash_Protein
+        port: lac_z_slash_protein
+        label: LacZ Slash Protein
+        group: gene_regulation
+      - id: LacZ_slash_P_RNAP
+        port: lac_z_slash_p_rnap
+        label: LacZ Slash P RNAP
+        group: gene_regulation
+      - id: LacZ_slash_ElRNAP
+        port: lac_z_slash_el_rnap
+        label: LacZ Slash ElRNAP
+        group: gene_regulation
+      - id: LacZ_slash_Ribosome
+        port: lac_z_slash_ribosome
+        label: LacZ Slash Ribosome
+        group: physiology
+io:
+  inputs: []
+  outputs: []

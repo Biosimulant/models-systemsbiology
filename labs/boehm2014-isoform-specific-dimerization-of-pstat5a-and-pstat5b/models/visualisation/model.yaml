@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Boehm2014 - isoform-specific dimerization of pSTAT5A and pSTAT5B Visualisation
+description: Question-and-answer and dynamic visual summaries for Boehm2014 - isoform-specific
+  dimerization of pSTAT5A and pSTAT5B.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Boehm2014 Isoform Specific Dimerization Of Pstat5a And Pstat5b Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Boehm2014 - isoform-specific dimerization of pSTAT5A and pSTAT5B.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_boehm2014_isoform_specific_dimerization_of_pstat_biomd0000000591_model
+      title: Boehm2014 - isoform-specific dimerization of pSTAT5A and pSTAT5B
+      observables:
+      - id: STAT5B
+        port: stat5_b
+        label: STAT5B
+        group: signaling
+      - id: STAT5A
+        port: stat5_a
+        label: STAT5A
+        group: signaling
+      - id: pBpB
+        port: p_bp_b
+        label: PBpB
+        group: signaling
+      - id: pApB
+        port: p_ap_b
+        label: PApB
+        group: signaling
+      - id: pApA
+        port: p_ap_a
+        label: PApA
+        group: signaling
+      - id: nucpBpB
+        port: nucp_bp_b
+        label: NucpBpB
+        group: signaling
+io:
+  inputs: []
+  outputs: []

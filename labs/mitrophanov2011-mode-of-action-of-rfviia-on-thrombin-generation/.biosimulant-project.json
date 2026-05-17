@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "cf66220a-c7af-4a98-a5e3-5d33a4bb8f7a",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "eec202d0-36bb-4ed8-a1ab-43904fdb0381",
+  "created_at": "2026-05-16T05:46:47.277756135+00:00",
+  "last_synced_at": "2026-05-17T04:56:05.657759+00:00",
+  "hub_manifest_hash": "910725434dff0fd989712a8ff2f5a6c17bf420f228e9f87bc3a52124482e5f96",
+  "package_name": "mitrophanov2011-mode-of-action-of-rfviia-on-thrombin-generation"
+}

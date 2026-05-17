@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Rehm2006_Caspase
+description: 'This is the standard model described in the article: Systems analysis
+  of effector caspase activation and its control by X-linked inhibitor of apoptosis
+  protein. Rehm M, Huber HJ, Dussmann H, Prehn JH.'
+standard: other
+tags:
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Markus Rehm
+- Heinrich J Huber
+- Heiko Dussmann
+- Jochen H M Prehn
+upstream:
+  id: biomodels_ebi:BIOMD0000000256
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000256
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000256
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000256?filename=BIOMD0000000256_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.rehm2006_caspase_biomd0000000256_model:Rehm2006CaspaseBiomd0000000256Model
+  init_kwargs:
+    model_path: data/BIOMD0000000256.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_cytochrome_c_in_mitochondrium
+    maps_to: CytC_mit
+    label: Initial Cytochrome C In Mitochondrium
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CytC_mit`.
+  - name: initial_smac_in_mitochondrium
+    maps_to: SMAC_mito
+    label: Initial Smac In Mitochondrium
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `SMAC_mito`.
+  - name: initial_casp3_substrate
+    maps_to: Substrate
+    label: Initial Casp3 Substrate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Substrate`.
+  - name: initial_pro_casp3
+    maps_to: PC3
+    label: Initial Pro Casp3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PC3`.
+  - name: initial_pro_casp9
+    maps_to: PC9
+    label: Initial Pro Casp9
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PC9`.
+  - name: initial_cytosolic_cytochrome_c
+    maps_to: CytC_cell
+    label: Initial Cytosolic Cytochrome C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CytC_cell`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: cytochrome_c_in_mitochondrium
+    maps_to: CytC_mit
+    label: Cytochrome C in mitochondrium
+    description: Cytochrome C in mitochondrium. Maps to SBML symbol `CytC_mit`.
+  - name: smac_in_mitochondrium
+    maps_to: SMAC_mito
+    label: SMAC in mitochondrium
+    description: SMAC in mitochondrium. Maps to SBML symbol `SMAC_mito`.
+  - name: casp3_substrate
+    maps_to: Substrate
+    label: Casp3 Substrate
+    description: Casp3 Substrate. Maps to SBML symbol `Substrate`.
+  - name: pro_casp3
+    maps_to: PC3
+    label: ProCasp3
+    description: ProCasp3. Maps to SBML symbol `PC3`.
+  - name: pro_casp9
+    maps_to: PC9
+    label: ProCasp9
+    description: ProCasp9. Maps to SBML symbol `PC9`.
+  - name: cytosolic_cytochrome_c
+    maps_to: CytC_cell
+    label: cytosolic Cytochrome C
+    description: cytosolic Cytochrome C. Maps to SBML symbol `CytC_cell`.

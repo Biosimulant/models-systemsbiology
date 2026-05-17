@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Montagne2011_Oligator_optimised Visualisation
+description: Question-and-answer and dynamic visual summaries for Montagne2011_Oligator_optimised.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Montagne2011 Oligator Optimised Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Montagne2011_Oligator_optimised.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_montagne2011_oligator_optimised_biomd0000000315_model
+      title: Montagne2011_Oligator_optimised
+      observables:
+      - id: alpha
+        port: alpha
+        label: alpha
+        group: physiology
+      - id: beta_T3_Inh
+        port: beta_t3_inh
+        label: beta_T3_Inh
+        group: physiology
+      - id: beta_T3
+        port: beta_t3
+        label: beta_T3
+        group: physiology
+      - id: beta_Inh_T3
+        port: beta_inh_t3
+        label: beta_Inh_T3
+        group: physiology
+      - id: beta
+        port: beta
+        label: beta
+        group: physiology
+      - id: alpha_beta_T2
+        port: alpha_beta_t2
+        label: alpha_beta_T2
+        group: physiology
+io:
+  inputs: []
+  outputs: []

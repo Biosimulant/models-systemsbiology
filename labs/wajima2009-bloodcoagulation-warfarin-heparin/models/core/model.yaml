@@ -1,0 +1,77 @@
+schema_version: '2.0'
+title: Wajima2009_BloodCoagulation_warfarin_heparin
+description: 'This model is from the article: A comprehensive model for the humoral
+  coagulation network in humans. It can be used to explore systemsbiology wajima2009
+  bloodcoagulation warfarin heparin BioModels0000000340 dynamics and compare simulation
+  behavior across conditions.'
+standard: other
+tags:
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- T Wajima
+- G K Isbister
+- S B Duffull
+upstream:
+  id: biomodels_ebi:BIOMD0000000340
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000340
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000340
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000340?filename=BIOMD0000000340_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.wajima2009_bloodcoagulation_warfarin_heparin_biomd0000000340_model:Wajima2009BloodcoagulationWarfarinHeparinBiomd0000000340Model
+  init_kwargs:
+    model_path: data/BIOMD0000000340.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: warfarin_daily_dose
+    maps_to: warfarin_daily_dose
+    label: Warfarin Daily Dose
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `warfarin_daily_dose`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: vk_p
+    maps_to: VK_p
+    label: VK_p
+    description: VK_p. Maps to SBML symbol `VK_p`.
+  - name: xa_tfpi
+    maps_to: Xa_TFPI
+    label: Xa_TFPI
+    description: Xa_TFPI. Maps to SBML symbol `Xa_TFPI`.
+  - name: xa_atiii_heparin
+    maps_to: Xa_ATIII_Heparin
+    label: Xa_ATIII_Heparin
+    description: Xa_ATIII_Heparin. Maps to SBML symbol `Xa_ATIII_Heparin`.
+  - name: va_xa
+    maps_to: Va_Xa
+    label: Va_Xa
+    description: Va_Xa. Maps to SBML symbol `Va_Xa`.
+  - name: vi_ia_tf_xa_tfpi
+    maps_to: VIIa_TF_Xa_TFPI
+    label: VIIa_TF_Xa_TFPI
+    description: VIIa_TF_Xa_TFPI. Maps to SBML symbol `VIIa_TF_Xa_TFPI`.
+  - name: vi_ia_tf
+    maps_to: VIIa_TF
+    label: VIIa_TF
+    description: VIIa_TF. Maps to SBML symbol `VIIa_TF`.

@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Leloup2003_CircClock_DD_REV-ERBalpha Visualisation
+description: Question-and-answer and dynamic visual summaries for Leloup2003_CircClock_DD_REV-ERBalpha.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Leloup2003 Circclock Dd Rev Erbalpha Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Leloup2003_CircClock_DD_REV-ERBalpha.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_leloup2003_circclock_dd_rev_erbalpha_biomd0000000074_model
+      title: Leloup2003_CircClock_DD_REV-ERBalpha
+      observables:
+      - id: species_18
+        port: model_state_rn
+        label: Rn
+        group: physiology
+      - id: species_17
+        port: model_state_rc
+        label: Rc
+        group: physiology
+      - id: species_9
+        port: pcp
+        label: Pcp
+        group: physiology
+      - id: species_8
+        port: model_state_pc
+        label: Pc
+        group: physiology
+      - id: species_14
+        port: p_cnp
+        label: PCnp
+        group: physiology
+      - id: species_12
+        port: p_cn
+        label: PCn
+        group: physiology
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,105 @@
+schema_version: '2.0'
+title: Restif2006 - Whooping cough
+description: 'Restif2006 - Whooping cough This model is described in the article:
+  Integrating life history and cross-immunity into the evolutionary dynamics of pathogens.
+  It can be used to explore systemsbiology restif2006 whooping cough BioModels0000000249
+  dynamics and compare simulation behavior across conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Olivier Restif
+- Bryan T Grenfell
+upstream:
+  id: biomodels_ebi:BIOMD0000000249
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000249
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000249
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000249?filename=BIOMD0000000249_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.restif2006_whooping_cough_biomd0000000249_model:Restif2006WhoopingCoughBiomd0000000249Model
+  init_kwargs:
+    model_path: data/BIOMD0000000249.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_r_1
+    maps_to: R_1
+    label: Initial Model State R 1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `R_1`.
+  - name: initial_model_state_i_1
+    maps_to: I_1
+    label: Initial Model State I 1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `I_1`.
+  - name: initial_model_state_i_2
+    maps_to: I_2
+    label: Initial Model State I 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `I_2`.
+  - name: initial_model_state_r_p
+    maps_to: R_p
+    label: Initial Model State R P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `R_p`.
+  - name: initial_model_state_r_2
+    maps_to: R_2
+    label: Initial Model State R 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `R_2`.
+  - name: initial_i_2_p
+    maps_to: I_2p
+    label: Initial I 2 P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `I_2p`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: r_1
+    maps_to: R_1
+    label: R 1
+    description: R 1. Maps to SBML symbol `R_1`.
+  - name: i_1
+    maps_to: I_1
+    label: I 1
+    description: I 1. Maps to SBML symbol `I_1`.
+  - name: i_2
+    maps_to: I_2
+    label: I 2
+    description: I 2. Maps to SBML symbol `I_2`.
+  - name: r_p
+    maps_to: R_p
+    label: R P
+    description: R P. Maps to SBML symbol `R_p`.
+  - name: r_2
+    maps_to: R_2
+    label: R 2
+    description: R 2. Maps to SBML symbol `R_2`.
+  - name: i_2_p
+    maps_to: I_2p
+    label: I 2P
+    description: I 2P. Maps to SBML symbol `I_2p`.

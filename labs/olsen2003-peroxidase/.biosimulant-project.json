@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "0b435270-e273-4468-9d2a-d34f3ec83c1a",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "eba9a009-86af-4a44-aad7-3e0320406df5",
+  "created_at": "2026-05-16T05:46:49.393432853+00:00",
+  "last_synced_at": "2026-05-17T05:19:30.187417+00:00",
+  "hub_manifest_hash": "10078ec1a8c017a1b895861eb456c2da5e9cf4e921800bf76613d8fae304e1c3",
+  "package_name": "olsen2003-peroxidase-lab"
+}

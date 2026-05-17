@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Shibeko2012 - Model of IIa generation
+description: Mathematical model of blood coagulation investigating the effects of
+  varied rFVIIa and TF concentration. It can be used to explore systemsbiology shibeko2012
+  of iia generation model1808150001 dynamics and compare simulation behavior across
+  conditions.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Alexey M Shibeko
+- Samuel A Woodle
+- Timothy K Lee
+- Mikhail V Ovanesov
+upstream:
+  id: biomodels_ebi:MODEL1808150001
+  source_db: biomodels_ebi
+  source_id: MODEL1808150001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1808150001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1808150001?filename=Shibeko2012_Model_IIa_Generation.xml
+  license: CC0
+biosim:
+  entrypoint: src.shibeko2012_model_of_iia_generation_model1808150001_model:Shibeko2012ModelOfIiaGenerationModel1808150001Model
+  init_kwargs:
+    model_path: data/MODEL1808150001.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_xa_va
+    maps_to: Xa_Va
+    label: Initial Xa Va
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_Va`.
+  - name: initial_xa_tfpi
+    maps_to: Xa_TFPI
+    label: Initial Xa Tfpi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_TFPI`.
+  - name: initial_vi_ia_i_tf_xa_tfpi
+    maps_to: VIIa_i_TF_Xa_TFPI
+    label: Initial Vi Ia I Tf Xa Tfpi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VIIa_i_TF_Xa_TFPI`.
+  - name: initial_vi_ia_i_tf
+    maps_to: VIIa_i_TF
+    label: Initial Vi Ia I Tf
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VIIa_i_TF`.
+  - name: initial_vi_ia_i
+    maps_to: VIIa_i
+    label: Initial Vi Ia I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VIIa_i`.
+  - name: initial_vi_ia_tf_xa_tfpi
+    maps_to: VIIa_TF_Xa_TFPI
+    label: Initial Vi Ia Tf Xa Tfpi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VIIa_TF_Xa_TFPI`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: xa_va
+    maps_to: Xa_Va
+    label: Xa:Va
+    description: Xa:Va. Maps to SBML symbol `Xa_Va`.
+  - name: xa_tfpi
+    maps_to: Xa_TFPI
+    label: Xa:TFPI
+    description: Xa:TFPI. Maps to SBML symbol `Xa_TFPI`.
+  - name: vi_ia_i_tf_xa_tfpi
+    maps_to: VIIa_i_TF_Xa_TFPI
+    label: VIIa_i:TF:Xa:TFPI
+    description: VIIa_i:TF:Xa:TFPI. Maps to SBML symbol `VIIa_i_TF_Xa_TFPI`.
+  - name: vi_ia_i_tf
+    maps_to: VIIa_i_TF
+    label: VIIa_i:TF
+    description: VIIa_i:TF. Maps to SBML symbol `VIIa_i_TF`.
+  - name: vi_ia_i
+    maps_to: VIIa_i
+    label: VIIa_i
+    description: VIIa_i. Maps to SBML symbol `VIIa_i`.
+  - name: vi_ia_tf_xa_tfpi
+    maps_to: VIIa_TF_Xa_TFPI
+    label: VIIa:TF:Xa:TFPI
+    description: VIIa:TF:Xa:TFPI. Maps to SBML symbol `VIIa_TF_Xa_TFPI`.

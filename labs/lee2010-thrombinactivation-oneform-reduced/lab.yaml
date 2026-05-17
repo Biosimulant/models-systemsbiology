@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Lee2010 Thrombinactivation Oneform Reduced Lab
+description: Chang Jun Lee, Sangwook Wu, Changsun Eun & Lee G. It can be used to explore
+  systemsbiology lee2010 thrombinactivation oneform reduced BioModels0000000357 dynamics
+  and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_lee2010_thrombinactivation_oneform_reduced_biomd0000000357_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_lee2010_thrombinactivation_oneform_reduced_biomd0000000357_model.state
+  to:
+  - visualisation.systemsbiology_sbml_lee2010_thrombinactivation_oneform_reduced_biomd0000000357_model_state
+- from: systemsbiology_sbml_lee2010_thrombinactivation_oneform_reduced_biomd0000000357_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_lee2010_thrombinactivation_oneform_reduced_biomd0000000357_model_summary
+- from: systemsbiology_sbml_lee2010_thrombinactivation_oneform_reduced_biomd0000000357_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_lee2010_thrombinactivation_oneform_reduced_biomd0000000357_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_e_p_2
+    maps_to: systemsbiology_sbml_lee2010_thrombinactivation_oneform_reduced_biomd0000000357_model.initial_e_p_2
+    label: Initial E P 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `E_P_2`.
+  - name: initial_e_p_1
+    maps_to: systemsbiology_sbml_lee2010_thrombinactivation_oneform_reduced_biomd0000000357_model.initial_e_p_1
+    label: Initial E P 1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `E_P_1`.
+  - name: initial_e_p2
+    maps_to: systemsbiology_sbml_lee2010_thrombinactivation_oneform_reduced_biomd0000000357_model.initial_e_p2
+    label: Initial E P2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `E_P2`.
+  - name: initial_model_state_e_m
+    maps_to: systemsbiology_sbml_lee2010_thrombinactivation_oneform_reduced_biomd0000000357_model.initial_model_state_e_m
+    label: Initial Model State E M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `E_M`.
+  - name: initial_model_state_p2
+    maps_to: systemsbiology_sbml_lee2010_thrombinactivation_oneform_reduced_biomd0000000357_model.initial_model_state_p2
+    label: Initial Model State P2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P2`.
+  - name: initial_model_state_p
+    maps_to: systemsbiology_sbml_lee2010_thrombinactivation_oneform_reduced_biomd0000000357_model.initial_model_state_p
+    label: Initial Model State P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_lee2010_thrombinactivation_oneform_reduced_biomd0000000357_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_lee2010_thrombinactivation_oneform_reduced_biomd0000000357_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_lee2010_thrombinactivation_oneform_reduced_biomd0000000357_model.species_labels
+  - name: e_p_2
+    maps_to: systemsbiology_sbml_lee2010_thrombinactivation_oneform_reduced_biomd0000000357_model.e_p_2
+  - name: e_p_1
+    maps_to: systemsbiology_sbml_lee2010_thrombinactivation_oneform_reduced_biomd0000000357_model.e_p_1
+  - name: e_p2
+    maps_to: systemsbiology_sbml_lee2010_thrombinactivation_oneform_reduced_biomd0000000357_model.e_p2
+  - name: e_m
+    maps_to: systemsbiology_sbml_lee2010_thrombinactivation_oneform_reduced_biomd0000000357_model.e_m
+  - name: model_state_p2
+    maps_to: systemsbiology_sbml_lee2010_thrombinactivation_oneform_reduced_biomd0000000357_model.model_state_p2
+  - name: model_state_p
+    maps_to: systemsbiology_sbml_lee2010_thrombinactivation_oneform_reduced_biomd0000000357_model.model_state_p

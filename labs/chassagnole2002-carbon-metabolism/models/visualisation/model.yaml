@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Chassagnole2002_Carbon_Metabolism Visualisation
+description: Question-and-answer and dynamic visual summaries for Chassagnole2002_Carbon_Metabolism.
+standard: other
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Chassagnole2002 Carbon Metabolism Lab
+    question: 'Which metabolic pools or flux-linked states show the strongest simulated
+      change? Source model: Chassagnole2002_Carbon_Metabolism.'
+    answer_focus: Q/A table plus metabolism timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_chassagnole2002_carbon_metabolism_biomd0000000051_model
+      title: Chassagnole2002_Carbon_Metabolism
+      observables:
+      - id: cg6p
+        port: glucose_6_phosphate
+        label: Glucose-6-Phosphate
+        group: metabolism
+      - id: cpyr
+        port: pyruvate
+        label: Pyruvate
+        group: metabolism
+      - id: cpep
+        port: phosphoenol_pyruvate
+        label: Phosphoenol pyruvate
+        group: metabolism
+      - id: cpg3
+        port: model_state_3_phosphoglycerate
+        label: 3-Phosphoglycerate
+        group: metabolism
+      - id: cglcex
+        port: extracellular_glucose
+        label: Extracellular Glucose
+        group: metabolism
+      - id: cpg
+        port: model_state_6_phosphogluconate
+        label: 6-Phosphogluconate
+        group: metabolism
+io:
+  inputs: []
+  outputs: []

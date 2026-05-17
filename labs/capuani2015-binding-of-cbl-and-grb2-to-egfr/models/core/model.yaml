@@ -1,0 +1,109 @@
+schema_version: '2.0'
+title: Capuani2015 - Binding of Cbl and Grb2 to EGFR (Early Activation Model - EAM)
+description: Fabrizio Capuani, Alexia Conte, Elisabetta Argenzio, Luca Marchetti,
+  Corrado Priami, Simona Polo, Pier Paolo Di Fiore, Sara Sigismund & Andrea Ciliberto.
+  It can be used to explore systemsbiology capuani2015 binding of cbl and dynamics
+  and compare simulation behavior across conditions.
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Fabrizio Capuani
+- Alexia Conte
+- Elisabetta Argenzio
+- Luca Marchetti
+- Corrado Priami
+upstream:
+  id: biomodels_ebi:BIOMD0000000595
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000595
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000595
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000595?filename=BIOMD0000000595_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.capuani2015_binding_of_cbl_and_grb2_to_egfr_earl_biomd0000000595_model:Capuani2015BindingOfCblAndGrb2ToEgfrEarlBiomd0000000595Model
+  init_kwargs:
+    model_path: data/BIOMD0000000595.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_grb2
+    maps_to: Grb2
+    label: Initial Grb2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Grb2`.
+  - name: initial_rc00_uu
+    maps_to: Rc00UU
+    label: Initial Rc00 Uu
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Rc00UU`.
+  - name: initial_di00_uu
+    maps_to: Di00UU
+    label: Initial Di00 Uu
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Di00UU`.
+  - name: initial_r00_uu
+    maps_to: R00UU
+    label: Initial R00 Uu
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `R00UU`.
+  - name: initial_model_state_cg
+    maps_to: CG
+    label: Initial Model State Cg
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CG`.
+  - name: initial_model_state_cbl
+    maps_to: Cbl
+    label: Initial Model State Cbl
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Cbl`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: grb2
+    maps_to: Grb2
+    label: Grb2
+    description: Grb2. Maps to SBML symbol `Grb2`.
+  - name: rc00_uu
+    maps_to: Rc00UU
+    label: Rc00UU
+    description: Rc00UU. Maps to SBML symbol `Rc00UU`.
+  - name: di00_uu
+    maps_to: Di00UU
+    label: Di00UU
+    description: Di00UU. Maps to SBML symbol `Di00UU`.
+  - name: r00_uu
+    maps_to: R00UU
+    label: R00UU
+    description: R00UU. Maps to SBML symbol `R00UU`.
+  - name: model_state_cg
+    maps_to: CG
+    label: CG
+    description: CG. Maps to SBML symbol `CG`.
+  - name: cbl
+    maps_to: Cbl
+    label: Cbl
+    description: Cbl. Maps to SBML symbol `Cbl`.

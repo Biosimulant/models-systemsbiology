@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Verma2016 Ca Signal Propagation Along Hepatocyte Cords Lab
+description: 'Verma2016 - Ca(2+) Signal Propagation Along Hepatocyte Cords This model
+  is described in the article: Computational Modeling of Spatiotemporal Ca(2+) Signal
+  Propagation Along Hepatocyte Cords. It can be used to explore systemsbiology verma2016
+  ca 2 signal propagation dynamics and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_verma2016_ca_2_signal_propagation_along_hepatocy_biomd0000000834_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_verma2016_ca_2_signal_propagation_along_hepatocy_biomd0000000834_model.state
+  to:
+  - visualisation.systemsbiology_sbml_verma2016_ca_2_signal_propagation_along_hepatocy_biomd0000000834_model_state
+- from: systemsbiology_sbml_verma2016_ca_2_signal_propagation_along_hepatocy_biomd0000000834_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_verma2016_ca_2_signal_propagation_along_hepatocy_biomd0000000834_model_summary
+- from: systemsbiology_sbml_verma2016_ca_2_signal_propagation_along_hepatocy_biomd0000000834_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_verma2016_ca_2_signal_propagation_along_hepatocy_biomd0000000834_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_total_intracellular_store_ca2_content_ca_t_9
+    maps_to: systemsbiology_sbml_verma2016_ca_2_signal_propagation_along_hepatocy_biomd0000000834_model.initial_total_intracellular_store_ca2_content_ca_t_9
+    label: Initial Total Intracellular Store CA2 Content Ca T 9
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaT_9`.
+  - name: initial_total_intracellular_store_ca2_content_ca_t_8
+    maps_to: systemsbiology_sbml_verma2016_ca_2_signal_propagation_along_hepatocy_biomd0000000834_model.initial_total_intracellular_store_ca2_content_ca_t_8
+    label: Initial Total Intracellular Store CA2 Content Ca T 8
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaT_8`.
+  - name: initial_total_intracellular_store_ca2_content_ca_t_7
+    maps_to: systemsbiology_sbml_verma2016_ca_2_signal_propagation_along_hepatocy_biomd0000000834_model.initial_total_intracellular_store_ca2_content_ca_t_7
+    label: Initial Total Intracellular Store CA2 Content Ca T 7
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaT_7`.
+  - name: initial_total_intracellular_store_ca2_content_ca_t_6
+    maps_to: systemsbiology_sbml_verma2016_ca_2_signal_propagation_along_hepatocy_biomd0000000834_model.initial_total_intracellular_store_ca2_content_ca_t_6
+    label: Initial Total Intracellular Store CA2 Content Ca T 6
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaT_6`.
+  - name: initial_total_intracellular_store_ca2_content_ca_t_5
+    maps_to: systemsbiology_sbml_verma2016_ca_2_signal_propagation_along_hepatocy_biomd0000000834_model.initial_total_intracellular_store_ca2_content_ca_t_5
+    label: Initial Total Intracellular Store CA2 Content Ca T 5
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaT_5`.
+  - name: initial_total_intracellular_store_ca2_content_ca_t_4
+    maps_to: systemsbiology_sbml_verma2016_ca_2_signal_propagation_along_hepatocy_biomd0000000834_model.initial_total_intracellular_store_ca2_content_ca_t_4
+    label: Initial Total Intracellular Store CA2 Content Ca T 4
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaT_4`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_verma2016_ca_2_signal_propagation_along_hepatocy_biomd0000000834_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_verma2016_ca_2_signal_propagation_along_hepatocy_biomd0000000834_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_verma2016_ca_2_signal_propagation_along_hepatocy_biomd0000000834_model.species_labels
+  - name: total_intracellular_store_ca2_content_ca_t_9
+    maps_to: systemsbiology_sbml_verma2016_ca_2_signal_propagation_along_hepatocy_biomd0000000834_model.total_intracellular_store_ca2_content_ca_t_9
+  - name: total_intracellular_store_ca2_content_ca_t_8
+    maps_to: systemsbiology_sbml_verma2016_ca_2_signal_propagation_along_hepatocy_biomd0000000834_model.total_intracellular_store_ca2_content_ca_t_8
+  - name: total_intracellular_store_ca2_content_ca_t_7
+    maps_to: systemsbiology_sbml_verma2016_ca_2_signal_propagation_along_hepatocy_biomd0000000834_model.total_intracellular_store_ca2_content_ca_t_7
+  - name: total_intracellular_store_ca2_content_ca_t_6
+    maps_to: systemsbiology_sbml_verma2016_ca_2_signal_propagation_along_hepatocy_biomd0000000834_model.total_intracellular_store_ca2_content_ca_t_6
+  - name: total_intracellular_store_ca2_content_ca_t_5
+    maps_to: systemsbiology_sbml_verma2016_ca_2_signal_propagation_along_hepatocy_biomd0000000834_model.total_intracellular_store_ca2_content_ca_t_5
+  - name: total_intracellular_store_ca2_content_ca_t_4
+    maps_to: systemsbiology_sbml_verma2016_ca_2_signal_propagation_along_hepatocy_biomd0000000834_model.total_intracellular_store_ca2_content_ca_t_4

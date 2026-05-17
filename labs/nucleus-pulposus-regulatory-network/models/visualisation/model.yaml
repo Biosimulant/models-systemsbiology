@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Nucleus Pulposus Regulatory Network Visualisation
+description: Question-and-answer and dynamic visual summaries for Nucleus Pulposus
+  Regulatory Network.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Nucleus Pulposus Regulatory Network Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Nucleus Pulposus Regulatory Network.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_nucleus_pulposus_regulatory_network_model2411040001_model
+      title: Nucleus Pulposus Regulatory Network
+      observables:
+      - id: IL_17A
+        port: il_17_a
+        label: IL-17A
+        group: signaling
+      - id: IL_1beta
+        port: il_1
+        label: IL-1β
+        group: signaling
+      - id: IL_18
+        port: il_18
+        label: IL-18
+        group: signaling
+      - id: IL_8
+        port: il_8
+        label: IL-8
+        group: signaling
+      - id: TIMP1_2
+        port: timp1_2
+        label: TIMP1/2
+        group: signaling
+      - id: IL_6
+        port: il_6
+        label: IL-6
+        group: signaling
+io:
+  inputs: []
+  outputs: []

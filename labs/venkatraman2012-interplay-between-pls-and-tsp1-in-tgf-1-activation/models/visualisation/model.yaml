@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Venkatraman2012 - Interplay between PLS and TSP1 in TGF-β1 activation Visualisation
+description: Question-and-answer and dynamic visual summaries for Venkatraman2012
+  - Interplay between PLS and TSP1 in TGF-β1 activation.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Venkatraman2012 Interplay Between Pls And Tsp1 In Tgf 1 Activation
+      Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Venkatraman2012 - Interplay between PLS and TSP1 in TGF-β1 activation.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_venkatraman2012_interplay_between_pls_and_tsp1_i_biomd0000000447_model
+      title: Venkatraman2012 - Interplay between PLS and TSP1 in TGF-β1 activation
+      observables:
+      - id: species_5
+        port: ltg_fb1
+        label: LTGFb1
+        group: signaling
+      - id: species_6
+        port: tg_fb1
+        label: TGFb1
+        group: signaling
+      - id: species_10
+        port: a2_m
+        label: A2M
+        group: physiology
+      - id: species_1
+        port: plg
+        label: PLG
+        group: physiology
+      - id: species_3
+        port: sc_upa
+        label: scUPA
+        group: physiology
+      - id: species_4
+        port: tc_upa
+        label: tcUPA
+        group: physiology
+io:
+  inputs: []
+  outputs: []

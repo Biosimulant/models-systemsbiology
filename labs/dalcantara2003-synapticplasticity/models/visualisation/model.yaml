@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: dAlcantara2003_SynapticPlasticity Visualisation
+description: Question-and-answer and dynamic visual summaries for dAlcantara2003_SynapticPlasticity.
+standard: other
+tags:
+- neuroscience
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Dalcantara2003 Synapticplasticity Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: dAlcantara2003_SynapticPlasticity.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_dalcantara2003_synapticplasticity_model8938094216_model
+      title: dAlcantara2003_SynapticPlasticity
+      observables:
+      - id: Stotal
+        port: s_total
+        label: S total
+        group: physiology
+      - id: Pstar
+        port: model_state_p
+        label: P*
+        group: physiology
+      - id: Sstar
+        port: model_state_s
+        label: S*
+        group: physiology
+      - id: Rstar
+        port: model_state_r
+        label: R*
+        group: physiology
+      - id: Rprime
+        port: model_state_r_2
+        label: R'
+        group: physiology
+      - id: Nstar
+        port: model_state_n
+        label: N*
+        group: physiology
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,74 @@
+schema_version: '2.0'
+title: Baker2017 The Role Of Cytokines Mmps And Fibronectin Fragments Osteo Lab
+description: 'Baker2017 - The role of cytokines, MMPs andfibronectin fragments osteoarthritis
+  This model is described in the article: Mathematical modelling of cytokines, MMPs
+  and fibronectin fragments in osteoarth. It can be used to explore systemsbiology
+  baker2017 the role of cytokines dynamics and compare simulation behavior across
+  conditions.'
+models:
+- alias: systemsbiology_sbml_baker2017_the_role_of_cytokines_mmps_and_fibrone_biomd0000000928_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_baker2017_the_role_of_cytokines_mmps_and_fibrone_biomd0000000928_model.state
+  to:
+  - visualisation.systemsbiology_sbml_baker2017_the_role_of_cytokines_mmps_and_fibrone_biomd0000000928_model_state
+- from: systemsbiology_sbml_baker2017_the_role_of_cytokines_mmps_and_fibrone_biomd0000000928_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_baker2017_the_role_of_cytokines_mmps_and_fibrone_biomd0000000928_model_summary
+- from: systemsbiology_sbml_baker2017_the_role_of_cytokines_mmps_and_fibrone_biomd0000000928_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_baker2017_the_role_of_cytokines_mmps_and_fibrone_biomd0000000928_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- immunology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_a_cytokines
+    maps_to: systemsbiology_sbml_baker2017_the_role_of_cytokines_mmps_and_fibrone_biomd0000000928_model.initial_a_cytokines
+    label: Initial A Cytokines
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `solution1`.
+  - name: initial_fragments
+    maps_to: systemsbiology_sbml_baker2017_the_role_of_cytokines_mmps_and_fibrone_biomd0000000928_model.initial_fragments
+    label: Initial Fragments
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `solution3`.
+  - name: initial_model_state_mmp
+    maps_to: systemsbiology_sbml_baker2017_the_role_of_cytokines_mmps_and_fibrone_biomd0000000928_model.initial_model_state_mmp
+    label: Initial Model State Mmp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `solution2`.
+  - name: initial_p_cytokines
+    maps_to: systemsbiology_sbml_baker2017_the_role_of_cytokines_mmps_and_fibrone_biomd0000000928_model.initial_p_cytokines
+    label: Initial P Cytokines
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `solution0`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_baker2017_the_role_of_cytokines_mmps_and_fibrone_biomd0000000928_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_baker2017_the_role_of_cytokines_mmps_and_fibrone_biomd0000000928_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_baker2017_the_role_of_cytokines_mmps_and_fibrone_biomd0000000928_model.species_labels
+  - name: a_cytokines
+    maps_to: systemsbiology_sbml_baker2017_the_role_of_cytokines_mmps_and_fibrone_biomd0000000928_model.a_cytokines
+  - name: fragments
+    maps_to: systemsbiology_sbml_baker2017_the_role_of_cytokines_mmps_and_fibrone_biomd0000000928_model.fragments
+  - name: mmp
+    maps_to: systemsbiology_sbml_baker2017_the_role_of_cytokines_mmps_and_fibrone_biomd0000000928_model.mmp
+  - name: p_cytokines
+    maps_to: systemsbiology_sbml_baker2017_the_role_of_cytokines_mmps_and_fibrone_biomd0000000928_model.p_cytokines

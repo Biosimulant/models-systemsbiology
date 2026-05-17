@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "8f2f1918-d68c-4cfb-82a3-33e3975a6204",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "22538450-d47f-4ad5-8871-bf88ba76cb27",
+  "created_at": "2026-05-16T05:46:47.189226487+00:00",
+  "last_synced_at": "2026-05-17T04:55:12.281640+00:00",
+  "hub_manifest_hash": "7f9d6c3ba23fffc9fa8aeaefc4321e95dd1f864287ee8a6440f9fc23b9710656",
+  "package_name": "mellor2012-lipooxygenasepathway-lab"
+}

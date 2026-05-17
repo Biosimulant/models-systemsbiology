@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Saeidi2012 - Quorum sensing device that produces GFP
+description: Saeidi2012 - Quorum sensing device that produces GFP Saeidi et al. (2012)
+  has modelled a quorum sensing device that produces green fluorescent protein (GFP)
+  as reporter in the presence of Acyl Homoser.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Nazanin Saeidi
+- Mohamed Arshath
+- Matthew Wook Chang
+- and Chueh Loo Poh
+upstream:
+  id: biomodels_ebi:BIOMD0000000438
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000438
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000438
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000438?filename=BIOMD0000000438_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.saeidi2012_quorum_sensing_device_that_produces_g_biomd0000000438_model:Saeidi2012QuorumSensingDeviceThatProducesGBiomd0000000438Model
+  init_kwargs:
+    model_path: data/BIOMD0000000438.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_p_lux_r
+    maps_to: s16
+    label: Initial P Lux R
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s16`.
+  - name: initial_ptet_las_r
+    maps_to: s1
+    label: Initial Ptet Las R
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s1`.
+  - name: initial_model_state_3_oc12_hsl
+    maps_to: s4
+    label: Initial Model State 3 Oc12 Hsl
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s4`.
+  - name: initial_las_r
+    maps_to: s19
+    label: Initial Las R
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s19`.
+  - name: initial_sa6_degraded
+    maps_to: s5
+    label: Initial SA6 Degraded
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s5`.
+  - name: initial_sa3_degraded
+    maps_to: s3
+    label: Initial SA3 Degraded
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s3`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: p_lux_r
+    maps_to: s16
+    label: pLuxR
+    description: pLuxR. Maps to SBML symbol `s16`.
+  - name: ptet_las_r
+    maps_to: s1
+    label: Ptet-LasR
+    description: Ptet-LasR. Maps to SBML symbol `s1`.
+  - name: model_state_3_oc12_hsl
+    maps_to: s4
+    label: 3OC12HSL
+    description: 3OC12HSL. Maps to SBML symbol `s4`.
+  - name: las_r
+    maps_to: s19
+    label: LasR
+    description: LasR. Maps to SBML symbol `s19`.
+  - name: sa6_degraded
+    maps_to: s5
+    label: sa6_degraded
+    description: sa6_degraded. Maps to SBML symbol `s5`.
+  - name: sa3_degraded
+    maps_to: s3
+    label: sa3_degraded
+    description: sa3_degraded. Maps to SBML symbol `s3`.

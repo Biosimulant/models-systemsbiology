@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "ffbee73f-aa27-4720-8679-c2111ebc468e",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "f951b6f3-0474-4302-9522-5f95f8f3088e",
+  "created_at": "2026-05-16T05:46:48.455445399+00:00",
+  "last_synced_at": "2026-05-17T05:10:18.052218+00:00",
+  "hub_manifest_hash": "691889b33c96f2dd5a9b556a6aa37fb2eef6e59ed41e69df967f09b656d8fcbd",
+  "package_name": "nakano2010-synaptic-plasticity-lab"
+}

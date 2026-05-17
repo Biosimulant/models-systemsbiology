@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "6518f93e-baa4-4ee5-aa91-c2384bc0b3ca",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "52386dfe-d468-4b40-967e-567b62cb185d",
+  "created_at": "2026-05-16T05:46:42.741066291+00:00",
+  "last_synced_at": "2026-05-17T02:50:39.816423+00:00",
+  "hub_manifest_hash": "fa3b9e0084d67bd64e6323e643266762ee52128091542573a57f707a9b8805a4",
+  "package_name": "decroly1982-enzymatic-oscillator-lab"
+}

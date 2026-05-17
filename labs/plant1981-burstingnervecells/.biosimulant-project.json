@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "3fa757b9-33a7-4d63-9da6-d12c88a3b417",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "4fcf5184-8919-4613-83f9-fc3e33d1c7ed",
+  "created_at": "2026-05-16T05:46:50.472219097+00:00",
+  "last_synced_at": "2026-05-17T05:30:23.945889+00:00",
+  "hub_manifest_hash": "81507f26ba352848b31399bd4e1ae6b2125d4e91ac40358a5096f5909cc67776",
+  "package_name": "plant1981-burstingnervecells-lab"
+}

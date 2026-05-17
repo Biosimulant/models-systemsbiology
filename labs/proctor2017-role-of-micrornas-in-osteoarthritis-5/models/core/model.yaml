@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Proctor2017- Role of microRNAs in osteoarthritis (miR140-IL1 coherent feed
+  forward)
+description: 'Proctor2017- Role of microRNAs inosteoarthritis (miR140-IL1 coherent
+  feed forward) This model is described in the article: Computer simulation models
+  as a tool to investigate the role of microRNAs in. It can be used to explore systemsbiology
+  proctor2017 role of micrornas in dynamics and compare simulation behavior across
+  conditions.'
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Carole J Proctor
+- Graham R Smith
+upstream:
+  id: biomodels_ebi:MODEL1705170001
+  source_db: biomodels_ebi
+  source_id: MODEL1705170001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1705170001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1705170001?filename=MODEL1705170001_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.proctor2017_role_of_micrornas_in_osteoarthritis_model1705170001_model:Proctor2017RoleOfMicrornasInOsteoarthritisModel1705170001Model
+  init_kwargs:
+    model_path: data/MODEL1705170001.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_mi_r140
+    maps_to: miR140
+    label: Initial Mi R140
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `miR140`.
+  - name: initial_model_state_il1
+    maps_to: IL1
+    label: Initial Model State IL1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IL1`.
+  - name: initial_mi_r140_gene
+    maps_to: miR140_gene
+    label: Initial Mi R140 Gene
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `miR140_gene`.
+  - name: initial_sink
+    maps_to: Sink
+    label: Initial Sink
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Sink`.
+  - name: initial_adamts5_mrna_mi_r140
+    maps_to: ADAMTS5_mRNA_miR140
+    label: Initial Adamts5 MRNA Mi R140
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ADAMTS5_mRNA_miR140`.
+  - name: initial_adamts5_mrna
+    maps_to: ADAMTS5_mRNA
+    label: Initial Adamts5 MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ADAMTS5_mRNA`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: mi_r140
+    maps_to: miR140
+    label: MiR140
+    description: MiR140. Maps to SBML symbol `miR140`.
+  - name: il1
+    maps_to: IL1
+    label: IL1
+    description: IL1. Maps to SBML symbol `IL1`.
+  - name: mi_r140_gene
+    maps_to: miR140_gene
+    label: MiR140 Gene
+    description: MiR140 Gene. Maps to SBML symbol `miR140_gene`.
+  - name: sink
+    maps_to: Sink
+    label: Sink
+    description: Sink. Maps to SBML symbol `Sink`.
+  - name: adamts5_mrna_mi_r140
+    maps_to: ADAMTS5_mRNA_miR140
+    label: ADAMTS5 MRNA MiR140
+    description: ADAMTS5 MRNA MiR140. Maps to SBML symbol `ADAMTS5_mRNA_miR140`.
+  - name: adamts5_mrna
+    maps_to: ADAMTS5_mRNA
+    label: ADAMTS5 MRNA
+    description: ADAMTS5 MRNA. Maps to SBML symbol `ADAMTS5_mRNA`.

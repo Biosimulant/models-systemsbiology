@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "224e3467-1e91-4dc7-93ed-640d7bece6b0",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "d76857d0-e1bb-4d9d-88d8-c79369893f68",
+  "created_at": "2026-05-16T05:46:50.033538597+00:00",
+  "last_synced_at": "2026-05-17T05:26:17.401554+00:00",
+  "hub_manifest_hash": "b3ace5844820e650bde13d0894ce459ce2721cdd0421c87a39f6f493cce9acf7",
+  "package_name": "passos2010-dnadamage-cellularsenescence-lab"
+}

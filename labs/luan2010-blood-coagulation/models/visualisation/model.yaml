@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Luan2010 - Blood Coagulation Model (extension of Luan2007) Visualisation
+description: Question-and-answer and dynamic visual summaries for Luan2010 - Blood
+  Coagulation Model (extension of Luan2007).
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Luan2010 Blood Coagulation Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Luan2010 - Blood Coagulation Model (extension of Luan2007).'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_luan2010_blood_coagulation_model_extension_of_lu_model1806250001_model
+      title: Luan2010 - Blood Coagulation Model (extension of Luan2007)
+      observables:
+      - id: ADP_PL_Psub
+        port: adp_pl_psub
+        label: ADP-PL-Psub
+        group: metabolism
+      - id: ADP_PL
+        port: adp_pl
+        label: ADP-PL
+        group: metabolism
+      - id: ADP
+        port: adp
+        label: ADP
+        group: metabolism
+      - id: uPA_PCI
+        port: u_pa_pci
+        label: uPA-PCI
+        group: physiology
+      - id: uPA_PAI2
+        port: u_pa_pai2
+        label: uPA-PAI2
+        group: physiology
+      - id: uPA_PAI1
+        port: u_pa_pai1
+        label: uPA-PAI1
+        group: physiology
+io:
+  inputs: []
+  outputs: []

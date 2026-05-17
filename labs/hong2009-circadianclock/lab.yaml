@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Hong2009 Circadianclock Lab
+description: 'This a model from the article: Minimum criteria for DNA damage-induced
+  phase advances in circadian rhythms. It can be used to explore systemsbiology hong2009
+  circadianclock BioModels0000000216 dynamics and compare simulation behavior across
+  conditions.'
+models:
+- alias: systemsbiology_sbml_hong2009_circadianclock_biomd0000000216_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_hong2009_circadianclock_biomd0000000216_model.state
+  to:
+  - visualisation.systemsbiology_sbml_hong2009_circadianclock_biomd0000000216_model_state
+- from: systemsbiology_sbml_hong2009_circadianclock_biomd0000000216_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_hong2009_circadianclock_biomd0000000216_model_summary
+- from: systemsbiology_sbml_hong2009_circadianclock_biomd0000000216_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_hong2009_circadianclock_biomd0000000216_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- cellcycle
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_ic
+    maps_to: systemsbiology_sbml_hong2009_circadianclock_biomd0000000216_model.initial_model_state_ic
+    label: Initial Model State Ic
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IC`.
+  - name: initial_model_state_tf
+    maps_to: systemsbiology_sbml_hong2009_circadianclock_biomd0000000216_model.initial_model_state_tf
+    label: Initial Model State Tf
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TF`.
+  - name: initial_model_state_cp2
+    maps_to: systemsbiology_sbml_hong2009_circadianclock_biomd0000000216_model.initial_model_state_cp2
+    label: Initial Model State CP2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CP2`.
+  - name: initial_model_state_cp
+    maps_to: systemsbiology_sbml_hong2009_circadianclock_biomd0000000216_model.initial_model_state_cp
+    label: Initial Model State Cp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CP`.
+  - name: initial_c_ptot
+    maps_to: systemsbiology_sbml_hong2009_circadianclock_biomd0000000216_model.initial_c_ptot
+    label: Initial C Ptot
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CPtot`.
+  - name: initial_model_state_m
+    maps_to: systemsbiology_sbml_hong2009_circadianclock_biomd0000000216_model.initial_model_state_m
+    label: Initial Model State M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_hong2009_circadianclock_biomd0000000216_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_hong2009_circadianclock_biomd0000000216_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_hong2009_circadianclock_biomd0000000216_model.species_labels
+  - name: model_state_ic
+    maps_to: systemsbiology_sbml_hong2009_circadianclock_biomd0000000216_model.model_state_ic
+  - name: model_state_tf
+    maps_to: systemsbiology_sbml_hong2009_circadianclock_biomd0000000216_model.model_state_tf
+  - name: cp2
+    maps_to: systemsbiology_sbml_hong2009_circadianclock_biomd0000000216_model.cp2
+  - name: model_state_cp
+    maps_to: systemsbiology_sbml_hong2009_circadianclock_biomd0000000216_model.model_state_cp
+  - name: c_ptot
+    maps_to: systemsbiology_sbml_hong2009_circadianclock_biomd0000000216_model.c_ptot
+  - name: model_state_m
+    maps_to: systemsbiology_sbml_hong2009_circadianclock_biomd0000000216_model.model_state_m

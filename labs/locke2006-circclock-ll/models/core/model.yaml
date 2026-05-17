@@ -1,0 +1,77 @@
+schema_version: '2.0'
+title: Locke2006_CircClock_LL
+description: 'This a model from the article: Experimental validation of a predicted
+  feedback loop in the multi-oscillator clock of Arabidopsis thaliana. Locke JC, Kozma-Bognár
+  L, Gould PD, Fehér B, Kevei E, Nagy F,.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- James C W Locke
+- László Kozma-Bognár
+- Peter D Gould
+- Balázs Fehér
+- Eva Kevei
+upstream:
+  id: biomodels_ebi:BIOMD0000000089
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000089
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000089
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000089?filename=BIOMD0000000089_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.locke2006_circclock_ll_biomd0000000089_model:Locke2006CircclockLlBiomd0000000089Model
+  init_kwargs:
+    model_path: data/BIOMD0000000089.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: light
+    maps_to: light
+    label: Light
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `light`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: ppr7_9_mrna
+    maps_to: cAm
+    label: PPR7/9 mRNA
+    description: PPR7/9 mRNA. Maps to SBML symbol `cAm`.
+  - name: ppr7_9_protein_in_nucleus
+    maps_to: cAn
+    label: PPR7/9 protein in nucleus
+    description: PPR7/9 protein in nucleus. Maps to SBML symbol `cAn`.
+  - name: ppr7_9_protein_in_cytoplasm
+    maps_to: cAc
+    label: PPR7/9 protein in cytoplasm
+    description: PPR7/9 protein in cytoplasm. Maps to SBML symbol `cAc`.
+  - name: toc1_protein_in_cytoplasm
+    maps_to: cTc
+    label: TOC1 protein  in cytoplasm
+    description: TOC1 protein  in cytoplasm. Maps to SBML symbol `cTc`.
+  - name: x_protein_in_cytoplasm
+    maps_to: cXc
+    label: X protein in cytoplasm
+    description: X protein in cytoplasm. Maps to SBML symbol `cXc`.
+  - name: light_sensitive_protein_p
+    maps_to: cPn
+    label: light sensitive protein P
+    description: light sensitive protein P. Maps to SBML symbol `cPn`.

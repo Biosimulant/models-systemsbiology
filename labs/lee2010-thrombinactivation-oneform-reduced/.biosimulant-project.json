@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "eeac7346-6d76-459a-b65e-e84018c769f1",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "aeb19922-5e3e-44a7-b1eb-dde9c39595d2",
+  "created_at": "2026-05-16T05:46:45.160020735+00:00",
+  "last_synced_at": "2026-05-17T04:20:18.967084+00:00",
+  "hub_manifest_hash": "c7b161ee737446e98e15134976264567aeedb26260394c4b404f4e5bbb471d75",
+  "package_name": "lee2010-thrombinactivation-oneform-reduced-lab"
+}

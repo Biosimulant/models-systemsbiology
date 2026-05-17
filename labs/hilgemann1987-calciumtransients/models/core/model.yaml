@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Hilgemann1987_CalciumTransients
+description: 'This a model from the article: Excitation-contraction coupling and extracellular
+  calcium transients in rabbitatrium: reconstruction of basic cellular mechanisms.
+  It can be used to explore systemsbiology hilgemann1987 calciumtransients model0848444339
+  dynamics and compare simulation behavior across conditions.'
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- D W Hilgemann
+- D Noble
+upstream:
+  id: biomodels_ebi:MODEL0848444339
+  source_db: biomodels_ebi
+  source_id: MODEL0848444339
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL0848444339
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0848444339?filename=MODEL0848444339_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.hilgemann1987_calciumtransients_model0848444339_model:Hilgemann1987CalciumtransientsModel0848444339Model
+  init_kwargs:
+    model_path: data/MODEL0848444339.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_v_membrane
+    maps_to: V_membrane
+    label: Initial V Membrane
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `V_membrane`.
+  - name: initial_prod_frac
+    maps_to: ProdFrac
+    label: Initial Prod Frac
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ProdFrac`.
+  - name: initial_na_i
+    maps_to: Na_i
+    label: Initial Na I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Na_i`.
+  - name: initial_model_state_k_i
+    maps_to: K_i
+    label: Initial Model State K I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `K_i`.
+  - name: initial_f_ca
+    maps_to: f_Ca
+    label: Initial F Ca
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `f_Ca`.
+  - name: initial_ca_up
+    maps_to: Ca_up
+    label: Initial Ca Up
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_up`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: v_membrane
+    maps_to: V_membrane
+    label: V Membrane
+    description: V Membrane. Maps to SBML symbol `V_membrane`.
+  - name: prod_frac
+    maps_to: ProdFrac
+    label: ProdFrac
+    description: ProdFrac. Maps to SBML symbol `ProdFrac`.
+  - name: na_i
+    maps_to: Na_i
+    label: Na I
+    description: Na I. Maps to SBML symbol `Na_i`.
+  - name: k_i
+    maps_to: K_i
+    label: K I
+    description: K I. Maps to SBML symbol `K_i`.
+  - name: f_ca
+    maps_to: f_Ca
+    label: F Ca
+    description: F Ca. Maps to SBML symbol `f_Ca`.
+  - name: ca_up
+    maps_to: Ca_up
+    label: Ca Up
+    description: Ca Up. Maps to SBML symbol `Ca_up`.

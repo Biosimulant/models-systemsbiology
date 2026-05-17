@@ -1,0 +1,50 @@
+schema_version: '2.0'
+title: Martins2001_glyoxalase Visualisation
+description: Question-and-answer and dynamic visual summaries for Martins2001_glyoxalase.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Martins2001 Glyoxalase Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Martins2001_glyoxalase.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_martins2001_glyoxalase_model6624199343_model
+      title: Martins2001_glyoxalase
+      observables:
+      - id: GSH
+        port: gsh
+        label: GSH
+        group: physiology
+      - id: MG
+        port: model_state_mg
+        label: MG
+        group: physiology
+      - id: SLG
+        port: slg
+        label: SLG
+        group: physiology
+      - id: Lac
+        port: lac
+        label: Lac
+        group: physiology
+      - id: HTA
+        port: hta
+        label: HTA
+        group: physiology
+io:
+  inputs: []
+  outputs: []

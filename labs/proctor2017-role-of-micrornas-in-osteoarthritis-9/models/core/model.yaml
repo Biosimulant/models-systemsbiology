@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Proctor2017- Role of microRNAs in osteoarthritis (miR140-SOX9 incoherent feed
+  forward)
+description: 'Proctor2017- Role of microRNAs in osteoarthritis (miR140-SOX9 incoherent
+  feed forward) This model is described in the article: Computer simulation models
+  as a tool to investigate the role of microRNAs. It can be used to explore systemsbiology
+  proctor2017 role of micrornas in dynamics and compare simulation behavior across
+  conditions.'
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Carole J Proctor
+- Graham R Smith
+upstream:
+  id: biomodels_ebi:MODEL1705170003
+  source_db: biomodels_ebi
+  source_id: MODEL1705170003
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1705170003
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1705170003?filename=MODEL1705170003_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.proctor2017_role_of_micrornas_in_osteoarthritis_model1705170003_model:Proctor2017RoleOfMicrornasInOsteoarthritisModel1705170003Model
+  init_kwargs:
+    model_path: data/MODEL1705170003.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_sox9
+    maps_to: SOX9
+    label: Initial Sox9
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `SOX9`.
+  - name: initial_runx2
+    maps_to: RUNX2
+    label: Initial Runx2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RUNX2`.
+  - name: initial_hdac4
+    maps_to: HDAC4
+    label: Initial Hdac4
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `HDAC4`.
+  - name: initial_mi_r140
+    maps_to: miR140
+    label: Initial Mi R140
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `miR140`.
+  - name: initial_hdac4_mrna
+    maps_to: HDAC4_mRNA
+    label: Initial Hdac4 MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `HDAC4_mRNA`.
+  - name: initial_runx2_gene
+    maps_to: RUNX2_gene
+    label: Initial Runx2 Gene
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RUNX2_gene`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: sox9
+    maps_to: SOX9
+    label: SOX9
+    description: SOX9. Maps to SBML symbol `SOX9`.
+  - name: runx2
+    maps_to: RUNX2
+    label: RUNX2
+    description: RUNX2. Maps to SBML symbol `RUNX2`.
+  - name: hdac4
+    maps_to: HDAC4
+    label: HDAC4
+    description: HDAC4. Maps to SBML symbol `HDAC4`.
+  - name: mi_r140
+    maps_to: miR140
+    label: MiR140
+    description: MiR140. Maps to SBML symbol `miR140`.
+  - name: hdac4_mrna
+    maps_to: HDAC4_mRNA
+    label: HDAC4 MRNA
+    description: HDAC4 MRNA. Maps to SBML symbol `HDAC4_mRNA`.
+  - name: runx2_gene
+    maps_to: RUNX2_gene
+    label: RUNX2 Gene
+    description: RUNX2 Gene. Maps to SBML symbol `RUNX2_gene`.

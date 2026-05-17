@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "dce42e66-7539-4ba6-986f-9e6d201e3728",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "d3091f95-21fa-4482-8c81-4bb019f2bbd2",
+  "created_at": "2026-05-16T05:46:41.068180898+00:00",
+  "last_synced_at": "2026-05-17T01:47:27.326447+00:00",
+  "hub_manifest_hash": "2e49dafbb978ba7436c419ef5e193af073b58f6158b8c1f09b8a6ddfdeea0efc",
+  "package_name": "ataullahkhanov1996-adenylate-lab"
+}

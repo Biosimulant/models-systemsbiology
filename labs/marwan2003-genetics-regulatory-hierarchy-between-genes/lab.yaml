@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Marwan2003 Genetics Regulatory Hierarchy Between Genes Lab
+description: To the extent possible under law, all copyright and related or neighbouring
+  rights to this encoded model have been dedicated to the public domain worldwide.
+  It can be used to explore systemsbiology marwan2003 genetics regulatory hierarchy
+  between dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_marwan2003_genetics_regulatory_hierarchy_between_biomd0000000037_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_marwan2003_genetics_regulatory_hierarchy_between_biomd0000000037_model.state
+  to:
+  - visualisation.systemsbiology_sbml_marwan2003_genetics_regulatory_hierarchy_between_biomd0000000037_model_state
+- from: systemsbiology_sbml_marwan2003_genetics_regulatory_hierarchy_between_biomd0000000037_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_marwan2003_genetics_regulatory_hierarchy_between_biomd0000000037_model_summary
+- from: systemsbiology_sbml_marwan2003_genetics_regulatory_hierarchy_between_biomd0000000037_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_marwan2003_genetics_regulatory_hierarchy_between_biomd0000000037_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_prepre_s
+    maps_to: systemsbiology_sbml_marwan2003_genetics_regulatory_hierarchy_between_biomd0000000037_model.initial_prepre_s
+    label: Initial Prepre S
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `prepreS`.
+  - name: initial_model_state_pfr
+    maps_to: systemsbiology_sbml_marwan2003_genetics_regulatory_hierarchy_between_biomd0000000037_model.initial_model_state_pfr
+    label: Initial Model State Pfr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pfr`.
+  - name: initial_model_state_xi
+    maps_to: systemsbiology_sbml_marwan2003_genetics_regulatory_hierarchy_between_biomd0000000037_model.initial_model_state_xi
+    label: Initial Model State Xi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xi`.
+  - name: initial_model_state_ya
+    maps_to: systemsbiology_sbml_marwan2003_genetics_regulatory_hierarchy_between_biomd0000000037_model.initial_model_state_ya
+    label: Initial Model State Ya
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ya`.
+  - name: initial_model_state_yi
+    maps_to: systemsbiology_sbml_marwan2003_genetics_regulatory_hierarchy_between_biomd0000000037_model.initial_model_state_yi
+    label: Initial Model State Yi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Yi`.
+  - name: initial_model_state_xa
+    maps_to: systemsbiology_sbml_marwan2003_genetics_regulatory_hierarchy_between_biomd0000000037_model.initial_model_state_xa
+    label: Initial Model State Xa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_marwan2003_genetics_regulatory_hierarchy_between_biomd0000000037_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_marwan2003_genetics_regulatory_hierarchy_between_biomd0000000037_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_marwan2003_genetics_regulatory_hierarchy_between_biomd0000000037_model.species_labels
+  - name: prepre_s
+    maps_to: systemsbiology_sbml_marwan2003_genetics_regulatory_hierarchy_between_biomd0000000037_model.prepre_s
+  - name: pfr
+    maps_to: systemsbiology_sbml_marwan2003_genetics_regulatory_hierarchy_between_biomd0000000037_model.pfr
+  - name: model_state_xi
+    maps_to: systemsbiology_sbml_marwan2003_genetics_regulatory_hierarchy_between_biomd0000000037_model.model_state_xi
+  - name: model_state_ya
+    maps_to: systemsbiology_sbml_marwan2003_genetics_regulatory_hierarchy_between_biomd0000000037_model.model_state_ya
+  - name: model_state_yi
+    maps_to: systemsbiology_sbml_marwan2003_genetics_regulatory_hierarchy_between_biomd0000000037_model.model_state_yi
+  - name: model_state_xa
+    maps_to: systemsbiology_sbml_marwan2003_genetics_regulatory_hierarchy_between_biomd0000000037_model.model_state_xa

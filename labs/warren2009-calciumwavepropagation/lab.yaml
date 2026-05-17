@@ -1,0 +1,91 @@
+schema_version: '2.0'
+title: Warren2009 Calciumwavepropagation Lab
+description: 'This a model from the article: Mathematical modelling of calcium wave
+  propagation in mammalian airwayepithelium: evidence for regenerative ATP release.
+  It can be used to explore systemsbiology warren2009 calciumwavepropagation model1006230018
+  dynamics and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_warren2009_calciumwavepropagation_model1006230018_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_warren2009_calciumwavepropagation_model1006230018_model.state
+  to:
+  - visualisation.systemsbiology_sbml_warren2009_calciumwavepropagation_model1006230018_model_state
+- from: systemsbiology_sbml_warren2009_calciumwavepropagation_model1006230018_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_warren2009_calciumwavepropagation_model1006230018_model_summary
+- from: systemsbiology_sbml_warren2009_calciumwavepropagation_model1006230018_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_warren2009_calciumwavepropagation_model1006230018_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- metabolism
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_volume_ca_i
+    maps_to: systemsbiology_sbml_warren2009_calciumwavepropagation_model1006230018_model.initial_volume_ca_i
+    label: Initial Volume Ca I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `volumeCa_i`.
+  - name: initial_volume_ca_er
+    maps_to: systemsbiology_sbml_warren2009_calciumwavepropagation_model1006230018_model.initial_volume_ca_er
+    label: Initial Volume Ca Er
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `volumeCa_er`.
+  - name: initial_volume_iip3
+    maps_to: systemsbiology_sbml_warren2009_calciumwavepropagation_model1006230018_model.initial_volume_iip3
+    label: Initial Volume Iip3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `volume_iIP3`.
+  - name: initial_pip2
+    maps_to: systemsbiology_sbml_warren2009_calciumwavepropagation_model1006230018_model.initial_pip2
+    label: Initial Pip2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PIP2`.
+  - name: initial_model_state_i2
+    maps_to: systemsbiology_sbml_warren2009_calciumwavepropagation_model1006230018_model.initial_model_state_i2
+    label: Initial Model State I2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `I2`.
+  - name: initial_model_state_i1
+    maps_to: systemsbiology_sbml_warren2009_calciumwavepropagation_model1006230018_model.initial_model_state_i1
+    label: Initial Model State I1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `I1`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_warren2009_calciumwavepropagation_model1006230018_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_warren2009_calciumwavepropagation_model1006230018_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_warren2009_calciumwavepropagation_model1006230018_model.species_labels
+  - name: volume_ca_i
+    maps_to: systemsbiology_sbml_warren2009_calciumwavepropagation_model1006230018_model.volume_ca_i
+  - name: volume_ca_er
+    maps_to: systemsbiology_sbml_warren2009_calciumwavepropagation_model1006230018_model.volume_ca_er
+  - name: volume_iip3
+    maps_to: systemsbiology_sbml_warren2009_calciumwavepropagation_model1006230018_model.volume_iip3
+  - name: pip2
+    maps_to: systemsbiology_sbml_warren2009_calciumwavepropagation_model1006230018_model.pip2
+  - name: model_state_i2
+    maps_to: systemsbiology_sbml_warren2009_calciumwavepropagation_model1006230018_model.model_state_i2
+  - name: model_state_i1
+    maps_to: systemsbiology_sbml_warren2009_calciumwavepropagation_model1006230018_model.model_state_i1

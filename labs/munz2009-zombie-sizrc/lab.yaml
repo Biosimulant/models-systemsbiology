@@ -1,0 +1,65 @@
+schema_version: '2.0'
+title: Munz2009 Zombie Sizrc Lab
+description: Munz2009 - Zombie SIZRC This is the model with an latent infection and
+  cure for zombies described in the article. It can be used to explore systemsbiology
+  munz2009 zombie sizrc BioModels0000000882 dynamics and compare simulation behavior
+  across conditions.
+models:
+- alias: systemsbiology_sbml_munz2009_zombie_sizrc_biomd0000000882_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_munz2009_zombie_sizrc_biomd0000000882_model.state
+  to:
+  - visualisation.systemsbiology_sbml_munz2009_zombie_sizrc_biomd0000000882_model_state
+- from: systemsbiology_sbml_munz2009_zombie_sizrc_biomd0000000882_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_munz2009_zombie_sizrc_biomd0000000882_model_summary
+- from: systemsbiology_sbml_munz2009_zombie_sizrc_biomd0000000882_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_munz2009_zombie_sizrc_biomd0000000882_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- epidemiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_susceptible
+    maps_to: systemsbiology_sbml_munz2009_zombie_sizrc_biomd0000000882_model.initial_susceptible
+    label: Initial Susceptible
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Susceptible`.
+  - name: initial_zombie
+    maps_to: systemsbiology_sbml_munz2009_zombie_sizrc_biomd0000000882_model.initial_zombie
+    label: Initial Zombie
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Zombie`.
+  - name: initial_removal
+    maps_to: systemsbiology_sbml_munz2009_zombie_sizrc_biomd0000000882_model.initial_removal
+    label: Initial Removal
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Removal`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_munz2009_zombie_sizrc_biomd0000000882_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_munz2009_zombie_sizrc_biomd0000000882_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_munz2009_zombie_sizrc_biomd0000000882_model.species_labels
+  - name: susceptible
+    maps_to: systemsbiology_sbml_munz2009_zombie_sizrc_biomd0000000882_model.susceptible
+  - name: zombie
+    maps_to: systemsbiology_sbml_munz2009_zombie_sizrc_biomd0000000882_model.zombie
+  - name: removal
+    maps_to: systemsbiology_sbml_munz2009_zombie_sizrc_biomd0000000882_model.removal

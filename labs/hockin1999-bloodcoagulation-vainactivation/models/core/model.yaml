@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Hockin1999_BloodCoagulation_VaInactivation
+description: Matthew F. It can be used to explore systemsbiology hockin1999 bloodcoagulation
+  vainactivation BioModels0000000365 dynamics and compare simulation behavior across
+  conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- M F Hockin
+- K M Cawthern
+- M Kalafatis
+- K G Mann
+upstream:
+  id: biomodels_ebi:BIOMD0000000365
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000365
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000365
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000365?filename=BIOMD0000000365_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.hockin1999_bloodcoagulation_vainactivation_biomd0000000365_model:Hockin1999BloodcoagulationVainactivationBiomd0000000365Model
+  init_kwargs:
+    model_path: data/BIOMD0000000365.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_va_apc
+    maps_to: Va_APC
+    label: Initial Va Apc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Va_APC`.
+  - name: initial_va_lca1_apc
+    maps_to: VaLCA1_APC
+    label: Initial Va Lca1 Apc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VaLCA1_APC`.
+  - name: initial_va5_apc
+    maps_to: Va5_APC
+    label: Initial VA5 Apc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Va5_APC`.
+  - name: initial_va56_apc
+    maps_to: Va56_APC
+    label: Initial Va56 Apc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Va56_APC`.
+  - name: initial_va53_apc
+    maps_to: Va53_APC
+    label: Initial Va53 Apc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Va53_APC`.
+  - name: initial_va536_apc
+    maps_to: Va536_APC
+    label: Initial Va536 Apc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Va536_APC`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: va_apc
+    maps_to: Va_APC
+    label: Va_APC
+    description: Va_APC. Maps to SBML symbol `Va_APC`.
+  - name: va_lca1_apc
+    maps_to: VaLCA1_APC
+    label: VaLCA1_APC
+    description: VaLCA1_APC. Maps to SBML symbol `VaLCA1_APC`.
+  - name: va5_apc
+    maps_to: Va5_APC
+    label: Va5_APC
+    description: Va5_APC. Maps to SBML symbol `Va5_APC`.
+  - name: va56_apc
+    maps_to: Va56_APC
+    label: Va56_APC
+    description: Va56_APC. Maps to SBML symbol `Va56_APC`.
+  - name: va53_apc
+    maps_to: Va53_APC
+    label: Va53_APC
+    description: Va53_APC. Maps to SBML symbol `Va53_APC`.
+  - name: va536_apc
+    maps_to: Va536_APC
+    label: Va536_APC
+    description: Va536_APC. Maps to SBML symbol `Va536_APC`.

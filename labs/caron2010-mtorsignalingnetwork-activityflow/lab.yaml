@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Caron2010 Mtorsignalingnetwork Activityflow Lab
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models (http://www.ebi.ac.uk/biomodels/). It is copyright (c) 2005-2011
+  The BioModels.net Team.'
+models:
+- alias: systemsbiology_sbml_caron2010_mtorsignalingnetwork_activityflow_model1012220004_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_caron2010_mtorsignalingnetwork_activityflow_model1012220004_model.state
+  to:
+  - visualisation.systemsbiology_sbml_caron2010_mtorsignalingnetwork_activityflow_model1012220004_model_state
+- from: systemsbiology_sbml_caron2010_mtorsignalingnetwork_activityflow_model1012220004_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_caron2010_mtorsignalingnetwork_activityflow_model1012220004_model_summary
+- from: systemsbiology_sbml_caron2010_mtorsignalingnetwork_activityflow_model1012220004_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_caron2010_mtorsignalingnetwork_activityflow_model1012220004_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_metabolism_br_stress_resistance_br_apoptosis
+    maps_to: systemsbiology_sbml_caron2010_mtorsignalingnetwork_activityflow_model1012220004_model.initial_metabolism_br_stress_resistance_br_apoptosis
+    label: Initial Metabolism Br Stress Resistance Br Apoptosis
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s147`.
+  - name: initial_r_rna_synthesis
+    maps_to: systemsbiology_sbml_caron2010_mtorsignalingnetwork_activityflow_model1012220004_model.initial_r_rna_synthesis
+    label: Initial R RNA Synthesis
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s149`.
+  - name: initial_mrna_br_biogenesis
+    maps_to: systemsbiology_sbml_caron2010_mtorsignalingnetwork_activityflow_model1012220004_model.initial_mrna_br_biogenesis
+    label: Initial MRNA Br Biogenesis
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s74`.
+  - name: initial_survival_br_apoptosis
+    maps_to: systemsbiology_sbml_caron2010_mtorsignalingnetwork_activityflow_model1012220004_model.initial_survival_br_apoptosis
+    label: Initial Survival Br Apoptosis
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s212`.
+  - name: initial_mitochondrial_br_metabolism
+    maps_to: systemsbiology_sbml_caron2010_mtorsignalingnetwork_activityflow_model1012220004_model.initial_mitochondrial_br_metabolism
+    label: Initial Mitochondrial Br Metabolism
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s223`.
+  - name: initial_growth_factor
+    maps_to: systemsbiology_sbml_caron2010_mtorsignalingnetwork_activityflow_model1012220004_model.initial_growth_factor
+    label: Initial Growth Factor
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s167`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_caron2010_mtorsignalingnetwork_activityflow_model1012220004_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_caron2010_mtorsignalingnetwork_activityflow_model1012220004_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_caron2010_mtorsignalingnetwork_activityflow_model1012220004_model.species_labels
+  - name: metabolism_br_stress_resistance_br_apoptosis
+    maps_to: systemsbiology_sbml_caron2010_mtorsignalingnetwork_activityflow_model1012220004_model.metabolism_br_stress_resistance_br_apoptosis
+  - name: r_rna_synthesis
+    maps_to: systemsbiology_sbml_caron2010_mtorsignalingnetwork_activityflow_model1012220004_model.r_rna_synthesis
+  - name: mrna_br_biogenesis
+    maps_to: systemsbiology_sbml_caron2010_mtorsignalingnetwork_activityflow_model1012220004_model.mrna_br_biogenesis
+  - name: survival_br_apoptosis
+    maps_to: systemsbiology_sbml_caron2010_mtorsignalingnetwork_activityflow_model1012220004_model.survival_br_apoptosis
+  - name: mitochondrial_br_metabolism
+    maps_to: systemsbiology_sbml_caron2010_mtorsignalingnetwork_activityflow_model1012220004_model.mitochondrial_br_metabolism
+  - name: growth_factor
+    maps_to: systemsbiology_sbml_caron2010_mtorsignalingnetwork_activityflow_model1012220004_model.growth_factor

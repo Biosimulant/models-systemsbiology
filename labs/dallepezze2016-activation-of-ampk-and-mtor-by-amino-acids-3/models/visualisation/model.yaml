@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: DallePezze2016 - Activation of AMPK and mTOR by amino acids (Model 2) Visualisation
+description: Question-and-answer and dynamic visual summaries for DallePezze2016 -
+  Activation of AMPK and mTOR by amino acids (Model 2).
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Dallepezze2016 Activation Of Ampk And Mtor By Amino Acids 3 Lab
+    question: 'Which signalling variables dominate the simulated network response?
+      Source model: DallePezze2016 - Activation of AMPK and mTOR by amino acids (Model
+      2).'
+    answer_focus: Q/A table plus signaling timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_dallepezze2016_activation_of_ampk_and_mtor_by_am_model1705030001_model
+      title: DallePezze2016 - Activation of AMPK and mTOR by amino acids (Model 2)
+      observables:
+      - id: p70_S6K
+        port: p70_s6_k
+        label: p70_S6K
+        group: signaling
+      - id: mTORC2
+        port: m_torc2
+        label: mTORC2
+        group: signaling
+      - id: mTORC1
+        port: m_torc1
+        label: mTORC1
+        group: signaling
+      - id: TSC1_TSC2
+        port: tsc1_tsc2
+        label: TSC1_TSC2
+        group: signaling
+      - id: PI3K_variant
+        port: pi3_k_variant
+        label: PI3K_variant
+        group: signaling
+      - id: PI3K_PDK1
+        port: pi3_k_pdk1
+        label: PI3K_PDK1
+        group: signaling
+io:
+  inputs: []
+  outputs: []

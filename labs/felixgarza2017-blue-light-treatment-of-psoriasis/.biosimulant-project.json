@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "e6ac085d-0037-42b8-9b9b-22efc138a074",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "7ced4eec-0114-4e72-8d16-9fccaeb0e937",
+  "created_at": "2026-05-16T05:46:43.161802640+00:00",
+  "last_synced_at": "2026-05-17T03:06:41.645439+00:00",
+  "hub_manifest_hash": "feb2c8346869ea375e6d1f5f23aae24535f33295304c8106f7874eba5f1ebcad",
+  "package_name": "felixgarza2017-blue-light-treatment-of-psoriasis-lab"
+}

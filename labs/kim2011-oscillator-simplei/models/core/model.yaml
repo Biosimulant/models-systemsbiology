@@ -1,0 +1,85 @@
+schema_version: '2.0'
+title: Kim2011_Oscillator_SimpleI
+description: 'This a model from the article: Synthetic in vitro transcriptional oscillators.
+  It can be used to explore systemsbiology kim2011 oscillator simplei BioModels0000000322
+  dynamics and compare simulation behavior across conditions.'
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Jongmin Kim
+- Erik Winfree
+upstream:
+  id: biomodels_ebi:BIOMD0000000322
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000322
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000322
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000322?filename=BIOMD0000000322_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.kim2011_oscillator_simplei_biomd0000000322_model:Kim2011OscillatorSimpleiBiomd0000000322Model
+  init_kwargs:
+    model_path: data/BIOMD0000000322.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_y
+    maps_to: species_2
+    label: Initial Model State Y
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_2`.
+  - name: initial_model_state_x
+    maps_to: species_1
+    label: Initial Model State X
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_1`.
+  - name: initial_model_state_v
+    maps_to: species_4
+    label: Initial Model State V
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_4`.
+  - name: initial_model_state_u
+    maps_to: species_3
+    label: Initial Model State U
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_3`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_y
+    maps_to: species_2
+    label: y
+    description: y. Maps to SBML symbol `species_2`.
+  - name: model_state_x
+    maps_to: species_1
+    label: x
+    description: x. Maps to SBML symbol `species_1`.
+  - name: model_state_v
+    maps_to: species_4
+    label: v
+    description: v. Maps to SBML symbol `species_4`.
+  - name: model_state_u
+    maps_to: species_3
+    label: u
+    description: u. Maps to SBML symbol `species_3`.

@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Burghaus2014 Simulating Blood Coagulation Factor Xa Inhibitors Lab
+description: Mathematical model of blood coagulation factors II, VII, IX and X as
+  well as protein C and protein S and the effect of warfarin on kinetic rates. It
+  can be used to explore systemsbiology burghaus2014 simulating blood coagulation
+  factor dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_burghaus2014_simulating_blood_coagulation_factor_model1807180005_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_burghaus2014_simulating_blood_coagulation_factor_model1807180005_model.state
+  to:
+  - visualisation.systemsbiology_sbml_burghaus2014_simulating_blood_coagulation_factor_model1807180005_model_state
+- from: systemsbiology_sbml_burghaus2014_simulating_blood_coagulation_factor_model1807180005_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_burghaus2014_simulating_blood_coagulation_factor_model1807180005_model_summary
+- from: systemsbiology_sbml_burghaus2014_simulating_blood_coagulation_factor_model1807180005_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_burghaus2014_simulating_blood_coagulation_factor_model1807180005_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_s_warfarin
+    maps_to: systemsbiology_sbml_burghaus2014_simulating_blood_coagulation_factor_model1807180005_model.initial_s_warfarin
+    label: Initial S Warfarin
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S_warfarin`.
+  - name: initial_r_warfarin
+    maps_to: systemsbiology_sbml_burghaus2014_simulating_blood_coagulation_factor_model1807180005_model.initial_r_warfarin
+    label: Initial R Warfarin
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `R_warfarin`.
+  - name: initial_f_ii
+    maps_to: systemsbiology_sbml_burghaus2014_simulating_blood_coagulation_factor_model1807180005_model.initial_f_ii
+    label: Initial F Ii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `fII`.
+  - name: initial_model_state_f_x
+    maps_to: systemsbiology_sbml_burghaus2014_simulating_blood_coagulation_factor_model1807180005_model.initial_model_state_f_x
+    label: Initial Model State F X
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `fX`.
+  - name: initial_protein_s
+    maps_to: systemsbiology_sbml_burghaus2014_simulating_blood_coagulation_factor_model1807180005_model.initial_protein_s
+    label: Initial Protein S
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Protein_S`.
+  - name: initial_f_ix
+    maps_to: systemsbiology_sbml_burghaus2014_simulating_blood_coagulation_factor_model1807180005_model.initial_f_ix
+    label: Initial F Ix
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `fIX`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_burghaus2014_simulating_blood_coagulation_factor_model1807180005_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_burghaus2014_simulating_blood_coagulation_factor_model1807180005_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_burghaus2014_simulating_blood_coagulation_factor_model1807180005_model.species_labels
+  - name: s_warfarin
+    maps_to: systemsbiology_sbml_burghaus2014_simulating_blood_coagulation_factor_model1807180005_model.s_warfarin
+  - name: r_warfarin
+    maps_to: systemsbiology_sbml_burghaus2014_simulating_blood_coagulation_factor_model1807180005_model.r_warfarin
+  - name: f_ii
+    maps_to: systemsbiology_sbml_burghaus2014_simulating_blood_coagulation_factor_model1807180005_model.f_ii
+  - name: f_x
+    maps_to: systemsbiology_sbml_burghaus2014_simulating_blood_coagulation_factor_model1807180005_model.f_x
+  - name: protein_s
+    maps_to: systemsbiology_sbml_burghaus2014_simulating_blood_coagulation_factor_model1807180005_model.protein_s
+  - name: f_ix
+    maps_to: systemsbiology_sbml_burghaus2014_simulating_blood_coagulation_factor_model1807180005_model.f_ix

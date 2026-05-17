@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Pokhilko2010_CircClock
+description: 'This a model from the article: Data assimilation constrains new connections
+  and components in a complex, eukaryotic circadian clock model. Pokhilko A, Hodge
+  SK, Stratford K, Knox K, Edwards KD, Thomso.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Alexandra Pokhilko
+- Sarah K Hodge
+- Kevin Stratford
+- Kirsten Knox
+- Kieron D Edwards
+upstream:
+  id: biomodels_ebi:BIOMD0000000273
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000273
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000273
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000273?filename=BIOMD0000000273_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.pokhilko2010_circclock_biomd0000000273_model:Pokhilko2010CircclockBiomd0000000273Model
+  init_kwargs:
+    model_path: data/BIOMD0000000273.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_c_l_m
+    maps_to: cL_m
+    label: Initial C L M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cL_m`.
+  - name: initial_model_state_c_p
+    maps_to: cP
+    label: Initial Model State C P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cP`.
+  - name: initial_model_state_c_l
+    maps_to: cL
+    label: Initial Model State C L
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cL`.
+  - name: initial_model_state_c_t
+    maps_to: cT
+    label: Initial Model State C T
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cT`.
+  - name: initial_c_p9_m
+    maps_to: cP9_m
+    label: Initial C P9 M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cP9_m`.
+  - name: initial_c_ztl
+    maps_to: cZTL
+    label: Initial C Ztl
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cZTL`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: c_l_m
+    maps_to: cL_m
+    label: cL_m
+    description: cL_m. Maps to SBML symbol `cL_m`.
+  - name: c_p
+    maps_to: cP
+    label: cP
+    description: cP. Maps to SBML symbol `cP`.
+  - name: c_l
+    maps_to: cL
+    label: cL
+    description: cL. Maps to SBML symbol `cL`.
+  - name: c_t
+    maps_to: cT
+    label: cT
+    description: cT. Maps to SBML symbol `cT`.
+  - name: c_p9_m
+    maps_to: cP9_m
+    label: cP9_m
+    description: cP9_m. Maps to SBML symbol `cP9_m`.
+  - name: c_ztl
+    maps_to: cZTL
+    label: cZTL
+    description: cZTL. Maps to SBML symbol `cZTL`.

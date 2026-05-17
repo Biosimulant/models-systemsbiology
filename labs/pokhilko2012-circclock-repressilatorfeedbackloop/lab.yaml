@@ -1,0 +1,72 @@
+schema_version: '2.0'
+title: Pokhilko2012 Circclock Repressilatorfeedbackloop Lab
+description: 'This model is from the article: The clock gene circuit in Arabidopsis
+  includes a repressilator with additional feedback loops Pokhilko A, Fernández AP,
+  Edwards KD, Southern MM, Halliday KJ, Millar AJ. It can be used to explore systemsbiology
+  pokhilko2012 circclock repressilatorfeedbackloo BioModels0000000412 dynamics and
+  compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_pokhilko2012_circclock_repressilatorfeedbackloop_biomd0000000412_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_pokhilko2012_circclock_repressilatorfeedbackloop_biomd0000000412_model.state
+  to:
+  - visualisation.systemsbiology_sbml_pokhilko2012_circclock_repressilatorfeedbackloop_biomd0000000412_model_state
+- from: systemsbiology_sbml_pokhilko2012_circclock_repressilatorfeedbackloop_biomd0000000412_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_pokhilko2012_circclock_repressilatorfeedbackloop_biomd0000000412_model_summary
+- from: systemsbiology_sbml_pokhilko2012_circclock_repressilatorfeedbackloop_biomd0000000412_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_pokhilko2012_circclock_repressilatorfeedbackloop_biomd0000000412_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: light_amplitude
+    maps_to: systemsbiology_sbml_pokhilko2012_circclock_repressilatorfeedbackloop_biomd0000000412_model.light_amplitude
+    label: Light Amplitude
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `lightAmplitude`.
+  - name: light_offset
+    maps_to: systemsbiology_sbml_pokhilko2012_circclock_repressilatorfeedbackloop_biomd0000000412_model.light_offset
+    label: Light Offset
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `lightOffset`.
+  - name: twilight_period
+    maps_to: systemsbiology_sbml_pokhilko2012_circclock_repressilatorfeedbackloop_biomd0000000412_model.twilight_period
+    label: Twilight Period
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `twilightPeriod`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_pokhilko2012_circclock_repressilatorfeedbackloop_biomd0000000412_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_pokhilko2012_circclock_repressilatorfeedbackloop_biomd0000000412_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_pokhilko2012_circclock_repressilatorfeedbackloop_biomd0000000412_model.species_labels
+  - name: c_l_m
+    maps_to: systemsbiology_sbml_pokhilko2012_circclock_repressilatorfeedbackloop_biomd0000000412_model.c_l_m
+  - name: c_p
+    maps_to: systemsbiology_sbml_pokhilko2012_circclock_repressilatorfeedbackloop_biomd0000000412_model.c_p
+  - name: c_cop1n
+    maps_to: systemsbiology_sbml_pokhilko2012_circclock_repressilatorfeedbackloop_biomd0000000412_model.c_cop1n
+  - name: c_lux
+    maps_to: systemsbiology_sbml_pokhilko2012_circclock_repressilatorfeedbackloop_biomd0000000412_model.c_lux
+  - name: c_l
+    maps_to: systemsbiology_sbml_pokhilko2012_circclock_repressilatorfeedbackloop_biomd0000000412_model.c_l
+  - name: c_p7_m
+    maps_to: systemsbiology_sbml_pokhilko2012_circclock_repressilatorfeedbackloop_biomd0000000412_model.c_p7_m

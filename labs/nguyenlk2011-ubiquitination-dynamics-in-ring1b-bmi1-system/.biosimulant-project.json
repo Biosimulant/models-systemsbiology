@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "15e069f8-909a-4279-9b2c-669e23616f4f",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "7deba521-d19e-49fe-923a-163e6c136efa",
+  "created_at": "2026-05-16T05:46:48.863445030+00:00",
+  "last_synced_at": "2026-05-17T05:14:27.868276+00:00",
+  "hub_manifest_hash": "17bef20326ad244871562f98ab2afd7834ef6e8d737bde5ff57558f52b9d7683",
+  "package_name": "nguyenlk2011-ubiquitination-dynamics-in-ring1b-bmi1-system-lab"
+}

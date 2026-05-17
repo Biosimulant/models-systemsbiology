@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Sarai2003 Cardiacsanodepacemaker Lab
+description: 'This a model from the article: Role of individual ionic current systems
+  in the SA node hypothesized by a modelstudy. Sarai N, Matsuoka S, Kuratomi S, Ono
+  K, Noma A.'
+models:
+- alias: systemsbiology_sbml_sarai2003_cardiacsanodepacemaker_model1006230108_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_sarai2003_cardiacsanodepacemaker_model1006230108_model.state
+  to:
+  - visualisation.systemsbiology_sbml_sarai2003_cardiacsanodepacemaker_model1006230108_model_state
+- from: systemsbiology_sbml_sarai2003_cardiacsanodepacemaker_model1006230108_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_sarai2003_cardiacsanodepacemaker_model1006230108_model_summary
+- from: systemsbiology_sbml_sarai2003_cardiacsanodepacemaker_model1006230108_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_sarai2003_cardiacsanodepacemaker_model1006230108_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- cardiovascular
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_at_pi
+    maps_to: systemsbiology_sbml_sarai2003_cardiacsanodepacemaker_model1006230108_model.initial_at_pi
+    label: Initial At Pi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATPi`.
+  - name: initial_ca_total_internal_ion_concentrations
+    maps_to: systemsbiology_sbml_sarai2003_cardiacsanodepacemaker_model1006230108_model.initial_ca_total_internal_ion_concentrations
+    label: Initial Ca Total Internal Ion Concentrations
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_Total_internal_ion_concentrations`.
+  - name: initial_y3_st_channel_y3_gate
+    maps_to: systemsbiology_sbml_sarai2003_cardiacsanodepacemaker_model1006230108_model.initial_y3_st_channel_y3_gate
+    label: Initial Y3 St Channel Y3 Gate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `y3_st_channel_y3_gate`.
+  - name: initial_y2_st_channel_y2_gate
+    maps_to: systemsbiology_sbml_sarai2003_cardiacsanodepacemaker_model1006230108_model.initial_y2_st_channel_y2_gate
+    label: Initial Y2 St Channel Y2 Gate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `y2_st_channel_y2_gate`.
+  - name: initial_y1_st_channel_y1_gate
+    maps_to: systemsbiology_sbml_sarai2003_cardiacsanodepacemaker_model1006230108_model.initial_y1_st_channel_y1_gate
+    label: Initial Y1 St Channel Y1 Gate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `y1_st_channel_y1_gate`.
+  - name: initial_y_sr_calcium_pump_y_gate
+    maps_to: systemsbiology_sbml_sarai2003_cardiacsanodepacemaker_model1006230108_model.initial_y_sr_calcium_pump_y_gate
+    label: Initial Y Sr Calcium Pump Y Gate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `y_SR_calcium_pump_y_gate`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_sarai2003_cardiacsanodepacemaker_model1006230108_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_sarai2003_cardiacsanodepacemaker_model1006230108_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_sarai2003_cardiacsanodepacemaker_model1006230108_model.species_labels
+  - name: at_pi
+    maps_to: systemsbiology_sbml_sarai2003_cardiacsanodepacemaker_model1006230108_model.at_pi
+  - name: ca_total_internal_ion_concentrations
+    maps_to: systemsbiology_sbml_sarai2003_cardiacsanodepacemaker_model1006230108_model.ca_total_internal_ion_concentrations
+  - name: y3_st_channel_y3_gate
+    maps_to: systemsbiology_sbml_sarai2003_cardiacsanodepacemaker_model1006230108_model.y3_st_channel_y3_gate
+  - name: y2_st_channel_y2_gate
+    maps_to: systemsbiology_sbml_sarai2003_cardiacsanodepacemaker_model1006230108_model.y2_st_channel_y2_gate
+  - name: y1_st_channel_y1_gate
+    maps_to: systemsbiology_sbml_sarai2003_cardiacsanodepacemaker_model1006230108_model.y1_st_channel_y1_gate
+  - name: y_sr_calcium_pump_y_gate
+    maps_to: systemsbiology_sbml_sarai2003_cardiacsanodepacemaker_model1006230108_model.y_sr_calcium_pump_y_gate

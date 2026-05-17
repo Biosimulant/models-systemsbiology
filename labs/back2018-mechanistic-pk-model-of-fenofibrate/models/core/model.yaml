@@ -1,0 +1,99 @@
+schema_version: '2.0'
+title: Back2018 - Mechanistic PK model of Fenofibrate
+description: A mechanistic GI absorption model for quantitatively evaluating the effects
+  of food on fenofibrate absorption was successfully developed, and acceptable parameters
+  were obtained. It can be used to explore systemsbiology back2018 mechanistic pk
+  of fenofibrate dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Hyun-Moon Back
+- Byungjeong Song
+- Sudeep Pradhan
+- Jung-Woo Chae
+- Nayoung Han
+upstream:
+  id: biomodels_ebi:MODEL2003030002
+  source_db: biomodels_ebi
+  source_id: MODEL2003030002
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2003030002
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2003030002?filename=Back2018_final.xml
+  license: CC0
+biosim:
+  entrypoint: src.back2018_mechanistic_pk_model_of_fenofibrate_model2003030002_model:Back2018MechanisticPkModelOfFenofibrateModel2003030002Model
+  init_kwargs:
+    model_path: data/MODEL2003030002.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_x1
+    maps_to: X1
+    label: Initial Model State X1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X1`.
+  - name: initial_model_state_x3
+    maps_to: X3
+    label: Initial Model State X3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X3`.
+  - name: initial_model_state_x2
+    maps_to: X2
+    label: Initial Model State X2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X2`.
+  - name: initial_model_state_x5
+    maps_to: X5
+    label: Initial Model State X5
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X5`.
+  - name: initial_model_state_x4
+    maps_to: X4
+    label: Initial Model State X4
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X4`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_x1
+    maps_to: X1
+    label: X1
+    description: X1. Maps to SBML symbol `X1`.
+  - name: model_state_x3
+    maps_to: X3
+    label: X3
+    description: X3. Maps to SBML symbol `X3`.
+  - name: model_state_x2
+    maps_to: X2
+    label: X2
+    description: X2. Maps to SBML symbol `X2`.
+  - name: model_state_x5
+    maps_to: X5
+    label: X5
+    description: X5. Maps to SBML symbol `X5`.
+  - name: model_state_x4
+    maps_to: X4
+    label: X4
+    description: X4. Maps to SBML symbol `X4`.

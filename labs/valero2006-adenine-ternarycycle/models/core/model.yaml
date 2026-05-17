@@ -1,0 +1,105 @@
+schema_version: '2.0'
+title: Valero2006_Adenine_TernaryCycle
+description: 'This a model from the article: A kinetic study of a ternary cycle between
+  adenine nucleotides. Valero E, Varón R, García-Carmona F FEBS J.'
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Edelmira Valero
+- Ramón Varón
+- Francisco García-Carmona
+upstream:
+  id: biomodels_ebi:BIOMD0000000231
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000231
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000231
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000231?filename=BIOMD0000000231_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.valero2006_adenine_ternarycycle_biomd0000000231_model:Valero2006AdenineTernarycycleBiomd0000000231Model
+  init_kwargs:
+    model_path: data/BIOMD0000000231.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_nadh
+    maps_to: NADH
+    label: Initial Nadh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NADH`.
+  - name: initial_model_state_atp
+    maps_to: ATP
+    label: Initial Model State ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATP`.
+  - name: initial_model_state_adp
+    maps_to: ADP
+    label: Initial Model State ADP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ADP`.
+  - name: initial_model_state_pyr
+    maps_to: Pyr
+    label: Initial Model State Pyr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pyr`.
+  - name: initial_model_state_lac
+    maps_to: Lac
+    label: Initial Model State Lac
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Lac`.
+  - name: initial_model_state_amp
+    maps_to: AMP
+    label: Initial Model State AMP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `AMP`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: nadh
+    maps_to: NADH
+    label: NADH
+    description: NADH. Maps to SBML symbol `NADH`.
+  - name: atp
+    maps_to: ATP
+    label: ATP
+    description: ATP. Maps to SBML symbol `ATP`.
+  - name: adp
+    maps_to: ADP
+    label: ADP
+    description: ADP. Maps to SBML symbol `ADP`.
+  - name: pyr
+    maps_to: Pyr
+    label: Pyr
+    description: Pyr. Maps to SBML symbol `Pyr`.
+  - name: lac
+    maps_to: Lac
+    label: Lac
+    description: Lac. Maps to SBML symbol `Lac`.
+  - name: amp
+    maps_to: AMP
+    label: AMP
+    description: AMP. Maps to SBML symbol `AMP`.

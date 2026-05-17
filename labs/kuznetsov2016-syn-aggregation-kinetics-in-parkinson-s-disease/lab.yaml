@@ -1,0 +1,74 @@
+schema_version: '2.0'
+title: Kuznetsov2016 Syn Aggregation Kinetics In Parkinson S Disease Lab
+description: Kuznetsov2016(II) - α-syn aggregationkinetics in Parkinson's This theoretical
+  model uses 2-step Finke-Watzky (FW) kineticstodescribe the production, misfolding,
+  aggregation, transport anddegradation o. It can be used to explore systemsbiology
+  kuznetsov2016 ii syn aggregation kinetics dynamics and compare simulation behavior
+  across conditions.
+models:
+- alias: systemsbiology_sbml_kuznetsov2016_ii_syn_aggregation_kinetics_in_par_biomd0000000615_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_kuznetsov2016_ii_syn_aggregation_kinetics_in_par_biomd0000000615_model.state
+  to:
+  - visualisation.systemsbiology_sbml_kuznetsov2016_ii_syn_aggregation_kinetics_in_par_biomd0000000615_model_state
+- from: systemsbiology_sbml_kuznetsov2016_ii_syn_aggregation_kinetics_in_par_biomd0000000615_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_kuznetsov2016_ii_syn_aggregation_kinetics_in_par_biomd0000000615_model_summary
+- from: systemsbiology_sbml_kuznetsov2016_ii_syn_aggregation_kinetics_in_par_biomd0000000615_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_kuznetsov2016_ii_syn_aggregation_kinetics_in_par_biomd0000000615_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- neuroscience
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_as_value
+    maps_to: systemsbiology_sbml_kuznetsov2016_ii_syn_aggregation_kinetics_in_par_biomd0000000615_model.initial_as_value
+    label: Initial As Value
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `As`.
+  - name: initial_bsyn
+    maps_to: systemsbiology_sbml_kuznetsov2016_ii_syn_aggregation_kinetics_in_par_biomd0000000615_model.initial_bsyn
+    label: Initial Bsyn
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Bsyn`.
+  - name: initial_model_state_bs
+    maps_to: systemsbiology_sbml_kuznetsov2016_ii_syn_aggregation_kinetics_in_par_biomd0000000615_model.initial_model_state_bs
+    label: Initial Model State Bs
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Bs`.
+  - name: initial_asyn
+    maps_to: systemsbiology_sbml_kuznetsov2016_ii_syn_aggregation_kinetics_in_par_biomd0000000615_model.initial_asyn
+    label: Initial Asyn
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Asyn`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_kuznetsov2016_ii_syn_aggregation_kinetics_in_par_biomd0000000615_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_kuznetsov2016_ii_syn_aggregation_kinetics_in_par_biomd0000000615_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_kuznetsov2016_ii_syn_aggregation_kinetics_in_par_biomd0000000615_model.species_labels
+  - name: as_value
+    maps_to: systemsbiology_sbml_kuznetsov2016_ii_syn_aggregation_kinetics_in_par_biomd0000000615_model.as_value
+  - name: bsyn
+    maps_to: systemsbiology_sbml_kuznetsov2016_ii_syn_aggregation_kinetics_in_par_biomd0000000615_model.bsyn
+  - name: model_state_bs
+    maps_to: systemsbiology_sbml_kuznetsov2016_ii_syn_aggregation_kinetics_in_par_biomd0000000615_model.model_state_bs
+  - name: asyn
+    maps_to: systemsbiology_sbml_kuznetsov2016_ii_syn_aggregation_kinetics_in_par_biomd0000000615_model.asyn

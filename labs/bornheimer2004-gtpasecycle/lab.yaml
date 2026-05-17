@@ -1,0 +1,90 @@
+schema_version: '2.0'
+title: Bornheimer2004 Gtpasecycle Lab
+description: This model is according to the paper Computational modeling reveals how
+  interplay between components of a GTPase-cycle module regulates signal transduction
+  by Bornheimer et al 2004.The figure 3 is rep. It can be used to explore systemsbiology
+  bornheimer2004 gtpasecycle BioModels0000000086 dynamics and compare simulation behavior
+  across conditions.
+models:
+- alias: systemsbiology_sbml_bornheimer2004_gtpasecycle_biomd0000000086_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_bornheimer2004_gtpasecycle_biomd0000000086_model.state
+  to:
+  - visualisation.systemsbiology_sbml_bornheimer2004_gtpasecycle_biomd0000000086_model_state
+- from: systemsbiology_sbml_bornheimer2004_gtpasecycle_biomd0000000086_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_bornheimer2004_gtpasecycle_biomd0000000086_model_summary
+- from: systemsbiology_sbml_bornheimer2004_gtpasecycle_biomd0000000086_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_bornheimer2004_gtpasecycle_biomd0000000086_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_pi
+    maps_to: systemsbiology_sbml_bornheimer2004_gtpasecycle_biomd0000000086_model.initial_model_state_pi
+    label: Initial Model State Pi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_7`.
+  - name: initial_model_state_t
+    maps_to: systemsbiology_sbml_bornheimer2004_gtpasecycle_biomd0000000086_model.initial_model_state_t
+    label: Initial Model State T
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_3`.
+  - name: initial_model_state_d
+    maps_to: systemsbiology_sbml_bornheimer2004_gtpasecycle_biomd0000000086_model.initial_model_state_d
+    label: Initial Model State D
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_8`.
+  - name: initial_model_state_r
+    maps_to: systemsbiology_sbml_bornheimer2004_gtpasecycle_biomd0000000086_model.initial_model_state_r
+    label: Initial Model State R
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_4`.
+  - name: initial_model_state_g
+    maps_to: systemsbiology_sbml_bornheimer2004_gtpasecycle_biomd0000000086_model.initial_model_state_g
+    label: Initial Model State G
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_1`.
+  - name: initial_model_state_rgd
+    maps_to: systemsbiology_sbml_bornheimer2004_gtpasecycle_biomd0000000086_model.initial_model_state_rgd
+    label: Initial Model State Rgd
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_13`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_bornheimer2004_gtpasecycle_biomd0000000086_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_bornheimer2004_gtpasecycle_biomd0000000086_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_bornheimer2004_gtpasecycle_biomd0000000086_model.species_labels
+  - name: model_state_pi
+    maps_to: systemsbiology_sbml_bornheimer2004_gtpasecycle_biomd0000000086_model.model_state_pi
+  - name: model_state_t
+    maps_to: systemsbiology_sbml_bornheimer2004_gtpasecycle_biomd0000000086_model.model_state_t
+  - name: model_state_d
+    maps_to: systemsbiology_sbml_bornheimer2004_gtpasecycle_biomd0000000086_model.model_state_d
+  - name: model_state_r
+    maps_to: systemsbiology_sbml_bornheimer2004_gtpasecycle_biomd0000000086_model.model_state_r
+  - name: model_state_g
+    maps_to: systemsbiology_sbml_bornheimer2004_gtpasecycle_biomd0000000086_model.model_state_g
+  - name: rgd
+    maps_to: systemsbiology_sbml_bornheimer2004_gtpasecycle_biomd0000000086_model.rgd

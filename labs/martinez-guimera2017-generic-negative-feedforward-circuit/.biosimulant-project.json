@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "380ede49-8c3e-4812-a4fc-a7197d4b9962",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "a3fe6ce8-7de3-4387-a898-8bc3b74b1546",
+  "created_at": "2026-05-16T05:46:46.624840384+00:00",
+  "last_synced_at": "2026-05-17T04:49:20.298809+00:00",
+  "hub_manifest_hash": "41820170a736f6c252edeecbcf6f675c5ec5262aaaad4372792804fd48b9ff15",
+  "package_name": "martinez-guimera2017-generic-negative-feedforward-circuit-lab"
+}

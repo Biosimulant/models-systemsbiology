@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Holzhutter2004 Erythrocyte Metabolism Lab
+description: . It can be used to explore systemsbiology holzhutter2004 erythrocyte
+  metabolism BioModels0000000070 dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_holzhutter2004_erythrocyte_metabolism_biomd0000000070_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_holzhutter2004_erythrocyte_metabolism_biomd0000000070_model.state
+  to:
+  - visualisation.systemsbiology_sbml_holzhutter2004_erythrocyte_metabolism_biomd0000000070_model_state
+- from: systemsbiology_sbml_holzhutter2004_erythrocyte_metabolism_biomd0000000070_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_holzhutter2004_erythrocyte_metabolism_biomd0000000070_model_summary
+- from: systemsbiology_sbml_holzhutter2004_erythrocyte_metabolism_biomd0000000070_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_holzhutter2004_erythrocyte_metabolism_biomd0000000070_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_external_lactate
+    maps_to: systemsbiology_sbml_holzhutter2004_erythrocyte_metabolism_biomd0000000070_model.initial_external_lactate
+    label: Initial External Lactate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Lacex`.
+  - name: initial_phosphate_external
+    maps_to: systemsbiology_sbml_holzhutter2004_erythrocyte_metabolism_biomd0000000070_model.initial_phosphate_external
+    label: Initial Phosphate External
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Phiex`.
+  - name: initial_external_pyruvate
+    maps_to: systemsbiology_sbml_holzhutter2004_erythrocyte_metabolism_biomd0000000070_model.initial_external_pyruvate
+    label: Initial External Pyruvate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pyrex`.
+  - name: initial_protein2_bound_nadph
+    maps_to: systemsbiology_sbml_holzhutter2004_erythrocyte_metabolism_biomd0000000070_model.initial_protein2_bound_nadph
+    label: Initial Protein2 Bound Nadph
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P2NADPH`.
+  - name: initial_protein1_bound_nadph
+    maps_to: systemsbiology_sbml_holzhutter2004_erythrocyte_metabolism_biomd0000000070_model.initial_protein1_bound_nadph
+    label: Initial Protein1 Bound Nadph
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P1NADPH`.
+  - name: initial_protein2_bound_nadp
+    maps_to: systemsbiology_sbml_holzhutter2004_erythrocyte_metabolism_biomd0000000070_model.initial_protein2_bound_nadp
+    label: Initial Protein2 Bound Nadp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P2NADP`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_holzhutter2004_erythrocyte_metabolism_biomd0000000070_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_holzhutter2004_erythrocyte_metabolism_biomd0000000070_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_holzhutter2004_erythrocyte_metabolism_biomd0000000070_model.species_labels
+  - name: external_lactate
+    maps_to: systemsbiology_sbml_holzhutter2004_erythrocyte_metabolism_biomd0000000070_model.external_lactate
+  - name: phosphate_external
+    maps_to: systemsbiology_sbml_holzhutter2004_erythrocyte_metabolism_biomd0000000070_model.phosphate_external
+  - name: external_pyruvate
+    maps_to: systemsbiology_sbml_holzhutter2004_erythrocyte_metabolism_biomd0000000070_model.external_pyruvate
+  - name: protein2_bound_nadph
+    maps_to: systemsbiology_sbml_holzhutter2004_erythrocyte_metabolism_biomd0000000070_model.protein2_bound_nadph
+  - name: protein1_bound_nadph
+    maps_to: systemsbiology_sbml_holzhutter2004_erythrocyte_metabolism_biomd0000000070_model.protein1_bound_nadph
+  - name: protein2_bound_nadp
+    maps_to: systemsbiology_sbml_holzhutter2004_erythrocyte_metabolism_biomd0000000070_model.protein2_bound_nadp

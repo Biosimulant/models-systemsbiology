@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "f3cf57e6-f385-484b-9dcb-158f76ed1456",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "c28fa4ae-53fc-46ee-963d-cba67e16193e",
+  "created_at": "2026-05-16T05:46:40.595857191+00:00",
+  "last_synced_at": "2026-05-17T01:31:03.497420+00:00",
+  "hub_manifest_hash": "b5a69b86a3f3cf86cdd83ec1c4394ed152cc0e89c88ee0c9b0debb4cb7ee6347",
+  "package_name": "abu-soud1999-homoarginine-lab"
+}

@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Nag2011_ChloroplasticStarchDegradation
+description: 'This model is from the article: Kinetic modeling and exploratory numerical
+  simulation of chloroplastic starch degradation. Nag A, Lunacek M, Graf PA, Chang
+  CH.'
+standard: other
+tags:
+- cellcycle
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Ambarish Nag
+- Monte Lunacek
+- Peter A Graf
+- Christopher H Chang
+upstream:
+  id: biomodels_ebi:BIOMD0000000353
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000353
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000353
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000353?filename=BIOMD0000000353_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.nag2011_chloroplasticstarchdegradation_biomd0000000353_model:Nag2011ChloroplasticstarchdegradationBiomd0000000353Model
+  init_kwargs:
+    model_path: data/BIOMD0000000353.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_atp_pool
+    maps_to: cpd_C00002tot_CY
+    label: Initial ATP Pool
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cpd_C00002tot_CY`.
+  - name: initial_adp_pool
+    maps_to: cpd_C00008tot_CY
+    label: Initial ADP Pool
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cpd_C00008tot_CY`.
+  - name: initial_d_glucose_1_6_bisphosphate_pool
+    maps_to: cpd_C00660tot_CY
+    label: Initial D Glucose 1 6 Bisphosphate Pool
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cpd_C00660tot_CY`.
+  - name: initial_d_glucose
+    maps_to: cpd_C00031_CY
+    label: Initial D Glucose
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cpd_C00031_CY`.
+  - name: initial_d_glucose_2
+    maps_to: cpd_C00031_CS
+    label: Initial D Glucose 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cpd_C00031_CS`.
+  - name: initial_glucose_transporter_p_glc_t
+    maps_to: tc_2_A_1_1_17_CIMS
+    label: Initial Glucose Transporter P Glc T
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `tc_2_A_1_1_17_CIMS`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: atp_pool
+    maps_to: cpd_C00002tot_CY
+    label: ATP pool
+    description: ATP pool. Maps to SBML symbol `cpd_C00002tot_CY`.
+  - name: adp_pool
+    maps_to: cpd_C00008tot_CY
+    label: ADP pool
+    description: ADP pool. Maps to SBML symbol `cpd_C00008tot_CY`.
+  - name: d_glucose_1_6_bisphosphate_pool
+    maps_to: cpd_C00660tot_CY
+    label: (D)-Glucose-1,6-bisphosphate pool
+    description: (D)-Glucose-1,6-bisphosphate pool. Maps to SBML symbol `cpd_C00660tot_CY`.
+  - name: d_glucose
+    maps_to: cpd_C00031_CY
+    label: (D)-Glucose
+    description: (D)-Glucose. Maps to SBML symbol `cpd_C00031_CY`.
+  - name: d_glucose_2
+    maps_to: cpd_C00031_CS
+    label: (D)-Glucose
+    description: (D)-Glucose. Maps to SBML symbol `cpd_C00031_CS`.
+  - name: glucose_transporter_p_glc_t
+    maps_to: tc_2_A_1_1_17_CIMS
+    label: Glucose transporter (pGlcT)
+    description: Glucose transporter (pGlcT). Maps to SBML symbol `tc_2_A_1_1_17_CIMS`.

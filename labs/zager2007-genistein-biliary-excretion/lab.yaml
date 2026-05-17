@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Zager2007 Genistein Biliary Excretion Lab
+description: 'This the model from the article without the time delays: A Delayed Nonlinear
+  PBPK Model for Genistein Dosimetry in Rats. It can be used to explore systemsbiology
+  zager2007 genistein biliary excretion model6963432821 dynamics and compare simulation
+  behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_zager2007_genistein_biliary_excretion_model6963432821_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_zager2007_genistein_biliary_excretion_model6963432821_model.state
+  to:
+  - visualisation.systemsbiology_sbml_zager2007_genistein_biliary_excretion_model6963432821_model_state
+- from: systemsbiology_sbml_zager2007_genistein_biliary_excretion_model6963432821_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_zager2007_genistein_biliary_excretion_model6963432821_model_summary
+- from: systemsbiology_sbml_zager2007_genistein_biliary_excretion_model6963432821_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_zager2007_genistein_biliary_excretion_model6963432821_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_cgen_rp
+    maps_to: systemsbiology_sbml_zager2007_genistein_biliary_excretion_model6963432821_model.initial_cgen_rp
+    label: Initial Cgen Rp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Cgen_rp`.
+  - name: initial_cgen_pp
+    maps_to: systemsbiology_sbml_zager2007_genistein_biliary_excretion_model6963432821_model.initial_cgen_pp
+    label: Initial Cgen Pp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Cgen_pp`.
+  - name: initial_cgen_l
+    maps_to: systemsbiology_sbml_zager2007_genistein_biliary_excretion_model6963432821_model.initial_cgen_l
+    label: Initial Cgen L
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Cgen_l`.
+  - name: initial_cgen_gi
+    maps_to: systemsbiology_sbml_zager2007_genistein_biliary_excretion_model6963432821_model.initial_cgen_gi
+    label: Initial Cgen Gi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Cgen_GI`.
+  - name: initial_ccon_rob
+    maps_to: systemsbiology_sbml_zager2007_genistein_biliary_excretion_model6963432821_model.initial_ccon_rob
+    label: Initial Ccon Rob
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ccon_ROB`.
+  - name: initial_ccon_l
+    maps_to: systemsbiology_sbml_zager2007_genistein_biliary_excretion_model6963432821_model.initial_ccon_l
+    label: Initial Ccon L
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ccon_l`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_zager2007_genistein_biliary_excretion_model6963432821_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_zager2007_genistein_biliary_excretion_model6963432821_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_zager2007_genistein_biliary_excretion_model6963432821_model.species_labels
+  - name: cgen_rp
+    maps_to: systemsbiology_sbml_zager2007_genistein_biliary_excretion_model6963432821_model.cgen_rp
+  - name: cgen_pp
+    maps_to: systemsbiology_sbml_zager2007_genistein_biliary_excretion_model6963432821_model.cgen_pp
+  - name: cgen_l
+    maps_to: systemsbiology_sbml_zager2007_genistein_biliary_excretion_model6963432821_model.cgen_l
+  - name: cgen_gi
+    maps_to: systemsbiology_sbml_zager2007_genistein_biliary_excretion_model6963432821_model.cgen_gi
+  - name: ccon_rob
+    maps_to: systemsbiology_sbml_zager2007_genistein_biliary_excretion_model6963432821_model.ccon_rob
+  - name: ccon_l
+    maps_to: systemsbiology_sbml_zager2007_genistein_biliary_excretion_model6963432821_model.ccon_l

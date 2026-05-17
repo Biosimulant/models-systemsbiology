@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "8c9a10c0-b2f6-4171-9608-78a67446e67a",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "fc826f6a-fd06-4c3f-b95d-76f69968c96e",
+  "created_at": "2026-05-16T05:46:51.947261285+00:00",
+  "last_synced_at": "2026-05-17T06:13:50.828357+00:00",
+  "hub_manifest_hash": "6b3d965e2341109f5a6215566100f90fd268552fe53d5d884b153944cd0882ec",
+  "package_name": "smallbone2011-trehalosebiosynthesis-lab"
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "97ddc229-c91a-40fb-8b5b-9a68c029f689",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "3eae368b-87a8-4347-973c-769c5df9ee50",
+  "created_at": "2026-05-16T05:46:44.486691363+00:00",
+  "last_synced_at": "2026-05-17T04:00:16.883394+00:00",
+  "hub_manifest_hash": "986530b526e1efadeb5eacf06082e771b157b40e9f3bf5c4850427a4589ab466",
+  "package_name": "keating2019-minimal-model-demonstrating-sbml-level-3-packages-la"
+}

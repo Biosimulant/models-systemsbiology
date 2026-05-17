@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "0a9ca1bb-4f21-4cc4-af7c-c2efadbbae90",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "cd22d2d3-dca4-402a-97b0-b5b3062422e6",
+  "created_at": "2026-05-16T05:46:43.288654186+00:00",
+  "last_synced_at": "2026-05-17T03:10:37.174101+00:00",
+  "hub_manifest_hash": "cc116dbfc9ea02c38d09e3b1a07ca739dc4d40177b9869655a2e1b5338568e35",
+  "package_name": "fisher2006-nfat-activation-lab"
+}

@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Best2009 Homeostatic Mechanisms In Dopamine Synthesis And Release Lab
+description: 'Best2009 - Homeostatic mechanisms in dopaminesynthesis and release Encoded
+  non-curated model. Issues: - Initial concentrations for hva, tyrpool, NADPH and
+  NADP are missing - Reaction VMAT requires two.'
+models:
+- alias: systemsbiology_sbml_best2009_homeostatic_mechanisms_in_dopamine_synt_model1502230000_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_best2009_homeostatic_mechanisms_in_dopamine_synt_model1502230000_model.state
+  to:
+  - visualisation.systemsbiology_sbml_best2009_homeostatic_mechanisms_in_dopamine_synt_model1502230000_model_state
+- from: systemsbiology_sbml_best2009_homeostatic_mechanisms_in_dopamine_synt_model1502230000_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_best2009_homeostatic_mechanisms_in_dopamine_synt_model1502230000_model_summary
+- from: systemsbiology_sbml_best2009_homeostatic_mechanisms_in_dopamine_synt_model1502230000_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_best2009_homeostatic_mechanisms_in_dopamine_synt_model1502230000_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- neuroscience
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_tyrpool
+    maps_to: systemsbiology_sbml_best2009_homeostatic_mechanisms_in_dopamine_synt_model1502230000_model.initial_tyrpool
+    label: Initial Tyrpool
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `tyrpool`.
+  - name: initial_model_state_bh4
+    maps_to: systemsbiology_sbml_best2009_homeostatic_mechanisms_in_dopamine_synt_model1502230000_model.initial_model_state_bh4
+    label: Initial Model State BH4
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `bh4`.
+  - name: initial_model_state_tyr
+    maps_to: systemsbiology_sbml_best2009_homeostatic_mechanisms_in_dopamine_synt_model1502230000_model.initial_model_state_tyr
+    label: Initial Model State Tyr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `tyr`.
+  - name: initial_btyr
+    maps_to: systemsbiology_sbml_best2009_homeostatic_mechanisms_in_dopamine_synt_model1502230000_model.initial_btyr
+    label: Initial Btyr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `btyr`.
+  - name: initial_model_state_vda
+    maps_to: systemsbiology_sbml_best2009_homeostatic_mechanisms_in_dopamine_synt_model1502230000_model.initial_model_state_vda
+    label: Initial Model State Vda
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `vda`.
+  - name: initial_model_state_bh2
+    maps_to: systemsbiology_sbml_best2009_homeostatic_mechanisms_in_dopamine_synt_model1502230000_model.initial_model_state_bh2
+    label: Initial Model State BH2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `bh2`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_best2009_homeostatic_mechanisms_in_dopamine_synt_model1502230000_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_best2009_homeostatic_mechanisms_in_dopamine_synt_model1502230000_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_best2009_homeostatic_mechanisms_in_dopamine_synt_model1502230000_model.species_labels
+  - name: tyrpool
+    maps_to: systemsbiology_sbml_best2009_homeostatic_mechanisms_in_dopamine_synt_model1502230000_model.tyrpool
+  - name: bh4
+    maps_to: systemsbiology_sbml_best2009_homeostatic_mechanisms_in_dopamine_synt_model1502230000_model.bh4
+  - name: tyr
+    maps_to: systemsbiology_sbml_best2009_homeostatic_mechanisms_in_dopamine_synt_model1502230000_model.tyr
+  - name: btyr
+    maps_to: systemsbiology_sbml_best2009_homeostatic_mechanisms_in_dopamine_synt_model1502230000_model.btyr
+  - name: vda
+    maps_to: systemsbiology_sbml_best2009_homeostatic_mechanisms_in_dopamine_synt_model1502230000_model.vda
+  - name: bh2
+    maps_to: systemsbiology_sbml_best2009_homeostatic_mechanisms_in_dopamine_synt_model1502230000_model.bh2

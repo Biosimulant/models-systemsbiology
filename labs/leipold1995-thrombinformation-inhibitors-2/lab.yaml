@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Leipold1995 Thrombinformation Inhibitors 2 Lab
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models (http://www.ebi.ac.uk/biomodels/). It is copyright (c) 2005-2011
+  The BioModels.net Team.'
+models:
+- alias: systemsbiology_sbml_leipold1995_thrombinformation_inhibitors_model1109150002_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_leipold1995_thrombinformation_inhibitors_model1109150002_model.state
+  to:
+  - visualisation.systemsbiology_sbml_leipold1995_thrombinformation_inhibitors_model1109150002_model_state
+- from: systemsbiology_sbml_leipold1995_thrombinformation_inhibitors_model1109150002_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_leipold1995_thrombinformation_inhibitors_model1109150002_model_summary
+- from: systemsbiology_sbml_leipold1995_thrombinformation_inhibitors_model1109150002_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_leipold1995_thrombinformation_inhibitors_model1109150002_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_ii
+    maps_to: systemsbiology_sbml_leipold1995_thrombinformation_inhibitors_model1109150002_model.initial_model_state_ii
+    label: Initial Model State Ii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_24`.
+  - name: initial_model_state_x
+    maps_to: systemsbiology_sbml_leipold1995_thrombinformation_inhibitors_model1109150002_model.initial_model_state_x
+    label: Initial Model State X
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_6`.
+  - name: initial_model_state_ix
+    maps_to: systemsbiology_sbml_leipold1995_thrombinformation_inhibitors_model1109150002_model.initial_model_state_ix
+    label: Initial Model State Ix
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_1`.
+  - name: initial_model_state_v
+    maps_to: systemsbiology_sbml_leipold1995_thrombinformation_inhibitors_model1109150002_model.initial_model_state_v
+    label: Initial Model State V
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_19`.
+  - name: initial_model_state_i
+    maps_to: systemsbiology_sbml_leipold1995_thrombinformation_inhibitors_model1109150002_model.initial_model_state_i
+    label: Initial Model State I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_34`.
+  - name: initial_viii
+    maps_to: systemsbiology_sbml_leipold1995_thrombinformation_inhibitors_model1109150002_model.initial_viii
+    label: Initial Viii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_8`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_leipold1995_thrombinformation_inhibitors_model1109150002_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_leipold1995_thrombinformation_inhibitors_model1109150002_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_leipold1995_thrombinformation_inhibitors_model1109150002_model.species_labels
+  - name: model_state_ii
+    maps_to: systemsbiology_sbml_leipold1995_thrombinformation_inhibitors_model1109150002_model.model_state_ii
+  - name: model_state_x
+    maps_to: systemsbiology_sbml_leipold1995_thrombinformation_inhibitors_model1109150002_model.model_state_x
+  - name: model_state_ix
+    maps_to: systemsbiology_sbml_leipold1995_thrombinformation_inhibitors_model1109150002_model.model_state_ix
+  - name: model_state_v
+    maps_to: systemsbiology_sbml_leipold1995_thrombinformation_inhibitors_model1109150002_model.model_state_v
+  - name: model_state_i
+    maps_to: systemsbiology_sbml_leipold1995_thrombinformation_inhibitors_model1109150002_model.model_state_i
+  - name: viii
+    maps_to: systemsbiology_sbml_leipold1995_thrombinformation_inhibitors_model1109150002_model.viii

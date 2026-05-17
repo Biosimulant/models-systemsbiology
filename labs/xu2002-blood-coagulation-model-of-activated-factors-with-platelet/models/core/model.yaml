@@ -1,0 +1,105 @@
+schema_version: '2.0'
+title: Xu2002 - Blood Coagulation Model of Activated Factors with Platelet Activation
+description: System of ODEs to describe the dynamics of several activated factors
+  of blood coagulation. Publication introduces a platelet activation term for synthesis
+  of Xa and IIa.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- C Q Xu
+- Yan Jun Zeng
+- Hans Gregersen
+upstream:
+  id: biomodels_ebi:MODEL1806130001
+  source_db: biomodels_ebi
+  source_id: MODEL1806130001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1806130001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1806130001?filename=Xu2002.xml
+  license: CC0
+biosim:
+  entrypoint: src.xu2002_blood_coagulation_model_of_activated_fact_model1806130001_model:Xu2002BloodCoagulationModelOfActivatedFactModel1806130001Model
+  init_kwargs:
+    model_path: data/MODEL1806130001.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_x5
+    maps_to: x5
+    label: Initial Model State X5
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x5`.
+  - name: initial_model_state_x4
+    maps_to: x4
+    label: Initial Model State X4
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x4`.
+  - name: initial_model_state_x2
+    maps_to: x2
+    label: Initial Model State X2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x2`.
+  - name: initial_model_state_x6
+    maps_to: x6
+    label: Initial Model State X6
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x6`.
+  - name: initial_model_state_x3
+    maps_to: x3
+    label: Initial Model State X3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x3`.
+  - name: initial_model_state_x1
+    maps_to: x1
+    label: Initial Model State X1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x1`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_x5
+    maps_to: x5
+    label: x5
+    description: x5. Maps to SBML symbol `x5`.
+  - name: model_state_x4
+    maps_to: x4
+    label: x4
+    description: x4. Maps to SBML symbol `x4`.
+  - name: model_state_x2
+    maps_to: x2
+    label: x2
+    description: x2. Maps to SBML symbol `x2`.
+  - name: model_state_x6
+    maps_to: x6
+    label: x6
+    description: x6. Maps to SBML symbol `x6`.
+  - name: model_state_x3
+    maps_to: x3
+    label: x3
+    description: x3. Maps to SBML symbol `x3`.
+  - name: model_state_x1
+    maps_to: x1
+    label: x1
+    description: x1. Maps to SBML symbol `x1`.

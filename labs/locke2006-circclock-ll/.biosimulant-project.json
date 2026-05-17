@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "09f82239-82de-47ac-b1d8-72219b3f49d6",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "0e0f5a30-dd15-4191-aba0-85910a492991",
+  "created_at": "2026-05-16T05:46:45.916225243+00:00",
+  "last_synced_at": "2026-05-17T04:38:11.050734+00:00",
+  "hub_manifest_hash": "9bafc9d3e49aaa6fe37447f458889f51e88d0b28eb477c71fb9025a19b78d577",
+  "package_name": "locke2006-circclock-ll-lab"
+}

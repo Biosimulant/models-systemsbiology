@@ -1,0 +1,96 @@
+schema_version: '2.0'
+title: Gall1999_CalciumBursting_BetaCellModel_B
+description: 'This a model from the article: Effect of Na/Ca exchange on plateau fraction
+  and [Ca]i in models for bursting in pancreatic beta-cells. It can be used to explore
+  systemsbiology gall1999 calciumbursting betacellmodel b model1201070001 dynamics
+  and compare simulation behavior across conditions.'
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- D Gall
+- I Susa
+upstream:
+  id: biomodels_ebi:MODEL1201070001
+  source_db: biomodels_ebi
+  source_id: MODEL1201070001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1201070001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1201070001?filename=MODEL1201070001_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.gall1999_calciumbursting_betacellmodel_b_model1201070001_model:Gall1999CalciumburstingBetacellmodelBModel1201070001Model
+  init_kwargs:
+    model_path: data/MODEL1201070001.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_v_membrane
+    maps_to: V_membrane
+    label: Initial V Membrane
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `V_membrane`.
+  - name: initial_ca_ret
+    maps_to: Ca_ret
+    label: Initial Ca Ret
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_ret`.
+  - name: initial_ca_i
+    maps_to: Ca_i
+    label: Initial Ca I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_i`.
+  - name: initial_model_state_s
+    maps_to: s
+    label: Initial Model State S
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s`.
+  - name: initial_model_state_n
+    maps_to: n
+    label: Initial Model State N
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `n`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: v_membrane
+    maps_to: V_membrane
+    label: V Membrane
+    description: V Membrane. Maps to SBML symbol `V_membrane`.
+  - name: ca_ret
+    maps_to: Ca_ret
+    label: Ca Ret
+    description: Ca Ret. Maps to SBML symbol `Ca_ret`.
+  - name: ca_i
+    maps_to: Ca_i
+    label: Ca I
+    description: Ca I. Maps to SBML symbol `Ca_i`.
+  - name: model_state_s
+    maps_to: s
+    label: S
+    description: S. Maps to SBML symbol `s`.
+  - name: model_state_n
+    maps_to: n
+    label: N
+    description: N. Maps to SBML symbol `n`.

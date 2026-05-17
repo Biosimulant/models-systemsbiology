@@ -1,0 +1,76 @@
+schema_version: '2.0'
+title: Lavrentovich2008_Ca_Oscillations
+description: The model reproduces the time profile of cytoplasmic Calcium as depicted
+  in Fig 3 of the paper. It can be used to explore systemsbiology lavrentovich2008
+  ca oscillations BioModels0000000184 dynamics and compare simulation behavior across
+  conditions.
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Maxim Lavrentovich
+- Sheryl Hemkin
+upstream:
+  id: biomodels_ebi:BIOMD0000000184
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000184
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000184
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000184?filename=BIOMD0000000184_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.lavrentovich2008_ca_oscillations_biomd0000000184_model:Lavrentovich2008CaOscillationsBiomd0000000184Model
+  init_kwargs:
+    model_path: data/BIOMD0000000184.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_calcium_in_er
+    maps_to: Y
+    label: Initial Calcium In Er
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Y`.
+  - name: initial_model_state_ip3
+    maps_to: Z
+    label: Initial Model State IP3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Z`.
+  - name: initial_cytoplasmic_calcium
+    maps_to: X
+    label: Initial Cytoplasmic Calcium
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: calcium_in_er
+    maps_to: Y
+    label: Calcium in ER
+    description: Calcium in ER. Maps to SBML symbol `Y`.
+  - name: ip3
+    maps_to: Z
+    label: IP3
+    description: IP3. Maps to SBML symbol `Z`.
+  - name: cytoplasmic_calcium
+    maps_to: X
+    label: Cytoplasmic Calcium
+    description: Cytoplasmic Calcium. Maps to SBML symbol `X`.

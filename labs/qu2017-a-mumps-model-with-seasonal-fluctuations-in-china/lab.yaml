@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Qu2017 A Mumps Model With Seasonal Fluctuations In China Lab
+description: Systems Biology Qu2017AMumps Model With Seasonal Fluctuations Model1808280011Model
+  represents core biological mechanisms from biomodels_ebi reference biomodels_ebi:MODEL1808280011.
+  When you run it, you can inspect state and compare temporal behavior between baseline
+  and adjusted inputs.
+models:
+- alias: systemsbiology_sbml_qu2017_a_mumps_model_with_seasonal_fluctuations_model1808280011_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_qu2017_a_mumps_model_with_seasonal_fluctuations_model1808280011_model.state
+  to:
+  - visualisation.systemsbiology_sbml_qu2017_a_mumps_model_with_seasonal_fluctuations_model1808280011_model_state
+- from: systemsbiology_sbml_qu2017_a_mumps_model_with_seasonal_fluctuations_model1808280011_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_qu2017_a_mumps_model_with_seasonal_fluctuations_model1808280011_model_summary
+- from: systemsbiology_sbml_qu2017_a_mumps_model_with_seasonal_fluctuations_model1808280011_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_qu2017_a_mumps_model_with_seasonal_fluctuations_model1808280011_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_n
+    maps_to: systemsbiology_sbml_qu2017_a_mumps_model_with_seasonal_fluctuations_model1808280011_model.initial_model_state_n
+    label: Initial Model State N
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `N`.
+  - name: initial_model_state_s
+    maps_to: systemsbiology_sbml_qu2017_a_mumps_model_with_seasonal_fluctuations_model1808280011_model.initial_model_state_s
+    label: Initial Model State S
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S`.
+  - name: initial_model_state_r
+    maps_to: systemsbiology_sbml_qu2017_a_mumps_model_with_seasonal_fluctuations_model1808280011_model.initial_model_state_r
+    label: Initial Model State R
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `R`.
+  - name: initial_model_state_i
+    maps_to: systemsbiology_sbml_qu2017_a_mumps_model_with_seasonal_fluctuations_model1808280011_model.initial_model_state_i
+    label: Initial Model State I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `I`.
+  - name: initial_model_state_l
+    maps_to: systemsbiology_sbml_qu2017_a_mumps_model_with_seasonal_fluctuations_model1808280011_model.initial_model_state_l
+    label: Initial Model State L
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `L`.
+  - name: initial_model_state_e
+    maps_to: systemsbiology_sbml_qu2017_a_mumps_model_with_seasonal_fluctuations_model1808280011_model.initial_model_state_e
+    label: Initial Model State E
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `E`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_qu2017_a_mumps_model_with_seasonal_fluctuations_model1808280011_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_qu2017_a_mumps_model_with_seasonal_fluctuations_model1808280011_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_qu2017_a_mumps_model_with_seasonal_fluctuations_model1808280011_model.species_labels
+  - name: model_state_n
+    maps_to: systemsbiology_sbml_qu2017_a_mumps_model_with_seasonal_fluctuations_model1808280011_model.model_state_n
+  - name: model_state_s
+    maps_to: systemsbiology_sbml_qu2017_a_mumps_model_with_seasonal_fluctuations_model1808280011_model.model_state_s
+  - name: model_state_r
+    maps_to: systemsbiology_sbml_qu2017_a_mumps_model_with_seasonal_fluctuations_model1808280011_model.model_state_r
+  - name: model_state_i
+    maps_to: systemsbiology_sbml_qu2017_a_mumps_model_with_seasonal_fluctuations_model1808280011_model.model_state_i
+  - name: model_state_l
+    maps_to: systemsbiology_sbml_qu2017_a_mumps_model_with_seasonal_fluctuations_model1808280011_model.model_state_l
+  - name: model_state_e
+    maps_to: systemsbiology_sbml_qu2017_a_mumps_model_with_seasonal_fluctuations_model1808280011_model.model_state_e

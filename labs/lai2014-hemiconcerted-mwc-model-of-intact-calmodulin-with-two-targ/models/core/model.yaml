@@ -1,0 +1,109 @@
+schema_version: '2.0'
+title: Lai2014 - Hemiconcerted MWC model of intact calmodulin with two targets
+description: 'Lai2014 - Hemiconcerted MWC model of intactcalmodulin with two targets
+  This model is described in the article: Modulation of calmodulin lobes by different
+  targets: an allosteric model with hemiconcert. It can be used to explore systemsbiology
+  lai2014 hemiconcerted mwc of intact dynamics and compare simulation behavior across
+  conditions.'
+standard: other
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Massimo Lai
+- Denis Brun
+- Stuart J Edelstein
+- Nicolas Le Novère
+upstream:
+  id: biomodels_ebi:BIOMD0000000574
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000574
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000574
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000574?filename=BIOMD0000000574_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.lai2014_hemiconcerted_mwc_model_of_intact_calmod_biomd0000000574_model:Lai2014HemiconcertedMwcModelOfIntactCalmodBiomd0000000574Model
+  init_kwargs:
+    model_path: data/BIOMD0000000574.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_rbp
+    maps_to: rbp
+    label: Initial Model State Rbp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `rbp`.
+  - name: initial_cam_tt_0_0
+    maps_to: cam_TT_0_0
+    label: Initial Cam Tt 0 0
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cam_TT_0_0`.
+  - name: initial_model_state_tbp
+    maps_to: tbp
+    label: Initial Model State Tbp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `tbp`.
+  - name: initial_cam_tt_d_tbp
+    maps_to: cam_TT_D_tbp
+    label: Initial Cam Tt D Tbp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cam_TT_D_tbp`.
+  - name: initial_cam_tt_d_rbp
+    maps_to: cam_TT_D_rbp
+    label: Initial Cam Tt D Rbp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cam_TT_D_rbp`.
+  - name: initial_cam_tt_d_0
+    maps_to: cam_TT_D_0
+    label: Initial Cam Tt D 0
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cam_TT_D_0`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: rbp
+    maps_to: rbp
+    label: rbp
+    description: rbp. Maps to SBML symbol `rbp`.
+  - name: cam_tt_0_0
+    maps_to: cam_TT_0_0
+    label: cam_TT_0_0
+    description: cam_TT_0_0. Maps to SBML symbol `cam_TT_0_0`.
+  - name: tbp
+    maps_to: tbp
+    label: tbp
+    description: tbp. Maps to SBML symbol `tbp`.
+  - name: cam_tt_d_tbp
+    maps_to: cam_TT_D_tbp
+    label: cam_TT_D_tbp
+    description: cam_TT_D_tbp. Maps to SBML symbol `cam_TT_D_tbp`.
+  - name: cam_tt_d_rbp
+    maps_to: cam_TT_D_rbp
+    label: cam_TT_D_rbp
+    description: cam_TT_D_rbp. Maps to SBML symbol `cam_TT_D_rbp`.
+  - name: cam_tt_d_0
+    maps_to: cam_TT_D_0
+    label: cam_TT_D_0
+    description: cam_TT_D_0. Maps to SBML symbol `cam_TT_D_0`.

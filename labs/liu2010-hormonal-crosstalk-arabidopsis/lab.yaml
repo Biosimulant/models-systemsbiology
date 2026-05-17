@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Liu2010 Hormonal Crosstalk Arabidopsis Lab
+description: 'This is the single cell model for analysis of hormonal crosstalk in
+  Arabidopsis described in the article: Modelling and experimental analysis of hormonal
+  crosstalk in Arabidopsis. It can be used to explore systemsbiology liu2010 hormonal
+  crosstalk arabidopsis BioModels0000000269 dynamics and compare simulation behavior
+  across conditions.'
+models:
+- alias: systemsbiology_sbml_liu2010_hormonal_crosstalk_arabidopsis_biomd0000000269_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_liu2010_hormonal_crosstalk_arabidopsis_biomd0000000269_model.state
+  to:
+  - visualisation.systemsbiology_sbml_liu2010_hormonal_crosstalk_arabidopsis_biomd0000000269_model_state
+- from: systemsbiology_sbml_liu2010_hormonal_crosstalk_arabidopsis_biomd0000000269_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_liu2010_hormonal_crosstalk_arabidopsis_biomd0000000269_model_summary
+- from: systemsbiology_sbml_liu2010_hormonal_crosstalk_arabidopsis_biomd0000000269_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_liu2010_hormonal_crosstalk_arabidopsis_biomd0000000269_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_ra_total
+    maps_to: systemsbiology_sbml_liu2010_hormonal_crosstalk_arabidopsis_biomd0000000269_model.initial_ra_total
+    label: Initial Ra Total
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RaT`.
+  - name: initial_model_state_ra
+    maps_to: systemsbiology_sbml_liu2010_hormonal_crosstalk_arabidopsis_biomd0000000269_model.initial_model_state_ra
+    label: Initial Model State Ra
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ra_star`.
+  - name: initial_re_total
+    maps_to: systemsbiology_sbml_liu2010_hormonal_crosstalk_arabidopsis_biomd0000000269_model.initial_re_total
+    label: Initial Re Total
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ReT`.
+  - name: initial_model_state_re
+    maps_to: systemsbiology_sbml_liu2010_hormonal_crosstalk_arabidopsis_biomd0000000269_model.initial_model_state_re
+    label: Initial Model State Re
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Re_star`.
+  - name: initial_ctr1_total
+    maps_to: systemsbiology_sbml_liu2010_hormonal_crosstalk_arabidopsis_biomd0000000269_model.initial_ctr1_total
+    label: Initial Ctr1 Total
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CTR1T`.
+  - name: initial_ctr1
+    maps_to: systemsbiology_sbml_liu2010_hormonal_crosstalk_arabidopsis_biomd0000000269_model.initial_ctr1
+    label: Initial Ctr1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CTR1_star`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_liu2010_hormonal_crosstalk_arabidopsis_biomd0000000269_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_liu2010_hormonal_crosstalk_arabidopsis_biomd0000000269_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_liu2010_hormonal_crosstalk_arabidopsis_biomd0000000269_model.species_labels
+  - name: ra_total
+    maps_to: systemsbiology_sbml_liu2010_hormonal_crosstalk_arabidopsis_biomd0000000269_model.ra_total
+  - name: model_state_ra
+    maps_to: systemsbiology_sbml_liu2010_hormonal_crosstalk_arabidopsis_biomd0000000269_model.model_state_ra
+  - name: re_total
+    maps_to: systemsbiology_sbml_liu2010_hormonal_crosstalk_arabidopsis_biomd0000000269_model.re_total
+  - name: model_state_re
+    maps_to: systemsbiology_sbml_liu2010_hormonal_crosstalk_arabidopsis_biomd0000000269_model.model_state_re
+  - name: ctr1_total
+    maps_to: systemsbiology_sbml_liu2010_hormonal_crosstalk_arabidopsis_biomd0000000269_model.ctr1_total
+  - name: ctr1
+    maps_to: systemsbiology_sbml_liu2010_hormonal_crosstalk_arabidopsis_biomd0000000269_model.ctr1

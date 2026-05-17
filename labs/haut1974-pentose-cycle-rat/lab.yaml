@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Haut1974 Pentose Cycle Rat Lab
+description: 'This is the Unlabelled model as described in: Simulation of the Pentose
+  Cycle in Lactating Rat Mammary Gland Haut MJ , London JW , Garfinkel D Biochem J.
+  It can be used to explore systemsbiology haut1974 pentose cycle rat model1004070000
+  dynamics and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_haut1974_pentose_cycle_rat_model1004070000_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_haut1974_pentose_cycle_rat_model1004070000_model.state
+  to:
+  - visualisation.systemsbiology_sbml_haut1974_pentose_cycle_rat_model1004070000_model_state
+- from: systemsbiology_sbml_haut1974_pentose_cycle_rat_model1004070000_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_haut1974_pentose_cycle_rat_model1004070000_model_summary
+- from: systemsbiology_sbml_haut1974_pentose_cycle_rat_model1004070000_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_haut1974_pentose_cycle_rat_model1004070000_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_glucose_outside_cell
+    maps_to: systemsbiology_sbml_haut1974_pentose_cycle_rat_model1004070000_model.initial_glucose_outside_cell
+    label: Initial Glucose Outside Cell
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `glucose_outside_cell`.
+  - name: initial_glucose_6_phosphate
+    maps_to: systemsbiology_sbml_haut1974_pentose_cycle_rat_model1004070000_model.initial_glucose_6_phosphate
+    label: Initial Glucose 6 Phosphate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `glucose_6_phosphate`.
+  - name: initial_nadp
+    maps_to: systemsbiology_sbml_haut1974_pentose_cycle_rat_model1004070000_model.initial_nadp
+    label: Initial Nadp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NADP`.
+  - name: initial_glucose_hexokinase
+    maps_to: systemsbiology_sbml_haut1974_pentose_cycle_rat_model1004070000_model.initial_glucose_hexokinase
+    label: Initial Glucose Hexokinase
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `glucose_hexokinase`.
+  - name: initial_glucose_inside_cell
+    maps_to: systemsbiology_sbml_haut1974_pentose_cycle_rat_model1004070000_model.initial_glucose_inside_cell
+    label: Initial Glucose Inside Cell
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `glucose_inside_cell`.
+  - name: initial_nadph
+    maps_to: systemsbiology_sbml_haut1974_pentose_cycle_rat_model1004070000_model.initial_nadph
+    label: Initial Nadph
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NADPH`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_haut1974_pentose_cycle_rat_model1004070000_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_haut1974_pentose_cycle_rat_model1004070000_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_haut1974_pentose_cycle_rat_model1004070000_model.species_labels
+  - name: glucose_outside_cell
+    maps_to: systemsbiology_sbml_haut1974_pentose_cycle_rat_model1004070000_model.glucose_outside_cell
+  - name: glucose_6_phosphate
+    maps_to: systemsbiology_sbml_haut1974_pentose_cycle_rat_model1004070000_model.glucose_6_phosphate
+  - name: nadp
+    maps_to: systemsbiology_sbml_haut1974_pentose_cycle_rat_model1004070000_model.nadp
+  - name: glucose_hexokinase
+    maps_to: systemsbiology_sbml_haut1974_pentose_cycle_rat_model1004070000_model.glucose_hexokinase
+  - name: glucose_inside_cell
+    maps_to: systemsbiology_sbml_haut1974_pentose_cycle_rat_model1004070000_model.glucose_inside_cell
+  - name: nadph
+    maps_to: systemsbiology_sbml_haut1974_pentose_cycle_rat_model1004070000_model.nadph

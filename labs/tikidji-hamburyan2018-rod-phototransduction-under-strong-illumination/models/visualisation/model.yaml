@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Tikidji-Hamburyan2018 - Rod phototransduction under strong illumination Visualisation
+description: Question-and-answer and dynamic visual summaries for Tikidji-Hamburyan2018
+  - Rod phototransduction under strong illumination.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Tikidji Hamburyan2018 Rod Phototransduction Under Strong Illumination
+      Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Tikidji-Hamburyan2018 - Rod phototransduction under strong illumination.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_tikidji_hamburyan2018_rod_phototransduction_unde_model1710030000_model
+      title: Tikidji-Hamburyan2018 - Rod phototransduction under strong illumination
+      observables:
+      - id: S220
+        port: os_cp_trash_ca
+        label: '@OS_CP::TrashCa()'
+        group: signaling
+      - id: S49
+        port: is_cp_arr_bs_1_bs_2
+        label: '@IS_CP::Arr(bs_1,bs_2)'
+        group: physiology
+      - id: S11
+        port: os_dm_rhod_act_i_bs_1_ps_1_p0
+        label: '@OS_DM::Rhod(act~i,bs_1,ps_1~p0)'
+        group: physiology
+      - id: S44
+        port: os_cp_gt_a_g_dp_1_gt_bg_bs_1_1_bs_2
+        label: '@OS_CP::GtA(g~dp!1).GtBG(bs_1!1,bs_2)'
+        group: physiology
+      - id: S24
+        port: os_cp_rk_bs_1_1_rec_bs_1_2_w_ca2_bs_1_2_bs_2_1
+        label: '@OS_CP::RK(bs_1!1).Rec(bs_1!2).wCa2(bs_1!2,bs_2!1)'
+        group: physiology
+      - id: S81
+        port: is_cp_rec_t_bs_1_bs_2
+        label: '@IS_CP::Rec_T(bs_1,bs_2)'
+        group: physiology
+io:
+  inputs: []
+  outputs: []

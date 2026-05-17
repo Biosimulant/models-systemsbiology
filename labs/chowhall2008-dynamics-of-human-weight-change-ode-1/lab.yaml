@@ -1,0 +1,63 @@
+schema_version: '2.0'
+title: Chowhall2008 Dynamics Of Human Weight Change Ode 1 Lab
+description: This ODE model is a representation of the two compartment macronutrient
+  partition model that Chow and Hall outlined in their 2008 publication. It is one
+  of three models that they outlined in that publ.
+models:
+- alias: systemsbiology_sbml_chowhall2008_dynamics_of_human_weight_change_ode_biomd0000000901_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_chowhall2008_dynamics_of_human_weight_change_ode_biomd0000000901_model.state
+  to:
+  - visualisation.systemsbiology_sbml_chowhall2008_dynamics_of_human_weight_change_ode_biomd0000000901_model_state
+- from: systemsbiology_sbml_chowhall2008_dynamics_of_human_weight_change_ode_biomd0000000901_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_chowhall2008_dynamics_of_human_weight_change_ode_biomd0000000901_model_summary
+- from: systemsbiology_sbml_chowhall2008_dynamics_of_human_weight_change_ode_biomd0000000901_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_chowhall2008_dynamics_of_human_weight_change_ode_biomd0000000901_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_body_mass
+    maps_to: systemsbiology_sbml_chowhall2008_dynamics_of_human_weight_change_ode_biomd0000000901_model.initial_body_mass
+    label: Initial Body Mass
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Body_Mass`.
+  - name: initial_lean_mass
+    maps_to: systemsbiology_sbml_chowhall2008_dynamics_of_human_weight_change_ode_biomd0000000901_model.initial_lean_mass
+    label: Initial Lean Mass
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Lean_Mass`.
+  - name: initial_fat_mass
+    maps_to: systemsbiology_sbml_chowhall2008_dynamics_of_human_weight_change_ode_biomd0000000901_model.initial_fat_mass
+    label: Initial Fat Mass
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Fat_Mass`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_chowhall2008_dynamics_of_human_weight_change_ode_biomd0000000901_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_chowhall2008_dynamics_of_human_weight_change_ode_biomd0000000901_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_chowhall2008_dynamics_of_human_weight_change_ode_biomd0000000901_model.species_labels
+  - name: body_mass
+    maps_to: systemsbiology_sbml_chowhall2008_dynamics_of_human_weight_change_ode_biomd0000000901_model.body_mass
+  - name: lean_mass
+    maps_to: systemsbiology_sbml_chowhall2008_dynamics_of_human_weight_change_ode_biomd0000000901_model.lean_mass
+  - name: fat_mass
+    maps_to: systemsbiology_sbml_chowhall2008_dynamics_of_human_weight_change_ode_biomd0000000901_model.fat_mass

@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Pearce2021 - Fibrin Polymerization Visualisation
+description: Question-and-answer and dynamic visual summaries for Pearce2021 - Fibrin
+  Polymerization.
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Pearce2021 Fibrin Polymerization Lab
+    question: 'Which physiological state variables carry the strongest baseline response?
+      Source model: Pearce2021 - Fibrin Polymerization.'
+    answer_focus: Q/A table plus physiology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_pearce2021_fibrin_polymerization_biomd0000001054_model
+      title: Pearce2021 - Fibrin Polymerization
+      observables:
+      - id: Fbni
+        port: fbni
+        label: Fbni
+        group: signaling
+      - id: Thb
+        port: thb
+        label: Thb
+        group: signaling
+      - id: FM
+        port: model_state_fm
+        label: FM
+        group: signaling
+      - id: Fbna
+        port: fbna
+        label: Fbna
+        group: signaling
+      - id: C2
+        port: model_state_c2
+        label: C2
+        group: signaling
+      - id: C1
+        port: model_state_c1
+        label: C1
+        group: signaling
+io:
+  inputs: []
+  outputs: []

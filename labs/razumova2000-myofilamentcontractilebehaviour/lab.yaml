@@ -1,0 +1,64 @@
+schema_version: '2.0'
+title: Razumova2000 Myofilamentcontractilebehaviour Lab
+description: 'This a model from the article: Different myofilament nearest-neighbor
+  interactions have distinctive effects on contractile behavior. It can be used to
+  explore systemsbiology razumova2000 myofilamentcontractilebe model7909395757 dynamics
+  and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_razumova2000_myofilamentcontractilebehaviour_model7909395757_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_razumova2000_myofilamentcontractilebehaviour_model7909395757_model.state
+  to:
+  - visualisation.systemsbiology_sbml_razumova2000_myofilamentcontractilebehaviour_model7909395757_model_state
+- from: systemsbiology_sbml_razumova2000_myofilamentcontractilebehaviour_model7909395757_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_razumova2000_myofilamentcontractilebehaviour_model7909395757_model_summary
+- from: systemsbiology_sbml_razumova2000_myofilamentcontractilebehaviour_model7909395757_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_razumova2000_myofilamentcontractilebehaviour_model7909395757_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_a_2
+    maps_to: systemsbiology_sbml_razumova2000_myofilamentcontractilebehaviour_model7909395757_model.initial_model_state_a_2
+    label: Initial Model State A 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `A_2`.
+  - name: initial_model_state_a_1
+    maps_to: systemsbiology_sbml_razumova2000_myofilamentcontractilebehaviour_model7909395757_model.initial_model_state_a_1
+    label: Initial Model State A 1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `A_1`.
+  - name: initial_model_state_d
+    maps_to: systemsbiology_sbml_razumova2000_myofilamentcontractilebehaviour_model7909395757_model.initial_model_state_d
+    label: Initial Model State D
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `D`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_razumova2000_myofilamentcontractilebehaviour_model7909395757_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_razumova2000_myofilamentcontractilebehaviour_model7909395757_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_razumova2000_myofilamentcontractilebehaviour_model7909395757_model.species_labels
+  - name: a_2
+    maps_to: systemsbiology_sbml_razumova2000_myofilamentcontractilebehaviour_model7909395757_model.a_2
+  - name: a_1
+    maps_to: systemsbiology_sbml_razumova2000_myofilamentcontractilebehaviour_model7909395757_model.a_1
+  - name: model_state_d
+    maps_to: systemsbiology_sbml_razumova2000_myofilamentcontractilebehaviour_model7909395757_model.model_state_d

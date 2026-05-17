@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: 'Panteleev2010 - Blood Coagulation: Full Model Visualisation'
+description: 'Question-and-answer and dynamic visual summaries for Panteleev2010 -
+  Blood Coagulation: Full Model.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Panteleev2010 Blood Coagulation Full Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Panteleev2010 - Blood Coagulation: Full Model.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_panteleev2010_blood_coagulation_full_model_biomd0000000740_model
+      title: 'Panteleev2010 - Blood Coagulation: Full Model'
+      observables:
+      - id: ProteinS_inhibitor
+        port: protein_s_inhibitor
+        label: ProteinS-inhibitor
+        group: gene_regulation
+      - id: ProteinC_Inhibitor
+        port: protein_c_inhibitor
+        label: ProteinC-Inhibitor
+        group: gene_regulation
+      - id: alpha1_antitrypsin
+        port: alpha1_antitrypsin
+        label: alpha1-antitrypsin
+        group: physiology
+      - id: fibrinogen
+        port: fibrinogen
+        label: fibrinogen
+        group: physiology
+      - id: AT_III
+        port: at_iii
+        label: AT-III
+        group: physiology
+      - id: alpha2_macroglobulin
+        port: alpha2_macroglobulin
+        label: alpha2-macroglobulin
+        group: physiology
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,48 @@
+schema_version: '2.0'
+title: Borghans1997 - Calcium Oscillation - Model 3 Visualisation
+description: Question-and-answer and dynamic visual summaries for Borghans1997 - Calcium
+  Oscillation - Model 3.
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Borghans1997 Calcium Oscillation Model 3 Lab
+    question: 'Which physiological state variables carry the strongest baseline response?
+      Source model: Borghans1997 - Calcium Oscillation - Model 3.'
+    answer_focus: Q/A table plus physiology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_borghans1997_calcium_oscillation_model_3_biomd0000000045_model
+      title: Borghans1997 - Calcium Oscillation - Model 3
+      observables:
+      - id: EC
+        port: model_state_ec
+        label: EC
+        group: physiology
+      - id: X
+        port: model_state_x
+        label: X
+        group: physiology
+      - id: Z
+        port: model_state_z
+        label: Z
+        group: physiology
+      - id: Y
+        port: model_state_y
+        label: Y
+        group: physiology
+io:
+  inputs: []
+  outputs: []

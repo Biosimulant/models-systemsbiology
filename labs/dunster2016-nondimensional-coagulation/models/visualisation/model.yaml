@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Dunster2016 - Nondimensional Coagulation Model Visualisation
+description: Question-and-answer and dynamic visual summaries for Dunster2016 - Nondimensional
+  Coagulation Model.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Dunster2016 Nondimensional Coagulation Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Dunster2016 - Nondimensional Coagulation Model.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_dunster2016_nondimensional_coagulation_model_biomd0000000925_model
+      title: Dunster2016 - Nondimensional Coagulation Model
+      observables:
+      - id: Prothrombin__II
+        port: prothrombin_ii
+        label: Prothrombin (II)
+        group: signaling
+      - id: Xa_L
+        port: xa_l
+        label: Xa:L
+        group: signaling
+      - id: Va_Xa_L
+        port: va_xa_l
+        label: Va:Xa:L
+        group: signaling
+      - id: Thrombin__IIa
+        port: thrombin_i_ia
+        label: Thrombin (IIa)
+        group: signaling
+      - id: Prothrombinase__Va_Xa
+        port: prothrombinase_va_xa
+        label: Prothrombinase (Va:Xa)
+        group: signaling
+      - id: Inactive_protein_C
+        port: inactive_protein_c
+        label: Inactive protein C
+        group: signaling
+io:
+  inputs: []
+  outputs: []

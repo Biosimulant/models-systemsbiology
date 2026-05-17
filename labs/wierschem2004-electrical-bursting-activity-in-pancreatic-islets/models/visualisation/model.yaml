@@ -1,0 +1,52 @@
+schema_version: '2.0'
+title: Wierschem2004 - Electrical bursting activity in Pancreatic Islets Visualisation
+description: Question-and-answer and dynamic visual summaries for Wierschem2004 -
+  Electrical bursting activity in Pancreatic Islets.
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Wierschem2004 Electrical Bursting Activity In Pancreatic Islets Lab
+    question: 'Which physiological state variables carry the strongest baseline response?
+      Source model: Wierschem2004 - Electrical bursting activity in Pancreatic Islets.'
+    answer_focus: Q/A table plus physiology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_wierschem2004_electrical_bursting_activity_in_pa_biomd0000000682_model
+      title: Wierschem2004 - Electrical bursting activity in Pancreatic Islets
+      observables:
+      - id: V_membrane
+        port: v_membrane
+        label: V Membrane
+        group: metabolism
+      - id: ATP
+        port: atp
+        label: ATP
+        group: metabolism
+      - id: ADP
+        port: adp
+        label: ADP
+        group: metabolism
+      - id: n
+        port: model_state_n
+        label: N
+        group: metabolism
+      - id: c
+        port: model_state_c
+        label: C
+        group: metabolism
+io:
+  inputs: []
+  outputs: []

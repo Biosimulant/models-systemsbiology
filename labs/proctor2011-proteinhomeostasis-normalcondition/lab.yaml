@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Proctor2011 Proteinhomeostasis Normalcondition Lab
+description: 'This model is from the article: Modelling the Role of the Hsp70/Hsp90
+  System in the Maintenance of Protein Homeostasis Proctor CJ, Lorimer IAJ PLoS ONE
+  2011; 6(7): e22038. It can be used to explore systemsbiology proctor2011 proteinhomeostasis
+  normalcondition BioModels0000000344 dynamics and compare simulation behavior across
+  conditions.'
+models:
+- alias: systemsbiology_sbml_proctor2011_proteinhomeostasis_normalcondition_biomd0000000344_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_proctor2011_proteinhomeostasis_normalcondition_biomd0000000344_model.state
+  to:
+  - visualisation.systemsbiology_sbml_proctor2011_proteinhomeostasis_normalcondition_biomd0000000344_model_state
+- from: systemsbiology_sbml_proctor2011_proteinhomeostasis_normalcondition_biomd0000000344_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_proctor2011_proteinhomeostasis_normalcondition_biomd0000000344_model_summary
+- from: systemsbiology_sbml_proctor2011_proteinhomeostasis_normalcondition_biomd0000000344_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_proctor2011_proteinhomeostasis_normalcondition_biomd0000000344_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_nat_p
+    maps_to: systemsbiology_sbml_proctor2011_proteinhomeostasis_normalcondition_biomd0000000344_model.initial_nat_p
+    label: Initial Nat P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NatP`.
+  - name: initial_model_state_atp
+    maps_to: systemsbiology_sbml_proctor2011_proteinhomeostasis_normalcondition_biomd0000000344_model.initial_model_state_atp
+    label: Initial Model State ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATP`.
+  - name: initial_model_state_adp
+    maps_to: systemsbiology_sbml_proctor2011_proteinhomeostasis_normalcondition_biomd0000000344_model.initial_model_state_adp
+    label: Initial Model State ADP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ADP`.
+  - name: initial_pi_death
+    maps_to: systemsbiology_sbml_proctor2011_proteinhomeostasis_normalcondition_biomd0000000344_model.initial_pi_death
+    label: Initial Pi Death
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PIDeath`.
+  - name: initial_p38_death
+    maps_to: systemsbiology_sbml_proctor2011_proteinhomeostasis_normalcondition_biomd0000000344_model.initial_p38_death
+    label: Initial P38 Death
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `p38Death`.
+  - name: initial_jnk_death
+    maps_to: systemsbiology_sbml_proctor2011_proteinhomeostasis_normalcondition_biomd0000000344_model.initial_jnk_death
+    label: Initial Jnk Death
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `JNKDeath`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_proctor2011_proteinhomeostasis_normalcondition_biomd0000000344_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_proctor2011_proteinhomeostasis_normalcondition_biomd0000000344_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_proctor2011_proteinhomeostasis_normalcondition_biomd0000000344_model.species_labels
+  - name: nat_p
+    maps_to: systemsbiology_sbml_proctor2011_proteinhomeostasis_normalcondition_biomd0000000344_model.nat_p
+  - name: atp
+    maps_to: systemsbiology_sbml_proctor2011_proteinhomeostasis_normalcondition_biomd0000000344_model.atp
+  - name: adp
+    maps_to: systemsbiology_sbml_proctor2011_proteinhomeostasis_normalcondition_biomd0000000344_model.adp
+  - name: pi_death
+    maps_to: systemsbiology_sbml_proctor2011_proteinhomeostasis_normalcondition_biomd0000000344_model.pi_death
+  - name: p38_death
+    maps_to: systemsbiology_sbml_proctor2011_proteinhomeostasis_normalcondition_biomd0000000344_model.p38_death
+  - name: jnk_death
+    maps_to: systemsbiology_sbml_proctor2011_proteinhomeostasis_normalcondition_biomd0000000344_model.jnk_death

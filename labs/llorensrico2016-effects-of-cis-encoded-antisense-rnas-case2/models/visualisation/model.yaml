@@ -1,0 +1,53 @@
+schema_version: '2.0'
+title: LlorénsRico2016 - Effects of cis-Encoded antisense RNAs (asRNAs) - Case2 Visualisation
+description: Question-and-answer and dynamic visual summaries for LlorénsRico2016
+  - Effects of cis-Encoded antisense RNAs (asRNAs) - Case2.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Llorensrico2016 Effects Of Cis Encoded Antisense Rnas Case2 Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: LlorénsRico2016 - Effects of cis-Encoded antisense RNAs (asRNAs)
+      - Case2.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_llor_nsrico2016_effects_of_cis_encoded_antisense_model1511170001_model
+      title: LlorénsRico2016 - Effects of cis-Encoded antisense RNAs (asRNAs) - Case2
+      observables:
+      - id: rib
+        port: rib
+        label: rib
+        group: gene_regulation
+      - id: protein
+        port: protein
+        label: protein
+        group: gene_regulation
+      - id: mrna
+        port: mrna
+        label: mrna
+        group: gene_regulation
+      - id: asrna
+        port: asrna
+        label: asrna
+        group: gene_regulation
+      - id: mrnarib
+        port: mrnarib
+        label: mrnarib
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

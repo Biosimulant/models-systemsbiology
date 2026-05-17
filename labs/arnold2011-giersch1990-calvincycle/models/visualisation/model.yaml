@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Arnold2011_Giersch1990_CalvinCycle Visualisation
+description: Question-and-answer and dynamic visual summaries for Arnold2011_Giersch1990_CalvinCycle.
+standard: other
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Arnold2011 Giersch1990 Calvincycle Lab
+    question: 'Which metabolic pools or flux-linked states show the strongest simulated
+      change? Source model: Arnold2011_Giersch1990_CalvinCycle.'
+    answer_focus: Q/A table plus metabolism timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_arnold2011_giersch1990_calvincycle_biomd0000000390_model
+      title: Arnold2011_Giersch1990_CalvinCycle
+      observables:
+      - id: totRuBP
+        port: tot_ru_bp
+        label: totRuBP
+        group: metabolism
+      - id: E_RuBisCO
+        port: ru_bis_co
+        label: RuBisCo
+        group: metabolism
+      - id: Pi
+        port: model_state_pi
+        label: Pi
+        group: metabolism
+      - id: PGA
+        port: pga
+        label: PGA
+        group: metabolism
+      - id: RuBP
+        port: ru_bp
+        label: RuBP
+        group: metabolism
+      - id: Pic
+        port: pic
+        label: Pic
+        group: metabolism
+io:
+  inputs: []
+  outputs: []

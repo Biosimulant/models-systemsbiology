@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "3b21b129-fad5-43af-86f6-25925bcc8e7b",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "7edc91bd-f77e-4876-b01b-494402e22c3a",
+  "created_at": "2026-05-16T05:46:44.335647993+00:00",
+  "last_synced_at": "2026-05-17T03:52:41.633757+00:00",
+  "hub_manifest_hash": "9b838dee090f6b95a74fff8296223b06b241104585ef70b373452f4450b352c6",
+  "package_name": "jones1994-bloodcoagulation-lab"
+}

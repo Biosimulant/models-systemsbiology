@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "2130118f-4c81-4451-af2b-7e678a5e10af",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "895975ae-34e8-430e-bbd8-b202caa616ee",
+  "created_at": "2026-05-16T05:46:42.261167221+00:00",
+  "last_synced_at": "2026-05-17T02:30:49.481139+00:00",
+  "hub_manifest_hash": "f66e202eaa16b4ad9d0b5cf2429e8be333bee3e3cfaecdb40c6a1a3a02d8cbba",
+  "package_name": "cazzaniga2014-blood-coagulation-with-platelet-activation-lab"
+}

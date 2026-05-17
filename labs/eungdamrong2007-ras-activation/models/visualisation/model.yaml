@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Eungdamrong2007_Ras_Activation Visualisation
+description: Question-and-answer and dynamic visual summaries for Eungdamrong2007_Ras_Activation.
+standard: other
+tags:
+- cellcycle
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Eungdamrong2007 Ras Activation Lab
+    question: 'Which cell-cycle control states dominate the simulated progression?
+      Source model: Eungdamrong2007_Ras_Activation.'
+    answer_focus: Q/A table plus cellcycle timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_eungdamrong2007_ras_activation_biomd0000000161_model
+      title: Eungdamrong2007_Ras_Activation
+      observables:
+      - id: RactCa
+        port: ract_ca
+        label: RactCa
+        group: signaling
+      - id: Ca_ER
+        port: ca_er
+        label: Ca ER
+        group: signaling
+      - id: serca
+        port: serca
+        label: Serca
+        group: signaling
+      - id: CAPRI_cyt
+        port: capri_cyt
+        label: CAPRI Cyt
+        group: signaling
+      - id: RinhCa
+        port: rinh_ca
+        label: RinhCa
+        group: signaling
+      - id: Ras_CaPLCe_GM
+        port: ras_ca_pl_ce_gm
+        label: RAS CaPLCe GM
+        group: signaling
+io:
+  inputs: []
+  outputs: []

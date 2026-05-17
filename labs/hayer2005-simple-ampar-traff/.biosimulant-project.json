@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "c78f0388-0986-4c2f-b45a-6706b6900144",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "f5b7f572-1fbe-4547-aa87-97f5b766de51",
+  "created_at": "2026-05-16T05:46:44.005073439+00:00",
+  "last_synced_at": "2026-05-17T03:37:23.560540+00:00",
+  "hub_manifest_hash": "aad047c71c6e731482d737b906c111fcaf9a3f95ae3b4d168ecb5d89fcc3159f",
+  "package_name": "hayer2005-simple-ampar-traff-lab"
+}

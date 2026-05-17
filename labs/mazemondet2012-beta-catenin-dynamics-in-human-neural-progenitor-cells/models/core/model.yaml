@@ -1,0 +1,98 @@
+schema_version: '2.0'
+title: Mazemondet2012 - beta-catenin dynamics in human neural progenitor cells
+description: Systems Biology Mazemondet2012Beta Catenin Dynamics In Human Ne Model1303140000Model
+  represents core biological mechanisms from biomodels_ebi reference biomodels_ebi:MODEL1303140000.
+  When you run it, you can inspect state and compare temporal behavior between baseline
+  and adjusted inputs.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Orianne Mazemondet
+- Mathias John
+- Stefan Leye
+- Arndt Rolfs
+- Adelinde M Uhrmacher
+upstream:
+  id: biomodels_ebi:MODEL1303140000
+  source_db: biomodels_ebi
+  source_id: MODEL1303140000
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1303140000
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1303140000?filename=MODEL1303140000_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.mazemondet2012_beta_catenin_dynamics_in_human_ne_model1303140000_model:Mazemondet2012BetaCateninDynamicsInHumanNeModel1303140000Model
+  init_kwargs:
+    model_path: data/MODEL1303140000.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_beta_cyt
+    maps_to: species_1
+    label: Initial Beta Cyt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_1`.
+  - name: initial_beta_nuc
+    maps_to: species_6
+    label: Initial Beta Nuc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_6`.
+  - name: initial_model_state_wnt
+    maps_to: species_4
+    label: Initial Model State Wnt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_4`.
+  - name: initial_axin
+    maps_to: species_2
+    label: Initial Axin
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_2`.
+  - name: initial_axin_p
+    maps_to: species_3
+    label: Initial Axin P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_3`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: beta_cyt
+    maps_to: species_1
+    label: BetaCyt
+    description: BetaCyt. Maps to SBML symbol `species_1`.
+  - name: beta_nuc
+    maps_to: species_6
+    label: BetaNuc
+    description: BetaNuc. Maps to SBML symbol `species_6`.
+  - name: wnt
+    maps_to: species_4
+    label: Wnt
+    description: Wnt. Maps to SBML symbol `species_4`.
+  - name: axin
+    maps_to: species_2
+    label: Axin
+    description: Axin. Maps to SBML symbol `species_2`.
+  - name: axin_p
+    maps_to: species_3
+    label: AxinP
+    description: AxinP. Maps to SBML symbol `species_3`.

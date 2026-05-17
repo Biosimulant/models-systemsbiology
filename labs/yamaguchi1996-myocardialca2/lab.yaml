@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Yamaguchi1996 Myocardialca2 Lab
+description: 'This a model from the article: Constancy and variability of contractile
+  efficiency as a function of calcium andcross-bridge kinetics: simulation. Yamaguchi
+  H, Takaki M, Matsubara H, Yasuhara S, Suga H.'
+models:
+- alias: systemsbiology_sbml_yamaguchi1996_myocardialca2_model1006230032_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_yamaguchi1996_myocardialca2_model1006230032_model.state
+  to:
+  - visualisation.systemsbiology_sbml_yamaguchi1996_myocardialca2_model1006230032_model_state
+- from: systemsbiology_sbml_yamaguchi1996_myocardialca2_model1006230032_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_yamaguchi1996_myocardialca2_model1006230032_model_summary
+- from: systemsbiology_sbml_yamaguchi1996_myocardialca2_model1006230032_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_yamaguchi1996_myocardialca2_model1006230032_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- cardiovascular
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_tn_ca
+    maps_to: systemsbiology_sbml_yamaguchi1996_myocardialca2_model1006230032_model.initial_tn_ca
+    label: Initial Tn Ca
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TnCa`.
+  - name: initial_model_state_fti
+    maps_to: systemsbiology_sbml_yamaguchi1996_myocardialca2_model1006230032_model.initial_model_state_fti
+    label: Initial Model State Fti
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `FTI`.
+  - name: initial_cum_cb_on
+    maps_to: systemsbiology_sbml_yamaguchi1996_myocardialca2_model1006230032_model.initial_cum_cb_on
+    label: Initial Cum Cb On
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CumCB_on`.
+  - name: initial_cum_cb_off
+    maps_to: systemsbiology_sbml_yamaguchi1996_myocardialca2_model1006230032_model.initial_cum_cb_off
+    label: Initial Cum Cb Off
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CumCB_off`.
+  - name: initial_cb_on
+    maps_to: systemsbiology_sbml_yamaguchi1996_myocardialca2_model1006230032_model.initial_cb_on
+    label: Initial Cb On
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CB_on`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_yamaguchi1996_myocardialca2_model1006230032_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_yamaguchi1996_myocardialca2_model1006230032_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_yamaguchi1996_myocardialca2_model1006230032_model.species_labels
+  - name: tn_ca
+    maps_to: systemsbiology_sbml_yamaguchi1996_myocardialca2_model1006230032_model.tn_ca
+  - name: fti
+    maps_to: systemsbiology_sbml_yamaguchi1996_myocardialca2_model1006230032_model.fti
+  - name: cum_cb_on
+    maps_to: systemsbiology_sbml_yamaguchi1996_myocardialca2_model1006230032_model.cum_cb_on
+  - name: cum_cb_off
+    maps_to: systemsbiology_sbml_yamaguchi1996_myocardialca2_model1006230032_model.cum_cb_off
+  - name: cb_on
+    maps_to: systemsbiology_sbml_yamaguchi1996_myocardialca2_model1006230032_model.cb_on

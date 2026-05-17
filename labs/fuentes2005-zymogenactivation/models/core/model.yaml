@@ -1,0 +1,85 @@
+schema_version: '2.0'
+title: Fuentes2005_ZymogenActivation
+description: . It can be used to explore systemsbiology fuentes2005 zymogenactivation
+  BioModels0000000092 dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Matilde Esther Fuentes
+- Ramón Varón
+- Manuela García-Moreno
+- Edelmira Valero
+upstream:
+  id: biomodels_ebi:BIOMD0000000092
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000092
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000092
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000092?filename=BIOMD0000000092_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.fuentes2005_zymogenactivation_biomd0000000092_model:Fuentes2005ZymogenactivationBiomd0000000092Model
+  init_kwargs:
+    model_path: data/BIOMD0000000092.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_enzyme_substrate_complex
+    maps_to: ez
+    label: Initial Enzyme Substrate Complex
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ez`.
+  - name: initial_zymogen
+    maps_to: z
+    label: Initial Zymogen
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `z`.
+  - name: initial_peptide
+    maps_to: w
+    label: Initial Peptide
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `w`.
+  - name: initial_enzyme
+    maps_to: e
+    label: Initial Enzyme
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `e`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: enzyme_substrate_complex
+    maps_to: ez
+    label: Enzyme-Substrate complex
+    description: Enzyme-Substrate complex. Maps to SBML symbol `ez`.
+  - name: zymogen
+    maps_to: z
+    label: Zymogen
+    description: Zymogen. Maps to SBML symbol `z`.
+  - name: peptide
+    maps_to: w
+    label: Peptide
+    description: Peptide. Maps to SBML symbol `w`.
+  - name: enzyme
+    maps_to: e
+    label: Enzyme
+    description: Enzyme. Maps to SBML symbol `e`.

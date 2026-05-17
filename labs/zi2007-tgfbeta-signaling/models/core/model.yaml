@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Zi2007_TGFbeta_signaling
+description: The model reproduces the time profiles of Total Smad2 in the nucleus
+  as well as the cytoplasm as depicted in 2D and also the other time profiles as depicted
+  in Fig 2. It can be used to explore systemsbiology zi2007 tgfbeta signaling BioModels0000000163
+  dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Zhike Zi
+- Edda Klipp
+upstream:
+  id: biomodels_ebi:BIOMD0000000163
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000163
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000163
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000163?filename=BIOMD0000000163_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.zi2007_tgfbeta_signaling_biomd0000000163_model:Zi2007TgfbetaSignalingBiomd0000000163Model
+  init_kwargs:
+    model_path: data/BIOMD0000000163.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_t1_r_cave
+    maps_to: T1R_Cave
+    label: Initial T1 R Cave
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `T1R_Cave`.
+  - name: initial_t1_r_ee
+    maps_to: T1R_EE
+    label: Initial T1 R Ee
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `T1R_EE`.
+  - name: initial_t2_r_cave
+    maps_to: T2R_Cave
+    label: Initial T2 R Cave
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `T2R_Cave`.
+  - name: initial_t2_r_ee
+    maps_to: T2R_EE
+    label: Initial T2 R Ee
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `T2R_EE`.
+  - name: initial_t1_r_surf
+    maps_to: T1R_Surf
+    label: Initial T1 R Surf
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `T1R_Surf`.
+  - name: initial_t2_r_surf
+    maps_to: T2R_Surf
+    label: Initial T2 R Surf
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `T2R_Surf`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: t1_r_cave
+    maps_to: T1R_Cave
+    label: T1R_Cave
+    description: T1R_Cave. Maps to SBML symbol `T1R_Cave`.
+  - name: t1_r_ee
+    maps_to: T1R_EE
+    label: T1R_EE
+    description: T1R_EE. Maps to SBML symbol `T1R_EE`.
+  - name: t2_r_cave
+    maps_to: T2R_Cave
+    label: T2R_Cave
+    description: T2R_Cave. Maps to SBML symbol `T2R_Cave`.
+  - name: t2_r_ee
+    maps_to: T2R_EE
+    label: T2R_EE
+    description: T2R_EE. Maps to SBML symbol `T2R_EE`.
+  - name: t1_r_surf
+    maps_to: T1R_Surf
+    label: T1R_Surf
+    description: T1R_Surf. Maps to SBML symbol `T1R_Surf`.
+  - name: t2_r_surf
+    maps_to: T2R_Surf
+    label: T2R_Surf
+    description: T2R_Surf. Maps to SBML symbol `T2R_Surf`.

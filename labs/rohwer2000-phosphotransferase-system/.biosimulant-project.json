@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "a8c05803-3934-4435-bdba-1e1d402a0b67",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "d01f8e88-d1a9-4099-b8af-71f3d98c9536",
+  "created_at": "2026-05-16T05:46:51.479344941+00:00",
+  "last_synced_at": "2026-05-17T06:00:11.270830+00:00",
+  "hub_manifest_hash": "f68b3f562307a0cd848560255cfc8ebde9c1801c5c3511264f2f2b389dace913",
+  "package_name": "rohwer2000-phosphotransferase-system-lab"
+}

@@ -1,0 +1,90 @@
+schema_version: '2.0'
+title: Jol2012 Yeastmetabolism Efmanalysis Lab
+description: To the extent possible under law, all copyright and related or neighbouring
+  rights to this encoded model have been dedicated to the public domain worldwide.
+  It can be used to explore systemsbiology jol2012 yeastmetabolism efmanalysis model1201230000
+  dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_jol2012_yeastmetabolism_efmanalysis_model1201230000_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_jol2012_yeastmetabolism_efmanalysis_model1201230000_model.state
+  to:
+  - visualisation.systemsbiology_sbml_jol2012_yeastmetabolism_efmanalysis_model1201230000_model_state
+- from: systemsbiology_sbml_jol2012_yeastmetabolism_efmanalysis_model1201230000_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_jol2012_yeastmetabolism_efmanalysis_model1201230000_model_summary
+- from: systemsbiology_sbml_jol2012_yeastmetabolism_efmanalysis_model1201230000_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_jol2012_yeastmetabolism_efmanalysis_model1201230000_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- metabolism
+- microbiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_zymst_c
+    maps_to: systemsbiology_sbml_jol2012_yeastmetabolism_efmanalysis_model1201230000_model.initial_zymst_c
+    label: Initial Zymst C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_zymst_c`.
+  - name: initial_xu5p_d_c
+    maps_to: systemsbiology_sbml_jol2012_yeastmetabolism_efmanalysis_model1201230000_model.initial_xu5p_d_c
+    label: Initial Xu5p D C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_xu5p_DASH_D_c`.
+  - name: initial_val_l_c
+    maps_to: systemsbiology_sbml_jol2012_yeastmetabolism_efmanalysis_model1201230000_model.initial_val_l_c
+    label: Initial Val L C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_val_DASH_L_c`.
+  - name: initial_ump_c
+    maps_to: systemsbiology_sbml_jol2012_yeastmetabolism_efmanalysis_model1201230000_model.initial_ump_c
+    label: Initial Ump C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_ump_c`.
+  - name: initial_tyr_l_c
+    maps_to: systemsbiology_sbml_jol2012_yeastmetabolism_efmanalysis_model1201230000_model.initial_tyr_l_c
+    label: Initial Tyr L C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_tyr_DASH_L_c`.
+  - name: initial_trp_l_c
+    maps_to: systemsbiology_sbml_jol2012_yeastmetabolism_efmanalysis_model1201230000_model.initial_trp_l_c
+    label: Initial Trp L C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M_trp_DASH_L_c`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_jol2012_yeastmetabolism_efmanalysis_model1201230000_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_jol2012_yeastmetabolism_efmanalysis_model1201230000_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_jol2012_yeastmetabolism_efmanalysis_model1201230000_model.species_labels
+  - name: zymst_c
+    maps_to: systemsbiology_sbml_jol2012_yeastmetabolism_efmanalysis_model1201230000_model.zymst_c
+  - name: xu5p_d_c
+    maps_to: systemsbiology_sbml_jol2012_yeastmetabolism_efmanalysis_model1201230000_model.xu5p_d_c
+  - name: val_l_c
+    maps_to: systemsbiology_sbml_jol2012_yeastmetabolism_efmanalysis_model1201230000_model.val_l_c
+  - name: ump_c
+    maps_to: systemsbiology_sbml_jol2012_yeastmetabolism_efmanalysis_model1201230000_model.ump_c
+  - name: tyr_l_c
+    maps_to: systemsbiology_sbml_jol2012_yeastmetabolism_efmanalysis_model1201230000_model.tyr_l_c
+  - name: trp_l_c
+    maps_to: systemsbiology_sbml_jol2012_yeastmetabolism_efmanalysis_model1201230000_model.trp_l_c

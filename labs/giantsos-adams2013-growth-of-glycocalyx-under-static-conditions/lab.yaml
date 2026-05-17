@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Giantsos Adams2013 Growth Of Glycocalyx Under Static Conditions Lab
+description: 'Giantsos-Adams2013 - Growth of glycocalyxunder static conditions This
+  model is described in the article: Heparan Sulfate Regrowth Profiles Under Laminar
+  Shear Flow Following Enzymatic Degradation. It can be used to explore systemsbiology
+  giantsos adams2013 growth of glycocalyx dynamics and compare simulation behavior
+  across conditions.'
+models:
+- alias: systemsbiology_sbml_giantsos_adams2013_growth_of_glycocalyx_under_st_model1609100001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_giantsos_adams2013_growth_of_glycocalyx_under_st_model1609100001_model.state
+  to:
+  - visualisation.systemsbiology_sbml_giantsos_adams2013_growth_of_glycocalyx_under_st_model1609100001_model_state
+- from: systemsbiology_sbml_giantsos_adams2013_growth_of_glycocalyx_under_st_model1609100001_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_giantsos_adams2013_growth_of_glycocalyx_under_st_model1609100001_model_summary
+- from: systemsbiology_sbml_giantsos_adams2013_growth_of_glycocalyx_under_st_model1609100001_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_giantsos_adams2013_growth_of_glycocalyx_under_st_model1609100001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_lysosome
+    maps_to: systemsbiology_sbml_giantsos_adams2013_growth_of_glycocalyx_under_st_model1609100001_model.initial_lysosome
+    label: Initial Lysosome
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s4`.
+  - name: initial_late_endosome
+    maps_to: systemsbiology_sbml_giantsos_adams2013_growth_of_glycocalyx_under_st_model1609100001_model.initial_late_endosome
+    label: Initial Late Endosome
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s3`.
+  - name: initial_early_endosome
+    maps_to: systemsbiology_sbml_giantsos_adams2013_growth_of_glycocalyx_under_st_model1609100001_model.initial_early_endosome
+    label: Initial Early Endosome
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s2`.
+  - name: initial_hs_surface
+    maps_to: systemsbiology_sbml_giantsos_adams2013_growth_of_glycocalyx_under_st_model1609100001_model.initial_hs_surface
+    label: Initial Hs Surface
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s1`.
+  - name: initial_golgi
+    maps_to: systemsbiology_sbml_giantsos_adams2013_growth_of_glycocalyx_under_st_model1609100001_model.initial_golgi
+    label: Initial Golgi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s6`.
+  - name: initial_model_state_s8
+    maps_to: systemsbiology_sbml_giantsos_adams2013_growth_of_glycocalyx_under_st_model1609100001_model.initial_model_state_s8
+    label: Initial Model State S8
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s8`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_giantsos_adams2013_growth_of_glycocalyx_under_st_model1609100001_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_giantsos_adams2013_growth_of_glycocalyx_under_st_model1609100001_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_giantsos_adams2013_growth_of_glycocalyx_under_st_model1609100001_model.species_labels
+  - name: lysosome
+    maps_to: systemsbiology_sbml_giantsos_adams2013_growth_of_glycocalyx_under_st_model1609100001_model.lysosome
+  - name: late_endosome
+    maps_to: systemsbiology_sbml_giantsos_adams2013_growth_of_glycocalyx_under_st_model1609100001_model.late_endosome
+  - name: early_endosome
+    maps_to: systemsbiology_sbml_giantsos_adams2013_growth_of_glycocalyx_under_st_model1609100001_model.early_endosome
+  - name: hs_surface
+    maps_to: systemsbiology_sbml_giantsos_adams2013_growth_of_glycocalyx_under_st_model1609100001_model.hs_surface
+  - name: golgi
+    maps_to: systemsbiology_sbml_giantsos_adams2013_growth_of_glycocalyx_under_st_model1609100001_model.golgi
+  - name: model_state_s8
+    maps_to: systemsbiology_sbml_giantsos_adams2013_growth_of_glycocalyx_under_st_model1609100001_model.model_state_s8

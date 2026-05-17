@@ -1,0 +1,77 @@
+schema_version: '2.0'
+title: Palmer2014 - Effect of IL-1β-Blocking therapies in T2DM - Healthy Condition
+description: Palmer2014 - Effect of IL-1β-Blocking therapies in T2DM - Healthy Condition
+  This is the model with healthy state initial conditions. A few changes were made
+  to the model equations in order to bypass t.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- R Palmér
+- E Nyman
+- M Penney
+- A Marley
+- G Cedersund
+upstream:
+  id: biomodels_ebi:BIOMD0000000621
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000621
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000621
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000621?filename=BIOMD0000000621_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.palmer2014_effect_of_il_1_blocking_therapies_in_biomd0000000621_model:Palmer2014EffectOfIl1BlockingTherapiesInBiomd0000000621Model
+  init_kwargs:
+    model_path: data/BIOMD0000000621.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: kglucose
+    maps_to: Kglucose
+    label: Kglucose
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `Kglucose`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: insulin
+    maps_to: Insulin
+    label: Insulin
+    description: Insulin. Maps to SBML symbol `Insulin`.
+  - name: proinsulin
+    maps_to: Proinsulin
+    label: Proinsulin
+    description: Proinsulin. Maps to SBML symbol `Proinsulin`.
+  - name: glucose
+    maps_to: Glucose
+    label: Glucose
+    description: Glucose. Maps to SBML symbol `Glucose`.
+  - name: il1_ra
+    maps_to: IL1Ra
+    label: IL1Ra
+    description: IL1Ra. Maps to SBML symbol `IL1Ra`.
+  - name: rbc1
+    maps_to: rbc1
+    label: Rbc1
+    description: Rbc1. Maps to SBML symbol `rbc1`.
+  - name: rbc2
+    maps_to: rbc2
+    label: Rbc2
+    description: Rbc2. Maps to SBML symbol `rbc2`.

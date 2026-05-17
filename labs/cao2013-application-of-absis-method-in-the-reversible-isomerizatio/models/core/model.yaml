@@ -1,0 +1,64 @@
+schema_version: '2.0'
+title: Cao2013 - Application of ABSIS method in the reversible isomerization model
+description: Youfang Cao & Jie Liang. Adaptively biased sequential importance sampling
+  for rare events in reaction networks with comparison to exact solutions from finite
+  buffer dCME method.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Youfang Cao
+- Jie Liang
+upstream:
+  id: biomodels_ebi:BIOMD0000000486
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000486
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000486
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000486?filename=BIOMD0000000486_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.cao2013_application_of_absis_method_in_the_rever_biomd0000000486_model:Cao2013ApplicationOfAbsisMethodInTheReverBiomd0000000486Model
+  init_kwargs:
+    model_path: data/BIOMD0000000486.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_b
+    maps_to: B
+    label: Initial Model State B
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `B`.
+  - name: initial_model_state_a
+    maps_to: A
+    label: Initial Model State A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `A`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_b
+    maps_to: B
+    label: B
+    description: B. Maps to SBML symbol `B`.
+  - name: model_state_a
+    maps_to: A
+    label: A
+    description: A. Maps to SBML symbol `A`.

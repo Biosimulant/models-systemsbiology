@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "c1ec698e-ab10-43c8-87ca-167a4cc08f81",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "165ced41-f5e2-417d-9e35-a85a49340600",
+  "created_at": "2026-05-16T05:46:51.357260335+00:00",
+  "last_synced_at": "2026-05-17T05:56:52.042713+00:00",
+  "hub_manifest_hash": "2219eb89548970e81268a6f9c728670823d982e8e2f2aab262898df039a9f31f",
+  "package_name": "rehm2006-caspase-lab"
+}

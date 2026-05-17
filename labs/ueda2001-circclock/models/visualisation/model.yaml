@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Ueda2001_CircClock Visualisation
+description: Question-and-answer and dynamic visual summaries for Ueda2001_CircClock.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Ueda2001 Circclock Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Ueda2001_CircClock.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_ueda2001_circclock_biomd0000000022_model
+      title: Ueda2001_CircClock
+      observables:
+      - id: PTn
+        port: per_tim_nuc
+        label: Per-Tim_nuc
+        group: gene_regulation
+      - id: species_0000013
+        port: dbt_cyt
+        label: Dbt_cyt
+        group: gene_regulation
+      - id: species_0000012
+        port: cyc_cyt
+        label: Cyc_cyt
+        group: gene_regulation
+      - id: PTc
+        port: per_tim_cyt
+        label: Per-Tim_cyt
+        group: gene_regulation
+      - id: Timc
+        port: tim_cyt
+        label: Tim_cyt
+        group: gene_regulation
+      - id: Timm
+        port: tim_mrna
+        label: Tim_mRNA
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

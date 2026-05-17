@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Albert2005 Glycolysis Lab
+description: 'This model is from the article: Experimental and in silico analyses
+  of glycolytic flux control in bloodstream form Trypanosoma brucei. Albert MA, Haanstra
+  JR, Hannaert V, Van Roy J, Opperdoes FR, Bakk.'
+models:
+- alias: systemsbiology_sbml_albert2005_glycolysis_biomd0000000211_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_albert2005_glycolysis_biomd0000000211_model.state
+  to:
+  - visualisation.systemsbiology_sbml_albert2005_glycolysis_biomd0000000211_model_state
+- from: systemsbiology_sbml_albert2005_glycolysis_biomd0000000211_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_albert2005_glycolysis_biomd0000000211_model_summary
+- from: systemsbiology_sbml_albert2005_glycolysis_biomd0000000211_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_albert2005_glycolysis_biomd0000000211_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_glucose_external
+    maps_to: systemsbiology_sbml_albert2005_glycolysis_biomd0000000211_model.initial_glucose_external
+    label: Initial Glucose External
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_25`.
+  - name: initial_pyruvate_external
+    maps_to: systemsbiology_sbml_albert2005_glycolysis_biomd0000000211_model.initial_pyruvate_external
+    label: Initial Pyruvate External
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_26`.
+  - name: initial_glycerol_external
+    maps_to: systemsbiology_sbml_albert2005_glycolysis_biomd0000000211_model.initial_glycerol_external
+    label: Initial Glycerol External
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_27`.
+  - name: initial_glycerol3phosphate
+    maps_to: systemsbiology_sbml_albert2005_glycolysis_biomd0000000211_model.initial_glycerol3phosphate
+    label: Initial Glycerol3phosphate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_22`.
+  - name: initial_pyruvate
+    maps_to: systemsbiology_sbml_albert2005_glycolysis_biomd0000000211_model.initial_pyruvate
+    label: Initial Pyruvate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_1`.
+  - name: initial_fructose16bisphosphate
+    maps_to: systemsbiology_sbml_albert2005_glycolysis_biomd0000000211_model.initial_fructose16bisphosphate
+    label: Initial Fructose16bisphosphate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_16`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_albert2005_glycolysis_biomd0000000211_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_albert2005_glycolysis_biomd0000000211_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_albert2005_glycolysis_biomd0000000211_model.species_labels
+  - name: glucose_external
+    maps_to: systemsbiology_sbml_albert2005_glycolysis_biomd0000000211_model.glucose_external
+  - name: pyruvate_external
+    maps_to: systemsbiology_sbml_albert2005_glycolysis_biomd0000000211_model.pyruvate_external
+  - name: glycerol_external
+    maps_to: systemsbiology_sbml_albert2005_glycolysis_biomd0000000211_model.glycerol_external
+  - name: glycerol3phosphate
+    maps_to: systemsbiology_sbml_albert2005_glycolysis_biomd0000000211_model.glycerol3phosphate
+  - name: pyruvate
+    maps_to: systemsbiology_sbml_albert2005_glycolysis_biomd0000000211_model.pyruvate
+  - name: fructose16bisphosphate
+    maps_to: systemsbiology_sbml_albert2005_glycolysis_biomd0000000211_model.fructose16bisphosphate

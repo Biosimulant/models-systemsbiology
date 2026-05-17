@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "9ec62dc7-2bdd-427d-b2fd-667d538ba649",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "a2931332-a73f-43d7-88eb-fca4ccff4241",
+  "created_at": "2026-05-16T05:46:51.127722691+00:00",
+  "last_synced_at": "2026-05-17T05:49:32.677356+00:00",
+  "hub_manifest_hash": "8352c682e32d7c2391184377554060759358dfdd2def3d14a00a842bb0f6bf78",
+  "package_name": "qi2013-il-6-and-ifn-crosstalk-lab"
+}

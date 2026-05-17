@@ -1,0 +1,66 @@
+schema_version: '2.0'
+title: Wang2016 2 Oncolytic Efficacy Of M1 Virus Snt Lab
+description: 'The paper describes a model of oncolytic virotherapy. Created by COPASI
+  4.25 (Build 207) This model is described in the article: A mathematical model verifying
+  potent oncolytic efficacy of M1 virusZiz.'
+models:
+- alias: systemsbiology_sbml_wang2016_2_oncolytic_efficacy_of_m1_virus_snt_mo_biomd0000000781_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_wang2016_2_oncolytic_efficacy_of_m1_virus_snt_mo_biomd0000000781_model.state
+  to:
+  - visualisation.systemsbiology_sbml_wang2016_2_oncolytic_efficacy_of_m1_virus_snt_mo_biomd0000000781_model_state
+- from: systemsbiology_sbml_wang2016_2_oncolytic_efficacy_of_m1_virus_snt_mo_biomd0000000781_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_wang2016_2_oncolytic_efficacy_of_m1_virus_snt_mo_biomd0000000781_model_summary
+- from: systemsbiology_sbml_wang2016_2_oncolytic_efficacy_of_m1_virus_snt_mo_biomd0000000781_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_wang2016_2_oncolytic_efficacy_of_m1_virus_snt_mo_biomd0000000781_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- cellcycle
+- oncology
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_n
+    maps_to: systemsbiology_sbml_wang2016_2_oncolytic_efficacy_of_m1_virus_snt_mo_biomd0000000781_model.initial_model_state_n
+    label: Initial Model State N
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `N`.
+  - name: initial_model_state_t
+    maps_to: systemsbiology_sbml_wang2016_2_oncolytic_efficacy_of_m1_virus_snt_mo_biomd0000000781_model.initial_model_state_t
+    label: Initial Model State T
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `T`.
+  - name: initial_model_state_s
+    maps_to: systemsbiology_sbml_wang2016_2_oncolytic_efficacy_of_m1_virus_snt_mo_biomd0000000781_model.initial_model_state_s
+    label: Initial Model State S
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_wang2016_2_oncolytic_efficacy_of_m1_virus_snt_mo_biomd0000000781_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_wang2016_2_oncolytic_efficacy_of_m1_virus_snt_mo_biomd0000000781_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_wang2016_2_oncolytic_efficacy_of_m1_virus_snt_mo_biomd0000000781_model.species_labels
+  - name: model_state_n
+    maps_to: systemsbiology_sbml_wang2016_2_oncolytic_efficacy_of_m1_virus_snt_mo_biomd0000000781_model.model_state_n
+  - name: model_state_t
+    maps_to: systemsbiology_sbml_wang2016_2_oncolytic_efficacy_of_m1_virus_snt_mo_biomd0000000781_model.model_state_t
+  - name: model_state_s
+    maps_to: systemsbiology_sbml_wang2016_2_oncolytic_efficacy_of_m1_virus_snt_mo_biomd0000000781_model.model_state_s

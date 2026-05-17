@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "5c5832ef-3a8d-425e-bdd4-268a4ade7869",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "b1286a5c-d701-4c33-b0a9-b651eee69ab2",
+  "created_at": "2026-05-16T05:46:51.531887037+00:00",
+  "last_synced_at": "2026-05-17T06:01:42.750799+00:00",
+  "hub_manifest_hash": "83ae5ed1b2e6ac2ab2199ed42e6b9284284f6d933171455484cc1899138f5b0a",
+  "package_name": "romond1999-cellcycle-lab"
+}

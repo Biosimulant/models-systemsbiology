@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Faville2008_UPdepolarization
+description: 'This a model from the article: A biophysically based mathematical model
+  of unitary potential activity ininterstitial cells of Cajal. Faville RA, Pullan
+  AJ, Sanders KM, Smith NP.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- R A Faville
+- A J Pullan
+- K M Sanders
+- N P Smith
+upstream:
+  id: biomodels_ebi:MODEL0912044015
+  source_db: biomodels_ebi
+  source_id: MODEL0912044015
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL0912044015
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0912044015?filename=MODEL0912044015_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.faville2008_updepolarization_model0912044015_model:Faville2008UpdepolarizationModel0912044015Model
+  init_kwargs:
+    model_path: data/MODEL0912044015.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_vm
+    maps_to: Vm
+    label: Initial Model State Vm
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Vm`.
+  - name: initial_phi3
+    maps_to: phi3
+    label: Initial Phi3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `phi3`.
+  - name: initial_model_state_ns1
+    maps_to: NS1
+    label: Initial Model State NS1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NS1`.
+  - name: initial_model_state_cs2
+    maps_to: CS2
+    label: Initial Model State CS2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CS2`.
+  - name: initial_model_state_cs1
+    maps_to: CS1
+    label: Initial Model State CS1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CS1`.
+  - name: initial_model_state_cmt
+    maps_to: CMT
+    label: Initial Model State Cmt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CMT`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_vm
+    maps_to: Vm
+    label: Vm
+    description: Vm. Maps to SBML symbol `Vm`.
+  - name: phi3
+    maps_to: phi3
+    label: Phi3
+    description: Phi3. Maps to SBML symbol `phi3`.
+  - name: ns1
+    maps_to: NS1
+    label: NS1
+    description: NS1. Maps to SBML symbol `NS1`.
+  - name: cs2
+    maps_to: CS2
+    label: CS2
+    description: CS2. Maps to SBML symbol `CS2`.
+  - name: cs1
+    maps_to: CS1
+    label: CS1
+    description: CS1. Maps to SBML symbol `CS1`.
+  - name: cmt
+    maps_to: CMT
+    label: CMT
+    description: CMT. Maps to SBML symbol `CMT`.

@@ -1,0 +1,60 @@
+schema_version: '2.0'
+title: Sass2009 - Approach to an α-synuclein-based BST model of Parkinson's disease
+  Visualisation
+description: Question-and-answer and dynamic visual summaries for Sass2009 - Approach
+  to an α-synuclein-based BST model of Parkinson's disease.
+standard: other
+tags:
+- neuroscience
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Sass2009 Approach To An Synuclein Based Bst Model Of Parkinson S Di
+      Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Sass2009 - Approach to an α-synuclein-based BST model of Parkinson''s
+      disease.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_sass2009_approach_to_an_synuclein_based_bst_mode_biomd0000000575_model
+      title: Sass2009 - Approach to an α-synuclein-based BST model of Parkinson's
+        disease
+      observables:
+      - id: NAD
+        port: nad
+        label: NAD+
+        group: metabolism
+      - id: ATP
+        port: atp
+        label: ATP
+        group: metabolism
+      - id: NADH
+        port: nadh
+        label: NADH
+        group: metabolism
+      - id: V_DA
+        port: v_da
+        label: V-DA
+        group: physiology
+      - id: L_Tyr
+        port: l_tyr
+        label: L-Tyr
+        group: physiology
+      - id: Parkin_synphilin_1_ub
+        port: parkin_synphilin_1_ub
+        label: Parkin-synphilin-1-ub
+        group: physiology
+io:
+  inputs: []
+  outputs: []

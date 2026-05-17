@@ -1,0 +1,110 @@
+schema_version: '2.0'
+title: Caron2010_mTOR_SignalingNetwork
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models (http://www.ebi.ac.uk/biomodels/). It is copyright (c) 2005-2011
+  The BioModels.net Team.'
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Etienne Caron
+- Samik Ghosh
+- Yukiko Matsuoka
+- Dariel Ashton-Beaucage
+- Marc Therrien
+upstream:
+  id: biomodels_ebi:MODEL1012220002
+  source_db: biomodels_ebi
+  source_id: MODEL1012220002
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1012220002
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1012220002?filename=MODEL1012220002_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.caron2010_mtor_signalingnetwork_model1012220002_model:Caron2010MtorSignalingnetworkModel1012220002Model
+  init_kwargs:
+    model_path: data/MODEL1012220002.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_vegf_tumor_angiogenesis
+    maps_to: s2387
+    label: Initial Vegf Tumor Angiogenesis
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s2387`.
+  - name: initial_t_rna
+    maps_to: s2121
+    label: Initial T RNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s2121`.
+  - name: initial_ribosomal_mrna
+    maps_to: s2114
+    label: Initial Ribosomal MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s2114`.
+  - name: initial_r_rna
+    maps_to: s2112
+    label: Initial R RNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s2112`.
+  - name: initial_oxidative_phosphorylation_br_tricarboxylic_acid_cycle_br_uncoupling_respiration
+    maps_to: s3277
+    label: Initial Oxidative Phosphorylation Br Tricarboxylic Acid Cycle Br Uncoupling
+      Respiration
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s3277`.
+  - name: initial_m_torc1_yy1_pgc_1_alpha_mito_genes
+    maps_to: s3279
+    label: Initial M Torc1 YY1 Pgc 1 Alpha Mito Genes
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s3279`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: vegf_tumor_angiogenesis
+    maps_to: s2387
+    label: VEGF, tumor angiogenesis
+    description: VEGF, tumor angiogenesis. Maps to SBML symbol `s2387`.
+  - name: t_rna
+    maps_to: s2121
+    label: tRNA
+    description: tRNA. Maps to SBML symbol `s2121`.
+  - name: ribosomal_mrna
+    maps_to: s2114
+    label: ribosomal mRNA
+    description: ribosomal mRNA. Maps to SBML symbol `s2114`.
+  - name: r_rna
+    maps_to: s2112
+    label: rRNA
+    description: rRNA. Maps to SBML symbol `s2112`.
+  - name: oxidative_phosphorylation_br_tricarboxylic_acid_cycle_br_uncoupling_respiration
+    maps_to: s3277
+    label: oxidative phosphorylation_br_tricarboxylic acid cycle_br_uncoupling respiration
+    description: oxidative phosphorylation_br_tricarboxylic acid cycle_br_uncoupling
+      respiration. Maps to SBML symbol `s3277`.
+  - name: m_torc1_yy1_pgc_1_alpha_mito_genes
+    maps_to: s3279
+    label: mTORC1-YY1-PGC-1_alpha-Mito genes
+    description: mTORC1-YY1-PGC-1_alpha-Mito genes. Maps to SBML symbol `s3279`.

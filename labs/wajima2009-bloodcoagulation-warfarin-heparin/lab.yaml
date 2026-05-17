@@ -1,0 +1,59 @@
+schema_version: '2.0'
+title: Wajima2009 Bloodcoagulation Warfarin Heparin Lab
+description: 'This model is from the article: A comprehensive model for the humoral
+  coagulation network in humans. It can be used to explore systemsbiology wajima2009
+  bloodcoagulation warfarin heparin BioModels0000000340 dynamics and compare simulation
+  behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_wajima2009_bloodcoagulation_warfarin_heparin_biomd0000000340_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_wajima2009_bloodcoagulation_warfarin_heparin_biomd0000000340_model.state
+  to:
+  - visualisation.systemsbiology_sbml_wajima2009_bloodcoagulation_warfarin_heparin_biomd0000000340_model_state
+- from: systemsbiology_sbml_wajima2009_bloodcoagulation_warfarin_heparin_biomd0000000340_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_wajima2009_bloodcoagulation_warfarin_heparin_biomd0000000340_model_summary
+- from: systemsbiology_sbml_wajima2009_bloodcoagulation_warfarin_heparin_biomd0000000340_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_wajima2009_bloodcoagulation_warfarin_heparin_biomd0000000340_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: warfarin_daily_dose
+    maps_to: systemsbiology_sbml_wajima2009_bloodcoagulation_warfarin_heparin_biomd0000000340_model.warfarin_daily_dose
+    label: Warfarin Daily Dose
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `warfarin_daily_dose`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_wajima2009_bloodcoagulation_warfarin_heparin_biomd0000000340_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_wajima2009_bloodcoagulation_warfarin_heparin_biomd0000000340_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_wajima2009_bloodcoagulation_warfarin_heparin_biomd0000000340_model.species_labels
+  - name: vk_p
+    maps_to: systemsbiology_sbml_wajima2009_bloodcoagulation_warfarin_heparin_biomd0000000340_model.vk_p
+  - name: xa_tfpi
+    maps_to: systemsbiology_sbml_wajima2009_bloodcoagulation_warfarin_heparin_biomd0000000340_model.xa_tfpi
+  - name: xa_atiii_heparin
+    maps_to: systemsbiology_sbml_wajima2009_bloodcoagulation_warfarin_heparin_biomd0000000340_model.xa_atiii_heparin
+  - name: va_xa
+    maps_to: systemsbiology_sbml_wajima2009_bloodcoagulation_warfarin_heparin_biomd0000000340_model.va_xa
+  - name: vi_ia_tf_xa_tfpi
+    maps_to: systemsbiology_sbml_wajima2009_bloodcoagulation_warfarin_heparin_biomd0000000340_model.vi_ia_tf_xa_tfpi
+  - name: vi_ia_tf
+    maps_to: systemsbiology_sbml_wajima2009_bloodcoagulation_warfarin_heparin_biomd0000000340_model.vi_ia_tf

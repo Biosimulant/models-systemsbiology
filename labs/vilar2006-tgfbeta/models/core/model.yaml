@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Vilar2006_TGFbeta
+description: The model reproduces Fig 5A of the paper. The ligand concentration is
+  increased from 3E-5 to 0.01 at time t=2500 to ensure that the system reaches steady
+  state.
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Jose M G Vilar
+- Ronald Jansen
+- Chris Sander
+upstream:
+  id: biomodels_ebi:BIOMD0000000101
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000101
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000101
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000101?filename=BIOMD0000000101_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.vilar2006_tgfbeta_biomd0000000101_model:Vilar2006TgfbetaBiomd0000000101Model
+  init_kwargs:
+    model_path: data/BIOMD0000000101.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_ligand_receptor_complex_endosome
+    maps_to: lRIRII_endo
+    label: Initial Ligand Receptor Complex Endosome
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `lRIRII_endo`.
+  - name: initial_receptor_2
+    maps_to: RII
+    label: Initial Receptor 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RII`.
+  - name: initial_receptor_1
+    maps_to: RI
+    label: Initial Receptor 1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RI`.
+  - name: initial_ligand_receptor_complex_plasma_membrane
+    maps_to: lRIRII
+    label: Initial Ligand Receptor Complex Plasma Membrane
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `lRIRII`.
+  - name: initial_receptor_2_endosome
+    maps_to: RII_endo
+    label: Initial Receptor 2 Endosome
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RII_endo`.
+  - name: initial_receptor_1_endosome
+    maps_to: RI_endo
+    label: Initial Receptor 1 Endosome
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RI_endo`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: ligand_receptor_complex_endosome
+    maps_to: lRIRII_endo
+    label: ligand receptor complex-endosome
+    description: ligand receptor complex-endosome. Maps to SBML symbol `lRIRII_endo`.
+  - name: receptor_2
+    maps_to: RII
+    label: Receptor 2
+    description: Receptor 2. Maps to SBML symbol `RII`.
+  - name: receptor_1
+    maps_to: RI
+    label: Receptor 1
+    description: Receptor 1. Maps to SBML symbol `RI`.
+  - name: ligand_receptor_complex_plasma_membrane
+    maps_to: lRIRII
+    label: ligand receptor complex-plasma membrane
+    description: ligand receptor complex-plasma membrane. Maps to SBML symbol `lRIRII`.
+  - name: receptor_2_endosome
+    maps_to: RII_endo
+    label: Receptor 2 endosome
+    description: Receptor 2 endosome. Maps to SBML symbol `RII_endo`.
+  - name: receptor_1_endosome
+    maps_to: RI_endo
+    label: Receptor 1-endosome
+    description: Receptor 1-endosome. Maps to SBML symbol `RI_endo`.

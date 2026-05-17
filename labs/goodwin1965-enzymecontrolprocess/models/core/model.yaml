@@ -1,0 +1,63 @@
+schema_version: '2.0'
+title: Goodwin1965_EnzymeControlProcess
+description: 'This a model from the article: Oscillatory behavior in enzymatic control
+  processes. It can be used to explore systemsbiology goodwin1965 enzymecontrolprocess
+  model0911532520 dynamics and compare simulation behavior across conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- B C Goodwin
+upstream:
+  id: biomodels_ebi:MODEL0911532520
+  source_db: biomodels_ebi
+  source_id: MODEL0911532520
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL0911532520
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0911532520?filename=MODEL0911532520_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.goodwin1965_enzymecontrolprocess_model0911532520_model:Goodwin1965EnzymecontrolprocessModel0911532520Model
+  init_kwargs:
+    model_path: data/MODEL0911532520.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_yi
+    maps_to: Yi
+    label: Initial Model State Yi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Yi`.
+  - name: initial_model_state_xi
+    maps_to: Xi
+    label: Initial Model State Xi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xi`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_yi
+    maps_to: Yi
+    label: Yi
+    description: Yi. Maps to SBML symbol `Yi`.
+  - name: model_state_xi
+    maps_to: Xi
+    label: Xi
+    description: Xi. Maps to SBML symbol `Xi`.

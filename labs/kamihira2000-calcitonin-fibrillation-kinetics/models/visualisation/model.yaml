@@ -1,0 +1,35 @@
+schema_version: '2.0'
+title: Kamihira2000 - calcitonin fibrillation kinetics Visualisation
+description: Question-and-answer and dynamic visual summaries for Kamihira2000 - calcitonin
+  fibrillation kinetics.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Kamihira2000 Calcitonin Fibrillation Kinetics Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Kamihira2000 - calcitonin fibrillation kinetics.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_kamihira2000_calcitonin_fibrillation_kinetics_biomd0000000614_model
+      title: Kamihira2000 - calcitonin fibrillation kinetics
+      observables:
+      - id: f
+        port: fibril_fraction
+        label: fibril fraction
+        group: physiology
+io:
+  inputs: []
+  outputs: []

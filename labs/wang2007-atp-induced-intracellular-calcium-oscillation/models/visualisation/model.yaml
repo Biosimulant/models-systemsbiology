@@ -1,0 +1,58 @@
+schema_version: '2.0'
+title: Wang2007 - ATP induced intracellular Calcium Oscillation Visualisation
+description: Question-and-answer and dynamic visual summaries for Wang2007 - ATP induced
+  intracellular Calcium Oscillation.
+standard: other
+tags:
+- cellcycle
+- metabolism
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Wang2007 Atp Induced Intracellular Calcium Oscillation Lab
+    question: 'Which cell-cycle control states dominate the simulated progression?
+      Source model: Wang2007 - ATP induced intracellular Calcium Oscillation.'
+    answer_focus: Q/A table plus cellcycle timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_wang2007_atp_induced_intracellular_calcium_oscil_biomd0000000145_model
+      title: Wang2007 - ATP induced intracellular Calcium Oscillation
+      observables:
+      - id: Ca_ER
+        port: calcium
+        label: Calcium
+        group: metabolism
+      - id: Ca_Cyt
+        port: calcium_2
+        label: Calcium
+        group: metabolism
+      - id: Galpha_GTP
+        port: galpha_gtp
+        label: Galpha_GTP
+        group: metabolism
+      - id: DG
+        port: diacylglycerol
+        label: Diacylglycerol
+        group: metabolism
+      - id: APLC
+        port: aplc
+        label: APLC
+        group: metabolism
+      - id: PLC
+        port: plc
+        label: PLC
+        group: metabolism
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,58 @@
+schema_version: '2.0'
+title: Susree2017 - Role of platelet count and inhibitors in blood coagulation Visualisation
+description: Question-and-answer and dynamic visual summaries for Susree2017 - Role
+  of platelet count and inhibitors in blood coagulation.
+standard: other
+tags:
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Susree2017 Role Of Platelet Count And Inhibitors In Blood Coagulation
+      Lab
+    question: 'Which drug, dose, or target-linked model states drive the simulated
+      profile? Source model: Susree2017 - Role of platelet count and inhibitors in
+      blood coagulation.'
+    answer_focus: Q/A table plus pharmacology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_susree2017_role_of_platelet_count_and_inhibitors_model1808130001_model
+      title: Susree2017 - Role of platelet count and inhibitors in blood coagulation
+      observables:
+      - id: Xa_m_Va_m
+        port: xa_m_va_m
+        label: Xa_m:Va:m
+        group: physiology
+      - id: Xa_m
+        port: xa_m
+        label: Xa_m
+        group: physiology
+      - id: Xa_TFPI
+        port: xa_tfpi
+        label: Xa:TFPI
+        group: physiology
+      - id: X_m
+        port: x_m
+        label: X_m
+        group: physiology
+      - id: Va_m
+        port: va_m
+        label: Va_m
+        group: physiology
+      - id: V_m
+        port: v_m
+        label: V_m
+        group: physiology
+io:
+  inputs: []
+  outputs: []

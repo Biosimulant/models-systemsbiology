@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "0815d303-ae74-415c-ad4e-fad142ae32d2",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "55c4f381-289b-4ac9-ac84-f0c24685af2a",
+  "created_at": "2026-05-16T05:46:53.271768430+00:00",
+  "last_synced_at": "2026-05-17T06:53:03.659447+00:00",
+  "hub_manifest_hash": "d7c469cb54c5fab828a4f2e303c332f4cbc20afa1bac30cabf4081356c46530f",
+  "package_name": "wodarz2007-basic-model-of-cytomegalovirus-infection-lab"
+}

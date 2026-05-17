@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Kogan2001 Aptt Coagulation Lab
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models (http://www.ebi.ac.uk/biomodels/). It is copyright (c) 2005-2011
+  The BioModels.net Team.'
+models:
+- alias: systemsbiology_sbml_kogan2001_aptt_coagulation_model1109160001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_kogan2001_aptt_coagulation_model1109160001_model.state
+  to:
+  - visualisation.systemsbiology_sbml_kogan2001_aptt_coagulation_model1109160001_model_state
+- from: systemsbiology_sbml_kogan2001_aptt_coagulation_model1109160001_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_kogan2001_aptt_coagulation_model1109160001_model_summary
+- from: systemsbiology_sbml_kogan2001_aptt_coagulation_model1109160001_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_kogan2001_aptt_coagulation_model1109160001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_alpha1_at
+    maps_to: systemsbiology_sbml_kogan2001_aptt_coagulation_model1109160001_model.initial_alpha1_at
+    label: Initial Alpha1 At
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_12`.
+  - name: initial_model_state_i
+    maps_to: systemsbiology_sbml_kogan2001_aptt_coagulation_model1109160001_model.initial_model_state_i
+    label: Initial Model State I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_35`.
+  - name: initial_atiii
+    maps_to: systemsbiology_sbml_kogan2001_aptt_coagulation_model1109160001_model.initial_atiii
+    label: Initial Atiii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_8`.
+  - name: initial_alpha2_m
+    maps_to: systemsbiology_sbml_kogan2001_aptt_coagulation_model1109160001_model.initial_alpha2_m
+    label: Initial Alpha2 M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_14`.
+  - name: initial_model_state_ii
+    maps_to: systemsbiology_sbml_kogan2001_aptt_coagulation_model1109160001_model.initial_model_state_ii
+    label: Initial Model State Ii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_32`.
+  - name: initial_c1inh
+    maps_to: systemsbiology_sbml_kogan2001_aptt_coagulation_model1109160001_model.initial_c1inh
+    label: Initial C1inh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_20`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_kogan2001_aptt_coagulation_model1109160001_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_kogan2001_aptt_coagulation_model1109160001_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_kogan2001_aptt_coagulation_model1109160001_model.species_labels
+  - name: alpha1_at
+    maps_to: systemsbiology_sbml_kogan2001_aptt_coagulation_model1109160001_model.alpha1_at
+  - name: model_state_i
+    maps_to: systemsbiology_sbml_kogan2001_aptt_coagulation_model1109160001_model.model_state_i
+  - name: atiii
+    maps_to: systemsbiology_sbml_kogan2001_aptt_coagulation_model1109160001_model.atiii
+  - name: alpha2_m
+    maps_to: systemsbiology_sbml_kogan2001_aptt_coagulation_model1109160001_model.alpha2_m
+  - name: model_state_ii
+    maps_to: systemsbiology_sbml_kogan2001_aptt_coagulation_model1109160001_model.model_state_ii
+  - name: c1inh
+    maps_to: systemsbiology_sbml_kogan2001_aptt_coagulation_model1109160001_model.c1inh

@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Passos2010_DNAdamage_CellularSenescence Visualisation
+description: Question-and-answer and dynamic visual summaries for Passos2010_DNAdamage_CellularSenescence.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Passos2010 Dnadamage Cellularsenescence Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Passos2010_DNAdamage_CellularSenescence.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_passos2010_dnadamage_cellularsenescence_biomd0000000287_model
+      title: Passos2010_DNAdamage_CellularSenescence
+      observables:
+      - id: p53_mRNA
+        port: p53_mrna
+        label: P53 MRNA
+        group: metabolism
+      - id: Mdm2_mRNA
+        port: mdm2_mrna
+        label: Mdm2 MRNA
+        group: metabolism
+      - id: p21_mRNA
+        port: p21_mrna
+        label: P21 MRNA
+        group: metabolism
+      - id: ATMI
+        port: atmi
+        label: ATMI
+        group: metabolism
+      - id: p38
+        port: p38
+        label: P38
+        group: metabolism
+      - id: Mdm2_p53
+        port: mdm2_p53
+        label: Mdm2 P53
+        group: metabolism
+io:
+  inputs: []
+  outputs: []

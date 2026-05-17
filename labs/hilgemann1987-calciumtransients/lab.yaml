@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Hilgemann1987 Calciumtransients Lab
+description: 'This a model from the article: Excitation-contraction coupling and extracellular
+  calcium transients in rabbitatrium: reconstruction of basic cellular mechanisms.
+  It can be used to explore systemsbiology hilgemann1987 calciumtransients model0848444339
+  dynamics and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_hilgemann1987_calciumtransients_model0848444339_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_hilgemann1987_calciumtransients_model0848444339_model.state
+  to:
+  - visualisation.systemsbiology_sbml_hilgemann1987_calciumtransients_model0848444339_model_state
+- from: systemsbiology_sbml_hilgemann1987_calciumtransients_model0848444339_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_hilgemann1987_calciumtransients_model0848444339_model_summary
+- from: systemsbiology_sbml_hilgemann1987_calciumtransients_model0848444339_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_hilgemann1987_calciumtransients_model0848444339_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_v_membrane
+    maps_to: systemsbiology_sbml_hilgemann1987_calciumtransients_model0848444339_model.initial_v_membrane
+    label: Initial V Membrane
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `V_membrane`.
+  - name: initial_prod_frac
+    maps_to: systemsbiology_sbml_hilgemann1987_calciumtransients_model0848444339_model.initial_prod_frac
+    label: Initial Prod Frac
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ProdFrac`.
+  - name: initial_na_i
+    maps_to: systemsbiology_sbml_hilgemann1987_calciumtransients_model0848444339_model.initial_na_i
+    label: Initial Na I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Na_i`.
+  - name: initial_model_state_k_i
+    maps_to: systemsbiology_sbml_hilgemann1987_calciumtransients_model0848444339_model.initial_model_state_k_i
+    label: Initial Model State K I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `K_i`.
+  - name: initial_f_ca
+    maps_to: systemsbiology_sbml_hilgemann1987_calciumtransients_model0848444339_model.initial_f_ca
+    label: Initial F Ca
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `f_Ca`.
+  - name: initial_ca_up
+    maps_to: systemsbiology_sbml_hilgemann1987_calciumtransients_model0848444339_model.initial_ca_up
+    label: Initial Ca Up
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_up`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_hilgemann1987_calciumtransients_model0848444339_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_hilgemann1987_calciumtransients_model0848444339_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_hilgemann1987_calciumtransients_model0848444339_model.species_labels
+  - name: v_membrane
+    maps_to: systemsbiology_sbml_hilgemann1987_calciumtransients_model0848444339_model.v_membrane
+  - name: prod_frac
+    maps_to: systemsbiology_sbml_hilgemann1987_calciumtransients_model0848444339_model.prod_frac
+  - name: na_i
+    maps_to: systemsbiology_sbml_hilgemann1987_calciumtransients_model0848444339_model.na_i
+  - name: k_i
+    maps_to: systemsbiology_sbml_hilgemann1987_calciumtransients_model0848444339_model.k_i
+  - name: f_ca
+    maps_to: systemsbiology_sbml_hilgemann1987_calciumtransients_model0848444339_model.f_ca
+  - name: ca_up
+    maps_to: systemsbiology_sbml_hilgemann1987_calciumtransients_model0848444339_model.ca_up

@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Mazet2020 - model of the PI cycle
+description: '&lt;notes xmlns=&quot;http://www.sbml.org/sbml/level2/version4&quot;&gt;
+  &lt;body xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt; &lt;pre&gt;PI cycle
+  Core Model Global Quantities = free + bound PL. It can be used to explore systemsbiology
+  mazet2020 of the pi cycle dynamics and compare simulation behavior across conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Francoise Mazet
+- Marcus J Tindall
+- Jonathan M Gibbins
+- Michael J Fry
+upstream:
+  id: biomodels_ebi:MODEL2006300001
+  source_db: biomodels_ebi
+  source_id: MODEL2006300001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2006300001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2006300001?filename=Core
+    model2020.xml
+  license: CC0
+biosim:
+  entrypoint: src.mazet2020_model_of_the_pi_cycle_model2006300001_model:Mazet2020ModelOfThePiCycleModel2006300001Model
+  init_kwargs:
+    model_path: data/MODEL2006300001.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_pi4_p_p4_bp
+    maps_to: PI4P_P4BP
+    label: Initial PI4 P P4 Bp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PI4P_P4BP`.
+  - name: initial_pip2_plb
+    maps_to: PIP2_PLB
+    label: Initial Pip2 Plb
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PIP2_PLB`.
+  - name: initial_pa_pabp
+    maps_to: PA_PABP
+    label: Initial Pa Pabp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PA_PABP`.
+  - name: initial_dag_bp
+    maps_to: DAG_BP
+    label: Initial Dag Bp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `DAG_BP`.
+  - name: initial_sm_g
+    maps_to: smG
+    label: Initial Sm G
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `smG`.
+  - name: initial_sm_ga
+    maps_to: smGa
+    label: Initial Sm Ga
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `smGa`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: pi4_p_p4_bp
+    maps_to: PI4P_P4BP
+    label: PI4P.P4BP
+    description: PI4P.P4BP. Maps to SBML symbol `PI4P_P4BP`.
+  - name: pip2_plb
+    maps_to: PIP2_PLB
+    label: PIP2.PLB
+    description: PIP2.PLB. Maps to SBML symbol `PIP2_PLB`.
+  - name: pa_pabp
+    maps_to: PA_PABP
+    label: PA.PABP
+    description: PA.PABP. Maps to SBML symbol `PA_PABP`.
+  - name: dag_bp
+    maps_to: DAG_BP
+    label: DAG.BP
+    description: DAG.BP. Maps to SBML symbol `DAG_BP`.
+  - name: sm_g
+    maps_to: smG
+    label: smG
+    description: smG. Maps to SBML symbol `smG`.
+  - name: sm_ga
+    maps_to: smGa
+    label: smGa
+    description: smGa. Maps to SBML symbol `smGa`.

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "ea0aab67-ae67-4d02-a4d6-5526a71a9fb3",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "44bc55dc-aeba-4b97-ac74-fcba702facd8",
+  "created_at": "2026-05-16T05:46:52.058248904+00:00",
+  "last_synced_at": "2026-05-17T06:17:20.961461+00:00",
+  "hub_manifest_hash": "c5316dfa3c93c7802ae0d9582459a7b0d3b776aa49d8c193d6b6e007e49cbaf0",
+  "package_name": "sneppen2009-modeling-proteasome-dynamics-in-parkinson-s-disease"
+}

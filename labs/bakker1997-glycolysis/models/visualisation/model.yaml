@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Bakker1997_Glycolysis Visualisation
+description: Question-and-answer and dynamic visual summaries for Bakker1997_Glycolysis.
+standard: other
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Bakker1997 Glycolysis Lab
+    question: 'Which metabolic pools or flux-linked states show the strongest simulated
+      change? Source model: Bakker1997_Glycolysis.'
+    answer_focus: Q/A table plus metabolism timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_bakker1997_glycolysis_model1101100000_model
+      title: Bakker1997_Glycolysis
+      observables:
+      - id: s11
+        port: camp
+        label: cAMP
+        group: metabolism
+      - id: s46
+        port: ca_super_2_endsuper
+        label: Ca_super_2+_endsuper_
+        group: metabolism
+      - id: s4
+        port: adp
+        label: ADP
+        group: metabolism
+      - id: s17
+        port: model_state_4_1_2_7
+        label: 4.1.2.7
+        group: metabolism
+      - id: s15
+        port: dhap
+        label: DHAP
+        group: metabolism
+      - id: s28
+        port: pep
+        label: PEP
+        group: metabolism
+io:
+  inputs: []
+  outputs: []

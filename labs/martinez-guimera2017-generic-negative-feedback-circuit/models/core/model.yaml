@@ -1,0 +1,110 @@
+schema_version: '2.0'
+title: Martinez-Guimera2017 - Generic negative feedback circuit (Model 4)
+description: 'Martinez-Guimera2017 - Generic negative feedback circuit (Model 4) This
+  model is described in the article: ''Molecular habituation'' as a potential mechanism
+  of gradual homeostatic loss with age. It can be used to explore systemsbiology martinez
+  guimera2017 generic negative feedback dynamics and compare simulation behavior across
+  conditions.'
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Alvaro Martinez Guimera
+- Ciaran M Welsh
+- Carole J Proctor
+- Anne McArdle
+- Daryl P Shanley
+upstream:
+  id: biomodels_ebi:MODEL1710260003
+  source_db: biomodels_ebi
+  source_id: MODEL1710260003
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1710260003
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1710260003?filename=MODEL1710260003_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.martinez_guimera2017_generic_negative_feedback_c_model1710260003_model:MartinezGuimera2017GenericNegativeFeedbackCModel1710260003Model
+  init_kwargs:
+    model_path: data/MODEL1710260003.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_nil
+    maps_to: Nil
+    label: Initial Model State Nil
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Nil`.
+  - name: initial_model_state_s
+    maps_to: S
+    label: Initial Model State S
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S`.
+  - name: initial_model_state_o
+    maps_to: O
+    label: Initial Model State O
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `O`.
+  - name: initial_model_state_n
+    maps_to: N
+    label: Initial Model State N
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `N`.
+  - name: initial_model_state_f
+    maps_to: F
+    label: Initial Model State F
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `F`.
+  - name: initial_model_state_a
+    maps_to: A
+    label: Initial Model State A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `A`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: nil
+    maps_to: Nil
+    label: Nil
+    description: Nil. Maps to SBML symbol `Nil`.
+  - name: model_state_s
+    maps_to: S
+    label: S
+    description: S. Maps to SBML symbol `S`.
+  - name: model_state_o
+    maps_to: O
+    label: O
+    description: O. Maps to SBML symbol `O`.
+  - name: model_state_n
+    maps_to: N
+    label: N
+    description: N. Maps to SBML symbol `N`.
+  - name: model_state_f
+    maps_to: F
+    label: F
+    description: F. Maps to SBML symbol `F`.
+  - name: model_state_a
+    maps_to: A
+    label: A
+    description: A. Maps to SBML symbol `A`.

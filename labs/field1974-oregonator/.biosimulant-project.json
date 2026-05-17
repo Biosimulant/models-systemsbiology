@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "f6187ea5-3a89-4305-ab99-1e37944c05e6",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "4d8d43d0-3dbb-42e8-9a92-e4acb01448e4",
+  "created_at": "2026-05-16T05:46:43.253257293+00:00",
+  "last_synced_at": "2026-05-17T03:09:46.283080+00:00",
+  "hub_manifest_hash": "d278cb7bfa2cfe75cc27ac5b0b95ad74ede20ccc84208445696911759512f015",
+  "package_name": "field1974-oregonator-lab"
+}

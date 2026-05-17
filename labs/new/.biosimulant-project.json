@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "441f7140-3856-4305-aba1-0c8eb3459b50",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "fb3f8407-3138-4497-862d-7a5c7a0462e3",
+  "created_at": "2026-05-16T05:46:48.737628346+00:00",
+  "last_synced_at": "2026-05-17T05:13:05.780767+00:00",
+  "hub_manifest_hash": "39bc2a6f19c1872b49f46027119b2b9088bb5ef94e5345b557f0fdd7b77f0b28",
+  "package_name": "new-lab"
+}

@@ -1,0 +1,49 @@
+schema_version: '2.0'
+title: Ratushny2012 Spf Lab
+description: 'This model is from the article: Asymmetric positive feedback loops reliably
+  control biological responses Alexander V Ratushny, Ramsey A Saleem, Katherine Sitko,
+  Stephen A Ramsey &amp; John D Aitchison. It can be used to explore systemsbiology
+  ratushny2012 spf BioModels0000000418 dynamics and compare simulation behavior across
+  conditions.'
+models:
+- alias: systemsbiology_sbml_ratushny2012_spf_biomd0000000418_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_ratushny2012_spf_biomd0000000418_model.state
+  to:
+  - visualisation.systemsbiology_sbml_ratushny2012_spf_biomd0000000418_model_state
+- from: systemsbiology_sbml_ratushny2012_spf_biomd0000000418_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_ratushny2012_spf_biomd0000000418_model_summary
+- from: systemsbiology_sbml_ratushny2012_spf_biomd0000000418_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_ratushny2012_spf_biomd0000000418_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_p
+    maps_to: systemsbiology_sbml_ratushny2012_spf_biomd0000000418_model.initial_model_state_p
+    label: Initial Model State P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_ratushny2012_spf_biomd0000000418_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_ratushny2012_spf_biomd0000000418_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_ratushny2012_spf_biomd0000000418_model.species_labels
+  - name: model_state_p
+    maps_to: systemsbiology_sbml_ratushny2012_spf_biomd0000000418_model.model_state_p

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "d4bf3ddc-b3c7-4104-b63b-a62cc63b2f2c",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "1f239d0c-0a23-4e31-9e1f-aa9e3685b447",
+  "created_at": "2026-05-16T05:46:41.242767726+00:00",
+  "last_synced_at": "2026-05-17T01:52:50.211611+00:00",
+  "hub_manifest_hash": "20aff83d4d1fd58c9c0eab6241a2e56a90c86df013d1c9bac3c46e04f7b5076b",
+  "package_name": "bakker1997-glycolysis-lab"
+}

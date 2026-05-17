@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Scheidel2016 In Silico Knockout Studies Of Xenophagy Capturing Of Salmo Lab
+description: Xenophagy, also known as antibacterial autophagy, is a process of capturing
+  and eliminating cytosolic pathogens, like Salmonella. Salmonella is the best-studied
+  model organism for xenophagy.
+models:
+- alias: systemsbiology_sbml_scheidel2016_in_silico_knockout_studies_of_xenop_model1904150001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_scheidel2016_in_silico_knockout_studies_of_xenop_model1904150001_model.state
+  to:
+  - visualisation.systemsbiology_sbml_scheidel2016_in_silico_knockout_studies_of_xenop_model1904150001_model_state
+- from: systemsbiology_sbml_scheidel2016_in_silico_knockout_studies_of_xenop_model1904150001_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_scheidel2016_in_silico_knockout_studies_of_xenop_model1904150001_model_summary
+- from: systemsbiology_sbml_scheidel2016_in_silico_knockout_studies_of_xenop_model1904150001_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_scheidel2016_in_silico_knockout_studies_of_xenop_model1904150001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- microbiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_m_torc1inactive
+    maps_to: systemsbiology_sbml_scheidel2016_in_silico_knockout_studies_of_xenop_model1904150001_model.initial_m_torc1inactive
+    label: Initial M Torc1inactive
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P382`.
+  - name: initial_m_torc1_ulk1comp
+    maps_to: systemsbiology_sbml_scheidel2016_in_silico_knockout_studies_of_xenop_model1904150001_model.initial_m_torc1_ulk1comp
+    label: Initial M Torc1 Ulk1comp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P384`.
+  - name: initial_m_torc1_ulk1comp_scv
+    maps_to: systemsbiology_sbml_scheidel2016_in_silico_knockout_studies_of_xenop_model1904150001_model.initial_m_torc1_ulk1comp_scv
+    label: Initial M Torc1 Ulk1comp Scv
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P415`.
+  - name: initial_signal_sc_vdamage
+    maps_to: systemsbiology_sbml_scheidel2016_in_silico_knockout_studies_of_xenop_model1904150001_model.initial_signal_sc_vdamage
+    label: Initial Signal Sc Vdamage
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P400`.
+  - name: initial_signal_autophagy_induction
+    maps_to: systemsbiology_sbml_scheidel2016_in_silico_knockout_studies_of_xenop_model1904150001_model.initial_signal_autophagy_induction
+    label: Initial Signal Autophagy Induction
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P408`.
+  - name: initial_p62_i
+    maps_to: systemsbiology_sbml_scheidel2016_in_silico_knockout_studies_of_xenop_model1904150001_model.initial_p62_i
+    label: Initial P62 I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P352`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_scheidel2016_in_silico_knockout_studies_of_xenop_model1904150001_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_scheidel2016_in_silico_knockout_studies_of_xenop_model1904150001_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_scheidel2016_in_silico_knockout_studies_of_xenop_model1904150001_model.species_labels
+  - name: m_torc1inactive
+    maps_to: systemsbiology_sbml_scheidel2016_in_silico_knockout_studies_of_xenop_model1904150001_model.m_torc1inactive
+  - name: m_torc1_ulk1comp
+    maps_to: systemsbiology_sbml_scheidel2016_in_silico_knockout_studies_of_xenop_model1904150001_model.m_torc1_ulk1comp
+  - name: m_torc1_ulk1comp_scv
+    maps_to: systemsbiology_sbml_scheidel2016_in_silico_knockout_studies_of_xenop_model1904150001_model.m_torc1_ulk1comp_scv
+  - name: signal_sc_vdamage
+    maps_to: systemsbiology_sbml_scheidel2016_in_silico_knockout_studies_of_xenop_model1904150001_model.signal_sc_vdamage
+  - name: signal_autophagy_induction
+    maps_to: systemsbiology_sbml_scheidel2016_in_silico_knockout_studies_of_xenop_model1904150001_model.signal_autophagy_induction
+  - name: p62_i
+    maps_to: systemsbiology_sbml_scheidel2016_in_silico_knockout_studies_of_xenop_model1904150001_model.p62_i

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "0f85b2a9-191b-4593-9925-2ba07f06bbec",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "15356764-3c93-4c07-bed6-af1c4643447c",
+  "created_at": "2026-05-16T05:46:44.706597127+00:00",
+  "last_synced_at": "2026-05-17T04:04:47.219879+00:00",
+  "hub_manifest_hash": "cef9ea0aa6cc6f04d9ef345a8943b8b9663a451fe5dc2fab7f10d35f855e4f62",
+  "package_name": "kim2011-oscillator-extendedi-lab"
+}

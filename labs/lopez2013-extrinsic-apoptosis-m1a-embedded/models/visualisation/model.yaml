@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Lopez2013 - extrinsic apoptosis M1a embedded Visualisation
+description: Question-and-answer and dynamic visual summaries for Lopez2013 - extrinsic
+  apoptosis M1a embedded.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Lopez2013 Extrinsic Apoptosis M1a Embedded Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Lopez2013 - extrinsic apoptosis M1a embedded.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_lopez2013_extrinsic_apoptosis_m1a_embedded_model1303010000_model
+      title: Lopez2013 - extrinsic apoptosis M1a embedded
+      observables:
+      - id: s9
+        port: parp_bf_none_state_u
+        label: PARP(bf=None, state=U)
+        group: signaling
+      - id: s19
+        port: cyto_c_bf_none_state_m
+        label: CytoC(bf=None, state=M)
+        group: signaling
+      - id: s10
+        port: xiap_bf_none
+        label: XIAP(bf=None)
+        group: signaling
+      - id: s20
+        port: smac_bf_none_state_m
+        label: Smac(bf=None, state=M)
+        group: signaling
+      - id: s8
+        port: c9_bf_none
+        label: C9(bf=None)
+        group: signaling
+      - id: s5
+        port: apaf_bf_none_state_i
+        label: Apaf(bf=None, state=I)
+        group: signaling
+io:
+  inputs: []
+  outputs: []

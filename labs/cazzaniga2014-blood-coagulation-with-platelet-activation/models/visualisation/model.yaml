@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Cazzaniga2014 - Blood Coagulation with Platelet Activation Visualisation
+description: Question-and-answer and dynamic visual summaries for Cazzaniga2014 -
+  Blood Coagulation with Platelet Activation.
+standard: other
+tags:
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Cazzaniga2014 Blood Coagulation With Platelet Activation Lab
+    question: 'Which drug, dose, or target-linked model states drive the simulated
+      profile? Source model: Cazzaniga2014 - Blood Coagulation with Platelet Activation.'
+    answer_focus: Q/A table plus pharmacology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_cazzaniga2014_blood_coagulation_with_platelet_ac_model1807180003_model
+      title: Cazzaniga2014 - Blood Coagulation with Platelet Activation
+      observables:
+      - id: mIIa_ATIII
+        port: m_i_ia_atiii
+        label: mIIa:ATIII
+        group: physiology
+      - id: mIIa
+        port: m_i_ia
+        label: mIIa
+        group: physiology
+      - id: Xa_Va_II
+        port: xa_va_ii
+        label: Xa:Va:II
+        group: physiology
+      - id: Xa_Va
+        port: xa_va
+        label: Xa:Va
+        group: physiology
+      - id: Xa_VIII
+        port: xa_viii
+        label: Xa:VIII
+        group: physiology
+      - id: Xa_TFPI
+        port: xa_tfpi
+        label: Xa:TFPI
+        group: physiology
+io:
+  inputs: []
+  outputs: []

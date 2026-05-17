@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: Palmer2014 Effect Of Il 1 Blocking Therapies In T2dm Disease Conditio Lab
+description: Palmer2014 - Effect of IL-1β-Blocking therapies in T2DM - Disease Condition
+  This is the model with disease state initial conditions. A few changes were made
+  to the model equations in order to bypass t.
+models:
+- alias: systemsbiology_sbml_palmer2014_effect_of_il_1_blocking_therapies_in_biomd0000000620_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_palmer2014_effect_of_il_1_blocking_therapies_in_biomd0000000620_model.state
+  to:
+  - visualisation.systemsbiology_sbml_palmer2014_effect_of_il_1_blocking_therapies_in_biomd0000000620_model_state
+- from: systemsbiology_sbml_palmer2014_effect_of_il_1_blocking_therapies_in_biomd0000000620_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_palmer2014_effect_of_il_1_blocking_therapies_in_biomd0000000620_model_summary
+- from: systemsbiology_sbml_palmer2014_effect_of_il_1_blocking_therapies_in_biomd0000000620_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_palmer2014_effect_of_il_1_blocking_therapies_in_biomd0000000620_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: kglucose
+    maps_to: systemsbiology_sbml_palmer2014_effect_of_il_1_blocking_therapies_in_biomd0000000620_model.kglucose
+    label: Kglucose
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `Kglucose`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_palmer2014_effect_of_il_1_blocking_therapies_in_biomd0000000620_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_palmer2014_effect_of_il_1_blocking_therapies_in_biomd0000000620_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_palmer2014_effect_of_il_1_blocking_therapies_in_biomd0000000620_model.species_labels
+  - name: insulin
+    maps_to: systemsbiology_sbml_palmer2014_effect_of_il_1_blocking_therapies_in_biomd0000000620_model.insulin
+  - name: proinsulin
+    maps_to: systemsbiology_sbml_palmer2014_effect_of_il_1_blocking_therapies_in_biomd0000000620_model.proinsulin
+  - name: glucose
+    maps_to: systemsbiology_sbml_palmer2014_effect_of_il_1_blocking_therapies_in_biomd0000000620_model.glucose
+  - name: il1_ra
+    maps_to: systemsbiology_sbml_palmer2014_effect_of_il_1_blocking_therapies_in_biomd0000000620_model.il1_ra
+  - name: hba1c
+    maps_to: systemsbiology_sbml_palmer2014_effect_of_il_1_blocking_therapies_in_biomd0000000620_model.hba1c
+  - name: rbc1
+    maps_to: systemsbiology_sbml_palmer2014_effect_of_il_1_blocking_therapies_in_biomd0000000620_model.rbc1

@@ -1,0 +1,109 @@
+schema_version: '2.0'
+title: Ortega2013 - Interplay between secretases determines biphasic amyloid-beta
+  level
+description: 'Ortega2013 - Interplay between secretasesdetermines biphasic amyloid-beta
+  level This model is described in the article: Interplay between ?-, ?-, and ?-secretases
+  determines biphasic amyloid-? It can be used to explore systemsbiology ortega2013
+  interplay between secretases determin dynamics and compare simulation behavior across
+  conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Fernando Ortega
+- Jonathan Stott
+- Sandra A G Visser
+- Claus Bendtsen
+upstream:
+  id: biomodels_ebi:BIOMD0000000556
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000556
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000556
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000556?filename=BIOMD0000000556_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.ortega2013_interplay_between_secretases_determin_biomd0000000556_model:Ortega2013InterplayBetweenSecretasesDeterminBiomd0000000556Model
+  init_kwargs:
+    model_path: data/BIOMD0000000556.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_p3
+    maps_to: p3
+    label: Initial Model State P3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `p3`.
+  - name: initial_model_state_c99
+    maps_to: C99
+    label: Initial Model State C99
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C99`.
+  - name: initial_model_state_c83
+    maps_to: C83
+    label: Initial Model State C83
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C83`.
+  - name: initial_model_state_app
+    maps_to: APP
+    label: Initial Model State App
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `APP`.
+  - name: initial_model_state_ab
+    maps_to: AB
+    label: Initial Model State Ab
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `AB`.
+  - name: initial_model_state_x
+    maps_to: X
+    label: Initial Model State X
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_p3
+    maps_to: p3
+    label: p3
+    description: p3. Maps to SBML symbol `p3`.
+  - name: c99
+    maps_to: C99
+    label: C99
+    description: C99. Maps to SBML symbol `C99`.
+  - name: c83
+    maps_to: C83
+    label: C83
+    description: C83. Maps to SBML symbol `C83`.
+  - name: app
+    maps_to: APP
+    label: APP
+    description: APP. Maps to SBML symbol `APP`.
+  - name: model_state_ab
+    maps_to: AB
+    label: AB
+    description: AB. Maps to SBML symbol `AB`.
+  - name: model_state_x
+    maps_to: X
+    label: X
+    description: X. Maps to SBML symbol `X`.

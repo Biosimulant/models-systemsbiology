@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Oda2006_TollLikeR Visualisation
+description: Question-and-answer and dynamic visual summaries for Oda2006_TollLikeR.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Oda2006 Tollliker Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Oda2006_TollLikeR.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_oda2006_tollliker_model2463683119_model
+      title: Oda2006_TollLikeR
+      observables:
+      - id: s1290
+        port: target_genes_br_ex_il_1_il_8_il_6_tnf_alpha_ifn_gamma_gm_csf_m_csf_br_i_nos_cox2_mhc_class_i_ii_e_selectin_beta_defensin2
+        label: target genes_br_ex. IL-1, IL-8, IL-6, TNF_alpha_ , IFN_gamma_ , GM-CSF,
+          M-CSF,_br_iNOS, COX2, MHC class I / II, E-selectin, _beta_ -defensin2
+        group: signaling
+      - id: s1304
+        port: target_genes_br_ex_cyclin_d1
+        label: target genes_br_   ex. cyclin D1
+        group: gene_regulation
+      - id: s1138
+        port: cell_cycle
+        label: cell cycle
+        group: physiology
+      - id: s805
+        port: rna_br_metabolism
+        label: RNA_br_metabolism
+        group: metabolism
+      - id: s288
+        port: complex_rip1_traf6_ticam1
+        label: Complex(RIP1/TRAF6/TICAM1*)
+        group: signaling
+      - id: s1184
+        port: transcription
+        label: transcription
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

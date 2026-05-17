@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Romond1999_CellCycle
+description: The model reproduces Fig 3 of the paper. It can be used to explore systemsbiology
+  romond1999 cellcycle BioModels0000000207 dynamics and compare simulation behavior
+  across conditions.
+standard: other
+tags:
+- cellcycle
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- P C Romond
+- M Rustici
+- D Gonze
+- A Goldbeter
+upstream:
+  id: biomodels_ebi:BIOMD0000000207
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000207
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000207
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000207?filename=BIOMD0000000207_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.romond1999_cellcycle_biomd0000000207_model:Romond1999CellcycleBiomd0000000207Model
+  init_kwargs:
+    model_path: data/BIOMD0000000207.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_cyclin_b
+    maps_to: C1
+    label: Initial Cyclin B
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C1`.
+  - name: initial_cdk1
+    maps_to: M1
+    label: Initial Cdk1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M1`.
+  - name: initial_ubiquitin_ligase
+    maps_to: X1
+    label: Initial Ubiquitin Ligase
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X1`.
+  - name: initial_cyclin_e
+    maps_to: C2
+    label: Initial Cyclin E
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C2`.
+  - name: initial_cdk2
+    maps_to: M2
+    label: Initial Cdk2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M2`.
+  - name: initial_ubiquitin_ligase_2
+    maps_to: X2
+    label: Initial Ubiquitin Ligase 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X2`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: cyclin_b
+    maps_to: C1
+    label: cyclinB
+    description: cyclinB. Maps to SBML symbol `C1`.
+  - name: cdk1
+    maps_to: M1
+    label: cdk1
+    description: cdk1. Maps to SBML symbol `M1`.
+  - name: ubiquitin_ligase
+    maps_to: X1
+    label: ubiquitin ligase
+    description: ubiquitin ligase. Maps to SBML symbol `X1`.
+  - name: cyclin_e
+    maps_to: C2
+    label: cyclinE
+    description: cyclinE. Maps to SBML symbol `C2`.
+  - name: cdk2
+    maps_to: M2
+    label: cdk2
+    description: cdk2. Maps to SBML symbol `M2`.
+  - name: ubiquitin_ligase_2
+    maps_to: X2
+    label: Ubiquitin ligase 2
+    description: Ubiquitin ligase 2. Maps to SBML symbol `X2`.

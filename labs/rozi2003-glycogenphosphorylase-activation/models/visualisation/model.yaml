@@ -1,0 +1,51 @@
+schema_version: '2.0'
+title: Rozi2003_GlycogenPhosphorylase_Activation Visualisation
+description: Question-and-answer and dynamic visual summaries for Rozi2003_GlycogenPhosphorylase_Activation.
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Rozi2003 Glycogenphosphorylase Activation Lab
+    question: 'Which physiological state variables carry the strongest baseline response?
+      Source model: Rozi2003_GlycogenPhosphorylase_Activation.'
+    answer_focus: Q/A table plus physiology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_rozi2003_glycogenphosphorylase_activation_biomd0000000100_model
+      title: Rozi2003_GlycogenPhosphorylase_Activation
+      observables:
+      - id: EC
+        port: extracellular_calcium
+        label: Extracellular Calcium
+        group: physiology
+      - id: GP
+        port: glycogen_phosphorylase
+        label: Glycogen Phosphorylase
+        group: physiology
+      - id: A
+        port: ip3
+        label: IP3
+        group: physiology
+      - id: Y
+        port: intravesicular_calcium
+        label: Intravesicular Calcium
+        group: physiology
+      - id: Z
+        port: cytosolic_calcium
+        label: Cytosolic Calcium
+        group: physiology
+io:
+  inputs: []
+  outputs: []

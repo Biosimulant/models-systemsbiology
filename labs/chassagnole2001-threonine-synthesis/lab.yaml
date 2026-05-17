@@ -1,0 +1,86 @@
+schema_version: '2.0'
+title: Chassagnole2001 Threonine Synthesis Lab
+description: . It can be used to explore systemsbiology chassagnole2001 threonine
+  synthesis BioModels0000000066 dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_chassagnole2001_threonine_synthesis_biomd0000000066_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_chassagnole2001_threonine_synthesis_biomd0000000066_model.state
+  to:
+  - visualisation.systemsbiology_sbml_chassagnole2001_threonine_synthesis_biomd0000000066_model_state
+- from: systemsbiology_sbml_chassagnole2001_threonine_synthesis_biomd0000000066_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_chassagnole2001_threonine_synthesis_biomd0000000066_model_summary
+- from: systemsbiology_sbml_chassagnole2001_threonine_synthesis_biomd0000000066_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_chassagnole2001_threonine_synthesis_biomd0000000066_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_nadph
+    maps_to: systemsbiology_sbml_chassagnole2001_threonine_synthesis_biomd0000000066_model.initial_nadph
+    label: Initial Nadph
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `nadph`.
+  - name: initial_nadp
+    maps_to: systemsbiology_sbml_chassagnole2001_threonine_synthesis_biomd0000000066_model.initial_nadp
+    label: Initial Nadp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `nadp`.
+  - name: initial_model_state_atp
+    maps_to: systemsbiology_sbml_chassagnole2001_threonine_synthesis_biomd0000000066_model.initial_model_state_atp
+    label: Initial Model State ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `atp`.
+  - name: initial_model_state_adp
+    maps_to: systemsbiology_sbml_chassagnole2001_threonine_synthesis_biomd0000000066_model.initial_model_state_adp
+    label: Initial Model State ADP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `adp`.
+  - name: initial_threonine
+    maps_to: systemsbiology_sbml_chassagnole2001_threonine_synthesis_biomd0000000066_model.initial_threonine
+    label: Initial Threonine
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `thr`.
+  - name: initial_aspartate
+    maps_to: systemsbiology_sbml_chassagnole2001_threonine_synthesis_biomd0000000066_model.initial_aspartate
+    label: Initial Aspartate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `asp`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_chassagnole2001_threonine_synthesis_biomd0000000066_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_chassagnole2001_threonine_synthesis_biomd0000000066_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_chassagnole2001_threonine_synthesis_biomd0000000066_model.species_labels
+  - name: nadph
+    maps_to: systemsbiology_sbml_chassagnole2001_threonine_synthesis_biomd0000000066_model.nadph
+  - name: nadp
+    maps_to: systemsbiology_sbml_chassagnole2001_threonine_synthesis_biomd0000000066_model.nadp
+  - name: atp
+    maps_to: systemsbiology_sbml_chassagnole2001_threonine_synthesis_biomd0000000066_model.atp
+  - name: adp
+    maps_to: systemsbiology_sbml_chassagnole2001_threonine_synthesis_biomd0000000066_model.adp
+  - name: threonine
+    maps_to: systemsbiology_sbml_chassagnole2001_threonine_synthesis_biomd0000000066_model.threonine
+  - name: aspartate
+    maps_to: systemsbiology_sbml_chassagnole2001_threonine_synthesis_biomd0000000066_model.aspartate

@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Edelstein1996 Epsp Ach Event Lab
+description: Edelstein1996 - EPSP ACh event Model of a nicotinic Excitatory Post-Synaptic
+  Potential in a Torpedo electric organ. Acetylcholine is not represented explicitely,
+  but by an event that changes the const.
+models:
+- alias: systemsbiology_sbml_edelstein1996_epsp_ach_event_biomd0000000001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_edelstein1996_epsp_ach_event_biomd0000000001_model.state
+  to:
+  - visualisation.systemsbiology_sbml_edelstein1996_epsp_ach_event_biomd0000000001_model_state
+- from: systemsbiology_sbml_edelstein1996_epsp_ach_event_biomd0000000001_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_edelstein1996_epsp_ach_event_biomd0000000001_model_summary
+- from: systemsbiology_sbml_edelstein1996_epsp_ach_event_biomd0000000001_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_edelstein1996_epsp_ach_event_biomd0000000001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- neuroscience
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_intermediate_a_ch2
+    maps_to: systemsbiology_sbml_edelstein1996_epsp_ach_event_biomd0000000001_model.initial_intermediate_a_ch2
+    label: Initial Intermediate A CH2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ILL`.
+  - name: initial_intermediate_a_ch
+    maps_to: systemsbiology_sbml_edelstein1996_epsp_ach_event_biomd0000000001_model.initial_intermediate_a_ch
+    label: Initial Intermediate A Ch
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IL`.
+  - name: initial_desensitised_a_ch2
+    maps_to: systemsbiology_sbml_edelstein1996_epsp_ach_event_biomd0000000001_model.initial_desensitised_a_ch2
+    label: Initial Desensitised A CH2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `DLL`.
+  - name: initial_desensitised_a_ch
+    maps_to: systemsbiology_sbml_edelstein1996_epsp_ach_event_biomd0000000001_model.initial_desensitised_a_ch
+    label: Initial Desensitised A Ch
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `DL`.
+  - name: initial_basal_a_ch2
+    maps_to: systemsbiology_sbml_edelstein1996_epsp_ach_event_biomd0000000001_model.initial_basal_a_ch2
+    label: Initial Basal A CH2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `BLL`.
+  - name: initial_basal_a_ch
+    maps_to: systemsbiology_sbml_edelstein1996_epsp_ach_event_biomd0000000001_model.initial_basal_a_ch
+    label: Initial Basal A Ch
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `BL`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_edelstein1996_epsp_ach_event_biomd0000000001_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_edelstein1996_epsp_ach_event_biomd0000000001_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_edelstein1996_epsp_ach_event_biomd0000000001_model.species_labels
+  - name: intermediate_a_ch2
+    maps_to: systemsbiology_sbml_edelstein1996_epsp_ach_event_biomd0000000001_model.intermediate_a_ch2
+  - name: intermediate_a_ch
+    maps_to: systemsbiology_sbml_edelstein1996_epsp_ach_event_biomd0000000001_model.intermediate_a_ch
+  - name: desensitised_a_ch2
+    maps_to: systemsbiology_sbml_edelstein1996_epsp_ach_event_biomd0000000001_model.desensitised_a_ch2
+  - name: desensitised_a_ch
+    maps_to: systemsbiology_sbml_edelstein1996_epsp_ach_event_biomd0000000001_model.desensitised_a_ch
+  - name: basal_a_ch2
+    maps_to: systemsbiology_sbml_edelstein1996_epsp_ach_event_biomd0000000001_model.basal_a_ch2
+  - name: basal_a_ch
+    maps_to: systemsbiology_sbml_edelstein1996_epsp_ach_event_biomd0000000001_model.basal_a_ch

@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: Mandlik2013 - Synthetic circuit of IPC synthase in Leishmania Visualisation
+description: Question-and-answer and dynamic visual summaries for Mandlik2013 - Synthetic
+  circuit of IPC synthase in Leishmania.
+standard: other
+tags:
+- generegulation
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Mandlik2013 Synthetic Circuit Of Ipc Synthase In Leishmania Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Mandlik2013 - Synthetic circuit of IPC synthase in Leishmania.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_mandlik2013_synthetic_circuit_of_ipc_synthase_in_model1208030000_model
+      title: Mandlik2013 - Synthetic circuit of IPC synthase in Leishmania
+      observables:
+      - id: rs1
+        port: rs1
+        label: rs1
+        group: signaling
+      - id: rp5
+        port: rp5
+        label: rp5
+        group: signaling
+      - id: rp4
+        port: rp4
+        label: rp4
+        group: signaling
+      - id: rp3
+        port: rp3
+        label: rp3
+        group: signaling
+      - id: rp2
+        port: rp2
+        label: rp2
+        group: signaling
+      - id: rp1
+        port: rp1
+        label: rp1
+        group: signaling
+io:
+  inputs: []
+  outputs: []

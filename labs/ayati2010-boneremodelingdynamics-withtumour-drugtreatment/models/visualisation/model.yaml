@@ -1,0 +1,48 @@
+schema_version: '2.0'
+title: Ayati2010_BoneRemodelingDynamics_WithTumour+DrugTreatment Visualisation
+description: Question-and-answer and dynamic visual summaries for Ayati2010_BoneRemodelingDynamics_WithTumour+DrugTreatment.
+standard: other
+tags:
+- oncology
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Ayati2010 Boneremodelingdynamics Withtumour Drugtreatment Lab
+    question: 'Which tumour, cell-fate, or treatment-linked states dominate the simulated
+      response? Source model: Ayati2010_BoneRemodelingDynamics_WithTumour+DrugTreatment.'
+    answer_focus: Q/A table plus oncology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_ayati2010_boneremodelingdynamics_withtumour_drug_biomd0000000403_model
+      title: Ayati2010_BoneRemodelingDynamics_WithTumour+DrugTreatment
+      observables:
+      - id: B
+        port: osteoblasts
+        label: Osteoblasts
+        group: physiology
+      - id: z
+        port: bone_mass
+        label: BoneMass
+        group: physiology
+      - id: C
+        port: osteoclasts
+        label: Osteoclasts
+        group: physiology
+      - id: Tumour
+        port: tumour
+        label: Tumour
+        group: physiology
+io:
+  inputs: []
+  outputs: []

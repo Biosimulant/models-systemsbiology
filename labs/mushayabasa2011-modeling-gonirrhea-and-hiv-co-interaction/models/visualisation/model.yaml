@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: Mushayabasa2011- Modeling gonirrhea and HIV co-interaction Visualisation
+description: Question-and-answer and dynamic visual summaries for Mushayabasa2011-
+  Modeling gonirrhea and HIV co-interaction.
+standard: other
+tags:
+- epidemiology
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Mushayabasa2011 Modeling Gonirrhea And Hiv Co Interaction Lab
+    question: 'Which infection or population states dominate the simulated trajectory?
+      Source model: Mushayabasa2011- Modeling gonirrhea and HIV co-interaction.'
+    answer_focus: Q/A table plus epidemiology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_mushayabasa2011_modeling_gonirrhea_and_hiv_co_in_model1812040004_model
+      title: Mushayabasa2011- Modeling gonirrhea and HIV co-interaction
+      observables:
+      - id: I_G
+        port: i_g
+        label: I_G
+        group: physiology
+      - id: I_H
+        port: i_h
+        label: I_H
+        group: physiology
+      - id: I_GH
+        port: i_gh
+        label: I_GH
+        group: physiology
+      - id: A_HT
+        port: a_ht
+        label: A_HT
+        group: physiology
+      - id: A_H
+        port: a_h
+        label: A_H
+        group: physiology
+      - id: A_GHT
+        port: a_ght
+        label: A_GHT
+        group: physiology
+io:
+  inputs: []
+  outputs: []

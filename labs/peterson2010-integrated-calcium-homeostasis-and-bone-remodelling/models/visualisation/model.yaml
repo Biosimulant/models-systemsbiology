@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Peterson2010 - Integrated calcium homeostasis and bone remodelling Visualisation
+description: Question-and-answer and dynamic visual summaries for Peterson2010 - Integrated
+  calcium homeostasis and bone remodelling.
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Peterson2010 Integrated Calcium Homeostasis And Bone Remodelling Lab
+    question: 'Which physiological state variables carry the strongest baseline response?
+      Source model: Peterson2010 - Integrated calcium homeostasis and bone remodelling.'
+    answer_focus: Q/A table plus physiology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_peterson2010_integrated_calcium_homeostasis_and_biomd0000000613_model
+      title: Peterson2010 - Integrated calcium homeostasis and bone remodelling
+      observables:
+      - id: TGFBact
+        port: tgf_bact
+        label: TGFBact
+        group: signaling
+      - id: TGFB
+        port: tgfb
+        label: TGFB
+        group: signaling
+      - id: Qbone
+        port: qbone
+        label: Qbone
+        group: physiology
+      - id: IntraPO
+        port: intra_po
+        label: IntraPO
+        group: physiology
+      - id: BCL2
+        port: bcl2
+        label: BCL2
+        group: physiology
+      - id: PTH
+        port: pth
+        label: PTH
+        group: physiology
+io:
+  inputs: []
+  outputs: []

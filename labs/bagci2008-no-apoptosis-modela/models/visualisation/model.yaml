@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Bagci2008_NO_Apoptosis_modelA Visualisation
+description: Question-and-answer and dynamic visual summaries for Bagci2008_NO_Apoptosis_modelA.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Bagci2008 No Apoptosis Modela Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Bagci2008_NO_Apoptosis_modelA.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_bagci2008_no_apoptosis_modela_model1006230064_model
+      title: Bagci2008_NO_Apoptosis_modelA
+      observables:
+      - id: ONOO_m
+        port: onoo_m
+        label: ONOO M
+        group: growth_fate
+      - id: O_2m
+        port: o_2_m
+        label: O 2M
+        group: growth_fate
+      - id: NO_2
+        port: no_2
+        label: NO 2
+        group: growth_fate
+      - id: 'NO'
+        port: model_state_no
+        label: 'NO'
+        group: growth_fate
+      - id: N2O3
+        port: n2_o3
+        label: N2O3
+        group: growth_fate
+      - id: GSNO
+        port: gsno
+        label: GSNO
+        group: growth_fate
+io:
+  inputs: []
+  outputs: []

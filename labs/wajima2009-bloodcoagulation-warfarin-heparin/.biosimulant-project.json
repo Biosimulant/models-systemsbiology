@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "11ef2e27-9e93-4618-9173-a7ea26c21060",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "bafe2432-e26c-4191-a05a-d9340d1eba75",
+  "created_at": "2026-05-16T05:46:52.836012769+00:00",
+  "last_synced_at": "2026-05-17T06:39:55.946416+00:00",
+  "hub_manifest_hash": "333160037d6116843f53a8b8c075f3ab2415a57621a785fb21ae14390ab7c14d",
+  "package_name": "wajima2009-bloodcoagulation-warfarin-heparin-lab"
+}

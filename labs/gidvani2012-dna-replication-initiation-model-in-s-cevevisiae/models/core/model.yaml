@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Gidvani2012 - DNA replication initiation model in S. Cevevisiae
+description: A quantitative model of the initiation of DNA replication in Saccharomyces
+  cerevisiae predicts the effects of system perturbations. Model is encoded by Matthew
+  Maire and submitted in BioModels by Kris.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Rohan D Gidvani
+- Peter Sudmant
+- Grace Li
+- Lance F DaSilva
+- Brendan J McConkey
+upstream:
+  id: biomodels_ebi:MODEL2003180001
+  source_db: biomodels_ebi
+  source_id: MODEL2003180001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2003180001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2003180001?filename=gidvani2012.xml
+  license: CC0
+biosim:
+  entrypoint: src.gidvani2012_dna_replication_initiation_model_in_model2003180001_model:Gidvani2012DnaReplicationInitiationModelInModel2003180001Model
+  init_kwargs:
+    model_path: data/MODEL2003180001.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_cdt1c
+    maps_to: cdt1c
+    label: Initial Cdt1c
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cdt1c`.
+  - name: initial_cdt1_total
+    maps_to: cdt1_total
+    label: Initial Cdt1 Total
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cdt1_total`.
+  - name: initial_cdc45n
+    maps_to: cdc45n
+    label: Initial Cdc45n
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cdc45n`.
+  - name: initial_cdc45_total
+    maps_to: cdc45_total
+    label: Initial Cdc45 Total
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cdc45_total`.
+  - name: initial_rc_total
+    maps_to: rc_total
+    label: Initial Rc Total
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `rc_total`.
+  - name: initial_model_state_rc7
+    maps_to: rc7
+    label: Initial Model State RC7
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `rc7`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: cdt1c
+    maps_to: cdt1c
+    label: cdt1c
+    description: cdt1c. Maps to SBML symbol `cdt1c`.
+  - name: cdt1_total
+    maps_to: cdt1_total
+    label: cdt1_total
+    description: cdt1_total. Maps to SBML symbol `cdt1_total`.
+  - name: cdc45n
+    maps_to: cdc45n
+    label: cdc45n
+    description: cdc45n. Maps to SBML symbol `cdc45n`.
+  - name: cdc45_total
+    maps_to: cdc45_total
+    label: cdc45_total
+    description: cdc45_total. Maps to SBML symbol `cdc45_total`.
+  - name: rc_total
+    maps_to: rc_total
+    label: rc_total
+    description: rc_total. Maps to SBML symbol `rc_total`.
+  - name: rc7
+    maps_to: rc7
+    label: rc7
+    description: rc7. Maps to SBML symbol `rc7`.

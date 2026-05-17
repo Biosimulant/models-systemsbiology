@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Bungay2003_Thrombin_Generation Visualisation
+description: Question-and-answer and dynamic visual summaries for Bungay2003_Thrombin_Generation.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Bungay2003 Thrombin Generation Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Bungay2003_Thrombin_Generation.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_bungay2003_thrombin_generation_biomd0000000334_model
+      title: Bungay2003_Thrombin_Generation
+      observables:
+      - id: AT_f
+        port: at_f
+        label: AT_f
+        group: gene_regulation
+      - id: II_f
+        port: ii_f
+        label: II_f
+        group: gene_regulation
+      - id: PS_f
+        port: ps_f
+        label: PS_f
+        group: gene_regulation
+      - id: X_f
+        port: x_f
+        label: X_f
+        group: gene_regulation
+      - id: IX_f
+        port: ix_f
+        label: IX_f
+        group: gene_regulation
+      - id: PC_f
+        port: pc_f
+        label: PC_f
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

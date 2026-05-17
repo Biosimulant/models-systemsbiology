@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "f2f1c0bf-44be-4ce0-bc1c-7549ac53fc0c",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "ba569d52-ca7c-48e7-a02a-bbeabbca6678",
+  "created_at": "2026-05-16T05:46:53.403658539+00:00",
+  "last_synced_at": "2026-05-17T06:59:14.244522+00:00",
+  "hub_manifest_hash": "4adc026578d27f28d16e1919f4ffab04f5aeb5aff5a3588973fd3da6f4af80bf",
+  "package_name": "xu2002-blood-coagulation-model-of-activated-factors-with-platele"
+}

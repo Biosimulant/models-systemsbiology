@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Bialik2010_Apoptosis_SPIKEmodel Visualisation
+description: Question-and-answer and dynamic visual summaries for Bialik2010_Apoptosis_SPIKEmodel.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Bialik2010 Apoptosis Spikemodel Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Bialik2010_Apoptosis_SPIKEmodel.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_bialik2010_apoptosis_spikemodel_model1107050000_model
+      title: Bialik2010_Apoptosis_SPIKEmodel
+      observables:
+      - id: mRNA_XIAP
+        port: mrna_xiap
+        label: mRNA_XIAP
+        group: gene_regulation
+      - id: mRNA_EIF4G2
+        port: mrna_eif4_g2
+        label: mRNA_EIF4G2
+        group: gene_regulation
+      - id: mRNA_CDK1
+        port: mrna_cdk1
+        label: mRNA_CDK1
+        group: gene_regulation
+      - id: mRNA_BIRC2
+        port: mrna_birc2
+        label: mRNA_BIRC2
+        group: gene_regulation
+      - id: mRNA_BCL2
+        port: mrna_bcl2
+        label: mRNA_BCL2
+        group: gene_regulation
+      - id: mRNA_APAF1
+        port: mrna_apaf1
+        label: mRNA_APAF1
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

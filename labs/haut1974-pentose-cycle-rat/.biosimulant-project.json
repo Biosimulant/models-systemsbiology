@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "177382ca-4de2-4872-aabf-41a69cc84f65",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "638bbc74-c244-4ba2-a6df-94a1e0234509",
+  "created_at": "2026-05-16T05:46:43.870070452+00:00",
+  "last_synced_at": "2026-05-17T03:31:24.649162+00:00",
+  "hub_manifest_hash": "063b9d5328da02e6e783d8583c837ddf5115f5e5e23784942dce4b9a774d413b",
+  "package_name": "haut1974-pentose-cycle-rat-lab"
+}

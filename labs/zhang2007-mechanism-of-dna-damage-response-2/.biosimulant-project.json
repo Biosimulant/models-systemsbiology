@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "73c7819d-775e-4e42-9d95-de5945683533",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "f3d83ae3-3fc6-4f32-bc5b-39aec7aff646",
+  "created_at": "2026-05-16T05:46:53.666338729+00:00",
+  "last_synced_at": "2026-05-17T07:10:31.317113+00:00",
+  "hub_manifest_hash": "d5e396388261e24ca6f3d120b0f6379f285dd8cb6e0d8ba3184b77f22f7664e2",
+  "package_name": "zhang2007-mechanism-of-dna-damage-response-2-lab"
+}

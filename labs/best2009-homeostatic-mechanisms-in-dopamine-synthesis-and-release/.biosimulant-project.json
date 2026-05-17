@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "f778b1a5-0b3a-4504-9919-27048cb387e6",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "b0156c49-7021-4257-b490-29105ddde446",
+  "created_at": "2026-05-16T05:46:41.500126065+00:00",
+  "last_synced_at": "2026-05-17T02:04:14.630253+00:00",
+  "hub_manifest_hash": "521b20fd806b2cb43ec0333ce9f4a75737a2ec275f4548cf9c755a3ddb5cad38",
+  "package_name": "best2009-homeostatic-mechanisms-in-dopamine-synthesis-and-releas"
+}

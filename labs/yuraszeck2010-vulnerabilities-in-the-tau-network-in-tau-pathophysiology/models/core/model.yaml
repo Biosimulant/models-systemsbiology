@@ -1,0 +1,111 @@
+schema_version: '2.0'
+title: Yuraszeck2010 - Vulnerabilities in the Tau Network in Tau Pathophysiology
+description: 'Yuraszeck2010 - Vulnerabilities in the TauNetwork in Tau Pathophysiology
+  This model is described in the article: Vulnerabilities in the tau network and the
+  role of ultrasensitive points in tau pathoph. It can be used to explore systemsbiology
+  yuraszeck2010 vulnerabilities in the tau dynamics and compare simulation behavior
+  across conditions.'
+standard: other
+tags:
+- physiology
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Theresa M Yuraszeck
+- Pierre Neveu
+- Maria Rodriguez-Fernandez
+- Anne Robinson
+- Kenneth S Kosik
+upstream:
+  id: biomodels_ebi:BIOMD0000000542
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000542
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000542
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000542?filename=BIOMD0000000542_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.yuraszeck2010_vulnerabilities_in_the_tau_network_biomd0000000542_model:Yuraszeck2010VulnerabilitiesInTheTauNetworkBiomd0000000542Model
+  init_kwargs:
+    model_path: data/BIOMD0000000542.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_adp
+    maps_to: ADP
+    label: Initial Model State ADP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ADP`.
+  - name: initial_model_state_atp
+    maps_to: ATP
+    label: Initial Model State ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATP`.
+  - name: initial_tau_n_4_r
+    maps_to: TauN_4R
+    label: Initial Tau N 4 R
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TauN_4R`.
+  - name: initial_tau_n_3_r
+    maps_to: TauN_3R
+    label: Initial Tau N 3 R
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TauN_3R`.
+  - name: initial_tau_h4_r_hsp90
+    maps_to: TauH4R_Hsp90
+    label: Initial Tau H4 R Hsp90
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TauH4R_Hsp90`.
+  - name: initial_tau_h4_r_hsc70
+    maps_to: TauH4R_Hsc70
+    label: Initial Tau H4 R Hsc70
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TauH4R_Hsc70`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: adp
+    maps_to: ADP
+    label: ADP
+    description: ADP. Maps to SBML symbol `ADP`.
+  - name: atp
+    maps_to: ATP
+    label: ATP
+    description: ATP. Maps to SBML symbol `ATP`.
+  - name: tau_n_4_r
+    maps_to: TauN_4R
+    label: TauN*4R
+    description: TauN*4R. Maps to SBML symbol `TauN_4R`.
+  - name: tau_n_3_r
+    maps_to: TauN_3R
+    label: TauN*3R
+    description: TauN*3R. Maps to SBML symbol `TauN_3R`.
+  - name: tau_h4_r_hsp90
+    maps_to: TauH4R_Hsp90
+    label: TauH4R-Hsp90
+    description: TauH4R-Hsp90. Maps to SBML symbol `TauH4R_Hsp90`.
+  - name: tau_h4_r_hsc70
+    maps_to: TauH4R_Hsc70
+    label: TauH4R-Hsc70
+    description: TauH4R-Hsc70. Maps to SBML symbol `TauH4R_Hsc70`.

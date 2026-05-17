@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "ab6e9e74-e371-49ed-b29a-29b8c2a8b206",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "116394c7-4ce5-4b43-b20b-f422f3e7d1fb",
+  "created_at": "2026-05-16T05:46:49.663353328+00:00",
+  "last_synced_at": "2026-05-17T05:22:11.106548+00:00",
+  "hub_manifest_hash": "c5bc36b10bfa2b0dc9cdc447ba93b10af7332b3ccf7064679186ee398f214439",
+  "package_name": "palmer2014-effect-of-il-1-blocking-therapies-in-t2dm-disease-con"
+}

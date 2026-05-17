@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Martins2004_Yeast_Glycolysis_GlycerolSynthesis Visualisation
+description: Question-and-answer and dynamic visual summaries for Martins2004_Yeast_Glycolysis_GlycerolSynthesis.
+standard: other
+tags:
+- metabolism
+- microbiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Martins2004 Yeast Glycolysis Glycerolsynthesis Lab
+    question: 'Which metabolic pools or flux-linked states show the strongest simulated
+      change? Source model: Martins2004_Yeast_Glycolysis_GlycerolSynthesis.'
+    answer_focus: Q/A table plus metabolism timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_martins2004_yeast_glycolysis_glycerolsynthesis_model1009220000_model
+      title: Martins2004_Yeast_Glycolysis_GlycerolSynthesis
+      observables:
+      - id: GLCx
+        port: glucose
+        label: glucose
+        group: metabolism
+      - id: EtOH
+        port: ethanol
+        label: ethanol
+        group: metabolism
+      - id: GLY
+        port: glycerol
+        label: glycerol
+        group: metabolism
+      - id: F16bP
+        port: fructose_1_6_bisphosphate
+        label: fructose 1,6-bisphosphate
+        group: metabolism
+      - id: G6P
+        port: glucose_6_phosphate
+        label: glucose 6-phosphate
+        group: metabolism
+      - id: DHAP
+        port: dihydroxyacetone_phosphate
+        label: dihydroxyacetone phosphate
+        group: metabolism
+io:
+  inputs: []
+  outputs: []

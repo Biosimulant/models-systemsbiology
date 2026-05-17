@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Condorelli2001_GuanylateCyclase Visualisation
+description: Question-and-answer and dynamic visual summaries for Condorelli2001_GuanylateCyclase.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Condorelli2001 Guanylatecyclase Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Condorelli2001_GuanylateCyclase.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_condorelli2001_guanylatecyclase_model4780441670_model
+      title: Condorelli2001_GuanylateCyclase
+      observables:
+      - id: GC_slash_GTP
+        port: gc_slash_gtp
+        label: GC Slash GTP
+        group: physiology
+      - id: GC_slash_sGC_basal
+        port: gc_slash_sgc_basal
+        label: GC Slash SGC Basal
+        group: physiology
+      - id: GC_slash_NO_a
+        port: gc_slash_no_a
+        label: GC Slash NO A
+        group: physiology
+      - id: GC_slash_NO_sGCpart_act
+        port: gc_slash_no_sg_cpart_act
+        label: GC Slash NO SGCpart Act
+        group: physiology
+      - id: GC_slash_NO_sGCfull_act
+        port: gc_slash_no_sg_cfull_act
+        label: GC Slash NO SGCfull Act
+        group: physiology
+      - id: GC_slash_NO
+        port: gc_slash_no
+        label: GC Slash NO
+        group: physiology
+io:
+  inputs: []
+  outputs: []

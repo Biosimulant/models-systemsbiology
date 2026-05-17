@@ -1,0 +1,91 @@
+schema_version: '2.0'
+title: Mandlik2013 Synthetic Circuit Of Ipc Synthase In Leishmania Lab
+description: Mandlik2012 - Synthetic circuit of IPC synthase in Leishmania A genetic
+  circuit for the targeted enzyme inositol phosphorylceramide (IPC) synthase belonging
+  to the protozoan parasite Leishmania is con. It can be used to explore systemsbiology
+  mandlik2013 synthetic circuit of ipc dynamics and compare simulation behavior across
+  conditions.
+models:
+- alias: systemsbiology_sbml_mandlik2013_synthetic_circuit_of_ipc_synthase_in_model1208030000_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_mandlik2013_synthetic_circuit_of_ipc_synthase_in_model1208030000_model.state
+  to:
+  - visualisation.systemsbiology_sbml_mandlik2013_synthetic_circuit_of_ipc_synthase_in_model1208030000_model_state
+- from: systemsbiology_sbml_mandlik2013_synthetic_circuit_of_ipc_synthase_in_model1208030000_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_mandlik2013_synthetic_circuit_of_ipc_synthase_in_model1208030000_model_summary
+- from: systemsbiology_sbml_mandlik2013_synthetic_circuit_of_ipc_synthase_in_model1208030000_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_mandlik2013_synthetic_circuit_of_ipc_synthase_in_model1208030000_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_rs1
+    maps_to: systemsbiology_sbml_mandlik2013_synthetic_circuit_of_ipc_synthase_in_model1208030000_model.initial_model_state_rs1
+    label: Initial Model State RS1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `rs1`.
+  - name: initial_model_state_rp5
+    maps_to: systemsbiology_sbml_mandlik2013_synthetic_circuit_of_ipc_synthase_in_model1208030000_model.initial_model_state_rp5
+    label: Initial Model State RP5
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `rp5`.
+  - name: initial_model_state_rp4
+    maps_to: systemsbiology_sbml_mandlik2013_synthetic_circuit_of_ipc_synthase_in_model1208030000_model.initial_model_state_rp4
+    label: Initial Model State RP4
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `rp4`.
+  - name: initial_model_state_rp3
+    maps_to: systemsbiology_sbml_mandlik2013_synthetic_circuit_of_ipc_synthase_in_model1208030000_model.initial_model_state_rp3
+    label: Initial Model State RP3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `rp3`.
+  - name: initial_model_state_rp2
+    maps_to: systemsbiology_sbml_mandlik2013_synthetic_circuit_of_ipc_synthase_in_model1208030000_model.initial_model_state_rp2
+    label: Initial Model State RP2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `rp2`.
+  - name: initial_model_state_rp1
+    maps_to: systemsbiology_sbml_mandlik2013_synthetic_circuit_of_ipc_synthase_in_model1208030000_model.initial_model_state_rp1
+    label: Initial Model State RP1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `rp1`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_mandlik2013_synthetic_circuit_of_ipc_synthase_in_model1208030000_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_mandlik2013_synthetic_circuit_of_ipc_synthase_in_model1208030000_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_mandlik2013_synthetic_circuit_of_ipc_synthase_in_model1208030000_model.species_labels
+  - name: rs1
+    maps_to: systemsbiology_sbml_mandlik2013_synthetic_circuit_of_ipc_synthase_in_model1208030000_model.rs1
+  - name: rp5
+    maps_to: systemsbiology_sbml_mandlik2013_synthetic_circuit_of_ipc_synthase_in_model1208030000_model.rp5
+  - name: rp4
+    maps_to: systemsbiology_sbml_mandlik2013_synthetic_circuit_of_ipc_synthase_in_model1208030000_model.rp4
+  - name: rp3
+    maps_to: systemsbiology_sbml_mandlik2013_synthetic_circuit_of_ipc_synthase_in_model1208030000_model.rp3
+  - name: rp2
+    maps_to: systemsbiology_sbml_mandlik2013_synthetic_circuit_of_ipc_synthase_in_model1208030000_model.rp2
+  - name: rp1
+    maps_to: systemsbiology_sbml_mandlik2013_synthetic_circuit_of_ipc_synthase_in_model1208030000_model.rp1

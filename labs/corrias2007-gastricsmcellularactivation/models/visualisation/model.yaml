@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Corrias2007_GastricSMCellularActivation Visualisation
+description: Question-and-answer and dynamic visual summaries for Corrias2007_GastricSMCellularActivation.
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Corrias2007 Gastricsmcellularactivation Lab
+    question: 'Which physiological state variables carry the strongest baseline response?
+      Source model: Corrias2007_GastricSMCellularActivation.'
+    answer_focus: Q/A table plus physiology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_corrias2007_gastricsmcellularactivation_model0913145131_model
+      title: Corrias2007_GastricSMCellularActivation
+      observables:
+      - id: xr2_SM
+        port: xr2_sm
+        label: XR2 SM
+        group: physiology
+      - id: xr1_SM
+        port: xr1_sm
+        label: XR1 SM
+        group: physiology
+      - id: xa2_SM
+        port: xa2_sm
+        label: XA2 SM
+        group: physiology
+      - id: xa1_SM
+        port: xa1_sm
+        label: XA1 SM
+        group: physiology
+      - id: Vm_SM
+        port: vm_sm
+        label: Vm SM
+        group: physiology
+      - id: m_Na_SM
+        port: m_na_sm
+        label: M Na SM
+        group: physiology
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,58 @@
+schema_version: '2.0'
+title: Chassagnole2002 Carbon Metabolism Lab
+description: The model reproduces Figures 4,5 and 6 of the publication. The analytical
+  functions for cometabolites Catp, Camp, Cnadph, and Cnadp slightly differ from the
+  equations given in the paper.
+models:
+- alias: systemsbiology_sbml_chassagnole2002_carbon_metabolism_biomd0000000051_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_chassagnole2002_carbon_metabolism_biomd0000000051_model.state
+  to:
+  - visualisation.systemsbiology_sbml_chassagnole2002_carbon_metabolism_biomd0000000051_model_state
+- from: systemsbiology_sbml_chassagnole2002_carbon_metabolism_biomd0000000051_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_chassagnole2002_carbon_metabolism_biomd0000000051_model_summary
+- from: systemsbiology_sbml_chassagnole2002_carbon_metabolism_biomd0000000051_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_chassagnole2002_carbon_metabolism_biomd0000000051_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: cfeed
+    maps_to: systemsbiology_sbml_chassagnole2002_carbon_metabolism_biomd0000000051_model.cfeed
+    label: Cfeed
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `cfeed`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_chassagnole2002_carbon_metabolism_biomd0000000051_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_chassagnole2002_carbon_metabolism_biomd0000000051_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_chassagnole2002_carbon_metabolism_biomd0000000051_model.species_labels
+  - name: glucose_6_phosphate
+    maps_to: systemsbiology_sbml_chassagnole2002_carbon_metabolism_biomd0000000051_model.glucose_6_phosphate
+  - name: pyruvate
+    maps_to: systemsbiology_sbml_chassagnole2002_carbon_metabolism_biomd0000000051_model.pyruvate
+  - name: phosphoenol_pyruvate
+    maps_to: systemsbiology_sbml_chassagnole2002_carbon_metabolism_biomd0000000051_model.phosphoenol_pyruvate
+  - name: model_state_3_phosphoglycerate
+    maps_to: systemsbiology_sbml_chassagnole2002_carbon_metabolism_biomd0000000051_model.model_state_3_phosphoglycerate
+  - name: extracellular_glucose
+    maps_to: systemsbiology_sbml_chassagnole2002_carbon_metabolism_biomd0000000051_model.extracellular_glucose
+  - name: model_state_6_phosphogluconate
+    maps_to: systemsbiology_sbml_chassagnole2002_carbon_metabolism_biomd0000000051_model.model_state_6_phosphogluconate

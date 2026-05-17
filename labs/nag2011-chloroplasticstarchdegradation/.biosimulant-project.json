@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "650cce62-acbb-482f-b35c-57b35fb1ac83",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "714b61e9-1aa8-4661-ac2d-9ef443ad9871",
+  "created_at": "2026-05-16T05:46:48.331018030+00:00",
+  "last_synced_at": "2026-05-17T05:09:25.831558+00:00",
+  "hub_manifest_hash": "613701c249ac3253a2b3bc1519ec6f1645ab4368265e48811f948c80321fb024",
+  "package_name": "nag2011-chloroplasticstarchdegradation-lab"
+}

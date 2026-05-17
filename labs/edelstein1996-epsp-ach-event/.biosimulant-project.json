@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "e9d5edff-a7de-4ee7-89dd-e339b7845067",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "fa49408d-193e-4fb0-917f-bbaa9b3a044c",
+  "created_at": "2026-05-16T05:46:42.908385209+00:00",
+  "last_synced_at": "2026-05-17T02:57:18.561270+00:00",
+  "hub_manifest_hash": "6e56b04cc2800b4622d65235d520c8bc003d63855938992299ba979ae17c4029",
+  "package_name": "edelstein1996-epsp-ach-event-lab"
+}

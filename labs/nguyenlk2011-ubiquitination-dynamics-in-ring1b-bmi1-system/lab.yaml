@@ -1,0 +1,90 @@
+schema_version: '2.0'
+title: Nguyenlk2011 Ubiquitination Dynamics In Ring1b Bmi1 System Lab
+description: NguyenLK2011 - Ubiquitination dynamics inRing1B-Bmi1 system This theoretical
+  model investigates thedynamics of Ring1B/Bmi1 ubiquitination to identify bistableswitch-like
+  and oscillatory behaviour in t. It can be used to explore systemsbiology nguyenlk2011
+  ubiquitination dynamics in ring1b dynamics and compare simulation behavior across
+  conditions.
+models:
+- alias: systemsbiology_sbml_nguyenlk2011_ubiquitination_dynamics_in_ring1b_b_biomd0000000622_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_nguyenlk2011_ubiquitination_dynamics_in_ring1b_b_biomd0000000622_model.state
+  to:
+  - visualisation.systemsbiology_sbml_nguyenlk2011_ubiquitination_dynamics_in_ring1b_b_biomd0000000622_model_state
+- from: systemsbiology_sbml_nguyenlk2011_ubiquitination_dynamics_in_ring1b_b_biomd0000000622_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_nguyenlk2011_ubiquitination_dynamics_in_ring1b_b_biomd0000000622_model_summary
+- from: systemsbiology_sbml_nguyenlk2011_ubiquitination_dynamics_in_ring1b_b_biomd0000000622_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_nguyenlk2011_ubiquitination_dynamics_in_ring1b_b_biomd0000000622_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- cellcycle
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_bmi1
+    maps_to: systemsbiology_sbml_nguyenlk2011_ubiquitination_dynamics_in_ring1b_b_biomd0000000622_model.initial_bmi1
+    label: Initial Bmi1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Bmi1`.
+  - name: initial_bmi1ubd
+    maps_to: systemsbiology_sbml_nguyenlk2011_ubiquitination_dynamics_in_ring1b_b_biomd0000000622_model.initial_bmi1ubd
+    label: Initial Bmi1ubd
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Bmi1ubd`.
+  - name: initial_usp7tot
+    maps_to: systemsbiology_sbml_nguyenlk2011_ubiquitination_dynamics_in_ring1b_b_biomd0000000622_model.initial_usp7tot
+    label: Initial Usp7tot
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `USP7tot`.
+  - name: initial_r1_buba
+    maps_to: systemsbiology_sbml_nguyenlk2011_ubiquitination_dynamics_in_ring1b_b_biomd0000000622_model.initial_r1_buba
+    label: Initial R1 Buba
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `R1Buba`.
+  - name: initial_model_state_zub
+    maps_to: systemsbiology_sbml_nguyenlk2011_ubiquitination_dynamics_in_ring1b_b_biomd0000000622_model.initial_model_state_zub
+    label: Initial Model State Zub
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Zub`.
+  - name: initial_r1_bubd
+    maps_to: systemsbiology_sbml_nguyenlk2011_ubiquitination_dynamics_in_ring1b_b_biomd0000000622_model.initial_r1_bubd
+    label: Initial R1 Bubd
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `R1Bubd`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_nguyenlk2011_ubiquitination_dynamics_in_ring1b_b_biomd0000000622_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_nguyenlk2011_ubiquitination_dynamics_in_ring1b_b_biomd0000000622_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_nguyenlk2011_ubiquitination_dynamics_in_ring1b_b_biomd0000000622_model.species_labels
+  - name: bmi1
+    maps_to: systemsbiology_sbml_nguyenlk2011_ubiquitination_dynamics_in_ring1b_b_biomd0000000622_model.bmi1
+  - name: bmi1ubd
+    maps_to: systemsbiology_sbml_nguyenlk2011_ubiquitination_dynamics_in_ring1b_b_biomd0000000622_model.bmi1ubd
+  - name: usp7tot
+    maps_to: systemsbiology_sbml_nguyenlk2011_ubiquitination_dynamics_in_ring1b_b_biomd0000000622_model.usp7tot
+  - name: r1_buba
+    maps_to: systemsbiology_sbml_nguyenlk2011_ubiquitination_dynamics_in_ring1b_b_biomd0000000622_model.r1_buba
+  - name: zub
+    maps_to: systemsbiology_sbml_nguyenlk2011_ubiquitination_dynamics_in_ring1b_b_biomd0000000622_model.zub
+  - name: r1_bubd
+    maps_to: systemsbiology_sbml_nguyenlk2011_ubiquitination_dynamics_in_ring1b_b_biomd0000000622_model.r1_bubd

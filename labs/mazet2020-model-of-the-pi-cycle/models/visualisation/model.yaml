@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Mazet2020 - model of the PI cycle Visualisation
+description: Question-and-answer and dynamic visual summaries for Mazet2020 - model
+  of the PI cycle.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Mazet2020 Model Of The Pi Cycle Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Mazet2020 - model of the PI cycle.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_mazet2020_model_of_the_pi_cycle_model2006300001_model
+      title: Mazet2020 - model of the PI cycle
+      observables:
+      - id: PI4P_P4BP
+        port: pi4_p_p4_bp
+        label: PI4P.P4BP
+        group: physiology
+      - id: PIP2_PLB
+        port: pip2_plb
+        label: PIP2.PLB
+        group: physiology
+      - id: PA_PABP
+        port: pa_pabp
+        label: PA.PABP
+        group: physiology
+      - id: DAG_BP
+        port: dag_bp
+        label: DAG.BP
+        group: physiology
+      - id: smG
+        port: sm_g
+        label: smG
+        group: physiology
+      - id: smGa
+        port: sm_ga
+        label: smGa
+        group: physiology
+io:
+  inputs: []
+  outputs: []

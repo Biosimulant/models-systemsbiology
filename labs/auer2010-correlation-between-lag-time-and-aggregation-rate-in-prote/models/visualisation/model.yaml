@@ -1,0 +1,39 @@
+schema_version: '2.0'
+title: Auer2010 - Correlation between lag time and aggregation rate in protein aggregation
+  Visualisation
+description: Question-and-answer and dynamic visual summaries for Auer2010 - Correlation
+  between lag time and aggregation rate in protein aggregation.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Auer2010 Correlation Between Lag Time And Aggregation Rate In Prote
+      Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Auer2010 - Correlation between lag time and aggregation rate in
+      protein aggregation.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_auer2010_correlation_between_lag_time_and_aggreg_biomd0000000555_model
+      title: Auer2010 - Correlation between lag time and aggregation rate in protein
+        aggregation
+      observables:
+      - id: Amyloid
+        port: amyloid
+        label: Amyloid
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

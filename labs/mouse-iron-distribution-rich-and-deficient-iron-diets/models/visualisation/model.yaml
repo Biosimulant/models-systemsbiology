@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Mouse Iron Distribution - Rich and Deficient iron diets (tracer) Visualisation
+description: Question-and-answer and dynamic visual summaries for Mouse Iron Distribution
+  - Rich and Deficient iron diets (tracer).
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Mouse Iron Distribution Rich And Deficient Iron Diets Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Mouse Iron Distribution - Rich and Deficient iron diets (tracer).'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_mouse_iron_distribution_rich_and_deficient_iron_biomd0000000734_model
+      title: Mouse Iron Distribution - Rich and Deficient iron diets (tracer)
+      observables:
+      - id: FeLiver_0
+        port: fe_liver
+        label: FeLiver
+        group: physiology
+      - id: FeLiver
+        port: fe_liver_2
+        label: FeLiver*
+        group: physiology
+      - id: FeRBC_0
+        port: fe_rbc
+        label: FeRBC
+        group: core_system_state
+      - id: FeDuo_0
+        port: fe_duo
+        label: FeDuo
+        group: core_system_state
+      - id: FeSpleen_0
+        port: fe_spleen
+        label: FeSpleen
+        group: core_system_state
+      - id: FeRest_0
+        port: fe_rest
+        label: FeRest
+        group: core_system_state
+io:
+  inputs: []
+  outputs: []

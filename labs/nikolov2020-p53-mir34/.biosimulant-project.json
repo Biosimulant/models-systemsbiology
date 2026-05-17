@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "9379c9a3-8e4a-49da-b610-1dc545b83fda",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "4ee2d4a7-5478-4e3c-9d9b-94283ec87750",
+  "created_at": "2026-05-16T05:46:49.108987975+00:00",
+  "last_synced_at": "2026-05-17T05:16:51.794889+00:00",
+  "hub_manifest_hash": "92fb1e4fea50f96606c99a491ce58b409d2b4acbdbe5b081692ef99d55b3a013",
+  "package_name": "nikolov2020-p53-mir34-lab"
+}

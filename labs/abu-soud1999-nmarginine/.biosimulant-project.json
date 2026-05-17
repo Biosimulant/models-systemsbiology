@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "f271c649-4f82-479e-b79c-915f918b2978",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "8229fb2a-c8e1-49c4-bf99-5d04bbbe1879",
+  "created_at": "2026-05-16T05:46:40.629875060+00:00",
+  "last_synced_at": "2026-05-17T01:32:09.992714+00:00",
+  "hub_manifest_hash": "c27358c85815e6eff9d2251f58788beb60aef14b00532ca39eafa3085a7de12f",
+  "package_name": "abu-soud1999-nmarginine-lab"
+}

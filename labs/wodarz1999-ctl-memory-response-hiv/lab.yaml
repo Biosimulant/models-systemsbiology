@@ -1,0 +1,74 @@
+schema_version: '2.0'
+title: Wodarz1999 Ctl Memory Response Hiv Lab
+description: 'This a model from the article: Specific therapy regimes could lead to
+  long-term immunological control of HIV. It can be used to explore systemsbiology
+  wodarz1999 ctl memory response hiv dynamics and compare simulation behavior across
+  conditions.'
+models:
+- alias: systemsbiology_sbml_wodarz1999_ctl_memory_response_hiv_biomd0000000683_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_wodarz1999_ctl_memory_response_hiv_biomd0000000683_model.state
+  to:
+  - visualisation.systemsbiology_sbml_wodarz1999_ctl_memory_response_hiv_biomd0000000683_model_state
+- from: systemsbiology_sbml_wodarz1999_ctl_memory_response_hiv_biomd0000000683_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_wodarz1999_ctl_memory_response_hiv_biomd0000000683_model_summary
+- from: systemsbiology_sbml_wodarz1999_ctl_memory_response_hiv_biomd0000000683_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_wodarz1999_ctl_memory_response_hiv_biomd0000000683_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- epidemiology
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_x
+    maps_to: systemsbiology_sbml_wodarz1999_ctl_memory_response_hiv_biomd0000000683_model.initial_model_state_x
+    label: Initial Model State X
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x`.
+  - name: initial_model_state_y
+    maps_to: systemsbiology_sbml_wodarz1999_ctl_memory_response_hiv_biomd0000000683_model.initial_model_state_y
+    label: Initial Model State Y
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `y`.
+  - name: initial_model_state_w
+    maps_to: systemsbiology_sbml_wodarz1999_ctl_memory_response_hiv_biomd0000000683_model.initial_model_state_w
+    label: Initial Model State W
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `w`.
+  - name: initial_model_state_z
+    maps_to: systemsbiology_sbml_wodarz1999_ctl_memory_response_hiv_biomd0000000683_model.initial_model_state_z
+    label: Initial Model State Z
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `z`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_wodarz1999_ctl_memory_response_hiv_biomd0000000683_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_wodarz1999_ctl_memory_response_hiv_biomd0000000683_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_wodarz1999_ctl_memory_response_hiv_biomd0000000683_model.species_labels
+  - name: model_state_x
+    maps_to: systemsbiology_sbml_wodarz1999_ctl_memory_response_hiv_biomd0000000683_model.model_state_x
+  - name: model_state_y
+    maps_to: systemsbiology_sbml_wodarz1999_ctl_memory_response_hiv_biomd0000000683_model.model_state_y
+  - name: model_state_w
+    maps_to: systemsbiology_sbml_wodarz1999_ctl_memory_response_hiv_biomd0000000683_model.model_state_w
+  - name: model_state_z
+    maps_to: systemsbiology_sbml_wodarz1999_ctl_memory_response_hiv_biomd0000000683_model.model_state_z

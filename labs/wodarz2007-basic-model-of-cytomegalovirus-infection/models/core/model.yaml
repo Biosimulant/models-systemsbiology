@@ -1,0 +1,97 @@
+schema_version: '2.0'
+title: Wodarz2007 - Basic Model of Cytomegalovirus Infection
+description: 'This a model from the article: Dynamics of killer T cell inflation in
+  viral infections. It can be used to explore systemsbiology wodarz2007 basic of cytomegalovirus
+  infect dynamics and compare simulation behavior across conditions.'
+standard: other
+tags:
+- epidemiology
+- immunology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Dominik Wodarz
+- Sophie Sierro
+- Paul Klenerman
+upstream:
+  id: biomodels_ebi:BIOMD0000000686
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000686
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000686
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000686?filename=BIOMD0000000686_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.wodarz2007_basic_model_of_cytomegalovirus_infect_biomd0000000686_model:Wodarz2007BasicModelOfCytomegalovirusInfectBiomd0000000686Model
+  init_kwargs:
+    model_path: data/BIOMD0000000686.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_y1
+    maps_to: y1
+    label: Initial Model State Y1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `y1`.
+  - name: initial_model_state_y0
+    maps_to: y0
+    label: Initial Model State Y0
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `y0`.
+  - name: initial_model_state_x
+    maps_to: x
+    label: Initial Model State X
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x`.
+  - name: initial_model_state_v
+    maps_to: v
+    label: Initial Model State V
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `v`.
+  - name: initial_model_state_l
+    maps_to: L
+    label: Initial Model State L
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `L`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_y1
+    maps_to: y1
+    label: Y1
+    description: Y1. Maps to SBML symbol `y1`.
+  - name: model_state_y0
+    maps_to: y0
+    label: Y0
+    description: Y0. Maps to SBML symbol `y0`.
+  - name: model_state_x
+    maps_to: x
+    label: X
+    description: X. Maps to SBML symbol `x`.
+  - name: model_state_v
+    maps_to: v
+    label: V
+    description: V. Maps to SBML symbol `v`.
+  - name: model_state_l
+    maps_to: L
+    label: L
+    description: L. Maps to SBML symbol `L`.

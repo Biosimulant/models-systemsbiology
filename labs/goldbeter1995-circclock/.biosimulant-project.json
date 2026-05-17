@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "026c09ea-c3bc-4060-a7de-5603b97aaf7c",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "27e16ded-568f-471f-a539-30462892e745",
+  "created_at": "2026-05-16T05:46:43.632100996+00:00",
+  "last_synced_at": "2026-05-17T03:20:01.217581+00:00",
+  "hub_manifest_hash": "06e5c181920b75c7d6ce2cc3821c28ab180b4221fdf834a52d5360bfad6621f7",
+  "package_name": "goldbeter1995-circclock-lab"
+}

@@ -1,0 +1,109 @@
+schema_version: '2.0'
+title: Qi2013 - IL-6 and IFN crosstalk model
+description: Qi2013 - IL-6 and IFN crosstalk model This model [BIOMD0000000544] describes
+  the crosstalk between IFN-gamma and IL-6 inducedsignalling; it aims to outline mechanisms
+  and factors that maycontrol the i. It can be used to explore systemsbiology qi2013
+  il 6 and ifn dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Yun-feng Qi
+- Yan-xin Huang
+- Hong-yan Wang
+- Yu Zhang
+- Yong-li Bao
+upstream:
+  id: biomodels_ebi:BIOMD0000000544
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000544
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000544
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000544?filename=BIOMD0000000544_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.qi2013_il_6_and_ifn_crosstalk_model_biomd0000000544_model:Qi2013Il6AndIfnCrosstalkModelBiomd0000000544Model
+  init_kwargs:
+    model_path: data/BIOMD0000000544.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_mrna_socs3_n
+    maps_to: species_30
+    label: Initial MRNA Socs3 N
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_30`.
+  - name: initial_mrna_socs3_c
+    maps_to: species_31
+    label: Initial MRNA Socs3 C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_31`.
+  - name: initial_mrna_socs1_n
+    maps_to: species_97
+    label: Initial MRNA Socs1 N
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_97`.
+  - name: initial_mrna_socs1_c
+    maps_to: species_98
+    label: Initial MRNA Socs1 C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_98`.
+  - name: initial_model_state_mek
+    maps_to: species_51
+    label: Initial Model State Mek
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_51`.
+  - name: initial_ceb_pi
+    maps_to: species_74
+    label: Initial Ceb Pi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_74`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: mrna_socs3_n
+    maps_to: species_30
+    label: mRNA-SOCS3N
+    description: mRNA-SOCS3N. Maps to SBML symbol `species_30`.
+  - name: mrna_socs3_c
+    maps_to: species_31
+    label: mRNA-SOCS3C
+    description: mRNA-SOCS3C. Maps to SBML symbol `species_31`.
+  - name: mrna_socs1_n
+    maps_to: species_97
+    label: mRNA-SOCS1N
+    description: mRNA-SOCS1N. Maps to SBML symbol `species_97`.
+  - name: mrna_socs1_c
+    maps_to: species_98
+    label: mRNA-SOCS1C
+    description: mRNA-SOCS1C. Maps to SBML symbol `species_98`.
+  - name: mek
+    maps_to: species_51
+    label: MEK
+    description: MEK. Maps to SBML symbol `species_51`.
+  - name: ceb_pi
+    maps_to: species_74
+    label: CEBPi
+    description: CEBPi. Maps to SBML symbol `species_74`.

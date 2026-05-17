@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Qiao2007_MAPK_Signaling_Oscillatory Visualisation
+description: Question-and-answer and dynamic visual summaries for Qiao2007_MAPK_Signaling_Oscillatory.
+standard: other
+tags:
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Qiao2007 Mapk Signaling Oscillatory Lab
+    question: 'Which signalling variables dominate the simulated network response?
+      Source model: Qiao2007_MAPK_Signaling_Oscillatory.'
+    answer_focus: Q/A table plus signaling timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_qiao2007_mapk_signaling_oscillatory_model6185746832_model
+      title: Qiao2007_MAPK_Signaling_Oscillatory
+      observables:
+      - id: KKPP
+        port: kkpp
+        label: KKPP
+        group: signaling
+      - id: KKKS
+        port: kkks
+        label: KKKS
+        group: signaling
+      - id: KKPase
+        port: kk_pase
+        label: KKPase
+        group: signaling
+      - id: E2
+        port: model_state_e2
+        label: E2
+        group: signaling
+      - id: E1
+        port: model_state_e1
+        label: E1
+        group: signaling
+      - id: KKPPKKPase
+        port: kkppkk_pase
+        label: KKPPKKPase
+        group: signaling
+io:
+  inputs: []
+  outputs: []

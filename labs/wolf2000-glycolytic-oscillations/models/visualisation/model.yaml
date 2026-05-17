@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Wolf2000_Glycolytic_Oscillations Visualisation
+description: Question-and-answer and dynamic visual summaries for Wolf2000_Glycolytic_Oscillations.
+standard: other
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Wolf2000 Glycolytic Oscillations Lab
+    question: 'Which metabolic pools or flux-linked states show the strongest simulated
+      change? Source model: Wolf2000_Glycolytic_Oscillations.'
+    answer_focus: Q/A table plus metabolism timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_wolf2000_glycolytic_oscillations_biomd0000000206_model
+      title: Wolf2000_Glycolytic_Oscillations
+      observables:
+      - id: s5
+        port: pyruvate
+        label: Pyruvate
+        group: metabolism
+      - id: s2
+        port: f16_p
+        label: F16P
+        group: metabolism
+      - id: at
+        port: atp
+        label: ATP
+        group: metabolism
+      - id: s1
+        port: glucose
+        label: Glucose
+        group: metabolism
+      - id: s4
+        port: model_state_3_pg
+        label: 3PG
+        group: metabolism
+      - id: s3
+        port: triose_gly3_phos_dhap
+        label: Triose_Gly3Phos_DHAP
+        group: metabolism
+io:
+  inputs: []
+  outputs: []

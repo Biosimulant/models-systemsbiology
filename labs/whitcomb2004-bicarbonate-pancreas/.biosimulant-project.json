@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "873f6014-de3d-484b-974f-2045931cb3db",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "489205a8-e7aa-4f1a-b1f5-a1aa139395d8",
+  "created_at": "2026-05-16T05:46:53.169056041+00:00",
+  "last_synced_at": "2026-05-17T06:49:39.034786+00:00",
+  "hub_manifest_hash": "e3e65dab96e80401ce7f0457b1f22782235db4ffe8580d58fca7eaa1b52207d0",
+  "package_name": "whitcomb2004-bicarbonate-pancreas-lab"
+}

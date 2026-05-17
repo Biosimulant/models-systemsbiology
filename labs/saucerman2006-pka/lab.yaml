@@ -1,0 +1,75 @@
+schema_version: '2.0'
+title: Saucerman2006 Pka Lab
+description: The model reproduces Fig 2B of the paper. Model successfully tested on
+  MathSBML To the extent possible under law, all copyright and related or neighbouring
+  rights to this encoded model have been dedic.
+models:
+- alias: systemsbiology_sbml_saucerman2006_pka_biomd0000000165_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_saucerman2006_pka_biomd0000000165_model.state
+  to:
+  - visualisation.systemsbiology_sbml_saucerman2006_pka_biomd0000000165_model_state
+- from: systemsbiology_sbml_saucerman2006_pka_biomd0000000165_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_saucerman2006_pka_biomd0000000165_model_summary
+- from: systemsbiology_sbml_saucerman2006_pka_biomd0000000165_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_saucerman2006_pka_biomd0000000165_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: toff_global_light_camp_photolysis
+    maps_to: systemsbiology_sbml_saucerman2006_pka_biomd0000000165_model.toff_global_light_camp_photolysis
+    label: Toff Global Light CAMP Photolysis
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `toff_global_light_cAMP_photolysis`.
+  - name: toff_local_light_camp_photolysis
+    maps_to: systemsbiology_sbml_saucerman2006_pka_biomd0000000165_model.toff_local_light_camp_photolysis
+    label: Toff Local Light CAMP Photolysis
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `toff_local_light_cAMP_photolysis`.
+  - name: ton_global_light_camp_photolysis
+    maps_to: systemsbiology_sbml_saucerman2006_pka_biomd0000000165_model.ton_global_light_camp_photolysis
+    label: Ton Global Light CAMP Photolysis
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `ton_global_light_cAMP_photolysis`.
+  - name: ton_local_light_camp_photolysis
+    maps_to: systemsbiology_sbml_saucerman2006_pka_biomd0000000165_model.ton_local_light_camp_photolysis
+    label: Ton Local Light CAMP Photolysis
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `ton_local_light_cAMP_photolysis`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_saucerman2006_pka_biomd0000000165_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_saucerman2006_pka_biomd0000000165_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_saucerman2006_pka_biomd0000000165_model.species_labels
+  - name: atp
+    maps_to: systemsbiology_sbml_saucerman2006_pka_biomd0000000165_model.atp
+  - name: akar
+    maps_to: systemsbiology_sbml_saucerman2006_pka_biomd0000000165_model.akar
+  - name: model_state_gs
+    maps_to: systemsbiology_sbml_saucerman2006_pka_biomd0000000165_model.model_state_gs
+  - name: dmnb_camp
+    maps_to: systemsbiology_sbml_saucerman2006_pka_biomd0000000165_model.dmnb_camp
+  - name: model_state_rc
+    maps_to: systemsbiology_sbml_saucerman2006_pka_biomd0000000165_model.model_state_rc
+  - name: model_state_pp
+    maps_to: systemsbiology_sbml_saucerman2006_pka_biomd0000000165_model.model_state_pp

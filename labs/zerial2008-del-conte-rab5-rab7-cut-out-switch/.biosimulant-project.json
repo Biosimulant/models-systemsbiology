@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "5ffc3b02-94dc-4c08-9254-9e1072540b97",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "14fc7a9a-3471-49b2-9736-1712d13f41a3",
+  "created_at": "2026-05-16T05:46:53.632887854+00:00",
+  "last_synced_at": "2026-05-17T07:09:37.451042+00:00",
+  "hub_manifest_hash": "3131dee3b66fe5a9c7e08bcdc32edaa3b9656d59bb6e6dc306a583b2238888a8",
+  "package_name": "zerial2008-del-conte-rab5-rab7-cut-out-switch-lab"
+}

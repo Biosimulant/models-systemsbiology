@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "973db097-99f3-40c2-b691-a7a9219d7ba8",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "e2ee7eb0-ba40-4e1b-842c-47e100cf2ed5",
+  "created_at": "2026-05-16T05:46:52.538155850+00:00",
+  "last_synced_at": "2026-05-17T06:30:59.738470+00:00",
+  "hub_manifest_hash": "f93cc3311e70dce418c652067d4a719853d75c51aaf5ccb8605a3bbc085f586a",
+  "package_name": "ueda2001-typebtrichothecenes-lab"
+}

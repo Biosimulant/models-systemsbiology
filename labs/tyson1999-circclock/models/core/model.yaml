@@ -1,0 +1,77 @@
+schema_version: '2.0'
+title: Tyson1999_CircClock
+description: To the extent possible under law, all copyright and related or neighbouring
+  rights to this encoded model have been dedicated to the public domain worldwide.
+  It can be used to explore systemsbiology tyson1999 circclock BioModels0000000036
+  dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- J J Tyson
+- C I Hong
+- C D Thron
+- B Novak
+upstream:
+  id: biomodels_ebi:BIOMD0000000036
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000036
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000036
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000036?filename=BIOMD0000000036_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.tyson1999_circclock_biomd0000000036_model:Tyson1999CircclockBiomd0000000036Model
+  init_kwargs:
+    model_path: data/BIOMD0000000036.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_pt
+    maps_to: P
+    label: Initial Model State Pt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P`.
+  - name: initial_empty_set
+    maps_to: EmptySet
+    label: Initial Empty Set
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `EmptySet`.
+  - name: initial_model_state_m
+    maps_to: M
+    label: Initial Model State M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_pt
+    maps_to: P
+    label: Pt
+    description: Pt. Maps to SBML symbol `P`.
+  - name: empty_set
+    maps_to: EmptySet
+    label: EmptySet
+    description: EmptySet. Maps to SBML symbol `EmptySet`.
+  - name: model_state_m
+    maps_to: M
+    label: M
+    description: M. Maps to SBML symbol `M`.

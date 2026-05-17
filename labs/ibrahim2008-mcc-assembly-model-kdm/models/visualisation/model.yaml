@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Ibrahim2008_MCC_assembly_model_KDM Visualisation
+description: Question-and-answer and dynamic visual summaries for Ibrahim2008_MCC_assembly_model_KDM.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Ibrahim2008 Mcc Assembly Model Kdm Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Ibrahim2008_MCC_assembly_model_KDM.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_ibrahim2008_mcc_assembly_model_kdm_biomd0000000193_model
+      title: Ibrahim2008_MCC_assembly_model_KDM
+      observables:
+      - id: OMad2
+        port: o_mad2
+        label: O-Mad2
+        group: physiology
+      - id: Bub3_BubR1
+        port: bub3_bub_r1
+        label: Bub3:BubR1
+        group: physiology
+      - id: Mad1_CMad2
+        port: mad1_c_mad2
+        label: Mad1:C-Mad2
+        group: physiology
+      - id: Mad1_CMad2_OMad2
+        port: mad1_c_mad2_o_mad2
+        label: Mad1:C-Mad2:O-Mad2*
+        group: physiology
+      - id: Cdc20_CMad2
+        port: cdc20_c_mad2
+        label: Cdc20:C-Mad2
+        group: physiology
+      - id: Bub3_BubR1_Cdc20
+        port: bub3_bub_r1_cdc20
+        label: Bub3:BubR1:Cdc20
+        group: physiology
+io:
+  inputs: []
+  outputs: []

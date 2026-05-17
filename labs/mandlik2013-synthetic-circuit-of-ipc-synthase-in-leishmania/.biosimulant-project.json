@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "94b71ad9-f13c-41de-9d8d-6b09780e2c35",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "ee114a9b-bd7b-4dba-816d-48262e01e340",
+  "created_at": "2026-05-16T05:46:46.409411523+00:00",
+  "last_synced_at": "2026-05-17T04:45:49.048199+00:00",
+  "hub_manifest_hash": "5c8ab35d2df9f713ed7ba3a83008787123d0fc9b488eacb20ec0781b79767ab4",
+  "package_name": "mandlik2013-synthetic-circuit-of-ipc-synthase-in-leishmania-lab"
+}

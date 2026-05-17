@@ -1,0 +1,95 @@
+schema_version: '2.0'
+title: Graham2013 - Role of osteocytes in targeted bone remodeling
+description: Jason M. It can be used to explore systemsbiology graham2013 role of
+  osteocytes in dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Jason M Graham
+- Bruce P Ayati
+- Sarah A Holstein
+- James A Martin
+upstream:
+  id: biomodels_ebi:BIOMD0000000721
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000721
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000721
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000721?filename=Model.xml
+  license: CC0
+biosim:
+  entrypoint: src.graham2013_role_of_osteocytes_in_targeted_bone_r_biomd0000000721_model:Graham2013RoleOfOsteocytesInTargetedBoneRBiomd0000000721Model
+  init_kwargs:
+    model_path: data/BIOMD0000000721.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_osteocytes_s
+    maps_to: Osteocytes__S
+    label: Initial Osteocytes S
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Osteocytes__S`.
+  - name: initial_bone_volume_z
+    maps_to: Bone_volume__z
+    label: Initial Bone Volume Z
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Bone_volume__z`.
+  - name: initial_pre_osteoblasts_p
+    maps_to: Pre_Osteoblasts__P
+    label: Initial Pre Osteoblasts P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pre_Osteoblasts__P`.
+  - name: initial_osteoclasts_c
+    maps_to: Osteoclasts__C
+    label: Initial Osteoclasts C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Osteoclasts__C`.
+  - name: initial_osteoblasts_b
+    maps_to: Osteoblasts__B
+    label: Initial Osteoblasts B
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Osteoblasts__B`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: osteocytes_s
+    maps_to: Osteocytes__S
+    label: Osteocytes (S)
+    description: Osteocytes (S). Maps to SBML symbol `Osteocytes__S`.
+  - name: bone_volume_z
+    maps_to: Bone_volume__z
+    label: Bone volume (z)
+    description: Bone volume (z). Maps to SBML symbol `Bone_volume__z`.
+  - name: pre_osteoblasts_p
+    maps_to: Pre_Osteoblasts__P
+    label: Pre-Osteoblasts (P)
+    description: Pre-Osteoblasts (P). Maps to SBML symbol `Pre_Osteoblasts__P`.
+  - name: osteoclasts_c
+    maps_to: Osteoclasts__C
+    label: Osteoclasts (C)
+    description: Osteoclasts (C). Maps to SBML symbol `Osteoclasts__C`.
+  - name: osteoblasts_b
+    maps_to: Osteoblasts__B
+    label: Osteoblasts (B)
+    description: Osteoblasts (B). Maps to SBML symbol `Osteoblasts__B`.

@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Nakano2010_Synaptic_Plasticity
+description: 'This is an SBML version of the model described in: A kinetic model of
+  dopamine- and calcium-dependent striatal synaptic plasticity. Nakano T, Doi T, Yoshimoto
+  J, Doya K.'
+standard: other
+tags:
+- neuroscience
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Takashi Nakano
+- Tomokazu Doi
+- Junichiro Yoshimoto
+- Kenji Doya
+upstream:
+  id: biomodels_ebi:MODEL1101170000
+  source_db: biomodels_ebi
+  source_id: MODEL1101170000
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1101170000
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1101170000?filename=MODEL1101170000_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.nakano2010_synaptic_plasticity_model1101170000_model:Nakano2010SynapticPlasticityModel1101170000Model
+  init_kwargs:
+    model_path: data/MODEL1101170000.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_atp
+    maps_to: ATP
+    label: Initial Model State ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATP`.
+  - name: initial_ac_gsa_atp
+    maps_to: AC_Gsa_ATP
+    label: Initial Ac Gsa ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `AC_Gsa_ATP`.
+  - name: initial_ac_gsa_ca_atp
+    maps_to: ACGsa_Ca_ATP
+    label: Initial Ac Gsa Ca ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ACGsa_Ca_ATP`.
+  - name: initial_cam_total
+    maps_to: Cam_total
+    label: Initial Cam Total
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Cam_total`.
+  - name: initial_ca_m
+    maps_to: CaM
+    label: Initial Ca M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaM`.
+  - name: initial_ca_mkii
+    maps_to: CaMKII
+    label: Initial Ca Mkii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CaMKII`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: atp
+    maps_to: ATP
+    label: ATP
+    description: ATP. Maps to SBML symbol `ATP`.
+  - name: ac_gsa_atp
+    maps_to: AC_Gsa_ATP
+    label: AC Gsa ATP
+    description: AC Gsa ATP. Maps to SBML symbol `AC_Gsa_ATP`.
+  - name: ac_gsa_ca_atp
+    maps_to: ACGsa_Ca_ATP
+    label: ACGsa Ca ATP
+    description: ACGsa Ca ATP. Maps to SBML symbol `ACGsa_Ca_ATP`.
+  - name: cam_total
+    maps_to: Cam_total
+    label: Cam Total
+    description: Cam Total. Maps to SBML symbol `Cam_total`.
+  - name: ca_m
+    maps_to: CaM
+    label: CaM
+    description: CaM. Maps to SBML symbol `CaM`.
+  - name: ca_mkii
+    maps_to: CaMKII
+    label: CaMKII
+    description: CaMKII. Maps to SBML symbol `CaMKII`.

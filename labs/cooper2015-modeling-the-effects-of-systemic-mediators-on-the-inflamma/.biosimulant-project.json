@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "ae433f3c-43e5-4a25-ad9d-7d8ba784666b",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "30f2b91f-022b-4e10-a311-344efb2a7005",
+  "created_at": "2026-05-16T05:46:42.500548617+00:00",
+  "last_synced_at": "2026-05-17T02:40:21.289156+00:00",
+  "hub_manifest_hash": "8696d12592fa5a6d5ed6bc9bb39a2ff935e5e69a0a170b12bc0457d077c04c68",
+  "package_name": "cooper2015-modeling-the-effects-of-systemic-mediators-on-the-inf"
+}

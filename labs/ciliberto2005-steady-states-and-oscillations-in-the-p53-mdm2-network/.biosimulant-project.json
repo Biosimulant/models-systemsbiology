@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "9dcbe03a-a84e-4ce0-9a03-7b175b485599",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "f7df7831-0157-452c-aa39-9a21995e1a5b",
+  "created_at": "2026-05-16T05:46:42.423614825+00:00",
+  "last_synced_at": "2026-05-17T02:37:08.636766+00:00",
+  "hub_manifest_hash": "0d9cb64bd4f52311dd0e6a99737fda01f521e553a91f26f408e39cc56e08856d",
+  "package_name": "ciliberto2005-steady-states-and-oscillations-in-the-p53-mdm2-net"
+}

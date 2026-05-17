@@ -1,0 +1,95 @@
+schema_version: '2.0'
+title: DePaor1986_CirculatoryAutoregulation
+description: 'This a model from the article: A feedback oscillator model for circulatory
+  autoregulation Annraoi M. De Paor, Patrick Timmons International Journal of Control
+  1986 43(2):679-688 doi:10.1080/0020717860.'
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Annraoi M. De Paor
+- Patrick Timmons
+upstream:
+  id: biomodels_ebi:MODEL1172940336
+  source_db: biomodels_ebi
+  source_id: MODEL1172940336
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1172940336
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1172940336?filename=MODEL1172940336_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.depaor1986_circulatoryautoregulation_model1172940336_model:Depaor1986CirculatoryautoregulationModel1172940336Model
+  init_kwargs:
+    model_path: data/MODEL1172940336.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_x3
+    maps_to: x3
+    label: Initial Model State X3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x3`.
+  - name: initial_model_state_x2
+    maps_to: x2
+    label: Initial Model State X2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x2`.
+  - name: initial_model_state_x1
+    maps_to: x1
+    label: Initial Model State X1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x1`.
+  - name: initial_model_state_r
+    maps_to: r
+    label: Initial Model State R
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `r`.
+  - name: initial_model_state_h
+    maps_to: h
+    label: Initial Model State H
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `h`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_x3
+    maps_to: x3
+    label: X3
+    description: X3. Maps to SBML symbol `x3`.
+  - name: model_state_x2
+    maps_to: x2
+    label: X2
+    description: X2. Maps to SBML symbol `x2`.
+  - name: model_state_x1
+    maps_to: x1
+    label: X1
+    description: X1. Maps to SBML symbol `x1`.
+  - name: model_state_r
+    maps_to: r
+    label: R
+    description: R. Maps to SBML symbol `r`.
+  - name: model_state_h
+    maps_to: h
+    label: H
+    description: H. Maps to SBML symbol `h`.

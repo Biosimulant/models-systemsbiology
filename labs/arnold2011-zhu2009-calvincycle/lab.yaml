@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Arnold2011 Zhu2009 Calvincycle Lab
+description: 'This model is from the article: A quantitative comparison of Calvin–Benson
+  cycle models Anne Arnold, Zoran Nikoloski Trends in Plant Science 2011 Oct 14. It
+  can be used to explore systemsbiology arnold2011 zhu2009 calvincycle BioModels0000000388
+  dynamics and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_arnold2011_zhu2009_calvincycle_biomd0000000388_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_arnold2011_zhu2009_calvincycle_biomd0000000388_model.state
+  to:
+  - visualisation.systemsbiology_sbml_arnold2011_zhu2009_calvincycle_biomd0000000388_model_state
+- from: systemsbiology_sbml_arnold2011_zhu2009_calvincycle_biomd0000000388_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_arnold2011_zhu2009_calvincycle_biomd0000000388_model_summary
+- from: systemsbiology_sbml_arnold2011_zhu2009_calvincycle_biomd0000000388_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_arnold2011_zhu2009_calvincycle_biomd0000000388_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_pi
+    maps_to: systemsbiology_sbml_arnold2011_zhu2009_calvincycle_biomd0000000388_model.initial_model_state_pi
+    label: Initial Model State Pi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pi`.
+  - name: initial_model_state_pga
+    maps_to: systemsbiology_sbml_arnold2011_zhu2009_calvincycle_biomd0000000388_model.initial_model_state_pga
+    label: Initial Model State Pga
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PGA`.
+  - name: initial_ru_bp
+    maps_to: systemsbiology_sbml_arnold2011_zhu2009_calvincycle_biomd0000000388_model.initial_ru_bp
+    label: Initial Ru Bp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RuBP`.
+  - name: initial_model_state_adp
+    maps_to: systemsbiology_sbml_arnold2011_zhu2009_calvincycle_biomd0000000388_model.initial_model_state_adp
+    label: Initial Model State ADP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ADP`.
+  - name: initial_model_state_atp
+    maps_to: systemsbiology_sbml_arnold2011_zhu2009_calvincycle_biomd0000000388_model.initial_model_state_atp
+    label: Initial Model State ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATP`.
+  - name: initial_ru5_p
+    maps_to: systemsbiology_sbml_arnold2011_zhu2009_calvincycle_biomd0000000388_model.initial_ru5_p
+    label: Initial RU5 P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ru5P`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_arnold2011_zhu2009_calvincycle_biomd0000000388_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_arnold2011_zhu2009_calvincycle_biomd0000000388_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_arnold2011_zhu2009_calvincycle_biomd0000000388_model.species_labels
+  - name: model_state_pi
+    maps_to: systemsbiology_sbml_arnold2011_zhu2009_calvincycle_biomd0000000388_model.model_state_pi
+  - name: pga
+    maps_to: systemsbiology_sbml_arnold2011_zhu2009_calvincycle_biomd0000000388_model.pga
+  - name: ru_bp
+    maps_to: systemsbiology_sbml_arnold2011_zhu2009_calvincycle_biomd0000000388_model.ru_bp
+  - name: adp
+    maps_to: systemsbiology_sbml_arnold2011_zhu2009_calvincycle_biomd0000000388_model.adp
+  - name: atp
+    maps_to: systemsbiology_sbml_arnold2011_zhu2009_calvincycle_biomd0000000388_model.atp
+  - name: ru5_p
+    maps_to: systemsbiology_sbml_arnold2011_zhu2009_calvincycle_biomd0000000388_model.ru5_p

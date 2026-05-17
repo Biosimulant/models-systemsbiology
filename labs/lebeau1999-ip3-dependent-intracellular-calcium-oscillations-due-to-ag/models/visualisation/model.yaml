@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: LeBeau1999 - IP3-dependent intracellular calcium oscillations due to agonist
+  stimulation from Cholecytokinin Visualisation
+description: Question-and-answer and dynamic visual summaries for LeBeau1999 - IP3-dependent
+  intracellular calcium oscillations due to agonist stimulation from Cholecytokinin.
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Lebeau1999 Ip3 Dependent Intracellular Calcium Oscillations Due To
+      Ag Lab
+    question: 'Which physiological state variables carry the strongest baseline response?
+      Source model: LeBeau1999 - IP3-dependent intracellular calcium oscillations
+      due to agonist stimulation from Cholecytokinin.'
+    answer_focus: Q/A table plus physiology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_lebeau1999_ip3_dependent_intracellular_calcium_o_biomd0000000965_model
+      title: LeBeau1999 - IP3-dependent intracellular calcium oscillations due to
+        agonist stimulation from Cholecytokinin
+      observables:
+      - id: c
+        port: ca2
+        label: Ca2+
+        group: physiology
+      - id: I2
+        port: model_state_i2
+        label: I2
+        group: physiology
+      - id: I1
+        port: model_state_i1
+        label: I1
+        group: physiology
+      - id: S
+        port: model_state_s
+        label: S
+        group: physiology
+      - id: O
+        port: model_state_o
+        label: O
+        group: physiology
+io:
+  inputs: []
+  outputs: []

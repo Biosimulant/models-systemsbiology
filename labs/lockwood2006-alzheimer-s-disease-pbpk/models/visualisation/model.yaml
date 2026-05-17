@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: Lockwood2006 - Alzheimer's Disease PBPK model Visualisation
+description: Question-and-answer and dynamic visual summaries for Lockwood2006 - Alzheimer's
+  Disease PBPK model.
+standard: other
+tags:
+- neuroscience
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Lockwood2006 Alzheimer S Disease Pbpk Lab
+    question: 'Which drug, dose, or target-linked model states drive the simulated
+      profile? Source model: Lockwood2006 - Alzheimer''s Disease PBPK model.'
+    answer_focus: Q/A table plus pharmacology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_lockwood2006_alzheimer_s_disease_pbpk_model_biomd0000000673_model
+      title: Lockwood2006 - Alzheimer's Disease PBPK model
+      observables:
+      - id: PD_CeP
+        port: pd_ce_p
+        label: PD CeP
+        group: physiology
+      - id: PD_CeA
+        port: pd_ce_a
+        label: PD CeA
+        group: physiology
+      - id: Model_Inactive
+        port: model_inactive
+        label: Model Inactive
+        group: physiology
+      - id: Model_active_U_Shaped
+        port: model_active_u_shaped
+        label: Model Active U Shaped
+        group: physiology
+      - id: Model_active_Sigmoidal
+        port: model_active_sigmoidal
+        label: Model Active Sigmoidal
+        group: physiology
+      - id: Model_active_Linear
+        port: model_active_linear
+        label: Model Active Linear
+        group: physiology
+io:
+  inputs: []
+  outputs: []

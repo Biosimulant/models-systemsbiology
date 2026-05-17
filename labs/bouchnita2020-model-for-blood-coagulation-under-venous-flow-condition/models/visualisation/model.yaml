@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: Bouchnita2020 - Model for blood coagulation under venous flow condition Visualisation
+description: Question-and-answer and dynamic visual summaries for Bouchnita2020 -
+  Model for blood coagulation under venous flow condition.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Bouchnita2020 Model For Blood Coagulation Under Venous Flow Condition
+      Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Bouchnita2020 - Model for blood coagulation under venous flow
+      condition.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_bouchnita2020_model_for_blood_coagulation_under_model2011030003_model
+      title: Bouchnita2020 - Model for blood coagulation under venous flow condition
+      observables:
+      - id: ATIII
+        port: atiii
+        label: ATIII
+        group: physiology
+      - id: II
+        port: model_state_ii
+        label: II
+        group: physiology
+      - id: VIIa
+        port: vi_ia
+        label: VIIa
+        group: physiology
+      - id: TF
+        port: model_state_tf
+        label: TF
+        group: physiology
+      - id: Xa
+        port: model_state_xa
+        label: Xa
+        group: physiology
+      - id: IIa
+        port: i_ia
+        label: IIa
+        group: physiology
+io:
+  inputs: []
+  outputs: []

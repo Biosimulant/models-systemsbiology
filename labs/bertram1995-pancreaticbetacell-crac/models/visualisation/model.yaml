@@ -1,0 +1,51 @@
+schema_version: '2.0'
+title: Bertram1995_PancreaticBetaCell_CRAC Visualisation
+description: Question-and-answer and dynamic visual summaries for Bertram1995_PancreaticBetaCell_CRAC.
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Bertram1995 Pancreaticbetacell Crac Lab
+    question: 'Which physiological state variables carry the strongest baseline response?
+      Source model: Bertram1995_PancreaticBetaCell_CRAC.'
+    answer_focus: Q/A table plus physiology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_bertram1995_pancreaticbetacell_crac_biomd0000000374_model
+      title: Bertram1995_PancreaticBetaCell_CRAC
+      observables:
+      - id: V_membrane
+        port: v_membrane
+        label: V_membrane
+        group: physiology
+      - id: Ca_er_Ca_equations
+        port: ca_er_ca_equations
+        label: ca_er_ca_equations
+        group: physiology
+      - id: jm
+        port: model_state_jm
+        label: jm
+        group: physiology
+      - id: Ca_i
+        port: ca_i
+        label: Ca_i
+        group: physiology
+      - id: n
+        port: model_state_n
+        label: n
+        group: physiology
+io:
+  inputs: []
+  outputs: []

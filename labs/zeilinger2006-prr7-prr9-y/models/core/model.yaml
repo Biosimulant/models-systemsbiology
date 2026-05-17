@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Zeilinger2006_PRR7-PRR9-Y
+description: The model reproduces the circadian charecteristics as given in Table
+  1 for the PRR7-PRR9-Y model. The model makes use of the event section to introduce
+  light at 30 hours.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Melanie N Zeilinger
+- Eva M Farré
+- Stephanie R Taylor
+- Steve A Kay
+- Francis J Doyle
+upstream:
+  id: biomodels_ebi:BIOMD0000000095
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000095
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000095
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000095?filename=BIOMD0000000095_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.zeilinger2006_prr7_prr9_y_biomd0000000095_model:Zeilinger2006Prr7Prr9YBiomd0000000095Model
+  init_kwargs:
+    model_path: data/BIOMD0000000095.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_c_xn
+    maps_to: cXn
+    label: Initial C Xn
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cXn`.
+  - name: initial_c_p7c
+    maps_to: cP7c
+    label: Initial C P7C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cP7c`.
+  - name: initial_c_xc
+    maps_to: cXc
+    label: Initial C Xc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cXc`.
+  - name: initial_c_xm
+    maps_to: cXm
+    label: Initial C Xm
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cXm`.
+  - name: initial_c_tn
+    maps_to: cTn
+    label: Initial C Tn
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cTn`.
+  - name: initial_c_yc
+    maps_to: cYc
+    label: Initial C Yc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cYc`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: c_xn
+    maps_to: cXn
+    label: cXn
+    description: cXn. Maps to SBML symbol `cXn`.
+  - name: c_p7c
+    maps_to: cP7c
+    label: cP7c
+    description: cP7c. Maps to SBML symbol `cP7c`.
+  - name: c_xc
+    maps_to: cXc
+    label: cXc
+    description: cXc. Maps to SBML symbol `cXc`.
+  - name: c_xm
+    maps_to: cXm
+    label: cXm
+    description: cXm. Maps to SBML symbol `cXm`.
+  - name: c_tn
+    maps_to: cTn
+    label: cTn
+    description: cTn. Maps to SBML symbol `cTn`.
+  - name: c_yc
+    maps_to: cYc
+    label: cYc
+    description: cYc. Maps to SBML symbol `cYc`.

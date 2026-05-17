@@ -1,0 +1,86 @@
+schema_version: '2.0'
+title: Hockin2002 Bloodcoagulation Lab
+description: 'This model is from the article: A model for the stoichiometric regulation
+  of blood coagulation. Hockin MF, Jones KC, Everse SJ, Mann KG.'
+models:
+- alias: systemsbiology_sbml_hockin2002_bloodcoagulation_biomd0000000335_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_hockin2002_bloodcoagulation_biomd0000000335_model.state
+  to:
+  - visualisation.systemsbiology_sbml_hockin2002_bloodcoagulation_biomd0000000335_model_state
+- from: systemsbiology_sbml_hockin2002_bloodcoagulation_biomd0000000335_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_hockin2002_bloodcoagulation_biomd0000000335_model_summary
+- from: systemsbiology_sbml_hockin2002_bloodcoagulation_biomd0000000335_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_hockin2002_bloodcoagulation_biomd0000000335_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_m_i_ia_atiii
+    maps_to: systemsbiology_sbml_hockin2002_bloodcoagulation_biomd0000000335_model.initial_m_i_ia_atiii
+    label: Initial M I Ia Atiii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mIIa_ATIII`.
+  - name: initial_m_i_ia
+    maps_to: systemsbiology_sbml_hockin2002_bloodcoagulation_biomd0000000335_model.initial_m_i_ia
+    label: Initial M I Ia
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mIIa`.
+  - name: initial_xa_va_ii
+    maps_to: systemsbiology_sbml_hockin2002_bloodcoagulation_biomd0000000335_model.initial_xa_va_ii
+    label: Initial Xa Va Ii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_Va_II`.
+  - name: initial_xa_va
+    maps_to: systemsbiology_sbml_hockin2002_bloodcoagulation_biomd0000000335_model.initial_xa_va
+    label: Initial Xa Va
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_Va`.
+  - name: initial_xa_tfpi
+    maps_to: systemsbiology_sbml_hockin2002_bloodcoagulation_biomd0000000335_model.initial_xa_tfpi
+    label: Initial Xa Tfpi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_TFPI`.
+  - name: initial_xa_atiii
+    maps_to: systemsbiology_sbml_hockin2002_bloodcoagulation_biomd0000000335_model.initial_xa_atiii
+    label: Initial Xa Atiii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_ATIII`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_hockin2002_bloodcoagulation_biomd0000000335_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_hockin2002_bloodcoagulation_biomd0000000335_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_hockin2002_bloodcoagulation_biomd0000000335_model.species_labels
+  - name: m_i_ia_atiii
+    maps_to: systemsbiology_sbml_hockin2002_bloodcoagulation_biomd0000000335_model.m_i_ia_atiii
+  - name: m_i_ia
+    maps_to: systemsbiology_sbml_hockin2002_bloodcoagulation_biomd0000000335_model.m_i_ia
+  - name: xa_va_ii
+    maps_to: systemsbiology_sbml_hockin2002_bloodcoagulation_biomd0000000335_model.xa_va_ii
+  - name: xa_va
+    maps_to: systemsbiology_sbml_hockin2002_bloodcoagulation_biomd0000000335_model.xa_va
+  - name: xa_tfpi
+    maps_to: systemsbiology_sbml_hockin2002_bloodcoagulation_biomd0000000335_model.xa_tfpi
+  - name: xa_atiii
+    maps_to: systemsbiology_sbml_hockin2002_bloodcoagulation_biomd0000000335_model.xa_atiii

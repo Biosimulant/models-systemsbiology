@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Dokos1996_SinoatrialNode
+description: 'This a model from the article: Ion currents underlying sinoatrial node
+  pacemaker activity: a new single cellmathematical model. It can be used to explore
+  systemsbiology dokos1996 sinoatrialnode model0912503622 dynamics and compare simulation
+  behavior across conditions.'
+standard: other
+tags:
+- cardiovascular
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- S Dokos
+- B Celler
+- N Lovell
+upstream:
+  id: biomodels_ebi:MODEL0912503622
+  source_db: biomodels_ebi
+  source_id: MODEL0912503622
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL0912503622
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0912503622?filename=MODEL0912503622_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.dokos1996_sinoatrialnode_model0912503622_model:Dokos1996SinoatrialnodeModel0912503622Model
+  init_kwargs:
+    model_path: data/MODEL0912503622.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_nao
+    maps_to: Nao
+    label: Initial Model State Nao
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Nao`.
+  - name: initial_model_state_nai
+    maps_to: Nai
+    label: Initial Model State Nai
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Nai`.
+  - name: initial_model_state_ko
+    maps_to: Ko
+    label: Initial Model State Ko
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ko`.
+  - name: initial_model_state_ki
+    maps_to: Ki
+    label: Initial Model State Ki
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ki`.
+  - name: initial_model_state_ft
+    maps_to: fT
+    label: Initial Model State Ft
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `fT`.
+  - name: initial_model_state_fl2
+    maps_to: fL2
+    label: Initial Model State FL2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `fL2`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: nao
+    maps_to: Nao
+    label: Nao
+    description: Nao. Maps to SBML symbol `Nao`.
+  - name: nai
+    maps_to: Nai
+    label: Nai
+    description: Nai. Maps to SBML symbol `Nai`.
+  - name: model_state_ko
+    maps_to: Ko
+    label: Ko
+    description: Ko. Maps to SBML symbol `Ko`.
+  - name: model_state_ki
+    maps_to: Ki
+    label: Ki
+    description: Ki. Maps to SBML symbol `Ki`.
+  - name: model_state_ft
+    maps_to: fT
+    label: FT
+    description: FT. Maps to SBML symbol `fT`.
+  - name: fl2
+    maps_to: fL2
+    label: FL2
+    description: FL2. Maps to SBML symbol `fL2`.

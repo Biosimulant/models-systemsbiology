@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Xu2003 - Phosphoinositide turnover Visualisation
+description: Question-and-answer and dynamic visual summaries for Xu2003 - Phosphoinositide
+  turnover.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Xu2003 Phosphoinositide Turnover Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Xu2003 - Phosphoinositide turnover.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_xu2003_phosphoinositide_turnover_biomd0000000075_model
+      title: Xu2003 - Phosphoinositide turnover
+      observables:
+      - id: PI_PM
+        port: pi_pm
+        label: PI_PM
+        group: core_system_state
+      - id: PIP2_PM
+        port: pip2_pm
+        label: PIP2_PM
+        group: core_system_state
+      - id: PIP_PM
+        port: pip_pm
+        label: PIP_PM
+        group: core_system_state
+      - id: DAG_PM
+        port: dag_pm
+        label: DAG_PM
+        group: core_system_state
+      - id: PLC_PM
+        port: plc_pm
+        label: PLC_PM
+        group: core_system_state
+      - id: IP3_Cyt
+        port: ip3_cyt
+        label: IP3_Cyt
+        group: core_system_state
+io:
+  inputs: []
+  outputs: []

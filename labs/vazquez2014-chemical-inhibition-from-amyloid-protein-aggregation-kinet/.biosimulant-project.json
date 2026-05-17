@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "48812557-e972-4924-b7eb-2f6422cd04c8",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "4d697fa8-004c-4319-acf1-5a56a7b74403",
+  "created_at": "2026-05-16T05:46:52.673180503+00:00",
+  "last_synced_at": "2026-05-17T06:35:27.122780+00:00",
+  "hub_manifest_hash": "84f8582baaa5ea603d7ff90235070de595d2dbf7db107cda1636f99747873e42",
+  "package_name": "vazquez2014-chemical-inhibition-from-amyloid-protein-aggregation"
+}

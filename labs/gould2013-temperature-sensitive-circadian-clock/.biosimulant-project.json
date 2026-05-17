@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "2d2f6fbc-e293-4855-977c-dfcfb8e86b3a",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "4033a469-7d20-4781-95e6-365c150f86e9",
+  "created_at": "2026-05-16T05:46:43.749415036+00:00",
+  "last_synced_at": "2026-05-17T03:24:37.182623+00:00",
+  "hub_manifest_hash": "74dad33c4cb7bb74738bdfe06281952aef1ab4c0841ceb1c62cd77d3758b72dc",
+  "package_name": "gould2013-temperature-sensitive-circadian-clock-lab"
+}

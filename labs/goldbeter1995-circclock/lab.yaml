@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Goldbeter1995 Circclock Lab
+description: To the extent possible under law, all copyright and related or neighbouring
+  rights to this encoded model have been dedicated to the public domain worldwide.
+  It can be used to explore systemsbiology goldbeter1995 circclock BioModels0000000016
+  dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_goldbeter1995_circclock_biomd0000000016_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_goldbeter1995_circclock_biomd0000000016_model.state
+  to:
+  - visualisation.systemsbiology_sbml_goldbeter1995_circclock_biomd0000000016_model_state
+- from: systemsbiology_sbml_goldbeter1995_circclock_biomd0000000016_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_goldbeter1995_circclock_biomd0000000016_model_summary
+- from: systemsbiology_sbml_goldbeter1995_circclock_biomd0000000016_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_goldbeter1995_circclock_biomd0000000016_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_per_mrna
+    maps_to: systemsbiology_sbml_goldbeter1995_circclock_biomd0000000016_model.initial_per_mrna
+    label: Initial Per MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M`.
+  - name: initial_total_per
+    maps_to: systemsbiology_sbml_goldbeter1995_circclock_biomd0000000016_model.initial_total_per
+    label: Initial Total Per
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pt`.
+  - name: initial_unphosphorylated_per
+    maps_to: systemsbiology_sbml_goldbeter1995_circclock_biomd0000000016_model.initial_unphosphorylated_per
+    label: Initial Unphosphorylated Per
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P0`.
+  - name: initial_nuclear_per
+    maps_to: systemsbiology_sbml_goldbeter1995_circclock_biomd0000000016_model.initial_nuclear_per
+    label: Initial Nuclear Per
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pn`.
+  - name: initial_monophosphorylated_per
+    maps_to: systemsbiology_sbml_goldbeter1995_circclock_biomd0000000016_model.initial_monophosphorylated_per
+    label: Initial Monophosphorylated Per
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P1`.
+  - name: initial_biphosphorylated_per
+    maps_to: systemsbiology_sbml_goldbeter1995_circclock_biomd0000000016_model.initial_biphosphorylated_per
+    label: Initial Biphosphorylated Per
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P2`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_goldbeter1995_circclock_biomd0000000016_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_goldbeter1995_circclock_biomd0000000016_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_goldbeter1995_circclock_biomd0000000016_model.species_labels
+  - name: per_mrna
+    maps_to: systemsbiology_sbml_goldbeter1995_circclock_biomd0000000016_model.per_mrna
+  - name: total_per
+    maps_to: systemsbiology_sbml_goldbeter1995_circclock_biomd0000000016_model.total_per
+  - name: unphosphorylated_per
+    maps_to: systemsbiology_sbml_goldbeter1995_circclock_biomd0000000016_model.unphosphorylated_per
+  - name: nuclear_per
+    maps_to: systemsbiology_sbml_goldbeter1995_circclock_biomd0000000016_model.nuclear_per
+  - name: monophosphorylated_per
+    maps_to: systemsbiology_sbml_goldbeter1995_circclock_biomd0000000016_model.monophosphorylated_per
+  - name: biphosphorylated_per
+    maps_to: systemsbiology_sbml_goldbeter1995_circclock_biomd0000000016_model.biphosphorylated_per

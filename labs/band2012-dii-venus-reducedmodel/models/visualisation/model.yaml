@@ -1,0 +1,34 @@
+schema_version: '2.0'
+title: Band2012_DII-Venus_ReducedModel Visualisation
+description: Question-and-answer and dynamic visual summaries for Band2012_DII-Venus_ReducedModel.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Band2012 Dii Venus Reducedmodel Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Band2012_DII-Venus_ReducedModel.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_band2012_dii_venus_reducedmodel_biomd0000000414_model
+      title: Band2012_DII-Venus_ReducedModel
+      observables:
+      - id: VENUS
+        port: venus
+        label: VENUS
+        group: core_system_state
+io:
+  inputs: []
+  outputs: []

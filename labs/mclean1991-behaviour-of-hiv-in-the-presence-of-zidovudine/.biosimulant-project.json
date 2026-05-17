@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "6d0553e2-0cac-4caf-942e-fdd463307a5a",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "78b55b8a-982d-43c0-b055-5223e45b4e27",
+  "created_at": "2026-05-16T05:46:47.108043997+00:00",
+  "last_synced_at": "2026-05-17T04:54:18.830052+00:00",
+  "hub_manifest_hash": "ea429338041e3b62decfd708a16ca5ebec34542d5a9f9a9a1c855d3af0d126d3",
+  "package_name": "mclean1991-behaviour-of-hiv-in-the-presence-of-zidovudine-lab"
+}

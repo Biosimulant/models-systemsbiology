@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "c4f8bc8a-4ad6-408a-a534-b3d9eb9bf7d8",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "5a58c4da-e49a-483d-9448-59b4cb2c58cd",
+  "created_at": "2026-05-16T05:46:51.621884501+00:00",
+  "last_synced_at": "2026-05-17T06:04:06.025784+00:00",
+  "hub_manifest_hash": "07058284ef9dc419e48271f7fcec5eab68e98204b6faa84d0491a9326af36a18",
+  "package_name": "saeidi2012-quorum-sensing-device-that-produces-gfp-lab"
+}

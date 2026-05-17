@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Curien2003_MetThr_synthesis
+description: 'This a model from the article: A kinetic model of the branch-point between
+  the methionine and threonine biosynthesis pathways in Arabidopsis thaliana. It can
+  be used to explore systemsbiology curien2003 metthr synthesis BioModels0000000068
+  dynamics and compare simulation behavior across conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Gilles Curien
+- Stéphane Ravanel
+- Renaud Dumas
+upstream:
+  id: biomodels_ebi:BIOMD0000000068
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000068
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000068
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000068?filename=BIOMD0000000068_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.curien2003_metthr_synthesis_biomd0000000068_model:Curien2003MetthrSynthesisBiomd0000000068Model
+  init_kwargs:
+    model_path: data/BIOMD0000000068.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_cystathionine_gamma_synthase
+    maps_to: CGS
+    label: Initial Cystathionine Gamma Synthase
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CGS`.
+  - name: initial_cystathionine
+    maps_to: Cystathionine
+    label: Initial Cystathionine
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Cystathionine`.
+  - name: initial_inorganic_phosphate
+    maps_to: Phi
+    label: Initial Inorganic Phosphate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Phi`.
+  - name: initial_s_adenosylmethionine
+    maps_to: AdoMet
+    label: Initial S Adenosylmethionine
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `AdoMet`.
+  - name: initial_cysteine
+    maps_to: Cys
+    label: Initial Cysteine
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Cys`.
+  - name: initial_threonine_synthase
+    maps_to: TS
+    label: Initial Threonine Synthase
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TS`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: cystathionine_gamma_synthase
+    maps_to: CGS
+    label: Cystathionine gamma-synthase
+    description: Cystathionine gamma-synthase. Maps to SBML symbol `CGS`.
+  - name: cystathionine
+    maps_to: Cystathionine
+    label: Cystathionine
+    description: Cystathionine. Maps to SBML symbol `Cystathionine`.
+  - name: inorganic_phosphate
+    maps_to: Phi
+    label: Inorganic phosphate
+    description: Inorganic phosphate. Maps to SBML symbol `Phi`.
+  - name: s_adenosylmethionine
+    maps_to: AdoMet
+    label: S-adenosylmethionine
+    description: S-adenosylmethionine. Maps to SBML symbol `AdoMet`.
+  - name: cysteine
+    maps_to: Cys
+    label: Cysteine
+    description: Cysteine. Maps to SBML symbol `Cys`.
+  - name: threonine_synthase
+    maps_to: TS
+    label: Threonine synthase
+    description: Threonine synthase. Maps to SBML symbol `TS`.

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "16bde322-4460-4ab1-b861-baaa4bb77b24",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "12bf7219-b21b-4818-9e7b-37e40b4a423f",
+  "created_at": "2026-05-16T05:46:40.798179757+00:00",
+  "last_synced_at": "2026-05-17T01:36:45.275672+00:00",
+  "hub_manifest_hash": "4d857c42c8ae565b7fe9c7dc3b013f05fe853b4ead81f891815067268ab5f04e",
+  "package_name": "arnold2011-damour2007-rubisco-calvincycle-lab"
+}

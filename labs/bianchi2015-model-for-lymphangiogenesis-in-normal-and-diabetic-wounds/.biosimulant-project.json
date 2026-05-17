@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "a31c062a-155e-4ae8-a0f6-4989057ad9c9",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "8c1121c7-7393-4b9c-bab5-d0a295899ab5",
+  "created_at": "2026-05-16T05:46:41.697002865+00:00",
+  "last_synced_at": "2026-05-17T02:10:27.217195+00:00",
+  "hub_manifest_hash": "52af111ec405b4dfdbded4a57943e9b5a298bb54b792a4ddd940c83b07342ee4",
+  "package_name": "bianchi2015-model-for-lymphangiogenesis-in-normal-and-diabetic-w"
+}

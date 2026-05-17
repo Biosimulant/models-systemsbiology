@@ -1,0 +1,63 @@
+schema_version: '2.0'
+title: Zatorsky2006 P53 4 Lab
+description: The model reproduces time profile of p53 and Mdm2 as depicted in Fig
+  6B of the paper for Model 5. It can be used to explore systemsbiology zatorsky2006
+  p53 model5 BioModels0000000156 dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_zatorsky2006_p53_model5_biomd0000000156_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_zatorsky2006_p53_model5_biomd0000000156_model.state
+  to:
+  - visualisation.systemsbiology_sbml_zatorsky2006_p53_model5_biomd0000000156_model_state
+- from: systemsbiology_sbml_zatorsky2006_p53_model5_biomd0000000156_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_zatorsky2006_p53_model5_biomd0000000156_model_summary
+- from: systemsbiology_sbml_zatorsky2006_p53_model5_biomd0000000156_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_zatorsky2006_p53_model5_biomd0000000156_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_precursor_mdm2
+    maps_to: systemsbiology_sbml_zatorsky2006_p53_model5_biomd0000000156_model.initial_precursor_mdm2
+    label: Initial Precursor Mdm2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `y0`.
+  - name: initial_mdm2
+    maps_to: systemsbiology_sbml_zatorsky2006_p53_model5_biomd0000000156_model.initial_mdm2
+    label: Initial Mdm2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `y`.
+  - name: initial_model_state_p53
+    maps_to: systemsbiology_sbml_zatorsky2006_p53_model5_biomd0000000156_model.initial_model_state_p53
+    label: Initial Model State P53
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_zatorsky2006_p53_model5_biomd0000000156_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_zatorsky2006_p53_model5_biomd0000000156_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_zatorsky2006_p53_model5_biomd0000000156_model.species_labels
+  - name: precursor_mdm2
+    maps_to: systemsbiology_sbml_zatorsky2006_p53_model5_biomd0000000156_model.precursor_mdm2
+  - name: mdm2
+    maps_to: systemsbiology_sbml_zatorsky2006_p53_model5_biomd0000000156_model.mdm2
+  - name: p53
+    maps_to: systemsbiology_sbml_zatorsky2006_p53_model5_biomd0000000156_model.p53

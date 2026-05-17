@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Sachse2008 Fibroblastinteractingmyocytes Lab
+description: 'This a model from the article: Electrophysiological modeling of fibroblasts
+  and their interaction with myocytes. It can be used to explore systemsbiology sachse2008
+  fibroblastinteractingmyo model7914759868 dynamics and compare simulation behavior
+  across conditions.'
+models:
+- alias: systemsbiology_sbml_sachse2008_fibroblastinteractingmyocytes_model7914759868_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_sachse2008_fibroblastinteractingmyocytes_model7914759868_model.state
+  to:
+  - visualisation.systemsbiology_sbml_sachse2008_fibroblastinteractingmyocytes_model7914759868_model_state
+- from: systemsbiology_sbml_sachse2008_fibroblastinteractingmyocytes_model7914759868_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_sachse2008_fibroblastinteractingmyocytes_model7914759868_model_summary
+- from: systemsbiology_sbml_sachse2008_fibroblastinteractingmyocytes_model7914759868_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_sachse2008_fibroblastinteractingmyocytes_model7914759868_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_vm_real
+    maps_to: systemsbiology_sbml_sachse2008_fibroblastinteractingmyocytes_model7914759868_model.initial_vm_real
+    label: Initial Vm Real
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VmReal`.
+  - name: initial_v_membrane
+    maps_to: systemsbiology_sbml_sachse2008_fibroblastinteractingmyocytes_model7914759868_model.initial_v_membrane
+    label: Initial V Membrane
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `V_membrane`.
+  - name: initial_s_ss
+    maps_to: systemsbiology_sbml_sachse2008_fibroblastinteractingmyocytes_model7914759868_model.initial_s_ss
+    label: Initial S Ss
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s_ss`.
+  - name: initial_s_slow
+    maps_to: systemsbiology_sbml_sachse2008_fibroblastinteractingmyocytes_model7914759868_model.initial_s_slow
+    label: Initial S Slow
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s_slow`.
+  - name: initial_r_ss
+    maps_to: systemsbiology_sbml_sachse2008_fibroblastinteractingmyocytes_model7914759868_model.initial_r_ss
+    label: Initial R Ss
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `r_ss`.
+  - name: initial_p_o2
+    maps_to: systemsbiology_sbml_sachse2008_fibroblastinteractingmyocytes_model7914759868_model.initial_p_o2
+    label: Initial P O2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P_O2`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_sachse2008_fibroblastinteractingmyocytes_model7914759868_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_sachse2008_fibroblastinteractingmyocytes_model7914759868_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_sachse2008_fibroblastinteractingmyocytes_model7914759868_model.species_labels
+  - name: vm_real
+    maps_to: systemsbiology_sbml_sachse2008_fibroblastinteractingmyocytes_model7914759868_model.vm_real
+  - name: v_membrane
+    maps_to: systemsbiology_sbml_sachse2008_fibroblastinteractingmyocytes_model7914759868_model.v_membrane
+  - name: s_ss
+    maps_to: systemsbiology_sbml_sachse2008_fibroblastinteractingmyocytes_model7914759868_model.s_ss
+  - name: s_slow
+    maps_to: systemsbiology_sbml_sachse2008_fibroblastinteractingmyocytes_model7914759868_model.s_slow
+  - name: r_ss
+    maps_to: systemsbiology_sbml_sachse2008_fibroblastinteractingmyocytes_model7914759868_model.r_ss
+  - name: p_o2
+    maps_to: systemsbiology_sbml_sachse2008_fibroblastinteractingmyocytes_model7914759868_model.p_o2

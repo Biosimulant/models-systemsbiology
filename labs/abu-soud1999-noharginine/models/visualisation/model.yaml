@@ -1,0 +1,50 @@
+schema_version: '2.0'
+title: Abu-Soud1999_NOHArginine Visualisation
+description: Question-and-answer and dynamic visual summaries for Abu-Soud1999_NOHArginine.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Abu Soud1999 Noharginine Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Abu-Soud1999_NOHArginine.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_abu_soud1999_noharginine_model9088294310_model
+      title: Abu-Soud1999_NOHArginine
+      observables:
+      - id: NOH_minus_Arginine
+        port: noh_minus_arginine
+        label: NOH Minus Arginine
+        group: physiology
+      - id: Im_minus_nNOS
+        port: im_minus_nnos
+        label: Im Minus NNOS
+        group: physiology
+      - id: Imidazole
+        port: imidazole
+        label: Imidazole
+        group: physiology
+      - id: nNOS_minus_NOH_minus_Arginine
+        port: nnos_minus_noh_minus_arginine
+        label: NNOS Minus NOH Minus Arginine
+        group: physiology
+      - id: Im_minus_nNOS_minus_NOH_minus_Arginine
+        port: im_minus_nnos_minus_noh_minus_arginine
+        label: Im Minus NNOS Minus NOH Minus Arginine
+        group: physiology
+io:
+  inputs: []
+  outputs: []

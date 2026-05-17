@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "eb2dbbf1-374e-40d5-a1a2-d0929b6a6b8a",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "010c20e2-366c-4007-94f8-bea3d39e2774",
+  "created_at": "2026-05-16T05:46:42.134181468+00:00",
+  "last_synced_at": "2026-05-17T02:25:52.404505+00:00",
+  "hub_manifest_hash": "3aae90a0d664660e839cd10cb401fd8aff96d7e922b9f75721e8ca6dd9257582",
+  "package_name": "cao2013-application-of-absis-method-in-the-reversible-isomerizat"
+}

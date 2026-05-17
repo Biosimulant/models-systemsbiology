@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "ab48e69f-84cb-4266-ab87-5d53b78e3a69",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "af84ff70-ea26-42a2-bc99-55ad5d159576",
+  "created_at": "2026-05-16T05:46:40.729782400+00:00",
+  "last_synced_at": "2026-05-17T01:35:02.094345+00:00",
+  "hub_manifest_hash": "54714ad0d96fa335843a68d272475ab87d3eeede086a4f338458f597e262e3bc",
+  "package_name": "albeck2008-extrinsic-apoptosis-lab"
+}

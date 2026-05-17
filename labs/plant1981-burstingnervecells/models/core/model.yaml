@@ -1,0 +1,94 @@
+schema_version: '2.0'
+title: Plant1981_BurstingNerveCells
+description: 'This a model from the article: Bifurcation and resonance in a model
+  for bursting nerve cells. Plant RE J Math Biol 1981 Jan; 11(1): 15-32 7252375 ,
+  Abstract: In this paper we consider a model for the.'
+standard: other
+tags:
+- neuroscience
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- R E Plant
+upstream:
+  id: biomodels_ebi:BIOMD0000000304
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000304
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000304
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000304?filename=BIOMD0000000304_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.plant1981_burstingnervecells_biomd0000000304_model:Plant1981BurstingnervecellsBiomd0000000304Model
+  init_kwargs:
+    model_path: data/BIOMD0000000304.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_v
+    maps_to: V_membrane
+    label: Initial Model State V
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `V_membrane`.
+  - name: initial_model_state_h1
+    maps_to: h1
+    label: Initial Model State H1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `h1`.
+  - name: initial_model_state_x1
+    maps_to: x1
+    label: Initial Model State X1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x1`.
+  - name: initial_model_state_n1
+    maps_to: n1
+    label: Initial Model State N1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `n1`.
+  - name: initial_model_state_c
+    maps_to: c
+    label: Initial Model State C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `c`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: model_state_v
+    maps_to: V_membrane
+    label: V
+    description: V. Maps to SBML symbol `V_membrane`.
+  - name: model_state_h1
+    maps_to: h1
+    label: h1
+    description: h1. Maps to SBML symbol `h1`.
+  - name: model_state_x1
+    maps_to: x1
+    label: x1
+    description: x1. Maps to SBML symbol `x1`.
+  - name: model_state_n1
+    maps_to: n1
+    label: n1
+    description: n1. Maps to SBML symbol `n1`.
+  - name: model_state_c
+    maps_to: c
+    label: c
+    description: c. Maps to SBML symbol `c`.

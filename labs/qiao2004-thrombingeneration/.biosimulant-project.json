@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "b9f6b947-eee3-4691-9841-9f1630ffbffe",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "5dbff083-be6c-4c34-b50a-9707f51cf72a",
+  "created_at": "2026-05-16T05:46:51.160763655+00:00",
+  "last_synced_at": "2026-05-17T05:50:34.107965+00:00",
+  "hub_manifest_hash": "fe86b65f1021a847c5b1b68e711d61ceca40542a973b704b8941a3daca6bfeb3",
+  "package_name": "qiao2004-thrombingeneration-lab"
+}

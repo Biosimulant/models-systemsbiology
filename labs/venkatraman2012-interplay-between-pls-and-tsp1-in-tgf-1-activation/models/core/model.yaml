@@ -1,0 +1,109 @@
+schema_version: '2.0'
+title: Venkatraman2012 - Interplay between PLS and TSP1 in TGF-β1 activation
+description: Venkatraman2012 - Interplay between PLS and TSP1 in TGF-β1 activation
+  The interplay between PLS (Plasmin) and TSP1 (Thrombospondin-1) in TGF-β1 (Transforming
+  growth factor-β1)is shown using mathematic. It can be used to explore systemsbiology
+  venkatraman2012 interplay between pls and dynamics and compare simulation behavior
+  across conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Lakshmi Venkatraman
+- Ser-Mien Chia
+- Balakrishnan Chakrapani Narmada
+- Jacob K White
+- Sourav S Bhowmick
+upstream:
+  id: biomodels_ebi:BIOMD0000000447
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000447
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000447
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000447?filename=BIOMD0000000447_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.venkatraman2012_interplay_between_pls_and_tsp1_i_biomd0000000447_model:Venkatraman2012InterplayBetweenPlsAndTsp1IBiomd0000000447Model
+  init_kwargs:
+    model_path: data/BIOMD0000000447.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_ltg_fb1
+    maps_to: species_5
+    label: Initial Ltg FB1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_5`.
+  - name: initial_tg_fb1
+    maps_to: species_6
+    label: Initial Tg FB1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_6`.
+  - name: initial_a2_m
+    maps_to: species_10
+    label: Initial A2 M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_10`.
+  - name: initial_model_state_plg
+    maps_to: species_1
+    label: Initial Model State Plg
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_1`.
+  - name: initial_sc_upa
+    maps_to: species_3
+    label: Initial Sc Upa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_3`.
+  - name: initial_tc_upa
+    maps_to: species_4
+    label: Initial Tc Upa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_4`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: ltg_fb1
+    maps_to: species_5
+    label: LTGFb1
+    description: LTGFb1. Maps to SBML symbol `species_5`.
+  - name: tg_fb1
+    maps_to: species_6
+    label: TGFb1
+    description: TGFb1. Maps to SBML symbol `species_6`.
+  - name: a2_m
+    maps_to: species_10
+    label: A2M
+    description: A2M. Maps to SBML symbol `species_10`.
+  - name: plg
+    maps_to: species_1
+    label: PLG
+    description: PLG. Maps to SBML symbol `species_1`.
+  - name: sc_upa
+    maps_to: species_3
+    label: scUPA
+    description: scUPA. Maps to SBML symbol `species_3`.
+  - name: tc_upa
+    maps_to: species_4
+    label: tcUPA
+    description: tcUPA. Maps to SBML symbol `species_4`.

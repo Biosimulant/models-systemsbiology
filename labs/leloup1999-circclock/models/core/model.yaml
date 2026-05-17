@@ -1,0 +1,103 @@
+schema_version: '2.0'
+title: Leloup1999_CircClock
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models. It is copyright (c) 2005-2009 The BioModels Team.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Jean-Christophe Leloup
+- Goldbeter
+upstream:
+  id: biomodels_ebi:BIOMD0000000021
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000021
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000021
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000021?filename=BIOMD0000000021_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.leloup1999_circclock_biomd0000000021_model:Leloup1999CircclockBiomd0000000021Model
+  init_kwargs:
+    model_path: data/BIOMD0000000021.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_tim_mrna
+    maps_to: Mt
+    label: Initial Tim MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Mt`.
+  - name: initial_tim_protein_unphosphorylated
+    maps_to: T0
+    label: Initial Tim Protein Unphosphorylated
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `T0`.
+  - name: initial_tim_protein_mono_phosphorylated
+    maps_to: T1
+    label: Initial Tim Protein Mono Phosphorylated
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `T1`.
+  - name: initial_tim_protein_bi_phosphorylated
+    maps_to: T2
+    label: Initial Tim Protein Bi Phosphorylated
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `T2`.
+  - name: initial_per_mrna
+    maps_to: Mp
+    label: Initial Per MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Mp`.
+  - name: initial_per_protein_unphosphorylated
+    maps_to: P0
+    label: Initial Per Protein Unphosphorylated
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P0`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: tim_mrna
+    maps_to: Mt
+    label: TIM mRNA
+    description: TIM mRNA. Maps to SBML symbol `Mt`.
+  - name: tim_protein_unphosphorylated
+    maps_to: T0
+    label: TIM Protein (unphosphorylated)
+    description: TIM Protein (unphosphorylated). Maps to SBML symbol `T0`.
+  - name: tim_protein_mono_phosphorylated
+    maps_to: T1
+    label: TIM Protein (mono-phosphorylated)
+    description: TIM Protein (mono-phosphorylated). Maps to SBML symbol `T1`.
+  - name: tim_protein_bi_phosphorylated
+    maps_to: T2
+    label: TIM Protein (bi-phosphorylated)
+    description: TIM Protein (bi-phosphorylated). Maps to SBML symbol `T2`.
+  - name: per_mrna
+    maps_to: Mp
+    label: PER mRNA
+    description: PER mRNA. Maps to SBML symbol `Mp`.
+  - name: per_protein_unphosphorylated
+    maps_to: P0
+    label: PER Protein (unphosphorylated)
+    description: PER Protein (unphosphorylated). Maps to SBML symbol `P0`.

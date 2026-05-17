@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: Warren2009_CalciumWavePropagation Visualisation
+description: Question-and-answer and dynamic visual summaries for Warren2009_CalciumWavePropagation.
+standard: other
+tags:
+- generegulation
+- metabolism
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Warren2009 Calciumwavepropagation Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Warren2009_CalciumWavePropagation.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_warren2009_calciumwavepropagation_model1006230018_model
+      title: Warren2009_CalciumWavePropagation
+      observables:
+      - id: volumeCa_i
+        port: volume_ca_i
+        label: VolumeCa I
+        group: metabolism
+      - id: volumeCa_er
+        port: volume_ca_er
+        label: VolumeCa Er
+        group: metabolism
+      - id: volume_iIP3
+        port: volume_iip3
+        label: Volume IIP3
+        group: metabolism
+      - id: PIP2
+        port: pip2
+        label: PIP2
+        group: metabolism
+      - id: I2
+        port: model_state_i2
+        label: I2
+        group: metabolism
+      - id: I1
+        port: model_state_i1
+        label: I1
+        group: metabolism
+io:
+  inputs: []
+  outputs: []

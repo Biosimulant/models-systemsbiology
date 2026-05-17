@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Gomez Cabrero2011 Atherogenesis Lab
+description: 'This model is from the article: Workflow for generating competing hypothesis
+  from models with parameter uncertainty. David Gomez-Cabrero, Albert Compte and Jesper
+  Tegner Interface Focus 6 June 2011 vo.'
+models:
+- alias: systemsbiology_sbml_gomez_cabrero2011_atherogenesis_model1002160000_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_gomez_cabrero2011_atherogenesis_model1002160000_model.state
+  to:
+  - visualisation.systemsbiology_sbml_gomez_cabrero2011_atherogenesis_model1002160000_model_state
+- from: systemsbiology_sbml_gomez_cabrero2011_atherogenesis_model1002160000_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_gomez_cabrero2011_atherogenesis_model1002160000_model_summary
+- from: systemsbiology_sbml_gomez_cabrero2011_atherogenesis_model1002160000_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_gomez_cabrero2011_atherogenesis_model1002160000_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_sum_rec_bcells
+    maps_to: systemsbiology_sbml_gomez_cabrero2011_atherogenesis_model1002160000_model.initial_sum_rec_bcells
+    label: Initial Sum Rec Bcells
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_14`.
+  - name: initial_bcells
+    maps_to: systemsbiology_sbml_gomez_cabrero2011_atherogenesis_model1002160000_model.initial_bcells
+    label: Initial Bcells
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_8`.
+  - name: initial_ldl_blood
+    maps_to: systemsbiology_sbml_gomez_cabrero2011_atherogenesis_model1002160000_model.initial_ldl_blood
+    label: Initial Ldl Blood
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_16`.
+  - name: initial_hdl_blood
+    maps_to: systemsbiology_sbml_gomez_cabrero2011_atherogenesis_model1002160000_model.initial_hdl_blood
+    label: Initial Hdl Blood
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_15`.
+  - name: initial_sigmoid_acten_dinh
+    maps_to: systemsbiology_sbml_gomez_cabrero2011_atherogenesis_model1002160000_model.initial_sigmoid_acten_dinh
+    label: Initial Sigmoid Acten Dinh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_19`.
+  - name: initial_sigmoid_acten_dstim
+    maps_to: systemsbiology_sbml_gomez_cabrero2011_atherogenesis_model1002160000_model.initial_sigmoid_acten_dstim
+    label: Initial Sigmoid Acten Dstim
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_18`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_gomez_cabrero2011_atherogenesis_model1002160000_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_gomez_cabrero2011_atherogenesis_model1002160000_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_gomez_cabrero2011_atherogenesis_model1002160000_model.species_labels
+  - name: sum_rec_bcells
+    maps_to: systemsbiology_sbml_gomez_cabrero2011_atherogenesis_model1002160000_model.sum_rec_bcells
+  - name: bcells
+    maps_to: systemsbiology_sbml_gomez_cabrero2011_atherogenesis_model1002160000_model.bcells
+  - name: ldl_blood
+    maps_to: systemsbiology_sbml_gomez_cabrero2011_atherogenesis_model1002160000_model.ldl_blood
+  - name: hdl_blood
+    maps_to: systemsbiology_sbml_gomez_cabrero2011_atherogenesis_model1002160000_model.hdl_blood
+  - name: sigmoid_acten_dinh
+    maps_to: systemsbiology_sbml_gomez_cabrero2011_atherogenesis_model1002160000_model.sigmoid_acten_dinh
+  - name: sigmoid_acten_dstim
+    maps_to: systemsbiology_sbml_gomez_cabrero2011_atherogenesis_model1002160000_model.sigmoid_acten_dstim

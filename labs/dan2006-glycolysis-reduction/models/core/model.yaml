@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Danø2006_Glycolysis_Reduction
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models. It is copyright (c) 2005-2011 The BioModels.net Team.'
+standard: other
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Sune Danø
+- Mads F Madsen
+- Henning Schmidt
+- Gunnar Cedersund
+upstream:
+  id: biomodels_ebi:MODEL5952308332
+  source_db: biomodels_ebi
+  source_id: MODEL5952308332
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL5952308332
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL5952308332?filename=MODEL5952308332_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.dan_2006_glycolysis_reduction_model5952308332_model:Dan2006GlycolysisReductionModel5952308332Model
+  init_kwargs:
+    model_path: data/MODEL5952308332.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_aca
+    maps_to: ACA
+    label: Initial Model State Aca
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ACA`.
+  - name: initial_acax
+    maps_to: ACAX
+    label: Initial Acax
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ACAX`.
+  - name: initial_triose_p
+    maps_to: trioseP
+    label: Initial Triose P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `trioseP`.
+  - name: initial_source
+    maps_to: source
+    label: Initial Source
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `source`.
+  - name: initial_sink
+    maps_to: sink
+    label: Initial Sink
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `sink`.
+  - name: initial_glc_x
+    maps_to: GlcX
+    label: Initial Glc X
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `GlcX`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: aca
+    maps_to: ACA
+    label: ACA
+    description: ACA. Maps to SBML symbol `ACA`.
+  - name: acax
+    maps_to: ACAX
+    label: ACAX
+    description: ACAX. Maps to SBML symbol `ACAX`.
+  - name: triose_p
+    maps_to: trioseP
+    label: trioseP
+    description: trioseP. Maps to SBML symbol `trioseP`.
+  - name: source
+    maps_to: source
+    label: source
+    description: source. Maps to SBML symbol `source`.
+  - name: sink
+    maps_to: sink
+    label: sink
+    description: sink. Maps to SBML symbol `sink`.
+  - name: glc_x
+    maps_to: GlcX
+    label: GlcX
+    description: GlcX. Maps to SBML symbol `GlcX`.

@@ -1,0 +1,110 @@
+schema_version: '2.0'
+title: Kallenberger2014 - CD95L induced apoptosis initiated by caspase-8, CD95 HeLa
+  cells (cis/trans variant)
+description: Kallenberger2014 - CD95L induced apoptosis initiated by caspase-8, CD95
+  HeLa cells (cis/trans variant) The paper describes a new approach that combines
+  single cell and population data in the same mode. It can be used to explore systemsbiology
+  kallenberger2014 cd95l induced apoptosis initiat dynamics and compare simulation
+  behavior across conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Stefan M Kallenberger
+- Joël Beaudouin
+- Juliane Claus
+- Carmen Fischer
+- Peter K Sorger
+upstream:
+  id: biomodels_ebi:BIOMD0000000523
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000523
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000523
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000523?filename=BIOMD0000000523_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.kallenberger2014_cd95l_induced_apoptosis_initiat_biomd0000000523_model:Kallenberger2014Cd95lInducedApoptosisInitiatBiomd0000000523Model
+  init_kwargs:
+    model_path: data/BIOMD0000000523.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_pr_er_m_gfp
+    maps_to: PrER_mGFP
+    label: Initial Pr Er M Gfp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PrER_mGFP`.
+  - name: initial_pr_nes_m_cherry
+    maps_to: PrNES_mCherry
+    label: Initial Pr Nes M Cherry
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PrNES_mCherry`.
+  - name: initial_p55free
+    maps_to: p55free
+    label: Initial P55free
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `p55free`.
+  - name: initial_t_bid
+    maps_to: tBid
+    label: Initial T Bid
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `tBid`.
+  - name: initial_model_state_p43
+    maps_to: p43
+    label: Initial Model State P43
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `p43`.
+  - name: initial_model_state_p30
+    maps_to: p30
+    label: Initial Model State P30
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `p30`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: pr_er_m_gfp
+    maps_to: PrER_mGFP
+    label: PrER_mGFP
+    description: PrER_mGFP. Maps to SBML symbol `PrER_mGFP`.
+  - name: pr_nes_m_cherry
+    maps_to: PrNES_mCherry
+    label: PrNES_mCherry
+    description: PrNES_mCherry. Maps to SBML symbol `PrNES_mCherry`.
+  - name: p55free
+    maps_to: p55free
+    label: p55free
+    description: p55free. Maps to SBML symbol `p55free`.
+  - name: t_bid
+    maps_to: tBid
+    label: tBid
+    description: tBid. Maps to SBML symbol `tBid`.
+  - name: p43
+    maps_to: p43
+    label: p43
+    description: p43. Maps to SBML symbol `p43`.
+  - name: p30
+    maps_to: p30
+    label: p30
+    description: p30. Maps to SBML symbol `p30`.

@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Patel2023 - miRNA-199a/b-5p regionation of chondrogenesis - enchanced Visualisation
+description: Question-and-answer and dynamic visual summaries for Patel2023 - miRNA-199a/b-5p
+  regionation of chondrogenesis - enchanced.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Patel2023 Mirna 199a B 5p Regionation Of Chondrogenesis Enchanced Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Patel2023 - miRNA-199a/b-5p regionation of chondrogenesis - enchanced.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_patel2023_mirna_199a_b_5p_regionation_of_chondro_model2305010001_model
+      title: Patel2023 - miRNA-199a/b-5p regionation of chondrogenesis - enchanced
+      observables:
+      - id: Cav1
+        port: cav1
+        label: CAV1
+        group: gene_regulation
+      - id: Acan
+        port: acan
+        label: ACAN
+        group: gene_regulation
+      - id: TGFB3
+        port: tgfb3
+        label: TGFB3
+        group: signaling
+      - id: MIR199a_5p
+        port: mir199a_5p
+        label: MIR199a_5p
+        group: gene_regulation
+      - id: Sox9mRNA
+        port: sox9mrna
+        label: SOX9mRNA
+        group: gene_regulation
+      - id: MIR140_5p
+        port: mir140_5p
+        label: MIR140_5p
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

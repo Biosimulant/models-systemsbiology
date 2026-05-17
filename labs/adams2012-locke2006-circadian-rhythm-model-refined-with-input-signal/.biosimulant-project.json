@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "6f35c5d1-1710-4649-9dbc-427f36b4f330",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "c8b44e9a-8c2e-45c9-8671-f7fb67ee435f",
+  "created_at": "2026-05-16T05:46:40.679893604+00:00",
+  "last_synced_at": "2026-05-17T01:33:37.916887+00:00",
+  "hub_manifest_hash": "4225d05358e8e1658c15c90637955b071224e5d8fdab9817f2c488f0b4ade1ed",
+  "package_name": "adams2012-locke2006-circadian-rhythm-model-refined-with-input-si"
+}

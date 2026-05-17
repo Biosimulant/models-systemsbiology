@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Ferreira2003_CML_generation2 Visualisation
+description: Question-and-answer and dynamic visual summaries for Ferreira2003_CML_generation2.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Ferreira2003 Cml Generation2 Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Ferreira2003_CML_generation2.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_ferreira2003_cml_generation2_biomd0000000053_model
+      title: Ferreira2003_CML_generation2
+      observables:
+      - id: Glucose
+        port: glucose
+        label: Glucose
+        group: metabolism
+      - id: Lysine
+        port: lysine
+        label: Lysine
+        group: gene_regulation
+      - id: Schiff
+        port: schiff
+        label: Schiff
+        group: gene_regulation
+      - id: Glyoxal
+        port: glyoxal
+        label: Glyoxal
+        group: gene_regulation
+      - id: CML
+        port: cml
+        label: CML
+        group: gene_regulation
+      - id: Amadori
+        port: amadori
+        label: Amadori
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

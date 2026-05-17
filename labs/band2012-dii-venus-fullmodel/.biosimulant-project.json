@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "22868203-a2f4-461d-99a7-5705028b90d3",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "bc7f5ae4-5570-480f-9895-dd6988dda304",
+  "created_at": "2026-05-16T05:46:41.318782446+00:00",
+  "last_synced_at": "2026-05-17T01:54:38.524556+00:00",
+  "hub_manifest_hash": "beff0675889710a253a3146a64ee02b9c8d6592fc63adc21940d0783df5d281b",
+  "package_name": "band2012-dii-venus-fullmodel-lab"
+}

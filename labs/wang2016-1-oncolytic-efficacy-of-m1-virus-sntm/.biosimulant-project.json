@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "de5c8205-c2cb-4acc-ad3d-c5b90d75d24a",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "c6f60771-a10e-4055-a0cd-49a017b76ac7",
+  "created_at": "2026-05-16T05:46:52.897621794+00:00",
+  "last_synced_at": "2026-05-17T06:41:46.701368+00:00",
+  "hub_manifest_hash": "d2f56f491454d5cb79fab3b11920fd90397483cd1a0fb97621911375b41adcb9",
+  "package_name": "wang2016-1-oncolytic-efficacy-of-m1-virus-sntm-lab"
+}

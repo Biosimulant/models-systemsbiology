@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "c8e820df-984a-4c95-ac2e-fd11a5bc448c",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "2e039b4b-d39e-4e57-b7f2-f4819920d049",
+  "created_at": "2026-05-16T05:46:52.143276680+00:00",
+  "last_synced_at": "2026-05-17T06:19:32.112984+00:00",
+  "hub_manifest_hash": "78503a3d126877feb2665ea26e3e88bf410d9acef1165d076aa84c9a484c9465",
+  "package_name": "stefan2008-calmodulin-allostery-lab"
+}

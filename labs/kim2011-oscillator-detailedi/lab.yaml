@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Kim2011 Oscillator Detailedi Lab
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models (http://www.ebi.ac.uk/biomodels/). It is copyright (c) 2005-2011
+  The BioModels.net Team.'
+models:
+- alias: systemsbiology_sbml_kim2011_oscillator_detailedi_model1012090002_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_kim2011_oscillator_detailedi_model1012090002_model.state
+  to:
+  - visualisation.systemsbiology_sbml_kim2011_oscillator_detailedi_model1012090002_model_state
+- from: systemsbiology_sbml_kim2011_oscillator_detailedi_model1012090002_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_kim2011_oscillator_detailedi_model1012090002_model_summary
+- from: systemsbiology_sbml_kim2011_oscillator_detailedi_model1012090002_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_kim2011_oscillator_detailedi_model1012090002_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_rnap
+    maps_to: systemsbiology_sbml_kim2011_oscillator_detailedi_model1012090002_model.initial_rnap
+    label: Initial Rnap
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_13`.
+  - name: initial_r_nase_h
+    maps_to: systemsbiology_sbml_kim2011_oscillator_detailedi_model1012090002_model.initial_r_nase_h
+    label: Initial R Nase H
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_14`.
+  - name: initial_r_nase_hr_a1d_i1
+    maps_to: systemsbiology_sbml_kim2011_oscillator_detailedi_model1012090002_model.initial_r_nase_hr_a1d_i1
+    label: Initial R Nase Hr A1D I1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_19`.
+  - name: initial_r_nase_ha2r_i2
+    maps_to: systemsbiology_sbml_kim2011_oscillator_detailedi_model1012090002_model.initial_r_nase_ha2r_i2
+    label: Initial R Nase Ha2r I2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_20`.
+  - name: initial_rnapt21_a1
+    maps_to: systemsbiology_sbml_kim2011_oscillator_detailedi_model1012090002_model.initial_rnapt21_a1
+    label: Initial Rnapt21 A1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_17`.
+  - name: initial_rnapt21
+    maps_to: systemsbiology_sbml_kim2011_oscillator_detailedi_model1012090002_model.initial_rnapt21
+    label: Initial Rnapt21
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_18`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_kim2011_oscillator_detailedi_model1012090002_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_kim2011_oscillator_detailedi_model1012090002_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_kim2011_oscillator_detailedi_model1012090002_model.species_labels
+  - name: rnap
+    maps_to: systemsbiology_sbml_kim2011_oscillator_detailedi_model1012090002_model.rnap
+  - name: r_nase_h
+    maps_to: systemsbiology_sbml_kim2011_oscillator_detailedi_model1012090002_model.r_nase_h
+  - name: r_nase_hr_a1d_i1
+    maps_to: systemsbiology_sbml_kim2011_oscillator_detailedi_model1012090002_model.r_nase_hr_a1d_i1
+  - name: r_nase_ha2r_i2
+    maps_to: systemsbiology_sbml_kim2011_oscillator_detailedi_model1012090002_model.r_nase_ha2r_i2
+  - name: rnapt21_a1
+    maps_to: systemsbiology_sbml_kim2011_oscillator_detailedi_model1012090002_model.rnapt21_a1
+  - name: rnapt21
+    maps_to: systemsbiology_sbml_kim2011_oscillator_detailedi_model1012090002_model.rnapt21

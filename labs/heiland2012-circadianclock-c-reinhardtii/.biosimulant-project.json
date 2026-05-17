@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "e4c4a065-b91c-4116-b936-9231be818fa5",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "79804b5b-bd26-4ae4-b13c-705fc7c476c6",
+  "created_at": "2026-05-16T05:46:44.022382599+00:00",
+  "last_synced_at": "2026-05-17T03:38:10.940025+00:00",
+  "hub_manifest_hash": "cad4d37b4361dcb30c428ab468a0edf2974781f4b8d752252f6badd46181d468",
+  "package_name": "heiland2012-circadianclock-c-reinhardtii-lab"
+}

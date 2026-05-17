@@ -1,0 +1,51 @@
+schema_version: '2.0'
+title: Evans2004 - Cell based mathematical model of topotecan Visualisation
+description: Question-and-answer and dynamic visual summaries for Evans2004 - Cell
+  based mathematical model of topotecan.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Evans2004 Cell Based Mathematical Model Of Topotecan Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Evans2004 - Cell based mathematical model of topotecan.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_evans2004_cell_based_mathematical_model_of_topot_biomd0000000945_model
+      title: Evans2004 - Cell based mathematical model of topotecan
+      observables:
+      - id: L_m
+        port: l_m
+        label: L_m
+        group: physiology
+      - id: L_n
+        port: l_n
+        label: L_n
+        group: physiology
+      - id: L_c
+        port: l_c
+        label: L_c
+        group: physiology
+      - id: H_m
+        port: h_m
+        label: H_m
+        group: physiology
+      - id: H_c
+        port: h_c
+        label: H_c
+        group: physiology
+io:
+  inputs: []
+  outputs: []

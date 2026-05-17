@@ -1,0 +1,111 @@
+schema_version: '2.0'
+title: Amstein2022 - TNFR1 Signal Transduction, Petri Net
+description: Systems Biology Amstein2022Tnfr1Signal Transduction Petri Net Model2210170001Model
+  captures core biological behavior in the context of systemsbiology, sbml, biomodels_ebi
+  using a biomodels_ebi-sourced OTHER mod. When you run it, you can observe state
+  and evaluate how the modeled system changes across runs.
+standard: other
+tags:
+- immunology
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Leonie K Amstein
+- Jörg Ackermann
+- Jennifer Hannig
+- Ivan Đikić
+- Simone Fulda
+upstream:
+  id: biomodels_ebi:MODEL2210170001
+  source_db: biomodels_ebi
+  source_id: MODEL2210170001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2210170001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2210170001?filename=Amstein2022
+    - TNFR1 Signal Transduction - Petri Net.xml
+  license: CC0
+biosim:
+  entrypoint: src.amstein2022_tnfr1_signal_transduction_petri_net_model2210170001_model:Amstein2022Tnfr1SignalTransductionPetriNetModel2210170001Model
+  init_kwargs:
+    model_path: data/MODEL2210170001.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_c_flipl_mrna
+    maps_to: P95
+    label: Initial C Flipl MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P95`.
+  - name: initial_xiap_mrna
+    maps_to: P93
+    label: Initial Xiap MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P93`.
+  - name: initial_ik_b_mrna
+    maps_to: P79
+    label: Initial Ik B MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P79`.
+  - name: initial_bcl_2_mrna
+    maps_to: P96
+    label: Initial Bcl 2 MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P96`.
+  - name: initial_a20_mrna
+    maps_to: P92
+    label: Initial A20 MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P92`.
+  - name: initial_t_bid_mom
+    maps_to: P105
+    label: Initial T Bid Mom
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `P105`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: c_flipl_mrna
+    maps_to: P95
+    label: cFLIPL_mRNA
+    description: cFLIPL_mRNA. Maps to SBML symbol `P95`.
+  - name: xiap_mrna
+    maps_to: P93
+    label: XIAP_mRNA
+    description: XIAP_mRNA. Maps to SBML symbol `P93`.
+  - name: ik_b_mrna
+    maps_to: P79
+    label: IkB_mRNA
+    description: IkB_mRNA. Maps to SBML symbol `P79`.
+  - name: bcl_2_mrna
+    maps_to: P96
+    label: BCL-2_mRNA
+    description: BCL-2_mRNA. Maps to SBML symbol `P96`.
+  - name: a20_mrna
+    maps_to: P92
+    label: A20_mRNA
+    description: A20_mRNA. Maps to SBML symbol `P92`.
+  - name: t_bid_mom
+    maps_to: P105
+    label: tBid_MOM
+    description: tBid_MOM. Maps to SBML symbol `P105`.

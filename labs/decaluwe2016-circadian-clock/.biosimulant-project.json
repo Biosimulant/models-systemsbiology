@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "aa073d66-0c9e-46aa-a0ee-61edce5dc22e",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "7bd77bf8-36f4-48d7-a526-939d92a4dd68",
+  "created_at": "2026-05-16T05:46:42.727068049+00:00",
+  "last_synced_at": "2026-05-17T02:50:00.816199+00:00",
+  "hub_manifest_hash": "41c323defcd7de295b300d3f0e0db5eb98fbec3223f6517cf7ad81f203d7b698",
+  "package_name": "decaluwe2016-circadian-clock-lab"
+}

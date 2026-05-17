@@ -1,0 +1,72 @@
+schema_version: '2.0'
+title: Kim2011 Oscillator Simplei Lab
+description: 'This a model from the article: Synthetic in vitro transcriptional oscillators.
+  It can be used to explore systemsbiology kim2011 oscillator simplei BioModels0000000322
+  dynamics and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_kim2011_oscillator_simplei_biomd0000000322_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_kim2011_oscillator_simplei_biomd0000000322_model.state
+  to:
+  - visualisation.systemsbiology_sbml_kim2011_oscillator_simplei_biomd0000000322_model_state
+- from: systemsbiology_sbml_kim2011_oscillator_simplei_biomd0000000322_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_kim2011_oscillator_simplei_biomd0000000322_model_summary
+- from: systemsbiology_sbml_kim2011_oscillator_simplei_biomd0000000322_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_kim2011_oscillator_simplei_biomd0000000322_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_y
+    maps_to: systemsbiology_sbml_kim2011_oscillator_simplei_biomd0000000322_model.initial_model_state_y
+    label: Initial Model State Y
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_2`.
+  - name: initial_model_state_x
+    maps_to: systemsbiology_sbml_kim2011_oscillator_simplei_biomd0000000322_model.initial_model_state_x
+    label: Initial Model State X
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_1`.
+  - name: initial_model_state_v
+    maps_to: systemsbiology_sbml_kim2011_oscillator_simplei_biomd0000000322_model.initial_model_state_v
+    label: Initial Model State V
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_4`.
+  - name: initial_model_state_u
+    maps_to: systemsbiology_sbml_kim2011_oscillator_simplei_biomd0000000322_model.initial_model_state_u
+    label: Initial Model State U
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_3`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_kim2011_oscillator_simplei_biomd0000000322_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_kim2011_oscillator_simplei_biomd0000000322_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_kim2011_oscillator_simplei_biomd0000000322_model.species_labels
+  - name: model_state_y
+    maps_to: systemsbiology_sbml_kim2011_oscillator_simplei_biomd0000000322_model.model_state_y
+  - name: model_state_x
+    maps_to: systemsbiology_sbml_kim2011_oscillator_simplei_biomd0000000322_model.model_state_x
+  - name: model_state_v
+    maps_to: systemsbiology_sbml_kim2011_oscillator_simplei_biomd0000000322_model.model_state_v
+  - name: model_state_u
+    maps_to: systemsbiology_sbml_kim2011_oscillator_simplei_biomd0000000322_model.model_state_u

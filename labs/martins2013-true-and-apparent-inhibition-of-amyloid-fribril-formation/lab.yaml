@@ -1,0 +1,48 @@
+schema_version: '2.0'
+title: Martins2013 True And Apparent Inhibition Of Amyloid Fribril Formation Lab
+description: 'Martins2013 - True and apparent inhibition ofamyloid fribril formation
+  This model is described in the article: True and apparent inhibition of amyloid
+  fibril formation. It can be used to explore systemsbiology martins2013 true and
+  apparent inhibition dynamics and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_martins2013_true_and_apparent_inhibition_of_amyl_biomd0000000561_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_martins2013_true_and_apparent_inhibition_of_amyl_biomd0000000561_model.state
+  to:
+  - visualisation.systemsbiology_sbml_martins2013_true_and_apparent_inhibition_of_amyl_biomd0000000561_model_state
+- from: systemsbiology_sbml_martins2013_true_and_apparent_inhibition_of_amyl_biomd0000000561_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_martins2013_true_and_apparent_inhibition_of_amyl_biomd0000000561_model_summary
+- from: systemsbiology_sbml_martins2013_true_and_apparent_inhibition_of_amyl_biomd0000000561_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_martins2013_true_and_apparent_inhibition_of_amyl_biomd0000000561_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_amyloid
+    maps_to: systemsbiology_sbml_martins2013_true_and_apparent_inhibition_of_amyl_biomd0000000561_model.initial_amyloid
+    label: Initial Amyloid
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Amyloid`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_martins2013_true_and_apparent_inhibition_of_amyl_biomd0000000561_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_martins2013_true_and_apparent_inhibition_of_amyl_biomd0000000561_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_martins2013_true_and_apparent_inhibition_of_amyl_biomd0000000561_model.species_labels
+  - name: amyloid
+    maps_to: systemsbiology_sbml_martins2013_true_and_apparent_inhibition_of_amyl_biomd0000000561_model.amyloid

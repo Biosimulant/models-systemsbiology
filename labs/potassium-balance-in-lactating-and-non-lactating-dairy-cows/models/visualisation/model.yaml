@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Potassium balance in lactating and non-lactating dairy cows Visualisation
+description: Question-and-answer and dynamic visual summaries for Potassium balance
+  in lactating and non-lactating dairy cows.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Potassium Balance In Lactating And Non Lactating Dairy Cows Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Potassium balance in lactating and non-lactating dairy cows.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_potassium_balance_in_lactating_and_non_lactating_biomd0000000849_model
+      title: Potassium balance in lactating and non-lactating dairy cows
+      observables:
+      - id: Gluc_stor
+        port: gluc_stor
+        label: Gluc_stor
+        group: physiology
+      - id: K_tiss
+        port: k_tiss
+        label: K_tiss
+        group: physiology
+      - id: K_git
+        port: k_git
+        label: K_git
+        group: physiology
+      - id: Gluc_prod
+        port: gluc_prod
+        label: Gluc_prod
+        group: physiology
+      - id: K_ICF_mmol
+        port: k_icf_mmol
+        label: K_ICF_mmol
+        group: physiology
+      - id: ins_b
+        port: ins_b
+        label: ins_b
+        group: physiology
+io:
+  inputs: []
+  outputs: []

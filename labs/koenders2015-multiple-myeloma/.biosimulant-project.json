@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "7dc12113-f971-40eb-91ab-124d1abfab43",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "773ec863-8f92-4614-8411-8b7cf303ae59",
+  "created_at": "2026-05-16T05:46:44.770238960+00:00",
+  "last_synced_at": "2026-05-17T04:06:55.415182+00:00",
+  "hub_manifest_hash": "d7e844a9660f809a59e3445a457ce46a72c28d8ccd5e9e9edbeff880fecd878e",
+  "package_name": "koenders2015-multiple-myeloma-lab"
+}

@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Proctor2006_telomere Visualisation
+description: Question-and-answer and dynamic visual summaries for Proctor2006_telomere.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Proctor2006 Telomere Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Proctor2006_telomere.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_proctor2006_telomere_biomd0000000087_model
+      title: Proctor2006_telomere
+      observables:
+      - id: ATP
+        port: atp
+        label: ATP
+        group: metabolism
+      - id: ADP
+        port: adp
+        label: ADP
+        group: metabolism
+      - id: Scyclin
+        port: scyclin
+        label: Scyclin
+        group: physiology
+      - id: Mcyclin
+        port: mcyclin
+        label: Mcyclin
+        group: physiology
+      - id: G2cyclin
+        port: g2cyclin
+        label: G2cyclin
+        group: physiology
+      - id: G1cyclin
+        port: g1cyclin
+        label: G1cyclin
+        group: physiology
+io:
+  inputs: []
+  outputs: []

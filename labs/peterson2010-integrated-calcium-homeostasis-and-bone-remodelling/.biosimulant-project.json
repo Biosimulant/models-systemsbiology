@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "d48dbc3a-bfc6-42df-8498-2ead3138f300",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "a58e5195-4983-49c4-9174-dcfa32d4928b",
+  "created_at": "2026-05-16T05:46:50.277756058+00:00",
+  "last_synced_at": "2026-05-17T05:28:00.314268+00:00",
+  "hub_manifest_hash": "ec87e56004542381aa6be44b4c740d3bf5d015882d724343e06d3f7157687a40",
+  "package_name": "peterson2010-integrated-calcium-homeostasis-and-bone-remodelling"
+}

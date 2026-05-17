@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Locke2008_Circadian_Clock Visualisation
+description: Question-and-answer and dynamic visual summaries for Locke2008_Circadian_Clock.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Locke2008 Circadian Clock Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Locke2008_Circadian_Clock.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_locke2008_circadian_clock_biomd0000000185_model
+      title: Locke2008_Circadian_Clock
+      observables:
+      - id: X1
+        port: clock_gene_mrna
+        label: clock gene mRNA
+        group: gene_regulation
+      - id: Y1
+        port: clock_protein
+        label: clock protein
+        group: gene_regulation
+      - id: Z1
+        port: transcriptional_repressor
+        label: Transcriptional repressor
+        group: gene_regulation
+      - id: Y2
+        port: clock_protein_2
+        label: clock protein
+        group: gene_regulation
+      - id: X2
+        port: clock_gene_mrna_2
+        label: clock gene mRNA
+        group: gene_regulation
+      - id: Z2
+        port: transcriptional_repressor_2
+        label: Transcriptional repressor
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

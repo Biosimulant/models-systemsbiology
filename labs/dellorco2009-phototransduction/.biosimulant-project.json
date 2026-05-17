@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "3a268ab0-6162-4373-b82b-9cdf91c94b25",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "5fbf5050-8e61-4855-9fa0-343b606d2f85",
+  "created_at": "2026-05-16T05:46:42.753540761+00:00",
+  "last_synced_at": "2026-05-17T02:51:05.921573+00:00",
+  "hub_manifest_hash": "9f44fdb92ddd99d0c9721c1daaffa8287d27ac43976b9a50e7425dc7a6acb60f",
+  "package_name": "dellorco2009-phototransduction-lab"
+}

@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Lei2001_Yeast_Aerobic_Metabolism Visualisation
+description: Question-and-answer and dynamic visual summaries for Lei2001_Yeast_Aerobic_Metabolism.
+standard: other
+tags:
+- metabolism
+- microbiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Lei2001 Yeast Aerobic Metabolism Lab
+    question: 'Which metabolic pools or flux-linked states show the strongest simulated
+      change? Source model: Lei2001_Yeast_Aerobic_Metabolism.'
+    answer_focus: Q/A table plus metabolism timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_lei2001_yeast_aerobic_metabolism_biomd0000000245_model
+      title: Lei2001_Yeast_Aerobic_Metabolism
+      observables:
+      - id: S_f
+        port: glucose_feed
+        label: Glucose(feed)
+        group: metabolism
+      - id: s_glu
+        port: glucose
+        label: Glucose
+        group: metabolism
+      - id: Red
+        port: red_equ_nadh
+        label: Red. Equ. (NADH)
+        group: metabolism
+      - id: s_pyr
+        port: pyruvate
+        label: Pyruvate
+        group: metabolism
+      - id: s_EtOH
+        port: et_oh
+        label: EtOH
+        group: metabolism
+      - id: AcDH
+        port: bm_ac_dh
+        label: BM(AcDH)
+        group: metabolism
+io:
+  inputs: []
+  outputs: []

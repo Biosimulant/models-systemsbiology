@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "af2747c2-3f00-4b7f-a31f-9826dd9942e5",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "2656417a-f7ba-401d-8592-0388ec9c3080",
+  "created_at": "2026-05-16T05:46:41.885477854+00:00",
+  "last_synced_at": "2026-05-17T02:17:31.973270+00:00",
+  "hub_manifest_hash": "d421fccb1cf830f7da1393b097c6b8e728cbea058c736f7d19cf8c55533c0979",
+  "package_name": "brands2002-monosaccharide-casein-systems-lab"
+}

@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Komarova2003 Boneremodeling Lab
+description: 'This a model from the article: Mathematical model predicts a critical
+  role for osteoclast autocrine regulation in the control of bone remodeling. Komarova
+  SV, Smith RJ, Dixon SJ, Sims SM, Wahl LM Bone.'
+models:
+- alias: systemsbiology_sbml_komarova2003_boneremodeling_biomd0000000148_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_komarova2003_boneremodeling_biomd0000000148_model.state
+  to:
+  - visualisation.systemsbiology_sbml_komarova2003_boneremodeling_biomd0000000148_model_state
+- from: systemsbiology_sbml_komarova2003_boneremodeling_biomd0000000148_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_komarova2003_boneremodeling_biomd0000000148_model_summary
+- from: systemsbiology_sbml_komarova2003_boneremodeling_biomd0000000148_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_komarova2003_boneremodeling_biomd0000000148_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_steady_state_osteoclast
+    maps_to: systemsbiology_sbml_komarova2003_boneremodeling_biomd0000000148_model.initial_steady_state_osteoclast
+    label: Initial Steady State Osteoclast
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x1_bar`.
+  - name: initial_steady_state_osteoblast
+    maps_to: systemsbiology_sbml_komarova2003_boneremodeling_biomd0000000148_model.initial_steady_state_osteoblast
+    label: Initial Steady State Osteoblast
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x2_bar`.
+  - name: initial_osteoblast
+    maps_to: systemsbiology_sbml_komarova2003_boneremodeling_biomd0000000148_model.initial_osteoblast
+    label: Initial Osteoblast
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x2`.
+  - name: initial_osteoclast
+    maps_to: systemsbiology_sbml_komarova2003_boneremodeling_biomd0000000148_model.initial_osteoclast
+    label: Initial Osteoclast
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `x1`.
+  - name: initial_cells_actively_resorbing_bone
+    maps_to: systemsbiology_sbml_komarova2003_boneremodeling_biomd0000000148_model.initial_cells_actively_resorbing_bone
+    label: Initial Cells Actively Resorbing Bone
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `y1`.
+  - name: initial_cells_actively_forming_bone
+    maps_to: systemsbiology_sbml_komarova2003_boneremodeling_biomd0000000148_model.initial_cells_actively_forming_bone
+    label: Initial Cells Actively Forming Bone
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `y2`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_komarova2003_boneremodeling_biomd0000000148_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_komarova2003_boneremodeling_biomd0000000148_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_komarova2003_boneremodeling_biomd0000000148_model.species_labels
+  - name: steady_state_osteoclast
+    maps_to: systemsbiology_sbml_komarova2003_boneremodeling_biomd0000000148_model.steady_state_osteoclast
+  - name: steady_state_osteoblast
+    maps_to: systemsbiology_sbml_komarova2003_boneremodeling_biomd0000000148_model.steady_state_osteoblast
+  - name: osteoblast
+    maps_to: systemsbiology_sbml_komarova2003_boneremodeling_biomd0000000148_model.osteoblast
+  - name: osteoclast
+    maps_to: systemsbiology_sbml_komarova2003_boneremodeling_biomd0000000148_model.osteoclast
+  - name: cells_actively_resorbing_bone
+    maps_to: systemsbiology_sbml_komarova2003_boneremodeling_biomd0000000148_model.cells_actively_resorbing_bone
+  - name: cells_actively_forming_bone
+    maps_to: systemsbiology_sbml_komarova2003_boneremodeling_biomd0000000148_model.cells_actively_forming_bone

@@ -1,0 +1,90 @@
+schema_version: '2.0'
+title: Stseranidou2024 Nucleus Pulposus Cell Network Modelling In The Interverteb
+  Lab
+description: 'ABSTRACT: Intervertebral disc degeneration (IDD) arises from an intricate
+  imbalance between the anabolic and catabolic processes governing the extracellular
+  matrix (ECM) within the disc. It can be used to explore systemsbiology stseranidou2024
+  nucleus pulposus cell network dynamics and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_stseranidou2024_nucleus_pulposus_cell_network_mo_model2407080001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_stseranidou2024_nucleus_pulposus_cell_network_mo_model2407080001_model.state
+  to:
+  - visualisation.systemsbiology_sbml_stseranidou2024_nucleus_pulposus_cell_network_mo_model2407080001_model_state
+- from: systemsbiology_sbml_stseranidou2024_nucleus_pulposus_cell_network_mo_model2407080001_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_stseranidou2024_nucleus_pulposus_cell_network_mo_model2407080001_model_summary
+- from: systemsbiology_sbml_stseranidou2024_nucleus_pulposus_cell_network_mo_model2407080001_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_stseranidou2024_nucleus_pulposus_cell_network_mo_model2407080001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_tnf
+    maps_to: systemsbiology_sbml_stseranidou2024_nucleus_pulposus_cell_network_mo_model2407080001_model.initial_model_state_tnf
+    label: Initial Model State TNF
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TNF`.
+  - name: initial_il_10
+    maps_to: systemsbiology_sbml_stseranidou2024_nucleus_pulposus_cell_network_mo_model2407080001_model.initial_il_10
+    label: Initial Il 10
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IL_10`.
+  - name: initial_il_1
+    maps_to: systemsbiology_sbml_stseranidou2024_nucleus_pulposus_cell_network_mo_model2407080001_model.initial_il_1
+    label: Initial Il 1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IL_1beta`.
+  - name: initial_model_state_tgf
+    maps_to: systemsbiology_sbml_stseranidou2024_nucleus_pulposus_cell_network_mo_model2407080001_model.initial_model_state_tgf
+    label: Initial Model State Tgf
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TGF_beta`.
+  - name: initial_il_8
+    maps_to: systemsbiology_sbml_stseranidou2024_nucleus_pulposus_cell_network_mo_model2407080001_model.initial_il_8
+    label: Initial Il 8
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IL_8`.
+  - name: initial_il_6
+    maps_to: systemsbiology_sbml_stseranidou2024_nucleus_pulposus_cell_network_mo_model2407080001_model.initial_il_6
+    label: Initial Il 6
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IL_6`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_stseranidou2024_nucleus_pulposus_cell_network_mo_model2407080001_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_stseranidou2024_nucleus_pulposus_cell_network_mo_model2407080001_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_stseranidou2024_nucleus_pulposus_cell_network_mo_model2407080001_model.species_labels
+  - name: tnf
+    maps_to: systemsbiology_sbml_stseranidou2024_nucleus_pulposus_cell_network_mo_model2407080001_model.tnf
+  - name: il_10
+    maps_to: systemsbiology_sbml_stseranidou2024_nucleus_pulposus_cell_network_mo_model2407080001_model.il_10
+  - name: il_1
+    maps_to: systemsbiology_sbml_stseranidou2024_nucleus_pulposus_cell_network_mo_model2407080001_model.il_1
+  - name: tgf
+    maps_to: systemsbiology_sbml_stseranidou2024_nucleus_pulposus_cell_network_mo_model2407080001_model.tgf
+  - name: il_8
+    maps_to: systemsbiology_sbml_stseranidou2024_nucleus_pulposus_cell_network_mo_model2407080001_model.il_8
+  - name: il_6
+    maps_to: systemsbiology_sbml_stseranidou2024_nucleus_pulposus_cell_network_mo_model2407080001_model.il_6

@@ -1,0 +1,79 @@
+schema_version: '2.0'
+title: Wang2008 Mimicking The Inhibitory Effect Of Riluzole On Membrane Co Lab
+description: 'Wang2008 - Mimicking the inhibitory effect ofriluzole on membrane conductance
+  in skeletal fibres This model is described in the article: Riluzole-induced block
+  of voltage-gated Na+ current and activat. It can be used to explore systemsbiology
+  wang2008 mimicking the inhibitory effect dynamics and compare simulation behavior
+  across conditions.'
+models:
+- alias: systemsbiology_sbml_wang2008_mimicking_the_inhibitory_effect_of_rilu_biomd0000000693_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_wang2008_mimicking_the_inhibitory_effect_of_rilu_biomd0000000693_model.state
+  to:
+  - visualisation.systemsbiology_sbml_wang2008_mimicking_the_inhibitory_effect_of_rilu_biomd0000000693_model_state
+- from: systemsbiology_sbml_wang2008_mimicking_the_inhibitory_effect_of_rilu_biomd0000000693_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_wang2008_mimicking_the_inhibitory_effect_of_rilu_biomd0000000693_model_summary
+- from: systemsbiology_sbml_wang2008_mimicking_the_inhibitory_effect_of_rilu_biomd0000000693_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_wang2008_mimicking_the_inhibitory_effect_of_rilu_biomd0000000693_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- cellcycle
+- pharmacology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: stimulus_duration
+    maps_to: systemsbiology_sbml_wang2008_mimicking_the_inhibitory_effect_of_rilu_biomd0000000693_model.stimulus_duration
+    label: Stimulus Duration
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `Stimulus_Duration`.
+  - name: stimulus_magnitude
+    maps_to: systemsbiology_sbml_wang2008_mimicking_the_inhibitory_effect_of_rilu_biomd0000000693_model.stimulus_magnitude
+    label: Stimulus Magnitude
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `Stimulus_Magnitude`.
+  - name: stimulus_period
+    maps_to: systemsbiology_sbml_wang2008_mimicking_the_inhibitory_effect_of_rilu_biomd0000000693_model.stimulus_period
+    label: Stimulus Period
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `Stimulus_Period`.
+  - name: stimulus_start
+    maps_to: systemsbiology_sbml_wang2008_mimicking_the_inhibitory_effect_of_rilu_biomd0000000693_model.stimulus_start
+    label: Stimulus Start
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `Stimulus_Start`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_wang2008_mimicking_the_inhibitory_effect_of_rilu_biomd0000000693_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_wang2008_mimicking_the_inhibitory_effect_of_rilu_biomd0000000693_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_wang2008_mimicking_the_inhibitory_effect_of_rilu_biomd0000000693_model.species_labels
+  - name: cer
+    maps_to: systemsbiology_sbml_wang2008_mimicking_the_inhibitory_effect_of_rilu_biomd0000000693_model.cer
+  - name: beta_m
+    maps_to: systemsbiology_sbml_wang2008_mimicking_the_inhibitory_effect_of_rilu_biomd0000000693_model.beta_m
+  - name: alpha_h
+    maps_to: systemsbiology_sbml_wang2008_mimicking_the_inhibitory_effect_of_rilu_biomd0000000693_model.alpha_h
+  - name: alpha_m
+    maps_to: systemsbiology_sbml_wang2008_mimicking_the_inhibitory_effect_of_rilu_biomd0000000693_model.alpha_m
+  - name: beta_n
+    maps_to: systemsbiology_sbml_wang2008_mimicking_the_inhibitory_effect_of_rilu_biomd0000000693_model.beta_n
+  - name: jleak
+    maps_to: systemsbiology_sbml_wang2008_mimicking_the_inhibitory_effect_of_rilu_biomd0000000693_model.jleak

@@ -1,0 +1,90 @@
+schema_version: '2.0'
+title: Pearce2021 Fibrin Polymerization Lab
+description: Here is an ode model for in vitro fibrin matrix polymerization reproducing
+  interactions among fibrinogen, fibrin and other proteins involved in the homeostatic
+  phase of wound healing. It can be used to explore systemsbiology pearce2021 fibrin
+  polymerization BioModels0000001054 dynamics and compare simulation behavior across
+  conditions.
+models:
+- alias: systemsbiology_sbml_pearce2021_fibrin_polymerization_biomd0000001054_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_pearce2021_fibrin_polymerization_biomd0000001054_model.state
+  to:
+  - visualisation.systemsbiology_sbml_pearce2021_fibrin_polymerization_biomd0000001054_model_state
+- from: systemsbiology_sbml_pearce2021_fibrin_polymerization_biomd0000001054_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_pearce2021_fibrin_polymerization_biomd0000001054_model_summary
+- from: systemsbiology_sbml_pearce2021_fibrin_polymerization_biomd0000001054_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_pearce2021_fibrin_polymerization_biomd0000001054_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_fbni
+    maps_to: systemsbiology_sbml_pearce2021_fibrin_polymerization_biomd0000001054_model.initial_fbni
+    label: Initial Fbni
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Fbni`.
+  - name: initial_model_state_thb
+    maps_to: systemsbiology_sbml_pearce2021_fibrin_polymerization_biomd0000001054_model.initial_model_state_thb
+    label: Initial Model State Thb
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Thb`.
+  - name: initial_model_state_fm
+    maps_to: systemsbiology_sbml_pearce2021_fibrin_polymerization_biomd0000001054_model.initial_model_state_fm
+    label: Initial Model State Fm
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `FM`.
+  - name: initial_fbna
+    maps_to: systemsbiology_sbml_pearce2021_fibrin_polymerization_biomd0000001054_model.initial_fbna
+    label: Initial Fbna
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Fbna`.
+  - name: initial_model_state_c2
+    maps_to: systemsbiology_sbml_pearce2021_fibrin_polymerization_biomd0000001054_model.initial_model_state_c2
+    label: Initial Model State C2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C2`.
+  - name: initial_model_state_c1
+    maps_to: systemsbiology_sbml_pearce2021_fibrin_polymerization_biomd0000001054_model.initial_model_state_c1
+    label: Initial Model State C1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `C1`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_pearce2021_fibrin_polymerization_biomd0000001054_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_pearce2021_fibrin_polymerization_biomd0000001054_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_pearce2021_fibrin_polymerization_biomd0000001054_model.species_labels
+  - name: fbni
+    maps_to: systemsbiology_sbml_pearce2021_fibrin_polymerization_biomd0000001054_model.fbni
+  - name: thb
+    maps_to: systemsbiology_sbml_pearce2021_fibrin_polymerization_biomd0000001054_model.thb
+  - name: model_state_fm
+    maps_to: systemsbiology_sbml_pearce2021_fibrin_polymerization_biomd0000001054_model.model_state_fm
+  - name: fbna
+    maps_to: systemsbiology_sbml_pearce2021_fibrin_polymerization_biomd0000001054_model.fbna
+  - name: model_state_c2
+    maps_to: systemsbiology_sbml_pearce2021_fibrin_polymerization_biomd0000001054_model.model_state_c2
+  - name: model_state_c1
+    maps_to: systemsbiology_sbml_pearce2021_fibrin_polymerization_biomd0000001054_model.model_state_c1

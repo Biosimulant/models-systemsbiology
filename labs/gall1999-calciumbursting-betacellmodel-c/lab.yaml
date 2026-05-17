@@ -1,0 +1,73 @@
+schema_version: '2.0'
+title: Gall1999 Calciumbursting Betacellmodel C Lab
+description: 'This a model from the article: Effect of Na/Ca exchange on plateau fraction
+  and [Ca]i in models for bursting in pancreatic beta-cells. It can be used to explore
+  systemsbiology gall1999 calciumbursting betacellmodel c model1201140000 dynamics
+  and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_gall1999_calciumbursting_betacellmodel_c_model1201140000_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_gall1999_calciumbursting_betacellmodel_c_model1201140000_model.state
+  to:
+  - visualisation.systemsbiology_sbml_gall1999_calciumbursting_betacellmodel_c_model1201140000_model_state
+- from: systemsbiology_sbml_gall1999_calciumbursting_betacellmodel_c_model1201140000_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_gall1999_calciumbursting_betacellmodel_c_model1201140000_model_summary
+- from: systemsbiology_sbml_gall1999_calciumbursting_betacellmodel_c_model1201140000_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_gall1999_calciumbursting_betacellmodel_c_model1201140000_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_v_membrane
+    maps_to: systemsbiology_sbml_gall1999_calciumbursting_betacellmodel_c_model1201140000_model.initial_v_membrane
+    label: Initial V Membrane
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `V_membrane`.
+  - name: initial_ca_ret
+    maps_to: systemsbiology_sbml_gall1999_calciumbursting_betacellmodel_c_model1201140000_model.initial_ca_ret
+    label: Initial Ca Ret
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_ret`.
+  - name: initial_ca_i
+    maps_to: systemsbiology_sbml_gall1999_calciumbursting_betacellmodel_c_model1201140000_model.initial_ca_i
+    label: Initial Ca I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_i`.
+  - name: initial_model_state_n
+    maps_to: systemsbiology_sbml_gall1999_calciumbursting_betacellmodel_c_model1201140000_model.initial_model_state_n
+    label: Initial Model State N
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `n`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_gall1999_calciumbursting_betacellmodel_c_model1201140000_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_gall1999_calciumbursting_betacellmodel_c_model1201140000_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_gall1999_calciumbursting_betacellmodel_c_model1201140000_model.species_labels
+  - name: v_membrane
+    maps_to: systemsbiology_sbml_gall1999_calciumbursting_betacellmodel_c_model1201140000_model.v_membrane
+  - name: ca_ret
+    maps_to: systemsbiology_sbml_gall1999_calciumbursting_betacellmodel_c_model1201140000_model.ca_ret
+  - name: ca_i
+    maps_to: systemsbiology_sbml_gall1999_calciumbursting_betacellmodel_c_model1201140000_model.ca_i
+  - name: model_state_n
+    maps_to: systemsbiology_sbml_gall1999_calciumbursting_betacellmodel_c_model1201140000_model.model_state_n

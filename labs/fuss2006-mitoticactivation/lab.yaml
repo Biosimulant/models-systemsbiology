@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Fuss2006 Mitoticactivation Lab
+description: The model was curated with XPP. It can be used to explore systemsbiology
+  fuss2006 mitoticactivation BioModels0000000069 dynamics and compare simulation behavior
+  across conditions.
+models:
+- alias: systemsbiology_sbml_fuss2006_mitoticactivation_biomd0000000069_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_fuss2006_mitoticactivation_biomd0000000069_model.state
+  to:
+  - visualisation.systemsbiology_sbml_fuss2006_mitoticactivation_biomd0000000069_model_state
+- from: systemsbiology_sbml_fuss2006_mitoticactivation_biomd0000000069_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_fuss2006_mitoticactivation_biomd0000000069_model_summary
+- from: systemsbiology_sbml_fuss2006_mitoticactivation_biomd0000000069_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_fuss2006_mitoticactivation_biomd0000000069_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- cellcycle
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_srci
+    maps_to: systemsbiology_sbml_fuss2006_mitoticactivation_biomd0000000069_model.initial_srci
+    label: Initial Srci
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `srci`.
+  - name: initial_model_state_ptp
+    maps_to: systemsbiology_sbml_fuss2006_mitoticactivation_biomd0000000069_model.initial_model_state_ptp
+    label: Initial Model State Ptp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PTP`.
+  - name: initial_model_state_cbp
+    maps_to: systemsbiology_sbml_fuss2006_mitoticactivation_biomd0000000069_model.initial_model_state_cbp
+    label: Initial Model State Cbp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Cbp`.
+  - name: initial_csk_cytoplasm
+    maps_to: systemsbiology_sbml_fuss2006_mitoticactivation_biomd0000000069_model.initial_csk_cytoplasm
+    label: Initial Csk Cytoplasm
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CSK_cytoplasm`.
+  - name: initial_srco
+    maps_to: systemsbiology_sbml_fuss2006_mitoticactivation_biomd0000000069_model.initial_srco
+    label: Initial Srco
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `srco`.
+  - name: initial_srcc
+    maps_to: systemsbiology_sbml_fuss2006_mitoticactivation_biomd0000000069_model.initial_srcc
+    label: Initial Srcc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `srcc`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_fuss2006_mitoticactivation_biomd0000000069_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_fuss2006_mitoticactivation_biomd0000000069_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_fuss2006_mitoticactivation_biomd0000000069_model.species_labels
+  - name: srci
+    maps_to: systemsbiology_sbml_fuss2006_mitoticactivation_biomd0000000069_model.srci
+  - name: ptp
+    maps_to: systemsbiology_sbml_fuss2006_mitoticactivation_biomd0000000069_model.ptp
+  - name: cbp
+    maps_to: systemsbiology_sbml_fuss2006_mitoticactivation_biomd0000000069_model.cbp
+  - name: csk_cytoplasm
+    maps_to: systemsbiology_sbml_fuss2006_mitoticactivation_biomd0000000069_model.csk_cytoplasm
+  - name: srco
+    maps_to: systemsbiology_sbml_fuss2006_mitoticactivation_biomd0000000069_model.srco
+  - name: srcc
+    maps_to: systemsbiology_sbml_fuss2006_mitoticactivation_biomd0000000069_model.srcc

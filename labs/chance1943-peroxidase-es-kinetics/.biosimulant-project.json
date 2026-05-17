@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "19be0a5e-d205-4d63-b657-6a38bc4cdcde",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "4c4175fb-b143-4e3b-966f-7710006e3e44",
+  "created_at": "2026-05-16T05:46:42.275018673+00:00",
+  "last_synced_at": "2026-05-17T02:31:21.206067+00:00",
+  "hub_manifest_hash": "67853619d1a43f4a9f31d53274b236b14412d2ff7ceef5b167a83157c9f5ac9d",
+  "package_name": "chance1943-peroxidase-es-kinetics-lab"
+}

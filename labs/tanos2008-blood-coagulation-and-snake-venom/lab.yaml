@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Tanos2008 Blood Coagulation And Snake Venom Lab
+description: Mathematical model of the blood coagulation cascade including interaction
+  of snake venom and antivenom. It can be used to explore systemsbiology tanos2008
+  blood coagulation and snake dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_tanos2008_blood_coagulation_and_snake_venom_model1806150001_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_tanos2008_blood_coagulation_and_snake_venom_model1806150001_model.state
+  to:
+  - visualisation.systemsbiology_sbml_tanos2008_blood_coagulation_and_snake_venom_model1806150001_model_state
+- from: systemsbiology_sbml_tanos2008_blood_coagulation_and_snake_venom_model1806150001_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_tanos2008_blood_coagulation_and_snake_venom_model1806150001_model_summary
+- from: systemsbiology_sbml_tanos2008_blood_coagulation_and_snake_venom_model1806150001_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_tanos2008_blood_coagulation_and_snake_venom_model1806150001_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_va_xa
+    maps_to: systemsbiology_sbml_tanos2008_blood_coagulation_and_snake_venom_model1806150001_model.initial_va_xa
+    label: Initial Va Xa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Va_Xa`.
+  - name: initial_i_xa_vii_ia
+    maps_to: systemsbiology_sbml_tanos2008_blood_coagulation_and_snake_venom_model1806150001_model.initial_i_xa_vii_ia
+    label: Initial I Xa Vii Ia
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IXa_VIIIa`.
+  - name: initial_i_ia_tmod
+    maps_to: systemsbiology_sbml_tanos2008_blood_coagulation_and_snake_venom_model1806150001_model.initial_i_ia_tmod
+    label: Initial I Ia Tmod
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IIa_Tmod`.
+  - name: initial_model_state_fg
+    maps_to: systemsbiology_sbml_tanos2008_blood_coagulation_and_snake_venom_model1806150001_model.initial_model_state_fg
+    label: Initial Model State Fg
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Fg`.
+  - name: initial_model_state_pg
+    maps_to: systemsbiology_sbml_tanos2008_blood_coagulation_and_snake_venom_model1806150001_model.initial_model_state_pg
+    label: Initial Model State Pg
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pg`.
+  - name: initial_model_state_ii
+    maps_to: systemsbiology_sbml_tanos2008_blood_coagulation_and_snake_venom_model1806150001_model.initial_model_state_ii
+    label: Initial Model State Ii
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `II`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_tanos2008_blood_coagulation_and_snake_venom_model1806150001_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_tanos2008_blood_coagulation_and_snake_venom_model1806150001_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_tanos2008_blood_coagulation_and_snake_venom_model1806150001_model.species_labels
+  - name: va_xa
+    maps_to: systemsbiology_sbml_tanos2008_blood_coagulation_and_snake_venom_model1806150001_model.va_xa
+  - name: i_xa_vii_ia
+    maps_to: systemsbiology_sbml_tanos2008_blood_coagulation_and_snake_venom_model1806150001_model.i_xa_vii_ia
+  - name: i_ia_tmod
+    maps_to: systemsbiology_sbml_tanos2008_blood_coagulation_and_snake_venom_model1806150001_model.i_ia_tmod
+  - name: model_state_fg
+    maps_to: systemsbiology_sbml_tanos2008_blood_coagulation_and_snake_venom_model1806150001_model.model_state_fg
+  - name: model_state_pg
+    maps_to: systemsbiology_sbml_tanos2008_blood_coagulation_and_snake_venom_model1806150001_model.model_state_pg
+  - name: model_state_ii
+    maps_to: systemsbiology_sbml_tanos2008_blood_coagulation_and_snake_venom_model1806150001_model.model_state_ii

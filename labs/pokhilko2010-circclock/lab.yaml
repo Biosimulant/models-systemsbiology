@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Pokhilko2010 Circclock Lab
+description: 'This a model from the article: Data assimilation constrains new connections
+  and components in a complex, eukaryotic circadian clock model. Pokhilko A, Hodge
+  SK, Stratford K, Knox K, Edwards KD, Thomso.'
+models:
+- alias: systemsbiology_sbml_pokhilko2010_circclock_biomd0000000273_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_pokhilko2010_circclock_biomd0000000273_model.state
+  to:
+  - visualisation.systemsbiology_sbml_pokhilko2010_circclock_biomd0000000273_model_state
+- from: systemsbiology_sbml_pokhilko2010_circclock_biomd0000000273_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_pokhilko2010_circclock_biomd0000000273_model_summary
+- from: systemsbiology_sbml_pokhilko2010_circclock_biomd0000000273_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_pokhilko2010_circclock_biomd0000000273_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_c_l_m
+    maps_to: systemsbiology_sbml_pokhilko2010_circclock_biomd0000000273_model.initial_c_l_m
+    label: Initial C L M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cL_m`.
+  - name: initial_model_state_c_p
+    maps_to: systemsbiology_sbml_pokhilko2010_circclock_biomd0000000273_model.initial_model_state_c_p
+    label: Initial Model State C P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cP`.
+  - name: initial_model_state_c_l
+    maps_to: systemsbiology_sbml_pokhilko2010_circclock_biomd0000000273_model.initial_model_state_c_l
+    label: Initial Model State C L
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cL`.
+  - name: initial_model_state_c_t
+    maps_to: systemsbiology_sbml_pokhilko2010_circclock_biomd0000000273_model.initial_model_state_c_t
+    label: Initial Model State C T
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cT`.
+  - name: initial_c_p9_m
+    maps_to: systemsbiology_sbml_pokhilko2010_circclock_biomd0000000273_model.initial_c_p9_m
+    label: Initial C P9 M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cP9_m`.
+  - name: initial_c_ztl
+    maps_to: systemsbiology_sbml_pokhilko2010_circclock_biomd0000000273_model.initial_c_ztl
+    label: Initial C Ztl
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cZTL`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_pokhilko2010_circclock_biomd0000000273_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_pokhilko2010_circclock_biomd0000000273_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_pokhilko2010_circclock_biomd0000000273_model.species_labels
+  - name: c_l_m
+    maps_to: systemsbiology_sbml_pokhilko2010_circclock_biomd0000000273_model.c_l_m
+  - name: c_p
+    maps_to: systemsbiology_sbml_pokhilko2010_circclock_biomd0000000273_model.c_p
+  - name: c_l
+    maps_to: systemsbiology_sbml_pokhilko2010_circclock_biomd0000000273_model.c_l
+  - name: c_t
+    maps_to: systemsbiology_sbml_pokhilko2010_circclock_biomd0000000273_model.c_t
+  - name: c_p9_m
+    maps_to: systemsbiology_sbml_pokhilko2010_circclock_biomd0000000273_model.c_p9_m
+  - name: c_ztl
+    maps_to: systemsbiology_sbml_pokhilko2010_circclock_biomd0000000273_model.c_ztl

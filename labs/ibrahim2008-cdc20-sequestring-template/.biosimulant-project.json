@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "85e2129c-4c09-42df-b42c-39efc157426e",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "03b6dac3-1031-45d0-a015-ff2abfc21bd0",
+  "created_at": "2026-05-16T05:46:44.213611428+00:00",
+  "last_synced_at": "2026-05-17T03:48:08.747326+00:00",
+  "hub_manifest_hash": "391f266d806e48ddb811965a1f6b2bb3abfc28c6bc0452f229f944ec18f3cefa",
+  "package_name": "ibrahim2008-cdc20-sequestring-template-lab"
+}

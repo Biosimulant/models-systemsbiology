@@ -1,0 +1,86 @@
+schema_version: '2.0'
+title: Chenxf2008 Cicr Lab
+description: The model reproduces the plots in Figures 1 and 2. Note that the units
+  of the time scale 'A' are not right in the paper, it was corrected by the curator.
+models:
+- alias: systemsbiology_sbml_chenxf2008_cicr_biomd0000000202_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_chenxf2008_cicr_biomd0000000202_model.state
+  to:
+  - visualisation.systemsbiology_sbml_chenxf2008_cicr_biomd0000000202_model_state
+- from: systemsbiology_sbml_chenxf2008_cicr_biomd0000000202_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_chenxf2008_cicr_biomd0000000202_model_summary
+- from: systemsbiology_sbml_chenxf2008_cicr_biomd0000000202_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_chenxf2008_cicr_biomd0000000202_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_s2
+    maps_to: systemsbiology_sbml_chenxf2008_cicr_biomd0000000202_model.initial_model_state_s2
+    label: Initial Model State S2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S2`.
+  - name: initial_s2_a
+    maps_to: systemsbiology_sbml_chenxf2008_cicr_biomd0000000202_model.initial_s2_a
+    label: Initial S2 A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S2a`.
+  - name: initial_orai1
+    maps_to: systemsbiology_sbml_chenxf2008_cicr_biomd0000000202_model.initial_orai1
+    label: Initial Orai1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Orai1`.
+  - name: initial_model_state_s4
+    maps_to: systemsbiology_sbml_chenxf2008_cicr_biomd0000000202_model.initial_model_state_s4
+    label: Initial Model State S4
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S4`.
+  - name: initial_model_state_oc
+    maps_to: systemsbiology_sbml_chenxf2008_cicr_biomd0000000202_model.initial_model_state_oc
+    label: Initial Model State Oc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Oc`.
+  - name: initial_model_state_o_o
+    maps_to: systemsbiology_sbml_chenxf2008_cicr_biomd0000000202_model.initial_model_state_o_o
+    label: Initial Model State O O
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `O_o`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_chenxf2008_cicr_biomd0000000202_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_chenxf2008_cicr_biomd0000000202_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_chenxf2008_cicr_biomd0000000202_model.species_labels
+  - name: model_state_s2
+    maps_to: systemsbiology_sbml_chenxf2008_cicr_biomd0000000202_model.model_state_s2
+  - name: s2_a
+    maps_to: systemsbiology_sbml_chenxf2008_cicr_biomd0000000202_model.s2_a
+  - name: orai1
+    maps_to: systemsbiology_sbml_chenxf2008_cicr_biomd0000000202_model.orai1
+  - name: model_state_s4
+    maps_to: systemsbiology_sbml_chenxf2008_cicr_biomd0000000202_model.model_state_s4
+  - name: model_state_oc
+    maps_to: systemsbiology_sbml_chenxf2008_cicr_biomd0000000202_model.model_state_oc
+  - name: o_o
+    maps_to: systemsbiology_sbml_chenxf2008_cicr_biomd0000000202_model.o_o

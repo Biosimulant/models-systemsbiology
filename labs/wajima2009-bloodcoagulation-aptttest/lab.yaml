@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Wajima2009 Bloodcoagulation Aptttest Lab
+description: 'This model is from the article: A comprehensive model for the humoral
+  coagulation network in humans. It can be used to explore systemsbiology wajima2009
+  bloodcoagulation aptttest BioModels0000000338 dynamics and compare simulation behavior
+  across conditions.'
+models:
+- alias: systemsbiology_sbml_wajima2009_bloodcoagulation_aptttest_biomd0000000338_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_wajima2009_bloodcoagulation_aptttest_biomd0000000338_model.state
+  to:
+  - visualisation.systemsbiology_sbml_wajima2009_bloodcoagulation_aptttest_biomd0000000338_model_state
+- from: systemsbiology_sbml_wajima2009_bloodcoagulation_aptttest_biomd0000000338_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_wajima2009_bloodcoagulation_aptttest_biomd0000000338_model_summary
+- from: systemsbiology_sbml_wajima2009_bloodcoagulation_aptttest_biomd0000000338_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_wajima2009_bloodcoagulation_aptttest_biomd0000000338_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_xa_tfpi
+    maps_to: systemsbiology_sbml_wajima2009_bloodcoagulation_aptttest_biomd0000000338_model.initial_xa_tfpi
+    label: Initial Xa Tfpi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_TFPI`.
+  - name: initial_xa_atiii_heparin
+    maps_to: systemsbiology_sbml_wajima2009_bloodcoagulation_aptttest_biomd0000000338_model.initial_xa_atiii_heparin
+    label: Initial Xa Atiii Heparin
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Xa_ATIII_Heparin`.
+  - name: initial_va_xa
+    maps_to: systemsbiology_sbml_wajima2009_bloodcoagulation_aptttest_biomd0000000338_model.initial_va_xa
+    label: Initial Va Xa
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Va_Xa`.
+  - name: initial_vk_p
+    maps_to: systemsbiology_sbml_wajima2009_bloodcoagulation_aptttest_biomd0000000338_model.initial_vk_p
+    label: Initial Vk P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VK_p`.
+  - name: initial_vi_ia_tf_xa_tfpi
+    maps_to: systemsbiology_sbml_wajima2009_bloodcoagulation_aptttest_biomd0000000338_model.initial_vi_ia_tf_xa_tfpi
+    label: Initial Vi Ia Tf Xa Tfpi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VIIa_TF_Xa_TFPI`.
+  - name: initial_vi_ia_tf
+    maps_to: systemsbiology_sbml_wajima2009_bloodcoagulation_aptttest_biomd0000000338_model.initial_vi_ia_tf
+    label: Initial Vi Ia Tf
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `VIIa_TF`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_wajima2009_bloodcoagulation_aptttest_biomd0000000338_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_wajima2009_bloodcoagulation_aptttest_biomd0000000338_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_wajima2009_bloodcoagulation_aptttest_biomd0000000338_model.species_labels
+  - name: xa_tfpi
+    maps_to: systemsbiology_sbml_wajima2009_bloodcoagulation_aptttest_biomd0000000338_model.xa_tfpi
+  - name: xa_atiii_heparin
+    maps_to: systemsbiology_sbml_wajima2009_bloodcoagulation_aptttest_biomd0000000338_model.xa_atiii_heparin
+  - name: va_xa
+    maps_to: systemsbiology_sbml_wajima2009_bloodcoagulation_aptttest_biomd0000000338_model.va_xa
+  - name: vk_p
+    maps_to: systemsbiology_sbml_wajima2009_bloodcoagulation_aptttest_biomd0000000338_model.vk_p
+  - name: vi_ia_tf_xa_tfpi
+    maps_to: systemsbiology_sbml_wajima2009_bloodcoagulation_aptttest_biomd0000000338_model.vi_ia_tf_xa_tfpi
+  - name: vi_ia_tf
+    maps_to: systemsbiology_sbml_wajima2009_bloodcoagulation_aptttest_biomd0000000338_model.vi_ia_tf

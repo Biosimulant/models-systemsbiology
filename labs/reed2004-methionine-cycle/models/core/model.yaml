@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Reed2004 - Methionine Cycle
+description: 'Reed2004 - Methionine Cycle This model is described in the article:
+  A mathematical model of the methionine cycle. Reed MC, Nijhout HF, Sparks R, Ulrich
+  CM.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Michael C Reed
+- H Frederik Nijhout
+- Rachel Sparks
+- Cornelia M Ulrich
+upstream:
+  id: biomodels_ebi:BIOMD0000000698
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000698
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000698
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000698?filename=BIOMD0000000698_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.reed2004_methionine_cycle_biomd0000000698_model:Reed2004MethionineCycleBiomd0000000698Model
+  init_kwargs:
+    model_path: data/BIOMD0000000698.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_cystathionine
+    maps_to: Cystathionine
+    label: Initial Cystathionine
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Cystathionine`.
+  - name: initial_metin
+    maps_to: Metin
+    label: Initial Metin
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Metin`.
+  - name: initial_ado_met
+    maps_to: AdoMet
+    label: Initial Ado Met
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `AdoMet`.
+  - name: initial_methionine
+    maps_to: Methionine
+    label: Initial Methionine
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Methionine`.
+  - name: initial_ado_hcy
+    maps_to: AdoHcy
+    label: Initial Ado Hcy
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `AdoHcy`.
+  - name: initial_model_state_5m_thf
+    maps_to: _5mTHF
+    label: Initial Model State 5M Thf
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `_5mTHF`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: cystathionine
+    maps_to: Cystathionine
+    label: Cystathionine
+    description: Cystathionine. Maps to SBML symbol `Cystathionine`.
+  - name: metin
+    maps_to: Metin
+    label: Metin
+    description: Metin. Maps to SBML symbol `Metin`.
+  - name: ado_met
+    maps_to: AdoMet
+    label: AdoMet
+    description: AdoMet. Maps to SBML symbol `AdoMet`.
+  - name: methionine
+    maps_to: Methionine
+    label: Methionine
+    description: Methionine. Maps to SBML symbol `Methionine`.
+  - name: ado_hcy
+    maps_to: AdoHcy
+    label: AdoHcy
+    description: AdoHcy. Maps to SBML symbol `AdoHcy`.
+  - name: model_state_5m_thf
+    maps_to: _5mTHF
+    label: 5mTHF
+    description: 5mTHF. Maps to SBML symbol `_5mTHF`.

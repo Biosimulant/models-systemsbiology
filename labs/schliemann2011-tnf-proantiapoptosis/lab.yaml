@@ -1,0 +1,90 @@
+schema_version: '2.0'
+title: Schliemann2011 Tnf Proantiapoptosis Lab
+description: 'This model is from the article: Heterogeneity Reduces Sensitivity of
+  Cell Death for TNF-Stimuli Schliemann M, Bullinger E, Borchers S, Allgower F, Findeisen
+  R, Scheurich P. It can be used to explore systemsbiology schliemann2011 tnf proantiapoptosis
+  BioModels0000000407 dynamics and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_schliemann2011_tnf_proantiapoptosis_biomd0000000407_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_schliemann2011_tnf_proantiapoptosis_biomd0000000407_model.state
+  to:
+  - visualisation.systemsbiology_sbml_schliemann2011_tnf_proantiapoptosis_biomd0000000407_model_state
+- from: systemsbiology_sbml_schliemann2011_tnf_proantiapoptosis_biomd0000000407_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_schliemann2011_tnf_proantiapoptosis_biomd0000000407_model_summary
+- from: systemsbiology_sbml_schliemann2011_tnf_proantiapoptosis_biomd0000000407_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_schliemann2011_tnf_proantiapoptosis_biomd0000000407_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- immunology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_p_casp8
+    maps_to: systemsbiology_sbml_schliemann2011_tnf_proantiapoptosis_biomd0000000407_model.initial_p_casp8
+    label: Initial P Casp8
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `pCasp8`.
+  - name: initial_p_casp3
+    maps_to: systemsbiology_sbml_schliemann2011_tnf_proantiapoptosis_biomd0000000407_model.initial_p_casp3
+    label: Initial P Casp3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `pCasp3`.
+  - name: initial_tnf_e
+    maps_to: systemsbiology_sbml_schliemann2011_tnf_proantiapoptosis_biomd0000000407_model.initial_tnf_e
+    label: Initial TNF E
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TNF_E`.
+  - name: initial_p_casp6
+    maps_to: systemsbiology_sbml_schliemann2011_tnf_proantiapoptosis_biomd0000000407_model.initial_p_casp6
+    label: Initial P Casp6
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `pCasp6`.
+  - name: initial_ik_ba_n_fk_b
+    maps_to: systemsbiology_sbml_schliemann2011_tnf_proantiapoptosis_biomd0000000407_model.initial_ik_ba_n_fk_b
+    label: Initial Ik Ba N Fk B
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `IkBa_NFkB`.
+  - name: initial_tnfr_e
+    maps_to: systemsbiology_sbml_schliemann2011_tnf_proantiapoptosis_biomd0000000407_model.initial_tnfr_e
+    label: Initial Tnfr E
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TNFR_E`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_schliemann2011_tnf_proantiapoptosis_biomd0000000407_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_schliemann2011_tnf_proantiapoptosis_biomd0000000407_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_schliemann2011_tnf_proantiapoptosis_biomd0000000407_model.species_labels
+  - name: p_casp8
+    maps_to: systemsbiology_sbml_schliemann2011_tnf_proantiapoptosis_biomd0000000407_model.p_casp8
+  - name: p_casp3
+    maps_to: systemsbiology_sbml_schliemann2011_tnf_proantiapoptosis_biomd0000000407_model.p_casp3
+  - name: tnf_e
+    maps_to: systemsbiology_sbml_schliemann2011_tnf_proantiapoptosis_biomd0000000407_model.tnf_e
+  - name: p_casp6
+    maps_to: systemsbiology_sbml_schliemann2011_tnf_proantiapoptosis_biomd0000000407_model.p_casp6
+  - name: ik_ba_n_fk_b
+    maps_to: systemsbiology_sbml_schliemann2011_tnf_proantiapoptosis_biomd0000000407_model.ik_ba_n_fk_b
+  - name: tnfr_e
+    maps_to: systemsbiology_sbml_schliemann2011_tnf_proantiapoptosis_biomd0000000407_model.tnfr_e

@@ -1,0 +1,72 @@
+schema_version: '2.0'
+title: Halloy2002 Follicularautomaton Lab
+description: 'This a model from the article: The follicular automaton model: effect
+  of stochasticity and of synchronizationof hair cycles. Halloy J, Bernard BA, Loussouarn
+  G, Goldbeter A.'
+models:
+- alias: systemsbiology_sbml_halloy2002_follicularautomaton_model1006230014_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_halloy2002_follicularautomaton_model1006230014_model.state
+  to:
+  - visualisation.systemsbiology_sbml_halloy2002_follicularautomaton_model1006230014_model_state
+- from: systemsbiology_sbml_halloy2002_follicularautomaton_model1006230014_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_halloy2002_follicularautomaton_model1006230014_model_summary
+- from: systemsbiology_sbml_halloy2002_follicularautomaton_model1006230014_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_halloy2002_follicularautomaton_model1006230014_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_t
+    maps_to: systemsbiology_sbml_halloy2002_follicularautomaton_model1006230014_model.initial_model_state_t
+    label: Initial Model State T
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `T`.
+  - name: initial_model_state_m
+    maps_to: systemsbiology_sbml_halloy2002_follicularautomaton_model1006230014_model.initial_model_state_m
+    label: Initial Model State M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `M`.
+  - name: initial_model_state_l
+    maps_to: systemsbiology_sbml_halloy2002_follicularautomaton_model1006230014_model.initial_model_state_l
+    label: Initial Model State L
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `L`.
+  - name: initial_model_state_a
+    maps_to: systemsbiology_sbml_halloy2002_follicularautomaton_model1006230014_model.initial_model_state_a
+    label: Initial Model State A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `A`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_halloy2002_follicularautomaton_model1006230014_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_halloy2002_follicularautomaton_model1006230014_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_halloy2002_follicularautomaton_model1006230014_model.species_labels
+  - name: model_state_t
+    maps_to: systemsbiology_sbml_halloy2002_follicularautomaton_model1006230014_model.model_state_t
+  - name: model_state_m
+    maps_to: systemsbiology_sbml_halloy2002_follicularautomaton_model1006230014_model.model_state_m
+  - name: model_state_l
+    maps_to: systemsbiology_sbml_halloy2002_follicularautomaton_model1006230014_model.model_state_l
+  - name: model_state_a
+    maps_to: systemsbiology_sbml_halloy2002_follicularautomaton_model1006230014_model.model_state_a

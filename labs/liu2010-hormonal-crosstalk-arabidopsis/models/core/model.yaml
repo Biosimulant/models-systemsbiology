@@ -1,0 +1,109 @@
+schema_version: '2.0'
+title: Liu2010_Hormonal_Crosstalk_Arabidopsis
+description: 'This is the single cell model for analysis of hormonal crosstalk in
+  Arabidopsis described in the article: Modelling and experimental analysis of hormonal
+  crosstalk in Arabidopsis. It can be used to explore systemsbiology liu2010 hormonal
+  crosstalk arabidopsis BioModels0000000269 dynamics and compare simulation behavior
+  across conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Junli Liu
+- Saher Mehdi
+- Jennifer Topping
+- Petr Tarkowski
+- Keith Lindsey
+upstream:
+  id: biomodels_ebi:BIOMD0000000269
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000269
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000269
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000269?filename=BIOMD0000000269_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.liu2010_hormonal_crosstalk_arabidopsis_biomd0000000269_model:Liu2010HormonalCrosstalkArabidopsisBiomd0000000269Model
+  init_kwargs:
+    model_path: data/BIOMD0000000269.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_ra_total
+    maps_to: RaT
+    label: Initial Ra Total
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RaT`.
+  - name: initial_model_state_ra
+    maps_to: Ra_star
+    label: Initial Model State Ra
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ra_star`.
+  - name: initial_re_total
+    maps_to: ReT
+    label: Initial Re Total
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ReT`.
+  - name: initial_model_state_re
+    maps_to: Re_star
+    label: Initial Model State Re
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Re_star`.
+  - name: initial_ctr1_total
+    maps_to: CTR1T
+    label: Initial Ctr1 Total
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CTR1T`.
+  - name: initial_ctr1
+    maps_to: CTR1_star
+    label: Initial Ctr1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CTR1_star`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: ra_total
+    maps_to: RaT
+    label: Ra_total
+    description: Ra_total. Maps to SBML symbol `RaT`.
+  - name: model_state_ra
+    maps_to: Ra_star
+    label: Ra*
+    description: Ra*. Maps to SBML symbol `Ra_star`.
+  - name: re_total
+    maps_to: ReT
+    label: Re_total
+    description: Re_total. Maps to SBML symbol `ReT`.
+  - name: model_state_re
+    maps_to: Re_star
+    label: Re*
+    description: Re*. Maps to SBML symbol `Re_star`.
+  - name: ctr1_total
+    maps_to: CTR1T
+    label: CTR1_total
+    description: CTR1_total. Maps to SBML symbol `CTR1T`.
+  - name: ctr1
+    maps_to: CTR1_star
+    label: CTR1*
+    description: CTR1*. Maps to SBML symbol `CTR1_star`.

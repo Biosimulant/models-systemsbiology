@@ -1,0 +1,79 @@
+schema_version: '2.0'
+title: Westermark2003 Pancreatic Glycosc Basic Lab
+description: 'This is the basic model described in eq. 1 of the article: A model of
+  phosphofructokinase and glycolytic oscillations in the pancreatic beta-cell.'
+models:
+- alias: systemsbiology_sbml_westermark2003_pancreatic_glycosc_basic_biomd0000000225_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_westermark2003_pancreatic_glycosc_basic_biomd0000000225_model.state
+  to:
+  - visualisation.systemsbiology_sbml_westermark2003_pancreatic_glycosc_basic_biomd0000000225_model_state
+- from: systemsbiology_sbml_westermark2003_pancreatic_glycosc_basic_biomd0000000225_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_westermark2003_pancreatic_glycosc_basic_biomd0000000225_model_summary
+- from: systemsbiology_sbml_westermark2003_pancreatic_glycosc_basic_biomd0000000225_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_westermark2003_pancreatic_glycosc_basic_biomd0000000225_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_g6_p_f6_p
+    maps_to: systemsbiology_sbml_westermark2003_pancreatic_glycosc_basic_biomd0000000225_model.initial_g6_p_f6_p
+    label: Initial G6 P F6 P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `G6P_F6P`.
+  - name: initial_model_state_glc
+    maps_to: systemsbiology_sbml_westermark2003_pancreatic_glycosc_basic_biomd0000000225_model.initial_model_state_glc
+    label: Initial Model State Glc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `GLC`.
+  - name: initial_model_state_fbp
+    maps_to: systemsbiology_sbml_westermark2003_pancreatic_glycosc_basic_biomd0000000225_model.initial_model_state_fbp
+    label: Initial Model State Fbp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `FBP`.
+  - name: initial_g3_p
+    maps_to: systemsbiology_sbml_westermark2003_pancreatic_glycosc_basic_biomd0000000225_model.initial_g3_p
+    label: Initial G3 P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `G3P`.
+  - name: initial_f6_p
+    maps_to: systemsbiology_sbml_westermark2003_pancreatic_glycosc_basic_biomd0000000225_model.initial_f6_p
+    label: Initial F6 P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `F6P`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_westermark2003_pancreatic_glycosc_basic_biomd0000000225_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_westermark2003_pancreatic_glycosc_basic_biomd0000000225_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_westermark2003_pancreatic_glycosc_basic_biomd0000000225_model.species_labels
+  - name: g6_p_f6_p
+    maps_to: systemsbiology_sbml_westermark2003_pancreatic_glycosc_basic_biomd0000000225_model.g6_p_f6_p
+  - name: glc
+    maps_to: systemsbiology_sbml_westermark2003_pancreatic_glycosc_basic_biomd0000000225_model.glc
+  - name: fbp
+    maps_to: systemsbiology_sbml_westermark2003_pancreatic_glycosc_basic_biomd0000000225_model.fbp
+  - name: g3_p
+    maps_to: systemsbiology_sbml_westermark2003_pancreatic_glycosc_basic_biomd0000000225_model.g3_p
+  - name: f6_p
+    maps_to: systemsbiology_sbml_westermark2003_pancreatic_glycosc_basic_biomd0000000225_model.f6_p

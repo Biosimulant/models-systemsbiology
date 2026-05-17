@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Bhattacharya2011_UreaCycle Visualisation
+description: Question-and-answer and dynamic visual summaries for Bhattacharya2011_UreaCycle.
+standard: other
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Bhattacharya2011 Ureacycle Lab
+    question: 'Which metabolic pools or flux-linked states show the strongest simulated
+      change? Source model: Bhattacharya2011_UreaCycle.'
+    answer_focus: Q/A table plus metabolism timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_bhattacharya2011_ureacycle_model0318212660_model
+      title: Bhattacharya2011_UreaCycle
+      observables:
+      - id: Node9
+        port: node9
+        label: Node9
+        group: physiology
+      - id: Node8
+        port: node8
+        label: Node8
+        group: physiology
+      - id: Node7
+        port: node7
+        label: Node7
+        group: physiology
+      - id: Node6
+        port: node6
+        label: Node6
+        group: physiology
+      - id: Node4
+        port: node4
+        label: Node4
+        group: physiology
+      - id: Node3
+        port: node3
+        label: Node3
+        group: physiology
+io:
+  inputs: []
+  outputs: []

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "333e369c-feb6-466c-a1ab-298b6a051176",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "fcebb1b3-d525-44f0-8cf5-64b30e959ed0",
+  "created_at": "2026-05-16T05:46:51.797088779+00:00",
+  "last_synced_at": "2026-05-17T06:09:30.628369+00:00",
+  "hub_manifest_hash": "27f6f58a3af2e5a2fd59f3f196c457e001714ca4e0da6045815f06fb6cc78418",
+  "package_name": "sen2013-phospholipid-synthesis-in-p-knowlesi-lab"
+}

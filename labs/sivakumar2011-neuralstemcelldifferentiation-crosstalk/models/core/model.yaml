@@ -1,0 +1,111 @@
+schema_version: '2.0'
+title: Sivakumar2011_NeuralStemCellDifferentiation_Crosstalk
+description: Sivakumar2011_NeuralStemCellDifferentiation_Crosstalk This model is generated
+  by integrating BIOMD0000000394 (EGFR), BIOMD0000000395 (Hedgehog), BIOMD0000000396
+  (Notch) and BIOMD0000000397 (Wnt), to i. It can be used to explore systemsbiology
+  sivakumar2011 neuralstemcelldifferenti cros BioModels0000000398 dynamics and compare
+  simulation behavior across conditions.
+standard: other
+tags:
+- generegulation
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Krishnankutty Chandrika Sivakumar
+- Sivadasan Bindu Dhanesh
+- Sekar Shobana
+- Jackson James
+- Sathish Mundayoor
+upstream:
+  id: biomodels_ebi:BIOMD0000000398
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000398
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000398
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000398?filename=BIOMD0000000398_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.sivakumar2011_neuralstemcelldifferentiation_cros_biomd0000000398_model:Sivakumar2011NeuralstemcelldifferentiationCrosBiomd0000000398Model
+  init_kwargs:
+    model_path: data/BIOMD0000000398.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_erlotinib
+    maps_to: s101
+    label: Initial Erlotinib
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s101`.
+  - name: initial_dapt
+    maps_to: s61
+    label: Initial Dapt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s61`.
+  - name: initial_model_state_6_bromoindirubin_3_oxime
+    maps_to: s147
+    label: Initial Model State 6 Bromoindirubin 3 Oxime
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s147`.
+  - name: initial_model_state_smo
+    maps_to: s88
+    label: Initial Model State Smo
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s88`.
+  - name: initial_model_state_wnt
+    maps_to: s107
+    label: Initial Model State Wnt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s107`.
+  - name: initial_model_state_shh
+    maps_to: s81
+    label: Initial Model State Shh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s81`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: erlotinib
+    maps_to: s101
+    label: Erlotinib
+    description: Erlotinib. Maps to SBML symbol `s101`.
+  - name: dapt
+    maps_to: s61
+    label: DAPT
+    description: DAPT. Maps to SBML symbol `s61`.
+  - name: model_state_6_bromoindirubin_3_oxime
+    maps_to: s147
+    label: 6 bromoindirubin 3`oxime
+    description: 6 bromoindirubin 3`oxime. Maps to SBML symbol `s147`.
+  - name: smo
+    maps_to: s88
+    label: smo
+    description: smo. Maps to SBML symbol `s88`.
+  - name: wnt
+    maps_to: s107
+    label: Wnt
+    description: Wnt. Maps to SBML symbol `s107`.
+  - name: shh
+    maps_to: s81
+    label: Shh
+    description: Shh. Maps to SBML symbol `s81`.

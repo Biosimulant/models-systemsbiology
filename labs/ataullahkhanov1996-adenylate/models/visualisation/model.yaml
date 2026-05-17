@@ -1,0 +1,43 @@
+schema_version: '2.0'
+title: Ataullahkhanov1996_Adenylate Visualisation
+description: Question-and-answer and dynamic visual summaries for Ataullahkhanov1996_Adenylate.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Ataullahkhanov1996 Adenylate Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Ataullahkhanov1996_Adenylate.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_ataullahkhanov1996_adenylate_biomd0000000054_model
+      title: Ataullahkhanov1996_Adenylate
+      observables:
+      - id: I
+        port: ions
+        label: Ions
+        group: gene_regulation
+      - id: E
+        port: energy_pool
+        label: Energy pool
+        group: gene_regulation
+      - id: A
+        port: adenylate_pool
+        label: Adenylate pool
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

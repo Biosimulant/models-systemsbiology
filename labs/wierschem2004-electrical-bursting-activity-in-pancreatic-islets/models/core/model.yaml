@@ -1,0 +1,96 @@
+schema_version: '2.0'
+title: Wierschem2004 - Electrical bursting activity in Pancreatic Islets
+description: 'This a model from the article: Complex bursting in pancreatic islets:
+  a potential glycolytic mechanism. It can be used to explore systemsbiology wierschem2004
+  electrical bursting activity in dynamics and compare simulation behavior across
+  conditions.'
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Keola Wierschem
+- Richard Bertram
+upstream:
+  id: biomodels_ebi:BIOMD0000000682
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000682
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000682
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000682?filename=BIOMD0000000682_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.wierschem2004_electrical_bursting_activity_in_pa_biomd0000000682_model:Wierschem2004ElectricalBurstingActivityInPaBiomd0000000682Model
+  init_kwargs:
+    model_path: data/BIOMD0000000682.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_v_membrane
+    maps_to: V_membrane
+    label: Initial V Membrane
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `V_membrane`.
+  - name: initial_model_state_atp
+    maps_to: ATP
+    label: Initial Model State ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATP`.
+  - name: initial_model_state_adp
+    maps_to: ADP
+    label: Initial Model State ADP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ADP`.
+  - name: initial_model_state_n
+    maps_to: n
+    label: Initial Model State N
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `n`.
+  - name: initial_model_state_c
+    maps_to: c
+    label: Initial Model State C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `c`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: v_membrane
+    maps_to: V_membrane
+    label: V Membrane
+    description: V Membrane. Maps to SBML symbol `V_membrane`.
+  - name: atp
+    maps_to: ATP
+    label: ATP
+    description: ATP. Maps to SBML symbol `ATP`.
+  - name: adp
+    maps_to: ADP
+    label: ADP
+    description: ADP. Maps to SBML symbol `ADP`.
+  - name: model_state_n
+    maps_to: n
+    label: N
+    description: N. Maps to SBML symbol `n`.
+  - name: model_state_c
+    maps_to: c
+    label: C
+    description: C. Maps to SBML symbol `c`.

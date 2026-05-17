@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Reed2004 Methionine Cycle Lab
+description: 'Reed2004 - Methionine Cycle This model is described in the article:
+  A mathematical model of the methionine cycle. Reed MC, Nijhout HF, Sparks R, Ulrich
+  CM.'
+models:
+- alias: systemsbiology_sbml_reed2004_methionine_cycle_biomd0000000698_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_reed2004_methionine_cycle_biomd0000000698_model.state
+  to:
+  - visualisation.systemsbiology_sbml_reed2004_methionine_cycle_biomd0000000698_model_state
+- from: systemsbiology_sbml_reed2004_methionine_cycle_biomd0000000698_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_reed2004_methionine_cycle_biomd0000000698_model_summary
+- from: systemsbiology_sbml_reed2004_methionine_cycle_biomd0000000698_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_reed2004_methionine_cycle_biomd0000000698_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_cystathionine
+    maps_to: systemsbiology_sbml_reed2004_methionine_cycle_biomd0000000698_model.initial_cystathionine
+    label: Initial Cystathionine
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Cystathionine`.
+  - name: initial_metin
+    maps_to: systemsbiology_sbml_reed2004_methionine_cycle_biomd0000000698_model.initial_metin
+    label: Initial Metin
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Metin`.
+  - name: initial_ado_met
+    maps_to: systemsbiology_sbml_reed2004_methionine_cycle_biomd0000000698_model.initial_ado_met
+    label: Initial Ado Met
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `AdoMet`.
+  - name: initial_methionine
+    maps_to: systemsbiology_sbml_reed2004_methionine_cycle_biomd0000000698_model.initial_methionine
+    label: Initial Methionine
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Methionine`.
+  - name: initial_ado_hcy
+    maps_to: systemsbiology_sbml_reed2004_methionine_cycle_biomd0000000698_model.initial_ado_hcy
+    label: Initial Ado Hcy
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `AdoHcy`.
+  - name: initial_model_state_5m_thf
+    maps_to: systemsbiology_sbml_reed2004_methionine_cycle_biomd0000000698_model.initial_model_state_5m_thf
+    label: Initial Model State 5M Thf
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `_5mTHF`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_reed2004_methionine_cycle_biomd0000000698_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_reed2004_methionine_cycle_biomd0000000698_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_reed2004_methionine_cycle_biomd0000000698_model.species_labels
+  - name: cystathionine
+    maps_to: systemsbiology_sbml_reed2004_methionine_cycle_biomd0000000698_model.cystathionine
+  - name: metin
+    maps_to: systemsbiology_sbml_reed2004_methionine_cycle_biomd0000000698_model.metin
+  - name: ado_met
+    maps_to: systemsbiology_sbml_reed2004_methionine_cycle_biomd0000000698_model.ado_met
+  - name: methionine
+    maps_to: systemsbiology_sbml_reed2004_methionine_cycle_biomd0000000698_model.methionine
+  - name: ado_hcy
+    maps_to: systemsbiology_sbml_reed2004_methionine_cycle_biomd0000000698_model.ado_hcy
+  - name: model_state_5m_thf
+    maps_to: systemsbiology_sbml_reed2004_methionine_cycle_biomd0000000698_model.model_state_5m_thf

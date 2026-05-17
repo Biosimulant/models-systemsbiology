@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Baker2017 - The role of cytokines, MMPs and fibronectin fragments osteoarthritis
+description: 'Baker2017 - The role of cytokines, MMPs andfibronectin fragments osteoarthritis
+  This model is described in the article: Mathematical modelling of cytokines, MMPs
+  and fibronectin fragments in osteoarth. It can be used to explore systemsbiology
+  baker2017 the role of cytokines dynamics and compare simulation behavior across
+  conditions.'
+standard: other
+tags:
+- immunology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Michelle Baker
+- Bindi S Brook
+- Markus R Owen
+upstream:
+  id: biomodels_ebi:BIOMD0000000928
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000928
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000928
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000928?filename=Baker2017_Fig14.xml
+  license: CC0
+biosim:
+  entrypoint: src.baker2017_the_role_of_cytokines_mmps_and_fibrone_biomd0000000928_model:Baker2017TheRoleOfCytokinesMmpsAndFibroneBiomd0000000928Model
+  init_kwargs:
+    model_path: data/BIOMD0000000928.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_a_cytokines
+    maps_to: solution1
+    label: Initial A Cytokines
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `solution1`.
+  - name: initial_fragments
+    maps_to: solution3
+    label: Initial Fragments
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `solution3`.
+  - name: initial_model_state_mmp
+    maps_to: solution2
+    label: Initial Model State Mmp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `solution2`.
+  - name: initial_p_cytokines
+    maps_to: solution0
+    label: Initial P Cytokines
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `solution0`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: a_cytokines
+    maps_to: solution1
+    label: a-Cytokines
+    description: a-Cytokines. Maps to SBML symbol `solution1`.
+  - name: fragments
+    maps_to: solution3
+    label: Fragments
+    description: Fragments. Maps to SBML symbol `solution3`.
+  - name: mmp
+    maps_to: solution2
+    label: MMP
+    description: MMP. Maps to SBML symbol `solution2`.
+  - name: p_cytokines
+    maps_to: solution0
+    label: p-Cytokines
+    description: p-Cytokines. Maps to SBML symbol `solution0`.

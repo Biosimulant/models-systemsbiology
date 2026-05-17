@@ -1,0 +1,109 @@
+schema_version: '2.0'
+title: Phillips2013 - physiologically based modeling explaining Mammalian rest/activity
+  patterns
+description: The model provides a framework for understanding rest/activity patterns
+  effected by the circadian rhythm and relating them to underlying diverse phenotypes.
+  It can be used to explore systemsbiology phillips2013 physiologically based modeling
+  expl dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- A J K Phillips
+- B D Fulcher
+- P A Robinson
+- E B Klerman
+upstream:
+  id: biomodels_ebi:BIOMD0000001072
+  source_db: biomodels_ebi
+  source_id: BIOMD0000001072
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001072
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001072?filename=Phillips2013.xml
+  license: CC0
+biosim:
+  entrypoint: src.phillips2013_physiologically_based_modeling_expl_biomd0000001072_model:Phillips2013PhysiologicallyBasedModelingExplBiomd0000001072Model
+  init_kwargs:
+    model_path: data/BIOMD0000001072.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_h_sleep_homeostatic_drive
+    maps_to: H
+    label: Initial H Sleep Homeostatic Drive
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `H`.
+  - name: initial_v_m_mean_cell_body_potential_ma
+    maps_to: V_m
+    label: Initial V M Mean Cell Body Potential Ma
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `V_m`.
+  - name: initial_v_v_mean_cell_body_potential_vlpo
+    maps_to: V_v
+    label: Initial V V Mean Cell Body Potential Vlpo
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `V_v`.
+  - name: initial_y_complement_of_x
+    maps_to: Y
+    label: Initial Y Complement Of X
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Y`.
+  - name: initial_x_scn_activity
+    maps_to: X
+    label: Initial X Scn Activity
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `X`.
+  - name: initial_n_fraction_of_photoreceptors_that_are_activated
+    maps_to: n
+    label: Initial N Fraction Of Photoreceptors That Are Activated
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `n`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: h_sleep_homeostatic_drive
+    maps_to: H
+    label: H(sleep_homeostatic_drive)
+    description: H(sleep_homeostatic_drive). Maps to SBML symbol `H`.
+  - name: v_m_mean_cell_body_potential_ma
+    maps_to: V_m
+    label: V_m(mean_cell_body_potential_MA)
+    description: V_m(mean_cell_body_potential_MA). Maps to SBML symbol `V_m`.
+  - name: v_v_mean_cell_body_potential_vlpo
+    maps_to: V_v
+    label: V_v(mean_cell_body_potential_VLPO)
+    description: V_v(mean_cell_body_potential_VLPO). Maps to SBML symbol `V_v`.
+  - name: y_complement_of_x
+    maps_to: Y
+    label: y(complement_of_x)
+    description: y(complement_of_x). Maps to SBML symbol `Y`.
+  - name: x_scn_activity
+    maps_to: X
+    label: x(SCN_activity)
+    description: x(SCN_activity). Maps to SBML symbol `X`.
+  - name: n_fraction_of_photoreceptors_that_are_activated
+    maps_to: n
+    label: n(fraction_of_photoreceptors_that_are_activated)
+    description: n(fraction_of_photoreceptors_that_are_activated). Maps to SBML symbol
+      `n`.

@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Ma2002_cAMP_oscillations Visualisation
+description: Question-and-answer and dynamic visual summaries for Ma2002_cAMP_oscillations.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Ma2002 Camp Oscillations Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Ma2002_cAMP_oscillations.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_ma2002_camp_oscillations_biomd0000000229_model
+      title: Ma2002_cAMP_oscillations
+      observables:
+      - id: ERK2
+        port: erk2
+        label: ERK2
+        group: signaling
+      - id: incAMP
+        port: incamp
+        label: incAMP
+        group: physiology
+      - id: excAMP
+        port: excamp
+        label: excAMP
+        group: physiology
+      - id: ACA
+        port: aca
+        label: ACA
+        group: physiology
+      - id: CAR1
+        port: car1
+        label: CAR1
+        group: physiology
+      - id: PKA
+        port: pka
+        label: PKA
+        group: physiology
+io:
+  inputs: []
+  outputs: []

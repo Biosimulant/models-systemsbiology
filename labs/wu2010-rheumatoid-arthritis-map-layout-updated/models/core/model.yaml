@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Wu2010 - Rheumatoid arthritis map layout updated
+description: Contains molecular interactions known to be active in rheumatoid arthritis.
+  It can be used to explore systemsbiology wu2010 rheumatoid arthritis map layout
+  dynamics and compare simulation behavior across conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Wu G
+- Zhu L
+- Dent JE
+- Christine Nardini
+upstream:
+  id: biomodels_ebi:MODEL2302140001
+  source_db: biomodels_ebi
+  source_id: MODEL2302140001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2302140001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2302140001?filename=Wu2010_RAMap_updatedLayoutRef.xml
+  license: CC0
+biosim:
+  entrypoint: src.wu2010_rheumatoid_arthritis_map_layout_updated_model2302140001_model:Wu2010RheumatoidArthritisMapLayoutUpdatedModel2302140001Model
+  init_kwargs:
+    model_path: data/MODEL2302140001.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_cell_growth_differentiation_morphogenesis
+    maps_to: s422
+    label: Initial Cell Growth Differentiation Morphogenesis
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s422`.
+  - name: initial_wnt_signaling_pathway
+    maps_to: s1181
+    label: Initial Wnt Signaling Pathway
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s1181`.
+  - name: initial_traf6
+    maps_to: s360
+    label: Initial Traf6
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s360`.
+  - name: initial_traf6_2
+    maps_to: s359
+    label: Initial Traf6 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s359`.
+  - name: initial_traf6_3
+    maps_to: s36
+    label: Initial Traf6 3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s36`.
+  - name: initial_traf3
+    maps_to: s180
+    label: Initial Traf3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s180`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: cell_growth_differentiation_morphogenesis
+    maps_to: s422
+    label: Cell growth, Differentiation, Morphogenesis
+    description: Cell growth, Differentiation, Morphogenesis. Maps to SBML symbol
+      `s422`.
+  - name: wnt_signaling_pathway
+    maps_to: s1181
+    label: Wnt signaling pathway
+    description: Wnt signaling pathway. Maps to SBML symbol `s1181`.
+  - name: traf6
+    maps_to: s360
+    label: TRAF6
+    description: TRAF6. Maps to SBML symbol `s360`.
+  - name: traf6_2
+    maps_to: s359
+    label: TRAF6
+    description: TRAF6. Maps to SBML symbol `s359`.
+  - name: traf6_3
+    maps_to: s36
+    label: TRAF6
+    description: TRAF6. Maps to SBML symbol `s36`.
+  - name: traf3
+    maps_to: s180
+    label: TRAF3
+    description: TRAF3. Maps to SBML symbol `s180`.

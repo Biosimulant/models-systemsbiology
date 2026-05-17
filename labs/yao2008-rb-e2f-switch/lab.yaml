@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Yao2008 Rb E2f Switch Lab
+description: 'This is the model described in the article: A bistable Rb-E2F switch
+  underlies the restriction point Guang Yao, Tae Jun Lee, Seiichi Mori, Joseph R.
+  It can be used to explore systemsbiology yao2008 rb e2f switch BioModels0000000318
+  dynamics and compare simulation behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_yao2008_rb_e2f_switch_biomd0000000318_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_yao2008_rb_e2f_switch_biomd0000000318_model.state
+  to:
+  - visualisation.systemsbiology_sbml_yao2008_rb_e2f_switch_biomd0000000318_model_state
+- from: systemsbiology_sbml_yao2008_rb_e2f_switch_biomd0000000318_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_yao2008_rb_e2f_switch_biomd0000000318_model_summary
+- from: systemsbiology_sbml_yao2008_rb_e2f_switch_biomd0000000318_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_yao2008_rb_e2f_switch_biomd0000000318_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_rb_e2_f_complex
+    maps_to: systemsbiology_sbml_yao2008_rb_e2f_switch_biomd0000000318_model.initial_rb_e2_f_complex
+    label: Initial Rb E2 F Complex
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RE`.
+  - name: initial_phosphorylated_rb
+    maps_to: systemsbiology_sbml_yao2008_rb_e2f_switch_biomd0000000318_model.initial_phosphorylated_rb
+    label: Initial Phosphorylated Rb
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RP`.
+  - name: initial_model_state_rb
+    maps_to: systemsbiology_sbml_yao2008_rb_e2f_switch_biomd0000000318_model.initial_model_state_rb
+    label: Initial Model State Rb
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RB`.
+  - name: initial_model_state_myc
+    maps_to: systemsbiology_sbml_yao2008_rb_e2f_switch_biomd0000000318_model.initial_model_state_myc
+    label: Initial Model State Myc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `MC`.
+  - name: initial_e2_f
+    maps_to: systemsbiology_sbml_yao2008_rb_e2f_switch_biomd0000000318_model.initial_e2_f
+    label: Initial E2 F
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `EF`.
+  - name: initial_cyc_e
+    maps_to: systemsbiology_sbml_yao2008_rb_e2f_switch_biomd0000000318_model.initial_cyc_e
+    label: Initial Cyc E
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CE`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_yao2008_rb_e2f_switch_biomd0000000318_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_yao2008_rb_e2f_switch_biomd0000000318_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_yao2008_rb_e2f_switch_biomd0000000318_model.species_labels
+  - name: rb_e2_f_complex
+    maps_to: systemsbiology_sbml_yao2008_rb_e2f_switch_biomd0000000318_model.rb_e2_f_complex
+  - name: phosphorylated_rb
+    maps_to: systemsbiology_sbml_yao2008_rb_e2f_switch_biomd0000000318_model.phosphorylated_rb
+  - name: model_state_rb
+    maps_to: systemsbiology_sbml_yao2008_rb_e2f_switch_biomd0000000318_model.model_state_rb
+  - name: myc
+    maps_to: systemsbiology_sbml_yao2008_rb_e2f_switch_biomd0000000318_model.myc
+  - name: e2_f
+    maps_to: systemsbiology_sbml_yao2008_rb_e2f_switch_biomd0000000318_model.e2_f
+  - name: cyc_e
+    maps_to: systemsbiology_sbml_yao2008_rb_e2f_switch_biomd0000000318_model.cyc_e

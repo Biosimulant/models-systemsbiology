@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Vempati2007_MMP9_Regulation
+description: 'This is the model described in the article: A biochemical model of matrix
+  metalloproteinase 9 activation and inhibition. It can be used to explore systemsbiology
+  vempati2007 mmp9 regulation model7888000034 dynamics and compare simulation behavior
+  across conditions.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Prakash Vempati
+- Emmanouil D Karagiannis
+- Aleksander S Popel
+upstream:
+  id: biomodels_ebi:MODEL7888000034
+  source_db: biomodels_ebi
+  source_id: MODEL7888000034
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL7888000034
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL7888000034?filename=MODEL7888000034_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.vempati2007_mmp9_regulation_model7888000034_model:Vempati2007Mmp9RegulationModel7888000034Model
+  init_kwargs:
+    model_path: data/MODEL7888000034.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_tr_pm9_t1_m3
+    maps_to: Tr_pM9_T1_M3
+    label: Initial Tr PM9 T1 M3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Tr_pM9_T1_M3`.
+  - name: initial_tr_pm9_t1
+    maps_to: Tr_pM9_T1
+    label: Initial Tr PM9 T1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Tr_pM9_T1`.
+  - name: initial_tr_pm9
+    maps_to: Tr_pM9
+    label: Initial Tr PM9
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Tr_pM9`.
+  - name: initial_model_state_tr
+    maps_to: Tr
+    label: Initial Model State Tr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Tr`.
+  - name: initial_model_state_t1
+    maps_to: T1
+    label: Initial Model State T1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `T1`.
+  - name: initial_pm9_t1_m3
+    maps_to: pM9_T1_M3
+    label: Initial PM9 T1 M3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `pM9_T1_M3`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: tr_pm9_t1_m3
+    maps_to: Tr_pM9_T1_M3
+    label: Tr PM9 T1 M3
+    description: Tr PM9 T1 M3. Maps to SBML symbol `Tr_pM9_T1_M3`.
+  - name: tr_pm9_t1
+    maps_to: Tr_pM9_T1
+    label: Tr PM9 T1
+    description: Tr PM9 T1. Maps to SBML symbol `Tr_pM9_T1`.
+  - name: tr_pm9
+    maps_to: Tr_pM9
+    label: Tr PM9
+    description: Tr PM9. Maps to SBML symbol `Tr_pM9`.
+  - name: model_state_tr
+    maps_to: Tr
+    label: Tr
+    description: Tr. Maps to SBML symbol `Tr`.
+  - name: model_state_t1
+    maps_to: T1
+    label: T1
+    description: T1. Maps to SBML symbol `T1`.
+  - name: pm9_t1_m3
+    maps_to: pM9_T1_M3
+    label: PM9 T1 M3
+    description: PM9 T1 M3. Maps to SBML symbol `pM9_T1_M3`.

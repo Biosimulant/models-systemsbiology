@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Emiola2016 - Crosstalk between the lipopolysaccharide and phospholipid pathways
+  during outer membrane biosynthesis,
+description: Systems Biology Emiola2016Crosstalk Between The Lipopolysacchar Model1601080000Model
+  captures core biological behavior in the context of systemsbiology, sbml, biomodels_ebi
+  using a biomodels_ebi-sourced OTHER m. When you run it, you can observe state and
+  evaluate how the modeled system changes across runs.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Akintunde Emiolaa
+- Steven S. Andrewsb
+- Carolin Hellera and  John Georgea
+upstream:
+  id: biomodels_ebi:MODEL1601080000
+  source_db: biomodels_ebi
+  source_id: MODEL1601080000
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1601080000
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1601080000?filename=MODEL1601080000_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.emiola2016_crosstalk_between_the_lipopolysacchar_model1601080000_model:Emiola2016CrosstalkBetweenTheLipopolysaccharModel1601080000Model
+  init_kwargs:
+    model_path: data/MODEL1601080000.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_promoter_lpx_c
+    maps_to: promoter_LpxC
+    label: Initial Promoter Lpx C
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `promoter_LpxC`.
+  - name: initial_promoter_kdt_a
+    maps_to: promoter_KdtA
+    label: Initial Promoter Kdt A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `promoter_KdtA`.
+  - name: initial_acetyl_co_a
+    maps_to: acetyl_CoA
+    label: Initial Acetyl Co A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `acetyl_CoA`.
+  - name: initial_udp_glc_nac
+    maps_to: UDP_GlcNac
+    label: Initial Udp Glc Nac
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `UDP_GlcNac`.
+  - name: initial_cmp_kdo
+    maps_to: CMP_KDO
+    label: Initial Cmp Kdo
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `CMP_KDO`.
+  - name: initial_fad_r
+    maps_to: FadR_0
+    label: Initial Fad R
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `FadR_0`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: promoter_lpx_c
+    maps_to: promoter_LpxC
+    label: promoter-LpxC
+    description: promoter-LpxC. Maps to SBML symbol `promoter_LpxC`.
+  - name: promoter_kdt_a
+    maps_to: promoter_KdtA
+    label: promoter-KdtA
+    description: promoter-KdtA. Maps to SBML symbol `promoter_KdtA`.
+  - name: acetyl_co_a
+    maps_to: acetyl_CoA
+    label: acetyl-CoA
+    description: acetyl-CoA. Maps to SBML symbol `acetyl_CoA`.
+  - name: udp_glc_nac
+    maps_to: UDP_GlcNac
+    label: UDP-GlcNac
+    description: UDP-GlcNac. Maps to SBML symbol `UDP_GlcNac`.
+  - name: cmp_kdo
+    maps_to: CMP_KDO
+    label: CMP-KDO
+    description: CMP-KDO. Maps to SBML symbol `CMP_KDO`.
+  - name: fad_r
+    maps_to: FadR_0
+    label: FadR
+    description: FadR. Maps to SBML symbol `FadR_0`.

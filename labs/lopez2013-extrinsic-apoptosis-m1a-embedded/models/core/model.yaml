@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Lopez2013 - extrinsic apoptosis M1a embedded
+description: Systems Biology Lopez2013Extrinsic Apoptosis M1a Embedded Model1303010000Model
+  models core biological dynamics as a OTHER simulation curated from biomodels_ebi
+  (biomodels_ebi:MODEL1303010000), focused on system. When you run it, you can track
+  state over time and compare response patterns across parameter settings.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Carlos F Lopez
+- Jeremy L Muhlich
+- John A Bachman
+- Peter K Sorger
+upstream:
+  id: biomodels_ebi:MODEL1303010000
+  source_db: biomodels_ebi
+  source_id: MODEL1303010000
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1303010000
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1303010000?filename=MODEL1303010000_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.lopez2013_extrinsic_apoptosis_m1a_embedded_model1303010000_model:Lopez2013ExtrinsicApoptosisM1aEmbeddedModel1303010000Model
+  init_kwargs:
+    model_path: data/MODEL1303010000.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_parp_bf_none_state_u
+    maps_to: s9
+    label: Initial Parp Bf None State U
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s9`.
+  - name: initial_cyto_c_bf_none_state_m
+    maps_to: s19
+    label: Initial Cyto C Bf None State M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s19`.
+  - name: initial_xiap_bf_none
+    maps_to: s10
+    label: Initial Xiap Bf None
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s10`.
+  - name: initial_smac_bf_none_state_m
+    maps_to: s20
+    label: Initial Smac Bf None State M
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s20`.
+  - name: initial_c9_bf_none
+    maps_to: s8
+    label: Initial C9 Bf None
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s8`.
+  - name: initial_apaf_bf_none_state_i
+    maps_to: s5
+    label: Initial Apaf Bf None State I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `s5`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: parp_bf_none_state_u
+    maps_to: s9
+    label: PARP(bf=None, state=U)
+    description: PARP(bf=None, state=U). Maps to SBML symbol `s9`.
+  - name: cyto_c_bf_none_state_m
+    maps_to: s19
+    label: CytoC(bf=None, state=M)
+    description: CytoC(bf=None, state=M). Maps to SBML symbol `s19`.
+  - name: xiap_bf_none
+    maps_to: s10
+    label: XIAP(bf=None)
+    description: XIAP(bf=None). Maps to SBML symbol `s10`.
+  - name: smac_bf_none_state_m
+    maps_to: s20
+    label: Smac(bf=None, state=M)
+    description: Smac(bf=None, state=M). Maps to SBML symbol `s20`.
+  - name: c9_bf_none
+    maps_to: s8
+    label: C9(bf=None)
+    description: C9(bf=None). Maps to SBML symbol `s8`.
+  - name: apaf_bf_none_state_i
+    maps_to: s5
+    label: Apaf(bf=None, state=I)
+    description: Apaf(bf=None, state=I). Maps to SBML symbol `s5`.

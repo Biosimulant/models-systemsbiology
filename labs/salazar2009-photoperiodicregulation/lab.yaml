@@ -1,0 +1,70 @@
+schema_version: '2.0'
+title: Salazar2009 Photoperiodicregulation Lab
+description: 'This a model from the article: Prediction of photoperiodic regulators
+  from quantitative gene circuit models. Salazar JD, Saithong T, Brown PE, Foreman
+  J, Locke JC, Halliday KJ, Carré IA, Rand DA, Mill.'
+models:
+- alias: systemsbiology_sbml_salazar2009_photoperiodicregulation_model1005050000_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_salazar2009_photoperiodicregulation_model1005050000_model.state
+  to:
+  - visualisation.systemsbiology_sbml_salazar2009_photoperiodicregulation_model1005050000_model_state
+- from: systemsbiology_sbml_salazar2009_photoperiodicregulation_model1005050000_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_salazar2009_photoperiodicregulation_model1005050000_model_summary
+- from: systemsbiology_sbml_salazar2009_photoperiodicregulation_model1005050000_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_salazar2009_photoperiodicregulation_model1005050000_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: light_amplitude
+    maps_to: systemsbiology_sbml_salazar2009_photoperiodicregulation_model1005050000_model.light_amplitude
+    label: Light Amplitude
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `lightAmplitude`.
+  - name: light_offset
+    maps_to: systemsbiology_sbml_salazar2009_photoperiodicregulation_model1005050000_model.light_offset
+    label: Light Offset
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `lightOffset`.
+  - name: twilight_period
+    maps_to: systemsbiology_sbml_salazar2009_photoperiodicregulation_model1005050000_model.twilight_period
+    label: Twilight Period
+    description: Source parameter exposed because its SBML label indicates a boundary,
+      stimulus, dose, ligand, protocol, substrate, or environmental control. Maps
+      to SBML symbol `twilightPeriod`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_salazar2009_photoperiodicregulation_model1005050000_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_salazar2009_photoperiodicregulation_model1005050000_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_salazar2009_photoperiodicregulation_model1005050000_model.species_labels
+  - name: c_tc
+    maps_to: systemsbiology_sbml_salazar2009_photoperiodicregulation_model1005050000_model.c_tc
+  - name: c_xc
+    maps_to: systemsbiology_sbml_salazar2009_photoperiodicregulation_model1005050000_model.c_xc
+  - name: c_pn
+    maps_to: systemsbiology_sbml_salazar2009_photoperiodicregulation_model1005050000_model.c_pn
+  - name: c_lm
+    maps_to: systemsbiology_sbml_salazar2009_photoperiodicregulation_model1005050000_model.c_lm
+  - name: c_tm
+    maps_to: systemsbiology_sbml_salazar2009_photoperiodicregulation_model1005050000_model.c_tm
+  - name: c_xn
+    maps_to: systemsbiology_sbml_salazar2009_photoperiodicregulation_model1005050000_model.c_xn

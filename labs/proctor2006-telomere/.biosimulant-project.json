@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "6edb7a12-eae7-4bad-a4ae-f515236197ce",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "b0432b6a-7c51-4c5c-8507-9da04f1c7e54",
+  "created_at": "2026-05-16T05:46:50.601020244+00:00",
+  "last_synced_at": "2026-05-17T05:33:56.662689+00:00",
+  "hub_manifest_hash": "ca9aaf517e60104040f9963ca68a4e65cd2d4f3cdc3085cc1a7383cce40a1335",
+  "package_name": "proctor2006-telomere-lab"
+}

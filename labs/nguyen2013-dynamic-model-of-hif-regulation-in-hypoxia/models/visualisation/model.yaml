@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Nguyen2013 - Dynamic model of HIF regulation in hypoxia Visualisation
+description: Question-and-answer and dynamic visual summaries for Nguyen2013 - Dynamic
+  model of HIF regulation in hypoxia.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Nguyen2013 Dynamic Model Of Hif Regulation In Hypoxia Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Nguyen2013 - Dynamic model of HIF regulation in hypoxia.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_nguyen2013_dynamic_model_of_hif_regulation_in_hy_model1912100004_model
+      title: Nguyen2013 - Dynamic model of HIF regulation in hypoxia
+      observables:
+      - id: mRNA
+        port: mrna
+        label: mRNA
+        group: metabolism
+      - id: Protein
+        port: protein
+        label: Protein
+        group: metabolism
+      - id: Luciferase
+        port: luciferase
+        label: Luciferase
+        group: signaling
+      - id: VHL_n
+        port: vhl_n
+        label: VHL_n
+        group: metabolism
+      - id: FIH_n
+        port: fih_n
+        label: FIH_n
+        group: metabolism
+      - id: PHD_n
+        port: phd_n
+        label: PHD_n
+        group: metabolism
+io:
+  inputs: []
+  outputs: []

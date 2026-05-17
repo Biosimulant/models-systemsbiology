@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Nag2011_ChloroplasticStarchDegradation Visualisation
+description: Question-and-answer and dynamic visual summaries for Nag2011_ChloroplasticStarchDegradation.
+standard: other
+tags:
+- cellcycle
+- signaling
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Nag2011 Chloroplasticstarchdegradation Lab
+    question: 'Which cell-cycle control states dominate the simulated progression?
+      Source model: Nag2011_ChloroplasticStarchDegradation.'
+    answer_focus: Q/A table plus cellcycle timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_nag2011_chloroplasticstarchdegradation_biomd0000000353_model
+      title: Nag2011_ChloroplasticStarchDegradation
+      observables:
+      - id: cpd_C00002tot_CY
+        port: atp_pool
+        label: ATP pool
+        group: signaling
+      - id: cpd_C00008tot_CY
+        port: adp_pool
+        label: ADP pool
+        group: signaling
+      - id: cpd_C00660tot_CY
+        port: d_glucose_1_6_bisphosphate_pool
+        label: (D)-Glucose-1,6-bisphosphate pool
+        group: signaling
+      - id: cpd_C00031_CY
+        port: d_glucose
+        label: (D)-Glucose
+        group: signaling
+      - id: cpd_C00031_CS
+        port: d_glucose_2
+        label: (D)-Glucose
+        group: signaling
+      - id: tc_2_A_1_1_17_CIMS
+        port: glucose_transporter_p_glc_t
+        label: Glucose transporter (pGlcT)
+        group: signaling
+io:
+  inputs: []
+  outputs: []

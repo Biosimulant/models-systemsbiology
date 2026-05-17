@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Tang2010 Polyglutamate Lab
+description: 'This a model from the article: Experimental and computational analysis
+  of polyglutamine-mediated cytotoxicity. Tang MY, Proctor CJ, Woulfe J, Gray DA.'
+models:
+- alias: systemsbiology_sbml_tang2010_polyglutamate_biomd0000000285_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_tang2010_polyglutamate_biomd0000000285_model.state
+  to:
+  - visualisation.systemsbiology_sbml_tang2010_polyglutamate_biomd0000000285_model_state
+- from: systemsbiology_sbml_tang2010_polyglutamate_biomd0000000285_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_tang2010_polyglutamate_biomd0000000285_model_summary
+- from: systemsbiology_sbml_tang2010_polyglutamate_biomd0000000285_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_tang2010_polyglutamate_biomd0000000285_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- cellcycle
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_nat_p
+    maps_to: systemsbiology_sbml_tang2010_polyglutamate_biomd0000000285_model.initial_nat_p
+    label: Initial Nat P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NatP`.
+  - name: initial_p_ideath
+    maps_to: systemsbiology_sbml_tang2010_polyglutamate_biomd0000000285_model.initial_p_ideath
+    label: Initial P Ideath
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PIdeath`.
+  - name: initial_p38death
+    maps_to: systemsbiology_sbml_tang2010_polyglutamate_biomd0000000285_model.initial_p38death
+    label: Initial P38death
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `p38death`.
+  - name: initial_proteasome
+    maps_to: systemsbiology_sbml_tang2010_polyglutamate_biomd0000000285_model.initial_proteasome
+    label: Initial Proteasome
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Proteasome`.
+  - name: initial_poly_q
+    maps_to: systemsbiology_sbml_tang2010_polyglutamate_biomd0000000285_model.initial_poly_q
+    label: Initial Poly Q
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PolyQ`.
+  - name: initial_mrf_pu
+    maps_to: systemsbiology_sbml_tang2010_polyglutamate_biomd0000000285_model.initial_mrf_pu
+    label: Initial Mrf Pu
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mRFPu`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_tang2010_polyglutamate_biomd0000000285_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_tang2010_polyglutamate_biomd0000000285_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_tang2010_polyglutamate_biomd0000000285_model.species_labels
+  - name: nat_p
+    maps_to: systemsbiology_sbml_tang2010_polyglutamate_biomd0000000285_model.nat_p
+  - name: p_ideath
+    maps_to: systemsbiology_sbml_tang2010_polyglutamate_biomd0000000285_model.p_ideath
+  - name: p38death
+    maps_to: systemsbiology_sbml_tang2010_polyglutamate_biomd0000000285_model.p38death
+  - name: proteasome
+    maps_to: systemsbiology_sbml_tang2010_polyglutamate_biomd0000000285_model.proteasome
+  - name: poly_q
+    maps_to: systemsbiology_sbml_tang2010_polyglutamate_biomd0000000285_model.poly_q
+  - name: mrf_pu
+    maps_to: systemsbiology_sbml_tang2010_polyglutamate_biomd0000000285_model.mrf_pu

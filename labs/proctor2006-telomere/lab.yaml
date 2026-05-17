@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Proctor2006 Telomere Lab
+description: To the extent possible under law, all copyright and related or neighbouring
+  rights to this encoded model have been dedicated to the public domain worldwide.
+  It can be used to explore systemsbiology proctor2006 telomere BioModels0000000087
+  dynamics and compare simulation behavior across conditions.
+models:
+- alias: systemsbiology_sbml_proctor2006_telomere_biomd0000000087_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_proctor2006_telomere_biomd0000000087_model.state
+  to:
+  - visualisation.systemsbiology_sbml_proctor2006_telomere_biomd0000000087_model_state
+- from: systemsbiology_sbml_proctor2006_telomere_biomd0000000087_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_proctor2006_telomere_biomd0000000087_model_summary
+- from: systemsbiology_sbml_proctor2006_telomere_biomd0000000087_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_proctor2006_telomere_biomd0000000087_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_atp
+    maps_to: systemsbiology_sbml_proctor2006_telomere_biomd0000000087_model.initial_model_state_atp
+    label: Initial Model State ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATP`.
+  - name: initial_model_state_adp
+    maps_to: systemsbiology_sbml_proctor2006_telomere_biomd0000000087_model.initial_model_state_adp
+    label: Initial Model State ADP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ADP`.
+  - name: initial_scyclin
+    maps_to: systemsbiology_sbml_proctor2006_telomere_biomd0000000087_model.initial_scyclin
+    label: Initial Scyclin
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Scyclin`.
+  - name: initial_mcyclin
+    maps_to: systemsbiology_sbml_proctor2006_telomere_biomd0000000087_model.initial_mcyclin
+    label: Initial Mcyclin
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Mcyclin`.
+  - name: initial_g2cyclin
+    maps_to: systemsbiology_sbml_proctor2006_telomere_biomd0000000087_model.initial_g2cyclin
+    label: Initial G2cyclin
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `G2cyclin`.
+  - name: initial_g1cyclin
+    maps_to: systemsbiology_sbml_proctor2006_telomere_biomd0000000087_model.initial_g1cyclin
+    label: Initial G1cyclin
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `G1cyclin`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_proctor2006_telomere_biomd0000000087_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_proctor2006_telomere_biomd0000000087_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_proctor2006_telomere_biomd0000000087_model.species_labels
+  - name: atp
+    maps_to: systemsbiology_sbml_proctor2006_telomere_biomd0000000087_model.atp
+  - name: adp
+    maps_to: systemsbiology_sbml_proctor2006_telomere_biomd0000000087_model.adp
+  - name: scyclin
+    maps_to: systemsbiology_sbml_proctor2006_telomere_biomd0000000087_model.scyclin
+  - name: mcyclin
+    maps_to: systemsbiology_sbml_proctor2006_telomere_biomd0000000087_model.mcyclin
+  - name: g2cyclin
+    maps_to: systemsbiology_sbml_proctor2006_telomere_biomd0000000087_model.g2cyclin
+  - name: g1cyclin
+    maps_to: systemsbiology_sbml_proctor2006_telomere_biomd0000000087_model.g1cyclin

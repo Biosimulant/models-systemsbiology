@@ -1,0 +1,89 @@
+schema_version: '2.0'
+title: Yi2003 Gproteincycle Lab
+description: The paper describes both wild-type and mutant cells of G protein cycle
+  by using different values of G protein deactivation. It can be used to explore systemsbiology
+  yi2003 gproteincycle BioModels0000000072 dynamics and compare simulation behavior
+  across conditions.
+models:
+- alias: systemsbiology_sbml_yi2003_gproteincycle_biomd0000000072_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_yi2003_gproteincycle_biomd0000000072_model.state
+  to:
+  - visualisation.systemsbiology_sbml_yi2003_gproteincycle_biomd0000000072_model_state
+- from: systemsbiology_sbml_yi2003_gproteincycle_biomd0000000072_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_yi2003_gproteincycle_biomd0000000072_model_summary
+- from: systemsbiology_sbml_yi2003_gproteincycle_biomd0000000072_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_yi2003_gproteincycle_biomd0000000072_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- immunology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_g_alpha_gdp
+    maps_to: systemsbiology_sbml_yi2003_gproteincycle_biomd0000000072_model.initial_g_alpha_gdp
+    label: Initial G Alpha Gdp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Gd`.
+  - name: initial_free_levels_of_g_beta_gamma
+    maps_to: systemsbiology_sbml_yi2003_gproteincycle_biomd0000000072_model.initial_free_levels_of_g_beta_gamma
+    label: Initial Free Levels Of G Beta Gamma
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Gbg`.
+  - name: initial_receptor_ligand
+    maps_to: systemsbiology_sbml_yi2003_gproteincycle_biomd0000000072_model.initial_receptor_ligand
+    label: Initial Receptor Ligand
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `RL`.
+  - name: initial_g_alpha_gtp
+    maps_to: systemsbiology_sbml_yi2003_gproteincycle_biomd0000000072_model.initial_g_alpha_gtp
+    label: Initial G Alpha Gtp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ga`.
+  - name: initial_ligand
+    maps_to: systemsbiology_sbml_yi2003_gproteincycle_biomd0000000072_model.initial_ligand
+    label: Initial Ligand
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `L`.
+  - name: initial_receptor
+    maps_to: systemsbiology_sbml_yi2003_gproteincycle_biomd0000000072_model.initial_receptor
+    label: Initial Receptor
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `R`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_yi2003_gproteincycle_biomd0000000072_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_yi2003_gproteincycle_biomd0000000072_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_yi2003_gproteincycle_biomd0000000072_model.species_labels
+  - name: g_alpha_gdp
+    maps_to: systemsbiology_sbml_yi2003_gproteincycle_biomd0000000072_model.g_alpha_gdp
+  - name: free_levels_of_g_beta_gamma
+    maps_to: systemsbiology_sbml_yi2003_gproteincycle_biomd0000000072_model.free_levels_of_g_beta_gamma
+  - name: receptor_ligand
+    maps_to: systemsbiology_sbml_yi2003_gproteincycle_biomd0000000072_model.receptor_ligand
+  - name: g_alpha_gtp
+    maps_to: systemsbiology_sbml_yi2003_gproteincycle_biomd0000000072_model.g_alpha_gtp
+  - name: ligand
+    maps_to: systemsbiology_sbml_yi2003_gproteincycle_biomd0000000072_model.ligand
+  - name: receptor
+    maps_to: systemsbiology_sbml_yi2003_gproteincycle_biomd0000000072_model.receptor

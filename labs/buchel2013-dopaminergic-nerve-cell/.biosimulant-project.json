@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "5b7d8e74-cfab-4cf9-a42e-e279facaa0e1",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "f571c56b-96da-46ed-938d-c0a2300a5975",
+  "created_at": "2026-05-16T05:46:41.951698113+00:00",
+  "last_synced_at": "2026-05-17T02:19:36.009458+00:00",
+  "hub_manifest_hash": "e1a142629771dd02c15f9e1077b5d9f5a0acab3355fe12e928d6dd5e84e3cab8",
+  "package_name": "buchel2013-dopaminergic-nerve-cell-lab"
+}

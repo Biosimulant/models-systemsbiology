@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: Morris2009 Synuclein Aggregation Variable Temperature And Ph Lab
+description: 'Morris2009 - α-Synuclein aggregationvariable temperature and pH This
+  model is described in the article: Alpha-synuclein aggregation variable temperature
+  and variable pH kinetic data: a re-analysis usi. It can be used to explore systemsbiology
+  morris2009 synuclein aggregation variable temper dynamics and compare simulation
+  behavior across conditions.'
+models:
+- alias: systemsbiology_sbml_morris2009_synuclein_aggregation_variable_temper_biomd0000000566_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_morris2009_synuclein_aggregation_variable_temper_biomd0000000566_model.state
+  to:
+  - visualisation.systemsbiology_sbml_morris2009_synuclein_aggregation_variable_temper_biomd0000000566_model_state
+- from: systemsbiology_sbml_morris2009_synuclein_aggregation_variable_temper_biomd0000000566_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_morris2009_synuclein_aggregation_variable_temper_biomd0000000566_model_summary
+- from: systemsbiology_sbml_morris2009_synuclein_aggregation_variable_temper_biomd0000000566_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_morris2009_synuclein_aggregation_variable_temper_biomd0000000566_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_a
+    maps_to: systemsbiology_sbml_morris2009_synuclein_aggregation_variable_temper_biomd0000000566_model.initial_model_state_a
+    label: Initial Model State A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `A`.
+  - name: initial_model_state_b
+    maps_to: systemsbiology_sbml_morris2009_synuclein_aggregation_variable_temper_biomd0000000566_model.initial_model_state_b
+    label: Initial Model State B
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `B`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_morris2009_synuclein_aggregation_variable_temper_biomd0000000566_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_morris2009_synuclein_aggregation_variable_temper_biomd0000000566_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_morris2009_synuclein_aggregation_variable_temper_biomd0000000566_model.species_labels
+  - name: model_state_a
+    maps_to: systemsbiology_sbml_morris2009_synuclein_aggregation_variable_temper_biomd0000000566_model.model_state_a
+  - name: model_state_b
+    maps_to: systemsbiology_sbml_morris2009_synuclein_aggregation_variable_temper_biomd0000000566_model.model_state_b

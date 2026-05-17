@@ -1,0 +1,60 @@
+schema_version: '2.0'
+title: Koivumaki2009_SERCAATPase_Standalone
+description: 'This a model from the article: Modelling sarcoplasmic reticulum calcium
+  ATPase and its regulation in cardiacmyocytes. Koivumaki JT, Takalo J, Korhonen T,
+  Tavi P, Weckstrom M.'
+standard: other
+tags:
+- cardiovascular
+- metabolism
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Jussi T Koivumäki
+- Jouni Takalo
+- Topi Korhonen
+- Pasi Tavi
+- Matti Weckström
+upstream:
+  id: biomodels_ebi:MODEL1006230023
+  source_db: biomodels_ebi
+  source_id: MODEL1006230023
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1006230023
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1006230023?filename=MODEL1006230023_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.koivumaki2009_sercaatpase_standalone_model1006230023_model:Koivumaki2009SercaatpaseStandaloneModel1006230023Model
+  init_kwargs:
+    model_path: data/MODEL1006230023.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_ca_serca
+    maps_to: Ca_serca
+    label: Initial Ca Serca
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Ca_serca`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: ca_serca
+    maps_to: Ca_serca
+    label: Ca Serca
+    description: Ca Serca. Maps to SBML symbol `Ca_serca`.

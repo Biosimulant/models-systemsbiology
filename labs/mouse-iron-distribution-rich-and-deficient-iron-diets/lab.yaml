@@ -1,0 +1,86 @@
+schema_version: '2.0'
+title: Mouse Iron Distribution Rich And Deficient Iron Diets Lab
+description: Mouse Iron Distribution Dynamics Dynamic model of iron distribution in
+  mice. This model attempts to fit the radioiron tracer data from Lopes et al.
+models:
+- alias: systemsbiology_sbml_mouse_iron_distribution_rich_and_deficient_iron_biomd0000000734_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_mouse_iron_distribution_rich_and_deficient_iron_biomd0000000734_model.state
+  to:
+  - visualisation.systemsbiology_sbml_mouse_iron_distribution_rich_and_deficient_iron_biomd0000000734_model_state
+- from: systemsbiology_sbml_mouse_iron_distribution_rich_and_deficient_iron_biomd0000000734_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_mouse_iron_distribution_rich_and_deficient_iron_biomd0000000734_model_summary
+- from: systemsbiology_sbml_mouse_iron_distribution_rich_and_deficient_iron_biomd0000000734_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_mouse_iron_distribution_rich_and_deficient_iron_biomd0000000734_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_fe_liver
+    maps_to: systemsbiology_sbml_mouse_iron_distribution_rich_and_deficient_iron_biomd0000000734_model.initial_fe_liver
+    label: Initial Fe Liver
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `FeLiver_0`.
+  - name: initial_fe_liver_2
+    maps_to: systemsbiology_sbml_mouse_iron_distribution_rich_and_deficient_iron_biomd0000000734_model.initial_fe_liver_2
+    label: Initial Fe Liver 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `FeLiver`.
+  - name: initial_fe_rbc
+    maps_to: systemsbiology_sbml_mouse_iron_distribution_rich_and_deficient_iron_biomd0000000734_model.initial_fe_rbc
+    label: Initial Fe Rbc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `FeRBC_0`.
+  - name: initial_fe_duo
+    maps_to: systemsbiology_sbml_mouse_iron_distribution_rich_and_deficient_iron_biomd0000000734_model.initial_fe_duo
+    label: Initial Fe Duo
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `FeDuo_0`.
+  - name: initial_fe_spleen
+    maps_to: systemsbiology_sbml_mouse_iron_distribution_rich_and_deficient_iron_biomd0000000734_model.initial_fe_spleen
+    label: Initial Fe Spleen
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `FeSpleen_0`.
+  - name: initial_fe_rest
+    maps_to: systemsbiology_sbml_mouse_iron_distribution_rich_and_deficient_iron_biomd0000000734_model.initial_fe_rest
+    label: Initial Fe Rest
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `FeRest_0`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_mouse_iron_distribution_rich_and_deficient_iron_biomd0000000734_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_mouse_iron_distribution_rich_and_deficient_iron_biomd0000000734_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_mouse_iron_distribution_rich_and_deficient_iron_biomd0000000734_model.species_labels
+  - name: fe_liver
+    maps_to: systemsbiology_sbml_mouse_iron_distribution_rich_and_deficient_iron_biomd0000000734_model.fe_liver
+  - name: fe_liver_2
+    maps_to: systemsbiology_sbml_mouse_iron_distribution_rich_and_deficient_iron_biomd0000000734_model.fe_liver_2
+  - name: fe_rbc
+    maps_to: systemsbiology_sbml_mouse_iron_distribution_rich_and_deficient_iron_biomd0000000734_model.fe_rbc
+  - name: fe_duo
+    maps_to: systemsbiology_sbml_mouse_iron_distribution_rich_and_deficient_iron_biomd0000000734_model.fe_duo
+  - name: fe_spleen
+    maps_to: systemsbiology_sbml_mouse_iron_distribution_rich_and_deficient_iron_biomd0000000734_model.fe_spleen
+  - name: fe_rest
+    maps_to: systemsbiology_sbml_mouse_iron_distribution_rich_and_deficient_iron_biomd0000000734_model.fe_rest

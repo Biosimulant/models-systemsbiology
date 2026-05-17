@@ -1,0 +1,90 @@
+schema_version: '2.0'
+title: Lai2014 Hemiconcerted Mwc Model Of Intact Calmodulin With Two Targ Lab
+description: 'Lai2014 - Hemiconcerted MWC model of intactcalmodulin with two targets
+  This model is described in the article: Modulation of calmodulin lobes by different
+  targets: an allosteric model with hemiconcert. It can be used to explore systemsbiology
+  lai2014 hemiconcerted mwc of intact dynamics and compare simulation behavior across
+  conditions.'
+models:
+- alias: systemsbiology_sbml_lai2014_hemiconcerted_mwc_model_of_intact_calmod_biomd0000000574_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_lai2014_hemiconcerted_mwc_model_of_intact_calmod_biomd0000000574_model.state
+  to:
+  - visualisation.systemsbiology_sbml_lai2014_hemiconcerted_mwc_model_of_intact_calmod_biomd0000000574_model_state
+- from: systemsbiology_sbml_lai2014_hemiconcerted_mwc_model_of_intact_calmod_biomd0000000574_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_lai2014_hemiconcerted_mwc_model_of_intact_calmod_biomd0000000574_model_summary
+- from: systemsbiology_sbml_lai2014_hemiconcerted_mwc_model_of_intact_calmod_biomd0000000574_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_lai2014_hemiconcerted_mwc_model_of_intact_calmod_biomd0000000574_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_rbp
+    maps_to: systemsbiology_sbml_lai2014_hemiconcerted_mwc_model_of_intact_calmod_biomd0000000574_model.initial_model_state_rbp
+    label: Initial Model State Rbp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `rbp`.
+  - name: initial_cam_tt_0_0
+    maps_to: systemsbiology_sbml_lai2014_hemiconcerted_mwc_model_of_intact_calmod_biomd0000000574_model.initial_cam_tt_0_0
+    label: Initial Cam Tt 0 0
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cam_TT_0_0`.
+  - name: initial_model_state_tbp
+    maps_to: systemsbiology_sbml_lai2014_hemiconcerted_mwc_model_of_intact_calmod_biomd0000000574_model.initial_model_state_tbp
+    label: Initial Model State Tbp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `tbp`.
+  - name: initial_cam_tt_d_tbp
+    maps_to: systemsbiology_sbml_lai2014_hemiconcerted_mwc_model_of_intact_calmod_biomd0000000574_model.initial_cam_tt_d_tbp
+    label: Initial Cam Tt D Tbp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cam_TT_D_tbp`.
+  - name: initial_cam_tt_d_rbp
+    maps_to: systemsbiology_sbml_lai2014_hemiconcerted_mwc_model_of_intact_calmod_biomd0000000574_model.initial_cam_tt_d_rbp
+    label: Initial Cam Tt D Rbp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cam_TT_D_rbp`.
+  - name: initial_cam_tt_d_0
+    maps_to: systemsbiology_sbml_lai2014_hemiconcerted_mwc_model_of_intact_calmod_biomd0000000574_model.initial_cam_tt_d_0
+    label: Initial Cam Tt D 0
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `cam_TT_D_0`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_lai2014_hemiconcerted_mwc_model_of_intact_calmod_biomd0000000574_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_lai2014_hemiconcerted_mwc_model_of_intact_calmod_biomd0000000574_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_lai2014_hemiconcerted_mwc_model_of_intact_calmod_biomd0000000574_model.species_labels
+  - name: rbp
+    maps_to: systemsbiology_sbml_lai2014_hemiconcerted_mwc_model_of_intact_calmod_biomd0000000574_model.rbp
+  - name: cam_tt_0_0
+    maps_to: systemsbiology_sbml_lai2014_hemiconcerted_mwc_model_of_intact_calmod_biomd0000000574_model.cam_tt_0_0
+  - name: tbp
+    maps_to: systemsbiology_sbml_lai2014_hemiconcerted_mwc_model_of_intact_calmod_biomd0000000574_model.tbp
+  - name: cam_tt_d_tbp
+    maps_to: systemsbiology_sbml_lai2014_hemiconcerted_mwc_model_of_intact_calmod_biomd0000000574_model.cam_tt_d_tbp
+  - name: cam_tt_d_rbp
+    maps_to: systemsbiology_sbml_lai2014_hemiconcerted_mwc_model_of_intact_calmod_biomd0000000574_model.cam_tt_d_rbp
+  - name: cam_tt_d_0
+    maps_to: systemsbiology_sbml_lai2014_hemiconcerted_mwc_model_of_intact_calmod_biomd0000000574_model.cam_tt_d_0

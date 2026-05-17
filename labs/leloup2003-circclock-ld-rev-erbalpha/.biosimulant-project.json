@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "35a7a042-9552-41c6-89f2-a77c0cb7e470",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "984a98cd-a2ba-4cdc-8a6c-46ed153cfe1e",
+  "created_at": "2026-05-16T05:46:45.398653516+00:00",
+  "last_synced_at": "2026-05-17T04:28:27.843861+00:00",
+  "hub_manifest_hash": "0991cffd195637cbedea4af98753c8d76cb7b6ca2c319230a96a7e7035bfb93f",
+  "package_name": "leloup2003-circclock-ld-rev-erbalpha-lab"
+}

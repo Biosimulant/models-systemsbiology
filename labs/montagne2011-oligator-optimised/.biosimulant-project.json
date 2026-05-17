@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "d8a6ecfc-3b7c-49e8-a000-a5000eadf5b1",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "617d01f2-1bcc-4964-ac6d-bb823e8d9151",
+  "created_at": "2026-05-16T05:46:47.489276504+00:00",
+  "last_synced_at": "2026-05-17T04:58:55.300493+00:00",
+  "hub_manifest_hash": "b245b2b079cf82f7f9e03e740f38c15db7a2369503208077790991c95c25feea",
+  "package_name": "montagne2011-oligator-optimised-lab"
+}

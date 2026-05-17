@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Weisse2015 - Cell Growth
+description: Systems Biology Weisse2015Cell Growth Model1502270000Model captures systemsbiology
+  weisse2015 cell growth model1502270000 behavior in the context of systemsbiology,
+  sbml, biomodels_ebi using a biomodels_ebi-sou. When you run it, you can observe
+  state and evaluate how the modeled system changes across runs.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Andrea Y Weiße
+- Diego A Oyarzún
+- Vincent Danos
+- Peter S Swain
+upstream:
+  id: biomodels_ebi:MODEL1502270000
+  source_db: biomodels_ebi
+  source_id: MODEL1502270000
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1502270000
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1502270000?filename=MODEL1502270000_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.weisse2015_cell_growth_model1502270000_model:Weisse2015CellGrowthModel1502270000Model
+  init_kwargs:
+    model_path: data/MODEL1502270000.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_zmt
+    maps_to: zmt
+    label: Initial Model State Zmt
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `zmt`.
+  - name: initial_model_state_zmr
+    maps_to: zmr
+    label: Initial Model State Zmr
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `zmr`.
+  - name: initial_model_state_zmq
+    maps_to: zmq
+    label: Initial Model State Zmq
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `zmq`.
+  - name: initial_model_state_zmp
+    maps_to: zmp
+    label: Initial Model State Zmp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `zmp`.
+  - name: initial_model_state_zmm
+    maps_to: zmm
+    label: Initial Model State Zmm
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `zmm`.
+  - name: initial_model_state_si
+    maps_to: si
+    label: Initial Model State Si
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `si`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: zmt
+    maps_to: zmt
+    label: Zmt
+    description: Zmt. Maps to SBML symbol `zmt`.
+  - name: zmr
+    maps_to: zmr
+    label: Zmr
+    description: Zmr. Maps to SBML symbol `zmr`.
+  - name: zmq
+    maps_to: zmq
+    label: Zmq
+    description: Zmq. Maps to SBML symbol `zmq`.
+  - name: zmp
+    maps_to: zmp
+    label: Zmp
+    description: Zmp. Maps to SBML symbol `zmp`.
+  - name: zmm
+    maps_to: zmm
+    label: Zmm
+    description: Zmm. Maps to SBML symbol `zmm`.
+  - name: model_state_si
+    maps_to: si
+    label: Si
+    description: Si. Maps to SBML symbol `si`.

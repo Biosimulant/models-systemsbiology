@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Faville2008_UPdepolarization Visualisation
+description: Question-and-answer and dynamic visual summaries for Faville2008_UPdepolarization.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Faville2008 Updepolarization Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Faville2008_UPdepolarization.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_faville2008_updepolarization_model0912044015_model
+      title: Faville2008_UPdepolarization
+      observables:
+      - id: Vm
+        port: model_state_vm
+        label: Vm
+        group: physiology
+      - id: phi3
+        port: phi3
+        label: Phi3
+        group: physiology
+      - id: NS1
+        port: ns1
+        label: NS1
+        group: physiology
+      - id: CS2
+        port: cs2
+        label: CS2
+        group: physiology
+      - id: CS1
+        port: cs1
+        label: CS1
+        group: physiology
+      - id: CMT
+        port: cmt
+        label: CMT
+        group: physiology
+io:
+  inputs: []
+  outputs: []

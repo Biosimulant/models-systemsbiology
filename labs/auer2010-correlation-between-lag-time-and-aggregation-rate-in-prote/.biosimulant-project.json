@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "01c82bad-eecf-4bcb-81eb-49b2c5e28a5b",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "9375d8d8-f885-4602-b4a3-fb1b9ba3421e",
+  "created_at": "2026-05-15T20:26:52.538249322+00:00",
+  "last_synced_at": "2026-05-17T01:48:25.084243+00:00",
+  "hub_manifest_hash": "b72616b17b9063168da179dcf7d81950d795106be5f74bd54e7fe245c076442b",
+  "package_name": "auer2010-correlation-between-lag-time-and-aggregation-rate-in-pr"
+}

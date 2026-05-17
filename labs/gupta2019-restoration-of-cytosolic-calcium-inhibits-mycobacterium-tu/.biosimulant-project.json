@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "2895c824-558b-4151-9df3-2f27317d7669",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "709b710e-c13f-4cb5-bfd6-935484d84b32",
+  "created_at": "2026-05-16T05:46:43.795702586+00:00",
+  "last_synced_at": "2026-05-17T03:28:40.480357+00:00",
+  "hub_manifest_hash": "840e19e76bf1712253d01451cf1226be9b3d5bb3b450106eb013f59f42d61ec8",
+  "package_name": "gupta2019-restoration-of-cytosolic-calcium-inhibits-mycobacteriu"
+}

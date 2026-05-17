@@ -1,0 +1,47 @@
+schema_version: '2.0'
+title: Kim2011_Oscillator_SimpleI Visualisation
+description: Question-and-answer and dynamic visual summaries for Kim2011_Oscillator_SimpleI.
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Kim2011 Oscillator Simplei Lab
+    question: 'Which gene-regulatory states dominate the source model trajectory?
+      Source model: Kim2011_Oscillator_SimpleI.'
+    answer_focus: Q/A table plus generegulation timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_kim2011_oscillator_simplei_biomd0000000322_model
+      title: Kim2011_Oscillator_SimpleI
+      observables:
+      - id: species_2
+        port: model_state_y
+        label: y
+        group: gene_regulation
+      - id: species_1
+        port: model_state_x
+        label: x
+        group: gene_regulation
+      - id: species_4
+        port: model_state_v
+        label: v
+        group: gene_regulation
+      - id: species_3
+        port: model_state_u
+        label: u
+        group: gene_regulation
+io:
+  inputs: []
+  outputs: []

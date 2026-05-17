@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Viertel2019 A Computational Model Of The Mammalian External Tufted Cel Lab
+description: This is a mathematical conductance-based model of the bursting activity
+  in external tufted (ET) cells of the olfactory bulb. The model includes ion-current
+  based descriptions of the mechanisms underly.
+models:
+- alias: systemsbiology_sbml_viertel2019_a_computational_model_of_the_mammali_biomd0000000844_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_viertel2019_a_computational_model_of_the_mammali_biomd0000000844_model.state
+  to:
+  - visualisation.systemsbiology_sbml_viertel2019_a_computational_model_of_the_mammali_biomd0000000844_model_state
+- from: systemsbiology_sbml_viertel2019_a_computational_model_of_the_mammali_biomd0000000844_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_viertel2019_a_computational_model_of_the_mammali_biomd0000000844_model_summary
+- from: systemsbiology_sbml_viertel2019_a_computational_model_of_the_mammali_biomd0000000844_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_viertel2019_a_computational_model_of_the_mammali_biomd0000000844_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_h_lva
+    maps_to: systemsbiology_sbml_viertel2019_a_computational_model_of_the_mammali_biomd0000000844_model.initial_h_lva
+    label: Initial H Lva
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `hLVA`.
+  - name: initial_model_state_h_h
+    maps_to: systemsbiology_sbml_viertel2019_a_computational_model_of_the_mammali_biomd0000000844_model.initial_model_state_h_h
+    label: Initial Model State H H
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `hH`.
+  - name: initial_h_na_p
+    maps_to: systemsbiology_sbml_viertel2019_a_computational_model_of_the_mammali_biomd0000000844_model.initial_h_na_p
+    label: Initial H Na P
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `hNaP`.
+  - name: initial_m_bk
+    maps_to: systemsbiology_sbml_viertel2019_a_computational_model_of_the_mammali_biomd0000000844_model.initial_m_bk
+    label: Initial M Bk
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `mBK`.
+  - name: initial_model_state_n_k
+    maps_to: systemsbiology_sbml_viertel2019_a_computational_model_of_the_mammali_biomd0000000844_model.initial_model_state_n_k
+    label: Initial Model State N K
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `nK`.
+  - name: initial_n_hvk
+    maps_to: systemsbiology_sbml_viertel2019_a_computational_model_of_the_mammali_biomd0000000844_model.initial_n_hvk
+    label: Initial N Hvk
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `nHVK`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_viertel2019_a_computational_model_of_the_mammali_biomd0000000844_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_viertel2019_a_computational_model_of_the_mammali_biomd0000000844_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_viertel2019_a_computational_model_of_the_mammali_biomd0000000844_model.species_labels
+  - name: h_lva
+    maps_to: systemsbiology_sbml_viertel2019_a_computational_model_of_the_mammali_biomd0000000844_model.h_lva
+  - name: h_h
+    maps_to: systemsbiology_sbml_viertel2019_a_computational_model_of_the_mammali_biomd0000000844_model.h_h
+  - name: h_na_p
+    maps_to: systemsbiology_sbml_viertel2019_a_computational_model_of_the_mammali_biomd0000000844_model.h_na_p
+  - name: m_bk
+    maps_to: systemsbiology_sbml_viertel2019_a_computational_model_of_the_mammali_biomd0000000844_model.m_bk
+  - name: n_k
+    maps_to: systemsbiology_sbml_viertel2019_a_computational_model_of_the_mammali_biomd0000000844_model.n_k
+  - name: n_hvk
+    maps_to: systemsbiology_sbml_viertel2019_a_computational_model_of_the_mammali_biomd0000000844_model.n_hvk

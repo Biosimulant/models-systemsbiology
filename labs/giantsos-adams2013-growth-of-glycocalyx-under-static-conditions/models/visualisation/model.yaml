@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Giantsos-Adams2013 - Growth of glycocalyx under static conditions Visualisation
+description: Question-and-answer and dynamic visual summaries for Giantsos-Adams2013
+  - Growth of glycocalyx under static conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Giantsos Adams2013 Growth Of Glycocalyx Under Static Conditions Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Giantsos-Adams2013 - Growth of glycocalyx under static conditions.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_giantsos_adams2013_growth_of_glycocalyx_under_st_model1609100001_model
+      title: Giantsos-Adams2013 - Growth of glycocalyx under static conditions
+      observables:
+      - id: s4
+        port: lysosome
+        label: lysosome
+        group: signaling
+      - id: s3
+        port: late_endosome
+        label: late endosome
+        group: signaling
+      - id: s2
+        port: early_endosome
+        label: early endosome
+        group: signaling
+      - id: s1
+        port: hs_surface
+        label: HS surface
+        group: signaling
+      - id: s6
+        port: golgi
+        label: golgi
+        group: signaling
+      - id: s8
+        port: model_state_s8
+        label: s8
+        group: signaling
+io:
+  inputs: []
+  outputs: []

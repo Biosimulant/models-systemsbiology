@@ -1,0 +1,111 @@
+schema_version: '2.0'
+title: Martins2004_Yeast_Glycolysis_GlycerolSynthesis
+description: A systems biology study of two distinct growth phases of Saccharomyces
+  cerevisiae cultures AM Martins, D Camacho, J Shuman, W Sha, P Mendes, V Shulaev,
+  Current Genomics 2004 5:649-663 This is a model. It can be used to explore systemsbiology
+  martins2004 yeast glycolysis glycerolsynthesis model1009220000 dynamics and compare
+  simulation behavior across conditions.
+standard: other
+tags:
+- metabolism
+- microbiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- A. M. Martins
+- D. Camacho
+- J. Shuman
+- W. Sha
+- P. Mendes
+upstream:
+  id: biomodels_ebi:MODEL1009220000
+  source_db: biomodels_ebi
+  source_id: MODEL1009220000
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1009220000
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1009220000?filename=MODEL1009220000_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.martins2004_yeast_glycolysis_glycerolsynthesis_model1009220000_model:Martins2004YeastGlycolysisGlycerolsynthesisModel1009220000Model
+  init_kwargs:
+    model_path: data/MODEL1009220000.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_glucose
+    maps_to: GLCx
+    label: Initial Glucose
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `GLCx`.
+  - name: initial_ethanol
+    maps_to: EtOH
+    label: Initial Ethanol
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `EtOH`.
+  - name: initial_glycerol
+    maps_to: GLY
+    label: Initial Glycerol
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `GLY`.
+  - name: initial_fructose_1_6_bisphosphate
+    maps_to: F16bP
+    label: Initial Fructose 1 6 Bisphosphate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `F16bP`.
+  - name: initial_glucose_6_phosphate
+    maps_to: G6P
+    label: Initial Glucose 6 Phosphate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `G6P`.
+  - name: initial_dihydroxyacetone_phosphate
+    maps_to: DHAP
+    label: Initial Dihydroxyacetone Phosphate
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `DHAP`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: glucose
+    maps_to: GLCx
+    label: glucose
+    description: glucose. Maps to SBML symbol `GLCx`.
+  - name: ethanol
+    maps_to: EtOH
+    label: ethanol
+    description: ethanol. Maps to SBML symbol `EtOH`.
+  - name: glycerol
+    maps_to: GLY
+    label: glycerol
+    description: glycerol. Maps to SBML symbol `GLY`.
+  - name: fructose_1_6_bisphosphate
+    maps_to: F16bP
+    label: fructose 1,6-bisphosphate
+    description: fructose 1,6-bisphosphate. Maps to SBML symbol `F16bP`.
+  - name: glucose_6_phosphate
+    maps_to: G6P
+    label: glucose 6-phosphate
+    description: glucose 6-phosphate. Maps to SBML symbol `G6P`.
+  - name: dihydroxyacetone_phosphate
+    maps_to: DHAP
+    label: dihydroxyacetone phosphate
+    description: dihydroxyacetone phosphate. Maps to SBML symbol `DHAP`.

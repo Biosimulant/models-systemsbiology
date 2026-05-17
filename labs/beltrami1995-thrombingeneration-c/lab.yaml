@@ -1,0 +1,88 @@
+schema_version: '2.0'
+title: Beltrami1995 Thrombingeneration C Lab
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models (http://www.ebi.ac.uk/biomodels/). It is copyright (c) 2005-2011
+  The BioModels.net Team.'
+models:
+- alias: systemsbiology_sbml_beltrami1995_thrombingeneration_c_biomd0000000368_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_beltrami1995_thrombingeneration_c_biomd0000000368_model.state
+  to:
+  - visualisation.systemsbiology_sbml_beltrami1995_thrombingeneration_c_biomd0000000368_model_state
+- from: systemsbiology_sbml_beltrami1995_thrombingeneration_c_biomd0000000368_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_beltrami1995_thrombingeneration_c_biomd0000000368_model_summary
+- from: systemsbiology_sbml_beltrami1995_thrombingeneration_c_biomd0000000368_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_beltrami1995_thrombingeneration_c_biomd0000000368_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_z4
+    maps_to: systemsbiology_sbml_beltrami1995_thrombingeneration_c_biomd0000000368_model.initial_model_state_z4
+    label: Initial Model State Z4
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Z4`.
+  - name: initial_model_state_z3
+    maps_to: systemsbiology_sbml_beltrami1995_thrombingeneration_c_biomd0000000368_model.initial_model_state_z3
+    label: Initial Model State Z3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Z3`.
+  - name: initial_model_state_z2
+    maps_to: systemsbiology_sbml_beltrami1995_thrombingeneration_c_biomd0000000368_model.initial_model_state_z2
+    label: Initial Model State Z2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Z2`.
+  - name: initial_model_state_z1
+    maps_to: systemsbiology_sbml_beltrami1995_thrombingeneration_c_biomd0000000368_model.initial_model_state_z1
+    label: Initial Model State Z1
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Z1`.
+  - name: initial_model_state_e4
+    maps_to: systemsbiology_sbml_beltrami1995_thrombingeneration_c_biomd0000000368_model.initial_model_state_e4
+    label: Initial Model State E4
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `E4`.
+  - name: initial_model_state_e3
+    maps_to: systemsbiology_sbml_beltrami1995_thrombingeneration_c_biomd0000000368_model.initial_model_state_e3
+    label: Initial Model State E3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `E3`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_beltrami1995_thrombingeneration_c_biomd0000000368_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_beltrami1995_thrombingeneration_c_biomd0000000368_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_beltrami1995_thrombingeneration_c_biomd0000000368_model.species_labels
+  - name: model_state_z4
+    maps_to: systemsbiology_sbml_beltrami1995_thrombingeneration_c_biomd0000000368_model.model_state_z4
+  - name: model_state_z3
+    maps_to: systemsbiology_sbml_beltrami1995_thrombingeneration_c_biomd0000000368_model.model_state_z3
+  - name: model_state_z2
+    maps_to: systemsbiology_sbml_beltrami1995_thrombingeneration_c_biomd0000000368_model.model_state_z2
+  - name: model_state_z1
+    maps_to: systemsbiology_sbml_beltrami1995_thrombingeneration_c_biomd0000000368_model.model_state_z1
+  - name: model_state_e4
+    maps_to: systemsbiology_sbml_beltrami1995_thrombingeneration_c_biomd0000000368_model.model_state_e4
+  - name: model_state_e3
+    maps_to: systemsbiology_sbml_beltrami1995_thrombingeneration_c_biomd0000000368_model.model_state_e3

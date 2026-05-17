@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "9ae8b5f3-41d2-4724-9aeb-b5e1979112b5",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "af571232-2504-42d1-a6c9-ca268fbf0e57",
+  "created_at": "2026-05-16T05:46:42.243427275+00:00",
+  "last_synced_at": "2026-05-17T02:30:07.934833+00:00",
+  "hub_manifest_hash": "c265596595d1560d6df4bc10d219ae787f18d57f9c60083f4e359d10924ef0ed",
+  "package_name": "caron2010-mtorsignalingnetwork-activityflow-lab"
+}

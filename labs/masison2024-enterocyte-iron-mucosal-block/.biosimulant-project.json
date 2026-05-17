@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "b4ff4e60-9242-404a-954a-3575b69af0d3",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "5b010577-fb55-41bf-9292-6d419dd05108",
+  "created_at": "2026-05-16T05:46:46.924191326+00:00",
+  "last_synced_at": "2026-05-17T04:52:48.518530+00:00",
+  "hub_manifest_hash": "dbc8773ba111a440c6a4b4bfdcfb73f3cf71210e03f640d1ac0a733715335daf",
+  "package_name": "masison2024-enterocyte-iron-mucosal-block-lab"
+}

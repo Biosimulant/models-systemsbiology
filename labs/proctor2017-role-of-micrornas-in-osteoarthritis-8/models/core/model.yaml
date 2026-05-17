@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Proctor2017- Role of microRNAs in osteoarthritis (miR140-SMAD3 double negative
+  feedback)
+description: 'Proctor2017- Role of microRNAs inosteoarthritis (miR140-SMAD3 double
+  negative feedback) This model is described in the article: Computer simulation models
+  as a tool to investigate the role of microRNA. It can be used to explore systemsbiology
+  proctor2017 role of micrornas in dynamics and compare simulation behavior across
+  conditions.'
+standard: other
+tags:
+- generegulation
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Carole J Proctor
+- Graham R Smith
+upstream:
+  id: biomodels_ebi:MODEL1705170000
+  source_db: biomodels_ebi
+  source_id: MODEL1705170000
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1705170000
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1705170000?filename=MODEL1705170000_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.proctor2017_role_of_micrornas_in_osteoarthritis_model1705170000_model:Proctor2017RoleOfMicrornasInOsteoarthritisModel1705170000Model
+  init_kwargs:
+    model_path: data/MODEL1705170000.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_tg_fb_a
+    maps_to: TGFb_A
+    label: Initial Tg Fb A
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TGFb_A`.
+  - name: initial_tg_fb_i
+    maps_to: TGFb_I
+    label: Initial Tg Fb I
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `TGFb_I`.
+  - name: initial_mi_r140
+    maps_to: miR140
+    label: Initial Mi R140
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `miR140`.
+  - name: initial_smad3
+    maps_to: SMAD3
+    label: Initial Smad3
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `SMAD3`.
+  - name: initial_mi_r140_smad3_mrna
+    maps_to: miR140_SMAD3_mRNA
+    label: Initial Mi R140 Smad3 MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `miR140_SMAD3_mRNA`.
+  - name: initial_smad3_mrna
+    maps_to: SMAD3_mRNA
+    label: Initial Smad3 MRNA
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `SMAD3_mRNA`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: tg_fb_a
+    maps_to: TGFb_A
+    label: TGFb A
+    description: TGFb A. Maps to SBML symbol `TGFb_A`.
+  - name: tg_fb_i
+    maps_to: TGFb_I
+    label: TGFb I
+    description: TGFb I. Maps to SBML symbol `TGFb_I`.
+  - name: mi_r140
+    maps_to: miR140
+    label: MiR140
+    description: MiR140. Maps to SBML symbol `miR140`.
+  - name: smad3
+    maps_to: SMAD3
+    label: SMAD3
+    description: SMAD3. Maps to SBML symbol `SMAD3`.
+  - name: mi_r140_smad3_mrna
+    maps_to: miR140_SMAD3_mRNA
+    label: MiR140 SMAD3 MRNA
+    description: MiR140 SMAD3 MRNA. Maps to SBML symbol `miR140_SMAD3_mRNA`.
+  - name: smad3_mrna
+    maps_to: SMAD3_mRNA
+    label: SMAD3 MRNA
+    description: SMAD3 MRNA. Maps to SBML symbol `SMAD3_mRNA`.

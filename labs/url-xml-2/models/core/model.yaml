@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: MODEL6624091635_url.xml
+description: 'This model originates from BioModels Database: A Database of Annotated
+  Published Models (http://www.ebi.ac.uk/biomodels/). It is copyright (c) 2005-2011
+  The BioModels.net Team.'
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- M H N Hoefnagel
+- A van der Burgt
+- D E Martens
+- J Hugenholtz
+- Jacky L Snoep
+upstream:
+  id: biomodels_ebi:MODEL6624091635
+  source_db: biomodels_ebi
+  source_id: MODEL6624091635
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL6624091635
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL6624091635?filename=MODEL6624091635_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.model6624091635_url_xml_model6624091635_model:Model6624091635UrlXmlModel6624091635Model
+  init_kwargs:
+    model_path: data/MODEL6624091635.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_nad
+    maps_to: NAD
+    label: Initial Model State Nad
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NAD`.
+  - name: initial_model_state_atp
+    maps_to: ATP
+    label: Initial Model State ATP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ATP`.
+  - name: initial_model_state_adp
+    maps_to: ADP
+    label: Initial Model State ADP
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ADP`.
+  - name: initial_nadh
+    maps_to: NADH
+    label: Initial Nadh
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `NADH`.
+  - name: initial_acal
+    maps_to: ACAL
+    label: Initial Acal
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `ACAL`.
+  - name: initial_cellwall
+    maps_to: Cellwall
+    label: Initial Cellwall
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Cellwall`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: nad
+    maps_to: NAD
+    label: NAD
+    description: NAD. Maps to SBML symbol `NAD`.
+  - name: atp
+    maps_to: ATP
+    label: ATP
+    description: ATP. Maps to SBML symbol `ATP`.
+  - name: adp
+    maps_to: ADP
+    label: ADP
+    description: ADP. Maps to SBML symbol `ADP`.
+  - name: nadh
+    maps_to: NADH
+    label: NADH
+    description: NADH. Maps to SBML symbol `NADH`.
+  - name: acal
+    maps_to: ACAL
+    label: ACAL
+    description: ACAL. Maps to SBML symbol `ACAL`.
+  - name: cellwall
+    maps_to: Cellwall
+    label: Cellwall
+    description: Cellwall. Maps to SBML symbol `Cellwall`.

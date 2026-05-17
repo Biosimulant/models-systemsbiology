@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "6999ab42-4fc3-4ebb-ab59-a8c5431af2e9",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "03a1ce24-08f7-4d82-bccb-a19d989ebd49",
+  "created_at": "2026-05-16T05:46:43.472176653+00:00",
+  "last_synced_at": "2026-05-17T03:15:43.331858+00:00",
+  "hub_manifest_hash": "1c8a4c9fceaa7ee0bdc9a960e03f7817c9300642006459b1932fc6846bae7994",
+  "package_name": "fuss2006-mitoticactivation-lab"
+}

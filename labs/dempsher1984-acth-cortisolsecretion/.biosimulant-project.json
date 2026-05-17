@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "9ec70d2b-864e-4c7e-9cb5-4fa6685ee5d2",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "003ee813-e265-4401-bf2d-36975a51675f",
+  "created_at": "2026-05-16T05:46:42.787281383+00:00",
+  "last_synced_at": "2026-05-17T02:52:02.656496+00:00",
+  "hub_manifest_hash": "f8e45b394bde6854ef69c4be42038390b4e9fb8566956fb4e443e5f0ab071e38",
+  "package_name": "dempsher1984-acth-cortisolsecretion-lab"
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "aff2bced-9308-4ac9-8386-4db51ae9b226",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "26eefd2a-4161-4a5b-b2d0-4ba4a1794b76",
+  "created_at": "2026-05-16T05:46:46.062580214+00:00",
+  "last_synced_at": "2026-05-17T04:40:40.653365+00:00",
+  "hub_manifest_hash": "300c189715cd96c285b10c7f2d8bd242ae0aea15f2739e94404c7009d3f31da2",
+  "package_name": "lopez2013-extrinsic-apoptosis-m1a-embedded-lab"
+}

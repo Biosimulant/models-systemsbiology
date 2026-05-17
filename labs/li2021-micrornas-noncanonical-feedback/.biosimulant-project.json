@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "4eecfaca-08e6-4a30-a488-0929e5c1fd05",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "66c47208-7b31-4ca8-a7e2-f549038dbd57",
+  "created_at": "2026-05-16T05:46:45.496938626+00:00",
+  "last_synced_at": "2026-05-17T04:31:21.018555+00:00",
+  "hub_manifest_hash": "40d0f921fee704fbb3af79b2847282505443bf777ca75242286da5fee92a3131",
+  "package_name": "li2021-micrornas-noncanonical-feedback-lab"
+}

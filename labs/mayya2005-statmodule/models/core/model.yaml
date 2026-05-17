@@ -1,0 +1,104 @@
+schema_version: '2.0'
+title: Mayya2005_STATmodule
+description: The model reproduces Fig 2B of the paper. It can be used to explore systemsbiology
+  mayya2005 statmodule BioModels0000000167 dynamics and compare simulation behavior
+  across conditions.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- V Mayya
+- L M Loew
+upstream:
+  id: biomodels_ebi:BIOMD0000000167
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000167
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000167
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000167?filename=BIOMD0000000167_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.mayya2005_statmodule_biomd0000000167_model:Mayya2005StatmoduleBiomd0000000167Model
+  init_kwargs:
+    model_path: data/BIOMD0000000167.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_stat_phosphatase_nuc
+    maps_to: statPhosphatase_nuc
+    label: Initial Stat Phosphatase Nuc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `statPhosphatase_nuc`.
+  - name: initial_stat_sol
+    maps_to: stat_sol
+    label: Initial Stat Sol
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `stat_sol`.
+  - name: initial_stat_nuc
+    maps_to: stat_nuc
+    label: Initial Stat Nuc
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `stat_nuc`.
+  - name: initial_stat_kinase_sol
+    maps_to: statKinase_sol
+    label: Initial Stat Kinase Sol
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `statKinase_sol`.
+  - name: initial_species_test
+    maps_to: species_test
+    label: Initial Species Test
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `species_test`.
+  - name: initial_pstat_sol
+    maps_to: Pstat_sol
+    label: Initial Pstat Sol
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pstat_sol`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: stat_phosphatase_nuc
+    maps_to: statPhosphatase_nuc
+    label: statPhosphatase_nuc
+    description: statPhosphatase_nuc. Maps to SBML symbol `statPhosphatase_nuc`.
+  - name: stat_sol
+    maps_to: stat_sol
+    label: stat_sol
+    description: stat_sol. Maps to SBML symbol `stat_sol`.
+  - name: stat_nuc
+    maps_to: stat_nuc
+    label: stat_nuc
+    description: stat_nuc. Maps to SBML symbol `stat_nuc`.
+  - name: stat_kinase_sol
+    maps_to: statKinase_sol
+    label: statKinase_sol
+    description: statKinase_sol. Maps to SBML symbol `statKinase_sol`.
+  - name: species_test
+    maps_to: species_test
+    label: species_test
+    description: species_test. Maps to SBML symbol `species_test`.
+  - name: pstat_sol
+    maps_to: Pstat_sol
+    label: Pstat_sol
+    description: Pstat_sol. Maps to SBML symbol `Pstat_sol`.

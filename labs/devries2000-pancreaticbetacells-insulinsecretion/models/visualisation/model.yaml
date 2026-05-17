@@ -1,0 +1,43 @@
+schema_version: '2.0'
+title: DeVries2000_PancreaticBetaCells_InsulinSecretion Visualisation
+description: Question-and-answer and dynamic visual summaries for DeVries2000_PancreaticBetaCells_InsulinSecretion.
+standard: other
+tags:
+- physiology
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Devries2000 Pancreaticbetacells Insulinsecretion Lab
+    question: 'Which physiological state variables carry the strongest baseline response?
+      Source model: DeVries2000_PancreaticBetaCells_InsulinSecretion.'
+    answer_focus: Q/A table plus physiology timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_devries2000_pancreaticbetacells_insulinsecretion_biomd0000000371_model
+      title: DeVries2000_PancreaticBetaCells_InsulinSecretion
+      observables:
+      - id: V_membrane
+        port: v_membrane
+        label: V_membrane
+        group: physiology
+      - id: n
+        port: model_state_n
+        label: n
+        group: physiology
+      - id: s
+        port: model_state_s
+        label: s
+        group: physiology
+io:
+  inputs: []
+  outputs: []

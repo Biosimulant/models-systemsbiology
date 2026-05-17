@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Albert2005_Glycolysis Visualisation
+description: Question-and-answer and dynamic visual summaries for Albert2005_Glycolysis.
+standard: other
+tags:
+- metabolism
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Albert2005 Glycolysis Lab
+    question: 'Which metabolic pools or flux-linked states show the strongest simulated
+      change? Source model: Albert2005_Glycolysis.'
+    answer_focus: Q/A table plus metabolism timeseries, largest-excursion bar, final-state
+      bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_albert2005_glycolysis_biomd0000000211_model
+      title: Albert2005_Glycolysis
+      observables:
+      - id: species_25
+        port: glucose_external
+        label: glucose external
+        group: metabolism
+      - id: species_26
+        port: pyruvate_external
+        label: pyruvate external
+        group: metabolism
+      - id: species_27
+        port: glycerol_external
+        label: glycerol external
+        group: metabolism
+      - id: species_22
+        port: glycerol3phosphate
+        label: glycerol3phosphate
+        group: metabolism
+      - id: species_1
+        port: pyruvate
+        label: pyruvate
+        group: metabolism
+      - id: species_16
+        port: fructose16bisphosphate
+        label: fructose16bisphosphate
+        group: metabolism
+io:
+  inputs: []
+  outputs: []

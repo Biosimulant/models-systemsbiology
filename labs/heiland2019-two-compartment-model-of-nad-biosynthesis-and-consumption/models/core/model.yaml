@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Heiland2019 - Two compartment model of NAD biosynthesis and consumption
+description: The model is based on MODEL1905220001 but has two compartments that have
+  different composition of the biosynthetic enzymes NADA and NamPT. One compartment
+  contains in addition NNMT, the other one does.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+authors:
+- Biosimulant Team
+- Mathias Bockwoldt
+- Dorothée Houry
+- Marc Niere
+- Toni I. Gossmann
+- Ines Reinartz
+upstream:
+  id: biomodels_ebi:MODEL1905220002
+  source_db: biomodels_ebi
+  source_id: MODEL1905220002
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1905220002
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1905220002?filename=data_S3_competition_model.xml
+  license: CC0
+biosim:
+  entrypoint: src.heiland2019_two_compartment_model_of_nad_biosynt_model1905220002_model:Heiland2019TwoCompartmentModelOfNadBiosyntModel1905220002Model
+  init_kwargs:
+    model_path: data/MODEL1905220002.xml
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_model_state_sah
+    maps_to: SAH_NamPT_compartment
+    label: Initial Model State Sah
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `SAH_NamPT_compartment`.
+  - name: initial_model_state_pi
+    maps_to: Pi_NamPT_compartment
+    label: Initial Model State Pi
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pi_NamPT_compartment`.
+  - name: initial_model_state_pi_2
+    maps_to: Pi_NADA_compartment
+    label: Initial Model State Pi 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Pi_NADA_compartment`.
+  - name: initial_prpp
+    maps_to: PRPP_NamPT_compartment
+    label: Initial Prpp
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PRPP_NamPT_compartment`.
+  - name: initial_prpp_2
+    maps_to: PRPP_NADA_compartment
+    label: Initial Prpp 2
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PRPP_NADA_compartment`.
+  - name: initial_nam_ex
+    maps_to: Nam_ex
+    label: Initial Nam Ex
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `Nam_ex`.
+  outputs:
+  - name: state
+    description: Full SBML observable state record for reproducibility and downstream
+      visualisation.
+  - name: summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: species_labels
+    description: Mapping from SBML observable symbols to display labels.
+  - name: sah
+    maps_to: SAH_NamPT_compartment
+    label: SAH
+    description: SAH. Maps to SBML symbol `SAH_NamPT_compartment`.
+  - name: model_state_pi
+    maps_to: Pi_NamPT_compartment
+    label: Pi
+    description: Pi. Maps to SBML symbol `Pi_NamPT_compartment`.
+  - name: model_state_pi_2
+    maps_to: Pi_NADA_compartment
+    label: Pi
+    description: Pi. Maps to SBML symbol `Pi_NADA_compartment`.
+  - name: prpp
+    maps_to: PRPP_NamPT_compartment
+    label: PRPP
+    description: PRPP. Maps to SBML symbol `PRPP_NamPT_compartment`.
+  - name: prpp_2
+    maps_to: PRPP_NADA_compartment
+    label: PRPP
+    description: PRPP. Maps to SBML symbol `PRPP_NADA_compartment`.
+  - name: nam_ex
+    maps_to: Nam_ex
+    label: Nam_ex
+    description: Nam_ex. Maps to SBML symbol `Nam_ex`.

@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Url Xml Lab
+description: This is a kinetic model of the monomeric photosystem II (PSII). The model
+  is partially based on the earlier model used for simulation of the flash-induced
+  period-four damped oscillation of oxygen evol.
+models:
+- alias: systemsbiology_sbml_model3631586579_url_xml_model3631586579_model
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: systemsbiology_sbml_model3631586579_url_xml_model3631586579_model.state
+  to:
+  - visualisation.systemsbiology_sbml_model3631586579_url_xml_model3631586579_model_state
+- from: systemsbiology_sbml_model3631586579_url_xml_model3631586579_model.summary
+  to:
+  - visualisation.systemsbiology_sbml_model3631586579_url_xml_model3631586579_model_summary
+- from: systemsbiology_sbml_model3631586579_url_xml_model3631586579_model.species_labels
+  to:
+  - visualisation.systemsbiology_sbml_model3631586579_url_xml_model3631586579_model_species_labels
+runtime:
+  duration: 1.0
+  communication_step: 0.1
+  initial_inputs: {}
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+io:
+  inputs:
+  - name: initial_model_state_pq
+    maps_to: systemsbiology_sbml_model3631586579_url_xml_model3631586579_model.initial_model_state_pq
+    label: Initial Model State Pq
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `PQ`.
+  - name: initial_y_dox
+    maps_to: systemsbiology_sbml_model3631586579_url_xml_model3631586579_model.initial_y_dox
+    label: Initial Y Dox
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `YDox`.
+  - name: initial_s1_yphab
+    maps_to: systemsbiology_sbml_model3631586579_url_xml_model3631586579_model.initial_s1_yphab
+    label: Initial S1 Yphab
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S1YPHAB`.
+  - name: initial_s1_ypha_bm
+    maps_to: systemsbiology_sbml_model3631586579_url_xml_model3631586579_model.initial_s1_ypha_bm
+    label: Initial S1 Ypha Bm
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S1YPHABm`.
+  - name: initial_model_state_yd
+    maps_to: systemsbiology_sbml_model3631586579_url_xml_model3631586579_model.initial_model_state_yd
+    label: Initial Model State Yd
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `YD`.
+  - name: initial_s3_yp_pp_hm_am_bmm
+    maps_to: systemsbiology_sbml_model3631586579_url_xml_model3631586579_model.initial_s3_yp_pp_hm_am_bmm
+    label: Initial S3 Yp Pp Hm Am Bmm
+    description: Source state initial condition exposed as a model-specific control
+      because no explicit intervention parameter is identifiable. Maps to SBML symbol
+      `S3YpPpHmAmBmm`.
+  outputs:
+  - name: state
+    maps_to: systemsbiology_sbml_model3631586579_url_xml_model3631586579_model.state
+  - name: summary
+    maps_to: systemsbiology_sbml_model3631586579_url_xml_model3631586579_model.summary
+  - name: species_labels
+    maps_to: systemsbiology_sbml_model3631586579_url_xml_model3631586579_model.species_labels
+  - name: model_state_pq
+    maps_to: systemsbiology_sbml_model3631586579_url_xml_model3631586579_model.model_state_pq
+  - name: y_dox
+    maps_to: systemsbiology_sbml_model3631586579_url_xml_model3631586579_model.y_dox
+  - name: s1_yphab
+    maps_to: systemsbiology_sbml_model3631586579_url_xml_model3631586579_model.s1_yphab
+  - name: s1_ypha_bm
+    maps_to: systemsbiology_sbml_model3631586579_url_xml_model3631586579_model.s1_ypha_bm
+  - name: model_state_yd
+    maps_to: systemsbiology_sbml_model3631586579_url_xml_model3631586579_model.model_state_yd
+  - name: s3_yp_pp_hm_am_bmm
+    maps_to: systemsbiology_sbml_model3631586579_url_xml_model3631586579_model.s3_yp_pp_hm_am_bmm

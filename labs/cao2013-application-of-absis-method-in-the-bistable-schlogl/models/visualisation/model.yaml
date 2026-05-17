@@ -1,0 +1,40 @@
+schema_version: '2.0'
+title: Cao2013 - Application of ABSIS method in the bistable Schlögl model Visualisation
+description: Question-and-answer and dynamic visual summaries for Cao2013 - Application
+  of ABSIS method in the bistable Schlögl model.
+standard: other
+tags:
+- systemsbiology
+- sbml
+- biomodels_ebi
+- faithful
+- curated
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  communication_step: 1.0
+  entrypoint: src.systemsbiology_visualisation:SystemsBiologyVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Cao2013 Application Of Absis Method In The Bistable Schlogl Lab
+    question: 'Which source-defined system states dominate this SBML model trajectory?
+      Source model: Cao2013 - Application of ABSIS method in the bistable Schlögl
+      model.'
+    answer_focus: Q/A table plus systemsbiology timeseries, largest-excursion bar,
+      final-state bar, and phase portrait when dynamic data supports them.
+    sources:
+    - alias: systemsbiology_sbml_cao2013_application_of_absis_method_in_the_bista_biomd0000000485_model
+      title: Cao2013 - Application of ABSIS method in the bistable Schlögl model
+      observables:
+      - id: ES
+        port: model_state_es
+        label: ES
+        group: physiology
+      - id: X
+        port: model_state_x
+        label: X
+        group: physiology
+io:
+  inputs: []
+  outputs: []
